@@ -1,0 +1,23 @@
+---
+title: prometheus-sumo
+in_menu: true
+author: Lars B&auml;hren
+---
+
+## prometheus-sumo
+
+**prometheus-sumo** is a simple (almost) virtual package, to ease the retrieval of the various components in the software stack for "[prometheus](/work/prometheus.html) - The Distributed Digital Image Archive for Research and Studies".
+
+### Getting the source code
+
+The source for prometheus-sumo is hosted on Github at; go there to read about the various options to retrieve a working copy of the code. In the simplest case, were you need a read-only copy, simply run
+
+    git clone git://github.com/lbaehren/prometheus-sumo.git
+
+in order to to clone into a local working copy. 
+
+In order to now configure and build the project "out of source" - hence keeping your options open to cleanly remove intermediate/temporary files - create a separate build directory from within to continue:
+
+    mkdir build
+    cd build
+    cmake ..
