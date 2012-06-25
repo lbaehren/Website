@@ -29,6 +29,10 @@ body {
  *
  */
 
+/* Header area at the top of the page. If you want to change the background
+ * image, either overwrite the file 'front.jpg' or (the non-destructive solution)
+ * adjust the link in the settings below.
+ */
 #header {
     color:#ffffff;
     background:#ffffff url(images/front.jpg) bottom left repeat;
@@ -36,6 +40,7 @@ body {
     margin:0 0 10px 0;padding:0;
 }
 
+/* Layout of the H1 level header inside the header area. */
 #header h1 {
     font-size: 5em;
     font-weight: normal;
@@ -44,6 +49,7 @@ body {
     padding: 20px 0 0 0;
 }
 
+/* Layout of the H2 level header inside the header area. */
 #header h2 {
     font-size: 2em;
     font-weight: normal;
