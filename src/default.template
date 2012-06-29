@@ -14,7 +14,7 @@
   <body>
     <div id="wrap">
       <div id="header">
-        <h1><a href="{relocatable: /index.html}">larsbaehren.com</a></h1>
+        <h1><a href="{relocatable: /index.html}">Lars B&auml;hren</a></h1>
         <h2>Software development / Photography</h2>
       </div>
 
@@ -24,8 +24,10 @@
 
         <div class="announce">
           <h2>Latest news:</h2>
-          <p><strong>09.09.2009:</strong><br />
-          Something will have happened by then.</p>
+          <p><strong>29.06.2012:</strong><br />
+          Started importing blog entries from Dokuwiki; basic layout
+          of the source files can remain the same, though files
+          themselves need to be edited in order to adjust the markup language.</p>
           <p class="textright"><a href="#TODO">Read more &raquo;</a></p>
         </div>
       </div>
