@@ -37,6 +37,16 @@ default_processing_pipeline:
 ## === Customization ============================================================
 
 ##____________________________________________________________________
+##                                                             sources
+
+# Specifies one or more sources from which paths are read. This can
+# also be used, for example, to additionally add other directories as
+# source directories that may or may not be located in the website
+# directory.
+
+sources: [[/, Webgen::Source::FileSystem, src], [/, Webgen::Source::FileSystem, data/pages], [/, Webgen::Source::FileSystem, data/media]]
+
+##____________________________________________________________________
 ##                                                              output
 
 # Specifies the output class that should be used for writing out the
