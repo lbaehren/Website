@@ -1,0 +1,50 @@
+---
+title: Work Experience
+in_menu: false
+author: Lars B&auml;hren
+---
+
+## Work Experience
+
+### Software Developer
+
+April 2012 – Present (3 months) Cologne, Germany
+
+_prometheus - Das digitale Bildarchiv für Forschung und Lehre_
+
+### Software developer
+
+October 2011 – December 2011 (3 months) Dwingeloo, Netherlands
+
+_ASTRON_
+
+* Contract work for the Radio Observatory (RO).
+* Configuration- and build-environment for LOFAR User Software (LUS) collection.
+* Migration and consolidation of Wiki-based documentation.
+
+### Software developer
+
+October 2010 – September 2011 (1 year) Astronomical Institute Anton Pannekoek
+
+_Astronomical Institute Anton Pannekoek_
+
+* Work on the [AARTFAAC](/work/aartfaac.html) project (Amsterdam-ASTRON Radio Transients Facility and Analysis Centre), though spending most of the time on the continued development of the [Data Access Library](/development/dal.html) (DAL).
+* Member of the "Data Formats Group" for the specification of LOFAR standard data products using HDF5 technology; lead author for "Representations of World Coordinates" (ICD-002) and "Radio Sky Image Cubes" (ICD-004).
+
+### Software developer
+
+April 2006 – September 2010 (4 years 6 months) Nijmegen, Netherlands
+
+_Radboud University Nijmegen_
+
+* Continued development of near-field imaging software for LOFAR radio-telescope.
+* Configuration- and build-environment for LOFAR User Software (LUS) collection.
+* Lead-developer of of the [Data Access Library](/development/dal.html) (DAL), to enable creation of and access to LOFAR standard data-products based on the HDF5 data-format.
+
+### Junior Scientist
+
+January 2004 – March 2006 (2 years 3 months) Dwingeloo, The Netherlands
+
+_Astron_
+
+Software development for the LOPES (LOFAR Prototype Station) experiment at Karlsruhe: development of an all-sky, near-field imager for the radio time-series data, configuration and build environment for the software package. 
