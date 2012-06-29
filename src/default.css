@@ -211,6 +211,7 @@ body {
 
 #content a, #contentwide a, #contentfull a {
     font-weight:bold;
+    color: #5524c1;
 }
 
 #content ul, #content ol,
@@ -282,19 +283,20 @@ p {
 }
 
 blockquote {
-    border-top:1px solid #d8d8d8;
-    border-right:1px solid #d8d8d8;
-    border-bottom:1px solid #d8d8d8;
-    border-left:4px solid #cccccc;
-    margin:16px;padding:7px 7px 7px 11px;
-    background:#f4f4f4 url(images/menubg.gif) bottom left repeat-x;
-    color:#505050;
+    border-top:    1px solid #d8d8d8;
+    border-right:  1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    border-left:   4px solid #cccccc;
+    margin:        16px;
+    padding:       7px 7px 7px 11px;
+    background:    #f4f4f4 url(images/menubg.gif) bottom left repeat-x;
+    color:         #505050;
 }
 
 blockquote p {
-    font-size: 1.1em;
+    font-size:   1.1em;
     line-height: 1.3em;
-    margin: 0;
+    margin:      0;
 }
 
 /***** Table styles *****/
@@ -448,7 +450,8 @@ pre {
 .blogquote {
     border-top:          1px solid #e1cc89;
     border-bottom:       1px solid #e1cc89;
-    margin:16px;padding: 7px 7px 7px 11px;
+    margin:              16px;
+    padding:             7px 7px 7px 11px;
     background:          #f4f4f4 url(images/menubg.gif) bottom left repeat-x;
     color:               #505050;
 }
