@@ -1,0 +1,10 @@
+---
+title: Ende der Spielphase
+in_menu: false
+---
+
+## {title:} ##
+
+_Tuesday, 03 February 2004 -- 15:09_
+
+Ok, die Spielphase ist jetzt definitiv vorbei. Jetzt geht es ans Eingemachte, will heißen an die Programmierung der für die Erstellung einer Himmelskarte benötigten C++-Routinen. Im wesentlichen gibt es dafür schon was in Glish, nur sollte es doch noch einmal ein gutes Stück schneller werden, wenn sich der Code copilieren läßt. 

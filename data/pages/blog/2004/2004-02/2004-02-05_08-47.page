@@ -1,0 +1,12 @@
+---
+title: Vorhaben fuer den Tag
+in_menu: false
+---
+
+## {title:} ##
+
+_Thursday, 05 February 2004 -- 08:47_
+
+Hm, in Anbetracht der Tatsache, das es letzte Nacht ein wenig später geworden ist, bin ich ja echt gut in der Zeit. Kann sein, daß ich mich vom Arbeits-/Schlafrhythmus her so langsam wieder den Bonner Verhältnissen angleiche - nur diesmal allerdings bei doch weitaus höherer Produktivität, als dies zuletzt in Bonn der Fall war (ha, seehr schwer...).
+
+Das Vorhaben für den Tag? Hm, endlich einmal noch ein paar ausstehende organisatorische Dinge erledigen (Geld überweisen, Einwohnermeldeamt abmelden,...) und dann dafür sorgen, daß die Glish Routinen für die Erzeugung der Himmelskarten durch C++ Code ersetzt werden. Klar, es funktioniert zwar prinzipiell auch so, aber es ist einfach zu langsam - wer hat schon Lust u.U. eine halbe Stunde auf eine Karte zu warten, weil die Berechnung nicht optimal gehandhabt wird (die letzten Karten, welche ich diese Nacht erzeugt habe, habe ich nur angeworfen und habe mich danach verzogen - schließlich wollte ich irgendwann ja auch mal ins Bett kommen). 

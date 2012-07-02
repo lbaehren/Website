@@ -1,0 +1,14 @@
+---
+title: Nachtrag Montag
+in_menu: false
+---
+
+## {title:} ##
+
+_Wednesday, 25 February 2004 -- 21:26_
+
+Nun ja, hatte ich nicht einen davon erzählt, daß ich mal wieder ein wenig von dem berichten wollte, was hier so passiert...? Jetzt ist es schon eine ganze Weile wieder dunkel, mein Magen macht langsam auf sich aufmerksam - und ich habe noch keine einzige Zeile diesbezüglich geschrieben.
+
+Als erstes wohl mal der fällige Report zu Montag. Wie sich herausstellte war dies in der Tat eine recht großes Ereignis (bestens inzwischen auch nachzulesen auf der lokalen LOFAR Web-Site). Anwesend an externer Prominenz waren die Ministerin des _Ministry of Education, Culture and Science_ sowie diverse Abgesandte von IBM. Zum einen ging es ja darum, daß das offizielle Dokument unterzeichnet wurde, mit welchem die im Dezember vom holländischen Parlament [LOFAR](http://www.lofar.org) zugesprochenen 52 Millionen Euro jetzt wirklich auch ASTRON zur Verfügung gestellt wurden. Zum anderen wurde eine Übereinkunft unterzeichnet, mit welcher die Zusammenarbeit zwischen ASTRON und IBM festgeschrieben wird, welche zum Ziel hat einen _Blue Gene/L_ für den den zentralen Processor von LOFAR bereitszustellen; damit wären wir also die vierten im Bunde, welche eine derartige Maschine bekommen (naja, streng genommen sollte man dazu sagen, daß die Maschine nicht hier in Dwingeloo stehen wird, sondern im Hochleistungsrechenzentrum in Groningen). Der wesentliche Unterschied zu den anderen Installationen wird allerdings sein, daß der zentrale Processor für LOFAR konstant Datenraten von ca. 780GB/s verabeiten muß; daß ist dann doch etwas anderes als das, was mit den anderen Maschinen geplant ist, welche im wesentlichen Numbercruncher für Simulationen sind.
+
+  * IBM, [Dutch Scientists to Explore First Moments of Universe](http://www-1.ibm.com/press/PressServletForm.wss?MenuChoice=pressreleases&TemplateName=ShowPressReleaseTemplate&SelectString=t1.docunid=6724&TableName=DataheadApplicationClass&SESSIONKEY=any&WindowTitle=Press+Release&STATUS=publish) (IBM Press Release)

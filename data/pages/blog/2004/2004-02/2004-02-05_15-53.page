@@ -1,0 +1,18 @@
+---
+title: Kolloquium
+in_menu: false
+---
+
+## {title:} ##
+
+_Thursday, 05 February 2004 -- 15:53_
+
+Cool, morgen gibt es im Kolloquium einen Vortrag über IBM's Blue Gene:
+
+> BlueGene/L is a cost-effective supercomputer targeting a peak performance of 180 teraflops. It is being developed by IBM in partnership with the Department of Energy's National Nuclear Security Administration and Lawrence Livermore National Laboratory. It is scheduled to be completed near the end of 2004.
+>
+> BG/L is based on system-on-a-chip technology using two basic building blocks: the BG/L Compute chip and the BG/L Link chip. The system developed for Lawrence Livermore will have 65,536 compute nodes, each targeted for 2.8 GF peak, chip multiprocessor with 4 MB L3 cache on chip. Nodes are connected through a high-bandwidth low-latency 3D torus and combining tree networks.
+>
+> Dr. Haring has been involved in the BG/L system right from the start. He developed the BlueGene/L Compute ASIC. In this talk he will discuss the overall architecture of the BG/L, the design philosophy of the chip and the results of evaluation of the prototype system at IBM Watson Reseach Lab.
+
+Und um die Sache besser einordnen zu können: diese Architektur ist auch für den zentralen LOFAR Processing Core gedacht, also den Supercomputer, in welchen die Berechnung der virtuellen Teleskope stattfindet. Also - alle morgen früh schnell nach Dwingeloo... ;-)

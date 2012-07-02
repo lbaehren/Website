@@ -1,0 +1,10 @@
+---
+title: Optimierung
+in_menu: false
+---
+
+## {title:} ##
+
+_Thursday, 12 February 2004 -- 14:55_
+
+Ok, der Frust von heute morgen hat sich mittlerweile einigermaßen gelegt. Das liegt vor allen Dingen daran, daß ich jetzt endlich die modifizierten Routienen gemeinsam ans Laufen bekommen habe. Was jetzt aber noch kommen muß, ist daß ein wenig was an der Optimierung gemacht wird. Schließlich war ja nach wie vor einer der Gründe an der ganzen Geschichte, die rechenintensiven Teile auszulagern und so die Berechnung insgesammt zu beschleunigen. Nun ja, schauen wir mal, was daraus noch wird... 

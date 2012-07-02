@@ -1,0 +1,10 @@
+---
+title: Fehlersuche
+in_menu: false
+---
+
+## {title:} ##
+
+_Monday, 02 February 2004 -- 11:51_
+
+Hurra, ich habe zumindest den Fehler gefunden, durch welchen Routine für die Erzeugung der Skymap nicht sauber gelaufen ist. Damit läßt sich dieser Teil zumindest schon einmal wieder sauber starten - ob was vernünftiges bei rauskommt ist dann allerdings noch eine ganz andere Frage. 

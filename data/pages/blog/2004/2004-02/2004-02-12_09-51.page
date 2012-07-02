@@ -1,0 +1,10 @@
+---
+title: Kleine Fortschritte
+in_menu: false
+---
+
+## {title:} ##
+
+_Thursday, 12 February 2004 -- 09:51_
+
+So, nach dem Frust der letzten Tage mal wieder eine kleine Meldung. Nachdem ich es gestern endgültig geschafft habe, mir einen Teil der LOPES Routinen durch meine Änderungen zu zerschießen (und ich habe den Fehler bisher auch noch nicht gefunden), ist das erste Vorhaben heute morgen - wo ich ja auch schon einigermaßen weit bin - ein CVS Repository aufzusetzen, in welches ich meine Änderungen einchecken kann. Auf diese Weise sollte ich wenigstens in der Lage sein, ältere Versionen zurückzuerhalten, bzw. zu checken, an welcher Stelle ich denn was vermurkst habe. 

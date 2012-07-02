@@ -1,0 +1,10 @@
+---
+title: LOFAR Station Processing Baseline
+in_menu: false
+---
+
+## {title:} ##
+
+_Friday, 06 February 2004 -- 08:48_
+
+Ok, heute morgen bin ich mal eine viertel Stunde später hier eingetroffen, was allerdings wohl der Tatsache zuzuschreiben ist, daß es letzte Nacht wieder ein wenig später geworden ist. Dafür glaube ich aber einen Weg gefunden zu haben, die bereits von anderen Leuten begonnenen Formulierungen für die LOFAR Station Processing Baseline weiter zu verallgemeinern und in das AIPS++ Konzept zu integrieren. Damit komme ich dann in gewisser Weise wieder auf das zurück, womit ich mich zuletzt auch in Bonn mal beschäftigt habe, nämlich die komplette mathematische Struktur auf der Measurement Equation aufzubauen. Wenn dies klappt - und da sollte es kein prrinzipielles Problem bei geben - dann ließe sich für den größten Teil der Datenverarbeitung auf die bereits existierenden Routinen in AIPS++ zurückgreifen und man müßte weitaus weniger selber schreiben. Ferner hätte dieser Ansatz den netten Vorteil, daß ich auf diese Weise direkt Zugriff auf all die netten Dinge wie Selfcalibration, CLEAN, etc. bekomme - das ist derzeit noch nicht der Fall. Vor allen Dingen aber - und das stört mich bei dem derzeitigen Ansatz der LOPES/ITS Software - wäre die Verarbeitung von Polarisationsinformationen etwas, was ganz natürlich mit abfällt. Ich denke mal, daß ich also auf jeden Fall ein wenig Neuronenaktivität dafür abzweigen werde. 

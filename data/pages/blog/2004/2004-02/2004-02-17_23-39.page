@@ -1,0 +1,14 @@
+---
+title: Computergeschichten
+in_menu: false
+---
+
+## {title:} ##
+
+_Tuesday, 17 February 2004 -- 23:39_
+
+Ok, ich glaube langsam wird es auch mal wieder Zeit, daß ich mich von hier vom Acker mache. Heute Nachmittag haben noch zwei Releases der Software, an der ich ja mitschreiben soll, die Runde gemacht. Da es zur Zeit noch keine Lösung gibt, wie die unterschiedlichen Ergänzungen aufeinander abgestimmt werden können, macht derzeit jede neue Version via Mail die Runde. Sicher, CVS wäre 'ne feine Sache, aber leider ist das mit der Firewall im MPI in Bonn ein wenig problematisch. Potentiell gäbe es die Möglichkeit einen Server in Nijmegen aufzusetzen, allerdings ist der Rechner noch nicht einsatzbereit. Dumm gelaufen also. Also habe ich versucht heute Abend noch meine Änderungen mit der letzten Release abzugleichen um dann die aktualisierte Fassung nach Bonn zu schicken; wenn alles glatt geht dann sollten morgen alle einigermaßen auf dem gleichen Stand sein.
+
+Neben solchen Geschichten habe ich gestern damit begonnen, nun auch noch auf den zwei weiteren Rechnern AIPS++ zu installieren. Sah alles schon ganz gut aus, nur spielt mir da wieder irgend eine Sache, die ich noch nicht verstehe, einen Strich durch die Rechnung. Alles Settings sehen super aus, der Compiler läuft durch, die Binaries werden erzeugt, AIPS++ läßt sich starten und dann - kommt die Fehlermeldung, daß zwei Pfade nicht stimmen! Bullshit sage ich da nur, die habe ich vor dem Start sogar mehrmals wieder gesetzt und anschließend gecheckt. Sobald ich aber AIPS++ hochfahre sind die Settings wieder futsch. Ich könnte echt einen an die Waffel kriegen...
+
+Ach ja, heute hingen hier in der Cafeteria schon die Programme für Montag den 23. aus. Verspricht wirklich ein größeres Ereignis zu werden. Ich schaue mal, daß ich eine Programm in die Finger bekomme, dann werde ich mal durchgeben, was da so alles ansteht. - Prinzipiell sollten die Meldungen aber auch auf der [niederländischen LOFAR Seite](http://www.lofar.nl) zu finden sein. Heute jedenfalls gab es diesbezüglich einiges an Aktivitäten, die ich ja bestens mitbekomme, weil das Mädel, welche die gesamten Seiten betreut, hier direkt hinter mir sitzt (ok, jetzt nicht mehr - haha). Bei Gelegenheit immer wieder mal reinschauen, lohnt sich. 

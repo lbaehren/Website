@@ -1,0 +1,10 @@
+---
+title: Debugging
+in_menu: false
+---
+
+## {title:} ##
+
+_Wednesday, 04 February 2004 -- 21:34_
+
+Hm, heute wird es nach einer ganzen Weile mal wieder länger. Ich versuche hier noch die restlichen Fehler in dem C++ Programm auszutreiben, bevor ich hier die Kurve kratze. Kann aber noch ein bißchen dauern, weil die AIPS++ Klasssen und Funktionen doch nicht so ohne weiteres einsichtig und nachvollziehbar sind. Vielleicht liegt es ja daran, daß bisher die meißten Routinen "nur" in Glish - also einer Skriptsprache - geschrieben sind.... 
