@@ -3,6 +3,39 @@
 varExtension=".page"
 varOutfile="index.page"
 
+## === Functions ================================================================
+
+nameOfMonth ()
+{
+  case $1 in
+    01)
+      varName="January"
+    ;;
+    02)
+      varName="February"
+    ;;
+    03)
+      varName="March"
+    ;;
+    04)
+      varName="April"
+    ;;
+    05)
+      varName="May"
+    ;;
+    06)
+      varName="June"
+    ;;
+    07)
+      varName="July"
+    ;;
+  esac
+
+  echo $varName
+}
+
+## === Processing ===============================================================
+
 FILES=`ls *${varExtension} | grep -v index`
 
 ##__________________________________________________________
@@ -36,9 +69,10 @@ for FILE in $FILES
   varHour=`echo ${varFilename:11:2}`
   varMinutes=`echo ${varFilename:14:2}`
 
+  varMonthName=`nameOfMonth $varMonth`
   varTime="$varHour:$varMinutes"
 
-  varDateTime=`grep $varTime $FILE | grep $varYear | sed s/"_"//g`
+  varDateTime=`grep $varTime $FILE | grep $varYear | grep "_" | sed s/"_"//g`
 
   ##________________________________________________________
   ## Link to generated file
@@ -62,7 +96,7 @@ for FILE in $FILES
   else 
       echo "Index file missing - generating header now..."
       echo "---"                     > $varOutfile
-      echo "title: Blog | $varYear" >> $varOutfile
+      echo "title: Blog | $varMonthName $varYear" >> $varOutfile
       echo "in_menu: false"         >> $varOutfile
       echo "---"                    >> $varOutfile
       echo ""                       >> $varOutfile
