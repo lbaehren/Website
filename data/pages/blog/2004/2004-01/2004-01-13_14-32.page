@@ -1,0 +1,12 @@
+---
+title: Software Installation
+in_menu: false
+---
+
+## {title:} ##
+
+_Tuesday, 13 January 2004 -- 14:32_
+
+Hurra, die Dinge machen - zumindest was die Software Geschichten betrifft - Fortschritte. Nachdem ich heute Mittag mit Ger van Diepen gesprochen und an meinem Rechner rumgespielt habe, kommen die Dinge hier langsam ins Rollen. Zumindest ist das ewige Problem mit AIPS++ jetzt wohl behoben; ich hatte dummerweise vergessen zwei weitere Verzeichnisse bei mir auf den Rechner zu kopieren, so dass der Code nicht kompilieren konnte. Seit dem aber funzen die Dinge. Vor allen Dingen ist aber - zum ersten Mal - das makefile Script aus Bonn komplett durchgelaufen, d.h. ich kann jetzt alle Programme erzeugen, welche ich fuer einen Teil der Arbeit brauche. Das finde ich schon einmal genial.
+
+Ich werde jetzt mal sehen, was denn mein Institutsrechner macht... 

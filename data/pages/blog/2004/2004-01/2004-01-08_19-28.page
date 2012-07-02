@@ -1,0 +1,16 @@
+---
+title: Augenblickliche Aktivitaeten 
+in_menu: false
+---
+
+## {title:} ##
+
+_Thursday, 08 January 2004 -- 19:28_ 
+
+Ok, hier kommt wieder ein Lebenszeichen.
+
+Streng genommen hatte ich ja bereits heute Mittag, nach dem Meeting, angefangen ein paar Zeilen zu schreiben, habe dann aber wieder abgebrochen, weil hier die große Herumrennerei losging. Will heißen "Wegen der Sache müssen wir noch mit dem reden", "Wir müssen noch bei dem das und das nachfragen", "Wir müssen noch abklären ob" - kurz und gut: heute Nachmittag war Leute abklappern angesagt.
+
+Was das Meeting heute Morgen betraf so war das eher informell, nur die Mitglieder der frisch aus der Taufe gehobenen 'LOFAR Test User Group' (LOTUG) - insgesamt etwa zehn Leute (und ich bin dabei...). Im wesentlichen ging es darum, daß wir es schaffen zu koordinieren, welche Arbeiten von wem in welchem Zeitrahmen zu erledigen sind, damit wir moeglichst rasch Gebrauch von der Test-Station machen koennen (wenn alles glatt geht sollte ich nächste Woche wohl mal in der Lage sein die Station selber in Augenschein zu nehmen). Derzeit sind von den 64 aufgebauten Antenne 25 meßbereit, das wird sich aber wohl spätestens nächste Woche dann noch ändern, so daß sich prinzipiell alle Antennen ansteuern und auslesen lassen. - Ich werde mal sehen, daß ich auch ein paar 'Foto-Impressionen' eingesammelt bekomme.
+
+Insgesammt ist alles hier in Schaffensstimmung um loslegen zu koennen. Was für mich jetzt auf jeden Fall ansteht ist, daß ich mich mit der von Andreas in Bonn geschriebenen Software einarbeiten muß, damit wir diese für die ersten Messung mit der ITS ('Integrated Test Station') einsetzen koennen. Parallel dazu habe ich heute Nachmittag mal zwei Test-Datensätze von dem hier hinter dem Institut aufgebauten Array bekommen, damit ich mir darüber Gedanken machen kann, wie wir die hier erzeugten Daten eingelesen bekommen. Dies bedeutet also, daß ich recht schnell damit beginnen muß, mich an das Schreiben eigener Routinen zu setzen. Von den Leuten, mit denen ich es da zu tun habe, bilde ich derzeit sicherlich das Schlußlicht, was die entsprechenden Fähigkeiten betrifft - aber ich hoffe doch mal, daß sich dies mit ein wenig Einsatz ein wenig angleichen läßt.

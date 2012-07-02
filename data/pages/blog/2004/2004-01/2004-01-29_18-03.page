@@ -1,0 +1,11 @@
+---
+title: Fremder Code
+in_menu: false
+---
+
+## {title:} ##
+
+_Thursday, 29 January 2004 -- 18:03_
+
+
+Ok, es ist auch hier inzwischen wieder dunkel (naja, kein allzu großes Wunder bei der Jahres- und Uhrzeit). Ich sitze noch hier und versuche mich durch den Glish-Code durchzuwühlen, welchen die beiden Andreas (in Bonn und in Nijmwegen) für die Auswertung und Darstellung der LOPES Daten geschrieben haben. Aber angesichts der Tatsache, daß ich weder an der bisherigen Entwicklung beteiligt war, noch daß der Code wirklich umfangreich kommentiert ist, ist dies ein nicht ganz triviales Unterfangen. Vor allen Dingen fehlt mir vor allen Dingen mal eine saubere Vorlage, aus der die mathematischen Grundlagen klarwerden , auf welchen der Code dann anschließend aufbaut. Sich die dahinterstehende Physik (oder Mathe) aus dem Code zu rekonstruieren ist nur wirklich keine gute Methode. Aber dies ist wohl eines der Probleme, wenn eine wohl definierte Gruppen von Personen an so einer Entwicklung beteiligt ist und aufgrund dieser Tatsache im Wesentlichen ohne eine ausreichende Dokumentation auskommt - schließlich wissen ja alle Beteiligten, auf welchem Wege die späteren Lösungen entstanden sind und warum diese gerade so gewählt wurden, wie sie sich halt jetzt darstellen. Nicht wirklich ideal um sich einen Überblick zu verschaffen und ein Verständnis dafür zu entwickeln, was da unter der Oberfläche von so einem dummen GUI passiert. Ich brauche definitiv einmal die Ruhe, um mir einige Dinge mal sauber aufzuschreiben - ich denke mal, daß dann der Wechsel zum Programm-Code auch einfacher wird. 

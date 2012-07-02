@@ -1,0 +1,14 @@
+---
+title: Appointment
+in_menu: false
+---
+
+## {title:} ##
+
+_Friday, 09 January 2004 -- 15:02_
+
+Wie macht so eine Aktion wie am Montag die Runde? Nun - in etwa so:
+
+    Item Type: Appointment
+    Start Date: Monday, 12 Jan 2004, 11:00:00am (W. Europe Standard Time)
+    Duration: 2 Hours Place: VW Golf

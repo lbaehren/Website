@@ -1,0 +1,10 @@
+---
+title: Software Installation 
+in_menu: false
+---
+
+## {title:} ##
+
+_Wednesday, 07 January 2004 -- 19:25_ 
+
+So, ich habe eben eine ganze Weile lang mit Andreas in Bonn telefoniert, was den Zugang und die Installation der bisher geschriebenen Software betrifft. Geht mit der Kommunikation recht einfach, da es wohl om MPI aus einen 'direkten Draht' nach ASTRON gibt. Jetzt muß ich es nur noch schaffen AIPS++ sauber hier auf dem Rechner zu installieren, aber das ist ein klein wenig schwierig, wenn der FTP-Server auf der anderen Seite des Atlantik keinen Muckser von sich gibt. Der normale Web-Server des NRAO ist da, nicht aber der Rechner, auf welchem die Installationsdaten liegen. Hm, vielleicht sollte ich erst noch mal was essen und dann später noch einmal probieren.

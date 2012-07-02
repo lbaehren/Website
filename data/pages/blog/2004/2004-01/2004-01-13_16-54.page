@@ -1,0 +1,10 @@
+---
+title: Linux Kernel vs. AIPS++
+in_menu: false
+---
+
+## {title:} ##
+
+_Tuesday, 13 January 2004 -- 16:54_
+
+Wow, ich dachte immer Linux Kernel compilieren waere zeitaufwaendig. Denkste. Schon mal jemand probiert AIPS++ aus den Sourcen zu bauen (wahrscheinlich nicht)? Ist jetzt locker mehr als eine Stunde es werden immer noch Dependencies gecheckt... Ich glaube dies ist der passende Moment, um mir endlich mal die Paper durchzulesen, welche die ITS Software beschreibt. 

@@ -1,0 +1,25 @@
+---
+title: Novarg/Mydoom
+in_menu: false
+---
+
+## {title:} ##
+
+_Tuesday, 27 January 2004 -- 12:32_
+
+
+Achtung, derzeit macht sich wieder ein recht ekelhafter Wurm breit: Novarg/Mydoom heißt das Teil und ist recht trickreich:
+
+    Date: Tue, 27 Jan 2004 20:24:44 +0900
+    From: lbaehren@astro.uni-bonn.de
+    To: cwkim@kias.re.kr
+    Subject: Mail Delivery System
+    [ The following text is in the "Windows-1252" character set. ]
+    [ Your display is set for the "latin1" character set. ]
+    [ Some characters may be displayed incorrectly. ]
+    The message cannot be represented in 7-bit ASCII encoding and has been sent as
+    a binary attachment.
+    [ Part 3.2, Application/OCTET-STREAM (Name: "doc.scr") 30KB. ]
+    [ Cannot display this part. Press "V" then "S" to save in a file. ] 
+
+Ich hätte es zwar sowieso nicht geöffnet, aber Heise lesen lohnt sich doch mal wieder...
