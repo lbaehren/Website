@@ -6,7 +6,6 @@ FILES=`ls *.txt`
 
 for FILE in $FILES
 {
-
   ## Remove extension to filename ...
   varFilename=`echo $FILE | sed s/.txt//`
   ## ... and assemble the new name
@@ -33,6 +32,8 @@ for FILE in $FILES
   ##________________________________________________________
   ## Convert file
 
+  echo "Processing file $FILE -> $varOutfile ..."
+
   echo "---"                > $varOutfile
   echo "title: $varTitle"  >> $varOutfile
   echo "in_menu: false"    >> $varOutfile
@@ -47,5 +48,5 @@ for FILE in $FILES
   ##________________________________________________________
   ## Remove input file
 
-#  rm -f $FILE
+  rm -f $FILE
 }
