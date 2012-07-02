@@ -1,0 +1,10 @@
+---
+title: Hilfestellung 
+in_menu: false
+---
+
+## {title:} ##
+
+_Saturday, 17 July 2004 -- 23:45_ 
+
+Argh, soviel zum Thema Schreiben - kaum habe ich angefangen passieren wieder andere Dinge, welche erst einmal wieder Vorfahrt bekommen. Auf dem Weg zum Teenachschub bin ich noch einmal unten auf dem Flur bei Monica reingesprungen um mal zu schauen, wpran sie gerade sitzt. Dabei stellte sich dann heraus, dass die Dame ein Problem mit der Konversion von Koordinaten hatte und wohl bisher einige recht seltsame Winkelzuege unternehmen musste, um ihre Quellenkataloge entsprechend umzurechnen. Das dabei vorliegende Problem ist aber viel zu einfach, als dass sich dies nicht schnell loesen liesse. Also habe ich kurz ein kleine Script geschrieben, welche ihren Katalog zusammem mit dem Original-Bild einliest um dann die Pixel-Koordinaten in dem Katalog in die entsprechenden Welt-Koordinaten umzurechnen ... wozu habe ich schliesslich meine Zeit mit genau diesen Dingen hier verbracht?? Also, das was bei ihr wohl Ewigkeiten gekostet hat, ist hier bereits durchgelaufen und die Mail mit den Ergebnissen ist schon raus. Sieht so aus, als haette ich jetzt also wieder Gelegenheit mich um meine Sachen zu kuemmern ;-)
