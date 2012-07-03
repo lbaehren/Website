@@ -1,11 +1,7 @@
 /* andreas00 - an open source xhtml/css website layout by Andreas Viklund  - http://andreasviklund.com . Free to use for any purpose as long as the proper credits are given to the original author.
 Version: 1.1 (Apr 20, 2006) */
 
-/* ------------------------------------------------------------------------------
- *
- *  Body and main container
- *
- */
+/* === Body and main container =============================================== */
 
 body {
     margin:     0 auto;
@@ -23,11 +19,7 @@ body {
     width:   800px;
 }
 
-/*-----------------------------------------------------------------------------*
- |                                                                             |
- |  Header area                                                                |
- |                                                                             |
- *-----------------------------------------------------------------------------*/
+/* === Header area =========================================================== */
 
 /* Header area at the top of the page. If you want to change the background
  * image, either overwrite the file 'front.jpg' or (the non-destructive solution)
@@ -406,23 +398,23 @@ margin:10px 0 5px 10px;float:right;
 }
 
 .announce a {
-font-weight:bold;
+    font-weight:bold;
 }
 
 .announce p {
-font-size:0.9em;
+    font-size:0.9em;
 }
 
 .announce h2 {
-margin:0 0 10px 0;padding:0;
+    margin:0 0 10px 0;padding:0;
 }
 
 #avmenu .announce {
-width:125px;
+    width:125px;
 }
 
 .textright {
-text-align:right;margin:-10px 0 4px 0;
+    text-align:right;margin:-10px 0 4px 0;
 }
 
 .center {
@@ -442,13 +434,19 @@ text-align:right;margin:-10px 0 4px 0;
 }
 
 .highlighted {
-    padding:3px;background-color:#f0f0f0;color:#303030;border:1px solid #b0b0b0;
+    padding:          3px;
+    background-color: #f0f0f0;
+    color:            #303030;
+    border:           1px solid #b0b0b0;
 }
 
 .hide {
     display:none;
 }
 
+/* Pre-formatted text (e.g. source code or program output). Given the available
+   horizontal space we might need to break up the lines in the text, in order stay
+   within the boundaries of the width of the main text area. */
 pre {
     border-top:          1px solid #e1cc89;
     border-bottom:       1px solid #e1cc89;
@@ -456,6 +454,7 @@ pre {
     padding: 7px 7px 7px 11px;
     background:          #f4f4f4;
     color:               #505050;
+    font:                90 Verdana,Arial;
 }
 
 .blogquote {
