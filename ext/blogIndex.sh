@@ -29,6 +29,21 @@ nameOfMonth ()
     07)
       varName="July"
     ;;
+    08)
+      varName="August"
+    ;;
+    09)
+      varName="September"
+    ;;
+    10)
+      varName="October"
+    ;;
+    11)
+      varName="November"
+    ;;
+    12)
+      varName="December"
+    ;;
   esac
 
   echo $varName
