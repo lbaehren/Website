@@ -1,0 +1,28 @@
+---
+title: Demerse und Jan-Pieter 
+in_menu: false
+---
+
+## {title:} ##
+
+_Thursday, 16 September 2004 -- 22:21_ 
+
+
+Die letzten drei Tage sind Demerse und Jan-Pieter - zwei Studenten aus Leiden - hier gewesen (Freitag ebenfalls noch), welchen ich eine Einfuehrung in die Arbeit mit LOFAR ITS Daten und unsere Software geben sollte. Zwar habe ich dadurch nicht sonderlich viele andere Dinge getan bekommen, aber lohnenswert war dies auf jeden Fall - macht mir riesen Spass (und ich denke mal davon wird es Zukunft noch mehr geben, weil ja schliesslich eine ganze Reihe Faeden mittlerweile bei mir zusammenlaufen). Ich denke mal schon, dass wir einiges geschafft haben, aber woran ich momemtan immer noch scheitere, ist die Software komplett ans Laufen zu bringen; waere einfach schoen, wenn die morgen bereits sichtbare Ergebnisse mit zurueck nach Leiden nehmen koennten. Fuer die ersten Teile Code konnten beiden durchaus einiges beisteuern, aber heute machte dies wenig Sinn, weil es kaum realistisch, dass sie innerhalb von zwei Tagen derart tief in unsere Software einsteigen, dass sie groesser angelegtes Debugging betreiben koennten - das muss ich dann selber machen. Komplett hoffnungslos sieht es allerdings nicht aus, denn schliesslich habe ich eben den ersten Durchlauf durch die neuen Routinen geschafft:
+
+    [Beamformer::BFccMatrix]
+     - Number of frequency channels : 4096
+     - Range of frequencies ....... : 0 .. 3.99951e+07
+     - Number of baselines ........ : 1770
+     - Range of geometrical delays : -4.4058e-08 .. 5.00115e-08 
+    [Beamformer::BFccMatrix] Generating map from cc'ed data ...
+    [######################################################################] 100 
+    [Beamformer::BFccMatrix] Map statistics
+     - Minimum value .............. : 8.653
+     - Maximum value .............. : 2.397e+13 
+    Beamformer : Adding antenna signals ... 
+    [Skymap::getSkymap] Rebinning from 4096 to 1 channels. 
+    [Skymap::getSkymap] Arranging output data cube ... 
+    warning, event /dop71_0/lars/research/lofar/programming/lopesprog/c-progs/Skymapper.fail () dropped
+
+Wie zu erkennen ist, zerlegt es das Programm allerdings noch im letzten Schritt - das muss ich noch ausbuegeln, wohl aber nicht mehr heute Abend, da ich langsam mal was Essen gehen muss.
