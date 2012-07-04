@@ -1,0 +1,10 @@
+---
+title: Gewoehnungssache 
+in_menu: false
+---
+
+## {title:} ##
+
+_Thursday, 02 December 2004 -- 15:26_ 
+
+Puh, ich glaube daran muss ich mich immer noch gewoehnen, dass Leute zu mir kommen und wirklich der Meinung sind, ich koennte ihnen was beibringen, dass sie selber noch nicht wissen. So hatte ich gerade noch Besuch von Joris, der sich bei mir erkundigen wollte, was ich angestellt habe, um die online Dokumentation fuer unsere Software zu erstellen. Da es in zunehmendem Masse Software fuer LOFAR (und nicht mehr nur ITS) gibt, besteht Bedarf an einer vernueftigen Dokumentation, welche fuer alle Beteiligten einsehbar ist; da bietet sich natuerlich Doxygen an. Allerdings habe ich in Ergaenzung zum Standard Output noch ein paar kleine Trick benutzt, um eine weitaus umfangreichere Dokumentation zu erstellen - etwas, an dem die LOFAR Software Gruppe anscheinend Gefallen gefunden hat. Dementsprechend war Joris eben hier, um sich von mir zeigen zu lassen, was ich gemacht habe, um die Dinge so hinzukriegen, wie sie jetzt online einsehbar sind. Das wirklich merkwuerdige daran ist, dass mir diese Leute in vielerlei Hinsicht um Laengen voraus sind; aus der Ecke dann eine Anfrage zu bekommen ist etwas, was nur sehr schwer in mein Weltbild passt, auch wenn dies immer haeufiger vorkommt.

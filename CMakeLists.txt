@@ -108,21 +108,29 @@ endif (CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
 ##
 ## ==============================================================================
 
+## Project sub-directories
+
+add_subdirectory (data)
+add_subdirectory (ext)
+
+##____________________________________________________________________
+## Targets operating from the top-level directory
+
+## Render the website
+
 add_custom_target (render
   COMMAND rake
   DEPENDS ${PROJECT_SOURCE_DIR}/config.yaml
   WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
   )
 
+add_dependencies (render blog)
+
 set_property (DIRECTORY
   APPEND PROPERTY ADDITIONAL_MAKE_CLEAN_FILES
   ${CMAKE_INSTALL_PREFIX}
   ${PROJECT_SOURCE_DIR}/webgen.cache
   )
-
-## Project sub-directories
-
-add_subdirectory (ext)
 
 ## ==============================================================================
 ##
@@ -146,6 +154,7 @@ message (STATUS " .. size(void*) ................. = ${CMAKE_SIZEOF_VOID_P}"    
 message (STATUS " Project configuration:"                                        )
 message (STATUS " .. Version number .............. = ${PROJECT_VERSION}"         )
 message (STATUS " .. Installation prefix ......... = ${CMAKE_INSTALL_PREFIX}"    )
+message (STATUS " .. Pages source directory ...... = ${DATA_PAGES_DIR}"          )
 message (STATUS " .. Enable CTest test driver? ... = ${ENABLE_TESTING}"          )
 message (STATUS " .. Verbose configure? .......... = ${CONFIGURE_VERBOSE}"       )
 message (STATUS " Ruby configuration:"                                           )
