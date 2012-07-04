@@ -204,13 +204,13 @@ namespace Blog { // Namespace Blog -- begin
     //! Numerical value of the hour, [00-23]
     int itsHour;
     //! Numerical value of the minute, [00-59]
-    int valMinute_p;
+    int itsMinute;
     //! Numerical value of the second, [00-59].[...]
     double valSecond_p;
 
   public:
     
-    // --------------------------------------------------------------- Construction
+    // === Construction =========================================================
     
     //! Default constructor
     Timestamp ();
@@ -228,21 +228,15 @@ namespace Blog { // Namespace Blog -- begin
     
     // === Destruction ==========================================================
     
-    /*!
-      \brief Destructor
-    */
+    //! Destructor
     ~Timestamp ();
     
-    // ------------------------------------------------------------------ Operators
+    // === Operators ============================================================
     
-    /*!
-      \brief Overloading of the copy operator
-      
-      \param other -- Another Timestamp object from which to make a copy.
-    */
+    //! Overloading of the copy operator
     Timestamp& operator= (Timestamp const &other); 
     
-    // ----------------------------------------------------------------- Parameters
+    // === Parameter access =====================================================
     
     //! Get the numerical value of the year
     inline int year () {
@@ -281,7 +275,7 @@ namespace Blog { // Namespace Blog -- begin
 
     //! Get the numerical value of the minute within the hour
     inline int minute () const {
-      return valMinute_p;
+      return itsMinute;
     }
 
     //! Set the numerical value of the minute within the hour
@@ -311,7 +305,7 @@ namespace Blog { // Namespace Blog -- begin
     */
     void summary (std::ostream &os);    
     
-    // -------------------------------------------------------------------- Methods
+    // === Public methods =======================================================
     
     //! Set to current time
     void setTime ();

@@ -56,11 +56,11 @@ namespace Blog {
   {
     setTime ();
     //
-    itsYear        = year;
-    itsMonth       = month;
-    itsDay         = day;
-    valMinute_p      = hour;
-    valMinute_p      = minute;
+    itsYear    = year;
+    itsMonth   = month;
+    itsDay     = day;
+    itsHour    = hour;
+    itsMinute  = minute;
     setSecond(second);
   }
   
@@ -110,15 +110,18 @@ namespace Blog {
   //_____________________________________________________________________________
   //                                                                         copy
   
+  /*!
+    \param other -- Another Timestamp object from which to make a copy.
+  */
   void Timestamp::copy (Timestamp const &other)
   {
     rawtime_p        = other.rawtime_p;
-
+    
     itsYear        = other.itsYear;
     itsMonth       = other.itsMonth;
     itsDay         = other.itsDay;
     itsHour        = other.itsHour;
-    valMinute_p      = other.valMinute_p;
+    itsMinute      = other.itsMinute;
     valSecond_p      = other.valSecond_p;
   }
   
@@ -241,7 +244,7 @@ namespace Blog {
   {
     /* Check if the input value is within the acceptable range. */
     if (minute >= 0 && minute <= 59) {
-      valMinute_p = minute;
+      itsMinute = minute;
       setRawtime();
     } else {
       std::cerr << "[Timestamp::setMinute] Input value rejected - out of range!"
@@ -339,7 +342,7 @@ namespace Blog {
     itsMonth         = timeinfo->tm_mon+1;
     itsDay           = timeinfo->tm_mday;
     itsHour          = timeinfo->tm_hour;
-    valMinute_p        = timeinfo->tm_min;
+    itsMinute        = timeinfo->tm_min;
     valSecond_p        = timeinfo->tm_sec;
   }
   
@@ -420,12 +423,12 @@ namespace Blog {
     
     if (sep == "") {
       out << asString(itsHour)
-	  << asString(valMinute_p)
+	  << asString(itsMinute)
 	  << asString(valSecond_p);
     }
     else {
       out << asString(itsHour) << sep
-	  << asString(valMinute_p) << sep
+	  << asString(itsMinute) << sep
 	  << asString(valSecond_p);
     }
 
