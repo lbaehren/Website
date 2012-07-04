@@ -3,6 +3,11 @@
 
 if (DOXYGEN_EXECUTABLE)
   
+  ## Locate custom stylesheet
+  find_file (DOXYGEN_CSS doxygen.css
+    PATHS ${CMAKE_CURRENT_SOURCE_DIR}
+    )
+
   configure_file (
     ${CMAKE_CURRENT_SOURCE_DIR}/doxygen.config.in
     ${CMAKE_CURRENT_BINARY_DIR}/doxygen.config
