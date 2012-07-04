@@ -47,9 +47,14 @@ namespace Blog { // Namespace Blog -- begin
     //! Default constructor
     BlogEntry ();
 
-    //! Argumented constructor, taking \e title as input
+    //! Argumented constructor, taking \c title as input
     BlogEntry (std::string const &title,
 	       Blog::Timestamp const &timestamp=Blog::Timestamp());
+
+    //! Argumented constructor, providing all parameters
+    BlogEntry (std::string const &title,
+	       Blog::Timestamp const &timestamp,
+	       std::vector<std::string> const &tags);
 
     // === Parameter access =====================================================
 
@@ -73,6 +78,10 @@ namespace Blog { // Namespace Blog -- begin
       itsTimestamp = timestamp;
     }
 
+    // === Private methods ======================================================
+
+  private:
+    
   };
 
 } // Namespace Blog -- end

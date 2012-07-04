@@ -206,7 +206,7 @@ namespace Blog { // Namespace Blog -- begin
     //! Numerical value of the minute, [00-59]
     int itsMinute;
     //! Numerical value of the second, [00-59].[...]
-    double valSecond_p;
+    double itsSecond;
 
   public:
     
@@ -289,8 +289,8 @@ namespace Blog { // Namespace Blog -- begin
 
     //! Get the fraction of a second
     inline double fractionOfSecond () const {
-      int fullSecond = floor(valSecond_p);
-      return valSecond_p-fullSecond;
+      int fullSecond = floor(itsSecond);
+      return itsSecond-fullSecond;
     }
     
     /*!

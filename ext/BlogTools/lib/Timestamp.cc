@@ -122,7 +122,7 @@ namespace Blog {
     itsDay         = other.itsDay;
     itsHour        = other.itsHour;
     itsMinute      = other.itsMinute;
-    valSecond_p      = other.valSecond_p;
+    itsSecond      = other.itsSecond;
   }
   
   // ============================================================================
@@ -257,7 +257,7 @@ namespace Blog {
   
   int Timestamp::second ()
   {
-    int fullSecond = floor(valSecond_p);
+    int fullSecond = floor(itsSecond);
 
     return fullSecond;
   }
@@ -270,7 +270,7 @@ namespace Blog {
     int fullSecond = floor(second);
     /* Check if the input value is within the acceptable range. */
     if (fullSecond >= 0 && fullSecond <= 59) {
-      valSecond_p = second;
+      itsSecond = second;
       setRawtime();
     } else {
       std::cerr << "[Timestamp::setSecond] Input value rejected - out of range!"
@@ -338,12 +338,12 @@ namespace Blog {
     struct tm * timeinfo;
     timeinfo = localtime(&rawtime);
     /* Store the time information with the internal variables */
-    itsYear          = timeinfo->tm_year+1900;
-    itsMonth         = timeinfo->tm_mon+1;
-    itsDay           = timeinfo->tm_mday;
-    itsHour          = timeinfo->tm_hour;
-    itsMinute        = timeinfo->tm_min;
-    valSecond_p        = timeinfo->tm_sec;
+    itsYear    = timeinfo->tm_year+1900;
+    itsMonth   = timeinfo->tm_mon+1;
+    itsDay     = timeinfo->tm_mday;
+    itsHour    = timeinfo->tm_hour;
+    itsMinute  = timeinfo->tm_min;
+    itsSecond  = timeinfo->tm_sec;
   }
   
   //_____________________________________________________________________________
@@ -424,12 +424,12 @@ namespace Blog {
     if (sep == "") {
       out << asString(itsHour)
 	  << asString(itsMinute)
-	  << asString(valSecond_p);
+	  << asString(itsSecond);
     }
     else {
       out << asString(itsHour) << sep
 	  << asString(itsMinute) << sep
-	  << asString(valSecond_p);
+	  << asString(itsSecond);
     }
 
     return out.str();
