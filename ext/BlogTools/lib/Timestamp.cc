@@ -56,9 +56,9 @@ namespace Blog {
   {
     setTime ();
     //
-    valYear_p        = year;
-    valMonth_p       = month;
-    valDay_p         = day;
+    itsYear        = year;
+    itsMonth       = month;
+    itsDay         = day;
     valMinute_p      = hour;
     valMinute_p      = minute;
     setSecond(second);
@@ -114,10 +114,10 @@ namespace Blog {
   {
     rawtime_p        = other.rawtime_p;
 
-    valYear_p        = other.valYear_p;
-    valMonth_p       = other.valMonth_p;
-    valDay_p         = other.valDay_p;
-    valHour_p        = other.valHour_p;
+    itsYear        = other.itsYear;
+    itsMonth       = other.itsMonth;
+    itsDay         = other.itsDay;
+    itsHour        = other.itsHour;
     valMinute_p      = other.valMinute_p;
     valSecond_p      = other.valSecond_p;
   }
@@ -133,7 +133,7 @@ namespace Blog {
 
   void Timestamp::setYear (int const &year)
   {
-    valYear_p = year;
+    itsYear = year;
     setRawtime();
   }
 
@@ -196,7 +196,7 @@ namespace Blog {
   {
     /* Check if the input value is within the acceptable range. */
     if (month >= 1 && month <= 12) {
-      valMonth_p = month;
+      itsMonth = month;
       setRawtime();
     } else {
       std::cerr << "[Timestamp::setMonth] Input value rejected - out of range!"
@@ -211,7 +211,7 @@ namespace Blog {
   {
     /* Check if the input value is within the acceptable range. */
     if (day > 0 && day < 32) {
-      valDay_p = day;
+      itsDay = day;
       setRawtime();
     } else {
       std::cerr << "[Timestamp::setDay] Input value rejected - out of range!"
@@ -226,7 +226,7 @@ namespace Blog {
   {
     /* Check if the input value is within the acceptable range. */
     if (hour >= 0 && hour <= 23) {
-      valHour_p = hour;
+      itsHour = hour;
       setRawtime();
     } else {
       std::cerr << "[Timestamp::setHour] Input value rejected - out of range!"
@@ -335,10 +335,10 @@ namespace Blog {
     struct tm * timeinfo;
     timeinfo = localtime(&rawtime);
     /* Store the time information with the internal variables */
-    valYear_p          = timeinfo->tm_year+1900;
-    valMonth_p         = timeinfo->tm_mon+1;
-    valDay_p           = timeinfo->tm_mday;
-    valHour_p          = timeinfo->tm_hour;
+    itsYear          = timeinfo->tm_year+1900;
+    itsMonth         = timeinfo->tm_mon+1;
+    itsDay           = timeinfo->tm_mday;
+    itsHour          = timeinfo->tm_hour;
     valMinute_p        = timeinfo->tm_min;
     valSecond_p        = timeinfo->tm_sec;
   }
@@ -352,9 +352,9 @@ namespace Blog {
     struct tm * timeinfo;
     timeinfo = localtime(&rawtime_p);
     /* Update the value inside the time structure */
-    timeinfo->tm_year = valYear_p-1900;
-    timeinfo->tm_mon  = valMonth_p-1;
-    timeinfo->tm_mday = valDay_p;
+    timeinfo->tm_year = itsYear-1900;
+    timeinfo->tm_mon  = itsMonth-1;
+    timeinfo->tm_mday = itsDay;
     timeinfo->tm_hour = hour();
     timeinfo->tm_min  = minute();
     timeinfo->tm_sec  = second();
@@ -419,12 +419,12 @@ namespace Blog {
     std::stringstream out;
     
     if (sep == "") {
-      out << asString(valHour_p)
+      out << asString(itsHour)
 	  << asString(valMinute_p)
 	  << asString(valSecond_p);
     }
     else {
-      out << asString(valHour_p) << sep
+      out << asString(itsHour) << sep
 	  << asString(valMinute_p) << sep
 	  << asString(valSecond_p);
     }
@@ -445,13 +445,13 @@ namespace Blog {
     std::stringstream out;
     
     if (sep == "") {
-      out << asString(valYear_p)
-	  << asString(valMonth_p)
-	  << asString(valDay_p);
+      out << asString(itsYear)
+	  << asString(itsMonth)
+	  << asString(itsDay);
     } else {
-      out << asString(valYear_p) << sep
-	  << asString(valMonth_p) << sep
-	  << asString(valDay_p);
+      out << asString(itsYear) << sep
+	  << asString(itsMonth) << sep
+	  << asString(itsDay);
     }
     
     return out.str();

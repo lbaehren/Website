@@ -63,6 +63,16 @@ namespace Blog { // Namespace Blog -- begin
       itsTitle = title;
     }
 
+    //! Get the timestamp of the blog entry
+    inline Blog::Timestamp timestamp () {
+      return itsTimestamp;
+    }
+
+    //! Set the timestamp of the blog entry
+    void setTimestamp (Blog::Timestamp const &timestamp) {
+      itsTimestamp = timestamp;
+    }
+
   };
 
 } // Namespace Blog -- end

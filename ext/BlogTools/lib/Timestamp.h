@@ -196,13 +196,13 @@ namespace Blog { // Namespace Blog -- begin
     time_t rawtime_p;
 
     //! Numerical value for the year
-    int valYear_p;
+    int itsYear;
     //! Numerical value of the month, [01-12]
-    int valMonth_p;
+    int itsMonth;
     //! Numerical value of the day, [01-31]
-    int valDay_p;
+    int itsDay;
     //! Numerical value of the hour, [00-23]
-    int valHour_p;
+    int itsHour;
     //! Numerical value of the minute, [00-59]
     int valMinute_p;
     //! Numerical value of the second, [00-59].[...]
@@ -246,7 +246,7 @@ namespace Blog { // Namespace Blog -- begin
     
     //! Get the numerical value of the year
     inline int year () {
-      return valYear_p;
+      return itsYear;
     }
     
     //! Set the numerical value of the year
@@ -254,7 +254,7 @@ namespace Blog { // Namespace Blog -- begin
     
     //! Get the numerical value of the month
     inline int month () {
-      return valMonth_p;
+      return itsMonth;
     }
     
     //! Set the numerical value of the month
@@ -265,7 +265,7 @@ namespace Blog { // Namespace Blog -- begin
     
     //! Get the numerical value of the day
     inline int day () {
-      return valDay_p;
+      return itsDay;
     }
     
     //! Set the numerical value of the day
@@ -273,7 +273,7 @@ namespace Blog { // Namespace Blog -- begin
 
     //! Get the numerical value of the hour of day
     inline int hour () const {
-      return valHour_p;
+      return itsHour;
     }
 
     //! Set the numerical value of the hour of day
