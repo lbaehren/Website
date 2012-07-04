@@ -86,6 +86,11 @@ namespace Blog { // Namespace Blog -- begin
       itsTimestamp = timestamp;
     }
 
+    //! Get the tags attached to the entry
+    inline std::vector<std::string> tags () {
+      itsTags;
+    }
+
     // === Public methods =======================================================
 
     //! Provide a summary of the internal status

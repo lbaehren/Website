@@ -121,7 +121,8 @@ int test_attributes ()
   try {
     for (int month(-1); month<15; month++) {
       t.setMonth(month);
-      std::cout << "--> " << t.iso8601() << "\t" << t.rfc2822();
+      std::cout << "--> " << t.get(Timestamp::ISO8601)
+		<< "\t"   << t.get(Timestamp::RFC2822);
     }
   } catch (std::string message) {
     std::cerr << message << endl;
@@ -132,7 +133,8 @@ int test_attributes ()
   try {
     for (int day(-1); day<35; day++) {
       t.setDay(day);
-      std::cout << "--> " << t.iso8601() << "\t" << t.rfc2822();
+      std::cout << "--> " << t.get(Timestamp::ISO8601)
+		<< "\t"   << t.get(Timestamp::RFC2822);
     }
   } catch (std::string message) {
     std::cerr << message << endl;
@@ -143,7 +145,8 @@ int test_attributes ()
   try {
     for (int hour(-1); hour<30; hour+=2) {
       t.setHour(hour);
-      std::cout << "--> " << t.iso8601() << "\t" << t.rfc2822();
+      std::cout << "--> " << t.get(Timestamp::ISO8601)
+		<< "\t"   << t.get(Timestamp::RFC2822);
     }
   } catch (std::string message) {
     std::cerr << message << endl;
@@ -154,7 +157,8 @@ int test_attributes ()
   try {
     for (int minute(-1); minute<65; minute+=5) {
       t.setMinute(minute);
-      std::cout << "--> " << t.iso8601() << "\t" << t.rfc2822();
+      std::cout << "--> " << t.get(Timestamp::ISO8601)
+		<< "\t"   << t.get(Timestamp::RFC2822);
     }
   } catch (std::string message) {
     std::cerr << message << endl;
@@ -165,7 +169,8 @@ int test_attributes ()
   try {
     for (int second(-1); second<65; second+=5) {
       t.setSecond(second);
-      std::cout << "--> " << t.iso8601() << "\t" << t.rfc2822();
+      std::cout << "--> " << t.get(Timestamp::ISO8601)
+		<< "\t"   << t.get(Timestamp::RFC2822);
     }
   } catch (std::string message) {
     std::cerr << message << endl;

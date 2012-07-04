@@ -285,8 +285,8 @@ namespace Blog {
   {
     os << "[Timestamp] Summary of internal parameters." << std::endl;
     os << "-- Raw time    = " << rawtime_p     << std::endl;
-    os << "-- ctime       = " << rfc2822();
-    os << "-- iso8601     = " << iso8601()     << std::endl;
+    os << "-- ctime       = " << get(Timestamp::RFC2822);
+    os << "-- iso8601     = " << get(Timestamp::ISO8601)     << std::endl;
     os << "-- ymd         = " << ymd()         << std::endl;
     os << "-- hms         = " << hms()         << std::endl;
   }
@@ -376,7 +376,7 @@ namespace Blog {
   std::string Timestamp::dayOfWeek (bool const &longName)
   {
     std::string wday;
-    const char* tmp = rfc2822().c_str();
+    const char* tmp = get(Timestamp::RFC2822).c_str();
 
     wday += tmp[0];
     wday += tmp[1];
@@ -461,17 +461,21 @@ namespace Blog {
   }
 
   //_____________________________________________________________________________
-  //                                                                      iso8601
+  //                                                                          get
   
-  /*!
-    \return iso -- ISO 8601 conform version of the timestamp string
-  */
-  std::string Timestamp::iso8601 ()
+  std::string Timestamp::get (Timestamp::Format const &format)
   {
     std::stringstream out;
-    
-    out << ymd() << "T" << hms() << ".00Z";
-    
+
+    switch (format) {
+    case Timestamp::ISO8601:
+      out << ymd() << "T" << hms() << ".00Z";
+      break;
+    case Timestamp::RFC2822:
+      out << (ctime(&rawtime_p));
+      break;
+    }
+
     return out.str();
   }
   

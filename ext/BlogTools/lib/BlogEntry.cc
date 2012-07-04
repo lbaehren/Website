@@ -46,9 +46,9 @@ namespace Blog { // Namespace Blog -- begin
   {
     os << "[BlogEntry] Summary of internal parameters." << std::endl;
     os << "-- Title     = " << itsTitle                 << std::endl;
-    os << "-- Timestamp = " << itsTimestamp.rfc2822()   << std::endl;
-    os << "             = " << itsTimestamp.iso8601()   << std::endl;
-    os << "-- Tags      = " << itsTags                  << std::endl;
+    os << "-- Timestamp = " << itsTimestamp.get(Timestamp::RFC2822) << std::endl;
+    os << "             = " << itsTimestamp.get(Timestamp::ISO8601) << std::endl;
+    os << "-- Tags      = " << itsTags                              << std::endl;
   }
 
   

@@ -85,14 +85,6 @@ namespace Blog { // Namespace Blog -- begin
     setting (see tzset(3)).  The <tt>timegm()</tt> function interprets the input
     structure as representing Universal Coordinated Time (UTC).
     
-    | Format       | Output                          |
-    |--------------|---------------------------------|
-    | Unix seconds | 1255969060                      |
-    | ISO 8601     | 2009-10-19T16:17:40+00:00       |
-    | RFC 2822     | Mon, 19 Oct 2009 16:17:40 +0000 |
-    | Location     | Greenwich Mean Time             |
-    | Day of the week | Monday |
-
     <h3>Synopsis</h3>
     
     <h3>Example(s)</h3>
@@ -188,6 +180,26 @@ namespace Blog { // Namespace Blog -- begin
       Oct,
       Nov,
       Dec
+    };
+
+    /*!
+      \brief Formatting of the timestamp
+      
+      | Format          | Output                          |
+      |-----------------|---------------------------------|
+      | Unix seconds    | 1255969060                      |
+      | ISO 8601        | 2009-10-19T16:17:40+00:00       |
+      | RFC 2822        | Mon, 19 Oct 2009 16:17:40 +0000 |
+      | Location        | Greenwich Mean Time             |
+      | Day of the week | Monday                          |
+    */
+    enum Format {
+      //! UNIX seconds, since 01. Jan. 1970
+      UNIX,
+      //! ISO 8601 fomatted string
+      ISO8601,
+      //! RFC 2822 formatted string
+      RFC2822
     };
 
   private:
@@ -335,14 +347,8 @@ namespace Blog { // Namespace Blog -- begin
     */
     std::string hms (std::string const &sep=":");
     
-    //! Retrieve ISO 8601 conform version of the timestamp string
-    std::string iso8601 ();
-
-    //! Retrieve RCF 2822 conform version of the timestamp string
-    inline std::string rfc2822 () const {
-      std::string out (ctime(&rawtime_p));
-      return out;
-    }
+    //! The the timestamp in a specified \c format
+    std::string get (Timestamp::Format const &format=Timestamp::UNIX);
 
     // === Private methods ======================================================
     
