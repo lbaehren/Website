@@ -285,10 +285,10 @@ namespace Blog {
   {
     os << "[Timestamp] Summary of internal parameters." << std::endl;
     os << "-- Raw time    = " << rawtime_p     << std::endl;
-    os << "-- ctime       = " << get(Timestamp::RFC2822);
-    os << "-- iso8601     = " << get(Timestamp::ISO8601)     << std::endl;
-    os << "-- ymd         = " << ymd()         << std::endl;
-    os << "-- hms         = " << hms()         << std::endl;
+    os << "-- ctime       = " << get(Timestamp::RFC2822) << std::endl; 
+    os << "-- iso8601     = " << get(Timestamp::ISO8601) << std::endl;
+    os << "-- ymd         = " << ymd()                   << std::endl;
+    os << "-- hms         = " << hms()                   << std::endl;
   }
 
   // ============================================================================
@@ -463,6 +463,14 @@ namespace Blog {
   //_____________________________________________________________________________
   //                                                                          get
   
+  /*!
+    The \c ctime() function adjusts the time value for the current time zone,
+    in the same manner as \c localtime().  It returns a pointer to a 26-character
+    string of the form:
+    \verbatim
+    Thu Nov 24 18:22:48 1986\n\0
+    \endverbatim
+   */
   std::string Timestamp::get (Timestamp::Format const &format)
   {
     std::stringstream out;
@@ -472,7 +480,9 @@ namespace Blog {
       out << ymd() << "T" << hms() << ".00Z";
       break;
     case Timestamp::RFC2822:
-      out << (ctime(&rawtime_p));
+      std::string tmp (ctime(&rawtime_p));
+      tmp.erase (24,1);
+      out << tmp;
       break;
     }
 

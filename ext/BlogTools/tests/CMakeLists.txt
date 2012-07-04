@@ -10,4 +10,9 @@ foreach (test_source ${test_sources})
   ## Link
   target_link_libraries (${testFilename} blog)
 
+  ## Testing
+  if (ENABLE_TESTING)
+    add_test (${testFilename} ${testFilename})
+  endif (ENABLE_TESTING)
+  
 endforeach (test_source)
