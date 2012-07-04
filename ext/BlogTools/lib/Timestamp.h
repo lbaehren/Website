@@ -293,16 +293,12 @@ namespace Blog { // Namespace Blog -- begin
       return itsSecond-fullSecond;
     }
     
-    /*!
-      \brief Provide a summary of the internal status
-    */
+    //! Provide a summary of the internal status
     inline void summary () {
       summary (std::cout);
     }
     
-    /*!
-      \brief Provide a summary of the internal status
-    */
+    //! Provide a summary of the internal status to output stream \c os
     void summary (std::ostream &os);    
     
     // === Public methods =======================================================

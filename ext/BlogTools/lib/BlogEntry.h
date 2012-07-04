@@ -27,10 +27,18 @@
 #include <sstream>
 #include <vector>
 
+#include "Common.h"
 #include "Timestamp.h"
 
 namespace Blog { // Namespace Blog -- begin
+  
+  /*!
+    \class BlogEntry
+    \ingroup Blog
+    \author Lars B&auml;hren
 
+    \brief Container for elements of a blog entry
+  */
   class BlogEntry {
 
     //! Title of the blog entry
@@ -77,6 +85,16 @@ namespace Blog { // Namespace Blog -- begin
     void setTimestamp (Blog::Timestamp const &timestamp) {
       itsTimestamp = timestamp;
     }
+
+    // === Public methods =======================================================
+
+    //! Provide a summary of the internal status
+    inline void summary () {
+      summary (std::cout);
+    }
+    
+    //! Provide a summary of the internal status to output stream \c os
+    void summary (std::ostream &os);    
 
     // === Private methods ======================================================
 
