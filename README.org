@@ -1,0 +1,13 @@
+#+STARTUP: indent
+#+OPTIONS: H:2
+
+* Overview
+
+* Design principles
+
+* Tasks [40%]
+** TODO Merge directories 'src' and 'data'
+** DONE Remove line-break from result of 'ctime(&rawtime_p)'
+** DONE Define enum for timestamp formats
+** TODO Fix background image in header
+** TODO Define enum for Blog entry formats
