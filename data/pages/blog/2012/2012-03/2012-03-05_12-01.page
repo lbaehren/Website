@@ -1,0 +1,39 @@
+---
+title: Tunatic testing
+in_menu: false
+---
+
+## Tunatic testing ##
+
+_Mon, 05. March 2012 - 12:01_
+
+Manchmal gibt es einfach Dinge, da muss man sich die Zeit zum Testen nehmen, um ein wenig besser zu verstehen, womit man es zu tun hat.
+
+Vor einer Weile hatte mir Thomas eine CD zugesteckt, welche er von einem anderen Trainer erhalten hatte: auf dem Silberling befand sich eine Sammlung von sechs Tracks -- allesamt ohne Angaben zu Musiker und/oder Titel. Waehrend mich dies bei den Dateinamen alleine nicht stoeren wuerde (es kommt ja schon einmal oefters vor, dass lediglich ein "Track 01" verwendet wird), ist es schon eine andere Sache, wenn auch die Metadaten komplett leer sind; allem Anschein nach hatte da jemand eine Reihe an Original-CDs zusammengeworfen und dann wieder als eine Audio-CD gebrannt... bei diesem Vorgang war dann alles, was fuer die Identifizierung brauchbare gewesen waere, verloren gegangen. Waehrend dies bei Stuecken mit Singtexten nicht so schlimm ist -- schliesslich bekommt man aus dem Stueck selber ja Anhaltspunkte, nach welchen man suchen kann -- so ist es bei reinen Instrumentalstuecken schon deutlich schwerer. Netterweise war ich aber schon vor einer ganzen Weile auf [Tunatic](http://www.wildbits.com/tunatic) gestossen, ein Tool (und gleichzeitig ein Service), welches bei der Identifizierung basierend auf recht loechrigen Informationen helfen kann: hat man zum Beispiel keine Aufnahme vorliegen, erinnert sich aber an die Melodie, so kann man versuchen diese ins Mikro zu singen/pfeifen ... mit eine wenig Glueck liegt man mit der eigenen Interpretation nicht so sehr daneben, so dass sich dass Original bei einer Suche in der Datenbank finden laesst.
+
+Was nun aber, wenn es a) keine Texte gibt, nach welchen man suchen kann und b) es sich um sehr Beat-lastige Stuecke handelt, welche nicht ueber eine deutlich identifizierbare Melodielinie verfuegen? Eine ist vollkommen klar: die Suche wird nicht einfacher ;-) Dies habe ich schon bei der Suche nach dem ersten Track feststellen muessen: bei drei aufeinanderfolgenden Versuchen, habe ich drei unterschiedliche Suchresultate erhalten -- keines davon liess sich allerdings via e.g. [YouTube](http://www.youtube.com) verifizieren. Als sich der Vorgang dann auch mit dem zweiten und dritten Track wiederholte, bin ich dann doch ein wenig skeptisch geworden; sicher hatte ich es hier mit einer Reihe ueberdurchschnittlich schwer zu erratenden Musikstuecken zu tun, aber es stellte sich durchaus schon einmal die grundsaetzlichere Frage, in wie weit die Suchmaschine verlaessliche Ergebnisse ausspuckt. Also einfach mal bunt durch meine Musiksammlung geklickt und geschaut was passiert:
+
+| Artist         | Title                           | Search result |
+|:---------------|:-------------------------------:|--------------:|
+| At Vance       | Heart of Steel                  | not found     |
+| Art Garfunkel  | Bright Eyes                     | found         |
+| Billy Idol     | Sweet Sixteen                   | found         |
+| Billy Joel     | Pianoman                        | found         |
+| Brad Fiedel    | Main Theme (Terminator 2 Theme) | found         |
+| Chicago        | Hard to say I'm sorry           | found         |
+| Deep Purple    | Sometimes I feel like crying    | found         |
+| Edenbridge     | Suspiria                        | found         |
+| Edenbridge     | Terra Nova                      | found         |
+| Edguy          | Tears of the Mandrake           | found         |
+| Epica          | Tides of Time                   | not found     |
+| Gazpacho       | Desert Flight                   | not found     |
+| Joe Satriani   | Not of this Earth               | found         |
+| Joe Satriani   | Surfing with the Alien          | found         |
+| Judas Priest   | Painkiller                      | found         |
+| Lovetrick      | Dance all Night                 | not found     |
+| Michael Berger | Walking through the Big Apple   | not found     |
+| Toto           | Home of the Brave               | found         |
+| U.D.O.         | Faceless World                  | not found     |
+| Van Halen      | And the Cradle will rock        | found         |
+
+In wie weit meine Auswahl jetzt unbedingt repraesentativ ist, darueber laesst sich sicherlich streiten; ich denke aber schon, dass man zwei Dinge sehen kann: a) Tunatic ist in der Lage Musikstuecke aus recht unterschiedlichen Genres ausfindig zu machen und korrekt zu erkennen, b) waehlt man Stuecke aus, welche weniger als Mainstream einzuordnen sind, dann nimmt die Chance auf Erkennung ab (was wohl nicht so sonderlich verwundern duerfte). Was ich bisher allerdings noch nicht in systematischer Weise beruecksichtigt habe, ist die musikalische Struktur der Stuecke: es waere da sicherlich noch einmal eine nette Uebung zu testen, in wie weit klar identifizierbare Melodien einen Einfluss auf den Erfolg der Suche haben; wuerde mich nicht wundern, wenn es da eine Relation gibt, aber dies vernuenftig nachzuweisen koennte schwerer sein.

@@ -1,0 +1,31 @@
+---
+title: Ruby Dokumentation
+in_menu: false
+---
+
+## Ruby Dokumentation ##
+
+_Wed, 08. February 2012 - 23:38_
+
+Im Zuge meiner Bemuehungen mich mit der Programmiersprache [Ruby](http://www.ruby-lang.org) und ihrem Oekosystem vertraut zu machen, habe ich mir natuerlich auch mal die Methoden vorgenommen, mit welchen sich Projekte dokumentieren lassen. Da ich kan nicht zu den Leuten gehoere welche das Schreiben von Dokumentation eher als laestig und unnoetig empfinden ("Der Code ist die Dokumentation..."), macht es natuerlich Sinn sich einmal ein klein wenig umzuschauen, wie sich eigene (oder auch fremde) Softwareprojekte, welche sich Ruby bedienen, dokumentieren
+lassen. Wenn ich hier ueber Quellcode-Dokumentation rede, dann schwebt mir
+natuerlich schon etwas in dem Stil von [Doxygen](http://www.doxygen.org) oder [Sphinx](http://sphinx.pocoo.org) vor -- auch wenn ich mit letzterem Tool nicht sonderlich viel Erfahrung vorweisen kann, so habe ich doch gesehen was sich damit machen laesst (schliesslich wird z.B. die Online-Dokumentation fuer die [LOFAR](http://www.lofar.org) Imaging Pipeline via Sphinx
+generiert). Meine naive Erwartung war zunaechst einmal, dass ich vielleicht in
+der Lage sein wuerde Doxygen auf Ruby Source-Code loszulassen; leider stellt
+sich aber heraus dass die Sprache bisher nicht unterstuetzt wird (und es mit
+dieser Unterstuetzung auch nicht so sonderlich eilig ist). Nach dieser ersten
+kleinen Enttaeuschung habe ich mir dann mal das bekannteste der Tools aus der
+Ruby-Welt vorgenommen: [RDoc](http://rdoc.sourceforge.net). Als ich dies aber mal auch nur ueber ein kleines Testprojekt habe laufen lassen, war ich erschrocken von dem, was mir da abgeboten wurde -- ziemlich unbrauchbar fuer meinen Geschmack. Die fehlenden Moeglichkeiten vor allen Dingen groessere -- in diversen Modulen, etc. organisierte -- Projekte sauber praesentieren zu koennen hat meiner Begeisterung fuer Ruby gleich schon wieder einen Daempfer verliehen. Da ich aber hoffen konnte, dass ich nicht der einzige sein konnte, fuer den ein solcher Zustand unertraeglich ist, habe ich mich auf die Suche nach (diesmal brauchbaren) Alternativen gemacht; nach ein wenig Suchen bin ich dann gluecklicherweise  auf [YARD](http://yardoc.org) gestossen:
+
+> YARD is the only Ruby documentation tool that supports storing metadata alongside your documentation. This metadata can be used to create consistent documentation in any format you wish. YARD also comes with a powerful templating system to quickly modify existing templates. And for the simple case, you can even add custom metadata to your docs with nothing but the command-line.
+
+Mit solch einem Ruestzeug ausgestattet, habe ich mich dann auch einmal daran gewagt eine Dokumentation fuer den Quellcode von [prometheus](http://www.prometheus-bildarchiv.de) (Das verteilte digitale Bildarchiv fuer Forschung und Lehre) zu generieren. Da meine Suche nach einer technischen Dokumentation wenig erfolgreich gewesen war (ein Zustand an dem sich leider bis zum derzeitigen Augenblick nicht wirklich etwas geaendert hat), hatte ich darauf spekuliert, dass die Macher des Projektes wenigsten ihren Quellcode dafuer verwendet haetten, um einem Neuankoemmling eine Uebersicht ueber die interne Organisation des Bildarchives zu vermitteln. Nicht nur aber gab es keinerlei Uebersicht ueber das zugrundeliegende Design, sondern auch der Quellcode an sich ist nur zu knapp einem Drittel dokumentiert:
+
+    Files:        1567
+    Modules:       739 (  461 undocumented)
+    Classes:      1999 ( 1469 undocumented)
+    Constants:     847 (  745 undocumented)
+    Methods:     13500 ( 8615 undocumented)
+     33.92% documented
+
+Wie man unter solchen Umstaenden verstehen soll, wie die Software nun eigentlich gestrickt ist, bleibt der Phantasie des Leser ueberlassen. Wenn ich aber eine Baustele benennen duerfte, wenn es um den Job in Koeln geht, dann wuerde ich mich erst einmal fuer eine grosser angelegte Aufraeum- und Dokumentations-Aktion einsetzen.
