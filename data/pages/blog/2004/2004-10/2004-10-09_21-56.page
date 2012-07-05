@@ -1,0 +1,11 @@
+---
+title: Koordinaten-Konventionen 
+in_menu: false
+---
+
+## {title:} ##
+
+_Saturday, 09 October 2004 -- 21:56_ 
+
+
+Also ich sehe schon, meine Bemuehungen ein wenig mehr Konsistenz in die restlichen Koordinaten-Konventionen in unserer Software zu bringen zieht wieder einen Rattenschwanz nach sich. Ausgangspunkt war eine Diskussion mit Heino, bei der es um die Richtigkeit der Formeln ging, mit welcher wir die Entfernung zu Cosmic Rays als auch Gewittern bestimmen. Da die implementierten Formeln nicht unbedingt transparent waren - geschweige denn mal irgendwo aufgeschrieben vorzufinden waren - habe ich mich drangesetzt alles noch einmal Stueck fuer Stueck durchzurechnen. Zwar ergibt sich nach den letzten Tests in der Tat, dass die Implementieren die korrekten Ergebnisse liefern, aber ich muss doch sagen, dass meine Ueberarbeitungen ein gutes Stueck einfacher nachzuvollziehen sind. Bei dieser Gelegenheit habe ich allerdings wieder einmal feststellen muessen, dass es in der Tat noch einen Bug in den Coordinaten Routinen gibt, denn wenn ich mit den ueberarbeiteten Gleichungen versuche auf die Sonne zu zielen habe ich alles andere in meiner Karte - nur eben nicht die Sonne.

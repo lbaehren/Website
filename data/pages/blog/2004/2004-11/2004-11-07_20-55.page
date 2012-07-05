@@ -1,0 +1,10 @@
+---
+title: Noch mehr Programmieren fuer Projekt mit Leiden 
+in_menu: false
+---
+
+## {title:} ##
+
+_Sunday, 07 November 2004 -- 20:55_ 
+
+Wow, das war eine wirklich aufreibende Nummer: Ich bin gerade dabei den neuen Code, welchen ich Demerese und Jan-Pieter bis morgen versprochen hatte, einzuarbeiten in den existierenden Code. Garnicht so einfach, weil man doch recht schnell den Ueberblick verliert ueber die Unzahl von Abhaengigkeiten der einzelnen Programmsegmente. Hat mich einige Nerven gekostet mal in dem makefile aufzuraeumen und sicherzustellen, dass nach wie vor alles laeuft. Jetzt scheint es aber endlich, endlich zu klappen (und sieht auch noch viel uebersichtlicher aus).

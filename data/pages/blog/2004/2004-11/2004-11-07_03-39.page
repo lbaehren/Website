@@ -1,0 +1,13 @@
+---
+title: Programmieren fuer Projekt mit Leiden 
+in_menu: false
+---
+
+## {title:} ##
+
+_Sunday, 07 November 2004 -- 03:39_ 
+
+
+Hurra - ich habe jetzt endlich so ziemlich alles zusammen, was ich fuer das Umstellen meines Skymappers brauche. Sieht also in der Tat so aus, als koennte ich das Versprechen einhalten, bis Montag die Probleme mit dem Einlesen der cross-correlated data zu loesen. Ich habe mir seit einiger Zeit angewoehnt die AIPS++ Methode zu uebernehmen, bei der fuer (fast) jede C++ Klasse ein Testprogramm bereitsgestellt wird, mit welchem man (a) testen kann ob sich alles so verhaelt wie dies der Fall sein sollte und (b) ein Beispiel bereitzustellen, wie sich die Klasse verwenden laesst. Naja, durch meinen Test laeuft das Einlesen der Daten problemlos durch; als einfache Kontrolle kann man sich dann mal ein Spektrum ausgeben lassen - habe ich gemacht und es sieht recht vernuenftig aus! Ich denke mal, dass ich jetzt in der Tat mit gutem Gewissen von hier verschwinden kann, auch wenn ich noch nicht wirklich muede bin (aber man muss es ja auch nicht bis an die Grenze treiben...).
+
+Daneben vielleicht noch eine Anmerkung in einer ganz anderen Angelegenheit: Die Musik des Tages kommt von [Final Fantasy](http://www.imdb.com/title/tt0173840). Konnte ich heute Nachmittag nicht daran vorbei, mir den nochmal anzuschauen -- seit dem werde ich die Musik nicht los. Ist allerdings aber auch kein Wunder, weil gerade das Grundmotiv, welches sich durch die ruhigeren Passagen zieht, einfach wunderschoen ist. Wer es mir nicht glauben will, sollte es selber noch einmal nachhoeren!!

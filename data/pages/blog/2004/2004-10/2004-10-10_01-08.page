@@ -1,0 +1,11 @@
+---
+title: Schicht im Schacht 
+in_menu: false
+---
+
+## {title:} ##
+
+_Sunday, 10 October 2004 -- 01:08_ 
+
+
+So, nachdem ich noch einen weiteren - sehr nervigen - Fehler beseitigt habe, wird es wohl mal langsam Zeit, dass ich fuer diese Nacht die Zelte hier abbreche. Da der Rechner in Nijmegen ja bis irgendwann am Laufe des Montag nicht unter den Lebenden weilt kann ich leider meine ganzen Aenderungen nicht in das CVS Repository einchecken. Vielleicht sollte ich sicherheitshalber mal einen Mirror anlegen: zum einen waere es doch sehr aergerlich, wenn das Repository irgendwann mal crashen wuerde, andererseits waere es nett nicht immer nur von einer Machine abhaengig zu sein, wenn mal mal ein Update fahren will. Naja, aber das muss nun wirklich nicht mehr diese Nacht sein.

@@ -1,0 +1,11 @@
+---
+title: Fortschreiten der Berechnung 
+in_menu: false
+---
+
+## {title:} ##
+
+_Friday, 12 November 2004 -- 19:16_ 
+
+
+Hurra, vielleicht wird es doch nicht ganz so schlimm; die ersten Werte, welche das Progress Meter liefert sind erfahrungsgemaess nicht ganz korrekt (das sollte ich bei Gelegenheit mal korrigieren); mit dem Fortschreiten der Berechnung werden die Angaben allerdings zuverlaessiger. Demnach bin ich jetzt bei einer Gesamtlaufzeit von zweieinhalb Tagen angekommen. Gluecklicherweise habe ich vor Ewigkeiten mal noch das nette Feature eingebaut, dass Zwischenergebnisse auf Platte geschrieben werden; demnach kann ich bereits vor dem Ende der Gesamtdauer einen Blick darauf werfen, was sich so tut.

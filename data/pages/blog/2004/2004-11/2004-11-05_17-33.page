@@ -1,0 +1,10 @@
+---
+title: Wochenendplanungen 
+in_menu: false
+---
+
+## {title:} ##
+
+_Friday, 05 November 2004 -- 17:33_ 
+
+Hm, das koennte ein langes Wochenende werden. Demerese und Jan-Pieter in Leiden haben probiert ihre neuen Daten rechnen zu lassen. Dabei hat sich herausgestellt, dass es noch einen Bug im ''Skymapper'' gibt, welcher wohl durch die letzten Aenderungen reingekommen ist, welche ich an dem Handling der Frequenzen vorgenommen habe. Also werde ich versuchen das bis Montag Morgen zu fixen ...

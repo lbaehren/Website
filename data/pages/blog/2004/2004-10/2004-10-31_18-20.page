@@ -1,0 +1,11 @@
+---
+title: Karten 
+in_menu: false
+---
+
+## {title:} ##
+
+_Sunday, 31 October 2004 -- 18:20_ 
+
+
+Hurra, mit dem teilweise ueberarbeiteten Beamformer Code und dem Testdatensatz von dieser Woche habe ich jetzt endlich mal eine vernuenftige Karte von Cas A bekommen; hat mich Ewigkeiten genervt, dass diese hellste Quelle am Himmel in allen Karten von Michiel & Co. auftaucht, bei mir aber fast immer irgendwo in RFI ertrank. Nun gut, die Loesung ist wahrscheinlich recht einfach: alle anderen haben sich nur ein recht schmales Frequenzband genommen, welches frei von jeglicher Radiointerferenz ist. Da ich grundsaetzlich alle Frequenzen zur Auswahl habe, sind meine Karten bisher immer recht breitbandig gewesen, mit dem Effekt, dass eine einzelne Stoerquelle - und derer gibt es gleicb einige -- mehr Intensitaet an jedem beliebigen Punkt am Himmel erzeugt, als ein noch so starkes astronomisches Objekt. Demzufolge habe ich mir jetzt mal nur den Bereich zwischen 31 und 32 MHz genommen und rechnen lassen. Und siehe da: genau an der Stelle wo es sein sollte zeichnet sich Cas A als starke Punktquelle ab (die Bilder muss ich unbedingt fuer die Webseiten aufarbeiten). Um sicherzugehen, dass ich mit der Vorgehensweise wirklich weiterkomme, habe ich jetzt direkt noch mal eine Karte von Cyg A gestartet; wenn das auch klappt, dann kann ich mich um die weiteren schwaecheren Quellen kuemmern. Allerdings waere es natuerlich schon recht nett, wenn man nicht mehr als 70% der Bandbreite wegen RFI wegschmeissen muesste; sich noch einmal Gedanken um RFI Mitigation zu machen ist auf jeden Fall angebracht.

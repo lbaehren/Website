@@ -1,0 +1,20 @@
+---
+title: ASTRON/JIVE network 
+in_menu: false
+---
+
+## {title:} ##
+
+_Sunday, 19 December 2004 -- 16:44_ 
+
+
+Jau, das Netzwerk steht wieder zur Verfuegung! Dieses Wochenende - von Freitag Nachmittag an - wurde das ASTRON/JIVE Netzwerk umgestellt. Demzufolge fiel hier Freitag 15:00 Uhr die Klappe:
+
+> As announced the ASTRON/JIVE network will be updated.
+> During this activity the whole network and all services will NOT be available. The activities will start this afternoon (17-12-2004) at 15:00 hours and will continue on Saturday.
+> On Sunday the network will be available.
+
+Will natuerlich nicht heissen, dass der Rechner wirklich aus bleiben muss -- Shutdown, Netzwerkkabel raus und wieder starten... Jetzt aber sind alle Arbeiten abgeschlossen und der Zugang zu Aussenwelt funzt wieder. Dementsprechend kann ich jetzt endlich die Aenderungen auf den CVS Server schicken, welche ich gestern noch eingebaut habe. Ferner bedeutet dies, dass ich auch Mail-maessig wieder mein Unheil treiben kann.
+
+
+~~DISCUSSION~~

@@ -1,0 +1,12 @@
+---
+title: Prioritaeten 
+in_menu: false
+---
+
+## {title:} ##
+
+_Saturday, 11 December 2004 -- 18:23_ 
+
+
+Samstag Abend und alles ist dunkel hier im Institut. Da ich mich aber kaum mit gutem Gewissen hinsetzen kann um //Moondial// zuende zu lesen, habe ich mich nnoch einmal hier eingefunden, um die noch ausstehenden Aenderungen an meinem Teil der LOPES Tools fertig zu kriegen. Bei einem Telefonat am Freitag mit Heino ist mir mal massiv vorgefuehrt worden, wie sehr eine Reihe von Leuten von dem abhaengig sind, was ich hier so treibe: irgendwie scheint momentan vieles still zu stehen und darauf zu warten, dass eine Reihe von Features im Skymapper eingebaut werden um ... zum Beispiel ein Paper zur Detektierung von Cosmic Rays fertig zu stellen. Was die Vorgehensweise betrifft, so sind Heino und ich da sicherlich nicht immer einer Meinung, aber prinzipiell ist uns beiden wohl klar, dass wir die Sicht- bzw. Vorgehensweise des jeweils anderen beruecksichtigen muessen. D.h. ich muss im Hinterkopf behalten, dass es gewisse Dinge gibt, die bei Heino Prioritaet haben - andererseits muss er sich darueber im klaren sein, dass ich bei Eingriffen in die Software eine Grundkonsistenz bewahren muss, um mich nicht von Patch zu Patch zu hangeln. Auf diese Grundpunkte konnten wir uns auch durchaus einigen, auch wenn wir wahrscheinlich noch ein wenig an der Kommunikation arbeiten muessen.
+

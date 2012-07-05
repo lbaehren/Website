@@ -1,0 +1,18 @@
+---
+title: Zusammenfassung Freitag 
+in_menu: false
+---
+
+## {title:} ##
+
+_Friday, 12 November 2004 -- 13:11_ 
+
+
+So, was bringt der Freitag bisher? Keine sonderlich aufregenden Ereignisse -- nur eine Reihe von kleinen Schritten, die es mir ermoeglichen, meine begonnen Projekte wieder aufzunehmen:
+
+  * Analyse des LOPES Datensatzes vom 25. Juni; laut Angaben sollte man darin Cas A sehen koennen - Frage ist allerdings ob dies auf praktisch funktioniert (hat bei Heino und Andreas bis jetzt noch nicht geklappt).
+  * Analyse der Datensaetze von vorgestern; die Sonne war recht aktiv, so dass Heino vorgeschlagen hat, doch mal ein paar Daten mit ITS zu nehmen und zu schauen, ob wir damit ebenfalls Solar Bursts sehen koennen. Die Daten liegen n Nijmegen auf Platte und ich lasse munter darauf rechnen; da es aber 128 Mega-Samples pro Antenne sind (macht also 128*2*60 MB), dauert es eine Weile, bis die Daten durchgenudelt sind.
+  * Analyse der Daten fuer Leiden; die sind alle komplett auf Platte, dynamische Spectra sind berechnet, aber ich muss noch schecken, ob die berechneten Himmelskarten richtig sind - mit dem Software Upgrade auf ITS gab es eine Veraenderung im Vorzeichen der FFT, was natuerlich entsprechend beruecksichtigt werden muss, andernfalls ist die Himmelskarte verdreht.
+  * Check der Implementierung fuer die zeitlich aufgeloesten Karten der Cosmic Ray Event; damit sitzt mir Heino noch im Nacken, weil es einfach sehr nett waere, Movies mit voller Zeitaufloesung der Telescope zu machen.
+
+Noch was vergessen? Bestimmt, aber das ist das, was mir so spontan einfaellt...
