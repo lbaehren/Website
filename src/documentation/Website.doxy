@@ -1,0 +1,20 @@
+/*!
+  \mainpage Website :: larsbaehren.com
+
+  \section website_structure Organization of the directories
+
+  \verbatim
+  .
+  |-- ext
+  `-- src
+      |-- code
+      |   |-- apps
+      |   |-- lib
+      |   |-- scripts
+      |   `-- tests
+      |-- documentation
+      |-- images
+      `-- pages
+  \endverbatim
+
+*/

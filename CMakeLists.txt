@@ -111,7 +111,6 @@ endif (CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
 ## Project sub-directories
 
 add_subdirectory (data)
-add_subdirectory (ext)
 add_subdirectory (src)
 
 ##____________________________________________________________________

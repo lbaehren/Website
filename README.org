@@ -5,9 +5,10 @@
 
 * Design principles
 
-* Tasks [40%]
+* Tasks [50%]
 ** TODO Merge directories 'src' and 'data'
 ** DONE Remove line-break from result of 'ctime(&rawtime_p)'
 ** DONE Define enum for timestamp formats
 ** TODO Fix background image in header
 ** TODO Define enum for Blog entry formats
+** DONE Mainpage for Doxygen documentation

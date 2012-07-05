@@ -3,6 +3,12 @@
 
 if (DOXYGEN_EXECUTABLE)
   
+  find_path (DOXYGEN_INPUT_DIR
+    NAMES documentation/doxygen.config.in code/CMakeLists.txt
+    PATHS ${PROJECT_SOURCE_DIR}
+    PATH_SUFFIXES src
+    )
+
   ## Locate custom stylesheet
   find_file (DOXYGEN_CSS doxygen.css
     PATHS ${CMAKE_CURRENT_SOURCE_DIR}
@@ -20,17 +26,3 @@ if (DOXYGEN_EXECUTABLE)
     )
   
 endif (DOXYGEN_EXECUTABLE)
-
-## === Shell scripts ============================================================
-
-find_file (BLOGINDEX_SH
-  NAMES blogIndex.sh
-  PATHS ${PROJECT_SOURCE_DIR}
-  PATH_SUFFIXES ext
-  )
-
-find_file (CONVERTENTRIES_SH
-  NAMES convertEntries.sh
-  PATHS ${PROJECT_SOURCE_DIR}
-  PATH_SUFFIXES ext
-  )

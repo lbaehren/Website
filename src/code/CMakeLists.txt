@@ -8,5 +8,5 @@ include_directories (
 ## Directories with sources files
 
 add_subdirectory (lib)
+add_subdirectory (scripts)
 add_subdirectory (tests)
-
