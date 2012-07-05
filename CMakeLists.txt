@@ -112,6 +112,7 @@ endif (CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
 
 add_subdirectory (data)
 add_subdirectory (ext)
+add_subdirectory (src)
 
 ##____________________________________________________________________
 ## Targets operating from the top-level directory

@@ -21,10 +21,6 @@ if (DOXYGEN_EXECUTABLE)
   
 endif (DOXYGEN_EXECUTABLE)
 
-## === Project sub-directories ==================================================
-
-add_subdirectory (BlogTools)
-
 ## === Shell scripts ============================================================
 
 find_file (BLOGINDEX_SH
