@@ -45,6 +45,8 @@ namespace Blog { // Namespace Blog -- begin
     std::string itsTitle;
     //! Timestamp of the blog entry
     Blog::Timestamp itsTimestamp;
+    //! Text of the blog entry
+    std::string itsText;
     //! Tags attached to the entry
     std::vector<std::string> itsTags;
 
@@ -58,6 +60,10 @@ namespace Blog { // Namespace Blog -- begin
     //! Argumented constructor, taking \c title as input
     BlogEntry (std::string const &title,
 	       Blog::Timestamp const &timestamp=Blog::Timestamp());
+
+    //! Argumented constructor, taking \c title and text as input
+    BlogEntry (std::string const &title,
+	       std::string const &text);
 
     //! Argumented constructor, providing all parameters
     BlogEntry (std::string const &title,
@@ -84,6 +90,16 @@ namespace Blog { // Namespace Blog -- begin
     //! Set the timestamp of the blog entry
     void setTimestamp (Blog::Timestamp const &timestamp) {
       itsTimestamp = timestamp;
+    }
+
+    //! Get the text of the blog entry
+    inline std::string text () {
+      return itsText;
+    }
+
+    //! Set the text of the blog entry
+    void setText (std::string const &text) {
+      itsText = text;
     }
 
     //! Get the tags attached to the entry
