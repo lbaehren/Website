@@ -70,6 +70,13 @@ namespace Blog { // Namespace Blog -- begin
     case Element::HTML:
       link << "<a href=\"" << itsURL << "\">" << itsTitle << "</a>";
       break;
+    case Element::JSON:
+      link << "{ \"link\": {"
+	   << " \"title\": \"" << itsTitle << "\","
+	   << " \"url\": \"" << itsURL << "\","
+	   << " \"internal\": \"" << itsInternal << "\""
+	   << " } }";
+      break;
     default:
       break;
     }
@@ -86,9 +93,11 @@ namespace Blog { // Namespace Blog -- begin
   void Link::summary (std::ostream &os)
   {
     os << "[Link] Summary of internal parameters." << std::endl;
-    os << "-- Title     = " << itsTitle            << std::endl;
-    os << "-- URL       = " << itsURL              << std::endl;
-    os << "-- Internal? = " << itsInternal         << std::endl;
+    os << "-- Title  ........ = " << itsTitle            << std::endl;
+    os << "-- URL  .......... = " << itsURL              << std::endl;
+    os << "-- Internal?  .... = " << itsInternal         << std::endl;
+    os << "-- HTML formatting = " << write(Element::HTML) << std::endl;
+    os << "-- JSON formatting = " << write(Element::JSON) << std::endl;
   }
 
 } // Namespace Blog -- end

@@ -45,6 +45,7 @@ namespace Blog { // Namespace Blog -- begin
       TEXT,
       //! XML formatted text
       XML,
+      //! YAML formatted text
       YAML
     };
 
