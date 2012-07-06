@@ -118,13 +118,13 @@ add_subdirectory (src)
 
 ## Render the website
 
-add_custom_target (render
+add_custom_target (Website
   COMMAND rake
   DEPENDS ${PROJECT_SOURCE_DIR}/config.yaml
   WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
   )
 
-add_dependencies (render blog)
+add_dependencies (Website blog)
 
 set_property (DIRECTORY
   APPEND PROPERTY ADDITIONAL_MAKE_CLEAN_FILES
