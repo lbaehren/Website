@@ -2,6 +2,41 @@
 
 varExtension=".page"
 
+## ==============================================================================
+##
+##  Process command line options
+##
+##  -S,--suffix  [.page]  Suffix of the generated file
+##  -Y, --year   [     ]  Year of the blog entries
+##  -M, --month  [     ]  Month of the blog entries
+##
+## ==============================================================================
+
+process_options ()
+{
+
+until [ -z "$1" ]
+do
+    case $1 in
+	-S)
+	    echo "-- Suffix = $2"
+	    shift
+	;;
+        *)
+	    echo "Unrecognize option : $1"
+	;;
+    esac
+    shift
+done
+
+}
+
+## ==============================================================================
+##
+##  Process directories and files
+##
+## ==============================================================================
+
 FILES=`ls *.txt`
 
 for FILE in $FILES
