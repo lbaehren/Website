@@ -267,13 +267,15 @@ body {
 /***** Various tags *****/
 
 a {
-    text-decoration:none;color:#505050;background-color:inherit;
+    text-decoration:  none;
+    color:            #505050;
+    background-color: inherit;
 }
 
 a:hover {
-    text-decoration:underline;
-    color:#286ea0;
-    background-color:inherit;
+    text-decoration:  underline;
+    color:            #286ea0;
+    background-color: inherit;
 }
 
 a img {
@@ -281,7 +283,7 @@ a img {
 }
 
 p {
-    margin: 0 0 16px 0;
+    margin:     0 0 16px 0;
     text-align: justify;
 }
 
@@ -321,11 +323,18 @@ caption {
 }
 
 th {
-padding:7px;text-align:left;background:#eaeaea url(images/menubg2.gif) bottom left repeat-x;color:#505050;
+    padding:    7px;
+    text-align: left;
+    background: #eaeaea url(images/menubg2.gif) bottom left repeat-x;
+    color:      #505050;
 }
 
 td {
-padding:7px;font-size:0.9em;text-align:left;background:#f4f4f4 url(images/menubg.gif) bottom left repeat-x;color:#303030;
+    padding:    7px;
+    font-size:  0.9em;
+    text-align: left;
+    background: #f4f4f4 url(images/menubg.gif) bottom left repeat-x;
+    color:      #303030;
 }
 
 /***** Form styles *****/
