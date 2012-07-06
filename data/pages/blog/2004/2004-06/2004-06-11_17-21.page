@@ -1,0 +1,30 @@
+---
+title: Jupiter VLBI Experiment 
+in_menu: false
+---
+
+## {title:} ##
+
+_Friday, 11 June 2004 -- 17:21_ 
+
+Oh weh, jetzt ist es mehr oder weniger offiziell:
+
+> From falcke@astron.nl Fri Jun 11 17:21:45 2004
+>
+> Date: Fri, 11 Jun 2004 17:11:43 +0200
+>
+> From: Heino Falcke <falcke@astron.nl>
+>
+> Subject: Jupiter VLBI Experiment ...
+> 
+> Yesterday night we had our first attempt at a joint Nancay-LOFAR ITS VLBI experiment on predicted Jupiter bursts.
+>
+> Surprisingly, it did not fail because of technical issues, but because Jupiter did not cooperate.
+>
+> In a last-minute attempt Klaas Jan Wierenga had made important modes available that were crucial for the experiment to succeed in the first place and Lars Bähren successfuly got ITS to operate despite a number of ITS PCs dropping out. We now have 3.35 sec look-back capability and can store 6.7 secs of data from all 60 antennas (all-sky, all Frequences, 60 Gb) in a few minutes (5-10) and be operational again. This greatly improves our duty cycle.
+>
+> Around 9pm we were ready (with 1 hour delay), continuously recording with ITS on the TIM boards, and our fingers on the trigger button, awaiting a phone call from Nancay telling us about Jupiter activity. The French were sitting in front of a real-time display to detect any activity on Jupiter and ready to record themselves. However, Jupiter was in a quiet phase as it was in the last couple of weeks. So, the telephone didn't ring.
+>
+> We will trys again in a few days. Our French colleagues used the idle time to improve their prediction. They claim to have found yesterday that high-frequency emission (>30 MHz), if it occurs, follows very deterministic patterns, allowing almost 100% predcitions and the possibility to observe during day time (despite the RFI at low frequencies). So, we will try again....
+>
+> All the best and thanks to those who contributed so far

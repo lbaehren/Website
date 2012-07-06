@@ -1,0 +1,10 @@
+---
+title: Wachsende Ansprueche 
+in_menu: false
+---
+
+## {title:} ##
+
+_Wednesday, 09 June 2004 -- 16:30_ 
+
+Interessant zu beobachten, dass anscheinend die Ansprueche mindestens so schnell wachsen, wie die Moeglichkeiten. Hatte ich mich doch immer wieder darueber beschwert, dass ich meinen eigenen Rechner ziemlich am Limit gefahren habe, so ergeht es mir mit dem neuen Institutsrechner mittlerweile nicht viel anders -- trotz weitaus grosszuegigerer Ausstattung. Aber das Abarbeiten von Datensaetzen in der Groessenordnung 48*32MB (reine Rohdaten) macht der Maschine schon zu schaffen. Bisher habe ich mich noch nicht daran gewagt einen grossen ITS Datensatz vollstaendig durchzurechnen -- das sollte naemlich, wenn ich mich da auf die Anzeige verlassen kann, fast eine Wochen dauern. Das ist natuerlich jenseits von dem, was ich gerne zum Arbeiten haette. Also muss ich mir -- neben einigen kleinen Verbesserungen -- wirklich noch einmal Gedanken um die Code-Optimierung machen, da ist sicherlich noch ein wenig was rauszuholen.
