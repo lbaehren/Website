@@ -118,7 +118,7 @@ add_subdirectory (src)
 
 ## Render the website
 
-add_custom_target (Website
+add_custom_target (Website ALL
   COMMAND rake
   DEPENDS ${PROJECT_SOURCE_DIR}/config.yaml
   WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
