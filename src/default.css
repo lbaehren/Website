@@ -66,11 +66,7 @@ body {
     padding:        0 0 0 3px;
 }
 
-/*-----------------------------------------------------------------------------*
- |                                                                             |
- |  Left sidebar                                                               |
- |                                                                             |
- *-----------------------------------------------------------------------------*/
+/* === Left sidebar ========================================================== */
 
 #avmenu {
     clear:left;
@@ -115,22 +111,23 @@ body {
 }
 
 #avmenu ul ul {
-    margin:5px 0 5px 15px;font-size:0.9em;width:135px;
+    margin:    5px 0 5px 15px;
+    font-size: 0.9em;
+    width:     135px;
 }
 
 #avmenu ul ul a {
-    height:16px;margin:0;padding:4px 0 0 8px;
+    height:  16px;
+    margin:  0;
+    padding: 4px 0 0 8px;
 }
 
 #avmenu h2 {
-    font-size:1.5em;font-weight:normal;
+    font-size:   1.5em;
+    font-weight: normal;
 }
 
-/*-----------------------------------------------------------------------------*
- |                                                                             |
- |  Right sidebar                                                              |
- |                                                                             |
- *-----------------------------------------------------------------------------*/
+/* === Right sidebar ========================================================= */
 
 #extras {
     float:      right;
@@ -209,7 +206,10 @@ body {
 }
 
 #content img, #contentwide img, #contentfull img {
-    padding:1px;display:inline;background:#cccccc;color:#303030;border:4px solid #f0f0f0;
+    padding:1px;
+    display:inline;
+    background:#cccccc;
+    color:#303030;border:4px solid #f0f0f0;
 }
 
 #content a, #contentwide a, #contentfull a {
