@@ -1,0 +1,15 @@
+---
+title: webgen
+in_menu: true
+---
+
+## webgen
+
+.. is a tool for the generation of static websites.
+
+### Introduction
+
+When webgen is run it combines the template with each of the page files and generates the HTML output files. During this process special tags are substituted so that, for example, a menu is generated. Actually, this website was generated with webgen and, for example, the menu that you can see was created dynamically.
+
+### Directory structure
+
