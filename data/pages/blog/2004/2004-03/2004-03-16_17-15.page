@@ -1,0 +1,11 @@
+---
+title: referencevalue 
+in_menu: false
+---
+
+## {title:} ##
+
+_Tuesday, 16 March 2004 -- 17:15_ 
+
+
+Nachdem ich mir gestern Abend noch einmal die Coordinatendefinitionen in dem Paper von Calabretta & Greisen (2002) sowie den bisher implementierten Code in unseren Programmen vorgenommen habe, konnte ich noch eine nicht ganz unwesentliche Änderung anbringen: mit der korrekten Behandlung des ''referencevalue'' werden die Kartenränder richtig eingezeichnet, was bisher bei beliebigen Kartenausschnitten nicht der Fall war (lediglich wenn durch die Auswahl der Ausschnitts der untere Rand der Karte bei 0 Grad lag). Die Entwicklung ist sehr unter dem bereits oben genannten Link nachzuvollziehen.

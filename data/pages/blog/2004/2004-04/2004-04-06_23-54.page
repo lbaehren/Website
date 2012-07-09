@@ -1,0 +1,26 @@
+---
+title: LOFAR ITS Users Group 
+in_menu: false
+---
+
+## {title:} ##
+
+_Tuesday, 06 April 2004 -- 23:54_ 
+
+
+Nun denn, zu später Stunde noch schnell ein paar Zeilen - bevor ich mich hier aus dem Staub mache. 
+
+Heute war durchaus einer der ereignisreicheren und geschäftigen Tage. Für heute Mittag 13:00 Uhr war ein Treffen der LOFAR ITS Users Group angesetz, angedacht um alle derzeit in der Datenauswertung der Teststation involvierten Leute zusammenzubringen und das weitere Vorgehen zu koordinieren. Gleich vorne weg: das Meeting hat bis kurz vor sechs gedauert (mit einem kurzen Break in der Mitte) und eine Reihe von grundsätzlichen Fragen sind für meinen Geschmack trotz nur unzufriedenstellen geklärt worden. Ok, aber hier vielleicht lieber erst einmal ein Überblick über das Program:
+
+> 13:00 Exchange experimental results/experiences [THETA/ITS/LOPES] - presentations:
+> ~20 min/pp (Stefan/Michiel, Andreas, Lars, anyone else?)
+> - general discussion 14:30 Updates on development
+> - (look-back) triggering (Chris/Klaas-Jan)
+> - user interface (Lars?)
+> 15:00 Future experiments/development
+> - tour de table: what's being planned, enhancements needed for it, ...
+> - discussion on priorities/impacts/... 
+> 15:30 Rough observational schedule for ITS
+> - identification of monitoring observations, can/should they run in parallel, ...
+
+Was noch schön geordnet über die Bühne ging war der erste Punkt, nämlich das Vorstellen der Resultate; ok, in meiner so mir üblichen Art war das ein klein wenig chaotisch, zumal mein Fokus auch weniger auf netten Maps oder Filmen lag (auch wenn ich an deren Herstellung durchaus beteiligt war), sondern auf der prinzipiellen Arbeit eine vernünftig bedienbare graphische Oberfläche zu schaffen, unter welcher sich dann eine Reihe durchaus trickreicher Programm-Komponenten verstecken. Dementsprechend habe mich darauf beschränkt zu skizzieren, auf welche Weise ein Großteil der Ergebnisse unserer Gruppe erzeugt wurden und wo derzeit die Hauptarbeitsfelder in der Erweiterung und Verallgemeinerung der Tools liegen. Nett wäre es dafür natürlich gewesen, einen Laptop zur Verfügung zu haben, auf dem mal eben hätte demonstrieren können, wie das alles live aussieht - so aber mußten ein paar Overhead-Folien herhalten um die wesentlichen Komponenten vorzustellen. Das wesentliche würde man eh nicht sehen, weil ich ja eh damit beschäftig war, an dem Code zu arbeiten, statt Bilder zu produzieren. Sehe ich derzeit ehrlich gesagt nicht so sehr als das an was mich interessiert; mir geht es eher darum all die ganzen - doch mitunter nicht trivialen - Probleme welche mit dem Karten erstellen (und damit verbunden dem korrekten Abbilden und Darstellen) zusammenhängen in den Griff und in brauchbaren Code zu bekommen. Für den Schritt, welchen wir dann heute Nachmittag noch ins Auge gefaßt haben - nämlich daß Erstellen von Allsky Maps von hoher Integrationszeit - wird all dies, woran ich derzeit sitze auf jeden Fall benötigt; haben wir das nicht sauber im Griff, dann ist erst einmal Essig mit dem weiteren Programm. ... Also werde ich mich wohl mal aufmachen und mir ein paar Stunden Schlaf gönnen. Eine Resümee kommt dann noch.

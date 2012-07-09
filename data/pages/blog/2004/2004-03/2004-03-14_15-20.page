@@ -1,0 +1,11 @@
+---
+title: Skymaps go Cinema 
+in_menu: false
+---
+
+## {title:} ##
+
+_Sunday, 14 March 2004 -- 15:20_ 
+
+
+So, ich habe mich noch einmal hier eingefunden um in Fortsetzung des gestrigen Tages bei guter Musik an dem Code herumzubasteln, mit dem ich gestern begonnen habe. Wie ich allerdings feststellen konnte (beim Update vom CVS Server) hat Heino in der Zwischenzeit ein kleines Script geschrieben, welches ebenfalls wohl in der Lage ist aus einer Sequenz von Bildern einen Film zu machen. Was mir allerdings noch vorschwebt ist ein eigenständiges Tool, welches sich nahtlos in die bereits existierende Software einfügt. Naja, was einen Teil dieses Vorhabens betrifft, so bin ich seit gestern doch ein gutes Stück weitergekommen.

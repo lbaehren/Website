@@ -1,0 +1,34 @@
+---
+title: Koordinaten-Projektionen 
+in_menu: false
+---
+
+## {title:} ##
+
+_Thursday, 01 April 2004 -- 21:00_ 
+
+
+Na bitte, wir kommen der Sache doch langsam immer näher:
+<code>
+- fp := calc_fiducial_point(firstpixel=[168,18],mapProjection='CAR')
+---------------------------------------------------------------------
+ calcFiducialPoint()
+---------------------------------------------------------------------
+ Projection ...... : Plate caree [CAR]
+ r0 .............. : 57.2958
+ (phi[0],theta[0]) : [0,0]
+ (phi[1],theta[1]) : [168, 18]
+ CRPIX ........... : [1, 1]
+---------------------------------------------------------------------
+- fp := calc_fiducial_point(firstpixel=[168,18],mapProjection='TAN') 
+---------------------------------------------------------------------
+ calcFiducialPoint()
+---------------------------------------------------------------------
+ Projection ...... : Gnomonic [TAN]
+ r0 .............. : 57.2958
+ (phi[0],theta[0]) : [0,90]
+ (phi[1],theta[1]) : [36.6628, 172.485]
+ CRPIX ........... : [1, 1]
+---------------------------------------------------------------------
+</code>
+Will heißen: für eine Gnomonic spherical projection liegt der Referenzpunkt der Projektion bei ''[0,90]'' in native spherical coordinates, während der Punkt mit den Winkelkoordinaten [168,18] auf den Punkt ''[36.6628, 172.485]'' in der Ebene abgebildet wird. Was ich jetzt nur noch hinbekommen muß, ist daß der Wert CRPIX korrekt berechnet wird - dann habe ich einen entscheidenen Schritt in Richtung meines Vorhabens geschafft, nämlich mit beliebigen Kombinationen aus Projektionen und sphärischen Koordinaten zu arbeiten... Vorher werde ich aber wohl erst einmal etwas essen gehen.

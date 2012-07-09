@@ -1,0 +1,11 @@
+---
+title: C++ 
+in_menu: false
+---
+
+## {title:} ##
+
+_Wednesday, 10 March 2004 -- 14:48_ 
+
+
+Wahnsinn, so wie es aussieht bin ich gerade dabei meine erste wirklich funktionierende Klasse in C++ zu schreiben! Das hatte ich für die Software der Diplomarbeit zwar immer schon einmal angedacht, aber aufgrund des fortgeschrittenen Zustandes wäre das eine größere Aktion geworden. Hier aber - bei der LOPES/LOFAR Software - ist ja vieles erst im Entstehen, so daß sich gewisse Design-Entscheidung noch recht gut einbringen lassen. Da ich derzeit die Routinen für die Erstellung und Verarbeitung der Himmelskarten mehr oder weniger fest in meiner Hand habe, kann ich es mir (und will ich es mir) leisten, gewisse Dinge einfach sauber zu machen. Was nämlich bei einer längeren Fehlersuche gestern herausgekam war, daß die wiederholte Berechnung z.B. eines bestimmten Zahlenwertes an unterschiedlichen Stellen des Programms auf unterschiedliche Weise geschah; das darf nicht sein! Also spricht alles dafür, einen Teil der Funktionalität sauber als Klasse zu implementieren, so daß egal an welcher Stelle man einen bestimmten Wert haben will, man immer exakt das Selber geliefert bekommt, weil einfach der identische Mechanismus verwendet wird. Istt zwar erst mal ein wenig Zusatzarbeit, sollte die Mühe aber auf jeden Fall mehr als wert sein.

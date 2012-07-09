@@ -1,0 +1,13 @@
+---
+title: Interpolation der Zeitdaten 
+in_menu: false
+---
+
+## {title:} ##
+
+_Tuesday, 09 March 2004 -- 22:09_ 
+
+
+Wow, jetzt sitze ich doch wirklich schon fast zwei Tage an dieser dummen Geschichte mit der Interpolation der Zeitdaten. Gestern den Tag konnte ich recht bald abhaken, weil meine Konzentration einfach nicht da war. Heute habe ich mich - ein klein wenig besser ausgeschlafen - noch einmal der Sache angenommen, bisher allerdings ohne ein abschließendes Ergebnis.
+
+Worum es geht? Nun ja, letzte Woche hatte ich es ja geschafft eine Serie von Himmelskarten zu erstellen, auf welchen man den Cosmic Ray Event vom Januar aufblitzen und wieder verschwinden sehen konnte. Nun war es Heinos Idee von dem ganzen nicht nur eine Reihe von Karten anzufertigen, sondern die Bildersequenz in einen Film umzurechnen. Dabei stellte sich allerdings heraus, daß die reale Zeitauflösung von LOPES nicht ausreichte, um vernünftig etwas erkennen zu können, wenn man denn die generierten Bilder aneinanderhängt. Der Grund liegt einfach daran, daß - selbst bei einer Zeitauflösung von 12.5 Nano-Sekunden - der Event nur in einem einzigen Frame wirklich zu sehen ist. Um also ein bißchen mehr für das Auge zu haben war die Idee, die aufeinanderfolgenden Frames in geeigneter Weise zu interpolieren, so daß sich der Event auf diese Weise ein wenig zeitlich strecken läßt. Hm, der erste Gedanke war natürlich eine Interpolation auf den Zeitdaten zu machen. Die Tatsache, daß dies aber prinziepiell einer Phasengradientenmultiplikation im Fourierraum entspricht, verleitete Heino dann aber, doch letztere Methode vorzuschlagen. Na super - da sitzte ich jetzt gut zwei Tage dran. Immerhin habe ich mich heute Nachmittag wenigstens noch davon überzeugen können, daß zumindest die Array-Arithmetik, welche ich da so betreibe, ok ist; will heißen ich greife - so ich denn nicht noch irgendetwas absolut doofes übersehen habe - korrekt auf die Arrays zu. Nach alle dem kommt mir langsam der Verdacht auf, daß der Fehler in Wirklichkeit noch an einer ganz anderen Stelle zu suchen ist. Zwei Ideen habe ich da schon, aber heute Abend werde ich da wohl kaum mehr eine endgültige Erkenntnis erreichen. Ich denke mal, daß ich mir noch schnell einen Ausdruck von dem Programm-Code mach und dann in Richtung Wohnung verschwinde. Da kann ich ja dann immer noch beim Essen ein bißchen in dem Code herumstöbern und mir schon einmal eine Liste zurechtlegen, was ich morgen noch nachprüfen muß.

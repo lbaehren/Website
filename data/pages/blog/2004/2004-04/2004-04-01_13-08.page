@@ -1,0 +1,15 @@
+---
+title: Stand der Sachen 
+in_menu: false
+---
+
+## {title:} ##
+
+_Thursday, 01 April 2004 -- 13:08_ 
+
+
+Hey, so wie es aussieht hebt sich meine Laune im Laufe des Tages immer mehr. Nachdem ich heute morgen wieder einmal etwas spät aus den Federn gekommen bin - wohl der Tatsache geschuldet, daß es letzte Nacht wieder einmal halb zwei war bevor ich ins Bett gekommen bin - habe ich mich heute morgen dran gesetzt die dämlichen Java Plugins zu installieren, welche ich benötige um die interne Seite für die Verwaltung der Arbeitsstunden zu benutzen. Hat mich zwar einige Nerven gekostet, aber nach ein wenig hartnäckiger Suche hat es zum Erfolg geführt, so daß ich jetzt also schön artig meine Stunden eintragen kann. Naja, streng genommen sind das nur Estimates, weil ich das so genau nicht nachhalte; die 10 Stunden pro Tag sind daher eher ein lower limit, aber was soll's.
+
+Gegen Mittag war Havey hier, um sich nach dem Stand der Dinge zu erkundigen - wie immer neugierig zu sehen, was die Leute hier treiben und was für spannende Aktivitäten sie verfolgen. Auf die Frage, ob ich denn mit meinem Arbeitsplatz zufrieden sei konnte ich nur mit einem "nein" antworten; Anlaß genug also noch einmal ein wenig Druck auf die entsprechenden Leute hier im Haus auszuüben, damit sich an der derzeitigen (seit Januar bestehenden) Situation substantiell etwas ändert. Ok, mal schauen, was als nächstes passiert.
+
+Die ganze Woche lang habe ich mich herumgeärgert mich diesen bescheuerten Koordinatentransformationen und sphärischen Projektionen (will heißen Abbildung einer Kugel in die Ebene); nachdem ich ja jetzt meinen Schreibtisch in der neuen Wohnung stehen habe, konnte ich zumindest die theoretischen Grundlagen schon einmal ausarbeiten, nur mit der programmiertechnischen Umsetzung hat esbisher noch gehapert. Ich hatte zwar vorgestern Abend noch ein kleines Erfolgserlebnis, weil ich in dem Wust von Verzeichnissen die entsprechen Programmbibliotheken ausfindig machen konnte, mit welchen ich exakt die Dinge rechnen kann, die ich haben will - aber mit der praktischen Umsetzung, sprich der Integration in den eigenen Code hat es bisher einfach nicht funktioniert. Aber auch dieses Problem ist seit heute Mittag gelöst (fehlende Linker Anweisung), so daß ich mich jetzt wieder vernünftig an mein Vorhaben setzen kann, Karten in beliebigen Koordinaten bei einer beliebigen Projektion zu erstellen. Ok, das ist ambitioniert, aber dieses Feature hinzubekommen wäre wirklich etwas, was nicht unbedingt ein Standard-Feature in jeder astronomischen Software ist. Wenn dies für die LOFAR ITS klappt, dann wäre dies in der Tat etwas, was sich vorzeigen ließe. Mal sehen - ich werde mich jetzt an den Code für die Verbindung der einzelnen Programm-Segmente machen. Wäre klasse, wenn ich es noch schaffen könnte, im Laufe des Nachmittags ein paar erste Testläufe hinzubekommen...

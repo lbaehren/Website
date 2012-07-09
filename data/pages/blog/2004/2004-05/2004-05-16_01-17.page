@@ -1,0 +1,44 @@
+---
+title: Workshop & Coding 
+in_menu: false
+---
+
+## {title:} ##
+
+_Sunday, 16 May 2004 -- 01:17_ 
+
+Und schon wieder Sonntag... wie die Zeit hier verfliegt ist wirklich nicht schön. Ich frage mich wirklich, wo eigentlich die Woche geblieben ist - und auch das Wochenende ist schon wieder zur Hälfte rum. Da kann doch irgendetwas nicht ganz korrekt sein.
+
+Nachdem ich ja letztes Wochenende endgültig den Rappel in Sachen Grundschule bekommen hatte, gibt es jetzt eine Rückmeldung. Sieht durchaus so aus, als wäre ich nicht der einzige, der immer noch die Idee mit sich trägt, mal zu sehen was aus den Leuten geworden ist. Habe eine Mail von Michaela bekommen, welche - ohne daß ich es angesprochen hätte - direkt wieder mit dem Vorschlag kam; das ist natürlich Wasser auf die Mühlräder meiner Ideen. Ich denke mal, daß ich beim nächsten Abstecher in Richtung Rheinland mal genaueres zu der Planung angehen werde.
+
+Ist soweiso eine nette Sache einmal zu probieren, die Leute via Netz ausfindig zu machen, Traditionell ist dies bei den Mädels schwieriger, weil jener eher noch nach einer Heirat einen anderen Nachnamen haben (die umgekehrten Namensänderungen sind wohl immer noch eher selten, oder?). Ich dachte mir, daß ich einfach mal schaue wie weit ich denn so komme. Naja, in der Tat konnte eine kleine Schar ausfindig machen, so daß ich zumindest Adressen habe. Netterweise hat Michaela ebenfalls schon an einer Namensliste gebastelt, so daß wir also unsere Infos zusammenlegen können. So richtig konkret sind die Planungen noch nicht, aber aufgrund der Tatsache, daß im nächsten Jahr fünfundzwanzigjähriges Einschulungsjubiläum ist, scheint mir ein durchaus legitimer Anlaß, ein wenig detektivisch tätig zu werden. Ich warte immer noch auf eine Reaktion von Jacqueline, aber ich bin mal gespannt, ob aus der Richtung ein ähnliches Signal kommt. Wäre in der Tat wieder mal eines dieser Deja-Vu, wo direkt mehrere Leute mit ähnlichen Gedanken durch die Gegend rennen. Ich bin auf jeden Fall einmal sehr gespannt, wie sich die Sache weiterentwickelt...
+
+Was noch? Nun, der LOFAR Workshop am 24./25. Mai kommt mit großen näher. Auch wenn es noch eine Reihe von Details gibt, welche noch nicht geklärt sind, so gibt es doch wenigstens eine grobe Agenda: 
+
+| Monday 24 May ||
+|:-------------:||
+| 10.30 | Science talks |
+| | - Imaging with ITS |
+| | - RFI Monitoring at ITS |
+| | - LOPES |
+| | - THETA experiments |
+| 13.00 | Technical talks |
+| | - Description of Test Site |
+| | - Capabilties of Test Station Hardware/Software |
+| | - The ITS "User Interface" |
+| | - ITS "station calibration" & "array calibration" |
+| 16.00 | Site visit |
+
+| Tuesday, 25 May ||
+|:-------------:||
+| 9.00 | Contributed Talks |
+| 10.00 | ITS Tutorial - How to perform experiments with ITS |
+| 13.00 | Ideas for Future use of Test Facilities |
+| | - Current Test User Group |
+| | - How to interact |
+| | - How not to reinvent the wheel |
+| 15.00 | Wrap-up |
+
+Ich werde wohl nicht darum herumkommen, auch eine Präsentation zu geben, ich denke mal zum Imaging mit ITS und dem damit verbundenen Problem der Behandlung von Koordinatensystem und -projektionen (schließlich ist es ja das, womit ich mich hier seit gut eineinhalb Monaten beschäftige). Ich muß mal zusehen, daß ich morgen noch schaffe den noch fehlenden Code für den Skymapper zu schreiben (genauer gesagt für die ''Skymap'' Klasse), damit der ganze von mir geschriebene Code mit der existierenden Software kommunizieren kann. Das meiste klappt ja bereits schon, will heißen da eigentliche Berechnen der Himmelskarte wird abgearbeitet, nur fehlt halt noch die Routine, welche die Ergebnisse wieder zurückschickt an das Kontroll-Skript. Ich muß mir vorher nur noch einmal überlegen, wie ich die Berechnungsschritte vor der Rückgabe der Werte am sinnvollstens aufsplitten kann, in der Art daß ich eine Art Vererbungskette aufbauen kann, welche zwar klassenintern durchlaufen wird, von außen her aber komplett vor dem Benutzer verborgen bleibt. Sollte aber nicht mehr zu schwierig sein das noch hinzubekommen.
+
+Daneben verbringe ich wieder durchaus einige Zeit damit, Dokumentationen bereitzustellen, welche nicht nur den Mitgliedern der eigenen Arbeitsgruppe erlaubt ein bißchen nachzuhalten, was wo wie implementiert wurde, sondern auch durchaus schon mit dem Hintergedanken, eine Beschreibung für externe Benutzer zur Verfügung zu haben. Nachdem ich vor eine Weile ein wenig mit Doxygen herumgespielt habe (einem Tool zur Generierung von Dokumentationen), habe ich jetzt konsequent Erklärungen in meinen Programm-Code eingebaut, welche eine (so hoffe ich doch) ausreichende Information für diejenigen bieten, welche die von mir geschriebenen Programmteile benutzen wollen. Zwar stimmen alle darin überein - zumindest wenn man mal ein klein wenig nachbohrt - daß eine vernünftige Dokumentation durchaus eine wichtige Sache ist, um ein Projekt von dieser Größe verständlich zu halten, aber derzeit scheine ich (zumindest für die LOPES Gruppe) der einzige zu sein, der dies wirklich konsequent umsetzt.
