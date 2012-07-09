@@ -44,7 +44,7 @@ default_processing_pipeline:
 # source directories that may or may not be located in the website
 # directory.
 
-sources: [[/, Webgen::Source::FileSystem, src], [/, Webgen::Source::FileSystem, data/pages], [/, Webgen::Source::FileSystem, data/media]]
+sources: [[/, Webgen::Source::FileSystem, src], [/, Webgen::Source::FileSystem, data/pages]]
 
 ##____________________________________________________________________
 ##                                                              output
