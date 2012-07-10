@@ -3,9 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="{lang:}">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Your description goes here" />
-    <meta name="keywords" content="your,keywords,goes,here" />
-    <meta name="author" content="Your Name / Original design: Andreas Viklund - http://andreasviklund.com/" />
+    <meta name="description" content="Web presence of Lars Baehren" />
+    <meta name="keywords" content="Website,Development,Photography" />
+    <meta name="author" content="Lars Baehren / Original design: Andreas Viklund - http://andreasviklund.com/" />
     <meta name="generator" content="webgen - http://webgen.rubyforge.org" />
     <link rel="stylesheet" type="text/css" href="{relocatable: default.css}" media="screen,projection" />
     <title>{title:}</title>
