@@ -7,7 +7,6 @@ in_menu: false
 
 _Wednesday, 27 October 2004 -- 19:45_ 
 
-
 So, nach einer Reihe von Fixes ist jetzt ein weiteres Software Update auf den ITS Computern installiert. Sven ist vor etwa einer halben Stunde von hier weg, aber ich wollte wenigstens noch sicherstellen, dass er morgen frueh direkt mit seinen Test anfangen kann; daher also noch einmal RPM bauen und Software installieren. Ein kleiner Test liefert zumindest wieder sinnvolle Ergebnisse, so dass ich also mit guten Gewissen davon ausgehen kann, dass wir auch diesmal nicht die komplette Control Software zerschossen haben.
 
 Mit meinen eigenen Sachen bin ich nur im begrenzten Masse weitergekommen, aber dies ist wohl zum Teil auch dem Support zuzurechnen. Sobald ich die ITS Sachen aus den Haenden geben kann, werde ich wieder voll einsteigen, damit ich mich noch an das lustige Debugging geben kann.
