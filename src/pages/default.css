@@ -27,7 +27,7 @@ body {
  */
 #header {
     color:#ffffff;
-    background:#ffffff url(images/front.jpg) bottom left repeat;
+    background:#ffffff url(front.jpg) bottom left repeat;
     height:250px;
     margin:0 0 10px 0;padding:0;
 }
