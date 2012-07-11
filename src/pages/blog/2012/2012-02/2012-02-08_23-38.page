@@ -1,6 +1,8 @@
 ---
 title: Ruby Dokumentation
 in_menu: false
+author: Lars Baehren
+tags: Computing Development Ruby
 ---
 
 ## Ruby Dokumentation ##
@@ -21,11 +23,13 @@ Ruby-Welt vorgenommen: [RDoc](http://rdoc.sourceforge.net). Als ich dies aber ma
 
 Mit solch einem Ruestzeug ausgestattet, habe ich mich dann auch einmal daran gewagt eine Dokumentation fuer den Quellcode von [prometheus](http://www.prometheus-bildarchiv.de) (Das verteilte digitale Bildarchiv fuer Forschung und Lehre) zu generieren. Da meine Suche nach einer technischen Dokumentation wenig erfolgreich gewesen war (ein Zustand an dem sich leider bis zum derzeitigen Augenblick nicht wirklich etwas geaendert hat), hatte ich darauf spekuliert, dass die Macher des Projektes wenigsten ihren Quellcode dafuer verwendet haetten, um einem Neuankoemmling eine Uebersicht ueber die interne Organisation des Bildarchives zu vermitteln. Nicht nur aber gab es keinerlei Uebersicht ueber das zugrundeliegende Design, sondern auch der Quellcode an sich ist nur zu knapp einem Drittel dokumentiert:
 
-    Files:        1567
-    Modules:       739 (  461 undocumented)
-    Classes:      1999 ( 1469 undocumented)
-    Constants:     847 (  745 undocumented)
-    Methods:     13500 ( 8615 undocumented)
-     33.92% documented
+~~~~
+Files:        1567
+Modules:       739 (  461 undocumented)
+Classes:      1999 ( 1469 undocumented)
+Constants:     847 (  745 undocumented)
+Methods:     13500 ( 8615 undocumented)
+ 33.92% documented
+~~~~
 
 Wie man unter solchen Umstaenden verstehen soll, wie die Software nun eigentlich gestrickt ist, bleibt der Phantasie des Leser ueberlassen. Wenn ich aber eine Baustele benennen duerfte, wenn es um den Job in Koeln geht, dann wuerde ich mich erst einmal fuer eine grosser angelegte Aufraeum- und Dokumentations-Aktion einsetzen.
