@@ -113,6 +113,7 @@ for FILE in $FILES
       echo "---"                     > $varOutfile
       echo "title: Blog | $varMonthName $varYear" >> $varOutfile
       echo "in_menu: false"         >> $varOutfile
+      echo "author: Lars Baehren"   >> $varOutfile
       echo "---"                    >> $varOutfile
       echo ""                       >> $varOutfile
       echo "## {title:} ##"         >> $varOutfile
