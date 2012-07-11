@@ -1,10 +1,11 @@
 ---
 title: Software Installation
 in_menu: false
+author: Lars Baehren
 ---
 
 ## {title:} ##
 
 _Saturday, 10 January 2004 -- 19:02_
 
-Ach so, was ich gerade mache?? Ha, ich versuche mich wieder einmal an [AIPS++](http://aips2.nrao.edu). Allerdings sieht es derzeit schon ein wenig besser aus, nachdem ich mir noch einmal sauber alle Pakete via FTP gezogen habe. Allerdings muss ich mich jetzt durch das ''makedefs'' File quaelen, was nun wirklich kein Spass ist. 
+Ach so, was ich gerade mache?? Ha, ich versuche mich wieder einmal an [AIPS++](http://aips2.nrao.edu). Allerdings sieht es derzeit schon ein wenig besser aus, nachdem ich mir noch einmal sauber alle Pakete via FTP gezogen habe. Allerdings muss ich mich jetzt durch das `makedefs` File quaelen, was nun wirklich kein Spass ist. 
