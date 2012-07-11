@@ -2,6 +2,7 @@
 title: Data Access Library
 in_menu: true
 author: Lars B&auml;hren
+tags: [LOFAR, Development, HDF5, FITS]
 ---
 
 ## Data Access Library (DAL)
