@@ -28,7 +28,7 @@ using std::endl;
 using Blog::Timestamp;
 
 /*!
-  \file TimestampTest.cc
+  \file TestTimestamp.cc
 
   \ingroup Blog
 
