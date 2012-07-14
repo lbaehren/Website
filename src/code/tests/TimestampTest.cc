@@ -40,42 +40,16 @@ using Blog::Timestamp;
 */
 
 //_______________________________________________________________________________
-//                                                                    test_common
-
-/*!
-  \brief A few tests on some common functionality/operations
-
-  \return nofFailedTests -- The number of failed tests within this function
-*/
-int test_common ()
-{
-  std::cout << "\n[test_common]\n" << endl;
-  
-  int nofFailedTests (0);
-
-  double seconds (0.87654321);
-  double fractionOfSecond = seconds-floor(seconds);
-
-  std::cout << "-- double           = " << seconds        << std::endl;
-  std::cout << "-- int(double)      = " << int(seconds)   << std::endl;
-  std::cout << "-- floor(double)    = " << floor(seconds) << std::endl;
-  std::cout << "-- ceil(double)     = " << ceil(seconds)  << std::endl;
-  std::cout << "-- fraction(double) = " << fractionOfSecond << std::endl;
-
-  return nofFailedTests;
-}
-
-//_______________________________________________________________________________
-//                                                                 test_Timestamp
+//                                                              test_construction
 
 /*!
   \brief Test constructors for a new Timestamp object
 
   \return nofFailedTests -- The number of failed tests in this function.
 */
-int test_Timestamp ()
+int test_construction ()
 {
-  std::cout << "\n[test_Timestamp]\n" << endl;
+  std::cout << "\n[test_construction]\n" << endl;
 
   int nofFailedTests (0);
   
@@ -193,11 +167,8 @@ int main ()
 {
   int nofFailedTests (0);
 
-  // Test a few common operations which are required
-  nofFailedTests += test_common();
-
   // Test for the constructor(s)
-  nofFailedTests += test_Timestamp ();
+  nofFailedTests += test_construction ();
   // Test assignment of time
   nofFailedTests += test_attributes ();
   
