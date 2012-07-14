@@ -115,7 +115,7 @@ namespace Blog {
   */
   void Timestamp::copy (Timestamp const &other)
   {
-    rawtime_p        = other.rawtime_p;
+    itsRawtime        = other.itsRawtime;
     
     itsYear        = other.itsYear;
     itsMonth       = other.itsMonth;
@@ -283,12 +283,15 @@ namespace Blog {
   
   void Timestamp::summary (std::ostream &os)
   {
-    os << "[Timestamp] Summary of internal parameters." << std::endl;
-    os << "-- Raw time    = " << rawtime_p     << std::endl;
-    os << "-- ctime       = " << get(Timestamp::RFC2822) << std::endl; 
-    os << "-- iso8601     = " << get(Timestamp::ISO8601) << std::endl;
-    os << "-- ymd         = " << ymd()                   << std::endl;
-    os << "-- hms         = " << hms()                   << std::endl;
+    os << "[Timestamp] Summary of internal parameters."       << std::endl;
+    os << "-- Raw time        = " << itsRawtime               << std::endl;
+    os << "-- Offset from GMT = " << offsetFromGMT()         
+       << " / "                   << offsetFromGMT(false,":") << std::endl;
+    os << "-- Timezone ID     = " << timezone()               << std::endl;
+    os << "-- ctime           = " << get(Timestamp::RFC2822)  << std::endl; 
+    os << "-- iso8601         = " << get(Timestamp::ISO8601)  << std::endl;
+    os << "-- ymd             = " << ymd()                    << std::endl;
+    os << "-- hms             = " << hms()                    << std::endl;
   }
 
   // ============================================================================
@@ -319,9 +322,9 @@ namespace Blog {
   void Timestamp::setTime ()
   {
     /* Initialize timestamp to current time */
-    time (&rawtime_p);
+    time (&itsRawtime);
     /* Store the time information */
-    setTime (rawtime_p);
+    setTime (itsRawtime);
   }
   
   //_____________________________________________________________________________
@@ -333,7 +336,7 @@ namespace Blog {
   void Timestamp::setTime (time_t const &rawtime)
   {
     /* Store the raw time information */
-    rawtime_p = rawtime;
+    itsRawtime = rawtime;
     /* Convert time information to time structure */
     struct tm * timeinfo;
     timeinfo = localtime(&rawtime);
@@ -345,7 +348,44 @@ namespace Blog {
     itsMinute  = timeinfo->tm_min;
     itsSecond  = timeinfo->tm_sec;
   }
-  
+
+  //_____________________________________________________________________________
+  //                                                                     timezone
+
+  std::string Timestamp::timezone ()
+  {
+    struct tm * timeinfo;
+    timeinfo = localtime(&itsRawtime);
+
+    return std::string (timeinfo->tm_zone);
+  }
+
+  //_____________________________________________________________________________
+  //                                                                offsetFromGMT
+
+  /*!
+    \param seconds -- Return the offset in seconds.
+    \param sep     -- Separator symbol to be used when return the off as an
+           hour/minutes combination, e.g. \c hh:mm
+  */
+  std::string Timestamp::offsetFromGMT (bool const &seconds,
+					std::string const &sep)
+  {
+    std::string offset;
+    struct tm * timeinfo;
+
+    timeinfo = localtime(&itsRawtime);
+
+    if (seconds) {
+      offset = asString(timeinfo->tm_gmtoff);
+    } else {
+      int hours = timeinfo->tm_gmtoff/3600;
+      offset    = asString(hours) + sep + "00";
+    }
+    
+    return offset;
+  }
+
   //_____________________________________________________________________________
   //                                                                   setRawtime
 
@@ -353,7 +393,7 @@ namespace Blog {
   {
     /* Convert time information to time structure */
     struct tm * timeinfo;
-    timeinfo = localtime(&rawtime_p);
+    timeinfo = localtime(&itsRawtime);
     /* Update the value inside the time structure */
     timeinfo->tm_year = itsYear-1900;
     timeinfo->tm_mon  = itsMonth-1;
@@ -362,7 +402,7 @@ namespace Blog {
     timeinfo->tm_min  = minute();
     timeinfo->tm_sec  = second();
     /* Update the value of the raw time */
-    rawtime_p = mktime (timeinfo);
+    itsRawtime = mktime (timeinfo);
   }
 
   //_____________________________________________________________________________
@@ -480,7 +520,7 @@ namespace Blog {
       out << ymd() << "T" << hms() << ".00Z";
       break;
     case Timestamp::RFC2822:
-      std::string tmp (ctime(&rawtime_p));
+      std::string tmp (ctime(&itsRawtime));
       tmp.erase (24,1);
       out << tmp;
       break;

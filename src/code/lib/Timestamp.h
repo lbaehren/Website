@@ -139,6 +139,39 @@ namespace Blog { // Namespace Blog -- begin
       Thu  5 Mar 2009 06:42:12 PM EST
       \endverbatim
 
+      <li>If the time to the nearest second is precise enough, you can use strftime:
+      \code
+      #include <ctime>
+      #include <iostream>
+
+      int main() {
+        time_t now;
+        time(&now);
+        char buf[sizeof "2011-10-08T07:07:09Z"];
+        strftime(buf, sizeof buf, "%FT%TZ", gmtime(&now));
+        // this will work too, if your compiler doesn't support %F or %T:
+        //strftime(buf, sizeof buf, "%Y-%m-%dT%H:%M:%SZ", gmtime(&now));
+        std::cout << buf << "\n";
+      }
+      \endcode
+      If you need more precision, you can use Boost:
+      \code
+      #include <iostream>
+      #include <boost/date_time/posix_time/posix_time.hpp>
+      
+      int main() {
+        using namespace boost::posix_time;
+	ptime t = microsec_clock::universal_time();
+	std::cout << to_iso_extended_string(t) << "Z\n";
+      }
+      \endcode
+      In Qt, that would be:
+      \code
+      QDateTime dt = QDateTime::currentDateTime();
+      dt.setTimeSpec(Qt::UTC);  // or Qt::OffsetFromUTC for offset from UTC
+      qDebug() << QDateTime::currentDateTime().toString(Qt::ISODate);
+      \endcode
+
       <li>By the default the internal time is set to the time at which the object
       was created; thus 
       \code 
@@ -205,7 +238,7 @@ namespace Blog { // Namespace Blog -- begin
   private:
     
     //! Type capable of representing times and support arithmetical operations.
-    time_t rawtime_p;
+    time_t itsRawtime;
 
     //! Numerical value for the year
     int itsYear;
@@ -320,6 +353,13 @@ namespace Blog { // Namespace Blog -- begin
 
     //! Set the time
     void setTime (time_t const &rawtime);
+    
+    //! Get the local timezone
+    std::string timezone ();
+
+    //! Offset of local time from GMT
+    std::string offsetFromGMT (bool const &seconds=true,
+			       std::string const &sep="");
     
     //! Get the name of the day of the week
     std::string dayOfWeek (bool const &longName=false);
