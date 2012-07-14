@@ -1,24 +1,39 @@
+
 #include <Common.h>
+
+//_______________________________________________________________________________
+//                                                                 test_operators
 
 /*!
   \brief Test overloading of output operator for std::vector<T>, etc.
+
+  \param length -- Length of the vector, set, etc. used for testing operator 
+         overloading.
 */
 int test_operators (unsigned int const &length=10)
 {
   std::cout << "\n[TestCommon::test_operators]\n" << std::endl;
 
-  std::vector<int> vectInt (length);
-  std::vector<short> vectShort (length);
-  std::vector<long> vectLong (length);
-  std::vector<float> vectFloat (length);
-  std::vector<double> vectDouble (length);
-  
-  std::cout << "-- vectInt    = " << vectInt    << std::endl;
-  std::cout << "-- vectShort  = " << vectShort  << std::endl;
-  std::cout << "-- vectLong   = " << vectLong   << std::endl;
-  std::cout << "-- vectFloat  = " << vectFloat  << std::endl;
-  std::cout << "-- vectDouble = " << vectDouble << std::endl;
+  /* Test overloading for std::vector<T> */
+  {
+    std::vector<int> vectInt (length,1);
+    std::vector<short> vectShort (length,2);
+    std::vector<long> vectLong (length,3);
+    std::vector<float> vectFloat (length,4.0);
+    std::vector<double> vectDouble (length,5.0);
+    std::vector<std::string> vectString (length,"a");
+
+    std::cout << "-- vectInt    = " << vectInt    << std::endl;
+    std::cout << "-- vectShort  = " << vectShort  << std::endl;
+    std::cout << "-- vectLong   = " << vectLong   << std::endl;
+    std::cout << "-- vectFloat  = " << vectFloat  << std::endl;
+    std::cout << "-- vectDouble = " << vectDouble << std::endl;
+    std::cout << "-- vectString = " << vectString << std::endl;
+  }
 }
+
+//_______________________________________________________________________________
+//                                                                           main
 
 /*!
   \file TestCommon.cc
