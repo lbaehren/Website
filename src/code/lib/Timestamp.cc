@@ -253,16 +253,6 @@ namespace Blog {
   }
   
   //_____________________________________________________________________________
-  //                                                                       second
-  
-  int Timestamp::second ()
-  {
-    int fullSecond = floor(itsSecond);
-
-    return fullSecond;
-  }
-  
-  //_____________________________________________________________________________
   //                                                                    setSecond
   
   void Timestamp::setSecond (double const &second)

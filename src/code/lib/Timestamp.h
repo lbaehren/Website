@@ -327,11 +327,18 @@ namespace Blog { // Namespace Blog -- begin
     void setMinute (int const &minute);
 
     //! Get the numerical value of the second within the minute
-    int second ();
+    inline double second () const {
+      return itsSecond;
+    }
     
     //! Set the numerical value of the second within the minute
     void setSecond (double const &second);
 
+    //! Get the full second
+    inline int fullSecond () const {
+      return floor(itsSecond);
+    }
+    
     //! Get the fraction of a second
     inline double fractionOfSecond () const {
       int fullSecond = floor(itsSecond);
