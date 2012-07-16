@@ -11,5 +11,36 @@ in_menu: true
 
 When webgen is run it combines the template with each of the page files and generates the HTML output files. During this process special tags are substituted so that, for example, a menu is generated. Actually, this website was generated with webgen and, for example, the menu that you can see was created dynamically.
 
-### Directory structure
+### Creating a new website
 
+Creating a new website ist rather straight forward:
+
+~~~~
+webgen create www.mysite.com
+~~~~
+
+The resulting directory structure -- including configuration and control files --
+will look something like this:
+
+~~~~
+www.mysite.com/
+├── README
+├── Rakefile
+├── config.yaml
+├── ext
+│   └── init.rb
+├── src
+│   ├── browserfix.css
+│   ├── default.css
+│   ├── default.template
+│   ├── images
+│   ├── index.page
+├── webgen.cache
+└── website
+~~~~
+
+### References 
+
+* [Webgen homepage](http://webgen.rubyforge.org)
+* [kramdown Syntax](http://kramdown.rubyforge.org/syntax.html)
+* [kramdown quick reference](http://kramdown.rubyforge.org/quickref.html)
