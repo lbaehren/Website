@@ -202,9 +202,7 @@ namespace Blog {
       itsMonth = month;
       setRawtime();
     } else {
-      std::cerr << "[Timestamp::setMonth] Input value rejected - " << month
-		<< " - out of range!"
-		<< std::endl;
+      eorError ("setMonth", month);
     }
   }
 
@@ -218,9 +216,7 @@ namespace Blog {
       itsDay = day;
       setRawtime();
     } else {
-      std::cerr << "[Timestamp::setDay] Input value rejected - " << day
-		<< " - out of range!"
-		<< std::endl;
+      eorError ("setDay", day);
     }
   }
 
@@ -234,9 +230,7 @@ namespace Blog {
       itsHour = hour;
       setRawtime();
     } else {
-      std::cerr << "[Timestamp::setHour] Input value rejected - " << hour
-		<< " - out of range!"
-		<< std::endl;
+      eorError ("setHour", hour);
     }
   }
   
@@ -250,9 +244,7 @@ namespace Blog {
       itsMinute = minute;
       setRawtime();
     } else {
-      std::cerr << "[Timestamp::setMinute] Input value rejected " << minute
-		<< " - out of range!"
-		<< std::endl;
+      eorError ("setMinute", minute);
     }
   }
   
@@ -267,9 +259,7 @@ namespace Blog {
       itsSecond = second;
       setRawtime();
     } else {
-      std::cerr << "[Timestamp::setSecond] Input value rejected - " << second
-		<< " - out of range!"
-		<< std::endl;
+      eorError ("setSecond", second);
     }
   }
   

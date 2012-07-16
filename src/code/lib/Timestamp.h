@@ -406,6 +406,16 @@ namespace Blog { // Namespace Blog -- begin
     
     //! Update the value of the raw time (in UNIX seconds)
     void setRawtime ();
+
+    template <class T>
+      void eorError (std::string const &functionName,
+		     T const &value)
+      {
+	std::cerr << "[Timestamp::" << functionName << "]"
+		  << " Input value rejected - out of range!"
+		  << " [value = " << value << "]"
+		  << std::endl;
+      }
     
     //! Unconditional copying
     void copy (Timestamp const &other);
