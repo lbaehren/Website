@@ -91,6 +91,20 @@ int test_attributes ()
   int nofFailedTests (0);
   Timestamp t;
 
+  std::cout << "[0] Retrieve the various attributes ..." << std::endl;
+  {
+    std::cout << "-- Year        = " << t.year()   << std::endl;
+    std::cout << "-- Month       = " << t.month()  << std::endl;
+    std::cout << "-- Day         = " << t.day()    << std::endl;
+    std::cout << "-- Hour        = " << t.hour()   << std::endl;
+    std::cout << "-- Minutes     = " << t.minute() << std::endl;
+    std::cout << "-- Seconds     = " << t.second() << std::endl;
+    std::cout << "-- Day of Week = " << t.dayOfWeek() 
+	      << " / "               << t.dayOfWeek(true)  << std::endl;
+    std::cout << "-- ISO8601     = " << t.get(Timestamp::ISO8601) << std::endl;
+    std::cout << "-- RFC2822     = " << t.get(Timestamp::RFC2822) << std::endl;
+  }
+
   std::cout << "[1] Adjust value of month ..." << std::endl;
   try {
     for (int month(-1); month<15; month++) {
