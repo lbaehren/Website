@@ -7,3 +7,6 @@ add_subdirectory (documentation)
 ## Sources for the Website pages
 add_subdirectory (pages)
 
+## Layout templates
+add_subdirectory (templates)
+
