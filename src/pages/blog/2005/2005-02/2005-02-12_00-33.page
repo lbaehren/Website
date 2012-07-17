@@ -1,0 +1,18 @@
+---
+title: Erster offizieller Code-Build 
+in_menu: false
+---
+
+## {title:} ##
+
+_Saturday, 12 February 2005 -- 00:33_ 
+
+Hurra, es ist geschafft: es liegt jetzt der erste offizielle Code-Build vor, welcher auf den Modularisierten AIPS++ Biliotheken (aka CASA) beruht:
+
+~~~~
+-rw-r--r-- 1 lars users 43032 2005-02-12 00:14 libmasking.a 
+-rw-r--r-- 1 lars users 169006 2005-02-12 00:26 libmathtools.a 
+-rw-r--r-- 1 lars users 215390 2005-02-12 00:14 libshapelets.a
+~~~~
+
+Nicht nur dass die ersten Codesegmente wirklich komplett durchlaufen, sondern das ganze gibt es jetzt auch als Bibliothek, so dass sich Teile der Software sogar fuer externe Benutzer bereitstellen liesse. Ich wuerde mal sagen, dass dies ein durchaus versoehnlicher Ausklang fuer diese Arbeitswoche ist (was nicht heisst, dass ich das Wochenende komplett zuhause bleiben werde).
