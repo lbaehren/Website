@@ -1,0 +1,10 @@
+---
+title: Vorbereitung Vortrag 
+in_menu: false
+---
+
+## {title:} ##
+
+_Wednesday, 12 January 2005 -- 22:01_ 
+
+Tja, nun sitze ich also doch wieder alleine hier auf weiter Flur. Nachdem ich heute Abend endlich mal die faelligen Einkaeufe erledigt -- bin ich die letzten beiden Tage nicht zu gekommen -- und schnell ein Abendessen eingeworfen habe, bin ich wieder zurueck hier ins Buero, um noch den Vortrag fuer das _ITS data reduction_ Meeting am morgigen Tag fertigzustellen. Da es erst heute Nachmittag Gelegenheit gab, mich mit Heino abzustimmen, ist es leider mit den Aenderungen ein wenig knapp geworden. Da es aber morgen frueh bereits um 10:00 Uhr los geht -- sowas sollte eigentlich verboten werden -- muss ich zuschauen, dass ich alles vor dem Heimweg fertig habe. Dummerweise faellt mir mal wieder die Aufgabe zu, an welche sich bisher noch keiner gewagt hat, naemlich mal die eigentlich Datenstruktur innerhalb unserer Software aufzuschluesseln und darzustellen. Irgendwie hat es sonst kaum einer damit, so dass gerade die Kernbereiche der Software weitestgehend undokumentiert sind. Nun ja, das faellt demnach zu einem Teil mir zu -- und dass in einem Schnellkurs...
