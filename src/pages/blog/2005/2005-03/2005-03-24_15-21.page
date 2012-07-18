@@ -1,0 +1,14 @@
+---
+title: Linpack-Geschwindigkeitsrekord 
+in_menu: false
+---
+
+## {title:} ##
+
+_Thursday, 24 March 2005 -- 15:21_ 
+
+Wow, sage ich das nur:
+
+> Der von IBM gebaute Supercomputer der National Nuclear Security Administration (NNSA) hat einen neuen Linpack-Geschwindigkeitsrekord aufgestellt. Mit rund 135 TeraFlop/s durchbricht der in den Lawrence Livermore National Laboratories (LLNL) beheimatete BlueGene/L erstmals die Mauer von 100 TeraFlop/s und würde sich damit an die Spitze der aktuellen Top-500-Liste der Supercomputer setzen. Der nunmehr zweite auf der Liste ist zwar ebenfalls einer von IBMs BlueGene/L-Rechnern, bringt es aber mit gut 70 TeraFlop/s nur auf gut die halbe Linpack-Leistung.
+
+Mehr dazu im [Heise Newsticker](http://www.heise.de/newsticker/meldung/57901).

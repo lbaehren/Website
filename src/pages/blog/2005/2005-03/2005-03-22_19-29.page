@@ -1,0 +1,10 @@
+---
+title: MacOS X Update 
+in_menu: false
+---
+
+## {title:} ##
+
+_Tuesday, 22 March 2005 -- 19:29_ 
+
+Ok, das ging ja noch einmal glatt. Nachdem endlich das Auschecken des AIPS++ Data Repository fertig war (hat ungefaehr einen drittel Tag gebraucht!), habe ich endlich mal ein System Update fuer das MacOS X gefahren. Zu meinem Schreck war auf einmal nach dem Start der Finder nicht mehr da, also der eigentliche Zugang zu allen Daten. Gluecklicherweise beinflusst dies aber nicht die restlichen Programme, so das sich auf den Apple Seiten nach Hilfe suchen laesst. Interessanterweise ist es sinnvoller die Update Packages manual zu installieren statt alles durch den automatischen Update Helper laufen zu lassen. So habe ich jetzt auch meinen Desktop wieder (puh) und kann mich mit einem etwas ruhigeren Gewissen auf den Heimweg machen.

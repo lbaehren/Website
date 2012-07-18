@@ -1,0 +1,18 @@
+---
+title: Berechnung 
+in_menu: false
+---
+
+## {title:} ##
+
+_Tuesday, 22 March 2005 -- 12:07_ 
+
+Wow, das ist definitiv eine der laengsten Berechnungen gewesen, die ich je durchgefuehrt habe:
+
+~~~~
+[Tue Mar 15 11:00:06 2005] Skymapper started. ... 
+
+[Tue Mar 22 08:48:10 2005] Clearing internal data array storing skymap values.
+~~~~
+
+Will heissen: die ganze Aktion hat fast genau eine Woche gebraucht um durchzulaufen! Die gute Nachricht dabei ist aber auf jeden Fall, dass alles glatt gegangen ist -- also keine hickups oder crashs. Demnach habe ich jetzt einen Film des kompletten Himmels ueber der LOFAR Test Station waehrend eines Blitzes am 24. August 2004. Da kann man sicherlich noch einen netten Film draus machen, so dass sich das Resultat besser praesentieren laesst. Da ich mit dieser Rechnung jetzt noch einmal die Position des Blitzes festgenagelt habe, kann ich mich nun dranmachen eine weiteres Sequenz rechnen zu lassen -- diesmal aber mit hoher Aufloesung und auf die Position zentriert. Bin mal gespannt, was daraus kommt. Auf jeden Fall wird es aber wieder annaehernd eine Woche dauern, bis das Ergebnis vorliegt, was mich daran erinnert, dass ich dringen den Code fuer den Beamformer optimieren muss (der ist bei weitem noch nicht optimal).

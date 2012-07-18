@@ -1,0 +1,43 @@
+---
+title: Naechtliche Eingebungen 
+in_menu: false
+---
+
+## {title:} ##
+
+_Friday, 25 March 2005 -- 13:57_ 
+
+Also, hier mal noch ein Beitrag zum Thema "Wie die Dinge hier so laufen". Was ja wohl inzwischen hinreichend bekannt sein sollte ist, dass ich eher gegen Abend im Institut arbeite; wir hatten da schon eine Reihe von Diskussionen drueber und es gibt zu diesem Thema wohl in der Tat so viele Meinungen wie es Koepfe gibt. Was ich aber immer wieder feststelle ist, dass ich am besten in den Abendstunden arbeiten kann, wenn es leer im Institut ist und draussen vor dem Fenster Dunkelheit herrscht. Wie es scheint kommen mir die besten Ideen nicht nach dem Aufstehen und vor dem Mittag, sonder eher gegen Ende des Tages, wenn sich alle nur erdenklichden Dinge in meinem Kopf angesammelt haben. Anscheinend ist es immer erst noetig sowas wie eine kritische Masse zusammen zu bekommen, bevor sich das in einer Reihe von Einfaellen entlaedt. Hm, das kann dann zu spaeter Stunde im Buero kommen, oder aber -- wenn es vorher nicht geklappt hat -- dann zuhause. Und wenn ich meine zuhause, dann heisst das nicht unbedingt Tuer auf und schwups, sondern das kann durchaus irgendwann im Laufe der Nacht passieren.
+
+So geschehen in dem Beispiel von dieser Woche. So habe ich in der Tat mehrere Tage damit verbracht nach einer Loesung zu suchen, wie ich moeglichst allgemeiner Weise einen Progamm-Code aufsetzen kann, mit welchem sich N-dimensionale Koordinaten-Gitter beschreiben lassen. Das brauche ich zwar die meiste Zeit nur 3-dimensional, aber mir widerstrebt es einfach grundsaetzlich, solche Probleme nicht allgemein abzufassen; ansonsten hiesse das naemlich fuer jede extra Dimension zusaetzlichen Code schreiben (und das ist nun in der Tat nichts, was ich sonderlich erstrebenswert halte). Auch wenn ich einige Ideen hatte, so habe ich es bis zum Verlassen des Instituts nicht geschafft, was funktionierendes zu produzieren. Hat mich auch zuhause nicht losgelassen, so dass ich - wie ueblich, mit Stift und Schreibblock ausgeruestet -- ins Bett gestiegen bin. Der grosse Knall kam dann etwa eine Stunde spaeter:
+
+![Program code](/blog/2005/2005-03/2005-03-25-code.png)
+
+Ist alles nicht sonderlich leicht lesbar (auch fuer mich), aber ist ziemlich genau das, was dabei rauskommt, wenn ich schnellstmoeglich versuche einen Dump von dem auf Papier zu bringen von dem, was mir gerade so im Kopf herumgeht.
+
+Am folgenden Morgen (oder eher Nachmittag) habe ich dann alles in den Rechner gehackt - innerhalb weniger Minuten hatte ich damit nicht nur einen funktionierenden, sondern auch noch korrekten, Code.
+
+~~~~
+Vector pos (naxes,0); 
+pos(0) = -1;
+for (int m=0; m<nelem; m++) {
+  // increment the last element in the position vector
+  pos(0) += 1;
+  // go through the axes and check if we are within the axis shape 
+  for (int n=0; n<naxes-1; n++) {
+    // check if we're within the range of this axis
+    if (pos(n) == shape_p(n)) {
+      pos(n) = 0; 
+      pos(n+1) += 1;
+    }
+  }
+  // compute the coordinates of the grid node 
+  for (int n=0; n<naxes; n++) {
+    grid_p (m,n) = CoordinateGrid::calcCoordinate (n,pos(n));
+  }
+}
+~~~~
+
+Somit waere also das Problem eines N-dimensionalen regulaeren Koordinaten-Gitters effektiv innerhalb von ein paar Minuten geloest worden.
+
+Und was lehrt uns das? Nie vergessen Schreibmaterial neben das Bett zu legen, denn man weiss nie, was nachts so alles an die Oberflaeche kommt, was sonst irgendwo in der Tiefe versteckt war.

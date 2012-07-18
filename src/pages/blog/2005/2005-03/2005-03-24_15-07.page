@@ -1,0 +1,10 @@
+---
+title: Umstellung von AIPS++ auf CASA 
+in_menu: false
+---
+
+## {title:} ##
+
+_Thursday, 24 March 2005 -- 15:07_ 
+
+Super, so wie es aussieht, werde ich gegen Ende der Arbeitswoche doch endlich wieder ein wenig produktiv; nachdem ich vorletzte Nacht noch eine gute Eingebung hatte (dazu spaeter noch mehr), habe ich mich heute mal endlich drangesetzt, den Source-Code fuer die LOPES-Tools ein wenig aufzuraeumen und nach Funktionalitaet zu ordnen. Da mir ja immer noch vorschwebt insgesamt die Struktur der ganzen Verzeichnisse zu ueberarbeiten, ist dies schon einmal ein erster Schritt in diese Richtung. Zumindest habe ich auf diese Weise erreicht, dass der augenblickliche Code annaehernd in der Weise organisiert ist, wie ich mir fuer die kommende Umstellung von AIPS++ auf CASA vorstelle. Allerdings nimmt das Vorhaben durchaus einige Zeit in Anspruch, weil ich nach jeder Aenderung sicherstellen muss, dass das System als ganzes nach wie vor noch funktioniert; also kleine Aenderung vornehmen, Code auf meiner Machine compilieren, Code nach Nijmegen kopieren und dort compilieren, Test Update auf einem der anderen Accounts auf meiner Machine und dort compilieren, ... erst dann gehen die Aenderungen auf den CVS Server.

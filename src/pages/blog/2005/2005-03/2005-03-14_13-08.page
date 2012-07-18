@@ -1,0 +1,10 @@
+---
+title: MacOS Unix & Debian 
+in_menu: false
+---
+
+## {title:} ##
+
+_Monday, 14 March 2005 -- 13:08_ 
+
+Lustiges Spiel: fuer das MacOS Unix Subsystem gibt es die entsprechenden Tools von [Debian GNU Linux](http://www.debian.org) -- will heissen Bekannnte wie `apt-get` oder `dpkg` schauen regelmaessig rein. Auch System Upgrades laufen in mehr oder weniger bekannter Manier ab; da allerdings alles sauber fuer PowerPC aus den Quellpaketen generiert wird, loest ein einfaches `install` oder `update` gleich eine nicht unerhebliche Compiler-Session aus. Wo ich ja auf keinen Fall widerstehen konnte, war auch diese System hier aus "unstable" -- also die aktuellste Version -- umzustellen; so viel Experimentierfreude muss einfach sein.

@@ -1,0 +1,10 @@
+---
+title: Software Installation 
+in_menu: false
+---
+
+## {title:} ##
+
+_Thursday, 10 March 2005 -- 21:23_ 
+
+Ok, das war jetzt doch nicht so ganz trivial, wie ich mir das dachte. Zwar habe ich jetzt den groessten Teil aller Tools installiert, aber aufgrund des veraenderten Tastatur-Layouts ist es immer noch schwer an manche Funktionen ranzukommen. X11 unter OS X ist schon - dank BSD -- eine nette Sache, aber die normalerweise unter Linux (bzw. XFree86) gebraeuchlichen Tastaturkombinationen werden teilweise vom Mac OS abgefangen. Ist aber schon eine noble Sache, dass ich jetzt alle OS X Anwendungen fahren kann, waehrend gleichzeitig Unix Programme im Hintergrund laufen. War wirklich eine gute Wahl.
