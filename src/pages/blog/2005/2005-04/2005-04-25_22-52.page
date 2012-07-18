@@ -1,0 +1,43 @@
+---
+title: Young LOPES 
+in_menu: false
+---
+
+## {title:} ##
+
+_Monday, 25 April 2005 -- 22:52_ 
+
+In Anbetracht der Tatsache, dass bereits am Donnerstag das _Young LOPES_ Treffen in Nijmegen stattfindet, habe ich mich am Wochenende endlich einmal drangesetzt und angefangen meinen Vortrag vorzubereiten. Auf wenn das Ganze ja eher einen eher informellen Charakter haben soll, so habe ich doch nicht vor wieder so einen Schiffbruch wie in Karlsruhe zu erleiden. Dies betrifft zum einen der Check der Praesentation sowohl als auch der benoetigten Technik; in dieser Hinsicht erweist sich das PowerBook als eine nette Sache, weil ich damit sicherstellen kann, dass ich eine Umgebung habe, unter der alles funktioniert. Ich werde zwar morgen noch mal antesten muessen, wie genau es mit einem Beamer funktioniert, aber ich denke mal dass mir Michiel dabei durchaus zur Hilfe gehen wird; das kann eigentlich nicht so schwer sein, aber ich will das doch lieber vorher noch mal bei uns im Institut ausprobieren, damit ich nicht komplett Neuland betreten muss.
+
+Was das Treffen selber betrifft, so hat Jelena das in die Wege geleitet, um mal alle Doktoranden und Post-Docs im [LOPES Projekt](http://www.astro.ru.nl/lopes) zusammenzubringen und einen Ueberblick darueber zu vermitteln, woran sie gerade so arbeiten. Ok, da muss ich natuerlich mal wieder anmerken -- wie ich dies Heino gegenueber ja vor Karlsruhe schon gemacht habe -- dass ich selber eigentlich mit am wenigsten mit dem eigentlichen LOPES Experiment zu tun habe; ich meine Cosmic Rays sind nun wahrlich nicht ein Teil meiner taeglichen Aktivitaeten. Was mir allerdings durchaus bewusst ist, ist dass die von mir geschriebenen Software-Kompenenten einen nicht unwesentlichen Bausstein in der Datenanalyse ausmachen (weshalb es auch immer wieder neue Dinge gibt, welche es zu implementieren und auszubessern gilt). Demzufolge werde ich also ein Buendel Gemischtes praesentieren: _A mixed bag: Coding and data analysis in Dingeloo_.
+
+Auch wenn ich morgen meine Reiseplaene noch einmal gruendlich checken muss, so denke ich mal sollte es nicht so ein riesen Problem darstellen, von hier nach Nijmegen zu kommen. Ich werde mich Mittwoch kurz nach Mittag (ich denke mal nach dem Astro-Lunch) aufmachen, damit ich nicht allzu spaet abends in Nijmegen eintreffe. Via dem Astrophysics Department ist sich bereits um die Unterbringung gekuemmert worden, aber ich moechte doch noch zu einer einigermassen humanen Zeit dort aufschlagen, damit ich mir abends vielleicht noch ein wenig die Beine vertreten kann. Allerdings habe ich mich bisher noch nich entscheiden koennen, ob ich denn nun mit dem Fahrrad durch Nijmegen gurken werde, oder ob ich auf oeffentliche Verkehrsmittel zurueckgreifen werde; Fahrrad hatte definitiv den Vorteil einfach noch wenig flexibler zu sein -- ich werde mal schauen.
+
+Ach ja, damit sich auch niemand beschwert dass ich Informationen unterschlagen wuerde, hier die bisherige Uebersicht:
+
+~~~~
+ I session
+
+ 9:00-9:20    A.Nigl
+ 9:20-9:40    A.Horneffer
+ 9:40-10:00   S.Nehls
+ 10:00-10:20  L.Bahren
+ 10:20-10:40  S.Lafebre
+ 10:40-11:00  G.Isar
+ 11:00-12:00  discussion
+ 12:00-13:30  lunch break
+
+ II session
+
+ 13:30-13:50  J.Petrovic
+ 13:50-14:10  T.Huege
+ 14:10-14:30  F.Badea
+ 14:30-14:50  A.Hakenjos
+ 14:50-15:10  P.Schellart
+ 15:10-16:00  discussion
+ 16:00-17:00  Nijmegen telescop tour
+ 17:00-18:00  drink
+ 18:30        dinner
+~~~~
+
+Wie daraus wohl schnell ersichtlich wird, werde ich also nicht vor Freitag Mittag die Heimreise antreten; ich denke mal das haengt auch noch ein wenig davon ab, was fuer Dinge sich noch so in einem erledigen lassen, wenn ich schon einmal vor Ort bin. Auf jeden Fall werde ich mich wohl mal Sven kurzschliessen, was seine weiteren Plaene in Sachen Coding fuer die LOPES-Tools betrifft; das gleiche gilt auch fuer Andreas Nigl. Ausserdem muss ich mir von Jelena mal Infos dazu einholen, in wie weit genau mein `Skymapper` fuer die Cosmic Ray Datenanalyse eingesetzt wird, damit ich diese Anwendungen im Zweifelsfall ein wenig mehr im Hinterkopf behalten kann.
