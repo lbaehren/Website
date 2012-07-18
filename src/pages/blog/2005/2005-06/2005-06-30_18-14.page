@@ -1,0 +1,10 @@
+---
+title: Umstellung der Software
+in_menu: false
+---
+
+## {title:} ##
+
+_Thursday, 30 June 2005 -- 18:14_
+
+Also, irgendwie werde ich das Gefuehl nicht los, dass ich mich im Laufe des heutigen Tages im Kreis drehe. Waehrend ich letzte Nacht noch bis recht spaet damit zugebracht habe ein wenig Ordnung in die Unmengen von Bilder zu bringen, welche ich hier aus den ganzen Daten erstellt habe geht seit meinem Auftauchen hier im Institut nicht wirklich weiter. Dabei kann es am Tag selber eigentlich nicht liegen. Schliesslich habe ich mich heute morgen zuhause noch eineinhalb Stunden hingesetzt um ein wenig zu arbeiten; das hat recht gut geklappt und war durchaus produktiv. Aber mit meinem Vorhaben endlich die Portierung unserer Software abzuschliessen wird es wohl nichts mehr am heutigen Tage. Da ich derzeit versuche ein Schema zu entwickeln, mit welchem sich auf allen installierten System arbeiten laesst, bin ich heute Mittag mal Schritt fuer Schritt meinen Rechner und den in Nijmegen durchgegangen; dabei hat sich dann herausgestellt, dass hier noch ein symbolischer Link gesetzt war, der so nicht existieren sollte - daher habe ich ihn auch entfernt. Seit dem bin ich wieder in Teufels Kueche, weil damit nur noch ein Bruchteil meines Setups funktioniert. In besonderer Weise bekomme ich kaum noch ein Programm gebaut, weil die benoetigte Library nicht befunden wird. Das heisst also, dass ich noch einmal zurueck an den grundelegenden Entwurf muss, um alles so hinzubiegen, dass es funktioniert. Finde ich durchaus sehr nervig.
