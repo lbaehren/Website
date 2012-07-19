@@ -1,0 +1,10 @@
+---
+title: X11
+in_menu: false
+---
+
+## {title:} ##
+
+_Tuesday, 02 August 2005 -- 21:48_
+
+Ok, man sollte wirklich nicht an allem herumspielen, woran mal herumspielen kann. Nachdem ich heute Nachmittag mit dem Darwinports System herumgespielt habe, um mir ein neueres X zu installieren, habe ich gerade eben beim Starten eine boese Uberraschung erlebt: mit einem Mal stimmte die Ausgabe von nicht mehr. zwar bekam ich mit einem Male drei Terminal-Fenster -- zwei davon in bester tmwm Manier -- aber dafuer war das Standard-Terminal komplett unfoermig und endete irgendwo jenseits des Bildschirmendes. Wie sich nach einigem Suchen herausstellte, waren in der Tat die X11 Konfigurationsdateien ersetzt worden, wodurch die ganze Settings nicht mehr stimmten. Gluecklicherweise habe ich die Backups der Dateien nicht geloescht, so dass ich den vorherigen Zustand mehr oder weniger herstellen konnte.

@@ -1,0 +1,11 @@
+---
+title: LaTeX Books
+in_menu: false
+tags: Books Typesetting
+---
+
+## {title:} ##
+
+_Wednesday, 24 August 2005 -- 11:54_
+
+Hm, das sieht jetzt aber doch ein gutes Stueck besser aus. Nachdem ich bei den _Chronicles of Narnia_ ja eine Weile mit dem Layout experimentiert habe, kommt dies nun auch den _Harry Potter_ Buechern zugute. Mit der `fancyhdr` Paket lassen sich die Seitenheader einfach viel schoener einstellen, als dies standardmaessig der Fall ist. So kriegt man z.B. sowohl Seitenzahl, Kapitelueberschrift als auch Buchtitel sehr schoen auf einer Doppelseite angeordnet, so dass man beim Druck ein noch runderers Aussehen erhaelt. Gut, aber das war ja gerade noch noch zum Zeitvertreib, weil ich noch auf einen Anruf gewartet habe. Jetzt geht es aber los.

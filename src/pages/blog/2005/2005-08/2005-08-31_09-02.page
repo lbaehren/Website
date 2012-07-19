@@ -1,0 +1,10 @@
+---
+title: Installation LOFAR Wiki
+in_menu: false
+---
+
+## {title:} ##
+
+_Wednesday, 31 August 2005 -- 09:02_
+
+Die Aktion mit der Installation der LOFAR Wiki gestern war leider nicht sonderlich erfolgreich. Zwar war Klaas durchaus bemueht mir dabei zu helfen, letztendlich scheiterte es aber an fehlenden Informationen ueber das System, welches auf dem Webserver vorhanden ist. In gewisser Weise haette es ja sogar ein gutes Stueck einfacher laufen sollen, als dies auf meinem eigenen Rechner der Fall war; schliesslich sind die MySQL Datenbank und der Apache Server ja bereits vorhanden -- das musste ich bei mir ja erst noch installieren. Was dann schliesslich fehlte, war das Passwort fuer die Datenbank, welches gebraucht wurde, um die Wiki zu initialisieren -- peinlich, peinlich. Der gute Nebeneffekt andererseits wiederum ist, das dadurch meine Installationsanleitung wieder ein Stueck besser geworden ist, weil ich eine Reihe moeglicher Brennpunkte eintragen konnte, auf die also doch explizit hinweisen muss (auch wenn ich das nicht erwartet haette). Nun ja mal schauen, wie es gleich aussieht, wenn ich im Institut eintreffe -- Klaas hatte mir zugesagt, sich heute recht frueh noch einmal dranzusetzen. Schoen faende ich es auf jeden Fall, wenn die Wiki grundsaetzlich laeuft, bevor ich nach England verschwinde.

@@ -1,0 +1,10 @@
+---
+title: Web Server
+in_menu: false
+---
+
+## {title:} ##
+
+_Saturday, 13 August 2005 -- 23:03_
+
+Damn, ich glaube das gibt heute keinen mehr. Ich schaffe es immer noch, dass die Scripts von dem Web Server ausgefuehrt werde. Die normalen HTML-Seiten werden natuerlich ohne Probleme dargestellt, aber alle dynamisch erzeugten Seiten werden nicht generiert. Allerdings kann ich bisher nicht erkennen, was in den Einstellungen noch falsch sein soll.

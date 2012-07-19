@@ -1,0 +1,10 @@
+---
+title: Macht der Kommandozeile
+in_menu: false
+---
+
+## {title:} ##
+
+_Sunday, 14 August 2005 -- 21:48_
+
+Es lebe die Macht der Kommandozeile; waehrend ich unter den Suchergebnisse jede Menge Links fuer "Every little thing she does is magic" hatte, so schien ich mit keinem Rechner eine Verbindung aufbauen zu koennen. Zumindest gaben sowohl Firefox als auc Safari nach kurzer Zeit nur eine Timeout Meldung zurueck. Wie ich allerdings bei einem Teil der Narnia Dateien gelernt habe, macht es Sinn, die URL zu kopieren und wget darauf anzusetzen. Und siehe da, mit einem kommen die Dinge an Land. Es geht zwar alles recht zaeh (weil die Verbindung recht langsam ist), aber es klappt. Also: nicht die nette graphische Oberflaeche macht es, sondern das entsprechende Tool.

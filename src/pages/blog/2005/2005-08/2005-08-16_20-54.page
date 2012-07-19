@@ -1,0 +1,10 @@
+---
+title: Installation & Daten Auswertung
+in_menu: false
+---
+
+## {title:} ##
+
+_Tuesday, 16 August 2005 -- 20:54_
+
+Hm, das dauert wohl noch eine Weile. Aufgrund einer Anmerkung in der Bugzilla Liste habe ich die Installation des `gcc-3.4` gestartet -- das dauert doch eine Weile, was letztendlich, wenn ich einen weiteren Kommentar bedenke, aller Wahrscheinlichkeit garnicht noetig waere, weil der Fehler wohl im `Tk` Package zu finden ist. Wie dem auch sei, ich breche hier nur ungern ab, waehrend der Compiler noch beschaeftigt ist. Also werde ich mir die Zeit wohl noch ein kleine damit um die Ohren schlagen, mir anzuschauen, was meine Datenauswertung zuletzt geliefert hat. Ich bin naemlich derzeit einem Signal auf der Spur, das ich ich dieser Art bisher noch nie gesehen habe. Jetzt moechte ich natuerlich wissen wo es herkommt und ob sich aus den Himmelskarten weitere Infos ableiten lassen. Wie ich aber aus den ersten Versuchen ersehen konnte, handelt es sich ein weiteres Mal um eine Quelle, die vom Teleskop aus gesehen mehr oder weniger am Horizont liegt, so dass sowohl die Bildaufloesung schlecht ist, sowie sich keine vernuenftige Entfernungsbestimmung durchfuehren laesst. Nachdem die letzte Karte, welche ich habe rechnen lassen, nach gut drei Stunden fertig geworden ist, sollte ich in der Tat mal einen Blick drauf werfen, um zu schauen, ob vielleicht doch noch etwas brauchbares dabei herumgekommen ist...

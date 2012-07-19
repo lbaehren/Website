@@ -1,0 +1,10 @@
+---
+title: Software PowerBook
+in_menu: false
+---
+
+## {title:} ##
+
+_Tuesday, 16 August 2005 -- 20:35_
+
+Ich versuche gerade mich auf den Absprung vorzubereiten. Wie so ueblich moechte ich natuerlich vorher noch ein paar Dinge zu Ende gebracht haben. Diesmal ist es die derzeit immer noch nicht wieder laufende Installation fuer e.g. `xemacs` hier auf dem PowerBook. Seit der 0.8.2 Version der `xrender` Library schlagen alle Builds fehl, weil in eben jener Library in Konflikt mit bereits im System vorhandenen Files besteht und von `xrender` leider eine ganze Reihe anderer Packete abhaengen; will heissen, wenn das nicht laeuft, dann auch die anderen nicht. Das ist vor allen Dinge aergerlich, weil das DarwinPorts System kein efektives Downgrade erlaubt, so dass man zumindest zu einer funktionierenden aelteren Version gehen koennte. Also was das betrifft, ist da noch einiges zu erledigen. Vielleicht sollte ich doch irgendwann noch mal mein Vorhaben wiederbeleben, ein [Debian](http://www.debian.org) zu installieren, auch wenn ich es schoener faende das Unix entsprechend zu ergaenzen.

@@ -1,0 +1,16 @@
+---
+title: Webserver
+in_menu: false
+---
+
+## {title:} ##
+
+_Sunday, 14 August 2005 -- 21:40_
+
+Hurra, und noch ein Erfolg. Nach ewigem Probieren habe ich mal ein 
+
+~~~~
+find / -name httpd.conf
+~~~~
+
+losgeschickt, weil mir einfach nicht klar werden wollte, warum ich die Scripts im TWiki Order nicht ausfuehren konnte. Wie sich dann aber herausstellt, legen Apache und Apache2 ihre jeweilige ''httpd.conf'' an unterschiedlichen Stellen ab, so dass es natuerlich nicht so laeuft wie man es gerne haette -- werkelt man die ganze Zeit an der falschen Stelle herum. Nun aber, nachdem ich einfach die Zusaetze fuer die Wiki in das korrekte File reingeschrieben habe, bekomme ich mit einem Mal das TWiki Frontend zu Gesicht, so dass ich mich jetzt endlich, endlich mal daran machen kann in Erfahrung zu bringen, wie ich den Seitenausbau gestalten kann.

@@ -1,0 +1,10 @@
+---
+title: Webserver
+in_menu: false
+---
+
+## {title:} ##
+
+_Saturday, 13 August 2005 -- 16:11_
+
+Sieht bisher ganz gut aus: der Apache Webserver laueft, ich kann meine normalen Webseiten sehen und auch die Startseite der Wiki ist bereits da. Jetzt muss ich mich nur noch durch die abschliessende Konfiguration wuehlen, um alle Settings richtig einzustellen.
