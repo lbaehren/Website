@@ -1,0 +1,11 @@
+---
+title: Aufbereitung der elektronischen Version
+in_menu: false
+tags: Books Typesetting
+---
+
+## {title:} ##
+
+_Tuesday, 26 July 2005 -- 20:27_
+
+Da habe ich eben ja doch noch dran gedacht, mich nach einem Tool umzuschauen, mit welchem ich den Text aus einem PDF Dokument extrahieren kann. Die "Copy and Paste" Methode ist naemlich auf Dauer -- das heisst bei grossen Dokumenten -- nicht sonderlich effektiv, vor allen Dingen aber zu zeitaufwendig. Aber mit so einem netten Tool wie `pdftohtml` geht es mit der Konvertierung recht schnell; das ist dann zwar noch nicht das gesuchte TeX, aber da der Konverter so intelligent ist, auch die Schrifttypen zu erkennen, kann man anschliessen einfach noch mal einen Filter drueber laufen lassen, welcher der HTML Tags in LaTeX Befehle umwandelt. Bingo, und schon habe wir ein komplettes Kapitel sauber gesetzt. Gut zu wissen, dass dies auf diese Weise geht -- dann kann ich mich naemlich wirklich mal an das Vorhaben machen, irgendwann alle Buecher als saubere LaTeX Dokumente zur Verfuegung stehen zu haben. Das ist dann schon was anderes als die Word-Dokumente, welche ich bei meiner Suche gefunden habe. Vor allen Dingen aber kann man schnell noch einmal hingehen und Korrekturen einfuegen, falls man beim Lesen auf welche stoesst.

@@ -1,0 +1,10 @@
+---
+title: Update der Online Version
+in_menu: false
+---
+
+## {title:} ##
+
+_Thursday, 14 July 2005 -- 11:33_
+
+Na bitte, jetzt habe ich auch noch die ausstehenden technischen Probleme geloest, welche noch in Sachen Update der Online Version dieser Aufzeichnungen bestand. Die Uebertragung laeuft jetzt via `rsync`, was doch um einiges schneller geht, als dies mit einem `scp` oder `mc` der Fall ist. Vor allen Dingen aber laesst die jetzt alles komplett scripten, was etwaige Aenderungen einfacher zu verwalten laesst.

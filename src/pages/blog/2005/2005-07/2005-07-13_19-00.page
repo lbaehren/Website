@@ -1,0 +1,12 @@
+---
+title: Treffen in Nijmegen
+in_menu: false
+---
+
+## {title:} ##
+
+_Wednesday, 13 July 2005 -- 19:00_
+
+Ok, das war es, das Treffen in Nijmegen ist vorbei und ich bin auf dem Rueckweg. Dank einer leichten Verspaetung des Zuge hier bei der Abfahrt, komme ich sogar direkt weg und muss nicht noch eine halbe Stunde am Bahnhof warten. Das waere zwar auch nicht so sonderlich schlimm gewesen, aber auf diese Weise habe ich minimalen Verzug.
+
+Das Treffen war durchaus produktiv. Ich denke mal, dass wir Stueck fuer die einzelnen Versatzstuecke fuer die Ueberarbeitung und Erweiterung der Software zusammenbekommen. Sicher, es ist noch bei weitem nicht alles in trocknen Tuechern, aber die verbleibenden Probleme lassen sich immer weiter einkreisen, so dass nicht der Eindruck eines riesigen Berges voller ungeloester Probleme entsteht. Fuer mich persoenlich ist es dabei beruhigend, dass ich einige Beitraege leisten konnte, welche wohl dauerhaft ein Teil des Projektes bleiben werden. Heute Morgen konnte ich noch das Problem mit dem Verbinden von [AIPS++](http://aips2.nrao.edu) und [ROOT](http://root.cern.ch) loesen, so dass wir nun eine Moeglichkeit haben, Astronomy und Teilchenphysik zusammenzubringen. Jetzt gilt es natuerlich mit einer Reihe von kleinen Programmierprojekten die Moeglichkeiten auszuloten -- aber die Infrastruktur steht jetzt.

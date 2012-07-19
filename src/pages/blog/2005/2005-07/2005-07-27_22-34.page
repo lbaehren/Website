@@ -1,0 +1,12 @@
+---
+title: Tageszusammenfassung
+in_menu: false
+---
+
+## {title:} ##
+
+_Wednesday, 27 July 2005 -- 22:34_
+
+So, heute ist es zur Abwechslung mal wieder ein bisschen spaeter geworden. Da ich noch ein paar Dinge abschliessen wollte, bevor ich mich auf den Heimweg mache, ist es halt ein klein wenig ueber die normale Zeit hinaus geraten. Das ist aber auch nicht so sonderlich schlimm, weil ich damit wenigstens morgen frisch mit anderen Sachen starten kann (so zumindest der Plan). Ok, die Leseaktion ganz am Ende waere vielleicht nicht unbedingt notwendig gewesen, aber ein klein wenig Bildung abseits des taeglichen Einerlei kann ja nicht schaden.
+
+Der Tag heute stand im wesentlichen unter dem Zeichen von (a) Brigitta bei ihren [AIPS++](http://aips2.nrao.edu) Problemen zu helfen und (b) die letzte Woche geplante Erweiterung fuer die Matrizenrechnungen anzugehen, welche wir fuer die ueberarbeitete LOPES-Tools Version haben wollen. Gerade letztere hat mich in den letzten Tage einige Nerven gekostet, so dass ich doch ganz froh bin, zumindest einmal eine prinzipielle Loesung gefunden zu haben. Elegant ist dies sicherlich noch nicht, aber zumindest arbeiten laesst sich damit bis auf weiteres. Fuer die Verallgemeinerung und Optimierung werde ich dann spater noch einmal ein wenig Zeit freischaufeln muessen. Vorerst aber geht es mir darum, dass ich ein wenig Luft habe, um Brett bei seiner Arbeit zu helfen, damit fuer seinen Vortrag entsprechend geruestet ist. Da Heino ja nicht da ist, liegt es derzeit ja an mir, sicherzustellen, dass er vernuenftig vorankommt; ein wenig Hilfestellung bei technischen Problemen kann da wohl nicht schaden. Ausserdem kann man nicht unbedingt erwarten, dass sich jemand von ausserhalb so mir nichts dir nichts in all das einfindet, was im Laufe von drei bsi vier Jahren entworfen worden ist; zumindest dann nicht, wenn die Dokumentation immer noch zu wuenschen uebrig laesst (ich zeahle hier stark darauf, dass das Tutorial, an welchem Brett derzeit schreibt, hier die Luecke wenigstens ein bisschen weiter schliesst).

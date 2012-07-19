@@ -1,0 +1,10 @@
+---
+title: Layout Dwingeloo Nieuws
+in_menu: false
+---
+
+## {title:} ##
+
+_Sunday, 17 July 2005 -- 22:03_
+
+Aehem, war die urspruengliche Motivation das Institut zu verlassen nicht, dass ich ein Abendessen zu mir nehme?! Das war bisher aber noch nicht der Fall, weil ich hier erst einmal damit begonnen habe, wieder ein klein wenig am Layout der _Dwingeloo Nieuws_ zu basteln. Was mich ja schon eine Weile gestoert hat, das war die eingebauten Zitate. Einfach nur ein blockquote ist nicht wirklich toll, weil es sich einfach nicht genug abhebt. Eine leicht andere Schrift allein bringt es auch nicht. Das bisher teilweise verwendete Macro aus dem [Doxygen](http://www.doxygen.org/index.html) Stylesheet war zwar schon recht gut, lieferte aber haeufig keine saubere Textformatierung; es passierte recht oft, dass die Zeilen ausserhalb der Box weitergingen, was nicht sonderlich schoen ausschaut. Also habe ich jetzt noch mal ein wenig probiert und ich denke mal die jetzt gefundene Loesung ist schon wieder ein gutes Stueck brauchbarer, als das, was ich bisher verwendet habe. Wie es aussieht? Entweder ein wenig zurueckblaettern, oder auf einen der naechsten Eintraege warten, wo ich von der neuen Fassung Gebrauch machen werde.
