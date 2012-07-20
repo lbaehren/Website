@@ -1,13 +1,11 @@
 ---
 title: Access keys in Firefox 14
 in_menu: false
-author: Lars Baehren
-tags: Computing
 ---
 
 ## {title:} ##
 
-_Thu, 19. July 2012 -- 11:19_
+_Thu, 19. July 2012 - 11:19_
 
 Ok, da lag es also nicht alleine an mir und/oder an meiner Dummheit -- mir der aktuellen Release 14 des [Firefox](http://www.mozilla.org/firefox) Web-Browsers hat sich wirklich ein Teil des Verhaltens in der Bedienung veraendert. Da ich (meistens) ja schoen brav die angebotenen Updates installiere, hatte ich bereits den gestrigen Tag schon die neue Version hier bei mir auf dem Rechner laufen... allerdings mit kleinen Nebenwirkungen, welche ich aeusserst irritant fand.
 
@@ -19,7 +17,7 @@ Was mir dies immerhin schon einmal sagte war, dass ich offensichtlich nicht der 
 
 > Okay I see that access keys have changed on the Mac from CTRL to CTRL+ALT. I guess that's to make it consistent with the Windows version of FF?
 
-Was es jetzt genau ist, dass die Firefox-Macher zu diesen Veraenderungen bewogen hat kann ich nicht beurteilen (zumindest nicht ohne e.g. einen Blick ins Changelog), aber entscheident ist fuer erst einmal dass ich damit weiss, wie ich zu meinen vorherigen Einstellungen zurueckkomme, welche sich als sehr nuetzlich erwiesen haben: einfach ''about:config'' in die Adresszeile des Browsers eingeben und den [Ui.key.contentAccess](http://kb.mozillazine.org/Ui.key.contentAccess) auf den gewuenschten Wert setzen.
+Was es jetzt genau ist, dass die Firefox-Macher zu diesen Veraenderungen bewogen hat kann ich nicht beurteilen (zumindest nicht ohne e.g. einen Blick ins Changelog), aber entscheident ist fuer erst einmal dass ich damit weiss, wie ich zu meinen vorherigen Einstellungen zurueckkomme, welche sich als sehr nuetzlich erwiesen haben: einfach `about:config` in die Adresszeile des Browsers eingeben und den [Ui.key.contentAccess](http://kb.mozillazine.org/Ui.key.contentAccess) auf den gewuenschten Wert setzen.
 
 | 0 | Disable the accelerator key for the content. |
 | 1 | Use "Shift" for the content access key. |
@@ -27,4 +25,4 @@ Was es jetzt genau ist, dass die Firefox-Macher zu diesen Veraenderungen bewogen
 | 4 | Use "Alt" for the content access key. |
 | 8 | Use "Meta" for the content access key. |
 
-Wenn also `Ui.key.contentAccess=6`, dann bedeutet dies, dass `[CTRL+ALT]` als Tastenkombination noetig ist, um an die entsprechenden Keys zu kommen... ist jetzt aber wieder umgestellt.
+Wenn also ` Ui.key.contentAccess=6`, dann bedeutet dies, dass `[CTRL+ALT]` als Tastenkombination noetig ist, um an die entsprechenden Keys zu kommen... ist jetzt aber wieder umgestellt.

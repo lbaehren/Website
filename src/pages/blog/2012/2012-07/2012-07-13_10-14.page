@@ -1,7 +1,6 @@
 ---
 title: Another Bad Day For Passwords
 in_menu: false
-author: Lars Baehren
 tags: Computing Security
 ---
 
@@ -11,11 +10,11 @@ _Fri, 13. July 2012 - 10:14_
 
 Also irgendwie wollen die [Nachrichten](http://allthingsd.com/20120712/another-bad-day-for-passwords-this-time-at-yahoo) nicht abreissen:
 
-> Yahoo confirmed today that a bunch of passwords -- more than 450,000 of them to be exact -- have been stolen.
+> [Yahoo](http://www.yahoo.com) confirmed today that a bunch of passwords — more than 450,000 of them to be exact — have been stolen.
 >
 > [...]
 >
-> In LinkedIn’s case, the passwords were stored in a marginally scrambled state, not strongly encrypted as they should have been, but in a mixed-up state using an old, easy-to-break hashing technique known as MD5.
+> In [LinkedIn](http://www.linkedin.com)’s case, the passwords were stored in a marginally scrambled state, not strongly encrypted as they should have been, but in a mixed-up state using an old, easy-to-break hashing technique known as MD5.
 >
 > In the case of Yahoo, the passwords are said to have been stored in raw plaintext, which anyone with even the slightest bit of training in IT security knows is a no-no. If that is indeed how these passwords were stored, then Yahoo has some explaining to do.
 
