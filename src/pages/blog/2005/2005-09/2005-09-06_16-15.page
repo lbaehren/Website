@@ -1,0 +1,10 @@
+---
+title: Tutorials
+in_menu: false
+---
+
+## {title:} ##
+
+_Tuesday, 06 September 2005 -- 16:15_
+
+Nach dem Mittagessen gab es noch einmal zwei Vorlesungen, im wesentlichen zum Thema Spectral Lines. Da muss ich sagen, dass dies nicht unbedingt zu den Dingen gehoert, welche mich wirklich interessieren, so dass ich die meiste Zeit damit zugebracht habe, noch ein wenig was fuer meine eigenen Sachen zu tun (dem Netzwerk sei Dank). Nach den beiden Vorlesungen ist jetzt wieder eine Runde Tutorial an der Reihe. Dabei handelt es sich im eine Einfuehrung in Datenreduktion mit AIPS; da ich aber nicht mit AIPS arbeite -- auch nicht beabsichtige dies in Zukunft zu tun -- bringt mir das ganze nicht viel, weil fuer mich eher die grundlegenden Konzepte hinter der Datenreduktion interessant sind. Diese kann ich mir durchaus auch so aneignen. Die einzelnen Tutorial-Einheiten bestehen aus der Reduktion ausgesuchter Datensaetze, fuer welche bereits einige Vorbereitungen getroffen worden, so dass es noch nicht einmal so sehr darum geht, wirklich von Grund auf mit den Daten zu arbeiten. Demgegenueber setzt das, was ich ja bei [ASTRON](http://www.astron.nl) machen, ganz weit unten an, weil vieles von dem, was hier als gegeben vorausgesetzt wird, bei meinen Sachen noch selber gemacht werden muss. Insofern versuche ich die Dinge aus den Vorlesungen mitzunehmen, welche ich fuer mich brauchen kann, um diese dann direkt auf ein mir naeher liegendes Problem anzuwenden.
