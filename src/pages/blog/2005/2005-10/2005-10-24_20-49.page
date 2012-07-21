@@ -1,0 +1,10 @@
+---
+title: Fehler-Korrektur & Nachrichtenfluss
+in_menu: false
+---
+
+## {title:} ##
+
+_Monday, 24 October 2005 -- 20:49_
+
+Eigentlich, ja eigentlich ... wollte ich schon seit einer Stunde weg sein. Allerdings liess es mein Gewissen dann doch nicht zu, dass ich von hier verschwinde, bevor ich dieses einen absolut bescheuerten Fehler in dem Tool zur Erzeugung der dynamischen Spectra ausgebuegelt habe. Wie mir im Zuge der Dokumentation aufgefallen war, fehlten in den erzeugten FITS Dateien die Informationen ueber Teleskop und Beobachter; als ich dann versucht habe dies noch zu fuellen bin ich erst einmal auf einen Fehler gestossen, mit dem ich so nun ueberhaupt nicht gerechnet habe, so dass es mich eine Weile gekostet hat, den moeglichen Fehler zu suchen. So 100%ig bin ich noch immer nicht von meiner Loesung ueberzeugt, vor allen Dingen weil ich nicht verstehe, woher dieses seltsame Ausnahmeverhalten fuer einen bestimmten Fall kommt. Dem werde ich allderings heute Abend sicherlich nicht mehr auf die Spur kommen, so dass ich mich lieber gen Heimat aufmachen werde. Schliesslich kann ein Abendessen ja nicht komplett etwas falsches sein. Ausserdem musst ich morgen frueh zeitig raus, weil ich nach Nijmegen muss; wie sich heute morgen noch spontan ergab findet dort morgen ein Treffen statt, an welchem ich teilnehmen sollte. Hat mir natuerlich niemand vorher gesagt, sondern dies musste ich erst auf Nachfrage rausfinden. Ich hoffe doch mal, dass sich die Gelegenheit dazu nutzen laesst, dass ich endlich mal mit in die News-Loops komme - Unmengen Dinge gehen schlichtweg an mir vorbei, weil mich einfach niemand so richtig in den Planungen beruecksichtigt. Ich stehe zwar auf diversen Projektplaenen drauf, bekomme aber von allem weiteren nichts mit. Das einzige, was ich verstaerkt ueber Corina zu hoeren bekomme, dass ich nun auch im Projektmanagement kontrolliert werden soll -- nur macht dies ja wohl wenig Sinn, wenn ich im Gegenzug nicht darueber informiert werden, was denn offiziell von mir erwartet wird.

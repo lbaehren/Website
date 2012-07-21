@@ -1,0 +1,10 @@
+---
+title: PHP
+in_menu: false
+---
+
+## {title:} ##
+
+_Sunday, 02 October 2005 -- 18:50_
+
+Es geht also anscheinend doch nicht anders. Nachdem ich gestern eine halbe Ewigkeit damit zugebracht habe, die Navigation auf diesen Seiten sauber mittels Javascript zu loesen, habe ich mich jetzt fuer eine Loesung mit PHP entschieden. Das scheint mir letztendlich doch die sauberste Loesung, weil man mit Javascript eben leider nicht sicher gehen kann, dass man auch das Ergebnis erzielt, welches beabsichtigt ist. Ich habe es mir hier mit drei verschiedenen Browsern angeschaut und drei verschiedene Ergebnisse bekommen. Dann doch lieber die Loesung mittels PHP, weil da wenigstens normaler HTML Code an den Browser weitergegeben wird.

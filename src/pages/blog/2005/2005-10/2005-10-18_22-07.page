@@ -1,0 +1,16 @@
+---
+title: Mailkontakte
+in_menu: false
+---
+
+## {title:} ##
+
+_Tuesday, 18 October 2005 -- 22:07_
+
+Vielleicht verbringe ich mitunter doch ein wenig viel Zeit am Rechner. Auf dem Weg nach Hause ist mir gerade noch eine Loesung eingefallen, wie ich ein wenig den Ueberblick ueber die regelmaessigen Mailkontakte behalte; das Problem, welches sich ja mitunter ergibt, ist dass ich mich gerne in Ruhe zuhause hinsetze und tippe -- es kann aber durchaus schon mal irgendwo unterwegs sein. Da ich inzwischen dazu uebergegangen bin die Mail in keinem programmspezifischen Format abzulegen, sondern als normalen ASCII Text abzuspeichern, bietet die local Wiki eine wunderbare Loesung: nicht wird automatisch ein vernuenftiges Layout erzeugt, es laesst sich auch in allen geschriebenen und empfangenen Mail suchen. Das Problem ergibt sich nun gerne schon einmal, dass ich einfach eine neue Mail direkt in die Wiki hacke und dann zu einem spaeteren Zeitpunkt losschicke; allerdings vergesse ich dann gerne schon einmal, welche Mails jetzt noch weg muessen (mitunter ja auch ueber unterschiedliche Account). Um dabei aber nicht ins Hintertreffen zu geraten, ist mir eben auf der Fahrt endlich eine praktikable Loesung eingefallen. Da ich auf dem Desktop einen elektronischen Notizzettel habe, kann ich dort einfach eine Namensliste aufsetzen und den jeweiligen Status auffuehren.
+
+| [-] | Mail ist eingegangen, Antwort steht noch aus. |
+| [*] | Antwort-Mail ist geschrieben aber noch nicht abgeschickt. |
+| [+] | Antwort-Mail ist geschrieben und abgeschickt. |
+
+Das verlangt keinen sonderlichen Mehraufwand, ist aber simpel und effektiv.
