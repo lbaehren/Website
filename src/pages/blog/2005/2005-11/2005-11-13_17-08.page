@@ -1,0 +1,18 @@
+---
+title: Kopierschutz von Sony
+in_menu: false
+---
+
+## {title:} ##
+
+_Sunday, 13 November 2005 -- 17:08_
+
+Und wieder etwas neues, woran man beim Kauf von CDs/DVDs denken muss:
+
+> Sony BMG plant, den dubiosen XCP-Kopierschutz ab 2006 in Europa - auch in Deutschland - einzusetzen, berichtet dpa. Der Kopierschutz versteckt sich und saemtliche Dateien, Verzeichnisse, Registry-Schluessel und Prozesse, deren Name mit $sys$ beginnt, in Rootkit-Manier vor dem Anwender.
+>
+> [...]
+>
+> Die Antivirenexperten von Bitdefender haben derweil den ersten Trojaner gesichtet, der die Rootkit-Technologie des Digital-Rights-Management-Systems nutzt, um sich zu verbergen. Der Schaedling Backdoor.IRC.Snyd.A oeffnet nach der Systeminfektion eine Hintertuer ins IRC und versucht, die Firewall zu deaktivieren. Sowohl Bitdefender als auch diverse andere Antivirenprodukte wurden von ihren Herstellern um eine heuristische Erkennung ergaenzt, die derartige Schaelinge erkennen soll.
+
+Soll heissen: der auf der CD aufgebrachte Kopierschutz installiert sich auf dem Abspielsystem, versteckt sich vor dem Benutzer und oeffnet damit damit damit das System fuer weitere Schaedlinge. Bleibt nur zu hoffen, dass (a) aus denn Plaenen nichts wird bzw. (b) die entsprechenden CDs Ladenhueter werden. Die Details gibt es im [Artikel bei Heise](http://www.heise.de/newsticker/meldung/66007).

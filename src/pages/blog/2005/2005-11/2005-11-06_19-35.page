@@ -1,0 +1,10 @@
+---
+title: Scripting
+in_menu: false
+---
+
+## {title:} ##
+
+_Sunday, 06 November 2005 -- 19:35_
+
+Das war jetzt aber mal noch eine mehr als nur ueberfaellige Aenderung. Das vor Ewigkeiten in Bonn geschriebene `getall` Skript hatte, wie mir eben wieder aufgegangen ist, noch immer noch die Moeglichkeit, eine Liste von Adressen direkt aus einer Liste in einer Datei zu lesen. Das ist eigentlich etwas vollkommen triviales, nur habe ich die paar Zeilen Code nie geschrieben. In Anbetracht der Tatsache, dass ich noch ein paar FTP Server leerraeumen will (naja, nicht so schlimm, aber ich will halt die Daten haben), schien es mir doch endlich einmal an der Zeit, diese kleine Aenderung noch vorzunehmen. Auf diese Weise kann ich einfach einen Dump der diversen Adressen in eine Datei machen, und die Downloads ueber Nacht laufen lassen.

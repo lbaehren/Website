@@ -1,0 +1,10 @@
+---
+title: Layout Aenderungen
+in_menu: false
+---
+
+## {title:} ##
+
+_Tuesday, 08 November 2005 -- 09:56_
+
+Na bitte, damit ist diese Aenderung auch perfekt. Waehrend ich meiner taeglichen Lektuere des [Heise News-Ticker](http://www.heise.de) nachgegangen bin, habe ich mir einer der zitierten Quellen angeschaut um die angesprochene Diskussion ein wenig besser verfolgen zu koennen. Was mir aber sofort ins Auge gefallen ist, als sich die Seite oeffnete, war das Layout, welches mir sehr gut gefallen hat. Vor allen Dingen die Abschnittsueberschriften haben mir so gut gefallen, dass ich mir direkt mal den Stylesheet angeschaut habe. Ein leicht modifizierte Version benutze ich jetzt fuer die Ueberschriften; diese Variante wirkt einfach ein ganzes Stueck leichter, als die vorherige Fassung mit der massiven Box (ausserdem spare ich ich so auch Code).

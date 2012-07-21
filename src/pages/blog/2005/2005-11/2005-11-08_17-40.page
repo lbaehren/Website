@@ -1,0 +1,10 @@
+---
+title: Arbeitsmotivation
+in_menu: false
+---
+
+## {title:} ##
+
+_Tuesday, 08 November 2005 -- 17:40_
+
+Irgendwie ist die Luft raus. Nachdem ich bis zum fruehen Nachmittag daran gewerkelt habe, Installationsskripten fuer [AIPS++](http://aips2.nrao.edu) 3rd-Party Package zu bauen (immerhin bekomme ich nun einen fast vollautomatischen Build von [ATLAS](http://math-atlas.sourceforge.net) hin), habe ich mich heute Nachmittag noch ein wenig um Test mit der ITS Hardware gekuemmert. Nach Samstag war mir aufgefallen, das sich einer der PCs ein wenig zu oft von der Lebenden verabschiedete, so dass ich da noch einen Blick drauf werfen wollte (auch wenn ich nichts wirklich verdaechtiges finden konnte). Jetzt aber habe ich mich noch versucht an die noch ausstehenden Aenderungen an meiner Daten Einlese-Software zu machen; nur, so wirklich begeistern kann ich mich dafuer nicht, weil ich das Gefuehl nicht loswerde, das in dem Code ein Designfehler drinsteckt, welches die noetige Verallgemeinerung nur sehr schwer einflechten laesst. Wahrscheinlich werde ich mir einfach einen Ausdruck ziehen und mich dann damit nach Hause verziehen. Vielleicht komme ich nach einem Abendessen noch auf eine sinnvolle Idee, wie ich da ansetzen kann.

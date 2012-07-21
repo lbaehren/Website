@@ -1,0 +1,13 @@
+---
+title: Zugreisen
+in_menu: false
+tags: Travel Zwolle
+---
+
+## {title:} ##
+
+_Friday, 18 November 2005 -- 16:51_
+
+Das hatte ich bisher aber auch noch nicht. Ich bin hier gerade in **Zwolle** in den Anschlusszug nach Arnhem eingestiegen und muss feststellen, dass ich wahrscheinlch genau die richtige Mischung von Zeiten gewaehlt habe: zum einen ist es Freitag (und damit also Beginn des Wochenendes) und zum anderen Feierabend. Der Effekt ist, dass der Zug brechend voll ist. Ok, die letzten Male, wo ich auf dieser Strecke unterwegs war, geschah dies frueh am Morgen, typischerweise um die Zeit wo der Schul-/Univerkehr schon vorbei ist, bzw. die Bueroarbeitszeiten bereits begonnen habe. Das ist natuerlich diesmal nicht der Fall. Naja, ist aber auch nicht weiter schlimm, schliesslich gibt es doch noch ein paar freie Plaetze, so dass ich wenigstens meinen klassischen Eintrag vornehmen kann. Ich bin mal gespannt, wie die Lage in Arnhem ist; dort wechsele ich ja zur Deutschen Bahn. So eine Aktion wie das Umsteigen hier in Zwolle wuerde ich auf deutschem Boden wahrscheinlich kaum riskieren: genau fuenf Minuten Zeit zum Umsteigen. Hier in den Niederlanden ist dies in der Tat kein Problem, weil die Zuege wirklich sehr puenktlich sind (Verpaetungen von mehr als fuenf Minuten sind hier wirklich sehr selten); bei der Deutschen Bahn wuerde ich grundsaetzliche eines mehr an Pufferzeit einplanen, weil ich den Zuegen einfach nicht traue -- zumindest lehrt mich die Erfahrung da sehr vorsichtig zu sein.
+
+Ganz fertig geworden mit allem bin ich eben leider nicht mehr. Zwar geht aller Code inzwischen wieder durch dem Compiler, was angesichts der massiven Aenderungen ja auch nicht selbstverstaendlich ist, aber es gibt noch zwei Macken, welche ich eben nicht mehr ausmerzen konnte. Zumindest habe habe ich mein angegangenes Vorhaben, meinen Code weiter zu verallgemeinern, doch ein gutes Stueck vorangebracht. Vor allen Dingen habe ich einen weiteren Schritt in die Richtung gemacht, einzelne Konzepte als separate Bloecke zu realisieren, so dass ihre Funktionalitaet insgesamt zur Verfuegung steht. Das ist es ja, was mich an einigen Ecken gestoert hat, naemlich dass einige Programmteile riesige monolitische Bloecke von Code waren, so dass keine Wiederverwendbarkeit gegeben war. Mit den derzeitigen Bemuehungen denke ich mal geht es doch ein gutes Stueck weiter in genau diese Richtung. Besonders ist mir dies wieder an dem Beispiel des Codes klargeworden, welchen ich im Rahmen der Diplomarbeit produziert habe. Ich wuerde mal stark behaupten, dass so eine Aktion, wie wir sie seinerzeit abgehalten haben, nicht mehr noetig wuerde; da hat sich in der Zwischenzeit doch einiges getan, was die Organisation der Aufgabe betrifft.
