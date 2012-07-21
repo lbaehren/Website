@@ -1,0 +1,10 @@
+---
+title: Zusammenfassung Aktivitaeten
+in_menu: false
+---
+
+## {title:} ##
+
+_Monday, 19 December 2005 -- 15:41_
+
+Heute laeuft es doch mal wieder recht gut. Nicht nur dass mir letzte Nacht schon einmal ein Arbeitstitel fuer die Doktorarbeit eingefallen ist ("Investigation of sub-second-scale radio pulses with LOFAR prototype stations") -- gegen Mittag habe ich endlich den Fehler in der AIPS++ Installation auf Ray gefunden, so dass es in Nijmegen jetzt endlich wieder eine voll funktionsfaehige Version gibt. Befvor ich mich jetzt gleich noch an den beruehmt-beruechtigten "cc-Beam" mache raeume ich noch ein klein wenig in der Code Basis auf.

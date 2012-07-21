@@ -1,0 +1,10 @@
+---
+title: Kalender
+in_menu: false
+---
+
+## {title:} ##
+
+_Wednesday, 28 December 2005 -- 23:02_
+
+Na endlich, jetzt bleibt auch der selektierte Monat wenigstens an oberster Stelle im Menue. Hat mich eine Weile gekoste, herauszuknobeln, wie dies korrekt funktioniert. Die Idee selber ist absolut simpel, aber bei dieser Kombination von HTML/JavaScript/PHP muss man wirklich hoellisch aufpassen, weil schon ein kleiner Fehler in z.B. den Anfuehrungszeichen sehr seltsame Resultate geben kann. Sicher, dies ist jetzt wieder so einer dieser Detailverbesserungen, welche den wenigsten auffallen wird, aber mich hat dies halt endlos genervt, dass die Menueleiste nicht automatisch auf dem selben Monat stand, wie der darunter angebrachte Kalender.

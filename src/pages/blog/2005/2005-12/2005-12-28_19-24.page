@@ -1,0 +1,10 @@
+---
+title: Kalender
+in_menu: false
+---
+
+## {title:} ##
+
+_Wednesday, 28 December 2005 -- 19:24_
+
+Wie es aussieht, habe ich jetzt endlich das Layout-Problem in dem links stehenden Kalender geloest. War wohl nur ein zusaetzlicher Zeilenumbruch, welcher je nach Browser unterdrueckt oder ausgefuehrt wurde. Mit Safari, Camino und Firefox klappt es jetzt gleichermassen -- wer IE benutzt ist selber schuld.

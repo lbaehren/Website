@@ -1,0 +1,22 @@
+---
+title: Segmentation fault
+in_menu: false
+tags: Research Computing
+---
+
+## {title:} ##
+
+_Sunday, 11 December 2005 -- 23:24_
+
+Und wieder einmal sind es die kleinen wirklich bescheuerten Fehler, welche die Schwierigkeiten bescheren. Einer der Gruende fuer meinen Abstecher ins Institut war ja, dass ich mich endlich noch im die Daten fuer die Ueberarbeitung des Lensing Papers kuemmern wollte. Das Problem ist, dass ich zwar eine fast vollstaendige Sicherheitskopie aller seinerzeit erzeugten und berechneten Daten hier auf CD habe, nur leider sind die meisten Daten in einem Format abgelegt, welches es nur schwerlich erlaubt alles einfach einzulesen und darzustellen. Um dieses Problem zu ueberwinden habe ich damit begonnen ein Programm zu schreiben, welches die urspruenglichen Daten einliesst und in einem eher zugaenglichen Format (in diesem Falle FITS) ablegt. Nun, nachdem ich es geschafft habe, die Daten sauber einzulesen und alle wichtigen Parameter zu extrahieren, blieb letztendlich noch das Erzeugen der FITS Datei -- dieser Schritt allerdings widersetzte sich allen meinen Bemuehungen. Ich probier mir hier einen Ast ab, kopiere sogar alles auf einen anderen Rechner um dort alles durch den Compiler zu jagen -- nur um dann feststellen zu muessen, dass ich ganz einfach einen Variable Typ inkonsistent verwendet habe: wenn ich das Image als "Double" anmelde, dann sollte ich auch das Array vom gleichen Typ anlegen -- wenn ich stattdessen ein "Float" anlege, dann ist es kein Wunder, wenn es einen "Segmentation fault" gibt.
+
+~~~~
+ [writeFits]
+ - Creating FITS file images.fits ...
+ - Creating primary image array ...
+ - Copying pixel values ...
+ -- 40000 values copied.
+ -- Shape of pixel array : [200,200]
+ - Writing pixel values to file ...
+ Segmentation fault
+~~~~
