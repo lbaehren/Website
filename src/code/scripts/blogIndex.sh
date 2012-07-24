@@ -64,15 +64,17 @@ nameOfMonth ()
 ##
 ## Write header of index file; take year as input to generate title.
 ##
-## - year - Year for which the index is being created.
-## - menu - Add the page to the menu? If unset, the page will be
-##          excluded from the index in the sidebar.
+## - year    - Year for which the index is being created.
+## - menu    - Add the page to the menu? If unset, the page will be
+##             excluded from the index in the sidebar.
+## - outfile - Path to the output file to which the index is written.
 ##
 
 writeIndexHeader ()
 {
     _varYear=$1
 
+    ## Command parameter: entry to menu?
     if [ -z "$2" ]
     then
 	_varMenu="false"
@@ -80,13 +82,26 @@ writeIndexHeader ()
 	_varMenu="true"
     fi
 
-    echo "---"
-    echo "title: Blog | $varMonthName ${_varYear}"
-    echo "in_menu: ${_varMenu}"
-    echo "author: Lars Baehren"
-    echo "---"
-    echo ""
-    echo "## Blog archive | ${_varYear} ##"
+    ## Command parameter: Path to the output file
+    if [ -z "$3" ]
+    then
+	_varOutfile="index.page"
+    else
+	_varOutfile="$3"
+    fi
+
+    echo "Creating index file $_varOutfile ..."
+
+    echo "---"                                > $_varOutfile
+    echo "title: Blog | ${_varYear}"         >> $_varOutfile
+    echo "in_menu: ${_varMenu}"              >> $_varOutfile
+    echo "author: Lars Baehren"              >> $_varOutfile
+    echo "---"                               >> $_varOutfile
+    echo ""                                  >> $_varOutfile
+    echo "## Blog archive | ${_varYear} ##"  >> $_varOutfile
+    echo ""                                  >> $_varOutfile
+    echo "_contents coming soon..._"         >> $_varOutfile
+    echo ""                                  >> $_varOutfile
 }
 
 ##____________________________________________________________________
@@ -126,12 +141,11 @@ processDirectory ()
       varLink="/blog/$varYear/$varYear-$varMonth/$varFilename.html"
 
       ## Summary of variables assembled so far
-      echo "--------------"
+#      echo "--------------"
       echo "-- Filename    = $varFilename"
-      echo "-- Title       = $varTitle"
-      echo "-- Filename    = $varFilename"
-      echo "-- Timestamp   = $varDateTime"
-      echo "-- Output file = $varIndexFileMonth"
+#      echo "-- Title       = $varTitle"
+#      echo "-- Timestamp   = $varDateTime"
+#      echo "-- Output file = $varIndexFileMonth"
 
       ## Generate the index file(s)
       if [[ -e index.page ]]
@@ -148,6 +162,14 @@ processDirectory ()
 	  echo "## {title:} ##"         >> $varIndexFileMonth
 	  echo ""                       >> $varIndexFileMonth
 	  echo "  * [$varTitle]($varLink) | $varDateTime |" >> $varIndexFileMonth
+	  ##
+          ## Entry to YYYY/index.page
+          ##
+	  echo "  * [$varTitle]($varLink) | $varDateTime |" >> $varIndexBlog
+	  ##
+          ## Entry to YYYY/index.page
+          ##
+	  echo "  * [$varTitle]($varLink) | $varDateTime |" >> $varIndexYear
       fi
     }
 
@@ -158,8 +180,9 @@ processDirectory ()
 ##  Processing
 ##
 ##  src/pages/blog
-##  |-- YYYY.page
+##  |-- YYYY.page                  ...  varIndexBlog
 ##  `-- YYYY
+##      |-- index.page             ...  varIndexYear
 ##      |-- YYYY-01
 ##      |-- YYYY-02
 ##      |
@@ -191,12 +214,21 @@ else
     exit
 fi
 
+## Set up path to the index files created
+varIndexBlog=$varBasedir/$varYear.page
+varIndexYear=$varBasedir/$varYear/index.page
+
+## Change into the directory ...
 cd $varYear
+
+writeIndexHeader $varYear true "$varIndexBlog"
+writeIndexHeader $varYear false "$varIndexYear"
 
 for FILE in `ls`
 {
     if [ -d $FILE ] 
     then
+	## Change into the directory
 	cd $FILE
 	processDirectory
 	cd $varBasedir/$varYear
@@ -204,8 +236,6 @@ for FILE in `ls`
 }
 
 exit
-
-FILES=`ls *${varExtension} | grep -v index`
 
 ##____________________________________________________________________
 ## Run another pass across the index file for clean-up
