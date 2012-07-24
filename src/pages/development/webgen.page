@@ -1,21 +1,22 @@
 ---
 title: webgen
 in_menu: true
+author: Lars Baehren
 ---
 
-## webgen
+##{title:}##
 
 .. is a tool for the generation of static websites -- such as the ones you are
 looking at right now.
 
-### Introduction
+### Introduction ###
 
 When webgen is run it combines the template with each of the page files and
 generates the HTML output files. During this process special tags are substituted
 so that, for example, a menu is generated. Actually, this website was generated
 with webgen and, for example, the menu that you can see was created dynamically.
 
-### Creating a new website
+### Creating a new website ###
 
 Creating a new website ist rather straight forward:
 
@@ -43,8 +44,8 @@ www.mysite.com/
 └── website
 ~~~~
 
-### References 
+### References ###
 
-* [Webgen homepage](http://webgen.rubyforge.org)
-* [kramdown Syntax](http://kramdown.rubyforge.org/syntax.html)
-* [kramdown quick reference](http://kramdown.rubyforge.org/quickref.html)
+  * [Webgen homepage](http://webgen.rubyforge.org)
+  * [kramdown Syntax](http://kramdown.rubyforge.org/syntax.html)
+  * [kramdown quick reference](http://kramdown.rubyforge.org/quickref.html)

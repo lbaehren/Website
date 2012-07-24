@@ -1,17 +1,17 @@
 ---
 title: Data Access Library
 in_menu: true
-author: Lars B&auml;hren
-tags: [LOFAR, Development, HDF5, FITS]
+author: Lars Baehren
+tags: LOFAR, Development, HDF5, FITS
 ---
 
-## Data Access Library (DAL)
+## Data Access Library (DAL) ##
 
 The [Data Access Library](https://github.com/nextgen-astrodata/DAL) (DAL) is a library that abstracts the underlying file format from the user when working with radio astronomy data. Underlying formats may include HDF5, AIPS++/CASA tables, FITS or specific raw formats. This library is available to both the C/C++ developer and the Python user via the "pydal" module.
 
-### Background
+### Background ##
 
-The size and complexity of astronomical data are growing at relentless rates. This increase is especially apparent in the radio community as evidenced by the data challenges faced by many of the SKA pathfinders and other major radio telescopes such as <a href="http://www.lofar.org">LOFAR</a>, <a href="http://science.nrao.edu/evla">EVLA</a>, <a href="http://science.nrao.edu/alma">ALMA</a>, ASKAP, MeerKAT, MWA, LWA and eMERLIN. Enormous data rates are also becoming a challenge for large optical projects that are currently ramping up including <a href="http://pan-starrs.ifa.hawaii.edu">Pan-Starrs</a> and <a href="http://www.lsst.org">LSST</a>. As progress towards meeting these challenges, ASTRON and the LOFAR project are currently exploring the use of the Hierarchical Data Format, version 5 (HDF5) for LOFAR radio data encapsulation.
+The size and complexity of astronomical data are growing at relentless rates. This increase is especially apparent in the radio community as evidenced by the data challenges faced by many of the SKA pathfinders and other major radio telescopes such as [LOFAR](http://www.lofar.org), [EVLA](http://science.nrao.edu/evla), [ALMA](http://science.nrao.edu/alma), ASKAP, MeerKAT, MWA, LWA and eMERLIN. Enormous data rates are also becoming a challenge for large optical projects that are currently ramping up including [Pan-Starrs](http://pan-starrs.ifa.hawaii.edu) and [LSST](http://www.lsst.org). As progress towards meeting these challenges, ASTRON and the LOFAR project are currently exploring the use of the Hierarchical Data Format, version 5 (HDF5) for LOFAR radio data encapsulation.
 
 Officially, the DAL supports three file types:
 
@@ -25,4 +25,6 @@ Officially, the DAL supports three file types:
 
 As of Feb 15, 2001 the DAL can be cloned directly from the master repository hosted on [Github](https://github.com):
 
-    git clone https://github.com/nextgen-astrodata/DAL.git DAL
+~~~~
+git clone https://github.com/nextgen-astrodata/DAL.git DAL
+~~~~
