@@ -5,42 +5,16 @@
 
 * Design principles
 
-* Tasks [30%]
-** TODO Merge directories 'src' and 'data'
+* Tasks [45%]
+** DONE Merge directories 'src' and 'data'
 ** DONE Remove line-break from result of 'ctime(&rawtime_p)'
 ** DONE Define enum for timestamp formats
-** TODO Fix background image in header
+** DONE Fix background image in header
+Dimensions: 800x2803
+*** DONE shift current crop slightly more to the left
 ** TODO Define enum for Blog entry formats
-** DONE Mainpage for Doxygen documentation
 ** TODO Move box with contact information to left column
 This is not entirely trivial, since the column itself defines part of
 the layout - this needs to be disentangled.
 ** TODO Template for 2-column design
 ** TODO Adjust font used in main text column
-** TODO Import Blog entries [53%]
-*** DONE Jan 2004
-*** DONE Feb 2004
-*** TODO Mar 2004
-*** TODO Apr 2004
-*** TODO May 2004
-*** TODO Jun 2004
-*** DONE Jul 2004
-*** DONE Aug 2004
-*** DONE Sep 2004
-*** DONE Oct 2004
-*** DONE Nov 2004
-*** DONE Dec 2004
-*** TODO Jan 2005
-*** TODO Feb 2005
-*** TODO Mar 2005
-*** TODO Apr 2005
-*** TODO May 2005
-*** TODO Jun 2005
-*** TODO Jul 2005
-*** DONE Jan 2012
-*** DONE Feb 2012
-*** DONE Mar 2012
-*** DONE Apr 2012
-*** DONE May 2012
-*** DONE Jun 2012
-*** TODO Jul 2012
