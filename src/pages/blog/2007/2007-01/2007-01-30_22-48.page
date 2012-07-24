@@ -1,0 +1,12 @@
+---
+title: At the end of the day
+in_menu: false
+author: Lars Baehren
+tags: Music
+---
+
+## {title:} ##
+
+_Tue, 30. January 2007 -- 22:48_
+
+Ich halte es bei dieser Gelegenheit mal wieder mit [Spock's Beard](http://www.spocksbeard.com), auch wenn diese Aussage rein technisch gesehen ja nicht ganz zutrifft. Nachdem ich eben noch eine Stunde lang zusammen mit Corina probiert habe ihr SuSE Linux wieder von den leicht Untoten unter die Lebenden zurueckzuholen, musste ich einfach feststellen, dass bei dem Update mehr als nur die X11 Konfiguration zerschossen wurde. Demnach wird also wenig anderes uebrig bleiben, als die Daten zu sichern und das System sauber neu aufzuspielen. Dummerweise war auch die Netzwerkkarte nicht mehr ansprechbar, so dass es leider noch nicht einmal mehr ging, via `scp` alle relevanten Daten in Sicherheit zu bringen; so werden wir morgen also noch einmal ranmuessen, diesmal aber mit (a) einer Knoppix-CD und (b) einer Installations-DVD bewaffnet. Einen Teil der Sachen haette ich eben ja gerne schon erledigt, nur leider ist irgendetwas beim Brennen der Knoppix-CD fehlgeschlagen (es musste also einen Grund geben, warum mir der Rohling ein wenig suspekt vorkam), so dass es also nicht mehr klappte das Backup direkt noch durchzufuehren; jenes wird aber noetig, weil `home` leider nicht auf einer extra Partition liegt, so dass ich ungern ohne eine entsprechende Absicherung ein Upgrade versuchen wuerde. Also werde ich jetzt mal meine Installations-DVD Bestaende durchgehen, damit ich morgen ja nichts vergesse.
