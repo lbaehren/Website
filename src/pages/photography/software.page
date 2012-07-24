@@ -14,10 +14,12 @@ author: Lars Baehren
 
 ### Open source ###
 
-* [Droplet](https://github.com/fuxi83/Droplet) is an open-source project developed by [Stefan Brenner](http://www.stefanbrenner.com), designed for microcontroller-based high-speed photography, with the special emphasis on Droplet-Photography and Liquid Art.
-
-* [Luminance HDR](http://qtpfsgui.sourceforge.net) is an open source graphical user interface application that aims to provide a workflow for HDR imaging.
+* [darktable](http://www.darktable.org) is an open source photography workflow application and RAW developer. A virtual lighttable and darkroom for photographers. It manages your digital negatives in a database, lets you view them through a zoomable lighttable and enables you to develop raw images and enhance them.
 
 * [gPhoto2](http://gphoto.org) is a free, redistributable, ready to use set of digital camera software applications for Unix-like systems, written by a whole team of dedicated volunteers around the world. It supports more than 1400 cameras. gPhoto2 runs on a large range of UNIX-like operating system, including Linux, FreeBSD, NetBSD, MacOS X, etc.
 
-* [darktable](http://www.darktable.org) is an open source photography workflow application and RAW developer. A virtual lighttable and darkroom for photographers. It manages your digital negatives in a database, lets you view them through a zoomable lighttable and enables you to develop raw images and enhance them.
+* [Luminance HDR](http://qtpfsgui.sourceforge.net) is an open source graphical user interface application that aims to provide a workflow for HDR imaging.
+
+* [Droplet](https://github.com/fuxi83/Droplet) is an open-source project developed by [Stefan Brenner](http://www.stefanbrenner.com), designed for microcontroller-based high-speed photography, with the special emphasis on Droplet-Photography and Liquid Art.
+
+* [Raw Photo Processor](http://www.raw-photo-processor.com) (RPP) is a Raw converter for Mac OS X (10.4, 10.5, 10.6 and 10.7 only), supporting almost all available digital Raw formats made for photographers by a photographer-software engineer.
