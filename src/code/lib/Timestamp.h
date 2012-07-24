@@ -397,6 +397,8 @@ namespace Blog { // Namespace Blog -- begin
     //! The the timestamp in a specified \c format
     std::string get (Timestamp::Format const &format=Timestamp::UNIX);
 
+    // === Static methods =======================================================
+
     // === Private methods ======================================================
     
   private:
