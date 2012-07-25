@@ -140,7 +140,7 @@ processDirectory ()
 
       ## Summary of variables assembled so far
 #      echo "--------------"
-      echo "-- Filename    = $varFilename"
+#      echo "-- Filename    = $varFilename"
 #      echo "-- Title       = $varTitle"
 #      echo "-- Timestamp   = $varDateTime"
 #      echo "-- Output file = $varIndexFileMonth"
@@ -216,7 +216,6 @@ echo "varBasedir   = $varBasedir"
 echo "varIndexBlog = $varIndexBlog"
 echo "varIndexYear = $varIndexYear"
 
-exit
 
 ##____________________________________________________________________
 ## Process the directory for the year
@@ -233,8 +232,15 @@ for FILE in `ls`
     then
 	## Set local variables
 	varMonth=`echo ${FILE:5:2}`
+	varMonthName=`nameOfMonth $varMonth`
 	## Section header for index files
-	echo "+++ New month +++" >> $varIndexYear
+	echo ""                      >> $varIndexYear
+	echo "### $varMonthName ###" >> $varIndexYear
+	echo ""                      >> $varIndexYear
+	## ---
+	echo ""                      >> $varIndexBlog
+	echo "### $varMonthName ###" >> $varIndexBlog
+	echo ""                      >> $varIndexBlog
 	## Change into the directory
 	cd $FILE
 	processDirectory
