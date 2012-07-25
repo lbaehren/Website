@@ -1,0 +1,31 @@
+---
+title: Job opening
+in_menu: false
+author: Lars Baehren
+tags: Work
+---
+
+##{title:}##
+
+_Wed, 25. July 2012 -- 12:58_
+
+Just pushed online the changes for setting up a few pages to advertise the new job opening here at [prometheus](http://www.prometheus-bildarchiv.de):
+
+~~~~
+From github.com:prometheus-ev/promhp
+   1ce2e49..1b88d86  master     -> origin/master
+Updating 1ce2e49..1b88d86
+Fast-forward
+ .gitignore                                        |   2 ++
+ about/jobs/developer.de.textile                   |  40 ++++++++++++++++++++++++++++++++++++++++
+ about/jobs/developer.en.textile                   |  18 ++++++++++++++++++
+ about/jobs/index.de.textile                       |   9 +++++++--
+ about/jobs/index.en.textile                       |   9 +++++++--
+ files/text/ausschreibung_entwickler_october12.pdf | Bin 0 -> 52963 bytes
+ 6 files changed, 74 insertions(+), 4 deletions(-)
+ create mode 100644 about/jobs/developer.de.textile
+ create mode 100644 about/jobs/developer.en.textile
+ create mode 100644 files/text/ausschreibung_entwickler_october12.pdf
+~~~~
+
+This of course only is a first draft version, but hopefully this is a starting point. Given that the deadline for an application is only 5 weeks away, everything needs to go live pretty quickly, in order to attract potential candidates.
