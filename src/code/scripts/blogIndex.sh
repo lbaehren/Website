@@ -100,7 +100,6 @@ writeIndexHeader ()
     echo "---"                               >> $_varOutfile
     echo ""                                  >> $_varOutfile
     echo "## Blog archive | ${_varYear} ##"  >> $_varOutfile
-    echo ""                                  >> $_varOutfile
 }
 
 ##____________________________________________________________________
