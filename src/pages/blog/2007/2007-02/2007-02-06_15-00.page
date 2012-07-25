@@ -1,0 +1,19 @@
+---
+title: Netzwerkprobleme
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Tue, 06. February 2007 -- 15:00_
+
+Also dass dies so ein Krampf werden wuerde hatte ich ja nicht erwartet. Nachdem das WLAN immer wieder zusammengebrochen ist, bin ich nun von Joes in Michaels Buero umgezogen (welchers naeher an der naechsten Basisstation liegt). Viel hat dies allerdings nicht gebracht, weil das Signal nach wie vor sehr schwach ist und immer wieder dazu neigt zu verschwinden. Auf diese Art und Weise ich es natuerlich recht schwer dauerhaft auf einem externen Rechner (z.B. in Nijmegen oder Dwingeloo) zu arbeiten. Was ASTRON betrifft so hat sich die Situation nach wie vor nicht gebessert:
+
+> Onze web server is vanmorgen gestopt vanwege een hardware probleem. Daardoor zijn de lokale Internet sites en Intranet niet beschikbaar.
+>
+> Momenteel wordt nieuwe hardware geconfigureerd en de data teruggezet.
+>
+> Als de Internet sites en Intranet weer beschikbaar zijn wordt u per email geïnformeerd.
+
+In letzter Konsequenz bedeutet dies einen vollstaendigen Black-out was das Internet betrifft: davon betroffen sind alle Web-Angebote des Hauses, vor allen Dingen [www.astron.nl](http://www.astron.nl), [www.jive.nl](http://www.jive.nl), [www.lofar.org](http://www.lofar.org) und [www.lofar.nl](http://www.lofar.nl). Allein verfuegbar ist derzeit noch [usg.lofar.org](http://usg.lofar.org), welches ja "mein" Server ist, auf welchem die Seiten der User Software Group liegen -- da zeigt sich wieder einmal, wie gut diese Entscheidung war, sich da weitestgehend unabhaengig zu machen.

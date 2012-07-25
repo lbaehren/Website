@@ -1,0 +1,20 @@
+---
+title: Wieder zuhause
+in_menu: false
+author: Lars Baehren
+tags: Travel
+---
+
+##{title:}##
+
+_Sat, 24. February 2007 -- 17:18_
+
+Geschafft. Ich habe die Rueckfahrt ziemlich genau abgepasst, so dass ich vor dem Einsetzen das spaetnachmittaglichen Regen wieder hier in Lhee eingetroffen bin. Die ersten, wenn auch immer noch vereinzelten, Tropfen fielen, als ich noch knapp 500 Meter von der Haustuer entfernt war -- eigentlich sehr gut abgepasst. Ok, streng genommen ist dies natuerlich etwas, das sich nur sehr schwer exakt im Voraus planen laesst, schliesslich muesste man dafuer sehr hochaufgeloeste Wetterinformationen vorliegen haben, mittels welcher sich fast minutengenau planen laesst. Was immer recht schwer abzuschaetzen ist, waere die Auswirkung des Windes auf die Fahrtdauer; man kann wirklich Glueck haben und gewinnt direkt minutenweise Zeit -- es gibt aber auch die Moeglichkeit, dass man die ganze Zeit gegen den Wind strampeln muss, was dann natuerlich zu einer merklichen Streckung der Fahrtzeit fuehrt.
+
+Ueberhaupt habe ich mir auf der Fahrt wieder einmal Gedanken darueber gemacht, um was fuer ein komplexes Minimierungsproblem es sich doch eigentlich bei der optimalen Auswahl der Fahrtstrecke handelt. Da ich mal davon ausgehe, dass die bevorzugte Groesse, welche es zu minimieren gilt, eine Funktion von aufgewendeter Zeit und verbauchter Energie ist, waere man natuerlich versucht eine Least-Squares Suche in diesem Parameterraum durchzufuehren. Was die Sache allerdings extrem kompliziert macht, sind all die Variablen, welche es bei diesem Problem zu beruecksichtigen gilt:
+
+  * Aus welcher Richtung kommt der Wind? Abhaengig davon, wie die Strecke verlaueft, muss man also mal mehr oder mal weniger Kraft aufbringen; dabei zu beruecksichtigen ist auch z.B. moeglicher Windschutz auf baumbewachsenen Strecken oder Erschoepfungserscheinungen durch den hoehren Kraftauswand.
+  * Die absolute Laenge der Strecke spielt in jedem Fall eine Rolle. Nicht zu vernachlaessigen ist allerdings die Beschaffenheit der Strasse, weil die erheblich dazu beitragen kann, dass ein zusaetzlicher Kraftaufwand noetig wird; die Wahl zwischen Asphalt und Pflastersteinen waere hier ganz wesentlich.
+  * Wie sieht das Hoehenprofil der abgelegten Strecke aus? Dies wiederum hat abweichende Auswirkungen, wenn man die beiden zuvor genannten Punkte mit einberechnet: bergauf bei Gegenwind ist sicherlich unguenstiger als bergab -- wie sieht es aber aus wenn man auf einem aufsteigenden Abschnitt potentiell Rueckenwind hat, dafuer aber ueber weniger vorteilhaften Untergrund fahren muss?
+
+Nein, dass sind natuerlich nicht alle Parameter und Erwaegungen, welche es zu beruecksichtigen gilt, aber ich denke mal, dass bereits aus dieser kleinen Kostprobe ziemlich klar wird, wie kompliziert das zu loesende Problem eigentlich ist. Wenn man dem auf den Grund gehen wollte waere sicherlich die einzige sinnvolle Methode sich selber und das Fahrrad mit einer Unmenge an Sensoren auszustatten, so dass man anschliessen aus der Flut an Messwerten irgendeinen Schluss ziehen koennte. Ob ich allerdings so weit gehen wuerde, will ich hier mal ernsthaft bezweifeln -- auch wenn ich mir denken kann, dass es sich durchaus um eine Herausvorderung handeln wuerde. Aber gut, ich will es ja nicht uebertreiben... schliesslich gibt es ja auch noch andere Dinge, welche ich mit meiner Zeit anstellen kann.

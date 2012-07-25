@@ -1,0 +1,21 @@
+---
+title: ASTRON Webserver
+in_menu: false
+author: Lars Baehren
+---
+
+##{title:}##
+
+_Sun, 11. February 2007 -- 16:42_
+
+Wenn ich nicht genau wuesste, dass diese Grenze bereits ueberschritten worden waere, dann wuerde ich spaetestens jetzt sagen, dass wir im Bereich des Peinlichen angekommen sind. Der ASTRON Webserver ist schon wieder nicht in der Lage Seiten zu liefern, sondern gibt sich recht unkommunikativ. Zwar ergibt ein `ping` dass der Rechner prinzipiell online ist
+
+~~~~
+PING dop40.nfra.nl (10.87.2.40): 56 data bytes
+64 bytes from 10.87.2.40: icmp_seq=0 ttl=64 time=0.567 ms
+64 bytes from 10.87.2.40: icmp_seq=1 ttl=64 time=0.290 ms
+64 bytes from 10.87.2.40: icmp_seq=2 ttl=64 time=0.320 ms
+64 bytes from 10.87.2.40: icmp_seq=3 ttl=64 time=0.273 ms
+~~~~
+
+aber damit hat es sich dann auch. Ich wuerde mal stark vermuten, dass dies schon eine Weile der Fall ist -- aber offensichtlich haelt niemand es fuer ausreichend wichtig den Server auch am Wochenende online zu haben. Bedenkt man, dass erst Mitte der Woche eine Upgrade vorgenommen wurde, so ist dies nicht sonderlich vertrauenswuerdig. Ich bin wieder einmal versucht eine Mail an unsere ICT Leute zu schreiben -- und sei es nur um zu sehen, ob sich noch heute jemand darum kuemmert, oder ob dies bis morgen liegen bleibt.
