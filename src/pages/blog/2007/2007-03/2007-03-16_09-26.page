@@ -1,0 +1,13 @@
+---
+title: Formbriefe
+in_menu: false
+author: Lars Baehren
+---
+
+##{title:}##
+
+_Fri, 16. March 2007 -- 09:26_
+
+Das ist ja doch nicht so einfach, wie ich mir dies vorgestellt hatte. Wie ja gestern schon angesprochen, ist der Kostenvoranschlag fuer die Reparatur meiner Digitalkamera jetzt da, so dass ich nur noch bestaetigen muss, dass ich die Arbeiten auch wirklich ausfuehren lassen will. Da es nicht so sonderlich praktikabel ist, dass ich mal eben schnell bei Photo Porst reinlaufe und dies muendlich erledige, hatte mir der Mitarbeiter gestern vorgeschlagen doch ein Fax zu schicken. Klingt ja als solches ganz vernuenftig, nur steckt hier leider der Teufel im Detail...
+
+Wie nicht anders zu erwarten verfasse ich derartige Schreiben auf dem Computer (alleine schon wegen der Lesbarkeit, aber auch wegen der Archivierung) -- die natuerliche und unangefochtene Wahl ist dann natuerlich LaTeX. Um das Schreiben auch vom Aufbau her akzeptabel zu machen, hatte ich das Briefformat des Koma Pakets ins Auge gefasst -- von dem was ich (a) von Nicole ueber das Package gehoert habe und (b) was ich aus der Beschreibung erkennen konnte, ist diese Klasse sehr maechtig und flexibel. Wie sich allerdings herausstellt, ist es garnicht so trivial alles sauber auf das Papier zu kriegen: so hat es mich nun doch eine Weile gekostet herauszufinden, wie ich eigentlich all die ganzen Angaben fuer Adressat und Absender sauber in den Brief eingebaut bekomme. An dieser Stelle ist die Dokumentation (ein Thema was mich diese Woche gleich in mehrfacher Weise verfolgt) noch verbesserungswuerdig, weil meines Erachtens nach nicht so wirklich erkennbar ist, wie man die grundlegenden Felder in einer einfachen Weise definieren kann. Ok, ich habe es nun gefunden, aber die investierte Zeit steht in keinem sonderlich guten Verhaeltnis zu der dafuer aufgewendeten Zeit.
