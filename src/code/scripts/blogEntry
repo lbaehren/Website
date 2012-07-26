@@ -1,0 +1,244 @@
+#!/bin/bash
+
+## Entries are stored into a directory per month, i.e.
+##
+##  $DOKUWIKI_ROOT
+##  `-- data
+##      `-- pages
+##          `-- blog                      ..........  var_dirPages
+##              `-- YYYY                  ..........  var_dirYear
+##                  |-- YYYY-01           ..........  var_dirMonth
+##                  |-- YYYY-02
+##                  |-- january_YYYY.txt
+##                  |-- february_YYYY.txt
+##                  `-- march_YYYY.txt
+##
+## For each new entry the following actions are taken:
+## 
+##  1. Check if the folder for the current year exists (YYYY); if not,
+##     create the folder.
+##  2. Check if the folder for the current month exists (YYYY-MM); if not,
+##     create the folder.
+##
+
+## ==============================================================================
+##
+##  Variables
+##
+## ==============================================================================
+
+varVerbose=no
+varEditor=emacs
+
+##____________________________________________________________________
+## Date atoms
+
+varMonthName=`date "+%B"`
+varYear=`date "+%Y"`
+varMonth=`date "+%m"`
+varDay=`date "+%d"`
+varHour=`date "+%H"`
+varMinute=`date "+%M"`
+var_second=`date "+%S"`
+varDate=`date "+%a, %d. %B %Y"`
+varTime=`date +%R`
+
+##____________________________________________________________________
+## Date combinations
+
+var_yyyymm=`date "+%Y-%m"`
+var_yyyymmdd=`date "+%Y-%m-%d"`
+var_hhmm=$varHour-$varMinute
+
+varEntry=$var_yyyymmdd"_"$var_hhmm
+
+varWebgenRoot=/Users/lars/Sites/larsbaehren.com
+varWebgenBlog=$varWebgenRoot/src/pages/blog
+var_dirData=/Users/lars/Sites/wiki/data
+var_dirPages=$var_dirData/pages/blog
+var_dirMeta=$var_dirData/meta/blog
+var_dirYear=$var_dirPages/$varYear
+var_dirMonth=$var_dirYear/$var_yyyymm
+var_fileIndex=$var_dirYear/`date "+%B" | tr A-Z a-z`_$varYear.txt
+var_fileEntry=$var_dirMonth/$varEntry.txt
+var_fileChanges=`echo $var_fileEntry | sed s/"pages\/blog"/"meta\/blog"/ | sed s/".txt"/".changes"/`
+varTimeUNIX=""
+var_pathPage=blog:$varYear:$varYear-$varMonth:$varEntry
+
+## ==============================================================================
+##
+##  Data summary
+##
+## ==============================================================================
+
+case $varVerbose in
+    yes)
+    echo "-- Directory pages  = $var_dirPages"
+    echo "-- Directory meta   = $var_dirMeta"
+    echo "-- Directory year   = $var_dirYear"
+    echo "-- Directory month  = $var_dirMonth"
+    echo "-- File month index = $var_fileIndex"
+    echo "-- File entry       = $var_fileEntry"
+    echo "-- File changes     = $var_fileChanges"
+    echo "-- File wiki path   = $var_pathPage" 
+    echo "-- UNIX timestamp   = $varTimeUNIX"
+    ;;
+    *)
+    ;;
+esac
+
+## ==============================================================================
+##
+##  Function definitions
+##
+## ==============================================================================
+
+##____________________________________________________________________
+##                                                 writeHeaderDokuwiki
+##
+##  Produce the basic skeleton for a new blog entry.
+##
+
+writeHeaderDokuwiki ()
+{
+    echo ""                        >> $var_fileEntry
+    echo "===== $varTitle ====="   >> $var_fileEntry
+    echo ""                        >> $var_fileEntry
+    echo "//$varDate - $varTime//" >> $var_fileEntry
+    echo ""                        >> $var_fileEntry
+    echo "+++"                     >> $var_fileEntry
+    echo ""                        >> $var_fileEntry
+    echo "{{tag>}}"                >> $var_fileEntry
+    echo ""                        >> $var_fileEntry
+}
+
+##____________________________________________________________________
+##                                                   writeHeaderWebgen
+
+writeHeaderWebgen ()
+{
+    varDirMonth=${varYear}-${varMonth}
+    varFileEntry=${varEntry}.page
+
+    ## Check if the directory is there
+
+    if [ -d $varWebgenBlog ]
+    then
+	cd $varWebgenBlog
+	pwd
+	if [ -d $varYear ]
+	then
+	    cd $varYear
+	    pwd
+	    if [ -d $varDirMonth ] 
+	    then
+		cd $varDirMonth
+		pwd
+	    else
+		mkdir $varDirMonth
+		cd $varDirMonth
+	    fi
+	else
+	    mkdir $varYear
+	    cd $varYear
+	    mkdir $varDirMonth
+	    cd $varDirMonth
+	fi
+    fi
+
+    ## Create the skeleton file for the new blog entry
+    
+    echo "---"                          > $varFileEntry
+    echo "title: $varTitle"            >> $varFileEntry
+    echo "in_menu: false"              >> $varFileEntry
+    echo "author: Lars Baehren"        >> $varFileEntry
+    echo "---"                         >> $varFileEntry
+    echo ""                            >> $varFileEntry
+    echo "##{title:}##"                >> $varFileEntry
+    echo ""                            >> $varFileEntry
+    echo "_${varDate} -- ${varTime}_"  >> $varFileEntry
+}
+
+## ==============================================================================
+##
+##  Processing
+##
+## ==============================================================================
+
+## -----------------------------------------------------------------------------
+## Check for directories and files we are about to write to; non-existent 
+## directories need to be created recursively - index files per month are created
+## from a template
+
+## [1] Check for dirctory containing entries per month
+
+if test -d $var_dirMonth ; then
+    echo "-- Directory for current month found."
+else
+    echo "Unable to find directory $var_dirMonth ... creating it now."
+    mkdir $var_dirMonth
+    chmod a+rw $var_dirMonth
+fi
+
+## [2] Check for index file of entries for this month
+
+if test -f $var_fileIndex ; then
+	echo "-- Month index file found."
+else
+	echo "-- Missing month index file; creating it now."
+	## generate header for new index file
+	echo "===== Weblog :: `date +"%B %Y"` =====" >> $var_fileIndex
+	echo ""                                      >> $var_fileIndex
+	## adjust file permissions
+    chmod a+rw $var_fileIndex
+	## done
+fi
+
+## -----------------------------------------------------------------------------
+## Get the title for the entry
+
+printf "[$varDate - $varTime] ? ";
+read varTitle
+
+## ... and create skeleton of file for new entry
+
+writeHeaderWebgen
+exit
+
+#writeHeaderDokuwiki
+
+## -----------------------------------------------------------------------------
+## Add link to new entry to the index file
+
+echo "  * [[.$var_yyyymm:$varEntry|$varTitle]] ($varDate - $varTime)" >> $var_fileIndex
+
+## -----------------------------------------------------------------------------
+## open file in editor
+
+$varEditor $var_fileEntry
+
+## -----------------------------------------------------------------------------
+## Create the changes file to make the new entry visible to the blog plugin
+
+## check if the directory, to which we want to write the data, exists
+
+if test -d $var_dirMeta/$varYear/$var_yyyymm ; then 
+	echo "-- Diectory for metadata found."
+else
+	mkdir -p $var_dirMeta/$varYear/$var_yyyymm
+	chmod a+rw $var_dirMeta/$varYear/$var_yyyymm
+fi
+
+echo "$varTimeUNIX      127.0.0.1       C       $var_pathPage        lars         created" >> $var_fileChanges
+
+## -----------------------------------------------------------------------------
+## post-editing cleanup of the directory; remove backup files created by emacs
+
+chmod a+rw $var_fileEntry
+chmod a+rw $var_fileIndex
+chmod a+rwx $var_dirMeta/$varYear
+chmod a+rwx $var_dirMeta/$varYear/$var_yyyymm
+rm -f $var_dirPages/*~
+rm -f $var_dirYear/*~
+rm -f $var_dirMonth/*~
+
