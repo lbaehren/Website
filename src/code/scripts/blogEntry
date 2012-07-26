@@ -52,17 +52,20 @@ var_hhmm=$varHour-$varMinute
 
 varEntry=$var_yyyymmdd"_"$var_hhmm
 
+## Directories for Webgen
 varWebgenRoot=/Users/lars/Sites/larsbaehren.com
 varWebgenBlog=$varWebgenRoot/src/pages/blog
+## Directories for Dokuwiki
+varDokuwikiRoot=/Users/lars/Sites/wiki
+varDokuwikiBlog=$varDokuwikiRoot/data/pages/blog
+
 var_dirData=/Users/lars/Sites/wiki/data
-var_dirPages=$var_dirData/pages/blog
 var_dirMeta=$var_dirData/meta/blog
-var_dirYear=$var_dirPages/$varYear
+var_dirYear=$varDokuwikiBlog/$varYear
 var_dirMonth=$var_dirYear/$var_yyyymm
 var_fileIndex=$var_dirYear/`date "+%B" | tr A-Z a-z`_$varYear.txt
 var_fileEntry=$var_dirMonth/$varEntry.txt
 var_fileChanges=`echo $var_fileEntry | sed s/"pages\/blog"/"meta\/blog"/ | sed s/".txt"/".changes"/`
-varTimeUNIX=""
 var_pathPage=blog:$varYear:$varYear-$varMonth:$varEntry
 
 ## ==============================================================================
@@ -73,7 +76,7 @@ var_pathPage=blog:$varYear:$varYear-$varMonth:$varEntry
 
 case $varVerbose in
     yes)
-    echo "-- Directory pages  = $var_dirPages"
+    echo "-- Directory pages  = $varDokuwikiBlog"
     echo "-- Directory meta   = $var_dirMeta"
     echo "-- Directory year   = $var_dirYear"
     echo "-- Directory month  = $var_dirMonth"
@@ -81,7 +84,6 @@ case $varVerbose in
     echo "-- File entry       = $var_fileEntry"
     echo "-- File changes     = $var_fileChanges"
     echo "-- File wiki path   = $var_pathPage" 
-    echo "-- UNIX timestamp   = $varTimeUNIX"
     ;;
     *)
     ;;
@@ -101,6 +103,32 @@ esac
 
 writeHeaderDokuwiki ()
 {
+    varDirMonth=${varYear}-${varMonth}
+    varFileEntry=${varEntry}.txt
+
+    ## Check if the directory is there
+
+    if [ -d $varDokuwikiBlog ]
+    then
+	cd $varDokuwikiBlog
+	if [ -d $varYear ]
+	then
+	    cd $varYear
+	    if [ -d $varDirMonth ] 
+	    then
+		cd $varDirMonth
+	    else
+		mkdir $varDirMonth
+		cd $varDirMonth
+	    fi
+	else
+	    mkdir $varYear
+	    cd $varYear
+	    mkdir $varDirMonth
+	    cd $varDirMonth
+	fi
+    fi
+
     echo ""                        >> $var_fileEntry
     echo "===== $varTitle ====="   >> $var_fileEntry
     echo ""                        >> $var_fileEntry
@@ -125,15 +153,12 @@ writeHeaderWebgen ()
     if [ -d $varWebgenBlog ]
     then
 	cd $varWebgenBlog
-	pwd
 	if [ -d $varYear ]
 	then
 	    cd $varYear
-	    pwd
 	    if [ -d $varDirMonth ] 
 	    then
 		cd $varDirMonth
-		pwd
 	    else
 		mkdir $varDirMonth
 		cd $varDirMonth
@@ -166,35 +191,6 @@ writeHeaderWebgen ()
 ## ==============================================================================
 
 ## -----------------------------------------------------------------------------
-## Check for directories and files we are about to write to; non-existent 
-## directories need to be created recursively - index files per month are created
-## from a template
-
-## [1] Check for dirctory containing entries per month
-
-if test -d $var_dirMonth ; then
-    echo "-- Directory for current month found."
-else
-    echo "Unable to find directory $var_dirMonth ... creating it now."
-    mkdir $var_dirMonth
-    chmod a+rw $var_dirMonth
-fi
-
-## [2] Check for index file of entries for this month
-
-if test -f $var_fileIndex ; then
-	echo "-- Month index file found."
-else
-	echo "-- Missing month index file; creating it now."
-	## generate header for new index file
-	echo "===== Weblog :: `date +"%B %Y"` =====" >> $var_fileIndex
-	echo ""                                      >> $var_fileIndex
-	## adjust file permissions
-    chmod a+rw $var_fileIndex
-	## done
-fi
-
-## -----------------------------------------------------------------------------
 ## Get the title for the entry
 
 printf "[$varDate - $varTime] ? ";
@@ -202,17 +198,17 @@ read varTitle
 
 ## ... and create skeleton of file for new entry
 
+echo ""
+echo " -> Creating new blog entry ..."
+echo ""
+
 writeHeaderWebgen
-exit
+writeHeaderDokuwiki
 
-#writeHeaderDokuwiki
-
-## -----------------------------------------------------------------------------
 ## Add link to new entry to the index file
 
 echo "  * [[.$var_yyyymm:$varEntry|$varTitle]] ($varDate - $varTime)" >> $var_fileIndex
 
-## -----------------------------------------------------------------------------
 ## open file in editor
 
 $varEditor $var_fileEntry
@@ -229,16 +225,13 @@ else
 	chmod a+rw $var_dirMeta/$varYear/$var_yyyymm
 fi
 
-echo "$varTimeUNIX      127.0.0.1       C       $var_pathPage        lars         created" >> $var_fileChanges
-
-## -----------------------------------------------------------------------------
-## post-editing cleanup of the directory; remove backup files created by emacs
+##_______________________________________________________________________________
+## Post-editing cleanup of the directory; remove backup files created by emacs
 
 chmod a+rw $var_fileEntry
 chmod a+rw $var_fileIndex
 chmod a+rwx $var_dirMeta/$varYear
 chmod a+rwx $var_dirMeta/$varYear/$var_yyyymm
-rm -f $var_dirPages/*~
+rm -f $varDokuwikiBlog/*~
 rm -f $var_dirYear/*~
 rm -f $var_dirMonth/*~
-
