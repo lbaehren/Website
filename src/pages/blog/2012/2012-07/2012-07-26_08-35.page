@@ -1,0 +1,25 @@
+---
+title: Warteschleife
+in_menu: false
+author: Lars Baehren
+tags: Blog
+---
+
+##{title:}##
+
+_Thu, 26. July 2012 -- 08:35_
+
+Auch wenn ich mittlerweile ein wenig ungeduldig werde, so muss ich mich wohl noch eine Weile gedulden -- der Zeitpunkt dass ich die neue Website online bringen kann ist noch eine Weile hin.
+
+Grundsaetzlich entwickeln sich die Dinge schon einmal in die richtige Richtung: das Layout als solches hat sich schon seit einiger Zeit stabilisiert -- auch wenn es da noch ein paar Details auszubuegeln gilt -- so dass der wesentliche Fokus auf dem Inhalt liegt. Die interne Struktur der Website ist relativ einfach:
+
+~~~~
+.
+|-- blog
+|-- developmemt
+|-- photography
+|-- research
+`-- work
+~~~~
+
+Ausgehend von dieser Aufteilung habe ich bereits damit begonnen Inhalt aus der derzeit verwendeten Wiki zu kopieren und zu bearbeiten; da vieles davon schon seit einer ganze Weile nicht mehr aktualisiert wurde, ist es eben nicht einfach nur mit einem Kopieren getan. Erwartungsgemaess aber steckt die meiste Arbeit in der Migration des Blog, welcher rein von der Textmenge den Loewenanteil darstellt; mittlerweile ist davon zwar einiges automatisiert -- Shell-Scripting sei dank -- aber es wird wohl immer noch eine Weile dauern, bis alle Jahrgaenge importiert sind (derer gibt es ganze acht Stueck, ausgehend vom Start 2004). Da es in der Zwischenzeit unterschiedliche Loesungen gegeben hat, wird die Konvertierung noch einmal zusaetzlich erschwert: Seiten von Dokuwiki Syntax umzustellen ist relativ einfach, aber ich habe immerhin noch zwei oder drei Jahrgaenge welche via Pivot erstellt wurden -- da ist noch vieles bei, was bisher nie zusammengefuehrt wurde (was sich mit ein wenig Glueck aber vielleicht scripten laesst).
