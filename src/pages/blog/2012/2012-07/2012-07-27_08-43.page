@@ -1,0 +1,11 @@
+---
+title: Test bestanden
+in_menu: false
+author: Lars Baehren
+---
+
+##{title:}##
+
+_Fri, 27. July 2012 -- 08:43_
+
+Ok, streng genommen war der vorherige Eintrage nur eine Generalprobe: nachdem ich das Script angepasst hatte, musste ich natuerlich noch testen, dass wirklich alles so funktioniert, wie ich mir dies vorgestellt habe. Dies scheint in der Tat der Fall zu sein, denn wie ich nachweisen konnte werde beide Versionen eines neuen Eintrages korrekt erzeugt (und auch an der richtigen Stelle abgelegt). Fuer die weitere Vorgehensweise ist dies eine deutliche Erleichterung, weil ich mich jetzt "nur" noch um den Import der Eintraege aus den vergangenen Jahren zu kuemmern brauche; das ist fuer sich genommen immer noch eine recht umfangreiche Aufgabe, denn schliesslich ist das Vorhaben ja schon, alle seit Januar 2004 geschriebenen Eintraege zusammenzufuehren. Letzteres ist bisher noch nie in der Weise geschehen, teils weil dies ein gutes Stueck Arbeit ist, teils aber auch weil ich zwischenzeitlich mit _Pivot_ ein Tool verwendet habe, welches Texte in einem eigenen Format ablegt -- da wird in jedem Fall eine Konvertierung noetig.
