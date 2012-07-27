@@ -46,27 +46,32 @@ varTime=`date +%R`
 ##____________________________________________________________________
 ## Date combinations
 
-var_yyyymm=`date "+%Y-%m"`
-var_yyyymmdd=`date "+%Y-%m-%d"`
+varYearMonth=`date "+%Y-%m"`
+varYearMonthDay=`date "+%Y-%m-%d"`
 var_hhmm=$varHour-$varMinute
 
-varEntry=$var_yyyymmdd"_"$var_hhmm
+varEntry=$varYearMonthDay"_"$var_hhmm
+varFileTemp=${varEntry}.tmp
 
 ## Directories for Webgen
 varWebgenRoot=/Users/lars/Sites/larsbaehren.com
 varWebgenBlog=$varWebgenRoot/src/pages/blog
+
 ## Directories for Dokuwiki
 varDokuwikiRoot=/Users/lars/Sites/wiki
 varDokuwikiBlog=$varDokuwikiRoot/data/pages/blog
 
-var_dirData=/Users/lars/Sites/wiki/data
-var_dirMeta=$var_dirData/meta/blog
+var_dirMeta=$varDokuwikiRoot/data/meta/blog
 var_dirYear=$varDokuwikiBlog/$varYear
-var_dirMonth=$var_dirYear/$var_yyyymm
+var_dirMonth=$var_dirYear/$varYearMonth
 var_fileIndex=$var_dirYear/`date "+%B" | tr A-Z a-z`_$varYear.txt
 var_fileEntry=$var_dirMonth/$varEntry.txt
 var_fileChanges=`echo $var_fileEntry | sed s/"pages\/blog"/"meta\/blog"/ | sed s/".txt"/".changes"/`
 var_pathPage=blog:$varYear:$varYear-$varMonth:$varEntry
+
+## Output files
+varFileDokuwiki=$varDokuwikiBlog/$varYear/$varYearMonth/${varEntry}.txt
+varFileWebgen=$varWebgenBlog/$varYear/$varYearMonth/${varEntry}.page
 
 ## ==============================================================================
 ##
@@ -134,10 +139,6 @@ writeHeaderDokuwiki ()
     echo ""                        >> $var_fileEntry
     echo "//$varDate - $varTime//" >> $var_fileEntry
     echo ""                        >> $var_fileEntry
-    echo "+++"                     >> $var_fileEntry
-    echo ""                        >> $var_fileEntry
-    echo "{{tag>}}"                >> $var_fileEntry
-    echo ""                        >> $var_fileEntry
 }
 
 ##____________________________________________________________________
@@ -182,6 +183,7 @@ writeHeaderWebgen ()
     echo "##{title:}##"                >> $varFileEntry
     echo ""                            >> $varFileEntry
     echo "_${varDate} -- ${varTime}_"  >> $varFileEntry
+    echo ""                            >> $varFileEntry
 }
 
 ## ==============================================================================
@@ -190,13 +192,14 @@ writeHeaderWebgen ()
 ##
 ## ==============================================================================
 
-## -----------------------------------------------------------------------------
+##_______________________________________________________________________________
 ## Get the title for the entry
 
 printf "[$varDate - $varTime] ? ";
 read varTitle
 
-## ... and create skeleton of file for new entry
+##_______________________________________________________________________________
+## Create skeleton of file for new entry
 
 echo ""
 echo " -> Creating new blog entry ..."
@@ -205,25 +208,19 @@ echo ""
 writeHeaderWebgen
 writeHeaderDokuwiki
 
+##_______________________________________________________________________________
+## Create the main body of the new blog entry
+
+$varEditor $varFileTemp
+
+## ... and append it to the previously created header segment
+
+cat $varFileTemp >> $varFileWebgen
+cat $varFileTemp >> $varFileDokuwiki
+
 ## Add link to new entry to the index file
 
-echo "  * [[.$var_yyyymm:$varEntry|$varTitle]] ($varDate - $varTime)" >> $var_fileIndex
-
-## open file in editor
-
-$varEditor $var_fileEntry
-
-## -----------------------------------------------------------------------------
-## Create the changes file to make the new entry visible to the blog plugin
-
-## check if the directory, to which we want to write the data, exists
-
-if test -d $var_dirMeta/$varYear/$var_yyyymm ; then 
-	echo "-- Diectory for metadata found."
-else
-	mkdir -p $var_dirMeta/$varYear/$var_yyyymm
-	chmod a+rw $var_dirMeta/$varYear/$var_yyyymm
-fi
+echo "  * [[.$varYearMonth:$varEntry|$varTitle]] ($varDate - $varTime)" >> $var_fileIndex
 
 ##_______________________________________________________________________________
 ## Post-editing cleanup of the directory; remove backup files created by emacs
@@ -231,7 +228,9 @@ fi
 chmod a+rw $var_fileEntry
 chmod a+rw $var_fileIndex
 chmod a+rwx $var_dirMeta/$varYear
-chmod a+rwx $var_dirMeta/$varYear/$var_yyyymm
+chmod a+rwx $var_dirMeta/$varYear/$varYearMonth
 rm -f $varDokuwikiBlog/*~
 rm -f $var_dirYear/*~
 rm -f $var_dirMonth/*~
+rm -rf $varFileTemp
+rm -rf $varFileTemp~
