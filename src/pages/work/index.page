@@ -1,21 +1,36 @@
 ---
 title: Work Experience
 in_menu: false
-author: Lars B&auml;hren
+author: Lars Baehren
 ---
 
-## Work Experience
+##{title:}##
+
+| Time period | Position | Affiliation |
+|:---|---|---:|
+| 01.04.2012---present | Software Developer | prometheus -- The Digital Image Archive |
+| 10/2011---12/2011 | Software Developer | ASTRON, Dwingeloo, NL |
+| 10/2010---10/2011 | Scientific Software Developer | Astronomical Inst. ’Anton Pannekoek’, Univ. van Amsterdam, NL |
+| 10/2008---10/2010 | Scientific Software Developer | Dep. of Astrophysics, Radboud Univ. Nijmegen, NL |
+| 05/2007---10/2008 | Junior Researcher | Dep. of Astrophysics, Radboud Univ. Nijmegen, NL |
+| 01.01.2004---05/2007 | Junior Researcher | ASTRON, Dwingeloo, NL |
+| 01.12.2003---31.12.2003 | Studentische Hilfskraft | Inst. fuer Astrophysik und Extraterrestrische Forschung (IAEF), Univ. Bonn, DE |
+| 17.03.2003---15.05.2003 | Studentische Hilfskraft | Inst. fuer Astrophysik und Extraterrestrische Forschung (IAEF), Univ. Bonn, DE |
+| 15.04.2002---31.12.2002 | Studentische Hilfskraft | Inst. fuer Astrophysik und Extraterrestrische Forschung (IAEF), Univ. Bonn, DE |
+| 02/2001---09/2001 | Studentische Hilfskraft | Inst. fuer Angewandte Mathematik, Univ. Bonn, DE |
+| 08/1999---02/2003 | Studentische Hilfskraft | Physikalisches Inst., Univ. Bonn, DE |
+| 12/1996---10/1997 | Studentische Hilfskraft | Physikalisches Inst., Univ. Bonn, DE |
 
 ### Software Developer
 
-April 2012 – Present (3 months) Cologne, Germany
-
+April 2012 – Present (3 months) Cologne, Germany \\
 _prometheus - Das digitale Bildarchiv für Forschung und Lehre_
+
+* Application development using Ruby on Rails
 
 ### Software developer
 
-October 2011 – December 2011 (3 months) Dwingeloo, Netherlands
-
+October 2011 – December 2011 (3 months) Dwingeloo, Netherlands \\
 _ASTRON_
 
 * Contract work for the Radio Observatory (RO).
@@ -24,8 +39,7 @@ _ASTRON_
 
 ### Software developer
 
-October 2010 – September 2011 (1 year) Astronomical Institute Anton Pannekoek
-
+October 2010 – September 2011 (1 year) Astronomical Institute Anton Pannekoek \\
 _Astronomical Institute Anton Pannekoek_
 
 * Work on the [AARTFAAC](/work/aartfaac.html) project (Amsterdam-ASTRON Radio Transients Facility and Analysis Centre), though spending most of the time on the continued development of the [Data Access Library](/development/dal.html) (DAL).
@@ -33,8 +47,7 @@ _Astronomical Institute Anton Pannekoek_
 
 ### Software developer
 
-April 2006 – September 2010 (4 years 6 months) Nijmegen, Netherlands
-
+April 2006 – September 2010 (4 years 6 months) Nijmegen, Netherlands \\
 _Radboud University Nijmegen_
 
 * Continued development of near-field imaging software for LOFAR radio-telescope.
@@ -43,8 +56,7 @@ _Radboud University Nijmegen_
 
 ### Junior Scientist
 
-January 2004 – March 2006 (2 years 3 months) Dwingeloo, The Netherlands
-
+January 2004 – March 2006 (2 years 3 months) Dwingeloo, The Netherlands \\
 _Astron_
 
 Software development for the LOPES (LOFAR Prototype Station) experiment at Karlsruhe: development of an all-sky, near-field imager for the radio time-series data, configuration and build environment for the software package. 
