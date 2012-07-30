@@ -69,14 +69,15 @@ for FILE in $FILES
 
   echo "Processing file $FILE -> $varOutfile ..."
 
-  echo "---"                > $varOutfile
-  echo "title: $varTitle"  >> $varOutfile
-  echo "in_menu: false"    >> $varOutfile
-  echo "---"               >> $varOutfile
-  echo ""                  >> $varOutfile
-  echo "## {title:} ##"    >> $varOutfile
-  echo ""                  >> $varOutfile
-  echo "$varDateTime"      >> $varOutfile
+  echo "---"                    > $varOutfile
+  echo "title: $varTitle"      >> $varOutfile
+  echo "in_menu: false"        >> $varOutfile
+  echo "author: Lars Baehren"  >> $varOutfile
+  echo "---"                   >> $varOutfile
+  echo ""                      >> $varOutfile
+  echo "## {title:} ##"        >> $varOutfile
+  echo ""                      >> $varOutfile
+  echo "$varDateTime"          >> $varOutfile
 
   cat $FILE | grep -v "====" | grep -v $varTime | grep -v "{{tag" >> $varOutfile
 
