@@ -1,0 +1,23 @@
+---
+title: Zeit fuer die Umstellung
+in_menu: false
+author: Lars Baehren
+---
+
+##{title:}##
+
+_Tue, 31. July 2012 -- 16:49_
+
+Also je mehr Eintraege ich jetzt parallel mit dem alten und dem neuen Setup schreibe, desto mehr juckt es mich in den Fingern die bisherige Zeite offline zu nehmen und durch die neue zu ersetzen. Sicher, die Loesung mit der Wiki hat auch so sein gutes, aber letzten Endes ist die derzeit im Aufbau befindliche Website einfach professioneller gestaltet und vom Design her klarer in der Gestaltung. Einer ganz einfachen parktischen Aspekte waere natuerlich auch, dass ich es mir dann sparen kann den Eintrag noch einmal nachzubearbeiten, weil sich die Syntax fuer Hyperlinks unterscheidet:
+
+~~~~
+[CERN](http://www.cern.ch)
+~~~~
+
+was ich fuer die alte Website umschreiben muss in 
+
+~~~~
+[[http://www.cern.ch|CERN]]
+~~~~
+
+Ist keine riesen Sache, aber letzten Endes macht es dann doch die Menge, wenn ich versuche Links zu den verwendeten Quellen einzubetten. Ich denke mal der 1. August ist sicherlich nicht mehr realistisch, aber vor dem Ende des Monats sollte ich alles so weit fertiggestellt haben, dass die neue Site online gehen kann.
