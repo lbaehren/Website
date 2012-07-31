@@ -1,0 +1,49 @@
+---
+title: Fehlersuche
+in_menu: false
+author: Lars Baehren
+---
+
+##{title:}##
+
+_04 November 2003 -- 23:57_
+
+Die Suche bei Google hat noch ein paar Dinge zu Tage gefördert, die bei 
+der Einengung des Problems hilfreich sein könnten:
+
+~~~~
+morgaine:/dev# lspci
+00:00.0 Host bridge: VIA Technologies, Inc. VT8363/8365 [KT133/KM133] (rev 03)
+00:01.0 PCI bridge: VIA Technologies, Inc. VT8363/8365 [KT133/KM133 AGP]
+00:04.0 ISA bridge: VIA Technologies, Inc. VT82C686 [Apollo Super South] (rev 40)
+00:04.1 IDE interface: VIA Technologies, Inc. VT82C586A/B/VT82C686/A/B/VT8233/A/C/VT8235 PIPC Bus Master IDE (rev 06)
+00:04.2 USB Controller: VIA Technologies, Inc. USB (rev 16)
+00:04.3 USB Controller: VIA Technologies, Inc. USB (rev 16)
+00:04.4 Host bridge: VIA Technologies, Inc. VT82C686 [Apollo Super ACPI] (rev 40)
+00:09.0 Multimedia audio controller: IC Ensemble Inc ICE1712 [Envy24] (rev 02)
+00:0b.0 Ethernet controller: 3Com Corporation 3c905 100BaseTX [Boomerang]
+00:11.0 Unknown mass storage controller: Promise Technology, Inc. 20265 (rev 02)
+01:00.0 VGA compatible controller: Matrox Graphics, Inc. MGA G400 AGP (rev 82)
+~~~~
+
+~~~~
+morgaine:/dev# more /proc/interrupts
+           CPU0       
+  0:   84130299          XT-PIC  timer
+  1:      40834          XT-PIC  i8042
+  2:          0          XT-PIC  cascade
+  5:          0          XT-PIC  ICE1712
+  8:      13994          XT-PIC  rtc
+  9:          0          XT-PIC  acpi
+ 10:     974416          XT-PIC  eth0
+ 12:     409015          XT-PIC  i8042
+ 14:    4975009          XT-PIC  ide0
+ 15:        868          XT-PIC  ide1
+NMI:          0 
+LOC:   84132347 
+ERR:      96690
+MIS:          0
+~~~~
+
+Will also heißen, daß die Karte da und auch korrekt erkannt ist.
+

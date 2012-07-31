@@ -1,0 +1,40 @@
+---
+title: Kein Audio-Device mehr
+in_menu: false
+author: Lars Baehren
+tags: Computing
+---
+
+##{title:}##
+
+_04 November 2003 -- 23:11_
+
+Die Installation des 2.6.0 Kernel hat sich als durchaus positiv 
+erwiesen; die beiden CD-Laufwerke werde direkt erkannt, da die SCSI 
+Emulation direkt fest eingebaut ist.
+Allerdings klappt der Sound immer noch nicht; alle entsprechenden 
+Programme werfen eine Fehlermeldung aus, daß kein Audio-Device verfügbar 
+ist:
+
+* aviplay
+~~~~
+<audio renderer> : src fmt=0x2000 2ch 48000Hz  0b  24000B/s balign=1 cbsz=18
+<audio renderer> : dst fmt=0x01 2ch 48000Hz 16b 192000B/s balign=4 cbsz=0
+<SDL audio renderer> : No available audio device!
+<aviplay> : Will try audio renderers in this order: noaudio
+~~~~
+* mplayer
+~~~~
+Failed to open /dev/rtc: Permission denied (mplayer should be setuid root or /dev/rtc should be readable by the user.)
+mplayer: could not connect to socket
+mplayer: No such file or directory
+Failed to open LIRC support.
+SDL: Samplerate: 48000Hz Channels: Stereo Format Signed 16-bit (Little-Endian)
+SDL: Unable to open audio: No available audio device
+Could not open/initialize audio device -> no sound.
+Audio: no sound
+~~~~
+* totem 
+~~~~
+audio_alsa_out: sample format non available: Invalid argument
+~~~~

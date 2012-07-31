@@ -1,0 +1,22 @@
+---
+title: Dem Soundproblem auf der Spur
+in_menu: false
+author: Lars Baehren
+tags: Computing
+---
+
+##{title:}##
+
+_04 November 2003 -- 23:49_
+
+Immer noch dem Soundproblem auf der Spur. Testweise habe ich mal 
+`/etc/init.d/alsa` ausgeführt -- in der Tat gibt es Schwierigkeiten auf die 
+Karte zuzugreifen:
+
+~~~~
+morgaine:/dev# /etc/init.d/alsa stop
+Storing ALSA mixer settings ... done.
+Shutting down ALSA (version 0.9.7): done.
+morgaine:/dev# /etc/init.d/alsa start
+Starting ALSA (version 0.9.7): ice1712-failed failed
+~~~~
