@@ -1,0 +1,32 @@
+---
+title: Linux Kernel
+in_menu: false
+author: Lars Baehren
+tgs: Computing
+---
+
+##{title:}##
+
+_03 November 2003 -- 20:57_
+
+Nachdem ich den Source Code aus den Astro auf meinen Rechner kopiert 
+habe beginne ich mit der Installation:
+
+~~~~
+morgaine:/usr/src# bunzip2 linux-2.6.0-test9.tar.bz2 
+morgaine:/usr/src# tar -xvf linux-2.6.0-test9.tar 
+~~~~
+
+Laut `README` ist es nicht ratsam die Installation in `/usr/src` durchzuführen; daher kopiere ich das Verzeichnis um.
+
+~~~~
+morgaine:/usr/src# mv linux-2.6.0-test9 /root/
+~~~~
+
+Documentation/Changes empfiehlt, daß eine Reihe von Programmen 
+mindestens eine bestimmte Versionsnummer aufweisen; also abgleichen und 
+gggf. nachinstallieren - wie sich herausstellt zieht dies direkt einen 
+ganzen Rattenschwanz an Aktivitäten nach sich.
+
+Wie gut, daß es immer noch die Möglichkeit gibt, Ole ab und zu mal eine 
+Nachricht durchzukabeln...

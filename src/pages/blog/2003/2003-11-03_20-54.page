@@ -1,0 +1,10 @@
+[2003-11-03 20:54]
+
+Um die Probleme mit den ATAPI CD Laufwerken und den ALSA Modulen in den 
+Griff zu bekommen, habe ich mich dazu entschlossen, testweise den 
+2.6.0-test9 Kernel zu installieren; Ole hielt dies für die in meiner 
+Situation wohl beste Alternative, da der Kernel inzwischen ausreichend 
+stabil ist und eine Reihe von Features (vor allen Dingen die Sound 
+Architecture) direkt eingebaut hat.
+
+Mal sehen, was passiert...
