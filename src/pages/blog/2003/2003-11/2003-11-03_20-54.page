@@ -1,4 +1,13 @@
-[2003-11-03 20:54]
+---
+title: 2.6.0-test9 Kernel
+in_menu: false
+author: Lars Baehren
+tags: Computing Debian Kernel
+---
+
+##{title:}##
+
+_03 November 2003 -- 20:54_
 
 Um die Probleme mit den ATAPI CD Laufwerken und den ALSA Modulen in den 
 Griff zu bekommen, habe ich mich dazu entschlossen, testweise den 

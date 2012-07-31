@@ -1,0 +1,34 @@
+---
+title: Einstellungen für die SCSI Emulation
+in_menu: false
+author: Lars Baehren
+tags: Computing
+---
+
+##{title:}##
+
+_04 November 2003 -- 23:37_
+
+Beim neuerlichen Booten des System habe ich einen Hinweis bekommen, was 
+eventuell auch mit für die Probleme mit dem Sound verantwortlich sein 
+könnte. Beim Start des VPN Scripts kommen die folgenden Fehlermeldungen:
+
+~~~~
+WARNING: /lib/modules/modprobe.conf line 273: ignoring bad line starting with 'pre-install'
+WARNING: /lib/modules/modprobe.conf line 274: ignoring bad line starting with 'pre-install'
+WARNING: /lib/modules/modprobe.conf line 275: ignoring bad line starting with 'pre-install'
+~~~~
+
+dmesg liefert:
+
+~~~~
+apm: BIOS version 1.2 Flags 0x03 (Driver version 1.16ac)
+apm: overridden by ACPI.
+apm: BIOS version 1.2 Flags 0x03 (Driver version 1.16ac)
+apm: overridden by ACPI.
+[drm:drm_init] *ERROR* Cannot initialize the agpgart module.
+~~~~
+
+Wie sich heraustellte gab es in `/etc/modprobe.d` noch eine Datei `atapi` 
+in welcher die alten Einstellungen für die SCSI Emulation standen; das 
+File wurde jetzt gelöscht.
