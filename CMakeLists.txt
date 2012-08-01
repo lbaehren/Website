@@ -42,13 +42,15 @@ endif (ENABLE_TESTING)
 ##
 ## ==============================================================================
 
+##____________________________________________________________________
 ## Standard CMake modules
 
 find_package (Git)
 find_package (Doxygen)
 find_package (Ruby)
 
-## Extract Doxygen version number - this is not done by the standard module
+##____________________________________________________________________
+## Extract Doxygen version number
 
 if (DOXYGEN_EXECUTABLE)
   
@@ -72,7 +74,8 @@ if (DOXYGEN_EXECUTABLE)
   
 endif (DOXYGEN_EXECUTABLE)
 
-## Decomposition of Ruby version number - this is not done by the standard module
+##____________________________________________________________________
+## Decomposition of Ruby version number
 
 if (RUBY_VERSION)
   ## Convert string to list of numbers
@@ -82,6 +85,66 @@ if (RUBY_VERSION)
   list(GET RUBY_VERSION_LIST 1 RUBY_VERSION_MINOR)
   list(GET RUBY_VERSION_LIST 2 RUBY_VERSION_PATCH)
 endif (RUBY_VERSION)
+
+##____________________________________________________________________
+## Find installation of Ruby Gems
+
+find_program (GEM_EXECUTABLE gem
+  HINTS ${GEM_ROOT_DIR} ${CMAKE_INSTALL_PREFIX}
+  PATH_SUFFIXES bin lib
+  )
+
+if (GEM_EXECUTABLE)
+  
+  execute_process(
+    COMMAND ${GEM_EXECUTABLE} --version
+    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+    RESULT_VARIABLE GEM_RESULT_VARIABLE
+    OUTPUT_VARIABLE GEM_VERSION
+    ERROR_VARIABLE GEM_ERROR_VARIABLE
+    OUTPUT_STRIP_TRAILING_WHITESPACE
+    )
+  
+  if (GEM_VERSION)
+    ## Convert string to list of numbers
+    string (REGEX REPLACE "\\." ";" GEM_VERSION_LIST ${GEM_VERSION})
+    ## Retrieve individual elements in the list
+    list(GET GEM_VERSION_LIST 0 GEM_VERSION_MAJOR)
+    list(GET GEM_VERSION_LIST 1 GEM_VERSION_MINOR)
+    list(GET GEM_VERSION_LIST 2 GEM_VERSION_PATCH)
+  endif (GEM_VERSION)  
+  
+endif (GEM_EXECUTABLE)
+
+##____________________________________________________________________
+## Find installation of Ruby Rake
+
+find_program (RAKE_EXECUTABLE rake
+  HINTS ${RAKE_ROOT_DIR} ${CMAKE_INSTALL_PREFIX}
+  PATH_SUFFIXES bin lib
+  )
+
+if (RAKE_EXECUTABLE)
+  
+  execute_process(
+    COMMAND ${RAKE_EXECUTABLE} --version
+    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+    RESULT_VARIABLE RAKE_RESULT_VARIABLE
+    OUTPUT_VARIABLE RAKE_VERSION
+    ERROR_VARIABLE RAKE_ERROR_VARIABLE
+    OUTPUT_STRIP_TRAILING_WHITESPACE
+    )
+  
+  if (RAKE_VERSION)
+    ## Convert string to list of numbers
+    string (REGEX REPLACE "\\." ";" RAKE_VERSION_LIST ${RAKE_VERSION})
+    ## Retrieve individual elements in the list
+    list(GET RAKE_VERSION_LIST 0 RAKE_VERSION_MAJOR)
+    list(GET RAKE_VERSION_LIST 1 RAKE_VERSION_MINOR)
+    list(GET RAKE_VERSION_LIST 2 RAKE_VERSION_PATCH)
+  endif (RAKE_VERSION)  
+  
+endif (RAKE_EXECUTABLE)
 
 ## ==============================================================================
 ##
