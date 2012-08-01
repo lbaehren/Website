@@ -47,7 +47,6 @@ endif (ENABLE_TESTING)
 
 find_package (Git)
 find_package (Doxygen)
-find_package (Ruby)
 
 ##____________________________________________________________________
 ## Extract Doxygen version number
@@ -73,18 +72,6 @@ if (DOXYGEN_EXECUTABLE)
   endif (DOXYGEN_VERSION)  
   
 endif (DOXYGEN_EXECUTABLE)
-
-##____________________________________________________________________
-## Decomposition of Ruby version number
-
-if (RUBY_VERSION)
-  ## Convert string to list of numbers
-  string (REGEX REPLACE "\\." ";" RUBY_VERSION_LIST ${RUBY_VERSION})
-  ## Retrieve individual elements in the list
-  list(GET RUBY_VERSION_LIST 0 RUBY_VERSION_MAJOR)
-  list(GET RUBY_VERSION_LIST 1 RUBY_VERSION_MINOR)
-  list(GET RUBY_VERSION_LIST 2 RUBY_VERSION_PATCH)
-endif (RUBY_VERSION)
 
 ##____________________________________________________________________
 ## Find installation of Ruby Gems

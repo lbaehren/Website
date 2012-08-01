@@ -46,6 +46,18 @@ endif (RUBY_ENABLE_TESTING)
 
 find_package (Ruby)
 
+##____________________________________________________________________
+## Decomposition of Ruby version number
+
+if (RUBY_VERSION)
+  ## Convert string to list of numbers
+  string (REGEX REPLACE "\\." ";" RUBY_VERSION_LIST ${RUBY_VERSION})
+  ## Retrieve individual elements in the list
+  list(GET RUBY_VERSION_LIST 0 RUBY_VERSION_MAJOR)
+  list(GET RUBY_VERSION_LIST 1 RUBY_VERSION_MINOR)
+  list(GET RUBY_VERSION_LIST 2 RUBY_VERSION_PATCH)
+endif (RUBY_VERSION)
+
 ## ==============================================================================
 ##
 ##  Build instructions
