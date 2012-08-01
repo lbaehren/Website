@@ -1,0 +1,106 @@
+---
+title: Upcoming blog entries
+in_menu: true
+author: Lars Baehren
+tags: Blog
+---
+
+## {title:} ##
+
+  - The Dark Knight Rises
+  - Hot-Yoga
+  - fxpodcast -- Alvy Ray Smith
+  - Analyzing Rails logfiles
+  - Jodorowsky's Dune
+  - No to Audible
+  - Abschied nehmen
+  - Bundesgartenschau Koblenz
+
+### The Dark Knight Rises ###
+
+  * [The Dark Knight Rises](http://www.imdb.com/title/tt1345836)
+  * [Christopher Nolan](http://www.imdb.com/name/nm0634240)
+  * [Christian Bale](http://www.imdb.com/name/nm0000288)
+  * [Michael Caine](http://www.imdb.com/name/nm0000323)
+  * [Morgan Freeman](http://www.imdb.com/name/nm0000151)
+
+### Hot-Yoga
+
+  * Yoga39.com
+
+### fxpodcast -- Alvy Ray Smith ###
+
+> One of the most remarkable men we have had on the fxpodcast. It is a real pleasure & honor to offer you this in-depth interview with Dr Alvy Ray Smith, the man who jointly or personally: Invented Paint, Alpha, Dir. the Genesis seq., worked at XEROX PARC, NYIT, Lucasfilm, PIXAR, Microsoft and a multiple tech Ocsar winner.
+
+  * [fxpodcast: Alvy Ray Smith](http://www.fxguide.com/fxpodcasts/fxpodcast-alvy-ray-smith)
+  * [Alvy Ray Smith: RGBA, the birth of compositing & the founding of Pixar](http://www.fxguide.com/featured/alvy-ray-smith-rgba-the-birth-of-compositing-the-founding-of-pixar)
+
+### Analyzing Rails logfiles ###
+
+Logfile represent a precious resource for profiling and debugging -- hardly surprising that any slightly more complex application will generate some sort of log of its operations. While of course the logging itself is a topic by itself, the subsequent analysis of the created logs borders at scientific data analysis.
+
+With a web application such as [prometheus](http://www.prometheus-bildarchiv.de), actually a multitude of log files is being generated. most important amongst those are:
+
+  * Apache Web Server logs
+  * Ruby on Rails application logs
+
+[[https://github.com/wvanbergen/request-log-analyzer|request-log-analyzer]]
+
+> This is a simple command line tool to analyze request log files in various formats to produce a performance report. Its purpose is to find what actions are best candidates for optimization.
+
+~~~~
+Process blockers (> 1 sec duration)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CollectionController#feed.html [GET]        ┃ 45 hits ┃ 37.5% ┃ ░░░░░░
+PresentationController#feed.html [GET]      ┃ 29 hits ┃ 24.2% ┃ ░░░░
+ImageController#feed.html [GET]             ┃ 14 hits ┃ 11.7% ┃ ░░
+ImageController#large.html [GET]            ┃ 12 hits ┃ 10.0% ┃ ░░
+CollectionController#images.html [GET]      ┃  5 hits ┃  4.2% ┃ ░
+CollectionController#edit.html [GET]        ┃  4 hits ┃  3.3% ┃ ░
+SearchController#advanced_search.html [GET] ┃  3 hits ┃  2.5% ┃ 
+CollectionController#own.html [GET]         ┃  3 hits ┃  2.5% ┃ 
+ImageController#show.html [GET]             ┃  2 hits ┃  1.7% ┃ 
+SearchController#search.html [GET]          ┃  2 hits ┃  1.7% ┃ 
+PandoraController#js.html [GET]             ┃  1 hits ┃  0.8% ┃ 
+~~~~
+
+### No to Audible ###
+
+Dann also noch einmal ein Versuch... Auch wenn ich schon einmal mit
+dem Schreiben angefangen hatte, so [ist es mir gelungen den kompletten Text zu zerschiessen](/blog/2012/2012-01/2012-01-21_20-59.html) ehe ich diesen online stellen konnte. Da es sich aber um einen Sachverhalt handelt, welchen ich nicht ohne Weiteres unterschlagen wollte, muss ich also noch einmal von vorne anfangen :-(
+
+Als ein fleissiger Hoerer von [This Week in Photography](http://www.thisweekinphoto.com) kennt man nach einer Weile die Namen Sponsoren, welche die Show finanziell unterstuetzen. Auch wenn sich ueber die Jahre das Karussel ein wenig gedreht hat (schliesslich gibt es immer wieder einmal neue Services, welche beworben werden wollen), so gibt es doch einige Geldgeber, welche dauerhafter engagiert sind. Zu eben jener Gruppe gehoert auch
+[Audible](http://www.audible.com), ein mittlerweile zu [Amazon](http://www.amazon.com) gehoerendes Portal fuer jegliche
+Art an Hoerbuechern; auch wenn ich sicherlich noch nicht dem den Punkt angelangt bin, bei welchem zwingender Bedarf an Nachschub besteht (ich habe hier immer noch eine recht beachtliche Liste vorliegen, welche ich erst einmal abarbeiten sollte), so kann es dennoch nicht schaden, sich ein wenig nach Bezugsquellen umzuschauen. Auch wenn es mittlerweile ja einige Anbieter gibt, so scheint Audible nach wie vor ueber die groesste Sammung an Hoerbuechern zu verfuegen, welche sich ueber das Internet beziehen laesst; neben Romanen befinden sich jede Menge Sachbuecher und auch periodisch veroeffentlichte Werke im Portefolio. Klingt also interessant genug, um sich dies einmal genauer anzuschauen.
+
+### Baumarktritter ###
+
+Es sind einfach immer wieder die Funde, welche sich ungeplant ergeben; auch wenn es sicherlich moeglich ist gezielt nach z.B. kuriosen Sachen zu suchen, so sind es doch typischerweise die eher zufaelligen Funde, welche im Gedaechtnis bleiben. In diesem Fall hatte es -- wie bei dieser Einleitung ja nicht ander zu erwarten waere -- mit etwas komplett anderem begonnen, als 
+
+[Gesamtverband der Deutschen Versicherungswirtschaft](http://www.tis-gdv.de) -> Foto des Monats
+
+"Die Ladungssicherung ist noch nicht in den Tiefen unsere Gesellschaft angekommen. Hier ist jemand stolzer Besitzer eines sehr großen Traktors, der zum Ziehen solcher Ladungen durchaus geeignet ist und auf Landstraßen sicher Geschwindigkeiten zwischen 50 und 70 Stundenkilometer erreicht. Auch der Tieflader war wahrscheinlich grundsätzlich zur Aufnahme von so schweren Lasten durchaus geeignet. Nur derjenige, der das Geschütz von Trecker und Anhänger angewandt hat, hat mal eben schnell das Umsetzen von ein paar Betonplatten organisiert. Zum Nachdenken darüber, dass er mit diesen Betonplatten Ladung in den Verkehr bringt und damit eine tödliche Gefahr für alle Verkehrsteilnehmer in der direkten Umgebung dieses Gefährtes darstellt, ist er nicht gekommen. Er ist reinen Gewissens mit dieser Ladung unterwegs gewesen und ärgerte sich zumindest am Anfang recht intensiv über die Tatsache, dass der kontrollierende Polizist nur trocken die Weiterfahrt untersagte und meinte, dass das so nun ja wohl nicht ginge."
+
+### Jodorowsky's Dune ###
+
+In December 1974, a French consortium led by Jean-Paul Gibon purchased the film rights to Dune from [Frank Herbert](http://en.wikipedia.org/wiki/Frank_Herbert). [Jodorowsky](http://en.wikipedia.org/wiki/Jodorowsky) was set to
+direct. In 1975, Jodorowsky planned to film the story as a ten hour
+feature, in collaboration with [Salvador Dali](http://en.wikipedia.org/wiki/Salvador_Dali), Orson Welles, Gloria Swanson, David Carradine, Geraldine Chaplin, Alain Delon, Herv\'e Villechaize and Mick Jagger. The music would be composed by Pink Floyd, Magma, Henry Cow and Karlheinz Stockhausen. Jodorowsky set up a pre-production unit in Paris consisting of Chris Foss, a British artist who designed covers for science fiction periodicals, [Jean Giraud](http://en.wikipedia.org/wiki/Jean_Giraud) (Moebius), a French illustrator who created and also wrote and drew for Metal Hurlant magazine, and [H. R. Giger](http://en.wikipedia.org/wiki/H._R._Giger). Moebius began designing creatures and characters for the film, while Foss was brought in to design the film's space ships and hardware. Giger began designing the Harkonnen Castle based on Moebius' storyboards, and Dali was cast as the Emperor with a reported salary of $100,000 an hour. His son Brontis Jodorowsky was to play Paul. Dan O'Bannon was to head the special effects department.
+
+Dali and Jodorowsky began quarreling over money, and just as the storyboards, designs, and script were finished, the financial backing dried up. Frank Herbert travelled to Europe in 1976 to find that $2 million of the $9.5 million budget had already been spent in pre-production, and that Jodorowsky's script would result in a 14-hour movie ("It was the size of a phonebook", Herbert later recalled). Jodorowsky took creative liberties with the source material, but Herbert said that he and Jodorowsky had an amicable relationship.
+
+### Abschied nehmen ###
+
+_02 Dec 2011_
+
+Wenn es eine Sache gibt, welche bei dem Umzug von Amsterdam nach Bonn definitiv zu kurz gekommen ist, dann war es die Moeglichkeit noch einmal nach Dwingeloo zu fahren und ein wenig Abschied zu nehmen. Auch wenn es ja schon eine ganze Weile her ist, dass ich dort permanent gearbeitet habe (schon in Nijmegen war dies ja nicht mehr der Fall, auch wenn der woechentliche Trip einen sehr netten Ausgleich bot), so fuehle ich mich dem Ort immer noch sehr verbunden. Nicht dass ich nun sonderlich naiv waere und ASTRON verklaeren wuerde, aber die Atmosphaere als solche hat mir eigentlich immer recht zugesagt; Teil davon ist sicherlich auch die Abgeschiedenheit des Instituts (welches so seine Vor- und Nachteile hat), was einem ausreichende Distanz zum Rest der Welt bietet, so dass man sich ganz auf die Dinge konzentrieren kann, an welchen man arbeitet. So habe ich es doch immer wieder als befreiend empfunden, wenn ich z.B. Nijmegen fuer zwei Tage in der Woche hinter mir lassen konnte, um mich nach Dwingeloo zu begeben -- dort habe ich mir ueber die Zeit eine gut auf mich abgestimmte Arbeitsumgebung eingerichtet, welche in vergleichbarer Weise in Nijmegen (und spaeter dann auch in Amsterdam) nicht hatte, so dass es eigentlich immer ein Stueck weit ein nach Hause kommen war. In der Weise, wie dann schliesslich der Absprung von Amsterdam gelaufen ist, sind die vorher immer noch recht regelmaessigen Besuche mit einem Male abgebrochen -- recht abrupt und ohne Moeglichkeit die noch notwendigen Dinge vor Ort zu regeln.
+
+Ich muss sagen, dass was dies betrifft diese Woche wirklich sehr gut
+war und ich nun vielleicht ein wenig mehr im Reinen mit mir selber und den Dingen bin. Wozu ich die vergangenen Tage ja recht umfangreich benutzt habe war, mein Buero so weit es denn geht auszuleeren: wenn man bedenkt dass ich seit meinem Umzug nach Dwingeloo Anfang 2004 durchgehend einen eigenen Arbeitsplatz gehabt habe (auch wenn jener in der Zwischenzeit dreimal umgezogen ist), dann duerfte schon klar sein, dass sich so einiges an Material ansammelt. Ich glaube da muss man noch nicht einmal ueber einen ausgepraegten Sammlersinn verfuegen: es reicht alleine schon aus die diversen Arbeitsunterlagen und -materialien zu beruecksichtigen, welche man sich griffbereit haelt. Auch wenn sicherlich der Anteil an elektonischen Dokumenten zugenommen hat, so ist eine Papierversion nach wie vor ungeschlagen, wenn man etwas haben will, das man ueberall hin mitnehmen kann und worauf man munter Kommentare und Anmerkungen anbringen kann. Dementsprechend hatte ich einiges an Ordnern in Schreibtischnaehe, was nun (nach Durchsicht) in die grosse Papierkiste in der Halle gewandert ist.
+
+### Bundesgartenschau Koblenz ###
+
+So weit ich mich erinnern kann war ich noch nie auf einer Bundesgartenschau; ich kenne zwar mittlerweile in paar ehemalige Gelaende (man bedenke, dass man in Bonn ja eines direkt vor der Nase hat, aber auch Hamburg kenne ich mittlerweile ein wenig), aber wirklich waehrend der Veranstaltung war ich bisher noch nicht dort. Zeit also dies endich einmal noch nachzuholen: so ist es dann mehr also nur guenstig, dass die diesjaehrige BUGA mit ihrem Ausrichtungsort Koblenz in recht guter Reichweite liegt. Bot sich folgerichtig also an, mal einen Tagesausflug Richtung Sueden einzuplanen, um sich Gelaende und Ausstellung einmal ein wenig anzuschauen. Mit dem Pfingstwochenende vor der Tuere, bot sich eine gute Gelegenheit, so dass sich das Vorhaben recht zeitnah in die Tat umsetzen liess: also einmal ein Weilchen an den Rechner setzen, um sich kundig zu machen was es denn alles so zu besichtigen gibt (ok, man muss hier ja nicht den riesigen Plan entwerfen, ab es ist schon ganz sinnvoll einmal zu schauen, ob es an dem anvisierten Tag vielleicht irgendwelche besonderen Veranstaltungen gibt). Es spricht sicherlich nichts dagegen einfach mal nur so frei der Nase nach auf Entdeckungsreise zu gehen, aber ein klein wenig Vorbereitung kann sicherlich nicht schaden, vor allen Dingen wenn man sich den Tag ein wenig einteilen muss; dass heisst natuerlich auf der anderen Seite nicht, dass man nun den ganzen Tag komplett von vorne bis hinten durchplanen muss, aber ein paar Orientierungspunkte koennen durchaus nuetzlich sein.
+
+Aufbruch war fuer den fruehen Sonntag Morgen angesetzt, was eigentlich auch recht gut geklappt hat; ist zwar immer mit einem leichten Risiko verbunden, wenn man sich eine bestimmte Uhrzeit vornimmt, aber diesmal hat es mit dem Absprung doch recht gut geklappt.
+
