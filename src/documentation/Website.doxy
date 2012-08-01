@@ -5,16 +5,25 @@
 
   \verbatim
   .
-  |-- ext
-  `-- src
-      |-- code
-      |   |-- apps
-      |   |-- lib
-      |   |-- scripts
-      |   `-- tests
-      |-- documentation
-      |-- images
-      `-- pages
+   `-- src
+       |-- code
+       |   |-- apps
+       |   |-- external
+       |   |   |-- gem
+       |   |   |-- ruby
+       |   |   `-- webgen
+       |   |-- lib
+       |   |-- scripts
+       |   `-- tests
+       |-- documentation
+       |-- images
+       |-- pages
+       |   |-- blog
+       |   |-- development
+       |   |-- photography
+       |   |-- research
+       |   `-- work
+       `-- templates
   \endverbatim
 
 */
