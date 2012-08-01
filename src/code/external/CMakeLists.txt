@@ -1,5 +1,5 @@
 
 include (ExternalProject)
 
-## Webgen
+add_subdirectory (ruby)
 add_subdirectory (webgen)
