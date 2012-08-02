@@ -25,8 +25,8 @@ set (PROJECT_VERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJEC
 ##
 ## ==============================================================================
 
-option (ENABLE_TESTING        "Enable CTest test driver?"                     YES )
-option (CONFIGURE_VERBOSE     "Increase verbosity during configuration?"      NO  )
+option (ENABLE_TESTING        "Enable CTest test driver?"                  YES     )
+option (CONFIGURE_VERBOSE     "Increase verbosity during configuration?"   NO      )
 
 ##__________________________________________________________
 ## Handle option: Enable CTest test driver?
@@ -58,7 +58,7 @@ endif (NOT CONFIGURE_VERBOSE)
 find_path (LOCAL_CMAKE_MODULE_PATH 
   NAMES FindGem.cmake FindRake.cmake
   PATHS ${PROJECT_SOURCE_DIR}
-  PATH_SUFFIXES src src/code src/code/cmake
+  PATH_SUFFIXES src src/code src/config src/code/cmake
   )
 
 if (LOCAL_CMAKE_MODULE_PATH)
@@ -136,13 +136,6 @@ endif (RAKE_EXECUTABLE)
 ##  Build targets/instructions
 ##
 ## ==============================================================================
-
-## Webgen configuration file
-
-configure_file (
-  ${PROJECT_SOURCE_DIR}/config.yaml.in
-  ${PROJECT_SOURCE_DIR}/config.yaml
-  )
 
 ## Project sub-directories
 
