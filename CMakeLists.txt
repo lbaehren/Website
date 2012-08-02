@@ -36,17 +36,45 @@ if (ENABLE_TESTING)
   enable_testing()
 endif (ENABLE_TESTING)
 
+##__________________________________________________________
+## Handle option: Verbose during configuration?
+
+if (NOT CONFIGURE_VERBOSE)
+  set (DOXYGEN_FIND_QUIETLY  YES )
+  set (GEM_FIND_QUIETLY      YES )
+  set (RAILS_FIND_QUIETLY    YES )
+  set (RAKE_FIND_QUIETLY     YES )
+  set (RUBY_FIND_QUIETLY     YES )
+  set (RUBYGEMS_FIND_QUIETLY YES )
+  set (_RUBY_DEBUG_OUTPUT    NO  )
+endif (NOT CONFIGURE_VERBOSE)
+
 ## ==============================================================================
 ##
 ##  System inspection
 ##
 ## ==============================================================================
 
-##____________________________________________________________________
-## Standard CMake modules
+find_path (LOCAL_CMAKE_MODULE_PATH 
+  NAMES FindGem.cmake FindRake.cmake
+  PATHS ${PROJECT_SOURCE_DIR}
+  PATH_SUFFIXES src src/code src/code/cmake
+  )
+
+if (LOCAL_CMAKE_MODULE_PATH)
+  set (CMAKE_MODULE_PATH ${LOCAL_CMAKE_MODULE_PATH} CACHE PATH
+    "CMake module path"
+    FORCE
+    )
+else (LOCAL_CMAKE_MODULE_PATH)
+  message (WARNING "Failed to locate custom CMake modules!")
+endif (LOCAL_CMAKE_MODULE_PATH)
 
 find_package (Git)
 find_package (Doxygen)
+find_package (Gem)
+find_package (Rake)
+find_package (Ruby)
 
 ##____________________________________________________________________
 ## Extract Doxygen version number
@@ -72,36 +100,6 @@ if (DOXYGEN_EXECUTABLE)
   endif (DOXYGEN_VERSION)  
   
 endif (DOXYGEN_EXECUTABLE)
-
-##____________________________________________________________________
-## Find installation of Ruby Gems
-
-find_program (GEM_EXECUTABLE gem
-  HINTS ${GEM_ROOT_DIR} ${CMAKE_INSTALL_PREFIX}
-  PATH_SUFFIXES bin lib
-  )
-
-if (GEM_EXECUTABLE)
-  
-  execute_process(
-    COMMAND ${GEM_EXECUTABLE} --version
-    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
-    RESULT_VARIABLE GEM_RESULT_VARIABLE
-    OUTPUT_VARIABLE GEM_VERSION
-    ERROR_VARIABLE GEM_ERROR_VARIABLE
-    OUTPUT_STRIP_TRAILING_WHITESPACE
-    )
-  
-  if (GEM_VERSION)
-    ## Convert string to list of numbers
-    string (REGEX REPLACE "\\." ";" GEM_VERSION_LIST ${GEM_VERSION})
-    ## Retrieve individual elements in the list
-    list(GET GEM_VERSION_LIST 0 GEM_VERSION_MAJOR)
-    list(GET GEM_VERSION_LIST 1 GEM_VERSION_MINOR)
-    list(GET GEM_VERSION_LIST 2 GEM_VERSION_PATCH)
-  endif (GEM_VERSION)  
-  
-endif (GEM_EXECUTABLE)
 
 ##____________________________________________________________________
 ## Find installation of Ruby Rake
@@ -168,7 +166,7 @@ add_subdirectory (src)
 ## Render the website
 
 add_custom_target (Website ALL
-  COMMAND rake
+  COMMAND ${RAKE_EXECUTABLE}
   DEPENDS ${PROJECT_SOURCE_DIR}/config.yaml
   WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
   )
@@ -209,12 +207,10 @@ message (STATUS " .. Verbose configure? .......... = ${CONFIGURE_VERBOSE}"      
 message (STATUS " Ruby configuration:"                                           )
 message (STATUS " .. Ruby executable ............. = ${RUBY_EXECUTABLE}"         )
 message (STATUS " .. Ruby version ................ = ${RUBY_VERSION}"            )
-message (STATUS " .. Path to Ruby library ........ = ${RUBY_LIBRARY}"            )
-message (STATUS " .. Include directory ........... = ${RUBY_INCLUDE_DIRS}"       )
+message (STATUS " .. Path to Ruby library ........ = ${RUBY_LIBRARIES}"          )
+message (STATUS " .. Include directory ........... = ${RUBY_INCLUDES}"           )
 message (STATUS " .. Gem executable .............. = ${GEM_EXECUTABLE}"          )
 message (STATUS " .. Gem executable version ...... = ${GEM_VERSION}"             )
 message (STATUS " .. Rake executable ............. = ${RAKE_EXECUTABLE}"         )
 message (STATUS " .. Rake executable version ..... = ${RAKE_VERSION}"            )
-message (STATUS " .. Rails executable ............ = ${RAILS_EXECUTABLE}"        )
-message (STATUS " .. Rails executable version .... = ${RAILS_VERSION}"           )
 message (STATUS "------------------------------------------------------------ "  )
