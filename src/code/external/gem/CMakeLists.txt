@@ -6,7 +6,7 @@
 ## ==============================================================================
 
 ## Name of the project handled by CMake
-project (RUBY)
+project (GEM)
 
 ## Minimum required version of CMake to configure the project
 cmake_minimum_required (VERSION 2.8)
@@ -15,11 +15,11 @@ cmake_minimum_required (VERSION 2.8)
 cmake_policy (VERSION 2.8)
 
 ##  Package information
-set (RUBY_VERSION_SERIES "1.9")
-set (RUBY_VERSION        "${RUBY_VERSION_SERIES}.3-p194" )
-set (RUBY_SOURCE_ARCHIVE "ruby-${RUBY_VERSION}.tar.gz" )
-set (RUBY_URL            "http://ftp.ruby-lang.org/pub/ruby/${RUBY_VERSION_SERIES}/${RUBY_SOURCE_ARCHIVE}" )
-set (RUBY_SVN            "http://svn.ruby-lang.org/repos/ruby/trunk" )
+set (GEM_VERSION_SERIES "1.9")
+set (GEM_VERSION        "${GEM_VERSION_SERIES}.3-p194" )
+set (GEM_SOURCE_ARCHIVE "gem-${GEM_VERSION}.tar.gz" )
+set (GEM_URL            "http://ftp.gem-lang.org/pub/gem/${GEM_VERSION_SERIES}/${GEM_SOURCE_ARCHIVE}" )
+set (GEM_SVN            "http://svn.gem-lang.org/repos/gem/trunk" )
 
 ## ==============================================================================
 ##
@@ -27,22 +27,16 @@ set (RUBY_SVN            "http://svn.ruby-lang.org/repos/ruby/trunk" )
 ##
 ## ==============================================================================
 
-option (RUBY_FORCE_BUILD    "Force build and installation of package?" NO )
-option (RUBY_FROM_REPOS     "Install package from repository?"         NO )
-option (RUBY_ENABLE_TESTING "Enable testing and experimental builds?"  YES )
+option (GEM_FORCE_BUILD    "Force build and installation of package?" NO )
+option (GEM_FROM_REPOS     "Install package from repository?"         NO )
+option (GEM_ENABLE_TESTING "Enable testing and experimental builds?"  YES )
 
 ## Handle options
 
-if (RUBY_ENABLE_TESTING)
+if (GEM_ENABLE_TESTING)
   include (CTest)
   enable_testing()
-endif (RUBY_ENABLE_TESTING)
-
-## ==============================================================================
-##
-##  System inspection
-##
-## ==============================================================================
+endif (GEM_ENABLE_TESTING)
 
 ## ==============================================================================
 ##
@@ -50,55 +44,55 @@ endif (RUBY_ENABLE_TESTING)
 ##
 ## ==============================================================================
 
-if (RUBY_FROM_REPOS)
-  set (RUBY_FORCE_BUILD TRUE)
-endif (RUBY_FROM_REPOS)
+if (GEM_FROM_REPOS)
+  set (GEM_FORCE_BUILD TRUE)
+endif (GEM_FROM_REPOS)
 
-if (NOT RUBY_FOUND OR RUBY_FORCE_BUILD)
+if (NOT GEM_FOUND OR GEM_FORCE_BUILD)
   
   ## Locate source file to build from
   
-  find_file (RUBY_SOURCE ${RUBY_SOURCE_ARCHIVE}
+  find_file (GEM_SOURCE ${GEM_SOURCE_ARCHIVE}
     PATHS ${PROJECT_SOURCE_DIR}
     )
   
-  if (NOT RUBY_SOURCE)
-    set (RUBY_SOURCE ${RUBY_URL})
-  endif (NOT RUBY_SOURCE)
+  if (NOT GEM_SOURCE)
+    set (GEM_SOURCE ${GEM_URL})
+  endif (NOT GEM_SOURCE)
   
   ## Build package from source
   
-  if (RUBY_FROM_REPOS)
+  if (GEM_FROM_REPOS)
     
-    ExternalProject_Add (ruby
+    ExternalProject_Add (gem
       PREFIX ${PROJECT_BINARY_DIR}
       DOWNLOAD_DIR download
       SOURCE_DIR source
-      SVN_REPOSITORY ${RUBY_SVN}
+      SVN_REPOSITORY ${GEM_SVN}
       BUILD_IN_SOURCE 1
       CONFIGURE_COMMAND ${PROJECT_BINARY_DIR}/source/configure --prefix=${CMAKE_INSTALL_PREFIX}
       INSTALL_COMMAND ${PORT_INSTALL_COMMAND} make install
       )
   
-  else (RUBY_FROM_REPOS)
+  else (GEM_FROM_REPOS)
     
-    ExternalProject_Add (ruby
+    ExternalProject_Add (gem
       PREFIX ${PROJECT_BINARY_DIR}
       DOWNLOAD_DIR download
       SOURCE_DIR source
-      URL ${RUBY_SOURCE}
+      URL ${GEM_SOURCE}
       BUILD_IN_SOURCE 1
       CONFIGURE_COMMAND ${PROJECT_BINARY_DIR}/source/configure --prefix=${CMAKE_INSTALL_PREFIX}
       INSTALL_COMMAND ${PORT_INSTALL_COMMAND} make install
       )
     
-  endif (RUBY_FROM_REPOS)
+  endif (GEM_FROM_REPOS)
   
-else (NOT RUBY_FOUND OR RUBY_FORCE_BUILD)
+else (NOT GEM_FOUND OR GEM_FORCE_BUILD)
   
-  add_custom_target (ruby
+  add_custom_target (gem
     WORKING_DIRECTORY ${PROJECT_BINARY_DIR}
-    COMMENT "[Ruby] Found system-wide installation; skipping rebuild!"
+    COMMENT "[Gem] Found system-wide installation; skipping rebuild!"
     )
   
-endif (NOT RUBY_FOUND OR RUBY_FORCE_BUILD)
+endif (NOT GEM_FOUND OR GEM_FORCE_BUILD)
