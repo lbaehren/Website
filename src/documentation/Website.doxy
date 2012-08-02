@@ -26,4 +26,16 @@
        `-- templates
   \endverbatim
 
+  All files -- libraries, executable, and of course the generated website itself --
+  will be written into a common _release_ directory:
+
+  \verbatim
+  .
+   `-- release
+       |-- bin
+       |-- lib
+       |-- include
+       `-- website
+  \endverbatim
+
 */
