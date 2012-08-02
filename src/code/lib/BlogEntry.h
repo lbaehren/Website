@@ -117,7 +117,9 @@ namespace Blog { // Namespace Blog -- begin
     //! Provide a summary of the internal status to output stream \c os
     void summary (std::ostream &os);    
 
-    // === Private methods ======================================================
+    // === Virtual methods ======================================================
+
+    virtual void writeHeader (std::ostream &os=std::cout);
 
   private:
     
