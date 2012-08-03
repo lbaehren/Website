@@ -6,3 +6,13 @@ tags: Research
 ---
 
 ##{title:}##
+
+### Introduction ###
+
+LOFAR (the Low Frequency Array), a distributed digital radio telescope with stations in the Netherlands, Germany, France, Sweden, and the United Kingdom, is designed to enable full-sky monitoring of transient radio sources. These capabilities are ideal for the detection of broadband radio pulses generated in cosmic ray air showers. The core of LOFAR consists of 24 stations within 4 square kilometers, and each station contains 96 low-band antennas and 48 high-band antennas. This dense instrumentation will allow detailed studies of the lateral distribution of the radio signal in a frequency range of 10-250 MHz. Such studies are key to understanding the various radio emission mechanisms within the air shower, as well as for determining the potential of the radio technique for primary particle identification.
+
+### References ###
+
+  * A. Corstanje et al (2011) [LOFAR: Detecting Cosmic Rays with a Radio Telescope](http://arxiv.org/abs/1109.5805)
+  * S. Thoudam et al (2011) [An air shower array for LOFAR: LORA](http://arxiv.org/abs/1102.0946)
+  * A. Horneffer et al (2009) [Air Shower Measurements with LOFAR](http://arxiv.org/abs/0903.2398)
