@@ -28,6 +28,9 @@ set (PROJECT_VERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJEC
 option (ENABLE_TESTING        "Enable CTest test driver?"                  YES     )
 option (CONFIGURE_VERBOSE     "Increase verbosity during configuration?"   NO      )
 
+## Path to the generated static website
+set (WEBSITE_INSTALL_PREFIX "release/website")
+
 ##__________________________________________________________
 ## Handle option: Enable CTest test driver?
 
