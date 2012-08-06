@@ -1,0 +1,17 @@
+---
+title: Zukunft ungewiss
+in_menu: false
+author: Lars Baehren
+---
+
+##{title:}##
+
+_Fri, 03. August 2012 -- 18:52_
+
+Nicht nur dass Nokia sich in dem Masse von Microsoft abhaengig zu machen scheint, wie der finnische ehemalige Marktfuehrer in Sachen Handyherstellung an Bedeutung verliert, sondern mittlerweile scheinen wir auch an dem Punkt angekommen zu sein, dass die letzten Juwelen verschwerbelt werde:
+
+> Qt provides a sophisticated C++ framework for cross-platform mobile and desktop application development. It was originally created by Norwegian software company Trolltech, which was acquired by Nokia in 2008. Nokia transitioned Qt to an open governance model that has made the project more inclusive and open to independent contributors. Nokia also relicensed the open source version of the toolkit, moving it from the GPL to the more permissive LGPL.
+>
+> But recent changes in Nokia’s platform strategy have raised serious questions about the company’s long-term commitment to Qt. Nokia originally intended to put Qt at the center of its third-party developer landscape, using it to provide a unified set of APIs that would work across the company’s Symbian and MeeGo devices.
+
+Wie [Ars Technica](http://arstechnica.com/information-technology/2012/08/nokia-reportedly-planning-to-sell-qt-as-more-developers-are-laid-off) weiter berichtet stossen derartige Vorhaben -- ich denke mal wir sind mittlerweile ueber den Punkt blosser Geruechte hinaus -- auf wenig Begeisterung in der Community; vor allen Dingen beim KDE Projekt (ein nicht zu unterschaetzendes Schwergewicht im Bereich Open-Software), seitens dessen eine enge Verwebung mit Qt besteht, macht man recht deutlich darauf aufmerksam, dass man nicht nur weiterhin Hand bei der Entwicklung von Qt anlegen will, sondern auch dass das Framework aufgrund vertragicher Absicherungen nicht einfach aus dem Bereich der freien Software verschwinden kann. Derzeit hagelt es also Anmerkungen aus allen Ecken, aber was auch immer Nokia in naechster Zukunft zu tun gedenkt scheint davon nicht zu sehr beeinflusst zu sein; der derzeitige Stand der Meinung ist dementsprechend, dass die Finnen noch fuer die Ende des Monats geplante Qt5 Release verantwortlich zeichnen werden, sich dann aber aus der Entwicklung des Frameworks zurueckziehen. Dass dies unbedingt zum Guten des Konzerns ist, darf man aber durchaus bezweifeln.
