@@ -1,7 +1,4 @@
 
-## Configuration files
-add_subdirectory (config)
-
 ## Source code (C/C++)
 add_subdirectory (code)
 
