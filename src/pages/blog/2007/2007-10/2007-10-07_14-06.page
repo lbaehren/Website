@@ -1,0 +1,23 @@
+---
+title: Security of Wiki pages
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Sun, 07. October 2007 -- 14:06_
+
+I briefly mentioned this to Michael before: there is a simple way to bypass any Wiki-internal access-control, allowing to read out the contents of protected pages. While the standard means of accessing contents would be through the PHP engine of the Wiki, the source of each page is stored in a human-readable ASCII file, located in a given directory. Now on the one hand this ASCII storage -- as opposed to a database -- has the considerable advantage that files can be created (also automatically by a script) and edited within a simple text editor; also inspection is straight forward. The downside of this however is that -- unless appropriate measures are taken -- the contents of any page can be retrieved once the location of its source code is known. This on the other hand is simple: an URL given by the Wiki engine
+
+~~~~
+doku.php?id=private:dwingeloo_nieuws:2007-10:2007-10-07_13-55
+~~~~
+
+in a straight-forward manner translates into
+
+~~~~
+data/pages/private/dwingeloo_nieuws/2007-10/2007-10-07_13-55.txt
+~~~~
+
+thereby bypassing any ACS layers put in place within the Wiki itself. The only viable way to regain control appears to be properly configuring the web server, denying access to certain areas of the Wiki's directory structure by other means than the access mechanism provided by the Wiki itself. Interestingly such a configuration appears to be in place for the [LOPES Wiki](http://www.astro.kun.nl/lopes), which is the reason why I have been pocking around a bit in the setup; though I haven't been able to identify the corresponding rules yet, I am fairly certain that the information I am looking for is somewhere there. As I continue to run a considerably sized Wiki locally to my Laptop, there is enough ground on which to experiment -- as soon as I have come up with a solution I will go forward and implement this with the USG Wiki.

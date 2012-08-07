@@ -1,0 +1,37 @@
+---
+title: DAL -- Blitz++ dependency removed
+in_menu: false
+author: Lars Baehren
+tags: Computing Development
+---
+
+## {title:} ##
+
+_Tue, 09. October 2007 -- 08:29_
+
+Following the coding activities from the weekend, I yesterday had a closer look at the ties the DAL has/had to the Blitz++ library. Historically the reason for this dependency steams from the fact, that when starting the support for LopesEvent datasets, casacore had not been (generally) available yet; therefore in order to be able to use higher-level array functionality, I decided for Blitz++, being a rather small, well maintained package. However we now do have casacore, so the question would be, if we really need Blitz++ for the DAL anymore. The answer is simple: no. So what I did yesterday was to replace the usage of Blitz++ arrays by the corresponding objects from the CASA array module, thereby effectively removing the dependency of the DAL on Blitz++. The files affected by this are
+
+~~~~
+M      test/lewrite.cpp
+M      test/tdalLopesEvent.cpp
+M      test/CMakeLists.txt
+M      implement/dalLopesEvent.h
+M      implement/dalLopesEvent.cpp
+M      CMakeLists.txt
+~~~~
+
+The next immediate consequence of this action is, that we need to ship once external components less along with the tar-ball for the DAL; both the archive creation script and the main build script have been adjusted accordingly. The other point is, that now I have been adding the `tdalLopesEvent` test program to the list of tests which can be driven from CTest; as with `tMS_dal` this is an optional test, since it relies on the existence of a dataset -- this however is already taken care of by the CMake configuration.
+
+~~~~
+Start processing tests
+Test project /Users/lars/Code/lofar/usg/build/dal
+  1/  4 Testing test1                            Passed
+  2/  4 Testing test2                         ***Failed 
+  3/  4 Testing tMS_dal                          Passed
+  4/  4 Testing tdalLopesEvent                   Passed
+
+75% tests passed, 1 tests failed out of 4
+
+The following tests FAILED:
+          2 - test2 (Failed)
+~~~~

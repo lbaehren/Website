@@ -1,0 +1,12 @@
+---
+title: DAL -- Some nasty details
+in_menu: false
+author: Lars Baehren
+tags: Computing Development
+---
+
+## {title:} ##
+
+_Fri, 12. October 2007 -- 20:29_
+
+And I already was thinking we were done... After oe and I were able to build and install the DAL on the cluster and the development machine, I wanted to be on the save side an initiated another test run starting from scratch. This delivered once more the now familiar problem while linking the executables. As it turns out the previously mentioned options switches in the CMake script to locate the components of the Boost++ library behave not exactly as expected; a little bit more of testing during here on the train ride back to Nijmegen has shown, that unfortunately the desired switches only get set properly during a second pass of CMake over the source tree. I'd guess that this is a feature I am not yet able to understand -- obviously there is a considerable difference between the handling of external parameters by `CMakeLists.txt` files and e.g. `FindBoost.cmake`. This exactly explains, why Joe's and my builds would succeed when simply rerunning the build from the build directory, but would fail when running the complete chain from the build script. However -- and I think this now is a reasonable solution -- we can actually take out the single Boost++ library which would cause the build to fail; this seems to be the easiest thing to do without breaking the rest of the setup. I am currently running another buld on the Intel Mac, just to be on the save side; I will sneak into the institute on Saturday to upload the latest modifications and see if with this everythings runs from end to end on the target systems. If the latter indeed is the case, then I think there is little else in the way of going public during the workshop.
