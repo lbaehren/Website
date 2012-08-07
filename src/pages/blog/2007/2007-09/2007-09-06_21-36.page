@@ -1,0 +1,12 @@
+---
+title: Porting PGPlot
+in_menu: false
+author: Lars Baehren
+tags: Computing
+---
+
+## {title:} ##
+
+_Thu, 06. September 2007 -- 21:36_
+
+Yes I know, we kind of agreed, that this would not have a too high priority, but this thing slowly was really getting to me. This afternoon -- one of the few things I actually found the time for -- I once again ran into the problem, that certain parts of the CR-Tools would not build due to an incomplete PGPlot installation; from what I have seen it even looked like as if the system-wide instllation on my Debian machine would not be enough to provide the required functionality. Therefore I ave decided to use the trajectory between Zwolle and Nijmegen to nail this down as good a possible. Even though I would not yet claim, that I really can reproduce 100% of a fully-operational PGPlot, at least all the libraries and executables build! The problem is, that the package makes use of some fancy shell scripts and helper program, which parse the Fortran code to generate prototypes of C-functions -- to figure this out one really needs to go through the original scripts and makefile templates (I could imagine quite a number of nicer things to do with my time), but if one does exactly that, the answer to some of the questions can be tracked down. So even before arriving at Arnhem I do have a working version on my Intel Mac -- something I will try first thing tomorrow morning on the other platforms. If this really works, we just have gotten rid of some really bad legacy problem...

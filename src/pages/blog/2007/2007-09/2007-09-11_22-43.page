@@ -1,0 +1,18 @@
+---
+title: casacore & DAL
+in_menu: false
+author: Lars Baehren
+tags: Computing
+---
+
+## {title:} ##
+
+_Tue, 11. September 2007 -- 22:43_
+
+Oh my god, this was a stupid -- and in the end trivial -- thing which caused the DAL not to build when linking against casacore: the ordering of the libraries in the linker command was reversed w.r.t. the required order. While typically the dependency hierarchy in all the descriptions is listed in bottom-up ordering, of course at the linking stage the arrangement of the libraries needs to be passed to the linker in exactly the opposite order. This simple omission would cause both the DAL and the CR-Tools to fail during linking. Luckily I was able to remember that we constantly have been running into issues alike when setting up the ordering of the libraries within the CASA build environment: even though the libraries where exactly the same, it sometimes was simply a matter of proper ordering. However I do feel little motivation to re-arrange all the checking instructions within the CMake script (which also would make it harder to understand); the nice thing though is, that all we need is a single command available within CMake to manipulate an already existing list:
+
+~~~~
+list (REVERSE CASACORE_LIBRARIES)
+~~~~
+
+Nice and simple... and with exactly the desired effect. As of a few minutes I do get a complete build of Joe's DAL on my Intel Mac!

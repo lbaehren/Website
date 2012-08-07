@@ -1,0 +1,21 @@
+---
+title: DAL -- Dynamic library for Python bindings
+in_menu: false
+author: Lars Baehren
+tags: Computing
+---
+
+## {title:} ##
+
+_Wed, 19. September 2007 -- 22:31_
+
+I knew it, there had to be an elegant solution to the problem within CMake itself (without reserting whatever tricks bypassing the framework). Though my first take on getting the library suffix correct was not completely wrong, I just missed the relevant information in the documentation; after some more careful reading we no do get the dynamic library required for the Python bindings with the proper suffix:
+
+~~~~
+  ## additional target properties
+  set_target_properties (pydal
+    PROPERTIES
+    SUFFIX .so)
+~~~~
+
+Even though there are still some further problems left on the table, this already solves one of the longer standing ones -- thereby bringing us closer to the first public release of the DAL!
