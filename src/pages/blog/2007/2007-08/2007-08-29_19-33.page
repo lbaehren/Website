@@ -1,0 +1,11 @@
+---
+title: Umzug (fast) komplett
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 29. August 2007 -- 19:33_
+
+Nachdem ich mich ja ueber die letzten zwei Jahre sehr stark auf dem PowerPC Laoptop eingelebt habe, ist es nun wohl an der Zeit, dass ich den Wechsel auf das neue Laptop vollziehe. Auch wenn ich sicherlich noch einmal ein wenig Zeit darin investieren muss die wichtigsten Datenbestaende abzugleichen, habe ich mit dem heutigen Tag endlich auch die letzte, fuer mich essentiell wichtige Funktion auf dem neuen Rechner verfuegbar. Was mir ja immer noch fehlte war, dass (a) ich ein funktionsfaehiges X11 am Laufen habe und (b) dass mir lokal meine Wiki zur Verfuegung steht. Waehrend ich den ersten Punkt am Freitag in Amsterdam noch mit der Hilfe von Michael und Joe beheben konnte, so habe ich es heute morgen endlich noch geschafft ausfindig zu machen, warum der lokal laufende Webserver mir nicht das lieferte, was ich eigentlich haben wollte. Wie sich wieder einmal herausstellte handelte es sich um eine Apple-typische Sache: zwar sind viele Dinge mit der kinderleichten -- ja schon idiotensicheren -- Weise verfuegbar, wenn aber ein wenig wenig mehr als das haben will, was so auf den ersten Blick sichtbar ist, dann wird es wirklich kompliziert. So bedarf es allein eines einzelnen Klicks in einem sehr uebersichtlichen Menue, um lokal einen Webserver zu starten -- moechte man diesen aber zum Abarbeiten von PHP-Skripten ueberreden, dann muss man sich zunaechst einmal durch eine Reihe Google Suchresultate wuehlen und dann anschliessen manuell in der Server-Konfiguration herumeditieren. Dies scheint fuer mich wieder einmal die fuer Apple leider typische Tour zu sein: alles ist wunderbar bunt, laesst sich super einfach zu bedienen... aber wehe man beginnt Fragen zu stellen, wie es denn eigentlich funktioniert. Gut, dies waere jetzt immerhin geloest, so dass ich die Wiki komplett auf dem Lapzilla laufen habe. Jetzt muss ich mir nur noch Gedanken darueber machen, wie ich denn die Aufgabenverteilung zwischen den beiden Laptops einrichte.

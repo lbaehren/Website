@@ -1,0 +1,125 @@
+---
+title: Porting of CR-Tools: Code example
+in_menu: false
+author: Lars Baehren
+tags: Computing
+---
+
+## {title:} ##
+
+_Fri, 17. August 2007 -- 08:52_
+
+Mind the differences... This is the original code as handed in by Kalpana:
+
+~~~~
+ // Default Constructor
+ 
+  ppfimplement::ppfimplement ()
+  {;}
+
+ //Argumented Constructor
+  
+ ppfimplement::ppfimplement( const Vector<Double>& samples,
+                             const Vector<Double>& FIRCoefficients )
+ {
+
+ Vector<Double> signal ;
+ }
+//----- end of the Arguemented constructor : ppfimplementation 
+//------------------------------------------------------------------------
+
+  ppfimplement::ppfimplement (ppfimplement const &other)
+  {
+    copy (other);
+  }
+~~~~
+
+This is how it looks like after cleaning it up:
+
+~~~~
+  ppfimplement::ppfimplement ()
+  {
+    filterRows_p    = 1024;
+    filterColumns_p = 16;
+  }
+  
+  ppfimplement::ppfimplement( const Vector<Double>& samples,
+			      const Vector<Double>& FIRCoefficients )
+  {
+    filterRows_p    = 1024;
+    filterColumns_p = 16;
+    Vector<Double> signal ;
+  }
+  
+  ppfimplement::ppfimplement (ppfimplement const &other)
+  {
+    copy (other);
+  }
+~~~~
+
+So to sum this up: we have three different constructors, of which originally none would create a valid object! The default constructor does not do anything, the argumented constructor does not pass on any of the provided parameters and the copy constructor is just a call to another function which does not contain any code to handle the input.
+
+Here is another one, which almost drove me to tears... The original
+
+~~~~
+  Matrix<Double> ppfimplement::setFilterCoefficients( const Vector<Double>& FIRCoefficients)
+
+  {                                        
+    try {
+         uint h1 = 0;
+//          filterRows = 1024 ;
+// 	 filterColumns = 16 ;
+	 
+         Matrix<Double> ppf_coeff( 1024, 16, 0.0 );
+
+         for( uint h=0; h<16; h++ ){
+     
+            for( uint g=0; g<1024; g++ ){
+
+                ppf_coeff(g,h) = FIRCoefficients(g+h1*h) ;
+         
+              }
+
+             h1 = 1024;
+           }
+	   
+         return ppf_coeff ;
+      }
+   
+    catch( AipsError x ){
+    cerr << "ppfimplementation :: setFilterCoefficients " << x.getMesg() << endl ;
+    return Matrix<Double> ();
+    }
+  }  
+~~~~
+
+... and after me cleaning up
+
+~~~~
+  Matrix<Double>
+  ppfimplement::setFilterCoefficients ( const Vector<Double> &FIRCoefficients)
+  {   
+    Matrix<Double> ppf_coeff (filterRows_p,filterColumns_p);
+
+    ppf_coeff = 0.0;
+    
+    try {
+      uint h1 = 0;
+      uint row=0;
+      uint col=0;
+      
+      for(col=0; col<filterColumns_p; col++ ){
+	for(row=0; row<filterRows_p; row++ ){
+	  ppf_coeff(row,col) = FIRCoefficients(row+h1*col) ;
+	}
+	h1 = filterRows_p;
+      }
+    } catch (AipsError x) {
+      cerr << "[ppfimplement::setFilterCoefficients] " << x.getMesg() << endl ;
+    }
+    
+    return ppf_coeff;
+  }  
+~~~~
+
+Not only does the original contain a number of loop variables which offer no clue about their nature, but worst of all parameters are hard-coded and without any indication what they actually are. If we had a code screening and acceptance testing in place, this would be immedeately rejected!

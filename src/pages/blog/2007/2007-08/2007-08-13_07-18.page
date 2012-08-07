@@ -1,0 +1,18 @@
+---
+title: casacore: Cracked it!
+in_menu: false
+author: Lars Baehren
+tags: Computing
+---
+
+## {title:} ##
+
+_Mon, 13. August 2007 -- 07:18_
+
+I have to admit that the solution came to me at some slightly odd time, but with that we now also have _casacore_ on PPC and Intel Macs. The still pending issue was the fact, that libfits would not build -- not matter whatever I have been adjusting in the configuration settting. The strange thing though was, that the same operation would work with the port of CASA, I had been creating a while ago; a 
+~~~~
+make fits
+~~~~
+there would do extactly what it was supposed to do -- namely create the FITS library. As I was getting nowhere using the methods so far, this night -- when unable to sleep -- I took a different approach: create a small, minimal CMake configuration file for this module only... and create it from scratch. The result was indeed just a minimal set of instructions which -- in some sense to my surprise -- would deliver me "libfits" on Intel Mac. However it still took me a few minutes to figure out, what exactly was behind this; the solution -- once found -- was a rather trivial one. It turns out, that one need to be careful with the include paths: the _casacore_ FITS module contains a header file named "fitsio.h" which potentially can be included in place of the file of same name from the CFITSIO library! When including the wrong header file the effect would be, that a number of symbols would not be defined, therefore having the compiler complain and eventually giving up. However: this is now settled and I get a complete build of _casacore_ on both Mac platforms (ok, the test on the PPC is still running, but already beyond the critical point...).
+
+So where do we stand? We now have successful builds of _casacore_ on a total of 6 different platforms (see the USG Wiki for specs) and we are in business not only to start distributing, but also to get Joe's DAL and our CR-Tools using it. In fact I had another (actually very reasonable) conversation with Andreas last Friday, were we agreed that the core library of the CR package should be configured to do with _casacore_, which would be a major improvement w.r.t. the current situation which in any case requires a fully blown installation of CASA (and we all know what a pain in the ass this is); only the applications which function as a client between the Glish scripting layer and the core would then still be in need of the tasking module -- if however all we need is "tasking" I'd argue for investigating the possibility of porting this to CMake... I will surely have a look at that.
