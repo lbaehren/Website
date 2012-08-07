@@ -1,0 +1,28 @@
+---
+title: CMake wrapper for external packages
+in_menu: false
+author: Lars Baehren
+tags: Computing
+---
+
+## {title:} ##
+
+_Sat, 21. July 2007 -- 09:59_
+
+Part of the discussion on ingesting the casacore package into the software collection of the [LOFAR](http://www.lofar.org) user software, has been the issue of how to configure and build the external packages upon which some of our code depends. While most packages use the GNU Autotools, some utilize Jam or SCons (the latter exspecially is the case for casacore). The question now is, how to deal with this: do we simply require a set of external packages to be installed by the potential user or are we actively supporting the preparation of the system for our software? 
+
+~~~~
+message (STATUS "Running the HDF5 configure script...")
+
+execute_process (
+  WORKING_DIRECTORY ${libhdf5_SOURCE_DIR}
+  COMMAND ./configure --prefix=${prefix_hdf5} --includedir=${prefix_hdf5}/hdf5
+  TIMEOUT 180
+  ERROR_VARIABLE error_configure
+  )
+
+if (error_configure)
+  message (STATUS "There was an error running the HDF5 configure script!")
+  message (SEND_ERROR "${error_configure}")
+endif (error_configure)
+~~~~
