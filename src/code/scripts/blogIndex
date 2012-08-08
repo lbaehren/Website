@@ -93,9 +93,9 @@ writeIndexHeader ()
     echo "Creating index file $_varOutfile ..."
 
     echo "---"                                > $_varOutfile
-    echo "title: ${_varYear}"                >> $_varOutfile
+    echo "title: \"${_varYear}\""            >> $_varOutfile
     echo "in_menu: ${_varMenu}"              >> $_varOutfile
-    echo "author: Lars Baehren"              >> $_varOutfile
+    echo "author: \"Lars Baehren\""          >> $_varOutfile
     echo "tags: Blog"                        >> $_varOutfile
     echo "---"                               >> $_varOutfile
     echo ""                                  >> $_varOutfile
@@ -152,12 +152,12 @@ processDirectory ()
 	  echo "Index file missing - generating header now..."
 	  echo "---"                     > $varIndexFileMonth
 	  echo "title: Blog | $varMonthName $varYear" >> $varIndexFileMonth
-	  echo "in_menu: false"         >> $varIndexFileMonth
-	  echo "author: Lars Baehren"   >> $varIndexFileMonth
-	  echo "---"                    >> $varIndexFileMonth
-	  echo ""                       >> $varIndexFileMonth
-	  echo "## {title:} ##"         >> $varIndexFileMonth
-	  echo ""                       >> $varIndexFileMonth
+	  echo "in_menu: false"           >> $varIndexFileMonth
+	  echo "author: \"Lars Baehren\"" >> $varIndexFileMonth
+	  echo "---"                      >> $varIndexFileMonth
+	  echo ""                         >> $varIndexFileMonth
+	  echo "## {title:} ##"           >> $varIndexFileMonth
+	  echo ""                         >> $varIndexFileMonth
 	  echo "  * [$varTitle]($varLink) | $varDateTime |" >> $varIndexFileMonth
       fi
 
