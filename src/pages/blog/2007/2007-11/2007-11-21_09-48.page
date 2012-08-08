@@ -1,0 +1,12 @@
+---
+title: Geschafft
+in_menu: false
+author: Lars Baehren
+tags: Travel Zwolle
+---
+
+## {title:} ##
+
+_Wed, 21. November 2007 - 09:48_
+
+Na bitte, das Glueck laesst mich heute doch nicht komplett im Stich. So habe ich es doch noch recht gut geschafft meinen Anschluss hier in **Zwolle** zu kriegen. Das Timing war sogar so abgepasst, dass der Anschlusszug gerade einfuhr, als ich auf den Bahnsteig kam; dies bedeutet also, dass kein Anruf bei der Rezeption mehr noetig ist, weil ich damit exakt im Zeitplan fuer die Reise liege. Damit habe ich noch einmal knapp eine halbe Stunde, welche ich vor allen Dingen damit zubringen werde noch ein wenig in dem Code aufzuraeumen; wie mir naemlich aus der Dokumentation aufgefallen ist, gibt es da doch einige redundante Beitraege, welche einfach nicht noetig sind und den Lauf durch Compiler und Linker unnoetig verlaengern. Da ich aber nicht einfach Dinge wegschmeissen will (wie ndreas es wohl in seiner ihm besonderen Weise verlangen wuerde), muss ich mir doch ein wenig die Muehe machen und alles sichten; dies dauert ein wenig laenger, ist aber die deutlich sinnvollere Methode.
