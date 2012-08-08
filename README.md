@@ -1,7 +1,7 @@
 ## Requirements ##
 
   * CMake (www.cmake.org)
-  * Webgen
+  * Webgen (webgen.rubyforge.org)
 
 ## Configuration and installation ##
 
