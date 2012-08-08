@@ -25,4 +25,26 @@ in order to build and process all components or
 
 to only run Webgen to generate the website itself.
 
+## Directory structure ##
 
+Basically the files are separated into two categories: input files and output
+files. In order to keep the two apart we have
+
+    .
+    |-- src
+    `-- release
+
+The source directory has the following sub-structure:
+
+    .
+     `-- src
+         |-- code
+         |   |-- apps
+         |   |-- external
+         |   |-- lib
+         |   |-- scripts
+         |   `-- tests
+         |-- documentation
+         |-- images
+         |-- pages
+         `-- templates
