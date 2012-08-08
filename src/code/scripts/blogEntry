@@ -175,9 +175,9 @@ writeHeaderWebgen ()
     ## Create the skeleton file for the new blog entry
     
     echo "---"                          > $varFileEntry
-    echo "title: $varTitle"            >> $varFileEntry
+    echo "title: \"$varTitle\""        >> $varFileEntry
     echo "in_menu: false"              >> $varFileEntry
-    echo "author: Lars Baehren"        >> $varFileEntry
+    echo "author: \"Lars Baehren\""    >> $varFileEntry
     echo "---"                         >> $varFileEntry
     echo ""                            >> $varFileEntry
     echo "##{title:}##"                >> $varFileEntry
