@@ -1,0 +1,11 @@
+---
+title: Eine der Nebenwirkungen
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Mon, 24. January 2011 -- 20:34_
+
+… meiner Planungen fuer den ueberwiegenden Teil des Sonntag war es natuerlich, dass ich nur unwesentliche Fortschritte im Abarbeiten meiner kilometerlangen Liste an noch ausstehenden Blog-Eintraegen gemacht habe. Angesichts der Tatsache, dass sich ja nichts davon von alleine schreibt, hatte ich mir eigentlich vorgenommen, mir einen Teil des Tages dafuer zu reservieren -- dass daraus nun doch wieder nichts geworden ist, liegt vor allen Dingen daran, dass ich den ueberwiegenden Teil des Tages damit verbracht habe an der DAL zu schreiben. Diese leidet schon seit einer Weile an dem Problem, dass das benoetigte Interface fuer die BF Daten unvollstaendig bzw. kaputt ist; ok, komplett kaputt ist ist jetzt vielleicht ein klein wenig uebertrieben, aber wenn es um die Generierung des internen Arrays ging (in welchem letzten Endes die Beobachtungsdaten abgelegt werden), schlugen ein Teil der Zugriffe fehl. In so einem Zustand war der Code natuerlich nicht brauchbar, um diesen fuer die allgemeine Benutzung freizugeben -- ohne diese Freigabe ist aber nichts mit dem Wegschreiben der Pulsardaten in Uebereinstimmung mit der Format-Definition. Worauf es also hinauslaeuft ist, dass ich es endlich mal noch schaffen musste, die Fehler im Code zu finden, damit ich endlich eine korregierte Fassung einchecken und bereitstellen konnte -- genau darauf habe ich gestern den ueberwiegenden Tag des Nachmittages und Abends verbracht. Scheint geholfen zu haben, denn bis auf einen kleinen -- absolut ideotischen Fehler -- ist es mir gelungen alles so weit aufzuraeumen, dass ich nicht nur wieder alles baut, sondern auch das Erzeugen von BF Daten wieder moeglich ist.

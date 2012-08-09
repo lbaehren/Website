@@ -1,0 +1,12 @@
+---
+title: Mit ICE
+in_menu: false
+author: Lars Baehren
+tags: Travel
+---
+
+## {title:} ##
+
+_Thu, 27. January 2011 -- 19:14_
+
+Na das ist doch mal wieder eine nette Abwechslung: nachdem ich ja seit Weihnachten immer wieder mit niederlaendischen Nahverkehrszuegen durch die Gegend geschaukelt worden bin, werde ich heute -- wenn nicht irgendetwas unvorhergesehenes dazwischen kommt -- die komplette Strecke von Amsterdam nach Koeln mit dem ICE ablegen. Auf Amsterdam Centraal habe ich schon die ganze Zeit auf die Anzeige geschielt und nach den Ansagen gehoert... aber keinerlei Hinweise in Sachen Umsteigen oder aehnliches. Das soll mir natuerlich recht sein, denn schliesslich ist es ungleich angenehmer mit dem ICE zu reisen, wo ich mit ein wenig haeuslich einrichten und dann in Ruhe arbeiten kann -- wenn der Zug die ganze Zeit wie bloede ruettelt ist dies weniger moeglich. So aber kann ich mich ohne weiteres darauf konzentrieren noch die Dinge fertigzustellen, welche ich gestern Abend begonnen habe; im Wesentlichen bin ich gerade dabei dabei einen guten Teil dessen, was Joe seinerzeit fuer die Interaktion mit der HDF5 Library geschrieben hat, neu zu implementieren -- diesmal aber unter groesserem Gebrauch object-orientierter Techniken.

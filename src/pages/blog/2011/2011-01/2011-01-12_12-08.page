@@ -1,0 +1,25 @@
+---
+title: ALMA Data Analysis Software Developer
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 12. January 2011 - 12:08_
+
+Also wenn [das hier](http://members.aas.org/JobReg/JobDetailPage.cfm?JobID=27174) mal nicht interessant klingt:
+
+> Within the Pipeline Systems Department of the Software Development Division, you will be responsible for the development of radio-interferometry data reduction software. You will also be part of the international ALMA Computing team (collaboration of institutes), within the [Offline (Data Analysis) subsystem](http://science.nrao.edu/alma/data-processing.shtml). This subsystem is responsible for the ALMA contribution to the Common Astronomy Software Applications (CASA) package, which will be made available to reduce ALMA data.
+>
+> Your main tasks include:
+>
+> * CASA development, upgrades and tests, as defined within the Offline subsystem. Software development is performed in C++ and Python, and may cover a wide range of applications within the CASA system (e.g. data reduction algorithm, build and test system procedures, high-performance computing)
+>
+> * Set-up and execution of CASA user tests and regression tests
+>
+> * Support of Computing integration tests involving data analysis.
+
+Ken, der sich gerade ja auf der Suche nach einem neuen Job befindet, hat mir dies zukommen lassen und ich muss sagen, dass dies wirklich eine Versuchung ist. Das erinnert mich ein wenig an den Job, welchen ich vor ein oder zwei Jahren in Schweden gefunden hatte. Von der Grundidee her spricht mich dies deutlich mehr an, als das, was man mir zuletzt hier vor Ort ans Herz gelegt hat. Das macht natuerlich nachdenklich, auch wenn wohl nicht einfach hier alles fallen lasse, um nach Garching zu ziehen.
+
+Die Kleinigkeit, welche ich aber auf der rein technischen Seite mitnehmen werde ist, dass ich mich wirklich mal noch deutlich mehr mit Python auseinandersetzen werde muss, als dies bisher der Fall gewesen ist; rein von der Veranlagung her tendiere ich sicherlich mehr zu einer Sprache wie C++, aber Scripting komplett zu vernachlaessigen ist keine gute Idee.
