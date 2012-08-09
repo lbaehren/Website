@@ -1,0 +1,31 @@
+---
+title: "Kontinuierliches Update"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Thu, 09. August 2012 -- 12:23_
+
+Also das habe ich ja auch noch nicht gewusst: [Webgen](http://webgen.rubyforge.org) geht in eine Art kontinuierlichen Update Modues, wenn sich an den Sources Files etwas aendert, waehrend sich die Website im Aufbau befunden hat.
+
+~~~~
+MacBook15inch:build lars$ make
+[ 37%] Built target blog
+(in /Users/lars/Sites/larsbaehren.com)
+Starting webgen...
+Updating tree...
+...done in 34.5528 seconds
+Writing changed nodes...
+...done in 0.8854 seconds
+Updating tree...
+...done in 31.0738 seconds
+Writing changed nodes...
+...done in 0.4885 seconds
+Updating tree...
+~~~~
+
+Der wesentliche Unterschied der nun angestrebten Loesung gegenueber der bisherigen Website ist ja die Tatsache, dass die Seiten statisch sind und nicht on-the-fly generiert werden; das bedeutet natuerlich, dass ich zunaechst den _Webgen_ Prozessor ueber die Source-Dateien laufen lassen muss, damit ich die HTML-Seiten erhalte. Grundsaetzlich finde ich dies eigentlich recht nett, weil dies ziemlich genau dem Workflow bei der Software-Entwicklung entspricht (zumindest wenn man mit e.g. C/C++ arbeitet): ich kann mich im Texteditor einfach nur auf das Schreiben des Beitrages konzentrieren, waehrend die Machinerie zur Erzeugung des Endproduktes ein separater Vorgang ist. Der besondert nette Nebeneffekt davon ist, dass es genauso wie beim Code Compiler seitens des Parsers Rueckmeldungen gibt, wenn es zu Fehlern bei der Generierung de Seiten kommt; dies ist vor allen Dingen dann interessant, wenn sich auf diese Weise defekte Links ausfindig machen lassen, so dass man diese korregieren kann, ehe die Seite live geht.
+
+Worauf ich aber hinauswollte ist folgendes: eine Variante zu arbeiten ist, dass ich hingehe und alle gewuenschten Textaenderungen vornehme, ehe ich dann den Generator anschmeisse, auf das Resultat warte und mich dann anschliessen an die naechste Iteration mache. Wie sich allerdings herausstellt, kann ich mir die Wartezeit durchaus sparen, weil in der Zwischenzeit vorgenommene Aenderungen automatisch einen weiteren Generierungszyklus anstossen. Dass heisst also, dass ich -- wenn ich _Webgen_ einmal angestossen habe -- munter weiterschreiben kann und die Seiten dennoch im Hintergrund aktualisiert werden. Bin ich dann endlich fertig mit dem Schreiben, dann gibt es noch einmal einen Durchlauf und alle Aenderungen sind beruecksichtigt. Sehr gut zu wissen.
