@@ -1,0 +1,21 @@
+---
+title: "Halide"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Thu, 09. August 2012 -- 14:56_
+
+Also das ist doch einmal eine Mitteilung, welche es wert ist weiter verfolgt zu werden:
+
+> Forscher des "Computer Science and Artificial Intelligence Laboratory" (CSAIL) am MIT (Massachusetts Institute of Technology) haben die neue [Programmiersprache Halide](http://halide-lang.org) vorgestellt. Sie soll die Entwicklung von Anwendungen zur Bildverarbeitung auf modernen Rechnersystemen erleichtern. Mit dieser eingebetteten DSL (Domain Specific Language) soll die effiziente Handhabung von Algorithmen beispielsweise für Raw-Camera-Pipelines, bilaterale Grids, Laplace-Filterung oder Bildaufteilung möglich sein. 
+>
+> [Quelle: Heise Newsticker]
+
+Nachschauen lohnt sich in jedem Fall, denn die weiterfuehrende [Beschreibung auf den Seiten des MIT](http://web.mit.edu/newsoffice/2012/better-programming-language-for-image-processing-0802.html) klingt recht vielversprechend:
+
+> In tests, the MIT researchers used Halide to rewrite several common image-processing algorithms whose performance had already been optimized by seasoned programmers. The Halide versions were typically about one-third as long but offered significant performance gains — two-, three-, or even six-fold speedups. In one instance, the Halide program was actually longer than the original — but the speedup was 70-fold.
+
+Der [Source Code](https://github.com/halide/Halide) ist mittlerweile via Github erhaeltlich, das zugehoerige [Paper](http://people.csail.mit.edu/jrk/halide12/halide12.pdf) ist zu finden in _ACM Transactions on Graphics 31(4) (In Proceedings of SIGGRAPH 2012)_.
