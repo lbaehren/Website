@@ -70,7 +70,7 @@ for FILE in $FILES
   echo "Processing file $FILE -> $varOutfile ..."
 
   echo "---"                    > $varOutfile
-  echo "title: $varTitle"      >> $varOutfile
+  echo "title: \"$varTitle\""  >> $varOutfile
   echo "in_menu: false"        >> $varOutfile
   echo "author: Lars Baehren"  >> $varOutfile
   echo "---"                   >> $varOutfile
