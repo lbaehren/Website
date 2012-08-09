@@ -2,6 +2,7 @@
 
 varExtension=".page"
 varOutfile="index.page"
+varBasedir=`pwd`
 
 ## ==============================================================================
 ##
@@ -124,7 +125,7 @@ processDirectory ()
       varFilename=`echo $FILE | sed s/.page//`
 
       ## Extract title of the entry
-      varTitle=`grep title: $FILE | grep -v \#\# | sed s/"title: "//`
+      varTitle=`grep title: $FILE | grep -v \#\# | sed s/"title: "// | sed s/\"//g`
 
       ## Extract date & time
       varDay=`echo ${varFilename:8:2}`
@@ -137,27 +138,20 @@ processDirectory ()
       ## Link to generated file
       varLink="/blog/$varYear/$varYear-$varMonth/$varFilename.html"
 
-      ## Summary of variables assembled so far
-#      echo "--------------"
-#      echo "-- Filename    = $varFilename"
-#      echo "-- Title       = $varTitle"
-#      echo "-- Timestamp   = $varDateTime"
-#      echo "-- Output file = $varIndexFileMonth"
-
       ## Generate the index file(s)
       if [[ -e index.page ]]
       then
 	  echo "  * [$varTitle]($varLink) | $varDateTime |" >> $varIndexFileMonth
       else 
 	  echo "Index file missing - generating header now..."
-	  echo "---"                     > $varIndexFileMonth
-	  echo "title: Blog | $varMonthName $varYear" >> $varIndexFileMonth
-	  echo "in_menu: false"           >> $varIndexFileMonth
-	  echo "author: \"Lars Baehren\"" >> $varIndexFileMonth
-	  echo "---"                      >> $varIndexFileMonth
-	  echo ""                         >> $varIndexFileMonth
-	  echo "## {title:} ##"           >> $varIndexFileMonth
-	  echo ""                         >> $varIndexFileMonth
+	  echo "---"                                         > $varIndexFileMonth
+	  echo "title: \"Blog | $varMonthName $varYear\""   >> $varIndexFileMonth
+	  echo "in_menu: false"                             >> $varIndexFileMonth
+	  echo "author: \"Lars Baehren\""                   >> $varIndexFileMonth
+	  echo "---"                                        >> $varIndexFileMonth
+	  echo ""                                           >> $varIndexFileMonth
+	  echo "## {title:} ##"                             >> $varIndexFileMonth
+	  echo ""                                           >> $varIndexFileMonth
 	  echo "  * [$varTitle]($varLink) | $varDateTime |" >> $varIndexFileMonth
       fi
 
@@ -168,7 +162,82 @@ processDirectory ()
 
 
     }
+}
 
+##____________________________________________________________________
+##                                                         processYear
+##
+##  Process the contents of a year
+##
+
+processYear ()
+{
+  if [ -d "$1" ]
+  then
+
+    ## --- Set basic variables ---
+
+    varYear=$1
+    varIndexBlog=$varBasedir/$varYear.page
+    varIndexYear=$varBasedir/$varYear/index.page
+
+    ## --- Change into the directory ---
+
+    cd $varYear
+
+    ## --- Feedback ---
+
+    echo "[blogIndex::processYear] Processing blog entries for ${varYear} ..."
+
+    ## -- Generate index file headers ---
+
+    writeIndexHeader $varYear true "$varIndexBlog"
+    writeIndexHeader $varYear false "$varIndexYear"
+
+    ## --- Process directories for months ---
+
+    for FILE in `ls`
+    {
+      if [ -d $FILE ] 
+      then 
+        ## Set local variables
+        varMonth=`echo ${FILE:5:2}`
+        varMonthName=`nameOfMonth $varMonth`
+        ## Section header for index files
+        echo ""                      >> $varIndexYear
+        echo "### $varMonthName ###" >> $varIndexYear
+        echo ""                      >> $varIndexYear
+        ## ---
+        echo ""                      >> $varIndexBlog
+        echo "### $varMonthName ###" >> $varIndexBlog
+        echo ""                      >> $varIndexBlog
+        ## Change into the directory
+        cd $FILE
+        processDirectory
+        cd $varBasedir/$varYear
+    fi
+  }
+
+  fi
+}
+
+##____________________________________________________________________
+##                                                 processTopDirectory
+
+processTopDirectory ()
+{
+  ## --- Change into the base directory ---
+  cd ${varBasedir}
+
+  for FILE in `ls`
+  {
+    if [ -d "$FILE" ]
+    then
+      processYear $FILE
+    fi
+    ## --- Go back to the top-level directory ---
+    cd ${varBasedir}
+  }
 }
 
 ## ==============================================================================
@@ -191,61 +260,11 @@ processDirectory ()
 
 if [ -z "$1" ]
 then
-    echo "Missing command line option - year"
+    processTopDirectory
     exit
 else
-    if [ -d "$1" ]
-    then
-	echo "Found directory for year $varYear"
-	##
-        ## Set basic variables
-	##
-	varYear=$1
-	varBasedir=`pwd`
-	varIndexBlog=$varBasedir/$varYear.page
-	varIndexYear=$varBasedir/$varYear/index.page
-    else
-	echo "Unable to continue - missing directory $varYear"
-	exit
-    fi
+    processYear $1
 fi
-
-echo "varYear      = $varYear"
-echo "varBasedir   = $varBasedir"
-echo "varIndexBlog = $varIndexBlog"
-echo "varIndexYear = $varIndexYear"
-
-
-##____________________________________________________________________
-## Process the directory for the year
-
-## Change into the directory ...
-cd $varYear
-
-writeIndexHeader $varYear true "$varIndexBlog"
-writeIndexHeader $varYear false "$varIndexYear"
-
-for FILE in `ls`
-{
-    if [ -d $FILE ] 
-    then
-	## Set local variables
-	varMonth=`echo ${FILE:5:2}`
-	varMonthName=`nameOfMonth $varMonth`
-	## Section header for index files
-	echo ""                      >> $varIndexYear
-	echo "### $varMonthName ###" >> $varIndexYear
-	echo ""                      >> $varIndexYear
-	## ---
-	echo ""                      >> $varIndexBlog
-	echo "### $varMonthName ###" >> $varIndexBlog
-	echo ""                      >> $varIndexBlog
-	## Change into the directory
-	cd $FILE
-	processDirectory
-	cd $varBasedir/$varYear
-    fi
-}
 
 exit
 
