@@ -1,0 +1,11 @@
+---
+title: Loesung fuer DN
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Sunday, 22 January 2006 -- 04:03_
+
+Ich glaube ich muss mir jetzt erst einmal eine Muetze Schlaf goennen. Denn so viel ich mich auch bemuehe, ich werde so schnell keine optimale Loesung finden, wie ich meine derzeit existierende Loesung fuer die _Dwingeloo Nieuws_ mit anderen Loesungen (zum Beispiel einer Weblog Engine) in Einklang gebracht bekomme. Was sich allerdings schon ein Stueck weit abzeichnet, dass es sicherlich ein gutes waere, nicht mehr alles direkt in HTML zu schreiben, sondern mit einer Markup Language zu arbeiten (wie dies in einer Wiki der Fall ist). Die andere Loesung waere, dass ich einen Web finde, alle meine bisherigen Postings in eine Blog-Database zu importieren; z.B. bei _Pivot_ koennte dies moeglich sein, weil alles in normalen Text-Dateien abgelegt, so dass man diese im Zweifesfall von Hand noch aendern kann (auch wenn dies natuerlich nicht so angedacht).

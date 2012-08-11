@@ -1,0 +1,26 @@
+---
+title: Editors
+in_menu: false
+author: Lars Baehren
+tags: Development Software
+---
+
+##{title:}##
+
+  * [nano](http://www.nano-editor.org)
+  * Xemacs
+  * Aquamacs
+
+### nano ###
+
+For years Pine was THE program used to read email on a Unix system. The Pico text editor is 
+the portion of the program one would use to compose his or her mail messages. Many beginners 
+to Unix flocked to Pico and Pine because of their well organized, easy to use interfaces. 
+With the proliferation of GNU/Linux in the mid to late 90's, many University students became 
+intimately familiar with the strengths (and weaknesses) of Pine and Pico.
+
+The [Debian GNU/Linux](http://www.debian.org) distribution, known for its strict standards 
+in distributing truly "free" software (i.e. software with no restrictions on redistribution), would not include a 
+binary package for Pine or Pico. Many people had a serious dilemma: they loved these 
+programs, but the versions available at the time were not truly free software in the GNU 
+sense of the word.

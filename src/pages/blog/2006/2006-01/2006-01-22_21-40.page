@@ -1,0 +1,11 @@
+---
+title: Plugins fuer Dokuwiki
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Sunday, 22 January 2006 -- 21:40_
+
+Ich wusste doch, dass ich der Sache langsam naeher komme. Ich habe gerade noch ein klein wenig in den diversen Plugins der Dokuwiki herumgestoebert. Ich hatte irgendwo noch im Hinterkopf, dass es da dieses Sidebar Plugin gab, was genau das emulieren duerfte, was ich in der derzeitig existierenden DN Fassung mit dem Navigation-Frame realisiert habe. Damit kann ich jetzt in der Tat beginnen darueber nachzudenken, ob die Wiki Engine nicht die benoetigten Features besitzt, nach welchen ich gesucht habe. Vor allen Dingen aber wuerde dies mir erlauben, die Eintraege nach wie vor in simplen Text-Dateien abzulegen, was demnach keine Datenbank nach sich zieht und ausserdem die Moeglichkeit eroffnet, mittels einer Reihe von Scripten diverse Operationen auf dem Archiv auszufuehren.

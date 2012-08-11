@@ -1,0 +1,13 @@
+---
+title: Blog Features
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Sunday, 22 January 2006 -- 03:51_
+
+Jetzt, wo ich damit begonnen habe ein wenig mehr mit der Blogging Software herum zu experimentieren, wird durchaus klar, dass diese eine Reihe Features bietet, welche ich bisher in meiner einfach gestrickten Loesung vermisse.
+
+Da waere zum einen die eingebaute Suchfunktion. Seit ich damit begonnen habe fuer viele Notizen eine Wiki zu benutzen, habe ich mich doch sehr an die Moeglichkeit gewoehnt in der Sammlung aller Aufzeichnungen suchen zu koennen. Das ist etwas, was meiner derzeitigen DN Loesung fehlt. Bei nunmehr zwei Jahren gesammelter Eintraege verliert man durchaus schon einmal aus dem Blick, an welchem Tag genau ein bestimmtes Ereignis stattgefunden hat. Vielleicht ist es aber auch "nur" ein besonderes Ereignis, welches man gerne wiederfinden moechte -- derzeit erfordert dies im Zweifelsfall ein gutes Mass an Gedult, sollte man denn das zugehoerige Datum nicht gut einkreisen koennen. Eine moegliche Loesung ware also der Einbau einer Suchfunktion in die derzeitige Fassung der DN, was allerdings mit ein wenig mehr Aufwand verbunden waere. Daher gab es ja zwischenzeitlich schon einmal die Idee, ob es nicht eine Moeglichkeit gibt, in irgendeiner Weise auf die Suchfunktionen der Dokuwiki zurueckgreifen zu koennen -- nach Moeglichkeit ohne die DN direkt komplett mit in die Wiki einbinden zu muessen.

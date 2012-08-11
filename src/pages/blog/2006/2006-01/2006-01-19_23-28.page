@@ -1,0 +1,12 @@
+---
+title: Film Screenshots
+in_menu: false
+author: Lars Baehren
+tags: Computing Apple
+---
+
+## {title:} ##
+
+_Thursday, 19 January 2006 -- 23:28_
+
+Also ich glaube dies ist wieder so eine typische [Apple](http://www.apple.com) Sache, mit welcher ich mich in der Art nun ueberhaupt nicht anfreunden kann. So intuitiv auch alles zu bediehnen ist, so einfach auch alles ineinander greift, so schwer wird es einem gemacht, wenn man mal ein wenig tiefer graben will - oder einfach nur vor hat, ein ganz simple Aktion auszufuehren. Fuer den Screenshot beim letzten Eintrag musste ich in der Tat einige Winkelzuege einlegen, welche mir vollkommen unverstaendlich sind. So wird offensichtlich irgendwo von Seiten des Systems verboten einen Screenshot zu erstellen, waehrend der DVD Player aktiv ist; wahrscheinlich sogar genau aus dem Grunde, weshalb ich dies machen wollte, naemlich um eine Standbild Aufnahme eines Filmes zu kriegen. Moep -- nicht zulaessig! Es gibt nur den netten Hinweis, dass man bitte den DVD Player schliessen solle, bevor man versucht einen Screenshot aufzunehmen. Da es keinen technischen Grund gibt, warum dies nicht moeglich sein sollte, handelt es sich also um einen klassischen Fall von Bevormundung des Benutzers, worauf ich mir schon ein Stueck weit veratscht vorkomme. Aber gut, es geht ja gluecklicherweise auch noch anders (sofern man kein typischer Apple-User ist...): Terminal auf, `mplayer` starten, an der entsprechenden Stelle stoppen und mit `gimp` ein Standbild extrahieren. Nun mal ehrlich, diese Winkelzuege muessen doch nicht sein, oder? Fuer mich sieht das ganz danach aus, als habe es hier jemand mit dem DMR uebertrieben und greift hier massiv in die Rechte des Benutzers ein. Wie dieses Beispiel aber auch zeigt, gibt es eigentlich fast immer einen Weg, diese Kopierschutzmechanismen auszuhebeln -- nur sind die meisten Filmvertrieb- und Musikfirmen in dieser Realitaet wohl noch nicht angekommen, sondern versuchen lieben den Benutzer in seinen Moeglichkeiten zu beschneiden, wo immer es auch nur geht.

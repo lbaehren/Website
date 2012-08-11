@@ -1,0 +1,11 @@
+---
+title: DN in Dokuwiki
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Sunday, 22 January 2006 -- 13:39_
+
+Auf der Suche nach einer technisch besseren Loesung habe ich jetzt mal die Eintraege von diesem Monat in meine lokale Dokuwiki importiert, um mal ein kleine wenig damit herumexperimentieren zu koenne, wie sich ein Weblog darin verwalten laesst. Prinzipiell gaebe es natuerlich die Moeglichkeit die Dwingeloo Nieuws einfach zu einem Bestandteil der Wiki zu machen, nur wuerde dies dann eine Anmeldung erforderlich machen, weil ich schon noch kontrollieren moechte, wer darauf Zugriff hat. Derzeit sind die Eintraege zwar oeffentlich zugaenglich, aber man muss wissen, an welcher Stelle sie sich befinden. Bei einer Integration in die Wiki waeren die Seiten ueber den globalen Index auffindbar, so dass ich sie vor ungewolltem Zugriff mit einem Benutzer-Account schuetzen muesste (was vielleicht auch nicht so schlimm waere, weil mir dies zusaetzlich die Moeglichkeit gaebe, Leuten im Zweifelsfall die Rechte zu entziehen).

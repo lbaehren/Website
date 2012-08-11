@@ -1,0 +1,12 @@
+---
+title: Dokuwiki -- Indexgenerierung
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Saturday, 14 January 2006 -- 00:20_
+
+Hey, das war also der Trick. Ich habe mich nun schon eine Weile darueber geaergert, dass die Suche in meiner lokalen Wiki (hier auf dem Mac) nicht mehr funktionierte. Wie es scheint, habe ich mir durch irgendeine Aktion den Index zerschossen, so dass es keinen mehr gab mit dem Stoebern im Archiv. Gerade dieses Feature ist es aber, was so eine Wiki ja normalerweise zu einem idealen Platz macht, um Unmengen von Infos darin abzulegen. Da es sich da um eine Situation handelte, welche nicht auf Dauer so bleiben konnte, habe ich eben noch damit begonnen, mich mal auf der [Dokuwiki](http://wiki.splitbrain.org/wiki3Adokuwiki) nach einer Loesung fuer dieses Problem umzuschauen. Und siehe da, es gibt in der Tat eine Moeglichkeit den Index wieder neu aufzubauen. In Anbetracht der Tatsache, dass ich mittlerweile do so einiges an Material dort gelagert habe, dauert das Erstellen eines neuen Index eine gute Weile. Zeit also fuer mich, noch ein paar andere Dinge zu machen.
+

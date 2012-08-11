@@ -1,0 +1,11 @@
+---
+title: Blog Engines
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Sunday, 22 January 2006 -- 00:23_
+
+Ja ich weiss, die Art und Weise wie ich meine Eintraege hier zur Verfuegung stelle ist nicht sonderlich fancy, ist dafuer aber sehr simpel zur verwalten und zu erweitern. Bisher verwende ich keinerlei externe Software, sondern lediglich ein kleines bash-Script, welches sich um die Erstellung eines neuen Eintrages kuemmert. Weil aber hinreichend neugierig bin, habe ich aber dennoch wenigstens testweise vor, mir mal eine Blogging Engine zu installieren, damit ich schauen kann, was sich damit so alles machen laesst.
