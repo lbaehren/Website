@@ -1,0 +1,42 @@
+---
+title: "Git fuer den Blog"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Thu, 10. February 2011 -- 12:25_
+
+Ok, vielleicht ist dies wieder eine jener leicht technischen Anmerkungen, aber da ich in der Vergangenheit ja immer wieder einmal ein wenig darueber berichtet habe, was eigentlich die Infrastruktur hinter dem Blog ist (auch wenn die Wortwahl an dieser Stelle vielleicht ein klein wenig uebertrieben klingen mag, denn schliesslich handelt es sich ja nicht um eine riesige Machinerie, welche hinter den Kulissen arbeitet), gibt es eine Geschichte, welche ich in diesem Zusammenhang nicht vergessen sollte. Wie ich ja frueher erwaehnt hatte, habe ich seit einiger Zeit [Emacs Org-Mode](http://www.orgmode.org) als eine sehr nuetzliche Platform entdeckt, um Eintraege vorzubereiten und zu verwalten, ehe dass diese online gehen; da ich ja doch mehr und mehr abgehe von kurzen Kommentaren (welche sich in fuenf Minuten runterschreiben lassen), hin zu ausfuehrlicheren Beitraegen, brauche ich natuerlich auch eine Moeglichkeit um Entwuerfe zu sammeln, ohne dass diese den Fluss an Veroeffentlichungen verstopfen (was ja eine Weile der Fall war, weil unvollendete Eintraege in der Online-Fassung hingen, und natuerlich die Folge durcheinandergeraten waere, wenn ich einfach andere Dinge vorziehe). Nachdem ich da mehrere Modelle ausprobiert habe, scheine ich was dies betrifft nun bei einer brauchbaren Loesung angekommenn zu sein.
+
+Bliebe noch die Frage, wie sich denn die in der Vorbereitung befindlichen Beitraege verwalten lassen. Da ich ja nicht notwendigerweise auf dem gleichen Computer schreibe, sondern gerne schon einmal wechsel (ich glaube ich hatte diesbezueglich eher schon einmal einen Kommentar in Bezug auf mein altes PowerBook abgegeben), muss ich natuerlich schauen, dass all die verschiedenen Aenderungen letzten Endes zusammenkommen und zu einem gesamten Ganzen zusammenpassen. Dabei kann es durchaus passieren, dass ich auf einem Rechner an den einen Beitrag arbeite, waehrend ich auf einem anderen Rechner an einen ganz anderen Beitrag schreibe – beides muss dann aber wieder zusammengefuehrt werden, ohne dass Aenderungen verloren gehen (zum Beispiel durch Ueberschreiben oder Vergessen). Dies waere also dann genau die Stelle, wo [Git](http://git-scm.com) ins Spiel kommt. Recht schnell, nachdem ich dieses Tools fuer meine Programmierarbeiten entdeckt habe, bin ich dazu uebergegangen, dies in gleicher Weise auch fuer meine eigenen Dokumente einzusetzen; der besondere Scharm liegt vor allen Dingen daran, dass keinerlei zentraler notwendig ist, ueber welchen die Daten miteinander abgeglichen werde, sondern dass jedes Git-Repository fuer sich genommen seine komplette Geschichte kennt. Darueber hinaus ich sehr begeistert von der Einfachheit, mit welcher sich Branches benutzen lassen, also Verzweigungen in der Entstehungsgeschichte: waehrend der zugrundeliegende "master'-Branch unangetastet bleibt, kann ich eine Abzweigung fuer die Arbeiten an den Blog-Eintraegen anlegen – wenn ich damit fertig bin, wird der temporaere Branch wieder zurueck auf den Hauptast gefuehrt, so dass alle Veraenderungen gesammelt werden. Die Besonderheit: was ich hier fuer einen "Feature-Branch" angedeutet habe, laesst sich natuerlich beliebig oft reproduzieren, so dass es moeglich ist gleich mehrere parallele Entwicklungsgeschichten zu schreiben -- ein Zweig fuer Aenderungen am Blog, einer fuer Minutes von Meetings, einer fuer das Schreiben von Dokumentationen, etc. Wenn die Aenderungen innerhalb eines Zweiges abgeschlossen sind, wird dieser einfach wieder zurueck auf den Hauptast abgebildet und voila. Da Git intern eine sehr effiziente Kompression verwendet, laesst sich ein Archiv ohne weiteres auf einem USB-Stick unterbringen und auf diese Weise leicht zwischen verschiedenen Rechnern hin- und herschieben (ok, auf einem gemeinsamen Netzwerk ginge es noch direkter, aber wenn dies nicht zur Verfuegung steht, handelt es sich um die naechstbeste und einfachste Variante). Dies ist dann auch die Loesung welche ich fuer mich gefunden habe: waehrend ich munter auf den diversen Rechnern schreibe, laeuft alles zu irgendeinem Zeitpunkt ueber die Kopie auf dem USB Stick, von welchem ich dann wieder importieren kann. 
+
+~~~~
+From /Volumes/Repositories/Bibliotheque
+ * branch            master     -> FETCH_HEAD
+Updating c4fc08f..af68735
+Fast-forward
+ .../Blog/pictures/2011/2011-01-13_stoerungen.png   |  Bin 0 -> 68222 bytes
+ .../Blog/pictures/2011/2011-01-17_drobo_new.png    |  Bin 0 -> 15380 bytes
+ .../Blog/pictures/2011/2011-01-17_drobo_old.png    |  Bin 0 -> 15959 bytes
+ Private/Blog/pictures/2011/2011-01-18_org-mode.png |  Bin 0 -> 166399 bytes
+ .../pictures/2011/2011-01-29_seite_entfuehrt.png   |  Bin 0 -> 202507 bytes
+ Private/Blog/pictures/2011/up_in_the_air.jpg       |  Bin 0 -> 109513 bytes
+ org/Blog.org                                       |   20 +++++++++-----------
+ org/Tasks.org                                      |   10 ++++++++--
+ 8 files changed, 17 insertions(+), 13 deletions(-)
+ create mode 100644 Private/Blog/pictures/2011/2011-01-13_stoerungen.png
+ create mode 100644 Private/Blog/pictures/2011/2011-01-17_drobo_new.png
+ create mode 100644 Private/Blog/pictures/2011/2011-01-17_drobo_old.png
+ create mode 100644 Private/Blog/pictures/2011/2011-01-18_org-mode.png
+ create mode 100644 Private/Blog/pictures/2011/2011-01-29_seite_entfuehrt.png
+ create mode 100644 Private/Blog/pictures/2011/up_in_the_air.jpg
+~~~~
+
+Was mir diese Uebersicht sagt? Gegenueber der Version, welche ich zu diesem
+Zeitpunkt auf meinem PowerBook liegen hatte, gab es in der Zwischenzeit einige
+Aenderungen, welche nun abgeglichen wurden: so wurden eine Reihe von Bilder
+hizugefuegt, welche vorher noch nicht vorhanden waren. Darueber hinaus habe ich
+an zwei Dokumenten (Blog.org und Tasks.org) Aenderungen vorgenommen, so diese
+mit den lokalen Versionen abgeglichen wurden. Wirklich eine sehr nuetzliche Sache.

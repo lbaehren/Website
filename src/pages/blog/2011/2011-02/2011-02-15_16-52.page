@@ -1,0 +1,11 @@
+---
+title: "Kurz vor dem Ziel"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Tue, 15. February 2011 -- 16:52_
+
+Da habe ich jetzt eine Weile darauf hinzugearbeitet, aber ich denke mal ehe der heutige Tag vorbei ist wird die DAL aus dem Verband der LOFAR User Software (LUS) ihr neues Lebens als Open-Source Project antreten. Ich habe heute Nachmittag noch die letzten CMake Scripte portiert, so dass ich eigentlich nichts mehr von der LUS Infrastruktur benoetige (das sollte ich natuerlich noch einmal testen, aber ich bin mir da eigentlich ziemlich sicher). Was nun also noch passieren muss, ist dass ich das bisherige Verzeichnis mit dem Quellcode leerraeume und durch ein CMake Script ersetze, welches die DAL als ein externes Paket behandelt -- dies markiert dann den Umzug vom USG Subversion Repository (welches lange Zeit treu seinen Dienst erwiesen hat) hin zu Github.

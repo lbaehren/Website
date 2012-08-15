@@ -1,0 +1,46 @@
+---
+title: "Speicherfehler ganz einfach"
+in_menu: false
+author: Lars Baehren
+tags: Computing C++
+---
+
+## {title:} ##
+
+_Fri, 04. February 2011 -- 22:42_
+
+Also sehr viel einfacher kann man ja nun wirklich keine Speicherfehler erzeugen:
+
+~~~~
+#include <iostream>
+
+int main()
+{
+  std::cerr << "Hello, World!" << std::endl;
+
+  return 0;
+}
+~~~~
+
+Schicke ich dieses sehr simple Program durch [Valgrind](http://valgrind.org), so bekomme ich:
+
+~~~~
+==14444==    by 0x102048AE3: void std::__ostream_write<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/libstdc++.6.0.9.dylib)
+==14444==    by 0x102046B97: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/libstdc++.6.0.9.dylib)
+==14444==    by 0x102046C57: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/libstdc++.6.0.9.dylib)
+~~~~
+
+Sieht uebel aus, laesst sich anscheinend aber ganz leicht beheben:
+
+~~~~
+#include <iostream>
+
+int main()
+{
+  std::cout << "Hello, World!" << std::endl;
+
+  return 0;
+}
+~~~~
+
+Der Haken an der Sache ist allerdings, dass dies dann aber nicht mehr dem entspricht, was ich ja eigentlich machen will -- naemlich schon zu unterscheiden, ob es sich einfach nur um eine Zustandsmeldung handelt (`std::cout`) oder eine Fehlermeldung (`std::cerr`). Dementsprechnend habe ich nun diesen ganz einfachen Test mit in die DAL mit aufgenommen, so dass ich anhand des [Dashboards](http://svn.astron.nl/CDash/index.php?project=DAL) nachvollziehen kann, wie es sich auf anderen Platformen als meinem MacBook verhaelt; interessanterweise scheint es sich aber nicht nur alleine um ein Mac OS X Problem zu handeln, denn das Statement von [John](http://svn.astron.nl/CDash/index.php?project=DALhttp://www.astro.uva.nl/people/john-swinbank) heute Nachmittag war, dass die von berichteten Speicherfehler auf seinem Mac nicht auftreten wuerden. Da werde ich also noch einmal nachschauen muessen, was denn bei mir auf dem Rechner schief geht, denn auf diese Weise laesst sich natuerlich nur schwerlich auf vernuenftige Weise Software entwickeln...

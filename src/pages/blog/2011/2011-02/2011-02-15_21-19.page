@@ -1,0 +1,26 @@
+---
+title: "DAL as external library"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Tue, 15. February 2011 -- 21:19_
+
+First build test works:
+
+~~~~
+Scanning dependencies of target dal
+[ 63%] Creating directories for 'dal'
+[ 63%] Performing download step (git clone) for 'dal'
+Cloning into source...
+remote: Counting objects: 9156, done.
+remote: Compressing objects: 100% (1765/1765), done.
+remote: Total 9156 (delta 7555), reused 8951 (delta 7385)
+Receiving objects: 100% (9156/9156), 2.62 MiB | 1.74 MiB/s, done.
+Resolving deltas: 100% (7555/7555), done.
+Already on 'master'
+~~~~
+
+I just pushed off the first collection of changes after departure from the LUS repository onto Github -- so as far as just the DAL is concerned I am essentially done for the moment (sure, there will by a few more fixes required, but compared to what I have just been doing this is rather minor). The thing, which however still needs to be taken care of, is that from the LUS point-of-view adjustment need to be made to give the impression nothing really change under the hood. As viewed from e.g. the cosmic ray software or the pulsar tools, the DAL represents an external software component -- whether the source code lives on the same machine or off-site, should not matter at all; while the required procedure already has be proven a number of times with a number of other packages, I have to make sure that everything will continue running smoothly.

@@ -1,0 +1,22 @@
+---
+title: "Jahrgang komplett"
+in_menu: false
+author: Lars Baehren
+tags: Blog Typesetting
+---
+
+## {title:} ##
+
+_Sun, 13. February 2011 -- 14:32_
+
+Die letzten beiden Tagen habe ich endlich wieder einmal ein wenig Zeit darauf verwendet, an der Gesamtausgabe der Blogeintraege zu arbeiten. Fuer die laengerfristige Archivierung scheint es mir einfach die beste Methode zu sein, alles in einer sauber gesetzten Fassung -- sozusagen druckreif -- vorliegen zu haben. Fuer den taeglichen Gebrauch ist dies zwar keine Loesung, aber wenn ich einfach mal eine Gesamtuebersicht haben will, dann ist ein mittels LaTeX gesetztes Buch einfach unschlagbar. Ein netter Nebeneffekt dieses Vorganges ist es, dass man auch diese Weise eine Idee davon kriegt, wieviel Material eigentlich s ueber die Jahre zusammengekommen ist; sicher, dies ist nicht unbedingt das alles entscheidende Kriterium, aber es vermittelt doch zumindest einen Eindruck von der Groessenordnung, ueber welche wir hier sprechen. Nachdem ich gestern und heute noch dafuer gesorgt habe, dass nun auch die Eintraege von 2009 komplett eingearbeitet sind, haetten wir die Grenzen von 800 Seiten ueberschritten:
+
+~~~~
+Output written on Blog.pdf (854 pages, 76735987 bytes).
+~~~~
+
+Was dabei anzumerken waere:
+
+  - Die Anzahl der Seiten haengt naturgemaess mit den gewaehlten Seitenformat zusammen; derzeit verwende ich Din-A4, was natuerlich nicht dem entspricht, was man fuer ein Buch gebrauchen wuerde. Dies werde ich irgendwann noch einmal angehen muessen.
+  - Es fehlen nach wie vor noch mindestens zwei komplette Jahrgaenge: 2007 und 2008 sind bisher noch nicht vetreten, so dass da noch einmal ein paar Seiten zusammenkommen.
+  - Angesichts der Tasache, dass ich mit meinem Umzug nach Dwingeloo im Jahre 2004 angefangen habe zu schreiben, befinde ich mich mittlerweile im achten Jahrgang; damit handelt es sch bei dem Blog definitiv um eines der am laengsten anhalten Schreibprojekte, welche ich betrieben habe.

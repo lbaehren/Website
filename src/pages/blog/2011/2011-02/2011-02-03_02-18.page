@@ -1,0 +1,13 @@
+---
+title: "Lange Naechte"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Thu, 03. February 2011 -- 02:18_
+
+Also ich muss wirklich ein wenig aufpassen, damit ich nicht zu sehr von meinem Vorhaben abweiche, nicht mehr bis tief in die Nacht am Rechner zu sitzen. Das ist natuerlich deutlich einfach gesagt als getan, denn die letzten beiden Naechte ist es eher frueh am Morgen denn frueh am Abend geworden. Dies lag vor allen Dingen an der Tatsache, dass ich noch versucht habe Speicher-Fehler in der DAL ausfindig zu machen, welche dazu fuehren dass es bei dem rekursiven Erzeugen von Dateistrukturen zu Abstuerzen kommt; da der Code in diesem Zustand leider nicht geeignet ist um fuer die tagtaegliche Produktion eingesetzt zu werden, habe ich es mir selbstverstaendlich auf die Fahnen geschrieben, dies so schnell wie moeglich auszubuegeln. Wie ich allerdings zu meinem Leidwesen feststellen muss ist dies garnicht so einfach: auch nach einigen schon leicht exzessiven Sessions mit Valgrind habe ich immer noch in einigen Segmenten mit Fehlermeldungen zu tun, welche ich einfach nicht verstehen will. Was mich dabei vor allen Dingen wundert ist, dass da mit einem eine Reihe von Warnungen bezueglich System-Bibliotheken auftauchen, so mir nicht ganz verstaendlich ist, ob der Fehler nun bei mir liegt, oder irgendwo anders. Ich werde wohl am heutigen Tage noch einmal ein wenig auf die Suche nach Hinweisen gehen, denn mittlerweile komme ich nicht mehr so recht weiter mit der Fehlersuche.
+
+Was hat dies alles nun mit den Naechten zu tun? Nun, wenn ich abends noch nach Hause komme und mich dann noch einmal an den Rechner setze, dann wird es einfach sehr leicht recht spaet, weil es mir eben ziemlich schwer faellt mich von dem Problem zu loesen und einfach ins Bett zu verschwinden. Sicher, ein wenig Schlaf kann sicherlich nicht schaden, aber irgendwie versuche ich doch immer mit einem Erfolgserlebnis aufzuhoeren; wenn dieses sich nicht einstellen will (was jetzt nicht heisst, dass es keine Fortschritte zu verzeichnen gibt, aber eben nicht genug fuer meinen Geschmack), dann lasse ich eben so schnell nicht locker... was dann leider auch zur Folge hat, dass nichts aus dem Vorhaben wird, vor Mitternacht im Bett zu liegen und zu schlafen. Da werde ich also noch einmal dran arbeiten muessen, dass dies besser wird (am liebsten waere mir natuerlich, wenn ich die Fehler in der DAL finden und beseitigen kann).
