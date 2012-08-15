@@ -25,6 +25,7 @@
 #include <stdio.h>
 #include <string>
 #include <sstream>
+#include <set>
 #include <vector>
 
 #include "Common.h"
@@ -48,7 +49,7 @@ namespace Blog { // Namespace Blog -- begin
     //! Text of the blog entry
     std::string itsText;
     //! Tags attached to the entry
-    std::vector<std::string> itsTags;
+    std::set<std::string> itsTags;
 
   public:
 
@@ -106,7 +107,29 @@ namespace Blog { // Namespace Blog -- begin
     inline std::vector<std::string> tags () {
       itsTags;
     }
-
+    
+    //! Set the tags attached to the entry
+    inline void setTag (std::string const &tag,
+			bool const &append=true)
+    {
+      std::vector<std::string> tags (1,tag);
+      setTags (tags.begin(),tags.end(),append);
+    }
+    
+    //! Set the tags attached to the entry
+    inline void setTags (std::vector<std::string> const &tags,
+			 bool const &append=true)
+    {
+      setTags (tags.begin(),tags.end(),append);
+    }
+    
+    //! Set the tags attached to the entry
+    inline void setTags (std::set<std::string> const &tags,
+			 bool const &append=true)
+    {
+      setTags (tags.begin(),tags.end(),append);
+    }
+    
     // === Public methods =======================================================
 
     //! Provide a summary of the internal status
@@ -121,7 +144,28 @@ namespace Blog { // Namespace Blog -- begin
 
     virtual void writeHeader (std::ostream &os=std::cout);
 
+    // === Private methods ======================================================
+
   private:
+
+    //! Set the tags attached to the entry
+    template <typename T>
+    void setTags (T start,
+		  T end,
+		  bool const &append)
+  {
+    T it;
+
+    /* Clean current set of tags, if new ones are not being appended */
+    if (!append) {
+      itsTags.clear();
+    }
+    /* Store the input values */
+    for (it=start; it!=end; ++it) {
+      itsTags.insert(*it);
+    }
+  }
+
     
   };
 
