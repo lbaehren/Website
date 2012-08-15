@@ -1,0 +1,11 @@
+---
+title: "Alles sehr langsam"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Mon, 21. March 2011 -- 20:57_
+
+Also manchmal frage ich mich ja schon, ob das wirklich alles so langsam gehen muss, wie dies gerade wieder einmal der Fall ist. Um endlich einmal einen Teil der ewigen Debatten in Sachen Bauprobleme mit der LOFAR User Software aus der Welt zu schaffen, habe ich gerade eben -- nach entsprechendem Testen -- mal noch eine kleine Anzahl an Anpassungen eingecheckt. Um aber zusaetzlich auf Nummer sicher zu gehen, habe ich sofort noch eine Reihe von Tests auf mindestens drei Rechnern angeworfen, damit ich sehen kann, wie sich die Aenderungen auf unterschiedlichen Platformen verhalten. Waehrend ich von dem Front-End Node auf dem LOFAR Cluster (`lfe001`) ja schon einigermassen weiss, dass dieser chronisch ueberlastet ist (was mich aber nicht davon abhaelt einen weiteren Job dort zu starten) so bin ich immer noch ein wenig verwundert, wenn es um den hier an der Uni fuer das TKP bereitgestellten Rechner (`heastro1`) geht -- auch wenn es sich "nur" um eine virtuelle Machine handelt, welche dort laeuft, so wundert mich es doch ein wenig, dass ich selbst auf so kleine Jobs wie das Loeschen von Verzeichnissen so lange warten muss. Was mich aber ueber alle Messen nervt ist die Tatsache, dass mein Mac Laptop einfach nicht von der Stelle kommen will; auch wenn ich keinesfalls behaupten koennte, dass ich dem Rechner sonderlich viel abverlange, so finde ich muss ich doch unverhaeltnismaessig lange auf die Jobs warten, welche fuer mich wirklich relevant sind. Wo sich nun aber wirklich der Flaschenhals befindet will mir nicht ganz einleuchten: ist der Prozessor nun doch nicht so schnell, wie ich dies gehofft hatte, sind 4GB RAM einfach zu wenig oder werde ich staendig von der Festplatte aufgebremst -- von alleine wird sich die Antwort wohl nicht finden, so dass ich irgendwann in naher Zukunft wohl doch noch einmal ein wenig Zeit dafuer opfern muss, dem auf die Schliche zu kommen. Wenn ich naemlich zunehmend darauf warten muss, da von mir angeworfene Jobs endlich fertig werden, dann geht dies mit der Zeit auf Kosten meiner Produktivitaet.

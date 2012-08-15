@@ -1,0 +1,14 @@
+---
+title: "Lesenachmittag"
+in_menu: false
+author: Lars Baehren
+tags: Computing
+---
+
+## {title:} ##
+
+_Sun, 13. March 2011 -- 17:27_
+
+Mir faellt immer wieder auf, dass es doch recht leicht ist sich zu verschaetzen, was die benoetigte Zeit zum Lesen von Artikeln und Papers betrifft. Sicher, zu einem guten Teil liegt dies meinerseits auch ein wenig an der fehlenden Uebung, denn es st doch eine Weile her, dass ich in groesserem Masse derartiges Material zu mir genommen habe; auf der eher positiven Seite bedeutet dies aber, dass es relativ realistisch ist zu erwarten, dass sich dies Stueck fuer Stueck verbessert. Wie schon einmal angemerkt, macht es schon einen Unterschied ob man recht selektiv durch technische Dokumentationen springt, oder aber mehrseitige Artikel von Beginn zu Ende durchliest; ich muss mich immer noch ein wenig zusammenreissen, dass ich nicht einfach Abschnitte ueberspringe, weil ich eher auf der Suche nach bestimmten Schluesselwoertern bin.
+
+Um ein wenig zu trainieren und dann auch langsam den Schwierigkeitsgrad zu erhoehen, habe ich mir heute Nachmittag bisher zwei Paper ueber das [Trilinos](http://trilinos.sandia.gov) Projekt durchgelesen; dabei handelt es sich um eine Unternehmung unter dem Dach der Sandia National Laboratories, mit der Absicht eine Infrastruktur fuer die Entwicklung und Integration von Paketen zur Loesung algebraischer Probleme zu schaffen. Was sich dahinter verbirgt sind aber nicht so Kleinigkeiten wie das Invertieren einer 2x2 Matrix, sondern z.B. Loesung von Navier-Stokes Gleichungen auf massiv parallel Rechner-Architekturen; auch wenn dies jetzt nicht von direktem Nutzen fuer die anstehenden Aufgaben ist, so habe ich doch einiges an Hintergrundinformationen aufgeschnappt, welche dabei helfen die eigene Problemstellung besser platzieren und einordnen zu koennen. Ausserdem ist es schon sinnvoll einen Ueberblick darueber zu bekommen, welche Entwicklungen es ein wenig allgemeiner im HPC Bereich gibt, wenn typischerweise finde man so immer wieder mal etwas, dass sich (in leicht angepasster oder abgeaenderter Form) fuer die eigene Arbeit anwenden laesst.

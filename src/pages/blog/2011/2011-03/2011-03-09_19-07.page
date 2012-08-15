@@ -1,0 +1,28 @@
+---
+title: "Erster Check-in Doktorarbeit"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 09. March 2011 -- 19:07_
+
+Irgendwann muss ich ja einmal damit anfangen: wenn ich mich jetzt immer mehr von meinen bisherigen Aufgaben wegbewege und stattdessen den Themen meiner Doktorarbeit zuwende (auch wenn dies alles noch ein klein wenig schwammig in meinem Kopf ist, aber ich denke doch mal, dass sich dies noch bereinigen laesst), so muss ich dafuer Sorge tragen, dass ich nicht den Ueberblick ueber all die Dokumente, Notizen, Code-Segmente, etc. verliere. Auch wenn ich z.B. mit meiner Literatur-Recherche gerade einmal am Anfang stehe, so liegen bereits eine Vielzahl von Artikeln in elektronischer Fassung auf meinem Rechner -- auch wenn vielleicht nicht alles direk relevant sein duerfte, so muss ich doch ein wenig Buch darueber halten, was brauchbar ist und was nicht, was ich jetzt aktuell verwenden kann und was vielleicht spaeter noch einmal wichtig werden koennte. Da macht es also durchaus Sinn garnicht erst ein Chaos Einzug halten zu lassen sondern von Anfang an zumindest ein minimales System zu schaffen, in welches sich dann alles weitere einsortieren laesst. Was die Wahl der dafuer verwendeten Tools betrifft sollte es keine sonderlichen Ueberraschungen geben: alles was in irgendeiner Weise kritisch ist landet via [Git](http://git-scm.com) unter Version-Control, alles was in irgendeiner Weise dynamisch Inhalt erzeugt wird mittels [CMake](http://www.cmake.org) zusammengehalten. Da ich ja schliesslich irgendwann mal einen Anfang machen muss, habe ich nicht nicht nur damit begonnen einige meiner handschriftlichen Notizen einzutippen, sondern auch direkt alles einzuchecken:
+
+~~~~
+Updating 8b79e81..618b704
+Fast-forward
+ Work/CMakeLists.txt                              |    1 +
+ Work/PhD-Thesis/CMakeLists.txt                   |    2 +
+ Work/PhD-Thesis/figures/beamforming-geometry.eps |  235 ++++++++++++++++++++++
+ Work/PhD-Thesis/thesis.sty                       |  151 ++++++++++++++
+ Work/PhD-Thesis/thesis.tex                       |  150 ++++++++++++++
+ 5 files changed, 539 insertions(+), 0 deletions(-)
+ create mode 100644 Work/PhD-Thesis/CMakeLists.txt
+ create mode 100755 Work/PhD-Thesis/figures/beamforming-geometry.eps
+ create mode 100644 Work/PhD-Thesis/thesis.sty
+ create mode 100644 Work/PhD-Thesis/thesis.tex
+~~~~
+
+Sicher, ist noch ein langer Weg, ehe alles fertig ist, aber je frueher ich damit anfangen, desto weniger Probleme habe ich letzten Endes dann damit alle Ergebnisse zusammenzutragen und zusammenzuschreiben.
