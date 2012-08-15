@@ -31,10 +31,15 @@
 
 namespace Blog { // Namespace Blog -- begin
 
+  /*!
+    \class Element
+    \ingroup Blog
+    \author Lars Baehren
+  */
   class Element {
-
+    
   public:
-
+    
     //! Format used for storage or serialization
     enum Format {
       //! HTML formatted text
@@ -76,6 +81,10 @@ namespace Blog { // Namespace Blog -- begin
     */
     virtual void write (Element::Format const &format,
 			std::ostream &os) = 0;
+
+    // === Static methods =============================================
+
+    
 
   };
 
