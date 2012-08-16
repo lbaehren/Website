@@ -49,7 +49,7 @@ for FILE in $FILES
   ##________________________________________________________
   ## Extract title of the entry
 
-  varTitle=`grep ==== $FILE | sed s/"===== "// | sed s/" ====="//`
+  varTitle=`grep ==== $FILE | sed s/"===== "// | sed s/" ====="// | sed s/" - "/" -- "/`
 
   ##________________________________________________________
   ## Extract date & time
@@ -62,7 +62,7 @@ for FILE in $FILES
 
   varTime="$varHour:$varMinutes"
 
-  varDateTime=`grep $varTime $FILE | sed s/"\/\/"/"_"/ | sed s/"\/\/"/"_"/`
+  varDateTime=`grep $varTime $FILE | sed s/"\/\/"/"_"/ | sed s/"\/\/"/"_"/ | sed s/" - "/" -- "/`
   
   ##________________________________________________________
   ## Convert file
