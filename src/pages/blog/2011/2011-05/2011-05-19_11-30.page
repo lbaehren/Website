@@ -1,0 +1,28 @@
+---
+title: "Zu langsam"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Thu, 19. May 2011 -- 11:30_
+
+Ich sehe schon, heute duerfte es schwer werden was die Verbindung mit der Aussenwelt jenseits der Insel betrifft: die Netzverbindung ist so langsam dass die meisten Aktionen sich mit einem Timeout beenden.
+
+~~~~
+Submit files (using http)
+   Using HTTP submit method
+   Drop site:http://svn.astron.nl/CDash/submit.php?project=DAL
+   Submit failed, waiting 5 seconds...
+   Retry submission: Attempt 1 of 3
+   Submit failed, waiting 5 seconds...
+   Retry submission: Attempt 2 of 3
+   Submit failed, waiting 5 seconds...
+   Retry submission: Attempt 3 of 3
+   Error when uploading file: /Users/lars/CodeDevelopment/Projects/Work/DAL/build/Testing/20110519-0912/Build.xml
+   Error message was: Operation too slow. Less than 1 bytes/sec transfered the last 120 seconds
+   Problems when submitting via HTTP
+~~~~
+
+Interessanterweise gibt es einzelne Programme, welche da etwas weniger empfindlich sind: so ist es mir immerhin (wenn auch nach mehreren Versuchen) gelungen wieder ein paar neue [Bilder von der NAC](http://www.flickr.com/photos/larsbaehren/sets/72157626626653727) online zu setzen.

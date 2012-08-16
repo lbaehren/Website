@@ -1,0 +1,11 @@
+---
+title: "Radio Sky Image Cubes -- Version 2.05.04"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 25. May 2011 -- 17:53_
+
+The document is coming along... Even though I have not yet completed working my way through all of John's comments on the document, it already looks quite different from what it was this morning. In a first effort to keep track of all the required changes I have been pasting in most of the comments in the appropriate locations of the documents; right right after that I have started revising the text itself, getting rid of quite a few left-over language constructs which Ken put in there (and which should be rewritten to become plain and understandable English). One of the major changes has been to completely remove the collection of suggested "Average Image Groups", which were causing more complexity and confusion than actual useful functionality. As a result of the trimming the document now is one page shorter than before (even given the fact that it still contains a lot of the comments boxes I dropped in for book-keeping).

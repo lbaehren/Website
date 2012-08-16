@@ -1,0 +1,11 @@
+---
+title: "Radio Sky Image Cubes"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 25. May 2011 -- 15:48_
+
+Manchmal ist es doch einfach ganz gut noch einmal eine weitere Meinung einzuholen... Nachdem ich das "Radio Sky Image Cubes" ICD von Ken uebernommen habe, versuche ich dieses nun in einen Zustand zu bringen, wo ich wirklich damit beginnen kann ueber die DAL Daten rauszuschreiben. Das ist leider garnicht so einfach, weil ich zu meinem Leidwesen feststellen muss, dass das Dokument nicht die notwendige Aufmerksamkeit bekommen hat, welche notwendig gewesen waere, um ein Programmierer wohldefiniterte Instruktionen in die Hand zu geben. Um jetzt aber mal noch ein wenig mehr Fortschritt zu machen, habe ich John gebeten sich die Spezifikation mal ein wenig genauer anzuschauen und ggf. zu kommentieren. Selst schuld, denn was ich nun vorliegen habe sind zwei lange Mails mit Unmengen von Anmerkungen, welche ich irgendwie versuchen muss in das Dokument einzuarbeiten...

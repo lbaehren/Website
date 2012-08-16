@@ -1,0 +1,30 @@
+---
+title: "Geschaeftige Tage"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Thu, 12. May 2011 -- 22:58_
+
+Es ist doch immer wieder das gleiche: gerade dann, wenn viele Dinge geschehen und es dementsprechend eigentlich jede Menge zu berichten gaebe, dann fehlt gerade aufgrund dieser Tatsache die Zeit um da auch in angemessener Weise Buch zu fuehren. Bereits schon auf dem Rueck von Dwingeloo gestern Nachmittag haette ich mir eigentlich ein wenig Zeit nehmen muessen um schon einmal mit dem Schreiben zu beginnen -- stattdessen aber habe ich die Arbeiten fortgefuehrt, welche sich aus den Diskussionen am Nachmittag ergeben habe (und noch ein wenig mehr); als ein Resultat daraus (plus dem Umstand dass ich ja WLAN im Zug hatte), konnte ich vor dem Aussteigen 
+
+  - Dokumentation fuer die Leute in Leiden einchecken,
+  - die Teilnehmerliste fuer das [TKP Meeting](http://www.transientskp.org/meetings) aktualisieren,
+  - Configurations-Skripte fuer Python/NumPy Support der [DAL](https://github.com/nextgen-astrodata/DAL) anpassen,
+  - Emails an die Leute bei [ASTRON](http://www.astron.nl) schreiben, mit welchen ich mich eigentlich noch zusammensetzen wollte, ich dafuer aber leider keine Zeit mehr gefunden habe.
+
+Ich denke mal, dass dies keinenfalls eine vollstaendige Auflistung ist, aber es duerfte doch einen ungefaehren Eindruck davon vermitteln, dass diese Woche gut gefuellt mit Arbeit ist.
+
+... und wo ich den Tag ueber schon einmal so gut dabei war, konnte ich gestern Abend natuerlich die Finger auch nicht mehr vom Rechner lassen, so dass ich in einer konzentrierteren Aktion -- was am heimischen Schreibtisch einfach besser geht -- noch gleich eine ganze Reihe Verbesserungen an der DAL vorgenommen habe. Dies hat sich denn ueber den heutigen Tag verteilt fortgesetzt, wo es vor allen Dingen noch John war, mit dem ich mir die Baelle in Sachen Konfiguration zugespielt habe; das Ergebnis sieht jetzt so aus, dass wir so ziemlich alle Features auf fast allen Platformen unterstuetzt kriegen -- ich habe zwar heute Abend noch eine Kleinigkeit gefunden, welche seit den letzten Aenderungen bei mir nicht mehr funktioniert, aber das sollte sich hoffentlich recht schnell loesen lassen.
+
+Die andere gute Nachricht des Tages kam aus Dwingeloo:
+
+> I've created an HDF5 file using the DAL, with some data in it:
+>
+> `locus001:/data/L2011_1002977/L1002977_B000_S0_P000_bf.h5`
+>
+> Which is a valid HDF5 file and writing data does increase its size ;)
+
+Nachdem es ein Weile lang einiges an Frustration gegeben hat, was die Fortschritte in Sachen BF->HDF5 betrifft, scheint das Treffen mit Jan David am Mittwoch nun Fruechte zu tragen; waehrend ich ja der Ueberzeugung war, dass eine Reihe der benoetigten Methoden implementiert und getestet sind, gab es immer wieder Rueckmeldungen ueber Probleme bei anderen. Stellt sich heraus dass dies zu einem erheblichen Teil daran gelegen hat, dass Dokumentation and Beispielprogramme ein wenig ausfuehrlicher sein muessen, zum anderen aber auch dass Leute manchmal wirklich die Hilfestellungen gebrauchen sollten, welche ich versuche bereitszustellen.

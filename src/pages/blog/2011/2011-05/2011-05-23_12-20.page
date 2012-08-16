@@ -1,0 +1,27 @@
+---
+title: "Interface cleanup"
+in_menu: false
+author: Lars Baehren
+tags: Computing
+---
+
+## {title:} ##
+
+_Mon, 23. May 2011 -- 12:20_
+
+This has been pending for a while now, but once more spending a little bit of time on the train seemed like the perfect circumstances to get going with some of the changes... One of the bits and pieces I have been rather unhappy with in the interface of the DAL was the lack of a proper distinction between methods which would do an object creation versus methods which simply would try to access an already existing object/element. The point however where this indeed can make a difference is e.g. when crawling through the hierarchical structure of the ICD-conform datasets (such as e.g. the BF data or the Radio Sky Images), or recursively creating it. Right until now there simply were several signatures of an `open()` function, which would -- depending on the number of parameters -- open an existing structure or create one from scratch; the problem with this however I found, if that in order to provide a certain minimum level of access control, we needed to be a bit more explicit about a user's/programmer's intentions. Therefore splitting the methods up into an `open()` and a `create()` group seemed kind of natural; also this would be a bit more in line with the underlying HDF5 library, which uses the same convention for access functions.
+
+~~~~
+  // Open an existing Stokes dataset from within a root group
+  bool BF_RootGroup::openStokesDataset (unsigned int const &pointingID,
+                                        unsigned int const &beamID,
+                                        unsigned int const &stokesID);
+    
+  // Create a new Stokes dataset from within a root group
+  bool BF_RootGroup::createStokesDataset (unsigned int const &pointingID,
+                                          unsigned int const &beamID,
+                                          unsigned int const &stokesID,
+                                          bool const &overwriteExisting=false);
+~~~~
+
+The above naming scheme now needs to be propagated all the way up from the bottom-level datasets (essentially N-dimensional arrays which no further nested sub-structure) to the top-level root group of a file. But since Jan David recently pointed out that we were missing one or two of these overarching methods anyway, I will be able to put them into place with the correct names right from the start.

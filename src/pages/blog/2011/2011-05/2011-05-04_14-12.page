@@ -1,0 +1,11 @@
+---
+title: "Email outage"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 04. May 2011 -- 14:12_
+
+That of course explains quite a bit: for a while now there has been a considerable smaller influx of email showing up in my inbox, combined with repeated question regarding whether or not I had been receiving this or that notification. As it turns out in fact I have not been receiving lot of the communication, simply because of the fact that the connection to my ASTRON email account was broken. Geeting a little help from Sven I managed to chase this down to a change in the name of the SMTP server, which of course resulted in Apple Mail trying to download new messages from an address no longer in operation. Luckily enough this now has been corrected... at the expense though that I have been pulling in literally hundreds of emails. Even neglecting the really old ones for a while, even the stuff which was sent during the last four weeks is enough to keep me busy for the rest of the day (which also means that I know what I will be doing for a good deal of my train ride...).

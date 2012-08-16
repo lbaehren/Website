@@ -1,0 +1,21 @@
+---
+title: "NAC -- Tag 1"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 18. May 2011 -- 23:38_
+
+Das war es also, der erste Tag der NAC.. jedenfalls fuer mich, da ich jetzt nicht noch unbedingt grossen Bedarf daran hatte, mich ins Getuemmel zu begeben und einander zuzutrinken. Stattdessen habe ich mich eben noch eine ganze Weile mit Satyendra unterhalten, welcher ja nach wie vor in Nijmegen sitzt. Ist sicherlich nicht nicht so verwunderlich, dass ich nach einem halben Jahr in Amsterdam nicht mehr so ganz auf dem Laufenden bin, was die Cosmic ray Aktivitaeten betrifft -- gut also die Gelegenheit zu haben, da einfach noch mal nachzufragen.
+
+Die Beitraege heute fand ich persoenlich jetzt nicht so sonderlich spannend, so dass ich mich lieber ein wenig um die divesen Mails gekuemmert habe, welche es noch zu beantworten gab; da standen noch einige Reaktionen aus, so dass ich mich einfach darauf konzentriert habe -- als Resultat davon ist mein Cue jetzt ziemlich leer und ich kann mich anderen Dingen zuwenden. Dazu gehoert zum Beispiel, dass ich versuchen wollte die DAL soweit auszubauen, dass ich _Radio Sky Images_ im HDF5 Format rausschreiben kann; dass duerfte dann nicht nur Ralph ein Stueck weit gluecklicher machen (weil wir damit ja einen wichtigen Teil des AARTFAAC Backends zur Verfueguegung haetten), sondern dies koennte auch fuer die derzeit laufenden Bemuehungen um NSF Foerdermittel von Hilfe sein (was dementsprechend auch Teil einer laengeren Mail war, welche ich an Joe geschickt habe).
+
+Wo ich das Schreiben und Programmieren dann aber doch eingestellt habe, weil am heutigen Abend, bei dem Vortrag zu einem sehr nicht-astronomischen Thema (wie dies bei der NAC ja auch ein Stueck weit Tradition ist):
+
+> Thermohaline circulation is a global ocean circulation where relatively warm saline water flows north via the [North Atlantic](http://visindavefur.hi.is/svar.php?id=5470) (the Gulf Stream) and transfers heat to the atmosphere. This process cools the sea water, causing its density to increase and so the sea sinks and finally becomes deep sea, particularly in the Greenland Sea (between Jan Mayen og Spitzbergen), Labrador Sea (between Greenland and Labrador) and Irminger Sea (between Iceland and Greenland, south west of Iceland).
+>
+> The [Antarctic Circumpolar Current](http://en.wikipedia.org/wiki/Antarctic_Circumpolar_Current) (ACC) connects the Atlantic, Pacific and Indian Ocean basins, and serves as a principal pathway of exchange between these basins. The current is strongly constrained by landform and bathymetric features. To trace it starting arbitrarily at South America, it flows through the Drake Passage between South America and the Antarctic Peninsula and then is split by the Scotia Arc to the east, with a shallow warm branch flowing to the north in the Falkland Current and a deeper branch passing through the Arc more to the east before also turning to the north. Passing through the Indian Ocean, the current is split by the Kerguelen Plateau in the Indian Ocean, and then moving northward again. Deflection is also seen as it passes over the mid-ocean ridge in the Southeast Pacific.
+
+Worum es also ging war das System von untereinander verbundenen Stroeumungen, welche in den Tiefen der Ozeane fast den kompletten Globus umspannen. Auch wenn es zum Ende hin ein wenig zu sehr zu sehr anekdotisch wurde, so war es doch interessant etwas ueber ein Forschungsfeld zu hoeren, mit welche ich definitiv nicht so vertraut bin.
