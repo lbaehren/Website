@@ -1,0 +1,28 @@
+---
+title: "Boost mystery solved (most likely)"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Thu, 28. April 2011 -- 08:24_
+
+Yes, taking a shower might help your brain to get some new ideas...
+
+While I already had some of the planned test build (using different versions of the Boost C++ library) running, it dawned on me, what the major difference between the stand-alone version of the DAL w.r.t. version of the DAL as part of the LOFAR User Software is: the later is providing a proper version of the Boost library (through the mechanism to deal with the required external packages)
+
+~~~~
+  set (VERSION            "1_43_0" )
+  set (SOURCE_ARCHIVE     "boost_${VERSION}.tar.gz" )
+  set (URL_BASE           "http://downloads.sourceforge.net/project/boost/boost")
+  set (URL_SOURCE_ARCHIVE "${URL_BASE}/1.43.0/${SOURCE_ARCHIVE}" )
+~~~~
+
+while the DAL as a stand-alone package does no such thing! As a consequence of this relaxing the condition on the version of the Boost++ library (something I have been doing a short while back)
+
+~~~~
+  set (Boost_BASE_VERSION   "1.33" )
+~~~~
+
+turns out to be a bad idea. Resolution: re-adjust the constraint on the Boost++ version in the configuration script for the DAL!

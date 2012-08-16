@@ -1,0 +1,15 @@
+---
+title: "Produktiver Morgen"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Tue, 05. April 2011 -- 09:49_
+
+Also ich wuerde mal stark behaupten, dass dieser Morgen wieder einmal der beste Beleg dafuer war, dass ich was bestimmte Dinge betrifft zuhause einfach produktiver bin. 
+
+Auch wenn ich mir den Wecker ja auf sieben Uhr gestellt hatte, bin ich schon knapp eine Stunde frueher wach geworden. Weil ich einfach zu aufgekratzt war, um wieder einzuschlafen, habe ich mir einfach den am Bett liegenden Rechner geschnappt und mich kurzerhand an die Generierung eines _User Manual_ fuer die DAL gemacht. Schon seit den ersten Zeilen Code wird zwar via [Doxygen](http://www.doxygen.org) eine API Dokumentation erstellt, aber manchmal ist es doch ganz nett, wenn man Leuten etwas in die Hand geben kann, dass ohne hin und her springen zwischen Webseiten lesen laesst. Vergleichbares hatte ich ja fuer PELICAN gesehen, nur fuer die DAL war dies bisher am Fine-Tuning der Bauanweisungen gescheitert -- Zeit als dies mal endlich noch nachzuholen, zumal mir gestern eine Reihe von Dingen eingefallen waren, welche ich endlich einmal noch in vernuenftiger Weise aufschreiben und verfuegbar machen sollte.
+
+Stellt sich letzten Endes natuerlich wieder einmal heraus, dass der Teufel im Detail steckt, aber mit ein wenig behutsamer Massage habe nun auch ein Manual fuer die DAL; ich musste zwar ein klein wenig mit Doxygen kaempfen um ein LateX Dokument zu kriegen, welches einigermassen akzeptabel ist, aber auch dies waere jetzt erledigt. Somit habe ich also, wenn ich gleich an der Uni auftauchen, bereits einen groesseren Berg an Arbeit anzuliefern, fuer welchen ich ansonsten wohl deutlich laenger brauchen wuerde.

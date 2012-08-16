@@ -1,0 +1,45 @@
+---
+title: "Sorting out Boost"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Thu, 28. April 2011 -- 07:54_
+
+There has been some back and forth for a while now, considering the question why certain functionality would be available or not on certain systems. More precisely: depending on the operating system and the version of some of the external libraries used by the DAL, certain portions of the code would build or not. 
+
+The latest issue in this stream of problems is to understand why some of the code using the the Boost C++ library will not compile on the lfe001 front-end node of the CEP1 cluster. After going back and forth over this I am very much inclined to believe, that this is something related to version of Boost++ installed on the system: comparing results from builds on other -- more up-to-date -- Linux systems th only main difference I am able to detect is that the cluster is using a fairly old version of the library. However -- at least to my best knowledge -- nobody has ever tried to go through the motions of really testing the various versions of Boost++, in order to determine which features are supported by which version of the library.
+
+Enter my side project while working on the presentation for today's Pizza Lunch Talk: I have been downloading sources for all Boost libraries release 1.34.0 to the most recent 1.46.1, in order to build and install them on my machine, such that I have them at my disposal. But since building Boost++ takes a bit of time (and here this being multiplied by the number of library versions), my laptop has been busy compiling last night, now providing me with a nice collection of installations I can use for testing:
+
+~~~~
+/sw/share/boost
+├── 1_40_0
+│   ├── include
+│   └── lib
+├── 1_41_0
+│   ├── include
+│   └── lib
+├── 1_42_0
+│   ├── include
+│   └── lib
+├── 1_43_0
+│   ├── include
+│   └── lib
+├── 1_44_0
+│   ├── include
+│   └── lib
+├── 1_45_0
+│   ├── include
+│   └── lib
+├── 1_46_0
+│   ├── include
+│   └── lib
+└── 1_46_1
+    ├── include
+    └── lib
+~~~~
+
+Just need to get done with the lunch talk, then I can get back to this, to get some proper answers of what is going on.

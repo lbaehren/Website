@@ -1,0 +1,37 @@
+---
+title: "Problem report for ViewNX2"
+in_menu: false
+author: Lars Baehren
+tags: Photography
+---
+
+## {title:} ##
+
+_Mon, 04. April 2011 -- 12:06_
+
+Das finde ich aber ueberhaupt nicht witzig: nachdem ich letzte Nacht noch ohne Probleme Bilder nachbearbeitet habe, kriege ich ViewNX2 nicht einmal mehr sauber gestartet -- alles was ich kriege ist ein Fenster, einen Bericht zu versenden:
+
+~~~~
+Process:         ViewNX 2 [387]
+Path:            /Applications/Nikon Software/ViewNX 2/ViewNX 2.app/Contents/MacOS/ViewNX 2
+Identifier:      jp.co.nikon.ViewNX2
+Version:         2.1.1 (2.1.1.3000)
+Code Type:       X86 (Native)
+Parent Process:  launchd [183]
+
+Date/Time:       2011-04-04 12:05:48.956 +0200
+OS Version:      Mac OS X 10.6.6 (10J567)
+Report Version:  6
+
+Interval Since Last Report:          3096791 sec
+Crashes Since Last Report:           1237
+Per-App Interval Since Last Report:  86916 sec
+Per-App Crashes Since Last Report:   8
+Anonymous UUID:                      492D84FF-2B48-477E-BCBF-58199302A0E9
+
+Exception Type:  EXC_BAD_ACCESS (SIGSEGV)
+Exception Codes: KERN_INVALID_ADDRESS at 0x0000000014656340
+Crashed Thread:  0  Dispatch queue: com.apple.main-thread
+~~~~
+
+Nachdem ich in konsistenter Weise gut ein halbes Dutzend Mal das gleiche Ergebnis erhalten habe, greife ich nun nach der harten Methode -- das heisst alte Version vom Rechner schmeissen und komplett neu installieren. Dies ist zwar nicht Vorgehensweise, welche ich mir vorstellen wuerde, aber anders komme ich allem Anschein nach nicht weiter.

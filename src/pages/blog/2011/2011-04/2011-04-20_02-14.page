@@ -1,0 +1,45 @@
+---
+title: "Entkoppelt"
+in_menu: false
+author: Lars Baehren
+tags: Computing Development
+---
+
+## {title:} ##
+
+_Wed, 20. April 2011 -- 02:14_
+
+Ok, damit kann ich nun endlich ins Bett verschwinden... Auch wenn ich zunaechst in Erwaegung gezogen hatte, die noch verbleibenden Aenderungen auf den Morgen zu verschieben, habe ich mich nun entschlossen die restlichen Anpassungen abzurunden, so dass ich alles einfach nur noch einchecken muss. Wie zu erkennen ist, hat es sich doch um einen recht erfolgreichen Abend gehandelt:
+
+~~~~
+Updating c0adc41..10d02bf
+Fast-forward
+ doc/dal_installation.doc                    |   31 +-
+ implement/bindings/CMakeLists.txt           |    5 +-
+ implement/bindings/pydal.cc                 |    4 +
+ implement/bindings/pydal.h                  |   73 ++-
+ implement/bindings/pydal_coordinates.cc     |    9 +-
+ implement/bindings/pydal_core.cc            |  534 +++++++-------------
+ implement/bindings/pydal_core_dalColumn.cc  |  296 +++++++++++
+ implement/bindings/pydal_core_dalDataset.cc |  730 +++++++++++++++++++++++++++
+ implement/bindings/pydal_core_dalGroup.cc   |  513 +++++++++++++++++++
+ implement/bindings/pydal_core_dalTable.cc   |  533 +++++++++++++++++++
+ implement/bindings/pydal_data_common.cc     |   14 +-
+ implement/bindings/pydal_data_hl.cc         |  144 ++++++-
+ implement/core/dalArray.cc                  |  177 -------
+ implement/core/dalColumn.cc                 |  222 --------
+ implement/core/dalConversions.cc            |   26 -
+ implement/core/dalData.cc                   |    5 -
+ implement/core/dalDataset.cc                |  590 ----------------------
+ implement/core/dalGroup.cc                  |  411 ---------------
+ implement/core/dalTable.cc                  |  426 ----------------
+ implement/data_hl/BeamFormed.cc             |   33 --
+ implement/data_hl/BeamGroup.cc              |  137 -----
+ 21 files changed, 2478 insertions(+), 2435 deletions(-)
+ create mode 100644 implement/bindings/pydal_core_dalColumn.cc
+ create mode 100644 implement/bindings/pydal_core_dalDataset.cc
+ create mode 100644 implement/bindings/pydal_core_dalGroup.cc
+ create mode 100644 implement/bindings/pydal_core_dalTable.cc
+~~~~
+
+Was dies alles soll? Nun, eigentlich ganz einfach: der urspruenglichen Strategie von Joe folgend wurden alle Bibliothek-Quelldateien der DAL zweimal uebersetzt, einmal fuer _libdal_ (die C++ Library) und ein weiteres Mal fuer _pydal_ (das Python-Module). Ansichts der Tatsache, dass die DAL aber seit ihren Anfangszeiten erheblich gewachsen ist, kostet dieser Vorgang unnoetig Zeit, so dass hier endlich einmal noch Handlungsbedarf bestand: folgerichtig habe ich also heute Abend allen Code in das Verzeichnis verschoben, in welchem die Bindings erzeugt werden... mit dem Resultat dass sich der komplette Build-Prozess deutlich verkuerzt hat. Jetzt bin ich mal gespannt, wie dies morgen aussieht, wenn ich die Aenderungen auf den Rest der Welt loslasse.

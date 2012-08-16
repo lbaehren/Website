@@ -1,0 +1,16 @@
+---
+title: "Observing pulsars and fast transients with LOFAR"
+in_menu: false
+author: Lars Baehren
+tags: Research
+---
+
+## {title:} ##
+
+_Mon, 11. April 2011 -- 15:02_
+
+Vor einer Weile hatte ich doch einmal erwaehnt, dass es ein kurzes Hin und Her wegen eines gross angelegten Pulsar Papers gab; wie ich eben ueber eine Mail von Thijs erfahren habe, liegt das Paper jetzt auf dem [Preprint-Server](http://arxiv.org/abs/1104.1577).  
+
+> Low frequency radio waves, while challenging to observe, are a rich source of information about pulsars. The LOw Frequency ARray (LOFAR) is a new radio interferometer operating in the lowest 4 octaves of the ionospheric "radio window": 10-240MHz, that will greatly facilitate observing pulsars at low radio frequencies. Through the huge collecting area, long baselines, and flexible digital hardware, it is expected that LOFAR will revolutionize radio astronomy at the lowest frequencies visible from Earth. LOFAR is a next-generation radio telescope and a pathfinder to the Square Kilometre Array (SKA), in that it incorporates advanced multi-beaming techniques between thousands of individual elements. We discuss the motivation for low-frequency pulsar observations in general and the potential of LOFAR in addressing these science goals. We present LOFAR as it is designed to perform high-time-resolution observations of pulsars and other fast transients, and outline the various relevant observing modes and data reduction pipelines that are already or will soon be implemented to facilitate these observations. A number of results obtained from commissioning observations are presented to demonstrate the exciting potential of the telescope. This paper outlines the case for low frequency pulsar observations and is also intended to serve as a reference for upcoming pulsar/fast transient science papers with LOFAR. 
+
+Die entsprechende Veroeffentlichung in [Astronomy & Astrophysics](http://www.aanda.org) sollte ebenfals in Kuerze erfolgen, so dass es damit ein erstes grosses Paper ueber mit [LOFAR](http://www.lofar.org) erzielte Resultate gibt (es gab zwar schon einige Publikationen, aber meine Wissens noch keinen Artikel, welches in dieser Weise eine Uebersicht ueber eines Key Science Projekte gibt).

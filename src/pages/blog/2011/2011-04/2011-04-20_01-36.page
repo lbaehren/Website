@@ -1,0 +1,13 @@
+---
+title: "Aus den Augen verloren"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 20. April 2011 -- 01:36_
+
+Ok, das kommt also davon, wenn man nicht nur den Tag ueber, sondern auch noch den Abend damit beschaeftigt ist, programmiertechnische Probleme zu loesen... da habe ich doch glatt verpasst den eigentlich noch fuer den Dienstag vorgesehenen Eintrag vorzunehmen. Gut, ich bin noch nicht im Bett, so dass man diese paar Zeilen hier vielleicht nicht mit einrechnen koennen; die Systemuhr auf der anderen Seite ist da deutlich weniger kulant, so dass mir nun doch ein Eintrag mit dem 19. April fehlt.
+
+Hat aber irgendwie nicht eher hingehauen, weil ich vor allen den Nachmittag noch gut an der Uni beschaeftigt war (war sogar dazu gefuehrt hat, dass ich vier oder fuenf Anlaeufe noetig hatte, ehe ich es endlich geschafft habe meine einen Becher Tee aufzugiessen). Zurueck nach Hause gekommen habe ich mich dann noch einmal ein wenig an die Installationsproblem bei dem [HEAsoft](http://heasarc.nasa.gov/lheasoft) Paket gesetzt; fuer ein Softwarepaket, welches in der Hochenergie-Astrophysik Gemeinde so haeufig verwendet wird, ist der ganze Konfigurations- und Build-Prozess nicht unbedingt benutzerfreundlich -- allerdings sehe ich es auch nicht unbedingt als meine Aufgabe an, alle damit zusammenhaengenden Problem zu fixen, welchen NASA in ihre Analyse-Software eingebaut hat. Stattdessen habe ich dies nach dem Abendessen erst einmal auf Eis gelegt, damit ich mich lieber wieder der DAL zuwenden kann; da ich vor einer Weile eine Idee hatte, wie ich endlich die beiden Hauptbestandteile besser entkoppeln kann -- was auch bedeutet, dass die Entwicklung besser parallel verlaufen kann -- habe ich mich bis eben noch darum bemueht alles so weit aufzusetzen, dass ich dies an Sven weiterreichen kann. Da dieser ja immer noch nicht so vertraut mit der Bibliothek ist, habe ich die Chance die zugrundeliegenden Arbeiten deutlich schneller zu erledingen -- wenn dies erledigt ist, kann ich mich dann wieder voll auf die Implementierung der Format-Spezifikationen konzentrieren...

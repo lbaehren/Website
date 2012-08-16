@@ -1,0 +1,26 @@
+---
+title: "Der besondere Spass fuer den Nachmittag"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 06. April 2011 -- 15:41_
+
+Zugegeben, das hatte ich mir alles ein wenig einfacher vorgestellt, aber so wie es aussieht muss ich da eben durch. Da ich mich ja wiederholt ueber die Langsamheit meines Laptops in Sachen Software bauen beschwert habe, konnte ich mir jetzt den urspruenglich von Ken angeschafften Rechner unter die Naegel reissen. Eigentlich ganz nett, denn die Maschine ist recht ueppig bestellt und sollte mir dementsprechend gegenueber dem MacBook einen deutlichen Geschwindigkeitsvorteil bieten. Diesen Vorteil habe ich gestern Mittag zwischenzeitlich schon schwinden sehen, als es alleine darum ging den Rechner hier ans Netz zu klemmen; der ersten Reaktion von [Martin](http://www.astro.uva.nl/people/martin-heemskerk) nach sah es ganz danach aus, als muesste ich mich hier Ewigkeiten mit der Uni-internen Organisation herumschlagen, weil der Rechner "nicht auf die richtige Art und Weise" angeschafft worden sei (dankenswerterweise fuehrte ein Eingreifen von John dazu, dass sich die Sache ein wenig beschluenigte, so dass ich noch im Laufe des Nachmittages eine Email mit Name und IP des Rechners erhalten habe).
+
+Da ich gestern erst einmal noch ein paar andere Dinge fertigstellen wollte, habe ich mir die Installation fuer den heutigen Tag aufgespart. Vor Grundsatz her ist es ja nicht so ein riesen Aufwand ein neues System zu installieren; nicht nur sind alle gaengigen Linux-Distributionen schon seit Jahren in einem Zustand, wo es sowohl fuer Fortgeschrittene als fuer Anfaenger moeglich ist, ohne allzugrosse Probleme zum Ziel zu kommen. Ein klein wenig hatte ich dies zwischenzeitlich ja auch dadurch schon angetestet, dass ich bei mir auf dem Laptop via [VirtualBox](http://www.virtualbox.org) gleich mehrere Systeme nachinstalliert habe. Wie ich allerding sehr zu meiner Enttaeuschung feststellen muss, gestaltet sich die Sache auf dem neuen Rechner allerdings ein wenig komplizierter, als ich mir dies erhofft hatte: ich hatte zunaechst einmal mehrere Anlaeufe noetig, um ueberhaupt den Partition-Table in der Weise wegzuschreiben, wie ich dies haben wollte -- es scheiterte leider immer wieder daran, dass es einen Fehler beim angelegen der Tabelle gab.
+
+~~~~
+#1   primary   510.7 MB  B  f  ext3   /
+#5   logical    10.0 GB     f  ext3   /usr
+#6   logical    10.0 GB     f  ext3   /usr/local
+#7   logical    20.0 GB     f  ext3   /opt
+#8   logical     5.0 GB        ext3   /var
+#9   logical     2.0 GB        ext3   /tmp
+#10  logical     8.0 GB        swap   swap
+#11  logical     1.2 TB        ext3   /home
+~~~~
+
+Hat mich einiges an Nerven gekostet, doch mittlerweile scheine ich dies endlich ans Laufen bekommen zu haben; jetzt muss ich mal schauen, dass ich mit dem Rest der Installation noch durchkomme, denn ich wuerde den Rechner schon gerne vor dem Absprung nach Hause am Laufen haben...

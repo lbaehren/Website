@@ -1,0 +1,11 @@
+---
+title: "Das Problem mit dem Vortrag"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Mon, 25. April 2011 -- 16:56_
+
+... ist vor allen Dingen, wie ich die Unmengen an Informationen, welche ich zur Verfuegung habe, zu sortieren und so aufzubereiten, dass sie auch fuer jemanden zugaenglich sind, der sich eben noch nicht seit Jahren mit der Materie beschaeftigt. Ich habe eben noch versucht in irgendeiner leicht verstaendlichen Weise ein Uebersichtsdiagram der diversen Datenprodukte zu erstellen, welche im Zuge von LOFAR generiert werden; gescheitert ist das ganze leider aufgrund der Tatsache, dass es keine eindeutigen Pfade durch das System gibt, weil die das ganz Processing so flexibel ist. Wenn ich alleine versuche aufzumalen, ueber welche Zwischenschritte ich zu einem Radio-Image komme, dass erhalte ich recht schnell einen dichten Dschungel an Pipelines, welche sich wieder und wieder verzweigen koennen -- dies also in einer einzigen einfachen Graphik darzustellen will mir bisher einfach nicht gelingen (so dass ich dies erst einmal hinten angestellt habe und mir dies lieber als ein moegliches Extra aufheben werde). Statt mich also weiter mit derartigen Versuchen aufzuhalten, schaue ich lieber zu, dass ich die wesentlichen Anschnitte mit Leben gefuellt kriege; ich habe da zwar einigermassen die Ideen fuer im Kopf, nur in eine wirklich brauchbare Form gegossen ist dies eben noch nicht.

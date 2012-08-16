@@ -1,0 +1,13 @@
+---
+title: "Upgrade Aerger"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 13. April 2011 -- 18:43_
+
+Alao, das konnte ich nun ueberhaupt nicht gebrauchen: nachdem ich am Wochenende ein Update der Navigationssoftware auf meinem Handy vorgenommen habe, sind nicht nur die Karten geschloescht worden (weil allem Anschein nach nicht kompatibel mit der neuen Software), sondern auch die Verbindung zu meinem Laptop funktioniert nicht mehr. Alle bisherigen Versuche die entstanden Fehler zu beheben sind bisher fehlgeschlagen, zum Teil auch, weil Nokia den Mac als Platform nur sehr spaerlich unterstuetzt (falls man denn ueberhaupt dieses Wort gebrauchen will). Was das Problem ist? Da seit Ewigkeiten eine Mac Version der _OVI Suite_ angekuendigt -- eber eben nicht angeboten -- ist, werden zwei separate Programme -- _Nokia Multimedia Transfer_ und _Nokia Map Loader_ -- benoetigt, um irgendeine Art von Daten zwischen Rechner und Handy auszutauschen. Interessanterweise arbeitet aber die aktuelle Version von _Map Loader_ nicht mit der aktuellen Version der Navigations Software zusammen, so dass man sich mit einem Update auf dem Handy diese Funktionalitaet zerschiesst; mit ein wenig Geduld bei der Suche laesst sich dies insofern beheben, als man eine aeltere Version von _OVI Maps_ finden kann, mit welcher die Kommunikation wieder klappen sollte. Ich sage hier bewusst "klappen sollte', denn wie sich herausstellt habe ich jetzt weder via Bluetooth noch ueber USB Zugriff auf meine Handy (auch wenn iSync nach wie vor in der Lage ist das Adressbuch und die Kalender zu aktualisieren). 
+
+Als letzte Variante habe ich nun mein Handy an Julias Laptop angeschlossen, um von dort aus ueber das von Nokia angebotete Windows Programm die Karten aus dem Netz zu ziehen und auf das Handy zu kopieren; mal sehen ob dies wenigstens gut geht, denn fuer Hamburg waere es schon ganz gut, die Navigation verwenden zu koennen.
