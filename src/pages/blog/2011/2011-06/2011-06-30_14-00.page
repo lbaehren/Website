@@ -1,0 +1,66 @@
+---
+title: "Playing with CUDA"
+in_menu: false
+author: Lars Baehren
+tags: Computing Development GPU
+---
+
+## {title:} ##
+
+_Thu, 30. June 2011 -- 14:00_
+
+Time to get my hands dirty... As of yesterday evening, I have been picking up the things which largely I had to drop due to the whole [TKP Meeting](http://www.transientskp.org/meetings/2011-06/index.shtml) business. But this is is done now (needing to extinguish a few fires last minute), so I can concentrate on getting on with GPU programming. Having a look around I got particularly interested in [CUDPP](http://code.google.com/p/cudpp) ([CUDA](http://developer.stage.nvidia.com/cuda-toolkit-sdk) Data Parallel Primitives), a library of data-parallel algorithm primitives such as parallel prefix-sum (”scan”), parallel sort and parallel reduction. Having some trouble though with getting everything to build and install, I had a closer look at the build system shipped with the library -- as it turns out there was nothing in place which would do a proper system inspection as I have become used to... which is why I have been spending some time on writing some [CMake](http://www.cmake.org) support for the library:
+
+~~~~
+==============================================================
+  [CUDPP] Summary of configuration settings                   
++------------------------------------------------------------+
+ System configuration:
+ .. Processor type               = i386
+ .. CMake executable             = /sw/bin/cmake
+ .. CMake version                = 2.8.4.20110628-g3423
+ .. System name                  = Darwin-10.7.0
+ .. C++ compiler                 = /usr/bin/c++
+ .. C compiler                   = /usr/bin/gcc
+ .. size(void*)                  = 8
+ CUDA configuration:
+ .. 64-bit device                = ON
+ .. Version number               = 4.0
+ .. Include directories          = /usr/local/cuda/include
+ .. FFT implementation           = /usr/local/cuda/lib/libcufft.dylib
+ .. BLAS implementation          = /usr/local/cuda/lib/libcublas.dylib
+~~~~
+
+While this is already is getting me quite a stretch along the way, there are still some errors during linking:
+
+~~~~
+[ 19%] Built target cutil
+[ 22%] Building NVCC (Device) object cudpp/./cudpp_generated_rand_app.cu.o
+[ 25%] Building NVCC (Device) object cudpp/./cudpp_generated_compact_app.cu.o
+[ 29%] Building NVCC (Device) object cudpp/./cudpp_generated_scan_app.cu.o
+[ 32%] Building NVCC (Device) object cudpp/./cudpp_generated_segmented_scan_app.cu.o
+[ 35%] Building NVCC (Device) object cudpp/./cudpp_generated_spmvmult_app.cu.o
+[ 38%] Building NVCC (Device) object cudpp/./cudpp_generated_radixsort_app.cu.o
+[ 41%] Building NVCC (Device) object cudpp/./cudpp_generated_reduce_app.cu.o
+Scanning dependencies of target cudpp
+[ 45%] Building CXX object cudpp/CMakeFiles/cudpp.dir/src/cudpp.cpp.o
+[ 48%] Building CXX object cudpp/CMakeFiles/cudpp.dir/src/cudpp_manager.cpp.o
+[ 51%] Building CXX object cudpp/CMakeFiles/cudpp.dir/src/cudpp_maximal_launch.cpp.o
+[ 54%] Building CXX object cudpp/CMakeFiles/cudpp.dir/src/cudpp_plan.cpp.o
+Linking CXX static library libcudpp.a
+[ 54%] Built target cudpp
+Scanning dependencies of target cudpp_testrig
+Linking CXX executable cudpp_testrig
+ld: warning: duplicate dylib /usr/local/cuda/lib/libcuda.dylib
+Undefined symbols:
+  "_cutComparei", referenced from:
+      ArrayComparator<int>::compare_e(int const*, int*, unsigned int, float)in test_scan.cpp.o
+      ArrayComparator<unsigned int>::compare_e(unsigned int const*, unsigned int*, unsigned int, float)in test_scan.cpp.o
+  "_cutResetTimer", referenced from:
+      testRandMD5(int, char const**)in test_rand.cpp.o
+      testSegmentedScan(int, char const**, CUDPPConfiguration const*)in test_scan.cpp.o
+      testSegmentedScan(int, char const**, CUDPPConfiguration const*)in test_scan.cpp.o
+      testSegmentedScan(int, char const**, CUDPPConfiguration const*)in test_scan.cpp.o
+~~~~
+
+This however might in fact be something in the library itself, which I am not trying to get involved with too much; nevertheless it would be nice to have better support for getting everything configured, build and installed properly, such that I am tempted to support the project at some lower level of involvement. We'll have to see how this plays out...
