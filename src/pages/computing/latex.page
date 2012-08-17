@@ -1,0 +1,19 @@
+---
+title: The TeX / LaTeX document preparation system
+in_menu: false
+author: Lars Baehren
+tags: Computing Typesetting
+---
+
+##{title:}##
+
+TeX represents the state-of-the-art in computer typesetting. It s particularly valuable where the document, article, or book to be produced contains a lot of mathematics, and where the user is concerned about typographic quality. TeX software offers both writer and publisher the opportunity to produce technical text, in an attractive form, with the speed and efficiency of a computer system.
+
+In the late 1970s, Donald Knuth was revising the second volume of his multivolume opus The Art of Computer Programming, got the galleys, looked at them, and said (approximately) "bleccch"! he had just received his first samples of the new computer typesetting, and its quality was so far below that of the first edition of Volume 2 that he couldn't stand it. He thought for awhile, and said (approximately), "I'm a computer scientist; I ought to be able to do something about this", so he set out to learn what were the traditional rules for typesetting math, what constituted good typography, and (because the fonts of symbols that he needed really didn't exist) as much as he could about type design. He figured this would take about 6 months. (Ultimately, it took nearly 10 years, but along the way he had lots of help from some people who should be well known to readers of this list - Hermann Zapf, Chuck Bigelow, Kris Holmes, Matthew Carter and Richard Southall are acknowledged in the introduction to Volume E, "Computer Modern Typefaces", of the Addison-Wesley "Computers & Typesetting" book series.)
+
+### Further reading ###
+
+  * [LaTeX: A document preparation system](http://www.tex.ac.uk). The WWW home page for LaTeX. -- Introduction to LaTeX, How to get LaTeX by ftp, Help with LaTeX, and news of latest releases.
+  * [What is TeX? What is Metafont?](http://www.tug.org/whatis.html) A bit of history.
+  * [The TeX Users Group](http://www.tug.org) (TUG)
+  * Günter Partosch holds a large [collection of links on LaTeX](http://www.uni-giessen.de/~g029/TeX/tex-links.html) (including User-Groups, Companies, Universities and individual persons). Great page, if you're looking for lots of information. 
