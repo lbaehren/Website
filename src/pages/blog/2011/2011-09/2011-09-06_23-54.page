@@ -1,0 +1,52 @@
+---
+title: "Verbunden"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Tue, 06. September 2011 -- 23:54_
+
+Also wenn dies mal nicht die ersten Schritte hin zu einer Intranet-artigen Erschliessung der Brunnenstrasse sind...
+
+Gerade eben habe ich noch -- nachdem ich es einfach leid geworden bin immer wieder Daten via USB Stick durch die Gegend zu tragen -- endlich dafuer gesorgt, dass ich meine Laptops untereinander verschaltet kriege. Waehrend dies bei so Dingen wie iTunes ja fast automatisch geschieht (zumindest wenn man das Austauschen der Musikbibliothek zulaesst), muss man fuer die noch nuetzlicheren Dinge -- wie SSH oder HTTP -- ein klein wenig selber taetig werden. Ist jetzt nicht so schwer, muss man sich aber eben doch noch drum kuemmern. Dies waere jetzt aber erledigt, so dass ich (wie bei diesem Eintrag der Fall) bei Julia am Schreibtisch sitzen kann, waehrend ich den Rechner bei mir oben auf dem Schreibtisch verwende. Aber auch fuer den Fall, dass ich nicht direkt via Remote arbeite, vereinfachen sich die Dinge nun deutlich: alle via Git verwalteten Aenderungen kann ich nun auf direktem Wege zwischen den Computern abgleichen (ohne den Umweg ueber ein anderes Transportmedium): nach dem aktivieren des SSH-Server auf dem obigen Rechner einfach eine Remote-Location bei meiner Version hier unten hinzufuegen,
+
+~~~~
+git remote add macbook ssh://lars@192.168.1.50/Users/lars/Repositories/Bibliotheque
+~~~~
+
+und schon bekomme ich via
+
+~~~~
+git pull macbook master
+~~~~
+
+den aktuellen Stand aller Dokumente, wie ich sie zuletzt oben bearbeitet habe:
+
+~~~~
+ * branch            master     -> FETCH_HEAD
+Updating d104403..09223f8
+Fast-forward
+ .../Anmeldeformular Wohnsitz.pdf                   |  Bin 0 -> 870186 bytes
+ Work/UvA/ICT/UvAEduRoam-MAC_OSX.pdf                |  Bin 372801 -> 0 bytes
+ Work/UvA/Inquisition 2010 - General report.doc     |  Bin 31232 -> 0 bytes
+ Work/UvA/Inquisition-Report-2010.tex               |  228 --------------------
+ Work/UvA/Inquisition-Report-template.tex           |  182 ----------------
+ Work/UvA/{ICT => }/MacBook Pro Order.pdf           |  Bin 185120 -> 185120 bytes
+ org/Blog.org                                       |   10 +-
+ task/completed.data                                |   11 +
+ task/pending.data                                  |   22 ++-
+ task/undo.data                                     |  137 ++++++++++++
+ 10 files changed, 169 insertions(+), 421 deletions(-)
+~~~~
+
+In welche Richtung es dann bald gehen wird, sollte ja wohl recht klar sein: wenn ich zwei Rechner miteinander verschalten kann, dann gibt es kein grundsaetzliches Argument was dagegen spricht, nicht auch noch alle anderen Rechner mit in den Verbund aufzunehmen. Duerfte also ganz nett werden, zumal man dann alle lustigen Services verwenden kann, welche man eben so haben will:
+
+  * Webserver im Haus,
+  * FTP-Server im Haus,
+  * Repositories,
+  * File-Server,
+  * etc.
+
+Alles natuerlich nichts so sonderlich ausgefallenes, dennoch aber hier in der Brunnenstrasse durchaus Neuerungen, welche auch mit den entsprechenden Schulungen verbunden werden muessen ;-)
