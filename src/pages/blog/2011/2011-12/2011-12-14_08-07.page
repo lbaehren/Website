@@ -1,0 +1,28 @@
+---
+title: "Configure file vs. command line args"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 14. December 2011 -- 08:07_
+
+Also manchmal frage ich mich ja schon was sich die Leute eigentlich dabei denken: irgendwie scheint es immer noch viel zu viele Leute zu geben, welches es fuer eine Art Wettbewerb halten moeglichst viele Zeichen (und damit auch Befehle) in eine einzige Zeile zu quetschen -- dabei ist es egal ob es sich dabei um C/C++ Code handelt oder um um Kommandozeilen-Optionen. Als ich diese Woche in den diversen CMake Skripten der LOFAR User Software aufgeraeumt habe, bin ich auf ein Konstrukt gestossen, welches in seiner Originalform vollkommen unlesbar war; um also irgendwie Ordnung dahinein zu bringen, habe ich mal einfach damit begonnen alle Anweisungen zu zerlegen, um einen Ueberblick zu erhalten. Als dies dann fertig war. hatte ich folgendes vor mir:
+
+~~~~
+set ( DAL_INSTALL_PREFIX     ${CMAKE_INSTALL_PREFIX}   )
+set ( DAL_PYTHON_BINDINGS    ${DAL_PYTHON_BINDINGS}    )
+set ( DAL_PYTHON_BINDINGS    ${DAL_PYTHON_BINDINGS}    )
+set ( DOCUMENTATION_ONLY     ${DOCUMENTATION_ONLY}     )
+set ( DAL_WITH_DOCUMENTATION ${DAL_WITH_DOCUMENTATION} )
+set ( DAL_SHARED_LIBRARY     ${DAL_SHARED_LIBRARY}     )
+set ( DAL_ENABLE_TESTING     ${DAL_ENABLE_TESTING}     )
+set ( DAL_COMPILER_WARNINGS  ${DAL_COMPILER_WARNINGS}  )
+set ( DAL_PYTHON_BINDINGS    ${DAL_PYTHON_BINDINGS}    )
+set ( DAL_DEBUGGING_MESSAGES ${DAL_DEBUGGING_MESSAGES} )
+set ( DAL_VERBOSE_CONFIGURE  ${DAL_VERBOSE_CONFIGURE}  )
+set ( DAL_WITH_MYSQL         ${DAL_WITH_MYSQL}         )
+~~~~
+
+Wo ist das Problem? Ganz einfach: aufgrund der vollkommen unlesbaren Anordnung von Parametern, ist keinen aufgefallen, dass Anweisungen gleich mehrfach uebergeben wurden -- dies wundert mich nicht wirklich, denn in einem mehr als 200 Zeichen umfassenden String wuerde ich auch den Ueberblick darueber verlieren, was ich schon notiert habe und was nicht. Wie laesst sich da also Abhilfe schaffen? Eigentlich ganz einfach: statt versuche alles in Form eines endlosen Salats auf der Kommandozeile zu uebergeben, lassen sich die Parameter in ein Konfigurationsfile reinschreiben, welches dann anschliessen eingelesen wird. Nicht nur kann man dann anschliessend einfacher zurueckfinden, mit welchen Einstellungen man gearbeitet hat, sondern man verliert einfach deutlich weniger den Ueberblick (es sei denn natuerlich, man wuerde auch in dem File damit fortfahren alles aneinander zu reihen...).

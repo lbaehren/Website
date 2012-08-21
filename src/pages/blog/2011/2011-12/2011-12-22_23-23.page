@@ -1,0 +1,50 @@
+---
+title: "Fehler korregieren"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Thu, 22. December 2011 -- 23:23_
+
+Manchmal muss man sich selber ein wenig auf die Finger klopfen, vor allen Dingen dann, wenn man feststellt, dass man sich zu einem frueheren Zeitpunkt einen Fehler geleistet hat, welcher einem nun einiges an Kopfschmerzen bereitet. So habe ich heute Nachmittag einiges an Zeit am Rechner verbracht um der Frage nachzugehen, warum es mit dem [Build der Pulsar-Tools](http://svn.astron.nl/CDash/index.php?project=Pulsar-Tools) immer noch nicht klappen will; bei der Telecon am Nachmittag gab es da einige Klagen, dass es sich die Sammlung an Tools seit einer Weile nicht auf den Cluster in Groningen bauen laesst -- da es aber schon wichtig ist auch ueber eine eine von allen benutzbare systemweise Installation zu verfuegen, habe ich mich noch einmal richtig ins Zeug gelegt und mich durch Logfiles aund Build-Skripten gewuehlt. Was ich dabei zu sehen bekommen habe war alles andere als schoen... wenn ich jetzt aber anfangen wuerde mich dazu auszulassen, dass werde ich so schnell nicht mehr fertig.
+
+Ein Problem, welches mir zu schaffen gemacht hat war, dass trotz korrekter Eingabe der Installation-Pfad mit einem Male nicht jener war, wie er mir zu Beginn der Konfiguration ausgegeben wurde. Nachdem ich mich versichern konnte, dass ich innerhalb der [CMake](http://www.cmake.org) Scripten fuer die Pulsar-Tools keinerlei Manipulation vorgenommen habe, so blieb nur noch die Variante des Ueberschreibens in einem der von extern geladenen Module; in jene hatte ich zuletzt ja einiges an Zeit und Energie reingesteckt, um diese untereinander abzugleichen. Als Teil dieser Aktion hatte ich dafuer Sorge getragen das vor Jahren einmal eingefuehrte Settings fuer die Suchpfade auf CMakes internen Standardmechanismus uebertragen werde, statt eine Reihe von eigenen Variablen zu definieren, welche dann irgendwann nicht mehr ueberschaubar waren. Da wir uns aber ein paar Jahre weiter befinden (und ich die Zeit gluecklicherweise dazu genutzt habe immer vertrauter mit CMake als Tool zu werden), ist klar wie sich die Aufgaben sauberer loesen lassen:
+
+| CMAKE_INCLUDE_PATH | Path used for searching by `find_file()` and `find_path()` |
+| CMAKE_LIBRARY_PATH | Path used for searching by `find_library()` |
+| CMAKE_PROGRAM_PATH | Path used for searching by `find_program()` |
+
+Um diese Anpassungen aber nicht in jedem Find-Module wieder und wieder vornehmen zu muessen, macht es natuerlich Sinn ein globales Konfigurationsfile anzulegen, um einmal fuer alle Beteiligten die notwendigen Einstellungen vorzunehmen. Folgerichtig haben alle Module ein `include()`-Statement erhalten, mit welchem die LUS-uebergreifenden Einstellungen vorgenommen werden:
+
+~~~~
+if (EXISTS LUS_CMakeSettings.cmake)
+    include (LUS_CMakeSettings)
+endif (EXISTS LUS_CMakeSettings.cmake)
+~~~~
+
+Eigentlich eine gute Idee, waere da nicht ein kleiner Haken an der Sache gewesen, welcher mich einige Zeit gekostet hat herauszufinden: die von den Find-Modulen aufgerufene Datei fuehrte dazu dass das Prefix fuer das Installationsverzeichnis ueberschrieben wurde, wenn lediglich die `CMAKE_INSTALL_PREFIX` Variable gesetzt war. Da jene von Hause aus schon auf einen anderen Wert an den von CMake automatisch gesetzten geaendert werden muss (weil eben nicht jeder die Berechtigung hat irgendwo im System Daten wegzuschreiben), wird `LUS_INSTALL_PREFIX` verwendet um die Installation in ein benutzer-definiertes Verzeichnis vorzunehmen. Wird letztere Variable aber nicht vom Benuzter gesetzt, so wird diese auf `CMAKE_INSTALL_PREFIX` gesetzt (muss noch einmal schauen, dass dies auch in ausreichender Klarheit in der Dokumentation zu finden ist). Da die Find-Module nun durch die unterschiedlichen Projekte eingebunden werden, ist es natuerlich sinnvoller die gemeinsamen Settings einmal auf Niveau des Projektes einzulesen und diese dann lediglich an die darunterliegenden Scripte weiterzureichen -- weiter unten in der Kette sollten keine Einstellungen mehr ueberschrieben werden! Also mal noch schnell alle `Find<Package>cmake` Dateien aufgemacht um sicherzugehen, dass alle `include`-Statements obiger Art dort verschwunden sind... und dann alles eingecheckt:
+
+~~~~
+Updating 2fdb050..8724c6d
+Fast-forward
+ devel_common/cmake/FindAERA.cmake      |    6 ------
+ devel_common/cmake/FindArmadillo.cmake |    3 ---
+ devel_common/cmake/FindBoost.cmake     |    7 +------
+ devel_common/cmake/FindCASACORE.cmake  |    2 --
+ devel_common/cmake/FindCppUnit.cmake   |    5 -----
+ devel_common/cmake/FindGit.cmake       |    5 -----
+ devel_common/cmake/FindHDF5.cmake      |    5 -----
+ devel_common/cmake/FindIPython.cmake   |    5 -----
+ devel_common/cmake/FindNumPy.cmake     |    2 --
+ devel_common/cmake/FindNumUtil.cmake   |    4 ----
+ devel_common/cmake/FindOctave.cmake    |    5 -----
+ devel_common/cmake/FindPIL.cmake       |    5 -----
+ devel_common/cmake/FindPython.cmake    |    5 -----
+ devel_common/cmake/FindQtFink.cmake    |    5 -----
+ devel_common/cmake/FindSphinx.cmake    |    5 -----
+ devel_common/cmake/FindStarTools.cmake |    5 -----
+ devel_common/cmake/FindWCSLIB.cmake    |    5 -----
+ 17 files changed, 1 insertions(+), 78 deletions(-)
+~~~~
