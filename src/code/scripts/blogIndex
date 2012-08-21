@@ -61,6 +61,21 @@ nameOfMonth ()
 }
 
 ##____________________________________________________________________
+##                                                        extractTitle
+##
+## Extract title of the entry
+##
+extractTitle ()
+{
+  if [ -z $1 ]
+  then
+    echo ""
+  else
+    grep title: $1 | grep -v \#\# | sed s/"title: "// | sed s/\"//g
+  fi
+}
+
+##____________________________________________________________________
 ##                                                    writeIndexHeader
 ##
 ## Write header of index file; take year as input to generate title.
@@ -265,6 +280,8 @@ then
 else
     processYear $1
 fi
+
+## Update the index containing the most recent entries
 
 exit
 
