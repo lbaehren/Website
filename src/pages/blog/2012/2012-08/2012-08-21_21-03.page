@@ -1,0 +1,13 @@
+---
+title: "Fast wieder ein Jahrgang"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 21. August 2012 -- 21:03_
+
+Da bin ich ja fast durch: "nur" noch den August, dann habe ich alle Blog Eintraege vom vergangenen Jahr in die neue Website integriert. Das muss jetzt zwar nicht bedeuten, dass ich noch noch an der einen oder anderen Stelle ein paar Detailverbesserungen vornehmen kann, aber der eigentliche Import ist fast angeschlossen. Seit den letzten Aenderungen des Konvertierungsskriptes geht es inzwischen noch einmal ein klein wenig schneller, weil ich wieder noch weniger von Hand nachbearbeiten muss' alles wird damit war leider immer noch nicht abgedeckt, aber eine merkliche Arbeitserleichterung ist es schon. 
+
+Wie ich gerade eben noch habe feststellen koennen, ist es im letzten Herbst mit den Eintraegen ein wenig duenn geworden; erst mit dem ProgPower Festival habe ich wieder ein wenig angefangen zu schreiben. Dass es ein Auf und Ab gibt duerfe nicht sonderlich verwunderlich sein -- ich werde allerdings bei Gelegenheit schauen, dies noch etwas mehr zu quantifizieren; was mir in diesem Zuge vorschwebt sind Graphiken in der Art, wie sich zum Beispiel auf [Github](http://www.github.com) zu finden sind. Wenn erst einmal alles importiert ist, kann ich mich dann im folgenden Schritt um die diversen Tools kuemmern, welche dann auf dem Rohmaterial arbeiten koennen; es kann allerdings schon sein, dass es damit auch ein wenig frueher los geht, denn schliesslich will ich ja schon an den Punkt koemmen, wo ich einen Teil der Ruby-basierten Webgen Funktionalitaet rausschmeissen und durch meinen eigenen Code ersetzen kann -- dort dann Statistik-Analysen einzubauen klingt nach einer netten Idee. Aber gut, so weit sind wir noch nicht... erst einmal noch die restlichen Jahrgaenge importieren.
