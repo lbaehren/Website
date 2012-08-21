@@ -1,0 +1,21 @@
+---
+title: "Cleaning up"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Mon, 28. November 2011 -- 15:18_
+
+One of the things I have had on my plate for a while now, is cleaning up the build environment of the LOFAR User Software (LUS). Given the fact that little has been happening in that area before coming back on board last month, the code base has aged quite a bit and is in dire need of some cleaning up. For that reason I not only have been polishing some of the wrapper scripts to handle the configuration and build of external packages, but now are also busy with updating the various [CMake](http://www.cmake.org) find modules. As it turns out they not only are in need of more standardized layout, but also they are quite a few scripts floating around, which have become obsolete; however since nobody has been taking it to himself to take care of the overall infrastructure, the ball now appears to be in my court again.
+
+~~~~
+[cmake_modules 68f7f44] Remove obsolete find modules which are not being used.
+ 3 files changed, 0 insertions(+), 279 deletions(-)
+ delete mode 100644 devel_common/cmake/FindRuby.cmake
+ delete mode 100644 devel_common/cmake/FindXaw.cmake
+ delete mode 100644 devel_common/cmake/FindXm.cmake
+~~~~
+
+Surely there are still a number of further changes, but if the list of file to be update can be trimmed down to the set which actually is being used, this saves some work in the subsequent step.
