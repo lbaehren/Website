@@ -1,0 +1,34 @@
+---
+title: "Unhappy with the DAL"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Fri, 15. July 2011 -- 17:48_
+
+The last few days have seen quite a number of improvements in the [DAL](https://github.com/nextgen-astrodata/DAL), both in term of bug-fixes as well as feature additions. (Hopefully) Still sticking to the original plan to get some basic AARTFAAC software on the ground (and then of course up and running), I have been working towards an adapter module to channel data recorded as a [casacore](http://code.google.com/p/casacore) [MeasurementSet](http://www.astron.nl/casacore/trunk/casacore/doc/html/group__MeasurementSets__module.html) into our (to be build) processing pipeline; in order to keep things moving ahead on a path which maximizes code reuse and options for future development, the notion has been to make use of the code originally written by Joe and then building on top of it. However the last days unfortunately have shown me that this might not be the most viable option, as a) some expected functionality is not there and b) the available functionality is quite hard to use. Once more the main point seems to be, that the original pieces of code are written in a very C-like fashion, making little to no use of concepts such as inheritance and templates -- as a result there is quite a lot of code duplication which would not be necessary otherwise:
+
+~~~~
+   case casa::TpInt:
+     {
+       roac_int = new casa::ROArrayColumn<casa::Int>( *itsROTableColumn );
+       casa::Array<int> data = roac_int->getColumn();
+       itsColumnData = new dalData( itsFiletype, dal_INT, shape(), nofRows() );
+       itsColumnData->data = (int *)data.getStorage(deleteIt);
+       return itsColumnData;
+     }
+     break;
+   case casa::TpDouble:
+     {
+       roac_dbl = new casa::ROArrayColumn<casa::Double>( *itsROTableColumn );
+       casa::Array<double> data = roac_dbl->getColumn();
+       itsColumnData = new dalData( itsFiletype, dal_DOUBLE, shape(), nofRows() );
+       itsColumnData->data = (double *)data.getStorage(deleteIt);
+       return itsColumnData;
+     }
+    break;
+~~~~
+
+Segments like this a __screaming__ for the usage of generic programming, employing templates. The question now is this: is it easy enough to fix some of the existing problem (which of course would be nice, especially in the longer run), or would it simply be faster to write some narrow-functional code to get us up an running.

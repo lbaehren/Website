@@ -1,0 +1,27 @@
+---
+title: "Data inspection preparations"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Fri, 01. July 2011 -- 16:28_
+
+As previously mentioned: getting the software installed and a few test data sets on board is not too hard a thing to do. After retrieving the latest CASA release, I now also have copied a few reasonably-sized datasets from our local TKP archive, such that I have something to experiment with:
+
+~~~~
+514M	./L21641_SB110_uv.MS.dppp
+514M	./L21641_SB111_uv.MS.dppp
+514M	./L21641_SB112_uv.MS.dppp
+514M	./L21641_SB113_uv.MS.dppp
+514M	./L21641_SB114_uv.MS.dppp
+514M	./L21641_SB115_uv.MS.dppp
+514M	./L21641_SB116_uv.MS.dppp
+514M	./L21641_SB117_uv.MS.dppp
+514M	./L21641_SB118_uv.MS.dppp
+514M	./L21641_SB119_uv.MS.dppp
+5.0G	.
+~~~~
+
+I think this provide my with enough material to play with and get some basic processing off the ground. Next up: start reading through the data format description document...

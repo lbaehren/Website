@@ -1,0 +1,15 @@
+---
+title: "Ein Browser ist nicht genug"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Fri, 15. July 2011 -- 21:18_
+
+Da haben wir es wieder einmal: so schoen es auch waere, sich auf einen Webbrowser beschraenken zu koennen, so wenig ist dies rein von der technischen Seite her eine realistische Option. Aufgefallen ist mir dies eben wieder einmal, als ich eben noch versucht habe eine Reaktion auf eine Wohnungsanzeige rauszuschicken; auf [kamernet.nl](http://kamernet.nl) funktioniert dies ueber Antwort-Form, in welcher sich dann noch ein paar Details einfuellen lassen. Aber nicht alles ist optional, sondern es gibt mindestens ein Feld, welches verpflichtend ist... und darueber hinaus anscheinend online im Hintergrund gecheckt wird. Ok, ich bin also ein aufmerksamer Benutzer und fuelle das Feld pflichtgemaess aus; noch bevor ich aber eine Moeglichkeit habe, die Form abzuschicken, kriege ich auch schon eine Fehlermeldung, dass meine Eingabe nicht zulaessig ist. Da sich das Formular aber ohne dieses eine Feld nicht abschicken laesst, gehe ich also noch einmal zurueck, um die Angaben erneut vorzunehmen -- kann ja durchaus sein, dass ich da etwas missverstanden oder mich vertippt habe. Hilft aber alles nichts, denn auch nach mehrfachen Versuchen komme ich keinen Schritt weiter, laufe immer wieder gegen den gleichen Fehler an, welcher im Widerspruch zu der Beschreibung zu stehen scheint. 
+
+Da ich aber eine Weile eher schon einmal ein Problem mit einer Seite hatte, welche allem Anschein nach sehr Browser-spezifischen Code enthielt, habe ich einfach mal [Apples](http://www.apple.com) _Safari_ gestartet. Neben den typischen Unterschieden in der Darstellung der Seite konnte ich hier aber auch feststellen, dass Safari anders mit Formularen umzugehen scheint, als dies bei Firefox der Fall ist. Der entscheidende Unterschied in diesem besonderen Fall war dann aber auch, dass ich ohne weitere Zwischenfaelle in das Eingabefeld schreiben konnte, welches mir vorher immer wieder Probleme bereitet hatte (so dass ich dann auch die Anfrage rausschicken konnte).
+
+Was mir dies also wieder einmal zeigt ist, dass es sich in jedem Fall lohnt mehr als einen einzigen Webbrowser zur Verfuegung zu haben, denn es gibt eben doch subtile Unterschiede in der Funktionsweise und Interpretation von Webseiten.

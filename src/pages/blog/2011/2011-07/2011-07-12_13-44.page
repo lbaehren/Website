@@ -1,0 +1,16 @@
+---
+title: "CERN in the C++ Standards Committee"
+in_menu: false
+author: Lars Baehren
+tags: Computing
+---
+
+## {title:} ##
+
+_Tue, 12. July 2011 -- 13:44_
+
+CERN is now a [member of the C++ standards committee](http://root.cern.ch/drupal/content/cern-c-standards-committee):
+
+> The LHC experiments and CERN itself use and have created a C++ code base of an estimated 50 million lines of code. Tens years, thousands of developers. About 10,000 people using C++ connected at CERN: users and staff. Given those numbers it makes sense to have opinions on the language features, and to share these opinions with the body that defines the language - just like Fermilab does already.
+
+This is quite an interesting development: given the massive use of the C++ language for the primary data analysis package within the realm of high-energy physics ([ROOT](http://root.cern.ch)), it only seems natural that quite some expert knowledge has been accumulated at CERN, thereby also creating a vested interest in the further development of the language itself.

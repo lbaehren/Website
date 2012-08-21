@@ -1,0 +1,16 @@
+---
+title: "Doch keine AARTFAAC Daten?"
+in_menu: false
+author: Lars Baehren
+tags: Work
+---
+
+## {title:} ##
+
+_Fri, 01. July 2011 -- 19:35_
+
+Ok, so schlimm muss es ja nicht unbedingt kommen. Nachdem die Meldungen aus Dwingeloo heute Morgen noch recht positiv klangen, gab es im Laufe des Nachmittages doch ein wenig Zweifel daran, ob ales wirklich so glatt wie gewuenscht laufen wuerde. Nachdem Menno zunaechst durchgab, dass Probleme mit einigen der RSP Boards geben wuerde (was grundsaetzlich ja nicht ganz unbekannt ist, denn auch bei den Cosmic Ray Experimenten gab es Datenverluste bei der Uebertragung von der Station nach CEP), so scheint auch in Groningen nicht alles so 100% glatt zu gehen, wie dies vielleicht wuenschenswert waere:
+
+> We ran into a serious problem with a number of RAID arrays. They sustained >900 MB/s this morning, but some of them do no more than 20 MB/s right now. We have no idea yet what causes this problem.
+
+Was dies also wohl in jedem Fall bedeutet ist, dass wir mit Loechern in den Daten zu rechnen haben; das ist zwar immer ein wenig aergerlich, aber auf der anderen Seite ist dies etwas, womit wir realistischerweise rechnen muessen, so dass also auch unter diesem Gesichtspunkt dieses Experiment ganz sinnvoll ist. Ich bin jetzt mal gespannt, was nun wirklich dabei herauskommt und was wir bekommen, um damit arbeiten zu koennen. Nichts desto trotz bleibt es fuer mich aber bei den geplanten Vorhaben, denn Tools fuer die Insektion brauchen wir in jedem Fall.

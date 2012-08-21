@@ -1,0 +1,19 @@
+---
+title: "AARTFAAC data experiment"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Fri, 01. July 2011 -- 14:51_
+
+Ok, is is not yet the type of data as ultimately will be pushed through the (still to be constructed) pipeline, but it is a start. As of this morning we are taking [LOFAR](http://www.lofar.org) data from the LBA antennas at the central core of the telescope, dumping all the raw data to disk. Once this is (successfully) done, we will have John Romein do his magic and push everything through his software correlator, such we will be getting a bunch of MeasurementSets -- this then more or less will correspond to what is going to ingested by our imager.
+
+For the time being however, it is time to start with some preparations:
+
+  - Grab a few (smaller) example MeasurementSets from the local data archive.
+  - Download and install a decent/recent version of [CASA](http://casa.nrao.edu/index.shtml), in order to inspect the data.
+  - Get a description of the MS data format, in order to get some basic understanding of how the data are organized internally.
+
+While the first two tasks should be considered as rather straight-forward, familiarizing oneself with the MS data format might be a bit more tricky; from past experience I remember that due to the nested table structure the MeasurementSet is everything but intuitive. But since a) we need to work with it and b) I will set out to write a small adapter as part of the DAL, it might not be too bad of an idea to fill in some of the blanks.

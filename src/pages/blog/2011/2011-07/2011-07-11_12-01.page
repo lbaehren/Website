@@ -1,0 +1,31 @@
+---
+title: "DAL clean-up"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Mon, 11. July 2011 -- 12:01_
+
+So what is the current plan these days? Even though the experiment of getting a decent chunk of AARTFAAC-like data from the core stations failed due to failure of the storage nodes to keep up with the data rate (an issue which has been raised now, as this is going to affect quite a range of people), there are a number of (software) building blocks which need to be put in place to allow for the inspection and processing of the data. While the bulk of the processing is going to take place within the PELICAN framework, most of the underlying I/O naturally is to be channeled through the DAL. In order to prepare for this I recently grabbed a few example MeasurementSets, to set up the necessary bits and pieces for reading in that type of data and have is pushed off into the subsequent pipeline modules. Trying not to reinvent the wheel again and making use of already existing functionality I thus went back to some of the original DAL code Joe had been developing to work with a multitude of underlying raw data. Following the basic idea of the DAL to act as an abstraction layer on top of a number of low-level libraries, C++ classes like "dalDataset" should be able to operate on file such as FITS, HDF5 and MeasurementSets. However trying to figure out how to really do that, I have been running into a number of issues, where the code had gotten out of sync with a number of more recent developments, making the integration quite hard. Therefore in order to get on with my plans, I had closer look as Joe's code, resulting in quite a number of clean-up and changes:
+
+~~~~
+Updating 60705b2..988aa66
+Fast-forward
+ data/CMakeLists.txt              |    2 +-
+ src/dal/core/dalDataset.cc       |  128 +++++++++++++++++++-------------------
+ src/dal/core/dalDataset.h        |   12 ++--
+ src/dal/core/dalFilter.cc        |   75 ++++++++++------------
+ src/dal/core/dalFilter.h         |   25 +++++---
+ src/dal/core/dalTable.cc         |    4 +-
+ src/dal/core/test/CMakeLists.txt |    6 +-
+ src/dal/core/test/tdalDataset.cc |   65 ++++++++++++++++----
+ src/dal/core/test/tdalFilter.cc  |   78 +++++++++++++++++++++--
+ src/test/tdal_MS.cc              |    9 +--
+ 10 files changed, 252 insertions(+), 152 deletions(-)
+~~~~
+
+That of course is not all, as a considerable batch went online on Saturday already. The nature of most of the changes has been to arrive at a better integration of the various pieces of code. Foremost part of these efforts has been to apply a more object-oriented programming model, making use of techniques such as function overloading and templating (the latter resulting in a considerably cleaner public interface).
+
+So where I am w.r.t. the plan of getting MeasurementSets being read in? I have been debugging up to the point where I now can check the actual routines which are supposed to open up the data files and extract some of their contents -- I a still getting a few errors there, but this hopefully can be resolved today or tomorrow at the latest.

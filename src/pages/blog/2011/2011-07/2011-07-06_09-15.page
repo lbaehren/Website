@@ -1,0 +1,27 @@
+---
+title: "Lange Nacht... kurze Nacht"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 06. July 2011 -- 09:15_
+
+Also ich glaube das hat es auch eine Weile nicht mehr gegeben: nachdem ich gestern Abend recht spaet nach Hause gekommen bin -- zu einem guten Teil auch, weil ich noch 2 Stunden mit Julia telefoniert habe -- bin ich nicht auf dem schnellsten Wege (wie es vielleicht angebracht gegeben waere) ins Bet verschwunden, sondern habe mich noch einmal ein wenig an den Schreibtisch gesetzt, um ueber die letzten Aenderungen an den _Data Format ICDs_ zu schauen. Nach dem Data Formats Meeting am Nachmittag gab es eine Reihe von Punkten, welche sich nicht so einfach aus dem Stand beantworten und loesen lassen, so dass ein wenig Nachdenken erforderlich ist; da alles noch recht frisch im Kopf war, habe ich einfach mal dort angesetzt, wo die Diskussion am Nachmittag geendet war. Gut, dies heisst jetzt noch nicht automatisch, dass man sich damit dann die Nacht um die Ohren schlagen muss, aber als ich dann irgendwann doch einmal einen Blick auf die Uhr geworfen war ich doch ein wenig erschrocken:
+
+~~~~
+commit ec7c467df4418a079ec2dd47f06d8cfda13c03f7
+Author: Lars Baehren <lbaehren@gmail.com>
+Date:   Wed Jul 6 08:40:52 2011 +0200
+
+    Added some of the comments provided by A2.
+
+commit 4ae611fb00035f6f0b965dd769b8f7bac1e1851a
+Author: Lars Baehren <lbaehren@gmail.com>
+Date:   Wed Jul 6 04:11:45 2011 +0200
+
+    Keep track of issues being worked on for ICD-004.
+~~~~
+
+Also schnellstens das Laptop zugemacht und zum Schlafen rumgedreht (wenn ach natuerlich nicht ohne vorher noch schnell die Aenderungen an den ICDs zwischenzuspeichern und einzuchecken -- schliesslich habe ich ja einiges an Arbeit dort reingesteckt); als letzte Massnahme vor dem Einschlafen habe ich dann noch den auf sieben Uhr stehenden Wecker ausgeschaltet, weil mir dies dann doch ein wenig zu kurz erschien um wenigstens einigermassen ausgeruht zu sein. Stellt sich aber heraus, dass mein Koerper von den letzten Wochen her zu sehr in seinem Rhythmus ist, um sich von so einer naechtlichen Eskapade aus dem Tritt bringen zu lassen: auch ohne den Wecker bin ich wieder gegen sieben Uhr wach geworden. Da die Versuche mich rumzudrehen und noch einmal einzuschlafen nicht wirklich fruchten wollten, habe ich mich also der eingetretenen Situation gefuegt und bin aus dem Bett gestiegen. Dauerte nicht wirklich lange, bis ich dann am Schreibtisch sass, um an der Stelle weiterzumachen, an welcher ich in der Nacht abgebrochen hatte. Wie kurz die Nacht dann aber wirklich war, ist mir erst so richtig klar geworden, als ich dann auf die [Git](http://git-scm.com) Commit Logs geschaut habe, welche unzweifelhaft klar machten, dass es sich in der Tat nur um sehr wenige Stunden Schlaf gehandelt hat.
