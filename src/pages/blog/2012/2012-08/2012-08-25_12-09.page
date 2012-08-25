@@ -1,0 +1,11 @@
+---
+title: "cologne.rb"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Sat, 25. August 2012 -- 12:09_
+
+Ach, den Zwischenstop vor dem Vortrag hatte ich ja noch ganz vergessen: ich habe eine ganze Weile beim Stand der [Ruby User Group Cologne](http://www.colognerb.de) verbracht, welche unten in dem groesseren Raum neben der Eingangshalle aufgebaut sind. Da ich derzeit ja in jenen Gewaessern unterwegs bin kann es ja nicht schaden auch da ein wenig Kontakte zu knuepfen und sich kundig zu machen. Was fuer mich in diesem Zusammenhang natuerlich am interessantesten waere ist die Frage, wie es den mit den Erstellen von Extensions aussieht; wenn ich Funktionalitaet bereitstellen will, welche eben nicht (aufgrund der Portabilitaet) in Ruby geschrieben sein soll, dann muss ich natuerlich eine Moeglichkeit haben ein Modul einzubinden.
