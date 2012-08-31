@@ -7,32 +7,41 @@ tags: Blog
 
 ## {title:} ##
 
-  - The Avengers (2012)
+  - Blind Judoka
+  - Einschulung Tim
   - The Dark Knight Rises (2012)
   - Hot-Yoga
   - fxpodcast -- Alvy Ray Smith
   - Analyzing Rails logfiles
   - Jodorowsky's Dune
-  - No to Audible
   - Abschied nehmen
   - Bundesgartenschau Koblenz
 
-### The Avengers (2012) ###
+### Blind Judoka ###
 
-  - [The Incredible Hulk](http://www.imdb.com/title/tt0800080) (2008)
-  - [Iron Man](http://www.imdb.com/title/tt0371746) (2008)
-  - [Captain America -- The First Avenger](http://www.imdb.com/title/tt0458339) (2011)
-  - [Thor](http://www.imdb.com/title/tt0800369) (2011)
-  - [The Avengers](http://www.imdb.com/title/tt0848228) (2012)
-  - [Joss Whedon](http://www.imdb.com/name/nm0923736)
+Blind Judoka is a ‘TakePart TV’ YouTube show which tells the story of blind athlete Jordan Mouton and how she has qualified in Team USA for the Paralympics. Cinematographer Jim Geduldick contributed to the show filming slo-mo scenes on the Phantom Miro.
 
-> The twelfth film to surpass the $1 billion mark worldwide, and the tenth to surpass the $400 million mark in the USA. It tied with [Avatar](http://www.imdb.com/title/tt0499549) and [Harry Potter and the Deathly Hallows: Part 2](http://www.imdb.com/title/tt1201607) for surpassing the $1 billion mark worldwide in the fastest time (19 days) and set the record of surpassing the $400 million mark in the USA (14 days).
+> Cinematographer Jim Geduldick on ‘Blind Judoka’, a [TakePart TV](http://www.youtube.com/user/takepart) YouTube show which tells the story of blind athlete Jordan Mouton and how she has qualified in Team USA for the Paralympics.
 
-> The Chitauri appear in the first story arc of "The Ultimates," an alternate universe retelling of the origins of the Marvel superheroes. In the comics, their leader claims that they go by many names, including Skrulls. It was originally assumed that the reason for using The Chitauri instead of the Skrulls was that because Fox owns the rights to the Fantastic Four and their supporting characters however Marvel Studios' President of Production Kevin Feige stated in an interview that the film rights to the Skrulls are not owned by either Marvel Studios or Fox. The reason for them not being used was that Joss Whedon did not want go the route of using shape-shifters in the first film.
+  - [RC Podcast](http://www.fxguide.com/therc/the-rc-117-nurses-judo-and-bmc), Episode 117: Nurses, Judo and BMC
+  - [How James Bond met the Queen, and other Olympics effects](http://www.fxguide.com/featured/how-james-bond-met-the-queen-and-other-olympics-effects) (Ian Failes, fxguide)
+
+### Risk vs. Resources ###
+
+That comes as a very nice coincidence: last I was chatting with Joe, touching on the persisting issue of funding for (fundamental) research -- in general, but of course more specific w.r.t. to astronomy --
+
+> Gouvernement has the resources, but is unwilling to take the risks; private companies are willing to take the risks, but don't have the resources.
+
+### Einschulung Tim ###
+
+Da ich mich ja bisher nur recht kurz geaeussert hatte, hier vielleicht noch einmal die etwas ausfuehrlichere Fassung...
+
+Da ich ja rechtzeitig ueber das Ereignis vorgewarnt war, habe ich mir fuer den Tag frei genommen, so dass ich mich 
 
 ### The Dark Knight Rises (2012) ###
 
-  * [The Dark Knight Rises](http://www.imdb.com/title/tt1345836)
+Aus rein cineastischer Sicht hat das laufende Jahr ja durchaus einiges zu bieten. Auch wenn ich leider bisher nicht geschafft habe mit allen Veroeffentlichungen Schritt zu halten, so ist es uns am letzten Juli-Wochenende immerhin noch gelungen den mit Spannung erwarteten Abschluss der _Dark Knight_ Saga zu schauen -- [The Dark Knight Rises](http://www.imdb.com/title/tt1345836) war ohne jeglichen Zweifel das Warten wert und liefert einen wuerdigen Abschluss fuer die Trilogie.
+
   * [Christopher Nolan](http://www.imdb.com/name/nm0634240)
   * [Christian Bale](http://www.imdb.com/name/nm0000288)
   * [Michael Caine](http://www.imdb.com/name/nm0000323)
@@ -44,10 +53,13 @@ tags: Blog
 
 ### fxpodcast -- Alvy Ray Smith ###
 
-> One of the most remarkable men we have had on the fxpodcast. It is a real pleasure & honor to offer you this in-depth interview with Dr Alvy Ray Smith, the man who jointly or personally: Invented Paint, Alpha, Dir. the Genesis seq., worked at XEROX PARC, NYIT, Lucasfilm, PIXAR, Microsoft and a multiple tech Ocsar winner.
+Das ist wirklich ein bemerkenswertes Gespraech, welchen ich nur allen ans Herz legen kann, die sich in irgendeiner Weise fuer Computer-Graphik (und deren Geschichte und Entwicklung) interessieren:
+
+> One of the most remarkable men we have had on the [fxpodcast](http://www.fxguide.com). It is a real pleasure & honor to offer you this in-depth interview with [Dr Alvy Ray Smith](http://alvyray.com), the man who jointly or personally: Invented Paint, Alpha, Dir. the Genesis seq., worked at XEROX PARC, NYIT, [Lucasfilm](http://lucasfilm.com), [PIXAR](http://www.pixar.com), [Microsoft](http://www.microsoft.com) and a multiple tech Ocsar winner.
 
   * [fxpodcast: Alvy Ray Smith](http://www.fxguide.com/fxpodcasts/fxpodcast-alvy-ray-smith)
   * [Alvy Ray Smith: RGBA, the birth of compositing & the founding of Pixar](http://www.fxguide.com/featured/alvy-ray-smith-rgba-the-birth-of-compositing-the-founding-of-pixar)
+  * Interview with Jim Blinn (FX-Podcast, Episode 224)
 
 ### Analyzing Rails logfiles ###
 
@@ -58,7 +70,7 @@ With a web application such as [prometheus](http://www.prometheus-bildarchiv.de)
   * Apache Web Server logs
   * Ruby on Rails application logs
 
-[[https://github.com/wvanbergen/request-log-analyzer|request-log-analyzer]]
+[request-log-analyzer](https://github.com/wvanbergen/request-log-analyzer)
 
 > This is a simple command line tool to analyze request log files in various formats to produce a performance report. Its purpose is to find what actions are best candidates for optimization.
 
@@ -77,15 +89,6 @@ ImageController#show.html [GET]             ┃  2 hits ┃  1.7% ┃
 SearchController#search.html [GET]          ┃  2 hits ┃  1.7% ┃ 
 PandoraController#js.html [GET]             ┃  1 hits ┃  0.8% ┃ 
 ~~~~
-
-### No to Audible ###
-
-Dann also noch einmal ein Versuch... Auch wenn ich schon einmal mit
-dem Schreiben angefangen hatte, so [ist es mir gelungen den kompletten Text zu zerschiessen](/blog/2012/2012-01/2012-01-21_20-59.html) ehe ich diesen online stellen konnte. Da es sich aber um einen Sachverhalt handelt, welchen ich nicht ohne Weiteres unterschlagen wollte, muss ich also noch einmal von vorne anfangen :-(
-
-Als ein fleissiger Hoerer von [This Week in Photography](http://www.thisweekinphoto.com) kennt man nach einer Weile die Namen Sponsoren, welche die Show finanziell unterstuetzen. Auch wenn sich ueber die Jahre das Karussel ein wenig gedreht hat (schliesslich gibt es immer wieder einmal neue Services, welche beworben werden wollen), so gibt es doch einige Geldgeber, welche dauerhafter engagiert sind. Zu eben jener Gruppe gehoert auch
-[Audible](http://www.audible.com), ein mittlerweile zu [Amazon](http://www.amazon.com) gehoerendes Portal fuer jegliche
-Art an Hoerbuechern; auch wenn ich sicherlich noch nicht dem den Punkt angelangt bin, bei welchem zwingender Bedarf an Nachschub besteht (ich habe hier immer noch eine recht beachtliche Liste vorliegen, welche ich erst einmal abarbeiten sollte), so kann es dennoch nicht schaden, sich ein wenig nach Bezugsquellen umzuschauen. Auch wenn es mittlerweile ja einige Anbieter gibt, so scheint Audible nach wie vor ueber die groesste Sammung an Hoerbuechern zu verfuegen, welche sich ueber das Internet beziehen laesst; neben Romanen befinden sich jede Menge Sachbuecher und auch periodisch veroeffentlichte Werke im Portefolio. Klingt also interessant genug, um sich dies einmal genauer anzuschauen.
 
 ### Baumarktritter ###
 
