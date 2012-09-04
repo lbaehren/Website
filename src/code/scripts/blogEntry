@@ -206,7 +206,7 @@ echo " -> Creating new blog entry ..."
 echo ""
 
 writeHeaderWebgen
-writeHeaderDokuwiki
+#writeHeaderDokuwiki
 
 ##_______________________________________________________________________________
 ## Create the main body of the new blog entry
@@ -216,7 +216,7 @@ $varEditor $varFileTemp
 ## ... and append it to the previously created header segment
 
 cat $varFileTemp >> $varFileWebgen
-cat $varFileTemp >> $varFileDokuwiki
+#cat $varFileTemp >> $varFileDokuwiki
 
 ## Add link to new entry to the index file
 
@@ -229,7 +229,6 @@ chmod a+rw $var_fileEntry
 chmod a+rw $var_fileIndex
 chmod a+rwx $var_dirMeta/$varYear
 chmod a+rwx $var_dirMeta/$varYear/$varYearMonth
-rm -f $varDokuwikiBlog/*~
 rm -f $var_dirYear/*~
 rm -f $var_dirMonth/*~
 rm -rf $varFileTemp
