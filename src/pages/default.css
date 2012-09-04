@@ -16,7 +16,7 @@ body {
     color:   #303030;
     margin:  0 auto;
     padding: 1px 5px;
-    width:   800px;
+    width:   840px;
 }
 
 /* === Header area =========================================================== */
@@ -242,14 +242,15 @@ body {
  *-----------------------------------------------------------------------------*/
 
 #footer {
-    clear:both;
-    margin:0 auto;
-    padding:8px 0;
-    border-top:2px solid #dadada;
-    width:800px;
-    text-align:center;
-    color:#808080;
-    background-color:#ffffff;font-size:0.9em;
+    clear:            both;
+    margin:           0 auto;
+    padding:          8px 0;
+    border-top:       2px solid #dadada;
+    width:            840px;
+    text-align:       center;
+    color:            #808080;
+    background-color: #ffffff;
+    font-size:        0.9em;
 }
 
 #footer p {
