@@ -4,39 +4,151 @@ in_menu: false
 author: Lars Baehren
 tags: Blog
 ---
-
+ 
 ## {title:} ##
+ 
+### Einen Schritt weiter ###
 
-### A little bit of history ###
 
-Starting to write a blog was project that grew out of the need "to keep folks at
-home in the loop". When moving to the Netherlands in 2004, I was trying to keep
-family and friends up to date on the where-abouts. It only took a short while to 
-figure out that sending around emails wasn't a viable longer-term solution... for 
-a number of reasons:
 
-* A person might not be on the distribution list.
-* A person might want to be taken off the distribution list.
-* For one reason of another an email might not be reaching its destination.
 
-### Archive matrix ###
+_Tue, 04. September 2012 -- 10:20_
 
-* **2004** : [Jan](/blog/2004/2004-01) | [Feb](/blog/2004/2004-02) | [Mar](/blog/2004/2004-03) | [Apr](/blog/2004/2004-04) | [May](/blog/2004/2004-05) | [Jun](/blog/2004/2004-06) | [Jul](/blog/2004/2004-07) | [Aug](/blog/2004/2004-08) | [Sep](/blog/2004/2004-09) | [Oct](/blog/2004/2004-10) | [Nov](/blog/2004/2004-11) | [Dec](/blog/2004/2004-12)
+Das hat mir hat immer noch gefehlt, um die sich im Aufbau befindliche Website Live zu schalten (ok, ich muss mir auch noch einmal ueber das Hosting Gedanken machen, aber ich spreche hier erst einmal noch von der mehr technischen Seite fuer welche ich selber Sorge zu tragen habe). Da der Blog ja -- alleine schon vom Umfang her -- den wohl zentralen Bereich bildet, sollte ich natuerlich dafuer sorgen, dass dieser in vernuenftiger Weise funktioniert, ehe ich in in seiner ueberarbeiteten Fassung fuer den Rest der Welt freigebe. Neben dem (leider nach wie vor noch bestehenden) Problem der dynamischen Skalierung der eingebundenen Bilder, fehlte mir bisher noch die Moeglichkeit einfach mal eine Seite mit den letzten z.B. 10 Eintraegen zu generieren. Es macht ja schon Sinn direkt einen Blick ueber die aktuellen Beitraege zu haben, wenn man den Blog oeffnet, statt sich erst in das [Archiv](archive.html) hinabbegeben zu muessen; letzteres hat sicherlich seine Berechtigung, wenn es um den Zugriff auf alle zurueckliegenden Beitraege gilt, aber das ist doch etwas anderes als wenn ich weinfach nur wissen will, was es denn aktuell zu lesen gibt.
 
-* **2005** : [Jan](/blog/2005/2005-01) | [Feb](/blog/2005/2005-02) | [Mar](/blog/2005/2005-03) | [Apr](/blog/2005/2005-04) | [May](/blog/2005/2005-05) | [Jun](/blog/2005/2005-06) | [Jul](/blog/2005/2005-07) | [Aug](/blog/2005/2005-08) | [Sep](/blog/2005/2005-09) | [Oct](/blog/2005/2005-10) | [Nov](/blog/2005/2005-11) | [Dec](/blog/2005/2005-12)
+Um diese Luecke endlich mal noch zu fuellen, habe ich die Fahrt von Bonn nach Koeln heute Morgen dazu genutzt die entsprechende Funktionalitaet zu implementieren, s dass sich die Startseite jetzt automatisch aktualisieren laesst; ich muss dies zwar noch mit dem Script fuer die Erstellung eines neuen Blog Eintrages koppeln, aber zumindest werden schon einmal alle benotigte Index-Seiten in einem Zuge erstellt (das ist ja schliesslich etwas, das man nicht von Hand machen moechte). Das Resultat sieht schon einmal brauchbar aus, auch wenn ich mir sicherlich noch einmal den Code vornehmen muss, um diesen ein wenig aufzuraeumen; es geht hier zwar nicht darum irgendwelche Schoenheitspreise zu gewinnen, aber da ich die Infrastruktur schon auf Dauer anlegen will, macht es wenig Sinn da einfach nur eine lose Sammlung von irgendwelchen wuest zusammengestrickten Scripten herumliegen zu haben.
+ 
+### Bonn Flickr Group ###
 
-* **2006** : [Jan](/blog/2006/2006-01) | [Feb](/blog/2006/2006-02) | [Mar](/blog/2006/2006-03) | [Apr](/blog/2006/2006-04) | [May](/blog/2006/2006-05) | [Jun](/blog/2006/2006-06) | [Jul](/blog/2006/2006-07) | [Aug](/blog/2006/2006-08) | [Sep](/blog/2006/2006-09) | [Oct](/blog/2006/2006-10) | [Nov](/blog/2006/2006-11) | [Dec](/blog/2006/2006-12)
 
-* **2007** : [Jan](/blog/2007/2007-01) | [Feb](/blog/2007/2007-02) | [Mar](/blog/2007/2007-03) | [Apr](/blog/2007/2007-04) | [May](/blog/2007/2007-05) | [Jun](/blog/2007/2007-06) | [Jul](/blog/2007/2007-07) | [Aug](/blog/2007/2007-08) | [Sep](/blog/2007/2007-09) | [Oct](/blog/2007/2007-10) | [Nov](/blog/2007/2007-11) | [Dec](/blog/2007/2007-12)
 
-* **2008** : [Jan](/blog/2008/2008-01) | [Feb](/blog/2008/2008-02) | [Mar](/blog/2008/2008-03) | [Apr](/blog/2008/2008-04) | [May](/blog/2008/2008-05) | [Jun](/blog/2008/2008-06) | [Jul](/blog/2008/2008-07) | [Aug](/blog/2008/2008-08) | [Sep](/blog/2008/2008-09) | [Oct](/blog/2008/2008-10) | [Nov](/blog/2008/2008-11) | [Dec](/blog/2008/2008-12)
 
-* **2009** : [Jan](/blog/2009/2009-01) | [Feb](/blog/2009/2009-02) | [Mar](/blog/2009/2009-03) | [Apr](/blog/2009/2009-04) | [May](/blog/2009/2009-05) | [Jun](/blog/2009/2009-06) | [Jul](/blog/2009/2009-07) | [Aug](/blog/2009/2009-08) | [Sep](/blog/2009/2009-09) | [Oct](/blog/2009/2009-10) | [Nov](/blog/2009/2009-11) | [Dec](/blog/2009/2009-12)
+_Mon, 03. September 2012 -- 18:17_
 
-* **2010** : [Jan](/blog/2010/2010-01) | [Feb](/blog/2010/2010-02) | [Mar](/blog/2010/2010-03) | [Apr](/blog/2010/2010-04) | [May](/blog/2010/2010-05) | [Jun](/blog/2010/2010-06) | [Jul](/blog/2010/2010-07) | [Aug](/blog/2010/2010-08) | [Sep](/blog/2010/2010-09) | [Oct](/blog/2010/2010-10) | [Nov](/blog/2010/2010-11) | [Dec](/blog/2010/2010-12)
+Da ich ja dort meine Zelte aufgeschlagen habe und dementsprechend die Gegend mit der Kamera unsicher mache, war es eigentlich nur ein logischer Schritt, dass ich mich eben mal noch in die [Bonn](http://www.flickr.com/groups/bonn) Flickr Group eingeklinkt habe. Auch wenn ich bisher noch nicht sonderlich konsequent in der Erkundung gewesen bin -- zumindest nicht in einer systematischen Weise, wie ich dies in Amsterdam betrieben habe -- so sammelt sich langsam einiges an lokalem Bildmaterial an; statt also einfach nur wahllos loszulaufen oder mich alleine an Karten zu orientieren, schnappe ich mir einfach auch mal Eindruecke anderer Photographiebegeisterter -- dies befindet sich dann einfach viel naeher an dem, was ich dann anschliessend mit den eigenen Augen wahrnehmen kann (auch wenn dies natuerlich nur ein Ausgangspunkt ist, von welchem aus ich dann meine eigene Erkundung starte). Wenn sich darueber hinaus mit der Zeit aber auch noch ein paar Kontakte in Sachen Photographie ergeben, ist dies natuerlich ein nettes Extra...
+ 
+### Blind Judoka ###
 
-* **2011** : [Jan](/blog/2011/2011-01) | [Feb](/blog/2011/2011-02) | [Mar](/blog/2011/2011-03) | [Apr](/blog/2011/2011-04) | [May](/blog/2011/2011-05) | [Jun](/blog/2011/2011-06) | [Jul](/blog/2011/2011-07) | [Aug](/blog/2011/2011-08) | [Sep](/blog/2011/2011-09) | [Oct](/blog/2011/2011-10) | [Nov](/blog/2011/2011-11) | [Dec](/blog/2011/2011-12)
 
-* **2012** : [Jan](/blog/2012/2012-01) | [Feb](/blog/2012/2012-02) | [Mar](/blog/2012/2012-03) | [Apr](/blog/2012/2012-04) | [May](/blog/2012/2012-05) | [Jun](/blog/2012/2012-06) | [Jul](/blog/2012/2012-07) | [Aug](/blog/2012/2012-08) | [Sep](/blog/2012/2012-09) | [Oct](/blog/2012/2012-10) | [Nov](/blog/2012/2012-11) | [Dec](/blog/2012/2012-12)
 
-* **2013** : [Jan](/blog/2013/2013-01) | [Feb](/blog/2013/2013-02) | [Mar](/blog/2013/2013-03) | [Apr](/blog/2013/2013-04) | [May](/blog/2013/2013-05) | [Jun](/blog/2013/2013-06) | [Jul](/blog/2013/2013-07) | [Aug](/blog/2013/2013-08) | [Sep](/blog/2013/2013-09) | [Oct](/blog/2013/2013-10) | [Nov](/blog/2013/2013-11) | [Dec](/blog/2013/2013-12)
+
+_Mon, 03. September 2012 -- 09:48_
+
+Angesichts der Tatsache, dass derzeit ja noch die Paralympics in London stattfinden, haette ich hier eine kleine Geschichte, welche sowohl aus sportlicher, menschlicher -- aber natuerlich auch cineastischer -- Sicht recht interessant ist:
+
+> _Blind Judoka_ is a [TakePart TV](http://www.youtube.com/user/takepart) YouTube show which tells the story of blind athlete Jordan Mouton and how she has qualified in Team USA for the Paralympics. Cinematographer Jim Geduldick contributed to the show filming slo-mo scenes on the Phantom Miro.
+
+Teil meiner woechentlichen Podcast Rotation, wie ja schon einmal angemerkt, ist [The RC](http://www.fxguide.com/therc) (Your guide to digital cinema, filmmaking and cutting edge imaging), eine Production des [fxguide](http://www.fxguide.com) Teams. Waehrend die Episoden typischerweise einen recht starken technischen Anteil haben, so ist die Interview-Section eher reserviert fuer den Blick hinter die Kulissen von ausgewaehlten Prouktionen; das soll jetzt nicht heissen, dass technische Aspekte vollkommen ausgespart werden (im Gegenteil, wenn dies fuer die Realisierung des Projektes wichtig war, dann ist dies Teil der Diskussion), aber der Fokus liegt ganz klar auf dem Storytelling und dem kreativen Prozess. Eine Gelegenheit, bei welcher die verschiedenen Aspekte auf recht interessante Weise zusammenkam, war in [Episode 117](http://www.fxguide.com/therc/the-rc-117-nurses-judo-and-bmc) ("Nurses, Judo and BMC"): im Interview mit Filmemacher Jim Geduldick wurde _Blind Judoka_ vorgestellt, die mehrteilige Dokumentation ueber die amerikanische Athletin Jordan Mouton, welche nach dem Verlust ihres Augenlichtes fuer den Judo-Wettkampf bei den Paralympics zu trainieren. Waehrend dies zweifelsfrei eine bewegende menschliche Geschichte ist, sind hier auf die cinematographischen Aspekte nennenswert: durch Verwendung der Phantom Miro Kamera ist es gelungen die Trainings- und Kampfsequenzen bei extrem hohen Frameraten einzufangen, so dass diese bei anschliessendem Abspielen bei geringeren Geschwindigkeiten die Feinheiten in den Bewegungen sichtbar werden lassen. Wie von Jim angedeutet hat Judo durchaus ein etwas von Tanzen; das Gegen- und Miteinander der Kontrahenten beruht sehr stark auf einem Gefuehl fuer minimale Veraenderungen in der Koerperhaltung (und -spannung) des Gegenueber -- im normalen Ablauf ist dies fuer den Betrachter kaum sichtbar, aber mit High-Speed Kameras aufgenommen laesst sich dies auf beeindruckende Weise sichtbar machen. Sehenswert!
+ 
+### Der senile Mann und der Hocker ###
+
+
+
+
+_Fri, 31. August 2012 -- 15:51_
+
+Manchmal haelt das reale Leben -- falls man denn den amerikanischen Wahlkampf in diese Kategorie einordnen kann -- seine ganz eigene Comedy bereit:
+
+> Der US-amerikanische Schauspieler, Regisseur und Lokalpolitiker Clint Eastwood hat gestern eine merkwürdige Rede gehalten. Die Organisatoren des Republikaner-Parteitags hatten ihn als Sprecher geladen, er sollte direkt vor dem Auftritt des Präsidentschaftskandidaten Mitt Romney zu den Delegierten in Tampa sprechen. Eastwood redete frei und ohne erkennbares Skript. Das hätte – in Zeiten der Überinszenierung im Politikbetrieb – erfrischend sein können.  War es aber nicht.
+>
+> Der 82-Jährige sprach zu einem leeren Hocker auf der Bühne und tat, als ob Präsident Barack Obama darauf säße.  Eastwood schien in einer Zwiesprache mit dem Präsidenten zu sein: Er belehrte den nicht vorhandenen Obama über dessen Fehler im Präsidentenamt. Die Darbietung war bizarr und surreal; mitleiderregend war an Eastwoods Auftritt das Bild des geistigen Verfalls, das er bot. Kein Wunder, dass Obamas Sprecher Ben LaBolt alle Anfragen “an Salvador Dali” weiterleiten will.
+
+Ich denke mal surreal ist durchaus die richtige Bezeichnung -- muss man sich einfach selber angeschaut haben. Das Video gibt es bei [tagesschau.de](http://blog.tagesschau.de/2012/08/31/der-senile-mann-und-der-hocker) oder auf [YouTube](http://www.youtube.com) zu finden. Weitere Reaktionen dazu finden zu schon den ganzen Tag ueber aus sozielen Netzwerken wie Google+ (ich denke mal auf den anderen Kanaelen duerfte es nicht viel anders sein).
+ 
+### 1086 Unterschriften ###
+
+
+
+
+_Fri, 31. August 2012 -- 10:49_
+
+Da ist sie nun also abgelaufen: die [Online Petition](https://www.openpetition.de/petition/online/fuer-uneingeschraenkten-zugriff-auf-reproduktionen-der-werke-von-joan-mir-fuer-forschung-und-lehre) "Für uneingeschränkten Zugriff auf Reproduktionen der Werke von Joan Miró für Forschung und Lehre" ist bei einem Zaehlerstand von 1086 Unterschriften zum Ende gekommen.
+
+![Statistik Petition](/blog/2012/2012-08/2012-08-31_petition_miro.png)
+
+Wie man anhand der Statistik sehen kann gab es zwar immer noch einen stetigen Anstieg in der Anzahl der Unterzeichner, aber der grosse Sprung nach dem Newsletter ueber die [prometheus](http://www.prometheus-bildarchiv.de) Mailing-Liste liess sich nicht wiederholen. Wnn es einen leicht unsicheren Faktor in der Sache gab, dann war es durchaus die Frage, wie gross denn ueberhaupt das Potential fuer eine derartige Petition ist: sicherlich kann man die Anzahl an _prometheus_ Benutzern als eine Basis fuer Kalkulationen nehmen, aber alles was darueber hinausgeht faende ich sehr schwer einzuschaetzen.
+
+Und was passiert nun? So 100%ig sicher ist dies noch nicht, aber klar ist natuerlich, dass die Petition der [Fundació Joan Miró](http://www.fundaciomiro-bcn.org) zugestellt werden muss, um wieder einen Zugriff auf Reproduktionen fuer Forschung und Lehre zu ermoeglichen. Die Wege, auf welchen eine solche Zustellung geschehen kann sind vielfaeltig, so dass es natuerlich Sinn macht da noch einmal ein wenig zu ueberlegen, auf welche Weise sich die Chancen fuer einen Erfolg der Petition maximieren lassen.
+ 
+### Preisgestaltung ###
+
+
+
+
+_Fri, 31. August 2012 -- 10:01_
+
+Im Zuge des Gerichtsprozesses zwischen [Apple](http://www.apple.com) und [Samsung](http://www.samsung.com) tauchte dies immer wieder einmal in der einen oder anderen Weise auf: Im Vorfeld hatte es Verhandlungen zwischen beiden Konzernen gegeben, bei welchen die Moeglichkeiten fuer eine Lizensierung ausgelotet wurden. Wenn ich mir aber den von Apple verlangten Preis anschaue, dann kann ich durchaus verstehen, wenn Samsung nicht sonderlich geneigt war sich auf einen [solchen Deal](http://www.heise.de/newsticker/meldung/Patentstreit-um-Android-Gespraeche-zwischen-Apple-und-Google-1696179.html) einzulassen:
+
+> Wie aus dem Verfahren gegen Samsung hervorging, verlangt Apple für eine umfassende Lizenz auf seine Patente 24 Dollar pro Smartphone. Zugleich gibt es Rabatte und gegenseitige Verrechnungen, die den Preis in vielen Fällen etwas senken.
+
+Dass die Kostenkalkulationen bei Apple recht grosse Gewinnspannen zu erlauben scheinen ist nicht wirklich neu, da duerften auch bei dem zurueckliegenden Prozess noch einmal ein paar Informationen auf den Tisch gekommen sein. Wenn ich aber von anderen Herstellern eine Lizenzgebuehr von 24 Dollar pro Smartphone verlange, kann ich mir noch schwerlich virstellen, dass dies ohne Auswirkung auf die Marktpreise bleibt. In wie weit dies dann zum Vorteil der Konsumenten ist, darueber darf dann mal spekuliert werden.
+ 
+### Wiki Loves Monuments 2012 ###
+
+tags: Photography
+
+
+
+_Fri, 31. August 2012 -- 08:56_
+
+That has got to be of insterest, if you are into photography and open contents:
+
+> Wikipedia has launched what it calls 'the world's largest photo contest' to increase the number of images of historic sites in its image database - Wikimedia Commons. The contest, called 'Wiki Loves Monuments 2012' will run throughout September 2012, with the best entry receiving a photo tour of Hong Kong, coinciding with the Wikimania 2013 conference. Wikipedia has run photographic competitions before, but this is the biggest yet, and will involve volunteers from more than 30 countries.
+
+The news about this contest arrived through an [article in dpreview.com](http://www.dpreview.com/news/2012/08/30/wikipedia-launches-historic-monuments-photo-contest-to-expand-commons), one of the sources I have been subscribing to, in order to keep track of some of the events in the photography world. Whether or not the competition is the driving bit for you to participate is one thing -- for Wikimedia Commons the most important part is that the images are construbutes under a free license:
+
+> All images must be uploaded to the [Wikimedia Commons](http://commons.wikimedia.org) under a free license, which means that they will be available free of charge, for use by anybody, for any purpose, as long as the photographer is credited.
+
+Following up on the information presented in the article, the next obvious plave to check is the [website for the competition](http://www.wikilovesmonuments.org) itself:
+
+> Wiki Loves Monuments is an international photo contest around cultural heritage monuments in September. Starting from the Netherlands in 2010 and organized on a European level in 2011, we go global in 2012!
+>
+> Everybody can participate and improve Wikipedia in their local and regional neigbourhood. Cultural heritage is everywhere around you, you just need to look and learn!
+>
+> In every participating country you can win awards, and the best photos in each country continues to the international jury – which will select the best monument photos in 2012.
+>
+> Make sure to [keep track of this blog](http://www.wikilovesmonuments.org) for more information, updates and glimpses how things are going in other countries!
+
+Given the fact that in the past already I have been taking my camera to locations where image material was needed for Wikipedia, this [contest](http://www.wikilovesmonuments.org/contest) offers the opportunity for a nice little project (something a more more focused but simly snapping pictures). Hence I am going to have a closer look at the available online resources, to get some ideas at what I could be pointing my lens.
+ 
+### Wenn der Kaffee nicht mehr schmeckt ###
+
+
+
+
+_Thu, 30. August 2012 -- 18:44_
+
+So wirklich toll ist dies ja nicht, was da an Meldungen in Sachen Java diese Woche an Land gespuelt wird; egal wohin man sich wendet, ueberall tauchen Berichte zu den oeffentlich gewordenen Sicherheitsluecken auf... und der Art und Weise, in welcher Oracle damit umgeht (oder auch auch nicht, je nach dem auf welchen Standpunkt man sich hier stellen mag). Nachdem ich am gestrigen Abend unseren Rechnern zuhause geschaut habe, waren heute mal die Maschinen bei der Arbeit an der Reihe; was ich dabei versucht habe sicherzustellen ist auch, dass die virtuellen Maschinen -- welche Windows XP, Debian und Ubuntu bereitstellen -- entsprechend konfiguriert sind. Da typischerweise auf jeder Platform gleich mehrere Brower laufen, dauert dies eine Weile, ehe man alle Programme durchgecheckt hat.
+
+Was ich aber in besonderer Weise interessant fand, waren die Meldungen, dass die Anfang der Woche oeffentlich gewordenen Sicherheitsluecken schon gut vier Monate bekannt waren; aber weder in der zurueckiegenden Zeit, noch in dieser Woche hat es irgendeine Stellungnahme seitens Oracle gegeben, was doch einige Fragen aufwirft. Wer sich den "Spass" erlaubt da mal ein wenig zu suchen, der wird noch einige Details finden, welche alles anderes als ein gutes Licht auf die Art und Weise werfen, in welcher der Konzern mit einem Problem umgeht, welches die ueberwiegende Anzahl aller Computer in privatem und beruflichem Bereich betreffen kann. Vielleicht wird da einfach mal faellig, dass es zu einer Schadensersatzklage kommt -- in den Vereinigten Staaten waere dies sicherlich denkbar.
+ 
+### Start in den Tag ###
+
+
+
+
+_Thu, 30. August 2012 -- 09:27_
+
+Da verschiebt sich alles ein wenig nach hinten; aufgrund der langen Tage in der laufenden Woche, habe ich heute Morgen einfach ein wenig mehr Zeit gebraucht, um aktiv zu werden. Mit einem grossen Becher Tee intus bin ich nun einigermassen unter den Lebenden und einigermassen aufnahmefaehig. Auf Dauer ist dies sicherlich kein Zustand, denn ich habe schon den Verdacht, dass es einfach nur wieder in einen weiteren Zyklus geht, welcher auf das identische Resultat hinauslaufen wird.
+ 
+### Nikon ViewNX2 2.5.0 ###
+
+tags: Photography Computing
+
+
+
+_Wed, 29. August 2012 -- 11:10_
+
+Das war wirklich ein faelliges Update! Als ich heute Morgen mal noch schnell auf die Mitteilungen des im Hintergrund laufenden _Nikon Messenger_ reagiert habe, konnte ich feststellen dass es ein Update fuer [Nikon ViewNX2](http://www.nikonusa.com/Nikon-Products/Product/Imaging-Software/NVNX2/ViewNX-2.html) gibt. Da ich dieses kostenlos von Nikon bereitgestellte Tools nach wie vor fest im meinen Arbeitsfluss integriert habe, kann es ja nicht schaden eventuelle Verbesserungen mitzunehmen und zu nutzen. Zuletzt hatte sich da allerdings ein Bug eingeschlichen, welchen ich schon ziemlich nervig fand und welcher das Leben schwer machte: beim Selektieren von Bilder unter Verwendung der Numbered Tags sprang die Anzeige stehts wieder zum Anfang einer Sammlung zurueck, so dass ich voellig aus dem Fluss kam. Fuer einen Vorgang wie die erste Selektion nach dem Import von Bildern von der Kamera war dies schon ein ziemliches Problem:
+
+  - Bilder von der Speicherkarte importieren.
+  - Wichtigste Metadaten und (wenn sofern nicht bereits vorhanden) GPS Informationen hinzufuegen.
+  - Unterscheidung zwischen Bildern fuer weitere Bearbeitung und Bildern fuer die Tonne.
+
+Um bei dem letzten Punkt nicht immer wieder die gleichen Bilder anzuschauen, sondern einfach die bereits eingeordneten Bildern auszublenden gibt es eine recht einfache Vorgehensweise: 
+
+![Filter attributes in Nikon ViewNX2](/blog/2012/2012-08/2012-08-29_viewnx2.png)
+
+In den Filtereinstellungen selektiere man die die Anzeige fuer alle nicht-markierten Bilder und ordne dann anschliessend Werte fuer "Bearbeiten" (_2_ in meinem Falle) oder "Loeschen" (_1_) zu; aufgrund des aktiven Filters tauchen dann nur noch die Bilder in der Anzeige auf, welche noch nicht eingeordnet wurden, was sehr nett ist um einen Ueberblick darueber zu kriegen wieviel man noch abarbeiten muss. Das normale Verhalten -- zumindest nach meiner Ansicht -- bei einer solchen Aktion waere, dass wenn ein Bild aus der momentanen Anzeige verschwinde, der Fokus zum nachfolgenden Bild weiterwandert; wenn man dem Benutzer besondere Wahlmoeglichkeiten an die Hand geben wollte, liesse sich das Verhalten natuerlich ueber das Konfigurationsmenue einstellen (Sprung zum vorhergehenden Bild, Sprung zum naechsten Bild, Sprung zum Begin der Bildreihe, etc.). Was sich aber bei einer der vorhergehenden Releases eingeschlichen hatte war der Fehler, dass immer ein Sprung an den Beginn der Bildreihe ausgefuehrt wurde; wenn man also noch Bilder hat, bei denen man ein wenig unentschlossen ist -- und diese dementsprechend nicht mit einem Tag versehen sind -- dann muss man sich wieder von vorne durch diese Bilder durchscrollen, ehe man an dem Punkt ankam, wo man sich zuletzt befunden hat. Das dies das Sortieren/Selektieren deutlich verlangsamt duerfte wohl einleuchten. Nun, die gute Nachricht ist: mit der 2.5.0 Release scheint dieser Fehler behoben zu sein! Ich habe eben mal schnell einen kleinen Test durchgefuehrt und in der Tat blieb der Sprung zurueck an den Anfang einer Dateiliste aus, so dass ich einfach weiter durch die Sammlung gehen konnte!
+
+Ok, es wird sicherlich noch eine Reihe weiterer Aenderungen geben -- dafuer muesste ich mir mal das Changelog anschauen -- aber fuer mich persoenlich ist dies eine der wichtigsten Features, welches nun endlich wieder funktionieren und mich zuegig mit meinen Bildern arbeiten lassen.
