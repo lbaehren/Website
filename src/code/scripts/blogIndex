@@ -302,7 +302,7 @@ writeRecentEntries ()
   for FILE in $varEntries
   {
     varTitle=`cat $varBasedir/$FILE | grep "title\:" | sed s/\#\#\{title\:\}\#\#// | sed s/"title\: "// | sed s/\"//g`
-    varText=`cat $varBasedir/$FILE | grep -v "title\:" | grep -v "author\:" | grep -v "menu\:" | sed s/"---"//`
+    varText=`cat $varBasedir/$FILE | grep -v "title\:" | grep -v "author\:" | grep -v "tags\:" | grep -v "menu\:" | sed s/"---"//`
     echo " "                   >> $varBasedir/index.page
     echo "### ${varTitle} ###" >> $varBasedir/index.page
     echo "${varText}"          >> $varBasedir/index.page

@@ -1,0 +1,16 @@
+---
+title: "OpenSuse 12.2 freigegeben"
+in_menu: false
+author: "Lars Baehren"
+tags: Computing OSS
+---
+
+##{title:}##
+
+_Wed, 05. September 2012 -- 15:13_
+
+Auch wenn ich zu einem frueheren Zeitpunkt schon einmal eine Beta gesehen hatte, so war mir das Release-Datum dann doch wieder entfallen; netterweise tauchte aber vor ein paar Minuten eine [Nachricht vom Heise Newsticker](http://www.heise.de/newsticker/meldung/Linux-Distribution-OpenSuse-12-2-freigegeben-1699582.html) in meiner Inbox auf, welcher ich dann umgehend gefolgt bin.
+
+> [openSUSE 12.2](http://de.opensuse.org/Portal:12.2) wird am 5. September 2012 veröffentlicht. Wie die zuvor im November 2011 erschienene Version 12.1 wird die 12.2 ein stabiles Betriebssystem mit modernem Desktop sein, das einige neue Systemwerkzeuge integrieren wird.
+
+Neben dem Durchlesen der diversen Hinweise zu Neuerungen habe ich mir natuerlich auch einmal sofort ein Installationsmedium geschnappt, um mir eine virtuelle Machine einzurichten; wie bereits von den diversen Vorgaengerversionen bekannt, verlaeuft die Installation recht problemlos (egal um man ein CD ISO-Image verwendet oder alles ueber das Netzwerk bezieht). Ich denke mal, dass ich mir (abweichend vom Vorgaenger) zusaetzlich noch die Variante mit dem [LXDE](http://de.opensuse.org/LXDE) Desktop anschauen werde; ich habe zwar nicht unbedingt etwas gegen [KDE](http://de.opensuse.org/KDE), aber die entwas abgespecktere Oberflaeche kommt mir von ihrem Grunddesign einfach etwas mehr entgegen.
