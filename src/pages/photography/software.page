@@ -23,3 +23,7 @@ author: Lars Baehren
 * [Droplet](https://github.com/fuxi83/Droplet) is an open-source project developed by [Stefan Brenner](http://www.stefanbrenner.com), designed for microcontroller-based high-speed photography, with the special emphasis on Droplet-Photography and Liquid Art.
 
 * [Raw Photo Processor](http://www.raw-photo-processor.com) (RPP) is a Raw converter for Mac OS X (10.4, 10.5, 10.6 and 10.7 only), supporting almost all available digital Raw formats made for photographers by a photographer-software engineer.
+
+## Data formats ##
+
+* [Description of Exif file format](http://www.media.mit.edu/pia/Research/deepview/exif.html)

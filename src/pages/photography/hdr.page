@@ -1,0 +1,41 @@
+---
+title: "HDR Photography"
+in_menu: true
+author: Lars Baehren
+tags: Photography
+---
+
+## {title:} ##
+
+### Workflow ###
+
+Camera setup:
+
+  - Set camera to RAW modus.
+  - Clean lens and image sensor.
+  - Take dust reference photo, for later substraction.
+  - Activate shutter delay, to reduce vibrations originating from flipping mirror.
+  - Set Picture control to a neutral setting. (Nikon)
+  - Set autobracketing, typically 5 steps with -2, -1, 0, +1, +2 EV.
+  - Activate _Interval timer shooting_ with 5 frames per instance.
+
+RAW processing:
+
+  - Set Picture control to a neutral setting, if not done in camera.
+  - Correction for chromatic aberration.
+  - Substraction of dust reference picture.
+  - Export images as 16bit TIFF.
+
+HDR processing:
+
+
+
+### Tutorials ###
+
+  * [HDR Software overview](http://wiki.panotools.org/HDR_Software_overview)
+  * The [HDR Cookbook](http://farbspiel-photo.com/learn/hdr-cookbook) (Author: Klaus Hermann) is a free collection of practical, in-depth tutorials on High Dynamic Range (HDR) photography and some variants like HDR Panorama and Vertorama photography. It extends far beyond the contents of many websites and books on this subject by giving hands-on information on professional shooting and post-processing techniques.
+  * [HDR for the Rest of Us](http://www.dpreview.com/articles/1944596440/hdr-for-the-rest-of-us) (Author:  Rick Sammon) Most of us think of HDR images as surreal creations that bear little resemblance to the 'real' world. Rick Sammon shows how it is possible to reap the benefits of capturing an extended dynamic range in a more natural-looking image.
+
+### Software ###
+
+  * [Luminance HDR](http://qtpfsgui.sourceforge.net) is an open source graphical user interface application that aims to provide a workflow for HDR imaging.
