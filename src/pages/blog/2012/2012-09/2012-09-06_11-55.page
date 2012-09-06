@@ -1,0 +1,16 @@
+---
+title: "XML is like violence"
+in_menu: false
+author: "Lars Baehren"
+tags: Computing Development
+---
+
+##{title:}##
+
+_Thu, 06. September 2012 -- 11:55_
+
+That has got to my quote for the day:
+
+> XML is like violence - if it doesn’t solve your problems, you are not using enough of it.
+
+This statement I found on the website of [Nokogiri](http://nokogiri.org) -- a HTML, XML, SAX, & Reader parser with the ability to search documents via XPath or CSS3 selectors. Since lately I have been spending some time in getting to know the various methods to parse and emit [XML](http://www.w3.org/TR/xml) data -- mainly because this is the primary format in which data dumps from various databases are being provided to the prometheus digital image archive -- I have been paying some additional attention to some of the posts on the _ruby-talk_ mailing list; when this morning a question about parsing downloaded HTML showed up, this immediately triggered me jumping into the article. The answer to the question contained a link to the [Nokogiri](http://nokogiri.org) website, more specifically a link to one of the documentation pages... which contained a [parsing_an_html_xml_document.html](http://nokogiri.org/tutorials/parsing_an_html_xml_document.html) bit in the URL, hence the interest.
