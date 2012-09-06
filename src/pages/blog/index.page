@@ -5,7 +5,156 @@ author: Lars Baehren
 tags: Blog
 ---
  
-## {title:} ##
+# {title:} #
+ 
+**:::**
+ 
+### XML is like violence ###
+
+
+
+
+_Thu, 06. September 2012 -- 11:55_
+
+That has got to my quote for the day:
+
+> XML is like violence - if it doesn’t solve your problems, you are not using enough of it.
+
+This statement I found on the website of [Nokogiri](http://nokogiri.org) -- a HTML, XML, SAX, & Reader parser with the ability to search documents via XPath or CSS3 selectors. Since lately I have been spending some time in getting to know the various methods to parse and emit [XML](http://www.w3.org/TR/xml) data -- mainly because this is the primary format in which data dumps from various databases are being provided to the prometheus digital image archive -- I have been paying some additional attention to some of the posts on the _ruby-talk_ mailing list; when this morning a question about parsing downloaded HTML showed up, this immediately triggered me jumping into the article. The answer to the question contained a link to the [Nokogiri](http://nokogiri.org) website, more specifically a link to one of the documentation pages... which contained a [parsing_an_html_xml_document.html](http://nokogiri.org/tutorials/parsing_an_html_xml_document.html) bit in the URL, hence the interest.
+ 
+**:::**
+ 
+ 
+### OpenSuse 12.2 freigegeben ###
+
+
+
+
+_Wed, 05. September 2012 -- 15:13_
+
+Auch wenn ich zu einem frueheren Zeitpunkt schon einmal eine Beta gesehen hatte, so war mir das Release-Datum dann doch wieder entfallen; netterweise tauchte aber vor ein paar Minuten eine [Nachricht vom Heise Newsticker](http://www.heise.de/newsticker/meldung/Linux-Distribution-OpenSuse-12-2-freigegeben-1699582.html) in meiner Inbox auf, welcher ich dann umgehend gefolgt bin.
+
+> [openSUSE 12.2](http://de.opensuse.org/Portal:12.2) wird am 5. September 2012 veröffentlicht. Wie die zuvor im November 2011 erschienene Version 12.1 wird die 12.2 ein stabiles Betriebssystem mit modernem Desktop sein, das einige neue Systemwerkzeuge integrieren wird.
+
+Neben dem Durchlesen der diversen Hinweise zu Neuerungen habe ich mir natuerlich auch einmal sofort ein Installationsmedium geschnappt, um mir eine virtuelle Machine einzurichten; wie bereits von den diversen Vorgaengerversionen bekannt, verlaeuft die Installation recht problemlos (egal um man ein CD ISO-Image verwendet oder alles ueber das Netzwerk bezieht). Ich denke mal, dass ich mir (abweichend vom Vorgaenger) zusaetzlich noch die Variante mit dem [LXDE](http://de.opensuse.org/LXDE) Desktop anschauen werde; ich habe zwar nicht unbedingt etwas gegen [KDE](http://de.opensuse.org/KDE), aber die entwas abgespecktere Oberflaeche kommt mir von ihrem Grunddesign einfach etwas mehr entgegen.
+ 
+**:::**
+ 
+ 
+### Bonn in HDR (2) ###
+
+
+
+
+_Wed, 05. September 2012 -- 09:41_
+
+Nach [einer ersten Vorstellung](/blog/2012/2012-09/2012-09-04_19-03.html) der Einsiedlerkapelle St. Antonius bei Mondorf haette ich hier noch einen weiteren Beitrag; waehrend das vorhergehende Bild ein nettes Detail bietet, wollte ich natuerlich auch noch ein paar Aufnahmen machen, welche etwas mehr einen Gesamteindruck vermitteln.
+
+![Kapelle am Mondorfer See](/blog/2012/2012-09/hdr_20120902_125342_chapel.jpg)
+
+Mit dem etwas weiteren Blickwinkel duerften die Groessenverhaeltnisse ein wenig deutlicher werden: schaut man sich die umgebenden Baeume und in der Naehe liegenden Steine an, laesst sich recht gut erahnen, wie winzig das Kirchengebaeude ist.
+
+Da die am vergangenen Wochenende gemachten Bilder doch recht gut geworden sind, habe ich mal damit begonnen mich ein wenig umzuschauen, ob ich diese nicht in sinnvoller Weise verwenden kann. So hatte ich zum Beispiel schon einmal auf Wikipedia nachgeschaut, ob dort eine Beschreibung (mit Bild) zu finden ist; was ich da gesehen habe scheint mir einfach nach einer Verbesserung zu schreien, denn sonderlich viel war auf dem dort zu findenden Bild nicht zu erkennen. Vom Grundsatz her passt dies natuerlich recht gut zu dem bereits erwaehnten [Wiki Loves Monuments](/blog/2012/2012-08/2012-08-31_08-56.html) Wettbewerb, so dass ich -- nach einer Kontrolle der Metadaten -- das Bild mit Sicherheits zu Verfuegung stellen werde.
+ 
+**:::**
+ 
+ 
+### Geschafft ###
+
+
+
+
+_Wed, 05. September 2012 -- 08:43_
+
+Das ging dann ja doch recht schnell: meinem Bauchgefuehl folgend, dass ich doch recht zuegig durch die einzelnen Kapitel von "The Camino" kam, hatte ich mal noch die Gesamtlaufzeit kontrolliert -- wie ich feststellen konnte hat das Hoerbuch gerade einmal eine Laufzeit von etwas ueber fuenf Stunden, so dass die Zeit nach dem Aufstehen heute morgen ausreichend war, die letzten beiden Abschniite noch zu hoeren. Damit haette ich also das Buch hinter mir!
+
+Der bereits [beschriebene Eindruck](/blog/2012/2012-09/2012-09-04_20-58.html) hat sich auch bei den verbliebenen Kapiteln nicht mehr geaendert: mit der Pilgerreise auf dem Jacobsweg hat das Buch von Shirley Mclaine meiner Ansicht nach nur recht wenig zu tun. Vielmehr kommt mir dies einfach nur als ein Aufhaenger vor, um sich seitenlang ueber versunkene Hochkulturen (vor allen Dingen Atlantis), vergangene Leben und den Einfluss von Ausserirdischen auf die Entwicklung des Lebens auf der Erde auszulassen. In wie weit sich dies ernst nehmen lassen kann, sei einmal dahingestellt, so dass bei meiner frueheren Einschaetzung bleibe: wer etwas ueber die Pilgerreise auf dem Jacobsweg lesen will, sollte lieber das Buch von Hape Kerkeling zur Hand nehmen.
+ 
+**:::**
+ 
+ 
+### Lärmschützer ###
+
+
+
+
+_Wed, 05. September 2012 -- 00:28_
+
+Das ist wieder einmal einer jener Begriffe bei welchem man sich ein wenig wundern darf, was denn nun eigentlich gemeint ist. Zugegeben, ich kann mir schon denken, was die Autoren des [WDR](http://www1.wdr.de) in ihrem [Artikel](http://www1.wdr.de/themen/politik/nachtflugverbot146.html) sagen wollten, aber die Wortwahl laesst -- man es genau ueberlegt -- ein wenig Interpretationsfreiraum.
+
+> Seit Jahren schon gibt es Streit um den zweitgrößten Flughafen in NRW: Anwohner protestieren und prozessieren gegen den nächtlichen Fluglärm durch Fracht- und Passagierflugzeuge. Mit der Entscheidung für ein Nachtflugverbot im Passagierverkehr zwischen Mitternacht und 05.00 Uhr morgens löste die rot-grüne Landesregierung Mitte April 2012 ein wichtiges Wahlversprechen ein. Das Verbot hätte nach Angaben des Flughafens etwa 6.000 Starts und Landungen im Jahr betroffen.
+
+Ein wenig weiter unten findet sich dann die Abschnittsueberschrift:
+
+> Lärmschützer waren vor Gericht gescheitert
+
+Da frage ich mich doch ein wenig, um was fuer eine Person es sich denn hierbei handelt:
+
+  - Ist es jemand, der versucht den Laerm vor ihn aus der Welt schaffenden Zugriffen zu schuetzen?
+  - Oder doch einfach nur jemand, der probiert z.B Anwohner vor der Geraeuschkulisse des Flughafens zu bewahren?
+
+Nun ja, wie ich bereits erwaehnte: ich kann mir mit ziemlicher Sicherheit denken, was gemeint ist, aber die Wortwahl ist eben nicht so 100%ig eindeutig.
+ 
+**:::**
+ 
+ 
+### Abgekappt ###
+
+
+
+
+_Tue, 04. September 2012 -- 21:05_
+
+Da ich in den vergangenen Tagen schon nicht mehr die geschriebenen Blog-Eintraege fuer die derzeit noch bei [ASTRON](http://www.astron.nl) laufende Dokuwiki aufbereitet habe, ist nun auch im die Eintraege erzeugenden Script die Nabelschnur gekappt. Was auch immer seit Beginn September an neuen Texten entsteht, geht direkt in die neue Website, auch wenn diese noch ein klein wenig brauchen wird um online zu gehen. Wenn ich mir aber allein schon mal die Seiten so anschaue, dann habe ich einfach das Gefuehl, dass ich aus der alten Platform (zumindest fuer diesen Zweck) herausgewachsen bin -- da noch zweigleisig fahren erscheint mir unsinnig und haelt mich nur davon ab mich voll und ganz darauf zu konzentieren die noch verbleibenden Probleme mit der neuen Version auszuraeumen.
+ 
+**:::**
+ 
+ 
+### The Camino: A Pilgrimage of Courage ###
+
+
+
+
+_Tue, 04. September 2012 -- 20:58_
+
+Habe ich immer wieder von gehoert, so dass es einfach mal an der Zeit war mir selber eine Meinung zu bilden: "The Camino" von [Shirley Mclaine](http://www.shirleymaclaine.com) ist eines jener immer wieder aufgefuehrten Buecher, wenn es um Beschreibungen der Pilgerreise auf dem Jacobsweg geht. Auch in dem Reisetagebuch von Hape Kerkeling ("Ich bin dann mal weg"), welches ich ja regelrecht verschlungen hatte, fand sich ein Verweise auf die Aufzeichnungen der Schauspielerin -- Grund genug also, um mal reinzuschauen, was es denn damit auf sich hat.
+
+Als ich am Wochenende mal eine kleine Pause in meinem _FX-Show_ Podcast Marathon machen wollte, fiel meine Aufmerksamkeit wieder auf das Hoerbuch, welches sich ja schon eine Weile in meiner Sammlung befunden hatte -- warum dann also nicht mal reinhoeren. Die erste (wenn auch nur kleine Enttaeuschung) war, dass es sich bei dem Hoerbuch, entgegen dem was der Titel versprach, um eine deutschsprachige Fassung handelte. Da gibt es sicherlich schlimmeres, aber im Original waere mir natuerlich lieber gewesen. Viel entscheidender ist aber was das Buch inhaltlich zu bieten hat: wuerde man -- wie es der Titel vermuten laesst -- eine Beschreibung der Wanderung auf dem Jacobsweges erwarten, dann wird man doch herb enttaeuscht: die dementsprechenden Schilderungen nehmen nur einen vergleichsweise kleinen Teil des Buches ein. Viel umfangreicher sind hingegen die Erzaehlungen ueber die Besiedlung der Erde durch Ausserirdische und eine sich ueber Millionen Jahre erstreckende Folge vorheriger Leben... natuerlich mit einer Episode in der versunkenen Stadt Atlantis. Das muesste ich mir echt einmal den Spass erlauben und eine Passage zitieren, damit man sich selber ein Bild machen kann -- aufgrund der Menge wuerde man da aber wahrscheinlich selbst bei einer Besprechung an die Grenzen des "Fair Use" zu geraten, weil die Schilderungen einfach so umfangreich sind. Kleines Bespiel? Eine der Personen, welcher Mclaine auf ihrer Wanderung begegnet, wird ganz klar als Inkarnation von Karl dem Grossen und spaeter von Olaf Palme identifiziert. Was ich von derartigen Schilderungen halten soll lasse ich mal dahingestellt -- mit dem Jacobsweg hat dies aber nur sehr, sehr bedingt etwas zu tun; vielmehr scheint es mir, dass der Kontext nur den Rahmen fuer eine recht ausladende Science-Fiction Geschichte hergibt. Einfach nur ein Marketing Gag, um neue Leser zu gewinnen? Keine Ahnung. Wer wirklich eine Schilderungen der Pilderwanderung haben will, der sollte lieber das Buch von Kerkeling zur Hand nehmen: da steckt ungleich mehr menschliche Erfahrung drin -- das Buch von Mclaine reicht leider nur zum permanenten Kopfschuetteln.
+ 
+**:::**
+ 
+ 
+### Bonn in HDR (1) ###
+
+
+
+
+_Tue, 04. September 2012 -- 19:03_
+
+Im Anschluss an den vorhergehenden Beitrag sollt ich vielleicht auch einmal damit anfangen einen Teil der Bilder vorzustellen, welche ich bei meinen Exkursionen eingesammelt habe. Fangen wir daher also mit einer Aufnahme an, welche ich am zurueckliegenden Sonntag aufgenommen habe:
+
+![Kapelle am Mondorfer See](/blog/2012/2012-09/hdr_20120902_125501_chapel.jpg)
+
+Diese Kirche in Miniaturformat steht in der Naehe des Mondorfer See -- in einem kleinen Waldstueck am Rande des Gelaendes, auf welchen Kies und Sand abgebaut wird:
+
+> Unter preußischer Verwaltung entstanden weitere Sehenswürdigkeiten in Kriegsdorf. Neben der alten Schule von anno 1868 wurde 1908 die Einsiedlerkapelle St. Antonius errichtet, ein kleines Kirchgebäude im neoromanischen Stil in der Reichensteinstraße. Unweit der Einsiedlerkapelle, an der Ecke zum Amselweg, steht außerdem das Antoniuskreuz, ein Wegekreuz von 1925.
+
+Ist schon eine Weile her, dass ich im Zuge einer kleinen Fahrradtour vom Wellpoint aus jenen weissen Farbtupfer im umgebenden Gruen der Wiesen entdeckt habe; auch wenn ich bei der Gelegenheit die Kamera dabei hatte, so beschlich mich mittlerweile das Gefuehl, dass ich da doch mit deutlich besseren Bildern zurueck nach Hause kommen koennte. Folgerichtig habe ich am Sonntag daran gedacht zumindet das kleine (flexible) Stativ mitzunehmen, um gleich mehrere Bilder bei laengeren Belichtungszeiten machen zu koennen; worum es mir bei dieser Aktion vor allen Dingen geht ist die Erstellung von HDR Bildern -- eine Technik, mit welcher ein viel groesser dynamischer Bereich (also Unterschiede zwischen Hell- und Dunkeltoenen) abdecken laesst, als dies mit einer einzigen Aufnahme der Fall waere. Da die Aussenwand der Kapelle durch ihre weisse Farbe extrem hell im Sonnenlicht strahlt, die umherstehenden Baeume aber dunkle Schatten werfen, ist also ein kleiner Kunstgriff noetig, um die volle Bandbreite an Farbtoenen einzufangen. Das Resultat (oder sollte ich eher sagen: eines der Resultate) finde ich laesst sich durchaus sehen.
+ 
+**:::**
+ 
+ 
+### Auf dem Weg zum Sport ###
+
+
+
+
+_Tue, 04. September 2012 -- 16:25_
+
+Da bin ich also wieder auf dem Weg zum Sport. Aufgrund der verkehrstechnischen Anbindung faellt der Dienstag immer ein wenig kuezrer aus, weil ich so gegen viertel nach vier aus dem Buero verschwinden muss, um rechtzeitig im Wellpoint einzutreffen. Ist halt doch immer noch eine kleine Weltreise, vergliechen mit der ansonsten so vielgeliebten Fahrradtour von zu Hause aus. Sicher, das koennte ich natuerlich auch einmal testen -- auf der Liste der zu erkundenen Routen steht dies ja immer noch -- aber da muesste ich mich dann in der Tat noch einmal extra zu aufraffen. So aber werde ich erst einmal wieder die vertraute Kombination von Zug und Schnellbus verwenden... und hoffen dass mich ersterer nicht versetzt.
+ 
+**:::**
+ 
  
 ### Einen Schritt weiter ###
 
@@ -18,6 +167,9 @@ Das hat mir hat immer noch gefehlt, um die sich im Aufbau befindliche Website Li
 
 Um diese Luecke endlich mal noch zu fuellen, habe ich die Fahrt von Bonn nach Koeln heute Morgen dazu genutzt die entsprechende Funktionalitaet zu implementieren, s dass sich die Startseite jetzt automatisch aktualisieren laesst; ich muss dies zwar noch mit dem Script fuer die Erstellung eines neuen Blog Eintrages koppeln, aber zumindest werden schon einmal alle benotigte Index-Seiten in einem Zuge erstellt (das ist ja schliesslich etwas, das man nicht von Hand machen moechte). Das Resultat sieht schon einmal brauchbar aus, auch wenn ich mir sicherlich noch einmal den Code vornehmen muss, um diesen ein wenig aufzuraeumen; es geht hier zwar nicht darum irgendwelche Schoenheitspreise zu gewinnen, aber da ich die Infrastruktur schon auf Dauer anlegen will, macht es wenig Sinn da einfach nur eine lose Sammlung von irgendwelchen wuest zusammengestrickten Scripten herumliegen zu haben.
  
+**:::**
+ 
+ 
 ### Bonn Flickr Group ###
 
 
@@ -26,6 +178,9 @@ Um diese Luecke endlich mal noch zu fuellen, habe ich die Fahrt von Bonn nach Ko
 _Mon, 03. September 2012 -- 18:17_
 
 Da ich ja dort meine Zelte aufgeschlagen habe und dementsprechend die Gegend mit der Kamera unsicher mache, war es eigentlich nur ein logischer Schritt, dass ich mich eben mal noch in die [Bonn](http://www.flickr.com/groups/bonn) Flickr Group eingeklinkt habe. Auch wenn ich bisher noch nicht sonderlich konsequent in der Erkundung gewesen bin -- zumindest nicht in einer systematischen Weise, wie ich dies in Amsterdam betrieben habe -- so sammelt sich langsam einiges an lokalem Bildmaterial an; statt also einfach nur wahllos loszulaufen oder mich alleine an Karten zu orientieren, schnappe ich mir einfach auch mal Eindruecke anderer Photographiebegeisterter -- dies befindet sich dann einfach viel naeher an dem, was ich dann anschliessend mit den eigenen Augen wahrnehmen kann (auch wenn dies natuerlich nur ein Ausgangspunkt ist, von welchem aus ich dann meine eigene Erkundung starte). Wenn sich darueber hinaus mit der Zeit aber auch noch ein paar Kontakte in Sachen Photographie ergeben, ist dies natuerlich ein nettes Extra...
+ 
+**:::**
+ 
  
 ### Blind Judoka ###
 
@@ -40,115 +195,5 @@ Angesichts der Tatsache, dass derzeit ja noch die Paralympics in London stattfin
 
 Teil meiner woechentlichen Podcast Rotation, wie ja schon einmal angemerkt, ist [The RC](http://www.fxguide.com/therc) (Your guide to digital cinema, filmmaking and cutting edge imaging), eine Production des [fxguide](http://www.fxguide.com) Teams. Waehrend die Episoden typischerweise einen recht starken technischen Anteil haben, so ist die Interview-Section eher reserviert fuer den Blick hinter die Kulissen von ausgewaehlten Prouktionen; das soll jetzt nicht heissen, dass technische Aspekte vollkommen ausgespart werden (im Gegenteil, wenn dies fuer die Realisierung des Projektes wichtig war, dann ist dies Teil der Diskussion), aber der Fokus liegt ganz klar auf dem Storytelling und dem kreativen Prozess. Eine Gelegenheit, bei welcher die verschiedenen Aspekte auf recht interessante Weise zusammenkam, war in [Episode 117](http://www.fxguide.com/therc/the-rc-117-nurses-judo-and-bmc) ("Nurses, Judo and BMC"): im Interview mit Filmemacher Jim Geduldick wurde _Blind Judoka_ vorgestellt, die mehrteilige Dokumentation ueber die amerikanische Athletin Jordan Mouton, welche nach dem Verlust ihres Augenlichtes fuer den Judo-Wettkampf bei den Paralympics zu trainieren. Waehrend dies zweifelsfrei eine bewegende menschliche Geschichte ist, sind hier auf die cinematographischen Aspekte nennenswert: durch Verwendung der Phantom Miro Kamera ist es gelungen die Trainings- und Kampfsequenzen bei extrem hohen Frameraten einzufangen, so dass diese bei anschliessendem Abspielen bei geringeren Geschwindigkeiten die Feinheiten in den Bewegungen sichtbar werden lassen. Wie von Jim angedeutet hat Judo durchaus ein etwas von Tanzen; das Gegen- und Miteinander der Kontrahenten beruht sehr stark auf einem Gefuehl fuer minimale Veraenderungen in der Koerperhaltung (und -spannung) des Gegenueber -- im normalen Ablauf ist dies fuer den Betrachter kaum sichtbar, aber mit High-Speed Kameras aufgenommen laesst sich dies auf beeindruckende Weise sichtbar machen. Sehenswert!
  
-### Der senile Mann und der Hocker ###
-
-
-
-
-_Fri, 31. August 2012 -- 15:51_
-
-Manchmal haelt das reale Leben -- falls man denn den amerikanischen Wahlkampf in diese Kategorie einordnen kann -- seine ganz eigene Comedy bereit:
-
-> Der US-amerikanische Schauspieler, Regisseur und Lokalpolitiker Clint Eastwood hat gestern eine merkwürdige Rede gehalten. Die Organisatoren des Republikaner-Parteitags hatten ihn als Sprecher geladen, er sollte direkt vor dem Auftritt des Präsidentschaftskandidaten Mitt Romney zu den Delegierten in Tampa sprechen. Eastwood redete frei und ohne erkennbares Skript. Das hätte – in Zeiten der Überinszenierung im Politikbetrieb – erfrischend sein können.  War es aber nicht.
->
-> Der 82-Jährige sprach zu einem leeren Hocker auf der Bühne und tat, als ob Präsident Barack Obama darauf säße.  Eastwood schien in einer Zwiesprache mit dem Präsidenten zu sein: Er belehrte den nicht vorhandenen Obama über dessen Fehler im Präsidentenamt. Die Darbietung war bizarr und surreal; mitleiderregend war an Eastwoods Auftritt das Bild des geistigen Verfalls, das er bot. Kein Wunder, dass Obamas Sprecher Ben LaBolt alle Anfragen “an Salvador Dali” weiterleiten will.
-
-Ich denke mal surreal ist durchaus die richtige Bezeichnung -- muss man sich einfach selber angeschaut haben. Das Video gibt es bei [tagesschau.de](http://blog.tagesschau.de/2012/08/31/der-senile-mann-und-der-hocker) oder auf [YouTube](http://www.youtube.com) zu finden. Weitere Reaktionen dazu finden zu schon den ganzen Tag ueber aus sozielen Netzwerken wie Google+ (ich denke mal auf den anderen Kanaelen duerfte es nicht viel anders sein).
+**:::**
  
-### 1086 Unterschriften ###
-
-
-
-
-_Fri, 31. August 2012 -- 10:49_
-
-Da ist sie nun also abgelaufen: die [Online Petition](https://www.openpetition.de/petition/online/fuer-uneingeschraenkten-zugriff-auf-reproduktionen-der-werke-von-joan-mir-fuer-forschung-und-lehre) "Für uneingeschränkten Zugriff auf Reproduktionen der Werke von Joan Miró für Forschung und Lehre" ist bei einem Zaehlerstand von 1086 Unterschriften zum Ende gekommen.
-
-![Statistik Petition](/blog/2012/2012-08/2012-08-31_petition_miro.png)
-
-Wie man anhand der Statistik sehen kann gab es zwar immer noch einen stetigen Anstieg in der Anzahl der Unterzeichner, aber der grosse Sprung nach dem Newsletter ueber die [prometheus](http://www.prometheus-bildarchiv.de) Mailing-Liste liess sich nicht wiederholen. Wnn es einen leicht unsicheren Faktor in der Sache gab, dann war es durchaus die Frage, wie gross denn ueberhaupt das Potential fuer eine derartige Petition ist: sicherlich kann man die Anzahl an _prometheus_ Benutzern als eine Basis fuer Kalkulationen nehmen, aber alles was darueber hinausgeht faende ich sehr schwer einzuschaetzen.
-
-Und was passiert nun? So 100%ig sicher ist dies noch nicht, aber klar ist natuerlich, dass die Petition der [Fundació Joan Miró](http://www.fundaciomiro-bcn.org) zugestellt werden muss, um wieder einen Zugriff auf Reproduktionen fuer Forschung und Lehre zu ermoeglichen. Die Wege, auf welchen eine solche Zustellung geschehen kann sind vielfaeltig, so dass es natuerlich Sinn macht da noch einmal ein wenig zu ueberlegen, auf welche Weise sich die Chancen fuer einen Erfolg der Petition maximieren lassen.
- 
-### Preisgestaltung ###
-
-
-
-
-_Fri, 31. August 2012 -- 10:01_
-
-Im Zuge des Gerichtsprozesses zwischen [Apple](http://www.apple.com) und [Samsung](http://www.samsung.com) tauchte dies immer wieder einmal in der einen oder anderen Weise auf: Im Vorfeld hatte es Verhandlungen zwischen beiden Konzernen gegeben, bei welchen die Moeglichkeiten fuer eine Lizensierung ausgelotet wurden. Wenn ich mir aber den von Apple verlangten Preis anschaue, dann kann ich durchaus verstehen, wenn Samsung nicht sonderlich geneigt war sich auf einen [solchen Deal](http://www.heise.de/newsticker/meldung/Patentstreit-um-Android-Gespraeche-zwischen-Apple-und-Google-1696179.html) einzulassen:
-
-> Wie aus dem Verfahren gegen Samsung hervorging, verlangt Apple für eine umfassende Lizenz auf seine Patente 24 Dollar pro Smartphone. Zugleich gibt es Rabatte und gegenseitige Verrechnungen, die den Preis in vielen Fällen etwas senken.
-
-Dass die Kostenkalkulationen bei Apple recht grosse Gewinnspannen zu erlauben scheinen ist nicht wirklich neu, da duerften auch bei dem zurueckliegenden Prozess noch einmal ein paar Informationen auf den Tisch gekommen sein. Wenn ich aber von anderen Herstellern eine Lizenzgebuehr von 24 Dollar pro Smartphone verlange, kann ich mir noch schwerlich virstellen, dass dies ohne Auswirkung auf die Marktpreise bleibt. In wie weit dies dann zum Vorteil der Konsumenten ist, darueber darf dann mal spekuliert werden.
- 
-### Wiki Loves Monuments 2012 ###
-
-tags: Photography
-
-
-
-_Fri, 31. August 2012 -- 08:56_
-
-That has got to be of insterest, if you are into photography and open contents:
-
-> Wikipedia has launched what it calls 'the world's largest photo contest' to increase the number of images of historic sites in its image database - Wikimedia Commons. The contest, called 'Wiki Loves Monuments 2012' will run throughout September 2012, with the best entry receiving a photo tour of Hong Kong, coinciding with the Wikimania 2013 conference. Wikipedia has run photographic competitions before, but this is the biggest yet, and will involve volunteers from more than 30 countries.
-
-The news about this contest arrived through an [article in dpreview.com](http://www.dpreview.com/news/2012/08/30/wikipedia-launches-historic-monuments-photo-contest-to-expand-commons), one of the sources I have been subscribing to, in order to keep track of some of the events in the photography world. Whether or not the competition is the driving bit for you to participate is one thing -- for Wikimedia Commons the most important part is that the images are construbutes under a free license:
-
-> All images must be uploaded to the [Wikimedia Commons](http://commons.wikimedia.org) under a free license, which means that they will be available free of charge, for use by anybody, for any purpose, as long as the photographer is credited.
-
-Following up on the information presented in the article, the next obvious plave to check is the [website for the competition](http://www.wikilovesmonuments.org) itself:
-
-> Wiki Loves Monuments is an international photo contest around cultural heritage monuments in September. Starting from the Netherlands in 2010 and organized on a European level in 2011, we go global in 2012!
->
-> Everybody can participate and improve Wikipedia in their local and regional neigbourhood. Cultural heritage is everywhere around you, you just need to look and learn!
->
-> In every participating country you can win awards, and the best photos in each country continues to the international jury – which will select the best monument photos in 2012.
->
-> Make sure to [keep track of this blog](http://www.wikilovesmonuments.org) for more information, updates and glimpses how things are going in other countries!
-
-Given the fact that in the past already I have been taking my camera to locations where image material was needed for Wikipedia, this [contest](http://www.wikilovesmonuments.org/contest) offers the opportunity for a nice little project (something a more more focused but simly snapping pictures). Hence I am going to have a closer look at the available online resources, to get some ideas at what I could be pointing my lens.
- 
-### Wenn der Kaffee nicht mehr schmeckt ###
-
-
-
-
-_Thu, 30. August 2012 -- 18:44_
-
-So wirklich toll ist dies ja nicht, was da an Meldungen in Sachen Java diese Woche an Land gespuelt wird; egal wohin man sich wendet, ueberall tauchen Berichte zu den oeffentlich gewordenen Sicherheitsluecken auf... und der Art und Weise, in welcher Oracle damit umgeht (oder auch auch nicht, je nach dem auf welchen Standpunkt man sich hier stellen mag). Nachdem ich am gestrigen Abend unseren Rechnern zuhause geschaut habe, waren heute mal die Maschinen bei der Arbeit an der Reihe; was ich dabei versucht habe sicherzustellen ist auch, dass die virtuellen Maschinen -- welche Windows XP, Debian und Ubuntu bereitstellen -- entsprechend konfiguriert sind. Da typischerweise auf jeder Platform gleich mehrere Brower laufen, dauert dies eine Weile, ehe man alle Programme durchgecheckt hat.
-
-Was ich aber in besonderer Weise interessant fand, waren die Meldungen, dass die Anfang der Woche oeffentlich gewordenen Sicherheitsluecken schon gut vier Monate bekannt waren; aber weder in der zurueckiegenden Zeit, noch in dieser Woche hat es irgendeine Stellungnahme seitens Oracle gegeben, was doch einige Fragen aufwirft. Wer sich den "Spass" erlaubt da mal ein wenig zu suchen, der wird noch einige Details finden, welche alles anderes als ein gutes Licht auf die Art und Weise werfen, in welcher der Konzern mit einem Problem umgeht, welches die ueberwiegende Anzahl aller Computer in privatem und beruflichem Bereich betreffen kann. Vielleicht wird da einfach mal faellig, dass es zu einer Schadensersatzklage kommt -- in den Vereinigten Staaten waere dies sicherlich denkbar.
- 
-### Start in den Tag ###
-
-
-
-
-_Thu, 30. August 2012 -- 09:27_
-
-Da verschiebt sich alles ein wenig nach hinten; aufgrund der langen Tage in der laufenden Woche, habe ich heute Morgen einfach ein wenig mehr Zeit gebraucht, um aktiv zu werden. Mit einem grossen Becher Tee intus bin ich nun einigermassen unter den Lebenden und einigermassen aufnahmefaehig. Auf Dauer ist dies sicherlich kein Zustand, denn ich habe schon den Verdacht, dass es einfach nur wieder in einen weiteren Zyklus geht, welcher auf das identische Resultat hinauslaufen wird.
- 
-### Nikon ViewNX2 2.5.0 ###
-
-tags: Photography Computing
-
-
-
-_Wed, 29. August 2012 -- 11:10_
-
-Das war wirklich ein faelliges Update! Als ich heute Morgen mal noch schnell auf die Mitteilungen des im Hintergrund laufenden _Nikon Messenger_ reagiert habe, konnte ich feststellen dass es ein Update fuer [Nikon ViewNX2](http://www.nikonusa.com/Nikon-Products/Product/Imaging-Software/NVNX2/ViewNX-2.html) gibt. Da ich dieses kostenlos von Nikon bereitgestellte Tools nach wie vor fest im meinen Arbeitsfluss integriert habe, kann es ja nicht schaden eventuelle Verbesserungen mitzunehmen und zu nutzen. Zuletzt hatte sich da allerdings ein Bug eingeschlichen, welchen ich schon ziemlich nervig fand und welcher das Leben schwer machte: beim Selektieren von Bilder unter Verwendung der Numbered Tags sprang die Anzeige stehts wieder zum Anfang einer Sammlung zurueck, so dass ich voellig aus dem Fluss kam. Fuer einen Vorgang wie die erste Selektion nach dem Import von Bildern von der Kamera war dies schon ein ziemliches Problem:
-
-  - Bilder von der Speicherkarte importieren.
-  - Wichtigste Metadaten und (wenn sofern nicht bereits vorhanden) GPS Informationen hinzufuegen.
-  - Unterscheidung zwischen Bildern fuer weitere Bearbeitung und Bildern fuer die Tonne.
-
-Um bei dem letzten Punkt nicht immer wieder die gleichen Bilder anzuschauen, sondern einfach die bereits eingeordneten Bildern auszublenden gibt es eine recht einfache Vorgehensweise: 
-
-![Filter attributes in Nikon ViewNX2](/blog/2012/2012-08/2012-08-29_viewnx2.png)
-
-In den Filtereinstellungen selektiere man die die Anzeige fuer alle nicht-markierten Bilder und ordne dann anschliessend Werte fuer "Bearbeiten" (_2_ in meinem Falle) oder "Loeschen" (_1_) zu; aufgrund des aktiven Filters tauchen dann nur noch die Bilder in der Anzeige auf, welche noch nicht eingeordnet wurden, was sehr nett ist um einen Ueberblick darueber zu kriegen wieviel man noch abarbeiten muss. Das normale Verhalten -- zumindest nach meiner Ansicht -- bei einer solchen Aktion waere, dass wenn ein Bild aus der momentanen Anzeige verschwinde, der Fokus zum nachfolgenden Bild weiterwandert; wenn man dem Benutzer besondere Wahlmoeglichkeiten an die Hand geben wollte, liesse sich das Verhalten natuerlich ueber das Konfigurationsmenue einstellen (Sprung zum vorhergehenden Bild, Sprung zum naechsten Bild, Sprung zum Begin der Bildreihe, etc.). Was sich aber bei einer der vorhergehenden Releases eingeschlichen hatte war der Fehler, dass immer ein Sprung an den Beginn der Bildreihe ausgefuehrt wurde; wenn man also noch Bilder hat, bei denen man ein wenig unentschlossen ist -- und diese dementsprechend nicht mit einem Tag versehen sind -- dann muss man sich wieder von vorne durch diese Bilder durchscrollen, ehe man an dem Punkt ankam, wo man sich zuletzt befunden hat. Das dies das Sortieren/Selektieren deutlich verlangsamt duerfte wohl einleuchten. Nun, die gute Nachricht ist: mit der 2.5.0 Release scheint dieser Fehler behoben zu sein! Ich habe eben mal schnell einen kleinen Test durchgefuehrt und in der Tat blieb der Sprung zurueck an den Anfang einer Dateiliste aus, so dass ich einfach weiter durch die Sammlung gehen konnte!
-
-Ok, es wird sicherlich noch eine Reihe weiterer Aenderungen geben -- dafuer muesste ich mir mal das Changelog anschauen -- aber fuer mich persoenlich ist dies eine der wichtigsten Features, welches nun endlich wieder funktionieren und mich zuegig mit meinen Bildern arbeiten lassen.
