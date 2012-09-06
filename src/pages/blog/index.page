@@ -9,6 +9,24 @@ tags: Blog
  
 **:::**
  
+### Bonn in HDR (3) ###
+
+
+
+
+_Thu, 06. September 2012 -- 19:13_
+
+Die Spazierfahrt am letzten Wochenende hat sich in Sachen Bildausbeute als wirklich erfolgreich herausgestellt; zu einem nicht unerheblichen Anteil ist dies wohl auch einfach der Tatsache geschuldet, dass ich mir endlich wieder einmal Zeit dafuer genommen habe mit der Kamera loszuziehen und mich weitestgehend von der Suche nach interessanten Motiven leiten zu lassen. Was den zeitlichen Aspekt betrifft ist es sicherlich ganz gut, frueher am Tag loszuziehen, um noch ausreichend Sonnenlicht mitzunehmen; klar, gerade am spaeten Nachmittag/fruehen Abend ergeben sich durch das Licht noch einmal ganz besondere Moeglichkeiten, aber das Zeitfenster dies einzufangen ist sehr eng (dennoch steht dies ebenfalls noch auf meiner Liste, mich da noch einmal dran zu wagen).
+
+Nachdem die letzten beiden hier vorgestellten Aufnahmen in der Naehe von Mondorf entstanden sind, haette ich hier einen Blick in die Bonner Innenstadt zu bieten:
+
+![Bahnhaltestelle am Bonner Stadthaus](/blog/2012/2012-09/hdr_20120902_150542_haltestelle.jpg)
+
+Die Umgebung sollte nicht sonderlich schwer zu erkennen sein; bei einem Gang rund um das Stadthaus habe ich versuch einen einigermassen freien Blick in Richtung Bertha-von-Suttner latz zu kriegen, was aber aufgrund der umliegenden Gebaeude nicht ohne weiteres moeglich ist. Andererseits ist es durchaus moeglich von der Bruecke ueber die Bahngleise hinweg einen Eindruck von der sich durch die Stadt ziehenden Strasse zu vermitteln. Wenn ich es mir so recht ueberlege, dass waere dies auch ein sehr netter Aussichtspunkt, von welchem man einen Timelapse schiessen koennte...
+ 
+**:::**
+ 
+ 
 ### Nachschub FiveFingers ###
 
 
@@ -186,18 +204,6 @@ _Tue, 04. September 2012 -- 10:20_
 Das hat mir hat immer noch gefehlt, um die sich im Aufbau befindliche Website Live zu schalten (ok, ich muss mir auch noch einmal ueber das Hosting Gedanken machen, aber ich spreche hier erst einmal noch von der mehr technischen Seite fuer welche ich selber Sorge zu tragen habe). Da der Blog ja -- alleine schon vom Umfang her -- den wohl zentralen Bereich bildet, sollte ich natuerlich dafuer sorgen, dass dieser in vernuenftiger Weise funktioniert, ehe ich in in seiner ueberarbeiteten Fassung fuer den Rest der Welt freigebe. Neben dem (leider nach wie vor noch bestehenden) Problem der dynamischen Skalierung der eingebundenen Bilder, fehlte mir bisher noch die Moeglichkeit einfach mal eine Seite mit den letzten z.B. 10 Eintraegen zu generieren. Es macht ja schon Sinn direkt einen Blick ueber die aktuellen Beitraege zu haben, wenn man den Blog oeffnet, statt sich erst in das [Archiv](archive.html) hinabbegeben zu muessen; letzteres hat sicherlich seine Berechtigung, wenn es um den Zugriff auf alle zurueckliegenden Beitraege gilt, aber das ist doch etwas anderes als wenn ich weinfach nur wissen will, was es denn aktuell zu lesen gibt.
 
 Um diese Luecke endlich mal noch zu fuellen, habe ich die Fahrt von Bonn nach Koeln heute Morgen dazu genutzt die entsprechende Funktionalitaet zu implementieren, s dass sich die Startseite jetzt automatisch aktualisieren laesst; ich muss dies zwar noch mit dem Script fuer die Erstellung eines neuen Blog Eintrages koppeln, aber zumindest werden schon einmal alle benotigte Index-Seiten in einem Zuge erstellt (das ist ja schliesslich etwas, das man nicht von Hand machen moechte). Das Resultat sieht schon einmal brauchbar aus, auch wenn ich mir sicherlich noch einmal den Code vornehmen muss, um diesen ein wenig aufzuraeumen; es geht hier zwar nicht darum irgendwelche Schoenheitspreise zu gewinnen, aber da ich die Infrastruktur schon auf Dauer anlegen will, macht es wenig Sinn da einfach nur eine lose Sammlung von irgendwelchen wuest zusammengestrickten Scripten herumliegen zu haben.
- 
-**:::**
- 
- 
-### Bonn Flickr Group ###
-
-
-
-
-_Mon, 03. September 2012 -- 18:17_
-
-Da ich ja dort meine Zelte aufgeschlagen habe und dementsprechend die Gegend mit der Kamera unsicher mache, war es eigentlich nur ein logischer Schritt, dass ich mich eben mal noch in die [Bonn](http://www.flickr.com/groups/bonn) Flickr Group eingeklinkt habe. Auch wenn ich bisher noch nicht sonderlich konsequent in der Erkundung gewesen bin -- zumindest nicht in einer systematischen Weise, wie ich dies in Amsterdam betrieben habe -- so sammelt sich langsam einiges an lokalem Bildmaterial an; statt also einfach nur wahllos loszulaufen oder mich alleine an Karten zu orientieren, schnappe ich mir einfach auch mal Eindruecke anderer Photographiebegeisterter -- dies befindet sich dann einfach viel naeher an dem, was ich dann anschliessend mit den eigenen Augen wahrnehmen kann (auch wenn dies natuerlich nur ein Ausgangspunkt ist, von welchem aus ich dann meine eigene Erkundung starte). Wenn sich darueber hinaus mit der Zeit aber auch noch ein paar Kontakte in Sachen Photographie ergeben, ist dies natuerlich ein nettes Extra...
  
 **:::**
  
