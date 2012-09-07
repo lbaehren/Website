@@ -9,6 +9,26 @@ tags: Blog
  
 **:::**
  
+### Kein ueberzeugender Start ###
+
+
+
+
+_Fri, 07. September 2012 -- 09:10_
+
+Auch wenn ich fuer mich genommen schon etwas skeptisch war, so hat es [Nokia](http://www.nokia.com) jetzt geschafft noch einmal einen draufzulegen. Bei der, gemeinsam mit Microsoft abgehaltenen, Praesentation der vielerseits mit Spannung erwarteten neusten Lumia Modelle ist allem Anschein nach einiges nicht so ganz mit rechten Dingen zugegangen; schon kurze Zeit nach der Vorstellung der neuen Modelle (welche rein optisch durchaus etwas hergeben), tauchten Stimmen im Netz auf, welche Zweifel an der Echtheit der gezeigten Bilder und Videos anmeldeten. Ueber den Tag erhaertete sich der Verdacht bis zu dem Punkt, an welchem sich Nokia nun also gezwungen sieht zurueckzurudern:
+
+> Nokia gave a clinic yesterday in the art of screwing up a product launch. The company introduced two sleek new smartphones running Microsoft's Windows Phone 8 operating system, the Lumia 820 and Lumia 920. The 920 features a camera designed to match the capabilities of a real SLR camera. The device's imaging capabilities were touted as "a core area for differentiation" for what is intended to be the "flagship Windows Phone 8 smartphone."
+>
+> But Nokia, with partner Microsoft at its side, mangled the launch in two key areas. The first problem was obvious, and immediately noted by those watching the event: no details about the price, release date, geographic availability, or carriers that will sell the phones were released. There is even confusion over whether 4G LTE will be supported.
+>
+> Launching products without these details is sadly common in the consumer electronics industry (take, for example, Microsoft’s Surface tablet launch). It's especially unfortunate for Nokia and Microsoft, which are trying to build up the tiny Windows Phone market share against the iPhone and Android. But more embarrassingly, it turned out that a 90-second promotional video Nokia used to demonstrate the phone's imaging capabilities included several faked shots. Nokia wasn't confident enough in the phone camera's abilities to show off real-world results at its big launch.
+
+Ein ueberzeugender Produkt-Launch sieht anders aus! Nachdem die Finnen in vielerlei Hinsicht den Anschluss an die Konkurenz verpasst hatten, versucht man nun in einem Bunednis mit Microsoft wieder mit dem Rest der Mobilbranche aufzuschliessen; mal abgesehen von der Frage ob die strategische Entscheidung sich derart stark an Microsoft zu binden so eine gute Idee ist (ich waere da durchaus bereits einer der Geraete in Betracht zu ziehen, aber Windows 8 -- nein danke!), ist es alles andere als Vertrauen erweckend, wenn man schon kurz nach einer so gross aufgebauten Praesentation eingestehen muss, dabei geschummelt zu haben. Ein erfolgreiches Comeback ist dies sicherlich nicht.
+ 
+**:::**
+ 
+ 
 ### Bonn in HDR (3) ###
 
 
@@ -190,20 +210,6 @@ Ist schon eine Weile her, dass ich im Zuge einer kleinen Fahrradtour vom Wellpoi
 _Tue, 04. September 2012 -- 16:25_
 
 Da bin ich also wieder auf dem Weg zum Sport. Aufgrund der verkehrstechnischen Anbindung faellt der Dienstag immer ein wenig kuezrer aus, weil ich so gegen viertel nach vier aus dem Buero verschwinden muss, um rechtzeitig im Wellpoint einzutreffen. Ist halt doch immer noch eine kleine Weltreise, vergliechen mit der ansonsten so vielgeliebten Fahrradtour von zu Hause aus. Sicher, das koennte ich natuerlich auch einmal testen -- auf der Liste der zu erkundenen Routen steht dies ja immer noch -- aber da muesste ich mich dann in der Tat noch einmal extra zu aufraffen. So aber werde ich erst einmal wieder die vertraute Kombination von Zug und Schnellbus verwenden... und hoffen dass mich ersterer nicht versetzt.
- 
-**:::**
- 
- 
-### Einen Schritt weiter ###
-
-
-
-
-_Tue, 04. September 2012 -- 10:20_
-
-Das hat mir hat immer noch gefehlt, um die sich im Aufbau befindliche Website Live zu schalten (ok, ich muss mir auch noch einmal ueber das Hosting Gedanken machen, aber ich spreche hier erst einmal noch von der mehr technischen Seite fuer welche ich selber Sorge zu tragen habe). Da der Blog ja -- alleine schon vom Umfang her -- den wohl zentralen Bereich bildet, sollte ich natuerlich dafuer sorgen, dass dieser in vernuenftiger Weise funktioniert, ehe ich in in seiner ueberarbeiteten Fassung fuer den Rest der Welt freigebe. Neben dem (leider nach wie vor noch bestehenden) Problem der dynamischen Skalierung der eingebundenen Bilder, fehlte mir bisher noch die Moeglichkeit einfach mal eine Seite mit den letzten z.B. 10 Eintraegen zu generieren. Es macht ja schon Sinn direkt einen Blick ueber die aktuellen Beitraege zu haben, wenn man den Blog oeffnet, statt sich erst in das [Archiv](archive.html) hinabbegeben zu muessen; letzteres hat sicherlich seine Berechtigung, wenn es um den Zugriff auf alle zurueckliegenden Beitraege gilt, aber das ist doch etwas anderes als wenn ich weinfach nur wissen will, was es denn aktuell zu lesen gibt.
-
-Um diese Luecke endlich mal noch zu fuellen, habe ich die Fahrt von Bonn nach Koeln heute Morgen dazu genutzt die entsprechende Funktionalitaet zu implementieren, s dass sich die Startseite jetzt automatisch aktualisieren laesst; ich muss dies zwar noch mit dem Script fuer die Erstellung eines neuen Blog Eintrages koppeln, aber zumindest werden schon einmal alle benotigte Index-Seiten in einem Zuge erstellt (das ist ja schliesslich etwas, das man nicht von Hand machen moechte). Das Resultat sieht schon einmal brauchbar aus, auch wenn ich mir sicherlich noch einmal den Code vornehmen muss, um diesen ein wenig aufzuraeumen; es geht hier zwar nicht darum irgendwelche Schoenheitspreise zu gewinnen, aber da ich die Infrastruktur schon auf Dauer anlegen will, macht es wenig Sinn da einfach nur eine lose Sammlung von irgendwelchen wuest zusammengestrickten Scripten herumliegen zu haben.
  
 **:::**
  
