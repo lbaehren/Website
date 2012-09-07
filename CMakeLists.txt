@@ -164,6 +164,17 @@ set_property (DIRECTORY
   ${PROJECT_SOURCE_DIR}/config.yaml
   )
 
+##____________________________________________________________________
+## Publish website
+
+add_custom_target (publish
+  COMMAND scp ${WEBSITE_INSTALL_PREFIX}/index.html bahren@dop131:/export/home/bahren/public_html
+  DEPENDS ${WEBSITE_INSTALL_PREFIX}/index.html
+  WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
+  )
+add_dependencies (publish Website)
+
+
 ## ==============================================================================
 ##
 ##  Configuration summary
