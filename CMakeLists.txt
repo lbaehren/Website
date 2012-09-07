@@ -50,6 +50,7 @@ if (NOT CONFIGURE_VERBOSE)
   set (RUBY_FIND_QUIETLY     YES )
   set (RUBYGEMS_FIND_QUIETLY YES )
   set (_RUBY_DEBUG_OUTPUT    NO  )
+  set (WEBGEN_FIND_QUIETLY   YES )
 endif (NOT CONFIGURE_VERBOSE)
 
 ## ==============================================================================
@@ -78,6 +79,7 @@ find_package (Doxygen)
 find_package (Gem)
 find_package (Rake)
 find_package (Ruby)
+find_package (Webgen)
 
 ##____________________________________________________________________
 ## Extract Doxygen version number
@@ -103,36 +105,6 @@ if (DOXYGEN_EXECUTABLE)
   endif (DOXYGEN_VERSION)  
   
 endif (DOXYGEN_EXECUTABLE)
-
-##____________________________________________________________________
-## Find installation of Ruby Rake
-
-find_program (RAKE_EXECUTABLE rake
-  HINTS ${RAKE_ROOT_DIR} ${CMAKE_INSTALL_PREFIX}
-  PATH_SUFFIXES bin lib
-  )
-
-if (RAKE_EXECUTABLE)
-  
-  execute_process(
-    COMMAND ${RAKE_EXECUTABLE} --version
-    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
-    RESULT_VARIABLE RAKE_RESULT_VARIABLE
-    OUTPUT_VARIABLE RAKE_VERSION
-    ERROR_VARIABLE RAKE_ERROR_VARIABLE
-    OUTPUT_STRIP_TRAILING_WHITESPACE
-    )
-  
-  if (RAKE_VERSION)
-    ## Convert string to list of numbers
-    string (REGEX REPLACE "\\." ";" RAKE_VERSION_LIST ${RAKE_VERSION})
-    ## Retrieve individual elements in the list
-    list(GET RAKE_VERSION_LIST 0 RAKE_VERSION_MAJOR)
-    list(GET RAKE_VERSION_LIST 1 RAKE_VERSION_MINOR)
-    list(GET RAKE_VERSION_LIST 2 RAKE_VERSION_PATCH)
-  endif (RAKE_VERSION)  
-  
-endif (RAKE_EXECUTABLE)
 
 ## ==============================================================================
 ##
@@ -209,4 +181,6 @@ message (STATUS " .. Gem executable .............. = ${GEM_EXECUTABLE}"         
 message (STATUS " .. Gem executable version ...... = ${GEM_VERSION}"             )
 message (STATUS " .. Rake executable ............. = ${RAKE_EXECUTABLE}"         )
 message (STATUS " .. Rake executable version ..... = ${RAKE_VERSION}"            )
+message (STATUS " .. Webgen executable ........... = ${WEBGEN_EXECUTABLE}"       )
+message (STATUS " .. Webgen executable version ... = ${WEBGEN_VERSION}"          )
 message (STATUS "------------------------------------------------------------ "  )
