@@ -29,11 +29,11 @@ will look something like this:
 
 ~~~~
 www.mysite.com/
-├── README
-├── Rakefile
-├── config.yaml
-├── ext
-│   └── init.rb
+|-- README
+|-- Rakefile
+|-- config.yaml
+|-- ext
+|   `--init.rb
 ├── src
 │   ├── browserfix.css
 │   ├── default.css
@@ -43,6 +43,17 @@ www.mysite.com/
 ├── webgen.cache
 └── website
 ~~~~
+
+The root directory of webgen website is called the website directory. You can
+have the following files and directories under this directory:
+
+  - `src`: The source directory in which all the source files for the website
+are. If this directory should not be called src or you want to include additional
+source directories, you need to change the sources configuration option.
+  - `out`: This directory is created, if it does not exist, when webgen generates the HTML files. All the output files are put into this directory. The name of this directory can be changed by setting the output configuration option.
+  - `ext`: The extension directory (optional). You can put self-written extensions into this directory so that they are used by webgen. See the extension directory section for more information.
+  - `config.yaml`: This file can be used to set configuration options for the website. See the Configuration File section for more information.
+  - `Rakefile`: This file is provided for your convenience to execute tasks via rake and provides some useful tasks out of the box. See the Rakefile section for more information.
 
 ### Installation  ###
 
