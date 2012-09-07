@@ -110,17 +110,17 @@ namespace Blog { // Namespace Blog -- begin
     
     //! Set the tags attached to the entry
     inline void setTag (std::string const &tag,
-			bool const &append=true)
+			bool const &replace=false)
     {
       std::vector<std::string> tags (1,tag);
-      setTags (tags.begin(),tags.end(),append);
+      setTags (tags.begin(),tags.end(),replace);
     }
     
     //! Set the tags attached to the entry
     inline void setTags (std::vector<std::string> const &tags,
-			 bool const &append=true)
+			 bool const &replace=false)
     {
-      setTags (tags.begin(),tags.end(),append);
+      setTags (tags.begin(),tags.end(),replace);
     }
     
     //! Set the tags attached to the entry
@@ -139,10 +139,6 @@ namespace Blog { // Namespace Blog -- begin
     
     //! Provide a summary of the internal status to output stream \c os
     void summary (std::ostream &os);    
-
-    // === Virtual methods ======================================================
-
-    virtual void writeHeader (std::ostream &os=std::cout);
 
     // === Private methods ======================================================
 

@@ -45,6 +45,8 @@ using Blog::Timestamp;
 
 void test_construction ()
 {
+  std::cout << "\n[BlogEntryTest::test_construction]\n" << std::endl;
+
   std::cout << "[1] Testing default constructor ..." << endl;
   {
     BlogEntry entry;
@@ -60,11 +62,54 @@ void test_construction ()
 }
 
 //_______________________________________________________________________________
+//                                                                test_parameters
+
+//!  Test acces to the internal parameters
+void test_parameters ()
+{
+  std::cout << "\n[BlogEntryTest::test_parameters]\n" << std::endl;
+
+  std::set<std::string> tags;
+  tags.insert("Test");
+  tags.insert("Blog");
+  tags.insert("Computing");
+
+  BlogEntry entry;
+  entry.summary();
+
+  std::cout << "[1] Accessing title ..." << std::endl;
+  {
+    std::string title ("Title of the new blog entry");
+    // Set the title
+    entry.setTitle (title);
+    // Get the title
+    title = entry.title();
+    // Summary
+    entry.summary();
+  }
+
+  std::cout << "[2] Accessing tags ..." << std::endl;
+  {
+    std::string tag ("Test");
+    // Set the tag
+    entry.setTag (tag);
+    entry.setTag ("Blog");
+    // ... and show the result
+    entry.summary();
+    // Replace the tags ...
+    entry.setTags(tags,false);
+    // ... and show the result
+    entry.summary();
+  }
+}
+
+//_______________________________________________________________________________
 //                                                                           main
 
 int main ()
 {
   test_construction ();
+  test_parameters ();
 
   return 0;
 }
