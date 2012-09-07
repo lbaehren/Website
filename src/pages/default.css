@@ -34,25 +34,25 @@ body {
 
 /* Layout of the H1 level header inside the header area. */
 #header h1 {
-    font-size: 5em;
-    font-weight: normal;
+    font-size:      5em;
+    font-weight:    normal;
     letter-spacing: -2px;
-    margin: 0 0 4px 15px;
-    padding: 20px 0 0 0;
+    margin:         0 0 4px 15px;
+    padding:        20px 0 0 0;
 }
 
 /* Layout of the H2 level header inside the header area. */
 #header h2 {
-    font-size: 2em;
-    font-weight: normal;
+    font-size:      2em;
+    font-weight:    normal;
     letter-spacing: -2px;
-    margin: 0 0 4px 15px;
-    padding: 0 0 0 0;
+    margin:         0 0 4px 15px;
+    padding:        0 0 0 0;
 }
 
 #header h1 a {
-    padding:0;
-    color:#ffffff;
+    padding: 0;
+    color:   #ffffff;
 }
 
 #header h1 a:hover {
@@ -69,11 +69,11 @@ body {
 /* === Left sidebar ========================================================== */
 
 #avmenu {
-    clear:left;
-    float:left;
-    width:150px;
-    margin:0 0 10px 0;
-    padding:0;
+    clear:   left;
+    float:   left;
+    width:   150px;
+    margin:  0 0 10px 0;
+    padding: 0;
 }
 
 #avmenu ul {

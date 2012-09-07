@@ -32,8 +32,6 @@
         </div>
       </div>
 
-      <!-- The following div was not in the original template but was inserted to display the breadcrumb trail
-           and language links -->
       <div id="contentwide">
         <p class="textright">Location: {breadcrumb_trail: }&nbsp;|&nbsp;Language: {langbar: }</p>
       </div>
