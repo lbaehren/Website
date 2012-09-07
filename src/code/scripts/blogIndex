@@ -160,7 +160,7 @@ processDirectory ()
       ## Generate the index file(s)
       if [[ -e index.page ]]
       then
-	  echo "  * [$varTitle]($varLink) | $varDateTime |" >> $varIndexFileMonth
+	  echo "  * [$varTitle]($varLink) \| $varDateTime \|" >> $varIndexFileMonth
       else 
 	  echo "Index file missing - generating header now..."
 	  echo "---"                                         > $varIndexFileMonth
