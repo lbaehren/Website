@@ -343,4 +343,8 @@ fi
 
 writeRecentEntries
 
+cd ${varBasedir}
+git add index.page
+git commit -m "Update of blog index page."
+
 exit
