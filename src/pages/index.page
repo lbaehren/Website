@@ -4,19 +4,40 @@ in_menu: false
 author: Lars Baehren
 ---
 
-## Welcome to *larsbaehren.com* ##
+# Welcome #
 
-... the web-presence of Lars B&auml;hren.
+... the web-presence of Lars B&auml;hren. Hopefully the collection of pages you
+are looking at will give you some idea of my activities in the following areas:
 
 ### Education & Research ###
 
-Since moving to the Netherlands in 2004 I have been working on the development and commissioning of the Low Frequency Array (LOFAR) – a novel radio telescope under construction in the Netherlands, but also including international partners from other european countries. My main involvement has been with the High-Energy Cosmic Rays Key Science Project, based at the Radboud University Nijmegen. Whereas the main goal of our scientific analysis is geared towards the understanding of the radio from extensive cosmic ray air-showers, the incoming data almost are saturated with all sorts of signals – be they of natural or human-made origin; one of the topics I have been working is the detection of radio signatures from electric discharges (lightnings) in thunderstorms.
+After finishing my university studies at [Bonn University](http://www.uni-bonn.de)
+mid-2003 I very much was interested in continuing research in the area of
+astro-physics, more specifically in radio-interferometry. The opportunity presented
+itself in the form of a junior-researcher position at [ASTRON](http://www.astron.nl),
+the Netherlands Institute for Radio Astronomy. The institute just had received
+major funding for the development and commissioning of the Low Frequency Array
+([LOFAR](http://www.lofar.org)), a novel radio telescope to be constructed within
+the Netherlands, with outriggers across other european countries.
 
-Status: The affiliation with the KSP ended in October 2008.
+My main involvement has been with the High-Energy Cosmic Rays Key Science Project,
+based at the Radboud University Nijmegen. Whereas the main goal of our scientific
+analysis is geared towards the understanding of the radio from extensive cosmic
+ray air-showers, the incoming data almost are saturated with all sorts of signals
+-- be they of natural or human-made origin; one of the topics I have been working
+is the detection of radio signatures from electric discharges (lightnings) in
+thunderstorms.
 
 ### Computing ###
 
-Between January 2004 and October 2010 my work has been focussing on the development of software for the scientific analysis of the data taken with the LOFAR telescope. During the first phase of that period my primary interest has been in the imaging of the radio intensity distribution as emitted by cosmic ray air-shower – but also as originating from lightning discharges in thunderstorms. The novel capabilities of “digital radio-telescopes” – the usage of large numbers of cheap receptor elements combined with high-performance computing – allows to explore physical processes in unprecedented ways.
+Between January 2004 and October 2010 my work has been focussing on the development
+of software for the scientific analysis of the data taken with the LOFAR telescope.
+During the first phase of that period my primary interest has been in the imaging
+of the radio intensity distribution as emitted by cosmic ray air-shower -- but
+also as originating from lightning discharges in thunderstorms. The novel
+capabilities of “digital radio-telescopes” -- the usage of large numbers of cheap
+receptor elements combined with high-performance computing -- allows to explore
+physical processes in unprecedented ways.
 
 ### Photography ###
 
