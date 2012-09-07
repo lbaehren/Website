@@ -1,0 +1,28 @@
+---
+title: Data format for Blog entries
+in_menu: false
+author: Lars Baehren
+tags: Blog Data Development
+---
+
+##{title:}##
+
+A number of data formats have been considered for the long-term storage of the
+blog entries; main driving force behind this was the need to have the contents
+stored away in a manner which is decoupled from a specific tool responsible for
+the rendering of the contents into HTML pages of typeset documents.
+
+### XML schema ###
+
+~~~
+<entry>
+  <title></title>
+  <date></date>
+  <author></author>
+  <tags>
+    <tag></tag>
+    <tag></tag>
+  </tags>
+  <body></body>
+</entry>
+~~~

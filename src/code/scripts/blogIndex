@@ -171,13 +171,13 @@ processDirectory ()
 	  echo ""                                           >> $varIndexFileMonth
 	  echo "## {title:} ##"                             >> $varIndexFileMonth
 	  echo ""                                           >> $varIndexFileMonth
-	  echo "  * [$varTitle]($varLink) | $varDateTime |" >> $varIndexFileMonth
+	  echo "  * [$varTitle]($varLink) \| $varDateTime \|" >> $varIndexFileMonth
       fi
 
       ## Entry to YYYY/index.page
-      echo "  * [$varTitle]($varLink) | $varDateTime |" >> $varIndexBlog
+      echo "  * [$varTitle]($varLink) \| $varDateTime \|" >> $varIndexBlog
       ## Entry to YYYY/index.page
-      echo "  * [$varTitle]($varLink) | $varDateTime |" >> $varIndexYear
+      echo "  * [$varTitle]($varLink) \| $varDateTime \|" >> $varIndexYear
 
 
     }
