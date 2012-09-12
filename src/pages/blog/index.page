@@ -9,6 +9,22 @@ tags: Blog
  
 **:::**
  
+### Whitespaces... noch einmal anschaulicher ###
+
+
+
+
+_Wed, 12. September 2012 -- 12:26_
+
+War dies eigentlich in dem vorhergegangenen [Eintrag](/blog/2012/2012-09/2012-09-11_17-30.html) einigermassen verstaendlich? Auch wenn ich ja versucht hatte ein wenig zu erklaeren, worum es eigentlich geht und wie das Problem entstehen kann, so fehlte vielleicht einfach noch einmal ein Bild um die Sache etwas anschaulicher zu machen. Da ich aber gerade noch dabei bin den Code erneut zu durchkaemmen (und eventuell von dem Script uebersehene Vorkommnisse zu korregieren), haette ich hier mal noch einen Screenshot zu bieten, welcher hilft die vorherigen Ausfuehrung noch ein wenig besser zu verstehen:
+
+![Screenshot](/blog/2012/2012-09/2012-09-12_whitespaces.png)
+
+Ich denke mal an diesm Beispiel laesst sich sehr gut erkennen, was ich vorher in Bezug auf das automatische Einruecken versuchte zu erklaeren: um alle Programmzeilen innerhalb eines Blocks auf die gleiche Linie zu bringen fuegt der Editor im Zweifelsfall bei Leerzeilen so viele Leerzeichen ein, dass der erste Eintrag (sollte er denn hinzugefuegt werden) auf der gleichen Hoehe wie alle anderen stehe wuerde.
+ 
+**:::**
+ 
+ 
 ### Digital Domain ###
 
 
@@ -283,22 +299,6 @@ That has got to my quote for the day:
 > XML is like violence - if it doesn’t solve your problems, you are not using enough of it.
 
 This statement I found on the website of [Nokogiri](http://nokogiri.org) -- a HTML, XML, SAX, & Reader parser with the ability to search documents via XPath or CSS3 selectors. Since lately I have been spending some time in getting to know the various methods to parse and emit [XML](http://www.w3.org/TR/xml) data -- mainly because this is the primary format in which data dumps from various databases are being provided to the prometheus digital image archive -- I have been paying some additional attention to some of the posts on the _ruby-talk_ mailing list; when this morning a question about parsing downloaded HTML showed up, this immediately triggered me jumping into the article. The answer to the question contained a link to the [Nokogiri](http://nokogiri.org) website, more specifically a link to one of the documentation pages... which contained a [parsing_an_html_xml_document.html](http://nokogiri.org/tutorials/parsing_an_html_xml_document.html) bit in the URL, hence the interest.
- 
-**:::**
- 
- 
-### OpenSuse 12.2 freigegeben ###
-
-
-
-
-_Wed, 05. September 2012 -- 15:13_
-
-Auch wenn ich zu einem frueheren Zeitpunkt schon einmal eine Beta gesehen hatte, so war mir das Release-Datum dann doch wieder entfallen; netterweise tauchte aber vor ein paar Minuten eine [Nachricht vom Heise Newsticker](http://www.heise.de/newsticker/meldung/Linux-Distribution-OpenSuse-12-2-freigegeben-1699582.html) in meiner Inbox auf, welcher ich dann umgehend gefolgt bin.
-
-> [openSUSE 12.2](http://de.opensuse.org/Portal:12.2) wird am 5. September 2012 veröffentlicht. Wie die zuvor im November 2011 erschienene Version 12.1 wird die 12.2 ein stabiles Betriebssystem mit modernem Desktop sein, das einige neue Systemwerkzeuge integrieren wird.
-
-Neben dem Durchlesen der diversen Hinweise zu Neuerungen habe ich mir natuerlich auch einmal sofort ein Installationsmedium geschnappt, um mir eine virtuelle Machine einzurichten; wie bereits von den diversen Vorgaengerversionen bekannt, verlaeuft die Installation recht problemlos (egal um man ein CD ISO-Image verwendet oder alles ueber das Netzwerk bezieht). Ich denke mal, dass ich mir (abweichend vom Vorgaenger) zusaetzlich noch die Variante mit dem [LXDE](http://de.opensuse.org/LXDE) Desktop anschauen werde; ich habe zwar nicht unbedingt etwas gegen [KDE](http://de.opensuse.org/KDE), aber die entwas abgespecktere Oberflaeche kommt mir von ihrem Grunddesign einfach etwas mehr entgegen.
  
 **:::**
  
