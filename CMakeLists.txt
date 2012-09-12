@@ -59,6 +59,16 @@ endif (NOT CONFIGURE_VERBOSE)
 ##
 ## ==============================================================================
 
+## Directory containing page sources
+
+find_path (DATA_PAGES_DIR 
+  NAMES index.page default.template default.css
+  PATHS ${PROJECT_SOURCE_DIR}
+  PATH_SUFFIXES src pages src/pages
+  )
+
+## Custom CMake modules
+
 find_path (LOCAL_CMAKE_MODULE_PATH 
   NAMES FindGem.cmake FindRake.cmake
   PATHS ${PROJECT_SOURCE_DIR}
@@ -122,9 +132,10 @@ add_subdirectory (src)
 ## Render the website
 
 add_custom_target (Website ALL
-  COMMAND ${RAKE_EXECUTABLE}
+  COMMAND ${WEBGEN_EXECUTABLE} render
   DEPENDS ${PROJECT_SOURCE_DIR}/config.yaml
   WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
+  COMMENT "Rendering website from sources ..."
   )
 
 add_dependencies (Website blog)
@@ -140,9 +151,11 @@ set_property (DIRECTORY
 ## Publish website
 
 add_custom_target (publish
-  COMMAND scp ${WEBSITE_INSTALL_PREFIX}/index.html bahren@dop131:/export/home/bahren/public_html
+#  COMMAND rsync -avE --delete ${WEBSITE_INSTALL_PREFIX}/* ${PROJECT_SOURCE_DIR}/release/public_html
+  COMMAND rsync -avE --delete ${WEBSITE_INSTALL_PREFIX}/* bahren@dop131:/export/home/bahren/public_html
   DEPENDS ${WEBSITE_INSTALL_PREFIX}/index.html
   WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
+  COMMENT "Publishing website - uploading generated pages ..."
   )
 add_dependencies (publish Website)
 
