@@ -1,0 +1,11 @@
+---
+title: "Installing Qt"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Fri, 05. August 2011 -- 10:41_
+
+.. from source is no fun. Having gone through several iterations during the past two days -- only to find out something would break right before finishing the build -- I was even starting to consider opting for a binary installation; however the latter was not a solution to the problem I kept running into, namely the support for multiple architectures under [Mac OS X](http://www.apple.com/macosx) (which can be i386, x86_64, ppc). The latest compiling rage was triggered by my attempts to set up a basic [PELICAN](https://github.com/pelican) module for [AARTFAAC](http://www.aartfaac.org), to read in visibility data through the [DAL](https://github.com/nextgen-astrodata/DAL). While building PELICAN itself would work fine, I kept running into compiler warnings and linker errors when trying to build my own modules, finally pointing me towards having a closer look at my Qt installation. Part of the trouble turned out to be a mismatch of architectures (as mentioned above): thus in order to have this issue resolved a fresh install of Qt with the proper architecture flags seemed in order. Given that is had been a while since the latest Qt installation, I almost had forgotten how long it really takes to get the package build from source... takes ages and even my current MacBook Pro is crunching on it for a major part of the night. Bad thing though is, that twice already I have been running into configuration errors close to the end of the procedure, such that I had do do things over again. This is no fun!

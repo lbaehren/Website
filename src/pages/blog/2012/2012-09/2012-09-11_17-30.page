@@ -1,0 +1,107 @@
+---
+title: "Get back to your code"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 11. September 2012 -- 17:30_
+
+Auch das kann passieren: da hat man eine Reihe an Aenderungen im Source-Code
+vorgenommen und es es wird langsamn Zeit diese auch auf den Rest der Menscheit
+loszulassen. Was demnach also auf dem Programm steht ist, diese Aenderungen
+zurueck ins System zu speisen -- will also heissen einen _Commit_ ins Repository
+vorzunehmen. Das ist fuer sich genommen keine so grosse Aktion, auch wenn es bei
+einer Mixtur von [Git](http://www.git-scm.com) und
+[Subversion](http://subversion.apache.org) immer ein klein wenig unschoener ist,
+als wenn man jetzt nur mit Git alleine arbeiten wuerde (das ist wohl auch mit
+einer der Gruende, warum ist recht gerne mit [Github](https://github.com)
+arbeite, weil das einfach der Ablauf viel reibungsloser geht).
+
+Arbeitet man eine Weile an einem (neuen) Feature und klemmt sich dementsprechend
+fuer eine Weile aus dem Master-Branch aus, dann kann es durchaus vorkommen, dass
+es beim Wiedereinfaedeln ("merge") zu Konflikten kommt, weil mehrere Personen
+parallel Aenderungen vorgenommen lassen, welche nicht miteinander vertraeglich
+sind; folgerichtig macht es also Sinn in regelmaessigen Abstaenden die Aenderungen
+upstream zu importieren und so die Dinge garnicht erst sonderlich auseinanderdriften
+zu lassen -- das war wohl auch mit einer Gruende, warum sich diese Huerde recht
+schnell und problemlos nehmen liess. Die unabgenehme Ueberraschung kam dann aber
+einen Schritt spaeter, als ich die aktuelle Version aller Sourcen einchecken
+wollte:
+
+~~~~
+A repository hook failed: Commit blocked by pre-commit hook (exit code 1) with output:
+svnlook: Write error: Broken pipe
+Get back to your code and remove the trailing whitespace!
+~~~~
+
+Was war passiert? Irgendwie in dem Quellencode, welchen ich auf den Server schieben
+wollte, gab es allem Anschein nach Zeilen, deren letzter Eintrag ein Leerzeichen
+ist. Waehrend dies rein optisch vielleicht nicht so abstossen sein mag, so ist
+doch etwas, dass typischerweise unerwuenscht ist. Auftauchen kann ein solches
+Leerzeichen -- oder gleich mehrere -- recht einfach: die meisten Editoren
+unterstuetzen das Schreiben von Software u.a. dadurch, dass sie den Source-Code
+vom Layout her so ausrichten, dass dieser einigermassen lesbar ist; waehrend es
+da sicherlich Anpassungen gibt, welche nicht gewuenscht sind, so es es doch z.B.
+ganz nett, wenn Code-Bloecke eingerueckt werden, so dass deren logische Struktur
+leichter erkennbar ist:
+
+~~~~
+inline void summary () {
+  summary (std::cout);
+}
+~~~~
+
+wuerde ich z.B. als deutlich besser lesbar einstufen als
+
+~~~~
+inline void summary () { summary (std::cout); }
+~~~~
+
+Sicher, rein von der Funktionalitaet machen beide Varianten exakt das gleich,
+aber sobald die Funktion auch nur ein klein wenig mehr als eine einzige Anweisung
+enthaelt komt man ganz schnell in den Bereich, wo die zweite der beiden Varianten
+nicht nur schwerer zu lesen, sondern auch fehleranfaelliger wird (wenn man sich
+daran macht zusaetzliche Funktionalitaet einzubauen). Deutlich interessanter wird
+es natuerlich, wenn man es mit mehreren ineinandergeschachtelten Strukturen zu
+tun hat -- durch entsprechende Einrueckung zwischen einem Paar geschweifter 
+Klammern ist es moeglich recht schnell einen Ueberblick zu kriegen (zumindest aus
+formaler Sicht), so dass die anschliessende tiefergehende Analyse des Code
+leichter faellt.
+
+~~~~
+std::string Image::attribute (std::string const &key,
+                              std::string const &unsetIndicator)
+{
+  /* Local variables */
+  std::string val;
+
+  /* Processing */
+  if (attribute(val,key)) {
+    return val;
+  } else {
+    val = unsetIndicator;
+    return val;
+  }
+}
+~~~~
+
+Eine Funktion wie die hier abgebildete bringt aber einen kleinen Fallstrick mit
+sich: ohne entsprechende Vorsichtsmassnahmen wird eine Zeile wie die nach der
+Deklaration der lokalen Variable bis zu der Stelle eingerueckt, welche als
+Basislinie fuer den Inhalt der Funktion dient. Ein solches Einruecken heisst
+aber, dass die Zeile nichts anderes als Leerzeichen enthaelt... folgerichtig
+also ueber angehangene Leerzeichen ("Trailing Whitespaces") verfuegt. Nun ist
+dies lediglich eine von vielen Moeglichkeiten, wie man sich Trailing Whitespaces
+im Code einhandeln kann -- diese dann aber anschliessend ausfindig zu machen
+und zu beseitigen ist dann schon etwas kniffeliger. Ok, von Hand machen muss man
+das gluecklicherweise nicht, denn schliesslich ist es ja moeglich mit ein wenig
+Shell-Scripting die entsprechenden Dateien herauszufiltern...
+
+~~~~
+find . -type f -exec egrep -l " +$" {} \;
+~~~~
+
+... und dann anschliessend zu korregieren (was man streng genommen ebenfalls in
+ein kleines Script packen kann).

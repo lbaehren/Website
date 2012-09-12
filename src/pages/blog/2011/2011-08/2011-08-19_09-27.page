@@ -1,0 +1,26 @@
+---
+title: "AARTFAAC software configuration"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Fri, 19. August 2011 -- 09:27_
+
+As we are closing in on the date, where a) I will be leaving Amsterdam and b) the bulk of the [AARTFAAC](http://www.aartfaac.org) personnel is going to show up at the [API](http://www.astro.uva.nl), we are trying to get the basic software framework in place, such that people have a development envrionment within which to start working. While in parallel, of course, I am making the required changes to enable the DAL to handle most of the quired I/O, the configuration and build system for the AARTFAAC software must set up properly. While last week I mainly have been focussing on cleaning up the CMake-based installation wrappers for the external packages (at least the one which cannot be installed through the standard package manager), I now have been working on getting the software stack bootstrapped.
+
+Actually starting from scratch turned out to be a bit more tricky than originally imagined: with the reference platform (which is [Ubuntu](http://www.ubuntu.com) 10.04 LTS) we only get a version of the [CMake](http://www.cmake.org) Cross-Platform Makefile Generator, which is too old to provide us with the `ExternalProject()` feature. Therefore before even running the full configuration, we require a bootstrap step, which ensures the proper version of the configuration tool is being installed. 
+
+Now why is this important and required at all? As with most software projects, there are certain dependencies on external software packages, some of which can be resolved rather easily, other need a bit more attention and custom handling. While rather commonly used packages, such as [Boost++](http://www.boost.org), CppUnit, Qt4, [HDF5](http://www.hdfgroup.org/HDF5) and even [CFITSIO](http://heasarc.gsfc.nasa.gov/fitsio) can be installed straight away, more specialized software (as e.g. [WCSLIB](http://www.atnf.csiro.au/people/mcalabre/WCS) or [casacore](http://code.google.com/p/casacore)) typically requires manual installation through the user. Since this process can be rather painstaking, any help to simplify the procedure is welcome. Given the previous experience in setting up the framework for the LOFAR User Software (LUS), we have decided to go for a very similar solution, that is: handle the installation of missing special external packages as part of the overall configuration and build process. However this is where we then get back to the issue of the CMake version: the module to handle the installation of external projects was introduced only with version 2.8.2 (or was it even 2.8.3), while what the latest Ubuntu LTS provides only is 2.8.0. Thus from the onset we already know, that the first thing that needs to be done is to update the installation of CMake (or at least install a newer version in a location listed earlier in the PATH). All attempts to actually have this being handled completely from within CMake itself, so far have failed. The original idea of mine was, to use whatever version of CMake is around at the time the configuration process starts, have it determine whether or the version is ok, build and install a never version if required and then fire up the new version to run a second configuration pass. But even while indeed it is possible to run multiple instances of CMake from within CMake, e.g. through the `execute_process()` command, it is the outmost process which controls what ends up in the generated configuration files. I spend quite some time on this last Friday evening, going through several variations on how to possibly get past this, but booststrapping CMake from within itself (while at the same time updating its version) would not work the way it wanted it to be.
+
+~~~~
+if test $cmakeVersion -lt $cmakeVersionRequired ; then {
+  echo "[bootstrap] Installed version of CMake is too old! Initiating build."
+  build_cmake
+} else {
+  echo "[bootstrap] Installed version of CMake is ok."
+} fi;
+~~~~
+
+Thus we are now back to a 2-stage approach, where first a small bootstrap script is being run, in order to check if the basic setup is ok, before running the now correct version of CMake to configure the AARTFAAC software stack. I am still tempted to dive deeper into the CMake internals to see, if there really is no other way, but for the time being this activity will have to be placed on hold; right now we have a working solution (which already is nicer than the one used with the LUS), such the next obvious step is to run another integration test, to see if the deployment of the software stack on a fresh system works as planned. If the latter is the case, then we have ourselves a basic setup within which further software development can take place.

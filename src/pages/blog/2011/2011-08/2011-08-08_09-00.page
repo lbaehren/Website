@@ -1,0 +1,35 @@
+---
+title: "AARTFAAC software stack"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Mon, 08. August 2011 -- 09:00_
+
+One can not escape the somewhat obvious irony of events: at the moment in time, where my direct involvement with the [AARTFAAC project](http://www.aartfaac.org) is running out, there is the fastest growth of actual functionality so far. In order to facilitate development once people start arriving in Amsterdam in September, we are pushing ahead to have at least the basic infrastructure in place. An so it happens, that as of today at least a minimal directory structures shows up on disk, when checking out code from the AARTFAAC code repository:
+
+~~~~
+.
+|-- build
+|-- cmake
+|-- doc
+|   `-- figures
+|-- external
+|   |-- casacore
+|   |-- cppunit
+|   |-- dal
+|   |-- hdf5
+|   `-- pelican
+|-- release
+`-- src
+    |-- common
+    |   |-- apps
+    |   `-- test
+    `-- pelican
+        |-- apps
+        `-- test
+~~~~
+
+Does not do much yet, but is enough to have a baseline for some basic testing. Most of all right now I am concerned with putting in place the framework for handling the installation of external packages, which are not available through the Ubuntu package manager (which typically are the ones very much specific for astronomical applications). At the same time there now also is an area within which to start collecting documentation, both on programming interface but as well on some of the background considerations concerning the way the overall stack is set up.

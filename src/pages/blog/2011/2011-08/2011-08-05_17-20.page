@@ -1,0 +1,15 @@
+---
+title: "VM installation"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Fri, 05. August 2011 -- 17:20_
+
+Time to continue preparing for AARTFAAC software development: as we are approaching the point, where first functional pieces come into existence, it makes sense to also ensure everything can be tested on the platform we are targeting. As a result of this, I now am running an installation of [Ubuntu](http://www.ubuntu.com) 10.04 LTS under [VirtualBox](http://www.virtualbox.org). While -- especially when running everything on a laptop -- this is not the setup for heavy weight-lifting, it at least provides me with the framework to test the software in the environment is needs to work in (or at least something reasonably close to it).
+
+![VirtualBox](/blog/2011/2011-08/2011-08-05_virtualbox.png)
+
+While (obviously) the MacBook will continue to serve as the main development platform for the software -- simply due to the fact that it is the computer around for most of the time -- the above mechanism provides an easy way to buy into the target platform, on which all of the AARTFAAC software ultimately needs to run. Of course there is a limit to what such a test platform will be able to deliver, but being able to perform some additional testing before even pushing code changes back to the central repository, sounds like something very useful.
