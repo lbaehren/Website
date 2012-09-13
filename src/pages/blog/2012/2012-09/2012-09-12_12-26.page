@@ -1,0 +1,15 @@
+---
+title: "Whitespaces... noch einmal anschaulicher"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Wed, 12. September 2012 -- 12:26_
+
+War dies eigentlich in dem vorhergegangenen [Eintrag](/blog/2012/2012-09/2012-09-11_17-30.html) einigermassen verstaendlich? Auch wenn ich ja versucht hatte ein wenig zu erklaeren, worum es eigentlich geht und wie das Problem entstehen kann, so fehlte vielleicht einfach noch einmal ein Bild um die Sache etwas anschaulicher zu machen. Da ich aber gerade noch dabei bin den Code erneut zu durchkaemmen (und eventuell von dem Script uebersehene Vorkommnisse zu korregieren), haette ich hier mal noch einen Screenshot zu bieten, welcher hilft die vorherigen Ausfuehrung noch ein wenig besser zu verstehen:
+
+![Screenshot](/blog/2012/2012-09/2012-09-12_whitespaces.png)
+
+Ich denke mal an diesm Beispiel laesst sich sehr gut erkennen, was ich vorher in Bezug auf das automatische Einruecken versuchte zu erklaeren: um alle Programmzeilen innerhalb eines Blocks auf die gleiche Linie zu bringen fuegt der Editor im Zweifelsfall bei Leerzeilen so viele Leerzeichen ein, dass der erste Eintrag (sollte er denn hinzugefuegt werden) auf der gleichen Hoehe wie alle anderen stehe wuerde.

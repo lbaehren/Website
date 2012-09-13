@@ -9,6 +9,24 @@ tags: Blog
  
 **:::**
  
+### Nur fuer Rechenzentren? ###
+
+
+
+
+_Thu, 13. September 2012 -- 14:09_
+
+Was lese ich da gerade auf dem [Heise Newsticker](http://www.heise.de/newsticker/meldung/Multi-Terabyte-Festplatten-mit-Helium-Fuellung-fuer-Rechenzentren-1705397.html):
+
+> [HGST](http://www.hgst.com) – früher Festplattensparte von [Hitachi](http://www.hitachi.com), jetzt Tochterunternehmen von [Western Digital](http://www.wdc.com) – will das Kapazitätsproblem mit einer anderen Technik früher lösen: Statt mit Luft füllt der Hersteller das Innere der Laufwerksgehäuse mit Helium. Das Edelgas hat eine geringere Dichte, was vielerlei Vorteile bringt.
+>
+> Die Plattenstapel sind wesentlich geringeren Strömungseffekten ausgesetzt. Auf den Motor wirkt dadurch eine geringere mechanische Kraft. Die niedrigere Dichte von Helium reduziert außerdem die Kräfte, welche die Magnetscheiben (Platter) und Schreib-/Leseköpfe zum Vibrieren bringen. Dadurch können sowohl die Platter als auch die Datenspuren darauf näher aneinanderrücken. Außerdem können dünnere Platter verwendet werden, sodass mehr davon in die standardisierten Gehäuseformate passen. Durch die geringeren Scherkräfte und die bessere Wärmeleitung von Helium bleiben die Laufwerke kühler und leiser im Betreib.
+
+Wenn die Ankuendigungen war werden, dann koennten noch im kommenden Jahr 3.5 Zoll Festplatten ins Haus stehen, welche ueber eine Kapazitaet von 7 TB verfuegen! Zu welchem Preis diese dann zu haben sind sei einmal dahingestellt, aber angesichts der Tatsache dass derzeit zu ertraeglichen Preisen bei 3 TB Schluss ist, klingt dies schon verlockend. Da der Speicherbedarf ja nicht nur in den Rechenzentren, sondern auch in den privaten Haushalten staendig zunimmt, klingt dies nach einer sehr reizvollen Entwicklung. Da darf man wohl mal gespannt bleiben, was denn daraus wird.
+ 
+**:::**
+ 
+ 
 ### Whitespaces... noch einmal anschaulicher ###
 
 
@@ -283,22 +301,6 @@ Nicht dass ich unbedingt einen Engpass an FiveFingers haette -- ich verfuege sog
   5. Ermöglicht dem Fuß und dem Körper sich natürlich zu bewegen -- und das fühlt sich einfach gut an.
 
 Gerade letzteres ist etwas, dem ich nur zustimmen kann; auch wenn ich den ganzen Tag unterwegs bin, so komme ich eben nicht mehr abends mit schmerzenden Fuessen zurueck nach Hause.
- 
-**:::**
- 
- 
-### XML is like violence ###
-
-
-
-
-_Thu, 06. September 2012 -- 11:55_
-
-That has got to my quote for the day:
-
-> XML is like violence - if it doesn’t solve your problems, you are not using enough of it.
-
-This statement I found on the website of [Nokogiri](http://nokogiri.org) -- a HTML, XML, SAX, & Reader parser with the ability to search documents via XPath or CSS3 selectors. Since lately I have been spending some time in getting to know the various methods to parse and emit [XML](http://www.w3.org/TR/xml) data -- mainly because this is the primary format in which data dumps from various databases are being provided to the prometheus digital image archive -- I have been paying some additional attention to some of the posts on the _ruby-talk_ mailing list; when this morning a question about parsing downloaded HTML showed up, this immediately triggered me jumping into the article. The answer to the question contained a link to the [Nokogiri](http://nokogiri.org) website, more specifically a link to one of the documentation pages... which contained a [parsing_an_html_xml_document.html](http://nokogiri.org/tutorials/parsing_an_html_xml_document.html) bit in the URL, hence the interest.
  
 **:::**
  
