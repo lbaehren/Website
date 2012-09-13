@@ -1,0 +1,17 @@
+---
+title: "Nur fuer Rechenzentren?"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Thu, 13. September 2012 -- 14:09_
+
+Was lese ich da gerade auf dem [Heise Newsticker](http://www.heise.de/newsticker/meldung/Multi-Terabyte-Festplatten-mit-Helium-Fuellung-fuer-Rechenzentren-1705397.html):
+
+> [HGST](http://www.hgst.com) – früher Festplattensparte von [Hitachi](http://www.hitachi.com), jetzt Tochterunternehmen von [Western Digital](http://www.wdc.com) – will das Kapazitätsproblem mit einer anderen Technik früher lösen: Statt mit Luft füllt der Hersteller das Innere der Laufwerksgehäuse mit Helium. Das Edelgas hat eine geringere Dichte, was vielerlei Vorteile bringt.
+>
+> Die Plattenstapel sind wesentlich geringeren Strömungseffekten ausgesetzt. Auf den Motor wirkt dadurch eine geringere mechanische Kraft. Die niedrigere Dichte von Helium reduziert außerdem die Kräfte, welche die Magnetscheiben (Platter) und Schreib-/Leseköpfe zum Vibrieren bringen. Dadurch können sowohl die Platter als auch die Datenspuren darauf näher aneinanderrücken. Außerdem können dünnere Platter verwendet werden, sodass mehr davon in die standardisierten Gehäuseformate passen. Durch die geringeren Scherkräfte und die bessere Wärmeleitung von Helium bleiben die Laufwerke kühler und leiser im Betreib.
+
+Wenn die Ankuendigungen war werden, dann koennten noch im kommenden Jahr 3.5 Zoll Festplatten ins Haus stehen, welche ueber eine Kapazitaet von 7 TB verfuegen! Zu welchem Preis diese dann zu haben sind sei einmal dahingestellt, aber angesichts der Tatsache dass derzeit zu ertraeglichen Preisen bei 3 TB Schluss ist, klingt dies schon verlockend. Da der Speicherbedarf ja nicht nur in den Rechenzentren, sondern auch in den privaten Haushalten staendig zunimmt, klingt dies nach einer sehr reizvollen Entwicklung. Da darf man wohl mal gespannt bleiben, was denn daraus wird.
