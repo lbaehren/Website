@@ -137,7 +137,7 @@ processDirectory ()
 
     ## Remove existing index file
     rm -f $varIndexFileMonth
-    
+
     for FILE in $FILES
     {
       ## Remove extension to filename ...
@@ -161,7 +161,7 @@ processDirectory ()
       if [[ -e index.page ]]
       then
 	  echo "  * [$varTitle]($varLink) \| $varDateTime \|" >> $varIndexFileMonth
-      else 
+      else
 	  echo "Index file missing - generating header now..."
 	  echo "---"                                         > $varIndexFileMonth
 	  echo "title: \"Blog | $varMonthName $varYear\""   >> $varIndexFileMonth
@@ -217,8 +217,8 @@ processYear ()
 
     for FILE in `ls`
     {
-      if [ -d $FILE ] 
-      then 
+      if [ -d $FILE ]
+      then
         ## Set local variables
         varMonth=`echo ${FILE:5:2}`
         varMonthName=`nameOfMonth $varMonth`
@@ -342,9 +342,3 @@ fi
 ## Update the index containing the most recent entries
 
 writeRecentEntries
-
-cd ${varBasedir}
-git add index.page
-git commit -m "Update of blog index page."
-
-exit
