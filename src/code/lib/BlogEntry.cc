@@ -23,7 +23,7 @@ namespace Blog { // Namespace Blog -- begin
     itsTimestamp = timestamp;
     itsTags.clear();
   }
-  
+
   /*!
     \param title     -- Title of the blog entry.
     \param timestamp -- Timestamp of the blog entry.
@@ -39,7 +39,7 @@ namespace Blog { // Namespace Blog -- begin
   }
 
   // === Public methods =========================================================
-  
+
   void BlogEntry::summary (std::ostream &os)
   {
     os << "[BlogEntry] Summary of internal parameters." << std::endl;
@@ -49,5 +49,23 @@ namespace Blog { // Namespace Blog -- begin
     os << "-- Tags      = " << itsTags                              << std::endl;
   }
 
-  
+   /*!
+      \param format -- Format used for storage or serialization.
+      \param os     -- Output stream to which the formatted element is written.
+    */
+   void BlogEntry::write (Element::Format const &format,
+                         std::ostream &os)
+  {
+    switch (format) {
+      case Element::XML:
+       os << "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"  << std::endl;
+       os << "  <entry>"                                   << std::endl;
+       os << "    <title>" << itsTitle   << "</title>"     << std::endl;
+       os << "    <author>" << itsAuthor << "</author>"    << std::endl;
+       os << "    <menu></menu>"                           << std::endl;
+       os << "    <body>" << itsText <<"</body>"           << std::endl;
+       os << "  </entry>"                                  << std::endl;
+    };
+  }
+
 } // Namespace Blog -- end

@@ -62,32 +62,27 @@ namespace Blog { // Namespace Blog -- begin
   //
   // ============================================================================
   
-  std::string Link::write (Element::Format const &format)
+  /*!
+    \param format -- Format used for storage or serialization.
+    \param os     -- Output stream to which the formatted element is written.
+  */
+  void Link::write (Element::Format const &format,
+		    std::ostream &os)
   {
-    std::stringstream link;
-
     switch (format) {
     case Element::HTML:
-      link << "<a href=\"" << itsURL << "\">" << itsTitle << "</a>";
+      os << "<a href=\"" << itsURL << "\">" << itsTitle << "</a>";
       break;
     case Element::JSON:
-      link << "{ \"link\": {"
-	   << " \"title\": \"" << itsTitle << "\","
-	   << " \"url\": \"" << itsURL << "\","
-	   << " \"internal\": \"" << itsInternal << "\""
-	   << " } }";
+      os << "{ \"link\": {"
+	 << " \"title\": \"" << itsTitle << "\","
+	 << " \"url\": \"" << itsURL << "\","
+	 << " \"internal\": \"" << itsInternal << "\""
+	 << " } }";
       break;
     default:
       break;
     }
-
-    return link.str();
-  }
-
-  void Link::write (Element::Format const &format,
-		    std::ostream &os)
-  {
-    os << write (format);
   }
 
   void Link::summary (std::ostream &os)
@@ -96,8 +91,8 @@ namespace Blog { // Namespace Blog -- begin
     os << "-- Title  ........ = " << itsTitle            << std::endl;
     os << "-- URL  .......... = " << itsURL              << std::endl;
     os << "-- Internal?  .... = " << itsInternal         << std::endl;
-    os << "-- HTML formatting = " << write(Element::HTML) << std::endl;
-    os << "-- JSON formatting = " << write(Element::JSON) << std::endl;
+    os << "-- HTML formatting = " << Element::write(Element::HTML) << std::endl;
+    os << "-- JSON formatting = " << Element::write(Element::JSON) << std::endl;
   }
 
 } // Namespace Blog -- end

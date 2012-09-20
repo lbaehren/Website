@@ -9,6 +9,221 @@ tags: Blog
  
 **:::**
  
+### CakePHP ###
+
+
+
+
+_Thu, 20. September 2012 -- 15:47_
+
+[Wie ja bereits berichtet](/blog/2012/2012-09/2012-09-18_09-06.html) versuche ich inzwischen ein klein wenig Hilfestellung bei [FLOSS Weekly](http://www.twit.tv/show/floss-weekly) zu geben. Auch wenn ich in die Produktion des Podcast in keinster Weise eingebunden bin, so habe ich es mir nun doch auf die Fahnen geschrieben beim Kontaktieren der potentiellen Gespraechspartner behilflich zu sein. Da eine [Uebersicht an moeglichen Gaesten und Projekten](https://spreadsheets.google.com/pub?key=pYAJMbVobYCTro_z4LGo3ZQ) online verfuegbar ist, kann ich mir einfach mal die dort oeffentlich zugaenglichen Informationen schnappen und versuchen eventuell bestehende Luecken zu fuellen. In diese Kategorie fiel naemlich bisher auch noch [CakePHP](http://cakephp.org):
+
+> The CakePHP framework provides a robust base for your application. It can handle every aspect, from the user’s initial request all the way to the final rendering of a web page. And since the framework follows the principles of MVC, it allows you to easily customize and extend most aspects of your application.
+>
+> The framework also provides a basic organizational structure, from filenames to database table names, keeping your entire application consistent and logical. This concept is simple but powerful. Follow the conventions and you’ll always know exactly where things are and how they’re organized.
+
+Klingt fuer mich ein wenig wie [Rails](http://rubyonrails.org), nur eben in [PHP](http://www.php.net) (aber keine Sorge, da wird es mit Sicherheit noch eine ganze Reihe an Unterschieden geben). Entscheidender Schoenheitsfehler, um das Projekt in der Show vetreten zu haben: in dem Spreadsheet war in der entsprechenden Zeil stehts noch ein "need to know who to contact" zu finden... Grund genug also, da mal ein wenig auf die Suche zu gehen. Dauerte auch nicht allzu lange und ich hatte mir [Mark Story](http://mark-story.com) einen der Lead-Developer ausfindig gemacht; also schnell mal eine kurze Mail geschrieben und nachgefragt, ob er (oder von mir aus auch jemand anders) bereit waere sich mit Randal in Verbindung zu setzen. Die Antwort liess erfreulicherweise nicht lange auf sich warten:
+
+> You can contact me about CakePHP. I've worked on the project for the last 5+ years, and have been the lead developer for the past 2 or 3 years. I'd be happy to talk to you about CakePHP :)
+
+Der Rest liegt jetzt nicht mehr bei mir, es sei denn seitens _FLOSS Weekly_ geschieht nichts. Wenn es aber moeglich ist der Show auf diese Weise Gaeste zukommen zu lassen, dann werde ich mich wohl noch ein wenig weiter durch die Liste arbeiten.
+ 
+**:::**
+ 
+ 
+### Wird ein wenig laenger ###
+
+
+
+
+_Thu, 20. September 2012 -- 14:37_
+
+Eigentlich wollte ich ja nur noch mal nach dem aktuellsten Production-Log Video schauen, aber als ich diese Meldung gelesen habe, wurde ich doch hellhoerig:
+
+> Hobbit buzz is in the air due to recent announcement of [Peter Jackson](http://www.imdb.com/name/nm0001392)'s decision to turn the orginially planned two-movie feature into a full trilogy.
+
+Ein wenig naiv, habe ich mich da doch noch einmal versucht an die Buecher zu erinnern: wenn ich mir dies so recht ins Gedaechtnis rufe, dann hatte der "Herr der Ringe" gut das fuenffache Volumen von dem was der "Hobbit" zu bieten hatte. Wenn nun aber abzusehen ist, dass die Verfilmung der urspruenglichen Buches wohl mehr oder weniger auf die gleiche Laenge hinauslaufen wird, dann frage ich mich schon, woher dies kommt. Also man schnell nachgeschaut: laut einer Meldung unter der Ueberschrift "Jackson's Big Decision : A Hobbit Trilogy?" auf [The Hobbit Movie](http://the-hobbitmovie.com) vom [27. July](http://the-hobbitmovie.com/jacksons-big-decision-hobbit-trilogy) standen die Zeichen schon eine Weile in die nun offizielle Richtung:
+
+> Shortly after Peter Jackson graced the world with yet another behind the scenes look at The Hobbit, with the newest production video, news has been buzzing about the possibility of turning the originally planned decision to make the Hobbit into a two movie feature into a trilogy.
+>
+> The final decision is far from being made, but we wanted to give an update of where it stands and get some feedback from fans.
+
+Einer der Nebeneffekte -- mal ganz abgesehen von den notwendigen Verhandlungen mit allen an der Produktion Beteiligten -- ist auch, dass ein weiterer Titel fuer den den nun dritten Film benoetigt wird. Berichten zufolge ist [New Line Cinema](http://www.newline.com) da aber schon fleissig auf der Suche und hat angeblich 
+
+  - The Desolation of Smaug
+  - The Battle of Five Armies
+
+registrieren lassen. Das soll natuerlich keinesfalls heissen, dass der fertige Film wirklich mit einem der beiden Titel daherkommt, aber fuer die Kaffeesatzleser ist dies ja schon wieder eine Information, mit welcher sich bestens spekulieren laesst.
+ 
+**:::**
+ 
+ 
+### Prometheus 2 ###
+
+
+
+
+_Thu, 20. September 2012 -- 14:14_
+
+Sieht doch ganz danach aus als wuerden Mike Seymour und Kollegen da recht behalten: [Prometheus](http://www.imdb.com/title/tt1446714) (2012) ist -- zumindest fuer diejenigen, welchen den Film gesehen haben -- noch frisch im Gedaechtnis, da kommt schwirren auch schon Ankuendigungen fuer einen [Teil 2](http://www.imdb.com/title/tt2316204) in der Luft herum. Wie in [Folge 149 der VFX Show](http://www.fxguide.com/thevfxshow/the-vfx-show-149-prometheus) gleich mehrfach andiskutiert laesst der mit Spannung erwartete Film rein von der Konstruktion der Story ein paar Enden offen -- und dies in einer Weise, dass wohl der begruendete Verdacht besteht, dass es einfach noch einmal einen viel groesseren Kontext gibt in welchen sich die gezeigte Handlung einbettet. Kann ich leider bisher nicht aus eigener Erfahrung beurteilen, weil ich endlich einmal noch schaffen muss den Film anzuschauen...
+
+Ungeachtet davon: wer ein wenig mehr in die Tiefe gehen will, was die Arbeit an den im Film vorkommenden VFX Anteilen betrifft, der sollte sich den [fxpodcast vom 12. Juni](http://www.fxguide.com/fxpodcasts/fxpodcast-prometheus) anhoeren. Gast ist Martin Hill, VFX Supervisor [Weta Digital](http://www.wetafx.co.nz), welcher u.a. Auskunft gibt ueber Fortschritte bei Sub-Surface Scattering algorithms, aber natuerlich auch ueber die Realisierung der Engineers. Reinhoeren!
+ 
+**:::**
+ 
+ 
+### Your Google+ pictures ###
+
+
+
+
+_Wed, 19. September 2012 -- 12:24_
+
+In a [recent post on Google+](https://plus.google.com/u/0/105237212888595777019/posts/Hf14ubowVdL) photographer [Trey Ratcliff](http://www.stuckincustoms.com) discribes a neat way to have ones Google+ pictures displayed on a nice black background, sorted by "Most popular". Using your 21-digit Google+ ID as part of the URL
+
+~~~~
+http://www.googleplussuomi.com/thumbs.php?id=<your ID>
+~~~~
+
+you will get something like [this](http://www.googleplussuomi.com/thumbs.php?id=105237212888595777019) (at least if you are someone like Trey). In my case the [result](http://www.googleplussuomi.com/thumbs.php?id=100581156331078830632) is considerably less spectacular, but I guess for now the most importaant bit is to know about the possibility to have your pictures dispayed in such a way.
+ 
+**:::**
+ 
+ 
+### Rebuilding hallowed vfx space ###
+
+
+
+
+_Tue, 18. September 2012 -- 23:10_
+
+While trying to track down the creators of the [Darktable](http://www.darktable.org) software package -- I am still planning to have it featured on the [FLOSS Weekly](http://www.twit.tv/show/floss-weekly) show -- I discovered that one of them had relocated to New Zealand, in order to work for [Weta Digital](http://www.wetafx.co.nz). This of course triggered a quick jump halfway across the planet, at least digitally, directly placing myself in front of a number of shots from [Prometheus](http://www.imdb.com/title/tt1446714), one of the mostly anticipated movies of this year (and yes, shame on me for still not having watched it). One of the really fascinating background stories I already had been picking up was an interview on [fxguide.com](http://www.fxguide.com), which provided some in-depth insight into the creation of selected sequences. Alongside with the interview -- distributed as a podcast -- there also is an [in-depth article](http://www.fxguide.com/featured/prometheus-rebuilding-hallowed-vfx-space), which in even more detail is breaking down some of the visual effects of the film.
+
+> In the history of modern visual effects films there is a small handful of universes worthy of religious veneration: the bed chamber in [2001](http://www.imdb.com/title/tt0062622), the hover cars of [Blade Runner](http://www.imdb.com/title/tt0083658), the initial flyover from [Star Wars](http://www.imdb.com/title/tt0076759) and of course, the fallen broken ship of [Ridley Scott](http://www.imdb.com/name/nm0000631)’s [Alien](http://www.imdb.com/title/tt0078748). This last hallowed and sacred site is known to all serious visual effects artists, but for a select few artists at companies like [MPC](http://www.moving-picture.com), [Weta Digital](http://www.wetafx.co.nz) and [Fuel](http://www.fuelvfx.com), they got to rebuild and reimagine these ‘consecrated’ assets -- the map room, the ship and of course the pilot’s chair from _Alien_. The film has erupted a blogosphere of arguments over the meaning or symbolism these objects have in a creationist tale of mankind, but virtually without question even the harshest critics of the film have applauded the stunning visual effects of _Prometheus_.
+
+If you want to understand some of the magic which has been used behind the scenes to create the visuals, this is a must-read article!
+ 
+**:::**
+ 
+ 
+### Gegengewicht ###
+
+
+
+
+_Tue, 18. September 2012 -- 20:26_
+
+Also da wird es einfach noch einmal Zeit, dass ich auch etwas anderes mache ausser Nachrichten und Podcasts hoeren. Bei dem Pensum, welchses ich mir da aufgehalst habe wird es schwer noch Zeit fuer so Dinge wie Buecher lesen zu finden. Dazu kommt auch noch, dass alles auf diese Weise recht schwer auf der audiovisuellen Seite ist und mir ab einem gewissen Punkt die Uebung abhanden kommt mit laengeren Texten umzugehen. Ist schon noch einmal eine andere Sache, ob ich programmiere oder in Manuals nachschlage -- da sind alles immer nur recht kurze Textpassagen bzw. eine Suche darin. Wenn ich mir im Gegenzug mal ein Paper oder ein Buch vornehme, dann bekomme ich schon nach kurzer Zeit Schwierigkeiten die Gedanken beisammen zu halten, was auf Dauer einfach kein Zustand ist. Folgerichtig habe ich bei der heutigen Fahrt von Koeln zum Wellpoint dann auch nach einem der Buecher gegriffen, welche schon seit Ewigkeiten auf meiner Liste stehen:
+
+~~~~
+ID Project Pri Due Active Age  Description                               
+ 4 books                  1.2y Heretics of Dune (Frank Herbert)
+ 5 books                  1.2y Chapterhouse Dune (Frank Herbert)         
+ 6 books                  1.2y The Virgin Suicides (Jeffrey Eugenides)
+ 7 books                  1.2y 26a (Diana Evans)
+ 8 books                  1.2y Chronicles of Narnia (C.S. Lewis)
+ 9 books                  1.2y White Orleander (Janet Fitch)
+10 books                  1.2y Picture perfect (Jodi Picault)
+11 books                  1.2y Nineteen minutes (Jodi Picault)
+12 books                  1.2y Perestroika (Michail Gorbatschow)
+13 books                  1.2y Die Entdeckung des Himmels (Harry Mulisch)
+~~~~
+
+Den Angaben zufolge ist "26a" von Diana Evans wohl eines der ersten Buecher gewesen, welche ich bei dem Schwenk auf den Taskwarrior eingetragen habe; nicht nur ist die Nummer verdaechtig klein, sondern auch der Umstand dass diese Ausgabe bei einem 
+
+~~~~
+task oldest pro:books
+~~~~
+
+angezeigt wurde laesst aufhorchen. Da ich ja endlich wieder dahinkommen will, dass ich regelmaessig Paper lese (sonst komme ich vollkommen raus aus der Materie), werde ich also die Nachrichtenversorgung ein Stueck weit zurueckfahren und wieder mehr laengere Text am Stueck lesen. Wenn ich es auch noch schaffen will die ebenfalls angezeigten beiden "Dune" Baende abzuarbeiten, dann brauche ich wohl ein klein wenig Zeit zum Warmlaufen, ehe es an den recht komplexen Stoff geht (hatte letzte Woche schon mit dem Gedanken gespielt mir die beiden vorzunehmen, aber nach der "ich lese noch mal schnell das letzte Kapitel von Band 4" hat mir derartig der Kopf geraucht, dass ich da ein wenig Vorbereitungsphase noetig habe).
+ 
+**:::**
+ 
+ 
+### Darktable ###
+
+
+
+
+_Tue, 18. September 2012 -- 12:51_
+
+Hurray, da bin ich anscheinend einen kleinen Schritt weitergekommen. Nachdem ich heute eine Email einen der [Darktable](http://www.darktable.org) Macher geschickt habe -- welcher inzwischen bei [Weta Digital](http://www.wetafx.co.nz) in Neuseeland arbeitet -- ist prompt eine Reaktion zurueckgekommen:
+
+> hey,
+>
+> hoert sich doch super an. ich kann gerne ein paar fragen beantworten, setze aber auch mal den deutschen teil des teams auf cc (damit sie sich auch ueber publicity freuen), die wissen im zweifelsfall ueber ihr spezialgebiet besser bescheid.
+
+Da muss ich also mal schauen, dass ich da am Ball bleibe; ein Antwort ist schon raus, so dass ich mal gespannt bin, wie es weitergeht.
+ 
+**:::**
+ 
+ 
+### Hilfestellung fuer FLOSS Weekly ###
+
+
+
+
+_Tue, 18. September 2012 -- 09:06_
+
+Es ist ja schon eine ganze Weile, dass ich ein treuer Hoerer von [FLOSS Weekly](http://www.twit.tv/show/floss-weekly) bin; von den diversen Shows, welche innerhalb des [TWiT Netzwerk](http://www.twit.tv) (This Week in Technology) produziert und vertrieben werden ist dies definitiv eine der interessantesten (vor allen Dingen nach dem [Ausscheiden von _TWiT Photo_](/blog/2012/2012-07/2012-07-12_10-43.html)) Sendungen. Auf diesem Wege habe ich schon von so machem Open-Source Projekt erfahren, welches mir ansonsten wahrscheinlich verborgen geblieben waere; sicher ist dies nicht ausreichend um alles, was es da draussen gibt zu kennen, aber die Auswahl bietet doch einen sehr schoenen Querschnitt durch die OSS Landschaft. Und es gibt immer noch Projekte, welches es wert waeren vorgestellt zu werden...
+
+Das ist dann genau der Punkt, wo ich beschlossen habe selber aktiv zu werden. Da [Randal Schwartz](http://www.stonehenge.com/merlyn) immer wieder darauf hinweisst, dass es fuer das Interview arrangieren am effektivsten ist, wenn die Leiter der Projekte sich direkt mit ihm in Verbindung setzen, bin ich nun mal hingegangen und habe versucht eben dies anzustossen.
+
+  - [Europeana](http://pro.europeana.eu)
+  - [Darktable](http://www.darktable.org)
+  - [Mono Project](http://www.mono-project.com)
+
+Die Mails sind schon eine Weile raus, aber bisher habe ich noch keinerlei Rueckmeldung erhalten -- da werde ich also noch einmal nachfuehlen muessen. Fuer mich persoenlich am interessantesten ist natuerlich _Darktable_, ein OSS zur Organisation von Photo-Sammlungen; von dem, was ich bisher gesehen und gelesen habe, handelt es sich damit um eine Software, welche eine aehnliche Funktionalitaet versucht zu bieten, wie dies bei [Lightroom](http://www.adobe.com/products/photoshop-lightroom.html) (Adobe) und [Aperture](http://www.apple.com/aperture) (Apple) der Fall ist. In wie weit diese Einschaetzung wirklich korrekt ist kann ich zu diesem Zeitpunkt nur schwer sagen, aber unter anderem aus diesem Grunde faende ich es interessant einmal von den Machern selber zu erfahren, was ihre Ziele sind. Der andere Grund, weshalb ich gerade in diesem Fall so dahinter her bin ist, dass ich zunehmend den Eindruck bei Shows wie [This Week in Photo](http://www.thisweekinphoto.com) bekommen habe, dass dort ein sehr starker Fokus auf kommerziellen Software-Loesungen betrifft; das fuer sich genommen ist vielleicht noch nicht einmal das Schlimmste, aber bei den immer wieder aufgeschnappten Kommentaren habe ich einfach den Verdacht, dass sich nur wenig Leute ernsthaft mit OSS Projekten im Bereich Photographie beschaeftigt haben. Folgerichtig gehoert diese Diskussion letzten Endes natuerlich auch in eine Show wie _TWiP_, aber ich denke mal _FLOSS Weekly_ bietet wahrscheinlich eine bessere Platform um wirklich in die Tiefe zu gehen. Da dies aber nicht von alleine passiert, habe ich nicht beschlossen da ein wenig taetig zu werden und so hoffentlich ein wenig damit beizutragen den Sendeplan von _FLOSS Wekly_ zu fuellen.
+ 
+**:::**
+ 
+ 
+### HDR vs. Tonemapping ###
+
+
+
+
+_Mon, 17. September 2012 -- 18:28_
+
+Im Anschluss an den [vorherigen Eintrag](/blog/2012/2012-09/2012-09-17_18-08.html) faellt mir noch eine Kleinigkeit ein, welche sich letzte Woche bei einer Diskussion mit Sven ergeben hat. Da wir ebenfalls auf HDR zu sprechend kamen, tauchte mal wieder leichtes Missverstaendnis auf, welches ich schon mehrfach zu lesen bekommen habe:
+
+> Ich finde manchmal, dass die HDR-Aufnahmen zu starke Kontraste zeigen. HDR soll ja nicht heissen, dass alle Objekte auf einmal irgendwie "geriffelt" aussehen. 
+
+Wie ich jetzt ein wenig aus eigener Erfahrung gelernt habe ist dies nicht dem HDR selber zuzuschreiben, sondern dem anschliessenden Tonemapping; das HDR als solches ist einfach nur ein Bild mit einem sehr grossen dynamischen Umfang, welcher weit ueber das hinausgeht was eine Kamera in der Lage ist mit einem einzigen Bild abzubilden. Gleichzeitig bedeutet dies aber leider auch, dass das Bild ueber eine Bandbreite verfuegt, welche von keinem Monitor angezeigt werden kann; darueber hinaus sind auch gaengige Formate wie JPEG nicht darauf ausgelegt eine derartige Bildtiefe abzuspeichern (einer der Gruende warum e.g. die VFX Industrie [OpenEXR](http://www.openexr.com) als Speicherformat verwendet). Als Konsequenz dieser Umstaende muss ein HDR via Tonemapping zurueck in den Farbraum ueberfuehrt werden, welcher sich auf gaengigen Geraeten anzeigen laesst; dieser Vorgang laesst sich auf unterschiedliche Weise mit verschiedensten Algorithmen durchfuehren -- dementsprechend gibt es das sehr viele Parameter, an welchen man drehen kann. Was Du ansprichst ist u.a. so etwas wie einem Detail-Parameter geschuldet: dreht man den immer weiter hoch, dann bekommt man eben sehr stark Strukturen, welche ueber das hinausgehen, was man doch typischerweise mit dem Auge erkennt.
+ 
+**:::**
+ 
+ 
+### Bonn in HDR (4) ###
+
+
+
+
+_Mon, 17. September 2012 -- 18:08_
+
+Da es zuletzt doch wieder ein wenig textlastig geworden ist, sollte ich hier noch einmal daran denken meine begonnene Serie an HDR Bildern fortzusetzen. Auch wenn ich nicht unbedingt bergeweise neues Material schiesse, so gibt es dennoch eine Reihe an Aufnahmen, welche nicht einfach nur auf den heimischen Festplatten herumliegen sollten.
+
+![Blick auf Villich](/blog/2012/2012-09/hdr_20120909_130930_villich.jpg)
+
+Wie vielleicht mancher mitbekommen hat war am 9. September "Tag des Offenen Denkmals"; zu diesem Anlass waren vieler Orts Tueren und Tore geoeffnet, wo es normalerweise nur bedingt Einlass gibt. Folgerichtig hatte ich ueberlegt dem [Aufruf von Wikipedia](/blog/2012/2012-08/2012-08-31_08-56.html) zu folgen und mit der Kamera auf Jagd nach Denkmaelern zu gehen; letzten Endes ist dabei leider nur bedingt etwas bei herumgekommen, weil ich mich einfach viel zu lange an einem einzigen Ort aufgehalten habe, aber grundsaetzlich war dies ein guter Anlass mit ein wenig mehr Fokus auf Motisuche zu gehen, als dies vielleicht ansonsten der Fall ist. So kam es dann auch, dass ich mich aufgemacht habe zur [Burg Lede](http://www.burglede.de) in der Naehe von Villich: zu einem frueheren Zeitpunkt war ich da bei einer sonntaglichen Fahrradtour zwar schon einmal vorbeigekommen, aber zu diesem Zeitpunkt hatte ich einfach noch keine Ahnung, worum es sich eigentlich bei dem Bauwerkt handelt. Da ich da aber schon einmal einen Landschaftspunkt kannte, habe ich diesen einfach noch einmal angesteuert. Auf dem Weg dahin habe ich allerdings versucht eine leicht andere Route zu nehmen, als dies beim ersten Mal der Fall war, so dass ich dem Pfad entlang einem kleinen Bach folgend an einer Bruecke gelandet bin, von welcher aus sich ein sehr netter Blick in Richtung Villich bot. Also schnell Kamera ausgepackt und versucht die Szene einzufangen: zwei Bilderserien, welche ich dann anschliessen zu zwei HDRs zusammengebacken habe, sind dabei herumgekommen. Beide resultierenden Bilder haben aber ein gemeinsames Problem: aufgrund des recht starken Windes war sehr viel Bewegung in den Kronen der Baeume -- folgerichtige befanden sich Aeste und Zweige leider nicht an exakt den gleichen Positionen in den Einzelaufnahmen, so dass es bei der anschliessenden Kombination zu einem deutlich erkennbaren Ghosting gekommen ist. Ein wenig schade eigentlich, denn ansonsten waren die Aufnahmen eigentlich recht schoen geworden.
+ 
+**:::**
+ 
+ 
+### Battleship (2012) ###
+
+
+
+
+_Mon, 17. September 2012 -- 09:40_
+
+Das hat mir doch schon eine Weile unter den Naegeln gebrannt, aber letzte Nacht habe ich es doch noch geschafft [Battleship](http://www.imdb.com/title/tt1440129) (2012) anzuschauen. Das laufende Jahr hat sich aus cineastischer Sicht bisher ja schon einiges zu bieten gehabt -- so viel in der Tat, dass ich immer noch nicht alle Filme gesehen habe, welche sich auf meiner "must see" Liste befinden. Da ist aber gut, dass ich immerhin einen Eintrag abhaken kann.
+
+Auch wenn s durch diese Aktion ein wenig spaeter geworden ist, so finde ich schon, dass es sich gelohnt hat Schlaf dafuer zu opfern (was aber insgesamt nicht ganz so schlimm, da ich ja nicht allzu spaet angefangen hatte). Auch wenn ich mir nicht sicher bin, ob ich alle Trailer und Teaser gesehen habe, so hatte ich doch einiges an Vorinformationen; dazu gehoerten dann unter anderem auch zwei Sendungen des [fxguide](http://www.fxguide.com) Teams -- einmal eine detailierte Diskussion mit einer an der Herstellung des Filmes beteiligten Effektschmieden, zum anderen eine Besprechung in der VFX Show. Trotz alle dem bot der Flim noch ausreichend Wendungen, um es spannend bleiben zu lassen. Dazu gehoerte dann eben vor allen Dingen der Twist, wie es eben zu der Namensgebung des Filmes kommt; haette man wahrscheinlich aufgrund der Exposition auch von alleine drauf kommen koennen, aber irgendwie habe ich diese Kleinigkeit uebersehen -- folgerichtig konnte dieser Punkt im Plot seine volle Wirkung entfalten. Dazu gehoerte auch eine Referenz (ob nun beabsichtigt oder nicht), welche mir sofort ins Auge gefallen ist, welche ich aber bei einer schnellen Suche in der [Internet Movie Database](http://www.imdb.com) heute Morgen nicht finden konnte. Neben der ganz offensichtlichen Anspielung auf [E.T.: The Extra-Terrestrial](http://www.imdb.com/title/tt0083866) (1982) listet die IMDb noch eine Verbindung zu [2001: A Space Odyssey](http://www.imdb.com/title/tt0062622) (1968) auf, welche mir allerdings entgangen ist. Was ich hingegen aber als vollkommen zweifelsfrei ansehen wuerde, ist die Gemeinsamkeit mit der 2003er [Battlestar Galactica](http://www.imdb.com/title/tt0314979) Mini-Series: genauso wie die _Galactica_ ist auch die _Missouri_ ein ausgemustertes Schiff, welches nur noch als ein Museumsstueck dient. Mit der rund um die Inseln mit den Teleskopen aufgerichteten Barriere, ist es eben jenes schon lange ausgemusterte Schiff aus dem zweiten Weltkrieg, welches in der Stunde der Not wieder ins Leben zurueckgebracht wird. Vieles von dem Vorgang wie dies geschieht erinnert an die Szenen in "Galactica": am markantesten waere hier wohl die Stelle zu nennen, wo das letzte verbliebene Explosivgeschoss in einer schweisstreibenden Aktion von einem Endes des Schiffes zum anderen geschleppt wird -- da muss einfach die entsprechende Stelle aus "Galactica" ins Gedaechtnis kommen, wie die Vipers aelteren Baujahres quer durch das Schiff geschleppt werden, um diese in der Hangar zu bringen und dort fuer den Abflug fertig zu machen. Da muss ich echt noch einmal schauen, ob dies noch mehr Zuschauern aufgefallen ist (was ich doch mal erwarten wuerde), denn diese Parallele war einfach zu gut um einfach nur zufaellig zu sein.
+ 
+**:::**
+ 
+ 
 ### Mitbringsel vom Flohmarkt ###
 
 
@@ -25,276 +240,6 @@ Also ich wuerde doch mal stark behaupten, dass sich der Ausflug in die Rheinaue 
 Auch wenn ich dies nicht direkt ueberpruefen konnte, so schien mir das Alice Album von der aeusseren Art her dem 1986er "Park Hotel" recht aehnlich; das sagt zwar noch nicht wirklich etwas ueber die Musik, aber wenn beide Alben mehr oder weniger in der selben Schaffensperiode entstanden sind, dann gab bestehen gute Chancen dass in der Tat auch musikalische Gemeinsamkeiten vorliegen.
 
 Auf "Princess from Mars" bin ich echt mal gespannt; nachdem ich vor einer Weile noch [John Carter](http://www.imdb.com/title/tt0401729) gesehen habe, bin ich nun mal interessiert zu sehen, wie man sich dem Stoff vorher schon angenommen hat. Ein wenig ueberrascht war ich aber schon, als ich mittels [IMDb](http://www.imdb.com) herausfinden konnte, dass der Film erst vor ein paar Jahren gedreht worden ist -- und eben nicht, wie man vom Cover her haette vermuten koennen, irgendwann in den 70er oder 80er Jahren.
- 
-**:::**
- 
- 
-### Grosskontrolle ###
-
-
-
-
-_Fri, 14. September 2012 -- 21:19_
-
-Also das habe ich ja auch noch nicht gesehen: als ich eben am Koelner Bahnhof -- yep, Hauptbahnhof nicht Koeln Sued wie sonst -- in die Bahn einsteigen wollte, fand ich mich mit einem Mal in einem Pulk von KVB Leuten wieder, welche einer Herde gleich dem Bahnsteig entgegentrabten. Waehrend ich zunaecht erwartet haette, dass sich der Pulk in kleinere Gruppen aufsplittet um sich dann unterschiedliche Bahnen zu schnappen, blieb die Herde zusammen... was es ein wenig schwierig machte sich ueber den Bahnsteig zu bewegen. Ich hatte natuerlich keinen blassen Schimmer, was da eigentlich los war, aber es schien doch recht offensichtlich dass eine groesser angelegte Kontrollaktion im Anzug war. Statt aber in die einfahrende Bahn einzusteigen bauten sich sie Mitarbeiter vor den Tueren auf, um so den Weg zu versperren -- kein Einsteigen, kein Aussteigen. Dauerte eine kleine Weile, ehe deutlicher wurde was da von statten ging: um zu verhindern dass sich irgendeiner der Fahrgaeste der eingefahrenen Strassenbahn aus dem Staub machte wurden an allen Tueren Posten aufgestellt, waehrend eine weitere Abordnung die Bahn stuermte, um die Fahrgaeste nach gueltigen Tickets zu befragen. Der ganze Vorgang brauchte eine Weile, so dass die auf dem Bahnsteig Wartenden ein wenig unruhig wurden; es war aber doch einigermassen ertraeglich, so dass ich schliesslich doch noch einsteigen konnte.
-
-Vom Anblick her war dies aber schon recht witzig: ich musste da umgehend an solche Aktionen wie Polizeieinsaetze bei Demonstrationen oder Fussballspielen denken -- nur waren es eben ausschliesslich Leute mit dickem KVB Aufdruck auf dem Jacken, so dass es sich da um etwas anderes handeln musste. Vom ersten Eindruck her aber schon ein wenig befremdlich, wenn man so mir nichts, dir nichts die Treppe zu dem Bahngleisen hinablaeuft und mit einem Mal in einem Pulk von Kontrolleuren landet.
- 
-**:::**
- 
- 
-### Vampires in the real world ###
-
-
-
-
-_Thu, 13. September 2012 -- 18:33_
-
-Da ich am vergangenen Wochenende ja [mit einem weiteren Buch fertig geworden](/blog/2012/2012-09/2012-09-10_18-03.html) bin, ist es nun wieder an der Zeit, dass ich mich der [Dresden Files](http://en.wikipedia.org/wiki/The_Dresden_Files) annehme. Von dem dritten Band hatte ich zwar die ersten beiden Kapitel [schon einmal gehoert](/blog/2012/2012-08/2012-08-15_08-31.html), aber da ich mich doch nicht davon abhalten konnte parallel andere Dinge zu lesen, ist Band drei ein wenig ins Hintertreffen geraten -- ein Zustand, welcher natuerlich nicht auf Dauer so bleiben kann. Ich hatte zwar eine Weile ueberlegt endlich mal noch mit den beiden letzten "Dune" Baenden -- "Heretics of Dune" und "Chapterhouse Dune" -- zu beginnen, aber ein nochmaliges Nachblaettern in Band vier hat mich dann doch eines besseren belehrt. Demmach habe ich mich nun also wieder dem Grenzgaenger zwischen dem Diesseitigen und Jenseitigen zugewandt...
-
-Verspricht wieder recht spannend zu werden, angereichert mit einer gehoerigen Portion Humor der teils morbideren Art:
-
-> In the real world the vampire eats you before you can hit the record button.
-
-So viel also zu dem Vorhaben, bei der Einladung zu einem Vampirball eine Diktiergeraet mitzunehmen, um auf diese Weise an eine exklusive Story heranzukommen. Bin mir ziemlich sicher, dass sich die Umstaende noch in die Richtung entwickeln werden, dass ein Besuch unvermeidlich ist.
- 
-**:::**
- 
- 
-### Nur fuer Rechenzentren? ###
-
-
-
-
-_Thu, 13. September 2012 -- 14:09_
-
-Was lese ich da gerade auf dem [Heise Newsticker](http://www.heise.de/newsticker/meldung/Multi-Terabyte-Festplatten-mit-Helium-Fuellung-fuer-Rechenzentren-1705397.html):
-
-> [HGST](http://www.hgst.com) – früher Festplattensparte von [Hitachi](http://www.hitachi.com), jetzt Tochterunternehmen von [Western Digital](http://www.wdc.com) – will das Kapazitätsproblem mit einer anderen Technik früher lösen: Statt mit Luft füllt der Hersteller das Innere der Laufwerksgehäuse mit Helium. Das Edelgas hat eine geringere Dichte, was vielerlei Vorteile bringt.
->
-> Die Plattenstapel sind wesentlich geringeren Strömungseffekten ausgesetzt. Auf den Motor wirkt dadurch eine geringere mechanische Kraft. Die niedrigere Dichte von Helium reduziert außerdem die Kräfte, welche die Magnetscheiben (Platter) und Schreib-/Leseköpfe zum Vibrieren bringen. Dadurch können sowohl die Platter als auch die Datenspuren darauf näher aneinanderrücken. Außerdem können dünnere Platter verwendet werden, sodass mehr davon in die standardisierten Gehäuseformate passen. Durch die geringeren Scherkräfte und die bessere Wärmeleitung von Helium bleiben die Laufwerke kühler und leiser im Betreib.
-
-Wenn die Ankuendigungen war werden, dann koennten noch im kommenden Jahr 3.5 Zoll Festplatten ins Haus stehen, welche ueber eine Kapazitaet von 7 TB verfuegen! Zu welchem Preis diese dann zu haben sind sei einmal dahingestellt, aber angesichts der Tatsache dass derzeit zu ertraeglichen Preisen bei 3 TB Schluss ist, klingt dies schon verlockend. Da der Speicherbedarf ja nicht nur in den Rechenzentren, sondern auch in den privaten Haushalten staendig zunimmt, klingt dies nach einer sehr reizvollen Entwicklung. Da darf man wohl mal gespannt bleiben, was denn daraus wird.
- 
-**:::**
- 
- 
-### Whitespaces... noch einmal anschaulicher ###
-
-
-
-
-_Wed, 12. September 2012 -- 12:26_
-
-War dies eigentlich in dem vorhergegangenen [Eintrag](/blog/2012/2012-09/2012-09-11_17-30.html) einigermassen verstaendlich? Auch wenn ich ja versucht hatte ein wenig zu erklaeren, worum es eigentlich geht und wie das Problem entstehen kann, so fehlte vielleicht einfach noch einmal ein Bild um die Sache etwas anschaulicher zu machen. Da ich aber gerade noch dabei bin den Code erneut zu durchkaemmen (und eventuell von dem Script uebersehene Vorkommnisse zu korregieren), haette ich hier mal noch einen Screenshot zu bieten, welcher hilft die vorherigen Ausfuehrung noch ein wenig besser zu verstehen:
-
-![Screenshot](/blog/2012/2012-09/2012-09-12_whitespaces.png)
-
-Ich denke mal an diesm Beispiel laesst sich sehr gut erkennen, was ich vorher in Bezug auf das automatische Einruecken versuchte zu erklaeren: um alle Programmzeilen innerhalb eines Blocks auf die gleiche Linie zu bringen fuegt der Editor im Zweifelsfall bei Leerzeilen so viele Leerzeichen ein, dass der erste Eintrag (sollte er denn hinzugefuegt werden) auf der gleichen Hoehe wie alle anderen stehe wuerde.
- 
-**:::**
- 
- 
-### Digital Domain ###
-
-
-
-
-_Wed, 12. September 2012 -- 11:17_
-
-Auch wenn ich dies bereits ueber eine Mitteilung seitens [fxguide.com](http://www.fxguide.com/quicktakes/digital-domain-shuts-down-florida-studio-lavancouver-still-open) mitbekommen hatte, so gibt es nun auch noch einmal einen [Artikel auf Heise](http://www.heise.de/newsticker/meldung/Digital-Domain-Spezialeffekte-Firma-insolvent-1704949.html):
-
-> Das US-Spezialeffekte-Studio [Digital Domain](http://digitaldomain.com) hat einen Insolvenzantrag (PDF-Datei) gestellt. Gleichzeitig kündigte das Unternehmen an, das operative Geschäft mit Produktionsstudios in Kalifornien und Vancouver an die Investmentfirma Searchlight Capital verkaufen zu wollen. Die Übernahme soll 15 Millionen US-Dollar kosten, steht aber unter dem Vorbehalt, dass niemand einen höheren Kaufpreis zahlen will und dass das Insolvenzgericht zustimmt. Damit soll das Kerngeschäft mit den großen Hollywood-Studios gerettet werden, nachdem ein aggressiver Expansionskurs den Konzern in die Krise stürzte. Unter dem zurückgetretenen Chef John Textor hatten die Schulden Ende Juni fast 215 Millionen US-Dollar betragen. Dem stand Vermögen im Wert von 205 Millionen US-Dollar gegenüber.
-
-Wer ein wenig mehr ins Detail gehen moechte, dem sei der Artikel [Digital Domain, what does it all mean?](http://www.fxguide.com/featured/dd_what_does_it_mean) von Mike Seymour auf [fxguide.com](http://www.fxguide.com) empfohlen:
-
-> Founded in 1993 by film industry icon [James Cameron](http://www.imdb.com/name/nm0000116) with [Stan Winston](http://www.imdb.com/name/nm0935644) and [Scott Ross](http://www.imdb.com/name/nm0743824), digital production company Digital Domain has delivered innovative visuals for more than 90 movies including [Titanic](http://www.imdb.com/title/tt0120338), [Pirates of the Caribbean: At World’s End](http://www.imdb.com/title/tt0449088), the Transformers trilogy and [TRON: Legacy](http://www.imdb.com/title/tt1104001). Its artists have earned multiple Academy Awards®. A creative force in advertising, Digital Domain has brought its artistry to hundreds of commercial, videogame and music video productions. The company has been at the forefront of innovation for nearly two decades and is expanding its role into the co-production of feature films, the creative development of advertising and the creation of virtual performers. From facilities in Los Angeles and San Francisco, California; Vancouver, BC and Port St. Lucie, Florida, including its own state-of-the-art virtual production studio, Digital Domain continues its innovative work in visual entertainment and advertising.
-
-Eine traurige Geschichte, vor allen Dingen wenn man bedenkt, welche Beitraege DD im Bereich der visuellen Effekte geleistet hat.
- 
-**:::**
- 
- 
-### Die Mauer, welche keine war ###
-
-
-
-
-_Wed, 12. September 2012 -- 09:49_
-
-Also das ist doch unglaublich. Als ich gerade eben noch die Treppen zum Buero herauslaufe, erreicht mich ein Anruf meiner Vermieterin, welche (angeblich nach einer schlaflosen Nacht) sich darueber erkundigt, was ich denn mit der Mauer des zur Wohnung gehoerigen Balkons gemacht haette. Hat mich eine ganze Weile gekostet, ehe ich ueberhaupt verstanden habe, worum es da eigentlich ging. Fest davon ueberzeugt, dass der Balkon zur Rueckseite hin mit einer durchgehenden Mauer abgeschlossen war, befand sie sich nun in der festen Ueberzeugung, dass ich da mit dem grossen Hammer zu Werke gegangen sei. Ist natuerlich nicht der Fall: alles was lediglich veraendert (oder vielmehr angepasst) wurde ist, dass es jetzt einen auf der Mauer aufgesetzten halbdurchsichtigen Windschutz gibt, welcher verhindert dass es auch dem Balkon zu zuegig wird. Um dies also noch einmal zu wiederholen: keinerlei Bauelemente wurden entfernt, es wurde lediglich ein Windschutz hinzugefuegt, welcher nach oben ueber die Mauer hinausragt. Von unten betrachtet ist dies aber sicherlich der Teil, welcher als erstes ins Auge faellt, weil die Mauer einfach so niedrig ist, dass man diese aus dem verfuegbaren Blickwinkel kaum erkennen kann. Worauf es nun aber hinauslief war, dass ich mich sicherlich fuenf Minuten darum bemuehen musste der guten Frau klar zu machen, dass ihre Vorstellung davon, wie die Aussenwand des Hauses aussah, nicht ganz der Realitaet entspricht... und demnach folgerichtig auch keine Mauer entfernt oder abgerissen wurde. Derartige Fakten scheinen aber nur sehr langsam einzusickern, so dass ich mal gespannt, wann es denn eine Fortsetzung der Geschichte zu vermelden geben wird.
- 
-**:::**
- 
- 
-### Get back to your code ###
-
-
-
-
-_Tue, 11. September 2012 -- 17:30_
-
-Auch das kann passieren: da hat man eine Reihe an Aenderungen im Source-Code
-vorgenommen und es es wird langsamn Zeit diese auch auf den Rest der Menscheit
-loszulassen. Was demnach also auf dem Programm steht ist, diese Aenderungen
-zurueck ins System zu speisen -- will also heissen einen _Commit_ ins Repository
-vorzunehmen. Das ist fuer sich genommen keine so grosse Aktion, auch wenn es bei
-einer Mixtur von [Git](http://www.git-scm.com) und
-[Subversion](http://subversion.apache.org) immer ein klein wenig unschoener ist,
-als wenn man jetzt nur mit Git alleine arbeiten wuerde (das ist wohl auch mit
-einer der Gruende, warum ist recht gerne mit [Github](https://github.com)
-arbeite, weil das einfach der Ablauf viel reibungsloser geht).
-
-Arbeitet man eine Weile an einem (neuen) Feature und klemmt sich dementsprechend
-fuer eine Weile aus dem Master-Branch aus, dann kann es durchaus vorkommen, dass
-es beim Wiedereinfaedeln ("merge") zu Konflikten kommt, weil mehrere Personen
-parallel Aenderungen vorgenommen lassen, welche nicht miteinander vertraeglich
-sind; folgerichtig macht es also Sinn in regelmaessigen Abstaenden die Aenderungen
-upstream zu importieren und so die Dinge garnicht erst sonderlich auseinanderdriften
-zu lassen -- das war wohl auch mit einer Gruende, warum sich diese Huerde recht
-schnell und problemlos nehmen liess. Die unabgenehme Ueberraschung kam dann aber
-einen Schritt spaeter, als ich die aktuelle Version aller Sourcen einchecken
-wollte:
-
-~~~~
-A repository hook failed: Commit blocked by pre-commit hook (exit code 1) with output:
-svnlook: Write error: Broken pipe
-Get back to your code and remove the trailing whitespace!
-~~~~
-
-Was war passiert? Irgendwie in dem Quellencode, welchen ich auf den Server schieben
-wollte, gab es allem Anschein nach Zeilen, deren letzter Eintrag ein Leerzeichen
-ist. Waehrend dies rein optisch vielleicht nicht so abstossen sein mag, so ist
-doch etwas, dass typischerweise unerwuenscht ist. Auftauchen kann ein solches
-Leerzeichen -- oder gleich mehrere -- recht einfach: die meisten Editoren
-unterstuetzen das Schreiben von Software u.a. dadurch, dass sie den Source-Code
-vom Layout her so ausrichten, dass dieser einigermassen lesbar ist; waehrend es
-da sicherlich Anpassungen gibt, welche nicht gewuenscht sind, so es es doch z.B.
-ganz nett, wenn Code-Bloecke eingerueckt werden, so dass deren logische Struktur
-leichter erkennbar ist:
-
-~~~~
-inline void summary () {
-  summary (std::cout);
-}
-~~~~
-
-wuerde ich z.B. als deutlich besser lesbar einstufen als
-
-~~~~
-inline void summary () { summary (std::cout); }
-~~~~
-
-Sicher, rein von der Funktionalitaet machen beide Varianten exakt das gleich,
-aber sobald die Funktion auch nur ein klein wenig mehr als eine einzige Anweisung
-enthaelt komt man ganz schnell in den Bereich, wo die zweite der beiden Varianten
-nicht nur schwerer zu lesen, sondern auch fehleranfaelliger wird (wenn man sich
-daran macht zusaetzliche Funktionalitaet einzubauen). Deutlich interessanter wird
-es natuerlich, wenn man es mit mehreren ineinandergeschachtelten Strukturen zu
-tun hat -- durch entsprechende Einrueckung zwischen einem Paar geschweifter 
-Klammern ist es moeglich recht schnell einen Ueberblick zu kriegen (zumindest aus
-formaler Sicht), so dass die anschliessende tiefergehende Analyse des Code
-leichter faellt.
-
-~~~~
-std::string Image::attribute (std::string const &key,
-                              std::string const &unsetIndicator)
-{
-  /* Local variables */
-  std::string val;
-
-  /* Processing */
-  if (attribute(val,key)) {
-    return val;
-  } else {
-    val = unsetIndicator;
-    return val;
-  }
-}
-~~~~
-
-Eine Funktion wie die hier abgebildete bringt aber einen kleinen Fallstrick mit
-sich: ohne entsprechende Vorsichtsmassnahmen wird eine Zeile wie die nach der
-Deklaration der lokalen Variable bis zu der Stelle eingerueckt, welche als
-Basislinie fuer den Inhalt der Funktion dient. Ein solches Einruecken heisst
-aber, dass die Zeile nichts anderes als Leerzeichen enthaelt... folgerichtig
-also ueber angehangene Leerzeichen ("Trailing Whitespaces") verfuegt. Nun ist
-dies lediglich eine von vielen Moeglichkeiten, wie man sich Trailing Whitespaces
-im Code einhandeln kann -- diese dann aber anschliessend ausfindig zu machen
-und zu beseitigen ist dann schon etwas kniffeliger. Ok, von Hand machen muss man
-das gluecklicherweise nicht, denn schliesslich ist es ja moeglich mit ein wenig
-Shell-Scripting die entsprechenden Dateien herauszufiltern...
-
-~~~~
-find . -type f -exec egrep -l " +$" {} \;
-~~~~
-
-... und dann anschliessend zu korregieren (was man streng genommen ebenfalls in
-ein kleines Script packen kann).
- 
-**:::**
- 
- 
-### Ta-ta, ta ta ta taaa ###
-
-
-
-
-_Tue, 11. September 2012 -- 13:26_
-
-Keine Sorge, es ist alles ok bei mir -- die Ueberschrift ist mit Absicht so gewaehlt und bezieht sich auf eine Meldung, welche die ARD am heutigen Tage herausgebracht hat. Demnach ist es einmal wieder an der Zeit um die wohl bekannteste Sechs-Ton-Musik der Republik einer leichten Frischzellen zu unterziehen; Befuerchtungen, dass die Titelmelodie fuer das Flagschiff der Deutschen Nachrichtenlandschaft nicht mehr erkennbar sein koennte, versucht der Sender gleich den Wind aus den Segeln zu nehmen:
-
-> Die Tagesschau-Fanfare bleibt auch nach ihrer Überarbeitung deutlich erkennbar. Berichte über eine "Entsorgung" der Titelmelodie seien unbegründet, sagte der Erste Chefredakteur von ARD-aktuell, Kai Gniffke: "Die Sorge um das 'Ta-ta, ta ta ta taaa' ist unbegründet. Wir überarbeiten sie nur - wie zuletzt in den Jahren 2005, 1997 und 1994. Die Grundelemente, die die Melodie so unverwechselbar machen, bleiben erhalten."
-
-Fast noch interessanter als die Meldung selber aber ist die kleine Zusammenstellung, welche es zu gegebenem Anlass auf den Internetseiten der Tagesschau zu finden gibt: wer mal [alle Tagesschau Melodien im Ueberblick](http://www.tagesschau.de/inland/tagesschau-melodie100.html) hoeren will, kann dies machen.
- 
-**:::**
- 
- 
-### Angus, Thongs and Full-Frontal Snogging ###
-
-
-
-
-_Mon, 10. September 2012 -- 18:03_
-
-Und endlich wieder ein Eintrag weniger auf der Buchliste; auch wenn es angesichts der Seitenanzahl relativ lange gedauert hat, so habe ich gestern Abend noch "Angus, Thongs and Full-Frontal Snogging" von [Louise Rennison](http://de.wikipedia.org/wiki/Louise_Rennison) fertig bekommen. War alles andere als ein schwerer Stoff, sondern eher eine leiche Leselektuere; das ist aber auch ok, weil ich es ja schon dem entspricht, wonach ich gesucht hatte -- zeitgenoessige englische Literatur, welche auf den aktuellen (oder zumindest: aktuelleren) Buecherlisten zu finden ist. Schaut man sich mal die Beschreibung des Buches an, dann passt es eigentlich schon recht gut:
-
-> The book is the first of ten books in the _Confessions of Georgia Nicolson_ series. It won the [Nestlé Smarties Book Prize](http://www.booktrusted.co.uk/nestle) Bronze Award, was shortlisted for the [Branford Boase Award](http://www.branfordboaseaward.org.uk) and was voted #127 in the [BBC's Big Read poll](http://www.bbc.co.uk/arts/bigread/top200.shtml) to find the UK's favourite book. It was also named a Printz Honor book in 2001.
->
-> The book was made into a film, [Angus, Thongs and Perfect Snogging](http://www.imdb.com/title/tt0963743), released in the U.K and the United States in July 2008.
-
-Gestossen war ich auch diesen Ausflug in die Welt einer 14-jaehrigen beim zurueckliegenden [Flohmarkt in der Rheinaue](/blog/2012/2012-08/2012-08-18_16-21.html). Relativ an Rand der Staende hatte ich eine Sammlung an Boxen voller Buecher gefunden, welche allein schon vom Cover her vermuten liessen, dassda etwas fuer mich dabei sein koennte; ich weiss dass dies nicht notwendigerweise ein Kriterium ist (geschweige denn eine Garantie fuer einen Treffer), aber je nach dem in welchem Genre man sich bewegt kann man schon von einer bestimmten Praesentation dem potentiellen Kaeufer gegenueber ausgehen. Als ich nun also damit begann mich durch die Kisten zu wuehlen, wurde ich von einer der beiden Damen angesprochen, welchen der Stand gehorte; wie sich im Laufe des Gespraeches herausstellte handelte es sich bei den beiden um Mutter und Tochter, welche mit dem Verkauf versuchten wieder ein wenig Luft in den heimischen Buecherregalen zu schaffen. Da beide sich in bestem British-English unterhielten, habe ich also die Gelegenheit genutzt mit eine wenig einen Rundown potentieller Buecher und Authoren geben zu lassen; da ich aber nicht mit einem Bollerwagen unterwegs war, musste ich mich dann doch ein wenig einschraenken, was die Ankaeufe betraf (ist aber auch nicht schlimm, denn schliesslich habe ich ja immer noch Berge an ungelesenen Buechern zuhauseherumlegen, welche sich ebenfalls Zuwendung erwuenschen). Zumindest was einen der beiden neuen Titel betrifft kann ich schon mal sagen, dass dies ein recht guter Kauf war -- reiht sich wunderbar ein in die Liste vergleichbarer Buecher, welche ich bereits hinter mir habe.
-
-Worueber ich mir nun Gedanken machen muss ist, was als naechstes an der Reihe ist...
- 
-**:::**
- 
- 
-### Fünf Grundsätze für offene Standards ###
-
-
-
-
-_Mon, 10. September 2012 -- 10:05_
-
-Na das sind doch einmal Adressen und Namen, welche man sich merken sollte, wenn man in diesem Bereich unterwegs ist:
-
-> Internationale Standardisierungsorganisationen machen sich für offene und faire Verfahren zu neuen Standards stark. Die Internet Engineering Task Force ([IETF](http://www.ietf.org)), das Internet Architecture Board ([IAB](http://www.iab.org)), die Internet Society ([ISOC](http://www.internetsociety.org)), das World Wide Web Consortium ([W3C](http://www.w3c.org)) und das Institute of Electrical and Electronics Engineers ([IEEE](http://www.ieee.org)) haben gemeinsam [fünf Grundsätze](http://open-stand.org/principles) für die Standardisierungsarbeit formuliert und richten sich damit gegen Versuche von Mitgliedern der International Telecommunication Union (ITU), mehr Einfluss auszuüben.
-
-Eine Zusammenfassung der Grundsaetze findet sich bei [Heise](http://www.heise.de/newsticker/meldung/Fuenf-Grundsaetze-fuer-offene-Standards-1702793.html), wo ich auch auf diese Nachricht gestossen bin. Das sind natuerlich schon alles Punkte, welche man in Betracht ziehen sollte, wenn man sich an der Definition eines offenen Standards beteiligt (oder vielleicht sogar einen solchen Prozess anstossen will).
- 
-**:::**
- 
- 
-### Und noch ein Kurs ###
-
-
-
-
-_Fri, 07. September 2012 -- 22:36_
-
-Da haette ich nun also noch den dritten Yoga-Kurs im Bunde ausprobiert: nach dem Besuch bei [Yoga 39](http://www.Yoga39.com) (aka "Hot Yoga") und dem [Yoga Zentrum Bonn-Duisdorf](http://www.almut-engel.de) stand heute Abend der Abstecher zum [Iyengar Yogaraum Köln](http://www.iyengar-yogaraum-koeln.de) auf dem Programm. Ist schon sehr interessant, wie unterschiedlich sowohl die Ansaetze als auch die Ausfuehrungen ausfallen koennen; um ein Bild davon zu kriegen, was einem selber nun mehr oder weniger zusagt ist dies schon ziemlich gut. Festhalten kann ich in jedem Fall aber schon einmal, dass der Kurs heute Abend wirklich sehr schoen war; es gab zwar so ein paar Kleinigkeiten, mit welchen ich nicht unbedingt so ganz etwas anfangen konnte, aber ich denke mal dass dies schon vollkommen ok ist.
  
 **:::**
  

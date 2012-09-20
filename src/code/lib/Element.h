@@ -37,9 +37,9 @@ namespace Blog { // Namespace Blog -- begin
     \author Lars Baehren
   */
   class Element {
-    
+
   public:
-    
+
     //! Format used for storage or serialization
     enum Format {
       //! HTML formatted text
@@ -72,19 +72,21 @@ namespace Blog { // Namespace Blog -- begin
       \return element -- String represenation of the element, using the
               specified \c format.
     */
-    virtual std::string write (Element::Format const &format) = 0;
-
+    virtual std::string write (Element::Format const &format) {
+      std::stringstream out;
+      write (format,out);
+      return out.str();
+    }
+    
     /*!
       \brief Write the element to the stream \c os, using the specified \c format
       \param format -- Format used for storage or serialization.
       \param os     -- Output stream to which the formatted element is written.
     */
     virtual void write (Element::Format const &format,
-			std::ostream &os) = 0;
+                        std::ostream &os) = 0;
 
     // === Static methods =============================================
-
-    
 
   };
 

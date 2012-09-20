@@ -28,7 +28,7 @@
 #include <set>
 #include <vector>
 
-#include "Common.h"
+#include "Element.h"
 #include "Timestamp.h"
 
 namespace Blog { // Namespace Blog -- begin
@@ -40,8 +40,10 @@ namespace Blog { // Namespace Blog -- begin
 
     \brief Container for elements of a blog entry
   */
-  class BlogEntry {
+  class BlogEntry : public Element {
 
+    //! Author for the blog entry
+    std::string itsAuthor;
     //! Title of the blog entry
     std::string itsTitle;
     //! Timestamp of the blog entry
@@ -107,7 +109,7 @@ namespace Blog { // Namespace Blog -- begin
     inline std::vector<std::string> tags () {
       itsTags;
     }
-    
+
     //! Set the tags attached to the entry
     inline void setTag (std::string const &tag,
 			bool const &replace=false)
@@ -115,30 +117,34 @@ namespace Blog { // Namespace Blog -- begin
       std::vector<std::string> tags (1,tag);
       setTags (tags.begin(),tags.end(),replace);
     }
-    
+
     //! Set the tags attached to the entry
     inline void setTags (std::vector<std::string> const &tags,
 			 bool const &replace=false)
     {
       setTags (tags.begin(),tags.end(),replace);
     }
-    
+
     //! Set the tags attached to the entry
     inline void setTags (std::set<std::string> const &tags,
 			 bool const &append=true)
     {
       setTags (tags.begin(),tags.end(),append);
     }
-    
+
     // === Public methods =======================================================
 
     //! Provide a summary of the internal status
     inline void summary () {
       summary (std::cout);
     }
-    
+
     //! Provide a summary of the internal status to output stream \c os
-    void summary (std::ostream &os);    
+    void summary (std::ostream &os);
+
+    //! Write the element to the stream \c os, using the specified \c format
+     void write (Element::Format const &format,
+                std::ostream &os);
 
     // === Private methods ======================================================
 
@@ -162,7 +168,6 @@ namespace Blog { // Namespace Blog -- begin
     }
   }
 
-    
   };
 
 } // Namespace Blog -- end

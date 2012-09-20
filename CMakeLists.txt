@@ -61,7 +61,7 @@ endif (NOT CONFIGURE_VERBOSE)
 
 ## Directory containing page sources
 
-find_path (DATA_PAGES_DIR 
+find_path (DATA_PAGES_DIR
   NAMES index.page default.template default.css
   PATHS ${PROJECT_SOURCE_DIR}
   PATH_SUFFIXES src pages src/pages
@@ -69,7 +69,7 @@ find_path (DATA_PAGES_DIR
 
 ## Custom CMake modules
 
-find_path (LOCAL_CMAKE_MODULE_PATH 
+find_path (LOCAL_CMAKE_MODULE_PATH
   NAMES FindGem.cmake FindRake.cmake
   PATHS ${PROJECT_SOURCE_DIR}
   PATH_SUFFIXES src src/code src/config src/code/cmake
@@ -95,7 +95,7 @@ find_package (Webgen)
 ## Extract Doxygen version number
 
 if (DOXYGEN_EXECUTABLE)
-  
+
   execute_process(
     COMMAND ${DOXYGEN_EXECUTABLE} --version
     WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
@@ -104,7 +104,7 @@ if (DOXYGEN_EXECUTABLE)
     ERROR_VARIABLE DOXYGEN_ERROR_VARIABLE
     OUTPUT_STRIP_TRAILING_WHITESPACE
     )
-  
+
   if (DOXYGEN_VERSION)
     ## Convert string to list of numbers
     string (REGEX REPLACE "\\." ";" DOXYGEN_VERSION_LIST ${DOXYGEN_VERSION})
@@ -112,8 +112,8 @@ if (DOXYGEN_EXECUTABLE)
     list(GET DOXYGEN_VERSION_LIST 0 DOXYGEN_VERSION_MAJOR)
     list(GET DOXYGEN_VERSION_LIST 1 DOXYGEN_VERSION_MINOR)
     list(GET DOXYGEN_VERSION_LIST 2 DOXYGEN_VERSION_PATCH)
-  endif (DOXYGEN_VERSION)  
-  
+  endif (DOXYGEN_VERSION)
+
 endif (DOXYGEN_EXECUTABLE)
 
 ## ==============================================================================
@@ -148,16 +148,16 @@ set_property (DIRECTORY
   )
 
 ##____________________________________________________________________
-## Publish website
+## Publish the website online
 
-add_custom_target (publish
+add_custom_target (online
 #  COMMAND rsync -avE --delete ${WEBSITE_INSTALL_PREFIX}/* ${PROJECT_SOURCE_DIR}/release/public_html
   COMMAND rsync -avE --delete ${WEBSITE_INSTALL_PREFIX}/* bahren@dop131:/export/home/bahren/public_html
   DEPENDS ${WEBSITE_INSTALL_PREFIX}/index.html
   WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
   COMMENT "Publishing website - uploading generated pages ..."
   )
-add_dependencies (publish Website)
+add_dependencies (online Website)
 
 
 ## ==============================================================================

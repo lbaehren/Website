@@ -14,5 +14,5 @@ foreach (test_source ${test_sources})
   if (ENABLE_TESTING)
     add_test (${testFilename} ${testFilename})
   endif (ENABLE_TESTING)
-  
+
 endforeach (test_source)

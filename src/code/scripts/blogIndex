@@ -123,6 +123,36 @@ writeIndexHeader ()
 }
 
 ##____________________________________________________________________
+##                                             writeMonthlyIndexHeader
+##
+## - outfile - Name of the output file.
+## - year    - Year
+## - month   - Month of the year.
+
+writeMonthlyIndexHeader ()
+{
+  _varOutfile = $1
+  _varYear    = $2
+
+  if [ -z "$3" ]
+  then
+    _varMonth = ""
+  else
+    _varMonth = $3
+  fi
+
+
+  echo "---"                                          > ${_varOutfile}
+  echo "title: \"Blog | $varMonthName ${_varYear}\"" >> ${_varOutfile}
+  echo "in_menu: false"                              >> ${_varOutfile}
+  echo "author: \"Lars Baehren\""                    >> ${_varOutfile}
+  echo "---"                                         >> ${_varOutfile}
+  echo ""                                            >> ${_varOutfile}
+  echo "## {title:} ##"                              >> ${_varOutfile}
+  echo ""                                            >> ${_varOutfile}
+}
+
+##____________________________________________________________________
 ##                                                    processDirectory
 ##
 ##  Process the blog entries within a given directory.

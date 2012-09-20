@@ -95,12 +95,6 @@ namespace Blog { // Namespace Blog -- begin
 
     // === Public methods =======================================================
 
-    //! Write the element to a string, using the specified \c format
-    std::string write (Element::Format const &format);
-
-    void write (Element::Format const &format,
-		std::ostream &os);
-    
     //! Provide a summary of the internal status
     inline void summary () {
       summary (std::cout);
@@ -109,6 +103,10 @@ namespace Blog { // Namespace Blog -- begin
     //! Provide a summary of the internal status to output stream \c os
     void summary (std::ostream &os);    
 
+    //! Write the element to the stream \c os, using the specified \c format
+    void write (Element::Format const &format,
+                std::ostream &os);
+    
     // === Private methods ======================================================
 
   private:
