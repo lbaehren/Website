@@ -1,0 +1,33 @@
+---
+title: "HDF5 at the movies"
+in_menu: false
+author: "Lars Baehren"
+Tags: computing cinema
+---
+
+##{title:}##
+
+_Fri, 21. September 2012 -- 16:32_
+
+While going through a recent [article](http://www.fxguide.com/featured/resident-evil-retribution-just-add-bacon) on [fxguide.com](http://www.fxguide.com) on the latest installement of the Resident Evil franchise, I jumped offsite following two links: one for [Mr. X](http://www.mrxfx.com), a Toronto-based VFX facility and [Alembic](http://www.alembic.io), an open computer graphics interchange framework jointly developed by [Sony Pictures Imageworks](http://opensource.imageworks.com) and [Lucasfilm Ltd.](http://www.lucasfilm.com), recently release in version 1.1 at the [ACM SIGGRAPH Conference](http://www.siggraph.org/conference).
+
+> Alembic is an open computer graphics interchange framework. Alembic distills complex, animated scenes into a non-procedural, application-independent set of baked geometric results. This ‘distillation' of scenes into baked geometry is exactly analogous to the distillation of lighting and rendering scenes into rendered image data.
+>
+> Since the software's debut last year both companies have integrated the technology into their production pipelines. ILM notably using the software for their work on the 2012 blockbuster [The Avengers](http://www.imdb.com/title/tt0848228) and Sony Pictures Imageworks on the 2012 worldwide hits [Men in Black 3](http://www.imdb.com/title/tt1409024) and [The Amazing Spider-Man](http://www.imdb.com/title/tt0948470) in addition to the upcoming animated feature [Hotel Transylvania](http://www.imdb.com/title/tt0837562), scheduled for release September 28, 2012.
+
+Little surprise that given it is an open source project, I have been checking out a working copy of the source code -- there always is something to learn by looking at the code from projects like this. Extactly this happened while looking at the installation instructions:
+
+  - A unix-like OS (Linux, Mac OS X); Windows support is experimental
+  - CMake (2.8.0) [www.cmake.org](http://www.cmake.org)
+  - Boost (1.44) [www.boost.org](http://www.boost.org)
+  - ilmbase (1.0.3) [www.openexr.com](http://www.openexr.com)
+  - HDF5 (1.8.9) [www.hdfgroup.org/HDF5](http://www.hdfgroup.org/HDF5)
+  - zlib
+
+The obvious thing of course I was delighted to notice was, that _Alembic_ is using [CMake](http://www.cmake.org) to handle configuration and build of the source code. It didn't even require a look into the documentation to have this pointed out, as the `CMakeLists.txt` was plainly visible in the top-level directory of the code tree. A rather nice surprise though was to find that at a low level the [HDF5 technology suite](http://www.hdfgroup.org/about/hdf_technologies.html) is used for the storage of the actual geometry data. To be fair: the usage of HDF5 within the film industry is nothing unheard of -- e.g. the [Field3d](http://opensource.imageworks.com/?p=field3d) Voxel Data Storage Library at its heart is using that same technology -- but still it took me a little by surprise.
+
+On a sidenote, there are comments in the documentation of the project, which hint as possible improvements for the HDF5 library:
+
+> When we profiled _Alembic_ we found that, for some caches, a great deal of time was being spent in HDF5 functions that access groups and attributes by name. We now let you optionally write a side car data-structure within the HDF5 file that maps the HDF5 hierarchy to HDF5 object references which results in lookups that are much faster. You pay the price of a slight disk size increase and memory footprint.
+
+As to be expected, navigation through large volumes of date, folded in a rather complex structure remains a problem that needs constant attention; not that in any shape or form I would consider HDF5 slow or incapable of handling requests and operations of such kind, but given the ever growing need to work with bigger and bigger datasets, this is something the core technology needs to keep up with.

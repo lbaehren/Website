@@ -9,6 +9,39 @@ tags: Blog
  
 **:::**
  
+### HDF5 at the movies ###
+
+
+
+
+_Fri, 21. September 2012 -- 16:32_
+
+While going through a recent [article](http://www.fxguide.com/featured/resident-evil-retribution-just-add-bacon) on [fxguide.com](http://www.fxguide.com) on the latest installement of the Resident Evil franchise, I jumped offsite following two links: one for [Mr. X](http://www.mrxfx.com), a Toronto-based VFX facility and [Alembic](http://www.alembic.io), an open computer graphics interchange framework jointly developed by [Sony Pictures Imageworks](http://opensource.imageworks.com) and [Lucasfilm Ltd.](http://www.lucasfilm.com), recently release in version 1.1 at the ACM SIGGRAPH Conference.
+
+> Alembic is an open computer graphics interchange framework. Alembic distills complex, animated scenes into a non-procedural, application-independent set of baked geometric results. This ‘distillation' of scenes into baked geometry is exactly analogous to the distillation of lighting and rendering scenes into rendered image data.
+>
+> Since the software's debut last year both companies have integrated the technology into their production pipelines. ILM notably using the software for their work on the 2012 blockbuster [The Avengers](http://www.imdb.com/title/tt0848228) and Sony Pictures Imageworks on the 2012 worldwide hits [Men in Black 3](http://www.imdb.com/title/tt1409024) and [The Amazing Spider-Man](http://www.imdb.com/title/tt0948470) in addition to the upcoming animated feature [Hotel Transylvania](http://www.imdb.com/title/tt0837562), scheduled for release September 28, 2012.
+
+Little surprise that given it is an open source project, I have been checking out a working copy of the source code -- there always is something to learn by looking at the code from projects like this. Extactly this happened while looking at the installation instructions:
+
+  - A unix-like OS (Linux, Mac OS X); Windows support is experimental
+  - CMake (2.8.0) [www.cmake.org](http://www.cmake.org)
+  - Boost (1.44) [www.boost.org](http://www.boost.org)
+  - ilmbase (1.0.3) [www.openexr.com](http://www.openexr.com)
+  - HDF5 (1.8.9) [www.hdfgroup.org/HDF5](http://www.hdfgroup.org/HDF5)
+  - zlib
+
+The obvious thing of course I was delighted to notice was, that _Alembic_ is using [CMake](http://www.cmake.org) to handle configuration and build of the source code. It didn't even require a look into the documentation to have this pointed out, as the `CMakeLists.txt` was plainly visible in the top-level directory of the code tree. A rather nice surprise though was to find that at a low level the [HDF5 technology suite](http://www.hdfgroup.org/about/hdf_technologies.html) is used for the storage of the actual geometry data. To be fair: the usage of HDF5 within the film industry is nothing unheard of -- e.g. the [Field3d](http://opensource.imageworks.com/?p=field3d) Voxel Data Storage Library at its heart is using that same technology -- but still it took me a little by surprise.
+
+On a sidenote, there are comments in the documentation of the project, which hint as possible improvements for the HDF5 library:
+
+> When we profiled _Alembic_ we found that, for some caches, a great deal of time was being spent in HDF5 functions that access groups and attributes by name. We now let you optionally write a side car data-structure within the HDF5 file that maps the HDF5 hierarchy to HDF5 object references which results in lookups that are much faster. You pay the price of a slight disk size increase and memory footprint.
+
+As to be expected, navigation through large volumes of date, folded in a rather complex structure remains a problem that needs constant attention; not that in any shape or form I would consider HDF5 slow or incapable of handling requests and operations of such kind, but given the ever growing need to work with bigger and bigger datasets, this is something the core technology needs to keep up with.
+ 
+**:::**
+ 
+ 
 ### CakePHP ###
 
 
@@ -220,26 +253,6 @@ _Mon, 17. September 2012 -- 09:40_
 Das hat mir doch schon eine Weile unter den Naegeln gebrannt, aber letzte Nacht habe ich es doch noch geschafft [Battleship](http://www.imdb.com/title/tt1440129) (2012) anzuschauen. Das laufende Jahr hat sich aus cineastischer Sicht bisher ja schon einiges zu bieten gehabt -- so viel in der Tat, dass ich immer noch nicht alle Filme gesehen habe, welche sich auf meiner "must see" Liste befinden. Da ist aber gut, dass ich immerhin einen Eintrag abhaken kann.
 
 Auch wenn s durch diese Aktion ein wenig spaeter geworden ist, so finde ich schon, dass es sich gelohnt hat Schlaf dafuer zu opfern (was aber insgesamt nicht ganz so schlimm, da ich ja nicht allzu spaet angefangen hatte). Auch wenn ich mir nicht sicher bin, ob ich alle Trailer und Teaser gesehen habe, so hatte ich doch einiges an Vorinformationen; dazu gehoerten dann unter anderem auch zwei Sendungen des [fxguide](http://www.fxguide.com) Teams -- einmal eine detailierte Diskussion mit einer an der Herstellung des Filmes beteiligten Effektschmieden, zum anderen eine Besprechung in der VFX Show. Trotz alle dem bot der Flim noch ausreichend Wendungen, um es spannend bleiben zu lassen. Dazu gehoerte dann eben vor allen Dingen der Twist, wie es eben zu der Namensgebung des Filmes kommt; haette man wahrscheinlich aufgrund der Exposition auch von alleine drauf kommen koennen, aber irgendwie habe ich diese Kleinigkeit uebersehen -- folgerichtig konnte dieser Punkt im Plot seine volle Wirkung entfalten. Dazu gehoerte auch eine Referenz (ob nun beabsichtigt oder nicht), welche mir sofort ins Auge gefallen ist, welche ich aber bei einer schnellen Suche in der [Internet Movie Database](http://www.imdb.com) heute Morgen nicht finden konnte. Neben der ganz offensichtlichen Anspielung auf [E.T.: The Extra-Terrestrial](http://www.imdb.com/title/tt0083866) (1982) listet die IMDb noch eine Verbindung zu [2001: A Space Odyssey](http://www.imdb.com/title/tt0062622) (1968) auf, welche mir allerdings entgangen ist. Was ich hingegen aber als vollkommen zweifelsfrei ansehen wuerde, ist die Gemeinsamkeit mit der 2003er [Battlestar Galactica](http://www.imdb.com/title/tt0314979) Mini-Series: genauso wie die _Galactica_ ist auch die _Missouri_ ein ausgemustertes Schiff, welches nur noch als ein Museumsstueck dient. Mit der rund um die Inseln mit den Teleskopen aufgerichteten Barriere, ist es eben jenes schon lange ausgemusterte Schiff aus dem zweiten Weltkrieg, welches in der Stunde der Not wieder ins Leben zurueckgebracht wird. Vieles von dem Vorgang wie dies geschieht erinnert an die Szenen in "Galactica": am markantesten waere hier wohl die Stelle zu nennen, wo das letzte verbliebene Explosivgeschoss in einer schweisstreibenden Aktion von einem Endes des Schiffes zum anderen geschleppt wird -- da muss einfach die entsprechende Stelle aus "Galactica" ins Gedaechtnis kommen, wie die Vipers aelteren Baujahres quer durch das Schiff geschleppt werden, um diese in der Hangar zu bringen und dort fuer den Abflug fertig zu machen. Da muss ich echt noch einmal schauen, ob dies noch mehr Zuschauern aufgefallen ist (was ich doch mal erwarten wuerde), denn diese Parallele war einfach zu gut um einfach nur zufaellig zu sein.
- 
-**:::**
- 
- 
-### Mitbringsel vom Flohmarkt ###
-
-
-
-
-_Sun, 16. September 2012 -- 06:58_
-
-Also ich wuerde doch mal stark behaupten, dass sich der Ausflug in die Rheinaue wieder einmal gelohnt hat. Nicht dass es jetzt unbedingt Berge gewesen sind welche ich wieder mit nach Hause gebracht habe, aber ich denke mal schon, dass ich da eine sehr schoene Auswahl zum meinen heimischen Sammlungen hinzufuegen kann. Statt [wie beim letzten Mal](/blog/2012/2012-08/2012-08-18_16-21.html) mit einer Kollektion an Buecher zurueck nach Hause zu kommen, habe ich mich diesmal auf Silberscheiben beschraenkt:
-
-  * [Alice](http://en.wikipedia.org/wiki/Alice_%28singer%29) (2003) Il Sole Nella Pioggia
-  * [The Running Man](http://www.imdb.com/title/tt0093894) (1987)
-  * [Princess from Mars](http://www.imdb.com/title/tt1531911) (2009)
-
-Auch wenn ich dies nicht direkt ueberpruefen konnte, so schien mir das Alice Album von der aeusseren Art her dem 1986er "Park Hotel" recht aehnlich; das sagt zwar noch nicht wirklich etwas ueber die Musik, aber wenn beide Alben mehr oder weniger in der selben Schaffensperiode entstanden sind, dann gab bestehen gute Chancen dass in der Tat auch musikalische Gemeinsamkeiten vorliegen.
-
-Auf "Princess from Mars" bin ich echt mal gespannt; nachdem ich vor einer Weile noch [John Carter](http://www.imdb.com/title/tt0401729) gesehen habe, bin ich nun mal interessiert zu sehen, wie man sich dem Stoff vorher schon angenommen hat. Ein wenig ueberrascht war ich aber schon, als ich mittels [IMDb](http://www.imdb.com) herausfinden konnte, dass der Film erst vor ein paar Jahren gedreht worden ist -- und eben nicht, wie man vom Cover her haette vermuten koennen, irgendwann in den 70er oder 80er Jahren.
  
 **:::**
  

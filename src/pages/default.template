@@ -22,6 +22,7 @@
         <h2 class="hide">Site menu:</h2>
         {menu: {used_nodes: files}}
 
+	<!--
         <div class="announce">
           <h2>Latest news:</h2>
           <p><strong>29.06.2012:</strong><br />
@@ -30,6 +31,7 @@
           themselves need to be edited in order to adjust the markup language.</p>
           <p class="textright"><a href="#TODO">Read more &raquo;</a></p>
         </div>
+	-->
       </div>
 
       <div id="contentwide">
@@ -39,7 +41,7 @@
       <div id="extras">
 	<p>
 	<!-- Link to other online presences -->
-        <h2>Links:</h2>
+        <h2>Online profiles:</h2>
         <ul>
           <li><a href="https://plus.google.com/u/0/100581156331078830632">Google+</a></li>
           <li><a href="https://github.com/lbaehren">Github</a></li>
@@ -48,12 +50,14 @@
           <li><a href="https://www.xing.com/profile/Lars_Baehren?sc_o=mxb_p">XING</a></li>
 	  <li><a href="http://www.linkedin.com/profile/view?id=134900181">LinkedIn</a></li>
         </ul>
-	<!-- COntact information -->
-        <h2>Contact:</h2>
+	</p>
+	<!-- Contact information -->
+	<script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
+	<h2>Contact:</h2>
         <p>
 	<ul>
-	  <li><a href="http://www.larsbaehren.de">larsbaehren.de</a><br>
 	  <li><a href="mailto:lbaehren@gmail.com">lbaehren@gmail.com</a>
+	  <li><a href="skype:larsbaehren?call">skype:larsbaehren</a>
 	</ul>
 	</p>
       </div>
