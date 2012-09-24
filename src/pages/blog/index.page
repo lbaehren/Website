@@ -9,14 +9,59 @@ tags: Blog
  
 **:::**
  
+### Flickr Benachrichtigungen ###
+
+
+
+
+_Mon, 24. September 2012 -- 10:01_
+
+Ich weiss, dass mir dies schon einige Mal in den Fingern lage, aber irgendwie ist dies mal wieder eine jener Kleinigkeiten, welche immer wieder liegen geblieben ist.
+
+Seit ich beim [prometheus Bildarchiv](http://www.prometheus-bildarchiv.de) begonnen habe zu arbeiten, ist die Anzahl an Emails, welche jeden Tag in meiner Inbox landen, drastisch angestiegen, da so ziemlich alles, was irgendwie _prometheus_ Gefuege schieht in einer Email resultiert, kommen da schon einmal locker 30-50 Mitteilungen an einem Tag zusammen. Neben den eher technischen Nachrichten -- Status der Server, etc. -- werden aber auch alle Aktivitaten auf Twitter und Facebook repliziert; um von dem Gezwitschere aber nicht zu sehr gestoert zu werden, habe ich mir da mittlerweile einen Filter eingerichtet, denn ich persoenlich finde einfach dass mir dass mein Mailfach zu sehr zumuellt. Dass die die Nachrichten aber noch auf weitere Social-Media Platformen erstrecken, kann man an der folgenden Meldung sehen:
+
+![Flickr notification](/blog/2012/2012-09/2012-09-19_flickr.png)
+
+Yep, es gibt einen [prometheus e.V. Flickr Account](http://www.flickr.com/photos/prometheus_ev); sonderlich viel passiert da allerdings nicht, so dass dieser nicht unbedingt der Erwaehnung wert waere. Was allerdings in Bezug auf die bereits angesprochenen Emails relevant ist, waere der Umstand dass es auch hier die Benachrichtigungen fuer jede Aktivitaet im Umfeld aktivert sind; wozu dies dann fuehrt ist, dass Benachrichtigungen losgeschickt werden, wenn einer Kontakte Bild online stellt. Wir reden hier nicht ueber Aktivitaeten wie z.B. das Kommentieren von Bilder -- das koennte man ja vielleicht noch verstehen -- sondern bei dieser Konfiguration bekomme ich also auch fuer meine eigenen Bilder, welche ich zu Flickr hochlade, Emails zugesendet. Da wird wahrscheinlich noch einmal ein weiterer Filter noetig...
+ 
+**:::**
+ 
+ 
+### Zu spaet ###
+
+
+
+
+_Mon, 24. September 2012 -- 09:47_
+
+Also, nicht nur dass der Zug in Richtung Koeln (traditionsgemaess) ziemlich voll ist... als kleinen Zusatz hat der MRB heute Morgen auch noch Verspaetung, so dass es mit der Fahrt nach Koeln ein wenig laenger dauert. Der einzige Vorteil an der Sache, dass 15 Minuten ausreichend Zeit sind, um noch einmal schnell in den Supermarkt um die Ecke zu laufen und Milch  zu holen; damit kann ich mir den extra Trip vor Ort sparen und direkt ins Buero laufen.
+
+Ich muss doch immer wieder feststellen, dass es schon einen spuerbaren Unterschied zwischen den Regionalbahnen und der MRB gibt; womit letztere vor allen Dingen aufwarten kann sind recht enge Sitze, so dass -- es sei denn man schnappt sich eine Vierergruppe -- nur wenig Raum fuer die Knie bleibt. Es ist da wohl nicht so sonderlich verwunderlich, dass ich bei so einem Wagen immer ein wenig an einen Gelege auf Raedern denken muss.
+ 
+**:::**
+ 
+ 
+### Wenn die Bahn nicht kommt ###
+
+
+
+
+_Fri, 21. September 2012 -- 21:08_
+
+Das war natuerlich aergerlich: da beeile ich mich extra nach dem Yoga, um von der Stunde zur Linie 16 zu kommen -- das sind netterweise fuenf Fussminuten -- da werde ich von der Bahn versetzt. Als ich an der Haltestelle auftauchte standen dort bereits eine Reihe Leute und auf der Anzeige befand sich der Hinweis dass die Bahn in drei Minuten eintreffen wuerde. Also habe ich mich ein wenig beruhigt und auf meine Verbindung zurueck nach Bonn gewartet. Was nun aber passierte war, dass die Anzeige in dem Augenblick, so wie von "1 Minute" nach "sofort" umspringen sollte, mit einem Male "28 Minuten" meldete. Wo nun aber die Bahn geblieben war, welche eigentlich haette kommen sollen, wurde in keinster Weise deutlich. Dass dies aber nicht einfach nur an mir lag war alleine schon daran zu erkennen, dass ich nicht der einzige der Umherstehenden war, welcher sich recht ueberrascht ueber die Entwicklung zeigte. Da der naechste Bahnhof, Koeln Sued, aber ebenfalls etwas ueber zwanzig Minuten entfernt war, machte es wenig Sinn dorthin aufzubrechen, zumal ich ja noch nicht einmal wusste, wann ich dort einen Zug kriegen wuerde. Also vor Ort bleiben und die Zeit zum Lesen nutzen. Dass da aber einfach so eine Bahn ausfaellt, ohne dass dies in irgendeiner Weise angekuendigt wird, finde ich schon ein wenig nervig -- gut nur, dass es eben noch einigermassen frueh am Abend ist, denn sonst waere es insgesamt etwas schwerer mit den Verbindugen gewesen.
+ 
+**:::**
+ 
+ 
 ### HDF5 at the movies ###
 
+Tags: computing cinema
 
 
 
 _Fri, 21. September 2012 -- 16:32_
 
-While going through a recent [article](http://www.fxguide.com/featured/resident-evil-retribution-just-add-bacon) on [fxguide.com](http://www.fxguide.com) on the latest installement of the Resident Evil franchise, I jumped offsite following two links: one for [Mr. X](http://www.mrxfx.com), a Toronto-based VFX facility and [Alembic](http://www.alembic.io), an open computer graphics interchange framework jointly developed by [Sony Pictures Imageworks](http://opensource.imageworks.com) and [Lucasfilm Ltd.](http://www.lucasfilm.com), recently release in version 1.1 at the ACM SIGGRAPH Conference.
+While going through a recent [article](http://www.fxguide.com/featured/resident-evil-retribution-just-add-bacon) on [fxguide.com](http://www.fxguide.com) on the latest installement of the Resident Evil franchise, I jumped offsite following two links: one for [Mr. X](http://www.mrxfx.com), a Toronto-based VFX facility and [Alembic](http://www.alembic.io), an open computer graphics interchange framework jointly developed by [Sony Pictures Imageworks](http://opensource.imageworks.com) and [Lucasfilm Ltd.](http://www.lucasfilm.com), recently release in version 1.1 at the [ACM SIGGRAPH Conference](http://www.siggraph.org/conference).
 
 > Alembic is an open computer graphics interchange framework. Alembic distills complex, animated scenes into a non-procedural, application-independent set of baked geometric results. This ‘distillation' of scenes into baked geometry is exactly analogous to the distillation of lighting and rendering scenes into rendered image data.
 >
@@ -207,52 +252,6 @@ Das ist dann genau der Punkt, wo ich beschlossen habe selber aktiv zu werden. Da
   - [Mono Project](http://www.mono-project.com)
 
 Die Mails sind schon eine Weile raus, aber bisher habe ich noch keinerlei Rueckmeldung erhalten -- da werde ich also noch einmal nachfuehlen muessen. Fuer mich persoenlich am interessantesten ist natuerlich _Darktable_, ein OSS zur Organisation von Photo-Sammlungen; von dem, was ich bisher gesehen und gelesen habe, handelt es sich damit um eine Software, welche eine aehnliche Funktionalitaet versucht zu bieten, wie dies bei [Lightroom](http://www.adobe.com/products/photoshop-lightroom.html) (Adobe) und [Aperture](http://www.apple.com/aperture) (Apple) der Fall ist. In wie weit diese Einschaetzung wirklich korrekt ist kann ich zu diesem Zeitpunkt nur schwer sagen, aber unter anderem aus diesem Grunde faende ich es interessant einmal von den Machern selber zu erfahren, was ihre Ziele sind. Der andere Grund, weshalb ich gerade in diesem Fall so dahinter her bin ist, dass ich zunehmend den Eindruck bei Shows wie [This Week in Photo](http://www.thisweekinphoto.com) bekommen habe, dass dort ein sehr starker Fokus auf kommerziellen Software-Loesungen betrifft; das fuer sich genommen ist vielleicht noch nicht einmal das Schlimmste, aber bei den immer wieder aufgeschnappten Kommentaren habe ich einfach den Verdacht, dass sich nur wenig Leute ernsthaft mit OSS Projekten im Bereich Photographie beschaeftigt haben. Folgerichtig gehoert diese Diskussion letzten Endes natuerlich auch in eine Show wie _TWiP_, aber ich denke mal _FLOSS Weekly_ bietet wahrscheinlich eine bessere Platform um wirklich in die Tiefe zu gehen. Da dies aber nicht von alleine passiert, habe ich nicht beschlossen da ein wenig taetig zu werden und so hoffentlich ein wenig damit beizutragen den Sendeplan von _FLOSS Wekly_ zu fuellen.
- 
-**:::**
- 
- 
-### HDR vs. Tonemapping ###
-
-
-
-
-_Mon, 17. September 2012 -- 18:28_
-
-Im Anschluss an den [vorherigen Eintrag](/blog/2012/2012-09/2012-09-17_18-08.html) faellt mir noch eine Kleinigkeit ein, welche sich letzte Woche bei einer Diskussion mit Sven ergeben hat. Da wir ebenfalls auf HDR zu sprechend kamen, tauchte mal wieder leichtes Missverstaendnis auf, welches ich schon mehrfach zu lesen bekommen habe:
-
-> Ich finde manchmal, dass die HDR-Aufnahmen zu starke Kontraste zeigen. HDR soll ja nicht heissen, dass alle Objekte auf einmal irgendwie "geriffelt" aussehen. 
-
-Wie ich jetzt ein wenig aus eigener Erfahrung gelernt habe ist dies nicht dem HDR selber zuzuschreiben, sondern dem anschliessenden Tonemapping; das HDR als solches ist einfach nur ein Bild mit einem sehr grossen dynamischen Umfang, welcher weit ueber das hinausgeht was eine Kamera in der Lage ist mit einem einzigen Bild abzubilden. Gleichzeitig bedeutet dies aber leider auch, dass das Bild ueber eine Bandbreite verfuegt, welche von keinem Monitor angezeigt werden kann; darueber hinaus sind auch gaengige Formate wie JPEG nicht darauf ausgelegt eine derartige Bildtiefe abzuspeichern (einer der Gruende warum e.g. die VFX Industrie [OpenEXR](http://www.openexr.com) als Speicherformat verwendet). Als Konsequenz dieser Umstaende muss ein HDR via Tonemapping zurueck in den Farbraum ueberfuehrt werden, welcher sich auf gaengigen Geraeten anzeigen laesst; dieser Vorgang laesst sich auf unterschiedliche Weise mit verschiedensten Algorithmen durchfuehren -- dementsprechend gibt es das sehr viele Parameter, an welchen man drehen kann. Was Du ansprichst ist u.a. so etwas wie einem Detail-Parameter geschuldet: dreht man den immer weiter hoch, dann bekommt man eben sehr stark Strukturen, welche ueber das hinausgehen, was man doch typischerweise mit dem Auge erkennt.
- 
-**:::**
- 
- 
-### Bonn in HDR (4) ###
-
-
-
-
-_Mon, 17. September 2012 -- 18:08_
-
-Da es zuletzt doch wieder ein wenig textlastig geworden ist, sollte ich hier noch einmal daran denken meine begonnene Serie an HDR Bildern fortzusetzen. Auch wenn ich nicht unbedingt bergeweise neues Material schiesse, so gibt es dennoch eine Reihe an Aufnahmen, welche nicht einfach nur auf den heimischen Festplatten herumliegen sollten.
-
-![Blick auf Villich](/blog/2012/2012-09/hdr_20120909_130930_villich.jpg)
-
-Wie vielleicht mancher mitbekommen hat war am 9. September "Tag des Offenen Denkmals"; zu diesem Anlass waren vieler Orts Tueren und Tore geoeffnet, wo es normalerweise nur bedingt Einlass gibt. Folgerichtig hatte ich ueberlegt dem [Aufruf von Wikipedia](/blog/2012/2012-08/2012-08-31_08-56.html) zu folgen und mit der Kamera auf Jagd nach Denkmaelern zu gehen; letzten Endes ist dabei leider nur bedingt etwas bei herumgekommen, weil ich mich einfach viel zu lange an einem einzigen Ort aufgehalten habe, aber grundsaetzlich war dies ein guter Anlass mit ein wenig mehr Fokus auf Motisuche zu gehen, als dies vielleicht ansonsten der Fall ist. So kam es dann auch, dass ich mich aufgemacht habe zur [Burg Lede](http://www.burglede.de) in der Naehe von Villich: zu einem frueheren Zeitpunkt war ich da bei einer sonntaglichen Fahrradtour zwar schon einmal vorbeigekommen, aber zu diesem Zeitpunkt hatte ich einfach noch keine Ahnung, worum es sich eigentlich bei dem Bauwerkt handelt. Da ich da aber schon einmal einen Landschaftspunkt kannte, habe ich diesen einfach noch einmal angesteuert. Auf dem Weg dahin habe ich allerdings versucht eine leicht andere Route zu nehmen, als dies beim ersten Mal der Fall war, so dass ich dem Pfad entlang einem kleinen Bach folgend an einer Bruecke gelandet bin, von welcher aus sich ein sehr netter Blick in Richtung Villich bot. Also schnell Kamera ausgepackt und versucht die Szene einzufangen: zwei Bilderserien, welche ich dann anschliessen zu zwei HDRs zusammengebacken habe, sind dabei herumgekommen. Beide resultierenden Bilder haben aber ein gemeinsames Problem: aufgrund des recht starken Windes war sehr viel Bewegung in den Kronen der Baeume -- folgerichtige befanden sich Aeste und Zweige leider nicht an exakt den gleichen Positionen in den Einzelaufnahmen, so dass es bei der anschliessenden Kombination zu einem deutlich erkennbaren Ghosting gekommen ist. Ein wenig schade eigentlich, denn ansonsten waren die Aufnahmen eigentlich recht schoen geworden.
- 
-**:::**
- 
- 
-### Battleship (2012) ###
-
-
-
-
-_Mon, 17. September 2012 -- 09:40_
-
-Das hat mir doch schon eine Weile unter den Naegeln gebrannt, aber letzte Nacht habe ich es doch noch geschafft [Battleship](http://www.imdb.com/title/tt1440129) (2012) anzuschauen. Das laufende Jahr hat sich aus cineastischer Sicht bisher ja schon einiges zu bieten gehabt -- so viel in der Tat, dass ich immer noch nicht alle Filme gesehen habe, welche sich auf meiner "must see" Liste befinden. Da ist aber gut, dass ich immerhin einen Eintrag abhaken kann.
-
-Auch wenn s durch diese Aktion ein wenig spaeter geworden ist, so finde ich schon, dass es sich gelohnt hat Schlaf dafuer zu opfern (was aber insgesamt nicht ganz so schlimm, da ich ja nicht allzu spaet angefangen hatte). Auch wenn ich mir nicht sicher bin, ob ich alle Trailer und Teaser gesehen habe, so hatte ich doch einiges an Vorinformationen; dazu gehoerten dann unter anderem auch zwei Sendungen des [fxguide](http://www.fxguide.com) Teams -- einmal eine detailierte Diskussion mit einer an der Herstellung des Filmes beteiligten Effektschmieden, zum anderen eine Besprechung in der VFX Show. Trotz alle dem bot der Flim noch ausreichend Wendungen, um es spannend bleiben zu lassen. Dazu gehoerte dann eben vor allen Dingen der Twist, wie es eben zu der Namensgebung des Filmes kommt; haette man wahrscheinlich aufgrund der Exposition auch von alleine drauf kommen koennen, aber irgendwie habe ich diese Kleinigkeit uebersehen -- folgerichtig konnte dieser Punkt im Plot seine volle Wirkung entfalten. Dazu gehoerte auch eine Referenz (ob nun beabsichtigt oder nicht), welche mir sofort ins Auge gefallen ist, welche ich aber bei einer schnellen Suche in der [Internet Movie Database](http://www.imdb.com) heute Morgen nicht finden konnte. Neben der ganz offensichtlichen Anspielung auf [E.T.: The Extra-Terrestrial](http://www.imdb.com/title/tt0083866) (1982) listet die IMDb noch eine Verbindung zu [2001: A Space Odyssey](http://www.imdb.com/title/tt0062622) (1968) auf, welche mir allerdings entgangen ist. Was ich hingegen aber als vollkommen zweifelsfrei ansehen wuerde, ist die Gemeinsamkeit mit der 2003er [Battlestar Galactica](http://www.imdb.com/title/tt0314979) Mini-Series: genauso wie die _Galactica_ ist auch die _Missouri_ ein ausgemustertes Schiff, welches nur noch als ein Museumsstueck dient. Mit der rund um die Inseln mit den Teleskopen aufgerichteten Barriere, ist es eben jenes schon lange ausgemusterte Schiff aus dem zweiten Weltkrieg, welches in der Stunde der Not wieder ins Leben zurueckgebracht wird. Vieles von dem Vorgang wie dies geschieht erinnert an die Szenen in "Galactica": am markantesten waere hier wohl die Stelle zu nennen, wo das letzte verbliebene Explosivgeschoss in einer schweisstreibenden Aktion von einem Endes des Schiffes zum anderen geschleppt wird -- da muss einfach die entsprechende Stelle aus "Galactica" ins Gedaechtnis kommen, wie die Vipers aelteren Baujahres quer durch das Schiff geschleppt werden, um diese in der Hangar zu bringen und dort fuer den Abflug fertig zu machen. Da muss ich echt noch einmal schauen, ob dies noch mehr Zuschauern aufgefallen ist (was ich doch mal erwarten wuerde), denn diese Parallele war einfach zu gut um einfach nur zufaellig zu sein.
  
 **:::**
  
