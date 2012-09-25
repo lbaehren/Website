@@ -1,0 +1,11 @@
+---
+title: "Webserver offline"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Fri, 10. November 2006 -- 12:06_
+
+Wie ich gerade feststellen musste, hat sich der [ASTRON](http://www.astron.nl) Webserver wieder einmal von den Lebenden verabschiedet. Demnach habe ich derzeit leider keinen Zugang zu den DN, so dass ich mich fuer den Moment wieder einmal mit dem lokalen Buffer begenuegen muss. Andererseits ist dies fuer mich vielleicht auch nicht so akut, weil ich ja schliesslich lieber noch etwas arbeiten sollte, statt Tagebuch zu fuehren. Allerdings wollte ich noch etwas an meiner Wiki umstellen, was jetzt ja leider nicht moeglich ist. Aber gut, ich hoffe mal, dass sich das Problem behalt beheben laesst (solange es nichts ernstes ist). Was aber mit diesem Ereignis sehr schoen demonstriert wird der Hintergedanke hinter dem Ansinnen uns mit der USG weitestgehend von dem Rest der zentralen Infrastruktur abzukoppeln: waehrend der ASTRON Webserver (und damit auch die [LOFAR Wiki](http://www.lofar.org/wiki)) offline sind, lassen sich die Seiten der USG nach wie vor erreichen -- kein Wunder, dass ich mir ein leicht befriedigtes Grinsen nicht verkneifen kann. Das zeigt mir, dass ich mit meiner Argumentation doch nicht komplett falsch lag.
