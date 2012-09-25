@@ -1,0 +1,11 @@
+---
+title: "Start ins Wochenende"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Sat, 09. January 2010 -- 09:54_
+
+Angesichts der Zeit, zu welcher ich letzte Nacht ins Bett gekommen bin, started das eigentliche Wochenende recht frueh. Was ich mir ja vorgenommen habe, ist an diesem Wochenende noch die wichtigsten der momentan ausstehenden Probleme in DAL anzugehen, welche letzten Endes auch dazu fuehren, dass es nicht moeglich ist TBB Daten einzulesen. Seit ich vor Weihnachten damit begonnen habe die C++ Klassen, welche das high-level Interface definieren, an die Klassen fuer die Beamformer Daten anzugleichen, haengt vor allen Dingen der Zugriff auf die eigentlichen Daten immer noch in der Schwebe; zwar ist es mir mittlerweile gelungen eine Reihe von Problemen auszubuegeln, aber es bleibt eben immer noch, dass die Anfrage der Daten von einer Stelle hoch in der Dateistruktur immer noch nicht stabil ist. Da am Montag ja ein Meeting stattfindet, in welchen ueber die zukuenftige Entwicklung der Cosmic Rays Software diskutiert werden soll, moechte ich ja sicherstellen, dass zumindest der Teil, welchen ich dazu beitrage in einem guten Zustand ist.

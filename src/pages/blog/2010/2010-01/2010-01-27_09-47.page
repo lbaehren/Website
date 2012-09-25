@@ -1,0 +1,38 @@
+---
+title: "Immer noch nicht"
+in_menu: false
+author: Lars Baehren
+tags: Travel Zwolle
+---
+
+## {title:} ##
+
+_Wed, 27. January 2010 -- 09:47_
+
+Hm, ich hatte eigentlich gehofft, dass ich es bis **Zwolle** schaffen wuerde, das derzeit noch wesentliche Problem in Sachen Beamformed Data zu loesen. Stellt sich aber heraus, dass es doch ein wenig trickreicher ist, als ich erwartet hatte, so dass ich auch gleich nach der Ankunft bei ASTRON daran weitertesten muss. Mir fhlt bisher immer noch die Moeglichkeit, vom obersten Niveau aus die komplette Struktur eines Beamformed Dataset zu generieren, eine "Kleinigkeit" welche benoetig wird um endlich Alwins HDF5-Writer umzuschreiben und automatisch korrekt aufgebaute Dateien zu generieren. Woran es derzeit immer noch scheitert ist folgendes: von der benoetigten Struktur
+
+~~~~
+Dataset
+|-- StationBeam000
+|   |-- PencilBeam000
+|   |   `-- CoordinatesGroup
+|   `-- PencilBeam001
+|       `-- CoordinatesGroup
+|-- StationBeam001
+|   |
+~~~~
+
+kann ich zwar
+
+~~~~
+/
+|-- StationBeam000
+|   |-- PencilBeam000
+|   | 	`-- CoordinatesGroup
+|   `-- PencilBeam001
+|     	`-- CoordinatesGroup
+|-- StationBeam001
+|   |
+~~~~
+
+erzeugen, nicht aber die erste Variante, welche die tieferliegenden Strukturen in einen vordefinierten Container einbindet. Was ich aer brauche ist der komplette Baum und nicht nur einen Teil davon... dummerweise sind bisher allerdings alle Versuche gescheitert dies ans Laufen zu bringen.

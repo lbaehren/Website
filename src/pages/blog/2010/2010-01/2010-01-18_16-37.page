@@ -1,0 +1,23 @@
+---
+title: "Wieder eine runde Nummer"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Mon, 18. January 2010 -- 16:37_
+
+Na bitte, da haetten wir also doch mal wieder eine Runde Nummer, welche ich mir unter den Nagel reissen kann. Nachdem ich seinerzeit schon die Versionsnummer 1000 eingecheckt habe, ist mir eben aufgefallen dass ich mit den Aenderungen an dem Bootstrap Script schon bei 3999 war -- Grund genug also mal noch schnell zu schauen, ob es nicht noch etwas gibt, was ich hinterherschieben kann, um mir auch die folgende Versionsnummer zu sicher.
+
+~~~~
+ehef111:DAL lars$ svn commit -m "Testing for access to the attributes attached to the various objects within a BF dataset."
+Sending        DAL/implement/data_hl/BF_PencilBeam.cc
+Sending        DAL/implement/data_hl/BF_PencilBeam.h
+Sending        DAL/test/data_hl/tBF_PencilBeam.cc
+Sending        DAL/test/data_hl/tTBB_StationGroup.cc
+Transmitting file data ....
+Committed revision 4000.
+~~~~
+
+Ich lasse mich mal ueberraschen, wie lange es denn dauert, bis wir die folgenden 1000 voll kriegen...

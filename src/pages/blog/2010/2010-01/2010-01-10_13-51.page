@@ -1,0 +1,37 @@
+---
+title: "Wo ist die Dokumentation?"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Sun, 10. January 2010 -- 13:51_
+
+Wie ja angekuendigt habe ich mich dieses Wochenende hinter dem heimischen Schreibtisch vergraben, um noch einige ausstehende Probleme in der DAL anzugehen; seit ich vor Weihnachten damit begonnen habe alle C++ Klassen fuer den high-level Zugriff auf die [LOFAR](http://www.lofar.org) Daten zu vereinheitlichen, gibt es immer noch Probleme mit dem Auslesen der TBB Daten. Allerdings scheint das Problem nicht allein in dem Auslesen des Arrays mit den eigentlichen Daten zu liegen, sondern auch das rekursive Oeffnen der Objekte in einem der [HDF5](http://www.hdfgroup.org/HDF5) Dateien laeuft alles andere als wie ich mir dies wuenschen wuerde. Nachdem ich gestern einige Zeit damit verbracht habe den existierenden Code anzupassen, habe ich mir letzte Nacht und heute Morgen noch einmal die Dokuemtnation fuer die HDF5 Library vorgenommen. Wie ich allerdings zu meinem Leidwesen feststellen muss, ist die Dokumentation alles andere als andere als leicht zu lesen.. und zu gebrauchen. Was mir vor allen Dingen aufstoesst ist die Tatsache, dass die Dokumentation fuer das API der Bibliothek losgeloest von dem eigentlichen Source-Code verwaltet wird, so dass beide vielfach nicht uebereinstimmen. Mit dem Wechsel von Version 1.6.x zu 1.8.0 sind eine Reihe Veraenderungen an dem Interface vorgenommen worden, so dass eine Reihe von Funktionsaufrufen nur noch in einer Art Legacy-Mode unterstuetzt werden; wie nun aber genau die neuen Funktionen zu gebrauchen sind, ist nicht unbedingt klar, denn Code-Beispiele sind leider nicht Teil der Dokumentation... diese finden sich wieder an einer ganz anderen Stelle. So hat es denn auch eine ganze Weile gedauert, bis ich endlich gefunden habe, wie ich die immer wieder von meinen Testprogrammen ausgegebenen Fehlermeldungen vermeiden konnte, wenn es darum geht zu testen ob ein Objekt unterhalb eines bestimmten Punktes in einer Struktur zu finden ist: nach einigem Hin und Her habe ich nur endlich herausfinden koennen, dass ich anstatt
+
+~~~~
+    std::set<std::string> groups;
+    h5get_names (groups,location,H5G_GROUP);
+    if (static_cast<bool>(groups.count(name))) {
+      location_p = H5Gopen2 (location,
+                             name.c_str(),
+                             H5P_DEFAULT);
+    } else {
+      location_p = 0;
+    }
+~~~~
+
+eher die folgende Variante gebrauchen sollte:
+
+~~~~
+    if (H5Lexists (location, name.c_str(), H5P_DEFAULT)) {
+      location_p = H5Gopen2 (location,
+                             name.c_str(),
+                             H5P_DEFAULT);
+    } else {
+      location_p = 0;
+    }
+~~~~
+
+Die wesentliche Lehre, welche ich da zunaechst einmal fuer mich selber ziehen kann ist, dass der Ansatz Dokumentation und Source-Code zusammen zu verwalten deutlich besser ist; es gibt sicherlich keine 100%ige Garantie um zu verhindern, dass eines dem anderen hinterher hinkt, aber beides gleichzeitig vor Augen zu haben fuehrt doch eher dazu, dass eventuelle Abweichungen auffallen und korregiert werden. Auch kann ich auf diese Weise wenigstens sicherstellen, dass ich nicht hundertausend verschiedene Dinge zu verteilen brauche -- alles kommt aus ein und derselben Quelle und laest sich sogar automatisch generieren ([Doxygen](http://www.stack.nl/~dimitri/doxygen) sei Dank).

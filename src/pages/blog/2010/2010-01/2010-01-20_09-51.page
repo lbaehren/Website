@@ -1,0 +1,16 @@
+---
+title: "Frage der Geduld"
+in_menu: false
+author: Lars Baehren
+tags: Travel Zwolle
+---
+
+## {title:} ##
+
+_Wed, 20. January 2010 -- 09:51_
+
+Also wenn ich mir dies so betrachte, dann hatte ich schon einmal kurzweiligere Zugfahrten nach **Zwolle**. Da ich dies leider nicht ganz ignorieren kann, habe ich mich auf der Fahrt heute Morgen mal noch an ein paar Fragen gesetzt, weldhe Anastasia mir hat zukommen lassen; wie kaum anders zu erwarten handelte es sich einmal wieder um die Tools fuer die Analyse der Pulsar Daten. Waehrend fuer eine Reihe von anderen Unterfangen weitestgehend selbstgeschriebener Code zur Verfuegung steht, gebraucht die Pulsar Gruppe eine Sammlung an externen Software-Paketen, welche natuerlich allesamt auch auf dem Cluster in Groningen laufen muessen; gerade da scheint aber mit der letzten Ergaenzung das Problem zu liegen, denn laut den Angaben von Anastasia laesst sich mindests eines der Programme nicht bauen:
+
+> I'm getting different behavior for linking the same executable on a Mac vs Linux.  The compile/flags/libs are the same on both systems, but when the executable is linked on the Mac, it is successful, and on the offline cluster, the link fails due to unresolved symbols.  These symbols are in libsigproc and libsigproc_fort.  I don't understand why one fails and the other is fine.  I also don't understand why the Linux Link command has "-rdynamic", which was not specified in the CMakeLists.txt file, where LINK_FLAGS = "".  This flag "-rdynamic" is not within the Mac build.  Both libsigproc and libsigproc_fort are set specifically as STATIC in the CMakeLists.txt file.  Any ideas on what I can do to fix this?
+
+Irgendwie werde ich nicht den Verdacht los, dass mir wieder einmal eine laengere Session bevorsteht, damit dieses Problem aus der Welt geschafft wird. Zunaechst habe ich aber auf der bisherigen Fahrt versucht mir einigermassen einen Ueberblick zu verschaffen, denn schliesslich ist die Pulsar-Software ja nicht meine tagtaegliche Baustelle; das ist allerdings alles als eine spannende Aufgabe... auch wenn die Alternativen dazu nicht notwendigerweise sonderlich aufregender sind. Was ich ansonsten machen koennte/muesste, ist mir die HDF5 Dokumentation zum Thema Tabellen durchzulesen; sowohl fuer die Beamformer- als auch die TBB-Daten wird wohl ein Teil der Informationen innerhalb einer Tabelle abgelegt werden -- hoechste Zeit also mich einmal eingehender damit zu beschaeftigen, wenn ich dies in absehbarer Zeit in die DAL einbauen soll...
