@@ -1,0 +1,56 @@
+---
+title: "Loesung gefunden"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Sat, 06. February 2010 -- 08:11_
+
+Also da habe mich doch eine Weile mit herumgeschlagen -- doch nun ist das Problem endlich geloest: [der seit dem Januar bestehende Fehler in der DAL](/blog/2010/2010-01/2010-01-27_09-47.html), wonach es nicht moeglich war rekursiv alle Strukturen innerhalb eines BF_Dataset zu generieren, gehoert seit dem gestrigen Abend der Vergangenheit an! Nachdem ich mir eine Weile die Zaehne an dem Problem ausgebissen hatte, habe ich ab dem Donnerstag Abend ein wenig die Strategie geaendert: weil ich einfach den Verdacht hatte, dass es sich um ein fundamentaleres -- und dennoch subtiles -- Problem handelt, habe ich noch einmal meine C++ Buecher und die Dokumentation von HDF5 zur Hand genommen. Es gab zwar eine ganze Reihe Sachen, welche ich aus dem bestehenden Verstaendnis heraus testen konnte, aber es zeichnete sich doch ab, dass es etwas gab, was mir an Einsicht fehlte. Folgerichtig habe ich mir einen guten Teil des Freitag dafuer beiseite genommen Dokumentation zu lesen statt zu programmieren.
+
+Die wahrscheinlich entscheidende Eingebung fuer die Loesung des Problems kam mir dann im Laufe des Nachmittages: auch wenn die HDF5 Library vornehmlich aus einem C Interface besteht, gibt es doch auch ein C++ API. Auch wenn ich von letzterem innerhalb der DAL keinen Gebrauch mache -- ich habe es mir zwar angeschaut, aber wirklich zu gewinnen ist damit meiner Ansicht nach nichts -- so konnte es ja nicht schaden, den Quellcode einmal ein wenig genauer unter die Lupe zu nehmen. Wenn das HDF5 C++ Interface die Moeglichkeit unterstuetzen sollte, Kopien von einem Objekt anzufertigen, dann gab es die Moeglichkeit einen brauchbaren Hinweis zu finden. Stellt sich heraus, dass ich mit meiner Vermutung richtig lag:
+
+~~~~
+H5File::H5File(const H5File& original) : IdComponent(original)
+{
+    id = original.getId();
+    incRefCount(); // increment number of references to this id
+}
+~~~~
+
+Waehrend die erste Instruktion nichts anderes ist, als was ich die ganze Zeit schon gemacht habe. Der wichtige neue Hinweis war aber was sich in ''incRefCount()'' versteckte, naemlich die Buchhaltung innerhalb der HDF5 Library; wird die Kopie eines Objektes angefertig, so reicht es nicht alleine dessen Adresse zu kopieren, sondern man muss auch einen Zaehler anpassen, welcher nachhaelt wie viele Instanzen auf das zugrundliegende Objekt verweisen.
+
+Wie macht man dies nun praktisch?
+
+~~~~
+//_____________________________________________________________________________
+//                                                                    operator=
+
+CommonInterface& CommonInterface::operator= (CommonInterface const &other)
+{
+  if (this != &other) {
+    destroy ();
+    copy (other);
+  }
+  return *this;
+}
+
+//_____________________________________________________________________________
+//                                                                         copy
+
+void CommonInterface::copy (CommonInterface const &other)
+{
+  // Initialize internal variables
+  location_p = 0;
+  attributes_p.clear();
+  // Copy variable values from other object
+  location_p   = other.location_p;
+  attributes_p = other.attributes_p;
+  // Book-keeping
+  incrementRefCount ();
+}
+~~~~
+
+Will heissen: statt den vom Compiler bereitgestellten Copy Operator (`operator=`) zu verwenden, habe ich diesen ueberladen, so dass meine Definition verwendet wird. Die eigentlichen Anweisungen hinter den Kulissen stecken dann in der `copy()` Funktion, welche sicherstellt, dass nicht nur einfach die internen Parameter kopiert werden, sondern auch der Zaehler fuer die Referenzen zu dem zugrundeliegenden HDF5 Objekt aktualisiert wird.

@@ -1,0 +1,14 @@
+---
+title: "Wieder unterwegs"
+in_menu: false
+author: Lars Baehren
+tags: Travel Zwolle
+---
+
+## {title:} ##
+
+_Wed, 24. February 2010 -- 09:52_
+
+In diesen Tagen komme ich irgendwie wieder einmal nicht so ganz zur Ruhe: nachdem ich von Donnerstag Abend bis Montag Morgen in Bonn war, habe die letzten beiden Tage in Nijmegen zugebracht. Gerade eben bin ich durch **Zwolle** gekommen, auf meinem Weg nach ASTRON, wo ich die kommenden zwei Tage verbringen werde. Morgen Nachmittag geht es dann aber auch schon wieder auf nach Bonn, wo ich dann -- diesmal ein wenig laenger -- bis Dienstag bleiben werde... ehe es dann am Mittwoch direkt wieder weitergeht nach Dwingeloo. Wie ich bereits gestern gegenueber Julia anmerkte, macht dieses hin und her es nicht unbedingt einfacher Kontinuitaet in die Aktivitaeten zu bringen; die einzige Weise, in welcher ich dies einigermassen geschafft habe ist, dass ich im Wesentlichen abends und nacht am heimischen Schreibtisch gearbeitet habe -- mit ein wenig Glueck kann ich mich aber auch an den kommenden Tagen bei Julia am Schreibtisch einrichten.
+
+Heute steht zunaecht einmal noch das _LOFAR Status Meeting_ auf dem Programm, kurz nach Mittag dann das naechste _BF Pipeline Meeting_, anchliessend noch ein Treffen mit Jean-Mathias, Anastasia und Ken, um die Aenderungen am ICD fuer die Dynamic Spectra Data zu besprechend. Wenn dies dann vorbei ist, werde ich wohl hoffentlich wieder dazu kommen wirklich an der Software weiterzuarbeiten. Das habe ich natuerlich auch schon die letzten beiden Tage probiert, nur im Buero an der Uni war dies nur eingeschraenkt moeglich, weil mir Heino staendig mit seinem Wrapper-Code auf die Nerven gegangen ist, welcher mit einem Male super-wichtig und super-dringend geworden ist. Irgendwie scheint er nicht einsehen zu wollen, dass es eben nicht fuer die Produktivitaet foererlich ist, wenn man staendig den Leuten auf's Dach steigt und hinter ihnen stehend staendig Kommentare abgibt. Was mich allerdings fast noch mehr nervt ist die Tatsache, dass dies wieder einmal das so typische hin und her ist, bei welchem sich die Prioritaeten von Woche zu Woche aendern und gemachte Absprachen ignoriert werden. Wenn ich mir das letzte VHECR Pipeline Meeting in Erinnerung rufe, dann hatten wir eine recht klare Liste an Sachen, welche dringend benoetigt werden, um an einer funktionierenden Pipeline zu arbeiten -- ich kann mich nicht erinnern dass Debugging von Heino's Salami-Code dazu gehoerte; es ist eine Sache, wenn Heino seine Zeit mit irgendwelchen Code Experimenten zubringen will, aber wenn die auf Kosten der notwendigen Software-Entwicklung geht, dann ist dies nicht akzeptabel. Ich denke mal, das ich heute noch einmal dringend mit Michael sprechen muss, wie wir es schaffen koennen die Arbeit an der VHECR Pipeline voranzutreiben und nicht Unmengen Zeit fuer irgendwelche Nebenaktivitaeten zu verschwenden.
