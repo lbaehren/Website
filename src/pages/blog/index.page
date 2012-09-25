@@ -9,6 +9,39 @@ tags: Blog
  
 **:::**
  
+### Noch mehr Boxen ###
+
+
+
+
+_Tue, 25. September 2012 -- 15:07_
+
+Ok, fertig bin ich damit noch nicht, aber zumindest habe ich es geschafft wieder einen kleinen Schritt in dem Bemuehen weiterzukommen, die fuer die [Benutzeroberflaeche des Bildarchives](http://www.prometheus-bildarchiv.de) gewuenschten Boxen innerhalb der Seitenleiste zu implementieren. Nachdem der vorletzte Commit weitestgehend aus Aufraeumarbeiten bestand, ist es mir gelungen mit den letzten beiden Sets an Aenderungen ein wenig Fortschritte in Bezug auf Features zu machen.
+
+~~~~
+Author: lbaehren
+Date: 2012-09-25 14:19:05 +0200 (Tue, 25 Sep 2012)
+New Revision: 3928
+
+Modified:
+   trunk/app/controllers/box_controller.rb
+   trunk/app/helpers/application_helper.rb
+   trunk/app/models/collection_box.rb
+   trunk/app/views/shared/layout/_announcements.rhtml
+   trunk/app/views/shared/layout/_boxes.rhtml
+Log:
+Some minor clean-up box of model classes; store toggle status of box.
+~~~~
+
+Nachdem ich zunaechst einmal unter den Controllern aufgeraeumt hatte -- da standen einfach noch Dinge dring, welche unnoetig waren -- war eine der notwendigen Anpassung die Kopplung des Box-Modells an einen Benutzer-Account; die Idee ist ja nach wie vor, dass (so wie ach bei den Bildersammlungen und Praesentationenen) diese letzten Endes einem Benutzer gehoeren, so dass auf diese Weise auch die Authorisierung realisiert wird. Immer wieder testen kann dabei nicht schaden, denn gerade was die Zugriffsrechte betrifft ging zu Beginn noch einiges schief; mittlerweile habe ich es mir aber angewoehnt mit mehreren Test-Accounts zu arbeiten, von welchen jeder ueber unterschiedliche Berechtigungen verfuegt -- 100%ige Sicherheit bietet dies zwar leider nicht, aber mit dieser Methode habe ich doch eine ganze Reihe Fehler ausfindig machen koennen, welche sich bei der ersten Iteration eingeschlichen hatten.
+
+![pandora Screenshot](/blog/2012/2012-09/2012-09-25_pandora.png)
+
+Was mir zuletzt immer noch unter den Fingernaegeln gebrannt hat war die Moeglichkeit den Zustand der Boxen abzuspeichern, damit man diese z.B. bei einem spaeteren Login wieder in gleicher Konfiguration vorfinden kann, wie man sie zurueckgelassen hat. Ob dies nun die optimale Loesung ist? Wahrscheinlich noch nicht, aber immer liegt jetzt eine erste Version des Codes vor, so dass man davon ausgehend eine weitere Iteration vornehmen kann.
+ 
+**:::**
+ 
+ 
 ### No longer active ###
 
 
@@ -226,22 +259,6 @@ http://www.googleplussuomi.com/thumbs.php?id=<your ID>
 ~~~~
 
 you will get something like [this](http://www.googleplussuomi.com/thumbs.php?id=105237212888595777019) (at least if you are someone like Trey). In my case the [result](http://www.googleplussuomi.com/thumbs.php?id=100581156331078830632) is considerably less spectacular, but I guess for now the most importaant bit is to know about the possibility to have your pictures dispayed in such a way.
- 
-**:::**
- 
- 
-### Rebuilding hallowed vfx space ###
-
-
-
-
-_Tue, 18. September 2012 -- 23:10_
-
-While trying to track down the creators of the [Darktable](http://www.darktable.org) software package -- I am still planning to have it featured on the [FLOSS Weekly](http://www.twit.tv/show/floss-weekly) show -- I discovered that one of them had relocated to New Zealand, in order to work for [Weta Digital](http://www.wetafx.co.nz). This of course triggered a quick jump halfway across the planet, at least digitally, directly placing myself in front of a number of shots from [Prometheus](http://www.imdb.com/title/tt1446714), one of the mostly anticipated movies of this year (and yes, shame on me for still not having watched it). One of the really fascinating background stories I already had been picking up was an interview on [fxguide.com](http://www.fxguide.com), which provided some in-depth insight into the creation of selected sequences. Alongside with the interview -- distributed as a podcast -- there also is an [in-depth article](http://www.fxguide.com/featured/prometheus-rebuilding-hallowed-vfx-space), which in even more detail is breaking down some of the visual effects of the film.
-
-> In the history of modern visual effects films there is a small handful of universes worthy of religious veneration: the bed chamber in [2001](http://www.imdb.com/title/tt0062622), the hover cars of [Blade Runner](http://www.imdb.com/title/tt0083658), the initial flyover from [Star Wars](http://www.imdb.com/title/tt0076759) and of course, the fallen broken ship of [Ridley Scott](http://www.imdb.com/name/nm0000631)’s [Alien](http://www.imdb.com/title/tt0078748). This last hallowed and sacred site is known to all serious visual effects artists, but for a select few artists at companies like [MPC](http://www.moving-picture.com), [Weta Digital](http://www.wetafx.co.nz) and [Fuel](http://www.fuelvfx.com), they got to rebuild and reimagine these ‘consecrated’ assets -- the map room, the ship and of course the pilot’s chair from _Alien_. The film has erupted a blogosphere of arguments over the meaning or symbolism these objects have in a creationist tale of mankind, but virtually without question even the harshest critics of the film have applauded the stunning visual effects of _Prometheus_.
-
-If you want to understand some of the magic which has been used behind the scenes to create the visuals, this is a must-read article!
  
 **:::**
  
