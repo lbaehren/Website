@@ -11,7 +11,7 @@ project (RUBY)
 ## Minimum required version of CMake to configure the project
 cmake_minimum_required (VERSION 2.8)
 
-## Enforced CMake policy 
+## Enforced CMake policy
 cmake_policy (VERSION 2.8)
 
 ##  Package information
@@ -55,21 +55,21 @@ if (RUBY_FROM_REPOS)
 endif (RUBY_FROM_REPOS)
 
 if (NOT RUBY_FOUND OR RUBY_FORCE_BUILD)
-  
+
   ## Locate source file to build from
-  
+
   find_file (RUBY_SOURCE ${RUBY_SOURCE_ARCHIVE}
     PATHS ${PROJECT_SOURCE_DIR}
     )
-  
+
   if (NOT RUBY_SOURCE)
     set (RUBY_SOURCE ${RUBY_URL})
   endif (NOT RUBY_SOURCE)
-  
+
   ## Build package from source
-  
+
   if (RUBY_FROM_REPOS)
-    
+
     ExternalProject_Add (ruby
       PREFIX ${PROJECT_BINARY_DIR}
       DOWNLOAD_DIR download
@@ -79,9 +79,9 @@ if (NOT RUBY_FOUND OR RUBY_FORCE_BUILD)
       CONFIGURE_COMMAND ${PROJECT_BINARY_DIR}/source/configure --prefix=${CMAKE_INSTALL_PREFIX}
       INSTALL_COMMAND ${PORT_INSTALL_COMMAND} make install
       )
-  
+
   else (RUBY_FROM_REPOS)
-    
+
     ExternalProject_Add (ruby
       PREFIX ${PROJECT_BINARY_DIR}
       DOWNLOAD_DIR download
@@ -91,14 +91,14 @@ if (NOT RUBY_FOUND OR RUBY_FORCE_BUILD)
       CONFIGURE_COMMAND ${PROJECT_BINARY_DIR}/source/configure --prefix=${CMAKE_INSTALL_PREFIX}
       INSTALL_COMMAND ${PORT_INSTALL_COMMAND} make install
       )
-    
+
   endif (RUBY_FROM_REPOS)
-  
+
 else (NOT RUBY_FOUND OR RUBY_FORCE_BUILD)
-  
+
   add_custom_target (ruby
     WORKING_DIRECTORY ${PROJECT_BINARY_DIR}
     COMMENT "[Ruby] Found system-wide installation; skipping rebuild!"
     )
-  
+
 endif (NOT RUBY_FOUND OR RUBY_FORCE_BUILD)

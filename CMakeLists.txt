@@ -29,7 +29,7 @@ option (ENABLE_TESTING        "Enable CTest test driver?"                  YES  
 option (CONFIGURE_VERBOSE     "Increase verbosity during configuration?"   NO      )
 
 ## Path to the generated static website
-set (WEBSITE_INSTALL_PREFIX "release/website")
+set (WEBSITE_INSTALL_PREFIX "${PROJECT_SOURCE_DIR}/release/website")
 
 ##__________________________________________________________
 ## Handle option: Enable CTest test driver?
@@ -135,50 +135,12 @@ add_subdirectory (src)
 ##____________________________________________________________________
 ## Targets operating from the top-level directory
 
-## Render the website
-
-add_custom_target (Website ALL
-  COMMAND ${WEBGEN_EXECUTABLE} render
-  DEPENDS ${PROJECT_SOURCE_DIR}/config.yaml
-  WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
-  COMMENT "Rendering website from sources ..."
-  )
-
-add_dependencies (Website blog)
-
 set_property (DIRECTORY
   APPEND PROPERTY ADDITIONAL_MAKE_CLEAN_FILES
   ${CMAKE_INSTALL_PREFIX}
   ${PROJECT_SOURCE_DIR}/webgen.cache
   ${PROJECT_SOURCE_DIR}/config.yaml
   )
-
-## Build the index pages for the Blog
-
-if (script_blogindex AND BLOG_SOURCE_DIR)
-  ## Build target
-  add_custom_target (build_blog_index
-    COMMAND ${script_blogindex}
-    WORKING_DIRECTORY ${BLOG_SOURCE_DIR}
-    COMMENT "Generating blog index pages ..."
-  )
-  ## Target dependencies
-  add_dependencies (Website build_blog_index)
-endif (script_blogindex AND BLOG_SOURCE_DIR)
-
-
-##____________________________________________________________________
-## Publish the website online
-
-add_custom_target (online
-#  COMMAND rsync -avE --delete ${WEBSITE_INSTALL_PREFIX}/* ${PROJECT_SOURCE_DIR}/release/public_html
-  COMMAND rsync -avE --delete ${WEBSITE_INSTALL_PREFIX}/* bahren@dop131:/export/home/bahren/public_html
-  DEPENDS ${WEBSITE_INSTALL_PREFIX}/index.html
-  WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
-  COMMENT "Publishing website - uploading generated pages ..."
-  )
-add_dependencies (online Website)
-
 
 ## ==============================================================================
 ##

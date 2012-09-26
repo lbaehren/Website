@@ -11,7 +11,7 @@ project (GEM)
 ## Minimum required version of CMake to configure the project
 cmake_minimum_required (VERSION 2.8)
 
-## Enforced CMake policy 
+## Enforced CMake policy
 cmake_policy (VERSION 2.8)
 
 ##  Package information
@@ -49,21 +49,21 @@ if (GEM_FROM_REPOS)
 endif (GEM_FROM_REPOS)
 
 if (NOT GEM_FOUND OR GEM_FORCE_BUILD)
-  
+
   ## Locate source file to build from
-  
+
   find_file (GEM_SOURCE ${GEM_SOURCE_ARCHIVE}
     PATHS ${PROJECT_SOURCE_DIR}
     )
-  
+
   if (NOT GEM_SOURCE)
     set (GEM_SOURCE ${GEM_URL})
   endif (NOT GEM_SOURCE)
-  
+
   ## Build package from source
-  
+
   if (GEM_FROM_REPOS)
-    
+
     ExternalProject_Add (gem
       PREFIX ${PROJECT_BINARY_DIR}
       DOWNLOAD_DIR download
@@ -73,9 +73,9 @@ if (NOT GEM_FOUND OR GEM_FORCE_BUILD)
       CONFIGURE_COMMAND ${PROJECT_BINARY_DIR}/source/configure --prefix=${CMAKE_INSTALL_PREFIX}
       INSTALL_COMMAND ${PORT_INSTALL_COMMAND} make install
       )
-  
+
   else (GEM_FROM_REPOS)
-    
+
     ExternalProject_Add (gem
       PREFIX ${PROJECT_BINARY_DIR}
       DOWNLOAD_DIR download
@@ -85,14 +85,14 @@ if (NOT GEM_FOUND OR GEM_FORCE_BUILD)
       CONFIGURE_COMMAND ${PROJECT_BINARY_DIR}/source/configure --prefix=${CMAKE_INSTALL_PREFIX}
       INSTALL_COMMAND ${PORT_INSTALL_COMMAND} make install
       )
-    
+
   endif (GEM_FROM_REPOS)
-  
-else (NOT GEM_FOUND OR GEM_FORCE_BUILD)
-  
+
+  set (NOT GEM_FOUND OR GEM_FORCE_BUILD)
+
   add_custom_target (gem
     WORKING_DIRECTORY ${PROJECT_BINARY_DIR}
     COMMENT "[Gem] Found system-wide installation; skipping rebuild!"
     )
-  
+
 endif (NOT GEM_FOUND OR GEM_FORCE_BUILD)

@@ -1,0 +1,69 @@
+#!/bin/bash
+
+varExtension=".page"
+varOutfile="index.page"
+
+## Base/Root directory of the blog entries
+varBasedir=`pwd`
+## Number of entries to show up in the list of recent entries
+varNofEntries=12
+
+## === Functions ================================================================
+
+##____________________________________________________________________
+##                                                       listOfEntries
+
+listOfEntries ()
+{
+  ## --- Change into the base directory ---
+  cd ${varBasedir}
+
+  for FILE in `ls ${varsBasedir}`
+  {
+      if [ -d "$FILE" ]
+      then
+	  find $FILE -name "*.page" | grep -v index | grep -v up
+      fi
+  }
+}
+
+##____________________________________________________________________
+##                                                  writeRecentEntries
+
+writeRecentEntries ()
+{
+  echo "-- Updating page with ${varNofEntries} most recent entries ..."
+
+  ## --- Get the list of the N most recent entries ---
+  varEntries=`listOfEntries | tail -n $varNofEntries | sort -r`
+
+  ## --- Header of index page ---
+  echo "---"                   > $varBasedir/index.page
+  echo "title: Blog"          >> $varBasedir/index.page
+  echo "in_menu: false"       >> $varBasedir/index.page
+  echo "author: Lars Baehren" >> $varBasedir/index.page
+  echo "tags: Blog"           >> $varBasedir/index.page
+  echo "---"                  >> $varBasedir/index.page
+  echo " "                    >> $varBasedir/index.page
+  echo "# {title:} #"         >> $varBasedir/index.page
+  echo " "                    >> $varBasedir/index.page
+  echo "**:::**"              >> $varBasedir/index.page
+
+  ## --- Recent entries ---
+  for FILE in $varEntries
+  {
+    varTitle=`cat $varBasedir/$FILE | grep "title\:" | sed s/\#\#\{title\:\}\#\#// | sed s/"title\: "// | sed s/\"//g`
+    varText=`cat $varBasedir/$FILE | grep -v "title\:" | grep -v "author\:" | grep -v "tags\:" | grep -v "menu\:" | sed s/"---"//`
+    echo " "                   >> $varBasedir/index.page
+    echo "### ${varTitle} ###" >> $varBasedir/index.page
+    echo "${varText}"          >> $varBasedir/index.page
+    echo " "                   >> $varBasedir/index.page
+    echo "**:::**"             >> $varBasedir/index.page
+    echo " "                   >> $varBasedir/index.page
+  }
+
+}
+
+## === Processing ===============================================================
+
+writeRecentEntries

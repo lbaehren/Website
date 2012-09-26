@@ -11,7 +11,7 @@ project (WEBGEN)
 ## Minimum required version of CMake to configure the project
 cmake_minimum_required (VERSION 2.8)
 
-## Enforced CMake policy 
+## Enforced CMake policy
 cmake_policy (VERSION 2.8)
 
 ##  Package information
@@ -59,21 +59,21 @@ endif (WEBGEN_EXECUTABLE)
 ## ==============================================================================
 
 if (NOT WEBGEN_FOUND OR WEBGEN_FORCE_BUILD)
-  
+
   ## Locate source file to build from
-  
+
   find_file (WEBGEN_SOURCE ${WEBGEN_SOURCE_ARCHIVE}
     PATHS ${PROJECT_SOURCE_DIR}
     )
-  
+
   if (NOT WEBGEN_SOURCE)
     set (WEBGEN_SOURCE ${WEBGEN_URL})
   endif (NOT WEBGEN_SOURCE)
-  
+
   ## Build package from source
-  
+
   if (WEBGEN_FROM_REPOS)
-    
+
     ExternalProject_Add (webgen
       PREFIX ${PROJECT_BINARY_DIR}
       #--Download step--------------
@@ -89,9 +89,9 @@ if (NOT WEBGEN_FOUND OR WEBGEN_FORCE_BUILD)
       INSTALL_DIR ${CMAKE_INSTALL_PREFIX}
       INSTALL_COMMAND ${PORT_INSTALL_COMMAND} ruby setup.rb install
       )
-  
+
   else (WEBGEN_FROM_REPOS)
-    
+
     ExternalProject_Add (webgen
       PREFIX ${PROJECT_BINARY_DIR}
       #--Download step--------------
@@ -107,14 +107,14 @@ if (NOT WEBGEN_FOUND OR WEBGEN_FORCE_BUILD)
       INSTALL_DIR ${CMAKE_INSTALL_PREFIX}
       INSTALL_COMMAND ${PORT_INSTALL_COMMAND} ruby setup.rb install
       )
-    
+
   endif (WEBGEN_FROM_REPOS)
-  
+
 else (NOT WEBGEN_FOUND OR WEBGEN_FORCE_BUILD)
-  
+
   add_custom_target (webgen
     WORKING_DIRECTORY ${PROJECT_BINARY_DIR}
     COMMENT "[webgen] Found system-wide installation; skipping rebuild!"
     )
-  
+
 endif (NOT WEBGEN_FOUND OR WEBGEN_FORCE_BUILD)
