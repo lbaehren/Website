@@ -9,9 +9,7 @@ tags: Computing
 
 _04 November 2003 -- 23:49_
 
-Immer noch dem Soundproblem auf der Spur. Testweise habe ich mal 
-`/etc/init.d/alsa` ausgeführt -- in der Tat gibt es Schwierigkeiten auf die 
-Karte zuzugreifen:
+Immer noch dem Soundproblem auf der Spur. Testweise habe ich mal `/etc/init.d/alsa` ausgefuehrt -- in der Tat gibt es Schwierigkeiten auf die Karte zuzugreifen:
 
 ~~~~
 morgaine:/dev# /etc/init.d/alsa stop
