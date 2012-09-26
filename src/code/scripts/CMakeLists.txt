@@ -1,13 +1,11 @@
 
-find_file (BLOGINDEX_SH
-  NAMES blogIndex.sh
-  PATHS ${PROJECT_SOURCE_DIR}/src
-  PATH_SUFFIXES code scripts code/scripts
+find_file (script_blogindex
+  NAMES blogIndex
+  PATHS ${CMAKE_CURRENT_SOURCE_DIR}
   )
 
-find_file (CONVERTENTRIES_SH
-  NAMES convertEntries.sh
-  PATHS ${PROJECT_SOURCE_DIR}/src
-  PATH_SUFFIXES code scripts code/scripts
+find_file (script_convertentries
+  NAMES convertEntries
+  PATHS ${CMAKE_CURRENT_SOURCE_DIR}
   )
 

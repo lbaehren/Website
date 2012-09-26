@@ -59,12 +59,18 @@ endif (NOT CONFIGURE_VERBOSE)
 ##
 ## ==============================================================================
 
-## Directory containing page sources
+## Source directory for pages
 
-find_path (DATA_PAGES_DIR
+find_path (PAGES_SOURCE_DIR
   NAMES index.page default.template default.css
   PATHS ${PROJECT_SOURCE_DIR}
   PATH_SUFFIXES src pages src/pages
+  )
+
+find_path (BLOG_SOURCE_DIR
+  NAMES upcoming.page archive.page 2012.page 2011.page 2010.page
+  PATHS ${CMAKE_CURRENT_SOURCE_DIR}
+  PATH_SUFFIXES src pages src/pages src/pages/blog pages/blog blog
   )
 
 ## Custom CMake modules
@@ -147,6 +153,20 @@ set_property (DIRECTORY
   ${PROJECT_SOURCE_DIR}/config.yaml
   )
 
+## Build the index pages for the Blog
+
+if (script_blogindex AND BLOG_SOURCE_DIR)
+  ## Build target
+  add_custom_target (build_blog_index
+    COMMAND ${script_blogindex}
+    WORKING_DIRECTORY ${BLOG_SOURCE_DIR}
+    COMMENT "Generating blog index pages ..."
+  )
+  ## Target dependencies
+  add_dependencies (Website build_blog_index)
+endif (script_blogindex AND BLOG_SOURCE_DIR)
+
+
 ##____________________________________________________________________
 ## Publish the website online
 
@@ -182,7 +202,8 @@ message (STATUS " .. size(void*) ................. = ${CMAKE_SIZEOF_VOID_P}"    
 message (STATUS " Project configuration:"                                        )
 message (STATUS " .. Version number .............. = ${PROJECT_VERSION}"         )
 message (STATUS " .. Installation prefix ......... = ${CMAKE_INSTALL_PREFIX}"    )
-message (STATUS " .. Pages source directory ...... = ${DATA_PAGES_DIR}"          )
+message (STATUS " .. Pages source directory ...... = ${PAGES_SOURCE_DIR}"        )
+message (STATUS " .. Blog source directory ....... = ${BLOG_SOURCE_DIR}"         )
 message (STATUS " .. Enable CTest test driver? ... = ${ENABLE_TESTING}"          )
 message (STATUS " .. Verbose configure? .......... = ${CONFIGURE_VERBOSE}"       )
 message (STATUS " Ruby configuration:"                                           )
