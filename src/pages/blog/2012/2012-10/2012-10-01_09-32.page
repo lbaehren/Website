@@ -1,0 +1,27 @@
+---
+title: "Fast wieder da"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Mon, 01. October 2012 -- 09:32_
+
+Also so 100%ig zufrieden bin ich mit der gefundenen Loesung fuer die Erstellung meiner Website
+-- von welcher der Blog ja weiterhin den groessten Teil darstellt -- immer noch nicht. Ich werde
+einfach das Gefuehl nicht los, dass _webgen_ insgesamt noch leicht instabil ist, sowohl gegenueber
+Aenderungen in den verwendeten Paketen (eine Reihe an Ruby Gems) als auch was den Text fuer die
+Seiten selber betrifft. Da ich nach ein paar Notizen auf meiner _upcoming_ Seite erneut
+Schwierigkeiten hatte eine neue Version der Site zu generieren, habe ich einfach mal das Release
+Verzeichnis weggeworfen, um auf diese Weise von Beginn an zu starten. Von der Vorgehensweise her 
+ist dies eine recht gute Idee, weil man so eben nicht noch irgendwelche Aenderungen mitschleppt,  
+welche sich mit der Zeit angesammelt haben, sondern unter recht gut definierten (und vor allen 
+Dingen reproduzierbaren) Bedingungen starten kann -- das bei dieser Aktion allerdings mitunter
+mehr unschoene Dinge zu Tage treten als einem lieb ist, sollte einen dabei nicht verwundern. So
+ist es mir leider auch in diesem Fall gegangen: wie ich feststellen musste, wollte _webgen_ gerade
+ein mal zwei der Seiten aus dem Blog erzeugen, mehr tauchte anschliessen nicht auf der Platte
+auf. Ein klein wenig weiter bin ich gluecklicherweise gekommen, aber nach wie vor habe ich noch
+Probleme die Bilder in den Seiten auftauchen zu lassen -- aus irgendeinem mir bisher noch nicht
+erfindlichen Grunde werden diese nicht ins Zielverzeichnis uebernommen, so dass ich lediglich die 
+schon einmal erhaltenen grauen Boxen zu Gesicht bekomme.

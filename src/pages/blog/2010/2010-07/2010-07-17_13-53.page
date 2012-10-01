@@ -1,0 +1,27 @@
+---
+title: "Storage expansion -- Part 2"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Sat, 17. July 2010 -- 13:53_
+
+
+
+I had to actually check this, but it now is more than 1 1/2 years, that I have been buying my first Drobo. So far I have no reason to regret my decision making these machines (by now I do have two sitting on my desk) my primary storage platform -- up until now the bulk of my data has been handles graciously. While Drobo is supposed to handle the failure of a hard-drive without interrupting the work-flow, so far I have not been required to put this feature to the test. On the other hand what works just as advertised is the expansion of storage capacity: ever since the [[blog:2008:2008-11:2008-11-21_18-28|first upgrade]] in Nov 2008 I have been growing storage volume to match increasing demand for it. Whereas so far I was ok with filling up the empty bays, this time however I was required to replace a used drive with a higher capacity drive.
+
+^ Before swapping disks ^ After swapping disks ^
+| {{blog:2010:2010-07:2010-07-16_drobo_01.png?290}} | {{blog:2010:2010-07:2010-07-16_drobo_03.png?290}} |
+| {{blog:2010:2010-07:2010-07-16_drobo_02.png?290}} | {{blog:2010:2010-07:2010-07-16_drobo_04.png?290}} |
+
+So how does this actually work? Could hardly be any simpler:
+  - Remove the front plate (which is held in place by a few magnets, such that there are screws to deal with).
+  - Remove the drive indicated by the yellow LED and insert the new (larger capacity) drive.
+  - Put the front plate back on and let the Drobo "do it's thing"...
+
+Once the drive has been replaced, the Drobo will go into data protection mode, which means it works towards integrating the new drive into the pool of drives, distributing data in order to protect them again hard drive failures. Given the amount of data already put onto the drives this might take a while, though I have come to not 100% trust the progress bar shown in the Drobo Dashboard application.
+
+
+~~DISCUSSION~~

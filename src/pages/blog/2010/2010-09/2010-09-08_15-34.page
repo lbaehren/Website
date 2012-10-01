@@ -1,0 +1,18 @@
+---
+title: "Daten sichern"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 08. September 2010 -- 15:34_
+
+
+
+Das war eine Kleinigkeit, um welche ich mich immer noch einmal kuemmern wollte: in den ersten zwei Jahren meiner Zeit bei ASTRON habe ich diverse Beobachtungen mit der LOFAR Initial Test Station (ITS) durchgefuehrt, welche nicht 100%ig ausgewertet worden sind. Das hat sicherlich eine Reihe Gruende, unter anderem, dass es mir einfach an der Zeit gefehlt hat, mich auffuehrlich mit allen Datensaetzen zu beschaeftigen; aber auch die Tatsache, dass vielleicht nicht immer die benoetigte Software zur Verfuegung stand, um die in den Daten enthaltenen Informationen zu extrahieren. Da ich aber nach vo der festen Ueberzeugung bin, dass es sich immer noch einmal lohnen wuerde die Daten ein wenig genauer unter die Lupe zu nehmen, habe ich bislang immer noch dafuer Sorge getragen, dass vor allen Dingen die Rohdaten archiviert werden. Allerdings habe ich doch ein wenig Zweifel daran bekommen, ob eine einzige Kopie auf meinem Desktop-Rechner bei ASTRON wirklich die beste (und vor allen Dingen sicherste) Loesung ist; weitaus besser erscheint es mir da, dass ich noch einmal eine Kopie der wichtigsten Datensaetze auf einem meiner beiden Drobos liegen habe. Angesichts der Tatsache, dass mittlerweile doch ueber einen recht grossen Pool an Plattenplatz bei mir zuhause verfuege -- welcher zudem auch noch gegen den Ausfall von einzelnen Festplatten gesichert ist -- habe ich nun also damit begonnen die Datensaetze zu sichern, welche mir in jedem Fall erhaltenswert erscheinen.
+
+Wann ich allerdings wirklich mal dazu komme, mich naeher mit den Daten zu beschaeftigen ist allerdings eine andere Frage. Irgendwo im Hinterkopf habe ich immer noch das Vorhaben, alle Datensaetze in ein Format zu ueberfuehren, welches geeigneter ist fuer die langfristigere Archivierung; dass die dafuer benoetigten Tools Teil der DAL werde sollen steht ausser Frage, aber hierbei handelt es sich um keine Sache, welche wirklich dringend und von hoher Prioritaet ist. Da ich aber immer wieder einmal ein nettes Projekt fuer die Abende und Naechte brauche, werde ich schauen, dass ich alles an Bord habe, um mich da ggf. auszutoben.
+
+
+~~DISCUSSION~~

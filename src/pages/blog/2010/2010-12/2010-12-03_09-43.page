@@ -1,0 +1,14 @@
+---
+title: "Nach einer langen Zeit"
+in_menu: false
+author: Lars Baehren
+tags: Travel Zwolle
+---
+
+## {title:} ##
+
+_Fri, 03. December 2010 -- 09:43_
+
+... verschlaegt es mich jetzt doch endlich mal wieder nach **Zwolle**. Wie sich daraus sicherlich erraten laesst, befinde ich mich nach laengerer Abwesenheit endlich mal wieder auf dem Weg nach ASTRON; auch wenn es in der Zwischenzeit sicherlich Gelegenheiten gegeben haette, mich dort blicken zu lassen, habe ich es eher vorgezogen via Skype oder EVO an den diversen Meetings teilzunehmen und mir auf diese Weise die Reise zu sparen. Nicht dass ich grundsaetzlich etwas gegen die Reiserei haette, aber allein fuer einen Tag nach Dwingeloo fahren finde ich immer ein wenig zu viel Aufwand, um dies regelmaessig zu machen; macht man daraus einen Aufenthalt von zwei Tagen, dann sieht die Sache schon wieder anders aus, aber dies hat sich eben in einer Weile nicht ergeben.
+
+Fuer den heutigen Tag war vor allen Dingen ein Treffen mit Jan David geplant, der sich nun daran begeben soll den HDF5-Writer fuer die Beam-Formed Data zu implementieren; da hier als Backend die DAL ins Spiel kommt, macht es sicherlich Sinn sich mal zusammenzusetzen um abzuklaeren, was dafuer noch benoetigt wird und wo es vielleicht noch Probleme gibt.

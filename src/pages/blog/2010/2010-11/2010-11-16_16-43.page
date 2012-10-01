@@ -1,0 +1,15 @@
+---
+title: "Und noch eine Doktorarbeit"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Tue, 16. November 2010 -- 16:43_
+
+Yep, da ist auch schon die naechste Arbeit verteidigungsreif: ich war kurz nach dem Mittag wieder in der Stadt um dort der Verteidigung von Derek's Arbeit mit dem Titel "High Performance N-body Simulation on Computational Grids" beizuwohnen. Primaer ging es mir dabei natuerlich darum wieder Bilder zu machen, aber das soll ja nicht heissen, dass man bei so einer Gelegenheit nicht ein paar interessante Dinge aufschnappt -- im wesentlichen ist dies wohl dem Thema geschuldet:
+
+> Gravitational N-body simulations are an essential tool for analyzing and understanding the dynamical evolution of star clusters, galaxies and the universe as a whole. These simulations are commonly performed on a single computer cluster or supercomputer. However, the planet we live on contains thousands of compute sites, and the use of multiple sites may boost the compute performance of our simulations by an order of magnitude or more. In this thesis we report on our N-body experiments which were run over up to four (supercomputer) sites across the planet. In addition, we discuss the challenges faced when running large simulations on planet-wide infrastructures.
+
+Da werde ich mich also nicht nur um die Bearbeitung der Bilder kuemmern muessen, sondern am besten auch mal einen Blick in die Arbeit reinwerfen.

@@ -1,0 +1,20 @@
+---
+title: "25 Jahre C++"
+in_menu: false
+author: Lars Baehren
+tags: Computing
+---
+
+## {title:} ##
+
+_Mon, 06. December 2010 -- 23:22_
+
+Ok, das ist hier an dieser Stelle vielleicht nicht mehr so ganz aktuell, aber da ich diese Meldung immer noch bei mir im Queue stehen hatte, sollte ich dies wenigstens auch mal noch zu Ende schreiben. Vor einer Weile hatte Ken mich auf einen nicht ganz unwichtigen Geburtstag aufmerksam gemacht:
+
+> 1985: The first official reference guide for the C++ programming language is published. The author, [Bjarne Stroustrup](http://www.research.att.com/~bs), is also the language’s creator.
+>
+> Stroustrup had been hacking away at his replacement for the C programming language at AT\&T Bell labs since 1979, where he and his colleagues in the research department were given free reign to experiment with new ways of building software.
+>
+> C++ went on to become one of the most popular programming languages ever created. It was designed to be a “general use” language: It can be run on just about any platform, and it shows up almost everywhere, especially in videogames and embedded systems.
+
+25 Jahre sind schon eine gute Zeit und die Sprache hat seit dem eine rasante Verbreitung gefunden. Wenn ich mir bedenke, wo ich mich zu Beginn meiner Diplomarbeit befunden habe, als ich noch so gut wie keine Ahnung von ernsthaftem Programmieren hatte, und wo ich mich mittlerweile befinde, so muss ich doch feststellen, dass C++ ein Hilfsmittel ist, welche ich mir fast schon nicht mehr aus meinem Arbeitsalltag wegdenken kann; dabei will ich jetzt keinesfalls behaupten, dass ich wirklich in ausreichender Weise in die Tiefen der Sprache vorgedrungen bin -- was dies betrifft scheint es sich einfach um ein Fass ohne Boden zu handeln -- so ist es fuer mich mittlerweile ein recht natuerlicher Prozess, komplexe Problemstellungen in objekt-orientierte Konzepte zu uebertragen. Dies ist mir zuletzt wieder am Freitag (bei meinem Gespraech mit Jan David) und am Wochenende deutlich geworden: die Entwicklung, welche die DAL seit der Uebergabe von Joe an mich genommen hat, ist von einer deutlichen Handschrift gepraegt, welche sich bisher als sehr bestaendig erwiesen hat -- die dafuer zur Verfuegung stehenden Sprachmittel spielen hierbei sicherlich mit ihre Rolle, so dass ich mir nur schwer vorstellen kann ein solche durchaus komplexes Software-Projekt in anderer Weise aufzubauen.

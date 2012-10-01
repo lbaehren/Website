@@ -1,0 +1,37 @@
+---
+title: "Ein Fehler weniger"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Sun, 04. July 2010 -- 13:16_
+
+
+
+Ok das hat jetzt zwar eine Weile gedauert, aber kurz vor Utrecht habe ich dennoch den ersten der beiden schwerwiegenden Fehler in dem Teil der DAL gefunden, welcher sich mit dem Erweitern und und Slicen von mehrdimensionalen Datasets beschaeftigt!
+
+Schon seit einer ganzen Weile sind einige Aktivitaeten zum Stillstand gekommen, weil es noch an mir lag, einige benoetigte Features in die DAL einzubauen und zu test, welche fuer alle Datasets benoetigt werden. Auch wenn ich grundsaetzlich alle eingebaut hatte, gab es immer noch zwei Fehler, welche dann dazu fuehrten, das Zugriffe entweder fehlschlugen, oder Schreiboperationen zu einem kompletten Abbruch fehlten. Was ich eigentlich gebraucht haette, um diesem Problem auf den Grund zu gehen, war einfach mal ein wenig Zeit am Stueck, um mich in Ruhe an die Sache zu setzen und auch ein wenig darueber nachdenken zu koennen. Nun, wie ja nachvollzuehbar sein duerfte, war dies zuletzt nicht unbedingt der Fall, so dass die heutige Fahrt von Koeln nach Utrecht absolut grandios war. Auch wenn bei mir am Tisch eine Dreiergruppe niederlaendicher Fussballfans/-beobachter sitzen hatte, so konnte ich mich wirklich mal konzentriert an die Fehlersuche machen.
+
+Die Loesung des Problemes stellte sich -- wie dies ja leider haeufig der Fall ist -- als recht banal heraus (was vielleicht auch mit der Grund dafuer war, dass mir dies nicht eher aufgefallen war): es war lediglich die Differenz in dem Zaehler fuer die Groesse eines Datenblocks, welche Probleme verursacht hat.
+
+  * Fehlerhafter Code: <code cpp>
+      hsize_t tmpSize [nelem];
+      for (unsigned int n(0); n<nelem; ++n) {
+        tmpSize[n] = endHyperslab[n];
+	}
+	h5error = H5Dset_extent (location, tmpSize);
+</code>
+  * Korregierter Code: <code cpp>
+      hsize_t tmpSize [nelem];
+      for (unsigned int n(0); n<nelem; ++n) {
+        tmpSize[n] = endHyperslab[n]+1;
+	}
+	h5error = H5Dset_extent (location, tmpSize);
+</code>
+
+Wie man erkennen kann, ist es lediglich das ''+1'', welches hier den Auschlag gegeben hat. Mit diesem Problem aus dem Weg sollte es aber deutlich einfacher sein, den noch verbliebenen Array-Mismatch zu beheben, welcher in Erscheinung tritt, wenn ich nach den vorherigen beiden Aktionen (Erweiterung und Selektierung) dann wirklich Daten schreiben will. Da ich am Flughafen ja noch einiges an Wartezeit habe, werde ich mich da gleich noch einmal dransetzen...
+
+
+~~DISCUSSION~~

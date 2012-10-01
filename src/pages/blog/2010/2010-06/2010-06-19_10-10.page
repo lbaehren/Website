@@ -1,0 +1,20 @@
+---
+title: "Time for another upgrade"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Sat, 19. June 2010 -- 10:10_
+
+
+
+Looks like to constant accumulation of data now takes it toll; after putting at least 100 GB of data onto the second of my Drobo within the last two weeks, I now have crossed the threshold where Drobo issues a warning about running out of free space:
+
+{{ blog:2010:2010-06:2010-06-19_drobo.png }}
+
+Ok, this does not mean that I need to drop everything else and buy a new drive right-away, but I definitely will start looking for offers. From the development of hard-drive prices it is pretty obvious that I am going to replace the 1 TB drive with a 2 TB drive.
+
+
+~~DISCUSSION~~

@@ -1,0 +1,24 @@
+---
+title: "Encapsulation of Large and/or Complex Astronomical Data"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Fri, 27. August 2010 -- 09:02_
+
+
+
+Looks like we are moving forward on the issue of establishing HDF5 as a generally accepted file format within the astronomical community:
+
+> Astronomical data are not only growing in size, but also in complexity, at relentless rates.  This is especially so in the radio community, specifically for SKA Pathfinders and other major new radio telescopes such as [[http://www.lofar.org|LOFAR]], [[http://science.nrao.edu/evla|EVLA]], [[http://science.nrao.edu/alma|ALMA]], ASKAP, MeerKAT, MWA, LWA, and [[http://www.e-merlin.ac.uk|eMERLIN]].  Enormous data rates are also coming a challenge for optical projects which are ramping up, like Pan-Starrs and LSST.  [[http://www.astron.nl|ASTRON]] and the LOFAR project are exploring the use of the Hierarchical Data Format, version 5 ([[http://www.hdfgroup.org/HDF5|HDF5]]), for LOFAR radio data encapsulation. Most of LOFAR's standard data products will be stored using the HDF5 format (Radio Sky Images, Beam-Formed Time Series Data, Transient Buffer Board Data, Dynamic Spectra, etc).  
+>
+> HDF5 is a data model, library, and file format for storing and managing data. It supports an unlimited variety of datatypes, and is designed for flexible and efficient I/O and for high volume and complex data. HDF5 is portable, extensible, and parallelizable, allowing applications to evolve in their use of HDF5. The HDF5 Technology suite includes a 20-year history of tools and applications for managing, manipulating, viewing, and analyzing data in the HDF5 format. 
+>
+> Topics of discussion will include:  input from the community on their experiences with HDF5;  input on data I/O statistics, data storage structure efficiency;  toolsets which exists and/or can be adapted for HDF5; and, any general lessons learned from working with large and complex data.  The organizers welcome contriutions to the BoF agenda on HDF5 and other file formats which can accommodate streaming data encapsulation on the order of 23TB/hr!   We hope our effort paves the way towards new astronomical data encapsulation, which can be used by future ground and space projects.  
+
+In order to get the discussion going with the wider astronomical community, a special session is planned for the upcoming ADASS. I think it will be very interesting to see who people will be reacting -- though it is pretty clear, that new-generation telescopes will be spitting amounts of data, which go beyond what established data formats can handle, I am expecting considerable resistance against change.
+
+
+~~DISCUSSION~~

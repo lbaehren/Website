@@ -8,6 +8,3 @@ add_subdirectory (documentation)
 ## Layout templates
 add_subdirectory (templates)
 
-## Source files of pages
-add_subdirectory (pages)
-

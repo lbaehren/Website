@@ -1,0 +1,24 @@
+---
+title: "Geschaeftiger Tag"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 02. June 2010 -- 18:20_
+
+
+
+Das war es also fuer diesen Abstecher in den Norden. Nach einem recht geschaeftigen Tag in Dwingeloo bin ich nun wieder in **Zwolle** angekommen und befinde mich auf der Heimreise. 
+
+Nach dem etwa schwierigen Start am heutigen Morgen, war der Rest des Tages wieder einmal recht gut gefuellt -- ob ich jetzt wirklich alles geschafft habe, was ich erreichen wollte kann ich noch nicht beurteilen, aber es sieht doch danach aus, als waere ich recht erfolgreich gewesen. 
+
+  * Zunaechst einmal stand heute Vormittag noch ein weiteres ICD Meeting auf dem Plan; auch wenn immer noch nicht alles in trockenen Tuechern ist, so befinden wir mittlerweile an dem Punkt, wo die Format-Definitionen einfrieren koennen (zumindest eine erste Release-Version). Sobald wir die Definition der Datenprodukte eingefroren haben, kann ich mich daran machen noch die notwendige Impementierung als Teil der DAL vorzunehmen.
+
+  * Um ein Uhr hatte ich mich zu einer Videokonferenz (via [[http://www.skype.com|Skype]]) mit Michael verabredet; angesichts der Tatsache, dass schon seit einer Weile bei [[http://www.astron.nl|ASTRON]] alles auf die offizielle Eroeffnung von [[http://www.lofar.org|LOFAR]] gerichtet ist, ist es schon ein wenig her, das wir Gelegenheit gehabt haben, um uns abzustimmen. Vor allen Dingen in Angesicht des fuer den Nachmittag anstehenden //BF Pipeline Meeting// war es gut, sich noch einmal abzustimmen. Nicht, dass wir da grundsaetzlich unterschiedlicher Ansichten waeren, aber ein wenig zuaetzliche Koordinierung kann keinesfalls schaden. Dass sechs Stunden Zeitverschiebung dabei bedeuteten, dass Michael bereits um sieben Uhr lokaler Zeit vor dem Rechner gesessen hat, sei hierbei durchaus ein Erwaehnung wert.
+
+  * Das //BF Pipeline Meeting// ging recht schnell vorbei, was vielleicht auch mit daran gelegen hat, dass es nur eine kleine Runde war, welche sich vor Ort eingefunden hatte (was zum Teil sicherlich auch wieder der Vorbereitung fuerkommendes Wochenende zuzuscheiben war).
+
+
+~~DISCUSSION~~

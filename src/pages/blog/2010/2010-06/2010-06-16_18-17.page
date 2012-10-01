@@ -1,0 +1,50 @@
+---
+title: "Schneller"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 16. June 2010 -- 18:17_
+
+
+
+Das war wieder einmal ein Klassiker: kurz bevor ich hier in **Zwolle** den Zug gewechselt habe, habe ich mich noch von Anastasia und Ken verabschiedet (die beiden reisen ja weiter nach Amsterdam). Als ich dabei einen Blick auf Kens Laptop geworfen habe, fiel mir auf, dass er damit beschaeftigt war, Teile der ICDs zu editieren. Ein genauerer Blick zeigte mir, dass er gerade damit bechaeftigt war Aenderungen vorzunehmen, welche ich noch vor unserer Abreise von [[http://www.astron.nl|ASTRON]] erledigt hatte (auch wenn ich es von der Zeit nicht mehr geschafft habe alles in Repository einzuchecken):
+
+<code latex>
+  \begin{table}[ht]
+    \centering
+    \begin{tabular}{lp{12cm}}
+      \hline
+      \textsc{Antenna set} & \textsc{Description} \\
+      \hline \hline
+      \verb|'LBA_INNER'| &  \\
+      \verb|'LBA_OUTER'|  &  \\
+      \verb|'LBA_SPARSE_EVEN'| &  \\
+      \verb|'LBA_SPARSE_ODD'| &  \\
+      \verb|'LBA_X'| &  \\
+      \verb|'LBA_Y'| &  \\
+      \verb|'HBA_ZERO'| & Indicates use of HBA antennas 0-23 in the
+      Core stations, and all HBA's in the other stations. \\
+      \verb|'HBA_ONE'| & Indicates use of HBA antennas 24-47 in the
+      Core stations, and all HBA's in the other stations. \\
+      \verb|'HBA_DUAL'| & Indicates use of both HBA antenna
+      (sub)fields in the Core stations, and which sets up an identical
+      beam/pointing on each of those (sub)fields. On CEP, those
+      (sub)fields are treated as seperate stations. On non-core
+      stations, the whole HBA field is used and one beam is made. \\
+      \verb|`HBA_JOINED'| & Indicates use of \textsc{all} HBA antennas
+      in \textsc{all} stationstypes. For Core stations, this will
+      result in a ``weird'' beamshape. \\
+      \hline
+    \end{tabular}
+    \caption{Overview of antenna set configurations.}
+    \label{tab:antenna-set}
+  \end{table}
+</code>
+
+Meine Anmerkung, dass ich bereits alle entsprechenden Aenderungen vorgenommen haette resultierte in einem leicht unglaeubigen Kopfschuetteln und einem "Wann hast Du das denn gemacht?" Stellt sich also wieder einmal heraus, dass ich einfach schneller war als alle anderen -- dies kann zwar nicht immer der Fall sein, aber wenn es passiert, dann ist es doch schon ganz nett.
+
+
+~~DISCUSSION~~

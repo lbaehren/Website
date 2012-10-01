@@ -1,0 +1,46 @@
+---
+title: "Git support in ExternalProject"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Tue, 15. June 2010 -- 11:12_
+
+
+
+Ever since discovering [[http://www.cmake.org|CMake]] my configuration and build strategy has changed fundamentally. Though before already I was collecting various build and installation instructions into a number of shell scripts, CMake's ''ExternalProject'' feature provided me with the flexibility and power needed to handle almost any type of package I might want to have installed on the system -- see e.g. instructions for [[http://root.cern.ch|ROOT]]:
+
+<code>
+ExternalProject_Add (root
+  PREFIX ${ROOT_BINARY_DIR}
+  DOWNLOAD_DIR ${ROOT_BINARY_DIR}/download
+  SOURCE_DIR ${ROOT_BINARY_DIR}/source
+  SVN_REPOSITORY ${ROOT_REPOSITORY}
+  BUILD_IN_SOURCE 1
+  CONFIGURE_COMMAND ${ROOT_BINARY_DIR}/source/configure ${root_arch} --prefix=${CMAKE_INSTALL_PREFIX}
+  INSTALL_COMMAND sudo make install
+  )
+</code>
+
+If indeed you are building directly off the most recent version from the project's code repository, then the functionality of ''ExternalProject'' is really helpful: just put in the address of the repository and that's it. However there has been a little short-coming: while there was support for both //CVS// and //Subversion//, so far no hooks were in place for //Git//. One might consider this a minor problem, since the latter still is used for a considerably smaller number of software projects as the other two. Nevertheless there is a growing number of projects migrating to //Git//, such that interfacing with such repositories is becoming an issue. Interesting enough //CMake// itself has been moved from //Subversion// to //Git// a little while back, so it was only naturally to expect some support for that with //CMake//. 
+
+From what I now have been reading on the [[http://www.kitware.com|Kitware]] website, the desired feature now has been added. As I tend to always have the latest version of //CMake// running on my machine, I went back to the locally build documentation to check out the details... and there it was:
+
+<code>
+    [CVS_REPOSITORY cvsroot]    # CVSROOT of CVS repository
+    [CVS_MODULE mod]            # Module to checkout from CVS repo
+    [CVS_TAG tag]               # Tag to checkout from CVS repo
+    [SVN_REPOSITORY url]        # URL of Subversion repo
+    [SVN_REVISION rev]          # Revision to checkout from Subversion repo
+    [SVN_USERNAME john ]        # Username for Subversion checkout and update
+    [SVN_PASSWORD doe ]         # Password for Subversion checkout and update
+    [GIT_REPOSITORY url]        # URL of git repo
+    [GIT_TAG tag]               # Git branch name, commit id or tag
+</code>
+
+As much as I would love to fully embrace this new feature, I noticed that a few other change have found there way into the latest version, which cause the build of the LOFAR User Software to break; as a consequence of this I am still holding back a little bit, until the current problems shake out.
+
+
+~~DISCUSSION~~

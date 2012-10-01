@@ -1,0 +1,15 @@
+---
+title: "Und immer wieder Koordinaten"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Tue, 23. November 2010 -- 00:08_
+
+Und ich dachte, dass ich schon laengst damit fertig waere... doch wie sich wieder einmal herausstellt, habe ich mir eine Aufgabe ausgesucht, welche nicht nur komplex ist, sondern ueber welche sich in letzter Konsequenz kaum jemand sonst Gedanken gemacht hat. Das wesentliche Vorhabe ist es ja immer noch, den Support fuer die mehrdimensionalen Images in die DAL einzubauen; nicht nur handelt es sich dabei um das allgemeingueltigste Datenprodukt, sondern auch ist dies etwas, dass wir fuer AARTFAAC und die dahinter anschliessende Transients-Pipeline gebrauchen wollen. Da die Verantwortung fuer die DAL nach wie vor in meinen Haenden liegt -- zu einem guten Teil auch, weil sich immer noch niemand gefunden hat, der dieser Aufgabe weiterfuehren koennte -- macht es also Sinn, dass ich die Dinge zum Abschluss bringe, welche ich in der anschliessenden Zeit dann weiterverwenden kann. Dabei faellt mir allerdings immer wieder auf, dass die Beschreibungen leider nicht konsitent sind, sondern sich verschiedene Ansaetze und Beschreibungen in den diversen Dokumenten befinden -- wenn ich also an der Dokumentation fuer die grundsaetzliche Bescheibung von Koordinaten arbeite, wird es ein wenig schwer, wenn das was die Leute dann anschliessend damit machen nicht mehr zusammenpasst. Folgerichtig habe ich jetzt noch einmal eine Diskussion angestossen -- nachdem ich dies eine Weile in meinem Kopf hin- und herbewegt habe -- damit wir da weiterkommen. 
+
+> Right now I want to push forward on the coordinates matter, because I want this out of my in order to move on to implementing some of the data formats -- the coordinates have been pushed back too long and keep popping up time and time again, thereby leaving an area within the data structures, which is ill-defined. As I won't be available to invest major amount of time into the DAL, I want to ensure the groundwork is in place before moving on and perhaps pass some of the work on to someone else (at ASTRON?).
+
+Ich bin mal gespannt, was als naechtes passiert -- ich fuer meinen Teil werde aber sicherlich dafuer versuchen Sorge zu tragen, dass wir endlich noch ein paar Fragen geklaert kriegen, welche mich davon abhalten den entsprechenden Code zu schreiben.
