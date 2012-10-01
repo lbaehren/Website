@@ -9,6 +9,30 @@ tags: Blog
  
 **:::**
  
+### Metasearch Metadata Metaphor ###
+
+
+
+
+_Mon, 01. October 2012 -- 16:28_
+
+Manchmal gibt es einfach Assoziationen, vor welchen man neidlos den Hut ziehen muss:
+
+> [SRW/U](http://www.loc.gov/standards/sru) is to [Yngwie J. Malmsteen](http://www.yngwiemalmsteen.com/home.html) as [OpenSearch](http://www.opensearch.org) is to [Keith Richards](http://www.keithrichards.com).
+>
+> Yngwie Malmsteen is technically superior, however aesthetically unlistenable (unimplementable, in the case of SRW/U).
+>
+> Keith Richards is sloppy, unsophisticated and writes timeless melodies that resonate with the masses (OpenSearch is sloppy, unsophisticated — while time will tell if OpenSearch becomes "timeless" \[seems doubtful, honestly\], but there are certainly a lot of OpenSearch targets).
+>
+> Mike Taylor wrote a very insightful reaction to Dan’s worklog posting (and incredibly objective, given his investment and relationship to SRW/U). And he’s right.
+>
+> And I’m right. Unless SRW/U can capture some of the mojo that OpenSearch has, it might as well be Yngwie J. Malmsteen.
+
+Gefunden habe ich diese Gegenueberstellung auf [dilettantes.code4lib.org](http://dilettantes.code4lib.org/blog/category/sru), wo ich im Zuge einer Recherche rund um das [Z39.50 client-server protocol](http://en.wikipedia.org/wiki/Z39.50). Da auf der zentralen Seite leider nur minimale Beispiele fuer die Verwendung der zugrundeliegenden C/C++ Bibliotheken zu finden waren, bin ich einfach noch einmal losgezogen um ggf. an anderer Stelle fuenfig zu werden -- sonderlich erfolgreich war diese Suche leider nicht, aber dafuer gab es eben jenen recht ungewoehnlichen Vergleich. Ausgerechnet Malmsteen und Richards miteinander zu vergleichen waere mir selber sicherlich so schnell nicht in den Sinn gekommen; die beiden stehen fuer wirklich sehr, sehr unterschiedliche Ansaetze in Sachen Gitarrenspiel.
+ 
+**:::**
+ 
+ 
 ### Klappt wieder ###
 
 
@@ -242,24 +266,6 @@ Ich haette mir dies sicherlich ersparen koennen, wenn ich [beim Gang ueber den F
 > In May, 2012, Universal filed a lawsuit against Asylum for their film [American Warships](http://www.imdb.com/title/tt2175927), claiming infringement on their movie [Battleship](http://www.imdb.com/title/tt1440129).
 
 So wie es aussieht steckt da also eine Methode hinter der Vorgehensweise.
- 
-**:::**
- 
- 
-### Flickr Benachrichtigungen ###
-
-
-
-
-_Mon, 24. September 2012 -- 10:01_
-
-Ich weiss, dass mir dies schon einige Mal in den Fingern lage, aber irgendwie ist dies mal wieder eine jener Kleinigkeiten, welche immer wieder liegen geblieben ist.
-
-Seit ich beim [prometheus Bildarchiv](http://www.prometheus-bildarchiv.de) begonnen habe zu arbeiten, ist die Anzahl an Emails, welche jeden Tag in meiner Inbox landen, drastisch angestiegen, da so ziemlich alles, was irgendwie _prometheus_ Gefuege schieht in einer Email resultiert, kommen da schon einmal locker 30-50 Mitteilungen an einem Tag zusammen. Neben den eher technischen Nachrichten -- Status der Server, etc. -- werden aber auch alle Aktivitaten auf Twitter und Facebook repliziert; um von dem Gezwitschere aber nicht zu sehr gestoert zu werden, habe ich mir da mittlerweile einen Filter eingerichtet, denn ich persoenlich finde einfach dass mir dass mein Mailfach zu sehr zumuellt. Dass die die Nachrichten aber noch auf weitere Social-Media Platformen erstrecken, kann man an der folgenden Meldung sehen:
-
-![Flickr notification](/blog/2012/2012-09/2012-09-19_flickr.png)
-
-Yep, es gibt einen [prometheus e.V. Flickr Account](http://www.flickr.com/photos/prometheus_ev); sonderlich viel passiert da allerdings nicht, so dass dieser nicht unbedingt der Erwaehnung wert waere. Was allerdings in Bezug auf die bereits angesprochenen Emails relevant ist, waere der Umstand dass es auch hier die Benachrichtigungen fuer jede Aktivitaet im Umfeld aktivert sind; wozu dies dann fuehrt ist, dass Benachrichtigungen losgeschickt werden, wenn einer Kontakte Bild online stellt. Wir reden hier nicht ueber Aktivitaeten wie z.B. das Kommentieren von Bilder -- das koennte man ja vielleicht noch verstehen -- sondern bei dieser Konfiguration bekomme ich also auch fuer meine eigenen Bilder, welche ich zu Flickr hochlade, Emails zugesendet. Da wird wahrscheinlich noch einmal ein weiterer Filter noetig...
  
 **:::**
  

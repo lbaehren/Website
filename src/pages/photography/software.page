@@ -16,6 +16,8 @@ author: Lars Baehren
 
 * [darktable](http://www.darktable.org) is an open source photography workflow application and RAW developer. A virtual lighttable and darkroom for photographers. It manages your digital negatives in a database, lets you view them through a zoomable lighttable and enables you to develop raw images and enhance them.
 
+* [digiKam](http://www.digikam.org) is an advanced digital photo management application for KDE, which makes importing and organizing digital photos a "snap". The photos are organized in albums which can be sorted chronologically, by folder layout or by custom collections.
+
 * [gPhoto2](http://gphoto.org) is a free, redistributable, ready to use set of digital camera software applications for Unix-like systems, written by a whole team of dedicated volunteers around the world. It supports more than 1400 cameras. gPhoto2 runs on a large range of UNIX-like operating system, including Linux, FreeBSD, NetBSD, MacOS X, etc.
 
 * [Luminance HDR](http://qtpfsgui.sourceforge.net) is an open source graphical user interface application that aims to provide a workflow for HDR imaging.

@@ -1,0 +1,17 @@
+---
+title: "Klappt wieder"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Mon, 01. October 2012 -- 14:50_
+
+Da scheint es also doch wieder zu funktionieren; so richtig will ich dies zwar noch nicht verstehen, aber soweit ich dies erkennen kann, sind die Seiten nun wieder komplett. Hatte mich eben ein wenig gewundert, als ich den Eintrag in Sachen [The Boxx](/blog/2012/2012-10/2012-10-01_12-48.html) eingestellt hatte: obwohl in dem gleichen Verzeichnis schon ein Bild lag, taucht nur das frisch angelegte in dem Blog auf. Als ich dann mal schnell ein 
+
+~~~~
+touch *
+~~~~
+
+durchgefuehrt habe, tauchte auch das naechste Bild auf. Ich hatte zwar zunaechst ein wenig der Zugriffsrechte im Verdacht gehabt, aber das machte in meinen Augen absolut keinen Sinn, zumal ich nichts daran geaendert hatte. Nachdem ich jetzt eben noch einmal das komplette Bilderverzeichnis "angestupst" habe, scheint es wieder zu klappen... auch  wenn ich das noch nicht so recht nachvollziehen kann. Mein Verdacht waere allerdings, dass es da ein Problem mit dem _webgen_ eigenen Cache gegeben hat, welcher im wesentlichen ja verhindern soll, dass irgendwelche Aktionen oefter als noetig ausgefuehrt werden. Das werde ich also definitiv mal im Auge behalten muessen.
