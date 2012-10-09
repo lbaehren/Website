@@ -1,0 +1,41 @@
+---
+title: "Geduldsprobe"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 09. October 2012 -- 07:47_
+
+Also so viel Spass macht das ja nicht mehr; nachdem ich am Sonntag Nachmittag unterwegs war, um die
+Lichtverhaeltnisse Richtung Sonnenuntergang auszunutzen, wollte ich natuerlich am Abend einen
+Blick in die Aufnahmen werfen und vielleicht auch schon die ersten zu HDRs verrechnen; wie sich
+allerdings herausstellte war dies aber nicht so ohne weiteres moeglich.
+
+Wie schon bei den zurueckliegenden Photoexkursionen, musste ich auch diesmal wieder feststellen
+dass die Bilder eine Reihe von dunklen Punkten enthalten, welche -- so weit habe ich dies
+mittlerweile nachvollziehen koennen -- durch Staubpartikel auf dem Sensor verursacht werden
+(technisch gesehen ist es nicht der Sensor, sondern der Filter, welcher auf dem Sensor montiert
+ist). Waehrend derartige Verunreinigungen bei Aufnahmen mit grosser Blende (also weiter Oeffnung)
+keine merklichen Spuren hinterlassen, sieht dies bei Blenden kleiner in Bereich f/16 oder kleiner
+schon ganz anders aus: auf hellen Flaechen heben sich die schwarzen Punkte klar und eindeutig ab,
+so dass eine Nachbearbeitung notwendig wird. Wie ich mittlerweile herausgefunden habe wird diese
+Stoerung noch einmal um einen erhelblichen Faktor verstaerkt, wenn man mehrere Aufnahmen zu einem
+HDR zusammenrechnet; waehrend bei einer einzelnen Aufnahme im Zweifelsfall der Kontrast nicht so
+sonderlich gross ist, fuehrt der Anstieg an dynamischer Bandbreite dazu, dass man es mit
+pechschwarzen Punkten auf ansonsten farblich konstantem Hintergrund zu tun bekommt -- nichts also
+was man im fertigen Bild behalten moechte. Folgerichtig habe ich also versucht, dies ein wenig
+mehr von Grund auf anzugehen, um es garnicht erst zu diesem Problem kommen zu lassen:
+
+ - Mit Hilfe der Reinigungsausruestung habe ich probiert den Filter von Staubpartikeln zu befreien.
+ - Vor dem Losziehen habe ich eine Reihe Referenzbilder aufgenommen, so dass sich Artifakte anschliessend digital subtrahieren lassen.
+
+Wie ich ich allerdings feststellen musste, hat keine der beiden Aktionen zu dem gewuenschten
+Ergebnis gefuehrt: weder sind die beiden Punktwolken in den Ecken der Bilder verschwunden, noch
+scheint die Subtraktion eines Referenzbildes bei nicht-Nikon Objektiven zu funktionieren (letzteres
+haette ich gerne noch einmal verifiziert, um auszuschliessen, dass ich da etwas falsch gemacht habe).
+Somit lag mir also eine Menge an Roh-Bildern vor, welche zunaechst erst einmal nachbearbeitet
+werden mussten, ehe ich diese miteinander verrechnen kann. Der Plan aber, diese grundlegenden Dinge noch schnell am Abend zu erledigen liess sich leider nicht realisieren: schon nach kuerzester Zeit musste ich feststellen, dass der Rechner komplett unter der Last der notwendigen Berechnungen zusammenbrach. Dies ging so weit, dass der Desktop ueber weite Strecken komplett eingefroren war -- keine Reaktion, weder auf Eingaben mit der Maus oder der Tastatur -- so dass ich irgendwann einfach die Nase voll hatte; um also nicht den Rest der Nacht auf einen unbeweglichen Bildschirm zu starren, habe ich die wesentlichen Aenderungen, welche ich vornehmen wollte, an einem Bild vorgenommen, diese als Batch-Job exportiert und dann einfach auf eine groessere Gruppe an Aufnahmen losgelassen. Als ich ins Bett verschwunden bin war in keinster Weise absehbar, wie lange die Berechnungen dauern wuerden... umso gluecklicher war ich demnach, als ich am Morgen feststellen konnte, dass alles ohne abzustuerzen durchgelaufen war.
+
+Groessere Aktionen mit HDR Bildern koennen durchaus eine Herausforderung darstellen: wie ich bereits erfahren konnte ist da nicht nur mehr an Vorbereitung noetig (um sich anschliessende Bearbeitungsschritte zu sparen), sondern auch das Verrechnen der Einzelaufnahmen kann in die Resourcen gehen.
