@@ -1,0 +1,20 @@
+---
+title: "Online Karten"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Wed, 10. October 2012 -- 11:32_
+
+Nicht erst seit dem seit einer Weile die Runde machenden Aerger rund um Apples Kartenanwendung fuer [iOS](http://www.apple.com/ios) darf man sich fragen, in wie weit man online Kartenmaterial verwenden kann, sondern auch in wie weit sich dem, was auf Satellitenbildern und Karten zu sehen vertraut werden darf. Nun sollte man vielleicht meinen, dass gerade bei Satellitenaufnahmen eine recht gute Abildung der Realitaet vorliegt, aber darauf sollte man eben nicht in jedem Fall unbedingt vertrauen: gerade in den Faellen, wo es anderweitige Interessen gibt -- vorwiegend militaerischer und sicherheitstechnischer Art -- kann es schon einmal bewusst zu einer Qualitaetsverminderung kommen. Geschieht dies nicht, dann geraten Anbieter und entsprechende Organisationen mitunter aneinander, so wie von [Heise](http://www.heise.de) in einem Artikel mit dem Titel [Apple bekommt Ärger mit taiwanischem Militär](http://www.heise.de/newsticker/meldung/Karten-App-Apple-bekommt-Aerger-mit-taiwanischem-Militaer-1726866.html) beschrieben:
+
+> Das taiwanische Militär hat Apple aufgefordert, in seiner neuen Karten-Anwendung enthaltene Satellitenbilder durch niedriger auflösende Aufnahmen zu ersetzen. Wie nordamerikanische Medien berichten, zeigt iOS 6 unter anderem eine 1,4 Milliarden Dollar teure Radar-Abwehranlage, die Flugzeuge und Raketen aus Richtung Westchina früherkennen und gegebenenfalls abschießen soll. Die Aufnahmen sollen vor einem Jahr entstanden sein und wurden anscheinend nicht nachbearbeitet.
+
+Sicherlich kein Einzelfall:
+
+ - [Does Apple Maps Jeopardize National Security?](http://www.popsci.com/gadgets/article/2012-10/apple-maps-images-sensitive-sites-are-clearer-googles) (popsci.com. 02 Oct 2012)
+ - [Sloppy security? Apple and Nokia conceal fewer sensitive sites than Google Maps](http://www.theverge.com/2012/9/28/3417234/apple-maps-military-security-satellite-images-google-nokia-comparison) (The Verge, 28 Sep 2012)
+
+Waehrend auf der einen Seite eine gewisse Nervositaet verstaendlich ist, wirft dies aber auf der anderen Seite schon ein wenig die Frage auf, in wie man den Pixeln bei Satellitenbildern auf e.g. [Google Maps](http://maps.google.com) trauen darf; ich weiss nicht, ob irgendwo klar gemacht wird, wo die Schwelle liegt, wo einer Forderung zur Nachbearbeitung der Daten nachgekommen wird.
