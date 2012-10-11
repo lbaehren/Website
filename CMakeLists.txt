@@ -90,6 +90,7 @@ else (LOCAL_CMAKE_MODULE_PATH)
   message (WARNING "Failed to locate custom CMake modules!")
 endif (LOCAL_CMAKE_MODULE_PATH)
 
+find_package (Boost)
 find_package (Git)
 find_package (Doxygen)
 find_package (Gem)
