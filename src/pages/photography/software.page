@@ -15,6 +15,8 @@ author: Lars Baehren
 ### Open source ###
 
 * [darktable](http://www.darktable.org) is an open source photography workflow application and RAW developer. A virtual lighttable and darkroom for photographers. It manages your digital negatives in a database, lets you view them through a zoomable lighttable and enables you to develop raw images and enhance them.
+  * [Flickr group](http://www.flickr.com/groups/darktable)
+  * [Github repository](https://github.com/darktable-org/darktable)
 
 * [digiKam](http://www.digikam.org) is an advanced digital photo management application for KDE, which makes importing and organizing digital photos a "snap". The photos are organized in albums which can be sorted chronologically, by folder layout or by custom collections.
 
@@ -29,3 +31,5 @@ author: Lars Baehren
 ## Data formats ##
 
 * [Description of Exif file format](http://www.media.mit.edu/pia/Research/deepview/exif.html)
+
+* **OpenEXR** is a high dynamic-range (HDR) image file format developed by Industrial Light & Magic (ILM) for use in computer imaging applications. ILM subsequently released the source code and adjoining material as open source software.
