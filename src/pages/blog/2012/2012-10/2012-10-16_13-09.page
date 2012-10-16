@@ -1,0 +1,19 @@
+---
+title: "Supersonic"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 16. October 2012 -- 13:09_
+
+Immer wieder gut, ein Auge offen zu halten fuer die Meldungen auf [Heise News](http://www.heise.de):
+
+> Um Programmierern beim Erstellen schneller Suchanwendungen zu helfen, hat Google das Open-Source-Projekt [Supersonic](https://code.google.com/p/supersonic) zum Download bereit gestellt. Die Suchmaschinenbibliothek ist für spaltenorientierte Datenbanken ausgelegt und soll besonders in den Punkten Geschwindigkeit, Verlässlichkeit und Robustheit überzeugen.
+
+Auch wenn dies jetzt vielleicht nichts ist, was ich unmittelbar einzusetzen wuesste, so kann es doch nicht schaden da mal einen genaueren Blick drauf zu werfen, um dies im Hinterkopf zu haben, fuer den Fall dass einem mal ein Problem unterkommt, wo dies einen Loesungsansatz bieten koennte.
+
+> Supersonic is an ultra-fast, column oriented query engine library written in C++. It provides a set of data transformation primitives which make heavy use of cache-aware algorithms, SIMD instructions and vectorised execution, allowing it to exploit the capabilities and resources of modern, hyper pipelined CPUs. It is designed to work in a single process.
+
+Wie kaum anders zu erwarten, wird Supersonic auf [Google Code](http://code.google.com) gehostet, von wo aus sich Source Code und Dokumentation an Land ziehen lassen.
