@@ -18,43 +18,35 @@
  *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
  ***************************************************************************/
 
-#include "ScriptSupport.h"
+#ifndef SCRIPT_SUPPORT_H
+#define SCRIPT_SUPPORT_H
+
+#include "Common.h"
+
+/*!
+  \file ScriptSupport.h
+  \ingroup Blog
+  \brief A collection of functions to support the existing scripts
+  \author Lars Baehren
+  \date 2012-10-17
+*/
 
 namespace Blog {
 
-  //_____________________________________________________________________________
-  //                                                           write_index_header
-
-  /*!
-    \param os     -- Stream to which the output will be written.
-    \param title  -- Title of the entry.
-    \param author -- Author of the entry.
-    \param tags   -- Tags for the entry.
-  */
+  //! Write header of blog index file.
   void write_index_header (std::ostream &os,
-                           std::string const &title,
-                           std::string const &author,
-                           std::string const &tags,
-                           bool const &inMenu)
-  {
-    std::string in_menu = "false";
+                           std::string const &title="Blog",
+                           std::string const &author="Lars Baehren",
+                           std::vector<std::string> const &tags=std::vector<std::string>(),
+                           bool const &inMenu=false);
 
-    /* Is the page to be listed in the menu? */
-    if (inMenu) {
-      in_menu = "true";
-    }
+  //! Write header of blog index file.
+  void write_index_header (std::ostream &os,
+                           std::string const &title="Blog",
+                           std::string const &author="Lars Baehren",
+                           std::string const &tags="Blog",
+                           bool const &inMenu=false);
 
-    /* Write the header to the output stream */
-    os << "---"                          << std::endl;
-    os << "title: \""  << title << "\""  << std::endl;
-    os << "in_menu: "  << in_menu        << std::endl;
-    os << "author: \"" << author << "\"" << std::endl;
-    os << "tags: "     << tags           << std::endl;
-    os << "---"                          << std::endl;
-    os << " "                            << std::endl;
-    os << "# {title:} #"                 << std::endl;
-    os << " "                            << std::endl;
-    os << "**:::**"                      << std::endl;
-  }
+};
 
-}
+#endif

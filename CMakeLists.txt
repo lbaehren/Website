@@ -142,7 +142,7 @@ add_custom_target (Website ALL
   WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
   COMMENT "Rendering website from sources ..."
   )
-add_dependencies (Website blog)
+add_dependencies (Website libblog)
 
 ##_______________________________________________________________________________
 ## Build the page with the most recent blog entries

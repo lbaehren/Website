@@ -8,7 +8,7 @@ foreach (test_source ${test_sources})
   ## Compile
   add_executable (${testFilename} ${test_source})
   ## Link
-  target_link_libraries (${testFilename} blog)
+  target_link_libraries (${testFilename} libblog)
 
   ## Testing
   if (ENABLE_TESTING)
