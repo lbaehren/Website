@@ -30,7 +30,7 @@
 #include "Element.h"
 
 namespace Blog { // Namespace Blog -- begin
-  
+
   /*!
     \class Link
     \ingroup Blog
@@ -43,7 +43,7 @@ namespace Blog { // Namespace Blog -- begin
     \verbatim
     { "link": { "title": "<title>",
                 "url": "<url>",
-                "is_internal": "<internal>" } 
+                "is_internal": "<internal>" }
     }
     \endverbatim
   */
@@ -99,18 +99,18 @@ namespace Blog { // Namespace Blog -- begin
     inline void summary () {
       summary (std::cout);
     }
-    
+
     //! Provide a summary of the internal status to output stream \c os
-    void summary (std::ostream &os);    
+    void summary (std::ostream &os);
 
     //! Write the element to the stream \c os, using the specified \c format
     void write (Element::Format const &format,
                 std::ostream &os);
-    
+
     // === Private methods ======================================================
 
   private:
-    
+
   };
 
 } // Namespace Blog -- end
