@@ -14,7 +14,7 @@
 ##                  `-- march_YYYY.txt
 ##
 ## For each new entry the following actions are taken:
-## 
+##
 ##  1. Check if the folder for the current year exists (YYYY); if not,
 ##     create the folder.
 ##  2. Check if the folder for the current month exists (YYYY-MM); if not,
@@ -27,7 +27,6 @@
 ##
 ## ==============================================================================
 
-varVerbose=no
 varEditor=emacs
 
 ##____________________________________________________________________
@@ -75,27 +74,6 @@ varFileWebgen=$varWebgenBlog/$varYear/$varYearMonth/${varEntry}.page
 
 ## ==============================================================================
 ##
-##  Data summary
-##
-## ==============================================================================
-
-case $varVerbose in
-    yes)
-    echo "-- Directory pages  = $varDokuwikiBlog"
-    echo "-- Directory meta   = $var_dirMeta"
-    echo "-- Directory year   = $var_dirYear"
-    echo "-- Directory month  = $var_dirMonth"
-    echo "-- File month index = $var_fileIndex"
-    echo "-- File entry       = $var_fileEntry"
-    echo "-- File changes     = $var_fileChanges"
-    echo "-- File wiki path   = $var_pathPage" 
-    ;;
-    *)
-    ;;
-esac
-
-## ==============================================================================
-##
 ##  Function definitions
 ##
 ## ==============================================================================
@@ -119,7 +97,7 @@ writeHeaderDokuwiki ()
 	if [ -d $varYear ]
 	then
 	    cd $varYear
-	    if [ -d $varDirMonth ] 
+	    if [ -d $varDirMonth ]
 	    then
 		cd $varDirMonth
 	    else
@@ -157,9 +135,9 @@ writeHeaderWebgen ()
 	if [ -d $varYear ]
 	then
 	    cd $varYear
-	    if [ -d $varDirMonth ] 
+	    if [ -d $varDirMonth ]
 	    then
-		cd $varDirMonth
+          cd $varDirMonth
 	    else
 		mkdir $varDirMonth
 		cd $varDirMonth
@@ -173,7 +151,7 @@ writeHeaderWebgen ()
     fi
 
     ## Create the skeleton file for the new blog entry
-    
+
     echo "---"                          > $varFileEntry
     echo "title: \"$varTitle\""        >> $varFileEntry
     echo "in_menu: false"              >> $varFileEntry
@@ -206,7 +184,6 @@ echo " -> Creating new blog entry ..."
 echo ""
 
 writeHeaderWebgen
-#writeHeaderDokuwiki
 
 ##_______________________________________________________________________________
 ## Create the main body of the new blog entry
@@ -216,7 +193,6 @@ $varEditor $varFileTemp
 ## ... and append it to the previously created header segment
 
 cat $varFileTemp >> $varFileWebgen
-#cat $varFileTemp >> $varFileDokuwiki
 
 ## Add link to new entry to the index file
 
@@ -225,10 +201,6 @@ echo "  * [[.$varYearMonth:$varEntry|$varTitle]] ($varDate - $varTime)" >> $var_
 ##_______________________________________________________________________________
 ## Post-editing cleanup of the directory; remove backup files created by emacs
 
-chmod a+rw $var_fileEntry
-chmod a+rw $var_fileIndex
-chmod a+rwx $var_dirMeta/$varYear
-chmod a+rwx $var_dirMeta/$varYear/$varYearMonth
 rm -f $var_dirYear/*~
 rm -f $var_dirMonth/*~
 rm -rf $varFileTemp
