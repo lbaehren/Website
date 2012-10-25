@@ -1,0 +1,15 @@
+---
+title: "Lance Armstrong bug"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Thu, 25. October 2012 -- 11:10_
+
+Das ist jetzt zwar noch nicht so gut wie das "Eastwooding", aber der Begriff koennte ebenfalls Schule machen:
+
+> Ted Ts'o [bezeichnet](https://plus.google.com/117091380454742934025/posts/7CK29YNwKT6) den Fehler als "Lance Armstrong bug", bei dem der Code niemals in einem Test auffällt, sich aber trotzdem nicht so verhält, wie er sollte. In seinem Posting auf der Linux Kernel Mailinglist mit dem nur wenige Zeilen langen Patch entschuldigt er sich, dass ihm der Fehler nicht schon beim Sichten des Codes für den Kernel 3.6.2 aufgefallen sei.
+
+Waere ich wahrscheinlich auch nicht ohne weiteres drauf gestossen, aber der Kommentar befand sich in einem kurzen [Artikel auf Heise Open Source](http://www.heise.de/open/meldung/Ext4-Bug-gefaehrdet-Daten-1736310.html) ueber einen Bug im Code des Dateisystems Ext4 im aktuellen stabilen Linux-Kernel 3.6.3, welcher unter bestimmten Bedingungen zu einem Datenverlust fuehren kann.
