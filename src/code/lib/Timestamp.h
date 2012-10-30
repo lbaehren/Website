@@ -29,29 +29,29 @@
 #include <sstream>
 
 namespace Blog { // Namespace Blog -- begin
-  
+
   /*!
     \class Timestamp
-    
+
     \ingroup Blog
-    
+
     \brief Wrapper for the time information in its various formats
-    
+
     \author Lars B&auml;hren
-    
+
     \date 2006/07/16
-    
+
     \test TimestampTest.cc
-    
+
     <h3>Prerequisite</h3>
-    
+
     <ul type="square">
-      <li>C++ : Reference : C Library : 
+      <li>C++ : Reference : C Library :
       <a href="http://www.cplusplus.com/reference/clibrary/ctime/time_t">time_t</a>
-      <li>C++ : Reference : C Library : 
+      <li>C++ : Reference : C Library :
       <a href="http://www.cplusplus.com/reference/clibrary/ctime/tm">tm</a>
     </ul>
-    
+
     The underlying time information -- as defined in <tt>time.h</tt>
     \code
     struct tm {
@@ -68,15 +68,15 @@ namespace Blog { // Namespace Blog -- begin
       char    *tm_zone;      //  timezone abbreviation
     };
     \endcode
-    
+
     The Daylight Saving Time flag (<tt>tm_isdst</tt>) is greater than zero
     if Daylight Saving Time is in effect, zero if Daylight Saving Time is not
     in effect, and less than zero if the information is not available.
-    
+
     The functions <tt>ctime()</tt>, <tt>gmtime()</tt>, and <tt>localtime()</tt>
     all take as an argument a time value representing the time in seconds since
     the Epoch (00:00:00 UTC, January 1, 1970; see time(3)).
-    
+
     The functions <tt>mktime()</tt> and <tt>timegm()</tt> convert the broken-out
     time (in the structure pointed to by *timeptr) into a time value with the
     same encoding as that of the values returned by the time(3) function
@@ -84,9 +84,9 @@ namespace Blog { // Namespace Blog -- begin
     interprets the input structure according to the current timezone
     setting (see tzset(3)).  The <tt>timegm()</tt> function interprets the input
     structure as representing Universal Coordinated Time (UTC).
-    
+
     <h3>Synopsis</h3>
-    
+
     <h3>Example(s)</h3>
 
     <ul>
@@ -95,39 +95,39 @@ namespace Blog { // Namespace Blog -- begin
       #include <time.h>
       #include <stdio.h>
       #include <stdlib.h>
-      
+
       #define SIZE 256
-      
+
       int main (void)
       {
         char buffer[SIZE];
         char *tzone;
         time_t timestamp;
         char* format;
-        
+
         // Get and print timestamp
         timestamp = time(NULL);
         printf("%i\n", (int) timestamp);
-        
+
         // Format string
         format = "%a %e %b %Y %r %Z %n";
-        
+
         // Print time in my default timezone (NZDT)
         strftime(buffer, SIZE, format, localtime(&timestamp));
         fputs(buffer, stdout);
-        
+
         // Print UTC time
         tzone="TZ=UTC";
         putenv(tzone);
         strftime(buffer, SIZE, format, localtime(&timestamp));
         fputs(buffer, stdout);
-        
+
         // Print time is the Eastern USA
         tzone="TZ=EST";
         putenv(tzone);
         strftime(buffer, SIZE, format, localtime(&timestamp));
         fputs(buffer, stdout);
-        
+
         return 0;
       }
       \endcode
@@ -158,7 +158,7 @@ namespace Blog { // Namespace Blog -- begin
       \code
       #include <iostream>
       #include <boost/date_time/posix_time/posix_time.hpp>
-      
+
       int main() {
         using namespace boost::posix_time;
 	ptime t = microsec_clock::universal_time();
@@ -173,8 +173,8 @@ namespace Blog { // Namespace Blog -- begin
       \endcode
 
       <li>By the default the internal time is set to the time at which the object
-      was created; thus 
-      \code 
+      was created; thus
+      \code
       Timestamp ts;
       //
       std::cout << " -- ymd         = " << ts.ymd()         << std::endl;
@@ -190,11 +190,9 @@ namespace Blog { // Namespace Blog -- begin
       -- iso8601     = 2006-07-18T19:05:09.00Z
       -- Unix time   = 1153242309
       \endverbatim
-      
+
     </ul>
-    
   */
-  
   class Timestamp {
 
   public:
@@ -217,7 +215,7 @@ namespace Blog { // Namespace Blog -- begin
 
     /*!
       \brief Formatting of the timestamp
-      
+
       | Format          | Output                          |
       |-----------------|---------------------------------|
       | Unix seconds    | 1255969060                      |
@@ -236,7 +234,7 @@ namespace Blog { // Namespace Blog -- begin
     };
 
   private:
-    
+
     //! Type capable of representing times and support arithmetical operations.
     time_t itsRawtime;
 
@@ -254,59 +252,59 @@ namespace Blog { // Namespace Blog -- begin
     double itsSecond;
 
   public:
-    
+
     // === Construction =========================================================
-    
+
     //! Default constructor
     Timestamp ();
 
     //! Argumented constructor
     Timestamp (int const &year,
-	       int const &month,
-	       int const &day,
-	       int const &hour=0,
-	       int const &minute=0,
-	       double const &second=0.0);
-    
+               int const &month,
+               int const &day,
+               int const &hour=0,
+               int const &minute=0,
+               double const &second=0.0);
+
     //! Copy constructor
     Timestamp (Timestamp const &other);
-    
+
     // === Destruction ==========================================================
-    
+
     //! Destructor
     ~Timestamp ();
-    
+
     // === Operators ============================================================
-    
+
     //! Overloading of the copy operator
-    Timestamp& operator= (Timestamp const &other); 
-    
+    Timestamp& operator= (Timestamp const &other);
+
     // === Parameter access =====================================================
-    
+
     //! Get the numerical value of the year
     inline int year () {
       return itsYear;
     }
-    
+
     //! Set the numerical value of the year
     void setYear (int const &year);
-    
+
     //! Get the numerical value of the month
     inline int month () {
       return itsMonth;
     }
-    
+
     //! Set the numerical value of the month
     void setMonth (int const &month);
 
     //! Set the numerical value of the month
     void setMonth (Month const &month);
-    
+
     //! Get the numerical value of the day
     inline int day () {
       return itsDay;
     }
-    
+
     //! Set the numerical value of the day
     void setDay (int const &day);
 
@@ -330,7 +328,7 @@ namespace Blog { // Namespace Blog -- begin
     inline double second () const {
       return itsSecond;
     }
-    
+
     //! Set the numerical value of the second within the minute
     void setSecond (double const &second);
 
@@ -338,74 +336,74 @@ namespace Blog { // Namespace Blog -- begin
     inline int fullSecond () const {
       return floor(itsSecond);
     }
-    
+
     //! Get the fraction of a second
     inline double fractionOfSecond () const {
       int fullSecond = floor(itsSecond);
       return itsSecond-fullSecond;
     }
-    
+
     //! Provide a summary of the internal status
     inline void summary () {
       summary (std::cout);
     }
-    
+
     //! Provide a summary of the internal status to output stream \c os
-    void summary (std::ostream &os);    
-    
+    void summary (std::ostream &os);
+
     // === Public methods =======================================================
-    
+
     //! Set to current time
     void setTime ();
 
     //! Set the time
     void setTime (time_t const &rawtime);
-    
+
     //! Get the local timezone
     std::string timezone ();
 
     //! Offset of local time from GMT
     std::string offsetFromGMT (bool const &seconds=true,
-			       std::string const &sep="");
-    
+                               std::string const &sep="");
+
     //! Get the name of the day of the week
     std::string dayOfWeek (bool const &longName=false);
-    
+
     /*!
       \brief Get string combining year, month and day
-      
+
       \param sep -- Filling character to be inserted between year/month and
       month/day. By default the filling character is set to
       <tt>-</tt>, such that the returned string will be
       <tt>yyyy-mm-dd</tt>.
-      
+
       \return ymd -- Formatted string including year, month and day.
     */
     std::string ymd (std::string const &sep="-");
-    
+
     /*!
       \brief Get the time of day
-      
+
       \param sep -- Separator inserted between components of the time string;
       by default the string is returned as <tt>hh:mm:ss</tt>
-      
+
       \return timeOfWeek -- The time of the day, consisting of hour, minutes
       and seconds.
     */
     std::string hms (std::string const &sep=":");
-    
+
     //! The the timestamp in a specified \c format
     std::string get (Timestamp::Format const &format=Timestamp::UNIX);
 
     // === Static methods =======================================================
 
     // === Private methods ======================================================
-    
+
   private:
-    
+
     //! Convert numerical vale to string
     std::string asString (int const &val);
-    
+
     //! Update the value of the raw time (in UNIX seconds)
     void setRawtime ();
 
@@ -413,20 +411,20 @@ namespace Blog { // Namespace Blog -- begin
       void eorError (std::string const &functionName,
 		     T const &value)
       {
-	std::cerr << "[Timestamp::" << functionName << "]"
-		  << " Input value rejected - out of range!"
-		  << " [value = " << value << "]"
-		  << std::endl;
+        std::cerr << "[Timestamp::" << functionName << "]"
+                  << " Input value rejected - out of range!"
+                  << " [value = " << value << "]"
+                  << std::endl;
       }
-    
+
     //! Unconditional copying
     void copy (Timestamp const &other);
-    
-    //! Unconditional deletion 
+
+    //! Unconditional deletion
     void destroy(void);
-    
+
   };
-  
+
 }
 
 #endif /* TIMESTAMP_H */

@@ -32,7 +32,7 @@
 #include "Timestamp.h"
 
 namespace Blog { // Namespace Blog -- begin
-  
+
   /*!
     \class BlogEntry
     \ingroup Blog

@@ -22,6 +22,40 @@
 
 namespace Blog {
 
+  /*!
+    \param os     -- Stream to which the output will be written.
+    \param title  -- Title of the entry.
+    \param author -- Author of the entry.
+    \param tags   -- Tags for the entry.
+    \param inMenu -- Is the generated page to be listed in the menu sidebar?
+  */
+  void write_index_header (std::ostream &os,
+                           std::string const &title,
+                           std::string const &author,
+                           std::vector<std::string> const &tags,
+                           bool const &inMenu)
+  {
+    std::string tt;
+    int nofTags = tags.size();
+
+    /* Check if there are tags to be combined */
+    if (!tags.empty()) {
+      tt = tags[0];
+
+      if (nofTags>1) {
+        for (int n=1; n<nofTags; ++n) {
+          tt += " " + tags[n];
+        }
+      }
+    }
+
+    write_index_header (os,
+                        title,
+                        author,
+                        tt,
+                        inMenu);
+  }
+
   //_____________________________________________________________________________
   //                                                           write_index_header
 
@@ -30,6 +64,7 @@ namespace Blog {
     \param title  -- Title of the entry.
     \param author -- Author of the entry.
     \param tags   -- Tags for the entry.
+    \param inMenu -- Is the generated page to be listed in the menu sidebar?
   */
   void write_index_header (std::ostream &os,
                            std::string const &title,

@@ -29,7 +29,8 @@ option (ENABLE_TESTING        "Enable CTest test driver?"                  YES  
 option (CONFIGURE_VERBOSE     "Increase verbosity during configuration?"   NO      )
 
 ## Path to the generated static website
-set (WEBSITE_INSTALL_PREFIX "${PROJECT_SOURCE_DIR}/release/website")
+set (WEBSITE_INSTALL_PREFIX       "${PROJECT_SOURCE_DIR}/release/website")
+set (DOCUMENTATION_INSTALL_PREFIX "${PROJECT_SOURCE_DIR}/release/documentation")
 
 ##__________________________________________________________
 ## Handle option: Enable CTest test driver?
