@@ -18,47 +18,23 @@
  *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
  ***************************************************************************/
 
-#ifndef BLOG_CONFIG_H
-#define BLOG_CONFIG_H
+#include "BlogConfig.h"
 
-// ==============================================================================
-//
-//  Package information
-//
-// ==============================================================================
+namespace Blog {
 
-#define PROJECT_NAME "${PROJECT_NAME}"
+  //! Type of the node in the blog structure
+  enum NodeType {
+    Directory,
+    Entry
+  };
 
-//! The full version of the ${PROJECT_NAME} in major.minor.patch format.
-#define RELEASE_VERSION       "${PROJECT_VERSION}"
-#define RELEASE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}"
-#define RELEASE_VERSION_MINOR "${PROJECT_VERSION_MINOR}"
-#define RELEASE_VERSION_PATCH "${PROJECT_VERSION_PATCH}"
+  class BlogNode {
 
-// ==============================================================================
-//
-//  Directory layout
-//
-// ==============================================================================
+    protected:
 
-#define INSTALL_PREFIX_WEBSITE       "${INSTALL_PREFIX_WEBSITE}"
-#define INSTALL_PREFIX_DOCUMENTATION "${INSTALL_PREFIX_DOCUMENTATION}"
+      //! Type of the node
+      NodeType itsType;
 
-#define SOURCE_DIR_CODE  "${SOURCE_DIR_CODE}"
-#define SOURCE_DIR_BLOG  "${SOURCE_DIR_BLOG}"
-#define SOURCE_DIR_PAGES "${SOURCE_DIR_PAGES}"
+  };
 
-// ==============================================================================
-//
-//  Tools
-//
-// ==============================================================================
-
-#define DOXYGEN_EXECUTABLE "${DOXYGEN_EXECUTABLE}"
-#define DOXYGEN_VERSION    "${DOXYGEN_VERSION}"
-
-#define RUBY_EXECUTABLE "${RUBY_EXECUTABLE}"
-#define RUBY_VERSION    "${RUBY_VERSION}"
-
-#endif
-
+}

@@ -61,18 +61,24 @@ endif (NOT CONFIGURE_VERBOSE)
 ##
 ## ==============================================================================
 
-## Source directory for pages
+## Project source directories
 
-find_path (PAGES_SOURCE_DIR
-  NAMES index.page default.template default.css
-  PATHS ${PROJECT_SOURCE_DIR}
-  PATH_SUFFIXES src pages src/pages
+find_path (SOURCE_DIR_CODE
+  NAMES lib/BlogConfig.h.in lib/BlogNode.h lib/Timestamp.h
+  PATHS ${CMAKE_CURRENT_SOURCE_DIR}
+  PATH_SUFFIXES src code src/code
   )
 
 find_path (SOURCE_DIR_BLOG
   NAMES upcoming.page archive.page 2012.page 2011.page 2010.page
   PATHS ${CMAKE_CURRENT_SOURCE_DIR}
   PATH_SUFFIXES src pages src/pages src/pages/blog pages/blog blog
+  )
+
+find_path (SOURCE_DIR_PAGES
+  NAMES index.page default.template default.css
+  PATHS ${PROJECT_SOURCE_DIR}
+  PATH_SUFFIXES src pages src/pages
   )
 
 ## Custom CMake modules
@@ -206,11 +212,13 @@ message (STATUS " .. size(void*) ................. = ${CMAKE_SIZEOF_VOID_P}"    
 message (STATUS " Project configuration:"                                        )
 message (STATUS " .. Version number .............. = ${PROJECT_VERSION}"         )
 message (STATUS " .. Installation prefix ......... = ${CMAKE_INSTALL_PREFIX}"    )
-message (STATUS " .. Pages source directory ...... = ${PAGES_SOURCE_DIR}"        )
+message (STATUS " .. Pages source directory ...... = ${SOURCE_DIR_PAGES}"        )
 message (STATUS " .. Blog source directory ....... = ${SOURCE_DIR_BLOG}"         )
 message (STATUS " .. Enable CTest test driver? ... = ${ENABLE_TESTING}"          )
 message (STATUS " .. Verbose configure? .......... = ${CONFIGURE_VERBOSE}"       )
-message (STATUS " Ruby configuration:"                                           )
+message (STATUS " External tools & packages:"                                    )
+message (STATUS " .. Doxygen executable .......... = ${DOXYGEN_EXECUTABLE}"      )
+message (STATUS " .. Doxygen version ............. = ${DOXYGEN_VERSION}"         )
 message (STATUS " .. Ruby executable ............. = ${RUBY_EXECUTABLE}"         )
 message (STATUS " .. Ruby version ................ = ${RUBY_VERSION}"            )
 message (STATUS " .. Path to Ruby library ........ = ${RUBY_LIBRARIES}"          )
