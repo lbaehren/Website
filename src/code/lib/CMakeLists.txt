@@ -1,4 +1,13 @@
 
+## === [ Configured header file ] ===============================================
+
+configure_file (
+  ${CMAKE_CURRENT_SOURCE_DIR}/BlogConfig.h.in
+  ${CMAKE_CURRENT_BINARY_DIR}/BlogConfig.h
+  )
+
+## === [ Library build instructions ] ===========================================
+
 ## Assemble list of source files
 file (GLOB libblog_sources *.cc)
 

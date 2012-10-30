@@ -29,8 +29,9 @@ option (ENABLE_TESTING        "Enable CTest test driver?"                  YES  
 option (CONFIGURE_VERBOSE     "Increase verbosity during configuration?"   NO      )
 
 ## Path to the generated static website
-set (WEBSITE_INSTALL_PREFIX       "${PROJECT_SOURCE_DIR}/release/website")
-set (DOCUMENTATION_INSTALL_PREFIX "${PROJECT_SOURCE_DIR}/release/documentation")
+set (INSTALL_PREFIX               "${PROJECT_SOURCE_DIR}/release"   )
+set (INSTALL_PREFIX_WEBSITE       "${INSTALL_PREFIX}/website"       )
+set (INSTALL_PREFIX_DOCUMENTATION "${INSTALL_PREFIX}/documentation" )
 
 ##__________________________________________________________
 ## Handle option: Enable CTest test driver?
@@ -68,7 +69,7 @@ find_path (PAGES_SOURCE_DIR
   PATH_SUFFIXES src pages src/pages
   )
 
-find_path (BLOG_SOURCE_DIR
+find_path (SOURCE_DIR_BLOG
   NAMES upcoming.page archive.page 2012.page 2011.page 2010.page
   PATHS ${CMAKE_CURRENT_SOURCE_DIR}
   PATH_SUFFIXES src pages src/pages src/pages/blog pages/blog blog
@@ -148,23 +149,23 @@ add_dependencies (Website libblog)
 ##_______________________________________________________________________________
 ## Build the page with the most recent blog entries
 
-if (script_blogrecent AND BLOG_SOURCE_DIR)
+if (script_blogrecent AND SOURCE_DIR_BLOG)
   ## Build target
   add_custom_target (recent_blog_entries
     COMMAND ${script_blogrecent}
-    WORKING_DIRECTORY ${BLOG_SOURCE_DIR}
+    WORKING_DIRECTORY ${SOURCE_DIR_BLOG}
     COMMENT "Generating page with recent blog entries ..."
     )
   ## Dependencies
   add_dependencies (recent_blog_entries blog)
   add_dependencies (Website recent_blog_entries)
-endif (script_blogrecent AND BLOG_SOURCE_DIR)
+endif (script_blogrecent AND SOURCE_DIR_BLOG)
 
 ##_______________________________________________________________________________
 ## Publish the website online
 
 add_custom_target (online
-  COMMAND rsync -avE --delete ${WEBSITE_INSTALL_PREFIX}/* bahren@dop131:/export/home/bahren/public_html
+  COMMAND rsync -avE --delete ${INSTALL_PREFIX_WEBSITE}/* bahren@dop131:/export/home/bahren/public_html
   WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
   COMMENT "Publishing website - uploading generated pages ..."
   )
@@ -206,7 +207,7 @@ message (STATUS " Project configuration:"                                       
 message (STATUS " .. Version number .............. = ${PROJECT_VERSION}"         )
 message (STATUS " .. Installation prefix ......... = ${CMAKE_INSTALL_PREFIX}"    )
 message (STATUS " .. Pages source directory ...... = ${PAGES_SOURCE_DIR}"        )
-message (STATUS " .. Blog source directory ....... = ${BLOG_SOURCE_DIR}"         )
+message (STATUS " .. Blog source directory ....... = ${SOURCE_DIR_BLOG}"         )
 message (STATUS " .. Enable CTest test driver? ... = ${ENABLE_TESTING}"          )
 message (STATUS " .. Verbose configure? .......... = ${CONFIGURE_VERBOSE}"       )
 message (STATUS " Ruby configuration:"                                           )

@@ -59,4 +59,4 @@ sources: [[/, Webgen::Source::FileSystem, src/pages], [/, Webgen::Source::FileSy
 # for the output class. The supported parameters can be found in the
 # documentation for each output class.
 
-output: [Webgen::Output::FileSystem, ${WEBSITE_INSTALL_PREFIX}]
+output: [Webgen::Output::FileSystem, ${INSTALL_PREFIX_WEBSITE}]
