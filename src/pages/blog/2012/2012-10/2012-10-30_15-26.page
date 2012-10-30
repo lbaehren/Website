@@ -1,0 +1,64 @@
+---
+title: "Git 2.0"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 30. October 2012 -- 15:26_
+
+Nachdem ich ich heute Morgen eine MacPorts update gefahren habe, komme ich nun in den Genuss der 1.8.0 Release von [Git](http://git-scm.com):
+
+~~~~
+--->  Fetching distfiles for git-core
+--->  Verifying checksum(s) for git-core
+--->  Extracting git-core
+--->  Applying patches to git-core
+--->  Configuring git-core
+--->  Building git-core
+--->  Staging git-core into destroot
+--->  Installing git-core @1.8.0_0
+--->  Cleaning git-core
+--->  Computing dependencies for git-core
+--->  Deactivating git-core @1.7.12.4_0
+--->  Cleaning git-core
+--->  Activating git-core @1.8.0_0
+--->  Cleaning git-core
+~~~~
+
+Das fuer sich genommen fand ich zunaechst einmal noch nicht so spektakulaer, denn schliesslich finden solche Versionsspruenge ja immer wieder einmal statt (auch wenn das Upgrade von 1.6 auf 1.7 schon eine Weile zurueckliegt). Dass sich hinter den Kulissen allerdings doch ein wenig mehr geaendert hat konnte ich merken, als ich dann die letzten lokalen Aenderungen zurueck in das Repository auf [Github](https://github.com) uebertragen wollte:
+
+~~~~
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+~~~~
+
+Also mal schnell in der Dokumentation nachgeschaut, um der Sache ein wenig auf den Grund zu gehen. Zwar gab die Warnung schon eine moegliche Vorgehensweise an, aber noch einmal nachlesen kann sicherlich nicht schaden:
+
+> **push.default**
+>
+Defines the action git push should take if no refspec is given on the command line, no refspec is configured in the remote, and no refspec is implied by any of the options given on the command line. Possible values are:
+>
+> * matching - push all branches having the same name in both ends. This is for those who prepare all the branches into a publishable shape and then push them out with a single command. It is not appropriate for pushing into a repository shared by multiple users, since locally stalled branches will attempt a non-fast forward push if other users updated the branch. This is currently the default, but Git 2.0 will change the default to simple.
+>
+> * simple - like upstream, but refuses to push if the upstream branch's name is different from the local one. This is the safest option and is well-suited for beginners. It will become the default in Git 2.0.
+
+Rein von der praktischen Seite ist also recht einfach, was zu tun ist:
+
+~~~~
+git config --global push.default simple
+~~~~
+
+eintippen und schon verschwindet die Meldung beim naechsten `push`. Ein wenig interessanter ist dann aber schon, dass hier recht deutlich der Hinweis auf die naechste Major-Release gegeben wird; auch wenn ich bisher nicht in der Lage gewesen bin eine oeffentlich zugaengliche Roadmap zu finden, welche genauer Aufschluss darueber gibt, wann denn 2.0 das Licht der Welt erblicken soll, so zeigt sich hier doch recht deutlich, dass die Entwicklung klar in diese Richtung zielt.
