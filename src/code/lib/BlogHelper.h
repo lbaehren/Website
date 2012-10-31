@@ -34,6 +34,9 @@
 namespace Blog {
 
   //! Get the filename for a (new) blog entry
+  std::string get_path_entry (Timestamp const &timestamp=Timestamp());
+  
+  //! Get the filename for a (new) blog entry
   std::string get_filename_entry (Timestamp const &timestamp=Timestamp());
   
   //! Write header of blog index file.
@@ -41,15 +44,8 @@ namespace Blog {
 		     std::string const &title="Blog",
 		     std::string const &author="Lars Baehren",
 		     std::vector<std::string> const &tags=std::vector<std::string>(),
-		     bool const &inMenu=false);
-
-  //! Write header of blog index file.
-  void write_header (std::ostream &os,
-		     std::string const &title="Blog",
-		     std::string const &author="Lars Baehren",
-		     std::string const &tags="Blog",
-		     bool const &inMenu=false);
-
+		     bool const &inMenu=false,
+		     bool const &forIndex=false);
 };
 
 #endif

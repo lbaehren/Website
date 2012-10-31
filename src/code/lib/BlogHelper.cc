@@ -22,6 +22,16 @@
 
 namespace Blog {
 
+  std::string get_path_entry (Timestamp const &timestamp)
+  {
+    std::string path = SOURCE_DIR_BLOG;
+    
+    path += "/";
+    path += get_filename_entry (timestamp);
+    
+    return path;
+  }
+
   /*!
     \param timestamp -- Wrapper for an instance in time.
     \return filename -- The filename for a (new) blog entry.
@@ -52,13 +62,17 @@ namespace Blog {
 		     std::string const &title,
 		     std::string const &author,
 		     std::vector<std::string> const &tags,
-		     bool const &inMenu)
+		     bool const &inMenu,
+		     bool const &forIndex)
   {
     std::string tt;
+    std::string in_menu = "false";
     int nofTags = tags.size();
 
     /* Check if there are tags to be combined */
-    if (!tags.empty()) {
+    if (tags.empty()) {
+      tt = "";
+    } else{
       tt = tags[0];
 
       if (nofTags>1) {
@@ -67,31 +81,6 @@ namespace Blog {
         }
       }
     }
-
-    write_header (os,
-		  title,
-		  author,
-		  tt,
-		  inMenu);
-  }
-  
-  //_____________________________________________________________________________
-  //                                                           write_header
-
-  /*!
-    \param os     -- Stream to which the output will be written.
-    \param title  -- Title of the entry.
-    \param author -- Author of the entry.
-    \param tags   -- Tags for the entry.
-    \param inMenu -- Is the generated page to be listed in the menu sidebar?
-  */
-  void write_header (std::ostream &os,
-		     std::string const &title,
-		     std::string const &author,
-		     std::string const &tags,
-		     bool const &inMenu)
-  {
-    std::string in_menu = "false";
 
     /* Is the page to be listed in the menu? */
     if (inMenu) {
@@ -103,10 +92,16 @@ namespace Blog {
     os << "title: \""  << title << "\""  << std::endl;
     os << "in_menu: "  << in_menu        << std::endl;
     os << "author: \"" << author << "\"" << std::endl;
-    os << "tags: "     << tags           << std::endl;
+    os << "tags: "     << tt             << std::endl;
     os << "---"                          << std::endl;
     os << " "                            << std::endl;
-    os << "# {title:} #"                 << std::endl;
+
+    if (forIndex) {
+      os << "## Blog archive | 2012 ##"  << std::endl;
+    } else {
+      os << "## {title:} ##"             << std::endl;
+      os << " "                          << std::endl;
+    }
   }
 
 }

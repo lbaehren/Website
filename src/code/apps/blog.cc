@@ -28,21 +28,52 @@
 #include <iostream>
 #include <math.h>
 
-#include <Timestamp.h>
+#include <BlogHelper.h>
+#include <BlogEntry.h>
 
+// ==============================================================================
+//
+//  Program functions
+//
+// ==============================================================================
+
+// ==============================================================================
 //
 //  Program main function
 //
+// ==============================================================================
 
 int main ()
 {
-  int status = 0;
+  int status           = 0;
+  std::string title    = "Test entry";
+  std::string author   = "Lars Baehren";
+  std::vector<std::string> tags (1,"Development");
 
-  Blog::Timestamp ts;
+  Blog::Timestamp timestamp;
+  Blog::BlogEntry entry (title,
+			 timestamp,
+			 tags);
 
-  std::cout << "[blog]" << std::endl;
-  std::cout << " -- Date (ymd)   = " << ts.ymd()  << std::endl;
-  std::cout << " -- Time of day  = " << ts.hms()  << std::endl;
+  std::string filepath = Blog::get_path_entry (timestamp);
 
+  /*
+   *  Display parameters
+   */
+  std::cout << "\n[blog] Summary of parameters.\n" << std::endl;
+  std::cout << "-- Filename = " << entry.filename() << std::endl;
+  std::cout << "-- Filepath = " << filepath << std::endl;
+  std::cout << "-- Title    = " << title    << std::endl;
+  std::cout << "-- Author   = " << author   << std::endl;
+  std::cout << "\n" << std::endl;
+
+  /*
+   *  Write header for blog entry
+   */
+  Blog::write_header (std::cout,
+		      title,
+		      author,
+		      tags);
+  
   return status;
 }

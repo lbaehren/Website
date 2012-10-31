@@ -40,6 +40,14 @@ namespace Blog { // Namespace Blog -- begin
 
   // === Public methods =========================================================
 
+  /*!
+    \return filename -- Filename for the blog entry.
+  */
+  std::string BlogEntry::filename ()
+  {
+    return filename (itsTimestamp);
+  }
+
   void BlogEntry::summary (std::ostream &os)
   {
     os << "[BlogEntry] Summary of internal parameters." << std::endl;
@@ -66,6 +74,23 @@ namespace Blog { // Namespace Blog -- begin
        os << "    <body>" << itsText <<"</body>"           << std::endl;
        os << "  </entry>"                                  << std::endl;
     };
+  }
+
+  // === Static methods =========================================================
+  
+  std::string BlogEntry::filename (Timestamp const &timestamp)
+  {
+    std::string name;
+    Timestamp ts = timestamp;
+    
+    name += ts.ymd();
+    name += "_";
+    name += ts.hourAsString();
+    name += "-";
+    name += ts.minuteAsString();
+    name += ".page";
+    
+    return name;
   }
 
 } // Namespace Blog -- end

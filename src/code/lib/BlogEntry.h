@@ -134,6 +134,9 @@ namespace Blog { // Namespace Blog -- begin
 
     // === Public methods =======================================================
 
+    //! Get the filename for the blog entry
+    std::string filename ();
+
     //! Provide a summary of the internal status
     inline void summary () {
       summary (std::cout);
@@ -143,8 +146,13 @@ namespace Blog { // Namespace Blog -- begin
     void summary (std::ostream &os);
 
     //! Write the element to the stream \c os, using the specified \c format
-     void write (Element::Format const &format,
+    void write (Element::Format const &format,
                 std::ostream &os);
+
+    // === Static methods =======================================================
+
+    //! Get the filename for a blog entry
+    static std::string filename (Timestamp const &timestamp);
 
     // === Private methods ======================================================
 
