@@ -55,14 +55,12 @@ int main ()
 			 timestamp,
 			 tags);
 
-  std::string filepath = Blog::get_path_entry (timestamp);
-
   /*
    *  Display parameters
    */
   std::cout << "\n[blog] Summary of parameters.\n" << std::endl;
   std::cout << "-- Filename = " << entry.filename() << std::endl;
-  std::cout << "-- Filepath = " << filepath << std::endl;
+  std::cout << "-- Filepath = " << entry.path()     << std::endl;
   std::cout << "-- Title    = " << title    << std::endl;
   std::cout << "-- Author   = " << author   << std::endl;
   std::cout << "\n" << std::endl;

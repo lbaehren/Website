@@ -134,6 +134,9 @@ namespace Blog { // Namespace Blog -- begin
 
     // === Public methods =======================================================
 
+    //! Get the path to the new blog entry
+    std::string path ();
+
     //! Get the filename for the blog entry
     std::string filename ();
 

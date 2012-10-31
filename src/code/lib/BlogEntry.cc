@@ -40,6 +40,22 @@ namespace Blog { // Namespace Blog -- begin
 
   // === Public methods =========================================================
 
+  std::string BlogEntry::path ()
+  {
+    std::stringstream out;
+    
+    out << SOURCE_DIR_BLOG;
+    out << "/";
+    out <<  itsTimestamp.year();
+    out << "/";
+    out <<  itsTimestamp.year() << "-" << itsTimestamp.month();
+
+    return out.str();
+  }
+
+  //_____________________________________________________________________________
+  //                                                                     filename
+
   /*!
     \return filename -- Filename for the blog entry.
   */
@@ -47,6 +63,9 @@ namespace Blog { // Namespace Blog -- begin
   {
     return filename (itsTimestamp);
   }
+
+  //_____________________________________________________________________________
+  //                                                                      summary
 
   void BlogEntry::summary (std::ostream &os)
   {
