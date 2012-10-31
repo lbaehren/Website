@@ -18,9 +18,28 @@
  *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
  ***************************************************************************/
 
-#include "ScriptSupport.h"
+#include "BlogHelper.h"
 
 namespace Blog {
+
+  /*!
+    \param timestamp -- Wrapper for an instance in time.
+    \return filename -- The filename for a (new) blog entry.
+  */
+  std::string get_filename_entry (Timestamp const &timestamp)
+  {
+    std::string filename;
+    Timestamp ts = timestamp;
+
+    filename += ts.ymd();
+    filename += "_";
+    filename += ts.hourAsString();
+    filename += "-";
+    filename += ts.minuteAsString();
+    filename += ".page";
+
+    return filename;
+  }
 
   /*!
     \param os     -- Stream to which the output will be written.
@@ -29,11 +48,11 @@ namespace Blog {
     \param tags   -- Tags for the entry.
     \param inMenu -- Is the generated page to be listed in the menu sidebar?
   */
-  void write_index_header (std::ostream &os,
-                           std::string const &title,
-                           std::string const &author,
-                           std::vector<std::string> const &tags,
-                           bool const &inMenu)
+  void write_header (std::ostream &os,
+		     std::string const &title,
+		     std::string const &author,
+		     std::vector<std::string> const &tags,
+		     bool const &inMenu)
   {
     std::string tt;
     int nofTags = tags.size();
@@ -49,15 +68,15 @@ namespace Blog {
       }
     }
 
-    write_index_header (os,
-                        title,
-                        author,
-                        tt,
-                        inMenu);
+    write_header (os,
+		  title,
+		  author,
+		  tt,
+		  inMenu);
   }
-
+  
   //_____________________________________________________________________________
-  //                                                           write_index_header
+  //                                                           write_header
 
   /*!
     \param os     -- Stream to which the output will be written.
@@ -66,11 +85,11 @@ namespace Blog {
     \param tags   -- Tags for the entry.
     \param inMenu -- Is the generated page to be listed in the menu sidebar?
   */
-  void write_index_header (std::ostream &os,
-                           std::string const &title,
-                           std::string const &author,
-                           std::string const &tags,
-                           bool const &inMenu)
+  void write_header (std::ostream &os,
+		     std::string const &title,
+		     std::string const &author,
+		     std::string const &tags,
+		     bool const &inMenu)
   {
     std::string in_menu = "false";
 
@@ -88,8 +107,6 @@ namespace Blog {
     os << "---"                          << std::endl;
     os << " "                            << std::endl;
     os << "# {title:} #"                 << std::endl;
-    os << " "                            << std::endl;
-    os << "**:::**"                      << std::endl;
   }
 
 }

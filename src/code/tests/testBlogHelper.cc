@@ -18,35 +18,53 @@
  *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
  ***************************************************************************/
 
-#ifndef SCRIPT_SUPPORT_H
-#define SCRIPT_SUPPORT_H
-
-#include "Common.h"
+#include <fstream>
+#include <BlogHelper.h>
 
 /*!
-  \file ScriptSupport.h
-  \ingroup Blog
-  \brief A collection of functions to support the existing scripts
-  \author Lars Baehren
-  \date 2012-10-17
+  \brief filename -- Name of the output file, to which the header will be
+                     written.
+  \return status  -- Return status of the function; returns non-zero value
+                     in case an error was encountered.
 */
+int test_write_headers (std::string const &filename="testBlogHelper.page")
+{
+  int status = 0;
 
-namespace Blog {
+  // Open output filestream
+  std::ofstream outfile (filename.c_str());
 
-  //! Write header of blog index file.
-  void write_index_header (std::ostream &os,
-                           std::string const &title="Blog",
-                           std::string const &author="Lars Baehren",
-                           std::vector<std::string> const &tags=std::vector<std::string>(),
-                           bool const &inMenu=false);
+  if (!outfile.is_open()) {
+    std::cerr << "[testBlogHelper] Failed to open output file "
+	      << filename
+	      << std::endl;
+  }
 
-  //! Write header of blog index file.
-  void write_index_header (std::ostream &os,
-                           std::string const &title="Blog",
-                           std::string const &author="Lars Baehren",
-                           std::string const &tags="Blog",
-                           bool const &inMenu=false);
+  try {
+  } catch (std::exception &e) {
+    std::cerr << "[testBlogHelper] ERROR : " << e.what() << std::endl;
+    ++status;
+  }
 
-};
+  return status;
+}
 
-#endif
+//_______________________________________________________________________________
+//                                                                           main
+
+/*!
+  \file testBlogHelper.cc
+  \ingroup Blog
+  \brief A collection of tests for the Blog helper functions
+  \author Lars Baehren
+*/
+int main ()
+{
+  int status = 0;
+
+  std::cout << "-- Filename for entry = " << Blog::get_filename_entry() << std::endl;
+
+  status += test_write_headers ();
+
+  return 0;
+}

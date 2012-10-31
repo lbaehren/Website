@@ -115,14 +115,8 @@ namespace Blog {
   */
   void Timestamp::copy (Timestamp const &other)
   {
-    itsRawtime        = other.itsRawtime;
-    
-    itsYear        = other.itsYear;
-    itsMonth       = other.itsMonth;
-    itsDay         = other.itsDay;
-    itsHour        = other.itsHour;
-    itsMinute      = other.itsMinute;
-    itsSecond      = other.itsSecond;
+    itsRawtime = other.itsRawtime;
+    setTime();
   }
   
   // ============================================================================

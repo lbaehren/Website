@@ -28,6 +28,8 @@
 #include <time.h>
 #include <sstream>
 
+#include "Common.h"
+
 namespace Blog { // Namespace Blog -- begin
 
   /*!
@@ -309,23 +311,33 @@ namespace Blog { // Namespace Blog -- begin
     void setDay (int const &day);
 
     //! Get the numerical value of the hour of day
-    inline int hour () const {
+    inline int hour () {
       return itsHour;
+    }
+
+    //! Get the numerical value of the hour of day as string
+    inline std::string hourAsString () {
+      return asString(itsHour);
     }
 
     //! Set the numerical value of the hour of day
     void setHour (int const &hour);
 
     //! Get the numerical value of the minute within the hour
-    inline int minute () const {
+    inline int minute () {
       return itsMinute;
+    }
+
+    //! Get the numerical value of the minute within the hour as string
+    inline std::string minuteAsString () {
+      return asString(itsMinute);
     }
 
     //! Set the numerical value of the minute within the hour
     void setMinute (int const &minute);
 
     //! Get the numerical value of the second within the minute
-    inline double second () const {
+    inline double second () {
       return itsSecond;
     }
 
@@ -333,12 +345,12 @@ namespace Blog { // Namespace Blog -- begin
     void setSecond (double const &second);
 
     //! Get the full second
-    inline int fullSecond () const {
+    inline int fullSecond () {
       return floor(itsSecond);
     }
 
     //! Get the fraction of a second
-    inline double fractionOfSecond () const {
+    inline double fractionOfSecond () {
       int fullSecond = floor(itsSecond);
       return itsSecond-fullSecond;
     }

@@ -29,9 +29,13 @@
   \brief Collection of commly used routines and funactionality
 */
 
+//Standard header files
 #include <iostream>
 #include <set>
 #include <vector>
+
+// Project header files
+#include <BlogConfig.h>
 
 //_______________________________________________________________________________
 //                                                                           show
