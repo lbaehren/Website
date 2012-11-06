@@ -1,0 +1,48 @@
+---
+title: "Ein wenig systematischer"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 30. October 2012 -- 21:05_
+
+Auch wenn ich ja immer wieder einmal ein paar Schritte in Richtung einer Verbesserung meines Blogs -- und mittlerweile auch der Website, in welcher dieser eingebettet ist -- unternehme, so gibt es doch eine Reihe an Baustellen, welche endlich mal ein wenig konsequentere Zuwendung brauchen. Dazu gehoert auch, dass ich endlich mal die derzeitig noch existierenden Shell-Scripte loswerde, welche noch jede Menge Altlasten enthalten; will ich aber die Gesamtkonstruktion ausbauen (und gleichzeitig performanter machen) so sind da dringend Aufraeumarbeiten noetig. Ich hatte ja schon damit begonnen eine paar grundlegende Konzepte direkt auf der C/C++ Seite zu implementieren, aber ich muss auch endlich mal an den Punkt kommen, wo ich eine Produktionsversion habe, welche ich im im Alltag fuer das Erstellen und Bearbeiten neuer Blogeintraege verwenden kann. Um die einzelnen Teile miteinander zu verbinden, gleichzeitig aber alles recht flexibel zu halten, muss ich schauen, dass ich ein paar Basisinformationen (wie zum Beispiel Datenordner) zeitens der Konfiguration extrahiere, um diese dann anschliessend in konsistenter Weise weiterzuverwenden.
+
+Zu derartigen Angaben gehoeren mitunter recht banale Dinge... wie z.B. die Pfade zu den Verzeichnissen, in welchen die generierten Dateien abgelegt werden. Als einen ersten Schritt dahin macht es Sinn die entsprechenden Informationen innerhalb von CMake vorliegen zu haben:
+
+~~~~
+set (INSTALL_PREFIX               "${PROJECT_SOURCE_DIR}/release"   )
+set (INSTALL_PREFIX_WEBSITE       "${INSTALL_PREFIX}/website"       )
+set (INSTALL_PREFIX_DOCUMENTATION "${INSTALL_PREFIX}/documentation" )
+~~~~
+
+Mit diesen Angaben kann ich nun im folgenden Schritt hingehen und waehrend der Konfigurationsphase mttles
+
+~~~~
+configure_file (
+  ${CMAKE_CURRENT_SOURCE_DIR}/BlogConfig.h.in
+  ${CMAKE_CURRENT_BINARY_DIR}/BlogConfig.h
+  )
+~~~~
+
+ein Header-File anlegen, in welchem so Angaben wie Versionsnummern und Pfade definiert sind:
+
+~~~~
+#define PROJECT_NAME "${PROJECT_NAME}"
+
+//! The full version of the ${PROJECT_NAME} in major.minor.patch format.
+#define RELEASE_VERSION "${PROJECT_VERSION}"
+#define RELEASE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}"
+#define RELEASE_VERSION_MINOR "${PROJECT_VERSION_MINOR}"
+#define RELEASE_VERSION_PATCH "${PROJECT_VERSION_PATCH}"
+~~~~
+
+Nach dem Durchlauf von CMake werde die als `${VARIABLE}` kenntlich gemachten Variablen durch ihre Werte ersetzt, so dass ich das Resultat in gewohnter Weise mit einem Statement wie
+
+~~~~
+#include "BlogConfig.h"
+~~~~
+
+in den Code einbinden und dann auch benutzen kann. Derartige Informationen irgendwo direkt in eine Datei zu schreiben ist einfach ein grosses No-No, allein schon aufgrund der Tatsache, dass man in des Teufels Kueche kommen wuerde, wenn man denn mal etwas aendern will.
