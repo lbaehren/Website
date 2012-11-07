@@ -7,12 +7,25 @@ tags: Computing Linux Fedora
 
 ## {title:} ##
 
+[Fedora](http://www.fedoraproject.org), formerly Fedora Core, is an RPM-based, general purpose collection of
+software, including an operating system based on the Linux kernel, developed by
+the community-supported Fedora Project and owned by Red Hat. The Fedora Project's
+mission is to lead the advancement of free and open source software and content
+as a collaborative community.
+
+One of Fedora's main objectives is not only to contain software distributed under
+a free and open source license, but also to be on the leading edge of such
+technologies. Fedora developers prefer to make upstream changes instead of
+applying fixes specifically for Fedora—this ensures that their updates are
+available to all Linux distributions.
+
 ### Basic system setup ####
 
-Install development tools:
+As it turns out a base installation comes with hardly any development tools installed,
+hence in order to get a minimal setup run:
 
 ~~~~
-sudo yum install git-svn cmake doxygen
+sudo yum install gcc gcc-c++ boost-devel git-svn cmake doxygen
 ~~~~
 
 ### Installation of extra packages ###
@@ -59,6 +72,7 @@ sudo rpm -i skype-4.0.0.8-fedora.i586.rpm
 
 ### References ###
 
+* [Fedora project](http://www.fedoraproject.org)
 * [Skype](http://www.skype.com)
 * [VLC player](http://www.videolan.org/vlc/index.html)
 * [How to Install VLC in Fedora 17/16/15](http://www.howopensource.com/2011/08/how-to-install-vlc-in-fedora-15)
