@@ -1,0 +1,65 @@
+---
+title: "Fedora Linux"
+in_menu: false
+author: Lars Baehren
+tags: Computing Linux Fedora
+---
+
+## {title:} ##
+
+### Basic system setup ####
+
+Install development tools:
+
+~~~~
+sudo yum install git-svn cmake doxygen
+~~~~
+
+### Installation of extra packages ###
+
+* VLC
+* Skype 4.x
+
+#### VLC ####
+
+[VLC](http://www.videolan.org/vlc/index.html) is a free and open source cross-platform multimedia player, which plays most of the multimedia files (MKV, AVI, MP4, etc.,). No codec packs needed to be installed, VLC is simple and powerfull multimedia player works on various Operating System Linux, Mac and Windows.
+
+1) Add repository
+
+~~~~
+sudo rpm -Uvh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm
+~~~~
+
+2) Install package
+
+~~~~
+sudo yum install vlc
+~~~~
+
+#### Skype 4.x ####
+
+1) Install required libraries in 32bit version
+
+~~~~
+sudo yum install glibc.i686
+sudo yum install alsa-lib.i686
+sudo yum install libXv.i686
+sudo yum install libXScrnSaver.i686
+sudo yum install qt.i686
+sudo yum install qt-x11.i686
+sudo yum install pulseaudio-libs.i686
+~~~~
+
+2) Retrieve and install Skype RPM for Fedora
+
+~~~~
+wget http://download.skype.com/linux/skype-4.0.0.8-fedora.i586.rpm
+sudo rpm -i skype-4.0.0.8-fedora.i586.rpm
+~~~~
+
+### References ###
+
+* [Skype](http://www.skype.com)
+* [VLC player](http://www.videolan.org/vlc/index.html)
+* [How to Install VLC in Fedora 17/16/15](http://www.howopensource.com/2011/08/how-to-install-vlc-in-fedora-15)
+* [Installing Skype 4.x on Fedora 17 x86_64](http://whatatux.blogspot.com/2012/09/installing-skype-4x-on-fedora-17-x8664.html)
