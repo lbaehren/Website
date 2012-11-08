@@ -8,9 +8,4 @@ author: Lars Baehren
 
 _Fri, 10. September 2010 -- 06:32_
 
-
-
-Nachdem ich gestern ja schon den Tag in Amsterdam zugebracht habe, steht heute noch einmal ein Abstecher auf dem Programm. Auf Michaels Bemuehungen hin, haben wir die beiden Tage Besuch von Quincey Koziol, dem Lead Developer der [[http://www.hdfgroup.org|HDF-Group]], mit welchem wir uns zusammensetzen um ueber die Verwendung von HDF5 fuer die Speicherung von LOFAR Daten -- und darueber hinaus Radiodaten im allgemeineren -- zu sprechen. Da wir ausgehend von LOFAR die Diskussion angestossen haben, in welcher Weise sich die zu erwartenden -- und bei uns ja teilweise schon auflaufenden -- Mengen an Daten zu speichern sind, macht es natuerlich Sinn sich noch einmal zu versichern, dass wir uns da auf dem richtigen Weg befinden, ehe wir es mit dem Rest der Community aufnehmen, von welcher zweifelsfrei einiges an Widerstand zu erwarten ist.
-
-
-~~DISCUSSION~~
+Nachdem ich gestern ja schon den Tag in Amsterdam zugebracht habe, steht heute noch einmal ein Abstecher auf dem Programm. Auf Michaels Bemuehungen hin, haben wir die beiden Tage Besuch von Quincey Koziol, dem Lead Developer der [HDF-Group](http://www.hdfgroup.org), mit welchem wir uns zusammensetzen um ueber die Verwendung von HDF5 fuer die Speicherung von LOFAR Daten -- und darueber hinaus Radiodaten im allgemeineren -- zu sprechen. Da wir ausgehend von LOFAR die Diskussion angestossen haben, in welcher Weise sich die zu erwartenden -- und bei uns ja teilweise schon auflaufenden -- Mengen an Daten zu speichern sind, macht es natuerlich Sinn sich noch einmal zu versichern, dass wir uns da auf dem richtigen Weg befinden, ehe wir es mit dem Rest der Community aufnehmen, von welcher zweifelsfrei einiges an Widerstand zu erwarten ist.
