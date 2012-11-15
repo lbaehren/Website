@@ -1,0 +1,17 @@
+---
+title: "1043 Updates"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Fri, 09. November 2012 -- 15:25_
+
+Da konnte ich mich dann doch nicht zurueckhalten: da sich die Veroeffentlichung der Fedora 18 Beta Release noch einmal um eine Woche nach hinten verschoben hat, habe ich mir einfach die Alpha Release unter den Nagel gerissen und kurzerhand als VM installiert. Sicher, das ich noch keine Produktionsversion, aber darum geht es in diesem Fall ja auch garnicht - ich moechte vor allen Dingen einfach mal einen Blick drauf werfen, was von der kommenden Version der Distribution zu erwarten ist. Da ich nun auch Julia ueberzeugen konnte ihr Laptop von OpenSuSE auf Fedora umzustellen, ist es schon ganz gut nicht nur eine Kontrollinstallation verfuegbar zu haben, sondern auch schon einmal ein wenig den Blick voraus zu werfen. Also mal schnell das aktuellste ISO an Land gezogen, installiert... und dann natuerlich ein 
+
+~~~~
+sudo yum update
+~~~~
+
+laufen lassen. Ich bin es ja durchaus gewohnt, dass bei solchen Aktionen -- zumal bei laengerer Untaetigkeit -- 200 bis 300 Updates zusammenkommen... aber mehr als 1000 notwendige Aktualisierungen, das ist auch fuer mich ein neuer Rekord, welchen ich dann erst einmal wieder brechen muss. Aber gut, wenn sich die Software gerade noch auf der Zielgeraden fuer eine Release befindet, ist noch so einiges im Fluss.
