@@ -86,7 +86,7 @@ find_path (SOURCE_DIR_PAGES
 find_path (LOCAL_CMAKE_MODULE_PATH
   NAMES FindGem.cmake FindRake.cmake
   PATHS ${PROJECT_SOURCE_DIR}
-  PATH_SUFFIXES src src/code src/config src/code/cmake
+  PATH_SUFFIXES src src/code src/config src/code/CMakeModules
   )
 
 if (LOCAL_CMAKE_MODULE_PATH)

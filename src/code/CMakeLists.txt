@@ -8,7 +8,7 @@ include_directories (
 
 ## Directories with sources files
 
-add_subdirectory (cmake)
+add_subdirectory (CMakeModules)
 add_subdirectory (external)
 add_subdirectory (lib)
 add_subdirectory (scripts)

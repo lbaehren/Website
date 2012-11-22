@@ -1,0 +1,39 @@
+---
+title: "Common Data Access toolbox (CODA)"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Thu, 22. November 2012 -- 08:01_
+
+Also wenn ich da mal nicht ganz stark an das erinnert werde, was eigentlich mit der DAL vorgesehen war:
+
+> The [Common Data Access toolbox](http://www.stcorp.nl/coda) (CODA) provides a set of interfaces for reading remote sensing data from earth observation data files. These interfaces consist of command line applications, libraries, interfaces to scientific applications (such as IDL and MATLAB), and interfaces to programming languages (such as C, Fortran, Python, and Java).
+>
+> CODA provides a single interface to access data in a wide variety of data formats, including ASCII, binary, XML, netCDF, HDF4, HDF5, GRIB, RINEX, and SP3. This is done by using a generic high level type hierarchy mapping for each data format. For self describing formats such as netCDF, HDF, and GRIB, CODA will automatically construct this mapping based on the file itself. For raw ASCII and binary (and partially also XML) formats CODA makes use of an external format definition stored in .codadef files to determine this mapping.
+
+Gestossen bin ich auf `CODA` ueber die Seiten der [Science \[&\] Technology Corporation](http://www.stcorp.nl), einer in Delft (NL) ansaessigen Firma, welche auf dem Knotenpunkt zwischen Wissenschaft und Technik sitzt. Zu tun hatte ich mit der Truppe ueber die Jahre eher indirekt: sowohl Joris als auch Sven, beide mittlerweile langjaehriges [LOFAR](http://www.lofar.org) Fussvolk, sind bei S\[&\]T angestellt und gewissermassen als "Dauerleihgabe" in Dwingeloo bei [ASTRON](http://www.astron.nl) stationiert. Was ich bisher aber noch nicht gemacht habe war, mich einmal ein wenig genauer auf den Internet-Seiten des Unternehmens umzuschauen, um einen genaueren Eindrueck ueber die Aktivitaeten und Projekte zu kriegen. Im Zuge gerade dieser Aktion bin ich dann auch `CODA` gestolpert. 
+
+Wie nicht anders zu erwarten gewesen waere, habe ich schnellsten mal danach geschaut, ob denn auch der Source Code verfuegbar ist; ausgehend von der Beschreibung war dies einfach zu interessant um nicht einmal ein wenig hinter die Kulissen zu schauen, vor allen Dingen wenn es sich dabei um ein vergleichbares Software-Projekt handelt, wie ich es selber ueber Jahre versucht habe fuer LOFAR voranzutreiben. Nach dem Checkout des Code war der naechstfolgende logische Schritt dann selbstverstaendlich, alles zu compilieren; dabei konnte ich sehr zu meiner Freude feststellen, dass innerhalb von `CODA` ebenfalls [CMake](http://www.cmake.org) verwendet wird. Bei genauerem Hinschauen sind mir allerdings ein paar Kleinigkeiten aufgefallen, welche meines Erachtens noch verbesserungswuerdig sind: statt z.B. alle Quellen fuer eine Bibliothek oder ein Executable einzeln anzugeben,
+
+~~~~
+set(codadd_SOURCES
+  tools/codadd/codadd.c
+  tools/codadd/codadd-definition.c
+  tools/codadd/codadd-detect.c
+  tools/codadd/codadd-doc.c
+  tools/codadd/codadd-list.c
+  tools/codadd/codadd-xmlschema.c)
+add_executable(codadd ${codadd_SOURCES})
+~~~~
+
+laesst sich dies auf folgende Weise etwas allgemeiner und flexibler loesen:
+
+~~~~
+file(GLOB codadd_SOURCES tools/codadd/*.c)
+add_executable(codadd ${codadd_SOURCES})
+~~~~
+
+Naja, wie gesagt eine Kleinigkeit -- die eigentliche Aufmerksamkeit sollte natuerlich eher auf dem Mechanismus liegen, ueber welchen die Datenabstraktion erreicht wird. Dazu muss ich mir die [Dokumentation](http://www.stcorp.nl/coda/doc) mal ein wenig genauer unter die Lupe nehmen.
