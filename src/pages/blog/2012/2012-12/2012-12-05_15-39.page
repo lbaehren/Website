@@ -1,0 +1,30 @@
+---
+title: "Digital Storage Basics"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Wed, 05. December 2012 -- 15:39_
+
+Wer, so wie dies schon seit ein paar Jahren bei mir der Fall ist, Daten gleich Terabyte-weise archivieren will, muss sich doch ein wenig Gedanken machen:
+
+- Wieviel Speicherplatz habe ich noetig?
+- Wie komme ich an mein Daten heran?
+- Wie kann ich meine Daten vor Hardware-Ausfaellen schuetzen?
+- Wie kann ich meinen Speicherplatz erweitern, wenn ich mehr davon noetig habe?
+
+Sicherlich nur eine kleine Anzhl an Punkten, welche es zu bedenken gibt, vor allen Dingen dann wenn man (zumindest bei derzeitigem technischen Stand) in die Regionen zweistelliger Terabyte vorstossen will (oder bereits vorgestossen ist). Dafuer muss ich ja nicht einmal [LOFAR](http://www.lofar.org) Datensaetze bei mir zuhause horten, sondern dies ist auch ohne weiteres auf anderem Wege zu erreichen. Eine der durchaus ansehnlicheren Sammlungen bei mir zuhause sind die Bilder, welcher ich seit ein paar Jahren in nicht ganz unerheblichen Mengen geschossen habe; da ich (natuerlich) nicht nur die RAW-Bilder archiviere, sondern ggf. auch bearbeitete Versionen und exportierte Varianten, dann sollte klar werden, dass es da eben nicht mehr einfach mit einer externen Festplatte getan ist. Gegen letztere Loesung spricht -- vom Datenvolumen mal abgesehen -- aber ganz klar auch die Vorgabe, dass die archivierten Daten eben gegen Ausfaelle geschuetzt sein sollen: liegt alles nur an einer einzigen Stelle, dann ist es nur eine Frage der Zeit, ehe einem die Platte abraucht und alles weg ist.
+
+Hilfestellung, wie mit solchen Problemstellung umgegangen werden kann, habe ich schon seit langem ueber [This Week in Photography](http://www.thisweekinphoto.com) bekommen; da sich die Runde ja seit jeher aus professionellen Photographen zusammengesetzt hat, fuer deren Geschaeft Datensicherung eine essentielle Sache ist, ist dies ein recht guter Anlaufpunkt fuer Diskussionen in Sachen Storage. Ueber Google+ bin ich heute aber noch auf eine recht nette Reihe an Artikeln auf [CNET](http://www.cnet.com) aufmerksam geworden, welche versucht ein wenig die Hintergruende zu beleuchten:
+
+- Part 1: [Internal storage vs. memory](http://howto.cnet.com/8301-33088_39-57545421/digital-storage-basics-part-1-internal-storage-vs-memory)
+- Part 2: [External drive vs. NAS server](http://howto.cnet.com/8301-33088_39-57549884/digital-storage-basics-part-2-external-drive-vs-nas-server)
+- Part 3: [Backup vs. redundancy](http://howto.cnet.com/8301-33088_39-57556308/digital-storage-basics-part-3-backup-vs-redundancy)
+
+Beim Ueberfliegen des Textes war mir eine Passage aufgefallen, welche ich im Lichte der ganzen Diskussionen rund um [Drobo](http://www.drobo.com) merken muss; einer der immer wiederkehrenden Kritikpunkte in diesem Zusammenhang ist ja, dass es sich bei den von Data Robotics vertriebenen Geraeten eben nicht um eine RAID-konforme Loesung handelt. Wenn ich den folgenden Absatz aber richtig verstehe, dann trifft dieser Punkt aber durchaus auch noch auf andere Hersteller zu:
+
+> In addition to standard RAID (such as RAID 1 or RAID 5), there are also proprietary RAID setups that, apart from offering redundancy, also permit scaling up data. A typical example of this is the HybridRAID provided as an option in [Synology](http://www.synology.com) NAS servers. HybridRAID automatically configures the type of redundancy based on the number of internal drives being used. On top of that you can also replace existing drives, one at a time, with drives of larger capacities to increase the total capacity without having to rebuild the RAID from scratch, or even turn the storage device off.
+
+Je mehr ich mir dies anschaue, desto weniger sicher bin ich mir, dass die Abweichung von einem Standard RAID so sehr eine schlechte Sache sein muss; ich befinde mich immer noch auf der Suche nach einer Loesung welche mir die gleiche Flexibiliaet und Einfachheit eines Drobo bietet -- bisher allerdings ohne Erfolg.

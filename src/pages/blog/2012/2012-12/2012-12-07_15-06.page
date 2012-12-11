@@ -1,0 +1,53 @@
+---
+title: "FindRuby.cmake"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Fri, 07. December 2012 -- 15:06_
+
+As jemand der schon seit ein paar Jahren mit [CMake](http://www.cmake.org) arbeitet, so bin ich dochimmer wieder einmal erstaunt, dass es Komponenten gibt, welche immer noch fehlen, oder aber eben nicht 100%ig so funktionieren, wie ich es erwarten wuerde. Letzteres mag vielleicht auch den Fehler auf meiner Seite enthalten, weil ich da etwas falsch verstehe; andererseits gibt es durchaus Faelle, wo wirklich etwas im Original Code angepasst werden muesste.
+
+So ist es mir in letzter Zeit mit dem Standard Module fuer die Suche nach den installierten Komponenten von [Ruby](http://www.ruby-lang.org) gegangen; da ich versucht habe auszuloten, wie es mit der Entwicklung auf ein wenig aktuelleren Linux Distributionen als _Debian stable_ steht, bin ich wiederholt auf das Problem gestossen, dass nicht mehr 1.8.x sondern 1.9.x als Default-Version fuer Ruby eingerichtet wird. Da die Abhaengigkeiten der [prometheus Bildarchiv](http://www.prometheus-bildarchiv.de) Rails-Anwendung allerdings ein gutes Stueck hinter den aktuellen Versionen hinterherhinken, lassen sich manche installierten Komponenten nicht ohne weiteres verwenden. Nun gut, vom Grundproblem her ist dies nicht viel anders, als ich dies im Falle von [Python](http://www.python.org) kennengelernt habe: es gibt einfach eine Vielzahl an Scripten und Anwendungen, welche sehr empfindlich auf die unter der Haube verwendete Version der Scriptsprache reagieren, so dass es wichtig ist sich da mit dem richtigen Interpreter zu unterhalten. Vom Standpunkt eines Konfigurationsscripts bedeutet dies, dass die Faehigkeit erforderlich ist, ggf. den Benutzer eine spezielle Version vorzugeben, nach deren Komponenten gesucht wird. Dies war dann auch fuer mich der Startpunkt ins Sachen _CMake_, weil ich eben eine Moeglichkeit noetig hatte, ueber welche ich festlegen konnte dass ich die 1.8 Version von Ruby haben wollte. Da ich in der Dokumentation selber leider keine weitere Hinweise finden konnte, habe ich mir kurzerhand den Source-Code des `FindRuby.cmake` Modules geschnappt, um der Sache ein wenig genauer auf den Grund gehen zu koennen:
+
+~~~~
+SET(_RUBY_POSSIBLE_EXECUTABLE_NAMES ruby)
+
+SET(_RUBY_POSSIBLE_EXECUTABLE_NAMES ${_RUBY_POSSIBLE_EXECUTABLE_NAMES} ruby1.9 ruby19)
+
+# if we want a version below 1.9, also look for ruby 1.8
+IF("${Ruby_FIND_VERSION_SHORT_NODOT}" VERSION_LESS "19")
+   SET(_RUBY_POSSIBLE_EXECUTABLE_NAMES ${_RUBY_POSSIBLE_EXECUTABLE_NAMES} ruby1.8 ruby18)
+ENDIF("${Ruby_FIND_VERSION_SHORT_NODOT}" VERSION_LESS "19")
+
+FIND_PROGRAM(RUBY_EXECUTABLE NAMES ${_RUBY_POSSIBLE_EXECUTABLE_NAMES})
+~~~~
+
+Sieht auf den ersten Blick ja schon einmal ganz nett aus, denn immerhin wird hier eine Liste `_RUBY_POSSIBLE_EXECUTABLE_NAMES` definiert, ueber welche sich CMake mitteilen laesst unter welchen Moeglichen Name das gesuchte Paket zu finden ist. Schaut man es sich aber ein wenig genauer an, dann wird klar, dass es da ein Problem gibt: egal was auch immer man von aussen vorgibt, so hat man immer eine Liste der Art
+
+~~~~
+ruby ruby1.9 ruby19
+~~~~
+
+oder 
+
+~~~~
+ruby ruby1.9 ruby19 ruby1.8 ruby18
+~~~~
+
+Was dies heisst ist, dass moegliche alternative Namen immer nur _hinten_ an die Liste angebaut werden; als eine Folge davon erhaelt man das falsche Suchresultat, wenn bereits eine der anderen Varianten gefunden wird. Diesen Fehler zu beheben ist meiner Ansicht nach nicht sonderlich schwer: sollte der Benutzer eine bestimmte Ruby-Version haben wollen, dann muss diese Vorrang vor den anderen Varianten erhalten... was sich darueber erreichen laesst, dass man den entsprechenden Eintrag _an den Beginn der Liste_ setzt:
+
+~~~~
+if (FIND_VERSION_MAJOR AND FIND_VERSION_MINOR)
+  ## Assemble version strings
+  set (FIND_VERSION_SHORT       "${FIND_VERSION_MAJOR}.${FIND_VERSION_MINOR}")
+  set (FIND_VERSION_SHORT_NODOT "${FIND_VERSION_MAJOR}${FIND_VERSION_MINOR}")
+  ## Set possible names for Ruby executable
+  list (INSERT _RUBY_POSSIBLE_EXECUTABLE_NAMES 0 "ruby${FIND_VERSION_SHORT}"       )
+  list (INSERT _RUBY_POSSIBLE_EXECUTABLE_NAMES 0 "ruby${FIND_VERSION_SHORT_NODOT}" )
+endif ()
+~~~~
+
+Ein paar Tests stehen noch aus, aber rein von der zugrundeliegenden Logik her scheint mir dies einfach viel mehr Sinn zu machen. Wenn alles korrekt funktioniert werde ich wohl schauen, dass ich dies als Vorschlag fuer einen Patch einsende, damit dies in der Standard-Installation angepasst werden kann. Es gaebe natuerlich immer die Moeglichkeit lokale Patches zu fahren, aber die saubere Loesung ist, dies direkt vor Ort zu beheben.
