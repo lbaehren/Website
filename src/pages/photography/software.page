@@ -28,6 +28,8 @@ author: Lars Baehren
 
 * [Raw Photo Processor](http://www.raw-photo-processor.com) (RPP) is a Raw converter for Mac OS X (10.4, 10.5, 10.6 and 10.7 only), supporting almost all available digital Raw formats made for photographers by a photographer-software engineer.
 
+* [gThumb](https://live.gnome.org/gthumb) is an image viewer and browser for the GNOME Desktop. It also includes an importer tool for transferring photos from cameras. gThumb is available for most Linux distributions, just do a search for gthumb in the package manager. 
+
 ## Data formats ##
 
 * [Description of Exif file format](http://www.media.mit.edu/pia/Research/deepview/exif.html)
