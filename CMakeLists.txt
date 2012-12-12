@@ -28,6 +28,17 @@ set (PROJECT_VERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJEC
 option (ENABLE_TESTING        "Enable CTest test driver?"                  YES     )
 option (CONFIGURE_VERBOSE     "Increase verbosity during configuration?"   NO      )
 
+##  Installation location
+##
+## ==============================================================================
+
+if (CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
+
+  set (CMAKE_INSTALL_PREFIX
+    "${PROJECT_SOURCE_DIR}/release" CACHE PATH "Install prefix" FORCE
+    )
+endif (CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
+
 ## Path to the generated static website
 set (INSTALL_PREFIX               "${PROJECT_SOURCE_DIR}/release"   )
 set (INSTALL_PREFIX_WEBSITE       "${INSTALL_PREFIX}/website"       )
