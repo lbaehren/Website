@@ -4,7 +4,7 @@ in_menu: true
 author: Lars B&auml;hren
 ---
 
-## prometheus digital image archive
+## Work :: prometheus digital image archive ##
 
 prometheus is an internet-based service ([www.prometheus-bildarchiv.de](http://www.prometheus-bildarchiv.de)) for artistic and cultural research comprising a publicy accessible area as well as an access restricted, fee-based one. The service is presented by the Association of the same name in cooperation with the University of Cologne. prometheus charges users a license fee which is solely used to make the service available.
 
@@ -12,7 +12,7 @@ The prometheus image archive is a data broker which brings together heterogeneou
 
 User license fees are for administration costs incurred by the University of Cologne in running and expanding the service, and are not based on copyright fees associated with the images and media files themselves.
 
-### Project history 
+### Project history ###
 
 [prometheus – The Distributed Digital Image Archive for Research and Studies](http://www.prometheus-bildarchiv.de) started on April 1, 2001 as a cooperative
 project in Germany. Within the frame work of New Media in Education, prometheus
