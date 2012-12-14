@@ -56,6 +56,7 @@ int main (int argc, char *argv[])
   std::string title    = "Test entry";
   std::string author   = "Lars Baehren";
   std::vector<std::string> tags (1,"Development");
+  bool indexAll = false;
 
   // === Process command line input ===
 
@@ -66,13 +67,12 @@ int main (int argc, char *argv[])
     if (optionKey == "--title" || optionKey == "-T") {
       if (argc>n+1) {
 	title = argv[n+1];
-	std::cout << "--> Title : " << title << std::endl;
       }
     }
 
-    // === Option: indexAll
-    if (optionKey == "--indexAll" || optionKey == "-I") {
-      std::cout << "--> Rebuild blog index." << std::endl;
+    // Option: --index-all, -I
+    if (optionKey == "--index-all" || optionKey == "-I") {
+      indexAll = true;
     }
   }
 
