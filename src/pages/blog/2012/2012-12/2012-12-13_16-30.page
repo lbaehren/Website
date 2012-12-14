@@ -1,0 +1,17 @@
+---
+title: "Drobo 5N"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Thu, 13. December 2012 -- 16:30_
+
+Klingt durchaus interessant, was ich [da](http://arstechnica.com/gadgets/2012/12/drobo-hits-the-turbo-boost-with-newly-launched-5n-home-nas) (wieder einmal) via Ars Technica zu lesen kriege:
+
+> California-based [Drobo](http://www.drobo.com) today announced the launch of their new Drobo 5N five-bay NAS product. Ars has looked at Drobo's products before, and though we've been impressed with their ease of use, one thing that's always bothered us about the little black boxes has been their speed: for all their slickness, "fast" isn't traditionally a word you'd use to describe Drobo's consumer offerings.
+
+Auch wenn ich dem Punkt mit der Transfergeschwindigkeit zustimmen muss, so muss ich doch behaupten, dass dass dies fuer mich recht selten zu einem Problem geworden ist: selbst fuer das Abspielen von Filmen HD-Aufloesung reicht mein 2nd-Generation Drobo aus, so dass ich zumindest von der Seite her bisher kein sonderliches Beduerfnis verspuert habe, ein Upgrade vorzunehmen. Viel kritischer ist dabei hingegen das Gesamt-Datenvolumen, welches sich schon seit einer Weile im zweistelligen Terabyte Bereich bewegt, so dass ich auf der Suche bin, wie ich meine digitale Archivierung weiter ausbauen kann (und dies eben am liebsten ohne auf ein traditionelles RAID zurueckzugreifen).
+
+Was ich in der Notiz fast schon am interesaantesten fand, war der Verweis auf einen frueheren, sehr ausfuehrlichen [Artikel](http://arstechnica.com/business/2011/03/drobo-review-1), welcher die sogenannte "BeyondRAID" Technologie genauer unter die Lupe nimmt. Das Lesen muss ich allerdings auf ein wenig spaeter verschieben, denn der besagte Artikel verteilt sich ueber zwei Teile - was bedeutet dass wohl etwas mehr als nur fuenf Minuten in Anspruch nehmen wird. Von dem was ich da aber beim Ueberfliegen gesehen habe, handelt es sich in Tat um eine sehr detailierte Besprechung -- also der ideale Anlaufpunkt, wenn man einmal etwas mehr ueber die von Data Robotics verwendete Technik und ihre Performance im Alltag erfahren will.

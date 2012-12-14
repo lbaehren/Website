@@ -17,3 +17,11 @@ foreach (_filename ${apps_sources})
   add_test (${_app} ${_app})
 
 endforeach (_filename)
+
+## Additional tests
+
+add_test (blog_title1 blog --title)
+add_test (blog_title2 blog --title "My new title")
+add_test (blog_title3 blog -T "My new title")
+add_test (blog_index1 blog --indexAll)
+add_test (blog_index2 blog -I)

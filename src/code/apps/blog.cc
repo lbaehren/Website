@@ -25,6 +25,7 @@
  */
 
 /* Standard header files */
+#include <fstream>
 #include <iostream>
 #include <math.h>
 
@@ -37,18 +38,45 @@
 //
 // ==============================================================================
 
+int edit_entry ()
+{
+  return 0;
+}
+
 // ==============================================================================
 //
 //  Program main function
 //
 // ==============================================================================
 
-int main ()
+int main (int argc, char *argv[])
 {
   int status           = 0;
+  std::string optionKey;
   std::string title    = "Test entry";
   std::string author   = "Lars Baehren";
   std::vector<std::string> tags (1,"Development");
+
+  // === Process command line input ===
+
+  for (int n=0; n<argc; ++n) {
+    optionKey = std::string(argv[n]);
+
+    // Option: title
+    if (optionKey == "--title" || optionKey == "-T") {
+      if (argc>n+1) {
+	title = argv[n+1];
+	std::cout << "--> Title : " << title << std::endl;
+      }
+    }
+
+    // === Option: indexAll
+    if (optionKey == "--indexAll" || optionKey == "-I") {
+      std::cout << "--> Rebuild blog index." << std::endl;
+    }
+  }
+
+  // === Create object to store blog entry data ===
 
   Blog::Timestamp timestamp;
   Blog::BlogEntry entry (title,
@@ -58,12 +86,17 @@ int main ()
   /*
    *  Display parameters
    */
-  std::cout << "\n[blog] Summary of parameters.\n" << std::endl;
-  std::cout << "-- Filename = " << entry.filename() << std::endl;
-  std::cout << "-- Filepath = " << entry.path()     << std::endl;
-  std::cout << "-- Title    = " << title    << std::endl;
-  std::cout << "-- Author   = " << author   << std::endl;
+  std::cout << "\n[blog] Summary of parameters.\n"  << std::endl;
+  std::cout << "-- Filepath = "  << entry.path()     << std::endl;
+  std::cout << "-- Filename = "  << entry.filename() << std::endl;
+  std::cout << "-- Title    = '" << title            << "'" << std::endl;
+  std::cout << "-- Author   = '" << author           << "'" << std::endl;
   std::cout << "\n" << std::endl;
+
+  /*
+   *  Open output file-stream
+   */
+  // std::ofstream outfile (entry.filename().c_str());
 
   /*
    *  Write header for blog entry
@@ -72,6 +105,6 @@ int main ()
 		      title,
 		      author,
 		      tags);
-  
+
   return status;
 }
