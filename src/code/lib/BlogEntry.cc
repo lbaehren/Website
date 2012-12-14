@@ -59,9 +59,17 @@ namespace Blog { // Namespace Blog -- begin
   /*!
     \return filename -- Filename for the blog entry.
   */
-  std::string BlogEntry::filename ()
+  std::string BlogEntry::filename (bool const &fullPath)
   {
-    return filename (itsTimestamp);
+    std::string name;
+
+    if (fullPath) {
+      name = path() + "/" + filename (itsTimestamp);
+    } else {
+      name = filename (itsTimestamp);
+    }
+
+    return name;
   }
 
   //_____________________________________________________________________________

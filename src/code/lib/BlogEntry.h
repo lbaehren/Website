@@ -138,7 +138,7 @@ namespace Blog { // Namespace Blog -- begin
     std::string path ();
 
     //! Get the filename for the blog entry
-    std::string filename ();
+    std::string filename (bool const &fullPath=false);
 
     //! Provide a summary of the internal status
     inline void summary () {
