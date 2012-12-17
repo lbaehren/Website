@@ -52,20 +52,6 @@ if (ENABLE_TESTING)
   enable_testing()
 endif (ENABLE_TESTING)
 
-##__________________________________________________________
-## Handle option: Verbose during configuration?
-
-if (NOT CONFIGURE_VERBOSE)
-  set (DOXYGEN_FIND_QUIETLY  YES )
-  set (GEM_FIND_QUIETLY      YES )
-  set (RAILS_FIND_QUIETLY    YES )
-  set (RAKE_FIND_QUIETLY     YES )
-  set (RUBY_FIND_QUIETLY     YES )
-  set (RUBYGEMS_FIND_QUIETLY YES )
-  set (_RUBY_DEBUG_OUTPUT    NO  )
-  set (WEBGEN_FIND_QUIETLY   YES )
-endif (NOT CONFIGURE_VERBOSE)
-
 ## ==============================================================================
 ##
 ##  System inspection
@@ -80,7 +66,7 @@ find_path (SOURCE_DIR_CODE
   PATH_SUFFIXES src code src/code
   )
 
-find_path (SOURCE_DIR_BLOG
+find_path (PROJECT_SOURCE_DIR_BLOG
   NAMES upcoming.page archive.page 2012.page 2011.page 2010.page
   PATHS ${CMAKE_CURRENT_SOURCE_DIR}
   PATH_SUFFIXES src pages src/pages src/pages/blog pages/blog blog
@@ -109,13 +95,26 @@ else (LOCAL_CMAKE_MODULE_PATH)
   message (WARNING "Failed to locate custom CMake modules!")
 endif (LOCAL_CMAKE_MODULE_PATH)
 
-find_package (Boost)
-find_package (Git)
-find_package (Doxygen)
-find_package (Gem)
-find_package (Rake)
-find_package (Ruby)
-find_package (Webgen)
+foreach (_cmakeModule
+  Boost
+  Git
+  Doxygen
+  Gem
+  KWsys
+  Rake
+  Ruby
+  Webgen
+  )
+  ## Verbosity of module
+  if (NOT CONFIGURE_VERBOSE)
+    ## Convert module name to upper-case
+    string (TOUPPER ${_cmakeModule} _varModule)
+    ##
+    set (${_varModule}_FIND_QUIETLY YES )
+  endif (NOT CONFIGURE_VERBOSE)
+  ## load the module
+  find_package (${_cmakeModule})
+endforeach (_cmakeModule)
 
 ##____________________________________________________________________
 ## Extract Doxygen version number
@@ -166,17 +165,17 @@ add_dependencies (Website libblog)
 ##_______________________________________________________________________________
 ## Build the page with the most recent blog entries
 
-if (script_blogrecent AND SOURCE_DIR_BLOG)
+if (script_blogrecent AND PROJECT_SOURCE_DIR_BLOG)
   ## Build target
   add_custom_target (recent_blog_entries
     COMMAND ${script_blogrecent}
-    WORKING_DIRECTORY ${SOURCE_DIR_BLOG}
+    WORKING_DIRECTORY ${PROJECT_SOURCE_DIR_BLOG}
     COMMENT "Generating page with recent blog entries ..."
     )
   ## Dependencies
   add_dependencies (recent_blog_entries blog)
   add_dependencies (Website recent_blog_entries)
-endif (script_blogrecent AND SOURCE_DIR_BLOG)
+endif (script_blogrecent AND PROJECT_SOURCE_DIR_BLOG)
 
 ##_______________________________________________________________________________
 ## Publish the website online
@@ -224,7 +223,7 @@ message (STATUS " Project configuration:"                                       
 message (STATUS " .. Version number .............. = ${PROJECT_VERSION}"         )
 message (STATUS " .. Installation prefix ......... = ${CMAKE_INSTALL_PREFIX}"    )
 message (STATUS " .. Pages source directory ...... = ${SOURCE_DIR_PAGES}"        )
-message (STATUS " .. Blog source directory ....... = ${SOURCE_DIR_BLOG}"         )
+message (STATUS " .. Blog source directory ....... = ${PROJECT_SOURCE_DIR_BLOG}" )
 message (STATUS " .. Enable CTest test driver? ... = ${ENABLE_TESTING}"          )
 message (STATUS " .. Verbose configure? .......... = ${CONFIGURE_VERBOSE}"       )
 message (STATUS " External tools & packages:"                                    )
