@@ -1,0 +1,79 @@
+---
+title: "Hinter den Kulissen"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Fri, 14. December 2012 -- 19:41_
+
+Wenn ich mir ueberlege, wie lange der Blog schon -- in der einen oder anderen Inkarnation -- bereits existiert, dann ist es schon erstaunlich, dass ich nicht schon viel frueher damit begonnen habe, einige der Tools zur Pflege der Sammlung und Infrastruktur in sauberer Weise zu implementieren. Andererseits ist schon ein Stueck weit verstaendlich, dass es nicht notwendigerweise die erste Wahl ist, die benoetigten Tools ins C/C++ zu schreiben; mittlerweile aber befinden wir uns ein paar Jahre weiter und ich verspeure zunehmend den Wunsch Kontrolle darueber zu haben, was hinter den Kulissen mit den Eintraegen passiert. Ein nicht unwesentlicher Schritt war hier sicherlich der dieses Jahr vorgenommene Wechsel von einer [Dokuwiki](http://www.dokuwiki.org)-basierten Loesung hin zur Generierung statischer Webseiten; statt also den Inhalt der Seiten dynamisch beim Abrufen aufzubauen, habe ich nun (auch wenn ich dies noch nicht in voller Konsequenz ausnutze) die Moeglichkeit die komplette Website vor dem Liveschalten auf funktionelle Fehler zu checken.
+
+Im Zuge dieser Umstellung habe ich ebenfalls damit begonnen ein weniger unter den diversen Tools aufzuraeumen, welche einen Teil der Logik rund um die Eintraege enthalten. Schon recht frueh bin ich ja dazu uebergegangen ein standardisiertes Schema fuer die Dateinamen zu verwenden 
+
+~~~~
+##  $DOKUWIKI_ROOT
+##  `-- data
+##      `-- pages
+##          `-- blog                      ..........  var_dirPages
+##              `-- YYYY                  ..........  var_dirYear
+##                  |-- YYYY-01           ..........  var_dirMonth
+##                  |-- YYYY-02
+##                  |-- january_YYYY.txt
+##                  |-- february_YYYY.txt
+##                  `-- march_YYYY.txt
+~~~~
+
+um da aber nicht mehr als noetig Hand anlegen zu muessen, sind eine Reihe an Bash-Scripts entstanden, welche ausser dem eigentlichen Scheiben so ziemlich alles erledigt haben:
+
+~~~~
+## Atoms
+varMonthName=`date "+%B"`
+varYear=`date "+%Y"`
+varMonth=`date "+%m"`
+varDay=`date "+%d"`
+varHour=`date "+%H"`
+varMinute=`date "+%M"`
+varDate=`date "+%a, %d. %B %Y"`
+varTime=`date +%R`
+## Composites
+varYearMonth=`date "+%Y-%m"`
+varYearMonthDay=`date "+%Y-%m-%d"`
+var_hhmm=$varHour-$varMinute
+varEntry=$varYearMonthDay"_"$var_hhmm
+~~~~
+
+Das geht natuerlich auch schoener: statt einefach nur eine lose Sammlung an Scripten mit mir herumzuschleppen, sind die wichtigsten Objekte und Operationen nun auf dem besten Wege dahin, in Form einer C++ Bibliothek implementiert zu werden, auf welcher aufbauen dann eine kleine Anzahl an Programmen aufbauen. Einzelne Elemente, wie z.B. die `Timestamp` Klasse habe ich fast 1-zu-1 aus der [DAL](https://github.com/nextgen-astrodata/DAL) uebernommen -- dies ist einfach so allgemeine Infrastruktur, dass sich diese Bloecke fast unveraendert einsetzen lassen. Womit ich mich dann heute, auf der Fahrt von Koeln zum Wellpoint, noch ein wenig beschaeftigt habe ist, wie ich das neue `blog` Frontend flexibel gestalten kann. Eines Problem hierbei ist, dass ich es vermeiden moechte gleich wieder einen ganzen Schwarm an Programmen zu erzeugen; stattdessen ziehe ich es vor die Zahl eher klein zu halten und stattdessen unterschiedliche Command-Line Options als Schalter einzubauen. Auch wenn dies die Implementierung in mancher Hinsicht vereinfachen wuerde, so versuche ich auch an dieser Stelle die externen Abhaengigkeiten gering zu halten; statt also mit der `Boost::program_options` Bibliothek zu arbeiten, habe ich -- teils auch als Lehre aus meinem Wrapper fuer die Installationen der [pandora](http://prometheus.uni-koeln.de/pandora) Abhaengigkeiten -- beschlossen die notwendige Machinerie von Hand zu implementieren. Nicht nur haelt dies die Dinge nach aussen hin einfacher, es ist auch eine gute Gelegenheit sich ein wenig mit der hinter den Kulissen benotigten Logik zu beschaeftigen. Was ich da unterwegs geschrieben und getestet habe, laesst sich schon einmal recht gut an:
+
+~~~~
+  for (int n=0; n<argc; ++n) {
+    optionKey = std::string(argv[n]);
+
+    // Option: title
+    if (optionKey == "--title" || optionKey == "-T") {
+      if (argc>n+1) {
+      title = argv[n+1];
+      }
+    }
+
+    // Option: --index-all, -I
+    if (optionKey == "--index-all" || optionKey == "-I") {
+      indexAll = true;
+    }
+  }
+~~~~
+
+Um auch gegenzuchecken, dass wirklich das dabei herauskommt, was ich haben will, gibt es gleich auch noch eine Sammlung an Tests:
+
+~~~~
+add_test (blog_title1 blog --title)
+add_test (blog_title2 blog --title "My new title")
+add_test (blog_title3 blog -T "My new title")
+add_test (blog_index1 blog --index-all)
+add_test (blog_index2 blog -I)
+add_test (blog_title_index blog -T "My new title" -I)
+add_test (blog_index_title blog -I -T "My new title")
+~~~~
+
+Sieht gut aus bis hier hin -- da ist hoffentlich wirklich nur noch die Frage einer recht kurzen Zeit, ehe ich die Umstellung vornehmen kann und ich auf diese Weise wieder ein kleines Stueck Automatisierung mehr ereiche.
