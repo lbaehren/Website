@@ -52,12 +52,11 @@
         </ul>
 	</p>
 	<!-- Contact information -->
-	<script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
 	<h2>Contact:</h2>
         <p>
 	<ul>
 	  <li><a href="mailto:lbaehren@gmail.com">lbaehren@gmail.com</a>
-	  <li><a href="skype:larsbaehren?call">skype:larsbaehren</a>
+	  <li>skype:larsbaehren
 	</ul>
 	</p>
       </div>
