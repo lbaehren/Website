@@ -85,6 +85,16 @@ namespace Blog { // Namespace Blog -- begin
       itsTitle = title;
     }
 
+    //! Get the author of the blog entry
+    inline std::string author () {
+      return itsAuthor;
+    }
+
+    //! Set the author of the blog entry
+    void setAuthor (std::string const &author) {
+      itsAuthor = author;
+    }
+
     //! Get the timestamp of the blog entry
     inline Blog::Timestamp timestamp () {
       return itsTimestamp;
@@ -106,8 +116,8 @@ namespace Blog { // Namespace Blog -- begin
     }
 
     //! Get the tags attached to the entry
-    inline std::vector<std::string> tags () {
-      itsTags;
+    inline std::set<std::string> tags () {
+      return itsTags;
     }
 
     //! Set the tags attached to the entry

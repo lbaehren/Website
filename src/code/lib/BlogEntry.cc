@@ -44,7 +44,7 @@ namespace Blog { // Namespace Blog -- begin
   {
     std::stringstream out;
     
-    out << SOURCE_DIR_BLOG;
+    out << PROJECT_SOURCE_DIR_BLOG;
     out << "/";
     out <<  itsTimestamp.year();
     out << "/";

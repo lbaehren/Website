@@ -24,61 +24,61 @@
 
 #include <BlogEntry.h>
 
-using std::endl;
 using Blog::BlogEntry;
 using Blog::Timestamp;
 
 /*!
   \file BlogEntryTest.cc
-
   \ingroup Blog
-
   \brief A collection of test routines for the Blog::BlogEntry class
- 
   \author Lars B&auml;hren
- 
   \date 2012/07/03
 */
 
 //_______________________________________________________________________________
 //                                                              test_construction
 
-void test_construction ()
+int test_construction ()
 {
   std::cout << "\n[BlogEntryTest::test_construction]\n" << std::endl;
 
-  std::cout << "[1] Testing default constructor ..." << endl;
-  {
+  int status = 0;
+
+  std::cout << "[1] Testing default constructor ..." << std::endl;
+  try {
     BlogEntry entry;
     entry.summary();
+  } catch (std::exception &e) {
+    std::cout << "ERROR : " << e.what() << std::endl;
+    ++ status;
   }
 
-  std::cout << "[2] Testing simple argumented constructor ..." << endl;
-  {
+  std::cout << "[2] Testing simple argumented constructor ..." << std::endl;
+  try {
     std::string title = "My new blog entry";
     BlogEntry entry (title);
     entry.summary();
+  } catch (std::exception &e) {
+    std::cout << "ERROR : " << e.what() << std::endl;
+    ++ status;
   }
+
+  return status;
 }
 
 //_______________________________________________________________________________
 //                                                                test_parameters
 
 //!  Test acces to the internal parameters
-void test_parameters ()
+int test_parameters ()
 {
   std::cout << "\n[BlogEntryTest::test_parameters]\n" << std::endl;
 
-  std::set<std::string> tags;
-  tags.insert("Test");
-  tags.insert("Blog");
-  tags.insert("Computing");
+  int status = 0;
 
-  BlogEntry entry;
-  entry.summary();
-
-  std::cout << "[1] Accessing title ..." << std::endl;
-  {
+  std::cout << "[1] Testing setTitle() ..." << std::endl;
+  try {
+    BlogEntry entry;
     std::string title ("Title of the new blog entry");
     // Set the title
     entry.setTitle (title);
@@ -86,30 +86,61 @@ void test_parameters ()
     title = entry.title();
     // Summary
     entry.summary();
+  } catch (std::exception &e) {
+    std::cout << "ERROR : " << e.what() << std::endl;
+    ++ status;
   }
 
-  std::cout << "[2] Accessing tags ..." << std::endl;
-  {
-    std::string tag ("Test");
-    // Set the tag
-    entry.setTag (tag);
-    entry.setTag ("Blog");
-    // ... and show the result
+  std::cout << "[2] Testing setTags(std::set<T>) ..." << std::endl;
+  try {
+    BlogEntry entry;
+    // Define tags ...
+    std::set<std::string> tags;
+    tags.insert("Test");
+    tags.insert("Blog");
+    tags.insert("Computing");
+    // ... and store then inside the object
+    entry.setTags (tags);
+    // Summary
     entry.summary();
-    // Replace the tags ...
-    entry.setTags(tags,false);
-    // ... and show the result
-    entry.summary();
+    std::cout << "-- BlogEntry::tags() = " << entry.tags() << std::endl;
+  } catch (std::exception &e) {
+    std::cout << "ERROR : " << e.what() << std::endl;
+    ++ status;
   }
+
+  std::cout << "[3] Testing setTags(std::vector<T>) ..." << std::endl;
+  try {
+    BlogEntry entry;
+    // Define tags ...
+    std::vector<std::string> tags;
+    tags.push_back("Computing");
+    tags.push_back("Test");
+    tags.push_back("Blog");
+    // ... and store then inside the object
+    entry.setTags (tags);
+    // Summary
+    entry.summary();
+  } catch (std::exception &e) {
+    std::cout << "ERROR : " << e.what() << std::endl;
+    ++ status;
+  }
+
+  return status;
 }
 
 //_______________________________________________________________________________
 //                                                                           main
 
+/*!
+  \brief Program main function
+*/
 int main ()
 {
-  test_construction ();
-  test_parameters ();
+  int status = 0;
 
-  return 0;
+  status += test_construction ();
+  status += test_parameters ();
+
+  return status;
 }
