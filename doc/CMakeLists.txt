@@ -3,12 +3,11 @@
 
 if (DOXYGEN_EXECUTABLE)
 
-  find_path (DOXYGEN_INPUT_DIR
-    NAMES documentation/doxygen.config.in code/CMakeLists.txt
-    PATHS ${PROJECT_SOURCE_DIR}
-    PATH_SUFFIXES src
-    )
+  ## Configuration variables for Doxygen
 
+  set (DOXYGEN_INPUT            "${PROJECT_SOURCE_DIR}/src ${PROJECT_BINARY_DIR}/src")
+  set (DOXYGEN_OUTPUT_DIRECTORY "${CMAKE_INSTALL_PREFIX}/doc")
+    
   ## Locate custom stylesheet
   find_file (DOXYGEN_CSS doxygen.css
     PATHS ${CMAKE_CURRENT_SOURCE_DIR}
