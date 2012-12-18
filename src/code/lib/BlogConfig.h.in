@@ -21,32 +21,68 @@
 #ifndef BLOG_CONFIG_H
 #define BLOG_CONFIG_H
 
+#include <string>
+
+/*!
+  \file BlogConfig.h
+  \brief Common configuration header file
+*/
+
 // ==============================================================================
 //
-//  Package information
+//  System information
 //
 // ==============================================================================
 
+//! The full version of CMake in major.minor.patch[.tweak[-id]] format.
+#define CMAKE_VERSION "${CMAKE_VERSION}"
+//! Name of system CMake is compiling for
+#define CMAKE_SYSTEM_NAME "${CMAKE_SYSTEM_NAME}"
+//! Version of system CMake is compiling for
+#define CMAKE_SYSTEM_VERSION "${CMAKE_SYSTEM_VERSION}"
+//! Processor type
+#define CMAKE_SYSTEM_PROCESSOR "${CMAKE_SYSTEM_PROCESSOR}"
+
+// ==============================================================================
+//
+//  Project information
+//
+// ==============================================================================
+
+//! Project name
 #define PROJECT_NAME "${PROJECT_NAME}"
 
-//! The full version of the ${PROJECT_NAME} in major.minor.patch format.
-#define RELEASE_VERSION       "${PROJECT_VERSION}"
-#define RELEASE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}"
-#define RELEASE_VERSION_MINOR "${PROJECT_VERSION_MINOR}"
-#define RELEASE_VERSION_PATCH "${PROJECT_VERSION_PATCH}"
+//! The full version of ${PROJECT_NAME} in major.minor.patch format.
+#define PROJECT_VERSION       "${PROJECT_VERSION}"
+//! ${PROJECT_NAME} major version
+#define PROJECT_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}"
+//! ${PROJECT_NAME} minor version
+#define PROJECT_VERSION_MINOR "${PROJECT_VERSION_MINOR}"
+//! ${PROJECT_NAME} patch version
+#define PROJECT_VERSION_PATCH "${PROJECT_VERSION_PATCH}"
 
-// ==============================================================================
-//
-//  Directory layout
-//
-// ==============================================================================
+/* Source directories */
 
+//! Project source directory
+#define PROJECT_SOURCE_DIR "${PROJECT_SOURCE_DIR}"
+//! Source directory for the code
+#define PROJECT_SOURCE_DIR_CODE "${PROJECT_SOURCE_DIR_CODE}"
+//! Source directory for the blog entries
+#define PROJECT_SOURCE_DIR_BLOG "${PROJECT_SOURCE_DIR_BLOG}"
+//! Source directory for the website pages
+#define SOURCE_DIR_PAGES   "${SOURCE_DIR_PAGES}"
+
+/* Installation locations */
+
+//! Installation prefix
+#define CMAKE_INSTALL_PREFIX         "${CMAKE_INSTALL_PREFIX}"
+//! Installation prefix for the generated website
 #define INSTALL_PREFIX_WEBSITE       "${INSTALL_PREFIX_WEBSITE}"
-#define INSTALL_PREFIX_DOCUMENTATION "${INSTALL_PREFIX_DOCUMENTATION}"
 
-#define SOURCE_DIR_CODE  "${SOURCE_DIR_CODE}"
-#define SOURCE_DIR_BLOG  "${SOURCE_DIR_BLOG}"
-#define SOURCE_DIR_PAGES "${SOURCE_DIR_PAGES}"
+/* Scripts */
+
+//! Script to rebuild index pages for the blog
+#define script_blogIndex "${script_blogindex}"
 
 // ==============================================================================
 //
@@ -54,10 +90,14 @@
 //
 // ==============================================================================
 
+//! Full path to the Doxygen excutable
 #define DOXYGEN_EXECUTABLE "${DOXYGEN_EXECUTABLE}"
+//! Doxygen version
 #define DOXYGEN_VERSION    "${DOXYGEN_VERSION}"
 
+//! Full path to the Ruby executable
 #define RUBY_EXECUTABLE "${RUBY_EXECUTABLE}"
+//! Ruby version
 #define RUBY_VERSION    "${RUBY_VERSION}"
 
 #endif
