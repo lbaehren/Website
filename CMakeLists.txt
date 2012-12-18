@@ -25,8 +25,8 @@ set (PROJECT_VERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJEC
 ##
 ## ==============================================================================
 
-option (ENABLE_TESTING        "Enable CTest test driver?"                  YES     )
-option (CONFIGURE_VERBOSE     "Increase verbosity during configuration?"   NO      )
+option (ENABLE_TESTING        "Enable CTest test driver?"                  YES )
+option (CONFIGURE_VERBOSE     "Increase verbosity during configuration?"   NO  )
 
 ##  Installation location
 ##
@@ -60,7 +60,7 @@ endif (ENABLE_TESTING)
 
 ## Project source directories
 
-find_path (SOURCE_DIR_CODE
+find_path (PROJECT_SOURCE_DIR_CODE
   NAMES lib/BlogConfig.h.in lib/BlogNode.h lib/Timestamp.h
   PATHS ${CMAKE_CURRENT_SOURCE_DIR}
   PATH_SUFFIXES src code src/code
@@ -149,6 +149,7 @@ endif (DOXYGEN_EXECUTABLE)
 
 ## Project sub-directories
 
+add_subdirectory (doc)
 add_subdirectory (src)
 
 ##_______________________________________________________________________________
