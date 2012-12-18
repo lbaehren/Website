@@ -18,50 +18,41 @@
  *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
  ***************************************************************************/
 
-#include "BlogConfig.h"
+#include "BlogNode.h"
 
 namespace Blog {
 
-  //! Type of the node in the blog structure
-  enum NodeType {
-    //! Node is a directory
-    Directory,
-    //! Note is an entry file
-    Entry,
-    //! Note is an index file
-    Index
-  };
+  // ============================================================================
+  //
+  //  Construction
+  //
+  // ============================================================================
 
-  /*!
-    \class BlogNode
-    \brief Base class for a node in the blog
-    \author Lars Baehren
-  */
-  class BlogNode {
+  BlogNode::BlogNode (NodeType const type)
+   : itsType (type)
+  {
+  }
 
-  protected:
+  // ============================================================================
+  //
+  //  Static methods
+  //
+  // ============================================================================
 
-    //! Type of the node
-    NodeType itsType;
+  std::string nodeTypeName (NodeType const type)
+  {
+    std::string name;
 
-  public:
+    switch (type) {
+    case Directory:
+      name = "Directory";
+    case Entry:
+      name = "Entry";
+    case Index:
+      name = "Index";
+    };
 
-    // === Construction =========================================================
-
-    //! (Argumented) Constructor
-    BlogNode (NodeType const type=Entry);
-
-    // === Parameter access =====================================================
-
-    //! Get the type of the node
-    inline NodeType nodeType () {
-      return itsType;
-    }
-
-    // === Static methods =======================================================
-
-    static std::string nodeTypeName (NodeType const type);
-
-  };
+    return name;
+  }
 
 }
