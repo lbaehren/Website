@@ -53,12 +53,14 @@ int main (int argc, char *argv[])
 {
   int status           = 0;
   std::string optionKey;
+  bool indexAll        = false;
+  bool dryRun          = false;
   std::string title    = "Test entry";
   std::string author   = "Lars Baehren";
   std::vector<std::string> tags (1,"Development");
-  bool indexAll = false;
 
-  // === Process command line input ===
+  //__________________________________________________________________
+  // Process command line options
 
   for (int n=0; n<argc; ++n) {
     optionKey = std::string(argv[n]);
@@ -70,41 +72,44 @@ int main (int argc, char *argv[])
       }
     }
 
+    // Option: --dry-run, -D
+    if (optionKey == "--dry-run" || optionKey == "-D") {
+      dryRun = true;
+    }
+
     // Option: --index-all, -I
     if (optionKey == "--index-all" || optionKey == "-I") {
       indexAll = true;
     }
   }
 
-  // === Create object to store blog entry data ===
+  //__________________________________________________________________
+  // Create object to store new blog entry
 
   Blog::Timestamp timestamp;
   Blog::BlogEntry entry (title,
 			 timestamp,
 			 tags);
 
-  /*
-   *  Display parameters
-   */
-  std::cout << "\n[blog] Summary of parameters.\n"  << std::endl;
-  std::cout << "-- Filepath = "  << entry.path()     << std::endl;
-  std::cout << "-- Filename = "  << entry.filename() << std::endl;
-  std::cout << "-- Title    = '" << title            << "'" << std::endl;
-  std::cout << "-- Author   = '" << author           << "'" << std::endl;
-  std::cout << "\n" << std::endl;
+  if (dryRun) {
+    std::cout << "\n[blog] Summary of parameters.\n"   << std::endl;
+    std::cout << "-- Filepath = "  << entry.path()     << std::endl;
+    std::cout << "-- Filename = "  << entry.filename() << std::endl;
+    std::cout << "-- Title    = '" << entry.title()    << "'" << std::endl;
+    std::cout << "-- Author   = '" << entry.author()   << "'" << std::endl;
+    std::cout << "-- Tags     = "  << entry.tags()     << std::endl;
+    std::cout << "\n" << std::endl;
+  }
 
-  /*
-   *  Open output file-stream
-   */
-  // std::ofstream outfile (entry.filename().c_str());
-
-  /*
-   *  Write header for blog entry
-   */
-  Blog::write_header (std::cout,
-		      title,
-		      author,
-		      tags);
+  if (dryRun) {
+    /* In case of a dry run, do not create output entry file. */
+    Blog::write_header (std::cout,
+			title,
+			author,
+			tags);
+  } else {
+    std::ofstream outfile (entry.filename().c_str());
+  }
 
   return status;
 }
