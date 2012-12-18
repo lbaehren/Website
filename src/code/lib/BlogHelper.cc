@@ -24,11 +24,11 @@ namespace Blog {
 
   std::string get_path_entry (Timestamp const &timestamp)
   {
-    std::string path = SOURCE_DIR_BLOG;
-    
+    std::string path = PROJECT_SOURCE_DIR_BLOG;
+
     path += "/";
     path += get_filename_entry (timestamp);
-    
+
     return path;
   }
 
@@ -59,11 +59,11 @@ namespace Blog {
     \param inMenu -- Is the generated page to be listed in the menu sidebar?
   */
   void write_header (std::ostream &os,
-		     std::string const &title,
-		     std::string const &author,
-		     std::vector<std::string> const &tags,
-		     bool const &inMenu,
-		     bool const &forIndex)
+                     std::string const &title,
+                     std::string const &author,
+                     std::vector<std::string> const &tags,
+                     bool const &inMenu,
+                     bool const &forIndex)
   {
     std::string tt;
     std::string in_menu = "false";
@@ -101,6 +101,7 @@ namespace Blog {
     } else {
       os << "## {title:} ##"             << std::endl;
       os << " "                          << std::endl;
+
     }
   }
 
