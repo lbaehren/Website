@@ -38,7 +38,6 @@ varMonth=`date "+%m"`
 varDay=`date "+%d"`
 varHour=`date "+%H"`
 varMinute=`date "+%M"`
-var_second=`date "+%S"`
 varDate=`date "+%a, %d. %B %Y"`
 varTime=`date +%R`
 
@@ -69,7 +68,6 @@ var_fileChanges=`echo $var_fileEntry | sed s/"pages\/blog"/"meta\/blog"/ | sed s
 var_pathPage=blog:$varYear:$varYear-$varMonth:$varEntry
 
 ## Output files
-varFileDokuwiki=$varDokuwikiBlog/$varYear/$varYearMonth/${varEntry}.txt
 varFileWebgen=$varWebgenBlog/$varYear/$varYearMonth/${varEntry}.page
 
 ## ==============================================================================
@@ -77,47 +75,6 @@ varFileWebgen=$varWebgenBlog/$varYear/$varYearMonth/${varEntry}.page
 ##  Function definitions
 ##
 ## ==============================================================================
-
-##____________________________________________________________________
-##                                                 writeHeaderDokuwiki
-##
-##  Produce the basic skeleton for a new blog entry.
-##
-
-writeHeaderDokuwiki ()
-{
-    varDirMonth=${varYear}-${varMonth}
-    varFileEntry=${varEntry}.txt
-
-    ## Check if the directory is there
-
-    if [ -d $varDokuwikiBlog ]
-    then
-	cd $varDokuwikiBlog
-	if [ -d $varYear ]
-	then
-	    cd $varYear
-	    if [ -d $varDirMonth ]
-	    then
-		cd $varDirMonth
-	    else
-		mkdir $varDirMonth
-		cd $varDirMonth
-	    fi
-	else
-	    mkdir $varYear
-	    cd $varYear
-	    mkdir $varDirMonth
-	    cd $varDirMonth
-	fi
-    fi
-
-    echo ""                        >> $var_fileEntry
-    echo "===== $varTitle ====="   >> $var_fileEntry
-    echo ""                        >> $var_fileEntry
-    echo "//$varDate - $varTime//" >> $var_fileEntry
-    echo ""                        >> $var_fileEntry
-}
 
 ##____________________________________________________________________
 ##                                                   writeHeaderWebgen
@@ -201,7 +158,6 @@ echo "  * [[.$varYearMonth:$varEntry|$varTitle]] ($varDate - $varTime)" >> $var_
 ##_______________________________________________________________________________
 ## Post-editing cleanup of the directory; remove backup files created by emacs
 
-rm -f $var_dirYear/*~
 rm -f $var_dirMonth/*~
 rm -rf $varFileTemp
 rm -rf $varFileTemp~
