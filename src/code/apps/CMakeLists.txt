@@ -1,4 +1,6 @@
 
+## === Build instructions =======================================================
+
 ## Assemble list of source files
 
 file (GLOB apps_sources *.cc)
@@ -16,9 +18,17 @@ foreach (_filename ${apps_sources})
   ## Test execution
   add_test (${_app} ${_app})
 
+  ## Installation instructions
+  install (
+    TARGETS ${_app}
+    RUNTIME DESTINATION bin
+    LIBRARY DESTINATION lib
+    ARCHIVE DESTINATION lib
+    )
+
 endforeach (_filename)
 
-## Additional tests
+## === Additional testing instructions ==========================================
 
 ## Always pass along "-D" option for a dry run
 add_test (blog_title1      blog -D --title)

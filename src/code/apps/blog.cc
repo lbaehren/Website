@@ -91,6 +91,9 @@ int main (int argc, char *argv[])
 			 timestamp,
 			 tags);
 
+  //__________________________________________________________________
+  // Summary of command line options and blog entry properties
+
   if (dryRun) {
     std::cout << "\n[blog] Summary of parameters.\n"   << std::endl;
     std::cout << "-- Filepath = "  << entry.path()     << std::endl;
