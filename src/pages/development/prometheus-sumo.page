@@ -19,10 +19,11 @@ git clone git://github.com/lbaehren/prometheus-sumo.git
 
 in order to to clone into a local working copy. 
 
-In order to now configure and build the project "out of source" -- hence keeping your options open to cleanly remove intermediate/temporary files -- create a separate build directory from within to continue:
+In order to now configure and build the project "out of source" -- hence keeping your options open to cleanly remove intermediate/temporary files -- run the `boostrap` script
 
 ~~~~
-mkdir build
-cd build
-cmake ..
+./bootstrap
 ~~~~
+
+The script will perform a very basic check of your platform, most importantly
+checking for the availability of [CMake](http://www.cmake.org).
