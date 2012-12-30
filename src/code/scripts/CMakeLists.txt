@@ -17,4 +17,10 @@ foreach (script
     DOC "Path to the ${script} script"
     )
 
+  ## Installation instructions
+  install (FILES ${script}
+    DESTINATION bin
+    PERMISSIONS OWNER_EXECUTE GROUP_EXECUTE OWNER_READ GROUP_READ
+    )
+
 endforeach (script)
