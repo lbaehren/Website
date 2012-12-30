@@ -1,8 +1,8 @@
 
 foreach (script
-    blogEntry
-    blogIndex
-    blogRecent
+    blog_entry
+    blog_index
+    blog_recent
     convertEntries
     )
 

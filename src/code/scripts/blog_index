@@ -234,7 +234,7 @@ processYear ()
 
     ## --- Feedback ---
 
-    echo "[blogIndex::processYear] Processing blog entries for ${varYear} ..."
+    echo "[blog_index::processYear] Processing blog entries for ${varYear} ..."
 
     ## -- Generate index file headers ---
 
