@@ -1,0 +1,20 @@
+---
+title: "Schon abgeklemmt?"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Sat, 22. December 2012 -- 19:37_
+
+Da sieht es doch ganz danach aus, als waere ich -- zumindest was den Schreibzugriff betrifft -- bereits von meinem alten Account abgeklemmt. Als ich gestern Abend noch versucht habe den letzten Eintrag hochzuladen, bekam ich beim Verbingen mit dem ASTRON Server nur eine Fehlermeldung zu sehe:
+
+~~~~
+Password: 
+ssh_exchange_identification: Connection closed by remote host
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(605) [sender=3.0.9]
+~~~~
+
+Dass es sich hierbei nicht einfach nur um eine kurzfristige Stoerung handelt laesst sich daran erkennen, dass ich vor ein paar Minuten wieder vor dem gleichen Problem gestanden habe. Bisher scheinen die Seiten zwar noch erreichbar zu sein (zumindest was das Betrachten betrifft), aber dies zeigt mir ganz deutlich, dass ich schnellstmoeglich eine neue Platform brauche, auf welchem ich meine Seiten hosten kann.
