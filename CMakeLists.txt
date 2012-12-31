@@ -166,17 +166,20 @@ add_dependencies (Website libblog)
 ##_______________________________________________________________________________
 ## Build the page with the most recent blog entries
 
-if (script_blogrecent AND PROJECT_SOURCE_DIR_BLOG)
+if (script_blog_recent AND PROJECT_SOURCE_DIR_BLOG)
+
   ## Build target
   add_custom_target (recent_blog_entries
-    COMMAND ${script_blogrecent}
+    COMMAND ${script_blog_recent}
     WORKING_DIRECTORY ${PROJECT_SOURCE_DIR_BLOG}
     COMMENT "Generating page with recent blog entries ..."
     )
+
   ## Dependencies
   add_dependencies (recent_blog_entries blog)
   add_dependencies (Website recent_blog_entries)
-endif (script_blogrecent AND PROJECT_SOURCE_DIR_BLOG)
+
+endif (script_blog_recent AND PROJECT_SOURCE_DIR_BLOG)
 
 ##_______________________________________________________________________________
 ## Publish the website online
