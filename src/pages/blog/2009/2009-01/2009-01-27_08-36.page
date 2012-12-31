@@ -1,0 +1,38 @@
+---
+title: "Frischer Start"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Tue, 27. January 2009 -- 08:36_
+
+Manchmal ist es wirklich gut eine Unterbrechung einzuschieben und mit einem frischen Start an die Sache zu gehen. Hatte ich mich gestern Nachmittag noch darueber gewundert, warum ich bei einem Aufruf in dem Testprogramm fuer den Beamformer einen Fehler bekommen habe, so liess sich dies waehrend der wenigen Minuten von Nijmegen nach Arnhem loesen. Der Fehler war eigentlich recht subtil, so dass dies durchaus einer der Gruende gewesen sein duerfte, warum ich darauf gestern nicht gekommen bin; aber wenn man natuerlich versucht das Ergebnis eines dreidimensionalen Arrays in ein zweidimensionales zu schreiben, dann muss ja schief gehen:
+
+~~~~
+  void GeomWeight::setWeights ()
+  {
+    /* Only recompute and set values if buffering is enabled */
+    if (bufferWeights_p) {
+      /* Adjust the shape of the array storing the weights */
+      casa::IPosition itsShape = shape();
+      weights_p.resize(itsShape);
+      /* Retrieve the values of the geometrical phases */
+      if (bufferPhases_p) {
+	weights_p = calcWeights(phases_p);
+      } else {
+	casa::Matrix<double> geomPhases = GeomPhase::phases();
+	weights_p = calcWeights(geomPhases);
+      }
+    }
+  }
+~~~~
+
+Die benoetigte Aenderung war also nichts anderes als
+
+~~~~
+casa::Cube<double> geomPhases = GeomPhase::phases();
+~~~~
+
+und schon funktionierte alles wieder. Eigentlich total offensichtlich, aber wenn man da Ewigkeiten drauf starrt, dann uebersieht man so etwas gerne schon einmal. Insofern hat sich auf der anderen Seite aber meine Vorgehensweise fuer jede C++ Klasse ein vollstaendiges Testprogramm zu schreiben wieder einmal als genau richtig erwiesen -- so lassen sich viele Fehler ausfindig machen, noch ehe der Code in die Produktionsphase geht.
