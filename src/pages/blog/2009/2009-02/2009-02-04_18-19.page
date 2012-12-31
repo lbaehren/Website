@@ -1,0 +1,14 @@
+---
+title: "Wieder Ruhe zum Arbeiten"
+in_menu: false
+author: Lars Baehren
+tags: Travel Zwolle
+---
+
+## {title:} ##
+
+_Wed, 04. February 2009 -- 18:19_
+
+So, ich denke mal mit dem Umsteigen hier in **Zwolle** sollte ich jetzt wieder weit genug weg von ASTRON sein, so dass ich endlich wieder die Gelegenheit haben duerfte in Ruhe an den Dingen zu arbeiten, welche ich eigentlich bereits fuer den heutigen Tag geplant hatte. Ist alles nicht so ganz gelaufen, wie ich mir dies vorgestellt hatte, weil die Vorbereitungen fuer den Workshop in der kommenden Woche einfach zu viele Resourcen verlangen. Was ein wenig an Zeit in Anspruch genommen hat war all die benotigte Software auf den Cluster-Nodes in Groningen zu installieren, so dass die Teilnehmer des Workshops auch wirklich mit den Programmen und Scripts arbeiten koennen. Der positive Punkt ist immerhin schon einmal, dass die Installation -- auch wenn es natuerlich eine Weile dauert -- glatt durchgelaufen ist, so dass ich zumindest schon einmal die Data Access Library (DAL) bereitgestellt haette; ob dies allerdings in gleicher Weise auch noch fuer die CR-Tools der Fall sein wird, dass muss ich morgen noch antesten (was natuerlich auch wieder von der Zeit abgeht, welche ich in den Skymapper investieren kann). Darueber hinaus gab es natuerlich wieder die ueblichen Anfragen von Marcel und Martin, welche derzeit damit beschaeftigt sind die Konfiguration fuer die LOFAR System-Software von den GNU Autotools auf CMake umzustellen; da kommen immer wieder Fragen auf, fuer welche ich auch keine direkte Anwort parat habe, auch wenn mich manchmal ein wenig der Verdacht beschleicht, dass ein Teil der Komplikationen daher ruehrt, dass die beiden im Endeffekt CMake so hinbiegen wollen dass es sich wie die Autotools verhaelt (was sicherlich nicht die beste Vorgehensweise ist, aber ein Stueck weit habe ich mich innerlich schon von de Vorstellung verabschiedet, dass alles an Software ohne weiteres zusammengefuegt wird). Desweiteren standen noch ein paar weitere Vorbereitungen fuer den Workshop -- oder genauer gesagt die _LOFAR Data Processing School_ -- auf dem Programm: Ablauf online setzen, Login-Prozedur fuer den Cluster dokumentieren, Seiten fuer die dokumentierung der Tutorials vorbereiten, etc.
+
+Also langweilig ist mir heute sicherlich nicht gewesen. Das gute ist aber immerhin, dass ich den ueberwiegenden Teil der Zeit auf vernuenftige Musikversorgung zurueckgreifen konnte, so dass meine Laune ueber Wasser gehalten wird. Ein besonderer Dank geht da sicherlich in die Schweiz, denn [Gotthard](http://www.gotthard.com) ist der eindeutige Beweis dafuer, dass das kleine Alpenland deutlich mehr zu bieten hat als Nummernkonten, Uhren und Messer. Konsequenterweise habe ich mir auch direkt mal eine Auswahl auf den iPod kopiert, damit auch die Versorgung in Abwesenheit des Computer sichergestellt ist.

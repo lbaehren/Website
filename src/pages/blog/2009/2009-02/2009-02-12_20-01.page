@@ -1,0 +1,22 @@
+---
+title: "Doch nicht so viel Daten"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Thu, 12. February 2009 -- 20:01_
+
+Im Anschluss an eine Diskussion heute Mittag (und eine darin von Michael gemachte Bemerkung) habe ich gerade einmal nachgeschaut, wieviel Daten in Form von Bildern ich mit nach Hause gebracht habe:
+
+~~~~
+117M    Nikon Transfer/2009-02-09 Nijmegen
+294M    Nikon Transfer/2009-02-10 ASTRON
+3.6G    Nikon Transfer/2009-02-10 Processing School
+3.9G    Nikon Transfer/2009-02-11 Processing School
+1.5G    Nikon Transfer/2009-02-12 Processing School
+9.4G    Nikon Transfer/
+~~~~
+
+Ok, die paar MB, welche ich noch vor meiner Abreise in den Norden hier in Nijmegen verschosse habe muesste man streng genommen wahrscheinlich aus der Rechnung nehmen, aber andererseits ist dies nur ein recht geringer Anteil. Wie deutlich an den Zahlen zu erkennen ist, habe ich noch nicht einmal eine Speicherkarte pro Tag verschossen, so dass sich allein schon aus diesem Grunde die Datenmengen in Grenzen halten. Darueber hinaus habe ich bereits in Dwingeloo kraeftig mit dem Aussortieren begonnen, denn schliesslich muss ich ja nicht Bilder durch die Gegend schleppen, bei denen ganz klar ist, dass sie nicht gelungen sind. Es scheint aber so, dass seit der Anschaffung des Drobo -- und der anschliessenden Aufruestung auf 4 TB offensichtlich die Ansicht Einzug gehalten hat, dass ich auch in dem entsprechenden Masse Daten poduzieren wuerde (was ja schliesslich nicht der Fall ist); festzuhalten ist in jedem Fall auch, dass alle selber geschossenen Bilder bisher noch nicht einmal auf dem Drobo liegen, sondern auf zwei als RAID0 aufgesetzten 750 GB USB Platten (was aber nicht bedeuten soll, dass dies auf laengere Dauer so bleiben wird).

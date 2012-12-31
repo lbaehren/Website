@@ -1,0 +1,44 @@
+---
+title: "Klappt so nicht"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Sun, 01. February 2009 -- 10:15_
+
+Wo ich jetzt -- so wie ich  mir dies ja vorgenommen hatte -- mit den Arbeiten an der `Beamformer` Klasse begonnen habe, musste ich erst noch einmal eine Kleinigkeit in der `casacore` Dokumentation nachschauen. Worum es mir ja ging war noch einmal die Details darueber nachzulesen, wie ich die Idee bezueglich des internen Zugriffs auf die Werte mit den geometrischen Delays am besten umsetzen koennte. Alle Klassen in der Vererbungskette sind so aufgesetzt, dass die von den Eingabeparametern abgeleiteten Werte prinzipiell gebuffert werden koennen, so dass nach einmaliger Berechnung ein wiederholte Verwendung ohne weiteren Rechenaufwand moeglich ist. Geht es rein um das interne Abspeichern, dann ist dies recht einfach zu implementieren, allerdings beim `Beamformer` ist ein wenig mehr als nur dies noetig: mittels einer `processData()` Methode lassen sich aufeinanderfolgende Bloecke von Daten verarbeiten -- etwas das man moeglichst effizient loesen will, so dass eine wiederholte an dieser Stelle, ob die Gewichte gebuffert sind, an dieser Stelle alles andere als effizient waere. Die Idee war daher, dass der `Beamformer` grundsaetzlich ueber ein internes Array mit den Werten verfuegt, dieses aber nicht in jedem Fall explizit gesetzt werden muss: werden zum Beispiel die geometrischen Wichtungsfaktoren zwischengespeichert, dann reicht lediglich ein Verweis auf eben jene Daten -- ist dies nicht der Fall dann muessen die Gewichte angefragt und intern abgelegt werden. An  dieser Stelle ist es dann doch ganz gut, dass ich mich schon ziemlich lange mit dem Gebrauch der in `casacore` befasse, denn so konnte ich mich daran erinnern, dass es eine Moeglichkeit gibt, ein Array als Reference auf ein anderes Array aufzusetzen:
+
+> An Array may be standalone, or it may refer to another array, or to part of another array (by refer we mean that if you change a pixel in the current array, a pixel in the referred to array also changes, i.e. they share underlying storage).
+
+Da ich mir ueber die Details nicht mehr so ganz im Klaren war, habe ich noch einmal in der Schnittstellen-Dokumentation nachgeschaut, damit ich denn auch genau weiss, wie ich die Dinge zu implementieren habe. Auch wenn ich die gesuchte Information gefunden habe, so bin ich doch auch wieder auf einen Beleg dafuer gestossen dass man die Dokumentation mit Vorsicht geniessen muss: wie mir schon in der Vergangenheit mehrfach aufgefallen war, sind die aufgefuehrten Programmierbeispiele mit diversen Fehlern gespickt, so dass man erst einmal eine Debugging-Session einlegen muesste, ehe man die Beispiele ans Laufen bekommt.
+
+~~~~
+IPosition lengths(3,10,20,30);
+Array<Int> ai(lengths);           // A 10x20x30 cube
+Cube<Int> ci;
+//...
+ci.reference(ai1);                // ci and ai now reference the same
+                                  // storage
+ci(0,0,0) = 123;                  // Can use Cube indexing
+ci.xyPlane(2) = 0;                //     and other member functions
+IPosition zero(3,0,0,0);
+assert(ai(zero) == 123);          // True because ai, ci are references
+~~~~
+
+Zugegeben nur eine Kleinigkeit in diesem Fall, welche sich auch recht schnell finden laesst: die Referenz auf ein Array `ai1` wird fehlschlagen weil dieses nicht deklariert wurde, sondern nur ein Array mit Namen `ai` -- fuer den Compiler ist dies aber schon genug um an der Stelle abzubrechen. Aber gut, wenn man einmal von diesem Sachverhalt absieht, dann habe ich damit wenigstens noch die Information, welche ich brauche, um die Interna des `Beamformer` aufzusetzen -- je nach dem ob die sich aus der geometrischen Anordnung ergebenden Gewichte zwischengespeicher werden oder eben nicht:
+
+~~~~
+/*
+  In case the geometrical weights are buffered, we simply set up a reference
+  to the array storing the values. If no buffering of the geometrical weights
+  is done, we retrieve the values and store them here.
+*/
+if (bufferWeights_p) {
+  bfWeights_p.reference(weights_p);
+} else {
+  bfWeights_p.resize (GeomWeight::shape());
+  bfWeights_p = GeomWeight::weights();
+}
+~~~~

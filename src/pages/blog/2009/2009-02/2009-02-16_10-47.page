@@ -1,0 +1,11 @@
+---
+title: "Gute Entscheidung"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Mon, 16. February 2009 -- 10:47_
+
+Also ich wuerde schon sagen, dass es in der Tat eine gute Entscheidung war, bereits am gestrigen Abend zurueck nach Nijmegen zu fahren. Auf diese Weise habe ich mich heute Morgen bereits einigermassen ausgeschlafen direkt an den Schreibtisch setzen koennen um zu arbeiten. Sicher, da waere immer noch die Moeglichkeit gewesen, einen Teil davon im Zug zu erledigen, aber ich glaube schon, dass es auf diese Weise jetzt schon besser war; so habe ich nichts, was mich von meiner Morgenroutine abbringt und meine Gedankengaenge unterbricht. Teil dieses Vorganges ist es (fast schon natuerlich), dass ich zunaechst einmal bei mir zuhause am Schreibtisch arbeite, ehe ich mich auf den Weg zur Uni mache; da ich recht gute Chancen habe, endlich den Fehler zu finden, welcher zu einem Crash fuehrt wenn ich die `Skymapper::processData()` Methode aufrufe, werde ich erst einmal noch schauen, dass ich dies unter Dach und Fach kriege -- erst dann werde ich mich auf den Weg machen.
