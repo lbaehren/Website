@@ -185,11 +185,10 @@ endif (script_blog_recent AND PROJECT_SOURCE_DIR_BLOG)
 ## Publish the website online
 
 add_custom_target (online
-  COMMAND rsync -avE --delete ${INSTALL_PREFIX_WEBSITE}/* bahren@dop131:/export/home/bahren/public_html
+  COMMAND rsync -avE --delete ${INSTALL_PREFIX_WEBSITE}/* /Volumes/webdav/webseiten
   WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
   COMMENT "Publishing website - uploading generated pages ..."
   )
-add_dependencies (online Website)
 
 ## ==============================================================================
 ##
