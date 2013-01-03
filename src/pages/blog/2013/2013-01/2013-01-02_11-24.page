@@ -1,0 +1,11 @@
+---
+title: "Upload laeuft"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Wed, 02. January 2013 -- 11:24_
+
+Nachdem ich nun die Kontaktdaten fuer die neue Website habe, macht es ja schon Sinn einmal auszuprobieren, ob ich denn auch wirklich den benoetigten Zugriff bekomme. Folgerichtig habe ich mir eben mal den WebDAV Zugang angeschaut und eingerichtet. Nach derFreischaltung liess sich das Verzeichnis auf dem Server ohne Probleme auf meinem Rechner einbinden, so dass mittlerweile auch schon das erste Update meiner Website laeuft. Erwartungsgemaess dauert dies im ersten Durchlauf ein wenig laenger -- weil ich ja alles komplett neu hochladen muss -- aber sobald dies erst einmal erledigt ist, sollte es mit den inkrementellen Updates deutlich schneller gehen.

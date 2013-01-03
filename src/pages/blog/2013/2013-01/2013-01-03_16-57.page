@@ -1,0 +1,17 @@
+---
+title: "Firefox Proxy settings"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Thu, 03. January 2013 -- 16:57_
+
+Naja, irgendwann werd ich es hoffentlich noch lernen, in welcher Weise ich [Firefox](http://www.mozilla.org/firefox) konfigurieren muss, damit ich Dinge vorgegaukelt bekommen, welche nicht der Wahrheit entsprechen. Gestern Abend hatte ich ja von zuhause aus das Problem, dass mir fuer die neue Adresse immer noch eine Fehlermeldung angezeigt wurde, waehrend die Seiten schon laengst zugaenglich waren. Als ich dann einfach mal einen anderen Web-Browser probiert habe, tauchte mit einem Male alles so auf, wie ich dies erwartet hatte. Abhilfe liess sich dann dadurch schaffen, dass ich den Cache von Firefox aufgeleert habe, so dass ein Reload notwendig wurde. Wo ich dann aber schon einmal dabei war, habe ich noch schnell getestet, wie es denn mit einem Update der Seiten aussieht: wenn ich Aenderungen online stellen -- in den meisten Faellen wohl ein neuer Blog-Eintrag -- dann waere es ja schon ganz nett, wenn diese Updates auch zu sehen sind. Abgesehen von einer Kleinigkeit (welche mich beim Synchronisieren noch irritiert) war es kein Problem Aenderungen vorzunehmen und diese dann online zu setzen.
+
+... dementsprechend duerfte wohl nachvollziehbar sein, dass ich doch ein wenig ueberrascht war, als heute Morgen (beim Zugriff hier an von der Uni aus) wieder der gleiche Warnhinweis auftauchte, welchen ich bereits gestern mehr als genug bewundern musste. Um nicht gleich dem Provider die Schuld in die Schuhe zu schieben, habe ich die gleiche Vorgehensweise wie gestern eingeschlagen... leider aber ohne Erfolg. Nach einer Weile ist mir dann aber eingefallen, dass es neben dem (lokalen) Cache ja noch eine andere Einstellung gibt, welche potentiell dazu fuehren kann, dass veraltete Informationen vom Browser zurueckgeliefert werden:
+
+![Firefox proxy settings](/blog/2013/2013-01/2013-01-03_firefox_proxy_config.png)
+
+Ich bin mir eigentlich ziemlich sicher, dass ich die Settings nicht auf "Auto-detect proxy settings for this network" oder "Use system proxy settings" gesetzt habe; kann natuerlich sein, dass es sich dabei um die Defaults von Firefox handelt, mir diese bisher aber noch nie als hinderlich aufgestossen sind. Erklaeren kann ich mir das unterschiedliche Verhalten dann durchaus schon: wenn einfach kein Proxy Server im lokalen Netzwerk vorhanden oder eingestellt ist, dann gibt es auch keine Instanz, welche einem hier in die Quere koemmen koennte. Werden die Verbindungen nach draussen aber serverseitig ueber einen Proxy geleitet, dann kann dies durchaus als Erklaerung dafuer hinhalten, dass ich in Abhaengigkeit vom Verbindungsort unterschiedliche Resultate zu sehen bekomme (was natuerlich unerwuenscht ist). Das war auch jeden Fall noch einmal eine gute Leere, mir die Einstellungen im Browser ein wenig genauer anzuschauen -- wiederholen muss ich die Prozedur jetzt allerdings noch einmal fuer alle anderen Installationen, welche ich bei mir auf dem Rechner installiert habe.
