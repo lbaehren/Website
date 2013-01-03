@@ -27,6 +27,7 @@
 ##
 ## ==============================================================================
 
+varVerbose=no
 varEditor=emacs
 
 ##____________________________________________________________________
@@ -38,6 +39,7 @@ varMonth=`date "+%m"`
 varDay=`date "+%d"`
 varHour=`date "+%H"`
 varMinute=`date "+%M"`
+var_second=`date "+%S"`
 varDate=`date "+%a, %d. %B %Y"`
 varTime=`date +%R`
 
@@ -55,12 +57,6 @@ varFileTemp=${varEntry}.tmp
 varWebgenRoot=/Users/lars/Sites/larsbaehren.com
 varWebgenBlog=$varWebgenRoot/src/pages/blog
 
-## Directories for Dokuwiki
-varDokuwikiRoot=/Users/lars/Sites/wiki
-varDokuwikiBlog=$varDokuwikiRoot/data/pages/blog
-
-var_dirMeta=$varDokuwikiRoot/data/meta/blog
-var_dirYear=$varDokuwikiBlog/$varYear
 var_dirMonth=$var_dirYear/$varYearMonth
 var_fileIndex=$var_dirYear/`date "+%B" | tr A-Z a-z`_$varYear.txt
 var_fileEntry=$var_dirMonth/$varEntry.txt
@@ -69,6 +65,26 @@ var_pathPage=blog:$varYear:$varYear-$varMonth:$varEntry
 
 ## Output files
 varFileWebgen=$varWebgenBlog/$varYear/$varYearMonth/${varEntry}.page
+
+## ==============================================================================
+##
+##  Data summary
+##
+## ==============================================================================
+
+case $varVerbose in
+    yes)
+      echo "-- Directory meta   = $var_dirMeta"
+      echo "-- Directory year   = $var_dirYear"
+      echo "-- Directory month  = $var_dirMonth"
+      echo "-- File month index = $var_fileIndex"
+      echo "-- File entry       = $var_fileEntry"
+      echo "-- File changes     = $var_fileChanges"
+      echo "-- File wiki path   = $var_pathPage"
+    ;;
+    *)
+    ;;
+esac
 
 ## ==============================================================================
 ##
@@ -151,13 +167,20 @@ $varEditor $varFileTemp
 
 cat $varFileTemp >> $varFileWebgen
 
-## Add link to new entry to the index file
-
-echo "  * [[.$varYearMonth:$varEntry|$varTitle]] ($varDate - $varTime)" >> $var_fileIndex
-
 ##_______________________________________________________________________________
 ## Post-editing cleanup of the directory; remove backup files created by emacs
 
+rm -f $var_dirYear/*~
 rm -f $var_dirMonth/*~
 rm -rf $varFileTemp
 rm -rf $varFileTemp~
+
+##_______________________________________________________________________________
+## Update index files
+
+## Change into the root directory for the sources of the blog pages ...
+cd $varWebgenBlog
+
+## ... and run the index generation script on the directory with the previously
+##     created entry.
+$varWebgenRoot/src/code/scripts/blog_index $varYear
