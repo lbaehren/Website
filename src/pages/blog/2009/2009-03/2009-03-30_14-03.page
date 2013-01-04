@@ -1,0 +1,13 @@
+---
+title: "Start in die TBB busy week"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Mon, 30. March 2009 -- 14:03_
+
+Wie man aus dem Namen vielleicht schon ablesen kann duerfte es fuer die naechsten Tage recht geschaeftig werden, so dass ich auch noch nicht weiss, wieviel Zeit mir eigentlich noch fuer andere Dinge bleibt. Dennoch wollte ich aber doch schauen, dass ich zumindest ein wenig beibehalten kriege darueber zu berichten, was hier bei [ASTRON](http://www.astron.nl) so vor sich geht.
+
+Seit 11:00 Uhr heute Morgen befinden wir uns nun gewissermassen offiziell in der Busy Week; fuer mich bedeutet dies, dass ich mich erwartungsgemaess fuer gleich ein halbes Dutzend verschiedener eingeteilt finde, welche a) entweder niemand anders uebernehmen kann oder b) ich niemand anderem in die Haende geben wuerde (ich lasse Kalpana sicherlich nicht an meinen Beamformer!). Derzeit probiere ich die Data Access Library auf dem Cluster in Groningen ans Laufen zu bringen, denn wenn wir observieren und Daten wegschreiben wollen muss die Software auch zur Verfuegung stehen.

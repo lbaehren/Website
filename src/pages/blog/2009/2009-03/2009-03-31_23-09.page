@@ -1,0 +1,11 @@
+---
+title: "Und noch eine Sitzung"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Tue, 31. March 2009 -- 23:09_
+
+Da dachte ich doch dass ich mich im Anschluss ans Abendessen in mein Buero zurueckziehen koennte um noch ein wenig in Ruhe an dem Support fuer die Daten aus dem Beamformer (diesmal aber dem systemseitigen, nicht meinem) arbeiten koennte, um einen Teil der Probleme zu beheben, welche im Laufe des spaeten Nachmittages noch sichtbar geworden sind. Sonderlich weit bin ich damit allerdings nicht gekommen, weil Kalpana noch hier bei mir auftauchte, um mich zu der Konvertierung der Beam-Pointings zu fragen; da ich ich so ziemlich der einzige bin, welcher sich sowohl mit dem zugrundeliegenden Dateiformat, dem CR-Tools Beamformer und den benoetigten Konvertierungsroutinen in casacore auskennt, war ich wieder einmal die natuerliche Anlaufquelle. Ich wuerde aber mal sagen, dass es in diesem Fall garnicht einmal so schlimm war, weil die Problemstellung letzten Endes doch gut in das reinpasste, womit ich derzeit eh beschaeftigt war und bald weiter sein werde: irgendwie muss dafuer gesorgt werden, dass diverse Groessen zwischen Referenzsystemen hin- und hertransformiert werden koennen. Im vorliegenden Fall sollten ueber die von CEP ausgeworfenen Daten die Information ueber den urspruenglichen Beam vorliegen, so dass diese Information gebraucht werden sollte um auch meinen Beamformer zu konfigurieren; womit man es da aber zu tun hat ist z.B. das Koordinaten von J2000 nach einem lokalen AZEL System transformiert werden. Das fuer sich ist keine unmoegliche Sachen (und derartige Spiele habe ich auch schon gemacht), aber es sind doch einige Schritte noetig um alles korrekt ans Laufen zu bringen. Worauf es also hinausgelaufen ist war, dass ich eine kurze Testroutine geschrieben habe, welche durch alle benoetigten Schritte durchlaeuft, so dass a) Kalpana ein Beispiel hat, wie man dies von Grund auf schreiben wuerde, b) ich aber auch ueber den Grundstock verfuege, um einen einfach zu benutzenden Wrapper zu schreiben, welche einen guten Teil der benoetigten Gymnastik erledigt. Was die Implementierung betrifft werde ich aber wohl noch bis morgen warten, da ich heute Abend ja noch ein paar andere Kleinigkeiten auf dem Programm stehen habe...

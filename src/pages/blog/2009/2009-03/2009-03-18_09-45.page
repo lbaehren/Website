@@ -1,0 +1,11 @@
+---
+title: "Nach laengerer Abwesenheit"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 18. March 2009 -- 09:45_
+
+... im Norden der Niederlande, hat es mich jetzt mal wieder nach **Zwolle** verschlagen. Nachdem ich zweimal in Folge meinen Abstecher nach Dwingeloo abgesagt habe, wurde es diese Woche doch mal wieder Zeit, dass ich mich bei ASTRON blicken lasse. Die Reise bis hier hin habe ich noch recht gut dafuer nutzen koenne noch ein wenig an der Stelle weiterzumachen, wo ich letzte Nacht aufgehoert habe: nachdem ich mich laenger als beabsichtigt mit der Installation der Python Pakete herumgeschlagen habe, ist es mir vor dem Einschlafen letzte Nacht noch gelungen die entscheidenden Fehler zu beseitigen. Ich erwarte nicht unbedingt, dass die nun gefundene Loesung sofort auf allen Rechnern laeuft, aber ich denke mal die Ausgangsposition ist ausreichend gut, so dass sich die noch fehlenden Anpassungen mit vertretbarem Aufwand anbringen lassen. Mir soll dies ganz recht sein, weil ich auf diese Weise mehr Zeit habe mich um das Debugging des CR-Tools Imager zu kuemmern und nach dem Rechner in meinem Buero zu schauen (welcher seit einer Weile Probleme mit der Partition hat, auf welcher mein Home-Verzeichnis abgelegt ist). Zunaechst aber steht nach dem Eintreffen das _LOFAR Status Meeting_ auf dem Programm -- kann sicherlich nicht schaden wieder mal ein wenig darueber zu erfahren, was sonst noch so alles geschieht.
