@@ -1,0 +1,23 @@
+---
+title: "Rails upgrade"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Thu, 03. January 2013 -- 18:42_
+
+Ich weiss, gerade was Upgrades betrifft gehen die Meinung durchaus auseinander -- als ich aber heute die Meldung im [Heise Newsticker](http://www.heise.de/newsticker) gelesen habe, musste ich doch direkt wieder an die Diskussion denken, welche wir noch im Dezember gefuehrt haben. Unter dem Titel [Lücke in Ruby on Rails erlaubt SQL-Injections](http://www.heise.de/newsticker/meldung/Luecke-in-Ruby-on-Rails-erlaubt-SQL-Injections-1776279.html) liest man:
+
+> Die Entwickler des freien Frameworks Ruby on Rails warnen vor einer Lücke in den Versionen 3.0, 3.1 und 3.2, durch die ein Angreifer beliebigen SQL-Code ausführen kann. Der Fehler befindet sich im Modul `ActiveRecord` und wurde inzwischen durch die RoR-Versionen 3.0.18, 3.1.9 und 3.2.10 behoben. Anwender, die keine aktuelle Version installieren dürfen oder wollen, können Patches verwenden, die es auch für die alte Version 2.3 gibt.
+
+Folgt man den in den Artikel eingebetteten Links, so gelangt man unter anderem zur Mitteilung der der Rails Entwickler fuer die veroeffentlichten Patches:
+
+> Rails versions 3.2.10, 3.1.9, and 3.0.18 have been released. These releases contain an important security fix. It is recommended that all users upgrade immediately.
+
+Schaut man sich darueber hinaus die Beschreibung der Sicherheitsluecke ein wenig genauer an, dann ist recht klar, warum die Empfehlungen recht deutlich ausfallen:
+
+> Please note that only the 3.1.x and 3.2.x series are supported at present.  Users of earlier unsupported releases are advised to upgrade as soon as possible as we cannot guarantee the continued availability of security fixes for unsupported releases.
+
+Gut, nun ist es (nicht mehr) an mir vorzuschreiben, wie sich die Weiterentwicklung beim [prometheus Bildarchiv](http://www.prometheus-bildarchiv.de) zu gestalten hat, aber fuer mich ist dies einfach mal wieder eine Erinnerung daran, dass das Abkoppeln von den in einer recht lebendigen Community stattfindenden Entwicklungen es nicht nur schwerer macht sich wieder einzuklinken, je laenger man abseilt, sondern es auch immer schwerer faellt von Sicherheits-Patches zu provitieren (welche typischerweise ja nicht endlos nach zurueckportiert werden).
