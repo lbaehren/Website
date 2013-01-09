@@ -8,9 +8,4 @@ author: Lars Baehren
 
 _Wed, 08. April 2009 -- 17:44_
 
-
-
 Also so langsam geht mir das aber auf die Nerven: aus einem mir noch nicht ganz ersichtlichen Grunde spuckt der CR-Tools Imager nach wie vor noch Resultate aus, welche einfach nicht stimmen koennen. Nachdem ich letzte Woche -- mit leichter Hilfe von Sef -- ja die komplette Abhaengigkeitsleiter der Beamformer Klasse durchgegangen bin, sieht es nun danach aus, die Werte, mit welchen die Daten intern zum synchronisieren multipliziert werden -- nicht in Ordnung sind. Nachdem ich ja zunaechst den Verdacht hatte, dass irgendetwas entlang der Frequenzachse schief geht, sieht es nun ganz danach aus, als wuerden die Werte entlang der Himmelskoordinaten nicht richtig gesetzt. Auch wenn ich ja gewillt bin viele merkwuerdige Dinge zu glauben, dann aber sicherlich nicht, dass die Delays, Phasen und Gewichte alle fuer einen Cut orthogonal zur Frequenzachse identisch sind -- das kann einfach nicht sein... es sei denn irgendwo in den fundamentalen Routinen wird irgendetwas falsch berechnet. Aus diesem Grunde bin ich also derzeit noch einmal dabei mich Stueck fuer Stueck durch die Zwischenschritte zu arbeiten um zu sehen, wo welche Werte generiert werden und ob diese ok sind; das ist nicht unbedingt eine sonderlich spannende und angenehme Beschaeftigung, aber leider ist dies die einzige Moeglichkeit der Sache in vernuenftiger Weise auf den Grund zu gehen.
-
-
-~~DISCUSSION~~
