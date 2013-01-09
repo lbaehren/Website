@@ -1,0 +1,16 @@
+---
+title: "So schnell wie noch nie"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Sat, 11. July 2009 -- 12:20_
+
+
+
+Die Vorbvereitungen haben sich doch ausgezahlt: die noch einmal notwendig gewordene [[2009-07-10_12-06|Neuinstallation des Systems]] ist so schnell ueber die Buehne gegangen, wie dies bisher noch nie der Fall gewesen ist. Nach dem Telefonat mit Julia gestern Abend habe ich das MacBook Pro platt gemacht, damit ich die Formatierung so waehlen konnte, dass ich auch //Capture NX// installiert bekomme. Waehrend die Installation von der DVD lief -- daran laesst sich ja nichts aendern, sondern dies muss man einfach abwarten -- habe ich parallel schon einmal damitbegonnen mit dem PowerBook die Software Pakete einzusammeln, welche ich anschliessen noch installieren wollte; auch wenn ich natuerlich grundsaetzlich ein grosser Fan des von Source bauen bin, so muss dies bei Programmen wie //Firefox//, //Skype//, etc. nicht sein (mal davon abgesehen, dass man auch garnicht fuer alle an den Quellcode kommt). Nachdem OS X installiert war, musste ich noch -- weil sich dies leider nicht direkt auswaehlen liess -- Xcode aufspielen, weil Apple ansonsten leider keinen Compiler bereitstellt (das ist eine Policy, welche mir zugegebenermassen sehr befremdlich ist -- wer liefert den ein Betriebssystem ohne einen C/C++ Compiler...?).
+
+
+~~DISCUSSION~~

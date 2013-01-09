@@ -1,0 +1,27 @@
+---
+title: "Noch mehr Mac Probleme"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Tue, 07. July 2009 -- 17:01_
+
+
+
+Also mittlerweile sollte ich mir wirklich die Frage stellen, ob mein MacBook Pro nicht so langsam am Ende des nuetzlichen Lebenszyklus angekommen ist; knapp zwei Jahre in meinem Besitz scheinen wohl auszureichen um den Rechner so weit abzunutzen, so dass eine Neuanschaffung mehr und mehr als Option in Erscheinung tritt. 
+
+Was sich ja noch vor meiner Abreise nach [[http://www.graspop.be|Graspop]] aufgetan hatte -- und was letzten Endes ja auch dazu fuehrte, dass ich mein altes PowerBook wieder ausgepackt habe -- war dass sich Mousepad und Mouse-Button sehr merkwuerdig verhielten. Nicht nur das, sondern auch bei externer Tastatur und Maus hatte ich zunehmend damit zu kaempfen, dass sich der Zeiger irgendwo verhakte und kaum noch bewegen liess. Wie sich nach einigem Hin-und-her-Probieren herausstellte lag dies an der Batterie; aus einem mir immer noch nicht erfindlichen Grunde hat sich deren Oberflaeche so stark deformiert, dass die Kontakte fuer Trackpad und Maus eingedrueckt werden, was dazu fuehrt dass der Rechner andauernd der Meinung ist die Maus sei aktiviert (was natuerlich nicht der Fall ist). Um also noch arbeiten zu koennen muss ich also die Batterie entfernen und den Rechner dann ueber den Power-Adapter betreiben; der grosse Nachteil davon ist natuerlich, dass der Rechner nicht mehr gegen eine Unterbrechnung der externen Stromversorgung gesichtert ist -- egal ob nun durch einen allgemeinen Stromausfall oder durch ein versehentliches Herausziehen des Steckers. Folgerichtig habe ich gestern Nachmittag direkt noch einen Abstecher zum lokalen Apple-Haendler eingelegt; dies hat mir bedauerlicherweise nicht sonderlich viel gebracht, weil man dort von keiner Aktion zum Ersetzen der Batterien wusste und mir erklaert hat dass ich zum Ersetzen des Akku eh komplett mein Laptop plus des Adapters einschicken muesste... eine Vorstellung welche ich nicht unbedingt toll finde. Als Alternative dazu bliebe dann allerdings noch mich zunaechst einmal mit dem Apple Support in Verbindung zu setzen, um auf diese Weise herauszufinden was getan werden kann und wie weit dies ueber den //AppleCare Protection Plan// abgedeckt ist.
+
+Da ich in der Zwischenzeit ja auf den Rechner angewiesen bin, habe ich mich heute ncoh daran begeben der Frage nachzugehen, warum das System derart langsam ist; wie ich letzte Nacht beim Inspizieren der Bilder vom Wochenende wieder einmal feststellen musste, verhaelt sich der Rechner deutlich traeger als ich dies angesichts der sichtbaren Systemauslastung erwarten wuerde. Als einer der Vorbeitungsschritte endlich mal OS X "Tiger" zu installieren habe ich also damit begonnen alles so aufzusetzen, dass ich nicht nur alle persoenlichen Daten hinueberretten kann (was ja grundsaetzlich durch das Backup abgedeckt ist), sondern auch die in irgendwelchen internen Formaten abgelegten Informationen (z.B. was im Adressbuch steht) mitzunehmen. Prinzipiell gaebe es natuerlich die Moeglichkeit nur die grundlegenden System-Komponenten zu erneuern, aber um wirklich alles auf Null zu setzen will ich alles platt machen, so ich ein klein wenig mehr Aufwand betreiben muss. Gluecklicherweise habe ich bisher aber schon einige Schritte unternommen, welche es mir ermoeglichen alle wesentlichen auf dem Rechner benoetigten Komponenten aus zwei Quellen wiederherzustellen: so brauche ich grundsaetzlich eigentlich nur das SVN Repository (in welchem sich nicht nur Source Code sondern auch Dokumente befinden) und die Wiki. Um diese Vorgehendweise auch konsequent zu verfolgen hatte ich jetzt allerdings noch ein paar Kleinigkeiten noetig:
+
+  - Die Installation von //Fink// unter ''/sw'' muss sich aus dem Repository herstellen lassen.
+  - Eintraege im Adressbuch muessen in einem platformunabhaengigen Format in das Repsitory eingecheckt werden.
+
+Die automatisierte Fink Installation lasse ich gerade noch laufen; sobald dies unterwegs ist, werde ich mich noch um die anderen Details kuemmern.
+
+... ach ja, ich sollte trotzdem nicht ganz vergessen einigermassen rechtzeitig nach Hause zu verschwinden, weil ich nach der laengeren Abwesenheit meinen doch sehr leeren Kuehlschrank erst einmal wieder ein klein wenig auffuellen muss. Da ich jetzt endgueltig beschlossen habe meinen Trip nach ASTRON in dieser Woche abzusagen -- kommt einfach von all den Sachen, welche ich hier vor Ort erledigen will/muss guenstiger -- kann ich ja nicht einfach die Vorraete im Gaestehaus pluendern, sondern muss mich entsprechend selber versorgen.
+
+
+~~DISCUSSION~~

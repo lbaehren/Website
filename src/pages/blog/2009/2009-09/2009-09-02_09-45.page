@@ -1,0 +1,37 @@
+---
+title: "Reisen und Programmieren"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 02. September 2009 -- 09:45_
+
+
+
+Na da bin ich ja doch ganz froh, dass mir der Bahnhof hier in **Zwolle** waehrend der langen Abwesenheit nicht ganz fremd geworden ist. Ok, was das Umsteigen selber betrifft, so gibt es da nichts sonderlich kompliziertes zu verlernen, denn schliesslich faehrt der Anschluss ja einfach nur auf der gegenueberliegenden Seite des Bahnsteiges los.
+
+Wovon ich diesmal aber endlich wieder Gebrauch gemacht habe ist unterwegs noch ein wenig zu programmieren. Nachdem ich Montag und Dienstag ja schon wieder eingstiegen bin (was ich aber immer noch mehr als ein Warmlaufen bezeichnen wuerde), so kommen heute dann auch wieder die Beitraege, welche wirklich neu sind So bin ich jetzt endlich einmal den Sachverhalt angegangen, dass sich die Diskussionen ueber die Metadaten letzten Endes auch im Code der DAL wiederfinden muss. Da ich ja seit einiger Weile die Verantwortlichkeit dafuer uebernommen habe, sollte ich also schauen, dass ich da mit einer brauchbaren Loesung aufkommen kann, welche bei der zukuenftigen Arbeit hilft. Auch wenn ich schon eine recht vernuenftige Vorstellung davon habe, wie sich die Probleme angehen lassen, so habe ich eben sicherheitshalber mal noch eine Mail an die vornehmlich Betroffenen geschrieben, so dass ich auf diesem Wege noch einmal Rat einholen kann.
+
+<code cpp>
+    enum Name {
+      /************************************************************************
+       * Common attributes to be attached to the root group of every data-set
+       ************************************************************************/
+      //! LOFAR group type (mostly applies to HDF5 data-sets)
+      GROUPTYPE,
+      //! Name of the file/data-set
+      FILENAME,
+      //! Type of the file/data-set
+      FILETYPE,
+      //! File creation date
+      FILEDATE,
+      //! Name of the telescope
+      TELESCOPE,
+</code>
+
+Die wesentliche Idee ist es, alle Attribute in einer globalen Liste zu sammeln, so dass sich auf diese Weise auch ein wenig buchhalten laesst. Darueber hinaus ist mir wieder eine Kleinigkeit in den Sinn gekommen, deren praktische Implikationen die meisten wohl nicht voll und ganz beruecksichtigen: auch wenn wir als primaeres File-Format HDF5 verwenden werden, so ist doch geplant fuer einen Teil der Datenprodukte auch eine FITS-Variante zur Verfuegung zu stellen. Dies heisst dann aber auch, dass die Namen der Attribute von einer Konvention in eine andere uebertragen werden muessen (da FITS ja nur acht Zeichen pro Keyword ID versteht, HDF5 aber nicht unter dieser Beschraenkung leidet); folgerichtig muessen in der DAL auch Vorkehrungen dafuer getroffen werden, dass eine Uebersetzung in beide Richtungen moeglich ist (zumindest swweit dies Sinn macht).
+
+
+~~DISCUSSION~~

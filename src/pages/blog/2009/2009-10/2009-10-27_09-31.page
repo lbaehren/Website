@@ -1,0 +1,31 @@
+---
+title: "Wenn der Rechner nicht mehr will"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Tue, 27. October 2009 -- 09:31_
+
+
+
+... dann wird es leider ein wenig schwer, mit den Eintraegen den laufenden Ereignissen zu folgen. Als ich am Donnerstag Nachmittag unterwegs nach Bonn war, hat mich meine MacBook Pro ein weiteres Mal auf eine weniger schoene Art und Weise ueberrascht: waehrend ich bis Venlo noch recht produktiv arbeiten konnte, war nach dem Umsteigen in den Anschlusszug (welchen ich dazu auch noch verpasst habe) dann Schluss. Da ich der Schlaffunktion ja nicht mehr so ganz traue, habe ich den Rechner also vor dem Einfahren in den Bahnhof ausgeschaltet -- als ich ihn spaeter dann wieder aus dem Rucksack herausgeholt habe, war das Gehauese gluehend heiss (was ja nie ein gutes Zeichen ist). Als ich den Monitor hochklappe, musste ich feststellen, dass der Rechner nicht, wie erwartet, ausgeschaltet war, sondern lief! Warum dies der Fall war, ist mir nicht nachvollziehbar, vor allen Dingen weil ich mir ziemlich sicher bin, dass der Rechner vor dem Einpacken wirklich aus war; die einzige Variante, welche ich mir noch vorstellen kann ist, dass das Tuch, mit welchem die Tastatur abgedeckt ist, vor dem Zuklappen des Deckels so verrutscht ist, dass dadurch der Knopf zum Einschalten runtergedrueckt wurde. Wie sich herausstellte war dies aber noch nicht einmal das Schlimmste, denn zu meinem Leidwesen musste ich als naechstes feststellen, dass der Mac im Boot-Vorgang festhing und nicht vollstaendig starten wollte... da ich dies so vor Ort nicht weiter beheben konnte, war der Rechnereinsatz fuer den Rest der Reise damit zunaechst einmal gelaufen. 
+
+Am Freitag habe ich mich dann in Bonn hingesetzt um herauszufinden, ob ich dem Rechner nicht doch ein brauchbares Lebenszeichen entlocken kann; nach einigem Suchen habe ich es geschafft zumindest den Fehler mit dem nicht enden wollenden Bootvorgang zu finden... nur um dann anschliessend mit dem recht merkwuerdigen Verhalten konfrontiert zu werden, dass der Rechner sich mittem beim Booten mit einem Mal ausschaltete. Nachdem ich mir nun mal die Meldungen zeitens des Hochfahrens habe anzeigen lassen, bin ich endlich naeher an den Kern des Problems herangekommen:
+
+{{ dsc_20091025_234120.jpg?512 }}
+
+Allem Anschein nach schlug der Check des Filesystems, so dass sicherheitshalber alles weitere auf Eis gelegt wurde, um nicht eventuell weiteren Schaden zu verursachen. Was mir zu diesem Zeitpunkt leider ueberhaupt nicht geholfen hat war der Hinweis, den Rechner von der Installations-DVD zu starten und dann mit den Disk Utilities die Festplatte zu checken... da ich nun mal nicht staendig erwarte, dass mir das System unter den Fuessen zusammenbricht, schleppe ich die DVD nicht staendig mit mir herum. Um wenigstens noch irgendetwas vor der Rueckkehr nach Nijmegen machen zu koennen, bin ich auf die Idee gekommen, es doch mal ueber Gravis zu probieren (eine Installations-DVD sollten die ja schliesslich haben); wie sich aber herausstellt, ist der Laden kein empfehlenswerter Anlaufpunkt, wenn es um Support geht.
+
+Letzten Endes ist es also darauf hinausgelaufen, dass nicht nur mein geplanter Arbeitstag bei Julia am Schreibtisch ins Wasser gefallen ist, sondern auch dass komplette Wochenende ohne Rechner verlaufen musste, weil ich erst am Sonntag Abend (wo ich dann wieder zurueck in Nijmegen war) wieder eine Installations-DVD in der Hand hatte, mit welcher ich mich an die Reparatur begeben konnte. Das fuer sich genommen reichte allerdings nicht aus, denn auch die //Disk Utilities//, welche mit der Installations-DVD kommen, waren nicht in der Lage, den Fehler im File-System zu beheben. Angesichts der festgefahrenen Situation habe ich daher zu folgenden Massnahmen entschlossen:
+
+  - Komplette Festplatte loeschen
+  - Security Erase, also mehrfaches Ueberschreiben
+  - Wiederherstellung der Partition vom letzten //Time Machine// Backup.
+  - Abgleich der Daten, welche seit dem letzten //Time Machine// Backup gemacht wurden (das betrifft ungefaehr die Arbeit von einem halben Tag).
+
+Ich hoffe mal dass alles so glatt laeuft, wie ich mir dies vorstelle, damit ich am Mittwoch Morgen wieder mit dem MacBook die Reise nach Dwingeloo antreten kann...
+
+
+~~DISCUSSION~~

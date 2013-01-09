@@ -1,0 +1,29 @@
+---
+title: "64 vs. 32 bit"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Thu, 13. August 2009 -- 17:50_
+
+
+
+The two days at ASTRON mainly have been dedicated to straightening out build problems related to differences between 62 and 32 bit systems. This is an issue which has been creeping up on us for a while now, but it did not fully surface until the latest changes Alwin put into the code to deal with beamformed data and their conversion to a HDF5 data-set. One of the subtle changes was, to no longer use variable type ''long long'', but rather use ''int64_t''. While I understand the reasoning behind this, the mixed usage of the two types across different platforms has resulted in a number of build errors, which took some time to get out (though I would not want to claim everything is done perfectly by now -- I'd suspect that we will have further systems which throw errors).
+
+Looking at the problem a little bit closer, it turns out that the troubles originate from differences in the standard header-file ''stdint.h'', which -- depending on the platform -- defines different types of integers to be the same. As a consequence of this especially ''long'' and ''long long'' can yield different results, which of course can lead to trouble, if a certain minimum precision (or range) is to be expected. While on the one hand one could go changing all types to more standardized types -- such as ''int64_t'' -- this would mean considerable amount of work, potentially also weakening the stability of the code (at least until wrongfully carried out replacements are adjusted. Therefore for the time being I have decided to reused the pre-compiler instructions found in the standard header files, to be utilized in the DAL code as well:
+
+<code cpp>
+    //! Define an integer attribute.
+    bool setAttribute (std::string attrname, int64_t * data, int size=1 );
+#ifndef __WORDSIZE == 64
+    //! Define a long attribute.
+    bool setAttribute (std::string attrname, long * data, int size=1 );
+#endif
+</code>
+
+I would not go as far as to claim that this gets us rid of all the related problems, but at least one the standard test platforms I getting to build... though naturally it only will be a matter of time until the next problem is going to show up.
+
+
+~~DISCUSSION~~

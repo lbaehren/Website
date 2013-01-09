@@ -1,0 +1,20 @@
+---
+title: "Gute Bilanz"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Thu, 11. June 2009 -- 17:16_
+
+
+
+Als ich denke mal, dass ich - jetzt wo ich hier in **Zwolle** umsteige -- doch eine recht gute Bilanz der letzten zwei Tage vorweisen kann; die Reise nach ASTRON hat sich wieder einmal gelohnt und ich habe in der Tat einiges erledigt bekommen.
+
+Auf der einen Zeite waere da die Tatsache dass das LOFAR Users Forum nun Fahrt aufgenommen hat und einiges an Aktivitaeten darueber abgewickelt wird. Zum anderen ist es mir gelungen zusammen mit Alwin ein Problem zu loesen (oder zumindest den Kern des Problems zu finden), welches von der letzten "Pulsar Busy Week" uebergeblieben war; fuer den Rest bin ich jetzt zwar nicht mehr verantwortlich, aber gespannt auf den Ausgang bin ich dennoch. Darueber hinaus ist es mir gelungen einige nicht ganz unwesentliche Verbesserungen an Handhabung der Python Module vorzunehmen, welche mitunter gebraucht werden; auch wenn ich noch nicht alle Tests abgeschlossen habe, so sieht es doch ganz danach aus, als wuerde ich Komponenten wie die DAL endlich wieder ohne Probleme auf den relevanten Platformen bauen koennen.
+
+Was ich mir hingegen nicht anrechnen muss, war die eher peinliche Vorstellung, welche der Rest der Truppe aus Nijmegen am gestrigen Nachmittag abgegeben hat. Sowohl Michael als auch Ruud war ziemlich deutlich anzusehen wie wenig sie von den vorgelegten Ideen hielten einige grundelegende Elemente im Design der LOFAR Stationen durcheinanderzuwuerfeln. In solchen Situationen ist es doch immer wieder ganz gut, dass ich bei ASTRON nicht einfach nur in dem Order mit der Aufschrift "Nijmegen" abgelegt werde, sondern immer noch ueber eine eher mit ASTRON verbundene Stellung verfuege. Ich habe mich ja in der Vergangenheit schon mehrfach darueber ausgelassen, wie wenig konstruktiv so manche Vorgehensweise seitens der Aktiven in Nijmegen sein kann -- der gestrige Mittwoch war sicherlich kein Beispiel um zu einer Verbesserung des Eindrucks beizutragen. So kam es dann wohl auch, dass Michael und ich uns eine Weile spaeter eher kopfschuettelnd im Gaestehaus vorfanden, um das zuvor geschehene noch einmal Refue passieren zu lassen und einzuordnen; in solchen Situationen bin ich wirklich froh, dass ich an der technischen Seite des Projektes arbeite und nicht in die wissenschaftliche Machinerie eingebunden bin (vor allen Dingen einfach, weil mir dies eine gewisse Unabhaengigkeit von Leuten wie Heino verleiht, der ja doch eher dazu neigt andere anzutreiben... und dies nicht unbedingt zum positiven der Sache).
+
+
+~~DISCUSSION~~

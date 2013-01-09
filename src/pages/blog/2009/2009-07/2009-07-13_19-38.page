@@ -1,0 +1,22 @@
+---
+title: "Statt Bilder nachbearbeiten"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Mon, 13. July 2009 -- 19:38_
+
+
+
+... warte ich immer noch darauf, dass ich endlich wieder Zugriff auf die Daten auf meinem ersten Drobo kriege. Seit der Nacht von Samstag auf Sonntag befindet sich das Geraet in einem Modues, in welchem es die Daten intern umorganisiert um sie vor einem moeglichen Versagen einer der Festplatten zu schuetzen; wie ich mittlerweile in Erfahrung bringen konnte, ist die Dauer dieses Vorganges sehr davon abhaengig, was fuer Festplatten installiert sind und wie viele Daten sich aufdem Drobo befinden (mal von weiteren externen Faktoren abgesehen) -- drei Tage kann so ein Vorgang also mitunter schon dauern. Der wenig erfreuliche Nebeneffekt dieses Vorganges ist leider, dass ich in der Zwischenzeit nicht auf meine Daten zugreifen kann -- am wichtigste natuerlich die komplette Photo-Sammlung -- so dass ich ein wenig auf heissen Kohlen sitze. Andererseits sind die Daten so wichtig, dass ich in keinster Weise dem Drobo in den Weg kommen will -- wenn es sich schon bemueht meine Daten sicher zu halten, dann sollte ich nicht dazwischenpfuschen, denn schliesslich kann ich es mir nicht erlauben irgendetwas davon zu verlieren.
+
+Ok, fuer all diejenigen, welche jetzt immer noch nicht so den rechten Durchblick haben, hier vielleicht mal noch eine kurze Erklaerung. Eine der Besonderheiten des Drobo ist, dass es im Gegensatz zum einem RAID mit Festplatten verschiedener Hersteller und Typen arbeiten kann -- auf diese Weise laesst sich ein "Mix and Match" System aufbauen, welche sich je nach Bedarf und Verfuegbarkeit entsprechender Platten erweitern laesst (und dies im Laufenden Betrieb). Intern wird ein RAID-aehnliches Verfahren verwendet, um die Daten vor z.B. dem Ausfall einer Festplatte zu schuetzen; demzufolge ist es also moeglich im laufenden Betrieb eine Festplatte aus dem Gehaeuse zu ziehen und durch eine andere zu ersetzen. Der Maxime folgend, dass die Benutzung recht einfach gestaltet werden soll, gibt es keinerlei wer weiss wie komplizierte Anzeigen, sondern nur eine handvoll LEDs an der Vorderseite des Geraetes, welches den Zustand anzeigen.
+
+{{computing:storage:drobo_share.jpg?600}}
+
+Bei mir ist es nun so, dass sich mein erstes Drobo (auf welchem bisher ja noch meine komplette Photo-Sammlung lebt) seit dem Samstag Nachmittag in dem Zustand verharrt, bei welchem die LEDs gelb/gruen blinken; dass soll also heissen dass Drobo damit beschaeftigt ist die Daten intern so abzugleichen, dass sie geschuetzt sind. Wenn dies notwendig wird, dann ist dies natuerlich nicht unbedingt ein Vorgang welchen man in irgendeiner Weise unterbrechen oder stoeren moechte. Zwar hatte ich am Tag davor damit begonnen einen Teil der Daten -- vor allen Dingen Filme und Musik -- auf das zweite Drobo umzukopieren, aber es liegen immer noch knapp 2 TB auf den Festplatten. Waehrend ich anfangs noch mit den Daten arbeiten konnte, hat mich inzwischen ein wohl bekanntes Problem mit Mac OS X eingeholt, naemlich dass gerade bei der aktuellsten Version (10.5.7) ab und zu die USB Verbindung fallengelassen wird; waehrend das Drobo also nach wie vor munter daran arbeitet die Daten zu sichern, kann ich vom angeschlossenen Rechner aus auf nichts mehr zugreifen... folgerichtig ist also derzeit nichts mit Fotos bearbeiten.
+
+
+~~DISCUSSION~~

@@ -1,0 +1,24 @@
+---
+title: "Geht wieder"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Thu, 12. November 2009 -- 17:18_
+
+
+
+Das ist doch recht beruhigend, dass ich meinen so ueblichen Eintrag hier in **Zwolle** endlich wieder in der gewohnten Weise vornehmen kann; auch wenn dies nach aussen hin ja nicht zu sehen war, so gab es in der Zwischenzeit noch einmal eine Reihe von Problemen mit meinem Rechner, welche zu einigen Einschraenkungen gefuehrt haben.
+
+Seit einer Weile hatte ich damit zu kaempfen, dass einige Programmaufrufe einfach nicht mehr funktionierten: egal ob nun //Emacs// oder //open// -- alles was ich erhalten habe war eine Fehlermeldung der folgenden Art:
+<code bash>
+dyld: Symbol not found: __cg_jpeg_resync_to_restart
+  Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO
+  Expected in: /opt/local/lib/libJPEG.dylib
+</code>
+Auch wenn ich nach ein wenig Suchen einen Patch gefunden habe, musste ich heute wieder feststellen, dass damit immer noch nicht alle Probleme geloest wurden. Folgerichtig habe ich mich noch einmal auf die Suche begeben, um zu schauen, ob ich da nicht eine laengerfristige Loesung finden kann.  
+
+
+~~DISCUSSION~~
