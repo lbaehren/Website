@@ -1,0 +1,24 @@
+---
+title: "Way too unstable"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Tue, 07. April 2009 -- 09:57_
+
+
+
+It just happened again: ViewNX crashed on me while exporting RAW pictures to JPEG. Based on the experience from the past weekend I would have to say that this is happening way to often for my taste. Not that I have been dsoing something fancy of out of the ordinary:
+
+  - Start up ViewNX.
+  - Select the folder containing the pictures to work with.
+  - Enable selection based on numbered tags, only showing pictures scheduled for further editing.
+  - Add caption text to the EXIF description field of two pictures.
+  - Select both pictures and enter Export  to JPEG.
+ 
+ViewNX crashed even while writing the temporary file for the first picture! This can't be good and I sure can understand Michael's frustration with this behaviour. As for me I think it is time to get involved with one of the discussion boards at Nikonians, to raise a voice in this matter.
+
+
+~~DISCUSSION~~

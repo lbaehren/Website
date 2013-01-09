@@ -1,0 +1,13 @@
+---
+title: "Nervige Macken"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 22. April 2009 -- 09:45_
+
+Ok, nutzen wir den Zwischenstop in **Zwolle** endlich wieder einmal fuer ein klein wenig Tech-Talk...
+
+Auch wenn ich im Grossen und Ganzen doch recht zufrieden bin mit meiner kurz nac Weihnachten getaetigten Anschaffung eines iPod, so muss ich doch sagen, dass die Kombination iPod, [iTunes](http://www.apple.com/itunes/) und Mac OS auch nicht ohne ihre Probleme ist. Ich versuche zwar immer noch ein wenig herauszufinden, in wie weit die erfahrenen Probleme einfach damit zusammenhaengen, dass meine Apple Hardware doch einer ziemlich heftigen Nutzung unterliegt und nicht sonderlich geschohnt wird. Auch hatte ich ja [bereits festgestellt](2009-04-16_18-19.html), dass sich mein MacBook Pro einfach nicht mehr so fluessig verhaelt, wie ich dies gerne haette (oder auch aus der Vergangenheit gewohnt bin). Das Problem, mit welchem ich nun aber schon einige Male konfrontiert gewesen bin, ist dass a) der iPod beim Verbinden nicht erkannt wird oder aber b) fast umgehend wieder aus dem System geworfen wird; egal welche der beiden Varianten nun der Fall ist, dies fuehrt immer dazu dass der iPod sich noch in einem Zustand befindet, wo er darauf wartet dass die Verbindung mit iTunes getrennt wird und daher auf keine Tasteneingaben reagiert. Intuitiv wuerde ich erwarten, dass wenn iTunes keines Verbindung herstellen kann auch keine Veraenderung der Einstellung stattfindet; dem scheint aber nicht so zu sein, denn die einzige Methode, welche ich bisher gefunden habe, den iPod wieder flott zu kriegen ist ueber eine Reboot (was natuerlich heisst, dass meine zwischenzeitich gemachten Anpassungen in den Settings verloren gehen und ich diese erneut wieder einstellen muss). Was ich aber nicht viel irritanter find ist die Tatsache, dass iTunes nach einem solchen Reboot ueberhaupt nicht mehr in der Lage ist mit dem iPod zu kommunizieren; was ich also daher schon gemacht habe ist a) iPod abklemmen, b) iTunes beenden, c) USB Kabel wieder einstecken -- ich wuerde erwarten dass der iPod dann vom Systen gesehen und dann in iTunes geoeffnet wird. Dies passiert aber nicht, so dass ich einfach mal vermuten muss, dass der Fehler tiefer im [Mac OS X](http://en.wikipedia.org/wiki/Mac_OS_X) liegt, denn die einzige Moeglichkeit, mit welcher ich beide Seiten wieder miteinander ans Sprechen bekomme, ist den Rechner wieder neu zu starten. Das kann aber nicht die Loesung sein, so dass ich nach Alternativen suche -- bisher aber leider noch ohne Erfolg.

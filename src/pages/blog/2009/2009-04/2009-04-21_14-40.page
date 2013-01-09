@@ -1,0 +1,11 @@
+---
+title: "Zu schoen"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Tue, 21. April 2009 -- 14:40_
+
+Ich sehe schon, dass wird wieder eine schwierige Zeit. Ich war gerade mal fuer eine Weile draussen vor der Tuere um mich dort vor dem Fakultaetsgebaeude auf die Treppen zu setzen. Eine der Vorhaben, um welche ich mich ja noch kuemmern wollte war, mal ein wenig in die Dokumentation zum Thema "Chunking" innerhalb der HDF5 Library zu schauen. Einer der ja nicht ganz unwesentlichen Punkte, auf welchen Joe und ich noch bei der Diskussion am vergangenen Freitag gestossen waren, waere die Frage nach der Optimierung der Datenzugriff-Strategie. Wie recht schnell klar geworden ist kann es einen sehr grossen Unterschied machen, ob die Art und Weise in welcher die Daten organisiert werden zu der Art und Weise passen, wie diese typischerweise dann auch gelesen werden. Wie aber schon aus den Eingangsbemerkungen der HDF5 Dokumentation hervorgeht, handelt es sich da um ein durchaus fortgeschrittenes Feature, welches nicht notwendigerweise etwas fuer Neulinge ist. Um aber zumindest ein wenig ein Gespuer dafuer zu kriegen, wie wir dies in die geplanten Performance-Tests einbringen koennen habe ich mir eben einfach mal einen Teil der Dokumentation ausgedruckt und mich damit an die frische Luft gesetzt. Gerade wenn es darum geht ein paar Dinge zu lesen, sehe ich absolut keinen Grund, warum ich da hier im Buero sitzen bleiben sollte; das ist doch bei diesem Wetter alles andere als einladent, so dass ich mir lieber ein wenig Sonnenstrahlen angetan habe.

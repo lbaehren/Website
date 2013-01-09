@@ -1,0 +1,16 @@
+---
+title: "Und weiter geht es"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 01. April 2009 -- 12:11_
+
+
+
+Da waeren wir also schon bei Tag drei der "TBB Busy Week". So wie es der Name bereits vermuten laesst geht es hier doch recht geschaeftig zu, denn schliesslich ist es ja das erklaerte Ziel, dass Ende der Woche die Moeglichkeit besteht verlaesslich TBB Daten aufzunehmen. Bisher sind wir durchaus noch ein Stueck davon entfernt, denn wie sich herausstellt gibt es innerhalb der DAL einige Probleme, welche zunaechst noch geloest werden muessen. Wo allerdings genau die Probleme zu finden find, darueber bin ich mir noch nicht so ganz im Klaren; es hat in der Zwischenzeit einige Aenderungen gegeben, so dass es fuer meinen Geschmack zu viele freie Parameter gibt, an welchen man drehen kann. Worin ich vor allen Dingen wenig Sinn sehe ist, jetzt ohne Ende in der DAL herumzuhacken, denn schliesslich gab es ja bereits funktionierenden Code; denn dies jetzt nicht mehr der Fall ist, besteht natuerlich der starke Verdacht, dass in der Tat die Aenderungen, welche in der Zwischenzeit stattgefunden haben, mit an den Fehlern Schuld sind.
+
+
+~~DISCUSSION~~
