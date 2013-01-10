@@ -52,41 +52,71 @@ set (PROJECT_UPLOAD_PATH          "/Volumes/webdav/webseiten"       )
 ## ==============================================================================
 
 ## Project source directories
+##
+## .                               ...  PROJECT_SOURCE_DIR
+## `-- src
+##     |-- code                    ...  PROJECT_SOURCE_DIR_CODE
+##     |   |-- CMakeModules        ...  PROJECT_CMAKE_MODULE_PATH
+##     |   |-- apps
+##     |   |-- external
+##     |   |-- lib
+##     |   |-- scripts
+##     |   `-- tests
+##     |-- images
+##     |-- pages                   ...  PROJECT_SOURCE_DIR_PAGES
+##     |   |-- blog                ...  PROJECT_SOURCE_DIR_BLOG
+##     |   |-- computing
+##     |   |-- development
+##     |   |-- photography
+##     |   |-- research
+##     |   `-- work
+##     `-- templates
+##
 
 find_path (PROJECT_SOURCE_DIR_CODE
   NAMES lib/BlogConfig.h.in lib/BlogNode.h lib/Timestamp.h
   PATHS ${CMAKE_CURRENT_SOURCE_DIR}
   PATH_SUFFIXES src code src/code
   )
+if (NOT PROJECT_SOURCE_DIR_CODE)
+  message (SEND_ERROR "Missing code source dir (PROJECT_SOURCE_DIR_CODE)")
+endif (NOT PROJECT_SOURCE_DIR_CODE)
 
 find_path (PROJECT_SOURCE_DIR_BLOG
   NAMES upcoming.page archive.page 2012.page 2011.page 2010.page
   PATHS ${CMAKE_CURRENT_SOURCE_DIR}
   PATH_SUFFIXES src pages src/pages src/pages/blog pages/blog blog
   )
+if (NOT PROJECT_SOURCE_DIR_BLOG)
+  message (SEND_ERROR "Missing blog pages source dir (PROJECT_SOURCE_DIR_BLOG)")
+endif (NOT PROJECT_SOURCE_DIR_BLOG)
 
 find_path (PROJECT_SOURCE_DIR_PAGES
   NAMES index.page default.template default.css
   PATHS ${PROJECT_SOURCE_DIR}
   PATH_SUFFIXES src pages src/pages
   )
+if (NOT PROJECT_SOURCE_DIR_PAGES)
+  message (SEND_ERROR "Missing webpages source dir (PROJECT_SOURCE_DIR_PAGES)")
+endif (NOT PROJECT_SOURCE_DIR_PAGES)
 
+##__________________________________________________________
 ## Custom CMake modules
 
-find_path (LOCAL_CMAKE_MODULE_PATH
+find_path (PROJECT_CMAKE_MODULE_PATH
   NAMES FindGem.cmake FindRake.cmake
   PATHS ${PROJECT_SOURCE_DIR}
   PATH_SUFFIXES src src/code src/config src/code/CMakeModules
   )
 
-if (LOCAL_CMAKE_MODULE_PATH)
-  set (CMAKE_MODULE_PATH ${LOCAL_CMAKE_MODULE_PATH} CACHE PATH
+if (PROJECT_CMAKE_MODULE_PATH)
+  set (CMAKE_MODULE_PATH ${PROJECT_CMAKE_MODULE_PATH} CACHE PATH
     "CMake module path"
     FORCE
     )
-else (LOCAL_CMAKE_MODULE_PATH)
+else (PROJECT_CMAKE_MODULE_PATH)
   message (WARNING "Failed to locate custom CMake modules!")
-endif (LOCAL_CMAKE_MODULE_PATH)
+endif (PROJECT_CMAKE_MODULE_PATH)
 
 foreach (_cmakeModule
   Boost
@@ -141,53 +171,6 @@ endif (DOXYGEN_EXECUTABLE)
 add_subdirectory (doc)
 add_subdirectory (src)
 
-##_______________________________________________________________________________
-## Render the website
-
-add_custom_target (Website ALL
-  COMMAND ${WEBGEN_EXECUTABLE} render
-  DEPENDS ${PROJECT_SOURCE_DIR}/config.yaml
-  WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
-  COMMENT "Rendering website from sources ..."
-  )
-add_dependencies (Website libblog)
-
-##_______________________________________________________________________________
-## Build the page with the most recent blog entries
-
-if (script_blog_recent AND PROJECT_SOURCE_DIR_BLOG)
-
-  ## Build target
-  add_custom_target (recent_blog_entries
-    COMMAND ${script_blog_recent}
-    WORKING_DIRECTORY ${PROJECT_SOURCE_DIR_BLOG}
-    COMMENT "Generating page with recent blog entries ..."
-    )
-
-  ## Dependencies
-  add_dependencies (recent_blog_entries blog)
-  add_dependencies (Website recent_blog_entries)
-
-endif (script_blog_recent AND PROJECT_SOURCE_DIR_BLOG)
-
-##_______________________________________________________________________________
-## Publish the website online
-
-add_custom_target (online
-  COMMAND rsync -avtE --delete ${INSTALL_PREFIX_WEBSITE}/* ${PROJECT_UPLOAD_PATH}
-  WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
-  COMMENT "Publishing website - uploading generated pages ..."
-  )
-
-## Target to test synchronization of generated website; while the live version
-## will be pushed online through a WebDAV connection, we need to be able to
-## verify the set of parameters.
-add_custom_target (Website_copy
-  COMMAND rsync -avtE --delete ${INSTALL_PREFIX_WEBSITE}/* ${CMAKE_INSTALL_PREFIX}/website_copy
-  WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
-  COMMENT "Publishing website - uploading generated pages ..."
-  )
-
 ## ==============================================================================
 ##
 ##  Clean-up
@@ -225,6 +208,7 @@ message (STATUS " .. Version number .............. = ${PROJECT_VERSION}"        
 message (STATUS " .. Installation prefix ......... = ${CMAKE_INSTALL_PREFIX}"     )
 message (STATUS " .. Pages source directory ...... = ${PROJECT_SOURCE_DIR_PAGES}" )
 message (STATUS " .. Blog source directory ....... = ${PROJECT_SOURCE_DIR_BLOG}"  )
+message (STATUS " .. Custom CMake modules ........ = ${PROJECT_CMAKE_MODULE_PATH}")
 message (STATUS " .. Path to upload location ..... = ${PROJECT_UPLOAD_PATH}"      )
 message (STATUS " External tools & packages:"                                     )
 message (STATUS " .. Doxygen executable .......... = ${DOXYGEN_EXECUTABLE}"       )
