@@ -25,32 +25,25 @@ set (PROJECT_VERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJEC
 ##
 ## ==============================================================================
 
-option (ENABLE_TESTING        "Enable CTest test driver?"                  YES )
-option (CONFIGURE_VERBOSE     "Increase verbosity during configuration?"   NO  )
+include (CTest)
+enable_testing()
 
-##  Installation location
-##
-## ==============================================================================
+##__________________________________________________________
+## Installation prefix
 
 if (CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
-
   set (CMAKE_INSTALL_PREFIX
     "${PROJECT_SOURCE_DIR}/release" CACHE PATH "Install prefix" FORCE
     )
 endif (CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
 
+##__________________________________________________________
 ## Path to the generated static website
+
 set (INSTALL_PREFIX               "${PROJECT_SOURCE_DIR}/release"   )
 set (INSTALL_PREFIX_WEBSITE       "${INSTALL_PREFIX}/website"       )
 set (INSTALL_PREFIX_DOCUMENTATION "${INSTALL_PREFIX}/documentation" )
-
-##__________________________________________________________
-## Handle option: Enable CTest test driver?
-
-if (ENABLE_TESTING)
-  include (CTest)
-  enable_testing()
-endif (ENABLE_TESTING)
+set (PROJECT_UPLOAD_PATH          "/Volumes/webdav/webseiten"       )
 
 ## ==============================================================================
 ##
@@ -106,12 +99,8 @@ foreach (_cmakeModule
   Webgen
   )
   ## Verbosity of module
-  if (NOT CONFIGURE_VERBOSE)
-    ## Convert module name to upper-case
-    string (TOUPPER ${_cmakeModule} _varModule)
-    ##
-    set (${_varModule}_FIND_QUIETLY YES )
-  endif (NOT CONFIGURE_VERBOSE)
+  string (TOUPPER ${_cmakeModule} _varModule)
+  set (${_varModule}_FIND_QUIETLY YES )
   ## load the module
   find_package (${_cmakeModule})
 endforeach (_cmakeModule)
@@ -185,8 +174,7 @@ endif (script_blog_recent AND PROJECT_SOURCE_DIR_BLOG)
 ## Publish the website online
 
 add_custom_target (online
-  COMMAND rsync -avtE --delete ${INSTALL_PREFIX_WEBSITE}/* /Volumes/webdav/webseiten
-#  COMMAND rsync -av --progress --delete ${INSTALL_PREFIX_WEBSITE}/* /Volumes/webdav/webseiten
+  COMMAND rsync -avtE --delete ${INSTALL_PREFIX_WEBSITE}/* ${PROJECT_UPLOAD_PATH}
   WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
   COMMENT "Publishing website - uploading generated pages ..."
   )
@@ -194,7 +182,6 @@ add_custom_target (online
 ## Target to test synchronization of generated website; while the live version
 ## will be pushed online through a WebDAV connection, we need to be able to
 ## verify the set of parameters.
-
 add_custom_target (Website_copy
   COMMAND rsync -avtE --delete ${INSTALL_PREFIX_WEBSITE}/* ${CMAKE_INSTALL_PREFIX}/website_copy
   WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
@@ -238,8 +225,7 @@ message (STATUS " .. Version number .............. = ${PROJECT_VERSION}"        
 message (STATUS " .. Installation prefix ......... = ${CMAKE_INSTALL_PREFIX}"     )
 message (STATUS " .. Pages source directory ...... = ${PROJECT_SOURCE_DIR_PAGES}" )
 message (STATUS " .. Blog source directory ....... = ${PROJECT_SOURCE_DIR_BLOG}"  )
-message (STATUS " .. Enable CTest test driver? ... = ${ENABLE_TESTING}"           )
-message (STATUS " .. Verbose configure? .......... = ${CONFIGURE_VERBOSE}"        )
+message (STATUS " .. Path to upload location ..... = ${PROJECT_UPLOAD_PATH}"      )
 message (STATUS " External tools & packages:"                                     )
 message (STATUS " .. Doxygen executable .......... = ${DOXYGEN_EXECUTABLE}"       )
 message (STATUS " .. Doxygen version ............. = ${DOXYGEN_VERSION}"          )

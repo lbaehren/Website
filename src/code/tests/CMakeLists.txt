@@ -9,10 +9,7 @@ foreach (test_source ${test_sources})
   add_executable (${testFilename} ${test_source})
   ## Link
   target_link_libraries (${testFilename} libblog)
-
   ## Testing
-  if (ENABLE_TESTING)
-    add_test (${testFilename} ${testFilename})
-  endif (ENABLE_TESTING)
+  add_test (${testFilename} ${testFilename})
 
 endforeach (test_source)

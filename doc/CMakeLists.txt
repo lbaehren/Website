@@ -5,7 +5,6 @@ if (DOXYGEN_EXECUTABLE)
 
   ## Configuration variables for Doxygen
 
-  set (DOXYGEN_INPUT            "${PROJECT_SOURCE_DIR}/src ${PROJECT_BINARY_DIR}/src")
   set (DOXYGEN_OUTPUT_DIRECTORY "${CMAKE_INSTALL_PREFIX}/doc")
     
   ## Locate custom stylesheet
