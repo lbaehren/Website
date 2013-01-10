@@ -36,13 +36,3 @@ add_custom_target (online
   WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
   COMMENT "Publishing website - uploading generated pages ..."
   )
-
-## Target to test synchronization of generated website; while the live version
-## will be pushed online through a WebDAV connection, we need to be able to
-## verify the set of parameters.
-add_custom_target (Website_copy
-  COMMAND rsync -avtE --delete ${INSTALL_PREFIX_WEBSITE}/* ${CMAKE_INSTALL_PREFIX}/website_copy
-  WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
-  COMMENT "Publishing website - uploading generated pages ..."
-  )
-
