@@ -8,9 +8,4 @@ author: Lars Baehren
 
 _Mon, 25. May 2009 -- 13:50_
 
-
-
 Hm, mit ein klein wenig Glueck koennte es dies nun gewesen sein: ich habe hier bei mir zuhause mit dem Beginn der Woche noch einmal die Arbeit aufgenommen, den immer noch verbliebenen Fehler in meinen Imaging Routinen ausfindig zu machen. Nachdem ich mir jetzt noch einmal die Muehe gemacht habe, durch alle internen Berechnungen durchzugehen (und mir so so ziemlich alles an Zwischenwerten auswerfen zu lassen), sieht es ganz danach aus, als ob der Fehler wirklich konzeptioneller Art gewesen ist. Was ich vorhin ja noch geschafft habe auszuschliessen war, dass die berechneten Gewichte fuer das Beamforming falsch sind, so dass also wirklich in der Anwendung der Gewichte auf die Daten selber der Fehler stecken musste. Wie sich nun herausstellt, ist es mit 99%iger Wahrscheinlichkeit eine falsche Position gewesen, an welcher ich die Umwandlung von komplexen Werten nach reellen vorgenommen habe: in der Summe ueber die an der Messung beteiligten Antennen muss alles noch komplex gerechnet werden -- erst bei der Zuweisung des Wertes des Bildpixels kann die Umwandlung zum Quadrat erfolgen. Was ich mir jetzt gleich also noch einmal sicherheitshalber anschauen muss ist, wie exakt die mathematischen Formeln fuer den Vorgang aussehen muessen (ist schon eine Weile her seit ich diese Schritt fuer Schritt aufgeschrieben habe); wenn diese ganz klar zeigen, dass die Operationen nicht in der Weise vertauschbar sind, wie dies im Quellcode der Fall war, dann waere sofort klar, wo der Fehler gelegen hat.
-
-
-~~DISCUSSION~~
