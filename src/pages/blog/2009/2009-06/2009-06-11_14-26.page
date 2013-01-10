@@ -1,0 +1,34 @@
+---
+title: "LOFAR Users Forum"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Thu, 11. June 2009 -- 14:26_
+
+
+
+Ab und zu ist es doch mal gut nicht Ewigkeiten auf das Ende irgendwelcher Diskussionnen zu warten sondern einfach mal Fakten zu schaffen und den ersten Schritt zu machen. So nun geschehen mit einem Vorhaben, welches Michael und ich schon vor einer ganzen Weile ueberlegt, bisher aber noch nicht in die Tat umgesetzt hatten. Neben den vollkommen grundlegenden Services Website und Code-Repository hatten wir schon recht fruehzeitig mit dem Gedanken gespielt ein Diskussions-Forum auszusetzen, welches dann als Kommunikations-Platform dienen koennte. Auch wenn Email ueber weite Entfernungen eine Option ist um Diskussionen zu fuehren, so gibt es doch ein paar entscheidende Nachteile: man vergisst doch schon mal schnell einen moeglichen Adressaten, die frueheren Beitraege sind fuer Nachzuegler nicht ohne weiteres verfuegbar, etc. Aus diesen Ueberlegungen zeichnete sich relativ schnell ab, dass so ein Forum doch eine gute Sache sein duerfte. 
+
+Am letzten Tag des [[blog:2009:2009-05:2009-05-19_08-47|LOFAR Status Meeting]] Mitte Mai gab es eine laengere Diskussion darueber, wie man dann in geeigneter Weise die Zusammenarbeit der Arbeitsgruppen erleichtern koenne, welche ja auch geographisch ueber Europa verteilt sind. Nachdem sich der Staub ein wenig gelegt hatte, sind wir zu dem Schluss gekommen, dass dies doch genau der Anlass sei, die fruehere Idee wieder aufzunehmen und in die Tat umzusetzen. Folgerichtig habe ich mich anschliessend also daran gemacht ein Forum auf dem [[http://usg.lofar.org|USG Server]] zu installieren. Da dies ja nicht unbedingt etwas war, bei dem ich ueber riesige Erfahrung verfuegt habe, musste ich mich erst einmal ein klein wenig einarbeiten und verschiedene Moeglichkeiten testen. Nachdem es mir gelungen war Apache, MySQL und PHP miteinander arbeiten zu lassen, hatte ich dann am 27. eine kleine Ankuendigung zu machen:
+
+> Gentlemen,
+>
+> since Ger was here anywhere, talking about how to organize the communication going along with the commissioning efforts, I mentioned to him that I was working on a prototype installation of a discussion forum (and of course showed him the test installation). Ger turned out to be rather open towards the idea and mentioned something alike had been used a while back also for WSRT -- so the whole concept is not new. I know this still is in the testing phase, but I think we should give this a thought.
+
+Bis zum naechsten Schritt hat es dann noch eine Weile gedauert, weil zunaechst einmal die Forum-Struktur eingerichtet werden musste; das hat weitestgehend Michael uebernommen, waehrend ich mich hinter den Kulissen noch ein wenig um die technischen Details gekuemmert habe. Die offizielle Ankuendigung an einen begrenzten Benutzerkreis erfolgte am 8. Juni:
+
+> Gentlemen,
+>
+> Feel free to check out the new LOFAR Users forum if you haven't already seen it. Its still fairly empty at the moment, but I'm hoping we can start using it as a means to both communicate and track issues. If you have any suggestions for the organization, let me or Lars know. Feel free to sign up and make a post.
+
+Daraufhin haben sich zwar bereits die Ersten registriert und umgeschaut, aber mit dem Beitraege schreiben war noch nicht; da anscheinend niemand anders den ersten Schritt machen wollte, habe ich dann also selber die Initiative ergriffen und einfach mal einen Beitrag online gesetzt. Sobald dies einmal getan war, ist die Sache Stueck fuer Stueck ins Rollen gekommen.
+
+{{2009-06-10_lofar_users_forum.png?600}}
+
+Auch wen die Aktivitaeten der Commissioning-Gruppen noch nicht so recht angelaufen zu sein scheinen, so entwickelt sich die Diskussion in Sachen Software-Entwicklung schon einmal recht positiv. So brauchte es nur eines kurzen Hinweises an Anastasia und Alwin, bevor die Aktiviaten rund um die Fehlersuche bei den Ueberbleibsel der "Pulsar Busy Week" komplett im Forum dokumentiert waren; wer also auch immer zu einem spaeteren Zeitpunkt in die Sache einsteigt hat so eine gute Chance die Entwicklung bis dahin nachzulesen.
+
+
+~~DISCUSSION~~

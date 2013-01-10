@@ -1,0 +1,20 @@
+---
+title: "Vorbereitung fuer Drobo Nr. 2"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Tue, 09. June 2009 -- 09:56_
+
+
+
+Zugegeben, es ist eine Weile still gewesen auf diesem Kanal, aber ich wollte doch wenigstens mal noch wissen lassen, dass ich mich nach wie vor noch unter den Lebenden befinde.
+
+Angesichts der hier gerade vor sich gehenden Aktivitaeten wird es wieder einmal Zeit fuer eine kurze Nachricht in Sachen heimischer Computer-Umgebung: seit dem gestrigen Abend bin ich damit beschaeftigt die noch auf den beiden USB Platten verbliebenen Bilder auf das Drobo zukopieren, so dass ich a) die beiden externen USB Scheiben ausmustern kann und b) ein zweites Drobo anschaffen kann. Dieses Vorhaben ist ja nicht wirklich neu, aber es hat doch eine kleine Weile gedauert, ehe ich mich dazu durchringen konnte endlich mal alles in die Tat umzusetzen. Wie ich wiederholt feststellen musste ist es doch schon ein ziemlicher Unterschied, ob ich hier eine ganze Ansammlung von USB Platten herumstehen habe (mit all ihren Kabeln) oder aber ein Drobo; mal angesehen von dem deutlich verringerten Kabelsalat habe ich damit alles auf einer Maschine und zudem auch noch redundant (was mir gerade fuer die Bilder sehr wichtig ist). Wenn also nichts mehr dazwischenkommt, dann werde ich noch vor dem Wochenende losziehen und mit Drobo Nr. 2 zulegen -- diesmal aber eines der zweiten Generation, was bedeutet dass die Anbindung noch einmal deutlich schneller ist. Folgerichtig werde ich also meine Daten so aufsplitten, dass vor allen Videodaten auf dem neuen Drobo abgelegt werden, waehrend dann das erste zum Photo-Archiv umgebaut wird; voll ausgestattet verfuege ich dann ueber 2 mal 2.72 TB gesicherten Plattenplatz, was aller Voraussicht fuer eine Weile vorhalten duerfte.
+
+.. Die Nebenwirkung der aktuellen Aktivitaeten ist natuerlich auch, dass ich Julia und Joerg endlich die beiden versprochenen 750 GB Platten zukommen lassen kann, welche ich ja bisher als RAID verschaltet hatte -- Zustellung erfolgt bei naechstbester Gelegenheit.
+
+
+~~DISCUSSION~~

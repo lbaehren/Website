@@ -1,0 +1,20 @@
+---
+title: "Mehr als nur ein Spielzeug"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Fri, 04. September 2009 -- 15:38_
+
+
+
+[[2009-09-03_14-18|Wie ich gestern ja bereits kurz angedeutet hatte]], gibt es jetzt ein [[http://my.cdash.org/index.php?project=LOFAR%20User%20Software|Testing Dashboard]] fuer die Data Access Library (DAL). Was ich auf frueheren Streifzuegen zu diesem Thema schon einmal gefunden hatte, war dass Kitware eine Reihe oeffentlicher Dashboards zur Verfuegung stellt, welche welche sich Erfahrung sammeln benutzen lassen. Bevor ich mich also daran begebe selber einen Dashboard Server ans Laufen zu kriegen, dachte ich mir kann es nicht schaden, mal ein wenig mit dem Service zu spielen und zu schauen, wie sich damit arbeiten laesst. Also habe ich gestern mal ein Dashboard angelegt und dessen Adresse in der LOFAR Software eingetragen. Wozu ich leider gestern nicht mehr gekommen bin war abzuwarten, ob ich denn von allen auf diversen Rechnern gestarteten Builds auch wirklich eine Rueckmeldung bekommen wuerde; nun, wie ich heute feststellen konnte, habe ich so ziemlich das Feedback erhalten, auf welches ich gehofft hatte (auch wenn ich sicherlich weniger rote Felder haben wuerde, aber dies ist noch eine andere Sache).
+
+{{blog:2009:2009-09:2009-09-04_dashboard.png?590}}
+
+Nachdem ich feststellen konnte, dass das Setup vom Grundsatz her funktioniert, habe ich -- wie versprochen - noch eine entsprechende Meldung ins [[http://usg.lofar.org/forum|LOFAR Users Forum]] gesetzt, um Benutzer anzuweisen von dem neuen Feature Gebrauch zu machen, statt mit irgendwelche mitunter kryptischen Fehlermeldungen zu schicken (oder noch nicht einmal dies). Wie ich bei einem kurzen Blick auf das Dashboard feststellen konnte haben wir mit John auch schon direkt den ersten Benutzer, welcher einen Build-Report eingeschickt hat (was mich allerdings nicht so sonderlich wundert, weil John einfach die Tendenz dazu hat ein wenig auf des Messers Schneide zu operieren, wenn es sich um Software handelt).
+
+
+~~DISCUSSION~~

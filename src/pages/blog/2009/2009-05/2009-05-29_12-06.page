@@ -1,0 +1,22 @@
+---
+title: "Wieder unter den Lebenden"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Fri, 29. May 2009 -- 12:06_
+
+Also ich wuerde schon einmal sagen, dass mir da jetzt doch ein riesiger Stein vom Herzen faellt. Nachdem ich ja etwas mehr also eine Woche mit dem PowerBook Vorlieb nehmen musste, habe ich seit dem gestrigen Abend wieder das MacBook in den Haenden. Da ich ja grundsaetzlich ein regelmaessiges Backup meines kompletten Home-Verzeichnisses durchfuehre und darueber hinaus auch noch einen grossen Teil meiner Dokumente und Software unter Version-Control habe, ist es recht einfach, die in der Zwischenzeit auf dem anderen Rechner gemachten Aenderungen zurueck auf das MacBook zu uebertragen. Wie ich feststellen musste sind es streng genommen sogar nur zwei Verzeichnisse welche wirklich kritisch sind -- so ziemlich alles andere laesst sich von dort aus rekonstruieren
+
+~~~~
+/Users/lars
+|-- Repository
+`-- Sites
+    `-- wiki
+~~~~
+
+Wenn ich von beidem ein aktuelles Backup habe (was ja der Fall ist), dann sollte mir nichts wichtiges an Daten verloren gehen.
+
+Bis kurz vor 11 Uhr habe ich noch eine Reihe von Daten in den beiden Plaetzen untergebracht, so dass ich alles mit dem anschliessenden Backup einfieren konnte; sobald dies erledigt war brauchte ich lediglich das PowerBook runterfahren und das MacBook anschliessen... anschliessend noch Repository und Wiki vom externen Backup auf die lokale Platte kopieren und schon bin ich wieder im Geschaeft. Auch wenn ich mich da ein weiteres Mal wiederhole, aber ich kann einfach nicht oft genug darauf hinweisen, wie wichtig ein regelmaessiges Backup ist, vor allen Dingen dann man auf die Daten angewiesen ist, welche sich auf dem Rechner befinden.

@@ -1,0 +1,29 @@
+---
+title: "Eine Frage des Gewissens"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Tue, 15. September 2009 -- 20:19_
+
+
+
+Also dies wird noch eine schwierige Entscheidung... Als ich letztes Jahr in Romaenien war, haben einen Zwischenstop in Brasov eingelegt, wo ich zwei weitere von Catalinas vielen Freunden kennengelernt habe. Da einer von beiden nicht nur Software-Entwickler, sondern auch Gruender eines eigenen Software-Unternehmens ist, sind wir natuerlich recht schnell ins Gespraech gekommen. Erwartungsgemaess haben wir uns ueber die jeweils zu loesenden Probleme unterhalten, genauso wie ueber moegliche Loesungsstrategien. Mit meinem Fokus auf der Verwaltung von nicht unerheblicher Mengen an Metadaten (welche ja bei den LOFAR Beobachtungen anfallen und organisiert werden muessen), habe ich Interesse gezeigt einer Technik, welche sich "Chained Records" nennt -- also eine Verkettung von Strukturen, welcher zur Speicherung von Daten sehr unterschiedlichen Typs genutzt werden koennen. Um eine wenig mehr darueber zu erfahren hatte ich Bogdan gebeten mir mal die Paper zu schicken, in welcher er die Methode beschreibt (und natuerlich auch deren Implementierung testet).
+
+Als eine Folge dieses Kontaktes habe ich dann spaeter letztes Jahr eine ail bekommen, in welcher ich um Anmerkungen zu dem Paper gebeten wurde -- moeglichst gekoppelt mit einer Empfehlung der beschriebenen Technik. Was ich also gemacht habe, war einen kurzen Kommentar zu schreiben, in welchem ich "Chained records" als eine interessante Methode zu Speicherung umfangreicher Metadaten beschrieben habe; waehrend ich an der Verallgemeinerung fuer Matrix-Berechnungen meine Zweifel habe (ich sehe nicht wirklich, wie dies Vorteile bringen soll, weil ich den Overhead fuer unnoetig halte), so erachte ich die Originalanwendung fuer untersuchenswert. Ich hatte allerdings noch eine Reihe Fragen und Anmerkungen zu dem Paper, weil da -- meiner Ansicht nach -- zu allgemeine und nicht belegte Aussagen getroffen wurden, welche einer groesseren Akzeptanz der Veroeffentlichung im Wege stehen wuerden.
+
+Wo ich jetzt im August in Bucharest war, hatte ich mich noch Catalina darueber unterhalten, ob es denn irgendwelche Neuigkeiten aus Brasov geben wuerde; sonderlich viele Details liessen sich nicht erhalten, wohl aber die Aussage, dass Bogdan recht bald mit seiner Doktorarbeit fertig werden sollte. Dass dem in der Tat so ist, ergab sich auch einer Mail, welche ich gestern Morgen in meiner Mailbox vorgefunden habe:
+
+> I need your help urgently. I need a signed appreciation from you regarding the thesis.
+> It has to contain the thought below regarding the chained records usage.
+
+Da ich ja durchaus gewillt bin, Unterstuetzung zukommen zu lassen, wo dies moeglich und angebracht ist, habe ich mir also mal die mitgeschickten Dokumente angeschaut. Was ich dabei allerdings gefunden habe, hat mich doch sehr nachdenklich gestimmt; so laeuft die zu unterzeichnende Empfehlung auf die folgende Formulierung heraus:
+
+> The publishing activity is also important and denotes concern for a good exploitation and dissemination of the research results. MAY BE REPHRASED (exploitation/dissemination is mentioned in the abstract).
+> Therefore, taking account of the effected work, the obtained results and the scientific level of the thesis, the undersigned, ING. NAME, considers that the work „THE ANALYSIS AND MULTICRITERIA OPTIMIZATION OF EXTERNAL CYLINDRICAL GEARS” has the level requested by a doctorate thesis, and the author, ing. Bogdan-Alexandru DEAKY, deserves the doctor scientific title.
+
+Berueckichtig man aber, dass alles, was ich bis dahin von der rund 15 Kapitel umfassenden Arbeit zu Gesicht bekommen habe, ein Paper ueber ein einziges der darin vorkommenden Kapitel ist, so halte ich es fuer nicht gerechtfertigt eine derart weitreichende Aussage zu treffen, welche der Arbeit entsprechende wissenschaftliche Standards bescheinigt. So wie ich dies sehe waere dies gewissermassen ein Blanko-Scheck, welchen ich damit ausstellen wuerde, weil mir nicht nur die Qualifikation fuer eine vernuenftige Beurteilung des Untersuchungsgegestandes und dessen Behandlung fehlt, sondern auch weil der einzige mir bekannte Teilaspekt nicht dazu geeignet ist, die komplette Arbeit zu beurteilen. Gleichzeitig sehe ich ein wenig das Risiko, meinen Namen fuer eine Sache herzugeben, ohne diese ueberhaupt ausreichend beurteilen zu koennen.
+
+~~DISCUSSION~~

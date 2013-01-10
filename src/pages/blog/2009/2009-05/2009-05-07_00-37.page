@@ -1,0 +1,21 @@
+---
+title: "Datenumzug"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Thu, 07. May 2009 -- 00:37_
+
+Dies sieht mir ganz nach der ersten Rate in Sachen Umzug des Photo-Archives aus: vor ein paar Minuten habe ich damit begonnen einen kleinen Teil der bisher auf den beiden als RAID zusammengeschalteten 750GB Platten auf das Drobo zu verschieben. Wie ich zu meinem Erschrecken feststellen musste sind die beiden Platten bereits bei einem Fuellstand von 91% angekommen, so dass vollkommen klar ist, dass ich noch vor dem Ende des Sommers ins Bedraengnis geraten werde.
+
+~~~~
+Filesystem     Size   Used  Avail Capacity  Mounted on
+/dev/disk0s2   149G   126G    23G    85%    /
+/dev/disk5     698G   633G    65G    91%    /Volumes/Phototheque
+/dev/disk3s3   233G   104G   128G    45%    /Volumes/Backup
+/dev/disk1s3   2.0T   1.6T   421G    79%    /Volumes/Drobo
+~~~~
+
+Jetzt wo ich endlich wieder vorhabe in das Fotographieren von Konzerten einzusteigen erwarte ich doch einen deutlich erhoehten Zuwachs an Daten; folgerichtig muss ich mir also auch darueber Gedanken machen, wo und wie ich alles ablegen will.

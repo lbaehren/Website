@@ -1,0 +1,62 @@
+---
+title: "Fehler im Beamformer"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 27. May 2009 -- 09:08_
+
+Da [die bisherigen Erklaerungen](2009-05-25_13-50.html) ja noch ein wenig duerftig waren, hier wenigstens noch einmal eine etwas ausfuehrlichere Erklaerung: nachdem ich ja nun einige Zeit mit der Fehlersuche zugebracht habe, fand sich der Fehler an der wirklich untersten Stelle des Codes, in der Funktion welche wie die Berechnung des addierenden Beams zustaendig ist. Um die ein wenig genauer Erklaeren sollte man vielleicht noch einmal die Rechenschritte erlaeutern, welche durchgefuehrt werden...
+
+Bei den aufgenommenen Daten handelt es sich um die direkt von analog nach digital umgewandelten Amplitudenwerte des elektrischen Feldes, welches an den einzelnen Dipolen auftrifft. Dabei trifft das Signal abhaengig von der relativen Position der Antennen mit einer zeitlichen Verzoegerung ein -- eine Verzoegerung welche sich anschliessend auf die Daten anrechnen laesst um somit die Charakteristik des eingehenden Signals zu rekonstruieren. Wie vielleicht einigen bekannt sein duerfte gibt es in der Fourier-Theorie ja da sogenannte Verschiebungstheorem: dieses besagt dass die Fourier-Transformierte eines um den Betrag `a` verschobenen Zeitsignales der Multiplikation der Fourier-Transformierten des Original-Signals mit einem komplex-wertigen Phasenfaktor entspricht. Was dies also bedeutet ist, dass anstatt Werte in der Zeit zu verschieben, kann ich zunaechst eine Fourier-Transformation der Werte durchfuehren und anschliessend mit einem komplexen Faktor multiplizieren. Wenn man sich die dahintersteckende Physik/Mathematik ein wenig anschaut, dann stellt sich heraus, dass dieses Fourier-Theorem genau das ist, was benoetig ist, um mit einem Teleskop wie [LOFAR](http://www.lofar.org) in eine bestimmte Richtung am Himmel zu schauen; waehrend man bei einem herkoemmlichen Radioteleskop ja die Teleskopschuessel auf das Objekt der Wahl ausrichtet, gibt es bei LOFAR keinerlei bewegliche Teile mehr und die Antennen sind empfindlich gegenueber Signalen aus allen Richtungen zur gleichen Zeit (etwas das mit einem Teleskop wie z.B. dem in Effelsberg allein schon konstruktionsbedingt nicht moeglich waere). Was bei LOFAR passiert ist, dass der Vorgang des Schuessel ausrichtens im Computer simuliert wird, indem die Signale der einzelnen Antennen in geeigneter Weise miteinander kombiniert werden -- dies ist genau die Stelle wo die zeitliche Verzoegerung der Signale ins Spiel kommt. 
+
+Das gute an der Sache ist, dass bei Vernachlaessigung aller instrumentellen Effekte -- welche separat behandelt werden muessen -- die notwendigen Rechenschritte komplett aus der geometrischen Anordnung der Antennen und Positionen am Himmel abzuleiten sind: fuer jede Kombination von Antenna, Himmelsposition und Beobachtungsfrequenz laesst sich der komplex-wertige Faktor `w` berechnen, mit welchem die Daten der einzelnen Antennen multipliziert muss bevor die Beitraege aller Antennen aufsummiert werden. Schreibt man sich dies man sauber auf (Variablen mit einer Tilde bezeichnen eine Groesse, welche sich durch Fourier-Transformation ergibt), dann erhaelt man
+
+![E-Field beam in frequency](/blog/2009/2009-05/beam_freq-field.png)
+
+Die Leistung des elektrischen Feldes ergibt sich anschliessend ganz einfach durch Quadrierung:
+
+![E-Field beam in power](/blog/2009/2009-05/beam_freq-power.png)
+
+Ist eigentlich nicht sonderlich kompliziert, so dass auch die Implemtierung kein sonderliches Problem darstellen sollte. EIgentlich... es sei denn, man schafft es an der entscheidenden Stelle einen Fehler einzubauen, welcher dazu fuehrt, dass egal was man in eine Funktion reinsteckt immer ein falsches Ergebnis zurueckkommt. Was jetzt genau der Fehler war? Schauen wir uns dazu am besten zunaechst einmal die korregierte Version des Codes an:
+
+~~~~
+      // Temporary storage of multiplication result
+      casa::DComplex tmp;
+      // Normalization for the number of antennas
+      double norm = 1/(index(1)*index(1));
+      
+      for (int sky(0); sky<shape(2); sky++) {
+	for (index(0)=0; index(0)<shape(0); index(0)++) {
+	  tmp = 0;
+	  /*
+	   * Sum up the complex-valued contributions from the individual antennas
+	   */
+	  for (index(1)=0; index(1)<shape(1); index(1)++) {
+	    tmp += data(index)*bfWeights_p(index(0),index(1),sky);
+	  }
+	  /*
+	   * Assign the pixel value: square of absolute value of the previously 
+	   * computed sum.
+	   */
+	  beam(index(0),sky) = norm*real(tmp*conj(tmp));
+	} // END : frequency
+      } // END : sky position
+~~~~
+
+Der wesentliche Punkt hier ist, dass die innerste der geschachtelten Schleifen ueber die Reihe der Antennen verlaeuft und damit die erste der oben aufgefuehrten Formeln implementiert (sehen wir einmal von der Normierung ab). Nachdem die Berechnung der Summe komplett ist wird dann noch die zweite Formel umgesetzt, naemlich die Quadrierung des komplexen Wertes. Genau an dieser Stelle lag aber der Fehler: in der vorherigen Version hatte ich versucht eine inkorrekte Abkuerzung zu nehmen, indem ich bereits vor der Summierung die Quadratierung vorgenommen habe.
+
+~~~~
+      for (int sky(0); sky<shape(2); sky++) {
+	for (index(0)=0; index(0)<shape(0); index(0)++) {
+	  for (index(1)=0; index(1)<shape(1); index(1)++) {
+	    tmp = data(index)*bfWeights_p(index(0),index(1),sky);
+	    beam(index(0),sky) += norm*real(tmp*conj(tmp));
+	  }
+	} // END : frequency
+      } // END : sky position
+~~~~
+
+Schreibt man sich dies mal hin, dann wird sofort klar, dass bei dieser fehlerhaften Implementierung die Mischterme unter den Tisch fallen.

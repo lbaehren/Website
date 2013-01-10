@@ -1,0 +1,16 @@
+---
+title: "Nach dem Wochenende"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Mon, 15. June 2009 -- 11:40_
+
+
+
+... entwickelt sich der Montag wieder zunaechst einmal zum einem Heimarbeit-Tag. Dabei handelt es sich noch nicht einmal unbedingt um eine feste bereits vorher gefasste Absicht, aber es hat sich einfach wieder einmal so entwickelt. Nachdem ich letzte Woche ja endlich noch in die Diskussion in Sachen Coordinates in den LOFAR Images eingestiegen bin, wollte ich mich jetzt noch darum kuemmern, dass ich eine Reihe von Beispielen erzeugen kann, mittels welcher sich die Implementierungs-Details erklaeren lassen. Folgerichtig habe ich heute Morgen erst einmal ein klein wenig mit dem Aufraeumen des Quellcodes begonnen, denn wie ich feststellen musste gab es gleich an mehreren Stellen Ansatz fuer mehr oder weniger die gleichen Tests -- das muss nun wirklich nicht sein. Aus dieser Beschaeftigung hat sich nun ergeben, dass ich noch ein wenig mehr im Code gegraben habe, um die Dinge einigermassen ueberschaulich zu halten und eventuell auch noch die Zeit zum Kompilieren leicht zu druecken (was sogar gelungen ist, da ich Funktionalitaet in optionale Komponenten ausgelagert habe, so dass man sich bei einem Standard-Build nicht damit herumschlagen muss).
+
+
+~~DISCUSSION~~

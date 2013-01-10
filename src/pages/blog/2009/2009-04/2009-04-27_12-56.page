@@ -1,0 +1,19 @@
+---
+title: "Important milestone"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Mon, 27. April 2009 -- 12:56_
+
+After testing everybody's patience for a while, an important milestone for the LOFAR project has been reached:
+
+> At coffee today, cake will be served to celebrate completion of the first LOFAR station (CS 302). Testing and commissioning is already underway. In addition, a team from ASTRON has recently installed two international LOFAR stations.
+>  
+> Over the last few weeks and months, we have had our fair share of rain, which has delayed progress. Fortunately, for the last month the weather has been much better. We are therefore moving on to the next few stations quickly.
+>
+> This is an important milestone in the construction of LOFAR and we would like to thank all of you that have been involved in getting LOFAR to this stage.
+
+One of the consequences of this is of course, that within short data will be arriving from the station(s) -- therefore requiring the software to be in shape to deal with it.

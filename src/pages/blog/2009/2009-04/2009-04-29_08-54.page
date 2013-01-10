@@ -1,0 +1,33 @@
+---
+title: "Input to Coordination Meeting"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 29. April 2009 -- 08:54_
+
+Here is a little something I have been preparing and sending in for a while now: The Coordination Meeting for the progress on LOFAR software is taking place once every week at ASTRON. Mainly in order to keep Michael and Andre in sync with what is going on at my end of the software development for the Cosmic Rays KSP, I have been logging my activities and sending them in. Even though I constantly have been hopingthis also might trigger some of the others to send in a few notes as well -- just to keep everybody on the same page -- little has been happening on that front. In order not to depend on people keeping their emails around, I also placed the notes onto the USG Wiki; however this might be the better place to keep records of what is going on, also enabling everyone -- who might be interested -- to get some basic idea of what I am spending major fraction of my time with.
+
+ * `Skymapper::processData()` method internally still delivers faulty data in the sense that when slicing through the returned array with the beamformed data perpendicular to the frequency axis, all data-points have identical value -- this of course is wrong. Possible explanations currently under investigation: 1) the Beamformer does not properly accept the sky coordinates towards which the beams are to be formed, 2) even though the coordinates are stored correctly the Beamformer performs computation of the geometrical delays in the wrong zone, thereby for small distance radii getting indistinguishable values. 
+
+ * Major revision of the internal workings of the `SpatialCoordinate` class: being central to setting up the coordinate definitions for a sky map created through the CR-Imager, this class is used to provide pointing positions to the `Beamformer`. Turned out however that especially the default settings would not produce the intended all-sky, far-field map in (Az,El) using STG projection. A additional constructor and `init()` method have been added to now consistently configure the internals for the most important cases required; finding sensible default settings for other combinations of reference code and map projection might not be possible in the same way though.
+
+ * Fixed errors within the new code introduced into the DAL by Sven; this might need some additional cleaning up,but at least everything now once again compiles.
+
+ * Some cleaning up of the Python packages: based on the recent testing with Frank and the installation efforts of Michael, the CMake wrappers for Python and the various packages have been updated/upgraded. The most important change as to the CMake scripts is, that the find scripts for packages first run FindPython to get information on the Python version -- this then in the next step is used to look for the package matching the same version number. Furthermore the find scripts have been split up such that now there is an individual find script per package (some of this earlier was integrated into the FindPython script).
+
+ * Conversation with John Romein to follow up on the concerns articulated by him during last week's coordination meeting regarding the cross-compiling capabilities of CMake.
+
+ * Started testing casacore methods for export of internal image formats to FITS (see mail send around earlier).
+
+ * Cleaning up CoordinateBase class in CR-Tools, to make it more suitable to function as interface definition for the custom coordinates classes (which need something on top of what is available through casacore).
+
+ * Upgraded NumPy from version 1.2.1 to 1.3.0, which also seems to solve some build/installation issues on Mac OS X.
+
+ * Continued debugging of the imaging routines, trying to get usable default settings for the spatial coordinates which are getting fed into the Beamformer.
+
+ * Started cleaning up the CMake scripts for finding the various components of a Python installation (header, libraray, executable, modules). One of the outcome of the effort to get the USG software installed on both Frank's laptop and desktop machine back in Potsdam was, that in case of multiple different Python installations the located components would not be consistent. Therefore a more strict version checking policy is being enforced within the CMake scripts, requiring all scripts to locate modules to first run FindPython in order to get the basic version information; this then in turn is used to locate the proper modules matching the version of the used Python executable.
+
+ * DAL debugging: Added missing precompiler enclosures wrapping functionality depending on `casacore`.

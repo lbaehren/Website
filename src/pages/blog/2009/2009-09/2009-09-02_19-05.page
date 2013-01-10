@@ -1,0 +1,57 @@
+---
+title: "DAL @ 64 bit"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 02. September 2009 -- 19:05_
+
+
+
+Looks like some basic progress was possible to achieve faster than anticipated. Using the latest adjustments to the source code I now managed to get working builds on at least three platforms (two more pending, as the build is still running). One of the most important bits is or course that not only I am able to build on the new post-processing cluster in Groningen 
+
+<code bash>
+Scanning dependencies of target tbb2h5
+Linking CXX executable bf2h5
+[100%] Building CXX object apps/CMakeFiles/tbb2h5.dir/tbb2h5.o
+Linking CXX executable msread
+Linking CXX executable ms2h5
+Linking CXX executable read_tbb
+[100%] [100%] Built target pydal
+Built target TBBraw2h5
+Linking CXX executable tbb2h5
+[100%] Built target lopes2h5
+[100%] Built target msread
+[100%] Built target bf2h5
+[100%] Built target ms2h5
+[100%] Built target read_tbb
+[100%] Built target tbb2h5
+</code>
+
+but also the test program for the Python bindings works:
+
+<code bash>
+bahren@lfe001:~/usg/code/trunk/build/dal$ make test
+Running tests...
+Start processing tests
+Test project /home/bahren/usg/code/trunk/build/dal
+  1/ 27 Testing tMS_dal                          Passed
+  2/ 27 Testing tdalFITS                      ***Failed 
+  3/ 27 Testing tcasacore_hdf5                ***Exception: Other
+  4/ 27 Testing tDirectionCoordinate             Passed
+  5/ 27 Testing tLinearCoordinate                Passed
+  6/ 27 Testing tTabularCoordinate               Passed
+  7/ 27 Testing tLOFAR_Image                     Passed
+  8/ 27 Testing tdal                             Passed
+  9/ 27 Testing tCommonAttributes                Passed
+ 10/ 27 Testing tEnumerations                    Passed
+ 11/ 27 Testing tdalLopesEvent                   Passed
+ 12/ 27 Testing dal_tests1                       Passed
+</code>
+
+The main untested issue now is how everything will work on one of the newer 64 bit Intel Macs; since I do not have such a machine at my disposal, I am waiting for people to test the current version of the DAL and send me the results.
+
+
+~~DISCUSSION~~

@@ -1,0 +1,29 @@
+---
+title: "Doch ein wenig muede"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Fri, 17. April 2009 -- 20:12_
+
+Also dies war doch ein langer Tag. Nicht nur dass ich schon wieder kurz nach sechs aufgestanden bin -- was einfach nichts fuer mich ist -- sondern auch dass unsere Diskussionen eine ganze Weile gedauert haben. Das fuer sich genommen ist nicht einmal unbedingt als negativ anzusehen, aber fuenf Stunden Diskussion am runden Tisch schlauchen schon ganz ordentlich. Was man fairerweise aber auch sagen musst ist, dass die heute gefuehrten Diskussionen notwendig und durchaus produktiv waren; sicherlich gab es eine Reihe Punkte, welche ich bereits als geklaert erwartet hatte, aber trotzdem sind doch einige deutliche Fortschritte zu verzeichnen. Was fuer sich genommen schon eine ganze Weile in Anspruch genommen hat war uns auf eine Konvention fuer die Dateinamen zu einigen... das offizielle Ergebnis:
+
+~~~~
+lofar_<obsid>_<date>_{processing}_<type>.[h5,fits,casa]
+~~~~
+
+Das ist es also, das Format fuer die Namensgebung fuer LOFAR Datensaetze. Mag fragwuerdig erscheinen, warum man sich an so einer Sache so lange aufhalten kann, aber jeder Bestandteil des Namens hat eine Reihe von weiteren Debatten ausgeloest, ehe es zu einer Einigung gekommen ist. Was fuer sich genommen einen nicht unerheblichen Teil der Diskussion ausmachte war der `type` Anteil, welcher dazu gedacht ist, um einen Datensatz zu identifizieren, so dass sich direkt erkennen laesst was man vor sich hat (und dies ohne die Datei ueberhaupt zu oeffnen); nach einigem hin und her haben wir nur eine erste Liste von 3-Buchstaben-Kombinationen, auch wenn das letzte Wort in der Sache sicherlich noch nicht gefallen ist.
+ * `VIS` -- visibility data
+ * `SKY` -- (multi-dimensional) sky image
+ * `RMC` -- Rotation measure cube
+ * `RMM` -- Rotation measure map
+ * `DYS` -- Dynamic spectrum
+ * `CRC` -- Cosmic ray skymap cube
+ * `BFS` -- Beamformed station data
+ * `BFT` -- Beamformed tied-array data
+ * `TBB` -- Transient buffer board dump (base-band and frequency data)
+Streng genommen besteht natuerlich kein Zwang, die Typenbezeichnung auf drei Buchstaben zu begrenzen, aber nachdem wir die ersten auf diese Weise definiert hatten, bildete sich doch die Ansicht heraus, dass es schon Sinn machen wuerde ein einheitliches Format zu waehlen; dies wird sicherlich noch ein wenig einsinken muessen, ehe alle Beteiligten gewillt sind dies abzusegnen, aber ein Anfang ist auch jeden Fall schon einmal gemacht (und das ist ja auch schon einmal etwas Gutes).
+
+Was nach der langen Session im Konferenzraum bestimmt auch nicht ganz ohne Folgen geblieben ist, war die Tatsache dass gegen sechs Uhr der [Whiskey Break](http://www.flickr.com/photos/larsbaehren/sets/72157616922013059) auf dem Programm stand. Von dieser Veranstaltung habe ich bisher ja noch nie gehoert, aber vielleicht liegt dies auch ein wenig daran, dass ich einfach eine ganze Weile nicht mehr in Amsterdam gewesen bin -- vielleicht ist dies eine Kleinigkeit welche ich aendern sollte.
