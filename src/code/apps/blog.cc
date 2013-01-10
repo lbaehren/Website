@@ -22,7 +22,17 @@
   \file blog.cc
   \brief Main blog application executable
   \author Lars Baehren
- */
+
+  Available command line options:
+
+  \verbatim
+  --title, -T <arg>    ...  Set the title of the blog entry
+  --upcoming, -U       ...  Do not publish the entry, but mark it as upcoming
+  --publish, -P <arg>  ...  Publish an entry stored in the upcoming area
+  --dry-run, -D        ...  Dry run only, do not generate or actually manipulate
+                            any files
+  \endverbatim
+*/
 
 /* Standard header files */
 #include <fstream>
@@ -43,6 +53,11 @@ int edit_entry ()
   return 0;
 }
 
+int publish_entry (std::string const &filename)
+{
+  return 0;
+}
+
 // ==============================================================================
 //
 //  Program main function
@@ -55,6 +70,9 @@ int main (int argc, char *argv[])
   std::string optionKey;
   bool indexAll        = false;
   bool dryRun          = false;
+  bool upcoming        = false;
+  bool publish         = false;
+  std::string filename;
   std::string title    = "Test entry";
   std::string author   = "Lars Baehren";
   std::vector<std::string> tags (1,"Development");
@@ -69,6 +87,19 @@ int main (int argc, char *argv[])
     if (optionKey == "--title" || optionKey == "-T") {
       if (argc>n+1) {
 	title = argv[n+1];
+      }
+    }
+
+    if (optionKey == "--upcoming" || optionKey == "-U") {
+      upcoming = true;
+    }
+
+    if (optionKey == "--publish" || optionKey == "-P") {
+      if (argc>n+1) {
+	publish  = true;
+	filename = argv[n+1];
+      } else {
+	std::cerr << "Incomplete command line option - missing filename!" << std::endl;
       }
     }
 
