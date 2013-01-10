@@ -25,6 +25,7 @@ set (PROJECT_VERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJEC
 ##
 ## ==============================================================================
 
+## Load test driver and enable it
 include (CTest)
 enable_testing()
 
@@ -99,6 +100,8 @@ find_path (PROJECT_SOURCE_DIR_PAGES
 if (NOT PROJECT_SOURCE_DIR_PAGES)
   message (SEND_ERROR "Missing webpages source dir (PROJECT_SOURCE_DIR_PAGES)")
 endif (NOT PROJECT_SOURCE_DIR_PAGES)
+
+set (PROJECT_BINARY_DIR_PAGES ${PROJECT_BINARY_DIR}/src/pages)
 
 ##__________________________________________________________
 ## Custom CMake modules
@@ -224,3 +227,4 @@ message (STATUS " .. Rake executable version ..... = ${RAKE_VERSION}"           
 message (STATUS " .. Webgen executable ........... = ${WEBGEN_EXECUTABLE}"        )
 message (STATUS " .. Webgen executable version ... = ${WEBGEN_VERSION}"           )
 message (STATUS "------------------------------------------------------------ "   )
+

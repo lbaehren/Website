@@ -2,13 +2,21 @@
 ##_______________________________________________________________________________
 ## Target: Render the website
 
+## Build instructions
 add_custom_target (Website ALL
   COMMAND ${WEBGEN_EXECUTABLE} render
-  DEPENDS ${PROJECT_SOURCE_DIR}/config.yaml
-  WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
+  DEPENDS ${PROJECT_BINARY_DIR}/config.yaml
+  WORKING_DIRECTORY ${PROJECT_BINARY_DIR}
   COMMENT "Rendering website from sources ..."
   )
 add_dependencies (Website libblog)
+
+## Installation instructions
+install(
+  DIRECTORY ${PROJECT_BINARY_DIR}/website
+  DESTINATION ${CMAKE_INSTALL_PREFIX}/website
+  USE_SOURCE_PERMISSIONS
+  )
 
 ##_______________________________________________________________________________
 ## Build the page with the most recent blog entries
@@ -36,3 +44,4 @@ add_custom_target (online
   WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
   COMMENT "Publishing website - uploading generated pages ..."
   )
+add_dependencies (online Website)
