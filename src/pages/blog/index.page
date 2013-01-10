@@ -9,6 +9,136 @@ tags: Blog
  
 **:::**
  
+### Wettbewerb der Karriere Netzwerke ###
+
+
+
+
+_Thu, 10. January 2013 -- 09:31_
+
+Fuer jemanden der ueber die deutschen Landesgrenzen hinweg auf der Suche nach beruflichen Kontakten ist (oder diese pflegen moechte), war wohl schon lange klar dass [XING](http://www.xing.de) nur begrenzt geeignet ist:
+
+> Das weltgrößte Karriere-Netzwerk [LinkedIn](http://de.linkedin.com) hat die Schwelle von 200 Millionen Mitgliedern übersprungen. Damit erreicht die auf berufliche Nutzung spezialisierte Online-Plattform etwa ein Fünftel der Mitglieder von Facebook und hat zuletzt ein ähnlich schnelles Wachstum erreicht. Erst im März vergangenen Jahres hatte das US-Unternehmen die Marke von 100 Millionen Mitgliedern geknackt. Jede Sekunde kämen zwei neue Nutzer hinzu, [teilte LinkedIn mit](http://blog.linkedin.com/2013/01/09/linkedin-200-million).
+
+Wie die [Meldung auf Heise News](http://www.heise.de/jobs/meldung/LinkedIn-vernetzt-weltweit-200-Millionen-Menschen-1780572.html) weiter ausfuehrt, hatte LinkedIn lange Zeit einen klaren US-Schwerpunkt -- dies scheint sich aber mittlerweile geaendert zu haben:
+
+> Inzwischen haben sich aber bereits 64 Prozent der Nutzer außerhalb der USA angemeldet. In den deutschsprachigen Ländern hat LinkedIn mehr als drei Millionen Mitglieder und ist damit etwa halb so groß wie der hiesige Marktführer Xing. Nach den USA gibt es die meisten Miglieder in Indien, Brasilien, Großbritannien und Kanada.
+
+Da ich selber ja in beiden Netzwerken praesent bin, kann ich schon ein wenig die Unterschiede -- sowohl in den Angeboten als auch in den darin zu findenden Leuten -- nachvollziehen: _XING_ setzt recht eindeutig den Schwerpunkt auf den den deutschsprachigen Raum (Deutschland, Schweiz, Oesterreich), waehrend _LinkedIn_ deutlich globaler aufgestellt ist. Dementsprechend macht es schon einen Unterschied was fuer Kontakte oder Jobs man sucht: beschraenkt man sich alleine auf den deutschsprachigen Raum, dann bietet _XING_ nach wie vor wohl die groesseren Chancen, alles was aber ein wenig ueber diesen Tellerrand hinausgeht, geschieht dann aber an anderer Stelle.
+ 
+**:::**
+ 
+ 
+### Synchronisation Website ###
+
+
+
+
+_Wed, 09. January 2013 -- 15:14_
+
+Ok, dann liegt es also nicht einfach nur daran, dass ich da etwas grundlegend falsch gemacht habe, sondern es handelt sich um eine Eigenheit des via WebDAV gemounteten Verzeichnisses. Ich habe mich seit dem Umzug des Blogs auf die neue Adresse ja schon mehrfach darueber gewundert, dass bei einem Update auf die Live-Version der Seiten, immer wieder alle Daten komplett uebertragen werden. Das fuer sich genommen ist eine ziemlich unsinnige Verhaltensweise, denn schliesslich sind es in der Regel ja nur recht kleine Ergaenzungen, welche aktualisiert werden muessen -- ignoriert man dies und faengt stattdessen an noch einmal alles komplett von Anfang an durch die Gegend zu schieben, so dauert dies unnoetig lange (und mit dem wachsenden Inhalt immer laenger).
+
+Auch wenn dies die Statusmeldungen beim Erzeugen der Seiten nicht hergaben, wollte ich einfach noch mal auf Nummer sicher gehen, so dass ich die Synchronisationsprozedur zum Vergleich lokal gefahren habe:
+
+~~~~
+rsync -avtE --delete website website_copy
+~~~~
+
+Abgesehen von der Zieladresse bleibt alles identisch, so dass ich recht schnell zu sehen bekommen sollte, falls der Seiten-Generator mehr Seiten als noetig baut. Zum Test habe ich daher eine kleine Aenderung vorgenommen und anschliessend die Synchronisation mit der lokalen Kopie gestartet:
+
+~~~~
+[100%] Publishing website - uploading generated pages ...
+sending incremental file list
+blog/archive.html
+blog/index.html
+blog/2009/2009-03/2009-03-13_02-54.html
+blog/2010/2010-01/2010-01-01_23-13.html
+blog/2010/2010-09/
+blog/2010/2010-09/2010-09-06_11-06.html
+blog/2010/2010-09/dsc_20100905_130518.jpg
+blog/2010/2010-09/dsc_20100905_143200.jpg
+blog/2010/2010-09/dsc_20100905_162328.jpg
+
+sent 415146 bytes  received 298 bytes  166177.60 bytes/sec
+total size is 124117486  speedup is 298.76
+[100%] Built target Website_copy
+~~~~
+
+Wie ich es von `rsync` erwarten wuerde werden nur die Dateien uebertragen, welche sich in der Zeit seit dem letzten Abgleich veraendert haben. Wiederhole ich die gleiche Prozedur jetzt noch einmal fuer das via WebDAV eingebundene Verzeichnis, dann wird sehr schnell deutlich, dass hier etwas grundlegend anders laeuft:
+
+~~~~
+[100%] Publishing website - uploading generated pages ...
+sending incremental file list
+bg.gif
+calendars.html
+console_840x280.jpg
+default.css
+default.template
+dsc_20080618_193227.jpg
+front.jpg
+front_flowers.jpg
+index.html
+menubg.gif
+menubg2.gif
+blog/
+blog/2003.html
+blog/2004.html
+blog/2005.html
+blog/2006.html
+blog/2007.html
+blog/2008.html
+blog/2009.html
+blog/2010.html
+blog/2011.html
+blog/2012.html
+blog/2013.html
+blog/archive.html
+~~~~
+
+Den Rest der Ausgabe erspare ich mir mal an dieser Stelle - ich glaube nicht, dass die zusaetzlichen Seiten an Log-Infos weiterhelfen wuerden. Was dies aber fuer mich bedeutet ist, dass ich mich da noch einmal auf die Suche nach einer Dokumentation begeben muss, welche darueber Aufschluss gibt, was hier falsch laeuft -- auf Dauer kann dies sicherlich nicht so bleiben.
+ 
+**:::**
+ 
+ 
+### The Smith Tapes ###
+
+
+
+
+_Wed, 09. January 2013 -- 10:28_
+
+Ich weiss doch, warum ich [BBC News](http://news.bbc.co.uk) hoere: es gibt einfach immer wieder Geschichten und Ereignisse, welche mir hoechstwahrscheinlich nicht zu Ohren kommen wuerden, waere da nicht die Stimme von der Insel hinaus in die Welt.
+
+Auf dem Weg ins Buero gestern Morgen, habe ich mich noch ein wenig durch die [Global News](http://www.bbc.co.uk/podcasts/series/globalnews) der vergangenen Tage gehoert; es ist zwar recht leicht da ins Hintertreffen zu geraten, aber netterweise handelt es sich immer um einen recht ausgewogenen Mix von tagesaktuellen Meldungen und Hintergrundberichten, welche sich abseits des Tagesgeschaeftes bewegen. In letztere Kategorie gehoerte dann auch der Bericht ueber ein jetzt wieder ans Tageslicht gekommenes Archiv mit Interview, welche der britische Journalist Howard Smith zu Beginn der 70er Jahre gefuehrt hat:
+
+> John and Yoko are there, talking for hours and hours — during a bed-in, at a “happening,” listening to the Beatles at home. 
+>
+>  Dennis Hopper and Peter Fonda, just back from Cannes in June 1969, rap about their new movie, “Easy Rider.”
+>
+> Eric Clapton, between shows at the Fillmore East in 1970, struggles with a sense of responsibility for his new band, Derek and the Dominos.
+>
+> Those are among more than 100 interviews with rock stars, artists and assorted radicals recorded from 1969 to 1972 by Howard Smith, a longtime writer for The Village Voice. They have now been cataloged and packaged for the digital era as “The Smith Tapes” and will be released in monthly batches over the next year. The first, with John Lennon and Yoko Ono, Lou Reed, Frank Zappa, Mr. Clapton and others, comes out Tuesday through Amazon’s MP3 store and next week on iTunes.
+
+Als ich mal ein wenig recherchiert habe, konnte ich feststellen, dass die Nachricht schon vor dem Ende letzten Jahres die Runde gemacht hat (ist da aber komplett an mir vorbeigegangen):
+
+* [Legends of the ’60s, Just Being Themselves](http://www.nytimes.com/2012/11/19/arts/music/howard-smiths-interviews-from-the-60s-to-be-released.html) -- The New York Times, 18 November 2012
+* [The Howard Smith Tapes](http://www.examiner.com/article/the-howard-smith-tapes) -- Examiner.com, 24 November 2012
+* [Listen to John Lennon and Yoko Ono Discuss the Breakup of the Beatles](http://www.vanityfair.com/online/daily/2012/11/the-smith-tapes-listen-to-john-lennon-and-yoko-ono) -- Vanity Fair, 19 November 2012
+* [I felt like I was alone in the room with John Lennon](http://news.bbc.co.uk/today/hi/today/newsid_9782000/9782195.stm) -- BBC News, 5 January 2013
+
+Da Tapes schon seit einer Weile nicht mehr zu den bevorzugten Speichermedien im Consumer-Bereich gehoeren, hat es bereits vergangenen November ein [Kickstarter Projekt](http://www.kickstarter.com/projects/1931493310/the-smith-tapes-box-set) gegeben, um da das Geld fuer eine Digitalisierung und Restauration der Originalausnahmen zusammen zu bekommen: 
+
+> We’re launching this Kickstarter campaign to produce a limited edition, hand numbered box set with more than 12 CDs of the cream-of-the-crop interviews. Out of more than 150 interviews that we found, we’ve selected 18 incredible conversations for this boxed collection.
+>
+> The Smith Tapes will also be a larger project. After the release of this box set, we will independently release 100 Howard Smith interviews on iTunes. These will be available in themed collections, downloadable as albums or as individual tracks.
+
+Die Idee eines **Limited Edition, hand numbered box set** klingt natuerlich recht interessant, aber ganz so besonders braeuchte ich persoenlich die Interviews nicht; reinhoeren wuerde ich aber definitiv, denn sowohl als Zeitdokument, als auch als Einblick in das Schaffen einiger kreativer Groessen duerfte dies ziemlich aufregender Hoerstoff sein. Da gilt es also die Augen und Ohren offen zu halten, wann denn die ersten Interviews zugaenglich gemacht werden.
+
+![The Smith Tapes - Zappa](/blog/2013/2013-01/smith_tapes_zappa.png)
+ 
+**:::**
+ 
+ 
 ### Github contributions ###
 
 
@@ -177,60 +307,6 @@ Nachdem ich gestern Abend ja zum ersten Mal auf die Live-Version meiner neuen We
 ![Daily usage stats](/blog/2013/2013-01/2013-01-03_daily_usage_website.png)
 
 Sieht ja alles schon recht nett aus -- nur verstehe ist nicht so recht, warum ich dann heute im Laufe des Tages wieder die gleiche Fehlermeldung von [1&1](http://1und1.de) vorgesetzt bekomme, gegen welche ich schon gestern angelaufen bin. Wenn ich nicht gestern Abend schon die neue Website haette zu sehen bekommen, waere es sicherlich eine andere Sache -- das hatte aber (zumindest nach einem Loeschen des von Firefox angelegten Cache) funktioniert.
- 
-**:::**
- 
- 
-### Sterben lohnt sich ###
-
-
-
-
-_Thu, 03. January 2013 -- 00:13_
-
-Ist doch immer wieder gut sich die Bedingungen vor dem Kauf einer Leistung genauer durchzulesen. Als ich gerade noch dabei war, mir die Details zur BahnCard 25 zu Gemuete durchzufuehren, bin ich auf eine Leistung gestossen, welche ich nicht so recht einzuordnen wusste: _BahnCard-Versicherung_.
-
-> Die BahnCard-Versicherung beinhaltet eine Reisegepäck-, Reiseunfall und BahnreiseService-Versicherung, einen Schlüssel- und Einbruch-Schutz sowie eine DB-Spar- und Spezialpreis-Versicherung. Die Versicherung gilt vom Kauftag bis zum Ende der Geltungsdauer der zugehörigen BahnCard und verlängert sich mit der BahnCard jeweils um ein weiteres Jahr, sofern sie nicht sechs Wochen vor Ende der Laufzeit gekündigt wurde.
-
-Das fuer sich genommen klang eigentlich ganz sinnvoll, so dass ich sicheheitshalber Julia um einen Blick auf die Beschreibung gebeten habe... anders waere mir wohl die folgende Feinheit erst garnicht in dieser Weise aufgefallen:
-
-> **2. Reise-Unfallversicherung**
->
-> Sie haben unterwegs einen Unfall. Bei Invalidität erhalten Sie bis zu 25.000,- Euro, im Todesfall 12.500,- Euro.
-
-Das laesst einen schon nachdenklich werden... im Todesfall bekommt der Fahrgast Geld von der [Bahn](http://www.bahn.de). Ist durchaus ein nettes Angebot. In gleicher Weise haette man natuerlich auch eine BahnCard 100 verschenken koennen -- aber dafuer ist man dann anscheinend doch ein wenig zu knauserig.
- 
-**:::**
- 
- 
-### Upload laeuft ###
-
-
-
-
-_Wed, 02. January 2013 -- 11:24_
-
-Nachdem ich nun die Kontaktdaten fuer die neue Website habe, macht es ja schon Sinn einmal auszuprobieren, ob ich denn auch wirklich den benoetigten Zugriff bekomme. Folgerichtig habe ich mir eben mal den WebDAV Zugang angeschaut und eingerichtet. Nach derFreischaltung liess sich das Verzeichnis auf dem Server ohne Probleme auf meinem Rechner einbinden, so dass mittlerweile auch schon das erste Update meiner Website laeuft. Erwartungsgemaess dauert dies im ersten Durchlauf ein wenig laenger -- weil ich ja alles komplett neu hochladen muss -- aber sobald dies erst einmal erledigt ist, sollte es mit den inkrementellen Updates deutlich schneller gehen.
- 
-**:::**
- 
- 
-### Domain aktiviert ###
-
-
-
-
-_Wed, 02. January 2013 -- 10:21_
-
-Ich denke mal, dass es schon recht realistisch war, nicht bereits gestern mit der Aktivierung aller neuen Online-Konten zu rechnen. Da aber heute die Welt wieder angefangen hat zu drehen, traf vor wenigen Minuten eine Benachrichtigung ein:
-
-> Die von Ihnen im Auftrag A382611 bestellte Domain
->
-> [larsbaehren.de](http://larsbaehren.de)
->
-> ist nun freigeschaltet und kann von Ihnen genutzt werden. Unter der Adresse http://admin.df.eu können Sie Ihr Kundenmenü aufrufen und alle Einstellungen vornehmen.
-
-Da werde ich also mal schauen, dass ich laufe des Tages alle notwendigen Einstellungen vorgenommen kriege, damit die Webseiten umziehen koennen.
  
 **:::**
  
