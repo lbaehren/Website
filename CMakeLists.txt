@@ -72,7 +72,7 @@ find_path (PROJECT_SOURCE_DIR_BLOG
   PATH_SUFFIXES src pages src/pages src/pages/blog pages/blog blog
   )
 
-find_path (SOURCE_DIR_PAGES
+find_path (PROJECT_SOURCE_DIR_PAGES
   NAMES index.page default.template default.css
   PATHS ${PROJECT_SOURCE_DIR}
   PATH_SUFFIXES src pages src/pages
@@ -185,7 +185,18 @@ endif (script_blog_recent AND PROJECT_SOURCE_DIR_BLOG)
 ## Publish the website online
 
 add_custom_target (online
-  COMMAND rsync -avE --delete ${INSTALL_PREFIX_WEBSITE}/* /Volumes/webdav/webseiten
+  COMMAND rsync -avtE --delete ${INSTALL_PREFIX_WEBSITE}/* /Volumes/webdav/webseiten
+#  COMMAND rsync -av --progress --delete ${INSTALL_PREFIX_WEBSITE}/* /Volumes/webdav/webseiten
+  WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
+  COMMENT "Publishing website - uploading generated pages ..."
+  )
+
+## Target to test synchronization of generated website; while the live version
+## will be pushed online through a WebDAV connection, we need to be able to
+## verify the set of parameters.
+
+add_custom_target (Website_copy
+  COMMAND rsync -avtE --delete ${INSTALL_PREFIX_WEBSITE}/* ${CMAKE_INSTALL_PREFIX}/website_copy
   WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
   COMMENT "Publishing website - uploading generated pages ..."
   )
@@ -211,35 +222,35 @@ set_property (DIRECTORY
 
 ## Display summary of configuration settings
 
-message (STATUS "------------------------------------------------------------"   )
-message (STATUS "[Website] Configuration summary."                               )
-message (STATUS "------------------------------------------------------------ "  )
-message (STATUS " System configuration:"                                         )
-message (STATUS " .. Processor type .............. = ${CMAKE_SYSTEM_PROCESSOR}"  )
-message (STATUS " .. CMake executable ............ = ${CMAKE_COMMAND}"           )
-message (STATUS " .. CMake version ............... = ${CMAKE_VERSION}"           )
-message (STATUS " .. System name ................. = ${CMAKE_SYSTEM}"            )
-message (STATUS " .. C++ compiler ................ = ${CMAKE_CXX_COMPILER}"      )
-message (STATUS " .. C compiler .................. = ${CMAKE_C_COMPILER}"        )
-message (STATUS " .. size(void*) ................. = ${CMAKE_SIZEOF_VOID_P}"     )
-message (STATUS " Project configuration:"                                        )
-message (STATUS " .. Version number .............. = ${PROJECT_VERSION}"         )
-message (STATUS " .. Installation prefix ......... = ${CMAKE_INSTALL_PREFIX}"    )
-message (STATUS " .. Pages source directory ...... = ${SOURCE_DIR_PAGES}"        )
-message (STATUS " .. Blog source directory ....... = ${PROJECT_SOURCE_DIR_BLOG}" )
-message (STATUS " .. Enable CTest test driver? ... = ${ENABLE_TESTING}"          )
-message (STATUS " .. Verbose configure? .......... = ${CONFIGURE_VERBOSE}"       )
-message (STATUS " External tools & packages:"                                    )
-message (STATUS " .. Doxygen executable .......... = ${DOXYGEN_EXECUTABLE}"      )
-message (STATUS " .. Doxygen version ............. = ${DOXYGEN_VERSION}"         )
-message (STATUS " .. Ruby executable ............. = ${RUBY_EXECUTABLE}"         )
-message (STATUS " .. Ruby version ................ = ${RUBY_VERSION}"            )
-message (STATUS " .. Path to Ruby library ........ = ${RUBY_LIBRARIES}"          )
-message (STATUS " .. Include directory ........... = ${RUBY_INCLUDES}"           )
-message (STATUS " .. Gem executable .............. = ${GEM_EXECUTABLE}"          )
-message (STATUS " .. Gem executable version ...... = ${GEM_VERSION}"             )
-message (STATUS " .. Rake executable ............. = ${RAKE_EXECUTABLE}"         )
-message (STATUS " .. Rake executable version ..... = ${RAKE_VERSION}"            )
-message (STATUS " .. Webgen executable ........... = ${WEBGEN_EXECUTABLE}"       )
-message (STATUS " .. Webgen executable version ... = ${WEBGEN_VERSION}"          )
-message (STATUS "------------------------------------------------------------ "  )
+message (STATUS "------------------------------------------------------------"    )
+message (STATUS "[Website] Configuration summary."                                )
+message (STATUS "------------------------------------------------------------ "   )
+message (STATUS " System configuration:"                                          )
+message (STATUS " .. Processor type .............. = ${CMAKE_SYSTEM_PROCESSOR}"   )
+message (STATUS " .. CMake executable ............ = ${CMAKE_COMMAND}"            )
+message (STATUS " .. CMake version ............... = ${CMAKE_VERSION}"            )
+message (STATUS " .. System name ................. = ${CMAKE_SYSTEM}"             )
+message (STATUS " .. C++ compiler ................ = ${CMAKE_CXX_COMPILER}"       )
+message (STATUS " .. C compiler .................. = ${CMAKE_C_COMPILER}"         )
+message (STATUS " .. size(void*) ................. = ${CMAKE_SIZEOF_VOID_P}"      )
+message (STATUS " Project configuration:"                                         )
+message (STATUS " .. Version number .............. = ${PROJECT_VERSION}"          )
+message (STATUS " .. Installation prefix ......... = ${CMAKE_INSTALL_PREFIX}"     )
+message (STATUS " .. Pages source directory ...... = ${PROJECT_SOURCE_DIR_PAGES}" )
+message (STATUS " .. Blog source directory ....... = ${PROJECT_SOURCE_DIR_BLOG}"  )
+message (STATUS " .. Enable CTest test driver? ... = ${ENABLE_TESTING}"           )
+message (STATUS " .. Verbose configure? .......... = ${CONFIGURE_VERBOSE}"        )
+message (STATUS " External tools & packages:"                                     )
+message (STATUS " .. Doxygen executable .......... = ${DOXYGEN_EXECUTABLE}"       )
+message (STATUS " .. Doxygen version ............. = ${DOXYGEN_VERSION}"          )
+message (STATUS " .. Ruby executable ............. = ${RUBY_EXECUTABLE}"          )
+message (STATUS " .. Ruby version ................ = ${RUBY_VERSION}"             )
+message (STATUS " .. Path to Ruby library ........ = ${RUBY_LIBRARIES}"           )
+message (STATUS " .. Include directory ........... = ${RUBY_INCLUDES}"            )
+message (STATUS " .. Gem executable .............. = ${GEM_EXECUTABLE}"           )
+message (STATUS " .. Gem executable version ...... = ${GEM_VERSION}"              )
+message (STATUS " .. Rake executable ............. = ${RAKE_EXECUTABLE}"          )
+message (STATUS " .. Rake executable version ..... = ${RAKE_VERSION}"             )
+message (STATUS " .. Webgen executable ........... = ${WEBGEN_EXECUTABLE}"        )
+message (STATUS " .. Webgen executable version ... = ${WEBGEN_VERSION}"           )
+message (STATUS "------------------------------------------------------------ "   )

@@ -4,4 +4,3 @@ add_subdirectory (code)
 
 ## Layout templates
 add_subdirectory (templates)
-
