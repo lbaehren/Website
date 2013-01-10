@@ -1,0 +1,70 @@
+---
+title: "Synchronisation Website"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Wed, 09. January 2013 -- 15:14_
+
+Ok, dann liegt es also nicht einfach nur daran, dass ich da etwas grundlegend falsch gemacht habe, sondern es handelt sich um eine Eigenheit des via WebDAV gemounteten Verzeichnisses. Ich habe mich seit dem Umzug des Blogs auf die neue Adresse ja schon mehrfach darueber gewundert, dass bei einem Update auf die Live-Version der Seiten, immer wieder alle Daten komplett uebertragen werden. Das fuer sich genommen ist eine ziemlich unsinnige Verhaltensweise, denn schliesslich sind es in der Regel ja nur recht kleine Ergaenzungen, welche aktualisiert werden muessen -- ignoriert man dies und faengt stattdessen an noch einmal alles komplett von Anfang an durch die Gegend zu schieben, so dauert dies unnoetig lange (und mit dem wachsenden Inhalt immer laenger).
+
+Auch wenn dies die Statusmeldungen beim Erzeugen der Seiten nicht hergaben, wollte ich einfach noch mal auf Nummer sicher gehen, so dass ich die Synchronisationsprozedur zum Vergleich lokal gefahren habe:
+
+~~~~
+rsync -avtE --delete website website_copy
+~~~~
+
+Abgesehen von der Zieladresse bleibt alles identisch, so dass ich recht schnell zu sehen bekommen sollte, falls der Seiten-Generator mehr Seiten als noetig baut. Zum Test habe ich daher eine kleine Aenderung vorgenommen und anschliessend die Synchronisation mit der lokalen Kopie gestartet:
+
+~~~~
+[100%] Publishing website - uploading generated pages ...
+sending incremental file list
+blog/archive.html
+blog/index.html
+blog/2009/2009-03/2009-03-13_02-54.html
+blog/2010/2010-01/2010-01-01_23-13.html
+blog/2010/2010-09/
+blog/2010/2010-09/2010-09-06_11-06.html
+blog/2010/2010-09/dsc_20100905_130518.jpg
+blog/2010/2010-09/dsc_20100905_143200.jpg
+blog/2010/2010-09/dsc_20100905_162328.jpg
+
+sent 415146 bytes  received 298 bytes  166177.60 bytes/sec
+total size is 124117486  speedup is 298.76
+[100%] Built target Website_copy
+~~~~
+
+Wie ich es von `rsync` erwarten wuerde werden nur die Dateien uebertragen, welche sich in der Zeit seit dem letzten Abgleich veraendert haben. Wiederhole ich die gleiche Prozedur jetzt noch einmal fuer das via WebDAV eingebundene Verzeichnis, dann wird sehr schnell deutlich, dass hier etwas grundlegend anders laeuft:
+
+~~~~
+[100%] Publishing website - uploading generated pages ...
+sending incremental file list
+bg.gif
+calendars.html
+console_840x280.jpg
+default.css
+default.template
+dsc_20080618_193227.jpg
+front.jpg
+front_flowers.jpg
+index.html
+menubg.gif
+menubg2.gif
+blog/
+blog/2003.html
+blog/2004.html
+blog/2005.html
+blog/2006.html
+blog/2007.html
+blog/2008.html
+blog/2009.html
+blog/2010.html
+blog/2011.html
+blog/2012.html
+blog/2013.html
+blog/archive.html
+~~~~
+
+Den Rest der Ausgabe erspare ich mir mal an dieser Stelle - ich glaube nicht, dass die zusaetzlichen Seiten an Log-Infos weiterhelfen wuerden. Was dies aber fuer mich bedeutet ist, dass ich mich da noch einmal auf die Suche nach einer Dokumentation begeben muss, welche darueber Aufschluss gibt, was hier falsch laeuft -- auf Dauer kann dies sicherlich nicht so bleiben.
