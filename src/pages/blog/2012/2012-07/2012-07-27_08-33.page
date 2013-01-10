@@ -10,9 +10,9 @@ _Fri, 27. July 2012 -- 08:33_
 
 Ich glaube jetzt habe ich auch noch den fehlenden Stein eingefuegt: nachdem ich gestern ja schon das seit langem existierende Script fuer die Erstellung von Blog-Eintraegen dahingehend aufgebohrt hatte, dass ich (zumindest fuer die Uebergangsperiode) parallel beide notwendigen Formate erzeugen kann. Der kleine Schoenheitsfehler beim gestrigen Stand der Aenderungen war allerdings noch, dass ich zwar den Header erzeuge, aber den eigentlichen Text nicht gleich mit in beiden Versionen ablege -- dies ist nun korregiert. Von der Idee her ist die Loesung eigentlich recht einfach:
 
-  - Header fuer Dokuwiki-Variante anlegen.
-  - Header fuer Webgen-Variante anlegen.
-  - Den Eintrage schreiben und in einer temporaeren Datei ablegen.
-  - Den inhalt der temporaeren Datei an die zuvor erzeugten Header anfuegen.
+ * Header fuer Dokuwiki-Variante anlegen.
+ * Header fuer Webgen-Variante anlegen.
+ * Den Eintrage schreiben und in einer temporaeren Datei ablegen.
+ * Den inhalt der temporaeren Datei an die zuvor erzeugten Header anfuegen.
 
 Der wesentliche Vorteil dieser Loesung ist, dass ich anschliessend kaum noch etwas von Hand machen muss, sondern mich einfach nur auf das Schreiben des Textes konzentrieren kann; ausgenommen sind bisher allerdings noch Unterschiede im Markup, so das so Dinge wie z.B. Links eben doch noch einmal von Hand korregiert werden muessen.

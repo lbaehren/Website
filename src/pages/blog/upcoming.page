@@ -11,6 +11,18 @@ tags: Blog
 
 * http://www.storagereview.com
 
+### Ueberarbeitung Setup ###
+
+Das war eine Ueberarbeitung, welche schon eine Weile faellig war; nachdem ich ja schon eine Weile fleissig mittels _Webgen_ meine Website baue, wwurde es nun noch einmal hoechste Zeit auch hinter den Kulissen noch ein wenig aufzuraeumen.
+
+~~~~
+install(
+  DIRECTORY ${PROJECT_BINARY_DIR}/website
+  DESTINATION ${CMAKE_INSTALL_PREFIX}/website
+  USE_SOURCE_PERMISSIONS
+  )
+~~~~
+
 ### Swordfish (2001) ###
 
 * [Swordfish](http://www.imdb.com/title/tt0244244) (2001)
