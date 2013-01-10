@@ -8,23 +8,22 @@ author: Lars Baehren
 
 _Wed, 17. June 2009 -- 17:06_
 
-
-
 Manchmal gibt es doch auch Fortschritte zu vermelden... Nachdem ich letzte Woche ja noch einen Normalisierungsfehler in meinem Beamformer Code gefunden hatte; der Fehler war recht subtiler Natur, so dass es also kein Wunder ist, dass ich so lange mit der Suche zugebracht habe. Wie sich herausstellte war es der Unterschied zwischen (dem fehlerhaften)
-<code cpp>
-      norm_p        = 1/(wShape(1)*wShape(1));
-</code>
+
+~~~~
+norm_p        = 1/(wShape(1)*wShape(1));
+~~~~
+
 und (dem korrekten)
-<code cpp>
-      norm_p        = 1.0/(wShape(1)*wShape(1));
-</code>
-welcher dafuer sorgte, dass alle zurueckgelieferten Werte auf Null gesetzt wurden. Dazu muss man vielleicht hinzufuegen, dass ''wShape'' ein Vektor vom Typ ''int'' ist, waehrend es sich bei ''norm_p'' um einen Faktor vom Typ ''double'' handelt. Was also passierte war, dass im ersten Fall eine Division mit ganzzahligen Werten durchgefuehrt wurde, weshalb das Ergebnis Null wurde; gibt man allerdings vor, dass die Rechenoperation mit einer Gleitkommazahl durchgefuehrt werden soll, dann wird ''norm_p'' ein von Null verschiedener Wert zugewiesen... und damit bleiben auch die Werte, auf welche die Normierung angewendet wird, erhalten.
 
-Die vollkommen logische naechste Frage war jetzt natuerlich, ob mit dieser Korrektur auch die vom CR-Imager ausgeworfenen Himmelskarten von Null verschiedene Werte aufweisen wuerden (was bisher ja der Fall war). Wieder einmal erwies sich dabei die Tatsache, dass ich ja mit 5-dimensionalen Arrays arbeite als hinderlich fuer die Visualisierung. Die meisten Programme zur Darstellung astronomischer Bilder sind auf den Umgang mit drei Achsen beschraenkt -- hat man es aber mit mehr zu tun, gibt es typischerweise keine Moeglichkeit durch das Datenvolumen zu navigieren. Die Loesung kam aber gluecklicherweise durch Lesen in der Dokumentation des von mir verwendeten [[http://code.google.com/p/casacore|casacore]] Pakets; bei der Konvertierung des internen Formates nach FITS bietet sich die Moeglichkeit Koordinatenachsen umzusortieren -- am wichtigsten dabei das nach hinten schieben entarteter Achsen (also solcher Achsen mit lediglich einem Element). Mit diesem kleinen Trick iat es mit denn gelungen aus einem ''[120,120,1,513,10]'' ein ''[120,120,513,10,1]'' Image zu machen -- damit tauchte nun die Frequenzachse an einer Stelle auf, an welcher die Tools sie finden und verwenden koennen.
+~~~~
+norm_p        = 1.0/(wShape(1)*wShape(1));
+~~~~
 
-{{2009-06-17_skymap-chan005.png?600}}
+welcher dafuer sorgte, dass alle zurueckgelieferten Werte auf Null gesetzt wurden. Dazu muss man vielleicht hinzufuegen, dass `wShape` ein Vektor vom Typ `int` ist, waehrend es sich bei `norm_p` um einen Faktor vom Typ `double` handelt. Was also passierte war, dass im ersten Fall eine Division mit ganzzahligen Werten durchgefuehrt wurde, weshalb das Ergebnis Null wurde; gibt man allerdings vor, dass die Rechenoperation mit einer Gleitkommazahl durchgefuehrt werden soll, dann wird `norm_p` ein von Null verschiedener Wert zugewiesen... und damit bleiben auch die Werte, auf welche die Normierung angewendet wird, erhalten.
+
+Die vollkommen logische naechste Frage war jetzt natuerlich, ob mit dieser Korrektur auch die vom CR-Imager ausgeworfenen Himmelskarten von Null verschiedene Werte aufweisen wuerden (was bisher ja der Fall war). Wieder einmal erwies sich dabei die Tatsache, dass ich ja mit 5-dimensionalen Arrays arbeite als hinderlich fuer die Visualisierung. Die meisten Programme zur Darstellung astronomischer Bilder sind auf den Umgang mit drei Achsen beschraenkt -- hat man es aber mit mehr zu tun, gibt es typischerweise keine Moeglichkeit durch das Datenvolumen zu navigieren. Die Loesung kam aber gluecklicherweise durch Lesen in der Dokumentation des von mir verwendeten [casacore](http://code.google.com/p/casacore) Pakets; bei der Konvertierung des internen Formates nach FITS bietet sich die Moeglichkeit Koordinatenachsen umzusortieren -- am wichtigsten dabei das nach hinten schieben entarteter Achsen (also solcher Achsen mit lediglich einem Element). Mit diesem kleinen Trick iat es mit denn gelungen aus einem `[120,120,1,513,10]` ein `[120,120,513,10,1]` Image zu machen -- damit tauchte nun die Frequenzachse an einer Stelle auf, an welcher die Tools sie finden und verwenden koennen.
+
+![Skymap](/blog/2009/2009-06/2009-06-17_skymap-chan005.png)
 
 Das obige Bild zeigt bisher noch keinerlei reale Daten (die Inputs kommen einfach einem Zufallszahlen-Generator), aber dafuer ein deutlich quer ueber das Bild variierendes Muster und nicht mehr (wie dies vorher der Fall war) eine einheitlich eingefaerbte Flaeche. Fuer mich bedeutet dies in jedem Fall schon einmal, dass zuletzt getaetigte Fehlerkorrektur vom Beamformer auf den Imager durchschlaegt, so dass ich mich nun daran machen kann mal einen echten Datensatz durch die Software zu jagen um zu schauen, ob ich damit ein Himmelsbild produziert bekomme...
-
-
-~~DISCUSSION~~
