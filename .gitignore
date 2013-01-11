@@ -1,5 +1,5 @@
 ## Directories
 site
 ## Individual files
+.DS_Store
 webgen.cache
-
