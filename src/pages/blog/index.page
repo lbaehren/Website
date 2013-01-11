@@ -9,6 +9,18 @@ tags: Blog
  
 **:::**
  
+### Resturlaub ###
+
+
+
+
+_Fri, 11. January 2013 -- 16:49_
+
+Das haette ich mir wahrscheinlich schon eine ganze Weile frueher einmal genauer ansehen muessen... aber irgendwie habe ich es doch geschafft dies immer wieder vor mir her zu schieben. Da Ende Januar mit grossen Schritten naeher kommt und der auch der Termin fuer den Start bei [SRON](http://www.sron.nl) immer naeher rueckt, war es schon noch einmal noetig nach dem mir noch verbleibenden Urlaub zu schauen, damit ggf. Zeit habe mich noch um diverse organisatorische Dinge zu kuemmern (wobei das Nachschauen fuer sich genommen wohl selber mit zu den organisatorischen Dingen zaehlt). Laut dem Tarifvertrag fuer den Oeffentlichen Dienst stehen mir (bei einem Alter bis zum vollendeten 40. Lebensjahr) 29 Urlaubstage pro Jahr zu; beruecksichtige ich, dass der Arbeitsvertrag ueber 10 Monate gelaufen ist (April 2012 - Januar 2013) dann komme ich auf eine Summe von approx. 24 Urlaubstagen. Wahrend diese Rechenuebung noch recht einfach war, so stellte sich das Zusammenrechnen der bereits verbrauchten Urlaubstage schon ein wenig komplizierter heraus; nach Inspektion der diversen Terminkalender komme ich nun auch 6 Tage, welche ich mir in den vergangenen 10 Monaten freigenommen habe -- demnach bleiben mir also noch mehr als 3 Wochen, welche ich mir frei nehmen koennte. Wenn ich dies ein wenig genauer betrachte, dann heisst dies wohl, dass ich rein technisch schon jetzt nicht mehr haette arbeiten muessen. Aber gut, ich habe dies noch nie zu eng gesehen -- dennoch sollte ich aber schauen, dass ich die verbliebenen Tage noch weitestgehend eingeloest kriege, denn schliesslich kann ich die Zeit zur Vorbereitung auf den neuen Job gebrauchen.
+ 
+**:::**
+ 
+ 
 ### Ueberarbeitung Setup ###
 
 
@@ -342,24 +354,6 @@ Schaut man sich darueber hinaus die Beschreibung der Sicherheitsluecke ein wenig
 > Please note that only the 3.1.x and 3.2.x series are supported at present.  Users of earlier unsupported releases are advised to upgrade as soon as possible as we cannot guarantee the continued availability of security fixes for unsupported releases.
 
 Gut, nun ist es (nicht mehr) an mir vorzuschreiben, wie sich die Weiterentwicklung beim [prometheus Bildarchiv](http://www.prometheus-bildarchiv.de) zu gestalten hat, aber fuer mich ist dies einfach mal wieder eine Erinnerung daran, dass das Abkoppeln von den in einer recht lebendigen Community stattfindenden Entwicklungen es nicht nur schwerer macht sich wieder einzuklinken, je laenger man abseilt, sondern es auch immer schwerer faellt von Sicherheits-Patches zu provitieren (welche typischerweise ja nicht endlos nach zurueckportiert werden).
- 
-**:::**
- 
- 
-### Firefox Proxy settings ###
-
-
-
-
-_Thu, 03. January 2013 -- 16:57_
-
-Naja, irgendwann werd ich es hoffentlich noch lernen, in welcher Weise ich [Firefox](http://www.mozilla.org/firefox) konfigurieren muss, damit ich Dinge vorgegaukelt bekommen, welche nicht der Wahrheit entsprechen. Gestern Abend hatte ich ja von zuhause aus das Problem, dass mir fuer die neue Adresse immer noch eine Fehlermeldung angezeigt wurde, waehrend die Seiten schon laengst zugaenglich waren. Als ich dann einfach mal einen anderen Web-Browser probiert habe, tauchte mit einem Male alles so auf, wie ich dies erwartet hatte. Abhilfe liess sich dann dadurch schaffen, dass ich den Cache von Firefox aufgeleert habe, so dass ein Reload notwendig wurde. Wo ich dann aber schon einmal dabei war, habe ich noch schnell getestet, wie es denn mit einem Update der Seiten aussieht: wenn ich Aenderungen online stellen -- in den meisten Faellen wohl ein neuer Blog-Eintrag -- dann waere es ja schon ganz nett, wenn diese Updates auch zu sehen sind. Abgesehen von einer Kleinigkeit (welche mich beim Synchronisieren noch irritiert) war es kein Problem Aenderungen vorzunehmen und diese dann online zu setzen.
-
-... dementsprechend duerfte wohl nachvollziehbar sein, dass ich doch ein wenig ueberrascht war, als heute Morgen (beim Zugriff hier an von der Uni aus) wieder der gleiche Warnhinweis auftauchte, welchen ich bereits gestern mehr als genug bewundern musste. Um nicht gleich dem Provider die Schuld in die Schuhe zu schieben, habe ich die gleiche Vorgehensweise wie gestern eingeschlagen... leider aber ohne Erfolg. Nach einer Weile ist mir dann aber eingefallen, dass es neben dem (lokalen) Cache ja noch eine andere Einstellung gibt, welche potentiell dazu fuehren kann, dass veraltete Informationen vom Browser zurueckgeliefert werden:
-
-![Firefox proxy settings](/blog/2013/2013-01/2013-01-03_firefox_proxy_config.png)
-
-Ich bin mir eigentlich ziemlich sicher, dass ich die Settings nicht auf "Auto-detect proxy settings for this network" oder "Use system proxy settings" gesetzt habe; kann natuerlich sein, dass es sich dabei um die Defaults von Firefox handelt, mir diese bisher aber noch nie als hinderlich aufgestossen sind. Erklaeren kann ich mir das unterschiedliche Verhalten dann durchaus schon: wenn einfach kein Proxy Server im lokalen Netzwerk vorhanden oder eingestellt ist, dann gibt es auch keine Instanz, welche einem hier in die Quere koemmen koennte. Werden die Verbindungen nach draussen aber serverseitig ueber einen Proxy geleitet, dann kann dies durchaus als Erklaerung dafuer hinhalten, dass ich in Abhaengigkeit vom Verbindungsort unterschiedliche Resultate zu sehen bekomme (was natuerlich unerwuenscht ist). Das war auch jeden Fall noch einmal eine gute Leere, mir die Einstellungen im Browser ein wenig genauer anzuschauen -- wiederholen muss ich die Prozedur jetzt allerdings noch einmal fuer alle anderen Installationen, welche ich bei mir auf dem Rechner installiert habe.
  
 **:::**
  
