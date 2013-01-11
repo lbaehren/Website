@@ -14,7 +14,7 @@ add_dependencies (Website libblog)
 ## Installation instructions
 install(
   DIRECTORY ${PROJECT_BINARY_DIR}/website
-  DESTINATION ${CMAKE_INSTALL_PREFIX}/website
+  DESTINATION ${CMAKE_INSTALL_PREFIX}
   USE_SOURCE_PERMISSIONS
   )
 
@@ -40,7 +40,7 @@ endif (script_blog_recent AND PROJECT_SOURCE_DIR_BLOG)
 ## Publish the website online
 
 add_custom_target (online
-  COMMAND rsync -avtE --delete ${INSTALL_PREFIX_WEBSITE}/* ${PROJECT_UPLOAD_PATH}
+  COMMAND rsync -avtE --delete ${CMAKE_INSTALL_PREFIX}/website/* ${PROJECT_UPLOAD_PATH}
   WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
   COMMENT "Publishing website - uploading generated pages ..."
   )
