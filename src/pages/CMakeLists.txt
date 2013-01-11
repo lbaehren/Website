@@ -44,4 +44,3 @@ add_custom_target (online
   WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
   COMMENT "Publishing website - uploading generated pages ..."
   )
-add_dependencies (online Website)

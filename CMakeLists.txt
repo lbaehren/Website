@@ -209,6 +209,7 @@ message (STATUS " .. size(void*) ................. = ${CMAKE_SIZEOF_VOID_P}"    
 message (STATUS " Project configuration:"                                         )
 message (STATUS " .. Version number .............. = ${PROJECT_VERSION}"          )
 message (STATUS " .. Installation prefix ......... = ${CMAKE_INSTALL_PREFIX}"     )
+message (STATUS " .. Installation prefix Website . = ${INSTALL_PREFIX_WEBSITE}"   )
 message (STATUS " .. Pages source directory ...... = ${PROJECT_SOURCE_DIR_PAGES}" )
 message (STATUS " .. Blog source directory ....... = ${PROJECT_SOURCE_DIR_BLOG}"  )
 message (STATUS " .. Custom CMake modules ........ = ${PROJECT_CMAKE_MODULE_PATH}")
