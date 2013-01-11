@@ -1,0 +1,68 @@
+---
+title: "Ueberarbeitung Setup"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Fri, 11. January 2013 -- 11:50_
+
+Das war eine Ueberarbeitung, welche schon eine Weile in der Luft hing; nachdem ich ja schon eine Weile fleissig mittels [Webgen](http://webgen.rubyforge.org) meine Website baue, wurde es nun noch einmal hoechste Zeit auch hinter den Kulissen noch ein wenig aufzuraeumen. Da seit dem Umstellen auf statische Seiten der Prozess -- von den Vorlagen mit dem eigentlichen Text hin zu den fertigen Seiten unter Bruecksichtigung des Layouts -- sehr stark dem gleicht, was beim Compilieren von Programm-Quellcode geschieht, macht es natuerlich Sinn einen Teil der von da gewohnten Vorgehensweise zu uebernehmen. Dazu gehoeren fuer mich vo allen Dingen folgende Punkte:
+
+**a)** Vermeidung fest "verdrahteter" Pfade durch vorherige Inspektion des Systems (Konfiguration). Dies betrifft sowohl Hilfprogramme, welche fuer bestimmte Aufgaben benoetigt werden, als auch die Aufloesung von Pfaden hin zu Projekt-eigenen Dateien. Auch wenn die Verzeichnis-Struktur vordefiniert und recht stabil ist
+
+~~~~
+.                        ...                           (PROJECT_SOURCE_DIR)
+|-- build                ...  Build directory          (PROJECT_BINARY_DIR)
+|-- release              ...  Installation directory   (CMAKE_INSTALL_PREFIX)
+|   `-- website          ...  Generated website
+`-- src
+    |-- code             ...  C/C++ code
+    |-- images
+    |-- pages            ...  Sources for the web pages
+    `-- templates        ...  Layout templates for web pages
+~~~~
+
+so macht es doch Sinn darauf zu achten, dass Informationen hinter den Kulissen und konsistenter Weise weitergereicht werden: da Pfade eh nicht absolut aufgefuehrt werden sollte (eine Angabe wie `/Users/lars/Sites/larsbaehren.com/src/pages` hat nirgendwo etwas zu suchen!), ist es von der ganzen Vorgehensweise her deutlich sauberer via Konfiguration die benoetigten Informationen zusammenzutragen
+
+~~~~
+find_path (PROJECT_SOURCE_DIR_PAGES
+  NAMES index.page default.template default.css
+  PATHS ${PROJECT_SOURCE_DIR}
+  PATH_SUFFIXES src pages src/pages
+  )
+if (NOT PROJECT_SOURCE_DIR_PAGES)
+  message (SEND_ERROR "Missing webpages source dir (PROJECT_SOURCE_DIR_PAGES)")
+endif (NOT PROJECT_SOURCE_DIR_PAGES)
+~~~~
+
+und von da an nur noch durchgaengig ueber interne Variablen weiterzuleiten:
+
+~~~~
+sources: [[/, Webgen::Source::FileSystem, ${PROJECT_SOURCE_DIR_PAGES}]]
+~~~~
+
+Der relevante Punkt bei dieser Vorgehensweise ist natuerlich, dass ich bei eventuellen Aenderungen in der Struktur, nur an einer einzigen Stelle eine Anpassung vornehmen muss (falls dies ueberhaupt noetig wuerde).
+
+**b)** Trennung von Quelldateien ("Source code") und generierten Daten: dies betrifft sowohl fertige Endprodukte (bei einem Software-Projekt Dinge wie Bibliotheken und Programmdateien), als auch temporaere Daten (wie sie z.B. im Zuge der Konfiguration erzeugt werden). Gerade an letzterer Stelle gab es noch ein wenig Nachholbedarf, weil bisher die Konfiguration fuer _Webgen_ im Hauptverzeichnis abgelegt wurde -- dies sollte natuerlich nicht passieren, wenn man sich die Moeglichkeit erhalten will wirklich sauber komplett von Null anzufangen. Mit den jetzt vorgenommenen Aenderungen kann ich ohne irgendwelche Bedenken das komplette `build` Verzeichnis wegschmeissen, ohne dabei Angst haben zu muessen irgendwelchen Inhalt zu beschaedigen.
+
+**c)** Definition eines `install` Targets: waehrend dies fuer die compilierten Komponenten (Bibliothek, Header Dateien, Executables) schon der Fall war, fehlte dies fuer die Website selber.
+
+~~~~
+install(
+  DIRECTORY ${PROJECT_BINARY_DIR}/website
+  DESTINATION ${CMAKE_INSTALL_PREFIX}/website
+  USE_SOURCE_PERMISSIONS
+  )
+~~~~
+
+Der ueblichen Vorgehensweise beim Bau von Software Paketen folgend -- z.B. unter Verwendung der [GNU Autotools](http://en.wikipedia.org/wiki/GNU_build_system)
+
+~~~~
+./configure
+make
+make install
+~~~~
+
+lasse ich _Webgen_ nun nicht mehr einfach nur in das endgueltige Verzeichnis schreiben: wie auch beim Code wird zunaechst alles innerhalb des `build` Verzeichnisses erstellt, um dann anschliessen via `make install` die Installation an den endgueltigen Ort vorzunehmen.

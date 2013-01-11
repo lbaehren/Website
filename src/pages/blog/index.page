@@ -9,6 +9,75 @@ tags: Blog
  
 **:::**
  
+### Ueberarbeitung Setup ###
+
+
+
+
+_Fri, 11. January 2013 -- 11:50_
+
+Das war eine Ueberarbeitung, welche schon eine Weile in der Luft hing; nachdem ich ja schon eine Weile fleissig mittels [Webgen](http://webgen.rubyforge.org) meine Website baue, wurde es nun noch einmal hoechste Zeit auch hinter den Kulissen noch ein wenig aufzuraeumen. Da seit dem Umstellen auf statische Seiten der Prozess -- von den Vorlagen mit dem eigentlichen Text hin zu den fertigen Seiten unter Bruecksichtigung des Layouts -- sehr stark dem gleicht, was beim Compilieren von Programm-Quellcode geschieht, macht es natuerlich Sinn einen Teil der von da gewohnten Vorgehensweise zu uebernehmen. Dazu gehoeren fuer mich vo allen Dingen folgende Punkte:
+
+**a)** Vermeidung fest "verdrahteter" Pfade durch vorherige Inspektion des Systems (Konfiguration). Dies betrifft sowohl Hilfprogramme, welche fuer bestimmte Aufgaben benoetigt werden, als auch die Aufloesung von Pfaden hin zu Projekt-eigenen Dateien. Auch wenn die Verzeichnis-Struktur vordefiniert und recht stabil ist
+
+~~~~
+.                        ...                           (PROJECT_SOURCE_DIR)
+|-- build                ...  Build directory          (PROJECT_BINARY_DIR)
+|-- release              ...  Installation directory   (CMAKE_INSTALL_PREFIX)
+|   `-- website          ...  Generated website
+`-- src
+    |-- code             ...  C/C++ code
+    |-- images
+    |-- pages            ...  Sources for the web pages
+    `-- templates        ...  Layout templates for web pages
+~~~~
+
+so macht es doch Sinn darauf zu achten, dass Informationen hinter den Kulissen und konsistenter Weise weitergereicht werden: da Pfade eh nicht absolut aufgefuehrt werden sollte (eine Angabe wie `/Users/lars/Sites/larsbaehren.com/src/pages` hat nirgendwo etwas zu suchen!), ist es von der ganzen Vorgehensweise her deutlich sauberer via Konfiguration die benoetigten Informationen zusammenzutragen
+
+~~~~
+find_path (PROJECT_SOURCE_DIR_PAGES
+  NAMES index.page default.template default.css
+  PATHS ${PROJECT_SOURCE_DIR}
+  PATH_SUFFIXES src pages src/pages
+  )
+if (NOT PROJECT_SOURCE_DIR_PAGES)
+  message (SEND_ERROR "Missing webpages source dir (PROJECT_SOURCE_DIR_PAGES)")
+endif (NOT PROJECT_SOURCE_DIR_PAGES)
+~~~~
+
+und von da an nur noch durchgaengig ueber interne Variablen weiterzuleiten:
+
+~~~~
+sources: [[/, Webgen::Source::FileSystem, ${PROJECT_SOURCE_DIR_PAGES}]]
+~~~~
+
+Der relevante Punkt bei dieser Vorgehensweise ist natuerlich, dass ich bei eventuellen Aenderungen in der Struktur, nur an einer einzigen Stelle eine Anpassung vornehmen muss (falls dies ueberhaupt noetig wuerde).
+
+**b)** Trennung von Quelldateien ("Source code") und generierten Daten: dies betrifft sowohl fertige Endprodukte (bei einem Software-Projekt Dinge wie Bibliotheken und Programmdateien), als auch temporaere Daten (wie sie z.B. im Zuge der Konfiguration erzeugt werden). Gerade an letzterer Stelle gab es noch ein wenig Nachholbedarf, weil bisher die Konfiguration fuer _Webgen_ im Hauptverzeichnis abgelegt wurde -- dies sollte natuerlich nicht passieren, wenn man sich die Moeglichkeit erhalten will wirklich sauber komplett von Null anzufangen. Mit den jetzt vorgenommenen Aenderungen kann ich ohne irgendwelche Bedenken das komplette `build` Verzeichnis wegschmeissen, ohne dabei Angst haben zu muessen irgendwelchen Inhalt zu beschaedigen.
+
+**c)** Definition eines `install` Targets: waehrend dies fuer die compilierten Komponenten (Bibliothek, Header Dateien, Executables) schon der Fall war, fehlte dies fuer die Website selber.
+
+~~~~
+install(
+  DIRECTORY ${PROJECT_BINARY_DIR}/website
+  DESTINATION ${CMAKE_INSTALL_PREFIX}/website
+  USE_SOURCE_PERMISSIONS
+  )
+~~~~
+
+Der ueblichen Vorgehensweise beim Bau von Software Paketen folgend -- z.B. unter Verwendung der [GNU Autotools](http://en.wikipedia.org/wiki/GNU_build_system)
+
+~~~~
+./configure
+make
+make install
+~~~~
+
+lasse ich _Webgen_ nun nicht mehr einfach nur in das endgueltige Verzeichnis schreiben: wie auch beim Code wird zunaechst alles innerhalb des `build` Verzeichnisses erstellt, um dann anschliessen via `make install` die Installation an den endgueltigen Ort vorzunehmen.
+ 
+**:::**
+ 
+ 
 ### Wettbewerb der Karriere Netzwerke ###
 
 
@@ -291,22 +360,6 @@ Naja, irgendwann werd ich es hoffentlich noch lernen, in welcher Weise ich [Fire
 ![Firefox proxy settings](/blog/2013/2013-01/2013-01-03_firefox_proxy_config.png)
 
 Ich bin mir eigentlich ziemlich sicher, dass ich die Settings nicht auf "Auto-detect proxy settings for this network" oder "Use system proxy settings" gesetzt habe; kann natuerlich sein, dass es sich dabei um die Defaults von Firefox handelt, mir diese bisher aber noch nie als hinderlich aufgestossen sind. Erklaeren kann ich mir das unterschiedliche Verhalten dann durchaus schon: wenn einfach kein Proxy Server im lokalen Netzwerk vorhanden oder eingestellt ist, dann gibt es auch keine Instanz, welche einem hier in die Quere koemmen koennte. Werden die Verbindungen nach draussen aber serverseitig ueber einen Proxy geleitet, dann kann dies durchaus als Erklaerung dafuer hinhalten, dass ich in Abhaengigkeit vom Verbindungsort unterschiedliche Resultate zu sehen bekomme (was natuerlich unerwuenscht ist). Das war auch jeden Fall noch einmal eine gute Leere, mir die Einstellungen im Browser ein wenig genauer anzuschauen -- wiederholen muss ich die Prozedur jetzt allerdings noch einmal fuer alle anderen Installationen, welche ich bei mir auf dem Rechner installiert habe.
- 
-**:::**
- 
- 
-### Aufruf-Statistik ###
-
-
-
-
-_Thu, 03. January 2013 -- 13:57_
-
-Nachdem ich gestern Abend ja zum ersten Mal auf die Live-Version meiner neuen Website -- unter der eigenen Domain -- zugreifen konnte, kann ich mir heute bereits anschauen, dass dies nicht alles nur Teil meiner Phantasie war:
-
-![Daily usage stats](/blog/2013/2013-01/2013-01-03_daily_usage_website.png)
-
-Sieht ja alles schon recht nett aus -- nur verstehe ist nicht so recht, warum ich dann heute im Laufe des Tages wieder die gleiche Fehlermeldung von [1&1](http://1und1.de) vorgesetzt bekomme, gegen welche ich schon gestern angelaufen bin. Wenn ich nicht gestern Abend schon die neue Website haette zu sehen bekommen, waere es sicherlich eine andere Sache -- das hatte aber (zumindest nach einem Loeschen des von Firefox angelegten Cache) funktioniert.
  
 **:::**
  
