@@ -40,7 +40,7 @@ endif (script_blog_recent AND PROJECT_SOURCE_DIR_BLOG)
 ## Publish the website online
 
 add_custom_target (online
-  COMMAND rsync -avtE --delete ${CMAKE_INSTALL_PREFIX}/website/* ${PROJECT_UPLOAD_PATH}
+  COMMAND rsync -axuvP ${CMAKE_INSTALL_PREFIX}/website/* ${PROJECT_UPLOAD_PATH}
   WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
   COMMENT "Publishing website - uploading generated pages ..."
   )
