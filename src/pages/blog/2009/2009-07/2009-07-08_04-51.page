@@ -8,9 +8,4 @@ author: Lars Baehren
 
 _Wed, 08. July 2009 -- 04:51_
 
-
-
 Ok, das hat jetzt wirklich lange gedauert. Als Vorbereitung zur kompletten System-Neuinstallation habe ich versucht die Scripten zu testen, mit welchen ich die Installation aller Unix-Programme abarbeiten will; da ich eh noch ein wenig aufraeumen wollte, hatte ich die komplette Fink Kollektion geloescht und nun mehr oder weniger automatisch installiert.  Was ist in diesem Zuge natuerlich auch nicht mehr zur Verfuegung stehen hatte war eine laufende Version von Subversion -- ein elementarer Baustein innerhalb meines Systems. Folgerichtig wollte ich also sichergehen, dass ich wieder eine laufende SVN Version auf dem Rechner habe, ehe ich nach Hause verschwinde... stellt sich allerdings heraus, dass dies ein recht zeitaufwendiger Prozess ist, weil SVN gleich von einer ganzen Reihe weiterer Pakete abhaengig ist, welche vorerst noch installiert werden muessen.
-
-
-~~DISCUSSION~~

@@ -8,13 +8,8 @@ author: Lars Baehren
 
 _Wed, 08. July 2009 -- 09:53_
 
+Wow, this now is the first time ever: ever since I got myself the [Drobo](http://www.drobo.com) I have continued moving data onto it, mostly away from the various external USB hard-drives I had been attaching to the system before. As part of the "let's have everything collected in place" activities last night I finally started moving over the last reminders of the photography archive from the first partition to the one set aside for this purpose. Since `mv` of course will first copy everything from one place to the other before deleting the original material, temporarily more disk space will be used up than once the migration has completed. Since the chunk to be moved around was of the order of 70 GB it of course took a while to be completed; when I was passingby the computer to check on the progress I was confronted with a display unseen before:
 
-
-Wow, this now is the first time ever: ever since I got myself the [[http://www.drobo.com|Drobo]] I have continued moving data onto it, mostly away from the various external USB hard-drives I had been attaching to the system before. As part of the "let's have everything collected in place" activities last night I finally started moving over the last reminders of the photography archive from the first partition to the one set aside for this purpose. Since ''mv'' of course will first copy everything from one place to the other before deleting the original material, temporarily more disk space will be used up than once the migration has completed. Since the chunk to be moved around was of the order of 70 GB it of course took a while to be completed; when I was passingby the computer to check on the progress I was confronted with a display unseen before:
-
-{{blog:2009:2009-07:2009-07-08_drobo_dashboard.png|Drobo Dashboard - Advanced controls}}
+![Drobo Dashboard - Advanced controls](/blog/2009/2009-07/2009-07-08_drobo_dashboard.png)
 
 So yes, I managed to put so much data onto the Drobo that it would give me a first warning that I should be replacing one of the hard-drives with one of higher capacity. Of course once the data transfer was completed the yellow light turned green again, but still I got my first taste of how the Drobo reacts when running low on storage capacity; "low" of course can be considered a somewhat relative term here, because at this point in time we were still talking about roughly 400 GB of free disk-space, such that there is no need for panic and immediate action. Nevertheless however I should seriously start thinking about storage expansion in the not too far future...
-
-
-~~DISCUSSION~~

@@ -8,11 +8,6 @@ author: Lars Baehren
 
 _Thu, 16. July 2009 -- 17:18_
 
-
-
 Ich wuerde doch mal sagen, dass ich bei meiner Durchreise hier durch **Zwolle** eine recht gute Bilanz meines Aufenthaltes in Dwingeloo ziehen kann. Nachdem ich mich dort ja eine Weile rar gemacht habe, komme ich so langsam wieder in den Tritt hinein. Nachdem ich den Dienstag zuhause ja schon recht gut genutzt habe, waren die letzten beiden Tage noch einmal ein Stueck besser. Auf jeden Fall schon einmal gut war es, dass ich mich gestern mit Anastasia und Michael unterhalten konnte -- so ist wieder einigermassen klar, was die naechsten Aktivitaeten sind. Nachdem sich Ken ja als recht enttaeuschend herausgestellt hat, haben wir mit Anastasia einen wirklichen Gluecksgriff getan; die Frau ist wirklich gut und stehts auf der Hoehe was irgendwelche Diskussionen oder Software-Probleme betrifft. Nach unserer Diskussion gestern Nachmittag haben wir wieder ein paar Fragen in Sachen Koordinaten geloest und ich habe eine aktualisierte Liste mit konkreten Problemen mit der DAL, welche es zu bearbeiten gibt. Mit Michael ist es wieder einmal so gelaufen, dass eine kurze Anmerkung von mir direkt in eine groessere Grundsatzdebatte ausgeartet ist; da ich seit langer Zeit ja schon mein Unbehagen darueber zum Ausdruck gebracht habe, dass wir keinen Entwickler haben, welcher sich schwerpunktmaessig um die DAL kuemmert, sind wir schon einmal die moeglichen Optionen durchgegangen. Interessant dabei ist anzumerken, dass meine EInschaetzungen wieder einmal sehr nah an dem liegen, was Michael als Schlussfolgerung gezogen hat.
 
 Na gut, morgen geht es noch einmal weiter, denn statt in Nijmegen werde ich da in Amsterdam sein. Eine der Sachen, welche wir endlich festklopfen muessen ist, wie wir in Sachen LOFAR Image Format vorgehen. Das wird sicherlich noch einmal eine lebhafte  Diskussion, aber am Ende duerfte deutlich klarer sein, auf welcher Grundlage wir (und wahrscheinlich im wesentlichen ist) dann ans Programmieren gehen koennen... schliesslich muss am Ende ja nicht nur eine nette Dokumentation verfuegbar sein, sondern auch die entsprechende Software um die Daten zu generieren und einzulesen.
-
-
-~~DISCUSSION~~

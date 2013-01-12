@@ -8,27 +8,24 @@ author: Lars Baehren
 
 _Wed, 08. July 2009 -- 15:40_
 
+Looks like the upgraded version of my `updates` script is working now. After the latest changes this morning the computer has not stopped compiling packages ever since. If you just have a look at the list of packages to get installed, it may not seem too long:
 
+~~~~
+## ensure minimally required packages are installed
+echo "-- Checking installation of basic set of Fink packages ..."
+fink install blitz
+fink install fftw3
+fink install gnuplot
+fink install gsl
+fink install gv
+fink install imagemagick
+fink install latex2html
+fink install nedit
+fink install svn svn-client
+fink install tetex
+fink install tree
+fink install unrar
+fink install wget
+~~~~
 
-Looks like the upgraded version of my ''updates'' script is working now. After the latest changes this morning the computer has not stopped compiling packages ever since. If you just have a look at the list of packages to get installed, it may not seem too long:
-<code bash>
-    ## ensure minimally required packages are installed
-    echo "-- Checking installation of basic set of Fink packages ..."
-    fink install blitz
-    fink install fftw3
-    fink install gnuplot
-    fink install gsl
-    fink install gv
-    fink install imagemagick
-    fink install latex2html
-    fink install nedit
-    fink install svn svn-client
-    fink install tetex
-    fink install tree
-    fink install unrar
-    fink install wget
-</code>
 On the other hand of course almost all of the packages come with their own set of dependencies, such that even a single item expands into quite an impressive list of packages which need to be processed. What of course easily can take up several hours is if there is a specific compiler version which needs to be installed; as for that matter I think the laptop spent a considerable fraction of last night working itself through building and installing GCC 4.3.3 -- which resulted in the slightly insane hour at which I left the office to head back home (the Sun already started coming up when I turned the key). On the other hand -- if this exercise works well -- I am pretty certain to have the bits and pieces in places to go for a complete reinstall from scratch... using the maximum amount of automization possible right now.
-
-
-~~DISCUSSION~~

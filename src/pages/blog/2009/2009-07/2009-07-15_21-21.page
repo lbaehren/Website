@@ -8,20 +8,18 @@ author: Lars Baehren
 
 _Wed, 15. July 2009 -- 21:21_
 
-
-
 Looks like a long story is coming to a (at least temporary) conclusion... This afternoon I received the following message from Sef:
 
-> The skymapper works, good news indeed! This was found out because, on Sander's suggestion, I integrated over all frequencies (instead of making 10 MHz bins), which made the solar burst show up. I have send some fits files I've made with the skymapper. You can compare the result (''8ant1freq30pix.fits'') to the ''Burst-sun.ps'' file that was made with the old software. You'll see that it matches, and that in the fits-files from the skymapper, right is south and up is east.
-> The ''2ant1freq30pix.fits'' file shows the map made by 2 antennas (5 and 8). It clearly shows a circle (as expected). It's centre lies in a SSE direction, which is the direction from antenna 8 to 5, as expected. And the radius of the circle is approximately equal to the one I calculated from the timelag from the cross-correlation between the 2 antennas. So that also works out.
-> The ''SpatialCoordinate.setIncrement'' now does work correctly. I also added a 100x100 pixel map. When trying to make higher precision maps, I get a segmentation fault, I think because my computer runs out of memory.
+> The skymapper works, good news indeed! This was found out because, on Sander's suggestion, I integrated over all frequencies (instead of making 10 MHz bins), which made the solar burst show up. I have send some fits files I've made with the skymapper. You can compare the result (`8ant1freq30pix.fits`) to the `Burst-sun.ps` file that was made with the old software. You'll see that it matches, and that in the fits-files from the skymapper, right is south and up is east.
+>
+> The `2ant1freq30pix.fits` file shows the map made by 2 antennas (5 and 8). It clearly shows a circle (as expected). It's centre lies in a SSE direction, which is the direction from antenna 8 to 5, as expected. And the radius of the circle is approximately equal to the one I calculated from the timelag from the cross-correlation between the 2 antennas. So that also works out.
+>
+> The `SpatialCoordinate.setIncrement` now does work correctly. I also added a 100x100 pixel map. When trying to make higher precision maps, I get a segmentation fault, I think because my computer runs out of memory.
+>
 > So what remains I guess is to get the coordinatesystem transported properly from the skymapper to the fits file. I will now try to use the skymapper on Lofar data from the dataset Sander took during the thunderstorm.
 
-{{blog:2009:2009-07:2009-07-15_solar_burst_image.png?600}}
+![Solar burst radio image](/blog/2009/2009-07/2009-07-15_solar_burst_image.png)
 
 As we were hoping for the Sun shows up as a bright compact source at a position towards South. The bright strips centered on the Sun and running all over the sky result from the quite imperfect primary beam, which originates from the incomplete coverage of the aperture plane (i.e. the area on the ground, over which the antennas are distributed). A better image now only can be obtained (at least for this dataset) when applying a deconvolution algorithm, such as Maximum Entropy or CLEAN. Since the image is binned up such, that there is only a single frequency channel and a single time-step the even more ugly side-lobes in the temporal-spectral domain do not show up -- for an event like a solar burst this might not be too important anyway, but when imaging ultra-short events as cosmic ray air-showers, this becomes a considerable complication which will have to be addressed in the future.
 
-This result just comes right on time for the software meeting scheduled next Monday here at ASTRON; as part of the "Closing Step 3" ceremony Michael finally will have an actual image to show from the cosmic ray software I have been working on. Even though the outcome is everything but perfect -- there is already the expected hint at memory consumption when going for large image volumes -- this should help to get Heino off my back a bit, who time and time again has been bugging me, completely ignoring that there a thousand other things I need to be working on. One of the next obvious -- and also more spectacular -- steps is now to produce a full 5-dimensional image volume, which then can be channeled into Joe's plugin for //VisIt//, thereby allowing to really get a three-dimensional rendering of the data...
-
-
-~~DISCUSSION~~
+This result just comes right on time for the software meeting scheduled next Monday here at ASTRON; as part of the "Closing Step 3" ceremony Michael finally will have an actual image to show from the cosmic ray software I have been working on. Even though the outcome is everything but perfect -- there is already the expected hint at memory consumption when going for large image volumes -- this should help to get Heino off my back a bit, who time and time again has been bugging me, completely ignoring that there a thousand other things I need to be working on. One of the next obvious -- and also more spectacular -- steps is now to produce a full 5-dimensional image volume, which then can be channeled into Joe's plugin for _VisIt_, thereby allowing to really get a three-dimensional rendering of the data...
