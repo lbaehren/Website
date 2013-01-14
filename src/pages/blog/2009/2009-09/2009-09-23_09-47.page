@@ -8,11 +8,6 @@ author: Lars Baehren
 
 _Wed, 23. September 2009 -- 09:47_
 
-
-
 Das war also meine morgendliches Vergnuegen hier bis **Zwolle**. Da fuer den heutigen Nachmittag ja ein Treffen in Sachen Datenformate angesetzt ist, habe ich mir noch einmal die letzte Version des LOFAR Sky-Image ICD vorgenommen, um ein paar der noch bestehenden Luecken zu fuellen (oder zumindest Ideen dazu aufzuschreiben). Wie ich schon fast erwarten konnte, bin ich wieder einmal bei den Koordinaten haengengeblieben: da ich ja nach wie vor derenige bin, der dazu immer wieder Sonderwuensche anbringt, bin ich natuerlich auch ein wenig dafuer verantwortlich mit guten Loesungsvorschlaegen zu kommen, denn von alleine loesen sich die noch bestehenden Fragen leider nicht in Luft auf. 
 
 Der letzte Punkt besonderer Freude ist die Speicherung von spektralen Daten, also der Frequenzachse eines Bildes (aber natuerlich nicht nur dessen). Wie ich feststellen muss gibt es ein paar Annahmen, von welchen man eben nicht so ohne weiteres ausgehen kann. So ist zum Beispiel nicht notwendigerweise davon auszugehen, dass die Frequenzachse linear ist: genauso koennte es sich um eine logarithmische Einteilung handeln (oder etwas noch ausgefalleneres). Ist die Verteilung der Werte aber nicht mehr linear, so muss man im Zweifelsfall die Werte entlang der Achsen als eine Tabelle von Werten speichern... in Konsequenz heisst dies aber auch, dass es kein eindeutige Format fuer die Speicherung der spektralen Achse gibt. Rein von der Implementierung her ist dies kein Problem, aber ich moechte eigentlich auch dafuer Sorge tragen, dass die Organisation der Koordinaten-Information konzeptionell nicht zu kompliziert wird; wie dies genau zu erreichen ist weiss ich leider noch nicht, auch wenn mir eben schon wieder ein paar Dinge aufgefallen sind, wo man sicherlich noch vereinheitlichen koennte, so dass die Anzahl benoetigter Varianten nicht zu sehr explodiert.
-
-
-~~DISCUSSION~~

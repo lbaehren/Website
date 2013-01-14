@@ -8,11 +8,6 @@ author: Lars Baehren
 
 _Wed, 09. September 2009 -- 09:47_
 
-
-
 ... habe ich es doch noch geschafft meinen Anschluss hier in **Zwolle** zu bekommen. Ich war mir da nicht so ganz sicher, weil wir statt dem ansonsten ueblichen Gleis 4 diesmal auf Gleis 6 eingetroffen sind, so dass ich eine weiteren Weg zwischen den beiden Zuegen hatte; ist aber gluecklicherweise gut gegangen, so dass ich planmaessig unterwegs nach Dwingeloo bin. Ich hatte unterwegs schon ein wenig Bedenken, weil der erste Zug ja unterwegs noch einen Extra-Stop eingelegt hatte -- da kann es leicht passieren, dass der Reiseplan durcheinander kommt, da die Umsteigezeiten ja doch recht knapp kalkuliert sind.
 
 Unterwegs habe ich aber wieder ein wenig getan bekommen. Nach der Diskussion letzte Woche und der gestrigen Debatte in Nijmegen, habe ich mir jetzt vor allen Dingen man den Code vorgenommen, welchen Andreas fuer die DAL beigetragen hat; meine wesentlichen -- und ich denke mal durchaus begruedeten -- Bedenken sind ja, dass er da etwas zusammenschreibt, das a) nicht in den Rest der Library passt und b) nur auf ganz spezielle Beduerfnisse zugeschnitten ist. Da wir ja nicht mehr -- wie noch zu Joes Zeiten -- einen einzigen Entwickler haben, habe ich es mir auf die Fahnen geschrieben, die Dinge zusammenzuhalten und allzu extreme Auswuechse auszumerzen; ich bin mir zwar dessen bewusst, dass dies zu einem Geschrei von mancher Seite fuehren wird, aber es ist eben nicht akzeptabel dass das grundlegende Design der DAL aufgrund verschiedener Ego-Trips auseinanderfaellt. Was dies betrifft is Joe vielleicht einfach zu gutmuetig, weil er sich doch eher gescheut hat Leuten ab und zu auch durchaus mal auf die Fuesse zu treten, wenn sie Unsinn gemacht haben -- was dies betrifft liegt die Schwelle bei mir sicherlich mittlerweile deutlich niediger (und ich sehe dies auch ein wenig als meine Aufgabe an, wenn ich fuer die Library verantwortlich zeichnen soll).
-
-
-~~DISCUSSION~~

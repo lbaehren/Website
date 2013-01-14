@@ -8,22 +8,18 @@ author: Lars Baehren
 
 _Fri, 04. September 2009 -- 16:17_
 
-
-
-Es macht durchaus Sinn die ab und zu eintreffenden Rundmails bei ASTRON ein wenig genauer zu lesen:
+Es macht durchaus Sinn die ab und zu eintreffenden Rundmails bei [ASTRON](http://www.astron.nl) ein wenig genauer zu lesen:
 
 > In order to comply with laws such as the Dutch health and safety regulations, the NEN-EN 50110, NEN 3140 and the regulations of its insurance company, Astron has the obligation to have its electrical installation certified.
 > 
 > This certification includes all parts of the fixed installation of Astron,  from the main power supply to the wall sockets and light fixtures.
 >
 > The inspection will take about one week in total and will take place next week, September 7-11, 2009, at the Dwingeloo location (the Westerbork location will follow later).
+>
 > Is is our intention to cause as little inconvenience as possible. However, there will be periods during which the power will have to turned off, in which case we will inform you well in advance. The length of these periods is not known yet.
 
 Grundsaetzlich ist dies ja ganz ok, dass sich jemand die Muehe macht nach den ganzen Anschluessen zu schauen, aber es gibt eine Kleinigkeit, welche mich doch ein wenig beunruhigt:
 
 > However, there will be periods during which the power will have to turned off, in which case we will inform you well in advance. The length of these periods is not known yet.
 
-Warum mich dies beunruhigt? Nun, ich denke mal, dass dies doch recht leicht zu verstehen sein duerfte. Sollte jemand einfach den Schalter rauswerfen, dann wird dies den USG server auf eine Weise ausser Betrieb setzen, welche ich eigentlich vermeiden moechte. Ich habe daher eben schon eine Mail an Michael und Andre geschrieben, um mich darueber zu erkundigen, wie wir es verhindern koennen, dass der Server Schaden nimmt. Sollte es zu den geplanten Aussetzern waehrend der Zeit kommen, wo ich eh bei ASTRON bin, dann ist dies kein grosses Problem, weil ich dann rechtzeitig den Rechner herunterfahren kann; ich fuerchte aber, dass bei meiner Abwesenheit einfach die Stromversorgung gekappt wird, [[blog:2008:2008-01:2008-01-10_15-30|was ja schon einmal ueble Nachwirkungen mit sich gebracht hat]]. Sollten Aussetzer in der Stromversorgung in der Tat rechzeitig angekuendigt werden, dann habe ich in dem Fall die Chance, den Server hier von Nijmegen aus runterzufahren, so dass es zu einer sanften Landung kommt; den Start in meiner Abwesenheit muesste ich allerdings dann z.B. Andre ueberlassen, weil a) ich dies dann nicht von hier machen kann und b) der Server nicht laenger als irgend noetig offline bleiben sollte.
-
-
-~~DISCUSSION~~
+Warum mich dies beunruhigt? Nun, ich denke mal, dass dies doch recht leicht zu verstehen sein duerfte. Sollte jemand einfach den Schalter rauswerfen, dann wird dies den USG server auf eine Weise ausser Betrieb setzen, welche ich eigentlich vermeiden moechte. Ich habe daher eben schon eine Mail an Michael und Andre geschrieben, um mich darueber zu erkundigen, wie wir es verhindern koennen, dass der Server Schaden nimmt. Sollte es zu den geplanten Aussetzern waehrend der Zeit kommen, wo ich eh bei ASTRON bin, dann ist dies kein grosses Problem, weil ich dann rechtzeitig den Rechner herunterfahren kann; ich fuerchte aber, dass bei meiner Abwesenheit einfach die Stromversorgung gekappt wird, [was ja schon einmal ueble Nachwirkungen mit sich gebracht hat](blog:2008:2008-01:2008-01-10_15-30.html). Sollten Aussetzer in der Stromversorgung in der Tat rechzeitig angekuendigt werden, dann habe ich in dem Fall die Chance, den Server hier von Nijmegen aus runterzufahren, so dass es zu einer sanften Landung kommt; den Start in meiner Abwesenheit muesste ich allerdings dann z.B. Andre ueberlassen, weil a) ich dies dann nicht von hier machen kann und b) der Server nicht laenger als irgend noetig offline bleiben sollte.
