@@ -39,8 +39,27 @@ endif (script_blog_recent AND PROJECT_SOURCE_DIR_BLOG)
 ##_______________________________________________________________________________
 ## Publish the website online
 
-add_custom_target (online
-  COMMAND rsync -axuvP ${CMAKE_INSTALL_PREFIX}/website/* ${PROJECT_UPLOAD_PATH}
-  WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
-  COMMENT "Publishing website - uploading generated pages ..."
+#        -a, --archive               archive mode; equals -rlptgoD (no -H,-A,-X)
+#            --no-OPTION             turn off an implied OPTION (e.g. --no-D)
+#        -u, --update                skip files that are newer on the receiver
+#            --inplace               update destination files in-place
+#            --append                append data onto shorter files
+#            --append-verify         --append w/old data in file checksum
+#        -x, --one-file-system       don't cross filesystem boundaries
+#        -p, --perms                 preserve permissions
+#            --fileflags             preserve file-flags (aka chflags)
+
+find_program (RSYNC_EXECUTABLE rsync
+  HINTS ${CMAKE_INSTALL_PREFIX}
+  PATH_SUFFIXES bin
   )
+
+if (RSYNC_EXECUTABLE)
+  add_custom_target (online
+    COMMAND ${RSYNC_EXECUTABLE} -axuP ${CMAKE_INSTALL_PREFIX}/website/* ${PROJECT_UPLOAD_PATH}
+    WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
+    COMMENT "Publishing website - uploading generated pages ..."
+    )
+else (RSYNC_EXECUTABLE)
+  message (STATUS "Unable to publish generated pages - missing rsync!")
+endif (RSYNC_EXECUTABLE)
