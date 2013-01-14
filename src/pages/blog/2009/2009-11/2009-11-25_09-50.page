@@ -8,20 +8,15 @@ author: Lars Baehren
 
 _Wed, 25. November 2009 -- 09:50_
 
-
-
 Das ist natuerlich auch eine Art sich die Reise von Nijmegen nach **Zwolle** um die Ohren zu schlagen: ich habe jetzt mal damit begonnen die Logik zu implementieren, welche um die Low-Level HDF5 Aufrufe noetig ist, um zu verhindern dass ungueltige Zugriffe auf die Daten stattfinden (was naemlich dazu fuehrt, dass laufende Programme ggf. abstuerzen. Auch wenn dies nicht unbedingt Rocket-Science ist, so wird einiges an Buchhaltung noetig sein, um alle verschiedenen Falle abzudecken. Was ich dabei natuerlich vermeiden will, ist dass ich fuer jeden unterschiedlichen Fall die eigentlichen Aufrufe neu schreiben muss -- letzten Endes will ich einen einzigen Aufruf haben, welcher dann aber mit entsprechenden Parameters stattfindet:
 
-<code cpp>
-      h5error = H5Sselect_hyperslab (dataspaceID,
-				     H5S_SELECT_SET,
-				     offset,
-				     NULL,
-				     shape,
-				     NULL);
-</code>
+~~~~
+h5error = H5Sselect_hyperslab (dataspaceID,
+                               H5S_SELECT_SET,
+                               offset,
+                               NULL,
+                               shape,
+                               NULL);
+~~~~
 
-Die wirkliche Arbeit steckt nun darin, solche Dinge wie ''offset'' und ''shape'' entsprechend zu berechnen. Waehrend ich drei der fuenf Faelle abgedeckt habe sollte, bleibt immer noch ein wenig Arbeit -- definitiv mehr, als sich allein bei der Zugfahrt machen laesst.
-
-
-~~DISCUSSION~~
+Die wirkliche Arbeit steckt nun darin, solche Dinge wie `offset` und `shape` entsprechend zu berechnen. Waehrend ich drei der fuenf Faelle abgedeckt habe sollte, bleibt immer noch ein wenig Arbeit -- definitiv mehr, als sich allein bei der Zugfahrt machen laesst.

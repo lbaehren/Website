@@ -8,11 +8,9 @@ author: Lars Baehren
 
 _Wed, 04. November 2009 -- 09:52_
 
-
-
 Schon ganz gut, dass ich meine uebliche Reise via **Zwolle** habe: da ich gestern Abend zuhause lieber noch weitere Folgen von "Eureka" geschaut habe, ist es nichts mehr geworden aus dem Vorhaben noch ein wenig zu programmieren. Was ich aber immerhin noch gemacht habe ist, mal ein wenig konsequenter aufzuschreiben, was ich eigentlich noch alles zu erledigen habe; auch wenn die Liste alles andere als komplett ist, so gibt es sicherlich ausreichend Auftraege fuer den Rest des Jahres.
 
-^ Task ID ^ Date ^ Description ^ Status ^
+| **Task ID** | **Date** | **Description** | **Status** |
 | 0008 | 04/Nov/2009 | DataReader and classes derived from it need to support getting data through reference | open |
 | 0007 | 14/Oct/2009 | Enable build of pybdsm on Mac OS X | open |
 | 0006 | 03/Nov/2009 | Add function to get position values of data block | open |
@@ -20,9 +18,6 @@ Schon ganz gut, dass ich meine uebliche Reise via **Zwolle** habe: da ich gester
 | 0004 | 02/Nov/2009 | Implement selection of antennas in LOFAR_TBB | open |
 | 0003 | 02/Nov/2009 | Fix segmentation fault resulting from DataReader::setBlocksize() | open |
 | 0002 | 26/Oct/2009 | DAL classes to provide high-level interfaces to beamformed data | open |
-| 0001 | 26/Oct/2009 | Fix memory leak in TBB_DipoleDataset::fx() | done |
+| 0001 | 26/Oct/2009 | Fix memory leak in `TBB_DipoleDataset::fx()` | done |
 
 Dazu kommen noch ein paar Experimente, welche ich mit dem Beginn dieser Woche gestartet habe, um die Ergebnisse in absehbarer Zeit in die LOFAR Software mit einzubringen (schien mir aber besser, dies erst einmal als ein off-work Project laufen zu lassen).
-
-
-~~DISCUSSION~~
