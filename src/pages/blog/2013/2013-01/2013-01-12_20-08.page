@@ -1,0 +1,23 @@
+---
+title: "Update Online-Version"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Sat, 12. January 2013 -- 20:08_
+
+Da geht es ja doch: nachdem ich in den vergangenen Tagen immer wieder mit Problemen bei dem Update der Online-Version meiner Webseiten gehadert habe, bin ich heute nach ein wenig Suchen fuendig geworden, wie ich dies beheben kann. Wie ich in einem [FAQ Eintrag zum Thema Backup-Disk](http://www.df.eu/de/service/df-faq/webhosting/managedserver/backup-disk) nachlesen konnte, wird empfohlen  den folgenden Rsync-Befehl zu verwenden, um ein Verzeichnis in einen Zielordner zu synchronisieren:
+
+~~~~
+rsync -axuP <source> <target>
+~~~~
+
+Bisher hatte ich mit
+
+~~~~
+rsync -avtE --delete <source> <target>
+~~~~
+
+gearbeitet, aber allem Anschein nach ist dies beim einer Synchronisation via WebDAV nicht die beste Wahl. Auch wenn ich mir da die Dokumentation noch einmal vornhmen muss, um die Unterschiede besser zu verstehen, so ist das Update am heutigen Nachmittag endlich so durchgelaufen, wie ich dies haben wollte.
