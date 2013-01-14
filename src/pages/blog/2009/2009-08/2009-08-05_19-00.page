@@ -8,11 +8,9 @@ author: Lars Baehren
 
 _Wed, 05. August 2009 -- 19:00_
 
-
-
 Also so langsam -- oder vielleicht auch schon seit einer Weile -- entwickelt sich die Geschichte hin zu einer wirklichen Geduldsprobe. Egal was ich auch mache, die Fehler werden einfach nicht weniger:
 
-<code cpp>
+~~~~
 [ 34%] Building CXX object implement/CMakeFiles/pydal.dir/dalData.o
 /Users/lars/Code/lofar/usg/src/DAL/implement/dalData.cpp: In member function 'boost::python::numeric::array DAL::dalData::get_boost3(int64_t, int32_t)':
 /Users/lars/Code/lofar/usg/src/DAL/implement/dalData.cpp:302: error: no matching function for call to 'makeNum(char*, std::vector<int, std::allocator<int> >&)'
@@ -20,9 +18,6 @@ Also so langsam -- oder vielleicht auch schon seit einer Weile -- entwickelt sic
 /Users/lars/Code/lofar/usg/release/include/python/num_util/num_util.h:40: note:                 boost::python::numeric::array num_util::makeNum(npy_intp, NPY_TYPES)
 /Users/lars/Code/lofar/usg/release/include/python/num_util/num_util.h:50: note:                 boost::python::numeric::array num_util::makeNum(std::vector<npy_intp, std::allocator<npy_intp> >, NPY_TYPES)
 /Users/lars/Code/lofar/usg/release/include/python/num_util/num_util.h:107: note:                 boost::python::numeric::array num_util::makeNum(const boost::python::numeric::array&)
-</code>
+~~~~
 
 Langsam aber sicher komme ich zu dem Schluss, dass es sich hierbei nicht um ein Problem welches ich selber zu verursachen habe, sondern dass es sich um eine Unvertraeglichkeit der externen Bibliotheken handelt, welche fuer die Erzeugung der Python Bindings benoetigt werden. 
-
-
-~~DISCUSSION~~
