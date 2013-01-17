@@ -8,28 +8,31 @@ author: Lars Baehren
 
 _Thu, 03. December 2009 -- 17:21_
 
+Also ich wuerde doch mal sagen, dass ich seit [dem gestrigen Zwischenstop](2009-12-02_09-47.html) hier in **Zwolle** durchaus wieder einige Fortschritte gemacht habe. Nachdem ist gestern den ueberwiegenden Teil des Nachmittages damit zugebracht habe die C++ Klassen fuer die Beam-Formed Daten weiter mit Funktionalitaet auszufuellen, habe ich heute Morgen noch den Fehler gefunden, welcher dazu fuehrte, dass ich nicht in der Lage war, die intern anzulegenden Strukturen rekursiv zu erzeugen. Was zwar schon ging war, dass ich so etwas wie
 
-
-Also ich wuerde doch mal sagen, dass ich seit [[2009-12-02_09-47|dem gestrigen Zwischenstop]] hier in **Zwolle** durchaus wieder einige Fortschritte gemacht habe. Nachdem ist gestern den ueberwiegenden Teil des Nachmittages damit zugebracht habe die C++ Klassen fuer die Beam-Formed Daten weiter mit Funktionalitaet auszufuellen, habe ich heute Morgen noch den Fehler gefunden, welcher dazu fuehrte, dass ich nicht in der Lage war, die intern anzulegenden Strukturen rekursiv zu erzeugen. Was zwar schon ging war, dass ich so etwas wie
-<code>
+~~~~
 Dataset
 .
 |-- StationBeam000
 |-- StationBeam001
 |-- StationBeam002
 |
-</code>
+~~~~
+
 und
-<code>
+
+~~~~
 StationBeam000
 .
 |-- PencilBeam000
 |-- PencilBeam001
 |-- PencilBeam002
 |
-</code>
+~~~~
+
 rausschreiben konnte, doch was ich ja offensichtlich wollte ist:
-<code>
+
+~~~~
 Dataset
 .
 |-- StationBeam000
@@ -39,8 +42,6 @@ Dataset
 |-- StationBeam001
 |-- StationBeam002
 |
-</code>
+~~~~
+
 Wie sich herausstellte war es kleiner Fehler (wie so ueblich) in einer Variablen, welcher dazu fuehrte, dass diese iterative Verschachtelung nicht erzeugt wurde. Nun gut, nach einigem Nachdenken waere dies jetzt aber geloest, so dass ich kurz nach Mittag eine Mail rundgeschickt habe, um einen Zwischenstand durchzugeben; damit sind zwar noch nicht alle Probleme vom Tisch, aber zumindest was den Teil betrifft, fuer welchen ich verantwortlich zeichne, kommen wir einem brauchbaren Zustand immer naeher.
-
-
-~~DISCUSSION~~
