@@ -1,0 +1,33 @@
+---
+title: "USG server remains down"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Fri, 11. January 2008 -- 12:13_
+
+This is some bad news awaiting me when I get into the office:
+
+> Dezelfde 'shit' had ik gisteren ook, het lijkt allemaal nogal een gammel zooitje. Ik had gehoopt dat als /dev/hda2 door z'n fsck heen kwam na een boot van CD dat de problemen opgelost zouden zijn. Lars is maandag weer in Dwingeloo, hopelijk weet hij meer van Debian dan wij.
+
+In other words: both Klaas and Ruud havve given up bringing the machine back to life, so it now appears to be on me to see what is going on and recover whatever can be recovered.
+
+> Alle file systemen tot `/usr/local` waren gemount maar met allemaal dezelfde "used size" en percentage.
+>
+> Het zag er naar uit dat `/usr` gemount was maar in werkelijheid was dat niet zo want " ls" gaf helemaal niets.
+>
+> Het systeem klaagt wel over `/dev/null` met te weinig permissie maar dat heb ik niet terug kunnen vinden in de fileprotectie crw.rw.rw.
+>
+> Niet een commando werkt omdat /usr (leeg is) niet gemount is, al met al ben ik aan het eind van m`n latijn...heb jij nog `n suggestie??
+>
+> Kan ik een recovery doen met een debian cd, zoja heb jij nog een debian cd of weet je waar ik er een kan vinden?
+
+Options at this point:
+
+ * I pack my stuff and go to Dwingeloo this afternoon, before everybody leaves for the weekend.
+ * I have the machine physically moved to a place where I can access it and go to Dwingeloo the earliest tomorrow morning. If everything can be solved within a day, I do not have any idea, but at least this way there would be hope to have everything back online again over the course of the weekend.
+ * Everything remains down over the weekend and I go to Dwingeloo two days earlier, on Monday. This option of course also will depend a bit on whether or not accomodation is available on the guest house (unless I plan to sleep on the office floor).
+
+I already sent out the word to Michael and Joe, to see how urgent the matter is. Depending on the feedback I will have to go for one or the other option...

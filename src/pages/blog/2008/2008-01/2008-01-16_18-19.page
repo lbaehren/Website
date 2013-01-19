@@ -1,0 +1,11 @@
+---
+title: "Und schon wieder weg"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 16. January 2008 -- 18:19_
+
+Hm, also dass soll jetzt irgendwer mal verstehen: nachdem ich es doch so schoen geschafft hatte, den USG Server wiederzubeleben und alle Daten zurueckzukopieren, scheint es mir so, als reagiert der Rechner nicht mehr auf Anfagen von aussen. Ich war gerade eben ja noch damit beschaeftigt die verbliebenen Services einzurichten -- z.B. die Source-Code Dokumentation -- da muss ich feststellen, dass nicht nur mein laufendes Script auf einmal nicht mehr antwortet, sondern auch regulaere Anfragen -- sei es via HTTP oder SSH -- keine Reaktion mehr hervorrufen. Das ist jetzt natuerlich ueberhaupt nicht das, was ich eigentlich haben wollte, zumal ich vor nicht allzu langer Zeit noch eine Mail rundgeschickt hatte, in welcher ich die Maschine als wieder verfuegbar erklaert hatte. Warum jetzt mit einem Male keine Antwort mehr kommt -- ausser einem `ping`, aber das ist wirklich nur das minimalste Lebenszeichen, welches sich von aussen abringen laesst -- ist mir ein Raetsel. Ich werde mal noch ein klein wenig warten, ob es vielleicht eine zwischenzeitige Lastspitze gegeben hat, anders aber werde ich morgen frueh noch einmal vor checken muessen, was denn da los ist (dummerweise habe ich ja den Schluessel fuer den Serverraum heute Nachmittag wieder abgegeben, so dass ich da nicht mehr rein komme).

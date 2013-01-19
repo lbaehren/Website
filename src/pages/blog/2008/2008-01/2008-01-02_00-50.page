@@ -1,0 +1,64 @@
+---
+title: "Using DokuWiki as blog engine"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 02. January 2008 -- 00:50_
+
+Looks like the DokuWiki really is something to use, in case you are planning to integrate a weblog into your website. What I have been using already is the blog plugin, which adds the capability to collect the latest entries within a namespace onto a page; the feature however I was not too happy about was, that still the form would be showing up which could be used to create a new entry. But in case you are -- as I am doing this -- rather want to add pages you own way, you simply might want to get rid of the form you automatically get once you include something like 
+
+~~~~
+{{blog>blog?5}}
+~~~~
+
+into your Wiki page. Even though there are a number of configurable parameters for the blog plugin in showing up in the configuration manager, there is no option to simply disable the display of the form. Even though I might contact the author to include this option in a future release, this is not really helping right away. Therefore I has a closer look at the source code of the plugin, trying to identify the fragement which would allow me to remove the unwanted form from the Wiki page. Turns out that the solution is not too complicated after all -- in the end it only comes down to uncommenting three lines of code in main plugin syntax file
+
+~~~~
+plugins
+`-- blog
+    `-- syntax
+        `-- blog.php 
+~~~~
+
+All you will have to do is to change the following pieces:
+
+**1)** Change
+
+~~~~
+      if ((auth_quickaclcheck($ns.':*') >= AUTH_CREATE) && ($mode == 'xhtml')){
+        $renderer->info['cache'] = false;
+        $renderer->doc .= $this->_newEntryForm($ns);
+      }
+~~~~
+
+to
+
+~~~~
+      if ((auth_quickaclcheck($ns.':*') >= AUTH_CREATE) && ($mode == 'xhtml')){
+        $renderer->info['cache'] = false;
+//        $renderer->doc .= $this->_newEntryForm($ns);
+      }
+~~~~
+
+**2)** Change
+
+~~~~
+      // show new entry form
+      $perm_create = (auth_quickaclcheck($ns.':*') >= AUTH_CREATE);
+      if ($perm_create && ($this->getConf('formposition') == 'top'))
+      $renderer->doc .= $this->_newEntryForm($ns);
+~~~~
+
+to
+
+~~~~
+      // show new entry form
+      $perm_create = (auth_quickaclcheck($ns.':*') >= AUTH_CREATE);
+//      if ($perm_create && ($this->getConf('formposition') == 'top'))
+//      $renderer->doc .= $this->_newEntryForm($ns);
+~~~~
+
+Once this is done the plugin still will continue to collect the latest entries within the namespace you are using to store you blog entries, but no longer will add the "New Blog Entry" to the page as well. This work around already is operational at my local mirror and soon should be in place at the online version; a mail to [Esther Brunner](mailto:wikidesign@gmail.com) and [Robert Rackl](mailto:wiki@doogie.de) will be out soon...

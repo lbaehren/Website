@@ -1,0 +1,11 @@
+---
+title: "USG server still down"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Thu, 10. January 2008 -- 10:55_
+
+There is still no word on the status of lofar11, the machine hosting some of the essential online components of the LOFAR User Software Group. Of course one of the first things I did when getting into the office this morning, was to check if the website was available again -- still the samee problem as yesterday: all HTTP requests run into a time-out and even a ping from my desktop machine at ASTRON yields any response. One of the disadvantages of sitting here in Nijmegen is, that I no longer can simply walk downstairs into the computer room and check on the machine myself -- right now I am dependent on the ASTRON ICT people, which is something we actually tried to avoid as much as possible, because response times can be fairly long (and for critical services down-times as long as a day are inacceptable).

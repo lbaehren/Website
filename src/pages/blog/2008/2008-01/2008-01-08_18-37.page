@@ -1,0 +1,75 @@
+---
+title: "LOFAR times-series data"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Tue, 08. January 2008 -- 18:37_
+
+The more I keep on working with what we defined as the standard LOFAR data product to hold the time-series originating from the transient buffer boards (TBB), the more it becomes obvious, that the current version needs some serious upgrade. At the present time the internal structure of the [HDF5](http://hdf.ncsa.uiuc.edu/HDF5) files is organized as follows:
+
+~~~~
+  /                             ... Group
+  |-- Station001                ... Group
+  |   |-- TELESCOPE             ... Attribute       ... string
+  |   |-- OBSERVER              ... Attribute       ... string
+  |   |-- PROJECT               ... Attribute       ... string
+  |   |-- OBSERVATION_ID        ... Attribute       ... string
+  |   |-- OBSERVATION_MODE      ... Attribute       ... string
+  |   |-- TRIGGER_TYPE          ... Attribute       ... string
+  |   |-- TRIGGER_OFFSET        ... Attribute       ... string
+  |   |-- TRIG_ANTS             ... Attribute       ... array<int,1>
+  |   |-- BEAM_DIRECTION        ... Attribute       ... array<double,2>
+  |   |-- 001000000             ... Dataset         ... array<uint,1>
+  |   |   |-- STATION_ID        ... Attribute       ... uint
+  |   |   |-- RSP_ID            ... Attribute       ... uint 
+  |   |   |-- RCU_ID            ... Attribute       ... uint
+  |   |   |-- SAMPLE_FREQ       ... Attribute       ... double
+  |   |   |-- TIME              ... Attribute       ... uint
+  |   |   |-- SAMPLE_NR         ... Attribute       ... uint
+  |   |   |-- SAMPLES_PER_FRAME ... Attribute       ... uint
+  |   |   |-- DATA_LENGTH       ... Attribute       ... uint
+  |   |   |-- NYQUIST_ZONE      ... Attribute       ... uint
+  |   |   |-- FEED              ... Attribute       ... string
+  |   |   |-- ANT_POSITION      ... Attribute       ... array<double,1>
+  |   |   `-- ANT_ORIENTATION   ... Attribute       ... array<double,1>
+  |   |-- 001000001
+  |   |-- 001000002
+  |   |-- 001000003
+  |   |-- 001000004
+  |   |
+  |   |-- 001001000
+  |   |-- 001001001
+  |   |
+  |
+~~~~
+
+Issues with this are:
+
+ * There is no simple list of the present station groups, so in order to make some inventary one needs to loops over the potential IDs and see whether or not a groups exists within the file.
+
+ * A similar issue exists with the IDs identifying the dataset of an individual data channel; with the numbers required to build up a unique ID -- `STATION_ID`, `RSP_ID` and `RCU_ID` -- stored as attributes to their respective dataset, one actually would have to reach into the dataset in order to derive its name. This of course is kind of a paradox, like having the keys to open a door placed on its opposite side. One again the only currently viable option is to go through the possible ranges of the IDs and check if their combination points to a valid elements inside the HDF5 file... not a recommended solution.
+
+ * Attributes such as `TELESCOPE`, `OBSERVER` and `PROJECT` should be moved one level up, since they are global and identical for all subsets of the dataset:
+
+~~~~
+  /                             ... Group
+  |-- TELESCOPE                 ... Attribute       ... string
+  |-- OBSERVER                  ... Attribute       ... string
+  |-- PROJECT                   ... Attribute       ... string
+  |-- OBSERVATION_ID            ... Attribute       ... string
+  |-- OBSERVATION_MODE          ... Attribute       ... string
+  |-- Station001                ... Group
+  |   |-- TRIGGER_TYPE          ... Attribute       ... string
+  |   |-- TRIGGER_OFFSET        ... Attribute       ... string
+  |   |-- TRIG_ANTS             ... Attribute       ... array<int,1>
+  |   |-- BEAM_DIRECTION        ... Attribute       ... array<double,2>
+  |   |-- 001000000             ... Dataset         ... array<uint,1>
+  |   |   |
+  |   |
+  |
+~~~~
+
+ * Further of the attributes stored at a position deeper in the hierarchy could be moved up, especially if they are valid globally. This is true for e.g. `SAMPLE_FREQ` and `NYQUIST_ZONE`, so it makes sense not hiding them deep inside the dataset. However to retain maximum flexibility, one could have attributes at a lower level overwrite their corresponding values set at a higher level -- this of course is something which need to be covered by the Data Access Library (DAL) or the routines of the DataReader framework.

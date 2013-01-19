@@ -1,0 +1,11 @@
+---
+title: "usg.lofar.org offline"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 09. January 2008 -- 18:03_
+
+The server of the User Software Group (USG) -- _usg.lofar.org_ -- currently is offline. The event must have occured somewhen between 15:00h and 17:00h, but there is no indication so far of what went wrong there. With the machine out of reach currently both the website (including the Wiki) and the code repository are out of reach! I am keeping fingers crossed that nothing has crashed -- even with backups at hand it never is fun to reconstruct a system from scratch. Since I am not at ASTRON this week -- unless this becomes required -- I have to rely on the ICT people there; I already sent of a work order, but that I do not expect to be even opened before tomorrow morning. Until then no access to anny of the web-services of the USG is possible :-(

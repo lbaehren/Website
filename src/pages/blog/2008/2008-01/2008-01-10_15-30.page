@@ -1,0 +1,21 @@
+---
+title: "How to take down USG services"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Thu, 10. January 2008 -- 15:30_
+
+Even though the server is not yet up again, at least now I know a bit more about the circumstances of it disappearing from the scene.
+
+After sending in a work order yesterday afternoon, I now received a mail from Klaas asking for access to the machine in order to run a filesystem check. After providing him with the necessary information, i.e. temporary root access, there was another big question I really was interested in: "Is there any particular reason why the machine went offline?" The answer was something I even hadn't anticipated:
+
+> lofar11 was switched off by accident.
+
+Believe it or not, the system was fine all of the time, only someone at ASTRON pulled the plug! Even better, only a few moments later I received another mail from Ruud, how identified himself as the culprit in this matter:
+
+> I switch the machine off. I asked many people here but no one had an idea what tor who was using the machine. So I thought no one was using the machine. Sorry.
+
+So in order to get this straight: there is half a room of computer racks sitting in the basement of the [ASTRON](http://www.astron.nl) building and people are not aware what a considerable fraction of its contents is doing there... I think I really want my machine removed from there and put somewhere else. That things where not too trustworthy I had to figure out already when originally setting up the server: it took me quite some time to get an overview of the network cabeling on the backside of the racks -- a number of the cables I encountered were carrying a label which would not fit the name of the machine they were actually connected to. Since apparently most of the hardware in the surrounding racks is obsolete and will be removed soon, I need to come up with a solution of where to put the server.

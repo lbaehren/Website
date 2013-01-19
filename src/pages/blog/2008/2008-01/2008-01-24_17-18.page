@@ -1,0 +1,13 @@
+---
+title: "Ein wenig Verwirrung"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Thu, 24. January 2008 -- 17:18_
+
+Hm, ich wollte ja schon sagen, dass ich da doch nicht komplett daneben lieben konnte: auch wenn ich ja mitunter meine Ausetzer habe, so bin ich mir doch ziemlich sicher, dass der Anschlusszug hier in **Zwolle** von Gleis 6 abfaehrt. Dass dort gerade noch ein Zug in Richtung Groningen auf dem Gleis stand, loeste zunaechst einmal ein wenig Verwirrung aus, zumal auch eine nochmalige Kontrolle des Fahrplanes arg, dass ich mit meiner Erwartung richtig lag. Es zeichnete sich allerdings ebenfalls recht schnell ab, dass ich nicht der einzige war, der ein wenig aus der Bahn geworfen wurde. Es dauerte aber nicht sonderlich lange, bis einer Mitarbeiter der Bahn auftauchte um alle Reisenden zum Ende von Gleis 7 weiterzuleiten -- die entsprechende Durchsage ueber die Lutsprecher folgte nur wenige Augenblicke spaeter.
+
+Fuer die Reise nach Nijmegen habe ich mir vorgenommen, noch ein wenig an dem Code zu arbeiten, welchen wir aller Wahrscheinlichkeit in die DAL integrieren werde. [Das zuvor erwaehnte Auseinanderdriften](2008-01-24_09-54.html) von DAL und CR-Tools sollte sich weitesgehend daurch beheben lassen, dass ein Teil der Routienen, welche ich geschrieben habe in Joes Sammlung ueberwechseln. Auch wenn ich einen Teil der Abhaengigkeiten innerhalb unserer eigenen Library noch aufloesen kann, so wird dies wohl nicht fuer alle Teile moeglich werden, zumindest nicht ohne an der einen oder anderen Stelle groessere Aenderungen vorzunehmen.

@@ -1,0 +1,15 @@
+---
+title: "Recovering the USG server"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Mon, 14. January 2008 -- 18:24_
+
+Ok, so finally I am back in the server room, next to the [JIVE](http://www.jive.nl) correlator. After starting a first recovery session earlier today, a good portion of the afternoon was spent on catching up with a number of people, most of all  of course with Joe, how already dumped the biggest news so far on me. So in a sense the afternoon has not bee exactly as focussed on getting the server online as I originally had planned -- but in the greater scheme of things this still should be able to work out reasonably well.
+
+So what about the machine now? After having a first superficial look at the output on the console, I have been using the Knoppix Linux Live CD and booted the machine from that. Mounting all the available partitions it look like nothing of the data themselves has been lost; in fact everything in `/var` seems to be alive and well. The same is also true  for most of the other areas on the disk. In order to be somewhat on the saver side I already run a complete backup of most of `/var` and the complete contents of `/etc` -- which after that was moved to another machine (Knoppix immediately configured the network settings, such my desktop machine in the office was inside of reach.
+
+With this I now moved on the [Debian](http://www.debian.org) installation DVD, using it to boot the machine into rescue mode. At the moment I am running a complete `fsck` on all partitions; this -- at least for the most part -- seems to work pretty well, though I keep having trouble with the partition hosting `/usr`, which also might explain the previously reported issue, that none of the system software could be found when forcing a boot into the normal system. Once the check runs are through I will revert to an ordinary boot into the system, though I would expect this to fail for exactly the before-mentioned reason. Having said this there seems to be very which can be done to recover the currently installed system as a whole; the probable course of action might indeed be to have the system rebuild from scratch after replacing the currently installed hard-drive and then putting back the data into their place. I am not willing yet to consider this to be what is going to happen exactly, but alternatives get fewer and fewer.

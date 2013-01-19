@@ -1,0 +1,17 @@
+---
+title: "Bringing back the server (Day 2)"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Tue, 15. January 2008 -- 11:11_
+
+Ok, so after yesterday's first checks today finally there is the time to get serious. So far I have been running all the checks and tests I knew to fin out what the status and condition of the system was; what I can tell from the outcome is, that at least the partition hosting `/usr` is not responding, even after running several versions of `fsck` on it. The course of action now will be as follows:
+
+ - Check again that all critical data (repository, web pages, configuration files) are copied to dop71.
+  - Try to install the system from scratch, using the same partitioning scheme as before (which I think was very reasonable -- at least it helped me not to loose any critical data).
+ - If the system can be revived, put the data themselves back in.
+
+If the last two points are not going to work, I think we will have at leas to put in a new hard-drive and then take it from there.

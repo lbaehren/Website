@@ -1,0 +1,13 @@
+---
+title: "USG server back online"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 30. January 2008 -- 12:38_
+
+On we go with the next chapter in the [recent story](2008-01-15_16-22.html) concerning the USG server. After going incommunicado during the past weekend, the machine was sitting there unreachable, which is quite a pain since no code transfers were possible between Nijmegen, Amsterdam and Leiden (a strong argument why we have to set up a net of mirror servers). Following the suggestion of Andreas what I did a few minutes ago was trying to have a closer look at possible logging output to one of the virtual consoles; bad enough no screen output was available -- the screen remained black no matter to which console I have been switching to (which could be considered a bad sign).
+
+Rebooting in to the system the thing which attracted my attention was the fact that a `fsck` was forced on the largest partition of the disk (which is hosting `/var`); this is remarkable in the sense that this is also the same partition on which the last file should have been created before the machine went dead. One of the measure I have now taken is to install a disk-testing tool -- but nothing of the output looked out of the order. So the next action will be to once more take the trusted [Knoppix](http://www.knoppix.org.html) Live-Linux CD, boot the machine from it and then have a closer look at all possible components; this might take me some time, but I'd rather have a clearer idea of what is the matter, before starting to take computer apart and start swapping parts.

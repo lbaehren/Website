@@ -1,0 +1,19 @@
+---
+title: "USG server down until Monday"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Fri, 11. January 2008 -- 14:56_
+
+I know that this is bad news, but there is little help about it: the USG server hosting both
+
+ * the website, containing the user software Wiki
+ * the SVN code repository
+
+will remain down until Monday. I just had a telephone conversation with Klaas Stuurwold, who is one of the ICT seniors at [ASTRON](http://www.astron.nl). His attempts to reconstruct the file system have failed up to this point, so that there is a considerable likelyhood of hardware being damaged due to simply switching off the machine. In the worst case indeed we will have to rebuild the system from scratch and copy back in place data from the backups. Needless to say I am everything but happy with this situation, but there is little I can do right now (except jumping on the train tomorrow morning, but this only would make sense if I knew I'd be able to physically access the machine and solve the situation within a day).
+
+So what is about to happen? Early Monday morning I will be leaving for ASTRON to join forces with Klaas to resolve the situation. Since I already scheduled staying there for two days, I now simply extended the duration of my visit from two to four days, so I will be there from Monday until Thursday.
+
