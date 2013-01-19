@@ -9,6 +9,48 @@ tags: Blog
  
 **:::**
  
+### Wohnen in Utrecht ###
+
+
+
+
+_Sat, 19. January 2013 -- 23:12_
+
+Klingt ziemlich nach dem, was ich von Amsterdam her kenne:
+
+> Bereite dich vor: Wohnraum für Studenten ist knapp in Utrecht! Das ist eigentlich kein Wunder, wenn man bedenkt, dass fast ein Fünftel der Utrechter Bevölkerung Student ist. Der Nachteil ist, dass die Mieten dadurch oft hoch- und die Wartezeiten lang sind. Die Mieten für ein Zimmer in einer Wohngemeinschaft liegen in Utrecht zwischen 250 und 400 Euro.
+
+Was dies also bedeutet ist, dass man selbst fuer winzige Zimmer von 10 m^2 -- mit gemeintschaftlicher Kueche und Bad -- schon gut 400 EUR auf den Tisch legen kann. Auch wenn ich ja nicht die komplette Woche vor Ort verbringen werde, so moechte ich schon wenigstens ein klein wenig Privatsphaere haben. Darueber hinaus moechte ich zumindest soviel Platz haben, dass Julia und ich auch mal das eine oder andere Wochenende gemeinsam in Utrecht verbringen koennen, um Stadt und Umgebung zu erkunden.
+ 
+**:::**
+ 
+ 
+### Zimmersuche ###
+
+
+
+
+_Sat, 19. January 2013 -- 22:52_
+
+Unglaublich, aber wahr: auch wenn ich uebermorgen bereits meinen ersten Arbeitstag bei [SRON](http://www.sron.nl) in Utrecht habe, so fehlt mir immer noch eine Unterkunft, wo ich in die Naechte der kommenden Woche verbringen kann. Auch wenn ich da schon gesucht habe, so ist mir bisher nichts untergekommen, was wirklich brauchbar waere. Da es jetzt aber hoechste Zeit wird, habe ich Julia gebeten mir ein wenig bei der Suche zu helfen -- ich scheine da einfach nicht so das Haendchen fuer zu haben.
+ 
+**:::**
+ 
+ 
+### No dog shit ###
+
+
+
+
+_Fri, 18. January 2013 -- 22:20_
+
+Hundehaufen im Vorgarten vorzufinden ist sicherlich nicht eines der Ereignisse, welche die meisten Leute zu den Highlights eines Tages zaehlen wuerden. Dementsprechend gibt es unterschiedlichste Arten darauf aufmerksam zu machen, dass gewisse Souvenirs nicht sonderlich erwuenscht sind. Eine Variante dies zu machen habe ich beim heutigen Spaziergang durch Marienburg (im Koelner Sueden) gefunden:
+
+![Schild](/blog/2013/2013-01/dsc_20130118_163950.jpg)
+ 
+**:::**
+ 
+ 
 ### Weiterer Jahrgang komplett ###
 
 
@@ -165,166 +207,6 @@ gearbeitet, aber allem Anschein nach ist dies beim einer Synchronisation via Web
 _Fri, 11. January 2013 -- 16:49_
 
 Das haette ich mir wahrscheinlich schon eine ganze Weile frueher einmal genauer ansehen muessen... aber irgendwie habe ich es doch geschafft dies immer wieder vor mir her zu schieben. Da Ende Januar mit grossen Schritten naeher kommt und der auch der Termin fuer den Start bei [SRON](http://www.sron.nl) immer naeher rueckt, war es schon noch einmal noetig nach dem mir noch verbleibenden Urlaub zu schauen, damit ggf. Zeit habe mich noch um diverse organisatorische Dinge zu kuemmern (wobei das Nachschauen fuer sich genommen wohl selber mit zu den organisatorischen Dingen zaehlt). Laut dem Tarifvertrag fuer den Oeffentlichen Dienst stehen mir (bei einem Alter bis zum vollendeten 40. Lebensjahr) 29 Urlaubstage pro Jahr zu; beruecksichtige ich, dass der Arbeitsvertrag ueber 10 Monate gelaufen ist (April 2012 - Januar 2013) dann komme ich auf eine Summe von approx. 24 Urlaubstagen. Wahrend diese Rechenuebung noch recht einfach war, so stellte sich das Zusammenrechnen der bereits verbrauchten Urlaubstage schon ein wenig komplizierter heraus; nach Inspektion der diversen Terminkalender komme ich nun auch 6 Tage, welche ich mir in den vergangenen 10 Monaten freigenommen habe -- demnach bleiben mir also noch mehr als 3 Wochen, welche ich mir frei nehmen koennte. Wenn ich dies ein wenig genauer betrachte, dann heisst dies wohl, dass ich rein technisch schon jetzt nicht mehr haette arbeiten muessen. Aber gut, ich habe dies noch nie zu eng gesehen -- dennoch sollte ich aber schauen, dass ich die verbliebenen Tage noch weitestgehend eingeloest kriege, denn schliesslich kann ich die Zeit zur Vorbereitung auf den neuen Job gebrauchen.
- 
-**:::**
- 
- 
-### Ueberarbeitung Setup ###
-
-
-
-
-_Fri, 11. January 2013 -- 11:50_
-
-Das war eine Ueberarbeitung, welche schon eine Weile in der Luft hing; nachdem ich ja schon eine Weile fleissig mittels [Webgen](http://webgen.rubyforge.org) meine Website baue, wurde es nun noch einmal hoechste Zeit auch hinter den Kulissen noch ein wenig aufzuraeumen. Da seit dem Umstellen auf statische Seiten der Prozess -- von den Vorlagen mit dem eigentlichen Text hin zu den fertigen Seiten unter Bruecksichtigung des Layouts -- sehr stark dem gleicht, was beim Compilieren von Programm-Quellcode geschieht, macht es natuerlich Sinn einen Teil der von da gewohnten Vorgehensweise zu uebernehmen. Dazu gehoeren fuer mich vo allen Dingen folgende Punkte:
-
-**a)** Vermeidung fest "verdrahteter" Pfade durch vorherige Inspektion des Systems (Konfiguration). Dies betrifft sowohl Hilfprogramme, welche fuer bestimmte Aufgaben benoetigt werden, als auch die Aufloesung von Pfaden hin zu Projekt-eigenen Dateien. Auch wenn die Verzeichnis-Struktur vordefiniert und recht stabil ist
-
-~~~~
-.                        ...                           (PROJECT_SOURCE_DIR)
-|-- build                ...  Build directory          (PROJECT_BINARY_DIR)
-|-- release              ...  Installation directory   (CMAKE_INSTALL_PREFIX)
-|   `-- website          ...  Generated website
-`-- src
-    |-- code             ...  C/C++ code
-    |-- images
-    |-- pages            ...  Sources for the web pages
-    `-- templates        ...  Layout templates for web pages
-~~~~
-
-so macht es doch Sinn darauf zu achten, dass Informationen hinter den Kulissen und konsistenter Weise weitergereicht werden: da Pfade eh nicht absolut aufgefuehrt werden sollte (eine Angabe wie `/Users/lars/Sites/larsbaehren.com/src/pages` hat nirgendwo etwas zu suchen!), ist es von der ganzen Vorgehensweise her deutlich sauberer via Konfiguration die benoetigten Informationen zusammenzutragen
-
-~~~~
-find_path (PROJECT_SOURCE_DIR_PAGES
-  NAMES index.page default.template default.css
-  PATHS ${PROJECT_SOURCE_DIR}
-  PATH_SUFFIXES src pages src/pages
-  )
-if (NOT PROJECT_SOURCE_DIR_PAGES)
-  message (SEND_ERROR "Missing webpages source dir (PROJECT_SOURCE_DIR_PAGES)")
-endif (NOT PROJECT_SOURCE_DIR_PAGES)
-~~~~
-
-und von da an nur noch durchgaengig ueber interne Variablen weiterzuleiten:
-
-~~~~
-sources: [[/, Webgen::Source::FileSystem, ${PROJECT_SOURCE_DIR_PAGES}]]
-~~~~
-
-Der relevante Punkt bei dieser Vorgehensweise ist natuerlich, dass ich bei eventuellen Aenderungen in der Struktur, nur an einer einzigen Stelle eine Anpassung vornehmen muss (falls dies ueberhaupt noetig wuerde).
-
-**b)** Trennung von Quelldateien ("Source code") und generierten Daten: dies betrifft sowohl fertige Endprodukte (bei einem Software-Projekt Dinge wie Bibliotheken und Programmdateien), als auch temporaere Daten (wie sie z.B. im Zuge der Konfiguration erzeugt werden). Gerade an letzterer Stelle gab es noch ein wenig Nachholbedarf, weil bisher die Konfiguration fuer _Webgen_ im Hauptverzeichnis abgelegt wurde -- dies sollte natuerlich nicht passieren, wenn man sich die Moeglichkeit erhalten will wirklich sauber komplett von Null anzufangen. Mit den jetzt vorgenommenen Aenderungen kann ich ohne irgendwelche Bedenken das komplette `build` Verzeichnis wegschmeissen, ohne dabei Angst haben zu muessen irgendwelchen Inhalt zu beschaedigen.
-
-**c)** Definition eines `install` Targets: waehrend dies fuer die compilierten Komponenten (Bibliothek, Header Dateien, Executables) schon der Fall war, fehlte dies fuer die Website selber.
-
-~~~~
-install(
-  DIRECTORY ${PROJECT_BINARY_DIR}/website
-  DESTINATION ${CMAKE_INSTALL_PREFIX}/website
-  USE_SOURCE_PERMISSIONS
-  )
-~~~~
-
-Der ueblichen Vorgehensweise beim Bau von Software Paketen folgend -- z.B. unter Verwendung der [GNU Autotools](http://en.wikipedia.org/wiki/GNU_build_system)
-
-~~~~
-./configure
-make
-make install
-~~~~
-
-lasse ich _Webgen_ nun nicht mehr einfach nur in das endgueltige Verzeichnis schreiben: wie auch beim Code wird zunaechst alles innerhalb des `build` Verzeichnisses erstellt, um dann anschliessen via `make install` die Installation an den endgueltigen Ort vorzunehmen.
- 
-**:::**
- 
- 
-### Wettbewerb der Karriere Netzwerke ###
-
-
-
-
-_Thu, 10. January 2013 -- 09:31_
-
-Fuer jemanden der ueber die deutschen Landesgrenzen hinweg auf der Suche nach beruflichen Kontakten ist (oder diese pflegen moechte), war wohl schon lange klar dass [XING](http://www.xing.de) nur begrenzt geeignet ist:
-
-> Das weltgrößte Karriere-Netzwerk [LinkedIn](http://de.linkedin.com) hat die Schwelle von 200 Millionen Mitgliedern übersprungen. Damit erreicht die auf berufliche Nutzung spezialisierte Online-Plattform etwa ein Fünftel der Mitglieder von Facebook und hat zuletzt ein ähnlich schnelles Wachstum erreicht. Erst im März vergangenen Jahres hatte das US-Unternehmen die Marke von 100 Millionen Mitgliedern geknackt. Jede Sekunde kämen zwei neue Nutzer hinzu, [teilte LinkedIn mit](http://blog.linkedin.com/2013/01/09/linkedin-200-million).
-
-Wie die [Meldung auf Heise News](http://www.heise.de/jobs/meldung/LinkedIn-vernetzt-weltweit-200-Millionen-Menschen-1780572.html) weiter ausfuehrt, hatte LinkedIn lange Zeit einen klaren US-Schwerpunkt -- dies scheint sich aber mittlerweile geaendert zu haben:
-
-> Inzwischen haben sich aber bereits 64 Prozent der Nutzer außerhalb der USA angemeldet. In den deutschsprachigen Ländern hat LinkedIn mehr als drei Millionen Mitglieder und ist damit etwa halb so groß wie der hiesige Marktführer Xing. Nach den USA gibt es die meisten Miglieder in Indien, Brasilien, Großbritannien und Kanada.
-
-Da ich selber ja in beiden Netzwerken praesent bin, kann ich schon ein wenig die Unterschiede -- sowohl in den Angeboten als auch in den darin zu findenden Leuten -- nachvollziehen: _XING_ setzt recht eindeutig den Schwerpunkt auf den den deutschsprachigen Raum (Deutschland, Schweiz, Oesterreich), waehrend _LinkedIn_ deutlich globaler aufgestellt ist. Dementsprechend macht es schon einen Unterschied was fuer Kontakte oder Jobs man sucht: beschraenkt man sich alleine auf den deutschsprachigen Raum, dann bietet _XING_ nach wie vor wohl die groesseren Chancen, alles was aber ein wenig ueber diesen Tellerrand hinausgeht, geschieht dann aber an anderer Stelle.
- 
-**:::**
- 
- 
-### Synchronisation Website ###
-
-
-
-
-_Wed, 09. January 2013 -- 15:14_
-
-Ok, dann liegt es also nicht einfach nur daran, dass ich da etwas grundlegend falsch gemacht habe, sondern es handelt sich um eine Eigenheit des via WebDAV gemounteten Verzeichnisses. Ich habe mich seit dem Umzug des Blogs auf die neue Adresse ja schon mehrfach darueber gewundert, dass bei einem Update auf die Live-Version der Seiten, immer wieder alle Daten komplett uebertragen werden. Das fuer sich genommen ist eine ziemlich unsinnige Verhaltensweise, denn schliesslich sind es in der Regel ja nur recht kleine Ergaenzungen, welche aktualisiert werden muessen -- ignoriert man dies und faengt stattdessen an noch einmal alles komplett von Anfang an durch die Gegend zu schieben, so dauert dies unnoetig lange (und mit dem wachsenden Inhalt immer laenger).
-
-Auch wenn dies die Statusmeldungen beim Erzeugen der Seiten nicht hergaben, wollte ich einfach noch mal auf Nummer sicher gehen, so dass ich die Synchronisationsprozedur zum Vergleich lokal gefahren habe:
-
-~~~~
-rsync -avtE --delete website website_copy
-~~~~
-
-Abgesehen von der Zieladresse bleibt alles identisch, so dass ich recht schnell zu sehen bekommen sollte, falls der Seiten-Generator mehr Seiten als noetig baut. Zum Test habe ich daher eine kleine Aenderung vorgenommen und anschliessend die Synchronisation mit der lokalen Kopie gestartet:
-
-~~~~
-[100%] Publishing website - uploading generated pages ...
-sending incremental file list
-blog/archive.html
-blog/index.html
-blog/2009/2009-03/2009-03-13_02-54.html
-blog/2010/2010-01/2010-01-01_23-13.html
-blog/2010/2010-09/
-blog/2010/2010-09/2010-09-06_11-06.html
-blog/2010/2010-09/dsc_20100905_130518.jpg
-blog/2010/2010-09/dsc_20100905_143200.jpg
-blog/2010/2010-09/dsc_20100905_162328.jpg
-
-sent 415146 bytes  received 298 bytes  166177.60 bytes/sec
-total size is 124117486  speedup is 298.76
-[100%] Built target Website_copy
-~~~~
-
-Wie ich es von `rsync` erwarten wuerde werden nur die Dateien uebertragen, welche sich in der Zeit seit dem letzten Abgleich veraendert haben. Wiederhole ich die gleiche Prozedur jetzt noch einmal fuer das via WebDAV eingebundene Verzeichnis, dann wird sehr schnell deutlich, dass hier etwas grundlegend anders laeuft:
-
-~~~~
-[100%] Publishing website - uploading generated pages ...
-sending incremental file list
-bg.gif
-calendars.html
-console_840x280.jpg
-default.css
-default.template
-dsc_20080618_193227.jpg
-front.jpg
-front_flowers.jpg
-index.html
-menubg.gif
-menubg2.gif
-blog/
-blog/2003.html
-blog/2004.html
-blog/2005.html
-blog/2006.html
-blog/2007.html
-blog/2008.html
-blog/2009.html
-blog/2010.html
-blog/2011.html
-blog/2012.html
-blog/2013.html
-blog/archive.html
-~~~~
-
-Den Rest der Ausgabe erspare ich mir mal an dieser Stelle - ich glaube nicht, dass die zusaetzlichen Seiten an Log-Infos weiterhelfen wuerden. Was dies aber fuer mich bedeutet ist, dass ich mich da noch einmal auf die Suche nach einer Dokumentation begeben muss, welche darueber Aufschluss gibt, was hier falsch laeuft -- auf Dauer kann dies sicherlich nicht so bleiben.
  
 **:::**
  
