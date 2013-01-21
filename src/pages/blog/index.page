@@ -9,6 +9,22 @@ tags: Blog
  
 **:::**
  
+### Schedule constraints ###
+
+
+
+
+_Mon, 21. January 2013 -- 09:05_
+
+Of course there is not need to wait until actually being on site, before starting to go through some of the background material... As already mentioned a number of times during the interviews end of [last year](/blog/2012), there is a rather ambitious schedule for the _TROPOMI_ mission. While traveling up to [SRON](http://www.sron.nl) this morning -- hampered though by the weather conditions, we forced me on an alternate route to the new working place -- I started reading through the "Project management plan for TROPOMI onground calibration", in order to get some ida of the overall project setup and timeline. In chapter 3 ("Objectives and constraints of the project") I encountered an overview of the schedule constraints, which contains the following statement:
+
+> The onground calibration effort by industry will start the 1st of February 2014. Before this date, the calibration software must have been fully developed and tested, and confidence in the calibration approach must have been confirmed by a calibration rehearsal.
+
+If I am reading this correctly (and I am pretty sure this will be clarified soon enough), this means that there is about a year to complete the onground calibration software. Given I am now working in space industry this signifies little tolerance for slipping of deadline... hence there is little time to catch up with what has been happening so far and get productive.
+ 
+**:::**
+ 
+ 
 ### Noch ein Ausfall ###
 
 
@@ -162,18 +178,6 @@ _Fri, 18. January 2013 -- 22:20_
 Hundehaufen im Vorgarten vorzufinden ist sicherlich nicht eines der Ereignisse, welche die meisten Leute zu den Highlights eines Tages zaehlen wuerden. Dementsprechend gibt es unterschiedlichste Arten darauf aufmerksam zu machen, dass gewisse Souvenirs nicht sonderlich erwuenscht sind. Eine Variante dies zu machen habe ich beim heutigen Spaziergang durch Marienburg (im Koelner Sueden) gefunden:
 
 ![Schild](/blog/2013/2013-01/dsc_20130118_163950.jpg)
- 
-**:::**
- 
- 
-### Weiterer Jahrgang komplett ###
-
-
-
-
-_Thu, 17. January 2013 -- 15:41_
-
-Auch wenn ich bei Weitem noch nicht fertig bin, so mache ich durchaus messbaren Fortschritt. Ziel ist es ja immer noch, alle [Blog-Eintraege](/blog) unter einem Dach zusammenzufassen: ganz trivial ist dieses Vorhaben nicht, weil ich ueber die Jahre mindestens drei unterschiedliche Platformen verwendet habe, was dazu fuehrt, dass auch die Eintraege selber in unterschiedlichen Rohformaten vorliegen. Folgerichtig kann ich die Daten nicht einfach nur eins-zu-eins uebernehmen, sondern muss die Syntax (fuer das Einbinden von Bildern oder Extrakten an Source-Code) anpassen; auch wenn ich einen Teil davon automatisiert habe, muss ich fuer die Feinabstimmung immer noch einmal Hand anlegen, damit das Resultat wirklich dem entspricht, was ich haben will.
  
 **:::**
  
