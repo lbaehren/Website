@@ -9,6 +9,34 @@ tags: Blog
  
 **:::**
  
+### Aangepaste dienstregeling ###
+
+
+
+
+_Mon, 21. January 2013 -- 04:43_
+
+Fuer eine Weile haben mich Meldungen der folgenden Art nicht sonderlich gestoert, aber da ich heute Morgen ja wieder auf niederlaendischem Boden unterwegs bin, ist es dann doch wieder relevant:
+
+> Maandag 21 januari rijden [NS](http://www.ns.nl) en [ProRail](http://www.prorail.nl) uit voorzorg weer een aangepaste dienstregeling. Wij hebben dit besloten op basis van de weersverwachting van onafhankelijke weerbureaus voor de komende 24 uur. Naar verwachting houdt de sneeuwval in de nacht van zondag op maandag aan, en zal tot na de ochtendspits duren. Dit in combinatie met aanhoudende vorst kan zorgen voor storingen aan infrastructuur of treinen. Door de dienstregeling aan te passen wordt de kans kleiner dat het treinverkeer vastloopt.
+
+Da ich auf einer der groesseren Routen unterwegs bin, hoffe ich mal, dass ich recht gut durchkomme -- allerdings gibt es keinerlei Garantie hierfuer, so dass ich mich zumindest mental schon einmal auf Verspaetungen einstellen sollte.
+ 
+**:::**
+ 
+ 
+### Packen ###
+
+
+
+
+_Sun, 20. January 2013 -- 19:36_
+
+Ich denke mal, dass ich jetzt alles wichtigen Dinge, welche ich fuer die kommende Woche benoetige, eingepackt habe. Ok, der Rechner wird heute Abend noch benoetigt, aber ansonsten sollte jetzt alles verstaut sein. Wie sich herausstellt ist das Gepaeck immer noch recht ueberschaubar -- wenn ich darueber hinaus auch noch bedenke, dass ein nicht unerheblicher Teil der Sachen in Utrecht bleiben wird, dann werde ich mir wohl keinen Bruch heben. Die Klamotten zum Anziehen machen (wie so ueblich) nur eine kleinen Teil des Gesamtvolumens aus: deutlich mehr Platz wird von Computer- und Teeausruestung beantsprucht, was ich benoetige um mich bei [SRON](http://www.sron.nl) entsprechend einzurichten. Der Photorucksack geht selbstverstaendicherweise ebenfalls mit: ob ich nun unbedingt alles davon mitschleppen muss koennte man wahrscheinlich streiten, aber da ich auf diese Weise auch noch das Laptop (inklusive Zubehoer) transportieren kann, ist das schon ok -- ausserdem habe ich ja durchaus vor ein wenig mit der Kamera loszuziehen, damit ich die neue Umgebung dokumentieren kann.
+ 
+**:::**
+ 
+ 
 ### Wohnen in Utrecht ###
 
 
@@ -171,42 +199,6 @@ Das ist einfach zu gut, um dies nicht direkt zu notieren:
 Entnommen ist dies dies der Folge fuenf der HBO Serie [The Newsroom](http://www.hbo.com/the-newsroom), welche ich diese Woche fuer mich entdeckt habe.
 
 > The Newsroom is an American drama television series created and principally written by Aaron Sorkin that premiered on HBO on June 24, 2012. The series chronicles the behind-the-scenes events at the fictional Atlantis Cable News (ACN) channel. It features an ensemble cast including Jeff Daniels as anchor Will McAvoy, who, together with his staff set out to put on a news show "in the face of corporate and commercial obstacles and their own personal entanglements."
- 
-**:::**
- 
- 
-### Update Online-Version ###
-
-
-
-
-_Sat, 12. January 2013 -- 20:08_
-
-Da geht es ja doch: nachdem ich in den vergangenen Tagen immer wieder mit Problemen bei dem Update der Online-Version meiner Webseiten gehadert habe, bin ich heute nach ein wenig Suchen fuendig geworden, wie ich dies beheben kann. Wie ich in einem [FAQ Eintrag zum Thema Backup-Disk](http://www.df.eu/de/service/df-faq/webhosting/managedserver/backup-disk) nachlesen konnte, wird empfohlen  den folgenden Rsync-Befehl zu verwenden, um ein Verzeichnis in einen Zielordner zu synchronisieren:
-
-~~~~
-rsync -axuP <source> <target>
-~~~~
-
-Bisher hatte ich mit
-
-~~~~
-rsync -avtE --delete <source> <target>
-~~~~
-
-gearbeitet, aber allem Anschein nach ist dies beim einer Synchronisation via WebDAV nicht die beste Wahl. Auch wenn ich mir da die Dokumentation noch einmal vornhmen muss, um die Unterschiede besser zu verstehen, so ist das Update am heutigen Nachmittag endlich so durchgelaufen, wie ich dies haben wollte.
- 
-**:::**
- 
- 
-### Resturlaub ###
-
-
-
-
-_Fri, 11. January 2013 -- 16:49_
-
-Das haette ich mir wahrscheinlich schon eine ganze Weile frueher einmal genauer ansehen muessen... aber irgendwie habe ich es doch geschafft dies immer wieder vor mir her zu schieben. Da Ende Januar mit grossen Schritten naeher kommt und der auch der Termin fuer den Start bei [SRON](http://www.sron.nl) immer naeher rueckt, war es schon noch einmal noetig nach dem mir noch verbleibenden Urlaub zu schauen, damit ggf. Zeit habe mich noch um diverse organisatorische Dinge zu kuemmern (wobei das Nachschauen fuer sich genommen wohl selber mit zu den organisatorischen Dingen zaehlt). Laut dem Tarifvertrag fuer den Oeffentlichen Dienst stehen mir (bei einem Alter bis zum vollendeten 40. Lebensjahr) 29 Urlaubstage pro Jahr zu; beruecksichtige ich, dass der Arbeitsvertrag ueber 10 Monate gelaufen ist (April 2012 - Januar 2013) dann komme ich auf eine Summe von approx. 24 Urlaubstagen. Wahrend diese Rechenuebung noch recht einfach war, so stellte sich das Zusammenrechnen der bereits verbrauchten Urlaubstage schon ein wenig komplizierter heraus; nach Inspektion der diversen Terminkalender komme ich nun auch 6 Tage, welche ich mir in den vergangenen 10 Monaten freigenommen habe -- demnach bleiben mir also noch mehr als 3 Wochen, welche ich mir frei nehmen koennte. Wenn ich dies ein wenig genauer betrachte, dann heisst dies wohl, dass ich rein technisch schon jetzt nicht mehr haette arbeiten muessen. Aber gut, ich habe dies noch nie zu eng gesehen -- dennoch sollte ich aber schauen, dass ich die verbliebenen Tage noch weitestgehend eingeloest kriege, denn schliesslich kann ich die Zeit zur Vorbereitung auf den neuen Job gebrauchen.
  
 **:::**
  
