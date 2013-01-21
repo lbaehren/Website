@@ -1,0 +1,16 @@
+---
+title: "Produktive Bahnfahrt"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 12. March 2008 -- 09:47_
+
+
+
+Man kann mir ja sagen was man will, aber die Fahrt hier bi **Zwolle** ist in jedem Fall sehr prduktiv gewesen. Auch wenn ich bisher noch nie so richtig herausfinden konnte warum ich so gerne im Zug arbeite, so muss ich feststellen, dass ich auf dem Weg von Nijmegen bis hierhin wirklich einiges geschafft habe. Ok, ich habe zwar noch immer keine einzige Seite fuer den Vortrag heute Mittag fertig, dafuer gibt es aber im Code gleich eine Reihe von Neuerungen und Verbesserungen zu verbuchen. Fuer alles, was ich mir so vorgenommen habe wird es leider nicht reichen, aber schliesslich sollte ich mir ja auch noch ein klein wenig fuer die Zeit im Buero aufheben (nur am Schreibtisch sitzen und Tee trinken ist vielleicht nicht so wirklich ausreichend). Was ich aber bis Hoogeveen auf jeden Fall noch behoben kriegen will ist der Fehler, welcher dazu fuehrt dass mein kleines Statistik-Programm mit einem seg-fault aus dem Leben scheidet; da ich das Programm ja vewenden wollte, um ein paar Kleinigkeiten zu demonstrieren, waere es natuerlich schon ganz nett, wenn es sich nicht sofort in seine Einzelteile zerlegt, sobald ich versuche ein paar intern benoetigte Parameter zu setzen...
+
+
+~~DISCUSSION~~

@@ -1,0 +1,22 @@
+---
+title: "Wenn das Update den Rechner toetet"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Mon, 14. April 2008 -- 09:31_
+
+
+
+Also dies war definitiv nicht, was ich mir als Resultat eines System-Updates/Upgrades vorgestellt hatte. Neben dem regulaeren Update der via Fink installierten Unix/Linux Software versuche ich natuerlich auch mein Mac OS auf dem Stand der Dinge zu halten und von [[http://www.apple.com|Apple]] veroeffentlichte Fixes mit zu beruecksichtigen; dass dies allerdings dazu fuehrt, dass meine Computer-Infrastruktur lahmgelegt wird ist eine Auswirkung, die mich in keinster Weise begeistern kann...
+
+Als eine der ersten Massnahmen nach der Rueckkehr aus Amsterdam habe ich in der Nacht von Donnerstag nach Freitag einen Abstecher ins Buero eingelegt, um zumindest schon einmal die in der Zwischenzeit aufgelaufenen Mails einzusammeln. Statt dies bis heute auf die lange Bank zu schieben, dachte ich mir dass es doch weitaus angenehmer sein duerfte, bereits am Wochenende in Ruhe mit dem Beantworten starten zu koennen, statt den halben Montag nur mit Mail lesen und schreiben zu verbringen. Das dies eine gute Entscheidung war, wird zumindest daraus klar, dass ich auf diese Weise noch rechtzeitig die Mail von Ivor ([[http://www.non-divine.com|Non-Divine]]) vorgefunden habe, um [[2008-04-14_00-43|das gestrige Konzert]] klarzumachen.
+
+Nach dem Empfang der Mail bin ich dann durch die Standard-Prozeduren: Aktivierung des Backups auf die externe Festplatte im Buero, Upgrade der Fink Pakete und Check nach moeglichen Updates fuer Mac OS. Was unter letzterem Punkt dann auftauchte, war -- neben den ueblichen Dingen wie neues Quicktime oder Fixes fuer Safari -- ein Firmware Upgrade fuer das MacBook Pro. Auch wenn ich dies nicht direkt eingerichtet habe, so landete die Datei schon einmal auf dem Rechner, um dann spaeter zuhause in Ruhe durch die Installationsprozedur zu gehen. Gesagt getan: nach sorgsamem Lesen der Installationsinstruktionen habe ich also die noch verbleibenden Upgrades eingespielt... und dann ganz normal weiter gearbeitet. Die boese Ueberraschung kam dann allerdings am Freitag Abend, als ich wieder ins Buero gefahren bin: nach dem Anschliessen des MacBooks an den externen Monitor (welcher ja identisch mit dem bei mir zuhause ist) habe ich das Laptop ganz normal gestartet... und bekam einen schwarzen Bildschirm zu sehen. Nun gut, dies an sich hatte ich schon ein paar Mal, vor allen Dingen dann, wenn ich den Rechner nach einer Schlafperiode mit einer neuen Bildschirmaufloesung wieder aufgeweckt habe; was dann aber immer funktioniert hat war, den Bildschirm einfach noch einmal runterzuklappen und wieder zu oeffnen. Nicht so diesmal. Nachdem wiederholte Versuche zu keinem Erfolg fuehrten, blieb zunaechst einmal nur die Moeglichkeit, mir einen der im Buero stehenden Arbeitsplatzrechner zu schnappen und mich im Internet auf die Suche nach irgendwelchen Hinweisen zu begeben, ob es sich einfach nur um eine Dummheit meinerseits oder aber um ein weiter verbreitertes Problem handelte. Wie sich schon recht bald herausstellte, scheint es direkt an einer ganze Reihe von Ecken Probleme nach dem Upgrade gegeben zu haben -- die meisten davon ziemlich genau in der Art, wie dies bei mir der Fall war. Dies verstaerkte zumindest einmal die Hoffnung, dass es entsprechend Bedarf fuer eine Loesung geben muesste, mit welcher sich der Rechner brauchbar machen liesse; dies war allerdings leider Fehlanzeige, weil alle in irgendwelchen Foren kursierenden Vorschlaege (a) weder bei allen anderen Betroffenen, noch (b) bei mir anschlugen. Schlussfolgerung: dies war nicht irgendein kleines Problem, welches sich schnell wieder einraenken liess.
+
+Worueber spaetestens an dieser Stelle dann gluecklich sein konnte war, dass ich ja immer noch mein G4 PowerBook habe; dies ist zwar mittlerweile schon ein wenig betagt, verfuegt aber doch ueber die wesentliche Software, welche ich fuer die taeglichen Aktivitaeten noetig habe (was allerdings auch kaum verwunderlich sein duerfte, da ich den Rechner ja lange auch fuer die Arbeit verwendet habe). Dies ist zwar keine dauerhafte Loesung -- ich moechte schon wieder mein MacBook benutzen koennen -- aber fuer den Fall, dass ich einen Apple Service Haendler in Anspruch nehmen muss, bin ich dann wenigstens nicht komplett aufgeschmissen.
+
+
+~~DISCUSSION~~
