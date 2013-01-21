@@ -1,5 +1,7 @@
 ## Directories
+build
 site
+release
 ## Individual files
 .DS_Store
 webgen.cache
