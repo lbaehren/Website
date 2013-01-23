@@ -1,0 +1,20 @@
+---
+title: "Getting to know TROPOMI"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 22. January 2013 -- 23:02_
+
+That was to be expected: as somebody, who has spent most of his professional life in software development for radio astronomy, there is quite a learning curve ahead when moving into satellite-based tropospheric research (or to be more precise: software development for that field of research). As a result of this I have been spending a considerable portion of this afternoon -- or what was left of it after getting introduced to more people in the institute and discussing some of the existing software written so far -- chasing down published (science & technical) papers on [TROPOMI](http://www.tropomi.eu/TROPOMI/Home.html). Seems like there are actually quite a few around, though unfortunately there is no centralized overview to be found anywhere on the various TROPOMI web pages. Hence the only thing left to do is to go on a search myself, trying to collect a significant bunch to have a point of entry to the project, its goals and history.
+
+Based on the conversations I had the past two days, the following papers seem like a good point to start:
+
+* J. de Vries et. al (2007) _TROPOMI: Solar backscatter satellite instrument for air quality and climate_
+* A. Butz ⁎, A. Galli, O. Hasekamp, J. Landgraf, P. Tol, I. Aben (2012) _TROPOMI aboard Sentinel-5 Precursor: Prospective performance of CH4 retrievals for aerosol and cirrus loaded atmospheres_
+* P. Ingmann, B. Veihelmann, J. Langen, D. Lamarre, H. Stark, G. B. Courrèges-Lacoste (2012) _Requirements for the GMES Atmosphere Service and ESA's implementation concept: Sentinels-4/-5 and -5p_
+* I. Genkova, J. Robaidek, R. Roebling, M. Sneep, P. Veefkind (2012) _Temporal co-registration for TROPOMI cloud clearing_
+
+Though I am not expecting to complete all of the above before heading back to Bonn, this is makes for some great reading material when working from home on Friday.

@@ -9,6 +9,59 @@ tags: Blog
  
 **:::**
  
+### Noch einmal Buero ###
+
+
+
+
+_Wed, 23. January 2013 -- 01:03_
+
+Eine Ansicht gab es da ja noch, welche ich bisher noch nicht an dieser Stelle verfuegbar gemacht hatte:
+
+![Office at SRON](/blog/2013/2013-01/hdr_20130121_200131.jpg)
+
+Wie sich hier vielleicht noch einmal ein wenig besser erkennen laesst, ist der Raum nicht so sonderlich gross -- an die eher luxurioesen Zeiten bei [ASTRON](http://www.astron.nl), wo ich zeitweise einen fast doppelt so grossen Raum fuer mich allein hatte, werde ich wohl so schnell nicht wieder anschliessen. Wie ich bei dem Rundgang am Nachmittag gleich mehrfach zu hoeren bekommen habe, ist Arbeitsplatz bei [SRON](http://www.sron.nl) eine recht kostbare Sache (was ich von der Art her durchaus kenne); vielleicht machen in diesem Zusammenhang auch die Ueberlegungen Sinn, dass das Institut in den naechsten Jahren umziehen soll. Da die [Astronomie hier in Utrecht](/blog/2011/2011-12/2011-12-10_19-55.html) ja dicht gemacht wird, geht auf absehbare Zeit auch die direkte Anbindung an die astronomische Forschung verloren, so dass sich damit ein strategisch guenstiger Zeitpunkt ergaebe fuer einen Ortswechsel. Gut, bei meiner derzeitigen Situation hilft dies erst einmal nicht sonderlich viel, so dass ich mit den vorhandenen Gegebenheiten arbeiten muss; dazu gehoert dann auch, dass ich mal die Moeglichkeiten ausloten muss, ob ich meinen Arbeitsplatz nicht ein wenig umgebaut bekomme, damit ich a) ein wenig mehr Schreibtischflaeche zur Verfuegung habe und b) ich nicht direkt mit dem Ruecken zum Eingang sitze.
+ 
+**:::**
+ 
+ 
+### Bleibt kalt ###
+
+
+
+
+_Wed, 23. January 2013 -- 00:12_
+
+Sieht ganz so aus, als gaebe es in naher Zukunft keine Erleichterung was die Temperaturen betrifft; dementsprechend habe ich vorhin eine weitere Mail einer Warnmeldung erhalten:
+
+> NS en ProRail hebben besloten ook morgen, woensdag 23 januari, een aangepaste dienstregeling te rijden. Aanleiding hiervoor is de aanhoudende vorst in combinatie met eerdere sneeuwval. Met name in de nachten wordt strenge vorst verwacht (tot meer dan -10 graden aan de grond). Door de dienstregeling aan te passen wordt de kans kleiner dat het treinverkeer vastloopt.
+
+Gibt es einen irgendwie vergleichbaren Service seitens der [Deutschen Bahn](http://www.bahn.de)?
+ 
+**:::**
+ 
+ 
+### Getting to know TROPOMI ###
+
+
+
+
+_Tue, 22. January 2013 -- 23:02_
+
+That was to be expected: as somebody, who has spent most of his professional life in software development for radio astronomy, there is quite a learning curve ahead when moving into satellite-based tropospheric research (or to be more precise: software development for that field of research). As a result of this I have been spending a considerable portion of this afternoon -- or what was left of it after getting introduced to more people in the institute and discussing some of the existing software written so far -- chasing down published (science & technical) papers on [TROPOMI](http://www.tropomi.eu/TROPOMI/Home.html). Seems like there are actually quite a few around, though unfortunately there is no centralized overview to be found anywhere on the various TROPOMI web pages. Hence the only thing left to do is to go on a search myself, trying to collect a significant bunch to have a point of entry to the project, its goals and history.
+
+Based on the conversations I had the past two days, the following papers seem like a good point to start:
+
+* J. de Vries et. al (2007) _TROPOMI: Solar backscatter satellite instrument for air quality and climate_
+* A. Butz ⁎, A. Galli, O. Hasekamp, J. Landgraf, P. Tol, I. Aben (2012) _TROPOMI aboard Sentinel-5 Precursor: Prospective performance of CH4 retrievals for aerosol and cirrus loaded atmospheres_
+* P. Ingmann, B. Veihelmann, J. Langen, D. Lamarre, H. Stark, G. B. Courrèges-Lacoste (2012) _Requirements for the GMES Atmosphere Service and ESA's implementation concept: Sentinels-4/-5 and -5p_
+* I. Genkova, J. Robaidek, R. Roebling, M. Sneep, P. Veefkind (2012) _Temporal co-registration for TROPOMI cloud clearing_
+
+Though I am not expecting to complete all of the above before heading back to Bonn, this is makes for some great reading material when working from home on Friday.
+ 
+**:::**
+ 
+ 
 ### Wohungssuche ###
 
 
@@ -141,46 +194,6 @@ Im Institut angekommen wurde ich bereits an der Rezeption erwartet; da ja schon 
 _Mon, 21. January 2013 -- 12:07_
 
 Unglaublich, aber wahr -- ich habe es in der Tat geschafft, mich hier zu SRON durchzuschlagen. Hat mich einiges an Umwegen gekostet (man schaue sich hierzu die Chronik des Morgens an), aber nach diverse Wechseln und Warteaktionen ist der IC von Sittard endlich Utrecht eingefahren. Von der Zeit her hat mir dieser Abstecher allerdings nichts gebracht, denn wenn ich einfach den spaeteren ICE von Koeln aus genommen haette (vorausgesetzt natuerlich dieser verkehrt), waere ich aller Wahrscheinlichkeit sogar noch ein paar Minuten eher in Utrecht gewesen.
- 
-**:::**
- 
- 
-### IC nach Utrecht ###
-
-
-
-
-_Mon, 21. January 2013 -- 10:21_
-
-Sieht doch danach aus, als wuerde ich es endlich schaffen mich nach Utrecht durchzuschlagen. Es gab zwar in Sittard noch einmal eine Planaenderung (weil der eigentlich vorgesehene Zug nicht fuhr), aber mittlerweile bin ich doch wieder etwas besseren Mutes. Trotzdem habe ich eben aber mal eine kurze Nachricht durchgeschickt, dass ich nach wie vor plane noch im Laufe des Vormittags bei SRON aufzuschlagen (auch wenn es damit knapp werden koennte); da ich immerhin einen IC mit WLAN erwischt habe, konnte ich mich schnell noch bei Richard melden, damit ich da nicht als verschollen zu gelten habe. Ansonsten verbringe ich die Zeit damit mich durch die TROPOMI Dokumente zu lesen, welche ich im Vorfeld zusammemgesammelt habe; noch hat das Laptop ausreichend Saft, so dass ich die Fahrt ueber noch ein wenig produktiv sein kann.
- 
-**:::**
- 
- 
-### Schedule constraints ###
-
-
-
-
-_Mon, 21. January 2013 -- 09:05_
-
-Of course there is not need to wait until actually being on site, before starting to go through some of the background material... As already mentioned a number of times during the interviews end of [last year](/blog/2012), there is a rather ambitious schedule for the _TROPOMI_ mission. While traveling up to [SRON](http://www.sron.nl) this morning -- hampered though by the weather conditions, we forced me on an alternate route to the new working place -- I started reading through the "Project management plan for TROPOMI onground calibration", in order to get some ida of the overall project setup and timeline. In chapter 3 ("Objectives and constraints of the project") I encountered an overview of the schedule constraints, which contains the following statement:
-
-> The onground calibration effort by industry will start the 1st of February 2014. Before this date, the calibration software must have been fully developed and tested, and confidence in the calibration approach must have been confirmed by a calibration rehearsal.
-
-If I am reading this correctly (and I am pretty sure this will be clarified soon enough), this means that there is about a year to complete the onground calibration software. Given I am now working in space industry this signifies little tolerance for slipping of deadline... hence there is little time to catch up with what has been happening so far and get productive.
- 
-**:::**
- 
- 
-### Noch ein Ausfall ###
-
-
-
-
-_Mon, 21. January 2013 -- 08:38_
-
-Also ich sehe schon, das wird heute wieder einmal eine Reise der ganz besonderen Art. Nachdem ich -- wie bereits vermutet -- zu spaet hier in Heerlen eingetroffen bin, um den IC nach Utrecht zu kriegen, stellt sich nun heraus dass die potentiell naechte IC Verbindung ausfaellt. Die einzige nun bestehende Alternative ist, mich mit den Sprinter nach Sittard durchzuschlagen, um von dort aus eine Verbindung weiter nach Utrecht zu finden. Wann ich es dann letzten Endes schaffen werde dort anzukommen kann ich bisher nicht abschaetzen: geplant war (mit der direkten IC Verbindung) eine Ankunft um 10:07 Uhr, aber aufgrund der fortdauernden Komplikationen bewege ich mich mittlerweile in einem Bereich, wo ich einfach nur froh sein wuerde, ueberhaupt bei [SRON](http://www.sron.nl) einzutreffen.
  
 **:::**
  
