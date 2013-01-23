@@ -1,0 +1,20 @@
+---
+title: "Required updates"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Wed, 27. February 2008 -- 08:39_
+
+
+
+The decision to make a selection of essential external software packages part of the USG code repository has proven a good choice so far. In order to be able to provide a self-consistent set of files for the building and installation of USG components, distribution of reference versions of e.g. ''cmake'', ''casacore'' and the HDF5 library has given us a reliable backbone on top of which to build. Following the recent discussion with Joe about upgrading our code base to the recent release of the HDF5 library, has brought up a few points to be addressed during the next month:
+
+  - With the official release of HDF5 1.8.0 were are now well out of the beta-phase for the library, thus arguing for an upgrade from the currently used version 1.6.6 to the recent release. As pointed out on the pages of the HDF5 group, however a number of changes have been made to the API of the library, thereby potentially asking for a number of adjustments on our side as well. As a kind of as-simple-as-possible test I therefore yesterday moved the 1.6.6 version out of the way and tested building with 1.8.0; while the HDF5 library itself builds without any problems (as should have been expected), building the DAL against it turned up a number of errors due to changes in function parameter lists. The changes in the API indeed will require us to go through the existing code in the DAL, tuning whatever we are currently using to the new syntax. This of course has the side-effect, that the transition will not be as trivial as hoped for -- how much work this actually is going to be remains to be seen and definitely needs to explored in collaboration with Joe.
+  - The currently distributed version of ''cmake'' is way behind the current one; as it is right now we are using version 2.4 patch 5, which should be at least half a year behind the recent development. However stepping up might not be a simple matter of inhaling a newer version, but also is going to entail adjustment of the various ''CMakeList.txt'' files. While for our own code base this should not pose a bigger problem, there is however at least one external package which comes with a ''cmake'' port which does not work with a more recent version; trying to get the ''PLplot'' library to build with the recent development version of ''cmake'' fails do due a number of syntax errors in the configuration files. The consequence therefore would be to either see if a more recent version of ''PLplot'' is available, which build with a recent ''cmake'' -- otherwise we need to take care of adjusting the configuration files ourselves (which of course is the less advisable course of action).
+  - Regular updates should be made to ''casacore'' as well, but as proven in repeated occasions in the past this most likely is not to be of considerable concern.
+
+
+~~DISCUSSION~~
