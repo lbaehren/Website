@@ -1,0 +1,64 @@
+---
+title: CMake
+in_menu: false
+author: Lars Baehren
+tags: Computing, Software, Development
+---
+
+## {title:} ##
+
+[CMake](http:/www.cmake.org) is an extensible, open-source system that manages
+the build process in an operating system and compiler independent manner. Unlike
+many cross-platform systems, CMake is designed to be used in conjunction with the
+native build environment. Simple configuration files placed in each source
+directory (called `CMakeLists.txt` files) are used to generate standard build
+files (e.g., `makefiles` on Unix and projects/workspaces in Windows MSVC) which
+are used in the usual way. CMake can compile source code, create libraries, generate
+wrappers, and build executables in arbitrary combinations. CMake supports
+in-place and out-of-place builds, and can therefore support multiple builds from
+a single source tree. CMake also supports static and dynamic library builds.
+Another nice feature of CMake is that it generates a cache file that is designed
+to be used with a graphical editor. For example, when CMake runs, it locates
+include files, libraries, and executable, and may encounter optional build
+directives. This information is gathered into the cache, which may be changed
+by the user prior to the generation of the native build files.
+
+CMake is designed to support complex directory hierarchies and applications
+dependent on several libraries. For example, CMake supports projects consisting
+of multiple toolkits (i.e., libraries), where each toolkit might contain several
+directories, and the application depends on the toolkits plus additional code.
+CMake can also handle situations where executables must be built in order to
+generate code that is then compiled and linked into a final application. Because
+CMake is open source, and has a simple, extensible design, CMake can be extended
+as necessary to support new features.
+
+### Project configuration ###
+
+As mentioned above, configuring your project essentially is done by creating at
+least one `CMakeLists.txt` in the top-level directory of your project.
+
+~~~~
+## Name of the project handled by CMake
+project (CMakeModules)
+
+## Minimum required version of CMake to configure the project
+cmake_minimum_required (VERSION 2.8.2)
+
+## Enforced CMake policy
+cmake_policy (VERSION 2.8.2)
+~~~~
+
+### CMake modules ###
+
+Having worked with CMake for a number of years, I have been enjoying the growing
+functionality of the ecosystem surrounding the cross-platform Makefile generator.
+However, mainly coming from an astronomy background, more but once I ran into the
+issue of missing search scripts for domain-specific packages (such as e.g. CFITSIO
+or WCSLIB), thereby starting to write them myself. As a result of this over time
+I have been accumulating a number of search modules, which not only I started
+moving around between different software projects, but which also might be useful
+to a wider audience.
+
+~~~~
+git clone git://github.com/lbaehren/CMakeModules.git
+~~~~
