@@ -1,0 +1,23 @@
+---
+title: "TROPOMI code to go"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Wed, 23. January 2013 -- 18:57_
+
+After spending some time yesterday afternoon and today trying to get the `swir_calib` code to build on my desktop machine here at [SRON](http://www.sron.nl), I ended up with a number of modifications in the [CMake](http://www.cmake.org) configuration files. This being some of my first steps to start contributing to the project, I felt that the changes eventually should find their way back into the main repository (of which at this point not really there is one, but this hopefully is going to change soon). In order to start with a setup as close as possible to what Evert has been using so far, I have been working on my desktop machine running [Debian GNU/Linux](http://www.debian.org) 6.0.6. Apart from the fact that this is a slightly outdated version of _Debian_, of course I would like to have the flexibility to continue working on the software outside of the office and offline. In order to enable this at least I need to be able to clone the [Git](http://git-scm.com) from my desktop computer into the laptop; however this took me a little while to figure out, as the instructions I was able to find on the SRON Wiki would not work out of the box. With a little patience however I am good now:
+
+~~~~
+Cloning into 'swir_calib'...
+Password: 
+remote: Counting objects: 4225, done.
+remote: Compressing objects: 100% (2214/2214), done.
+remote: Total 4225 (delta 2542), reused 2653 (delta 1609)
+Receiving objects: 100% (4225/4225), 631.24 KiB, done.
+Resolving deltas: 100% (2542/2542), done.
+~~~~
+
+The reverse direction -- i.e. pushing changes back to the origin -- is working too: the cleanup I have been doing on the handling of extra paths for the search for required external packages has made it back safely. Therefore from that point of view I am prepared already for working on the train and from home.

@@ -9,6 +9,82 @@ tags: Blog
  
 **:::**
  
+### Vor der Tuere ###
+
+
+
+
+_Thu, 24. January 2013 -- 10:50_
+
+Nachdem ich ja schon ein wenig vom Buero gezeigt hatte, in welchem ich seit Beginn dieser Woche sitze, wird es wohl auch mal Zeit, dass ich ein klein wenig von der naeheren Umgebung sehen lasse. An die photographische Erkundung von [SRON](http://www.sron.nl) und Utrecht als Ganzem werde ich sicherlich noch einmal etwas systematischer rangehen muessen, aber gestern Abend habe ich mir zumindest mal noch die Zeit genommen ein klein wenig mit der Kamera rumzulaufen.
+
+![SRON Korridor](/blog/2013/2013-01/hdr_20130123_194642.jpg)
+
+Ist dies jetzt eine spektakulaere Ansicht? Sicherlich nicht, aber das sind hier einfach die Verhaeltnisse im Institut; wer mal ein wenig in alten Bildern nachgraben will, wird sicherlich noch Bilder von [ASTRON](http://www.astron.nl) finden, welche vergleichbar sind. Gegenueber so etwas wie dem Neubau der Naturwissenschaften in Nijmegen, merkt man der Umgebung schon an, dass das Institut schon ein wenig laenger an dieser Stelle steht und demnach ueber den Charme des leicht angekratzten verfuegt. Grundsaetzlich finde ich dies aber nicht schlimm -- solange es nicht Zustaende annimmt wie in dem alten Institutsgebaeude in Nijmegen -- da die Umgebung dadurch eben nicht so sehr steril wirkt.
+ 
+**:::**
+ 
+ 
+### Tag 4 ###
+
+
+
+
+_Thu, 24. January 2013 -- 09:58_
+
+Da bin ich also wieder - nach einer weiteren Nacht im Hotel und einer Busfahrt hier zur Uni. Heute geht es ja bereits wieder zurueck, da ich den Freitag von zuhause aus arbeiten werde; fuer den grundsaetzlichen Ablauf bedeutet dies also, dass ich ein wenig auf die Uhr schauen muss, damit ich meinen Zug nicht verpasse. Da ich aber heute Morgen noch geschafft habe meine OV-Chipkaart aufzuladen, ist es mit dem Busfahren auch wieder ein wenig einfacher: hier vom Uni-Campus fahren direkt drei Buslinien zum Hauptbahnhof (mindestens einer davon als Schnellbus), so dass ich nicht mit der Tasche grossartig durch die Gegend zu laufen brauche. Auf der anderen Seite ist schon recht deutlich zu merken, dass ein grosser Teil der Dinge (welche ich am Montag mitgebracht habe) hier im Buero bleibt -- allein ma die dreckigen Klamotten kommen wieder mit zurueck.
+ 
+**:::**
+ 
+ 
+### Frueher zurueck ###
+
+
+
+
+_Wed, 23. January 2013 -- 21:51_
+
+Statt wie gestern Abend bis in die Nacht noch im Buero zu verweilen, habe ich mich heute Abend ein wenig frueher auf den Rueckweg gemacht, so dass ich schon gegen half zehn wieder im Hotel war. Auch wenn es natuerlich immmer ein wenig verfuehrerisch ist, bis tief in die Nacht im Institut zu verweilen, so sollte ich mir vielleicht doch angewoehnen auch noch ein paar andere Dinge zu machen, waehrend ich hier in Utrecht bin. Dazu gehoert derzeit selbstverstaendlich noch die Suche nach einer etwas dauerhafteren Bleibe, so dass ich mich den Rest des Abends wohl im wesentlichen damit herumschlagen werde, die diversen Online-Anzeigenbretter zu durchstoebern -- eine erste Runde noch im Buero war leider ohne irgendwelche potentielle Unterkuenfte verlaufen.
+ 
+**:::**
+ 
+ 
+### TROPOMI code to go ###
+
+
+
+
+_Wed, 23. January 2013 -- 18:57_
+
+After spending some time yesterday afternoon and today trying to get the `swir_calib` code to build on my desktop machine here at [SRON](http://www.sron.nl), I ended up with a number of modifications in the [CMake](http://www.cmake.org) configuration files. This being some of my first steps to start contributing to the project, I felt that the changes eventually should find their way back into the main repository (of which at this point not really there is one, but this hopefully is going to change soon). In order to start with a setup as close as possible to what Evert has been using so far, I have been working on my desktop machine running [Debian GNU/Linux](http://www.debian.org) 6.0.6. Apart from the fact that this is a slightly outdated version of _Debian_, of course I would like to have the flexibility to continue working on the software outside of the office and offline. In order to enable this at least I need to be able to clone the [Git](http://git-scm.com) from my desktop computer into the laptop; however this took me a little while to figure out, as the instructions I was able to find on the SRON Wiki would not work out of the box. With a little patience however I am good now:
+
+~~~~
+Cloning into 'swir_calib'...
+Password: 
+remote: Counting objects: 4225, done.
+remote: Compressing objects: 100% (2214/2214), done.
+remote: Total 4225 (delta 2542), reused 2653 (delta 1609)
+Receiving objects: 100% (4225/4225), 631.24 KiB, done.
+Resolving deltas: 100% (2542/2542), done.
+~~~~
+
+The reverse direction -- i.e. pushing changes back to the origin -- is working too: the cleanup I have been doing on the handling of extra paths for the search for required external packages has made it back safely. Therefore from that point of view I am prepared already for working on the train and from home.
+ 
+**:::**
+ 
+ 
+### Alleine ###
+
+
+
+
+_Wed, 23. January 2013 -- 10:29_
+
+Sieht ganz danac aus, als haette ich das Beuro heute komplett fuer mich alleine. Dass Jeanette mittwochs bei S\[&\]T in Delft arbeitet war klar; heute Morgen tauchte dann aber noch eine Mail von Sophie auf, in welcher sie sich abmeldet, da ihr Sohn krank ist und sie demnach lieber zuhause bleiben will (was ja durchaus verstaendlich ist). Fuer mich bedeutet dies aber, dass ich den heutigen Mittwoch alleine hier im Buero sitze (was so seine Vor- und Nachteile hat). Auf das eigentliche Programm hat dies allerdings nicht so sonderlich viel Auswirkungen, denn ich hatte mir vorgenommen die gestern bereits begonnen Aenderungen an der von Evert geschriebenen Konfiguration fuer die _s4_ Bibliothek fortzufuehren, so dass ich vielleicht vor Ende des Tages meine ersten Beitraege einchecken kann.
+ 
+**:::**
+ 
+ 
 ### Noch einmal Buero ###
 
 
@@ -114,86 +190,6 @@ So, wie ich bereits versprochen hatte, hier auch mal noch ein kleiner photograph
 Kein grosser Schnickschnack, aber alles doch recht gemuetlich. Bei dieser Perspektive nicht sichtbar ist das Fenster hin zu einem kleinen Balkon, welcher an der Rueckseite des Hauses zu finden ist. Ferner gibt es noch einen zweiten Sessel und einen Schreibtisch mit einem Stuhl, so dass es auch die Moeglichkeit gaebe sich da zum Arbeiten niederzulassen (wo ich schon sagen muss, dass ich die Kombination von Sessel und Bett deutlich verlockender finde).
 
 Mal noch eine Anmerkung der technischen Art: Da ich die Aufnahme ja nicht mehr bei Tageslicht gemacht habe -- und somit die Lampe ueber dem Bett die einzige Lichtquelle darstellt -- ist fuer die Farben in jedem Fall ein Weissabgleich notwendig. Um aber auch mit den recht extremen Helligkeitsunterschieden im Zimmer klarzukommen, habe ich wieder mehrere unterschiedlich belichtete Bilder miteinander kombiniert: auf diese Weise gelingt es dann nicht nur das Bett (und das Muster auf der Decke) abzulichten, sondern gleichzeitig auch die Details in der eher dunkleren Ecke neben dem Waschbecken sichtbar zu machen. Nun ist HDR mit Sicherheit kein Allheilmittel -- wenn ich aber mit einer derartigen Szenerie konfrontiert werde, dann ist dies eine enorme Hilfe bei dem Versuch eine Aufnahme hinzukriegen, welche die vorhandene Handbreite an Helligkeiten und Farben einzufangen in der Lage ist.
- 
-**:::**
- 
- 
-### Anderer Blickwinkel ###
-
-
-
-
-_Mon, 21. January 2013 -- 23:30_
-
-Auch wenn [der erste Einblick in den neuen Arbeitsplatz](/blog/2013/2013-01/2013-01-21_20-41.html) vielleicht schon einmal einen Eindruck vermitteln konnte, so haette ich hier mal noch einen anderen Blickwinkel anzubieten:
-
-![Workplace at SRON](/blog/2013/2013-01/hdr_20130121_195930.jpg)
-
-Ich denke mal aus dieser Perspektive laesst sich ein noch besserer Ueberblick ueber "meine Ecke" erhalten, als dies bei der frueheren Aufnahme der Fall war. Ist bisher nicht sonderlich umwerfend, aber ich koennte mir durchaus denken, dass sich ein Weg finden laesst die Arbeitsflaeche noch ein wenig auszubauen (koennte naemlich etwas eng werden, wenn ich noch einen Bildschirm mit vernuenftigen Ausmassen aufstellen will). Die wesentlichen Utensilien habe ich aber alle schon im Buero positioniert: neben den Kopfhoerern haben auch zwei grosse Teebecher die Reise angetreten, von denen einer heute bereits in Gebrauch war; der wunde Punkt ist bisher allerdings noch wirklich kochendes Wasser zu kriegen, mit welchem sich der Tee aufgiessen laesst.
- 
-**:::**
- 
- 
-### Im Hotel ###
-
-
-
-
-_Mon, 21. January 2013 -- 22:13_
-
-So, nachdem ich die ersten [Bilder online](http://www.flickr.com/photos/larsbaehren/sets/72157632580536044) gestellt habe, bin ich in der Tat aus dem Buero verschwunden. Da es noch nicht so sonderlich spaet war, habe ich beschlossen einfach noch ein wenig Bewegung an der Nachtluft zu kriegen -- den Tag ueber habe ich ja schon genug herumgesessen, so dass ich mir die Benutzung des Busses gespart habe. Der zusaetzliche Vorteil daran ist natuerlich auch, dass ich auf diese Weise mehr von dem mitbekomme, was hier in der Stadt so auf den naechtlichen Strassen geschieht; ich war jetzt zwar nicht expliziet auf Exkursion, aber von dem was ich so (zumindest mit dem Naehern an den aelteren Kern der Stadt) erhaschen konnte, laesst sich schon recht gut erkennen, dass Utrecht eine Universitaetsstadt ist. Ich fuer mich persoenlich finde dies recht nett, weil dies einfach bedeutet, dass alles ein wenig quirliger und chaotischer ist. Ich muss mal schauen, wann sich denn mal die Gelegenheit bietet sich ein wenig mehr umzuschauen, denn mich wuerde natuerlich schon interessieren, wie sich Utrecht im Verleich zu Amsterdam oder Nijmegen darstellt. Fuer den heutigen Abend steht dies aber nicht mehr auf dem Programm -- ich werde viel eher schauen, dass ich ein paar erste Testbilder von meiner Unterkunft geschossen kriege, damit ich auch dies in die Runde geben kann...
- 
-**:::**
- 
- 
-### Neuer Arbeitsplatz ###
-
-
-
-
-_Mon, 21. January 2013 -- 20:41_
-
-Also das wollte ich doch nicht hier aus dem Buero verschwinden, ehe ich nicht zumindest mal noch ein erstes Bild (natuerlich als HDR) von der neuen Arbeitsumgebung online gestellt habe...
-
-![Office at SRON](/blog/2013/2013-01/hdr_20130121_190634.jpg)
-
-Ok, sieht ein wenig anders aus, als was zuletzt aus Koeln zu sehen war: weniger Ausblick ueber die Stadt und deutlich mehr Chaos auf den Schreibtischen. Stattdessen gibt es hier Plakate von Satelliten-Missionen und Whiteboards mit Prozessdiagrammen --ist nicht unbedingt miteinander zu vergleichen, aber ich denke mal das ist schon ganz ok so.
- 
-**:::**
- 
- 
-### Erster Rueckblick ###
-
-
-
-
-_Mon, 21. January 2013 -- 19:47_
-
-Da der erste Arbeitstag hierbei [SRON](http://www.sron.nl) sich langsam dem Ende neigt -- aber keine Sorge, ich bin durchaus noch eine Weile hier -- macht es vielleicht Sinn ein paar der wesentlichen Stationen des heutigen Tages Revue passieren zu lassen. Dazu gehoert vor allen Dingen natuerlich die Planaenderung am fruehen Morgen, aufgrund welcher ich quer durch die Niederlande getingelt bin:
-
-![Ermittelte Abweichung](/blog/2013/2013-01/2013-01-21_ausfall_ice.png)
-
-Im Nachhinein waere ich wahrscheinlich sogar schneller hier in Utrecht eingetroffen, wenn ich eben nicht versucht haette mich moeglichst schnell durchschlagen; die alternative Route via Aachen brachte aufgrund der Wetterlage ihre eigenen Probleme mit sich, welche sich insgesamt so aufsummierten, dass ich einfach auf die naechste ICE Verbindung haette setzen koennen. Aber gut, das laesst sich ja nicht wirklich im Voraus sehen -- zumal wenn sich die Verkehrslage derart im Fluss befindet, wie dies am heutigen Tage der Fall war.
-
-Durchaus bezeichnend war dabei auch der [Zwischenfall in Aachen](/blog/2013/2013-01/2013-01-21_07-37.html): nachdem zunaechst der Hinweis ueber den Triebwagenwechsel auf der Anzeige auftauchte, konnte man durchaus davon ausgehen, dass es unterwegs technische Probleme gegeben hat, so dass a) der Wechsel ueberhaupt noetig wurde und b) der einfahrende Zug mit Sicherheit langsamer unterwegs war. Womit ich nun aber nicht unbedingt gerechnet haette, war, dass nachdem der neue Triebwagen angekoppelt war, es noch einmal zehn Minuten dauern wuerde, ehe eine Durchsage kommt, dass eben dieser Ersatztriebwagen auch einen Defekt hat, so dass alle Reisenden mit dem alleinig verbleibenden Wagen Vorliebe nehmen muessten. Aber gut, vielleicht war ich zu diesem Zeitpunkt immer noch gewillt zu glauben, dass ich es schon irgendwie schaffen wuerde doch den Reiseplan einzuhalten...
-
-![Map of Utrecht with location of SRON](/blog/2013/2013-01/2013-01-21_map_sron.png)
-
-Einmal in Utrecht angekommen ging alles vergleichsweise einfach: da das Institut ja durchaus ein Stueck weiter ausserhalb liegt, habe ich mir einen der Busse geschnappt. Ohne Gepaeck koennte man ueberlegen sich zu Fuss an die Strecke zu machen, aber ich denke mal eine Stunde muesste man dafuer wahrscheinlich schon einkalkulieren -- mit Gepaeck stellte sich eine solche Frage erst garnicht.
-
-Im Institut angekommen wurde ich bereits an der Rezeption erwartet; da ja schon eine Weile klar war, dass ich heute hier auftauchen wuerde, waren schon ein paar der notwendigen Vorbereitungen getroffen. Was sich hinwieder nicht vorbereiten laesst ist das Rundlaufen und Leute treffen; das habe ich nach dem Mittagessen zusammen mit Richard erledigt, welcher mir eine Reihe der Leute vorgestellt hat, mit welchen ich es in Zukunft zu tun haben werde. Ansonsten ging es dsnn darum mich IT-maessig hier einzurichten; dabei merkt man doch, dass es sich bei SRON eben um ein groesseres Institut hat, welches ueber eine entsprechende Infrastruktur verfuegt, welche auch vom notwendigen Personal gepflegt wird. Vieles dabei laesst in der Tat Erinnerungen an [ASTRON](http://www.astron.nl) hochkommen, auch manches hier einfach ein wenig belebter wirkt (da macht sich vielleicht doch bemerkbar, dass SRON eben mit in den Universitaets-Campus eingebunden ist und nicht abgelegen im Wald fernab aller Zivilisation liegt). Es ist sicherlich nicht zu erwarten, dass ich an einem Nachmittag mit allem hier vo Ort vertraut werde, aber ich kann mir gut vorstellen, dass dies kommen kann; immerhin atme ich ein Stueck weit innerlich auf, weil dies einfach eine Umgebung ist, mit welcher ich mich wieder identifizieren kann. Ich werde hier sicherlich noch eine ganze Menge zu lernen haben (was aber auch sehr gut ist, weil dies einfach eine Herausforderung bedeutet), aber die starke technische und naturwissenschaftliche Ausrichtung ist etwas, das mir ganz klar gefehlt hat. Da werde ich also diese Woche schauen, wie ich meine ersten Schritte in die neuen Aufgaben hinbekomme -- verspricht in jedem Fall spannend zu werden...
- 
-**:::**
- 
- 
-### Angekommen ###
-
-
-
-
-_Mon, 21. January 2013 -- 12:07_
-
-Unglaublich, aber wahr -- ich habe es in der Tat geschafft, mich hier zu SRON durchzuschlagen. Hat mich einiges an Umwegen gekostet (man schaue sich hierzu die Chronik des Morgens an), aber nach diverse Wechseln und Warteaktionen ist der IC von Sittard endlich Utrecht eingefahren. Von der Zeit her hat mir dieser Abstecher allerdings nichts gebracht, denn wenn ich einfach den spaeteren ICE von Koeln aus genommen haette (vorausgesetzt natuerlich dieser verkehrt), waere ich aller Wahrscheinlichkeit sogar noch ein paar Minuten eher in Utrecht gewesen.
  
 **:::**
  
