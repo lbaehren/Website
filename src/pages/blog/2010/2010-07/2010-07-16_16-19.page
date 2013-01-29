@@ -8,11 +8,6 @@ author: Lars Baehren
 
 _Fri, 16. July 2010 -- 16:19_
 
-
-
-Also, angesichts der Tatsache, dass es bei ASTRON ziemlich leer war und es auch ansonsten nichts mehr gab, was ich explizit vor Ort erledigen musste, bin ich einfach so frueh wie moeglich verschwunden. Naja, stimmt nicht 100%ig, weil ich ja bereits eine Stunde frueher haette losfahren koennen, nur leider hat es mit dem Taxi nicht funkioniert; ist jetzt aber auch nicht weiter schlimm, weil ich die Zwischenzeit doch noch ganz produktiv habe nutzen koennen, um endlich //Git// dazu zu ueberreden auch ueber normale HTTP-Verbindungen Code auszuchecken (was in jedem Fall noetig war, weil jedes andere Protokoll von der ASTRON Firewall blockiert wurde). Nach einigem Hin und Her stellte sich dann heraus, dass es eine Umgebungsvariable war, welche die ganzen Probleme verursacht hat -- kaum war die entsprechenden Zeilen aus dem Initialisierungsscript auskommentiert, klappte es auch mit den Check-Out.
+Also, angesichts der Tatsache, dass es bei ASTRON ziemlich leer war und es auch ansonsten nichts mehr gab, was ich explizit vor Ort erledigen musste, bin ich einfach so frueh wie moeglich verschwunden. Naja, stimmt nicht 100%ig, weil ich ja bereits eine Stunde frueher haette losfahren koennen, nur leider hat es mit dem Taxi nicht funkioniert; ist jetzt aber auch nicht weiter schlimm, weil ich die Zwischenzeit doch noch ganz produktiv habe nutzen koennen, um endlich [Git](http://www.git-scm.com) dazu zu ueberreden auch ueber normale HTTP-Verbindungen Code auszuchecken (was in jedem Fall noetig war, weil jedes andere Protokoll von der ASTRON Firewall blockiert wurde). Nach einigem Hin und Her stellte sich dann heraus, dass es eine Umgebungsvariable war, welche die ganzen Probleme verursacht hat -- kaum war die entsprechenden Zeilen aus dem Initialisierungsscript auskommentiert, klappte es auch mit den Check-Out.
 
 Bis Deventer reise ich jetzt noch mit Frank zusammen, welcher ja von dort aus die Reise zurueck nach Potsdam antreten wird; beim Umsteigen in **Zwolle** konnte ich so diesmal also ein klein wenig den Reisefuehrer spielen (auch wenn dies lediglich den Wechseln von einem Gleis zum anderen beinhaltete).
-
-
-~~DISCUSSION~~

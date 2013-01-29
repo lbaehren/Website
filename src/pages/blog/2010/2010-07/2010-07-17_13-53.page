@@ -22,6 +22,3 @@ So how does this actually work? Could hardly be any simpler:
   - Put the front plate back on and let the Drobo "do it's thing"...
 
 Once the drive has been replaced, the Drobo will go into data protection mode, which means it works towards integrating the new drive into the pool of drives, distributing data in order to protect them again hard drive failures. Given the amount of data already put onto the drives this might take a while, though I have come to not 100% trust the progress bar shown in the Drobo Dashboard application.
-
-
-~~DISCUSSION~~
