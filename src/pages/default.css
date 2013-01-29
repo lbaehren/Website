@@ -26,10 +26,10 @@ body {
  * adjust the link in the settings below.
  */
 #header {
-    color:#ffffff;
-    background:#ffffff url(front.jpg) bottom left repeat;
-    height:250px;
-    margin:0 0 10px 0;padding:0;
+    color:      #ffffff;
+    background: #ffffff url(front.jpg) bottom left repeat;
+    height:     250px;
+    margin:     0 0 10px 0;padding:0;
 }
 
 /* Layout of the H1 level header inside the header area. */
@@ -77,10 +77,10 @@ body {
 }
 
 #avmenu ul {
-    list-style:none;
-    width:150px;
-    margin:0 0 20px 0;
-    padding:0;
+    list-style: none;
+    width:      150px;
+    margin:     0 0 20px 0;
+    padding:    0;
 }
 
 #avmenu li {
@@ -169,7 +169,7 @@ body {
  *-----------------------------------------------------------------------------*/
 
 #content {
-    margin:      10px 140px 10px 160px;
+    margin:      10px 100px 10px 160px;
     padding:     0;
     line-height: 1.5em;
     text-align:  left;
@@ -177,11 +177,12 @@ body {
 }
 
 #contentwide {
-    margin:      10px 0 10px 160px;
-    padding:     0;
-    line-height: 2.0em;
-    font-size:   1.1em;
-    text-align:  left;
+    margin:        10px 0 10px 0px;
+    padding:       0;
+    line-height:   2.0em;
+    font-size:     1.1em;
+    text-align:    left;
+    border-bottom: 1.5px solid #dadada;
 }
 
 #contentfull {
@@ -207,10 +208,11 @@ body {
 }
 
 #content img, #contentwide img, #contentfull img {
-    padding:1px;
-    display:inline;
-    background:#cccccc;
-    color:#303030;border:4px solid #f0f0f0;
+    padding:    1px;
+    display:    inline;
+    background: #cccccc;
+    color:      #303030;
+    border:     4px solid #f0f0f0;
 }
 
 #content a, #contentwide a, #contentfull a {
@@ -259,7 +261,9 @@ body {
 }
 
 #footer a {
-    color:#808080;background-color:inherit;text-decoration:none;
+    color:            #808080;
+    background-color: inherit;
+    text-decoration:  none;
 }
 
 #footer a:hover {

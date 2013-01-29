@@ -18,7 +18,31 @@
         <h2>Software development / Photography</h2>
       </div>
 
-      <div id="avmenu">
+      <!-- Frame across the horizontal span of the page -->
+      <div id="contentwide">
+        <p class="textright">
+	<b>Contact</b>
+	&nbsp;::&nbsp;
+	<a href="mailto:lbaehren@gmail.com">Mail</a>
+	&nbsp;|&nbsp;
+	<a href="skype:larsbaehren">Skype</a>
+	&nbsp;|&nbsp;
+	<a href="https://plus.google.com/u/0/100581156331078830632">Google+</a>
+	&nbsp;|&nbsp;
+        <a href="https://github.com/lbaehren">Github</a>
+	&nbsp;|&nbsp;
+        <a href="http://www.flickr.com/photos/larsbaehren">Flickr</a>
+	&nbsp;|&nbsp;
+        <a href="http://www.last.fm/user/larsbaehren">last.fm</a>
+	&nbsp;|&nbsp;
+        <a href="https://www.xing.com/profile/Lars_Baehren?sc_o=mxb_p">XING</a>
+	&nbsp;|&nbsp;
+	<a href="http://www.linkedin.com/profile/view?id=134900181">LinkedIn</a>
+	&nbsp;|
+	</p>
+      </div>
+
+     <div id="avmenu">
         <h2 class="hide">Site menu:</h2>
         {menu: {used_nodes: files}}
 
@@ -34,34 +58,13 @@
 	-->
       </div>
 
-      <div id="contentwide">
-        <p class="textright">
-	<b>Contact</b>
-	&nbsp;::&nbsp;
-	<a href="mailto:lbaehren@gmail.com">Mail</a>
-	&nbsp;|&nbsp;
-	<a href="skype:larsbaehren">Skype</a>
-	&nbsp;|&nbsp;
-	<a href="https://plus.google.com/u/0/100581156331078830632">Google+</a>
-	&nbsp;|&nbsp;
-        <a href="https://github.com/lbaehren">Github</a>
-	&nbsp;|&nbsp;
-        <a href="http://www.flickr.com/photos/larsbaehren">Flickr</a>
-	&nbsp;|
-	</p>
-      </div>
-
+      <!--
       <div id="extras">
 	<p>
-	<!-- Link to other online presences -->
         <h2>Online profiles:</h2>
-        <ul>
-          <li><a href="http://www.last.fm/user/larsbaehren">last.fm</a></li>
-          <li><a href="https://www.xing.com/profile/Lars_Baehren?sc_o=mxb_p">XING</a></li>
-	  <li><a href="http://www.linkedin.com/profile/view?id=134900181">LinkedIn</a></li>
-        </ul>
 	</p>
       </div>
+      -->
 
       <div id="content">
         <webgen:block name="content" />
