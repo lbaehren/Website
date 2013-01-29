@@ -1,0 +1,15 @@
+---
+title: "Lücke in Ruby on Rails"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 29. January 2013 -- 15:34_
+
+Sieht ganz danach aus, als wuerde die Serie so schell nicht abreissen:
+
+> Das Ruby-Entwicklerteam hat eine sehr kritische Lücke in dem Web-Framework [Ruby on Rails](http://rubyonrails.org) (RoR) geschlossen, durch die ein Angreifer Code in den Server einschleusen kann. Wer einen Server mit RoR betreibt, sollte umgehend handeln, da bereits passende Exploits kursieren.
+
+Wie schon aus der Beschreibung der Luecke in dem [Heise Artikel](http://www.heise.de/newsticker/meldung/Weitere-kritische-Luecke-in-Ruby-on-Rails-geschlossen-1793004.html) hervorgeht, liegt die Schwachstelle auch diesmal wieder im YAML-Parser; da betrifft dann natuerlich nicht nur Konigurationsdateinen -- auf welche ein Angreifer von aussen nicht unbedingt Zugriff hat -- sondern auf die Kommunikation zwischen Rails Modulen. Wenn man da also die Moeglichkeit findet einem Controller irgendwelche Daten unterzujubeln, dann ist das in der Tat ein kritisches Einfallstor, welches schnellstens geschlossen werden sollte. Gerade der letzte Punkt ist dann aber auch etwas das zeigt, wie activ die Community ist: waehrend es ei Java Ewigkeiten gedauert hat ehe Oracle auch nur auf Meldungen reagiert hat, ist hier in kuerzester Zeit ein Fix erhaeltlich, welcher ueber alle verfuegbaren Kanaele verbreitet wird. Angesicht der weiten Verbreitung von Rails -- womit ja weltweit zahlreiche Websites betrieben werde -- gibt es ausreichend Interesse und Resourcen solche Luecken ausfindig zu machen und zu schliessen.
