@@ -1,0 +1,11 @@
+---
+title: "Layout changes"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Wed, 30. January 2013 -- 09:23_
+
+I have been milling over this for quite a while now. Last night however I decided to pull the text elements from the column right to the main contents block and move the links to my online profiles to the area right underneath the banner picture. The great thing about this is, that this fees up some horizontal space, which I now can use to extend the width of the main contents area, enabling me to embed larger pictures into the pages (most of them being blog entries anyway).
