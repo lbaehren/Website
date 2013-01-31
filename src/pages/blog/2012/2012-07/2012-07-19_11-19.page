@@ -25,4 +25,4 @@ Was es jetzt genau ist, dass die Firefox-Macher zu diesen Veraenderungen bewogen
 | 4 | Use "Alt" for the content access key. |
 | 8 | Use "Meta" for the content access key. |
 
-Wenn also ` Ui.key.contentAccess=6`, dann bedeutet dies, dass `[CTRL+ALT]` als Tastenkombination noetig ist, um an die entsprechenden Keys zu kommen... ist jetzt aber wieder umgestellt.
+Wenn also ` Ui.key.contentAccess=6`, dann bedeutet dies, dass `\[CTRL+ALT\]` als Tastenkombination noetig ist, um an die entsprechenden Keys zu kommen... ist jetzt aber wieder umgestellt.
