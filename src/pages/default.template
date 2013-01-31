@@ -20,13 +20,16 @@
 
       <!-- Frame across the horizontal span of the page -->
       <div id="contentwide">
-        <p class="textright">
+        <p class="textcenter">
+	&nbsp;::&nbsp;
 	<b>Contact</b>
 	&nbsp;::&nbsp;
-	<a href="mailto:lbaehren@gmail.com">Mail</a>
+	<a href="mailto:lbaehren@gmail.com">lbaehren@gmail.com</a>
 	&nbsp;|&nbsp;
-	<a href="skype:larsbaehren">Skype</a>
-	&nbsp;|&nbsp;
+	<a href="skype:larsbaehren">skype:larsbaehren</a>
+	&nbsp;::&nbsp;
+	<b>Profiles</b>
+	&nbsp;::&nbsp;
 	<a href="https://plus.google.com/u/0/100581156331078830632">Google+</a>
 	&nbsp;|&nbsp;
         <a href="https://github.com/lbaehren">Github</a>
@@ -38,7 +41,7 @@
         <a href="https://www.xing.com/profile/Lars_Baehren?sc_o=mxb_p">XING</a>
 	&nbsp;|&nbsp;
 	<a href="http://www.linkedin.com/profile/view?id=134900181">LinkedIn</a>
-	&nbsp;|
+	&nbsp;::&nbsp;
 	</p>
       </div>
 

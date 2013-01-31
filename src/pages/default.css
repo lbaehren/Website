@@ -433,7 +433,13 @@ margin:10px 0 5px 10px;float:right;
 }
 
 .textright {
-    text-align:right;margin:-10px 0 4px 0;
+    text-align: right; 
+    margin:     -10px 0 4px 0;
+}
+
+.textcenter {
+    text-align: center; 
+    margin:     -10px 0 4px 0;
 }
 
 .center {
