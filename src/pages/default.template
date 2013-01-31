@@ -21,27 +21,23 @@
       <!-- Frame across the horizontal span of the page -->
       <div id="contentwide">
         <p class="textcenter">
-	&nbsp;::&nbsp;
-	<b>Contact</b>
-	&nbsp;::&nbsp;
-	<a href="mailto:lbaehren@gmail.com">lbaehren@gmail.com</a>
 	&nbsp;|&nbsp;
-	<a href="skype:larsbaehren">skype:larsbaehren</a>
-	&nbsp;::&nbsp;
-	<b>Profiles</b>
-	&nbsp;::&nbsp;
-	<a href="https://plus.google.com/u/0/100581156331078830632">Google+</a>
+	Mail:<a href="mailto:lbaehren@gmail.com">lbaehren@gmail.com</a>
 	&nbsp;|&nbsp;
-        <a href="https://github.com/lbaehren">Github</a>
+	Skype:<a href="skype:larsbaehren">larsbaehren</a>
 	&nbsp;|&nbsp;
-        <a href="http://www.flickr.com/photos/larsbaehren">Flickr</a>
+	<a href="https://plus.google.com/u/0/100581156331078830632" target="_blank">Google+</a>
 	&nbsp;|&nbsp;
-        <a href="http://www.last.fm/user/larsbaehren">last.fm</a>
+        <a href="https://github.com/lbaehren" target="_blank">Github</a>
 	&nbsp;|&nbsp;
-        <a href="https://www.xing.com/profile/Lars_Baehren?sc_o=mxb_p">XING</a>
+        <a href="http://www.flickr.com/photos/larsbaehren" target="_blank">Flickr</a>
 	&nbsp;|&nbsp;
-	<a href="http://www.linkedin.com/profile/view?id=134900181">LinkedIn</a>
-	&nbsp;::&nbsp;
+        <a href="http://www.last.fm/user/larsbaehren" target="_blank">last.fm</a>
+	&nbsp;|&nbsp;
+        <a href="https://www.xing.com/profile/Lars_Baehren?sc_o=mxb_p" target="_blank">XING</a>
+	&nbsp;|&nbsp;
+	<a href="http://www.linkedin.com/profile/view?id=134900181" target="_blank">LinkedIn</a>
+	&nbsp;|&nbsp;
 	</p>
       </div>
 
