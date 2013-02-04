@@ -1,0 +1,18 @@
+---
+title: "D300 frame rates"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Sat, 10. May 2008 -- 12:34_
+
+
+
+Even though this issue cannot be considered as completelty resolved yet, I think by now I have found enough hints on what to check out on my camera. The whole issue of frame rates came up during the NAC when I noticed that [[http://carolune.org|Carolina]] was shooting at frames rates way beyond what I was able to achieve; with most of the camera settings very much alike, the only main difference was, that she had been shooting "JPEG High" whereas I was using "14bit RAW". Running a search across the web I came across a number of postings discussion the issue if D300 frame rates at different settings and in different autofocus modes. Looks like the simple switch from 12bit to 14bit immediately reduces the rate from 6fps down to approx. 2.5fps -- a behaviour which not necessarily would have to occur, but is suspected to have be enforced by Nikon to provide the arguments for buying a D3 instead of a D300. Both cameras are fairly alike in a number of specs, such that there must be some reason left to go for the 5000 EUR body instead of the 1700 EUR one. Since most of the time fps is not a critical number while shooting, doing sports photography this of course becomes an issue: the ability to capture the right moment in an action sequence is of utmost importance. The whole time during the water sports competitions I was struggelling with the fact that my D300 would not provide me with a higher frame rate to better cue in on these special moments during the boat races -- of course without needing to go to JPG but keep shooting RAW. Looks like the bit depth in fact is a key element in this problem, so I will have to do a little bit of testing myself (unfortunately too late now for the NAC). The other thing which of course also will need some attention in this context, what the influence of the AF settings during continuous tracking is -- from what I understand already, this also can considerably degrade the number of frames which can be shot per second...
+
+... Sounds like I need to do some serious testing to better understand how to maximize the usage of my D300 depending of the situation I am in.
+
+
+~~DISCUSSION~~

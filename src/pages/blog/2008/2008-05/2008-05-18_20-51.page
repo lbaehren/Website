@@ -1,0 +1,13 @@
+---
+title: "Unterwegs"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Sun, 18. May 2008 -- 20:51_
+
+Das ist es ja, was ich so am Zugfahren (vor allen Dingen im ICE) mag: ich kann in Ruhe noch ein wenig arbeiten, lesen, etc. Auf diese Weise habe ich immerhin noch vor Duesseldorf geschafft die Erzeugung der Python Bindings fuer die CR-Tools auch unter Mac OS X ans Laufen zu bringen. Neben dem ewig ueber meinem Kopf haengenden Skymapper ist dies ein weiteres Project, welches lieber gestern als heute fertig gesehen wuerde. Da ich aber nicht alles gleichzeitig machen kann, nehme ich mir die Dinge also eins nach dem anderen vor (zumindest versuche ich dies); dazu gehoert eben auch, dass ich die Erzeugung der Bindings auch endlich auf dem Mac weiterentwickeln kann, denn schliesslich (a) muss es da eh laufen und (b) habe ich das Laptop deutlich mehr unter den Fingern als einen der Linux Rechner im Institut. Aber gut, nach dem Beheben eines kleines Linker Fehlers -- welcher unter dem Linux GCC nicht auftauchte, wohl aber unter dem Mac GCC -- bekomme ich nun ein _pycr_ und kann damit lustig weiterentwickeln.
+
+Darueber hinaus habe ich mir eben aber auch noch einmal die Aufstellung fuer das am Wochenende in Iasi stattfindende Rockfestival vorgenommen. Auch wenn ich ansonsten ja recht wenig fuer diesen Abstecher vorbereitet bin, so habe ich am heutigen Nachmittag noch schnell ueber die Internetseiten des Festivals ein Programm mit den Spielzeiten der diversen Bands an Land gezogen. Die Erkenntnis beim ersten Anblick: mir sagt, bis auf eine Ausnahme, keiner der dort aufgefuehrten Namen irgendetwas. Ich denke zwar, dass mir Catalina da einiges erklaeren kann, aber fuer mich haette alles auch direkt in Chinesisch geschrieben sein koennen. Die zweite Sache, welche mir aufgefallen ist, waere dass dies zwei sehr lange Tage und Naechte werden: sowohl Samstag als auch Sonntag geht es um 12 Uhr los -- das Ende ist dann fuer drei Uhr in der Nacht angesetzt. Ich denke mal, dass wir nach den beiden Tagen ziemlich platt sein werden und ich den wohl ueberwiegenden Teil meiner Bilder geschossen habe. 
