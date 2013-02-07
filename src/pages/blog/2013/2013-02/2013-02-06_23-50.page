@@ -1,0 +1,21 @@
+---
+title: "Cloning ROOT"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Wed, 06. February 2013 -- 23:50_
+
+Ever felt like kicking off a really long [Git](http://git-scm.com) repository cloning job? One that potentially might run for days? Well, here is your ticket to the version control marathon:
+
+~~~~
+git svn clone -s http://root.cern.ch/svn/root ROOT
+~~~~
+
+While by comparison using [Subversion](http://subversion.apache.org) the only version to be checked out will be the most recent one, _Git_ in the above statement will actually retrieve the complete project history recursively. For a project such as [ROOT](http://root.cern.ch) -- which by now can look back on a history of more than 20 years of development -- one only can imagine the number of changes the code base has been going through.
+
+> In 2002 ROOT became an official project within the Physics Department at [CERN](http://cern.ch). Thanks to the manpower injected in the project by CERN and also by FNAL, ROOT could gradually be extended in many directions to become the cornerstone of most HEP software systems today, covering many areas of HEP computing, like analysis, simulation, reconstruction, event display and DAQ.
+
+So why exactly is it that I am trying to break my computer having it sifting through never-ending series of commits to one of the biggest scientific code bases? With all the discussions on software for the calibration of TROPOMI data, I have once more been turning my attention towards frameworks written for the extact purpose of processing tons and tons of data. Naturally _ROOT_ is one of the names coming up in such a sweep, such that I decided doing a little catch-up in.

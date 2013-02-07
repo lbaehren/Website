@@ -9,6 +9,44 @@ tags: Blog
  
 **:::**
  
+### Verlengde Hoogravenseweg ###
+
+
+
+
+_Thu, 07. February 2013 -- 11:58_
+
+Na, da habe ich ja doch noch jemanden erreichen koennen. Auch wenn ich bereits am gestrigen Abend eine Benachrichtigung via Mail erhalten hatte, so wollte es mir trotz mehrer Anlaeufe nicht gelingen, mittels des angegebenen Antwortlinks den Termin zu bestaetigen. Heute Morgen hatte ich dann auch noch einmal eine Mail rausgeschickt, aber auch die scheint nicht angekommen zu sein... so dass ich eben dann doch noch einmal nach dem Telefon gegriffen habe. Die gute Nachricht waere nun also: der Temrin fuer die Wohnungsbesichtigung am heutigen Nachmittag steht und ich werde demzufolge kurz nach drei hier aus dem Buero verschwinden, damit ich mir alles vor Ort anschauen kann.
+
+![Verlengde Hoogravenseweg](/blog/2013/2013-02/2013-02-07_verlengde_hoogravenseweg.png)
+
+Die Busverbindungen habe ich ja noch eingetragen, so dass ich mir darum wohl nicht mehr Sorgen machen muss; das einzige, was ich nicht vergessen darf, ist dass ich rechtzeitig hier aus dem Buero verscwinde, damit ich den Bus auch wirklich kriege. Ansonsten laeuft hier auch schon das GPS (welches allerdings innerhalb des Gebaeudes so seine Schwierigkeiten hat ein Signal zu empfangen), damit ich die restlichen Meter von der Bushaltestelle zum Haus auch wirklich finde.
+ 
+**:::**
+ 
+ 
+### Cloning ROOT ###
+
+
+
+
+_Wed, 06. February 2013 -- 23:50_
+
+Ever felt like kicking off a really long [Git](http://git-scm.com) repository cloning job? One that potentially might run for days? Well, here is your ticket to the version control marathon:
+
+~~~~
+git svn clone -s http://root.cern.ch/svn/root ROOT
+~~~~
+
+While by comparison using [Subversion](http://subversion.apache.org) the only version to be checked out will be the most recent one, _Git_ in the above statement will actually retrieve the complete project history recursively. For a project such as [ROOT](http://root.cern.ch) -- which by now can look back on a history of more than 20 years of development -- one only can imagine the number of changes the code base has been going through.
+
+> In 2002 ROOT became an official project within the Physics Department at [CERN](http://cern.ch). Thanks to the manpower injected in the project by CERN and also by FNAL, ROOT could gradually be extended in many directions to become the cornerstone of most HEP software systems today, covering many areas of HEP computing, like analysis, simulation, reconstruction, event display and DAQ.
+
+So why exactly is it that I am trying to break my computer having it sifting through never-ending series of commits to one of the biggest scientific code bases? With all the discussions on software for the calibration of TROPOMI data, I have once more been turning my attention towards frameworks written for the extact purpose of processing tons and tons of data. Naturally _ROOT_ is one of the names coming up in such a sweep, such that I decided doing a little catch-up in.
+ 
+**:::**
+ 
+ 
 ### Falsch eingetragen ###
 
 
@@ -150,30 +188,6 @@ Alles im Hotel ist doch recht ueberschaubar und ohne sonderlichen Luxus; ist abe
 _Fri, 01. February 2013 -- 19:01_
 
 Das ist er also, der Unterschied zwischem dem ICE am Freitag und dem ICE am Donnerstag: waehrend es am Donnerstag recht leer (und damit meist auch ruhig) ist, scheint der Zug am heutigen Abend fast schon ueber zu quillen. Gut, es ist jetzt noch nicht ganz so schlimm wie z.B. vor Weihnachten, aber es ist fuer die klare Ansage, dass der Montag-Donnerstag Pendelrhythmus rein fahrtechnisch deutlich besser ist. Ich hatte ja auch mal Aussicht nach frueheren Verbindugen gehalten, aber [wie bereits abgemerkt](/blog/2013/2013-02/2013-02-01_00-50.html) ist es um die Reisemoeglichkeiten weniger gut gestellt, als ich dies erwartet hatte.
- 
-**:::**
- 
- 
-### Termin verschoben ###
-
-
-
-
-_Fri, 01. February 2013 -- 18:06_
-
-Der zunaechst fuer den Dienstag geplante Besichtigungstermin ist aufgrund dr Verfuegbarkeit des Vermieters um einen Tag nach hinten verschoben worden. Kurz nach dem ersten Anruf wurde ich noch einmal kontaktiert um anzufragen, ob wir einfach die zweite der beiden Moeglichkeiten nehmen koennten. Auch wenn ich sicherheitshalber noch einmal meinen Terminkalender gecheckt hab, so gab es nichts, das der Besichtigung im Wege steht. Folgerichtig werde ich also am Mittwoch Nachmittag mal fuer eine Weile aus dem Institut verschwinden, um mir die Wohnung anzuschauen. Ich versuche natuerlich mich gedanklich nicht zu sehr festzulegen -- dafuer muss ich die Wohnung wirklich gesehen haben und eine genaue Zusammenfassung der Kosten vorliegen haben -- aber es waere schon ganz nett wenn ich es schaffen wuerde noch vergleichsweise zeitnah eine dauerhaftere Bleibe hier in Utrecht zu finden. Auf Dauer ist es einfach keine Loesung (und damit meine ich nicht nur von der finanziellen Seite her) mich in einem Hotelzimmer einzuquartieren; die Tatsache, dass ich keine Gelegenheit habe meine Sachen dauerhaft hier vor Ort zu deponieren (sondern alles durch die Gegend schleppen muss), traegt nicht unbedingt dazu bei mich hier auch hier ein wenig heimisch zu fuehlen.
- 
-**:::**
- 
- 
-### Wohnung besichtigen ###
-
-
-
-
-_Fri, 01. February 2013 -- 14:48_
-
-Na das ist doch mal eine gute Nachricht. Nachdem ich mich mit diversen -- teils nicht sonderlich serioesen Anbietern -- herumgeschlagen habe, um nach einer Wohnung zu schauen, habe ich nun eben noch einen Anruf von [Direct Wonen](http://www.directwonen.nl) erhalten. Dort hatte ich Anfang der Woche die Anfrage fuer eine Besichtigung eingestellt... nur um ein wenig spaeter festzustellen, dass bereits ein Termin am gleichen Tag stattgefunden hatte. Sieht aber doch danach aus, als waere die Wohnung noch nicht vergeben, so dass ich nun eine Chance erhalten habe, mir die Wohnung anzuschauen. Als Termin ist derzeit der Mittwoch Nachmittag eingeplant, auch wenn ich noch auf die entgueltige Bestaetigung warte (der Vermieter liess sich so auf die Schnelle nicht erreichen, um den Termin fest zu klopfen). Grundsaeztlich finde ich dies aber schon einmal ermutigend, denn aus Erfahrung weiss ich, dass es sich bei _Direct Wonen_ um einen recht serioesen Anbieter handelt -- so hatte ich meine Wohnung in Nijmegen ueber die Agentur gefunden. Da werde ich mir also noch einmal die Details fuer die Wohnung raussuchen muessen, damit ich fuer die kommende Woche entsprechend vorbereitet bin.
  
 **:::**
  
