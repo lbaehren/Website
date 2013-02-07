@@ -1,0 +1,70 @@
+---
+title: "TROPOMI software on Mac OS X"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Thu, 07. February 2013 -- 19:28_
+
+No, it is not the actual target platform, but being able to do some development and testing on the laptop surely is something to aid the overall progress. Status until earlier this afternoon was, that `swir_calib` -- the currently existing collection of routines for calibration of the SWIR detector -- would mainly build on the desktop computers here at [SRON](http://www.sron.nl). While that environment pretty well could be replicated through a virtual machine (which I have in place since the first week already), working within ones "home" setup surely helps keeping early iteration cycles short.
+
+Hence I have been setting out to clean up the existing configuration and build scripts, making them more adaptable to a changing environment. First thing to do was adjusting some of the linker instructions, replacing hard-coded library names
+
+~~~~
+target_link_libraries(nonlinearity s4 ${LIBCONFIG_LIBRARIES}
+                                   gsl
+                                   gslcblas )
+~~~~
+
+by variables determined by [CMake](http//www.cmake.org) (the `s4` is ok, as this refers to a target as part of the project, responsible for building a library)
+
+~~~~
+target_link_libraries (nonlinearity s4 ${LIBCONFIG_LIBRARIES}
+                                    ${GSL_LIBRARIES}
+                                    ${GSL_GSLCBLAS_LIBRARY} )
+~~~~
+
+Furthermore: dropping in a search for the include files of the various external packages helped to get the code passing through the compiler. One of the points to be taken into consideration was that indeed paths might be slightly different depending on the platform; sure, amongst the various Linux distributions differences typically are not that huge, but moving to Mac OS X sure requires looking in a number of different places as one otherwise would. After a few iterations -- mostly locating the instances where definitions were not making use of the inspection done by CMake -- the `s4` library was getting build:
+
+~~~~
+ System configuration
+ .. Processor type ......... = i386
+ .. CMake executable ....... = /opt/local/bin/cmake
+ .. CMake version .......... = 2.8.10
+ .. System name ............ = Darwin
+ .. System version ......... = 10.8.0
+ .. C compiler ............. = /usr/bin/cc
+ .. C compiler flags ....... = -std=c99 -D_XOPEN_SOURCE=700 -Wall -pedantic
+ .. C++ compiler ........... = /usr/bin/c++
+
+Scanning dependencies of target s4
+[  1%] Building C object s4/lib/CMakeFiles/s4.dir/__/source/data/object.c.o
+[  2%] Building C object s4/lib/CMakeFiles/s4.dir/__/source/data/group.c.o
+[  4%] Building C object s4/lib/CMakeFiles/s4.dir/__/source/data/attribute.c.o
+[  5%] Building C object s4/lib/CMakeFiles/s4.dir/__/source/data/attrlist.c.o
+[  6%] Building C object s4/lib/CMakeFiles/s4.dir/__/source/data/dataset.c.o
+[  8%] Building C object s4/lib/CMakeFiles/s4.dir/__/source/data/image.c.o
+[  9%] Building C object s4/lib/CMakeFiles/s4.dir/__/source/data/images.c.o
+[ 10%] Building C object s4/lib/CMakeFiles/s4.dir/__/source/io/main.c.o
+[ 12%] Building C object s4/lib/CMakeFiles/s4.dir/__/source/io/file.c.o
+[ 13%] Building C object s4/lib/CMakeFiles/s4.dir/__/source/io/util.c.o
+~~~~
+
+Achieving the same for the test programs and tools required another iteration -- mainly getting the linker instructions correct, but all in all the matter proved not to be too complicated. As a nice add-on I now also added installation instructions, such that once the build has been completed, libraries and executables get copied to an installation location (your `--prefix` with the GNU Autotools).
+
+~~~~
+[ 97%] Built target memcalib
+[ 98%] Built target memcorrect
+[100%] Built target nonlinearity
+Install the project...
+-- Install configuration: ""
+-- Installing: /Users/lars/Work/TROPOMI/release/lib/libs4.dylib
+-- Installing: /Users/lars/Work/TROPOMI/release/bin/clip
+-- Installing: /Users/lars/Work/TROPOMI/release/bin/group
+-- Installing: /Users/lars/Work/TROPOMI/release/bin/attribute
+-- Installing: /Users/lars/Work/TROPOMI/release/bin/attrlist
+~~~~
+
+The next step of course is to run everything once more on the same environment as to be targeted by default; though I have been careful to only branch in the configuration, where indeed differences need to be taken into account, but sure it is better to verify nothing has been broken in the process (would be nice to have some automated testing available). Once this is done, really the question needs to be addressed, how to merge the changes downstream.
