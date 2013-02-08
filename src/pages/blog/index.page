@@ -9,6 +9,65 @@ tags: Blog
  
 **:::**
  
+### Opera quit unexpectedly ###
+
+
+
+
+_Fri, 08. February 2013 -- 13:38_
+
+Damn right it did! I am having a hard time remembering when last a version of the [Opera](http://www.opera.com) we browser would work on my macBook Pro. Not that it crashes somewhen during surfing websites -- it does not even start up and crashes pretty much right away.
+
+~~~~
+Process:         Opera [42794]
+Path:            /Applications/Opera.app/Contents/MacOS/Opera
+Identifier:      com.operasoftware.Opera
+Version:         12.14 (12141738)
+Build Info:      Unknown-Unknown~1738
+Code Type:       X86 (Native)
+Parent Process:  ??? [1]
+
+Date/Time:       2013-02-08 00:43:10.548 +0100
+OS Version:      Mac OS X 10.6.8 (10K549)
+Report Version:  6
+
+Interval Since Last Report:          94910 sec
+Crashes Since Last Report:           1
+Per-App Interval Since Last Report:  15 sec
+Per-App Crashes Since Last Report:   1
+
+Exception Type:  EXC_BAD_ACCESS (SIGBUS)
+Exception Codes: KERN_PROTECTION_FAILURE at 0x0000000000000034
+Crashed Thread:  0  Dispatch queue: com.apple.main-thread
+~~~~
+
+So as much as I would like to have Opera as an alternate web browser, it is not usable at all at this point in time.
+
+Of course I had a look at the error log, which was produced; but as to be suspected the application is pretty much self-contained, not relying on too many system-dependencies; amongst the latter of course there are parts of the general system infrastructure, but this is nothing which would get affected (at least I would hope so) when running an number of packages from [MacPorts](http://www.macports.org).
+ 
+**:::**
+ 
+ 
+### SRON News ###
+
+
+
+
+_Fri, 08. February 2013 -- 01:27_
+
+Begin of this week, there was a reminder disributed via the SRON internal mail, that the deadline for contributions to the next edition of the "SRON News" had been set for February 11th. Having joint the institute only recently, it was quite foreseeable that I would be approached to provide a short write-up on myself, officially introducing myself. Indeed such a request came in two days ago -- hence before the end of the week I needed to take a few minutes to come up with a (reasonably) short self-description:
+
+> Just let me give you a brief introduction to a new face you already might seen walking around at SRON since the end of January: my name is Lars Baehren and I recently started working as a Software Design Engineer for TROPOMI, focussing on the development and implementation of calibration algorithms for SWIR.
+>
+> Though space research by itself is still rather new to me, I am certainly no stranger to working in the Netherlands: from 2004 to mid-2011 I have been working in various capacities for the LOFAR project. Having completed my diploma thesis at the now Argelander Institute for Astronomy the prospect of getting to work with early prototypes of a next-generation radio-interferometer was enough to make me move from Bonn to Dwingeloo. Over time my interest and attention graudally shifted towards software infrastructure, becoming one of the founding member of the LOFAR User Software group: besides architecting the configuration and build environment, I soon would become heaviliy involved in the specification of the first HDF5-based LOFAR standard data products.
+>
+> Originally motivated by the idea to pass along some visual impressions to my blog articles, I picked up again photography and soon went digital. Bitten by the shutter bug things got more serious soon: starting from local concerts about a year later I found myself midst several 10000 of metal fans at events such as the Wacken Open Air. These days things are a bit quieter, as I am mostly focussing on the exploration of HDR photography.
+
+The above clocks in at 248 words, which might be somwhat on the longish side of things; however finding a compromise between really short and at least some amount of decent writing isn't all that easy. Guess I am going to send this in -- if there are complaints, I am sure there will be feedback accordingly.
+ 
+**:::**
+ 
+ 
 ### TROPOMI software on Mac OS X ###
 
 
@@ -91,7 +150,7 @@ Na, da habe ich ja doch noch jemanden erreichen koennen. Auch wenn ich bereits a
 
 ![Verlengde Hoogravenseweg](/blog/2013/2013-02/2013-02-07_verlengde_hoogravenseweg.png)
 
-Die Busverbindungen habe ich ja noch eingetragen, so dass ich mir darum wohl nicht mehr Sorgen machen muss; das einzige, was ich nicht vergessen darf, ist dass ich rechtzeitig hier aus dem Buero verscwinde, damit ich den Bus auch wirklich kriege. Ansonsten laeuft hier auch schon das GPS (welches allerdings innerhalb des Gebaeudes so seine Schwierigkeiten hat ein Signal zu empfangen), damit ich die restlichen Meter von der Bushaltestelle zum Haus auch wirklich finde.
+Die [Busverbindungen](http://www.ov9292.nl) habe ich ja noch eingetragen, so dass ich mir darum wohl nicht mehr Sorgen machen muss; das einzige, was ich nicht vergessen darf, ist dass ich rechtzeitig hier aus dem Buero verscwinde, damit ich den Bus auch wirklich kriege. Ansonsten laeuft hier auch schon das GPS (welches allerdings innerhalb des Gebaeudes so seine Schwierigkeiten hat ein Signal zu empfangen), damit ich die restlichen Meter von der Bushaltestelle zum Haus auch wirklich finde.
  
 **:::**
  
@@ -212,41 +271,6 @@ Also das ist mir auch noch nicht oft passiert: der aus Koblenz kommende Regional
 _Mon, 04. February 2013 -- 21:46_
 
 Auch wenn ich meinen Pendelrhythmus diese und die kommende Woche ein wenig an die lokalen Gegebenheiten angepasst habe -- will heissen: wie laesst es sich vermeiden in der Hochphase des Karneval durch Koeln fahren zu muessen -- so muss ich doch wieder die Tasche fuer den Trip nach Utrecht packen. Da Julia ja ueber das naechste Wochenende nachkommt, werde ich nun also insgesamt 10 Tage wegbleiben, so dass ich deutlich mehr mitnehmen muss. Rein von den Klamotten her laesst sich dies allerdings noch aushalten -- was ich aber immer noch einmal hinzurechnen muss, sind die Berge an Verpflegung, mit welchen es sich vermeiden laesst komplett von der Lebensmittelversorgung auf der niederlaendischen Seite abhaengig zu sein; gerade was so Dinge wie Brot betrifft ist es so gut wie unmoeglich in den Laeden etwas zu finden, was wirklich den Namen verdienen wuerde.
- 
-**:::**
- 
- 
-### Bestellung wird bearbeitet ###
-
-
-
-
-_Sun, 03. February 2013 -- 21:32_
-
-Als ich diese Woche ja noch das Bild fuer die interne Mitarbeiterseite habe machen lassen, ergab sich -- was vielleicht nicht sonderlich verwundern duerfte -- ein Gespraech ueber Photographie. Den wesentlichen Punkt, welchen ich daraus fuer mich mitnehmen konnte war der Tip in Sachen Stativ; spaetestens seit ich mit dem Erstellen von HDR Bildern begonnen habe, gibt es einen ganz klaren Bedarf daran Kamera und Objektiv zu stabilisieren. Waehrend ich vielfach mit dem [Joby GorillaPod](http://joby.com/gorillapod/slrzoom) auskomme -- wie z.B. bei den Aufnahmen im Buero -- so macht es fuer den Ausseneinsatz schon Sinn ueber ein Statuv zu verfuegen, welches sich auch ohne weitere Befestigungsmoeglichkeiten aufstellen und in Normalhoehe einsetzen laesst. Der Tip, welchen ich diese Woche bekommen habe, war der [Manfrotto 058B Triaut Camera Tripod](http://www.manfrotto.com/058b-triaut-camera-tripod-black) -- ein wirklich professioneller Unterbau fuer die Kamera. Von dem was ich so mit ein wenig Recherche auftreiben konnte sah dies in der Tat nach einem Ausstattungsteil aus, welches ich mir gewillt waere zuzulegen... mit einem kleinen Haken allerdings: das Stativ ist primaer fuer den Gebrauch im Studio aufgelegt und dementsprechend mit mehr als sechs Kilo Gewicht alles andere als tragfreundlich.
-
-Genau aus diesem Grund habe ich mich dann auch bei meinem Impuls zurueck gehalten, gleich auf den grossen "Buy" Knopf bei Amazon zu druecken. Stattdessen habe ich es vorgezogen mich lieber noch einmal ein wenig umzuschauen und ein wenig ueber moegliche Alternativen kundig zu machen. Da ich ja schon in der Lage sein moechte ein Stativ mit mir zu fuehren, wenn ich unterwegs bin (ohne dazu gleich einen Anhaenger hinter mir her zu ziehen), schien mir eine leichtere Variante durchaus sinnvoller. Fuer die Meinungsbildung stellen sich u.a. die Artikel
-
- * [Best tripods and camera supports: 15 tested](http://www.techradar.com/news/photography-video-capture/cameras/best-tripods-and-camera-supports-15-tested-1046066)
- * [Carbon Fibre tripod group test Review](http://www.ephotozine.com/article/carbon-fibre-tripod-group-test--review-11207)
-
-als ein guter Startpunkt heraus. Das soll nicht heissen, dass ich einfach blind den dortigen Empfehlungen gefolgt waere, aber so sonderlich weit weg von den Bewertungen bin ich nun letzten Endes nicht gelandet. Letzten Endes vor die Wahl zwischen [Giottos MTL8361B](http://shop.giottos.de/index.php?page=product&info=16) und [Manfrotto 055XPROB](http://www.manfrotto.com/055xprob-pro-tripod-black) gestellt, habe ich mich fuer das erste der beiden Modelle entschieden. Auch wenn ich mich wohl noch einmal nach alternativen Fuessen fuer den Ausseneinsatz umschauen werde, so ist zumindest schon einmal die Bestellung fuer das Stativ rausgegangen.
- 
-**:::**
- 
- 
-### Innenansicht ###
-
-
-
-
-_Sat, 02. February 2013 -- 20:19_
-
-Nachdem ich ja schon einmal einen Einblick in mein [Zimmer im Hotel Domstad](/blog/2013/2013-01/2013-01-22_00-39.html) gewaehrt hatte, habe ich diese Woche mal noch daran gedacht noch ein paar andere Ansichten einzufangen. Dafuer habe ich mir die Kamera geschnappt und mich in den Flur vor dem Zimmer begeben.
-
-![Hotel Domstad](/blog/2013/2013-02/hdr_20130201_083203.jpg)
-
-Alles im Hotel ist doch recht ueberschaubar und ohne sonderlichen Luxus; ist aber auch nicht so schlimm, denn schliesslich geht es mir derzeit ja einfach noch darum ein Bett fuer die Nacht zu haben, bis bis sich ein mehr dauerhafte Bleibe finden laesst. Mein Zimmer uebrigends ist -- wie sich wahrscheinlich unschwer erraten laesst -- das mit der ausgeleuchteten Tuer.
  
 **:::**
  
