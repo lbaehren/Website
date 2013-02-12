@@ -18,7 +18,7 @@ target_link_libraries(nonlinearity s4 ${LIBCONFIG_LIBRARIES}
                                    gslcblas )
 ~~~~
 
-by variables determined by [CMake](http//www.cmake.org) (the `s4` is ok, as this refers to a target as part of the project, responsible for building a library)
+by variables determined by [CMake](http://www.cmake.org) (the `s4` is ok, as this refers to a target as part of the project, responsible for building a library)
 
 ~~~~
 target_link_libraries (nonlinearity s4 ${LIBCONFIG_LIBRARIES}
