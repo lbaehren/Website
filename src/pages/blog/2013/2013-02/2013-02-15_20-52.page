@@ -1,0 +1,11 @@
+---
+title: "Uebervoll"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Fri, 15. February 2013 -- 20:52_
+
+Ich weiss schon, warum ich die spaete ICE Verbindung am Freitag Abend nicht mag: es kann sehr, sehr voll werden im Zug! Als ich in Urecht eingestiegen bin musste ich recht schnell feststellen, dass die Wahrscheinlichkeit einen Sitzplatz zu bekommen nur gering sein wuerden. So kam es dann auch, dass ich die Fahrt bis Oberhausen im Stehen verbracht habe, was natuerlich das Arbeiten so gut wie unmoeglich macht. Ich sage mal bewusst "so gut wie", denn schliesslich konnte ich doch noch ein wenig in den Software Design Dokumenten lesen, welche seitens des KNMI ausgearbeitet worden sind. Dies im Sitzen machen zu koennen waere sicherlich netter gewesen -- vor allen Dingen wenn man Notizen in dem Text anbringen will -- aber auch so habe ich wieder eine etwas bessere Uebersicht ueber das Gesamtgebilde in Sachen TROPOMI Software bekommen. Wie ueblich gibt es so einen Erkenntnisgewinn allerdings nur wieder als Mix: waehrend mir von der Struktur her einige Dinge klarer sind, habe ich rein von der praktischen und technischen Seite her wieder unmengen neuer Fragen, welches nach meinem Versatendnis noch beantwortet werden sollte, geht es denn darum die Entwicklung bei SRON und KNMI miteinander zu koordinieren.
