@@ -9,6 +9,22 @@ tags: Blog
  
 **:::**
  
+### Zurueck in Bonn ###
+
+
+
+
+_Sat, 16. February 2013 -- 09:40_
+
+Da mache ich also wieder Zwischenstop in Bonn. Nachdem ich ja nun doch einige Zeit am Stueck in Utrecht zugebracht habe -- vor allen Dingen natuerlich weil Julia am letzten Wochenende nachgereist war -- mache ich heute und morgen wieder Station in Bonn. Neben anderen Dingen ist dies natuerlich die laenger erwartete Gelegenheit [das letzte Woche hier angelieferte Stativ](/blog/2013/2013-02/2013-02-06_14-48.html) in Augenschein zu nehmen. Ausgepackt und aufgebaut habe ich schon direkt am gestrigen Abend... nur mit dem Ausprobieren habe ich dann bis heute Morgen gewartet.
+
+![Kueche in der Brunnenstrasse](/blog/2013/2013-02/hdr_20130216_091648.jpg)
+
+Als erster Test ist obiges Bild natuerlich wirklich geeignet: auf der einen Seite ist es schon eine Weile her, dass ich mal ein visuelles Update ueber den Zustand der Wohnung eingereicht habe, zum anderen verfuege ich nun endlich ueber den stabilen Unterbau, welcher es mir ermoeglicht mit langeren Belichtungszeiten und Belichtungsserien (fuer HDR Bilder) zu exerimentieren. Muss mir mal ueberlegen, wie ich demnaechst mein Reisegepaeck fuer Utrecht zusammenstelle, denn es steht ja vollkommen ausser Frage, dass ich moeglichst schnell mit der photographischen Erkundung der Stadt loslegen will.
+ 
+**:::**
+ 
+ 
 ### Uebervoll ###
 
 
@@ -198,26 +214,6 @@ Crashed Thread:  0  Dispatch queue: com.apple.main-thread
 So as much as I would like to have Opera as an alternate web browser, it is not usable at all at this point in time.
 
 Of course I had a look at the error log, which was produced; but as to be suspected the application is pretty much self-contained, not relying on too many system-dependencies; amongst the latter of course there are parts of the general system infrastructure, but this is nothing which would get affected (at least I would hope so) when running an number of packages from [MacPorts](http://www.macports.org).
- 
-**:::**
- 
- 
-### SRON News ###
-
-
-
-
-_Fri, 08. February 2013 -- 01:27_
-
-Begin of this week, there was a reminder disributed via the SRON internal mail, that the deadline for contributions to the next edition of the "SRON News" had been set for February 11th. Having joint the institute only recently, it was quite foreseeable that I would be approached to provide a short write-up on myself, officially introducing myself. Indeed such a request came in two days ago -- hence before the end of the week I needed to take a few minutes to come up with a (reasonably) short self-description:
-
-> Just let me give you a brief introduction to a new face you already might seen walking around at SRON since the end of January: my name is Lars Baehren and I recently started working as a Software Design Engineer for TROPOMI, focussing on the development and implementation of calibration algorithms for SWIR.
->
-> Though space research by itself is still rather new to me, I am certainly no stranger to working in the Netherlands: from 2004 to mid-2011 I have been working in various capacities for the LOFAR project. Having completed my diploma thesis at the now Argelander Institute for Astronomy the prospect of getting to work with early prototypes of a next-generation radio-interferometer was enough to make me move from Bonn to Dwingeloo. Over time my interest and attention graudally shifted towards software infrastructure, becoming one of the founding member of the LOFAR User Software group: besides architecting the configuration and build environment, I soon would become heaviliy involved in the specification of the first HDF5-based LOFAR standard data products.
->
-> Originally motivated by the idea to pass along some visual impressions to my blog articles, I picked up again photography and soon went digital. Bitten by the shutter bug things got more serious soon: starting from local concerts about a year later I found myself midst several 10000 of metal fans at events such as the Wacken Open Air. These days things are a bit quieter, as I am mostly focussing on the exploration of HDR photography.
-
-The above clocks in at 248 words, which might be somwhat on the longish side of things; however finding a compromise between really short and at least some amount of decent writing isn't all that easy. Guess I am going to send this in -- if there are complaints, I am sure there will be feedback accordingly.
  
 **:::**
  
