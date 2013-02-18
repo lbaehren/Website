@@ -9,6 +9,20 @@ tags: Blog
  
 **:::**
  
+### Duisdorf in HDR ###
+
+
+
+
+_Sun, 17. February 2013 -- 21:03_
+
+Da ich die letzte Woche ja mit dem Wissen verbracht habe, dass hier in Duisdorf eine Kamerastativ auf mich wartet, wollte ich das Wochenende natuerlich nicht komplett verstreichen lassen, ohne nicht zumindest ein klein wenig das neue Ausruestungsstueck auszuprobieren. Nach dem ersten Minitest in der Wohnung, habe ich mich dann heute Mittag nach dem Sport ein klein wenig aufgemacht, um den Sonnenschein (und damit das vorhandene Licht) auszunutzen. Sicher, es wird noch ein wenig Gewoehung erfordern mit einem Stativ zu arbeiten, aber so spontan wuerde ich mal behaupten, dass dies kein sonderliches Problem darstellen wird -- wenn erst einmal deutlich wird, was fuer neue Resultate sich damit erzeugen lassen, dann erhoeht dies garantiert die Motivation fuer weitere Experimente.
+
+![Feuerwehrwache in Duisdorf](/blog/2013/2013-02/hdr_20130217_140045.jpg)
+ 
+**:::**
+ 
+ 
 ### Zurueck in Bonn ###
 
 
@@ -175,45 +189,6 @@ Die Beurteilungen fuer das Jahr 2012 stehen leider noch nicht fest, aber ich den
 _Sat, 09. February 2013 -- 19:27_
 
 Das war er also, der erste Tag gemeinsames Erkunden von Utrecht. Auch wenn wir uns fast ausschliesslich im inneren Bereich (der Altstadt) aufgehalten haben, so haben wir mit Sicherheit noch nicht alles zu sehen bekommen, was es auch zu sehen gibt. Fuer mich persoenlich habe ich mir regelmaessig mentale Notizen gemacht, so ich demnaechst mal mit der Kamera losziehen muss -- dafuer war heute vielleicht nicht die beste Gelegenheit. Das Shopping war aber in jedem Fall erfolgreich: fuer Julia haben wir Kleider und Schuhe mitbringen koennen, fuer mich muessen wir dann noch einmal loziehen, weil der Laden, wo wir eine sehr schoene Tasche gefunden hatten, beim zweiten Besuch leider schon geschlossen war (die Stelle ist aber vorgemerkt und trotz der kleinen Gasse durchaus zu finden).
- 
-**:::**
- 
- 
-### Opera quit unexpectedly ###
-
-
-
-
-_Fri, 08. February 2013 -- 13:38_
-
-Damn right it did! I am having a hard time remembering when last a version of the [Opera](http://www.opera.com) we browser would work on my macBook Pro. Not that it crashes somewhen during surfing websites -- it does not even start up and crashes pretty much right away.
-
-~~~~
-Process:         Opera [42794]
-Path:            /Applications/Opera.app/Contents/MacOS/Opera
-Identifier:      com.operasoftware.Opera
-Version:         12.14 (12141738)
-Build Info:      Unknown-Unknown~1738
-Code Type:       X86 (Native)
-Parent Process:  ??? [1]
-
-Date/Time:       2013-02-08 00:43:10.548 +0100
-OS Version:      Mac OS X 10.6.8 (10K549)
-Report Version:  6
-
-Interval Since Last Report:          94910 sec
-Crashes Since Last Report:           1
-Per-App Interval Since Last Report:  15 sec
-Per-App Crashes Since Last Report:   1
-
-Exception Type:  EXC_BAD_ACCESS (SIGBUS)
-Exception Codes: KERN_PROTECTION_FAILURE at 0x0000000000000034
-Crashed Thread:  0  Dispatch queue: com.apple.main-thread
-~~~~
-
-So as much as I would like to have Opera as an alternate web browser, it is not usable at all at this point in time.
-
-Of course I had a look at the error log, which was produced; but as to be suspected the application is pretty much self-contained, not relying on too many system-dependencies; amongst the latter of course there are parts of the general system infrastructure, but this is nothing which would get affected (at least I would hope so) when running an number of packages from [MacPorts](http://www.macports.org).
  
 **:::**
  
