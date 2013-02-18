@@ -6,7 +6,7 @@ varOutfile="index.page"
 ## Base/Root directory of the blog entries
 varBasedir=`pwd`
 ## Number of entries to show up in the list of recent entries
-varNofEntries=12
+varNofEntries=15
 
 ## === Functions ================================================================
 
