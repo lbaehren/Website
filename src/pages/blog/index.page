@@ -9,6 +9,18 @@ tags: Blog
  
 **:::**
  
+### Kompromisse beim packen ###
+
+
+
+
+_Mon, 18. February 2013 -- 08:01_
+
+Es ist eigentlich recht offensicht, dass ich beim packen fuer meine Tage in Utrecht ein wenig darauf achten muss, dass ich die Sachen (welche ich mir zurecht gelegt habe) auch transportieren kann. Da ich bis zum Ende des Monat ja noch ohne eine permanente Operationsbasis auskommen muss (das Zimmer wird ja erst zum 1. Maerz frei), bleibt mir also nicht viel anderes uebrig als die Dinge, welche ich brauche, zwischen Bonn und Utrecht hin und her zu schleppen. Diese Umscheibung mag man durchaus woertlich verstehen, denn wenn ich -- wie dies vor allen Dingen diese Woche der Fall ist -- ausreichend Verpflegung mitnehme, um moeglichst minimal auf das eher bescheidene niederlaendische Essen zurueckgreifen zu muessen, dann ist der Ruecksack gleich schon einmal halb voll. Rein packtechnisch haette ich mir wohl noch ein wenig Raum schaffen koennen, wenn ich wieder die grosse schwarze Tasche mitgenommen haette, aber ich wollte doch einmal schauen, ob ich es nicht schaffe alles in einer etwas kompakteren Form unterzubringen. Auch wenn dies funktioniert hat -- so habe ich nun sowohl Proviant als auch Kleidung in dem Messenger-Bag unterbringen koennen -- so stellte sich immer noch die Frage nach dem weiteren Reisegepaeck: Laptop und Kamera sind definitiv Standard-Utensilien, auf welche ich nicht verzichten werde, so dass noch einmal ein bis zwei Taschen hinzukommen... dann aber noch das Stativ fuer die Kamera mitzuschleppen war grenzwertig, so dass ich mich schweren Herzens dazu durchgerungen habe doch wieder nur den GorillaPod mitzunehmen. Sowohl vom Gewicht als auch von der Groesse her ist die deutlich vertraeglicher, auch wenn es mich natuerlich reizen wuerde die neuen photographischen Moeglichkeiten in Utrecht zur Anwendung zu bringen -- dies wird dann aber wohl noch so lange warten muessen, bis ich das Zimmer habe.
+ 
+**:::**
+ 
+ 
 ### Duisdorf in HDR ###
 
 
@@ -189,6 +201,65 @@ Die Beurteilungen fuer das Jahr 2012 stehen leider noch nicht fest, aber ich den
 _Sat, 09. February 2013 -- 19:27_
 
 Das war er also, der erste Tag gemeinsames Erkunden von Utrecht. Auch wenn wir uns fast ausschliesslich im inneren Bereich (der Altstadt) aufgehalten haben, so haben wir mit Sicherheit noch nicht alles zu sehen bekommen, was es auch zu sehen gibt. Fuer mich persoenlich habe ich mir regelmaessig mentale Notizen gemacht, so ich demnaechst mal mit der Kamera losziehen muss -- dafuer war heute vielleicht nicht die beste Gelegenheit. Das Shopping war aber in jedem Fall erfolgreich: fuer Julia haben wir Kleider und Schuhe mitbringen koennen, fuer mich muessen wir dann noch einmal loziehen, weil der Laden, wo wir eine sehr schoene Tasche gefunden hatten, beim zweiten Besuch leider schon geschlossen war (die Stelle ist aber vorgemerkt und trotz der kleinen Gasse durchaus zu finden).
+ 
+**:::**
+ 
+ 
+### Opera quit unexpectedly ###
+
+
+
+
+_Fri, 08. February 2013 -- 13:38_
+
+Damn right it did! I am having a hard time remembering when last a version of the [Opera](http://www.opera.com) we browser would work on my macBook Pro. Not that it crashes somewhen during surfing websites -- it does not even start up and crashes pretty much right away.
+
+~~~~
+Process:         Opera [42794]
+Path:            /Applications/Opera.app/Contents/MacOS/Opera
+Identifier:      com.operasoftware.Opera
+Version:         12.14 (12141738)
+Build Info:      Unknown-Unknown~1738
+Code Type:       X86 (Native)
+Parent Process:  ??? [1]
+
+Date/Time:       2013-02-08 00:43:10.548 +0100
+OS Version:      Mac OS X 10.6.8 (10K549)
+Report Version:  6
+
+Interval Since Last Report:          94910 sec
+Crashes Since Last Report:           1
+Per-App Interval Since Last Report:  15 sec
+Per-App Crashes Since Last Report:   1
+
+Exception Type:  EXC_BAD_ACCESS (SIGBUS)
+Exception Codes: KERN_PROTECTION_FAILURE at 0x0000000000000034
+Crashed Thread:  0  Dispatch queue: com.apple.main-thread
+~~~~
+
+So as much as I would like to have Opera as an alternate web browser, it is not usable at all at this point in time.
+
+Of course I had a look at the error log, which was produced; but as to be suspected the application is pretty much self-contained, not relying on too many system-dependencies; amongst the latter of course there are parts of the general system infrastructure, but this is nothing which would get affected (at least I would hope so) when running an number of packages from [MacPorts](http://www.macports.org).
+ 
+**:::**
+ 
+ 
+### SRON News ###
+
+
+
+
+_Fri, 08. February 2013 -- 01:27_
+
+Begin of this week, there was a reminder disributed via the SRON internal mail, that the deadline for contributions to the next edition of the "SRON News" had been set for February 11th. Having joint the institute only recently, it was quite foreseeable that I would be approached to provide a short write-up on myself, officially introducing myself. Indeed such a request came in two days ago -- hence before the end of the week I needed to take a few minutes to come up with a (reasonably) short self-description:
+
+> Just let me give you a brief introduction to a new face you already might seen walking around at SRON since the end of January: my name is Lars Baehren and I recently started working as a Software Design Engineer for TROPOMI, focussing on the development and implementation of calibration algorithms for SWIR.
+>
+> Though space research by itself is still rather new to me, I am certainly no stranger to working in the Netherlands: from 2004 to mid-2011 I have been working in various capacities for the LOFAR project. Having completed my diploma thesis at the now Argelander Institute for Astronomy the prospect of getting to work with early prototypes of a next-generation radio-interferometer was enough to make me move from Bonn to Dwingeloo. Over time my interest and attention graudally shifted towards software infrastructure, becoming one of the founding member of the LOFAR User Software group: besides architecting the configuration and build environment, I soon would become heaviliy involved in the specification of the first HDF5-based LOFAR standard data products.
+>
+> Originally motivated by the idea to pass along some visual impressions to my blog articles, I picked up again photography and soon went digital. Bitten by the shutter bug things got more serious soon: starting from local concerts about a year later I found myself midst several 10000 of metal fans at events such as the Wacken Open Air. These days things are a bit quieter, as I am mostly focussing on the exploration of HDR photography.
+
+The above clocks in at 248 words, which might be somwhat on the longish side of things; however finding a compromise between really short and at least some amount of decent writing isn't all that easy. Guess I am going to send this in -- if there are complaints, I am sure there will be feedback accordingly.
  
 **:::**
  
