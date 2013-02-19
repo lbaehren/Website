@@ -1,0 +1,55 @@
+---
+title: "Building TROPOMI documents with CMake"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 19. February 2013 -- 18:36_
+
+This is a little something I was rather unhappy with ever since doing my first checkout from the [Subversion](http://subversion.apache.org) repository hosting the [LaTeX](http://www.latex-project.org) documents for TROPOMI: how to properly build -- either indvidually or all of them -- the documents from the LaTeX sources? First of all there was no `README` file, which might help in finding ones way around; while on the one hand one could argue that given things are simple enough, little or no additional help will be required -- on the other hand I'd have to say though that some basic help instructions for me simply are part of the quality assessment with any type of new code. However even more annoying -- mostly because I am no longer used to this even with my own documents -- was the fact, that all the individual documents would be burried deep inside some sub-directories with the mean to process all of them in a single pass. Given these circustances some changes were called for...
+
+First thing to create was a `CMakeLists.txt` file at the top level of the directory structure holding the document sources; in order to allow embedding the instructions as sub-project into another [CMake](http://www.cmake.org)-driven project, the preamble checks, if `PROJECT_NAME` is defined already:
+
+~~~~
+if (NOT PROJECT_NAME)
+  ## Name of the project handled by CMake
+  project (TROPOMI_LatexDocs)
+  ## Minimum required version of CMake to configure the project
+  cmake_minimum_required (VERSION 2.8)
+  ## Enforced CMake policy
+  cmake_policy (VERSION 2.8)
+endif (NOT PROJECT_NAME)
+~~~~
+
+The actual heart of the script then sets up a macro to handle the various steps in processing a LaTeX document to a printable PDF. Though older versions of the procedure existed in a number of places on my hard-disk, the final step to put all of this into a macro, which then in turn could be called from anywhere inside a project were still missing; hence I decided to take a bit more time working out the largest kinks. With the latest changes now submitted back to the repository, adding a new LaTeX document is as simple as:
+
+~~~~
+add_latex_document (${CMAKE_CURRENT_SOURCE_DIR}/template.tex)
+~~~~
+
+No repeating of instructions as with the existing makefiles, hence considerably less code in total. Furthermore future enhancements will trickle down throughout the whole project, hence no need to open open each and every `makefile` to insert the changes there. The other big plus with the new setup now is, that finally there exists a method to generate all of the included documents in a single pass. An edded benefit of course is, that a `makefile` generated through _CMake_ contains a few extra bits, such as the ability with
+
+~~~~
+make help
+~~~~
+
+to retrieve a list of all the possible build target as part of the project:
+
+~~~
+The following are some of the valid targets for this Makefile:
+... all (the default if no target is provided)
+... clean
+... depend
+... clean-all
+... edit_cache
+... rebuild_cache
+... s5p-sron-pl-ical-0003-spap
+... s5p-sron-l01b-0001-sd-atbd
+... s5p-sron-ocal-0002-sd-atbd
+... s5p-sron-ocal-0003-pl-cvalp
+... template
+~~~~
+
+At this point in time the definition of the macro still lives inside the project's `CMakeLists.txt` file, but this taking it from there only should be a minor step. In order to make the functionality available across the various CMake projects in my collection, the code is going to be extracted into a loadable module and published on [Github](https://github.com/lbaehren/CMakeModules).

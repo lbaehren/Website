@@ -9,6 +9,62 @@ tags: Blog
  
 **:::**
  
+### Building TROPOMI documents with CMake ###
+
+
+
+
+_Tue, 19. February 2013 -- 18:36_
+
+This is a little something I was rather unhappy with ever since doing my first checkout from the [Subversion](http://subversion.apache.org) repository hosting the [LaTeX](http://www.latex-project.org) documents for TROPOMI: how to properly build -- either indvidually or all of them -- the documents from the LaTeX sources? First of all there was no `README` file, which might help in finding ones way around; while on the one hand one could argue that given things are simple enough, little or no additional help will be required -- on the other hand I'd have to say though that some basic help instructions for me simply are part of the quality assessment with any type of new code. However even more annoying -- mostly because I am no longer used to this even with my own documents -- was the fact, that all the individual documents would be burried deep inside some sub-directories with the mean to process all of them in a single pass. Given these circustances some changes were called for...
+
+First thing to create was a `CMakeLists.txt` file at the top level of the directory structure holding the document sources; in order to allow embedding the instructions as sub-project into another [CMake](http://www.cmake.org)-driven project, the preamble checks, if `PROJECT_NAME` is defined already:
+
+~~~~
+if (NOT PROJECT_NAME)
+  ## Name of the project handled by CMake
+  project (TROPOMI_LatexDocs)
+  ## Minimum required version of CMake to configure the project
+  cmake_minimum_required (VERSION 2.8)
+  ## Enforced CMake policy
+  cmake_policy (VERSION 2.8)
+endif (NOT PROJECT_NAME)
+~~~~
+
+The actual heart of the script then sets up a macro to handle the various steps in processing a LaTeX document to a printable PDF. Though older versions of the procedure existed in a number of places on my hard-disk, the final step to put all of this into a macro, which then in turn could be called from anywhere inside a project were still missing; hence I decided to take a bit more time working out the largest kinks. With the latest changes now submitted back to the repository, adding a new LaTeX document is as simple as:
+
+~~~~
+add_latex_document (${CMAKE_CURRENT_SOURCE_DIR}/template.tex)
+~~~~
+
+No repeating of instructions as with the existing makefiles, hence considerably less code in total. Furthermore future enhancements will trickle down throughout the whole project, hence no need to open open each and every `makefile` to insert the changes there. The other big plus with the new setup now is, that finally there exists a method to generate all of the included documents in a single pass. An edded benefit of course is, that a `makefile` generated through _CMake_ contains a few extra bits, such as the ability with
+
+~~~~
+make help
+~~~~
+
+to retrieve a list of all the possible build target as part of the project:
+
+~~~
+The following are some of the valid targets for this Makefile:
+... all (the default if no target is provided)
+... clean
+... depend
+... clean-all
+... edit_cache
+... rebuild_cache
+... s5p-sron-pl-ical-0003-spap
+... s5p-sron-l01b-0001-sd-atbd
+... s5p-sron-ocal-0002-sd-atbd
+... s5p-sron-ocal-0003-pl-cvalp
+... template
+~~~~
+
+At this point in time the definition of the macro still lives inside the project's `CMakeLists.txt` file, but this taking it from there only should be a minor step. In order to make the functionality available across the various CMake projects in my collection, the code is going to be extracted into a loadable module and published on [Github](https://github.com/lbaehren/CMakeModules).
+ 
+**:::**
+ 
+ 
 ### Kompromisse beim packen ###
 
 
@@ -240,26 +296,6 @@ Crashed Thread:  0  Dispatch queue: com.apple.main-thread
 So as much as I would like to have Opera as an alternate web browser, it is not usable at all at this point in time.
 
 Of course I had a look at the error log, which was produced; but as to be suspected the application is pretty much self-contained, not relying on too many system-dependencies; amongst the latter of course there are parts of the general system infrastructure, but this is nothing which would get affected (at least I would hope so) when running an number of packages from [MacPorts](http://www.macports.org).
- 
-**:::**
- 
- 
-### SRON News ###
-
-
-
-
-_Fri, 08. February 2013 -- 01:27_
-
-Begin of this week, there was a reminder disributed via the SRON internal mail, that the deadline for contributions to the next edition of the "SRON News" had been set for February 11th. Having joint the institute only recently, it was quite foreseeable that I would be approached to provide a short write-up on myself, officially introducing myself. Indeed such a request came in two days ago -- hence before the end of the week I needed to take a few minutes to come up with a (reasonably) short self-description:
-
-> Just let me give you a brief introduction to a new face you already might seen walking around at SRON since the end of January: my name is Lars Baehren and I recently started working as a Software Design Engineer for TROPOMI, focussing on the development and implementation of calibration algorithms for SWIR.
->
-> Though space research by itself is still rather new to me, I am certainly no stranger to working in the Netherlands: from 2004 to mid-2011 I have been working in various capacities for the LOFAR project. Having completed my diploma thesis at the now Argelander Institute for Astronomy the prospect of getting to work with early prototypes of a next-generation radio-interferometer was enough to make me move from Bonn to Dwingeloo. Over time my interest and attention graudally shifted towards software infrastructure, becoming one of the founding member of the LOFAR User Software group: besides architecting the configuration and build environment, I soon would become heaviliy involved in the specification of the first HDF5-based LOFAR standard data products.
->
-> Originally motivated by the idea to pass along some visual impressions to my blog articles, I picked up again photography and soon went digital. Bitten by the shutter bug things got more serious soon: starting from local concerts about a year later I found myself midst several 10000 of metal fans at events such as the Wacken Open Air. These days things are a bit quieter, as I am mostly focussing on the exploration of HDR photography.
-
-The above clocks in at 248 words, which might be somwhat on the longish side of things; however finding a compromise between really short and at least some amount of decent writing isn't all that easy. Guess I am going to send this in -- if there are complaints, I am sure there will be feedback accordingly.
  
 **:::**
  
