@@ -9,6 +9,24 @@ tags: Blog
  
 **:::**
  
+### AF-S NIKKOR 800mm f/5.6E FL ED VR ###
+
+
+
+
+_Wed, 20. February 2013 -- 10:18_
+
+Now this is what I call a real telephoto monster:
+
+![AF-S NIKKOR 800mm f/5.6E FL ED VR](/blog/2013/2013-02/afs_nikkor_800mm.png)
+
+> The [AF-S NIKKOR 800mm f/5.6E FL ED VR](http://imaging.nikon.com/lineup/lens/singlefocal/Telephoto/af-s_800mmf_56g_fl_ed_vr/index.htm) offers the longest focal length of 800 mm in the history of NIKKOR autofocus (AF) lenses, as well as a maximum aperture of f/5.6. Adoption of two fluorite and two ED lens elements has resulted in excellent rendering with effective reduction of chromatic aberration, superior resolution, and high contrast. In addition, Nano Crystal Coat makes for clear, consistent rendering with incredible ghost and flare suppression. When the teleconverter is used with this super-telephoto lens, the electromagnetic aperture enables stable exposure (AE) with high-speed continuous shooting. The lens is also equipped with a vibration reduction (VR) mechanism offering performance equal to an increase in shutter speed of 4.0 steps*. This new lens enables certain capture of the perfect moment for professional sports and press photographers, as well as advanced amateurs who enjoy photographing birds and wildlife.
+
+I picked up the news about the release this morning from an article on [Heise Foto](http://www.heise.de/foto/meldung/Neue-Nikon-Optiken-17-000-Euro-Supertele-und-ein-Weitwinkel-Zoom-1793543.html), which also mentioned a preliminary prize for the lens: 17.130 Euro. Deals allowing to e.g. trade in you car in exchange for the lens are not known at this point in time ;-)
+ 
+**:::**
+ 
+ 
 ### Building TROPOMI documents with CMake ###
 
 
@@ -257,45 +275,6 @@ Die Beurteilungen fuer das Jahr 2012 stehen leider noch nicht fest, aber ich den
 _Sat, 09. February 2013 -- 19:27_
 
 Das war er also, der erste Tag gemeinsames Erkunden von Utrecht. Auch wenn wir uns fast ausschliesslich im inneren Bereich (der Altstadt) aufgehalten haben, so haben wir mit Sicherheit noch nicht alles zu sehen bekommen, was es auch zu sehen gibt. Fuer mich persoenlich habe ich mir regelmaessig mentale Notizen gemacht, so ich demnaechst mal mit der Kamera losziehen muss -- dafuer war heute vielleicht nicht die beste Gelegenheit. Das Shopping war aber in jedem Fall erfolgreich: fuer Julia haben wir Kleider und Schuhe mitbringen koennen, fuer mich muessen wir dann noch einmal loziehen, weil der Laden, wo wir eine sehr schoene Tasche gefunden hatten, beim zweiten Besuch leider schon geschlossen war (die Stelle ist aber vorgemerkt und trotz der kleinen Gasse durchaus zu finden).
- 
-**:::**
- 
- 
-### Opera quit unexpectedly ###
-
-
-
-
-_Fri, 08. February 2013 -- 13:38_
-
-Damn right it did! I am having a hard time remembering when last a version of the [Opera](http://www.opera.com) we browser would work on my macBook Pro. Not that it crashes somewhen during surfing websites -- it does not even start up and crashes pretty much right away.
-
-~~~~
-Process:         Opera [42794]
-Path:            /Applications/Opera.app/Contents/MacOS/Opera
-Identifier:      com.operasoftware.Opera
-Version:         12.14 (12141738)
-Build Info:      Unknown-Unknown~1738
-Code Type:       X86 (Native)
-Parent Process:  ??? [1]
-
-Date/Time:       2013-02-08 00:43:10.548 +0100
-OS Version:      Mac OS X 10.6.8 (10K549)
-Report Version:  6
-
-Interval Since Last Report:          94910 sec
-Crashes Since Last Report:           1
-Per-App Interval Since Last Report:  15 sec
-Per-App Crashes Since Last Report:   1
-
-Exception Type:  EXC_BAD_ACCESS (SIGBUS)
-Exception Codes: KERN_PROTECTION_FAILURE at 0x0000000000000034
-Crashed Thread:  0  Dispatch queue: com.apple.main-thread
-~~~~
-
-So as much as I would like to have Opera as an alternate web browser, it is not usable at all at this point in time.
-
-Of course I had a look at the error log, which was produced; but as to be suspected the application is pretty much self-contained, not relying on too many system-dependencies; amongst the latter of course there are parts of the general system infrastructure, but this is nothing which would get affected (at least I would hope so) when running an number of packages from [MacPorts](http://www.macports.org).
  
 **:::**
  
