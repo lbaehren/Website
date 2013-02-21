@@ -9,15 +9,102 @@ tags: Blog
 
 **:::**
 
-* http://www.storagereview.com
+ * http://www.storagereview.com
+ * [The Future Of Google Plus, And Its Path To Social-Media Domination](http://www.fastcompany.com/3005682/future-google-plus-and-its-path-social-media-domination)
+
+### Im Grossformat ###
+
+![SRON Korridor](/blog/2013/2013-02/hdr_20130219_190953.jpg)
+
+### SRON in HDR... bei Nacht ###
+
+Seit ich angefangen habe die diese Aufnahmetechnik zu erkunden, sind mittlerweile eine ganze Reihe von HDR Bildern entstanden, welche durchaus recht unterschiedliche Szenerien wiedergeben. Was bisher allerdings noch komplett gefehlt hat war, es auch einmal bei Nacht mit einer Blichtungsreihe zu versuchen. Wenn ich es recht bedenke, gab es bisher noch nicht so sonderlich viele Gelegenheiten, bei Nacht durch die Gegend zu laufen und zu photographieren. In der Vergangenheit habe ich dies ja durchaus ein paar Mal geschafft, aber die mit zurueck nach Hause gebrachten Bilder waren stets Einzelbelichtungen. Wenn ich allerdings bedenke, wie oft mir HDRI schoen ermoeglicht hat Details in den Bildern sichbar zu machen, welche andererseits unsichtbar geblieben waeren, so lag schon der Schluss nahe, dies auch einmal bei Nachtaufnahmen zu testen. Auch wenn ich dies erst [in der Nacht von Mittwoch auch Donnerstag](/blog/2013/2013-02/2013-02-21_12-32.html) ein wenig ausgibiger getestet habe, so hatte ich bereits in der vergangenen Woche einen Versuch unternommen, wie denn dabei herauskommen kann, wenn ich den naechtlichen Farben mit Belichtungsreihen zu Leibe ruecke...
+
+![SRON exterior in HDR](/blog/2013/2013-02/hdr_20130214_212948.jpg)
+
+Von der phototechnischen Seite her sollte man hier vielleicht anmerken, dass die Gesamtmenge an Licht, welche innnerhalb der Szenerie zur Verfuegung stand, deutlich ueber dem lag, was unter normalen Umstaenden vorzufinden waere: nicht nur hatte es geschneit, sondern der Himmel war nach wie vor mit einer dichten Wolkendecke ueberzogen, so dass die komplette Stadt wie unter einer leuchtenden Kuppel lag, welche zur Erde zurueck strahlte. Als ich um kurz nach neun aus dem Institut aufgebrochen bin, war ich recht verbluefft darueber, wie hell es draussen vor der Tuer war. Da ich kurz zuvor noch ein paar Aufnahmen von der neuen Arbeitsumgebung im Buero gemacht hatte, war ich noch ein wenig in Photographie-Laune, so dass es mich recht wenig Ueberwindung kostete das Stativ noch einmal aus der Tasche zu fischen und mich auf die Suche nach einer geeigneten Perspektive zu machen. Letzten Endes bin ich aber was dies betrifft ein wenig eingeschraenkt, denn ich mit dem GorillaPod unterwegs bin: extremere Blickwinkel (wie zum Beispiel direkt nach oben) lassen sich auf fehlenden Stabilitaet leider realisieren -- fuer mich einfach ein weiteres Argument dafuer, dass ich demnaechst mit dem groesseren Stativ losziehen muss. Was ich aber grundsaetzlich an der Szenerie interessant finde ist, dass sowohl der Schnee auf dem Boden als auch die dichten Wolken am Himmel recht viel Licht bereitstellen, so deutlich mehr Details sichbar werden, als dies anderweitig der Fall waere -- was dies betrifft duerften die Chancen in Richung Fruehling aber wohl eher abnehmen, es sei denn das Wetter haelt noch ein paar Ueberraschungen bereit.
+
+### Nach vier Wochen ###
+
+... kann ich vielleicht eine kleine Zusammenfassung von dem geben, wie es mir hier in Utrecht bei [SRON](http://www.sron.nl) ergangen ist. Wenn ich in meiner Beschreibung wirklich vollstaendig sein wollte, muesste ich natuerlich auch die Rolle von [S\[&\]T](http://www.stcorp.nl) mit einbeziehen -- allerdings habe ich bisher mit der Truppe in Delft so wenig zu tun was die alltaeglichen Aktivitaeten betrifft, dass ich diesbezueglich nicht sonderlich viel sagen kann -- der Schwerpunkt der Interaktion liegt ganz klar unter dem Dach von SRON.
+
+"Interaktion" ist vielleicht auch schon eines der besten Stichworte, um einen der wesentlichen Unterschiede zum letzten Jahr in Koeln zu beschreiben: es ist nicht alleine die Tatsache dass [TROPOMI](/work/tropomi.html) im Rahmen eines international besetzten Teams entwickelt wird (was zu einem netten Mix an Sprachen fuehrt), sondern vor allen Dingen auch dass die Umgebung insgesamt belebt ist.
+
+### Rebuilding broken ports ###
+
+Now this is what I really would call a usefull feature helping to arrive at a more stable system: following up on an issue raised during today's [TROPOMI](/work/tropomi.html) progress meeting, I went back to a little something I already had started earlier last week, namely the extraction of a template for the new LaTeX documents. In order to simplify the creation of a new document (or even several thereof) the skeleton of the LaTeX source, alongside style packages, should be made available to everybody in the project to have a common starting point from which to continue editing.
+
+Once the basic preparation of all source files was done, I went to check the resulting (PDF or Postscript) output... only to encounter a runtime error when firing up the LaTeX tool-chain:
+
+~~~~
+dyld: Library not loaded: /opt/local/lib/libtiff.3.dylib
+  Referenced from: /opt/local/lib/libpoppler.34.dylib
+  Reason: image not found
+~~~~
+
+Judging by the path to the shared library, this had to be a problem with my [MacPorts](http://www.macports.org) installation, though the specific error was something I could not remember having encountered before (at least not for a long while). Hence -- at least to my mind -- the next obvious thing to do, was trying to reinstall the package in question:
+
+~~~~
+sudo port install tiff
+~~~~
+
+However since the library was installed already the first part of the process went by rather quickly
+
+~~~~
+--->  Computing dependencies for tiff
+--->  Cleaning tiff
+--->  Updating database of binaries: 100.0%
+--->  Scanning binaries for linking errors: 100.0%
+--->  Found 66 broken file(s), matching files to ports
+--->  Found 3 broken port(s), determining rebuild order
+--->  Rebuilding in order
+     poppler @0.22.0
+     podofo @0.9.1
+     qt4-mac @4.8.4
+~~~~
+
+
+### Vijftien ###
+
+Utrecht ist wirklich eine Stadt der vielen kleinen Details: wenn man durch die Strassen laeuft, dann lohnt es sich in jedem Fall die Augen offen zu halten und sich umzuschauen.
+
+![Vijftien](/blog/2013/2013-02/dsc_20130209_112343.jpg)
+
+Auch wenn ich am vergangenen Wochenende zusammen mit Julia ja nicht primaer in Utrecht unterwegs war um zu photographieren, so habe ich doch natuerlich die Kamera mit dabei gehabt. So konnte ich dann wenigsten an ein paar Stellen in der Stadt Eindruecke festhalten -- sei es als Erinnerung oder weil ich mir 100%ig sicher war, ob ich den Ort so ohne weiteres wiederfinden wuerde.
+
+### Besichtigung Verlengde Hoogravenseweg ###
+
+[Wie ja bereits berichtet](/blog/2013/2013-02/2013-02-07_11-58.html), war ich am vergangenen Donnerstag unterwegs um mir eine Wohnung in Utrecht anzuschauen; gut die Umschreibung "Wohnung" ist an deutschen Massstaeben gemessen vielleicht ein wenig wohlwollend, aber wenn man sich anschaut, was hier in Utrecht zu einigermassen vertraeglichen Preisen zu haben ist, dann kann man dies durchaus schon einmal durchgehen lassen.
+
+![Auftrag fuer Mietvertrag](/blog/2013/2013-02/2013-02-08_verlengde_hoogravenseweg.png)
+
+### Stunden aufschreiben ###
+
+Geschafft! Nach einigem Hin und Her, ist es mir Anfang der Woche endlich gelungen Zugang zu den internen [S\[&\]T](http://www.stcorp.nl) zu bekommen. Nicht nur finden sich auf diesen Seiten diverse Hintergrundinformationen zur Firma und den derzeit laufenden Projekten, sondern (und dies ist aus rein abrechnungstechnischen Gruenden)
+
+![Hours management](/blog/2013/2013-02/2013-02-05_hours_management.png)
+
+### Debugging help ###
+
+Ever since moving away from using [Dokuwiki](https://www.dokuwiki.org/dokuwiki) as backend for my web pages
+
+~~~~
+ERROR -- Could not resolve path '/blog/2007/2007-05/2007-05-01.html'
+         in </blog/2008/2008-01/2008-01-14_00-54.en.html>
+ERROR -- Could not resolve path '/blog/2008/2008-12/2008-12-23_17-31.html'
+         in </blog/2009/2009-09/2009-09-18_11-06.en.html>
+ERROR -- Could not resolve path '/blog/2010/2010-07/dsc_20100707_165641.jpg'
+         in </blog/2010/2010-07/2010-07-08_12-49.en.html>
+ERROR -- Could not resolve path '/blog/2010/2010-07/dsc_20100716_104429.jpg'
+         in </blog/2010/2010-07/2010-07-17_15-54.en.html>
+~~~~
 
 ### Taking Woodstock (2009) ###
 
-Nach dem doch eher bescheidenen [Seherlebnis](/blog/2013/2013-01/2013-01-13_22-32.html) von [The Amazing Spiderman](http://www.imdb.com/title/tt0948470) (2012), gab es am letzten Montag Abend (14 Jan) wenigstens noch einen kleinen cineastischen Ausgleich.
+Nach dem doch eher bescheidenen [Seherlebnis](/blog/2013/2013-01/2013-01-13_22-32.html) von [The Amazing Spiderman](http://www.imdb.com/title/tt0948470) (2012), war es doch recht schoen auch noch einmal einen kleinen Ausgleich zu bekommen. Aufmerksam geworden bin ich darauf ueber die Nominierung von [Life of Pi](http://www.imdb.com/title/tt0454876) (2012) fuer einen technischen Oskar ("Best visual effects"); auch wenn ich das ganze Spektakel rund um die Verleihung der Preise nicht so sonderlich mitverfolge -- es reicht mir da durchaus aus anschliessend zu erfahren wer welchen Preis bekommen hat -- so finde ich es schon interessant, welche Diskussionen es rund um die Anwaerter fuer die Auszeichung in Sachen visuelle Effekte gibt.
 
  * [IMDb](http://www.imdb.com/title/tt1127896)
  * [Ang Lee](http://www.imdb.com/name/nm0000487)
- * [Life of Pi](http://www.imdb.com/title/tt0454876) (2012)
  * [Crouching Tiger, Hidden Dragon](http://www.imdb.com/title/tt0190332) (2000)
  * [The Ice Storm](http://www.imdb.com/title/tt0119349) (1997)
 
