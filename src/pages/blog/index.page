@@ -9,6 +9,36 @@ tags: Blog
  
 **:::**
  
+### Von oben ###
+
+
+
+
+_Tue, 26. February 2013 -- 11:21_
+
+Auch wenn ich bereits an paar Ansichten meiner Arbeitsumgebung hier bei [SRON](http://www.sron.nl) gezeigt habe, so haette ich hier noch eine Variante zu bieten, welche neuer ist:
+
+![Arbeitsplatz bei SRON](/blog/2013/2013-02/hdr_20130225_183702.jpg)
+
+Bisher habe ich mich ja immer des GorillaPod bedienen muessen, wenn es an das schiessen von HDR Bildern geht; das fuer sich genommen ist grundsaetzlich schon ganz ok, aber in Sache Perspektive sind die Moeglichkeiten doch ein wenig eingeschraenkt (was einfach daran liegt in welcher Weise sich das Stativ aufbauen laesst). Um aber auch noch einmal etwas anderes als die bereits bekannten Froschperspektiven zeigen zu koennen, habe ich mich gestern entschlossen das neue _Giottos MTL8361B_ Stativ mit nach Utrecht zu nehmen; ob dies nun unbedingt noetig war ist sicher ein Punkt, ueber welchen sich diskutieren laesst, aber ich fand es einfach zu schade das gute Teil ungenutzt in Bonn stehen zu lassen, waehrend ich hier in den Niederlanden verweile. Wie sich herausstellte war es vom Transport her garnicht so kompliziert, zumal das Stativ eine Reihe von Aufhaengungen fuer einen Gurt hat, welchen man sich dann ueber die Schulter werfen kann.
+
+Von der phototechnischen Seite hat die nun verfuegbare Combo definitiv den Vorteil, dass die Platform, auf welcher sich die Kamera befindet, ungleich stabiler ist, was auch bedeutet dass ich viel flexibler in den Einstellmoeglichkeiten mit dem Kogelkopf bin (ist schliesslich nicht so toll, wenn der Unterbau wackelt, wenn man gerade bei ist einen Bildausschnitt sauber einzustellen). Wie aber recht deutlich genug auf dem Bild zu erkennen sein sollte, ist der Blickwinkel nicht mehr auf die Ausrichtung zur Decke (oder zum Himmel, je nach Umgebung) beschraenkt -- stattdessen kann ich auch mal endlich noch eine vernuenftige Gesamtansicht meines Arbeitsplatzes bereitstellen.
+ 
+**:::**
+ 
+ 
+### Gut angekommen ###
+
+
+
+
+_Mon, 25. February 2013 -- 09:58_
+
+Da habe ich also wieder eine Bahnreise gut ueberstanden. Auch wenn der ICE nicht komplett leer war, so war es doch kein Problem einen Sitzplatz an einem der Tische zu finden, so dass ich unterwegs arbeiten konnte. Das habe ich dann in der Tat auch gemacht und wirklich auch einiges geschafft; mir hat dies zwar noch einmal erneut vor Augen gefuehrt, wie dringend notwenig ein paar grundlegende Aenderungen und Entscheidungen in Bezug auf die Software sind, aber dies sollte sich diese Woche (nun da Richard wieder aus dem Urlaub zurueck ist) klaeren lassen.
+ 
+**:::**
+ 
+ 
 ### Packen fuer die Reise ###
 
 
@@ -229,36 +259,6 @@ Als erster Test ist obiges Bild natuerlich wirklich geeignet: auf der einen Seit
 _Fri, 15. February 2013 -- 20:52_
 
 Ich weiss schon, warum ich die spaete ICE Verbindung am Freitag Abend nicht mag: es kann sehr, sehr voll werden im Zug! Als ich in Urecht eingestiegen bin musste ich recht schnell feststellen, dass die Wahrscheinlichkeit einen Sitzplatz zu bekommen nur gering sein wuerden. So kam es dann auch, dass ich die Fahrt bis Oberhausen im Stehen verbracht habe, was natuerlich das Arbeiten so gut wie unmoeglich macht. Ich sage mal bewusst "so gut wie", denn schliesslich konnte ich doch noch ein wenig in den Software Design Dokumenten lesen, welche seitens des KNMI ausgearbeitet worden sind. Dies im Sitzen machen zu koennen waere sicherlich netter gewesen -- vor allen Dingen wenn man Notizen in dem Text anbringen will -- aber auch so habe ich wieder eine etwas bessere Uebersicht ueber das Gesamtgebilde in Sachen TROPOMI Software bekommen. Wie ueblich gibt es so einen Erkenntnisgewinn allerdings nur wieder als Mix: waehrend mir von der Struktur her einige Dinge klarer sind, habe ich rein von der praktischen und technischen Seite her wieder unmengen neuer Fragen, welches nach meinem Versatendnis noch beantwortet werden sollte, geht es denn darum die Entwicklung bei SRON und KNMI miteinander zu koordinieren.
- 
-**:::**
- 
- 
-### Voelkerwanderung ###
-
-
-
-
-_Fri, 15. February 2013 -- 18:37_
-
-Also so in der Art habe ich dies bisher auch nur selten erlebt -- zumindest abseits groesserer Festlichkeiten oder besonderer Anlaesse (wie z.B. Kirchen- oder Koeniginnentag). Als ich hier gerade noch auf dem Bahnsteig auf meinen ICE nach Koeln warten, bin ich von einer riesen Menschentraub umgeben worden, welche von Minute zu Minute immer weiter anwuchs. Weitestgehend handelte es sich dabei um Familien (vorwiegend mit kleineren Kindern), welche auf den [Euro-Express](http://www.euro-express.eu) warteten; konnte ich nicht unbedingt etwas mit anfangen, aber als ich dann ueber die Durchsagn erfahren konnte, dass der Zug nach Oesterreich faehrt, war recht klar, dass es sich um Winterurlauber auf der Reise in den (hoffentlich) verschneiten Sueden handelte. Mittlerweile ist der Zug eingefahren (woher ich auch die Adresse der Website habe) und der Bahnsteig ist recht leer geworden; sicher, nicht alle Personen, welche sich auf dem Bahnsteig eingefunden hatten wollen unbedingt mit dieser Verbindung hier aus Utrecht verreisen, aber die gigantischen Koffer und verpackten Skier sind allemal verschwunden.
- 
-**:::**
- 
- 
-### Umbau ###
-
-
-
-
-_Thu, 14. February 2013 -- 19:31_
-
-Als ich hier bei [SRON](http://www.sron.nl) angefangen habe, hatte ich zwar einen [Arbeitsplatz](/blog/2013/2013-01/2013-01-21_20-41.html) vorgefunden, aber wie sich recht schnell herausstellte war der Schreibtisch doch ein wenig zu klein, um daran sinnvoll arbeiten zu koennen. Mit dem Gehaeuse eines Desktop-PC und meinem MacBook war die Oberflaeche schon so voll, dass es kaum moeglich war ein Din A4 Blatt mich hin zu legen um jenes durchzuarbeiten. Alles in allem also ein Zustand, welcher dauerhaft nicht so bleiben konnte.
-
-[In der letzten Januar-Woche](/blog/2013/2013-01/2013-01-31_11-31.html) habe ich mich dann an Faciliteiten Beheer gewandt, um wegen einem Umbau meiner Arbeitsumgebung anzufragen. Die Rueckmeldung erfolgte recht schnell (ich hatte am kommenden Tag schon jemanden bei mir auf der Matte stehen), genauso wie das ok fuer die Bestellung eines zusaetzlichen (hoehenverstellbaren) Tisches. Angeliefert wurde das neue Moebelstueck bereits am Dienstag... nur hatte ich da nicht die Kamera bei mir, so dass ich dies nicht sofort dokumentieren konnte. Zwecks Bildbeleg hatte ich gestern zwar schon einmal einen Anlauf gemacht, aber das 18-200mm Objektiv stellet sich einfach als zu eng vom Blickfeld her heraus. Da ich bisher aber eh noch finde, dass die HDR Bilder mit dem Weitwinkel eh viel besser wirken, habe ich heute Morgen noch daran gedacht zu wechseln, so dass ich jetzt auch mal den derzeitigen Zustand meiner Arbeitsumgebung hier bei SRON durchgeben kann:
-
-![Arbeitsplatz bei SRON](/blog/2013/2013-02/hdr_20130214_100310.jpg)
-
-Ich weiss, sieht jetzt noch nicht sonderlich spannend aus, aber sobald ich dass neue Stativ in den Haenden habe, werde ich sicherlich noch einmal eine Reihe an Aufnahmen anfertigen -- dann hoffentlich auch mit ein paar interessanten Perspektiven.
  
 **:::**
  
