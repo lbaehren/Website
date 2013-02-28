@@ -10,11 +10,37 @@ tags: Blog
 **:::**
 
  * http://www.storagereview.com
- * [The Future Of Google Plus, And Its Path To Social-Media Domination](http://www.fastcompany.com/3005682/future-google-plus-and-its-path-social-media-domination)
 
-**::: ... completed :::**
+----
+**completed ...**
 
-**::: ... in preparation :::**
+
+----
+**in preparation ...**
+
+### Installation of header files... made easy ###
+
+I am always surprise what else there is to discover in terms of functionality, once taking the time to not only skim the [CMake](http://www.cmake.org) documentation, but to read it a bit more carefully:
+
+> Installation of directories may be controlled with fine granularity using the PATTERN or REGEX options. These "match" options specify a globbing pattern or regular expression to match directories or files encountered within input directories. They may be used to apply certain options (see below) to a subset of the files and directories encountered. The full path to each input file or directory (with forward slashes) is matched against the expression. A PATTERN will match only complete file names: the portion of the full path matching the pattern must occur at the end of the file name and be preceded by a slash. A REGEX will match any portion of the full path but it may use '/' and '$' to simulate the PATTERN behavior. By default all files and directories are installed whether or not they are matched. The FILES_MATCHING option may be given before the first match option to disable installation of files (but not directories) not matched by any expression. For example, the code
+>
+>~~~~
+>  install(DIRECTORY src/ DESTINATION include/myproj
+>          FILES_MATCHING PATTERN "*.h")
+>~~~~
+>
+> will extract and install header files from a source tree.
+
+Just so happens that indeed I was trying to remind myself of how to best install header files -- in this case of our TROPOMI onground calibration software -- once all components (libraries and tools) have been sucessfully built.
+
+~~~~
+install(
+  DIRECTORY ${CMAKE_CURRENT_BINARY_DIR} DESTINATION include
+  FILES_MATCHING
+  PATTERN "CMakeFiles" EXCLUDE
+  PATTERN "*.h"
+  )
+~~~~
 
 ### Im Grossformat ###
 
@@ -62,12 +88,6 @@ However since the library was installed already the first part of the process we
      podofo @0.9.1
      qt4-mac @4.8.4
 ~~~~
-
-### Besichtigung Verlengde Hoogravenseweg ###
-
-[Wie ja bereits berichtet](/blog/2013/2013-02/2013-02-07_11-58.html), war ich am vergangenen Donnerstag unterwegs um mir eine Wohnung in Utrecht anzuschauen; gut die Umschreibung "Wohnung" ist an deutschen Massstaeben gemessen vielleicht ein wenig wohlwollend, aber wenn man sich anschaut, was hier in Utrecht zu einigermassen vertraeglichen Preisen zu haben ist, dann kann man dies durchaus schon einmal durchgehen lassen.
-
-![Auftrag fuer Mietvertrag](/blog/2013/2013-02/2013-02-08_verlengde_hoogravenseweg.png)
 
 ### Stunden aufschreiben ###
 
