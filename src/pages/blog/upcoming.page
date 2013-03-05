@@ -14,9 +14,18 @@ tags: Blog
 ----
 **completed ...**
 
-
 ----
 **in preparation ...**
+
+### Stollwerck-Fabrik ###
+
+Wer sagt es denn: es lassen sich doch immer wieder neue Dinge entdecken, wenn man einfach nur gewillt ist ein wenig die Augen offen zu halten.
+
+![Rheinische Industriekultur](/blog/2013/2013-03/hdr_20130302_142915.jpg)
+
+[Rheinische Industriekultur](http://www.rheinische-industriekultur.de/objekte/koeln/STollwerck/Stollwerck_Fabrik.html)
+
+> Die Entstehung des Schokoladenriesen Stollwerck aus einem Konditoreibetrieb des Biedermeier beruhte auf dem unternehmerischen Ehrgeiz mehrerer Generationen. 1870 siedelten sich die Gebrüder Stollwerck hinter der Severinskirche an, wo mit dem "süßen Dreieck" eine die eher schlichte Wohnhausbebauung übersteigernde Geschäftshaus- und Fabrikarchitektur entstand. Die einzig erhalten gebliebene Ecke dieser Anlage gehörte nicht zu den aufwendigsten; ihre für die Gründerzeit typische Ziegelarchitektur verbindet Formen der Gotik und Renaissance. Die Ecke des Baus ist abgeflacht und durch zwei seitlich flankierende, kleine Giebel betont. Die in jedem Geschoß wechselnden Fensterformen bereichern die Fassaden, hinter denen sich Büro- oder Produktionsräume verbergen konnten. Bald griff die Fabrik auf das anschließende Gelände an der Annostraße über, wo auch eine Produktion für Schokoladenverarbeitungsmaschinen und Verkaufsautomaten entstand.
 
 ### Installation of header files... made easy ###
 
@@ -41,10 +50,6 @@ install(
   PATTERN "*.h"
   )
 ~~~~
-
-### Im Grossformat ###
-
-![SRON Korridor](/blog/2013/2013-02/hdr_20130219_190953.jpg)
 
 ### Nach vier Wochen ###
 
