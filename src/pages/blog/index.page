@@ -9,6 +9,34 @@ tags: Blog
  
 **:::**
  
+### Refactoring code ###
+
+
+
+
+_Thu, 07. March 2013 -- 19:06_
+
+Whatever I have been doing wrong the first time around, apparently my new attempt to refactor some of the code going into the library for SWIR calibration is coming along nicely: only shortly before leaving my office at [SRON](http://www.sron.nl) I pushed online a set of changes.
+
+~~~~
+Updating d9a16ee..b763be4
+Fast-forward
+ CMakeLists.txt                                   |  42 ++++++++------
+ calibration/source/c/include/s4/data.h           |  77 +---------------------------
+ calibration/source/c/include/s4/data/attribute.h |   1 +
+ calibration/source/c/include/s4/data/attrlist.h  | 105 +++++++++++++++++++++++++++++++++++++++++++
+ calibration/source/c/include/s4/data/object.h    |  74 ++++++++++++++++++++++++++++++
+ calibration/source/c/lib/data/attrlist.c         |  28 +++------
+ 6 files changed, 209 insertions(+), 118 deletions(-)
+ create mode 100644 calibration/source/c/include/s4/data/attrlist.h
+ create mode 100644 calibration/source/c/include/s4/data/object.h
+~~~~
+
+All of this of course still needs to be pushed back to the main repository -- which will be done through a pull request on [Github](http://www.github.com) -- but in terms of data structures (and associated manipulation functions) I am now at 60% of the way: the two remaining structures to be extracted are `s4_dataset` and `s4_group` -- with a little bit of luck I even might be able to complete this on the train back home.
+ 
+**:::**
+ 
+ 
 ### Der richtige Mix ###
 
 
@@ -16,7 +44,7 @@ tags: Blog
 
 _Thu, 07. March 2013 -- 15:49_
 
-Also es ist eine Sache, sich an das Lesen von Dokumenten zu machen -- da brauche ich wirklich ein wenig Ruhe, um mich konzentrieren zu koennen. Wenn ich mich nun aber wieder ans Coden begebe -- wovon ich bisher heute leider noch nicht so viel zu stande gebracht habe, weil ich vor allen Dingen Dokumentation geschrieben habe -- dann ist es schon recht wichtig ueber die passende musikalische Versorgung zu verfuegen. Ich hatte zunaechst einmal mit [Ayreon](http://www.ayreon.com) angefangen, aber ich musste doch recht schnell feststellen, dass ich etwas mit einem hoeheren Energiegehalt benoetige. Nach ein wenig Suchen bin ich nun bei _Brazen Abbot_ gelandet, was von der Stimmung her einfach deutlich besser zu passen scheint. Von der rein praktischen Seite her hat es definitiv den Vorteil, dass der Rhythmus deutlich schneller ist, so dass dadurch auch mein Tippen entsprechend beschleunigt wird, wenn ich einigermassen mithalten will.
+Also es ist eine Sache, sich an das Lesen von Dokumenten zu machen -- da brauche ich wirklich ein wenig Ruhe, um mich konzentrieren zu koennen. Wenn ich mich nun aber wieder ans Coden begebe -- wovon ich bisher heute leider noch nicht so viel zu stande gebracht habe, weil ich vor allen Dingen Dokumentation geschrieben habe -- dann ist es schon recht wichtig ueber die passende musikalische Versorgung zu verfuegen. Ich hatte zunaechst einmal mit [Ayreon](http://www.ayreon.com) angefangen, aber ich musste doch recht schnell feststellen, dass ich etwas mit einem hoeheren Energiegehalt benoetige. Nach ein wenig Suchen bin ich nun bei [Brazen Abbot](http://www.brazenabbot.nostramusic.com) gelandet, was von der Stimmung her einfach deutlich besser zu passen scheint. Von der rein praktischen Seite her hat es definitiv den Vorteil, dass der Rhythmus deutlich schneller ist, so dass dadurch auch mein Tippen entsprechend beschleunigt wird, wenn ich einigermassen mithalten will.
  
 **:::**
  
@@ -211,18 +239,6 @@ Von der phototechnischen Seite hat die nun verfuegbare Combo definitiv den Vorte
 _Mon, 25. February 2013 -- 09:58_
 
 Da habe ich also wieder eine Bahnreise gut ueberstanden. Auch wenn der ICE nicht komplett leer war, so war es doch kein Problem einen Sitzplatz an einem der Tische zu finden, so dass ich unterwegs arbeiten konnte. Das habe ich dann in der Tat auch gemacht und wirklich auch einiges geschafft; mir hat dies zwar noch einmal erneut vor Augen gefuehrt, wie dringend notwenig ein paar grundlegende Aenderungen und Entscheidungen in Bezug auf die Software sind, aber dies sollte sich diese Woche (nun da Richard wieder aus dem Urlaub zurueck ist) klaeren lassen.
- 
-**:::**
- 
- 
-### Packen fuer die Reise ###
-
-
-
-
-_Sun, 24. February 2013 -- 22:02_
-
-Es ist mittlerweile schon ein wenig eine feste Routine, der Ablauf am spaeten Sonntag Nachmittag und dann Abend: in Vorbereitung fuer die anstehende Reise nach Utrecht geht es ans Packen. Wie ich eben bereits wieder feststellen konnte, ist die Kleidung der unkomplizierteste Teil des Unterfangens -- deutlich schwieriger wird es, wenn es an das Abpacken der Lebensmittel geht... oder die Entscheidung darueber, was ich an Photoausruestung mitnehmen kann. Gerade in Bezug auf letzteren Punkt ist es eine kniffelige Sache, denn ich wuerde ja schon ein wenig auf Erkundungstour in Utrecht gehen und auch nachts auf Motivsuche gehen -- da macht ein vernuenftiges Stativ schon Sinn, aber was ich so auf einer Tour mit mir mitschleppen kann ist durchaus begrenzt. Da freue ich mich doch wirklich darauf, wenn ich einen festen Anlaufpunkt in der Stadt habe, so dass ich einen Ort habe, wo ich ein paar Dinge deponieren kann und eben nicht mehr alles jede Woche mit mir durch die Gegend schleppen muss.
  
 **:::**
  

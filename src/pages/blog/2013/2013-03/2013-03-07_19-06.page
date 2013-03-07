@@ -1,0 +1,27 @@
+---
+title: "Refactoring code"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Thu, 07. March 2013 -- 19:06_
+
+Whatever I have been doing wrong the first time around, apparently my new attempt to refactor some of the code going into the library for SWIR calibration is coming along nicely: only shortly before leaving my office at [SRON](http://www.sron.nl) I pushed online a set of changes.
+
+~~~~
+Updating d9a16ee..b763be4
+Fast-forward
+ CMakeLists.txt                                   |  42 ++++++++---------
+ calibration/source/c/include/s4/data.h           |  77 +------------------------------
+ calibration/source/c/include/s4/data/attribute.h |   1 +
+ calibration/source/c/include/s4/data/attrlist.h  | 105 +++++++++++++++++++++++++++++++++++++++++++
+ calibration/source/c/include/s4/data/object.h    |  74 ++++++++++++++++++++++++++++++
+ calibration/source/c/lib/data/attrlist.c         |  28 +++---------
+ 6 files changed, 209 insertions(+), 118 deletions(-)
+ create mode 100644 calibration/source/c/include/s4/data/attrlist.h
+ create mode 100644 calibration/source/c/include/s4/data/object.h
+~~~~
+
+All of this of course still needs to be pushed back to the main repository -- which will be done through a pull request on [Github](http://www.github.com) -- but in terms of data structures (and associated manipulation functions) I am now at 60% of the way: the two remaining structures to be extracted are `s4_dataset` and `s4_group` -- with a little bit of luck I even might be able to complete this on the train back home.
