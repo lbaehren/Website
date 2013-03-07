@@ -9,6 +9,30 @@ tags: Blog
  
 **:::**
  
+### IC ###
+
+
+
+
+_Thu, 07. March 2013 -- 21:49_
+
+Sonderlich verwundern durfte es wohl nicht, dass ich hier in Koeln meinen urspruenglichen Anschluss verpasst habe. Folgerichtig ist die Suche nach moeglichen Alternativen schon unterwegs angelaufen, so dass ich einigermassen vorbereitet hier am Bahnhof eingetroffen bin: da Julia heute Abend nicht beim Sport war, ging es recht schnell mal eben online nachzuschauen, welche Optionen sich mir den fuer die Weiterfahrt bieten. Vor die Wahl gestellt entweder den IC um 21:53 Uhr oder die MRB um 21:56 Uhr zu nehmen, habe ich mich fuer den IC entschieden -- wenn alles glatt geht (wovon man allerdings nicht immer ausgehen kann) sollte ich auf diese Weise um 22:12 Uhr in Bonn eintreffen. Es waere zwar noch einmal gut gewesen mit einem Zugbegleiter meine Optionen gegenzuchecken, aber das stellt sich mitunter als deutlich schwerer heraus, als man dies erwarten wuerde.
+ 
+**:::**
+ 
+ 
+### Umsteigen in Duesseldorf ###
+
+
+
+
+_Thu, 07. March 2013 -- 21:12_
+
+Da hat es mich also doch erwischt: waehrend in der letzten Woche der Kelch der ICE Panne noch an mir vorueber gegangen, so gab es kurz vor Duesseldorf noch eine wenig schoene Ueberraschung. Per Durchsage wurde allen Reisenden mitgeteilt, dass der aus Amsterdam kommende ICE heute nur bis Duesseldorf fahren wuerde -- dort war dan Umsteigen in den aus Frankfurt kommenden ICE angesagt. Das ganze entbehrt nicht einer gewissen Komik: statt die beiden auf der gleichen Strecke in unterschiedliche Richtung verkehrenden Zuege ihre Reise fortsetzen zu lassen (und so den Reisenden in beiden ICEs da Umsteigen zu ersparen), machen beide in Duesseldorf Halt um dann Passagiere auszutauschen. Warum diese Aktion nun unbedingt sein musste will mir nicht so ganz einleuchten (dazu gab es leider auch keine genauere Erlaeuterungen), aber was dies zunaechst einmal fuer mich bedeutet ist, dass ich wohl meinen geplanten Anschluss in Koeln nicht mehr kriegen werde und mich demnach nach einer alternativen Verbindung umschauen muss.
+ 
+**:::**
+ 
+ 
 ### Refactoring code ###
 
 
@@ -209,36 +233,6 @@ Die Silhuette der [Domkerk](http://www.domkerk.nl) gehoert mit Sicherheit zu dem
 Aufnahmen von dem Turm des Doms gibt es natuerlich wie Sand am Meer, aber mitunter finde ich es doch mal nett einen Blickwinkel zu finden, welche in der Art etwas neues bietet; ob mir dies nun wirklich mit dem folgenden Bild gelungen ist weiss ich nicht -- ich persoenlich bin aber durchaus begeistert, weil ich einfach die Reihhaltigkeit an Texturen und Farben mag, ueber welche sich dann der Turm erhebt.
 
 ![Domkerk Utrecht](/blog/2013/2013-02/hdr_20130226_215029.jpg)
- 
-**:::**
- 
- 
-### Von oben ###
-
-
-
-
-_Tue, 26. February 2013 -- 11:21_
-
-Auch wenn ich bereits an paar Ansichten meiner Arbeitsumgebung hier bei [SRON](http://www.sron.nl) gezeigt habe, so haette ich hier noch eine Variante zu bieten, welche neuer ist:
-
-![Arbeitsplatz bei SRON](/blog/2013/2013-02/hdr_20130225_183702.jpg)
-
-Bisher habe ich mich ja immer des GorillaPod bedienen muessen, wenn es an das schiessen von HDR Bildern geht; das fuer sich genommen ist grundsaetzlich schon ganz ok, aber in Sache Perspektive sind die Moeglichkeiten doch ein wenig eingeschraenkt (was einfach daran liegt in welcher Weise sich das Stativ aufbauen laesst). Um aber auch noch einmal etwas anderes als die bereits bekannten Froschperspektiven zeigen zu koennen, habe ich mich gestern entschlossen das neue _Giottos MTL8361B_ Stativ mit nach Utrecht zu nehmen; ob dies nun unbedingt noetig war ist sicher ein Punkt, ueber welchen sich diskutieren laesst, aber ich fand es einfach zu schade das gute Teil ungenutzt in Bonn stehen zu lassen, waehrend ich hier in den Niederlanden verweile. Wie sich herausstellte war es vom Transport her garnicht so kompliziert, zumal das Stativ eine Reihe von Aufhaengungen fuer einen Gurt hat, welchen man sich dann ueber die Schulter werfen kann.
-
-Von der phototechnischen Seite hat die nun verfuegbare Combo definitiv den Vorteil, dass die Platform, auf welcher sich die Kamera befindet, ungleich stabiler ist, was auch bedeutet dass ich viel flexibler in den Einstellmoeglichkeiten mit dem Kogelkopf bin (ist schliesslich nicht so toll, wenn der Unterbau wackelt, wenn man gerade bei ist einen Bildausschnitt sauber einzustellen). Wie aber recht deutlich genug auf dem Bild zu erkennen sein sollte, ist der Blickwinkel nicht mehr auf die Ausrichtung zur Decke (oder zum Himmel, je nach Umgebung) beschraenkt -- stattdessen kann ich auch mal endlich noch eine vernuenftige Gesamtansicht meines Arbeitsplatzes bereitstellen.
- 
-**:::**
- 
- 
-### Gut angekommen ###
-
-
-
-
-_Mon, 25. February 2013 -- 09:58_
-
-Da habe ich also wieder eine Bahnreise gut ueberstanden. Auch wenn der ICE nicht komplett leer war, so war es doch kein Problem einen Sitzplatz an einem der Tische zu finden, so dass ich unterwegs arbeiten konnte. Das habe ich dann in der Tat auch gemacht und wirklich auch einiges geschafft; mir hat dies zwar noch einmal erneut vor Augen gefuehrt, wie dringend notwenig ein paar grundlegende Aenderungen und Entscheidungen in Bezug auf die Software sind, aber dies sollte sich diese Woche (nun da Richard wieder aus dem Urlaub zurueck ist) klaeren lassen.
  
 **:::**
  
