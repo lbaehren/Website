@@ -11,13 +11,13 @@ tags: Blog
 
  * http://www.storagereview.com
 
-
 ----
 **completed ...**
 
 
 ----
 **in preparation ...**
+
 
 ### Galashow der Meistermagier ###
 
@@ -72,6 +72,52 @@ install(
   PATTERN "*.h"
   )
 ~~~~
+
+### Drobo and alternatives ###
+
+It is for quite a while now that the large of my two Drobos is reminding me to add some more disk space to it; given the fact that the machine already is equiped with 4x 3TB drives, the only possibility right now would be to start adding 4TB drives -- given prices on these drives however this is not the path I'd be willing to pursue at this point.
+
+ * [Drobo v. ReadyNas I: My Needs](http://aledev.blogspot.com/2008/04/drobo-v-readynas-i.html)
+ * [Drobo v. ReadyNAS II: Obvious Differences](http://aledev.blogspot.com/2008/04/drobo-v-readynas-ii.html)
+ * [Drobo v. ReadyNAS III: Connectivity and use of drives](http://ceolaf.blogspot.nl/2008/04/drobo-v-readynas-iii-speed-and-use-of.html)
+ * [Drobo v. ReadyNAS IV: ReadyNAS Just Does More](http://ceolaf.blogspot.nl/2008/04/drobo-v-readynas-iv-readynas-just-does.html)
+ * [Drobo v. ReadyNAS V: Conclusion](http://ceolaf.blogspot.nl/2008/04/drobo-v-readynas-iv-conclusion.html)
+
+> Almost regardless of your configuration, Drobo uses more of the drives' capacity. This means that, in addition costing less upfront, it will cost less over time for a given amount of available storage. Or, you'll get more storage for the same amount of money. And once you have filled all four drive bays, regardless of your configuration, if you replace your smallest drive with a larger drive you will get more space. Whereas with ReadyNAS, if your smallest drive is not the only drive that size (i.e. you have another drive the same size as your smallest drive, or even all four drives are the same size), you have to replace multiple drive to get more usable space.
+
+ * [Goodbye Drobo, Hello Synology](http://www.whizzosoftware.com/forums/blog/1/entry-52-goodbye-drobo-hello-synology)
+
+> Similar to [Drobo](http://www.drobo.com)'s BeyondRaid technology, [Synology](http://www.synology.com) offers Synology Hybrid Raid (SHR) for creating an array of different sized drives. This is the option I chose although there were also options for standard RAID levels. After what seemed like an eternity of Synology creating the SHR volume across the 3 disks, the new NAS was ready to be put through its paces.
+
+**Synology DiskStation DS1812+**
+
+ * CPU Frequency : Dual Core 2.13GHz
+ * Floating Point
+ * Memory : DDR3 1 GB (Expandable, up to 3GB) 
+ * Internal HDD/SSD : 3.5" or 2.5" SATA(II) X8 (Hard drive not included)
+ * Max Internal Capacity : 32TB (8X 4TB HDD) (Capacity may vary by RAID types)
+ * Hot Swappable HDD
+ * External HDD Interface : USB 3.0 Port X 2, USB 2.0 Port X 4, eSATA Port X 2
+ * Size (HxWxD) : 157 X 340 X 233 mm
+ * Weight : 5.21Kg
+ * LAN : Gigabit X 2
+ * Link Aggregation
+ * Wake on LAN/WAN
+
+**Synology DiskStation DS2413+**
+
+ * CPU Frequency : Dual Core 2.13 GHz
+ * Floating Point
+ * Memory : DDR3 2 GB (Expandable up to 4 GB) 
+ * Internal HDD/SSD : 3.5" or 2.5" SATA(II) X 12 (Hard drive not included)
+ * Max Internal Capacity : 48 TB (4 TB HDD X 12) (Capacity may vary by RAID types)
+ * Hot Swappable HDD
+ * External HDD Interface : USB 3.0 Port X 2, USB 2.0 Port X 4, Expansion Port X 1
+ * Size (HxWxD) : 270 x 300 x 340 mm
+ * Weight : 9.93 kg
+ * LAN : Gigabit X 2
+ * Link Aggregation
+ * Wake on LAN/WAN
 
 ### Nach vier Wochen ###
 
