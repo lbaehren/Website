@@ -18,6 +18,20 @@ tags: Blog
 ----
 **in preparation ...**
 
+### Testing SWIR C library on multiple platforms ###
+
+Yes, testing does matter and is useful! Sure, often this is not the most popular subject when it comes to software development, but trying to build and run your code on multiple platforms will help increasing its quality.
+
+![Testing summary](/blog/2013/2013-03/2013-03-21_testing_summary.png)
+
+ * [CMake](http://www.cmake.org)
+ * [CTest]()
+ * [CDash](http://www.cdash.org)
+ * [VirtualBox](https://www.virtualbox.org)
+ * [Debian](http://www.debian.org)
+ * [Fedora](http://fedoraproject.org)
+ * [CentOS](http://www.centos.org)
+
 ### Galashow der Meistermagier ###
 
 Da koennen die Vorankuendigungen auch noch so toll sein und in noch so grossen Buchstaben daherkommen -- unter einer "Galashow der Meistermagier" verstehe dann doch etwas anderes als das, was da vor knapp zwei Wochen unter dem Dach des Jungen Theater Bonn geboten wurde.
@@ -88,35 +102,22 @@ It is for quite a while now that the large of my two Drobos is reminding me to a
 
 > Similar to [Drobo](http://www.drobo.com)'s BeyondRaid technology, [Synology](http://www.synology.com) offers Synology Hybrid Raid (SHR) for creating an array of different sized drives. This is the option I chose although there were also options for standard RAID levels. After what seemed like an eternity of Synology creating the SHR volume across the 3 disks, the new NAS was ready to be put through its paces.
 
-**Synology DiskStation DS1812+**
-
- * CPU Frequency : Dual Core 2.13GHz
- * Floating Point
- * Memory : DDR3 1 GB (Expandable, up to 3GB) 
- * Internal HDD/SSD : 3.5" or 2.5" SATA(II) X8 (Hard drive not included)
- * Max Internal Capacity : 32TB (8X 4TB HDD) (Capacity may vary by RAID types)
- * Hot Swappable HDD
- * External HDD Interface : USB 3.0 Port X 2, USB 2.0 Port X 4, eSATA Port X 2
- * Size (HxWxD) : 157 X 340 X 233 mm
- * Weight : 5.21Kg
- * LAN : Gigabit X 2
- * Link Aggregation
- * Wake on LAN/WAN
-
-**Synology DiskStation DS2413+**
-
- * CPU Frequency : Dual Core 2.13 GHz
- * Floating Point
- * Memory : DDR3 2 GB (Expandable up to 4 GB) 
- * Internal HDD/SSD : 3.5" or 2.5" SATA(II) X 12 (Hard drive not included)
- * Max Internal Capacity : 48 TB (4 TB HDD X 12) (Capacity may vary by RAID types)
- * Hot Swappable HDD
- * External HDD Interface : USB 3.0 Port X 2, USB 2.0 Port X 4, Expansion Port X 1
- * Size (HxWxD) : 270 x 300 x 340 mm
- * Weight : 9.93 kg
- * LAN : Gigabit X 2
- * Link Aggregation
- * Wake on LAN/WAN
+|                       | Synology DS1812+         | Synology DS2413+                   |
+|-----------------------|--------------------------|------------------------------------|
+| CPU Frequency         | Dual Core 2.13GHz        | Dual Core 2.13 GHz                 |
+| Memory                | DDR3 1 GB  (3 GB)        | DDR3 2 GB  (4 GB)                  |
+| Size (HxWxD)          | 157 X 340 X 233 mm       | 270 x 300 x 340 mm                 |
+| Weight                | 5.21 kg                  | 9.93 kg                            |
+| LAN                   | Gigabit X 2              | Gigabit X 2                        |
+| Internal HDD/SSD      | 3.5" or 2.5" SATA(II) X8 | 3.5" or 2.5" SATA(II) X 12         |
+| Max Internal Capacity | 32TB (8X 4TB HDD)        | 48 TB (4 TB HDD X 12)              |
+|                       | Hot Swappable HDD        | Hot Swappable HDD                  |
+|                       | Link Aggregation         | Link Aggregation                   |
+|                       | Wake on LAN/WAN          | Wake on LAN/WAN                    |
+| External Interfaces   | 2x USB 3.0, 4x USB 2.0, 2x eSATA | 2x USB 3.0, 4x USB 2.0, 1x Expansion |
+| Noise Level           | 23.1 dB(A)                       | 21.5 dB(A)                           |
+| Power Consumption     | 71.5W (Access);                  | 111.1W (Access);                     |
+|                       | 28.6W (HDD Hibernation)          | 41.8W (HDD Hibernation)              |
 
 ### Nach vier Wochen ###
 
