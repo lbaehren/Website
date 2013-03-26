@@ -1,0 +1,19 @@
+---
+title: "Open-Source Alternativen zu Skype"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 26. March 2013 -- 17:29_
+
+Nachdem es gestern Abend wieder ein ziemlicher Krampf war [Skype](http:www.skype.com) dazu zu ueberreden mal laenger als eine Minute die Verbindung aufrecht zu erhalten, habe ich letzte Nacht noch damit begonnen nach moeglichen Alternativen zu suchen. Wie ich ja schon ueber [FLOSS Weekly](http://twit.tv/show/floss-weekly) mitbekommen habe, ist Skype bei weitem nicht die einzige VoIP Loesung, welche auf gleich mehreren Platformen zur Verfuegung steht... und auch als Open-Source Software entwickelt wird.
+
+Die Suche stellte sich als recht einfach heraus: alleine schon die Suchangabe "Skype Alternatives" fuehrt gleich auf eine Reihe Uebersichtsseiten, von welchen aus sich dann weiter springen laesst. Rein von der Beschreibung her -- dann aber auch einem etwas genaueren Nachlesen -- scheint mir [Jitsi](https://jitsi.org) das Antesten wert:
+
+> Jitsi (formerly SIP Communicator) is an audio/video and chat communicator that supports protocols such as SIP, XMPP/Jabber, AIM/ICQ, Windows Live, Yahoo! and many other useful features.
+>
+> Jitsi is Open Source / Free Software, and is available under the terms of the LGPL.
+
+Die Installation verlief reibungslos und auch die Aktivierung eines der Protokolle -- ich habe mich da fuer [Google Talk](http://www.google.com/talk) entschieden, da ich dies ueber meinen Email Account und Google+ bereits zur Verfuegung gestellt kriege -- erforderte lediglich ein paar Klicks. Was jetzt natuerlich mal interessant wird, ist wie es sich beim Einsatz in der Praxis verhaelt...

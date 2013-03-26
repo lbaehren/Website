@@ -9,6 +9,26 @@ tags: Blog
  
 **:::**
  
+### Open-Source Alternativen zu Skype ###
+
+
+
+
+_Tue, 26. March 2013 -- 17:29_
+
+Nachdem es gestern Abend wieder ein ziemlicher Krampf war [Skype](http:www.skype.com) dazu zu ueberreden mal laenger als eine Minute die Verbindung aufrecht zu erhalten, habe ich letzte Nacht noch damit begonnen nach moeglichen Alternativen zu suchen. Wie ich ja schon ueber [FLOSS Weekly](http://twit.tv/show/floss-weekly) mitbekommen habe, ist Skype bei weitem nicht die einzige VoIP Loesung, welche auf gleich mehreren Platformen zur Verfuegung steht... und auch als Open-Source Software entwickelt wird.
+
+Die Suche stellte sich als recht einfach heraus: alleine schon die Suchangabe "Skype Alternatives" fuehrt gleich auf eine Reihe Uebersichtsseiten, von welchen aus sich dann weiter springen laesst. Rein von der Beschreibung her -- dann aber auch einem etwas genaueren Nachlesen -- scheint mir [Jitsi](https://jitsi.org) das Antesten wert:
+
+> Jitsi (formerly SIP Communicator) is an audio/video and chat communicator that supports protocols such as SIP, XMPP/Jabber, AIM/ICQ, Windows Live, Yahoo! and many other useful features.
+>
+> Jitsi is Open Source / Free Software, and is available under the terms of the LGPL.
+
+Die Installation verlief reibungslos und auch die Aktivierung eines der Protokolle -- ich habe mich da fuer [Google Talk](http://www.google.com/talk) entschieden, da ich dies ueber meinen Email Account und Google+ bereits zur Verfuegung gestellt kriege -- erforderte lediglich ein paar Klicks. Was jetzt natuerlich mal interessant wird, ist wie es sich beim Einsatz in der Praxis verhaelt...
+ 
+**:::**
+ 
+ 
 ### Die Muehe wert ###
 
 
@@ -241,18 +261,6 @@ Also so richtig Spass macht das natuerlich auch nicht: wenn ich so gegen sechs U
 _Thu, 14. March 2013 -- 10:20_
 
 Also langsam kriege ich doch den Verdacht, dass dies nicht alleine an mir (oder zumindest an meinem Rechner liegt): gerade eben habe ich versucht mich via Skype mit dem Muetterchen zu unterhalten, aber mit unschoener Regelmaessigkeit ist die Verbindung zusammengebrochen. Zunaechst einmal war einsichtig der Ton weg (was ich ja schon den Anrufen mit Julia kenne), dann brach die Verbindung komplett zusammen. Interessanterweise liess sich die Verbindung dann aber auch nicht wieder herstellen ohne Skype zunaechst neu zu starten; wenn ich einfach nur den Anruf wieder neu starte, dann kriege ich zwar die Nachricht, dies nun versucht wird, aber der normalerweise damit einhergehende Klingelton bleibt komplett aus. Waehrend ich bei meiner Wohnung hier in Urecht vielleicht noch den Verdacht gehabt haette, dass es an dem lokalen WLAN liegt, so kann ich dies hier bei [SRON](http://www.sron.nl) wohl mit ziemlicher Sicherheit ausschliessen. Folgerichtig habe ich eben schon einmal geschaut, ob es vielleicht irgendwelche Meldung in Bezug auf Verbindungsprobleme gibt, aber wirklich brauchbares ist dabei nicht aufgetaucht. Das werde ich in jedem Fall mal im Auge behalten, denn es ist schon nervig, wenn einem das Gespraech im Minutentakt unterbrochen wird.
- 
-**:::**
- 
- 
-### Nun auch hier ###
-
-
-
-
-_Wed, 13. March 2013 -- 10:16_
-
-Ich denke mal nicht, dass wir es mit Verhaeltnissen zu tun kriegen werden, wie dies die letzten beiden Tage im Rheinland der Fall war -- aber als ich heute Morgen aus dem Haus bin, kamen mir auch hier in Utrech ein paar Schneeflocken entgegen. Auf dem Weg zur Uni war schon deutlich zu erkennen, dass sich langsam eine weisse Decke ueber den Boden legt, langsam zwar aber bestaendig. Da es hier die letzten Tage ja auch durchweg kalt war, bleibt der frisch gefallene Schnee liegen und verschwindet nicht sofort wieder. Ich lasse mich einfach mal ueberraschen was daraus wird -- was mich natuerlich am meisten interessiert unter diesen Umstaenden ist, wie es denn morgen um die Fahrt zurueck nach Bonn bestellt ist. Ich werde in jedem Fall mal Augen und Ohren offen halten muessen, damit ich ggf. geruestet bin...
  
 **:::**
  
