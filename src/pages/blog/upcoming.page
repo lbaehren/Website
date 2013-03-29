@@ -18,17 +18,6 @@ tags: Blog
 ----
 **in preparation ...**
 
-### The Statues Walked ###
-
-> Was it ecocide? The collapse of the mini-civilization on Easter Island (Rapa Nui) has long been considered one of the great Green morality tales. Once the people there cut down the last tree, story goes, they were doomed. Their famous statues were an arms race that completed the exhaustion of their all-too-finite resources. Moral of the story: Easter Island equals Earth Island: we must not repeat its tragedy with the planet.
->
-> It’s a satisfying tale, but apparently wrong. The reality is far more interesting.
-
- * [Terry Hunt](http://www.anthropology.hawaii.edu/People/Faculty/Hunt/index.html), Carl Lipo
- * [Seminars About Long-term Thinking](http://longnow.org/seminars/02013/jan/17/statues-walked-what-really-happened-easter-island)
- * [Long Now Foundation](http://longnow.org)
- * This talk was given at [Cowell Theatre](http://fortmason.org/venuerental/cowell-theater) in [Fort Mason Center](http://www.fortmason.org) in San Francisco, California on Thursday January 17, 02013
-
 ### Testing SWIR C library on multiple platforms ###
 
 Yes, testing does matter and is useful! Sure, often this is not the most popular subject when it comes to software development, but trying to build and run your code on multiple platforms will help increasing its quality.
