@@ -9,6 +9,22 @@ tags: Blog
  
 **:::**
  
+### Verbindungsprobleme ###
+
+
+
+
+_Mon, 01. April 2013 -- 23:26_
+
+Also je oefter ich mir dies so anschaue, desto mehr frage ich mich, wo eigentlich genau in der Kette der Fehler liegt. Es scheint nicht nicht unbedingt an dem lokalen Netzwerk -- oder zumindest an der Signalstaerke des WLAN -- zu liegen. Eine der sicherlich naheliegenden Vermutungen war, dass es SChwierigkeiten mit dem WLAN selber gibt; wenn ich mir aber die Netzwerk-Diagnose anschaue, dann kommen mir da doch ein wenig Zweifel dran.
+
+![Internet connection diagnostics](/blog/2013/2013-04/2013-04-01_network_connection.png)
+
+Ich habe den Check mittlerweile zig Mal wiederholt, aber worauf es immer wieder hinauslaeuft ist, dass der Rechner zwar mit mit dem WLAN verbunden ist, aber keine Verbindung nach draussen kriegt. Waehrend man sich an dieser Stelle allerlei Gedanke machen koennte reicht es letzten Endes, dass ich vom Internet abgekoppelt bin -- die einzige Weise, dies zumindest fuer eine Weile wieder ans Laufen zu kriegen ist, dass ich die Netzwerkkarte deaktiviere und anschliessend wieder starte. Zufriedenstellend ist dies natuerlich nicht, aber eine bessere Moeglichkeit ist mir bisher leider nicht eingefallen.
+ 
+**:::**
+ 
+ 
 ### Unterwegs in Utrecht (2) ###
 
 
@@ -223,28 +239,6 @@ Nun weiss ich natuerlich nicht, was Menschen dazu bewegt eine Suche "umsteigen i
 _Tue, 19. March 2013 -- 22:10_
 
 Hat wieder nicht geklappt. Da dachte ich mir, dass ich mich doch einfach mal via Skype bei dem Muetterchen melde -- nachdem ich da ja in den Ohren gelegen habe, dass dies weitaus mehr Sinn machen wuerde, als bei mir hier in den Niederlanden auf dem Handy anzurufen -- aber den Erfahrungen der letzten Woche folgend ist auch diesmal die Verbindung alle paar Sekunden (und nicht Minuten) zusammengebrochen. Interessanterweise scheint die Verbindungsanzeige nicht notwendigerweise im Zusammemhang mit der tatsaechlichen Qualitaet der Verbindung zu stehen -- selbst wenn die nette kleine Wolke vollkommen ausgefuellt dargestellt wird, so heisst dies noch lange nicht, dass Skype auch wirklich in der Lage ist ein Gespraech aufrecht zu erhalten.
- 
-**:::**
- 
- 
-### Und noch eine Tasse ###
-
-
-
-
-_Tue, 19. March 2013 -- 21:45_
-
-Da habe ich ihn also hinter mir, den Einfuehrungskurs bei [SRON](http://www.sron.nl). Von 10 bis 13 Uhr gab es Informationen fuer Mitarbeiter, welche vor einer Weile hier im Institut zu arbeiten begonnen haben. Wie sich herausstellte ist "vor einer Weile" durchaus ein etwas dehnbarer Begriff, denn schliesslich hatten wir doch einige Kandidaten welche bereits laenger als ein halbes Jahr hier sind, sich dementsprechend wohl mit den meisten Dingen auskennen. Gut, je nach dem woran man arbeitet und in wie weit man sich selber umschaut gibt es sicherlich noch ausreichend Dinge, welche sich dazulernen lassen -- die Reinraeume duerften wohl etwas sein, womit eher wenige Leute hier vor Ort von Tag zu Tag zu tun haben (auch wenn wir eine Person in der Runde hatten, welche im Lithographie-Bereich taetig ist).
-
-| 10:00 - 10:15 | Registration and welcome coffee / tea, shake hands |
-| 10:15 - 11:00 | Start and welcome by Roel Gathier + presentation |
-| 11:00 - 11:30 | Presentation project by Jeroen Rietjens |
-| 11:30 - 11:45 | Coffee break |
-| 12:00 - 13:00 | Cleanroom and Testfacilities SR&T (2 groups) |
-| 13:00         | Lunch |
-| 13:30         | Evaluation form, present and closing |
-
-Neben der Fuehrung durch die Raeumlichkeiten im Untergeschoss gab es noch zwei Vortraege: einen ueber Geschichte und Profil des Instituts, den anderen ueber eines Projekte, welches sich gerade noch in der Phase der Machbarkeitsstudien befindet. Als kroenenden Abschluss -- nach dem Ausfuellen eines kurzen Fragebogens zu der Einfuehrung -- gab es dann noch einen SRON Becher fuer alle Teilnehmer: "A New Star" prangt da in grossen Lettern, mit dem SRON Logo auf der anderen Seite. Damit waere ich nun also mit weiteren Memorabilia eingedeckt, auch wenn ich fuer den taeglichen Bedarf bei meinem eigenen Teebecher bleiben werde -- alles andere ist von der Groesse her einfach nicht akzeptabel.
  
 **:::**
  
