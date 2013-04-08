@@ -9,6 +9,48 @@ tags: Blog
  
 **:::**
  
+### Immer noch nicht ###
+
+
+
+
+_Mon, 08. April 2013 -- 06:35_
+
+Da habe ich also den grossen Teil des gestrigen Abends damit verbracht mich um Julias Laptop zu kuemmern... und der X-Server will immer noch nicht den Desktop darstellen! Was genau da los ist will mir leider immer noch nicht so 100%ig einleuchten; ich habe zwar mittlerweile ein paar Hinweise aufsammeln koennen, aber bisher ergibt sich noch kein Gesamtbild, von welchem ich eine Loesung ableiten kann. Was mich ein wenig stutzig macht ist die Tatsache, dass der X-Server (welcher fuer die graphische Oberflaeche verantwortlich ist) durchaus zu starten scheint -- wenn ich den Rechner eine Weile in Ruhe lasse, kriege ich den Screensaver, ueber welchen ich mich dann wieder einloggen kann. Was aber nach wie vor bleibt ist, dass ich statt dem Desktop einfach nur einen schwarzen Bildschirm erhalte -- ein Verhalten was sich in keiner Weise mit dem deckt, was ich bei dem vorhergehenden Test beobachten konnte (da lief alles fein und ich konnte einfach wieder in das neue System booten und anschliessend damit arbeiten).
+ 
+**:::**
+ 
+ 
+### Abgeschossen ###
+
+
+
+
+_Sun, 07. April 2013 -- 22:34_
+
+Also so hatte ich mir dies ganz bestimmt nicht vorgestellt... Statt einfach nur -- wie dies bei dem Test auf meiner VM gelaufen ist -- die Fedora Version auf Julias Laptop von 17 auf 18 umzustellen, sitze ich nun immer noch hier und versuche das System dazu zu ueberreden, vernuenfig zu starten. Was auch immer genau da der Fall ist, es entzieht sich leider bis jetzt immer noch meinem Verstaendnis.
+ 
+**:::**
+ 
+ 
+### Trotz Gegenlicht ###
+
+
+
+
+_Sat, 06. April 2013 -- 22:14_
+
+Es ist ja mittlerweile schon einge Male vorgekommen, dass ich bei den HDR Bildern mehrfach hinschauen musste, um all die Details zu erkennen, welche dort mit einem Male zu Tage treten, mit ansonsten aber wahrscheinlich verborgen geblieben waere: vor allen Dingen Strukturdetails sind etwas, das erst dann zu Tage tritt, wenn man die volle zur Verfuegung stehende optische Information kombiniert. Ich hatte dies seinerzeit ja mal bei dem [Bild des 'SROND](/blog/2013/2013-01/2013-01-24_19-49.html) erwaehnt, welches am Abend entstanden war: die Reflektionen des Fussboden Musters auf der Seitenwand des Tresen war etwas, das mir bis dahin nicht aufgefunden war und sich auch auf den Einzelbildern nicht erkennen liess. In vergleichbarer Weise ist es mir bei einer Aufnahme ergangen, welche ich am Montag Abend gemacht habe...
+
+![Kirchturm](/blog/2013/2013-04/hdr_20130401_184554.jpg)
+
+Die Hintergrundgeschichte -- zumindest in groben Zuegen -- ist wie folgt: nach einer ausgiebigen Wanderung am Nachmittag, war das Abendlicht einfach zu verlockend, so dass ich noch ein zweites Mal aufgebrochen bin, diesmal ein wenig mehr in der Naehe der Wohnung. Im Anschluss an die Exkursion entlang des Kanals, habe ich mich ein wenig mehr Richtung Wohnviertel gehalten, um so in einem grossen Bogen den Weg zurueck zu finden -- als ein Resultat daraus verlief der letzte laengere Abschnitt meines Rundganges entlang der Goylaan... direkt der untergehenden Sonne entgegen. Auch wenn ich staendig nach einem interessanten Motiv Ausschau gehalten habe, wollte mir doch so schnell nichts ins Auge fallen -- bis zu dem Moment, wo ich in Sichtweite des Kreisels mit der Auffahrt zur Autobahn war. Auch wenn dies als Motiv jetzt nicht so sonderlich spannend gewirkt haette, so fand ich den Effekt des von hinten durch die Laermschutzwand strahlenden Sonnenlichtes schon ziemlich vielversprechend; dummerweise waren aber keine anderen Bauten zu finden, wo man eine vergleichbare Anordnung haette nutzen koennen. Als Alternative kam mir dann der Gedanke, dass es doch auch recht interessant aussehen koennte, sich eine markante Silhouette vor dem Hintergrund des feuerroten Abendhimmels zu schnappen. In diese Kategorie passte dann der Turm der nahe der Auffahrt stehenden Kirche: das Kreuz an der Spitze war gerade hoch genug um ueber die Laermschutzwand hinaus in den Abendhimmel hineinzuragen. Also schnell das Stativ aufgebaut und das Exposure-Bracketing von 7 auf 9 Aufnahmen umgestellt (kann ja nicht schaden noch einmal einen zusaetzlichen Stop nach oben und unten zur Verfuegung zu haben); von meiner Position aus hob sich der dunkle Umriss des Kirchturms klar gegen den wolkenbedenkten Himmel ab.
+
+Als die Aufnahmen auf dem Rechner landeten und ich das erste HDR gerechnet hatte, war ich doch ein wenig verbluefft: waehrend ich mir ziemlich sicher war vor Ort keinerlei Struktur auf dem Turm erkennen zu koennen, tauchten auf dem resultierenden Bild mit einem Male Schriftzuege auf. Diese sind zwar bei Tage recht gut zu erkennen, aber bei Gegenlicht verschwanden sie komplett im Schatten. Durchaus faszinierend, dass sich via HDR Details herausarbeiten lassen, welche anders komplett verborgen geblieben waeren.
+ 
+**:::**
+ 
+ 
 ### Heimischer Arbeitsplatz ###
 
 
@@ -191,60 +233,6 @@ Es gibt so ein paar Dinge [hier im Institut](http://www.sron.nl), welche ich in 
 > Vanaf vandaag (woensdag 27 maart 2013) zijn de foto's van Jochem Baselmans te zien op 't Kunstpad.
 
 Warum die Bilder unten an der Wand zu finden sind kann ich mir durchaus denken: durchweg handelt es sich um Aufnahmen, welche hoch in den Bergen zur Zeit des Sonnenuntergangs entstanden sind -- das bedeutet also sehr kraeftige Farben (vor allen Dingen natuerlich Rottoene) und Profillinien. Was ich persoenlich allerdings ein wenig vermisse ist eine groessere Bandbreite an Motiven, denn letzten Endes handelt es sich in allen Faellen um die gleiche Szenerie. Aber gut, sind wir da mal nicht zu hart in der Kritik, denn schliesslich sind die Aufnahmen ja zumindest von der technischen Seite her gut gemacht. Waere natuerlich einmal interessant sich ein wenig mehr darueber kundig zu machen, wie eigentlich die Zusammenstellung fuer den kunstpad vorgenommen wird; es gibt da wohl eine Kommission (bei dwelcher dann wahrscheinlich Vorschlaege eingereicht werden koennen), aber wie genau die Entscheidung getroffen wird, was da praesentiert werden soll, weiss ich bisher nicht. Vielleicht ist dies etwas, dass ich einmal im Hinterkopf behalten sollte, denn schliesslich habe ich ja gerade erst damit begonnen Utrecht und Umgebung mit der Kamera zu erkunden...
- 
-**:::**
- 
- 
-### Open-Source Alternativen zu Skype ###
-
-
-
-
-_Tue, 26. March 2013 -- 17:29_
-
-Nachdem es gestern Abend wieder ein ziemlicher Krampf war [Skype](http:www.skype.com) dazu zu ueberreden mal laenger als eine Minute die Verbindung aufrecht zu erhalten, habe ich letzte Nacht noch damit begonnen nach moeglichen Alternativen zu suchen. Wie ich ja schon ueber [FLOSS Weekly](http://twit.tv/show/floss-weekly) mitbekommen habe, ist Skype bei weitem nicht die einzige VoIP Loesung, welche auf gleich mehreren Platformen zur Verfuegung steht... und auch als Open-Source Software entwickelt wird.
-
-Die Suche stellte sich als recht einfach heraus: alleine schon die Suchangabe "Skype Alternatives" fuehrt gleich auf eine Reihe Uebersichtsseiten, von welchen aus sich dann weiter springen laesst. Rein von der Beschreibung her -- dann aber auch einem etwas genaueren Nachlesen -- scheint mir [Jitsi](https://jitsi.org) das Antesten wert:
-
-> Jitsi (formerly SIP Communicator) is an audio/video and chat communicator that supports protocols such as SIP, XMPP/Jabber, AIM/ICQ, Windows Live, Yahoo! and many other useful features.
->
-> Jitsi is Open Source / Free Software, and is available under the terms of the LGPL.
-
-Die Installation verlief reibungslos und auch die Aktivierung eines der Protokolle -- ich habe mich da fuer [Google Talk](http://www.google.com/talk) entschieden, da ich dies ueber meinen Email Account und Google+ bereits zur Verfuegung gestellt kriege -- erforderte lediglich ein paar Klicks. Was jetzt natuerlich mal interessant wird, ist wie es sich beim Einsatz in der Praxis verhaelt...
- 
-**:::**
- 
- 
-### Die Muehe wert ###
-
-
-
-
-_Mon, 25. March 2013 -- 22:06_
-
-Also auch wenn dies heute Morgen ein wenig anstrengend war mit so viel Gepaeck unterwegs zu sein, so hat sich der Aufwand im Laufe des Tages bereits gelohnt. Nachdem ich bisher im Institu weitestgehend nur mit dem Laptop-Display gearbeitet habe, befindet sich nun endlich mal noch das zwei 23" Cinema Display am Arbeitsplatz aufgebaut. Das macht wirklich einen riesen Unterschied, denn so kann ich endlich wieder in gewohnter Weise alle zum Programmieren notwendigen Fenster so anordnen, dass ich einfach einen ganz anderen Ueberblick habe.
-
-Fuer ein photographisches Update hat es heute noch nicht gereicht, aber das werde ich dann wohl mal noch im Laufe des morgigen Tages nachholen und einreichen.
- 
-**:::**
- 
- 
-### Kein guter Start ###
-
-
-
-
-_Sun, 24. March 2013 -- 23:20_
-
-Also irgendwie hatte ich mir den Start in die Fahrrad Jahreszeit 2013 ein wenig anders vorgestellt. Nachdem ich am gestrigen Tage ja noch mein Fahrrad wieder ein wenig hergerichtet habe -- vor allen Dingen musste da wieder Luft in die Schlaeuche -- und die Wettervorhersage fuer den Sonntag recht positiv war (ok, ein wenig kuehl noch, aber solange es trocken bleibt ist dies eigentlich nicht so schlimm), hatte ich mir vorgenommen nach laengerer Abstinenz endlich wieder einmal zum Sport zu radeln. Ist ja schliesslich eine feine Sache dort ein wenig vorgewaermt aufzutauchen, so dass man die Muskeln nicht noch extra wach machen muss. Wie sich allerdings herausstellte, war dies heute irgendwie nicht so ganz mein Tag...
-
-... was schon damit losging, dass mich die Halterung fuer das Handy noch vor dem Eintreffen in der Duisdorfer Fussgaengerzone im Stich gelassen hat. Julia hatte diese Woche bei einer ihrer Einkaufstouren eine Halterung ausfindig gemacht, mit welcher sich das Handy vorne am Fahrradlenker festmachen laesst, so dass man z.B. bei einem laengeren Ausflug das Navi mitlaufen lassen kann ohne dieses staendig aus der Hosen- oder Jackentasche zu fischen, nur um auf das Display zu schauen. Schien alles recht nett, nur hat die Konstruktion einen kleinen Schoenheitsfehler: die Druckpolster an den Seiten -- mit welchen das Handy festgehalten werden soll -- verhindern zwar, dass die "Bordelektonik" zur Seite abhaut... nicht aber den durch eine Unebenheit im Boden verursachten Todessprung nach oben aus der Halterung heraus. Habe ich leider auf dem Selbsttester Weg herausfinden muessen, denn mit einem Male habe ich ein Scheppern hinter mir vernommen... und eine leere Haltung vor mir! Das bedeutet also: fuer den praktischen Einsatz (es sei denn man hat es vor im einer Trainingshalle auf abolut glattem Untergrund zu fahren) ist es unbedingt noetig noch einmal eine Schlaufe ueber das Handy zu ziehen, sonst ist es nur eine Frage der Zeit, bis man anhalten darf um es wieder von der Strasse aufzusammeln.
-
-Ebenfalls nicht so toll fand ich die Entdeckung, dass meine Kondition ueber den Winter doch um einiges abgebaut hat, denn ich musste doch um einige mehr strampeln, als ich dies noch vom Herbst in Erinnerung hatte. Das gute an dieser Sache ist sicherlich, dass sich dies durch ein wenig Training wieder hinbiegen lassen sollte -- da ich ja schon ein wenig darauf hoffe, dass sich der Fruehling demaechst ein wenig selbstbewusster aus den Loechern traut, werde ich die wieder ins Program fuer den Sonntag mit aufnehmen.
-
-Der eindeutig am wenigsten spassige Aspekt an der heutigen Tour war, dass die Strecke zurueck zu Fuss absolvieren musste. Ich musste in der Vergangenheit ja schon immer wieder an einigen Stellen groessere Ansammlungen an Glassscherben umschiffen, aber das heisst jetzt nicht, dass es dafuer wirklich feste Plaetze gibt. Gut, es existieren ein paar Stellen, wo das Risiko deutlich hoeher ist -- z.B. auf der Nordbruecke und der Senke kur vor Mondorf -- aber das heisst leider nicht, dass man man ansonsten sorglos durch die Gegend radeln kann. So ist es mir dann leider aber doch passiert, dass mit einem Male ein lautes "Peng" gab und dass Fahrrad nach kurzer ein ziemlich wackeliges Fahrverhalten zeigte. Was auch immer mir da in die Reifen gekommen ist kann ist leider nicht sagen -- das Resultat war aber allemal, dass ich mir die Weiterfahrt abschminken konnte. Als immerhin noch recht positiv erwies sich, dass ich ja hoertechnisch bestens versorgt war, so dass ich nicht einfach nur dumm durch die Gegend laufen musste. Von der Zeit her hat mich das, was die Planung fuer den Nachmittag betraf, natuerlich ein wenig aus dem Tritt gebracht, aber das eigentliche Problem unterwegs beheben war leider nicht. Da ich fuer den Rueckweg eh wieder den GPS Tracker mitlaufen hatte, habe ich so noch einmal den (einigermassen) direkten Vergleich zwischen Fahrrad und Fussmarsch (auch wenn mir ein etwas anderer Verlauf sicherlich lieber gewesen waere). Jetzt muss ich also mal schauen, dass ich das Fahrrad wieder repariert kriege, ehe es auf die naechste Tour gehen kann, aber dies muss es leider bis nach Ostern warten.
-
-Ich hoffe doch mal, dass dies nur der Start war und dies keine Vorschau ist...
  
 **:::**
  

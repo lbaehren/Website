@@ -1,0 +1,11 @@
+---
+title: "Immer noch nicht"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Mon, 08. April 2013 -- 06:35_
+
+Da habe ich also den grossen Teil des gestrigen Abends damit verbracht mich um Julias Laptop zu kuemmern... und der X-Server will immer noch nicht den Desktop darstellen! Was genau da los ist will mir leider immer noch nicht so 100%ig einleuchten; ich habe zwar mittlerweile ein paar Hinweise aufsammeln koennen, aber bisher ergibt sich noch kein Gesamtbild, von welchem ich eine Loesung ableiten kann. Was mich ein wenig stutzig macht ist die Tatsache, dass der X-Server (welcher fuer die graphische Oberflaeche verantwortlich ist) durchaus zu starten scheint -- wenn ich den Rechner eine Weile in Ruhe lasse, kriege ich den Screensaver, ueber welchen ich mich dann wieder einloggen kann. Was aber nach wie vor bleibt ist, dass ich statt dem Desktop einfach nur einen schwarzen Bildschirm erhalte -- ein Verhalten was sich in keiner Weise mit dem deckt, was ich bei dem vorhergehenden Test beobachten konnte (da lief alles fein und ich konnte einfach wieder in das neue System booten und anschliessend damit arbeiten).
