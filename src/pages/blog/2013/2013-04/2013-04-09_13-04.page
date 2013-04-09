@@ -1,0 +1,23 @@
+---
+title: "Fragwuerdig"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 09. April 2013 -- 13:04_
+
+Manchmal muss man einfach ein klein wenig weiter lesen, um die Dinge zu entdecken, welche einen dann schliesslich stutzig machen:
+
+> Bei der EU-Wettbewerbsbehörde ging eine Kartellbeschwerde von Google-Konkurrenten ein. Sie werfen Google unter anderem vor, das Mobil-Betriebssystem Android dafür zu nutzen, um Google-Apps auf der großen Mehrheit der heutzutage verkauften Smartphones einen wettbewerbswidrigen Vorteil zu verschaffen. So gebe es vertragliche Bestimmungen, die Smartphone-Hersteller, die Android verwenden und gleichzeitig Apps etwa für Youtube mitliefern wollten, dazu zwängen, diese und andere Google-Apps besonders prominent auf dem Homescreen der Smartphones zu platzieren.
+>
+> Hinter der Kartellbeschwerde steckt die Organisation "Fairsearch Europe", in der sich unter anderem Firmen wie Nokia, Microsoft und Oracle, aber auch kleinere Suchmaschinen- und Mobilfunk-Konkurrenten Googles zusammengeschlossen haben. Sie sehen in Googles Vorgehen bei Android den Versuch, eine wettbewerbswidrige Machtposition im Mobilfunkmarkt zu erlangen und die Kontrolle über die User-Daten für Online-Werbung auch bei den Mobilanwendungen zu zementieren.
+
+Der vollstaendige Artikel befindet sich -- wie so haeufig -- auf [Heise.de](http://www.heise.de/newsticker/meldung/EU-Kartellbeschwerde-wegen-Android-Microsoft-Nokia-Oracle-Co-gehen-gegen-Google-vor-1837524.html). Was ich daran aber interessant finde (und da komme ich dann ans Nachdenken), ist die Tatsache dass sich eine Organisation mit dem Namen "Fairsearch Europe" darueber beschwert, dass Google ueber eine zu gewichtige Stellung im Markt verfuegt; auch wenn man diesem Punkt fuer sich genommen durchaus etwas abgewinnen kann, so ist es doch viel entscheidender sich vor Augen zu halten, wer sich hier zu Wort meldet. Keine der namentlich erwaehnten Firmen -- Nokia, Microsoft und Oracle -- kann auch nur in vergleichbarer Weise ein Engagement im Open-Source Bereich vorweisen, wie dies bei Google der Fall ist; sicher, letztere machen dies auch nicht einfach nur aus Gutmenschentum, aber es ist doch schon ein Unterschied, ob ich ein System wie Android zur Verfuegung stelle, oder aber versuche in Produkt wie 'Windows Phone" unter's Volk zu bringen. Wie zuletzt Facebook gezeigt hat, ist das von Google vorangetriebene System so offen, dass ich Apps dafuer entwickeln kann, welche tief mit dem System selber verflochten sind -- ich bezweifel mal ganz stark, dass dies bei Microsoft Produkten in vergleichbarer Weise moeglich waere. Wer hat sich also zusammengefunden, um sich hier zu beschweren:
+
+ * Eine Firma, welche es vor Jahren verpennt hat im Handymarkt relevant zu bleiben und nach wie vor ums Ueberleben kaempft.
+ * Eine Firma, welche welche mit Projekten wie Java und OpenOffice gezeigt hat, wie schnell man die Open-Source Community ausgrenzen kann.
+ * Eine Firma welche vor nicht allzu langer Zeit noch eine saftige Geldstrafe erhalten hat, weil sie durch entsprechenden Massnahmen die Wahlfreiheit von Nutzern eingeschraenkt und alternative Produkte verdraengt hat.
+
+Wie gesagt, es gibt sicherlich einiges, was sich an Google kritisieren laesst, aber wenn ich mir hier anschaue, als welcher Richtung der Wind weht, dann bin ich da doch mal ganz vorsichtig mit dem Drang auf diesen Wagen mit aufzuspringen.

@@ -17,6 +17,20 @@ tags: Blog
 ----
 **in preparation ...**
 
+### Funktioniert wieder ###
+
+Schoener waere es natuerlich gewesen, wenn ich dies 24 Stunden frueher geschafft haette, aber auch so faellt mir schon einmal ein Stein vom Herzen. Letzte Nacht habe ich mich noch einmal auf die Suche nach Hinweisen gemacht, wie ich die beim Update zu Tage getretenen Probleme mit Julias Laptop in den Griff kriege. Nachdem ich am Sonntag Abend durchaus ein paar Hinweise finden konnte, hatte ich immer noch das Problem, dass der Login-Screen nicht auftauchte und die graphische Oberflaeche nicht angezeigt wurde. 
+
+~~~~
+sudo yum install @lxde-desktop
+~~~~
+
+ * [Upgrading Fedora using yum](https://fedoraproject.org/wiki/Upgrading_Fedora_using_yum)
+
+~~~~
+yum --releasever=18 distro-sync
+~~~~
+
 ### Vorgestellt ###
 
 Durchaus eine Weile her, dass ich von dem kurzen [Beitrag fuer eine anstehende Ausgabe der SRON News](/blog/2013/2013-02/2013-02-08_01-27.html) berichtet hatte -- von Remko um ein paar Zeilen zu meiner Personen gebeten, habe ich versucht mich nicht alleine auf meine bisherige berufliche Laufbahn zu beschraenken, sondern ein wenig darueber hinaus zu berichten.
