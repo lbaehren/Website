@@ -14,9 +14,6 @@ tags: Blog
 ----
 **completed ...**
 
-----
-**in preparation ...**
-
 ### Funktioniert wieder ###
 
 Schoener waere es natuerlich gewesen, wenn ich dies 24 Stunden frueher geschafft haette, aber auch so faellt mir schon einmal ein Stein vom Herzen. In der Nacht von Montag auf Dienstag habe ich mich noch einmal auf die Suche nach Hinweisen gemacht, wie ich die beim Update zu Tage getretenen Probleme mit Julias Laptop in den Griff kriege. Nachdem ich am Sonntag Abend durchaus ein paar Hinweise finden konnte, hatte ich immer noch das Problem, dass der Login-Screen nicht auftauchte und die graphische Oberflaeche nicht angezeigt wurde. Gut immerhin, dass zumindest die restliche Funktionalitaet weitestgehend erhalten war -- so war ich wenigstens in der Lage von der Kommandozeile aus zu arbeiten und e.g. einen Blick auf die Logfiles zu werfen (immer ein guter Startpunkt in einem derartigen Fall). Von dort aus habe ich mich dann Stueck fuer Stueck vorgetastet, hin bis zu dem Punkt, wo ich das Problem zumindest einigermassen einkreisen konnte. Was mir vor allen Dingen auffiel, war die grosse Anzahl an Paketen, welche fuer eine i686 Architektur gedacht sind... statt wie eigentlich erwartet fuer x86_64; also habe ich da erst einmal ein wenig aufgraeumt und geschaut dass ich da, wo dies noetig war, die entsprechend Pakete in der richtigen Version vorliegen hatte. War aber leider immer noch nicht genug, denn der Desktop wollte nach wie vor nicht erscheinen.
@@ -25,17 +22,30 @@ Nach dem Vorlegen einer kleinen Auswahl war seinerzeit ja die Entscheidung fuer 
 
 > LXDE has been available for Fedora since version 8. In Fedora 10 it became an official feature, and for Fedora 13 a custom LXDE Spin (installable Live CD) was released. Since then, each release of Fedora had their own LXDE Spin.
 
-Auch wenn ich traditionell mehr mit [Debian](http://www.debian.org) gearbeitet habe, so ruecke ich davon mittlerweile mehr und mehr ab: zu einem guten Teil liegt dies wohl daran, dass vor allen Dingen die _stable_ Release so alt ist, dass man viele Paket noch einmal von installieren muss, um einigermassen aktuell zu bleiben (bzw. Features zu nutzen die juenger als zwei Jahre sind). [OpenSuSE](http://en.opensuse.org) wollte mir nie so recht gefallen, vor allen Dingen weil die fuer die Administration notwendige Infrastruktur haeufig sehr deutlich von dem abweicht, was anonsten Standard ist. Spaetestens seit dem letzten Jahr, habe ich mir den Spass gemacht einfach mal unterschiedlichste Linux Disributionen auszuprobieren: [VirtualBox](https://www.virtualbox.org) sei dank ist es ja recht einfach mal eine Testinstallation vorzunehmen, ohne gleich den kompletten Rechner plattzumachen, und sich ein wenig umzuschauen.
+Auch wenn ich traditionell mehr mit [Debian](http://www.debian.org) gearbeitet habe, so ruecke ich davon mittlerweile mehr und mehr ab: zu einem guten Teil liegt dies wohl daran, dass vor allen Dingen die _stable_ Release so alt ist, dass man viele Paket noch einmal von installieren muss, um einigermassen aktuell zu bleiben (bzw. Features zu nutzen die juenger als zwei Jahre sind). [OpenSuSE](http://en.opensuse.org) wollte mir nie so recht gefallen, vor allen Dingen weil die fuer die Administration notwendige Infrastruktur haeufig sehr deutlich von dem abweicht, was anonsten Standard ist. Spaetestens seit dem letzten Jahr, habe ich mir den Spass gemacht einfach mal unterschiedlichste Linux Disributionen auszuprobieren: [VirtualBox](https://www.virtualbox.org) sei dank ist es ja recht einfach mal eine Testinstallation vorzunehmen, ohne gleich den kompletten Rechner plattzumachen, und sich ein wenig umzuschauen. So kommt es denn auch, dass ich -- als es darum ging das auf Julias Rechner laufende Windows 7 platt zu machen -- ein kleine Auwahl vorlegen konnte, was sich denn alternativ installieren liesse. Waehrend ich fuer mich deutlich weniger Skrupel habe eine Beta-Version laufen zu lassen, schien im Falle von Julias Laptop ein wenig mehr Stabilitaet angebracht zu sein. Da zu dem Zeitpunkt Fedora 18 ja noch nicht einmal der Beta-Phase war (meine ich zumindest), war es also ein Fedora 17 welches ich eingerichtet habe. Die Zeit bleibt aber nicht stehen und so ist die 18er Version schon seit einer Weile als offizielle Release erhaeltlich -- Grund genug also da mal ein Upgrade vorzunehmen. Waehrend mir die betreffende Route bei Debian-artigen Distributionen ja bestens bekannt ist --
+
+~~~~
+apt-get dist-upgrade
+~~~~
+
+-- musste ich fuer Fedora nachschauen, was denn die Standardmethode ist ein laufendes System von einer Release zur naechst hoeheren umzustellen. Stellt sich heraus, dass dies grundsaetzlich nicht viel komplizierter ist, als ich dies bei anderen Distributionen erfahren hatte... nur leider mit dem kleinen Unterschied, dass Fehler auftauchten, welche bei dem Testrun auf einer virtuellen Maschine nicht zu Tage getreten waren. Statt bei einem normalen Start in den Desktop zu booten, hatte ich einen komplett schwarzen Bildschirm vor mir. Es dauerte eine Weile bis ich dahinter kam, dass der X-Server durchaus am Laufen war, denn wenn ich den Rechner eine Weile stehen liess, meldete sich mit einem Male der Screensaver. Eine der wirklich hilfreichen Dinge unter einem Linux-System ist natuerlich, dass es durchaus eine Alternative zur graphischen Oberflaeche gibt: die Kommandozeile. Von dort aus habe ich mich dann auf dem Rechner umgeschaut und mir als eine der ersten Dinge die Logfiles vorgenommen. Auf diesem Wege liess sich dann herausarbeiten, dass das Laden einzelner Komponenten des Desktop nicht funktionierte; als erste Massnahme habe ich daher versucht die entsprechenden Paket neu zu installieren -- brachte aber leider auch nicht das erwunenschte Resultat. Nach ein wenig mehr Recherche bin ich dann endlich auf die Information gestossen, wie sich fuer einen LXDE Desktop benoetigten Komponenten auf einem bisher anderweitig konfigurierten System installieren lassen:
 
 ~~~~
 sudo yum install @lxde-desktop
 ~~~~
 
- * [Upgrading Fedora using yum](https://fedoraproject.org/wiki/Upgrading_Fedora_using_yum)
+Dass ich damit auf dem richtigen Weg war liesst sich daran erkennen, dass die Fehlermeldungen ein gutes Stueck weniger uwrden. So 100%ig am Ziel angekommen war ich aber noch nicht. Folgerichtig habe ich mir noch einmal die Dokumentation zu den unterschiedlichen Upgrade Methoden vorgenommen: statt dies also ueber ein spezelles Script laufen zu lassen, gibt es durchaus die [Moglichkeit das Upgrade mit dem Yum Package-Manager](https://fedoraproject.org/wiki/Upgrading_Fedora_using_yum) durchzufuehren. Mit dem Hinweis ausgestattet, habe ich dann noch einmal explizit ein
 
 ~~~~
 yum --releasever=18 distro-sync
 ~~~~
+
+laufen lassen, welches dann auch die als kritisch identifizierten Pakete von einer i686 auf eine x86_64 Version umgestellt hat. Mit dem naechsten Reboot hatte ich dann endlich wieder das Bild vor mir, welches ich seit dem Upgrade vermisst hatte. Dumm nur, dass mir die letzten beiden Schritte nicht schon 24 Stunden frueher eingefallen waren, denn ansonsten haette ich Julias Laptop garnicht mit nach Utrecht nehmen muessen (was fuer mich selber deutlich wenig ein Problem war, als fuer Julia).
+
+Heisst dies nun, dass ein Upgrade unter Fedora grundsaetzlich ein Problem ist? Ich glaube so weit wuerde ich nicht gehen wollen, wohl kommt es aber darauf an, welchen Pfad man einschlaegt. Wenn ich mir die Vorgehensweise unter Debian als Vergleich heranziehe, dann scheint es mir auch in diesem Fall das Beste zu sein, mit dem Package-Manager zu arbeiten -- dies ist keinesfalls komplizierter und scheint durchaus stabler vom Resultat zu sein.
+
+----
+**in preparation ...**
 
 ### Vorgestellt ###
 
