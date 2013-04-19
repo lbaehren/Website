@@ -14,12 +14,49 @@ tags: Blog
 ----
 **completed ...**
 
+### Percy Jackson & the Lightning Thief ###
+
+Also ich kann jetzt nicht unbedingt behaupten, dass mich dies umgehauen hat: statt mich alleine auf das Hoeren von Nachrichten zu beschraenken habe ich endlich wieder die diversen Hoerbucher in Angriff zu nehmen. Auch wenn es da noch einige Serien gibt, welche ich fortsetzen muss -- in erster Linie fallen mir das die [Dresden Files](http://en.wikipedia.org/wiki/The_Dresden_Files) ein, wo ich irgendwo in Buch vier haengen geblieben bin -- so fiel fuer die Neustart die Wahl zunaechst einmal auf den ersten Band der [Percy Jackson & The Olympians](https://en.wikipedia.org/wiki/Percy_Jackson_%26_the_Olympians) Reihe: [The Lightning Thief](https://en.wikipedia.org/wiki/The_Lightning_Thief).
+
+> Twelve-year-old Percy Jackson is on the most dangerous quest of his life. With the help of a satyr and a daughter of Athena, Percy must journey across the United States to catch a thief who has stolen the original weapon of mass destruction – Zeus’ master bolt. Along the way, he must face a host of mythological enemies determined to stop him. Most of all, he must come to terms with a father he has never known, and an Oracle that has warned him of betrayal by a friend.
+
+Klingt grundsaetzlich ja ganz nett und klingt ein wenig nach einer amerikanischen Variation von _Harry Potter_. Auch wenn ich bisher noch keinen Hinweis dazu gelesen hat, in wie weit die Erfolgsgeschichte des britischen Zauberlehrlings Author [Rick Riordan](http://www.rickriordan.com) inspiriert hat, so laesst sich dieser Vergleich mit Sicherheit nicht vermeiden. Und wenn man da einmal beginnt Parallelen zu ziehen, dann finde ich schneidet die in die Moderne (und natuerlich nach Amerika) verpflanzte griechische Mythologie nicht sonderlich gut ab: vieles kommt mir sehr an den Haaren herbeigezogen und erzwungen vor. Damit wir uns hier nicht missverstehen: ich habe nichts gegen fantastische Welten -- was ich aber dann schon erwarte ist, dass diese eine gewisse innere Konsistenz aufweisen. Eine Welt mit doppelter Schwerkraft... kein Problem. Eine Welt in welcher die Seele der Menschen sich in Tierform ausserhalb des Koerpers manifestiert... "The Golden Compass" hat dies sehr gut vorgemacht. Eine Parallelwelt, in welcher Zauberer und Hexen ausserhalb der Wahrnehmung Normalsterblicher interagieren... "Harry Potter" kommt hier mit einem ziemlich guten Vorschlag, wie dies aussehen koennte. Olympus, den Herrschaftssitz der Goetter aber in die 600. Etage des Empire State Buildings zu verlegen und den Hades in ein Plattenstudio in L.A. zu verlegen -- das klingt mir einfach viel zu clichehaft, als dass ich mich da dauerhaft drauf einlassen koennte.
+
+Schaut man sich die Art und Weise an, in welcher sich Sagengestalten unerkannt unters Volk mischen, dann kommt einem ganz klar wieder _Harry Potter_ in den Sinn: hier sind es ja schliesslich die Zauberer welche Grenzgaenger zwischen den Welten sind... auch wenn so simple Dinge wie das U-Bahn fahren schon eine Herausforderung darstellt. Ich habe durchaus einige Zeit damit verbracht mit einer Idee zu kommen, wie sich vielleicht einige der Schwachpunkte eliminieren liessen -- eine wirklich zufriedenstellende Loesung ist mir aber bisher noch nicht eingefallen. Gut, ist vielleicht auch nicht meine vorrangige Aufgabe. Erstaunlicherweise aber haben die Buecher gleiche eine ganze Reihe an Preisen abgeraeumt und nach [Percy Jackson & the Lightning Thief](http://www.imdb.com/title/tt0814255) (2010) ist auch schon die Verfilmung des zweiten Buches in vollem Gange.
+
 ----
 **in preparation ...**
 
-### Vorgestellt ###
+### CMake support for SWIR Python package ###
 
-Durchaus eine Weile her, dass ich von dem kurzen [Beitrag fuer eine anstehende Ausgabe der SRON News](/blog/2013/2013-02/2013-02-08_01-27.html) berichtet hatte -- von Remko um ein paar Zeilen zu meiner Personen gebeten, habe ich versucht mich nicht alleine auf meine bisherige berufliche Laufbahn zu beschraenken, sondern ein wenig darueber hinaus zu berichten.
+One of the pending issues on my task list has been the integration of the SWIR Python package with the rest of the code, connecting everything through the [CMake](http://www.cmake.org) configuration environment. Though Python comes with its own configuration and build tools -- as well as testing frameworks -- we definitely want to have all the parts integrated into a single package. The obstacle for quite a while however was that we were lacking agreement on how to organize the directory structure of the source code; as it is with software developers from different background, there may be diverging views on how to lay out the individual sub-parts of the software -- this took a while to settle, but as begin of this week this has been resolved. Hence with this show-stopper out of the way, during lunch-time I went ahead with migrating the C sources.
+
+~~~~
+Merge made by the 'recursive' strategy.
+ CMakeLists.txt                               |  29 +++++++++---
+ config/cmake/modules/FindPythonModules.cmake | 112 +++++++++++++++++++++++++++++++++++++++++++++++
+ docs/sphinx/CMakeLists.txt                   |   2 +-
+ source/CMakeLists.txt                        |   1 +
+ source/c/swir/data/dataset.c                 |  23 ++++++----
+ source/c/swir/data/dataset.h                 |   7 ++-
+ source/python/CMakeLists.txt                 |  86 ++++++++++++++++++++++++++++++++++++
+ source/python/INSTALL                        |  14 ++++--
+ 8 files changed, 255 insertions(+), 19 deletions(-)
+ create mode 100644 config/cmake/modules/FindPythonModules.cmake
+ create mode 100644 source/python/CMakeLists.txt
+~~~~
+
+Checking for the modules is rather straight forward:
+
+~~~~
+execute_process (
+        COMMAND ${PYTHON_EXECUTABLE} -c "import ${_pythonModule};" 
+        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+        RESULT_VARIABLE TestPythonModuleResult
+        OUTPUT_VARIABLE TestPythonModuleOutput
+        ERROR_VARIABLE TestPythonModuleError
+        )
+~~~~
 
 ### Testing SWIR C library on multiple platforms ###
 
