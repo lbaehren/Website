@@ -1,0 +1,17 @@
+---
+title: "Lubuntu"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Mon, 22. April 2013 -- 11:52_
+
+Looks like there are still variants of [Ubuntu](http://www.ubuntu.com) out there, which are suitable as a desktop system:
+
+> The objective of the [Lubuntu](https://help.ubuntu.com/community/Lubuntu) project is to create a variant of Ubuntu that is lighter, less resource hungry and more energy-efficient by using lightweight applications and LXDE, The Lightweight X11 Desktop Environment, as its default GUI.
+>
+> Lubuntu is targeted at PC and laptop users running on low-spec hardware that, in most cases, just don't have enough resources for all the bells and whistles of the "full-featured" mainstream distributions. Members of the team take care of LXDE and other packages that are part of Lubuntu. Lubuntu received official recognition as a formal member of the Ubuntu family, commencing with Lubuntu 11.10. 
+
+With the release of Ubuntu 13.04 only a few days away, [Ars Technica](http://arstechnica.com) ran an [article reviewing the various flavours](http://arstechnica.com/information-technology/2013/04/the-flavors-of-ubuntu-from-a-to-z-or-at-least-from-kubuntu-to-xubuntu), which are quite a few. I have to admit that I pretty much dropped Ubuntu as choice for a desktop system with the introduction of the Unity desktop -- all installations since then have been server configurations with no graphical environment. However with the considerably more lightweight [LXDE](http://www.lxde.org) I am at least tempted to do another test installation and have a look around.

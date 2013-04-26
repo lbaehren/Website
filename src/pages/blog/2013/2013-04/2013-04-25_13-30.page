@@ -1,0 +1,49 @@
+---
+title: "Documentation generation"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Thu, 25. April 2013 -- 13:30_
+
+There still is an ongoing discussion concerning the handling of documentation as part of the TROPOMI SWIR calibration software. While the large body of C code lends itself to be processed via [Doxygen](http://www.doxygen.org), the growing amount of [Python](http://www.python.org) code might need a little bit of rethinking. Up until this point we have two separate documentation Generators: [Doxygen](http://www.doxygen.org) and [Sphinx](http://sphinx-doc.org) - both of which to not (yet) talk to each other. One the other hand this might not be necessary after all: as I recently discovered, there is a simple tool available ([doxypy](http://code.foosel.org/doxypy)) which allows for the transformation of Python docstrings into documentation block as readable by Doxygen -- with this as an input filter, the need for two separate documentation generators becomes obsolete (at least to my mind).
+
+Adding the input filter to the chain is rather straight forward: the `doxygen.config.in`, which is processed by [CMake](http://www.cmake.org) has placeholders
+
+~~~~
+    INPUT_FILTER           = "${DOXYGEN_INPUT_FILTER}"
+    FILTER_SOURCE_FILES    = ${DOXYGEN_FILTER_SOURCE_FILES}
+~~~~
+
+for the variables defined by CMake
+
+~~~~
+    ## If DoxyPy is available, use it as input filter for Doxygen
+    if (DOXYPY_EXECUTABLE)
+        set (DOXYGEN_FILTER_SOURCE_FILES "YES")
+        set (DOXYGEN_INPUT_FILTER "${PYTHON_EXECUTABLE} ${DOXYPY_EXECUTABLE}")
+    else (DOXYPY_EXECUTABLE)
+        set (DOXYGEN_FILTER_SOURCE_FILES "NO")
+        set (DOXYGEN_INPUT_FILTER "")
+    endif (DOXYPY_EXECUTABLE)
+~~~~
+
+which also means the everything can be handled during configuration step for the software. The result actually is quite nice, because now -- instead of the preformatted blocks of text I got earlier -- the docstrings are processed and formatted properly. With this step now Doxygen is the single-shop stop to generate a single integrated documentation from all our source code.
+
+One of the remaining debates now -- apart from the question if what still is in Sphinx can be migrated to Doxygen -- when to generate and install the documentation. In order to have a bit more flexibility as an immediate measure I have added a new configuration option
+
+~~~~
+option (BUILD_DOCUMENTION "Build source code and extended documentation?" YES )
+~~~~
+
+which allows to control whether or not the directory containing all the instructions for generating the documentation will be added to the overall project:
+
+~~~~
+if (BUILD_DOCUMENTION)
+    add_subdirectory (docs)
+endif (BUILD_DOCUMENTION)
+~~~~~
+
+There still might be some discussion concerning the default value for the option, but with the changes made before lunch, there surely is more control over what is going to happen.

@@ -1,0 +1,17 @@
+---
+title: "Lesestoff"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 23. April 2013 -- 11:39_
+
+Ich denke mal es kann nicht schaden sich nicht einfach nur im Code zu vergraben, sondern auch die Augen ein wenig offen zu halten und zu schauen, was es sonst noch so gibt. Folgerichtig habe ich den Tag nicht direkt mit Programmieren begonnen, sondern mit zunaechst einmal zwei Paper durch den Drucker gejagt, welche ich Laufe dieser Woche noch zu lesen gedenke:
+
+ * [Dabbish, L.](http://lauradabbish.com), Stuart, C., Tsay, J., & Herbsleb, J. (2012). [Social coding in GitHub: Transparency and collaboration in an open software repository](http://herbsleb.org/web-pubs/pdfs/dabbish-social-2012.pdf). In Proceedings of the ACM Conference on Computer-Supported Cooperative Work (CSCW 2012), Bellevue, WA. ACM Press, NY: 1277-1286.
+
+ * [Lattner, C.](http://www.nondot.org/sabre) & Adve, V. (2004) [LLVM: A Compilation Framework for Lifelong Program Analysis & Transformation](http://llvm.org/pubs/2004-01-30-CGO-LLVM.html). Proceedings of the 2004 International Symposium on Code Generation and Optimization (CGO'04), Palo Alto, California, Mar. 2004.
+
+Bei beiden Papers handelt es sich um Tools, welche ich selber einsetze, so dass es nicht schaden kann, da ein wenig mehr Hintergrundwisssen aufzubauen.

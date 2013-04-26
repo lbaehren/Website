@@ -1,0 +1,29 @@
+---
+title: "Angekommen und angeschlossen"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Wed, 24. April 2013 -- 23:56_
+
+Das habe ich ja durchaus eine Weile in der Mache gehabt (wie dies so gerne der Fall ist), aber nachdem der Entschluss einmal gefallen war ging es doch recht zuegig: nachdem die Bestellung fuer die Synology DiskStation in der Nacht von Mittwoch auf Donnerstag [rausgegangen war](/blog/2013/2013-04/2013-04-18_01-39.html), traf gegen halb vier am Freitag Nachmittag eine Mail von [MindFactory](https://www.mindfactory.de) ein, dass die Bestellung nun via [DHL](http://www.dhl.de) auf dem Wege sei.
+
+> Folgende Waren wurden mit diesem Paket von uns verschickt:
+>
+> 1 x NASO Synology DiskStation DS2413+, 2x Gb LAN, schwarz
+
+Da das Geraet zum Zeitpunkt der Bestellung selber noch garnicht vorraetig war, sondern erst wieder fuer den Freitag erwartet wurde, muss die Bearbeitung vor Ort wirklich recht schnell verlaufen sein. Die bei dieser Meldung mitgeschickte Trackingnummer habe ich natuerlich sofort unter die Lupe genommen -- es war allerdings noch zu frueh, denn da das Paket anscheinend wirklich erst kurz vorher das Lager verlassen; desweiteren machte man mir nicht sonderlich viel Hoffnung auf eine schnelle Zustellung machen...
+
+> Aufträge, die freitags nach 16 Uhr als versandt gemeldet werden, werden durch die DHL erst am darauffolgenden Montag bearbeitet und sind daher auch erst Montag abends nachzuverfolgen.
+
+... wobei es sich aber um eine Kleinigkeit handelte, welche unterhalb des Links zur Paketverfolgung gelistet war und sich somit in dem Teil der Mail befand, welcher kaum noch Beachtung befand. Andererseits haette mich dies wohl kaum davon abgehalten bis zum Abend immer wieder mal zu schauen, ob es irgend ein Update gab. Das war auch ganz gut so, denn wie ein wenig spaeter aus dem Tracker ersichtlich wurde, wurde die Sendung bereits im Paketzentrum bearbeitet; da es sich natuerlich nicht um die erste via DHL verschickte Sendung handelte, liess sich einigermassen abschaetzen, wann den mit dem Eintreffen des Paketes zu rechnen sei. Von frueheren Malen war mir durchaus gelaeufig, dass die Ueberstellung von einem Paketzentrum zum anderen typischerweise noch im Laufe der Nacht geschieht -- in diesem Falle bedeutete dies also, dass das Paket in den fruehen Morgenstunden in Neuwied eintreffen wuerde... was dann wiederum auf eine mit Sicherheit grenzende Wahrscheinlichkeit hinauslief, dass die Sendung bis zum fruehen Nachmittag bei mir aufschlagen wuerde. Genau aus diesem Grunde habe ich dann auch den Abstecher in die Rheinaue (zum Flohmarkt) fallen lassen -- die Idee war zwar gewesen, dass wir uns dort ein wenig gemeinsam umschauen, bis Julia mit der Bahn nach Koeln aufbrechen musste, aber da es leider keinen sicheren Indikator dafuer gab, wann der DHL Bote vor der Haustuere stehen koennte, bin ich dann doch lieber zuhause geblieben.
+
+Ein guter Entschluss, denn um halb eins stand der DHL Wagen vor der Haustuere. Also schnell runter gelaufen und das Paket in Empfang genommen. Im Gegensatz zu irgendwelchem bei IKEA gekauften Moebeln gab es nichts grossartiges zusammen zu schrauben: Pake aufmachen, NAS inklusive mitgelieferter Kabel entnehmen und schon konnte ich mich an das Upgrade meiner Infrastruktur zur Achivierung meiner digitalen Daten machen. Bereits im Vorfeld hatte ich das neben dem Schreibtisch stehende, schmale Regal ausgemessen, in welchem bereits die beiden Drobos, diverse externe Festplatten und Musikelektonik untergebracht sind: wie sich dabei herausstellte ist das DS2413+ leider so breit, dass im gleichen Einschub leider keine Platz mehr fuer die Drobos bleibt. Der demnach notwendige Umbau ging einigermassen schnell von statten -- in der einen oder anderen Variante habe ich diese Prozedur ja schon ein paar Mal hinter mich gebracht, immer wieder notwendig geworden durch einen Ausbau der haeuslichen IT Infrastruktur. Was nun aufgebaut ist, kommt einer Rackloesung schon recht nahe:
+
+![Schrank mit Speicherstationen](/blog/2013/2013-04/hdr_20130420_133748.jpg)
+
+An diesem Punkt angekommen wurde es natuerlich Zeit alles miteinander zu verkabeln und das erste Mal zu starten: als Stromversorgung anschliessen und das NAS via Ethernet mit dem Rechner verbinden. Vor dem Start habe ich einen ersten Eindruck davon gewinnen koennen, wie es mit dem Einsetzen der Festplatten aussieht: waehrend es bei den Drobos ja vollkommen ausreicht die Frontplatte abzunehmen und die Festplatten in die dafuer vorgesehenen Slots zu schieben, muessen die Datentraeger beim Synology auf Wechselrahmen montiert werden. Klingt etwas komplizierter, ist aber mit ein paar Handgriffen erledigt und erweckt den Eindruck, dass es sich hierbei um eine sehr robuste Konstruktion handelt (auch wenn ich nie Angst hatte, dass mir bei einem der Drobos mit einem Male eine Festplatte herausspringen koennte). Das anschliessende Starten und Einrichten des Basis-Systems verlief -- wie verprochen -- ziemlich selbsterklaerend: Software-Updates installieren, Benutzer einrichten, Daten Volumes anlegen... und schon gibt es einen NAS Server im Haus, mittels welchem sich die Verwaltung und Sicherung der anfallenden Datenmengen zentralisieren laesst
+
+Dies heisst also, dass ich mich nun an dem Punkt befinde, wo ich mit der Migration und Konsolidierung der Daten beginnen kann: das wird aller Vorausschau eine ganze Weile dauern, denn schliesslich sprechend wir hier ueber mehrere TB, welche durch die Gegend bewegt werden wollen...

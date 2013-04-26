@@ -1,0 +1,17 @@
+---
+title: "Wikipedia wechselt von MySQL auf MariaDB"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 23. April 2013 -- 17:58_
+
+Na [das hier](http://www.heise.de/newsticker/meldung/Wikipedia-wechselt-von-MySQL-auf-MariaDB-1848140.html) nenne ich doch mal eine Nachricht, welche so manche andere Benutzer aufhorchen lassen sollte:
+
+> Vor wenigen Tagen hat die [Wikipedia-Foundation](https://wikimediafoundation.org) ihre britischen und deutschen Server sowie Wikidata von MySQL 5.1 auf [MariaDB](http://mariadb.org) 5.5 umgestellt. Das geht aus einem ausführlichen [Blogbeitrag](http://blog.wikimedia.org/2013/04/22/wikipedia-adopts-mariadb) des für die Migration verantwortlichen Asher Feldman hervor.
+>
+> Schon bisher lief bei Wikipedia kein Original-MySQL, sondern eine von Facebook modifizierte Variante. Mit deren Verbesserungen gegenüber Oracles Code sei man zwar zufrieden gewesen, aber MariaDB bringe weitere, nützliche Funktionen. Dazu gehören Verbesserungen im Query-Optimierer ebenso wie von Percona beigesteuerten Fähigkeiten, etwa das Speichern des Buffer-Pools. Beim Neustart kann der Server ihn sofort von der Platte lesen, sodass er keine Zeit mit dem Füllen des Pools vertrödelt.
+
+Das ist schon bemerkenswert, denn schliesslich handelt es sich mit [Wikipedia](http://www.wikipedia.org) ja nicht einfach um einen x-beliebigen Internet-Service, sondern um eine der wahrscheinlich meist besuchten Sites ueberhaupt; wenn man sich dort also entschliesst mit MySQL zu brechen und stattdessen MariaDB zu verwenden (welche von dem ueberwiegenden Teil des Original-Entwickler Teams gepflegt wird), dann koennte dies durchaus den Startschuss fuer weitere Umstellungen geben.
