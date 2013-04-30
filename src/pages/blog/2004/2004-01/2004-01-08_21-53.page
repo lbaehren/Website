@@ -1,11 +1,12 @@
 ---
-title: Waehrend der CD Brenner schreibt... 
+title: "Waehrend der CD Brenner schreibt..."
 in_menu: false
+author: "Lars Baehren"
 ---
 
 ## {title:} ##
 
-_Thursday, 08 January 2004 -- 21:53_ 
+_Thursday, 08 January 2004 -- 21:53_
 
 Hm, es sah zwar schon recht gut aus, letztendlich geklappt hat es allerdings noch nicht. Nach einigem Suchen und ein paar Umwegen haben wir uns mal einen aktuellen Datensatz an Land gezogen und versucht diesen in das Bonner Programm zu laden. Aetsch - funzt noch nicht. Also muß ich mich morgen mal in Ruhe dransetzen und die ganzen Konfigurationsangaben durchgehen, da diese alle noch auf das System von Andreas in Bonn angepaßt sind - sprich also bei mir hier wohl kaum laufen werden. Aber wie gesagt - das kommt morgen. Für heute Abend habe ich damit wohl erst einmal die Nase voll und werde mich daher lieber noch einmal ein wenig mit mehr theoretischen Dingen beschäftigen als mich durch Code zu wühlen.
 
