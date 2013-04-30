@@ -1,0 +1,13 @@
+---
+title: "In letzter Minute"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 30. April 2013 -- 15:22_
+
+Das war wirklich knapp, aber es hat gerade mal noch so geklappt. Ich hatte am Wochenende noch einmal zwei zusaetzliche 3 TB Festplatten fuer das Synology bestellt, damit ich ein wenig Luft mehr zum hin- und herschaufeln der Daten zu haben. Da es ausserdem ja eh das Vorhaben war, den Storage-Pool insgesamt groesser zu machen, war eigentlich von Anfang an klar, dass sich die Einschuebe in der DiskStation nach und nach fuellen wuerden. Wie mit der letzten via DHL zugestellten Sendung erneut bestaetigt, kann man mit recht guter Sicherheit davon ausgegen, dass der Lieferwagen zwischen 12 und 13 Uhr in der Brunnenstrasse auftaucht; folgerichtig hatte ich also darauf spekuliert, dass die Festplatten noch vor meiner Abfahrt nach Utrecht eintreffen wuerden -- damit haette ich dann zumindest die Chance die Platten einzubauen und fuer die Integration in den Pool initialisieren zu lassen. Voraussetzung dafuer war natuerlich, dass sich DHL an den ansonsten typischen Zeitrahmen halten wuerde...
+
+Wie schon bei der [Synology](http://www.synology.com) Bestellung habe ich auch hier wieder die Sendung ueber den Tracker mitverfolgt: wie bereits bekannt geht alles fuer Bonn ueber ein Paketzentrum bei Neuwied -- da das Paket in den fruehen Morgenstunden dort durchgekommen war, konnte ich mich also mit einer Zustellung noch am heutige Tage rechnen. Die Frage blieb allerdings: wuerde es zeitlich noch reichen, ehe ich zum Zug aufbrechen musste? Mit fortschreitender Zeit bin ich (verstaendlicherweise) nervoeser geworden, denn der gelbe Lieferwagen wollte und wollte sich einfach noch nicht blicken lassen. Was ich schon irgendwie vorbereiten konnte hatte ich bereits gemacht... alles was noch fehlten waren die Festplatten. Wir standen schon halb in der Wohnungstuere, da war draussen vor dem Tor ein bekanntes Motorgeraeusch zu vernehmen; also bin ich schnell dorthin gesprintet, um das Paket in Empfang zu nehmen. Waehrend ich es durchaus ueberlebt haette noch bis Donnerstag Abend zu warten, kam von Julia ein "Lauf mal noch schnell", so dass ich also im Eilverfahren zurueck an den SChreibtisch bin, um die Platten auszupacken, auf die Schlitten zu schrauben und dann in die Einschuebe einzusetzen. Der Start des Servers war eine kleine Geduldsprobe, verlief aber doch recht flink. Kaum war das Interface oben, habe ich mich eingeloggt um die Initialisierung der Platten und deren Einbindung in den Storage-Pool starten; alles weitere -- vor allen Dingen das Migrieren der Daten -- muss dann am Donnerstag erfolgen. 

@@ -9,6 +9,94 @@ tags: Blog
  
 **:::**
  
+### In letzter Minute ###
+
+
+
+
+_Tue, 30. April 2013 -- 15:22_
+
+Das war wirklich knapp, aber es hat gerade mal noch so geklappt. Ich hatte am Wochenende noch einmal zwei zusaetzliche 3 TB Festplatten fuer das Synology bestellt, damit ich ein wenig Luft mehr zum hin- und herschaufeln der Daten zu haben. Da es ausserdem ja eh das Vorhaben war, den Storage-Pool insgesamt groesser zu machen, war eigentlich von Anfang an klar, dass sich die Einschuebe in der DiskStation nach und nach fuellen wuerden. Wie mit der letzten via DHL zugestellten Sendung erneut bestaetigt, kann man mit recht guter Sicherheit davon ausgegen, dass der Lieferwagen zwischen 12 und 13 Uhr in der Brunnenstrasse auftaucht; folgerichtig hatte ich also darauf spekuliert, dass die Festplatten noch vor meiner Abfahrt nach Utrecht eintreffen wuerden -- damit haette ich dann zumindest die Chance die Platten einzubauen und fuer die Integration in den Pool initialisieren zu lassen. Voraussetzung dafuer war natuerlich, dass sich DHL an den ansonsten typischen Zeitrahmen halten wuerde...
+
+Wie schon bei der [Synology](http://www.synology.com) Bestellung habe ich auch hier wieder die Sendung ueber den Tracker mitverfolgt: wie bereits bekannt geht alles fuer Bonn ueber ein Paketzentrum bei Neuwied -- da das Paket in den fruehen Morgenstunden dort durchgekommen war, konnte ich mich also mit einer Zustellung noch am heutige Tage rechnen. Die Frage blieb allerdings: wuerde es zeitlich noch reichen, ehe ich zum Zug aufbrechen musste? Mit fortschreitender Zeit bin ich (verstaendlicherweise) nervoeser geworden, denn der gelbe Lieferwagen wollte und wollte sich einfach noch nicht blicken lassen. Was ich schon irgendwie vorbereiten konnte hatte ich bereits gemacht... alles was noch fehlten waren die Festplatten. Wir standen schon halb in der Wohnungstuere, da war draussen vor dem Tor ein bekanntes Motorgeraeusch zu vernehmen; also bin ich schnell dorthin gesprintet, um das Paket in Empfang zu nehmen. Waehrend ich es durchaus ueberlebt haette noch bis Donnerstag Abend zu warten, kam von Julia ein "Lauf mal noch schnell", so dass ich also im Eilverfahren zurueck an den SChreibtisch bin, um die Platten auszupacken, auf die Schlitten zu schrauben und dann in die Einschuebe einzusetzen. Der Start des Servers war eine kleine Geduldsprobe, verlief aber doch recht flink. Kaum war das Interface oben, habe ich mich eingeloggt um die Initialisierung der Platten und deren Einbindung in den Storage-Pool starten; alles weitere -- vor allen Dingen das Migrieren der Daten -- muss dann am Donnerstag erfolgen. 
+ 
+**:::**
+ 
+ 
+### Verspaetung in Koeln ###
+
+
+
+
+_Tue, 30. April 2013 -- 14:59_
+
+Also nach dem Abenteuer von letzter Woche habe ich recht wenig Lust darauf noch einmal irgendwo auf der Stecke zu stranden. Aus diesem Grunde sind bei mir im Kopf auch gleich die Alarmglocken angegangen, als ich eben die Durchsage hier am Koelner Bahnhof mitbekommen habe:
+
+> ... heute 10 Minuten spaeter. Grund dafuer ist ein technischer Defekt am Zug.
+
+Soll dies also heissen, dass ich jetzt in einem ICE sitze, welcher jederzeit unterwegs den Geist aufgeben und liegenbleiben kann? Ich will doch mal nicht hoffen!
+ 
+**:::**
+ 
+ 
+### Montag mal anders ###
+
+
+
+
+_Mon, 29. April 2013 -- 20:36_
+
+Da am morgigen Tag in den Niederlanden ja Koeniginnentag ist -- der letzte, dann gibt es ab dem kommenden Tag einen Koenigstag -- bleibt das Institut geschlossen. Aus dem Grunde erschien es mir einfach wenig sinnvoll auf heute Morgen wieder in aller Fruehe aufzubrechen -- stattdessen habe ich lieber von Bonn aus gearbeitet. Wieder auf in Richtung Utrecht geht es dann am morgigen Nachmittag, was mir immer noch ausreichend Gelegenheit laesst, mich ein wenig vor Ort umzuschauen und ggf. ein wenig an den Feierlichkeiten teilzuhaben.
+ 
+**:::**
+ 
+ 
+### Aufraeumen und Umraeumen ###
+
+
+
+
+_Sun, 28. April 2013 -- 22:47_
+
+Ich denke mal das waren die beiden wesentlichen Aktionen am heutigen Tag (sieht man einmal vom Sport und der damit verbundenen Fahrrad-Tour ab):
+
+ * Nachdem das Synology mit einer dritten Festplatte aufgeruestet ist, laufen hier fast ununterbrochen Kopieraktionen, um Daten von Drobo 1 auf die DiskStation zu verschieben. Angesichts der Tatsache, dass wir uns im TB Bereich befinden, dauert dies natuerlich eine Weile. Ein wenig erschweren kommt noch hinzu, dass ich derzeit nicht ueber ausreichend Festplatten verfuege, um alles auf einmal umziehen zu lassen: demnach muss ich immer erst einmal ausreichen Daten vom Drobo runterziehen, dass ich dort eine Platte rausziehen und in das Synology einbauen kann -- anschliessend geht es dann in die naechste Runde.
+
+ * Waehrend Julia draussen mit den Pflanzen beschaeftigt war, habe ich versucht in der Wohnung ein wenig klar Schiff zu machen. Was damit meine waere zum Beispiel mal die Berge an Papier angehen, welche sich auf dem Schreibtisch und den in den Regalen angehaeuft haben: im Zuge dieser Aktion habe ich gleich mal einen halben Wald zum Altpapier befoerdert -- eine vergleichbare Menge werde ich sicherlich noch einmal aussortieren koennen, wenn ich mich noch einmal dran begebe.
+ 
+**:::**
+ 
+ 
+### Expansion ###
+
+
+
+
+_Sat, 27. April 2013 -- 18:45_
+
+Nachdem ich ja fleissig Daten von einem Drobo auf das andere (oder direkt auf die DiskStation) umgeschaufelt habe, stand heute Mittag der erste Festplattenumbau auf dem Programm. Wie geplant habe ich die  kleinste der vier Festplatten in Drobo 1 aufgebaut und in die DiskStation eingeschraubt (die Befestigung ist ein wenig solider, als dies bei dem Drobo der Fall ist). Waehrend dieser ein handwerkliche Teil ohne weitere Zwischenfaelle verlief, musste ich leider erst einmal ein wenig mit der Netzwerkkonfiguration kaempfen, ehe ich das Synology ueberhaupt wieder ansprechend konnte; interessanterweise war es mir zwar moeglich die ueber das Netzwerk geteilten Order zu sehen und auch darauf zuzugriefen, die Kontrollverbindung zu dem Server brach aber immer wieder zusammen, so dass ich nicht in der Konfiguration die zusaetzliche Festplatte freischalten konnte. Nach einigem hin und her -- wo ich mir leider immer noch nicht so sicher bin, wo eigentlich genau das Problem lag -- ist es mir dann doch gelungen den Administrationszugang aufzurufen; seit dem ist der Server dabei den zur Verfuegung gestellten Speicherplatz zu reorganisieren und zu expandieren.
+
+![Expansion of volume on Synology DS](/blog/2013/2013-04/2013-04-27_synology.png)
+ 
+**:::**
+ 
+ 
+### Umschaufeln ###
+
+
+
+
+_Fri, 26. April 2013 -- 23:47_
+
+Jetzt, da ich ja wieder in Bonn bin, kann ich die am letzten Wochenende bereits begonnene Aktion in Sachen Daten umschaufeln fortfuehren: der Plan ist es nach wie vor alles weitestgehend auf das Synology umziehen zu lassen. Da ich aber rein von den Festplatten bisher noch recht gut auskommen sollte (ich konnte nur halt nicht alle einbauen), kann ich nicht einfach alles mit einem Schlag verschieben. Folgerichtig ist die ganze Aktion ein klein wenig komplizierter: da ich das Synology mit den Platten aus Drobo 1 aufruesten will, muss ich an letzterer Stelle erst einmal so viel Platz schaffen, dass ich dort anfangen kann Platten rauszuziehen. Platz schaffen heisst in diesem Fall, dass ich damit beschaeftigt bin Daten von Drobo 1 nach Drobo 2 und auf das Synology zu schieben. So kommt es dann auch, dass mir der Status auf dem Drobo Dashoard etwas anzeigt, was ich schon seit Jahren so nicht mehr gesehen habe: der zur Verfuegung stehende Speicherplatz wird groesser!
+
+![Drobo Dashboard](/blog/2013/2013-04/2013-04-26_drobo.png)
+
+Sicher, wie auch schon von Julia angemerkt, ist dies natuerlich nur die halbe Wahrheit: die Daten verschwinden nicht einfach, sondern ziehen von einem Geraet mit 4 Slots in einen Server mit 12 Slots um -- dass also der Bedarf insgesamt weniger wird laesst sich keinesfalls behaupten. Trotzdem ist es aber schon interessant mit anzuschauen, wie auf dem ersten Drobo, welches ich mir seinerzeit in Nijmegen wohnend zugelegt habe, weniger und weniger Daten praesent sind -- in der Tat bald so wenige, dass ich die kleinste der vier Festplatten entfernen und in das Synology einbauen kann.
+ 
+**:::**
+ 
+ 
 ### Zielgerade ###
 
 
@@ -183,102 +271,6 @@ Anhand der Karte hatte ich mir vorher grob die Route zurecht gelegt -- ich hatte
 _Tue, 23. April 2013 -- 21:37_
 
 So, noch eine einzige Folge, dann habe ich es endlich geschafft auch noch die zweite Season von [Dollhouse](http://www.imdb.com/title/tt1135300) zu Ende zu schauen. Da ich ja schon ein wenig systematischer vorgehen wollte, was das "abarbeiten" der diversesten TV-Shows betrifft -- parallel schauen ist keine so sonderlich gute Idee -- war klar, dass erst einmal dort weitermachen sollte, wo mich ulia seinerzeit abgehaengt hat. Ist irgendwie ja schon witzig: auch wenn es garnicht so einfach ist eine Story zu finden, welche uns beiden zusagt, so geschieht es in den Faellen, wo dies einmal zutrifft, typischerweise so, dass ich derjenige bin, welcher es zuletzt am Ende der Serie angelangt. Gut, ich kann mir natuerlich auch nicht beliebig die Naechte um die Ohren schlagen, denn schliesslich wuerde ich ansonsten tagsueber kaum noch etwas zustande bringen -- wenn ich aber einmal an einer Geschichte dran bin moechte ich natuerlich auch gerne wissen wie das Ende davon aussieht (fuer den Fall dass es einen entsprechenden Abschluss gibt, was ja nicht notwendigerweise der Fall sein muss).
- 
-**:::**
- 
- 
-### Wikipedia wechselt von MySQL auf MariaDB ###
-
-
-
-
-_Tue, 23. April 2013 -- 17:58_
-
-Na [das hier](http://www.heise.de/newsticker/meldung/Wikipedia-wechselt-von-MySQL-auf-MariaDB-1848140.html) nenne ich doch mal eine Nachricht, welche so manche andere Benutzer aufhorchen lassen sollte:
-
-> Vor wenigen Tagen hat die [Wikipedia-Foundation](https://wikimediafoundation.org) ihre britischen und deutschen Server sowie Wikidata von MySQL 5.1 auf [MariaDB](http://mariadb.org) 5.5 umgestellt. Das geht aus einem ausführlichen [Blogbeitrag](http://blog.wikimedia.org/2013/04/22/wikipedia-adopts-mariadb) des für die Migration verantwortlichen Asher Feldman hervor.
->
-> Schon bisher lief bei Wikipedia kein Original-MySQL, sondern eine von Facebook modifizierte Variante. Mit deren Verbesserungen gegenüber Oracles Code sei man zwar zufrieden gewesen, aber MariaDB bringe weitere, nützliche Funktionen. Dazu gehören Verbesserungen im Query-Optimierer ebenso wie von Percona beigesteuerten Fähigkeiten, etwa das Speichern des Buffer-Pools. Beim Neustart kann der Server ihn sofort von der Platte lesen, sodass er keine Zeit mit dem Füllen des Pools vertrödelt.
-
-Das ist schon bemerkenswert, denn schliesslich handelt es sich mit [Wikipedia](http://www.wikipedia.org) ja nicht einfach um einen x-beliebigen Internet-Service, sondern um eine der wahrscheinlich meist besuchten Sites ueberhaupt; wenn man sich dort also entschliesst mit MySQL zu brechen und stattdessen MariaDB zu verwenden (welche von dem ueberwiegenden Teil des Original-Entwickler Teams gepflegt wird), dann koennte dies durchaus den Startschuss fuer weitere Umstellungen geben.
- 
-**:::**
- 
- 
-### Lesestoff ###
-
-
-
-
-_Tue, 23. April 2013 -- 11:39_
-
-Ich denke mal es kann nicht schaden sich nicht einfach nur im Code zu vergraben, sondern auch die Augen ein wenig offen zu halten und zu schauen, was es sonst noch so gibt. Folgerichtig habe ich den Tag nicht direkt mit Programmieren begonnen, sondern mit zunaechst einmal zwei Paper durch den Drucker gejagt, welche ich Laufe dieser Woche noch zu lesen gedenke:
-
- * [Dabbish, L.](http://lauradabbish.com), Stuart, C., Tsay, J., & Herbsleb, J. (2012). [Social coding in GitHub: Transparency and collaboration in an open software repository](http://herbsleb.org/web-pubs/pdfs/dabbish-social-2012.pdf). In Proceedings of the ACM Conference on Computer-Supported Cooperative Work (CSCW 2012), Bellevue, WA. ACM Press, NY: 1277-1286.
-
- * [Lattner, C.](http://www.nondot.org/sabre) & Adve, V. (2004) [LLVM: A Compilation Framework for Lifelong Program Analysis & Transformation](http://llvm.org/pubs/2004-01-30-CGO-LLVM.html). Proceedings of the 2004 International Symposium on Code Generation and Optimization (CGO'04), Palo Alto, California, Mar. 2004.
-
-Bei beiden Papers handelt es sich um Tools, welche ich selber einsetze, so dass es nicht schaden kann, da ein wenig mehr Hintergrundwisssen aufzubauen.
- 
-**:::**
- 
- 
-### Lubuntu ###
-
-
-
-
-_Mon, 22. April 2013 -- 11:52_
-
-Looks like there are still variants of [Ubuntu](http://www.ubuntu.com) out there, which are suitable as a desktop system:
-
-> The objective of the [Lubuntu](https://help.ubuntu.com/community/Lubuntu) project is to create a variant of Ubuntu that is lighter, less resource hungry and more energy-efficient by using lightweight applications and LXDE, The Lightweight X11 Desktop Environment, as its default GUI.
->
-> Lubuntu is targeted at PC and laptop users running on low-spec hardware that, in most cases, just don't have enough resources for all the bells and whistles of the "full-featured" mainstream distributions. Members of the team take care of LXDE and other packages that are part of Lubuntu. Lubuntu received official recognition as a formal member of the Ubuntu family, commencing with Lubuntu 11.10. 
-
-With the release of Ubuntu 13.04 only a few days away, [Ars Technica](http://arstechnica.com) ran an [article reviewing the various flavours](http://arstechnica.com/information-technology/2013/04/the-flavors-of-ubuntu-from-a-to-z-or-at-least-from-kubuntu-to-xubuntu), which are quite a few. I have to admit that I pretty much dropped Ubuntu as choice for a desktop system with the introduction of the Unity desktop -- all installations since then have been server configurations with no graphical environment. However with the considerably more lightweight [LXDE](http://www.lxde.org) I am at least tempted to do another test installation and have a look around.
- 
-**:::**
- 
- 
-### Reisealternative ###
-
-
-
-
-_Mon, 22. April 2013 -- 05:34_
-
-Ich denke mal, dass ich ich mir wirklich ein paar Alternativen fuer die Verbindungen zurecht legen sollte: auch wenn mir dies bisher (gluecklicherweise) noch nicht passiert ist, so ist die Regionalbahn von Rheinbach nach Bonn mit 10 Minuten Verspaetung angekuendigt. Dies sollte immer noch ausreichen, um meine Verbindungen nach Koeln zu kriegen, aber es kann sicherlich nicht schaden Alternativen breit zu haben fuer den Fall, dass die Bahn wirklich einmal ausfaellt. Das Problem ist sicherlich, dass es um diese fruehe Zeit nicht so sonderlich viel andere Moeglichkeiten gibt: letzten Endes waere die Fahrt mit dem Bus die einzige realistische Alternative, nur dies hat eben das Problem, dass a) nicht so sonderlich Busse um diese Zeit fahren und b) diese hoechstwahrscheinlich zu lange bis zum Hauptbahnhof brauchen wuerden, dass ich noch meinen Anschluss nach Koeln kriegen koennte. Der letzten Endes entscheidende Punkt ist natuerlich, dass ich den ICE von Koeln aus schaffe -- grundsaetzlich kaeme also alles in Frage, was mich rechtzeitig dort eintreffen laesst, nur leider sind die Optionen recht begrenzt.
- 
-**:::**
- 
- 
-### The Sea of Monsters ###
-
-
-
-
-_Sun, 21. April 2013 -- 18:30_
-
-Auch wenn mich der erste Band der "Percy Jackson & the Olympians" Reihe nicht so sonderlich vom Hocker gerissen hatte, so war mir auch gestern einfach nicht nach Nachrichten. Waehrend ich hier zuhause noch ein wenig gewuehlt und auf mein Synology NAS gewartet habe, fiel die Wahl fuer den Zeitvertreib auf Band zwei -- teils wohl auch um zu schauen, ob dieser besser ist als das erste Buch. Ich denke mal schon, dass man dies mit Recht behaupten kann. Die Geschichte hat zwar immer noch einige Schwaechen -- und auch der permantente Vergleich mit "Harry Potter" geht nicht weg -- aber die Geschichte wirkt deutlich weniger konstruiert und verlaeuft fluessiger; dies ist zu einem grossen Teil wohl einfach der Tatsache geschuldet, dass sich die Handlung mehr im Reich der Sagen bewegt und nicht staendig versucht griechische Goetter ins amerikanische Alltagsleben hineinzuweben. Auch wenn man dies beim ersten Band vielleicht schon ein wenig erahnen konnte, aber spaetestens ab Band zwei ist deutlich, dass den Buechern insgesamt ein groesser angelegter Handlungsbogen zugrunde liegt: die Dinge werden ein wenig komplexer und was hier geschieht sieht klar danach aus, als wuerden sich unterschiedliche Kontrahenten fuer eine groessere Aktion vorbereiten und in Stellung bringen. Ich denke ma; unter diesen Umstaenden werde ich mal schauen, was Buch drei zu bieten hat...
- 
-**:::**
- 
- 
-### Percy Jackson & the Lightning Thief ###
-
-
-
-
-_Sat, 20. April 2013 -- 00:24_
-
-Also ich kann jetzt nicht unbedingt behaupten, dass mich dies umgehauen hat: statt mich alleine auf das Hoeren von Nachrichten zu beschraenken habe ich endlich wieder die diversen Hoerbucher in Angriff zu nehmen. Auch wenn es da noch einige Serien gibt, welche ich fortsetzen muss -- in erster Linie fallen mir das die [Dresden Files](http://en.wikipedia.org/wiki/The_Dresden_Files) ein, wo ich irgendwo in Buch vier haengen geblieben bin -- so fiel fuer die Neustart die Wahl zunaechst einmal auf den ersten Band der [Percy Jackson & The Olympians](https://en.wikipedia.org/wiki/Percy_Jackson_%26_the_Olympians) Reihe: [The Lightning Thief](https://en.wikipedia.org/wiki/The_Lightning_Thief).
-
-> Twelve-year-old Percy Jackson is on the most dangerous quest of his life. With the help of a satyr and a daughter of Athena, Percy must journey across the United States to catch a thief who has stolen the original weapon of mass destruction – Zeus’ master bolt. Along the way, he must face a host of mythological enemies determined to stop him. Most of all, he must come to terms with a father he has never known, and an Oracle that has warned him of betrayal by a friend.
-
-Klingt grundsaetzlich ja ganz nett und klingt ein wenig nach einer amerikanischen Variation von _Harry Potter_. Auch wenn ich bisher noch keinen Hinweis dazu gelesen hat, in wie weit die Erfolgsgeschichte des britischen Zauberlehrlings Author [Rick Riordan](http://www.rickriordan.com) inspiriert hat, so laesst sich dieser Vergleich mit Sicherheit nicht vermeiden. Und wenn man da einmal beginnt Parallelen zu ziehen, dann finde ich schneidet die in die Moderne (und natuerlich nach Amerika) verpflanzte griechische Mythologie nicht sonderlich gut ab: vieles kommt mir sehr an den Haaren herbeigezogen und erzwungen vor. Damit wir uns hier nicht missverstehen: ich habe nichts gegen fantastische Welten -- was ich aber dann schon erwarte ist, dass diese eine gewisse innere Konsistenz aufweisen. Eine Welt mit doppelter Schwerkraft... kein Problem. Eine Welt in welcher die Seele der Menschen sich in Tierform ausserhalb des Koerpers manifestiert... [The Golden Compass](http://www.imdb.com/title/tt0385752) hat dies sehr gut vorgemacht. Eine Parallelwelt, in welcher Zauberer und Hexen ausserhalb der Wahrnehmung Normalsterblicher interagieren... "Harry Potter" kommt hier mit einem ziemlich guten Vorschlag, wie dies aussehen koennte. Olympus, den Herrschaftssitz der Goetter aber in die 600. Etage des Empire State Buildings zu verlegen und den Hades in ein Plattenstudio in L.A. zu verlegen -- das klingt mir einfach viel zu clichehaft, als dass ich mich da dauerhaft drauf einlassen koennte.
-
-Schaut man sich die Art und Weise an, in welcher sich Sagengestalten unerkannt unters Volk mischen, dann kommt einem ganz klar wieder _Harry Potter_ in den Sinn: hier sind es ja schliesslich die Zauberer welche Grenzgaenger zwischen den Welten sind... auch wenn so simple Dinge wie das U-Bahn fahren schon eine Herausforderung darstellt. Ich habe durchaus einige Zeit damit verbracht mit einer Idee zu kommen, wie sich vielleicht einige der Schwachpunkte eliminieren liessen -- eine wirklich zufriedenstellende Loesung ist mir aber bisher noch nicht eingefallen. Gut, ist vielleicht auch nicht meine vorrangige Aufgabe. Erstaunlicherweise aber haben die Buecher gleiche eine ganze Reihe an Preisen abgeraeumt und nach [Percy Jackson & the Lightning Thief](http://www.imdb.com/title/tt0814255) (2010) ist auch schon die Verfilmung des zweiten Buches in vollem Gange.
  
 **:::**
  

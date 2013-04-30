@@ -1,0 +1,13 @@
+---
+title: "Expansion"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Sat, 27. April 2013 -- 18:45_
+
+Nachdem ich ja fleissig Daten von einem Drobo auf das andere (oder direkt auf die DiskStation) umgeschaufelt habe, stand heute Mittag der erste Festplattenumbau auf dem Programm. Wie geplant habe ich die  kleinste der vier Festplatten in Drobo 1 aufgebaut und in die DiskStation eingeschraubt (die Befestigung ist ein wenig solider, als dies bei dem Drobo der Fall ist). Waehrend dieser ein handwerkliche Teil ohne weitere Zwischenfaelle verlief, musste ich leider erst einmal ein wenig mit der Netzwerkkonfiguration kaempfen, ehe ich das Synology ueberhaupt wieder ansprechend konnte; interessanterweise war es mir zwar moeglich die ueber das Netzwerk geteilten Order zu sehen und auch darauf zuzugriefen, die Kontrollverbindung zu dem Server brach aber immer wieder zusammen, so dass ich nicht in der Konfiguration die zusaetzliche Festplatte freischalten konnte. Nach einigem hin und her -- wo ich mir leider immer noch nicht so sicher bin, wo eigentlich genau das Problem lag -- ist es mir dann doch gelungen den Administrationszugang aufzurufen; seit dem ist der Server dabei den zur Verfuegung gestellten Speicherplatz zu reorganisieren und zu expandieren.
+
+![Expansion of volume on Synology DS](/blog/2013/2013-04/2013-04-27_synology.png)
