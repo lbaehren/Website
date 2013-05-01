@@ -18,6 +18,32 @@ tags: Blog
 ----
 **in preparation ...**
 
+### Clang vs. GCC ###
+
+ * [GNU Compiler Collection](http://gcc.gnu.org)
+ * [LLVM Compiler Infrastructure](http://www.llvm.org)
+ * [Clang](http://clang.llvm.org)
+ * [Expressive Diagnostics](http://clang.llvm.org/diagnostics.html)
+
+With GCC 4.7.3 and GCC 4.2.1 (Apple default):
+
+~~~~
+[ 14%] Building C object source/c/swir/CMakeFiles/s4.dir/data/dataset.c.o
+[ 15%] Building C object source/c/swir/CMakeFiles/s4.dir/data/group.c.o
+~~~~
+
+With Clang:
+
+~~~~
+[ 14%] Building C object source/c/swir/CMakeFiles/s4.dir/data/dataset.c.o
+/Users/lars/CodeDevelopment/Projects/Work/TROPOMI/swir/source/c/swir/data/dataset.c:596:11: warning: 
+      comparison of unsigned expression < 0 is always false [-Wtautological-compare]
+                                if (d < 0) {
+                                    ~ ^ ~
+1 warning generated.
+[ 15%] Building C object source/c/swir/CMakeFiles/s4.dir/data/group.c.o
+~~~~
+
 ### Rotslab ###
 
 > [Rotslab](http://www.rotslab.nl) faciliteert interdisciplinaire samenwerking tussen creatieve makers, ondernemers, leerlingen, bedrijven, ontwerpers, kunste- naars en het onderwijs, gericht op stedelijke ontwikkeling. Rotslab biedt publiek toegankelijke faciliteiten en is het vertrekpunt van waaruit – met behulp van low- en hightech productiemiddelen – wordt geleerd door te MAKEN. Rotslab is een publieke fabriek. Dat betekent dat iedereen welkom is, dat gewerkt wordt met open source hard- en software en dat kennis, ervaring en ontwerpen worden gedeeld.

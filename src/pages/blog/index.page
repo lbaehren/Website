@@ -9,6 +9,48 @@ tags: Blog
  
 **:::**
  
+### Stupid C ###
+
+
+
+
+_Wed, 01. May 2013 -- 14:58_
+
+Did I ever mention I am not a fan of the C programming language? Here is a simple example which just makes me cringe: needing to do some calculations with array dimensions (and selections from arrays) I started writing a few simple helper functions to avoid coding the same stuff time and time again. Starting point was a simple wrapper around the calculation of the number of elements in an n-dimensional array, which accordingly received the function name __nof_elements__
+
+~~~~
+size_t nof_elements (size_t *shape,
+                     const size_t rank);
+~~~~
+
+However dealing with selections (i.e. subarray) is nothing uncommon -- hence the same type of calculation should be performed using the bounding box vectors for the selection:
+
+~~~~
+size_t nof_elements (size_t *start,
+                     size_t *end,
+                     const size_t rank);
+~~~~
+
+While originally I was going for __nof_elements_selected__ I noticed that the conceptually the two functions would be doing the same thing -- therefore expressing this through the function name sounded like a reasonable idea. However this way of thinking -- as I got remined by the compiler -- was expecting a language feature C does not know: function overloading.
+
+~~~~
+[ 64%] Building C object source/c/tests/CMakeFiles/test_dataset.dir/test_dataset.c.o
+/Users/lars/CodeDevelopment/Projects/Work/TROPOMI/swir/source/c/tests/test_dataset.c:77:8: error: 
+      conflicting types for 'nof_elements'
+size_t nof_elements (size_t *start,
+       ^
+/Users/lars/CodeDevelopment/Projects/Work/TROPOMI/swir/source/c/tests/test_dataset.c:52:8: note: 
+      previous definition is here
+size_t nof_elements (size_t *shape,
+       ^
+1 error generated.
+~~~~
+
+Would be no problem at all in C++, where it is no problem to have a function accepting different set of parameters; C does not know how to deal with this, thereby resulting in a whole slew of function names, thereby obscuring the common logic.
+ 
+**:::**
+ 
+ 
 ### In letzter Minute ###
 
 
@@ -259,18 +301,6 @@ _Wed, 24. April 2013 -- 20:47_
 Ich glaube ausser an Ostern war bisher noch nicht so lange unterwegs, wie dies am heutigen Abend der Fall war. Damit meine ich nicht einmal unbedingt zeitlich, sondern eher von der Entfernung. Da wir hier in Utrecht heute wirklich recht sonniges Wetter hatten, wollte ich natuerlich nicht den kompletten Tag drinnen verbringen, sondern mich noch ein wenig an der frischen Luft bewegen. Ich hatte zwar zwischenzeitlich ueberlegt einfach mal am Nachmittag fuer eine Stunde zu verschwinden, aber da war ich dann doch noch mehr mit Programmieren beschaeftigt. Als der Stundenzeiger aber ueber die fuenf Uhr hinweggekrochen ist, habe ich schnell noch meine Sachen gepackt und mich auf den Weg begeben...
 
 Anhand der Karte hatte ich mir vorher grob die Route zurecht gelegt -- ich hatte allerdings nicht darauf geachtet, um was fuer eine Entfernung es sich dabei handeln wuerde. Dementsprechend war ich vorhin recht erstaunt, als ich einen Blick auf den GPS Tracker geworfen habe: das waren fast 12 Kilometer, welche ich heute Abend gelaufen bin. Zu einem guten Teil liegt dies sicherlich daran, dass ich eben ein wenig ins Utrechter Umland ausgewichen und so eben erst in einem weiten Bogen wieder hier im Ortsteil Hoograve eingetroffen bin. Ich muss gleich mal noch den Track vom Handy kopieren, so dass ich mir noch einmal genau auf der Karte anschauen kann, wo ich denn nun langsgelaufen bin; auch wenn dies zu Fuss sicherlich ohne weiteres machbar war (wenn auch vielleicht nicht unbedingt am Ende eines Arbeitstages), so haette es sich da klar angeboten mit dem Fahrrad loszuziehen. Ich denke mal der heutige Abstecher hat mir deutlich gemacht, dass ich in dieser Hinsicht noch nicht komplett versorgt bin hier in Utrecht -- mit einem Zweirad unter dem Hinter liesse sich die Reichweite noch einmal deutlich steigern.
- 
-**:::**
- 
- 
-### Epitaph, Part 2 ###
-
-
-
-
-_Tue, 23. April 2013 -- 21:37_
-
-So, noch eine einzige Folge, dann habe ich es endlich geschafft auch noch die zweite Season von [Dollhouse](http://www.imdb.com/title/tt1135300) zu Ende zu schauen. Da ich ja schon ein wenig systematischer vorgehen wollte, was das "abarbeiten" der diversesten TV-Shows betrifft -- parallel schauen ist keine so sonderlich gute Idee -- war klar, dass erst einmal dort weitermachen sollte, wo mich ulia seinerzeit abgehaengt hat. Ist irgendwie ja schon witzig: auch wenn es garnicht so einfach ist eine Story zu finden, welche uns beiden zusagt, so geschieht es in den Faellen, wo dies einmal zutrifft, typischerweise so, dass ich derjenige bin, welcher es zuletzt am Ende der Serie angelangt. Gut, ich kann mir natuerlich auch nicht beliebig die Naechte um die Ohren schlagen, denn schliesslich wuerde ich ansonsten tagsueber kaum noch etwas zustande bringen -- wenn ich aber einmal an einer Geschichte dran bin moechte ich natuerlich auch gerne wissen wie das Ende davon aussieht (fuer den Fall dass es einen entsprechenden Abschluss gibt, was ja nicht notwendigerweise der Fall sein muss).
  
 **:::**
  

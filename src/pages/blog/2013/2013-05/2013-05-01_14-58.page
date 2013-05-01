@@ -1,0 +1,41 @@
+---
+title: "Stupid C"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Wed, 01. May 2013 -- 14:58_
+
+Did I ever mention I am not a fan of the C programming language? Here is a simple example which just makes me cringe: needing to do some calculations with array dimensions (and selections from arrays) I started writing a few simple helper functions to avoid coding the same stuff time and time again. Starting point was a simple wrapper around the calculation of the number of elements in an n-dimensional array, which accordingly received the function name __nof_elements__
+
+~~~~
+size_t nof_elements (size_t *shape,
+                     const size_t rank);
+~~~~
+
+However dealing with selections (i.e. subarray) is nothing uncommon -- hence the same type of calculation should be performed using the bounding box vectors for the selection:
+
+~~~~
+size_t nof_elements (size_t *start,
+                     size_t *end,
+                     const size_t rank);
+~~~~
+
+While originally I was going for __nof_elements_selected__ I noticed that the conceptually the two functions would be doing the same thing -- therefore expressing this through the function name sounded like a reasonable idea. However this way of thinking -- as I got remined by the compiler -- was expecting a language feature C does not know: function overloading.
+
+~~~~
+[ 64%] Building C object source/c/tests/CMakeFiles/test_dataset.dir/test_dataset.c.o
+/Users/lars/CodeDevelopment/Projects/Work/TROPOMI/swir/source/c/tests/test_dataset.c:77:8: error: 
+      conflicting types for 'nof_elements'
+size_t nof_elements (size_t *start,
+       ^
+/Users/lars/CodeDevelopment/Projects/Work/TROPOMI/swir/source/c/tests/test_dataset.c:52:8: note: 
+      previous definition is here
+size_t nof_elements (size_t *shape,
+       ^
+1 error generated.
+~~~~
+
+Would be no problem at all in C++, where it is no problem to have a function accepting different set of parameters; C does not know how to deal with this, thereby resulting in a whole slew of function names, thereby obscuring the common logic.
