@@ -9,6 +9,28 @@ tags: Blog
  
 **:::**
  
+### EU-Mitgliedsstaaten einigen sich auf Pestizid-Verbot ###
+
+
+
+
+_Thu, 02. May 2013 -- 13:14_
+
+Wer sich vielleicht noch ein wenig zurueck erinnern kann, duerfte dem Beitrag im Dezember mitbekommen haben, in welchem ich den Petitionsaufrauf zur [Hilfe fuer Honigbienen](/blog/2012/2012-12/2012-12-19_13-56.html) vorgestellt hatte. Hintergrund der Aktion waren Beratungen der _European Food Safety Authority_ (EFSA) ueber Studien zur Auswirkung von Neonicotinoiden auf Bienenvoelker, welche den SChluss nahe legen, dass bestimmte Pestizide zu einem kompletten Zusammenruch von Kolonien fuehren koennen. Anliegen diverser in diesem Zusammenhang gestarteten Petitionen war es, sich fuer ein Verbot bestimmter Pestizide durch die Europaeische Kommission stark zu machen. Wie ich letzte Woche bereits ueber einen Bericht in der BBC mitbekommen hatte, scheint es da mittlerweile Neuigkeiten zu vermelden geben: nachdem es in der [Tagesschau](http://www.tagesschau.de) vom 29. April ebenfalls einen kurzen [Beitrag zu diesem Thema](http://www.tagesschau.de/ausland/pestizidverbot100.html) gab, habe ich noch einmal online nachgeschaut und bin in der Tat fuendig geworden.
+
+> Die Europäische Union will Bienen besser schützen. Dafür beschlossen die Mitgliedsstaaten mehrheitlich ein Verbot bestimmter Pflanzenschutzmittel. 15 der 27 EU-Staaten stimmten für einen entsprechenden Vorschlag der EU-Kommission. Auch Deutschland habe dafür votiert, sagte ein EU-Diplomat am Rande der Konferenz.
+
+Was man an dieser Stelle der Vollstaendigkeit allerdings hinzufuegen sollte ist, dass es sich vorerst noch nicht um ein endgueltiges Verbot handelt, sondern zunaechst einmal fuer eine zwei Jahre dauernde Sperre:
+
+>  EU-Gesundheitskommissar Tonio Borg hatte vorgeschlagen, die drei Pestizide aus der Gruppe der sogenannten Neonikotinoide für den Anbau von Mais, Sonnenblumen, Raps sowie Baumwolle für vorerst zwei Jahre zu verbieten. Die drei Pestizide, zu deren Herstellern auch das deutsche Unternehmen Bayer gehört, stehen im Verdacht, Bienensterben zu verursachen. Zu den Produzenten gehören die Chemiekonzerne Bayer und Syngenta. Bayer hatte das Verbot, über das die Mitgliedstaaten schon länger stritten, als unverhältnismäßig kritisiert.
+>
+> Die endgültige Entscheidung liegt nun bei der EU-Kommission. Diese befürwortet ein Verbot.
+
+Dass ein Unternehmen wie Bayer die Zwischenzeit sicherlich nutzen wird, um durch entsprechende Lobbyarbeit eine Entscheidung zu eigenen Gunsten zu bewirken, duerfte wohl nicht zu abwegig sein -- die Frage waere aber, in wie weit die Fuersprecher eines dauerhaften Verbotes den langen Atem besitzen, um da am Ball zu bleiben...
+ 
+**:::**
+ 
+ 
 ### Stupid C ###
 
 
@@ -287,20 +309,6 @@ Ein guter Entschluss, denn um halb eins stand der DHL Wagen vor der Haustuere. A
 An diesem Punkt angekommen wurde es natuerlich Zeit alles miteinander zu verkabeln und das erste Mal zu starten: als Stromversorgung anschliessen und das NAS via Ethernet mit dem Rechner verbinden. Vor dem Start habe ich einen ersten Eindruck davon gewinnen koennen, wie es mit dem Einsetzen der Festplatten aussieht: waehrend es bei den Drobos ja vollkommen ausreicht die Frontplatte abzunehmen und die Festplatten in die dafuer vorgesehenen Slots zu schieben, muessen die Datentraeger beim Synology auf Wechselrahmen montiert werden. Klingt etwas komplizierter, ist aber mit ein paar Handgriffen erledigt und erweckt den Eindruck, dass es sich hierbei um eine sehr robuste Konstruktion handelt (auch wenn ich nie Angst hatte, dass mir bei einem der Drobos mit einem Male eine Festplatte herausspringen koennte). Das anschliessende Starten und Einrichten des Basis-Systems verlief -- wie verprochen -- ziemlich selbsterklaerend: Software-Updates installieren, Benutzer einrichten, Daten Volumes anlegen... und schon gibt es einen NAS Server im Haus, mittels welchem sich die Verwaltung und Sicherung der anfallenden Datenmengen zentralisieren laesst
 
 Dies heisst also, dass ich mich nun an dem Punkt befinde, wo ich mit der Migration und Konsolidierung der Daten beginnen kann: das wird aller Vorausschau eine ganze Weile dauern, denn schliesslich sprechend wir hier ueber mehrere TB, welche durch die Gegend bewegt werden wollen...
- 
-**:::**
- 
- 
-### Langer Heimweg ###
-
-
-
-
-_Wed, 24. April 2013 -- 20:47_
-
-Ich glaube ausser an Ostern war bisher noch nicht so lange unterwegs, wie dies am heutigen Abend der Fall war. Damit meine ich nicht einmal unbedingt zeitlich, sondern eher von der Entfernung. Da wir hier in Utrecht heute wirklich recht sonniges Wetter hatten, wollte ich natuerlich nicht den kompletten Tag drinnen verbringen, sondern mich noch ein wenig an der frischen Luft bewegen. Ich hatte zwar zwischenzeitlich ueberlegt einfach mal am Nachmittag fuer eine Stunde zu verschwinden, aber da war ich dann doch noch mehr mit Programmieren beschaeftigt. Als der Stundenzeiger aber ueber die fuenf Uhr hinweggekrochen ist, habe ich schnell noch meine Sachen gepackt und mich auf den Weg begeben...
-
-Anhand der Karte hatte ich mir vorher grob die Route zurecht gelegt -- ich hatte allerdings nicht darauf geachtet, um was fuer eine Entfernung es sich dabei handeln wuerde. Dementsprechend war ich vorhin recht erstaunt, als ich einen Blick auf den GPS Tracker geworfen habe: das waren fast 12 Kilometer, welche ich heute Abend gelaufen bin. Zu einem guten Teil liegt dies sicherlich daran, dass ich eben ein wenig ins Utrechter Umland ausgewichen und so eben erst in einem weiten Bogen wieder hier im Ortsteil Hoograve eingetroffen bin. Ich muss gleich mal noch den Track vom Handy kopieren, so dass ich mir noch einmal genau auf der Karte anschauen kann, wo ich denn nun langsgelaufen bin; auch wenn dies zu Fuss sicherlich ohne weiteres machbar war (wenn auch vielleicht nicht unbedingt am Ende eines Arbeitstages), so haette es sich da klar angeboten mit dem Fahrrad loszuziehen. Ich denke mal der heutige Abstecher hat mir deutlich gemacht, dass ich in dieser Hinsicht noch nicht komplett versorgt bin hier in Utrecht -- mit einem Zweirad unter dem Hinter liesse sich die Reichweite noch einmal deutlich steigern.
  
 **:::**
  
