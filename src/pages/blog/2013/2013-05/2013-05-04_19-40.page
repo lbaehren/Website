@@ -1,0 +1,13 @@
+---
+title: "Auf der Zielgeraden"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Sat, 04. May 2013 -- 19:40_
+
+Es sieht doch ganz danach aus, als wuerde ich es im Laufe diesen Wochenendes -- vielleicht sogar noch heute, aber da bin ich mir eben nicht so sicher -- damit fertig werden alle Daten von Drobo I auf das [Synology](http://www.synology.com) zu verschieben. Schon jetzt befinde ich mich bei weniger als 500 GB Datenmenge, welche noch umziehen muss, ehe ich die Platten von einem Gehaeuse in das andere umbauen kann. Als letzter grosser Block laeuft derzeit noch die Kopie der diversen Backups von Julias Laptop(s), welche ich mir ueber die Zeit unter den Nagel gerissen habe, damit ich diese nicht nur verwalten, sondern auch mal ein wenig aufraeumen kann. Sobald dies aber durch ist werde ich die drei 2 TB Platten aus dem [Drobo](http://www.drobo.com) ziehen und in den neuen Server einbauen -- dann kann mich an die Daten auf dem zweiten Drobo machen.
+
+Die Idee nach wie vor ist es, die beiden Drobos nicht komplett auszumustern, sondern mindestens eins davon in das NAS einzuklinken, so dass ich auf diese Weise eine Erweiterung von um vier Einschuebe kriege; mit den 12 Platzen im Synology duerfte dies (hoffentlich) dann mal fuer eine Weile ausreichen.

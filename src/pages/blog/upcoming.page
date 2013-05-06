@@ -20,26 +20,20 @@ tags: Blog
 
 ### 8 Amazing Abandoned Mega Structures ###
 
- * http://www.oddee.com/item_98568.aspx
+ * [8 Amazing Abandoned Mega Structures](http://www.oddee.com/item_98568.aspx)
+ * [25 Abandoned Yugoslavia Monuments](http://www.cracktwo.com/2011/04/25-abandoned-soviet-monuments-that-look.html)
 
  * New South China Mall in Guangdong Province
  * Centro Financiero Confinanzas (Venezuela)
  * Ryugyong Hotel (North Korea)
 
-### EU-Mitgliedsstaaten einigen sich auf Pestizid-Verbot ###
-
-Wer sich vielleicht noch ein wenig zurueck erinnern kann, duerfte dem Beitrag im Dezember mitbekommen haben, in welchem ich den Petitionsaufrauf zur [Hilfe fuer Honigbienen](/blog/2012/2012-12/2012-12-19_13-56.html) vorgestellt hatte. Hintergrund der Aktion waren Beratungen der _European Food Safety Authority_ (EFSA) ueber Studien zur Auswirkung von Neonicotinoiden auf Bienenvoelker, welche den SChluss nahe legen, dass bestimmte Pestizide zu einem kompletten Zusammenruch von Kolonien fuehren koennen. Anliegen diverser in diesem Zusammenhang gestarteten Petitionen war es, sich fuer ein Verbot bestimmter Pestizide durch die Europaeische Kommission stark zu machen.
-
-> Die Europäische Union will Bienen besser schützen. Dafür beschlossen die Mitgliedsstaaten mehrheitlich ein Verbot bestimmter Pflanzenschutzmittel. 15 der 27 EU-Staaten stimmten für einen entsprechenden Vorschlag der EU-Kommission. Auch Deutschland habe dafür votiert, sagte ein EU-Diplomat am Rande der Konferenz.
-
- * [Mehr Schutz für Europas Bienen](http://www.tagesschau.de/ausland/pestizidverbot100.html) -- Tagesschau.de, 29.04.2013
- * [Nervengift vom Acker: Gefahr für Bienen?](http://www.ndr.de/regional/niedersachsen/heide/bienen179.html) -- NDR, 13.06.2012
+> [Battersea Power Station](http://en.wikipedia.org/wiki/Battersea_Power_Station) is a decommissioned coal-fired power station located on the south bank of the River Thames in Battersea, an inner-city district of Southwest London. It comprises two individual power stations which were built in two stages in the form of a single building. Battersea A Power Station was built in the 1930s, and Battersea B Power Station, to its east, was built in the 1950s. The two stations were built with an identical design, providing the well-known four chimney layout. The station ceased generating electricity in 1983, but over the past 50 years it has become one of the best known landmarks in London and is Grade II* listed. The station owes much of its celebrity to numerous cultural appearances, which include a shot in The Beatles' 1965 movie Help!, appearing in the video for the 1982 hit single "Another Thing Comin´" by heavy metal band [Judas Priest](http://en.wikipedia.org/wiki/Judas_Priest) and being used in the cover art of [Pink Floyd](http://en.wikipedia.org/wiki/Pink_Floyd)'s 1977 album Animals, as well as a cameo appearance in [Take That](http://en.wikipedia.org/wiki/Take_That)'s music video "The Flood." In addition, a photograph of the plant's control room was used as cover art on [Hawkwind](http://en.wikipedia.org/wiki/Hawkwind)'s 1977 album Quark, Strangeness and Charm.
 
 ### Clang vs. GCC ###
 
+For a while now I have been starting to use the [Clang](http://clang.llvm.org) compiler for my daily development work at SRON; after running into the C/C++ frontend for the [LLVM Compiler Infrastructure](http://www.llvm.org) time and time again, I decided it was about time to finally have a closer look -- not just playing with but using it to actually get some work done.
+
  * [GNU Compiler Collection](http://gcc.gnu.org)
- * [LLVM Compiler Infrastructure](http://www.llvm.org)
- * [Clang](http://clang.llvm.org)
  * [Expressive Diagnostics](http://clang.llvm.org/diagnostics.html)
 
 With GCC 4.7.3 and GCC 4.2.1 (Apple default):
