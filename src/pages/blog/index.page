@@ -9,6 +9,28 @@ tags: Blog
  
 **:::**
  
+### Wheezy ###
+
+
+
+
+_Mon, 06. May 2013 -- 06:36_
+
+[Debian](http://www.debian.org) 7 ist fertig! Mehr als zwei Jahre nach der Veroeffentlichung von Debian 6 (Squeeze) hat das Release Team das lange erwartete Upgrade [offiziell freigegeben](http://lists.debian.org/debian-devel-announce/2013/05/msg00003.html):
+
+> As you may already know, we've passed responsibility for Wheezy to the Stable Release Managers; in other words, we've released!
+
+Angesichts der Tatsache, dass zwei Jahre im Software Bereich wirklich eine lange Zeit sind, bringt die neue Release Debian endlich wieder einmal ein wenig naeher an den Puls der Zeit. Das soll jetzt nicht unbedingt heissen, dass man komplett aufgeschmissen war, wenn man Debian als Linux Distribution der Wahl verwenden wollte -- wer aber statt _testing_ lieber ein wenig konservativer mit _stable_ arbeitet, war doch darauf angewiesen viele Software-Pakete von Hand nachzuinstallieren, um diese in einer eingermassen aktuellen Version verwenden zu koennen.
+
+Auch wenn die Release Notes wohl die vollstaendigste Referenz bieten, was Aenderungen betrifft, so duerfte der [Kurztest auf Heise Open](http://www.heise.de/open/artikel/Debian-7-0-Wheezy-im-Kurztest-1854031.html) einen ersten guten Ueberblick gegen, was man denn erwarten darf:
+
+> Debian 7 ist fertig. Für die Entwicklung haben die Debianer rund zwei Jahre und drei Monate benötigt, nur wenig länger als für die Entwicklung der Vorgängerversion. Heraus gekommen ist ein Debian, das in vielen Details verbessert wurde und sich in einer neuen, aufgeräumten Optik präsentiert.
+
+In Bezug auf die Aspekte, welche fuer mich relevant sind, gibt es keine sonderlichen Ueberraschungen: da ich schon einer Weile virtuelle Maschinen mit je _stable_, _testing_ und _unstable_ laufen habe, weiss ich recht gut, was mich erwartet. Was ich also jetzt schon weiss ist, dass eine Reihe an Compiler-Warnungen verschwinden werden, welche bisher aufgrund veralteter Bibliotheken ausgespuckt werden. Ich denke aber mal, dass es sicherlich Sinn macht, noch eine ganze Weile eine Debian 6 Installation bereit zu halten, denn ich wuerde doch mal erwarten, dass man diese noch eine ganze Weile antreffen wird.
+ 
+**:::**
+ 
+ 
 ### Fruehjahrsputz - Vorspiel ###
 
 
@@ -246,18 +268,6 @@ Unglaublich, aber wahr: der aus Frankfurt kommende ICE hat sich nun endlich hier
 _Thu, 25. April 2013 -- 19:22_
 
 Da lag ich mit meiner letzten Vermutung garnicht so falsch: da der aus Frankfurt kommende ICE bereits deutlich verspaetet ist, faehrt dieser nicht weiter nach Amsterdam (wo er ja eigentich hin soll), sondern macht hier in Arnhem kehrt. Derzeit wird die Verspaetung mit 30 Minuten angegeben, was also bedeutet, dass ich hier nicht vor acht Uhr wegkommen werde. Fuer die Verspaetung in Koeln wuerde ich demnach etwas zwischen 45 und 60 Minuten veranschlagen, denn ich rechne nicht damit, dass der ICE auf dem Absatz kehrt machen und zurueck nach Deutschland fahren wird. Interessant wird es sicherlich zu schauen, wie viele Reisenden hier noch aufschlagen werde: im Moment werden alle Leute von Amsterdam oder Utrecht ueber die niederlaendischen ICs hier nach Arnhem gekarrt -- insofern wird es da bestimmt noch einen Puffer geben, innerhalb welchem die Leute hier eintreffen koennen. So wie dies in Utrecht gelaufen ist, wuerde ich nicht erwarten, dass alle Reisenden zur gleichen Zeit hier eintreffen, wie dies mit dem ICE der Fall gewesen waere. Ist natuerlich ein wenig aergerlich, aber solange der ICE ueberhaupt faehrt und noch im Laufe des Abends in Koeln eintrifft, bin ich ja schon einmal beruhigt; jetzt muss ich nur noch schauen, was aus dem Vorhaben wird, mich in Koeln mit Julia zu treffen -- ich denke mal so lange wird Susanne die Yogastunde wohl nicht ueberziehen, dass dies dann mit meiner Ankunftszeit zusammenfaellt.
- 
-**:::**
- 
- 
-### IC statt ICE ###
-
-
-
-
-_Thu, 25. April 2013 -- 18:25_
-
-Also da war es doch recht gut, dass ich eher zum Bahnhof aufgebrochen bin: die Warnung, welche ueber [bahn.de](http://www.bahn.de) reingekommen war, erwies sich in diesem Fall ausnahmsweise mal als nuetzlich, denn hier in Utrecht war der Informationsstand deutlich hinter dem, was online zu finden war. Bis vor wenigen Minuten konnte die Dame am Schalter keine wirklich brauchbaren Informationen rausruecken... und dies angesichts der Stroeme von Menschen, welche dort aufliefen um sich zu erkundigen. Letzten Endes wusste ich da aber allem Anschein mehr als da vor Ort bekannt war; erst nachdem der ICE mit einem "reist heute nicht" auf der Anzeigetafel auftauchte, erfolgte ein Gegencheck mit dem Personal unten auf dem Bahnsteig... erst dann kam die Ansage, dass der ICE in der Tat heute nicht in Urecht halten wuerde. Was sich immerhin als deckungsgleich erwies, war das Statement, dass der Zug in Arnhem stoppen wuerde, so dass ich mit dem Raussuchen alternativer Verbindungen richtig gelegen hatte. Folgerichtig sitze ich nun in einem IC nach Nijmegen -- na wenn dies mal nicht irgendwie bekannt vorkommt -- um in Arnhem umzusteigen. Da ich aber ausreichend Zeit vor Ort habe, werde ich sicherlich auch dort noch einmal an den Schalter laufen, um mir dort ein Update einzuholen... ich hoffe mal, dass die Damen und Herren dort ein wenig mehr auf dem Laufenden sind, als dies in Utrecht der Fall war.
  
 **:::**
  

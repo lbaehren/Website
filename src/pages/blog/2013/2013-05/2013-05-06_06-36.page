@@ -1,0 +1,21 @@
+---
+title: "Wheezy"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Mon, 06. May 2013 -- 06:36_
+
+[Debian](http://www.debian.org) 7 ist fertig! Mehr als zwei Jahre nach der Veroeffentlichung von Debian 6 (Squeeze) hat das Release Team das lange erwartete Upgrade [offiziell freigegeben](http://lists.debian.org/debian-devel-announce/2013/05/msg00003.html):
+
+> As you may already know, we've passed responsibility for Wheezy to the Stable Release Managers; in other words, we've released!
+
+Angesichts der Tatsache, dass zwei Jahre im Software Bereich wirklich eine lange Zeit sind, bringt die neue Release Debian endlich wieder einmal ein wenig naeher an den Puls der Zeit. Das soll jetzt nicht unbedingt heissen, dass man komplett aufgeschmissen war, wenn man Debian als Linux Distribution der Wahl verwenden wollte -- wer aber statt _testing_ lieber ein wenig konservativer mit _stable_ arbeitet, war doch darauf angewiesen viele Software-Pakete von Hand nachzuinstallieren, um diese in einer eingermassen aktuellen Version verwenden zu koennen.
+
+Auch wenn die Release Notes wohl die vollstaendigste Referenz bieten, was Aenderungen betrifft, so duerfte der [Kurztest auf Heise Open](http://www.heise.de/open/artikel/Debian-7-0-Wheezy-im-Kurztest-1854031.html) einen ersten guten Ueberblick gegen, was man denn erwarten darf:
+
+> Debian 7 ist fertig. Für die Entwicklung haben die Debianer rund zwei Jahre und drei Monate benötigt, nur wenig länger als für die Entwicklung der Vorgängerversion. Heraus gekommen ist ein Debian, das in vielen Details verbessert wurde und sich in einer neuen, aufgeräumten Optik präsentiert.
+
+In Bezug auf die Aspekte, welche fuer mich relevant sind, gibt es keine sonderlichen Ueberraschungen: da ich schon einer Weile virtuelle Maschinen mit je _stable_, _testing_ und _unstable_ laufen habe, weiss ich recht gut, was mich erwartet. Was ich also jetzt schon weiss ist, dass eine Reihe an Compiler-Warnungen verschwinden werden, welche bisher aufgrund veralteter Bibliotheken ausgespuckt werden. Ich denke aber mal, dass es sicherlich Sinn macht, noch eine ganze Weile eine Debian 6 Installation bereit zu halten, denn ich wuerde doch mal erwarten, dass man diese noch eine ganze Weile antreffen wird.
