@@ -18,6 +18,13 @@ tags: Blog
 ----
 **in preparation ...**
 
+
+### Einnehmend ###
+
+Da wundere ich mich ja schon ein wenig: am Dienstag Abend habe ich -- nach einer ganzen Weile -- mal wieder einen Versuch unternommen [Opera](http://www.opera.com) auf meinem MacBook zu installieren. Diverse fruehere Versuche waren daran gescheitert, dass sich der Browser bereits beim Start vollkommen zerlegte, ohne das wirklich zu erkennen war, was dafuer die Ursache sein koennte. Rein der Vollstaendigkeit halber, aber auch wegen einiger Features, welche ich bisher bei anderen Browsern nicht finden kann, wollte ich einfach noch einmal diese Alternative zur Verfuegung haben
+
+![Open with](/blog/2013/2013-05/2013-05-08_opera.png)
+
 ### An der frischen Luft ###
 
 Was fuer ein Wetter. Nach dem sehr schoen sonnigen Start am Wochenende in Bonn, habe ich gestern auch hier in Utrecht fast schon sommerliche Zustaende angetroffen -- kein Wunder also, dass ich es am Mittag vorgezogen habe mich an die frische Luft zu setzen, statt mich in die Kantine zu begeben. So schoen sonnig, wie es hier war, hatte ich definitiv keine Lust mehr als noetig irgendwo drinnen unter einem Dach zu sitzen, so dass ich mir mein Essen geschnappt und mich in der Naehe des Instituts auf einer der Baenke niedergelassen habe. Dass ich da ganz offensichtlich nicht der einzige mit dieser Idee war, liess sich recht schnell erkennen: aus allen umliegenden Gebauden stroemten kleinere Gruppen nach draussen, um sich auf Rasenflaechen oder Baenken zu platzieren.
@@ -58,10 +65,6 @@ With Clang:
 1 warning generated.
 [ 15%] Building C object source/c/swir/CMakeFiles/s4.dir/data/group.c.o
 ~~~~
-
-### Rotslab ###
-
-> [Rotslab](http://www.rotslab.nl) faciliteert interdisciplinaire samenwerking tussen creatieve makers, ondernemers, leerlingen, bedrijven, ontwerpers, kunste- naars en het onderwijs, gericht op stedelijke ontwikkeling. Rotslab biedt publiek toegankelijke faciliteiten en is het vertrekpunt van waaruit – met behulp van low- en hightech productiemiddelen – wordt geleerd door te MAKEN. Rotslab is een publieke fabriek. Dat betekent dat iedereen welkom is, dat gewerkt wordt met open source hard- en software en dat kennis, ervaring en ontwerpen worden gedeeld.
 
 ### CMake support for SWIR Python package ###
 
