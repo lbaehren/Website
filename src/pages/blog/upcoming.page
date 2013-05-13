@@ -18,10 +18,79 @@ tags: Blog
 ----
 **in preparation ...**
 
+### Data migration ###
+
+As it has turned out, migrating all of the data stored on the two 4-bay Drobos is a bit more tricky as I originally had expected. The reason for this comes in two parts: one is the way in which _Synology Hybrid RAID_ (SHR) work, the other my incomplete original understanding of SHR.
+
+~~~~
+.
+|-- Volume 1
+|   1.0 TB   \
+|   1.0 TB    |
+|   1.5 TB    |  9.5 TB
+|   3.0 TB    |
+|   3.0 TB   /
+`-- Volume 2
+    2.0 TB   \
+    2.0 TB    |  6.0 TB
+    2.0 TB   /
+~~~~
+
+As an intermediate step Volume 1 will have to be broken up and its drives be rearranged in two separate volumes:
+
+~~~~
+.
+|-- Volume 1
+|   1.0 TB    \
+|   1.0 TB     |   3.5 TB
+|   1.5 TB    /
+|-- Volume 2
+|   2.0 TB    \
+|   2.0 TB     |   6.0 TB
+|   2.0 TB    /
+`-- Volume 3
+    3.0 TB    \
+    3.0 TB    /    6.0 TB
+~~~~
+
+Moving data from Volume 2 onto Volumes 1 and 3, I then will be able to dissolve Volume 2 in order to grow Volume 1 with the freed drives:
+
+~~~~
+.
+|-- Volume 1
+|   1.0 TB    \
+|   1.0 TB     |
+|   1.5 TB     |
+|   2.0 TB     |   9.5 TB
+|   2.0 TB     |
+|   2.0 TB    /
+`-- Volume 3
+    3.0 TB    \
+    3.0 TB    /    6.0 TB
+~~~~
+
+The with this arrangement now data can be migrated from Volume 3 to Volume 1, such that finally Volume 3 can be dissolved for the drives to be added to Volume 1:
+
+~~~~
+.
+`-- Volume 1
+    1.0 TB    \
+    1.0 TB     |
+    1.5 TB     |
+    2.0 TB     |
+    2.0 TB     |   15.5 TB
+    2.0 TB     |
+    3.0 TB     |
+    3.0 TB    /
+~~~~
+
+### Fablab ###
+
+> Ein [FabLab](http://de.wikipedia.org/wiki/FabLab) (engl. fabrication laboratory – Fabrikationslabor) ist eine offene, demokratische High-Tech-Werkstatt mit dem Ziel, Privatpersonen industrielle Produktionsverfahren für Einzelstücke zur Verfügung zu stellen. Typische Geräte sind 3D-Drucker, Laser-Cutter, CNC-Maschinen, Pressen zum Tiefziehen oder Fräsen, um eine große Anzahl an unterschiedlichen Materialien und Werkstücken bearbeiten zu können („make almost everything“). FabLabs erlauben die unkomplizierte Anfertigung von hoch individualisierten Einzelstücken oder nicht mehr verfügbaren Ersatzteilen (Rapid Manufacturing).
 
 ### Einnehmend ###
 
-Da wundere ich mich ja schon ein wenig: am Dienstag Abend habe ich -- nach einer ganzen Weile -- mal wieder einen Versuch unternommen [Opera](http://www.opera.com) auf meinem MacBook zu installieren. Diverse fruehere Versuche waren daran gescheitert, dass sich der Browser bereits beim Start vollkommen zerlegte, ohne das wirklich zu erkennen war, was dafuer die Ursache sein koennte. Rein der Vollstaendigkeit halber, aber auch wegen einiger Features, welche ich bisher bei anderen Browsern nicht finden kann, wollte ich einfach noch einmal diese Alternative zur Verfuegung haben
+Da wundere ich mich ja schon ein wenig: am Dienstag Abend habe ich -- nach einer ganzen Weile -- mal wieder einen Versuch unternommen [Opera](http://www.opera.com) auf meinem MacBook zu installieren. Diverse fruehere Versuche waren daran gescheitert, dass sich der Browser bereits beim Start vollkommen zerlegte, ohne das wirklich zu erkennen war, was dafuer die Ursache sein koennte. Rein der Vollstaendigkeit halber, aber auch wegen einiger Features, welche ich bisher bei anderen Browsern nicht finden kann, wollte ich einfach noch einmal diese Alternative zur Verfuegung haben -- ist ja schliesslich keine 
 
 ![Open with](/blog/2013/2013-05/2013-05-08_opera.png)
 
