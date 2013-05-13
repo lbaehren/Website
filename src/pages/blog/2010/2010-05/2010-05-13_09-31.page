@@ -8,16 +8,14 @@ author: Lars Baehren
 
 _Thu, 13. May 2010 -- 09:31_
 
-
-
 Also dies ist doch endlich mal wieder nach meinem Geschmack. Auch wenn es noch recht frueh ist, so habe ich doch schon fast zwei Stunden am Schreibtisch zugebracht und ein paar offene Punkte abschliessen koennen. Das wirklich schoene an so einem Feiertag wie diesem ist, dass ich mir keinerlei Gedanken ueber die Uni zu machen brauche, sondern mich voll und ganz auf die Arbeit konzentrieren kann; des bestaetig einmal wieder die bereits bekannte Einschaetzung dass sich manche Dinge einfach am Besten hier von zuhause aus erledigen lassen, weil ich mich hier ungestoert hinsetzen kann und nicht in meinen Gedankengaengen unterbrochen werde (daher wohl auch der wiederholte Spruch "Ich kann entweder zur Uni gehen oder arbeiten").
 
 Bereits erledigt waere die Suche nach einer Moeglichkeit das Chunking fuer erweiterbare Datasets sauber hinzukriegen; wie sich ja zuletzt herausgestellt hatte konnte dies leicht schief gehen, wenn das so definierte Datenvolumen die 4 GB Grenze ueberschreitet (was wiederum mit der 32-bit Darstellung zusammenhaengt). Auch wenn ich bereits die Anzahl der Datenpunkte als Check herangezogen hatte, so schien dies immer noch nicht die Loesung zu sein; nach ein wenig Suchen habe ich dann hete Morgen herausgefunden, dass es sich um das Produkt aus Datenpunkten und Groesse des Datentyps handelt... nachdem dies eingebaut war zerlegen sich auch die Testprogramme nicht mehr, selbst wenn ich mit grossen Datenvolumen arbeite.
 
-Die zweite Kleinigkeit war die Verallgemeinerung der CMake Umgebung zur Unterstuetzung mehrerer Version-Control Systeme; auch wenn die ueberwiegende Anzahl der Nenutzer mit //Subversion// arbeitet, so scheint es doch ein zunehmendes Interesse zu geben, Tools wie //Git// oder //Bazaar// zu verwenden. Da ich aber eine gewisse Service-Funktionalitaet beibehalten will, habe ich mich jetzt noch einmal drangesetzt die dafuer benoetigte System-Inspektion hinzuzufuegen, so dass es jetzt ein allgemeines 
-<code bash>
-make update
-</code> 
-gibt, welches platformuebergreifend verwendet werden kann. Pim hatte dazu zwar einige Aenderungsvorschlaege eingeschickt, nur war dies nicht unbedingt der Weg, welchen ich einschlagen wollte; da ich aber immer noch der Waechter ueber die Bau-Umgebung bin, habe ich die Ideen so umgearbeitet, dass sie ins Gesamtkonzept passen und das System als solches damit konsistent bleibt.
+Die zweite Kleinigkeit war die Verallgemeinerung der CMake Umgebung zur Unterstuetzung mehrerer Version-Control Systeme; auch wenn die ueberwiegende Anzahl der Nenutzer mit [Subversion](http://subversion.apache.org) arbeitet, so scheint es doch ein zunehmendes Interesse zu geben, Tools wie [Git](http://git-scm.com) oder [Bazaar](http://bazaar.canonical.com) zu verwenden. Da ich aber eine gewisse Service-Funktionalitaet beibehalten will, habe ich mich jetzt noch einmal drangesetzt die dafuer benoetigte System-Inspektion hinzuzufuegen, so dass es jetzt ein allgemeines 
 
-~~DISCUSSION~~
+~~~~
+make update
+~~~~
+
+gibt, welches platformuebergreifend verwendet werden kann. Pim hatte dazu zwar einige Aenderungsvorschlaege eingeschickt, nur war dies nicht unbedingt der Weg, welchen ich einschlagen wollte; da ich aber immer noch der Waechter ueber die Bau-Umgebung bin, habe ich die Ideen so umgearbeitet, dass sie ins Gesamtkonzept passen und das System als solches damit konsistent bleibt.

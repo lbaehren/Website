@@ -8,13 +8,11 @@ author: Lars Baehren
 
 _Wed, 05. May 2010 -- 12:14_
 
-
-
 Hier mal noch ein ueberfaelliger Nachtrag...
 
-[[blog:2010:2010-04:2010-04-22_17-20|Wie kurz angedeutet]] bin ich vor knapp zwei Wochen noch spontan am Freitag nach Amsterdam gefahren, um mich dort mit Michael, Anastasia, John und Ken zusammenzusetzen. Auch wenn ich Mittwoch und Donnerstag ja bei ASTRON war, so stellte sich doch heraus, dass es einfach an der noetigen Zeit und Gelegenheit fehlte, eine Reihe offener Fragen anzugehen; wie dies schon gerne einmal ist, sind die Tage in Dwingeloo recht vollgepackt mit Meetings, so dass es schwer wird sich in Ruhe zusammenzusetzen. Als also absehbar war, dass einige dringende Punkte unerledigt liegen bleiben wuerden, kam von Michael noch der Vorschlag, dass ich doch den Freitag nach Amsterdam kommen koennte; da fuer den Tag nichts grossartiges geplant sei, gaebe es dann endlich die Chance sich hinzusetzen und die ausstehenden Punkte zu klaeren. Auch wenn dies natuerlich bedeuten wuerde, dass ich noch einen weiteren Tag auf Reisen sein wuerde, so schien dies doch eine sinnvolle Idee -- also noch mal schnell eine Mail ans Sekretariat in Nijmegen geschrieben und sich auf eine weitere Zugfahrt vorbereitet.
+[Wie kurz angedeutet](/blog/2010/2010-04/2010-04-22_17-20.html) bin ich vor knapp zwei Wochen noch spontan am Freitag nach Amsterdam gefahren, um mich dort mit Michael, Anastasia, John und Ken zusammenzusetzen. Auch wenn ich Mittwoch und Donnerstag ja bei ASTRON war, so stellte sich doch heraus, dass es einfach an der noetigen Zeit und Gelegenheit fehlte, eine Reihe offener Fragen anzugehen; wie dies schon gerne einmal ist, sind die Tage in Dwingeloo recht vollgepackt mit Meetings, so dass es schwer wird sich in Ruhe zusammenzusetzen. Als also absehbar war, dass einige dringende Punkte unerledigt liegen bleiben wuerden, kam von Michael noch der Vorschlag, dass ich doch den Freitag nach Amsterdam kommen koennte; da fuer den Tag nichts grossartiges geplant sei, gaebe es dann endlich die Chance sich hinzusetzen und die ausstehenden Punkte zu klaeren. Auch wenn dies natuerlich bedeuten wuerde, dass ich noch einen weiteren Tag auf Reisen sein wuerde, so schien dies doch eine sinnvolle Idee -- also noch mal schnell eine Mail ans Sekretariat in Nijmegen geschrieben und sich auf eine weitere Zugfahrt vorbereitet.
 
-{{ photography:pictures:2010-04:dsc_20100423_093251.jpg?512 |Umgebung der Haltestation Amsterdam Amstel.}}
+![Umgebung der Haltestation Amsterdam Amstel](/blog/2010/2010-04/dsc_20100423_093251.jpg)
 
 Wie ich dies auch schon die letzten Male gemacht habe, bin ich die Strecke von der Haltestation Amsterdam Amstel bis zum Science Park gelaufen; angesichts der Tatsache, dass das Wetter einfach nur grandios war -- und es darueber hinaus nur eine knappe halbe Stunde dauert -- habe ich die frische Luft der Fahrt mit dem Bus vorgezogen. Was in der Zukunft allerdings sein koennte ist, dass ich direkt bis zu der neu eroeffneten Station Science Park fahren werde, welche gerade einmal fuenf Minuten vom Haupteingang entfernt liegt.
 
@@ -33,7 +31,4 @@ Der Rest des Tages war dann weitestgehend dafuer reserviert, die diversen Dinge 
   - Update ueber die Nijmegener Software Meetings und die darin angedeuteten Entwicklungen; seit dem sich Heino wieder in die Software Entwicklung eingeklinkt hat, bestehen doch ernsthafte Bedenken, ob die Aktivitaeten in die richtige Richtung gehen und wirklich zu einer funktionierenden Pipeline fuehren werden.
   - Beratung ueber die "Alwin-Krise": ohne irgendeine Vorwarnung wurde angekuendigt, dass der Software-Entwickler verantwortlich fuer die HDF5-Writer in Kuerze auf eine neue Stelle innerhalb ASTRON wechseln soll/will. Angesichts der Tasache aber dass a) es bisher immer noch keine funktionierende Version der Software gibt und b) die Entwicklung an einer Person haengt, ist vielleicht begreiflich, warum diese Nachricht alles andere als gut angekommen ist.
 
-Schaut man sich diese Liste an, dann duerfte wohl klar werden, warum ich diese Mal definitiv fuer den Whiskey-Break geblieben bin; mit dem verantwortungsvollen Auftrag einen guten Tropfen zu finden, ist Ken mit einem 15-jaehrigen //Highland Park// zurueckgekommen -- ein durchaus versoehnlicher Ausklang fuer den Tag, ehe ich mich dann auf den Rueckweg gemacht habe.
-
-
-~~DISCUSSION~~
+Schaut man sich diese Liste an, dann duerfte wohl klar werden, warum ich diese Mal definitiv fuer den Whiskey-Break geblieben bin; mit dem verantwortungsvollen Auftrag einen guten Tropfen zu finden, ist Ken mit einem 15-jaehrigen _Highland Park_ zurueckgekommen -- ein durchaus versoehnlicher Ausklang fuer den Tag, ehe ich mich dann auf den Rueckweg gemacht habe.

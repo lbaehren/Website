@@ -8,16 +8,13 @@ author: Lars Baehren
 
 _Thu, 06. May 2010 -- 22:03_
 
+... to migrate code management and version control. Planning to leave for a few days, where I might not be constantly connected to the Internet, but still would want to be able to keep my code under version control, this seemed to be the perfect opportunity to migrate from [Subversion](http://subversion.apache.org) to [Git](http://git-scm.com). One of the things which indeed I have considered a of _Subversion_'s shortcomings is the fact one always relies on the presence of a central server hosting the repository; though in principle repeated backups of the local working copy will offer some fall-back option, this is not the same as really being able to track the evolution of the code base as you go along. Enter _Git_...
 
+The name of the tool suite has been popping up a number of times by now; lately it has been Pim (newly started PhD student with the CR group), who has been pushing for the support and usage of other version control tools but _Subversion_. Though right now I won't support completely migrating the development of the [[http://www.lofar.org|LOFAR]] User Software -- which by the way is not a decision I would be able to make anyway -- I at least now have started to look into alternatives for the management of local working copies. More of an argument to head this direction would be the fact that John Swinbank has been advocating Git for quite a while now; as far as I know he has been completely migrating all his local source code management to _Git_, thereby allowing him to keep everything under version control, even when working completely offline (which indeed is something very attractive from my point of view).
 
+With an upcoming weekend trip, where I also indent to continue working on the LUS, I have been jumping off the familiar _Subversion_ wagon to give _Git_ some real-world testing. After reading up a bit on the tool suite, installation of the latest release worked flawlessly and out-of-the-box. Using this as a chance to do some cleaning up of all of the development activities hosted on my machine, I have been slightly reorganizing the directory structure (not too many changes though, as the previous version has proven its worth time and time again):
 
-... to migrate code management and version control. Planning to leave for a few days, where I might not be constantly connected to the Internet, but still would want to be able to keep my code under version control, this seemed to be the perfect opportunity to migrate from [[http://subversion.tigris.org|Subversion]] to [[http://git-scm.com|Git]]. One of the things which indeed I have considered a of //Subversion//'s shortcomings is the fact one always relies on the presence of a central server hosting the repository; though in principle repeated backups of the local working copy will offer some fall-back option, this is not the same as really being able to track the evolution of the code base as you go along. Enter //Git//...
-
-The name of the tool suite has been popping up a number of times by now; lately it has been Pim (newly started PhD student with the CR group), who has been pushing for the support and usage of other version control tools but //Subversion//. Though right now I won't support completely migrating the development of the [[http://www.lofar.org|LOFAR]] User Software -- which by the way is not a decision I would be able to make anyway -- I at least now have started to look into alternatives for the management of local working copies. More of an argument to head this direction would be the fact that John Swinbank has been advocating Git for quite a while now; as far as I know he has been completely migrating all his local source code management to //Git//, thereby allowing him to keep everything under version control, even when working completely offline (which indeed is something very attractive from my point of view).
-
-With an upcoming weekend trip, where I also indent to continue working on the LUS, I have been jumping off the familiar //Subversion// wagon to give //Git// some real-world testing. After reading up a bit on the tool suite, installation of the latest release worked flawlessly and out-of-the-box. Using this as a chance to do some cleaning up of all of the development activities hosted on my machine, I have been slightly reorganizing the directory structure (not too many changes though, as the previous version has proven its worth time and time again):
-
-<code>
+~~~~
 .
 |-- build
 |-- doc
@@ -34,16 +31,13 @@ With an upcoming weekend trip, where I also indent to continue working on the LU
     |   `-- java
     `-- work
         `-- lus
-</code>
+~~~~
 
-Once establishing the new development directory tree it was time to create a working copy of the LUS, such that I would be able to do development (took me a while to dig out the ''-r'' option, which is quite useful, if you don't want to import all of the repositories history):
+Once establishing the new development directory tree it was time to create a working copy of the LUS, such that I would be able to do development (took me a while to dig out the `-r` option, which is quite useful, if you don't want to import all of the repositories history):
 
-<code bash>
+~~~~
 git svn clone -r 4850 http://usg.lofar.org/svn/code/trunk lus
 git svn fetch
-</code>
+~~~~
 
-With this now there is local //Git// repository of the LOFAR User Software on my machine and I can start using and testing it.
-
-
-~~DISCUSSION~~
+With this now there is local _Git_ repository of the LOFAR User Software on my machine and I can start using and testing it.
