@@ -20,65 +20,76 @@ tags: Blog
 
 ### Data migration ###
 
-As it has turned out, migrating all of the data stored on the two 4-bay Drobos is a bit more tricky as I originally had expected. The reason for this comes in two parts: one is the way in which _Synology Hybrid RAID_ (SHR) work, the other my incomplete original understanding of SHR.
+ * [Synology](http://www.synology.com)
+ * [RAID calculator](http://www.synology.nl/support/RAID_calculator.php)
+
+As it has turned out, migrating all of the data stored on the two 4-bay [Drobos](http://www.drobo.com) can be a bit more tricky as I originally had expected. Probably, with a little bit more patience and reading of some of the documentation, things could be done by now, but by now this is water spilled under the bridge. Given the internal design of the [Synology Hybrid RAID](http://www.synology.de/support/tutorials_show.php?q_id=492) (SHR) -- which I guess can be considered somewhat similar to Drobo's [Beyond RAID](http://www.drobo.com/how-it-works/beyond-raid.php) technology -- I managed to block the intended volume extension path I had in mind. While mixing and matching drives of different sizes still is ok, gradually building up the RAID volume now has taken a slight detour: starting with a set of two spare 1 TB drives I still had lying around, after transfering some ammount of data, I janked out the smallest of the drives in older of my two Drobos.
 
 ~~~~
-.
+.                             Available   Protection    Unused
+`-- Volume 1
+    1.0 TB   \
+    1.0 TB    |   3.5 TB     2 TB         996 GB        500 GB
+    1.5 TB   / 
+~~~~
+
+~~~~
+.                             Available   Protection    Unused
 |-- Volume 1
 |   1.0 TB   \
 |   1.0 TB    |
-|   1.5 TB    |  9.5 TB
+|   1.5 TB    |  9.5 TB       6.5 TB      3.0 TB
 |   3.0 TB    |
 |   3.0 TB   /
 `-- Volume 2
     2.0 TB   \
-    2.0 TB    |  6.0 TB
+    2.0 TB    |  6.0 TB         4 TB      2.0 TB
     2.0 TB   /
 ~~~~
 
 As an intermediate step Volume 1 will have to be broken up and its drives be rearranged in two separate volumes:
 
 ~~~~
-.
+.                             Available   Protection    Unused
 |-- Volume 1
 |   1.0 TB    \
-|   1.0 TB     |   3.5 TB
+|   1.0 TB     |   3.5 TB     2 TB        996 GB        500 GB
 |   1.5 TB    /
 |-- Volume 2
 |   2.0 TB    \
-|   2.0 TB     |   6.0 TB
+|   2.0 TB     |   6.0 TB     4 TB          2 TB
 |   2.0 TB    /
 `-- Volume 3
     3.0 TB    \
-    3.0 TB    /    6.0 TB
+    3.0 TB    /    6.0 TB     3 TB          3 TB
 ~~~~
 
 Moving data from Volume 2 onto Volumes 1 and 3, I then will be able to dissolve Volume 2 in order to grow Volume 1 with the freed drives:
 
 ~~~~
-.
+.                             Available   Protection    Unused
 |-- Volume 1
 |   1.0 TB    \
 |   1.0 TB     |
 |   1.5 TB     |
-|   2.0 TB     |   9.5 TB
+|   2.0 TB     |   9.5 TB     7.5 TB       2 TB
 |   2.0 TB     |
 |   2.0 TB    /
 `-- Volume 3
     3.0 TB    \
-    3.0 TB    /    6.0 TB
+    3.0 TB    /    6.0 TB     3	TB	       3 TB
 ~~~~
 
 The with this arrangement now data can be migrated from Volume 3 to Volume 1, such that finally Volume 3 can be dissolved for the drives to be added to Volume 1:
 
 ~~~~
-.
+.                             Available   Protection    Unused
 `-- Volume 1
     1.0 TB    \
     1.0 TB     |
     1.5 TB     |
     2.0 TB     |
-    2.0 TB     |   15.5 TB
+    2.0 TB     |   15.5 TB    12.5 TB     3.0 TB
     2.0 TB     |
     3.0 TB     |
     3.0 TB    /
@@ -90,13 +101,13 @@ The with this arrangement now data can be migrated from Volume 3 to Volume 1, su
 
 ### Einnehmend ###
 
-Da wundere ich mich ja schon ein wenig: am Dienstag Abend habe ich -- nach einer ganzen Weile -- mal wieder einen Versuch unternommen [Opera](http://www.opera.com) auf meinem MacBook zu installieren. Diverse fruehere Versuche waren daran gescheitert, dass sich der Browser bereits beim Start vollkommen zerlegte, ohne das wirklich zu erkennen war, was dafuer die Ursache sein koennte. Rein der Vollstaendigkeit halber, aber auch wegen einiger Features, welche ich bisher bei anderen Browsern nicht finden kann, wollte ich einfach noch einmal diese Alternative zur Verfuegung haben -- ist ja schliesslich keine 
+Da wundere ich mich ja schon ein wenig: am letzte Woche habe ich -- nach einer ganzen Weile -- mal wieder einen Versuch unternommen [Opera](http://www.opera.com) auf meinem MacBook zu installieren. Diverse fruehere Versuche waren daran gescheitert, dass sich der Browser bereits beim Start vollkommen zerlegte, ohne das wirklich zu erkennen war, was dafuer die Ursache sein koennte. Rein der Vollstaendigkeit halber, aber auch wegen einiger Features, welche ich bisher bei anderen Browsern nicht finden kann, wollte ich einfach noch einmal diese Alternative zur Verfuegung haben -- ist ja schliesslich keine Seltenheit, dass eine Website so speziell gemacht ist, dass sich alle bis auf einen bestimmten Browser die Zaehne ausbeissen und den Inhalt entweder unvollstaendig oder falsch wiedergeben.
+
+Wie bereits gesagt: an der Installation hatte ich mich schon einige Male im letzten halben Jahr probiert. Diese machte zwar keinerlei Anzeichen in irgendeiner Weise problematisch zu sein... wenn ich dann aber das Programm anklickte um es zu starte, bekam ich lediglich ein pulsierendes Symbol zu sehen (was soviel heisst wie "Die Anwendung wird gestartet") und wenige Augenblicke spaeter das Fenster des Crash-Reporters. Unter diesen Bedingungen war ich schon ein wenig erstaunt, dass der erneute Versuch letzte Woche mit einem Male glatt ging und ich es in der Tat mit einem auf dem Desktop verbleibenden Browser-Fenster zu tun hatte.
 
 ![Open with](/blog/2013/2013-05/2013-05-08_opera.png)
 
-### An der frischen Luft ###
 
-Was fuer ein Wetter. Nach dem sehr schoen sonnigen Start am Wochenende in Bonn, habe ich gestern auch hier in Utrecht fast schon sommerliche Zustaende angetroffen -- kein Wunder also, dass ich es am Mittag vorgezogen habe mich an die frische Luft zu setzen, statt mich in die Kantine zu begeben. So schoen sonnig, wie es hier war, hatte ich definitiv keine Lust mehr als noetig irgendwo drinnen unter einem Dach zu sitzen, so dass ich mir mein Essen geschnappt und mich in der Naehe des Instituts auf einer der Baenke niedergelassen habe. Dass ich da ganz offensichtlich nicht der einzige mit dieser Idee war, liess sich recht schnell erkennen: aus allen umliegenden Gebauden stroemten kleinere Gruppen nach draussen, um sich auf Rasenflaechen oder Baenken zu platzieren.
 
 ### 8 Amazing Abandoned Mega Structures ###
 

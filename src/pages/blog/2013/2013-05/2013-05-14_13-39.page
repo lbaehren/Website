@@ -1,0 +1,21 @@
+---
+title: "Microsoft liest mit"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 14. May 2013 -- 13:39_
+
+Skype als eine Moeglichkeit zu chatten oder gar sensitive Daten auszutauschen? Wohl besser nicht! Wie Heise News in einem [Beitrag](http://www.heise.de/newsticker/meldung/Vorsicht-beim-Skypen-Microsoft-liest-mit-1857620.html) berichten erzeugt ein Skype Chat mitunter mehr Netzwerkverkehr, als einem lie ist.
+
+> Wer [Skype](http://www.skype.com) nutzt, hat damit auch sein Einverständnis erklärt, dass die Firma alles mitlesen darf. Wie [heise Security](http://www.heise.de/security) feststellte, macht das mittlerweile von [Microsoft](http://www.microsoft.com) übernommene Unternehmen von diesen Rechten auch tatsächlich Gebrauch. Zumindest im Chat verschickte https-URLs erhalten kurze Zeit später unangemeldeten Besuch aus Redmond. 
+> 
+> Ein Leser machte uns darauf aufmerksam, dass ihm nach einem Skype-Chat unter Kollegen ungewöhnlicher Netzwerkverkehr gemeldet wurde. Der Server wies auf eine mögliche Replay-Attacke hin. Wie sich herausstellte, hatte eine IP-Adresse aus Redmond auf die zuvor verschickten https-URLs der Firma zugegriffen. heise Security stellte die Situation nach. Auch wir schickten uns gegenseitig URLs. Eine der https-Test-URLs enthielt Anmeldeinformationen, eine andere verwies auf private Dateifreigaben eines Cloud-Dienstes.
+
+Klingt jetzt alles andere als vertrauenswuerdig, zumal es eben keine Moeglichkeit gibt in das Programm reinzuschauen, da der Source-Code ja nicht frei verfuegbar ist. Dass Daten abgegriffen werden ist sicherlich schon einmal eine Sache; dass darueber hinaus aber leider auch nicht ersichtlich ist, wofuer diese eigentlich verwendet werden, ist alles andere als ermutigend.
+
+> Unser Fazit: Wer Skype benutzt, muss sich nicht nur damit einverstanden erklären, dass Microsoft alle übertragenen Daten quasi nach Belieben nutzt. Er muss davon ausgehen, dass dies tatsächlich geschieht und der Konzern auch nicht verrät, was genau er mit diesen Daten anstellt.
+
+Das laesst also wieder einmal die Frage danach aufkommen, welche (Open-Source) Alternativen es zu Skype gibt, bei welcher man weniger die Katze im Sack verwendet und stattdessen mehr Offenheit in Sachen Verbindungsdaten und Inhalte hat.
