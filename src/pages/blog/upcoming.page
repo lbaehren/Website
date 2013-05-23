@@ -20,22 +20,22 @@ tags: Blog
 
 ### Flickr facelift ###
 
-This came as quite a surprise: having checked in on [my Flickr account](http://www.flickr.com/photos/larsbaehren) a few times throughout the day I needed a few moments to adjust when paying the site a last visit somewhen around midnight local time. Instead of the usual viusual appearance -- which 
-
-![New Flickr page layout](/blog/2013/2013-05/2013-05-21_flickr.png)
-
-It actually was after this, that I noticed the new mail in my inbox, which informed me (as a user) about the changes to the site:
-
-> Amazing things are happening at Flickr. We've made a lot of important upgrades to your service that we wanted you to know about.
-
-Taking a closer look at the new layout I can't help but noticing the similarity to what Google+ has been introducing a short while ago: changing from a more linear vertical arrangement to a tiled display, trying to make maximum use of available display area. While on the one hand this is great for putting the pictures more into the focus of the viewing experience, for people who like to be more in control of how their pictures are displayed quit a bit harder; obviously, given the time constraints, I did not have the time yet to go exploring about possible options to customize the way in which my photostream is being rendered -- from the post I have been reading so far the options however seem to be limited, such that what you get essentially is what Flickr thinks is best. My guess is though, that during the next few days we are going to see quite a number of (blog) posts about the various ways in which Flickr's new face can be molded into a more personalized experience (this surely happend after Google+ went to the new design in a matter of hours).
+It is a few days now, but it still might be taking a while for all the dust to have settled. After being neglected by [Yahoo](http://www.yahoo.com) for a long, long time, begin of this week the picture hosting service and community [Flickr](http://www.flickr.com) has seen a number of major changes:
 
  * [Yahoo gives Flickr a new face, a new app, and a new business model](http://arstechnica.com/gadgets/2013/05/yahoo-gives-flickr-a-new-face-a-new-app-and-a-new-business-model) -- Ars Technica
  * [All-new Flickr comes with free terabyte and ads, update for Android app](http://connect.dpreview.com/post/1636474797/flickr-update-terabyte-android-app) -- dpreview
 
-> Flickr, the photo storage and sharing site bought by Yahoo way back in 2005, has been brought into the 21st century with a new look, new pricing, and a new Android app.
->
+The most immedeately visible one of course has been the almost complete overhault of the interface
+
 > Gone is the old Flickr interface of small thumbnails, gobs of whitespace, and lots of metadata. In its place, the site has big thumbnails, full-screen pictures by default, and metadata for each image tucked below the fold. Flickr's Lightbox view, that removes the clutter around the page and shows pictures on their own, remains available.
+
+This caught me quite by surprise: not being aware of any rumors that something was going to happen, I had to take a few moments to take in the new appearance when checking in with [my Flickr account](http://www.flickr.com/photos/larsbaehren). It was after this, that I noticed the new mail in my inbox, which informed me (as a user) about the "amazing things" to happen:
+
+> Amazing things are happening at Flickr. We've made a lot of important upgrades to your service that we wanted you to know about.
+
+![New Flickr page layout](/blog/2013/2013-05/2013-05-21_flickr.png)
+
+Taking a closer look at the new layout I can't help but noticing the similarity to what Google+ has been introducing a short while ago: changing from a more linear vertical arrangement to a tiled display, trying to make maximum use of available display area. While on the one hand this is great for putting the pictures more into the focus of the viewing experience, for people who like to be more in control of how their pictures are displayed quit a bit harder; obviously, given the time constraints, I did not have the time yet to go exploring about possible options to customize the way in which my photostream is being rendered -- from the post I have been reading so far the options however seem to be limited, such that what you get essentially is what Flickr thinks is best. My guess is though, that during the next few days we are going to see quite a number of (blog) posts about the various ways in which Flickr's new face can be molded into a more personalized experience (this surely happend after Google+ went to the new design in a matter of hours).
 
 > To go with the new look is a new pricing model, one that's almost unrecognizable compared to the old one. The old Flickr had two tiers, free and Pro. Free was extremely limited: you could upload 300MB of photos and two videos per month, and only your newest 200 photos would actually be visible. The $24.95-a-year Pro, on the other hand, was extremely liberal: unlimited photos and videos per-month, ad-free browsing, and detailed statistics on your photos.
 >
@@ -375,21 +375,6 @@ However since the library was installed already the first part of the process we
      qt4-mac @4.8.4
 ~~~~
 
-### Debugging help ###
-
-Ever since moving away from using [Dokuwiki](https://www.dokuwiki.org/dokuwiki) as backend for my web pages
-
-~~~~
-ERROR -- Could not resolve path '/blog/2007/2007-05/2007-05-01.html'
-         in </blog/2008/2008-01/2008-01-14_00-54.en.html>
-ERROR -- Could not resolve path '/blog/2008/2008-12/2008-12-23_17-31.html'
-         in </blog/2009/2009-09/2009-09-18_11-06.en.html>
-ERROR -- Could not resolve path '/blog/2010/2010-07/dsc_20100707_165641.jpg'
-         in </blog/2010/2010-07/2010-07-08_12-49.en.html>
-ERROR -- Could not resolve path '/blog/2010/2010-07/dsc_20100716_104429.jpg'
-         in </blog/2010/2010-07/2010-07-17_15-54.en.html>
-~~~~
-
 ### Taking Woodstock (2009) ###
 
 Nach dem doch eher bescheidenen [Seherlebnis](/blog/2013/2013-01/2013-01-13_22-32.html) von [The Amazing Spiderman](http://www.imdb.com/title/tt0948470) (2012), war es doch recht schoen auch noch einmal einen kleinen Ausgleich zu bekommen. Aufmerksam geworden bin ich darauf ueber die Nominierung von [Life of Pi](http://www.imdb.com/title/tt0454876) (2012) fuer einen technischen Oskar ("Best visual effects"); auch wenn ich das ganze Spektakel rund um die Verleihung der Preise nicht so sonderlich mitverfolge -- es reicht mir da durchaus aus anschliessend zu erfahren wer welchen Preis bekommen hat -- so finde ich es schon interessant, welche Diskussionen es rund um die Anwaerter fuer die Auszeichung in Sachen visuelle Effekte gibt.
@@ -398,13 +383,6 @@ Nach dem doch eher bescheidenen [Seherlebnis](/blog/2013/2013-01/2013-01-13_22-3
  * [Ang Lee](http://www.imdb.com/name/nm0000487)
  * [Crouching Tiger, Hidden Dragon](http://www.imdb.com/title/tt0190332) (2000)
  * [The Ice Storm](http://www.imdb.com/title/tt0119349) (1997)
-
-### Swordfish (2001) ###
-
-* [Swordfish](http://www.imdb.com/title/tt0244244) (2001)
-* [Heat](http://www.imdb.com/title/tt0113277) (1995)
-* [Ronin](http://www.imdb.com/title/tt0122690) (1998)
-* [The Usual Suspects](http://www.imdb.com/title/tt0114814) (1995)
 
 ### Ausflug mit Tim ###
 
