@@ -6,7 +6,7 @@ if (DOXYGEN_EXECUTABLE)
   ## Configuration variables for Doxygen
 
   set (DOXYGEN_OUTPUT_DIRECTORY "${CMAKE_INSTALL_PREFIX}/doc")
-    
+
   ## Locate custom stylesheet
   find_file (DOXYGEN_CSS doxygen.css
     PATHS ${CMAKE_CURRENT_SOURCE_DIR}
