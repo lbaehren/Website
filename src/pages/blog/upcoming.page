@@ -18,6 +18,33 @@ tags: Blog
 ----
 **in preparation ...**
 
+### Flickr facelift ###
+
+This came as quite a surprise: having checked in on [my Flickr account](http://www.flickr.com/photos/larsbaehren) a few times throughout the day I needed a few moments to adjust when paying the site a last visit somewhen around midnight local time. Instead of the usual viusual appearance -- which 
+
+![New Flickr page layout](/blog/2013/2013-05/2013-05-21_flickr.png)
+
+It actually was after this, that I noticed the new mail in my inbox, which informed me (as a user) about the changes to the site:
+
+> Amazing things are happening at Flickr. We've made a lot of important upgrades to your service that we wanted you to know about.
+
+Taking a closer look at the new layout I can't help but noticing the similarity to what Google+ has been introducing a short while ago: changing from a more linear vertical arrangement to a tiled display, trying to make maximum use of available display area. While on the one hand this is great for putting the pictures more into the focus of the viewing experience, for people who like to be more in control of how their pictures are displayed quit a bit harder; obviously, given the time constraints, I did not have the time yet to go exploring about possible options to customize the way in which my photostream is being rendered -- from the post I have been reading so far the options however seem to be limited, such that what you get essentially is what Flickr thinks is best. My guess is though, that during the next few days we are going to see quite a number of (blog) posts about the various ways in which Flickr's new face can be molded into a more personalized experience (this surely happend after Google+ went to the new design in a matter of hours).
+
+ * [Yahoo gives Flickr a new face, a new app, and a new business model](http://arstechnica.com/gadgets/2013/05/yahoo-gives-flickr-a-new-face-a-new-app-and-a-new-business-model) -- Ars Technica
+ * [All-new Flickr comes with free terabyte and ads, update for Android app](http://connect.dpreview.com/post/1636474797/flickr-update-terabyte-android-app) -- dpreview
+
+> Flickr, the photo storage and sharing site bought by Yahoo way back in 2005, has been brought into the 21st century with a new look, new pricing, and a new Android app.
+>
+> Gone is the old Flickr interface of small thumbnails, gobs of whitespace, and lots of metadata. In its place, the site has big thumbnails, full-screen pictures by default, and metadata for each image tucked below the fold. Flickr's Lightbox view, that removes the clutter around the page and shows pictures on their own, remains available.
+
+> To go with the new look is a new pricing model, one that's almost unrecognizable compared to the old one. The old Flickr had two tiers, free and Pro. Free was extremely limited: you could upload 300MB of photos and two videos per month, and only your newest 200 photos would actually be visible. The $24.95-a-year Pro, on the other hand, was extremely liberal: unlimited photos and videos per-month, ad-free browsing, and detailed statistics on your photos.
+>
+> In the new Flickr, the Free account is a lot, lot better. Free users get 1TB of storage and can upload an unlimited number of photos or videos (with videos limited to three minutes of 1080p). Individual photos and videos are limited to 200MB and 1GB each. There are then two paid options beyond that: $49.99 a year removes ads but otherwise changes nothing; $499.99 (yes; a penny less than five hundred bucks) doubles the storage to 2TB.
+
+ * [There's no such thing as 'pro' photographers: More details](http://connect.dpreview.com/post/2244688754/flickr-pro-account-changes) -- dpreview
+
+> Much of the fallout surrounding Flickr's massive updates this Monday continues to center around changes to Pro user accounts. Oh, and then there was that thing Yahoo CEO Marissa Mayer said: “There’s no such thing as Flickr Pro today because \[with so many people taking photographs\] there’s really no such thing as professional photographers anymore.”
+
 ### Data migration ###
 
  * [Synology](http://www.synology.com)

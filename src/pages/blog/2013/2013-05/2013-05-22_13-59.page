@@ -1,0 +1,26 @@
+---
+title: "Mehr Bilder"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Wed, 22. May 2013 -- 13:59_
+
+Vor allen Dingen Julia hatte es ja immer wieder mit der Tatsache, dass die Seiten in Sachen Photographie vor allen Dingen eines vermissen liessen: Bilder. Ich habe zwar nach wie vor einiges an Text dort, aber der mehr visuelle Eindruck liess doch ein wenig zu wuenschen uebrig. Seit dem heutigen Tage duerte sich dies Stueck fuer Stueck aendern...
+
+Aufhaenger hierfuer waren die Kommunikation mit den [Rotslab](http://www.rotslab.nl) Machern; wie ja schon berichtet hatte es da zwischenzeitliche kleinere Komplikationen gegeben, was die Einbindung meiner Bilder betrifft, so dass ich mich da auf die Suche nach einer besseren Loesung gemacht habe. Wie ich aber anhand eines anderen Beispiels erkennen konnte, musste es eine Moeglichkeit geben ein auf [Flickr](http://www.flickr.com) vorhandenes Picture-Set in eine Seite (z.B. auf einem Blog) einzubinden; was ich allerdings noch wusste, wie dies von der praktischen Seite her geschieht, so dass ich mich vor dem Mittagessen mal schnell auf die Suche nach Infos gemacht habe. War gluecklicherweise nicht so sonderlich schwer, so dass recht bald fuendig geworden bin. Wie sich herausstellt ist es wirklich ein klein wenig HTML code, welcher in die Seite eingefuegt werden muss, um anschliessend die Slideshow angezeigt zu kriegen.
+
+~~~~
+<iframe
+   align="center"
+   src="http://www.flickr.com/slideShow/index.gne?group_id=&user_id=<USER_ID>&set_id=<SET_ID>&tags=<TAGS>"
+   frameBorder="0"
+   width="540"
+   height="540"
+   scrolling="no">
+</iframe>
+~~~~
+
+Einfach `user_id` und `set_id` eintragen und schon lassen sich die Bilder einbetten. Auch wenn die urspruengliche Motivation ja war auf diese Weise meine Bilder in die Rotslab Seiten einbetten zu koennen, so habe ich dies gleich zum Anlass genommen auch mal ein paar meiner Konzert-Photographie Seiten zu ueberarbeiten. Als Resultat daraus praesentiert sich meine Webseite nun wieder ein klein wenig mehr bunt; angesichts der (hoffentlich) zunehmenden externen Besuche kann es ja nicht schaden sich auf vernuenftige Weise darzustellen und auch Kostproben der eigenen Arbeiten vorweisen zu koennen.
