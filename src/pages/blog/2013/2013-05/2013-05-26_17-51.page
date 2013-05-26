@@ -1,0 +1,91 @@
+---
+title: "Data migration"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Sun, 26. May 2013 -- 17:51_
+
+It is done now! After dragging this around for longer than it actually had to be, the data volume(s) on my [Synology](http://www.synology.com) NAS since beging of this weekend finally are as they were supposed to be:
+
+![Synology Hybrid RAID](/blog/2013/2013-05/2013-05-26_synology.png)
+
+As it has turned out, migrating all of the data stored from the two 4-bay [Drobos](http://www.drobo.com) was be a bit more tricky than I originally had expected. Probably, with a little bit more patience and reading of documentation beforehand, I could have saved myself the detour of creating and destroying volumes to move around data.
+
+Given the internal design of the [Synology Hybrid RAID](http://www.synology.de/support/tutorials_show.php?q_id=492) (SHR) -- which I guess can be considered somewhat similar to Drobo's [Beyond RAID](http://www.drobo.com/how-it-works/beyond-raid.php) technology -- some care needs to ba taken in the manner in which a volume made up of multiple drives is gradually build up. The main point to take into account is, that new disks to be integrated into an existing volume will have to be at least of the size as the largest disk in the volume. Hence what starting up with a volume composed as this
+
+~~~~
+.                             Available   Protection    Unused
+`-- Volume 1
+    1.0 TB   \
+    1.0 TB    |   3.5 TB     2 TB         996 GB        500 GB
+    1.5 TB   / 
+~~~~
+
+adding a pair of 3 TB drives will block the latter adding of 2 TB drives into that same volume. As a result of this the only way to make use of the three 2 TB drives removed from the emptied Drobo was to create a new volume:
+
+~~~~
+.                             Available   Protection    Unused
+|-- Volume 1
+|   1.0 TB   \
+|   1.0 TB    |
+|   1.5 TB    |  9.5 TB       6.5 TB      3.0 TB
+|   3.0 TB    |
+|   3.0 TB   /
+`-- Volume 2
+    2.0 TB   \
+    2.0 TB    |  6.0 TB         4 TB      2.0 TB
+    2.0 TB   /
+~~~~
+
+So how to proceeed in order to collect all of the drives into a single large volume? As a first intermediate step I had to move the data away from Volume 1, such that I was able to break it up into two smaller volumes, separting the 3 TB drives from the smaller ones, which were supposed to form the root of the completed volume:
+
+~~~~
+.                             Available   Protection    Unused
+|-- Volume 1
+|   1.0 TB    \
+|   1.0 TB     |   3.5 TB     2 TB        996 GB        500 GB
+|   1.5 TB    /
+|-- Volume 2
+|   2.0 TB    \
+|   2.0 TB     |   6.0 TB     4 TB          2 TB
+|   2.0 TB    /
+`-- Volume 3
+    3.0 TB    \
+    3.0 TB    /    6.0 TB     3 TB          3 TB
+~~~~
+
+Moving data off Volume 2 onto the other two volumes, I was able to dissolve the former and integrate the 2 TB drives with Volume 1:
+
+~~~~
+.                             Available   Protection    Unused
+|-- Volume 1
+|   1.0 TB    \
+|   1.0 TB     |
+|   1.5 TB     |
+|   2.0 TB     |   9.5 TB     7.5 TB       2 TB
+|   2.0 TB     |
+|   2.0 TB    /
+`-- Volume 3
+    3.0 TB    \
+    3.0 TB    /    6.0 TB     3	TB	       3 TB
+~~~~
+
+At that stage now data residing on Volume 3 could be moved over to Volume 1, allowing me to dissolve the former in order to absorb its drives into Volume 1:
+
+~~~~
+.                             Available   Protection    Unused
+`-- Volume 1
+    1.0 TB    \
+    1.0 TB     |
+    1.5 TB     |
+    2.0 TB     |
+    2.0 TB     |   15.5 TB    12.5 TB     3.0 TB
+    2.0 TB     |
+    3.0 TB     |
+    3.0 TB    /
+~~~~
+
+As I mentioned right at the beginning: all of this probably could have been considerably easier, if proper care had been taken when starting out. Nevertheless by now not only I should have learned my lesson, but also by now I am in the process of migrating data from the second Drobo onto the NAS. Once that step has been completed the plan is to attache the Drobo as an external drive to the NAS, thereby extenting the storage space which can be served within the local network.

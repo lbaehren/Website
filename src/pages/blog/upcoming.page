@@ -45,83 +45,6 @@ Taking a closer look at the new layout I can't help but noticing the similarity 
 
 > Much of the fallout surrounding Flickr's massive updates this Monday continues to center around changes to Pro user accounts. Oh, and then there was that thing Yahoo CEO Marissa Mayer said: “There’s no such thing as Flickr Pro today because \[with so many people taking photographs\] there’s really no such thing as professional photographers anymore.”
 
-### Data migration ###
-
- * [Synology](http://www.synology.com)
- * [RAID calculator](http://www.synology.nl/support/RAID_calculator.php)
-
-As it has turned out, migrating all of the data stored on the two 4-bay [Drobos](http://www.drobo.com) can be a bit more tricky as I originally had expected. Probably, with a little bit more patience and reading of some of the documentation, things could be done by now, but by now this is water spilled under the bridge. Given the internal design of the [Synology Hybrid RAID](http://www.synology.de/support/tutorials_show.php?q_id=492) (SHR) -- which I guess can be considered somewhat similar to Drobo's [Beyond RAID](http://www.drobo.com/how-it-works/beyond-raid.php) technology -- I managed to block the intended volume extension path I had in mind. While mixing and matching drives of different sizes still is ok, gradually building up the RAID volume now has taken a slight detour: starting with a set of two spare 1 TB drives I still had lying around, after transfering some ammount of data, I janked out the smallest of the drives in older of my two Drobos.
-
-~~~~
-.                             Available   Protection    Unused
-`-- Volume 1
-    1.0 TB   \
-    1.0 TB    |   3.5 TB     2 TB         996 GB        500 GB
-    1.5 TB   / 
-~~~~
-
-~~~~
-.                             Available   Protection    Unused
-|-- Volume 1
-|   1.0 TB   \
-|   1.0 TB    |
-|   1.5 TB    |  9.5 TB       6.5 TB      3.0 TB
-|   3.0 TB    |
-|   3.0 TB   /
-`-- Volume 2
-    2.0 TB   \
-    2.0 TB    |  6.0 TB         4 TB      2.0 TB
-    2.0 TB   /
-~~~~
-
-As an intermediate step Volume 1 will have to be broken up and its drives be rearranged in two separate volumes:
-
-~~~~
-.                             Available   Protection    Unused
-|-- Volume 1
-|   1.0 TB    \
-|   1.0 TB     |   3.5 TB     2 TB        996 GB        500 GB
-|   1.5 TB    /
-|-- Volume 2
-|   2.0 TB    \
-|   2.0 TB     |   6.0 TB     4 TB          2 TB
-|   2.0 TB    /
-`-- Volume 3
-    3.0 TB    \
-    3.0 TB    /    6.0 TB     3 TB          3 TB
-~~~~
-
-Moving data from Volume 2 onto Volumes 1 and 3, I then will be able to dissolve Volume 2 in order to grow Volume 1 with the freed drives:
-
-~~~~
-.                             Available   Protection    Unused
-|-- Volume 1
-|   1.0 TB    \
-|   1.0 TB     |
-|   1.5 TB     |
-|   2.0 TB     |   9.5 TB     7.5 TB       2 TB
-|   2.0 TB     |
-|   2.0 TB    /
-`-- Volume 3
-    3.0 TB    \
-    3.0 TB    /    6.0 TB     3	TB	       3 TB
-~~~~
-
-The with this arrangement now data can be migrated from Volume 3 to Volume 1, such that finally Volume 3 can be dissolved for the drives to be added to Volume 1:
-
-~~~~
-.                             Available   Protection    Unused
-`-- Volume 1
-    1.0 TB    \
-    1.0 TB     |
-    1.5 TB     |
-    2.0 TB     |
-    2.0 TB     |   15.5 TB    12.5 TB     3.0 TB
-    2.0 TB     |
-    3.0 TB     |
-    3.0 TB    /
-~~~~
-
 ### Fablab ###
 
 > Ein [FabLab](http://de.wikipedia.org/wiki/FabLab) (engl. fabrication laboratory – Fabrikationslabor) ist eine offene, demokratische High-Tech-Werkstatt mit dem Ziel, Privatpersonen industrielle Produktionsverfahren für Einzelstücke zur Verfügung zu stellen. Typische Geräte sind 3D-Drucker, Laser-Cutter, CNC-Maschinen, Pressen zum Tiefziehen oder Fräsen, um eine große Anzahl an unterschiedlichen Materialien und Werkstücken bearbeiten zu können („make almost everything“). FabLabs erlauben die unkomplizierte Anfertigung von hoch individualisierten Einzelstücken oder nicht mehr verfügbaren Ersatzteilen (Rapid Manufacturing).
@@ -331,16 +254,6 @@ It is for quite a while now that the large of my two Drobos is reminding me to a
 | Noise Level           | 23.1 dB(A)                       | 21.5 dB(A)                           |
 | Power Consumption     | 71.5W (Access);                  | 111.1W (Access);                     |
 |                       | 28.6W (HDD Hibernation)          | 41.8W (HDD Hibernation)              |
-
-### Nach vier Wochen ###
-
-... kann ich vielleicht eine kleine Zusammenfassung von dem geben, wie es mir hier in Utrecht bei [SRON](http://www.sron.nl) ergangen ist. Wenn ich in meiner Beschreibung wirklich vollstaendig sein wollte, muesste ich natuerlich auch die Rolle von [S\[&\]T](http://www.stcorp.nl) mit einbeziehen -- allerdings habe ich bisher mit der Truppe in Delft so wenig zu tun was die alltaeglichen Aktivitaeten betrifft, dass ich diesbezueglich nicht sonderlich viel sagen kann -- der Schwerpunkt der Interaktion liegt ganz klar unter dem Dach von SRON.
-
-"Interaktion" ist vielleicht auch schon eines der besten Stichworte, um einen der wesentlichen Unterschiede zum letzten Jahr in Koeln zu beschreiben: es ist nicht alleine die Tatsache dass [TROPOMI](/work/tropomi.html) im Rahmen eines international besetzten Teams entwickelt wird (was zu einem netten Mix an Sprachen fuehrt), sondern vor allen Dingen auch dass die Umgebung insgesamt belebt ist.
-
-+++
-
-Einen entscheidenden Unterschied zwischen dem Start bei [ASTRON](htpp://www.astron.nl) und hier bei [SRON](http://www.sron.nl) gibt es durchaus: waehrend [die ersten Notizen im Januar 2004](/blog/2004/2004-01/index.html) eher kurzer Natur und und im wesentlichen Text waren, sind die Berichte aus Utrecht bisher eigentlich recht gut bebildert. Ich weiss zwar nicht, ob dies notwendigerweise auf Dauer der Fall sein wird, aber bis auf weiteres bin ich recht neugierig die Umgebung mit der Kamera zu erkunden (so dass ich eben nicht alles muehsam probieren muss zu beschreiben).
 
 ### Rebuilding broken ports ###
 

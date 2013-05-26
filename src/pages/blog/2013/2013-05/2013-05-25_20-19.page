@@ -1,0 +1,34 @@
+---
+title: "Know your command line tools"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Sat, 25. May 2013 -- 20:19_
+
+Sometimes it is a good thing to have some of the old school knowledge: needing to fit files of a size exceeeding 4 GB onto a drive with a FAT file-system I remebered a little tools I came to know during the days of the original Physics CIP-Pool here at Bonn University.
+
+~~~~
+NAME
+     split -- split a file into pieces
+
+SYNOPSIS
+     split [-a suffix_length] [-b byte_count[k|m]] [-l line_count] [-p pattern]
+           [file [name]]
+~~~~
+
+When does `plit` come in handy? Suppose you need to transfer a data file from one computer to another one (in this case Mac to Fedora Linux) via a memory card; one of the obstacles is finding a file-system which is accessible from both sides. Since even after multiple attempts to pick an alternative I once more ended up fit the rather dated FAT, the thing I had to deal with was the file size limit. Hence if the task is to transfer a file larger than the supported 4 GB, then indeed being able to split the data into multiple smaller parts can help save the day. Running
+
+~~~~
+split big.file -b 4000m small_
+~~~~
+
+will chop `big.file` up into a collection of 4000 MB each. The inverse operation then can be performed using `cat`:
+
+~~~~
+cat small_aa small_ab > big.file
+~~~~
+
+Sure, this is not the most elegent manner in which to pass around data, but if the alternative was not being able to do so, I'd rather remember that Linux does have all these powerful command line tools.

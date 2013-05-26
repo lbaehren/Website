@@ -9,6 +9,149 @@ tags: Blog
  
 **:::**
  
+### Data migration ###
+
+
+
+
+_Sun, 26. May 2013 -- 17:51_
+
+It is done now! After dragging this around for longer than it actually had to be, the data volume(s) on my [Synology](http://www.synology.com) NAS since beging of this weekend finally are as they were supposed to be:
+
+![Synology Hybrid RAID](/blog/2013/2013-05/2013-05-26_synology.png)
+
+As it has turned out, migrating all of the data stored from the two 4-bay [Drobos](http://www.drobo.com) was be a bit more tricky than I originally had expected. Probably, with a little bit more patience and reading of documentation beforehand, I could have saved myself the detour of creating and destroying volumes to move around data.
+
+Given the internal design of the [Synology Hybrid RAID](http://www.synology.de/support/tutorials_show.php?q_id=492) (SHR) -- which I guess can be considered somewhat similar to Drobo's [Beyond RAID](http://www.drobo.com/how-it-works/beyond-raid.php) technology -- some care needs to ba taken in the manner in which a volume made up of multiple drives is gradually build up. The main point to take into account is, that new disks to be integrated into an existing volume will have to be at least of the size as the largest disk in the volume. Hence what starting up with a volume composed as this
+
+~~~~
+.                             Available   Protection    Unused
+`-- Volume 1
+    1.0 TB   \
+    1.0 TB    |   3.5 TB     2 TB         996 GB        500 GB
+    1.5 TB   / 
+~~~~
+
+adding a pair of 3 TB drives will block the latter adding of 2 TB drives into that same volume. As a result of this the only way to make use of the three 2 TB drives removed from the emptied Drobo was to create a new volume:
+
+~~~~
+.                             Available   Protection    Unused
+|-- Volume 1
+|   1.0 TB   \
+|   1.0 TB    |
+|   1.5 TB    |  9.5 TB       6.5 TB      3.0 TB
+|   3.0 TB    |
+|   3.0 TB   /
+`-- Volume 2
+    2.0 TB   \
+    2.0 TB    |  6.0 TB         4 TB      2.0 TB
+    2.0 TB   /
+~~~~
+
+So how to proceeed in order to collect all of the drives into a single large volume? As a first intermediate step I had to move the data away from Volume 1, such that I was able to break it up into two smaller volumes, separting the 3 TB drives from the smaller ones, which were supposed to form the root of the completed volume:
+
+~~~~
+.                             Available   Protection    Unused
+|-- Volume 1
+|   1.0 TB    \
+|   1.0 TB     |   3.5 TB     2 TB        996 GB        500 GB
+|   1.5 TB    /
+|-- Volume 2
+|   2.0 TB    \
+|   2.0 TB     |   6.0 TB     4 TB          2 TB
+|   2.0 TB    /
+`-- Volume 3
+    3.0 TB    \
+    3.0 TB    /    6.0 TB     3 TB          3 TB
+~~~~
+
+Moving data off Volume 2 onto the other two volumes, I was able to dissolve the former and integrate the 2 TB drives with Volume 1:
+
+~~~~
+.                             Available   Protection    Unused
+|-- Volume 1
+|   1.0 TB    \
+|   1.0 TB     |
+|   1.5 TB     |
+|   2.0 TB     |   9.5 TB     7.5 TB       2 TB
+|   2.0 TB     |
+|   2.0 TB    /
+`-- Volume 3
+    3.0 TB    \
+    3.0 TB    /    6.0 TB     3	TB	       3 TB
+~~~~
+
+At that stage now data residing on Volume 3 could be moved over to Volume 1, allowing me to dissolve the former in order to absorb its drives into Volume 1:
+
+~~~~
+.                             Available   Protection    Unused
+`-- Volume 1
+    1.0 TB    \
+    1.0 TB     |
+    1.5 TB     |
+    2.0 TB     |
+    2.0 TB     |   15.5 TB    12.5 TB     3.0 TB
+    2.0 TB     |
+    3.0 TB     |
+    3.0 TB    /
+~~~~
+
+As I mentioned right at the beginning: all of this probably could have been considerably easier, if proper care had been taken when starting out. Nevertheless by now not only I should have learned my lesson, but also by now I am in the process of migrating data from the second Drobo onto the NAS. Once that step has been completed the plan is to attache the Drobo as an external drive to the NAS, thereby extenting the storage space which can be served within the local network.
+ 
+**:::**
+ 
+ 
+### Know your command line tools ###
+
+
+
+
+_Sat, 25. May 2013 -- 20:19_
+
+Sometimes it is a good thing to have some of the old school knowledge: needing to fit files of a size exceeeding 4 GB onto a drive with a FAT file-system I remebered a little tools I came to know during the days of the original Physics CIP-Pool here at Bonn University.
+
+~~~~
+NAME
+     split -- split a file into pieces
+
+SYNOPSIS
+     split [-a suffix_length] [-b byte_count[k|m]] [-l line_count] [-p pattern]
+           [file [name]]
+~~~~
+
+When does `plit` come in handy? Suppose you need to transfer a data file from one computer to another one (in this case Mac to Fedora Linux) via a memory card; one of the obstacles is finding a file-system which is accessible from both sides. Since even after multiple attempts to pick an alternative I once more ended up fit the rather dated FAT, the thing I had to deal with was the file size limit. Hence if the task is to transfer a file larger than the supported 4 GB, then indeed being able to split the data into multiple smaller parts can help save the day. Running
+
+~~~~
+split big.file -b 4000m small_
+~~~~
+
+will chop `big.file` up into a collection of 4000 MB each. The inverse operation then can be performed using `cat`:
+
+~~~~
+cat small_aa small_ab > big.file
+~~~~
+
+Sure, this is not the most elegent manner in which to pass around data, but if the alternative was not being able to do so, I'd rather remember that Linux does have all these powerful command line tools.
+ 
+**:::**
+ 
+ 
+### Vaartse Rijn ###
+
+
+
+
+_Fri, 24. May 2013 -- 15:27_
+
+Da war das Wetter am Mittwoch Abend einfach zu schoen... Nachdem ich mich ein wenig im [Rotslab](http://www.rotslab.nl) mit der Kamera ausgetobt hatte, war es draussen an der frischen Luft einfach noch zu warm -- und vor allen Dingen war das Licht einfach toll -- so dass ich ganz bestimmt nicht einfach auf dem schnellsten Weg zurueck in die Wohnung laufen wollte. Stattdessen habe ich mich lieber noch ein wenig in der Gegend umgeschaut, vor allen Dingen natuerlich in Rotsoord, dem Stadtteil noerdlich von Hoograve (alles nur ein paar Minuten Fussmarsch entfernt).
+
+![Vaartse Rijn](/blog/2013/2013-05/hdr_20130522_185625_vaartse_rijn.jpg)
+
+Der Vaartse Rijn verlaeuft im wesentlichen durch den Sueden der Stadt (bzw. daran vorbei), hat aber ein paar Auslaeufer, welche in Verlaengerung in die Kanaele im Stadtinneren muenden; so kommt es dann auch, dass man ueber recht grosse Entfernung hinweg bin fast in die Stadt hinein schauen kann (und natuerlich auch in die umgekehrte Richtung). Hier in den Aussenbereichen ist durchaus einiges an Bootsverkehr zu finden: neben den gelegenlichen Ausflugsbooten sind hier recht haeufig Ruderer unterwegs, welche auf den recht geradlinigen Wasserverlaeufen eine gute Trainingsumgebung vorfinden.
+ 
+**:::**
+ 
+ 
 ### Umsteigen ###
 
 
@@ -98,7 +241,7 @@ Es ist auf jeden Fall schon einmal klar, dass ich auf bei dem naechsten Abend An
 
 _Wed, 22. May 2013 -- 20:42_
 
-I got back a few minutes ago, after taking a detour to the [Rotslab](http://www.rotslab), where I have been attenting a special evening two weeks ago. After sending in the pictures I made that evening, I wanted to pick up on the idea I had earlier, namely to also photograph the interior of the lab in HDR. While due to work I was not able to attend this afternoon's activities, I at least left early enough to still encounter some of the organizers. From the feedback I have been getting, they seem to have liked the pictures I have been sending in, such that getting access to the lab wasn't a problem. Amazingly enough I all in all I have been spending almost an hour taking various pictures inside the place, bracketing 9 exposures in steps of 1 EV between -4 EV and +4 EV (which is the maximum the camera will allow me to do in normal operation). Now back home I am of course curious to see the outcome: the files already have been copied onto the computer, basic keywording has been done and now I have started processing...
+I got back a few minutes ago, after taking a detour to the [Rotslab](http://www.rotslab.nl), where I have been attenting a special evening two weeks ago. After sending in the pictures I made that evening, I wanted to pick up on the idea I had earlier, namely to also photograph the interior of the lab in HDR. While due to work I was not able to attend this afternoon's activities, I at least left early enough to still encounter some of the organizers. From the feedback I have been getting, they seem to have liked the pictures I have been sending in, such that getting access to the lab wasn't a problem. Amazingly enough I all in all I have been spending almost an hour taking various pictures inside the place, bracketing 9 exposures in steps of 1 EV between -4 EV and +4 EV (which is the maximum the camera will allow me to do in normal operation). Now back home I am of course curious to see the outcome: the files already have been copied onto the computer, basic keywording has been done and now I have started processing...
  
 **:::**
  
@@ -206,56 +349,6 @@ _Tue, 21. May 2013 -- 06:30_
 ![Graffiti in Utrecht](/blog/2013/2013-05/dsc_20130515_185608.jpg)
 
 Um fair zu sein -- nicht die komplette Wand war mit derartigen Bildern ueberzogen, aber war Komplexizitaet war obiges Beispiel kein kompletter Ausreisser. Aufgrund der lokalen Begebenheiten hatte ich leider keine Moeglichkeit mich weiter umzuschauen, so dass ich bisher nur einen kleinen Ausschnitt dessen zu sehen bekommen habe, was sich entlang der Bahngleise finden lassen duerfte. Da werde ich scherlich noch einmal losziehen und anderen Zugaengen fuer die Gegend suchen.
- 
-**:::**
- 
- 
-### ProgPower 2013 ###
-
-
-
-
-_Mon, 20. May 2013 -- 22:47_
-
-Hurra, die Bestellungen sind raus -- sowohl fuer die Unterkunft als auch fuer das Festival selber. Nachdem ich im letzten Jahr ja total verpennt hatte mich um Organisation des Trips zu kuemmern, habe ich heute Abend mal noch alles (zumindest das, was sich derzeit schon regeln laesst) fuer das diesjaehrige [ProgPower Europe](http://www.progpowereurope.com) Festival in Baarlo festgemacht. Ich hatte am Donnerstag ja noch einen kurzen Chat mit Catalina, wo die Frage aufkam; da ich nur wenige Tage vorher noch auf den Seiten des Festivals war, um dort festzustellen dass u.a. [Enchant](http://www.enchantband.com) in diesem Jahr mit dabei sind, war eigentlich ziemlich klar, dass ich nicht schon wieder zuhause bleiben sollte. Um also die Dinge nicht unnoetig hinauszuzoegern, sondern mich selber auch ein wenig unter Zugzwang zu setzen, habe ich mich eben also noch um die notwendigen Buchungen gekuemmert: damit waere also klar dass ich vom 4. bis 6. Oktober wieder in Baarlo sein werde, um mir zweieinhalb Tage musikalisches Programm in angenehmer Atmosphaere zukommen zu lassen.
- 
-**:::**
- 
- 
-### Fotoverslag ###
-
-
-
-
-_Sun, 19. May 2013 -- 22:22_
-
-Auch wenn ich nicht ganz so schnell war, wie ich dies moeglich gewesen waere, so hatte ich Anfang dieser Woche noch eine Mail an die [Rotslab](http://www.rotslab.nl) Leute geschickt, um (wie ja versprochen) die Bilder weiter zu reichen. Als ich gerade eben noch einmal auf die Seiten des Labs geschaut hatte, fand ich dort den folgenden [Eintrag](http://www.rotslab.nl/?p=1300):
-
-> Op acht mei orgnaniseerde Rotslab de Rotslab Buurtavond Special. Tijdens deze avond opende Rotslab officieel zijn Fablab met lasersnijder en 3d printer voor ondernemers, buurtbewoners en overheid. Daarnaast konden de deelnemers neuro accousitcs ervaren en gingen de zij aan de slag met eco Graffiti. Lars Bähren heeft van deze avond een mooie fotoserie gemaakt die je hier kunt bekijken.
-
-![Rotslab](/blog/2013/2013-05/2013-05-18_rotslab.png)
-
-Da werde ich doch mal schauen muessen, dass ich mich da wieder blicken lasse, denn ich denke mal schon, dass ich in der Lage waere etwas zu der visuellen Praesenz des Labs beizutragen.
- 
-**:::**
- 
- 
-### EU verbietet offene Olivenöl-Kännchen ###
-
-
-
-
-_Sat, 18. May 2013 -- 12:20_
-
-Also manchmal frage ich mich schon, was derartige Vorschriften sollen:
-
-> Die EU verbietet ab 2014 offene Olivenöl-Kännchen in Restaurants. Die vier größten Produzenten von Olivenöl in der EU dürfte es freuen - sie hatten das Verbot gefordert.
->
-> "Die Vorschriften besagen: Restaurants müssen Flaschen verwenden, die nicht wieder nachgefüllt werden können, und mit besonderen Verschlüssen", so Sprecher Oliver Drewes. "Und natürlich gehört auf so eine Flasche auch ein Etikett, dem genau zu entnehmen ist, ob das Öl nun wirklich kaltgepresst ist und extra nativ."
->
-> Das, so der Kommissionssprecher, sei doch eine gute Nachricht für die Verbraucher in Europa: "Denn vom 1. Januar des nächsten Jahres an werden wir sicherstellen, dass wir die Qualität und die Herkunft des Olivenöls garantieren können", so Drewes.
-
-In wie weit dies wirklich vorrangig zum Schutz des Verbrauchers ist, darueber mag man durchaus geteilter Meinung sein; fuer mich klingt dies einfach wieder einmal zu sehr danach, als muessen die angeblichen Verbraucherrechte fuer etwas ganz anderes herhalten, in diesem Fall wirtschaftliche Interessen der Oelhersteller. Da es ja wenig Sinn macht 1 Liter Flaschen auf die Tische zu stellen, wenn sich diese anschliessend nicht mehr weiterverwenden lassen, ist durchaus ein Anstieg bei kleineren Abfuellungen denkbar: dass dies dann aber in Bezug auf Gefaessmaterial gegen Inhalt deutlich unguenstiger wird duerfte sich wohl recht einfach nachvollziehen lassen. Darueber hinaus wuerde ich mal stark vermuten dass auch die energetische Bilanz pro Liter Oel keinesfalls guenstiger ausfallen wird, wenn ich einfach mehr Behaeltnisse fuer die gleiche Gesamtmenge an Oel herstellen muss.
  
 **:::**
  
