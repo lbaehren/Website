@@ -1,0 +1,32 @@
+---
+title: "Umstellung"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Mon, 27. May 2013 -- 05:59_
+
+Nachdem ich ja bereits vor einer Weile das erste der beiden Drobos aufgeloest habe -- die Platten stecken nun allesamt in dem [Synology](http://www.synology.com) NAS -- muss ich natuerlich auch dafuer sorgen, dass die damit in Verbindung stehenden Aenderungen an restlichen Infrastruktur vorgenommen werden. Dazu gehoert unter anderem auch, dass die [Git](http://www.git-scm.com) Remotes angepasst werden. Neben dem zentralen Verzeichnis auf dem Rechner selber, gab es von allen Repositories noch einmal einen Clone auf dem Drobo, z.B.
+
+~~~~
+drobo	/Volumes/Drobo/Repositories/Documents/Bibliotheque (fetch)
+drobo	/Volumes/Drobo/Repositories/Documents/Bibliotheque (push)
+~~~~
+
+Da diese komplette Sammlung nun auf dem NAS liegt, muss ich also fuer die Arbeitskopien die Zeiger auf weitere Kopien aktualisieren. Dies bedeutet, dass der `drobo` Verweis geloescht und durch einen neuen `nas` Eintrag ersetzt wird:
+
+~~~~
+git remote rm drobo
+git remote add nas <url>
+~~~~
+
+Im vorliegenden Fall heisst dies also
+
+~~~~
+nas	/Volumes/Repositories/Documents/Bibliotheque.git (fetch)
+nas	/Volumes/Repositories/Documents/Bibliotheque.git (push)
+~~~~
+
+Eine globale Methode gibt es (zumindest meines Wissens) nicht, so dass ich mir die restlichen Arbeitskopien der Reihe nach vornehmen muss; was sich da natuerlich anbietet, ist in gleichem Zuge noch einmal zu ueberpruefen, ob die Organisation der Repositories noch ok ist.

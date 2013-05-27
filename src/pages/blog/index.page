@@ -9,6 +9,39 @@ tags: Blog
  
 **:::**
  
+### Umstellung ###
+
+
+
+
+_Mon, 27. May 2013 -- 05:59_
+
+Nachdem ich ja bereits vor einer Weile das erste der beiden Drobos aufgeloest habe -- die Platten stecken nun allesamt in dem [Synology](http://www.synology.com) NAS -- muss ich natuerlich auch dafuer sorgen, dass die damit in Verbindung stehenden Aenderungen an restlichen Infrastruktur vorgenommen werden. Dazu gehoert unter anderem auch, dass die [Git](http://www.git-scm.com) Remotes angepasst werden. Neben dem zentralen Verzeichnis auf dem Rechner selber, gab es von allen Repositories noch einmal einen Clone auf dem Drobo, z.B.
+
+~~~~
+drobo	/Volumes/Drobo/Repositories/Documents/Bibliotheque (fetch)
+drobo	/Volumes/Drobo/Repositories/Documents/Bibliotheque (push)
+~~~~
+
+Da diese komplette Sammlung nun auf dem NAS liegt, muss ich also fuer die Arbeitskopien die Zeiger auf weitere Kopien aktualisieren. Dies bedeutet, dass der `drobo` Verweis geloescht und durch einen neuen `nas` Eintrag ersetzt wird:
+
+~~~~
+git remote rm drobo
+git remote add nas <url>
+~~~~
+
+Im vorliegenden Fall heisst dies also
+
+~~~~
+nas	/Volumes/Repositories/Documents/Bibliotheque.git (fetch)
+nas	/Volumes/Repositories/Documents/Bibliotheque.git (push)
+~~~~
+
+Eine globale Methode gibt es (zumindest meines Wissens) nicht, so dass ich mir die restlichen Arbeitskopien der Reihe nach vornehmen muss; was sich da natuerlich anbietet, ist in gleichem Zuge noch einmal zu ueberpruefen, ob die Organisation der Repositories noch ok ist.
+ 
+**:::**
+ 
+ 
 ### Data migration ###
 
 
@@ -333,22 +366,6 @@ Bedenkt man, das ich heute Nachmittag noch eine Mail erhalten habe, welche sich 
 _Tue, 21. May 2013 -- 07:10_
 
 Also dies hatte ich auch noch nicht als Grund fuer die Verspaetung eines Zuges... Aus den angekuendigten 15 Minuten sind nun 22 Minuten geworden, so dass sich meine Ankunft in Utrecht also noch ein wenig hinauszoegern wird. Solange es unterwegs aber keine weiteren Vorkommnisse zu vermelden gibt, laesst sich dies wohl verkraften, zumal ich geplant hatte heute Morgen direkt vom Bahnhof ins Institut zu fahren (ohne den Umweg ueber die Wohnung).
- 
-**:::**
- 
- 
-### Graffiti in Utrecht ###
-
-
-
-
-_Tue, 21. May 2013 -- 06:30_
-
-[Wie ich letzte Woche berichtet hatte](/blog/2013/2013-05/2013-05-15_23-30.html), war es mir gelungen das Verpassen der Busverbindung nach Hoograve in eine Entdeckungstour zu wenden. Was ist bei der Gelegenheit allerdings noch ein wenig vernachlaessigt hatte war, auch das entsprechnde Bildmaterial mitzuliefern; ich hatte zwar einen groben Eindruck von der Umgebung vermittelt, aber bisher nicht sehen lassen, was genau ich bei der Gelegenheit gefunden hatte... was ich bei dieser Gelegenheit unbedingt noch nachholen wollte.
-
-![Graffiti in Utrecht](/blog/2013/2013-05/dsc_20130515_185608.jpg)
-
-Um fair zu sein -- nicht die komplette Wand war mit derartigen Bildern ueberzogen, aber war Komplexizitaet war obiges Beispiel kein kompletter Ausreisser. Aufgrund der lokalen Begebenheiten hatte ich leider keine Moeglichkeit mich weiter umzuschauen, so dass ich bisher nur einen kleinen Ausschnitt dessen zu sehen bekommen habe, was sich entlang der Bahngleise finden lassen duerfte. Da werde ich scherlich noch einmal losziehen und anderen Zugaengen fuer die Gegend suchen.
  
 **:::**
  
