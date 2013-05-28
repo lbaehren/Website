@@ -185,6 +185,17 @@ body {
     border-bottom: 1.5px solid #dadada;
 }
 
+#breadcrumbs {
+    clear:         both;
+    margin:        10px 0 10px 0px;
+    padding:       0;
+    line-height:   2.0em;
+    font-size:     1.1em;
+    text-align:    right;
+    color:         #808080;
+    font-size:     0.9em;
+}
+
 #contentfull {
     margin:      10px 10px 10px 10px;
     padding:     2px 0 0 0;
