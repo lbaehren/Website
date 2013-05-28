@@ -1,7 +1,7 @@
 ---
-title: Kein Audio-Device mehr
+title: "Kein Audio-Device mehr"
 in_menu: false
-author: Lars Baehren
+author: "Lars Baehren"
 tags: Computing
 ---
 
@@ -9,12 +9,9 @@ tags: Computing
 
 _04 November 2003 -- 23:11_
 
-Die Installation des 2.6.0 Kernel hat sich als durchaus positiv 
-erwiesen; die beiden CD-Laufwerke werde direkt erkannt, da die SCSI 
-Emulation direkt fest eingebaut ist.
-Allerdings klappt der Sound immer noch nicht; alle entsprechenden 
-Programme werfen eine Fehlermeldung aus, daß kein Audio-Device verfügbar 
-ist:
+Die Installation des 2.6.0 Kernel hat sich als durchaus positiv erwiesen; die beiden CD-Laufwerke werde direkt erkannt, da die SCSI Emulation direkt fest eingebaut ist.
+
+Allerdings klappt der Sound immer noch nicht; alle entsprechenden Programme werfen eine Fehlermeldung aus, daß kein Audio-Device verfügbar ist:
 
 * aviplay
 ~~~~
@@ -34,7 +31,7 @@ SDL: Unable to open audio: No available audio device
 Could not open/initialize audio device -> no sound.
 Audio: no sound
 ~~~~
-* totem 
+* totem
 ~~~~
 audio_alsa_out: sample format non available: Invalid argument
 ~~~~
