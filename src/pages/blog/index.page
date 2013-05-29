@@ -9,6 +9,34 @@ tags: Blog
  
 **:::**
  
+### Utrecht Centraal ###
+
+
+
+
+_Wed, 29. May 2013 -- 00:59_
+
+Das verspricht wieder eine ansehnliche Sammlung an Eintraegen zu werden, sollte ich wirklich die Reise einigermassen kleinschrittig dokumentieren wollen...
+
+Das schoene an der naechtlichen Zeit ist, dass die Strassen recht leer sind -- dementsprechend hat der Bus die Strecke zum Bahnhof recht schnell absolviert, sogar ein wenig schneller, als dies laut Reiseplaner der Fall haette sein sollen. Ist aber nicht weiter schlimm, weil ich so mit dem Fahrkartenkauf nicht hetzen musste. Der IC ist hier am Gleis bereits angekuendigt, gleichzeitig aber mit einer Verspaetung von fuenf Minuten behaftet. Alles aber halb so wild, denn letzten Endes werde ich wohl immer noch gut eine Stunde vor der verabredeten Zeit in Schiphol eintreffen; wie Julia durchaus zurecht anmerkte, duerfte es deutlich angenehmer sein am Flughafen zu warten, statt hier am Bahnhof.
+ 
+**:::**
+ 
+ 
+### Unterwegs ###
+
+
+
+
+_Wed, 29. May 2013 -- 00:26_
+
+Da beginnt sich also, die grosse Reise. Nachdem ich eben noch einmal mit Julia gesprochen hatte, habe ich noch die verbleibenden Sachen zusammengepackt -- restlicher Abwasch, Abfall raus, Wasser und Netzkabel einpacken -- und mich dann aus dem Haus gemacht. Da ich insgesamt ein wenig frueher unterwegs bin, als ich dies urspruenglich gedacht hatte, kann ich noch den letzten Bus der Linie 1 nehmen -- dadurch ist es nur ein kurzer Weg bis zur Bushaltestelle und ich kann mir einen laengeren Fussmarsch mit dem Gepaeck sparen. Ich bin allerdings nicht so ganz sicher, ob die Rechnung die fruehere Zugverbindung betreffend ausgehen wird: vom Reiseplaner her habe ich eine etwas andere Zeit im Kopf, aber dies kann auch daran liegen, dass da der Fussweg von der Wohnung bis zur Haltestelle mit eingerechnet war.
+
+Wie dem auch sei: in zehn Minuten sollte hier der Bus vorbekommen und mich zum Bahnhof bringen. Dort muss ich mich dann ein wenig beeilen, da ich ja noch eine Fahrkarte kaufen muss (und ich bin mir nicht so ganz sicher wie dies gehen soll, da ich dies noch nicht mir meiner deutschen EC-Karte probiert habe). Insgesamt 12 Minuten muessten aber ausreichen, um dies zu regeln, denn ansonsten haette ich fast eine Stunde lang Aufenthalt am Bahnhof hier in Utrecht...
+ 
+**:::**
+ 
+ 
 ### Reisevorbereitungen ###
 
 
@@ -295,57 +323,6 @@ At that stage now data residing on Volume 3 could be moved over to Volume 1, all
 ~~~~
 
 As I mentioned right at the beginning: all of this probably could have been considerably easier, if proper care had been taken when starting out. Nevertheless by now not only I should have learned my lesson, but also by now I am in the process of migrating data from the second Drobo onto the NAS. Once that step has been completed the plan is to attache the Drobo as an external drive to the NAS, thereby extenting the storage space which can be served within the local network.
- 
-**:::**
- 
- 
-### Know your command line tools ###
-
-
-
-
-_Sat, 25. May 2013 -- 20:19_
-
-Sometimes it is a good thing to have some of the old school knowledge: needing to fit files of a size exceeeding 4 GB onto a drive with a FAT file-system I remebered a little tools I came to know during the days of the original Physics CIP-Pool here at Bonn University.
-
-~~~~
-NAME
-     split -- split a file into pieces
-
-SYNOPSIS
-     split [-a suffix_length] [-b byte_count[k|m]] [-l line_count] [-p pattern]
-           [file [name]]
-~~~~
-
-When does `plit` come in handy? Suppose you need to transfer a data file from one computer to another one (in this case Mac to Fedora Linux) via a memory card; one of the obstacles is finding a file-system which is accessible from both sides. Since even after multiple attempts to pick an alternative I once more ended up fit the rather dated FAT, the thing I had to deal with was the file size limit. Hence if the task is to transfer a file larger than the supported 4 GB, then indeed being able to split the data into multiple smaller parts can help save the day. Running
-
-~~~~
-split big.file -b 4000m small_
-~~~~
-
-will chop `big.file` up into a collection of 4000 MB each. The inverse operation then can be performed using `cat`:
-
-~~~~
-cat small_aa small_ab > big.file
-~~~~
-
-Sure, this is not the most elegent manner in which to pass around data, but if the alternative was not being able to do so, I'd rather remember that Linux does have all these powerful command line tools.
- 
-**:::**
- 
- 
-### Vaartse Rijn ###
-
-
-
-
-_Fri, 24. May 2013 -- 15:27_
-
-Da war das Wetter am Mittwoch Abend einfach zu schoen... Nachdem ich mich ein wenig im [Rotslab](http://www.rotslab.nl) mit der Kamera ausgetobt hatte, war es draussen an der frischen Luft einfach noch zu warm -- und vor allen Dingen war das Licht einfach toll -- so dass ich ganz bestimmt nicht einfach auf dem schnellsten Weg zurueck in die Wohnung laufen wollte. Stattdessen habe ich mich lieber noch ein wenig in der Gegend umgeschaut, vor allen Dingen natuerlich in Rotsoord, dem Stadtteil noerdlich von Hoograve (alles nur ein paar Minuten Fussmarsch entfernt).
-
-![Vaartse Rijn](/blog/2013/2013-05/hdr_20130522_185625_vaartse_rijn.jpg)
-
-Der Vaartse Rijn verlaeuft im wesentlichen durch den Sueden der Stadt (bzw. daran vorbei), hat aber ein paar Auslaeufer, welche in Verlaengerung in die Kanaele im Stadtinneren muenden; so kommt es dann auch, dass man ueber recht grosse Entfernung hinweg bin fast in die Stadt hinein schauen kann (und natuerlich auch in die umgekehrte Richtung). Hier in den Aussenbereichen ist durchaus einiges an Bootsverkehr zu finden: neben den gelegenlichen Ausflugsbooten sind hier recht haeufig Ruderer unterwegs, welche auf den recht geradlinigen Wasserverlaeufen eine gute Trainingsumgebung vorfinden.
  
 **:::**
  
