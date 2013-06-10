@@ -22,7 +22,7 @@ SYNOPSIS
 When does `plit` come in handy? Suppose you need to transfer a data file from one computer to another one (in this case Mac to Fedora Linux) via a memory card; one of the obstacles is finding a file-system which is accessible from both sides. Since even after multiple attempts to pick an alternative I once more ended up fit the rather dated FAT, the thing I had to deal with was the file size limit. Hence if the task is to transfer a file larger than the supported 4 GB, then indeed being able to split the data into multiple smaller parts can help save the day. Running
 
 ~~~~
-split big.file -b 4000m small_
+split -b 4000m big.file small_
 ~~~~
 
 will chop `big.file` up into a collection of 4000 MB each. The inverse operation then can be performed using `cat`:
