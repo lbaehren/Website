@@ -6,18 +6,16 @@ author: "Lars Bahren"
 
 # Photography :: {title:} #
 
-Normal:
-
-- [AF Nikkor 50mm f/1.4D](http://imaging.nikon.com/lineup/lens/singlefocal/normal/af_50mmf_14d/index.htm)
-- [AF Nikkor 85mm f/1.4D IF](http://imaging.nikon.com/lineup/lens/singlefocal/normal/af_85mmf_14d_if/index.htm)
-
-Zoom:
-
-- Tamron SP AF10-24mm F/3.5-4.5 Di II LD Aspherical IF 
-- AF-S DX Zoom-Nikkor 17-55mm f/2.8G IF-ED
-- AF-S DX VR Zoom-Nikkor 18-200mm f/3.5-5.6G IF-ED
-- [AF-S VR Zoom-Nikkor 70-200mm f/2.8G IF-ED](http://imaging.nikon.com/lineup/lens/zoom/telephotozoom/af-s_70-200mmf_28g_vr2/index.htm)
-- Nikkor 80-400mm f/4.5-5.6D ED
+| Lens                          | Type   | Sensor |
+|:------------------------------|:-------|:-------|
+| [AF Nikkor 50mm f/1.4D](http://imaging.nikon.com/lineup/lens/singlefocal/normal/af_50mmf_14d/index.htm) | Normal | FX/DX  |
+| [AF Nikkor 85mm f/1.4D IF](http://imaging.nikon.com/lineup/lens/singlefocal/normal/af_85mmf_14d_if/index.htm) | Normal | FX/DX  |
+| [Sigma 105mm F2.8 EX DG OS HSM](http://www.sigmaphoto.com/product/105mm-f28-ex-dg-os-hsm-macro) | Macro  | FX/DX  |
+| Tamron SP AF10-24mm F/3.5-4.5 Di II LD Aspherical IF | Wide-angle zoom | DX |
+| AF-S DX Zoom-Nikkor 17-55mm f/2.8G IF-ED | Zoom | DX |
+| AF-S DX VR Zoom-Nikkor 18-200mm f/3.5-5.6G IF-ED | Zoom | DX |
+| [AF-S VR Zoom-Nikkor 70-200mm f/2.8G IF-ED](http://imaging.nikon.com/lineup/lens/zoom/telephotozoom/af-s_70-200mmf_28g_vr2/index.htm) | Telephoto zoom | FX/DX |
+| Nikkor 80-400mm f/4.5-5.6D ED | Telephoto zoom | FX/DX |
 
 ### AF Nikkor 50mm f/1.4D ###
 
