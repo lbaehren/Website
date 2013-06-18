@@ -1,0 +1,21 @@
+---
+title: "Joining mp3 audiofiles"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Sat, 15. June 2013 -- 23:29_
+
+This definitely is a tool which already has proven very useful:
+
+> [Join Together](https://www.macupdate.com/app/mac/21391/join-together) automates the process of joining the files of selected iTunes tracks together with QuickTime and exporting them as a single AAC Music or Audiobook file/track. Optionally, you can create a "chapterized" audio file of the exported AAC file with pointers to the individually joined tracks.
+
+Time and time again I have been looking for ways to properly join multiple audio tracks -- most likely encoded as mp3 -- to avoid navigating through larger track lists. The latter is something I have come to loath with the various audio-books I have been listening to: splitting up a seven hour recording into 20 or 30 individual segments isn't too much fun, because it is rather unlikely that I would be able to listen to everything in one session; sure, there is the feature to have the program used for listening remebering the position, but this is of little help finding the correct track. Unfortunately finding decent instructions on how to join multiple audio files from the command line is not an easy thing; I takes little to unerstand that a simple
+
+~~~~
+cat file1.mp3 file2.mp3 > file.mp3
+~~~~
+
+is not good enough. However not only is this approach mentioned way too many times online, but also there is a frightening lack of instructions on how to carry out this operation otherwise (especially when trying to avoid re-encoding everything).

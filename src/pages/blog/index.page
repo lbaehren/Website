@@ -9,6 +9,88 @@ tags: Blog
  
 **:::**
  
+### Mitschneiden ###
+
+
+
+
+_Tue, 18. June 2013 -- 07:23_
+
+Ich sollte wirklich, wenn ich hier im ICE unterwegs bin, immer mal den Harddisk-Recorder in Standby halten -- die Ansagen, welche es mitunter im Zug zu hoeren gibt, waeren es wirklch wert geammelt zu werden. Dazu gehoert auch die Information, welche eben noch bei der Ausfahrt in Duesseldorf durchgegeben wurde: Ursache fuer die Verzoegerung bei der Weiterfahrt waren betrunkene Personen im Gleichbereich. Das gibt es also wohl nicht nur bei Festen...
+ 
+**:::**
+ 
+ 
+### Landwirtschaftliche Experimente ###
+
+
+
+
+_Mon, 17. June 2013 -- 23:07_
+
+
+Na, das war dann letzten Endes doch ein etwas aufschweifenderer Abend, als ich dies erwartet haette. Aber wie dies nun einmal so ist, wenn Julia einmal irgendwo zwischen den Planzen wuehlen kann, dann ist es fast schon ein Ding der Unmoeglichkeit vor dem Einbruch der Dunkelheit wegzukommen. Dies geht hier im Hof so... und nun wohl auch bei dem neusten landwirtschaftlichen Experiment ein kleines Stueck ausserhalb von Bonn:
+
+![Schild am Feld](/blog/2013/2013-06/dsc_20130617_205844.jpg)
+
+Was es damit auf sich hat, laesst sich einigermassen leicht erklaeren. Im Zuge einer naechtlichen Stoeberaktion ist Julia auf eine Sonderangebot von [Meine Ernte](http://www.meine-ernte.de) gestossen, ueber welches sich fuer die Saison von Anfang Mai bis Ende Oktober ein Gemuesegarten anmieten laesst:
+
+| Garten | Geeignet für | Gartengröße | Einmaliger Saisonbeitrag |
+|:----|:-------------|:-----------:|:------------------------:|
+| Kleiner Gemüsegarten  | Singles und Pärchen, oder 1-2 Personen  | ca. 45 qm | 179,- EUR |
+| Familien Gemüsegarten | Familien und Freunde, oder 3-4 Personen | ca. 85 qm | 329,- EUR |
+
+_Sonderangebot_ in diesem Zusammenhang heisst, dass es den kleinen Gemuesegarten (zumindest zeitlich) zum halben Preis gab. In diesem Paket enthalten sind die folgenden Dinge:
+
+ * Ein bunter Gemüsegarten für eine ganze Saison von Anfang Mai bis Ende Oktober 2013
+ * Über 20 verschiedene leckere Gemüsesorten und schöne Blumen fachmännisch für Sie gepflanzt
+ * Ein Grundsortiment an allen erforderlichen Gartengeräten und Wasser zum Gießen vor Ort
+ * Regelmäßige und professionelle Beratung und Unterstützung - vor Ort durch den Landwirt, über Aushänge und online
+ * Umfassende Informationen zu allen Fragen rund um Ihren Gemüsegarten sowie Tipps und Tricks zum Gärtnern
+
+Die darueber hinaus auf der Internetseite aufgelistete Fotogalerie duerfte aus verstaendlichen Gruenden nicht so sonderlich interessant sein -- da habe ich selber bereits begonnen entsprechendes Dokumentationsmaterial zu sammeln, welche in der kommenden Zeit sicherlich weiter anwachsen wird (ich habe schon festgestellt, dass ich mich mit dem neu zugelegte Makro-Objektiv auf so einem Feld wahrscheinlich so richtig austoben kann).
+
+Ok, sich jetzt einfach so ein Feld zu schnappen waere wohl keine sonderlich gute Idee -- ausschlaggebend war hier vor allen Dingen auch der Umstand, dass Uedorf sehr gut erreichbar ist: direkt an der Linie 16 in Richtung Koeln gelegen ist es also ein Leichtes mal eben in die Bahn zu springen. Vergleichbar einfach ist auch der Abstecher mit dem Fahrrad: auch wenn die Route noch einiges an Optimierung vertragen kann, so ist jetzt schon klar, dass der Weg ein gutes Stueck kuerzer ist als zum Wellpoint -- von den Fitness Studios in Buschdorf und Roisdorf ist es ein recht kleiner Sprung, so dass es ausreichend Gelegenheiten geben duerfte, mal "auf einen Sprung" bei der _Biosphere 45-W_ vorbeizuschauen (auch wenn aus mir sicherlich wohl niemals so der riesige Gaertner werden wird). Fuer die Lebensmittelversorgung bis in den Herbst hinein heisst dies also wohl: je mehr man mit anpackt, desto mehr kommt vor allen Dingen Gemuese aus eigener Produktion auf den Tisch.
+
+![Karte Uedorf](/blog/2013/2013-06/2013-06-17_Feld_Uedorf.png)
+ 
+**:::**
+ 
+ 
+### Leer ###
+
+
+
+
+_Sun, 16. June 2013 -- 06:25_
+
+Da ist der Zeitpunkt also gekommen: nachdem ich vor einer Weile schon das erste der beiden Drobos komplett leergeraeumt habe, sind nun auf die Daten von dem zweiten vollstaendig auf das Synology umgezogen. Der letzte Transfer ist diese Nacht durchgelaufen -- alles was ich gerade noch machen musste war, die urspruenglichen Ordner zu loeschen, weil dort einige Dateien herumlagen, welche sich aufgrund der Zugriffsrechte nicht so ohne weiteres entfernen liessen. Damit waeren jetzt also alle Daten auf dem NAS und ich kann meine Peripherie neu sortieren.
+ 
+**:::**
+ 
+ 
+### Joining mp3 audiofiles ###
+
+
+
+
+_Sat, 15. June 2013 -- 23:29_
+
+This definitely is a tool which already has proven very useful:
+
+> [Join Together](https://www.macupdate.com/app/mac/21391/join-together) automates the process of joining the files of selected iTunes tracks together with QuickTime and exporting them as a single AAC Music or Audiobook file/track. Optionally, you can create a "chapterized" audio file of the exported AAC file with pointers to the individually joined tracks.
+
+Time and time again I have been looking for ways to properly join multiple audio tracks -- most likely encoded as mp3 -- to avoid navigating through larger track lists. The latter is something I have come to loath with the various audio-books I have been listening to: splitting up a seven hour recording into 20 or 30 individual segments isn't too much fun, because it is rather unlikely that I would be able to listen to everything in one session; sure, there is the feature to have the program used for listening remebering the position, but this is of little help finding the correct track. Unfortunately finding decent instructions on how to join multiple audio files from the command line is not an easy thing; I takes little to unerstand that a simple
+
+~~~~
+cat file1.mp3 file2.mp3 > file.mp3
+~~~~
+
+is not good enough. However not only is this approach mentioned way too many times online, but also there is a frightening lack of instructions on how to carry out this operation otherwise (especially when trying to avoid re-encoding everything).
+ 
+**:::**
+ 
+ 
 ### In den Mikrokosmos ###
 
 
@@ -188,92 +270,6 @@ Auch wenn ich noch fuer etwaige Gegenargumente offen bin, so scheint die Entsche
 _Fri, 07. June 2013 -- 18:38_
 
 Also da merkt man doch, dass ich nicht nur deutlich laenger als sonst unterwegs war, sondern auc in der Zwischenzeit mit diversen Dingen abseits der Arbeit beschaeftigt war: durch die Kombination von Urlaub und Buurtavond haben sich doch groessere Mengen an Bildern bei mir auf der Festplatte angesammelt, welche jetzt nach der Rueckkehr umkopiert werden wollen. Folgerichtig habe ich direkt heute Morgen den Rechner an das NAS geklemmt, damit ich alles an Daten, was gesichert werden muss, uebertragen kann. Dabi merkt man durchaus den Unterschied gegenueber dem Stand bis vor zwei oder drei Wochen: der Transfer auf das Synology geht wahrnehmbar schneller, als dies zuvor fuer das Drobo der Fall war.
- 
-**:::**
- 
- 
-### Rotslab Buurtavond ###
-
-
-
-
-_Thu, 06. June 2013 -- 19:03_
-
-Gestern Abend war es wieder soweit: nach meinem ersten Besuch eines Nachbarschaftsabend im [Rotslab](http://www.rotslab.nl) bei mir in der Naehe, stand gestern noch einmal ein Termin im Kalender. Aufgrund der anstehenden Sommerferien wird es wohl im Juli und August keine vergleichbaren Veranstaltungen geben -- Grund genug also vor dieser Pause noch einmal alle Interessieren ins Haus zu holen. Auch wenn es dessen nicht gebraucht haette, um an dem Abend wieder reinzuschauen, so waren Angebot/Anfrage fuer eine kurze [Praesentation](/blog/2013/2013-06/2013-06-05_14-49.html) sicherlich noch einmal eine zusaetzliche Motivation den Abend nicht zuhause zu verbringen (auch wenn ich diesmal ein wenig frueher zurueck war als beim letzten Mal).
-
-![Miniatures](/blog/2013/2013-06/dsc_20130605_222214.jpg)
-
-Das ein wenig uebergreifende Thema an diesem Abend war [Miniature Street Art](http://www.rotslab.nl/?p=1378): dabei handelt es sich um das Erstellen -- und anschliessend Platzieren in einer entsprechenden Umgebung -- von miniaturisierten Skulpturen. Dabei kann es sich einfach nur um einzelne Figuren handeln oder recht komplexe Szene, welche sich aufgrund ihrer Groesse in einem Blumentopf oder zwischen Grashalmen verstecken lassen. So wie dies im Zuge der Einleitung fuer den praktischen Teil des Abends erklaert wurde -- diese Aufteilung scheint sich mittlerweile etabliert zu haben -- geht es eben nicht nur darum, diese miniaturisierten Szenen zusammenzubauen, sondern fester Bestandteil ist auch das anschliessende photographische Dokumentieren der Installation. Die Macher im Rotslab haben da durchaus schon eine Reihe von Ideen, welche sie realisieren wollen: dazu gehoert das Erstellen einer GPS-gestuetzten Miniatur-Kunst Wanderroute, welche zunaechst einmal durch Hoograve verlaufen soll, sich dann spaeter aber ausweiten liesse. Fuer jedes aufgestellte Kunstwerk gibt es dann GPS-Koordinaten, Umgebungs- und Detailbilder, welche ueber eine Website und eine Handy-App abrufbar sind; die Aufnahmen von der weiteren Umgebung sollen beim Finden des Kunstwerkes vor Ort helfen (schliesslich reden wir hier von einem Objekt, welches im besten Fall wenige Zentimeter gross ist), die Detailbilder sind dann eher als erzaehlerisches Element gedacht. Gerade der letzte Punkt stellt von der photo-technischen Seite her eine Herausforderung dar, welche ich beschlossen habe so zu loesen, dass ich mir damit einen weiteren Bereich an Motiven zugaengliche machen kann.
-
-![3D printer](/blog/2013/2013-06/dsc_20130605_215905.jpg)
-
-Was die Figuren, Utensilien und Ausruestungsgegenstaende betrifft, gibt es zwei grundsaetzliche Wege, welche man gehen kann: Miniaturen kaufen oder selber herstellen. Entscheidet man sich fuer die letztere der beiden Varianten (was bei so einer Einrichtung wie dem Rotslab natuerlich hahe liegt), dann kann man sich immer noch ueberlegen, ob eher die manuelle Herstellung (z.B. aus Plastilin) vorzieht oder von der technischen Infrasstruktur des Labs Gebrauch macht. Wenn man ja schon mal einen 3D-Drucker zur Verfuegung hat, kann man diesen durchaus dafuer verwenden, alle Bestandteile so einer Miniaturszene von Grund auf zu erschaffen: wenn man genau hinschaut, laesst sich erkennen, wie langsam eine Figur von Fuss bis Kopf entsteht.
- 
-**:::**
- 
- 
-### Praesentation fertig ###
-
-
-
-
-_Wed, 05. June 2013 -- 14:49_
-
-Da habe ich es ja doch noch geschafft eine kleine Praesentation zusammenzustellen, welche ich dann heute Abend auf dem Buurtavond im [Rotslab](http://www.rotslab.nl) sehen lassen kann:
-
-![Presentation title page](/blog/2013/2013-06/2013-06-05_Rotslab.png)
-
-Nachdem ich ja die Bilder vom dem letzten Abend -- und auch dem anschliessenden Shoot im leeren Lab -- eingeschickt hatte, gab es die Rueckmeldung, dass es doch ganz nett waere, wenn ich bei dem letzten Abend vor den Sommerferien ein paar Worte ueber mich sagen koennte... und dabei vielleicht ein klein wenig von dem vorstelle was ich so in photographischer Sicht treibe. Grundsaetzlich hatte ich dies natuerlich schon in der Tuerkei vorbereiten koennen, aber da war ich dann doch mehr mit Exkursionen und photographieren beschaeftigt (was sich sicherlich auch irgendwo nachvollziehen laesst), so dass dies noch fuer den Anfang der Woche hier zurueck in Utrecht auf dem Programm stand. Mit dem Stand von letzter Nacht war ich einfach nicht zufrieden -- vor allen Dingen weil ich im Kopf keinen erzaehlerischen Ablauf wusste -- so dass ich mich nach dem Mittagessen noch einmal daran gesetzt habe. Nun ist es aber fertig und ich muss demnach vor allen Dingen schauen, dass ich rechtzeitig hier aus dem Institut verschwinde, damit ich nicht zu spaet bei dem Treffen erscheine.
- 
-**:::**
- 
- 
-### Bahn bietet WLAN auf fünf weiteren Strecken an ###
-
-
-
-
-_Tue, 04. June 2013 -- 15:03_
-
-Wie [Heise News](http://www.heise.de) in einer Meldung bericht, erweitert die [Deutsche Bahn](http://www.bahn.de) ihr WLAN Angebot fuer ICE Reisende:
-
-> WLAN während der Fahrt können Fahrgäste der Deutschen Bahn nun auf fünf weiteren ICE-Strecken nutzen. Das von der Deutschen Telekom bestrittene Angebot gibt es nun auch auf den Strecken Hamburg–Berlin, Frankfurt (Main)–Nürnberg–München, Dortmund–Hannover–Berlin, Göttingen–Wolfsburg und Fulda–Würzburg. Damit sind zu den bereits mit WLAN versorgten 1500 weitere 1500 Streckenkilometer hinzugekommen, heißt es in einer Mitteilung der Bahn. Zwischen Hamburg und Dortmund, Berlin und Leipzig oder Bremen und Hannover bietet die Bahn noch kein WLAN an.
-
-In wie die Streckenkilometer jetzt so der enrscheidende Faktor sind, weiss ich nicht -- mich persoenlich interessieren da doch vor allen Dingen die Konditionen (und Kosten) fuer das Angebot:
-
-> Wer nicht Telekom-Kunde ist, benötigt einen "HotSpot-Pass", der die Zugangsdaten enthält. Ihn gibt es für eine Nutzungsdauer von 24 Stunden zum Preis von 4,95 Euro. 600 Minuten, die innerhalb von 30 Tagen aufgebraucht werden können, kosten 19,95 Euro, für 30 Tage 34,95 Euro. Telekom-Kunden ohne HotSpot-Flat zahlen nach dem Tarif "HotSpot Basic" 9 Cent pro Minute.
-
-Das ist schon ein ziemlicher Unterschied gegenueber den Verhaeltnissen hier in den Niederlanden: auch wenn ich nicht sagen koennte, wie gut hier die Abdeckung in der Flaeche oder den Verbindungen ist, so sind hier mit der Benutzung des WLAN an Bord der Zuege (bisher) keine extra Kosten verbunden. Dass ich von der DB einen vergleichbaren Service erwartet haette kann ich nicht behaupten, ich haette mich aber gerne einmal positiv ueberraschen lassen.
- 
-**:::**
- 
- 
-### Pictures from the Trip ###
-
-
-
-
-_Tue, 04. June 2013 -- 10:02_
-
-Now that everybody is back from the trip to Turkey, the big run on the multimedia recorded has begone. Though Already having started uploading photos at the evening of the very first day, it was only this morning that I sent out an email to the rest of the S\[&\]T crew, pointing out the [picture-set on Flickr](http://www.flickr.com/photos/larsbaehren/sets/72157633803797622). Only took a short while for the first first feedback with a question came in:
-
-> Great photos!
->
-> What kind of camera and/or lenses and filters did you use?
->
-> Some look sort of 'surrealistic', very cool!
-
-As almost to be expected, the question was with respect to the HDR pictures published in the set, e.g. such as the one below of one of the archaeological sites in Side:
-
-![One of the archaeological sites in Side](/blog/2013/2013-06/hdr_20130601_201354.jpg)
-
-Since a) the question has been coming up multiple times and b) I think the reply actually is quite readable, here what I have been sending in as an explanation:
-
-> I guess you are referring to the HDR portion of the pictures. I am employing a technique called High Dynamic Range Photography (HDR), which aims at capturing a wider gamut of colors and brightness level as possible with a single exposure. Since the dynamic range of most scenes goes way beyond what the sensor inside the camera is capable of recording, the Ansatz is to essentially scan through dynamic range; this is done by taking a series of images of different exposures, centering the exposure measurement on subsequent intervals in brightness. In the case of most of my HDRs from the trip: I am taking 9 exposures in the range -4 EV to +4 EV (in steps of 1 EV), metering on the darkest to the brightest elements in the scene. Afterwards the frames are combined off-camera, yielding an image of dynamic range superior to the individual frames. What then comes into play is a process called "tone-mapping": as the HDR has a dynamic range beyond the rendering capabilities of a computer display (and I guess even most printers), the HDR needs to be transformed back into a representation which indeed can be rendered. This step then typically is responsible for the surrealistic look, as there exists a multitude of mapping algorithms, each of them with several parameters that can be tuned to get the desired outcome.
->
-> For the capture I find that working with a wide-angle lens produces the most engaging compositions (i.e. framing of the scene) and final pictures: for almost of the HDRs I have been using a Tamron 10-24mm on a Nikon D300.
-
-I am pretty sure that there are countless more detailed and more technical explanations out there, but if asked for a simple summary, the above comes pretty close to how I would try out the basic process.
  
 **:::**
  
