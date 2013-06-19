@@ -1,0 +1,24 @@
+---
+title: "Schneckentempo"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Wed, 19. June 2013 -- 19:02_
+
+Da wundere ich doch eben, warum mir der Rechner fast unter den Fingern zusammenzubrechen scheint -- mit einem Male geht alles nur noch im Schneckentempo und vor allen Dingen jegliche Art von Schreib-/Lesezugriffen brauchen Ewigkeiten. Als ich dann mal einen Blick auf die diversen Terminal-Fenster geworfen habe, ist mir dann allerdings klar geworden werde gerade munter dabei ist Resourcen einzuverleiben:
+
+~~~~
+Auto packing the repository for optimum performance. You may also
+run "git gc" manually. See "git help gc" for more information.
+Counting objects: 62855, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (61425/61425), done.
+Writing objects: 100% (62855/62855), done.
+Total 62855 (delta 30064), reused 0 (delta 0)
+Removing duplicate objects:  72% (185/256)  
+~~~~
+
+Da ich heute Nachmittag noch einen groesseren `git clone` Job angeschmissen habe, bin ich wieder einmal an den Punkt gekommen, wo [Git](http://www.git-scm.com) damit beschaeftigt ist das lokale Repository zu optimieren; aus Erfahrung weiss ich, dass dies nicht nur eine Weile dauern kann (kommt natuerlich sehr auf die Groesse des Checkout an), sondern auch recht Resourcen-hungrig sein kann.

@@ -8,7 +8,7 @@ author: "Lars Baehren"
 
 _Wed, 19. June 2013 -- 11:43_
 
-Once in a while [CMake](http:/www.cmake.org) needs a little bit of help in finding all the individual pieces of an installed packages in a consistent manner. Where typically this get tricky -- and I would guess this is a more general problem every configuration tool is being confronted with -- is when there are multiple version of a package around; a common scenario e.g. is separate installations in `/usr` and `/usr/local` (where often the latter location holds a more recent version, which has ben installed manually). Here on my Mac things tend to even get more complicated, because besides the additional `/Library/Frameworks` there also is `/opt/local`, which is the installation prefix for packages installed through [MacPorts](http://www.macports.org). Exactly such a situation it is, where CMake can get confused:
+Once in a while [CMake](http:/www.cmake.org) needs a little bit of help in finding all the individual pieces of an installed packages in a consistent manner. Where typically this get tricky -- and I would guess this is a more general problem every configuration tool is being confronted with -- is when there are multiple versions of a package around; a common scenario e.g. is separate installations in `/usr` and `/usr/local` (where often the latter location holds a more recent version, which has ben installed manually). Here on my Mac things tend to even get more complicated, because besides the additional `/Library/Frameworks` there also is `/opt/local`, which is the installation prefix for packages installed through [MacPorts](http://www.macports.org). Exactly such a situation it is, where CMake can get confused:
 
 ~~~~
 -- Found components for SQLite

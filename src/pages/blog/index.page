@@ -9,6 +9,31 @@ tags: Blog
  
 **:::**
  
+### Schneckentempo ###
+
+
+
+
+_Wed, 19. June 2013 -- 19:02_
+
+Da wundere ich doch eben, warum mir der Rechner fast unter den Fingern zusammenzubrechen scheint -- mit einem Male geht alles nur noch im Schneckentempo und vor allen Dingen jegliche Art von Schreib-/Lesezugriffen brauchen Ewigkeiten. Als ich dann mal einen Blick auf die diversen Terminal-Fenster geworfen habe, ist mir dann allerdings klar geworden werde gerade munter dabei ist Resourcen einzuverleiben:
+
+~~~~
+Auto packing the repository for optimum performance. You may also
+run "git gc" manually. See "git help gc" for more information.
+Counting objects: 62855, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (61425/61425), done.
+Writing objects: 100% (62855/62855), done.
+Total 62855 (delta 30064), reused 0 (delta 0)
+Removing duplicate objects:  72% (185/256)  
+~~~~
+
+Da ich heute Nachmittag noch einen groesseren `git clone` Job angeschmissen habe, bin ich wieder einmal an den Punkt gekommen, wo [Git](http://www.git-scm.com) damit beschaeftigt ist das lokale Repository zu optimieren; aus Erfahrung weiss ich, dass dies nicht nur eine Weile dauern kann (kommt natuerlich sehr auf die Groesse des Checkout an), sondern auch recht Resourcen-hungrig sein kann.
+ 
+**:::**
+ 
+ 
 ### Directing CMake ###
 
 
@@ -16,7 +41,7 @@ tags: Blog
 
 _Wed, 19. June 2013 -- 11:43_
 
-Once in a while [CMake](http:/www.cmake.org) needs a little bit of help in finding all the individual pieces of an installed packages in a consistent manner. Where typically this get tricky -- and I would guess this is a more general problem every configuration tool is being confronted with -- is when there are multiple version of a package around; a common scenario e.g. is separate installations in `/usr` and `/usr/local` (where often the latter location holds a more recent version, which has ben installed manually). Here on my Mac things tend to even get more complicated, because besides the additional `/Library/Frameworks` there also is `/opt/local`, which is the installation prefix for packages installed through [MacPorts](http://www.macports.org). Exactly such a situation it is, where CMake can get confused:
+Once in a while [CMake](http:/www.cmake.org) needs a little bit of help in finding all the individual pieces of an installed packages in a consistent manner. Where typically this get tricky -- and I would guess this is a more general problem every configuration tool is being confronted with -- is when there are multiple versions of a package around; a common scenario e.g. is separate installations in `/usr` and `/usr/local` (where often the latter location holds a more recent version, which has ben installed manually). Here on my Mac things tend to even get more complicated, because besides the additional `/Library/Frameworks` there also is `/opt/local`, which is the installation prefix for packages installed through [MacPorts](http://www.macports.org). Exactly such a situation it is, where CMake can get confused:
 
 ~~~~
 -- Found components for SQLite
@@ -310,25 +335,6 @@ Um die Groessenverhaeltnisse einigermachen herauszuarbeiten habe ich -- zumindes
 _Sun, 09. June 2013 -- 18:49_
 
 Da ja eigentlich recht schnell absehbar war, in welche Richtung die Reise in Sachen Makro-Objektiv gehen wuerde, habe ich heute Nachmittag direkt die Bestellung aufgegeben. Ich haette dies sicherlich noch eine Weile im Kopf hin und her schieben koennen, aber sonderlich viele neue Erkenntnisse haette dies wohl nicht gebracht. Aus diesem Grund machte es wenig Sinn laenger zu warten: wenn darueber hinaus auch noch in Kuerze die Gelegenheit (oder vielleicht sogar die Notwendigkeit) besteht, das Objektiv einzusetzen, dann kann es nicht ganz verkehrt sein zumindest ein klein wenig Vorlauf zum Experimentieren und vertraut werden zu haben.
- 
-**:::**
- 
- 
-### Kaufentscheidung ###
-
-
-
-
-_Sat, 08. June 2013 -- 21:39_
-
-Auch wenn ich zunaechst einmal ein klein wenig auf Suche gehen muesste, um herauszufinden, wie lange es genau her ist, aber ich wuerde doch mal sagen, dass es schon eine ganze Weile her ist, dass ich meine Objektivsammlung erweitert habe. Nun scheint mir aber der perfekte (und auch notwendige) Zeitpunkt gekommen zu sein, um eine Anschaffung zu taetigen, welche ich immer mal wieder im Hinterkopf hatte, fuer die es aber bisher nie wirklichen Bedarf gab.
-
-Bei den Nachbarschaftsabend im [Rotslab](http://www.rotslab.nl) stand ja _Miniature Street Art_ als thematischer Schwerpunkt auf dem Programm. Bei dem damit verbundenen Photoshoot musste ich allerdings feststellen, dass Macro-Photographie von der technischen Seite her einige Herausforderungen mit sich bringt, welche durch meine derzeitige Ausruestung nicht abgedeckt werden. Da ich recht genau einordnen kann, wo das Problem liegt und wie es sich loesen laesst, befinde ich mich nun also auf der Suche nach einem guten Makro-Objektiv. Im Rennen sind:
-
- * [Sigma 105mm F2.8 EX DG OS HSM](http://www.sigmaphoto.com/product/105mm-f28-ex-dg-os-hsm-macro)
- * [AF-S VR Micro-Nikkor 105mm f/2.8G IF-ED](http://imaging.nikon.com/lineup/lens/specoalpurpose/micro/af-s_vr_micro-nikkor_105mmf_28_if/index.htm)
-
-Auch wenn ich noch fuer etwaige Gegenargumente offen bin, so scheint die Entscheidung mit ziemlicher Sicherheit fuer das Sigma Objektiv gefallen zu sein; von all dem, was ich in den diversen Tests und Besprechungen lesen kann, handelt es sich dabei um ein ausgezeichnetes Objektiv, welches -- und dies kommt schliesslich nicht so haeufig vor -- besser bewertet wird als die Variante des Kameraherstellers selber.
  
 **:::**
  
