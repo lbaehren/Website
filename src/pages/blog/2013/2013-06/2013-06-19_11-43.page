@@ -1,0 +1,70 @@
+---
+title: "Directing CMake"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Wed, 19. June 2013 -- 11:43_
+
+Once in a while [CMake](http:/www.cmake.org) needs a little bit of help in finding all the individual pieces of an installed packages in a consistent manner. Where typically this get tricky -- and I would guess this is a more general problem every configuration tool is being confronted with -- is when there are multiple version of a package around; a common scenario e.g. is separate installations in `/usr` and `/usr/local` (where often the latter location holds a more recent version, which has ben installed manually). Here on my Mac things tend to even get more complicated, because besides the additional `/Library/Frameworks` there also is `/opt/local`, which is the installation prefix for packages installed through [MacPorts](http://www.macports.org). Exactly such a situation it is, where CMake can get confused:
+
+~~~~
+-- Found components for SQLite
+-- SQLITE_ROOT_DIR   = /opt/local
+-- SQLITE_VERSION    = 3.7.17
+-- SQLITE_INCLUDES   = /Library/Frameworks/Mono.framework/Headers
+-- SQLITE_LIBRARIES  = /usr/lib/libsqlite3.dylib
+-- SQLITE_EXECUTABLE = /opt/local/bin/sqlite3
+~~~~
+
+As to be expected there are multiple versions of [SQLite](http://www.sqlite.org) installed on the system -- as a result of this simply using `find_path()`, `find_library()` and `find_program()` will result in a configuration settings which is anything but consistent. While one measure against this mix-up could be to iterate through the possible search locations one by one, taking into account available package information will result in a more guided and controlled inspection:
+
+~~~~
+  find_program (SQLITE_PC sqlite3.pc sqlite.pc
+    HINTS ${SQLITE_ROOT_DIR} ${CMAKE_INSTALL_PREFIX}
+    PATH_SUFFIXES lib lib/pkgconfig
+    )
+~~~~
+
+The package information for `pkg-config` contains all the essentials necessary to proceed:
+
+~~~~
+prefix=/opt/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+~~~~
+
+By parsing this file -- using a little bit of regular expressions -- we are now able to augment the search commends, e.g.
+
+~~~~
+  if (SQLITE_PC)
+    find_path (SQLITE_INCLUDES
+      NAMES sqlite3.h sqlite3ext.h
+	  HINTS ${SQLITE_ROOT_DIR} ${CMAKE_INSTALL_PREFIX}
+	  PATH_SUFFIXES include
+	  NO_CMAKE_SYSTEM_PATH
+	)
+  else (SQLITE_PC)
+    find_path (SQLITE_INCLUDES
+      NAMES sqlite3.h sqlite3ext.h
+	  HINTS ${SQLITE_ROOT_DIR}/include ${CMAKE_INSTALL_PREFIX}
+	  PATH_SUFFIXES include
+	)
+  endif (SQLITE_PC)
+~~~~
+
+such that finally
+
+~~~~
+-- Found components for SQLite
+-- SQLITE_ROOT_DIR   = /opt/local
+-- SQLITE_VERSION    = 3.7.17
+-- SQLITE_INCLUDES   = /opt/local/include
+-- SQLITE_LIBRARIES  = /opt/local/lib/libsqlite3.dylib
+-- SQLITE_EXECUTABLE = /opt/local/bin/sqlite3
+~~~~
+
+No this is something I can work with, if I want to develop against SQLite in my own code.
