@@ -18,11 +18,44 @@ tags: Blog
 ----
 **in preparation ...**
 
-### Strasse hoch ###
+### lofarsoft on Github ###
 
-Das war ja eine nette Gelegenheit: auch wenn ich dies schon einige Mal mitbekommen habe, wie die Burecke am Ende der 't Goylaan hochgeklappt wird um groessere Schiffe durchzulassen, hatte ich bisher leider nie mal die Kamera griffbereit. Als ich allerdings gestern Morgen -- nachdem ich mein Gepaeck in der Wohnung abgesetzt hatte -- in Richtung Institut aufgebrochen bin
+Having worked on [LOFAR](/work/lofar.html) for quite a number of years in a rather visible position, it is little of a surprise that once in a while I am still receiving emails concerning the [LOFAR User Software](http://www.lofar.org/wiki/doku.php?id=public:user_software:user_software) (LUS). The latest email exchange -- which was was an inquiry about the PyBDSM/Anaamika source finding package -- resulted in me actually having a look at some of the recent activities in LUS land: as it turns quite a bit of the information on the [LOFAR Wiki](http://www.lofar.org/wiki) is rather outdated. In order to provide some useful feedback, I updated my local working copies from the central [Subversion](http://subversion.apache.org) repository hosted at [ASTRON](http://www.astron.nl) and started searching through the commit messages. As it turns out, PyBDSM was removed from the LUS collection/repository more than a year ago, without this being reflected in any shape or form in the documentation hosted on the LOFAR Wiki:
 
-![Verkehrsbruecke](/blog/2013/2013-06/dsc_20130618_112211.jpg)
+> Author: rafferty
+>
+> Date: Fri May 11 2012 09:36:49 GMT+0200 (CEST)
+>
+> Subject: Removal of PyBDSM (moved to the LOFAR repository).
+
+After relaying this information back to Bonn University, I decided that it was about time to provide people with an interest in the LUS collection with an additional route to obtain the software: remembering the struggle it took to even move from CVS to Subversion it is of little surprise that a tool/platform combination such as [Git](http://www.git-scm.com)/[Github](http://www.github.com) never was adopted officially (though I would assume that most of the developers locally are running their changes through Git).
+
+ * [lofarsoft](https://github.com/lbaehren/lofarsoft) @ Github
+
+~~~~
+Counting objects: 182837, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (75472/75472), done.
+Writing objects: 100% (182837/182837), 1.31 GiB | 605.00 KiB/s, done.
+Total 182837 (delta 117555), reused 169109 (delta 104045)
+remote: Error code: 31cb6b0a91a911e2d3bd2b73fe7f34bb
+remote: warning: Large files detected.
+remote: warning: File src/Pulsar/external/tempo2/tempo2-2012.6.1.tar.gz is 59.77 MB;
+        this is larger than GitHub's recommended maximum file size of 50 MB
+remote: warning: File src/Pulsar/scripts/lambda_mollweide_haslam408_dsds.fits is 64.01 MB;
+        this is larger than GitHub's recommended maximum file size of 50 MB
+remote: warning: File src/Pulsar/external/tempo2/tempo2-2012.6.1.tar.gz is 59.76 MB;
+        this is larger than GitHub's recommended maximum file size of 50 MB
+remote: warning: File src/Pulsar/external/tempo2/tempo2-2012.6.1.tar.gz is 59.73 MB;
+        this is larger than GitHub's recommended maximum file size of 50 MB
+remote: warning: File src/CR-Tools/data/LOPES-CalTable/AntennaGainFaktor/table.f0i is 75.34 MB;
+        this is larger than GitHub's recommended maximum file size of 50 MB
+remote: warning: File data/lopes/LOPES-CalTable/AntennaGainFaktor/table.f0i is 75.34 MB;
+        this is larger than GitHub's recommended maximum file size of 50 MB
+remote: warning: File data/lopes/LOPES-CalTable/AntennaGainFaktor/table.f0i is 65.20 MB;
+        this is larger than GitHub's recommended maximum file size of 50 MB
+remote: warning: See http://git.io/iEPt8g for more information.
+~~~~
 
 ### Training Montage ###
 
