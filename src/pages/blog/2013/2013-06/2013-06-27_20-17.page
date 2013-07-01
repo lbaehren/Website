@@ -1,0 +1,61 @@
+---
+title: "Clean-up of configuration scripts"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Thu, 27. June 2013 -- 20:17_
+
+Now this is something which has been sitting right under my nose for way too long: as a leftover from early SWIR coding days, a number of Autotools configuration scripts and makefiles were lurking around in some directories. While technically speaking these files were doing no harm, they hardly could be considered any else but balast; all the configuration and build script generation is being handled by [CMake](http://www.cmake.org), such that really the fragments of an Autotools-based configuration were obsolete for a while now. Hence in order to rid the code base of some weight I now did a little bit of cleaning up:
+
+~~~~
+Updating f224ac7..c9d19b3
+Fast-forward
+ CMakeLists.txt                                               |   2 +-
+ {config/cmake/modules => cmake}/FindCFITSIO.cmake            |   0
+ {config/cmake/modules => cmake}/FindDoxyPy.cmake             |   0
+ {config/cmake/modules => cmake}/FindGSL.cmake                |   0
+ {config/cmake/modules => cmake}/FindHDF5.cmake               |   0
+ {config/cmake/modules => cmake}/FindLibConfig.cmake          |   0
+ {config/cmake/modules => cmake}/FindLibMagic.cmake           |   0
+ {config/cmake/modules => cmake}/FindNetCDF.cmake             |   0
+ {config/cmake/modules => cmake}/FindPython.cmake             |   0
+ {config/cmake/modules => cmake}/FindPythonModules.cmake      |   0
+ {config/cmake/modules => cmake}/FindPythonSphinx.cmake       |   0
+ {config/cmake/modules => cmake}/FindRandom123.cmake          |   0
+ {config/cmake/modules => cmake}/TestCFITSIOLibraryVersion.cc |   0
+ config/m4/fitsio.m4                                          |  93 ---------
+ config/m4/hdf5.m4                                            | 329 -------------------------------
+ config/m4/netcdf.m4                                          |  91 ---------
+ docs/doxygen/Tools/python_scripts_nonlinearity.md            |   9 +
+ source/c/swir/data/Makefile.am                               |   1 -
+ source/c/swir/io/Makefile.am                                 |   1 -
+ source/c/swir/stats/Makefile.am                              |   1 -
+ source/c/swir/utils/Makefile.am                              |   1 -
+ 21 files changed, 10 insertions(+), 518 deletions(-)
+~~~~
+
+As a result of this also the directory structure once more could be simplified: instead of 
+
+~~~~
+swir
+|-- config
+|   |-- cmake
+|   |   `-- modules
+|   `-- m4
+|-- doc
+`-- source
+~~~~
+
+we now flattened the code base as to
+
+~~~~
+swir
+|-- cmake
+|-- doc
+`-- source
+~~~~
+
+This might not be considered a big change, but I do see little use in dragging around dead bits and pieces. Should there ever arise the need to resurrect some of the Autotools scripts, they still could be retrieved from the [Git](http://www.git-scm.com) history.
