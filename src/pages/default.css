@@ -156,7 +156,7 @@ body {
 }
 
 #extras h2 {
-    font-size:      1.6em; 
+    font-size:      1.6em;
     font-weight:    normal;
     margin:         0 0 6px 0;
     letter-spacing: -1px;
@@ -361,15 +361,24 @@ td {
 /***** Form styles *****/
 
 .button {
-border-top:1px solid #d8d8d8;border-right:1px solid #d8d8d8;border-bottom:1px solid #d8d8d8;border-left:4px solid #cccccc;margin:0 0 15px 0;padding:7px 7px 7px 11px;background:#f4f4f4 url(images/menubg.gif) bottom left repeat-x;color:#505050;font-weight:bold;width:120px;
+    border-top:    1px solid #d8d8d8;
+    border-right:  1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    border-left:   4px solid #cccccc;
+    margin:        0 0 15px 0;
+    padding:       7px 7px 7px 11px;
+    background:    #f4f4f4 url(images/menubg.gif) bottom left repeat-x;
+    color:         #505050;
+    font-weight:   bold;
+    width:         120px;
 }
 
 input, textarea {
-    border:1px solid #cccccc;
-    font-family:Verdana,Tahoma,Arial,Sans-Serif;
-    font-size:1em;
-    margin:0;
-    padding:4px;
+    border:      1px solid #cccccc;
+    font-family: Verdana,Tahoma,Arial,Sans-Serif;
+    font-size:   1em;
+    margin:      0;
+    padding:     4px;
 }
 
 label {
@@ -444,12 +453,12 @@ margin:10px 0 5px 10px;float:right;
 }
 
 .textright {
-    text-align: right; 
+    text-align: right;
     margin:     -10px 0 4px 0;
 }
 
 .textcenter {
-    text-align: center; 
+    text-align: center;
     margin:     -10px 0 4px 0;
 }
 
