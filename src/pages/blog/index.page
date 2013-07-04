@@ -9,6 +9,57 @@ tags: Blog
  
 **:::**
  
+### Familiar solution ###
+
+
+
+
+_Wed, 03. July 2013 -- 22:36_
+
+It is a familiar solution to a familiar problem: trying to aid in the installation of required external packages -- external to the TROPOMI SWIR calibration software package -- I once more have set up a collection of [CMake](http://www.cmake.org) wrapper scripts to handle download, configuration, build and installation.
+
+~~~~
+3rd_party/
+├── doxygen
+├── h5py
+├── kapteyn
+├── libconfig
+├── matplotlib
+├── pyfits
+└── scipy
+~~~~
+
+Trying to test and document the Python SWIR package getting all the dependencies resolved both on my laptop and the number of virtual machines was rather straight forward; with full access right on each of the systems I have been able to install packages and make adjustments to get everything working with each other. However when moving to the desktop machine at the institute (which I am using rarely for everyday work) I kept running into problems to have all the bits and pieces working together: the configuration scripts (for a reason I still have not fully understood) would not pick up the previously installed packages, thereby causing the loading of any custom Python modules to fail. Since in the somewhat longer run the computing environments are going to change anyway, I at least wanted to put in a safety net. Given the alternative to start installing software packages one by one manually, I wanted to put in place some automation to help along the way; hence remembering the Ansatz taken for the [LOFAR](http://www.lofar.org) User Software and the [AARTFAAC](http://www.aartfaac.org) software I set up a small collection of CMake scripts which would encapsulate all the necessary actions as much as possible.
+
+~~~~
+ExternalProject_Add (pyfits
+  PREFIX ${CMAKE_CURRENT_BINARY_DIR}
+  DOWNLOAD_DIR download
+  SOURCE_DIR source
+  URL ${PYFITS_SOURCE}
+  BUILD_IN_SOURCE 1
+  CONFIGURE_COMMAND ""
+  BUILD_COMMAND ${PYTHON_EXECUTABLE} setup.py build
+  INSTALL_COMMAND ${PYTHON_EXECUTABLE} setup.py install --prefix=${CMAKE_INSTALL_PREFIX}
+)
+~~~~
+
+While the `ExternalProject_Add()` provides an elegant mechanism to handle all the step of installing an external software package, this macro was introduced with the release 2.8.3 of CMake. Even though this version is quite old these days, Linux distributions such as the only recently superseded [Debian](http://www.debian.org) 6 ("Squeeze") would still be stuck on version 2.8.2 after all. Expecting however, that upgrading always is a touchy thing and therefore quite a few older systems are out there, at least some minimal safety measure needs to be taken inside the configuration scripts (instead of blindly using a feature which might not be available):
+
+~~~~
+if (BUILD_3RD_PARTY)
+  if (${CMAKE_VERSION} VERSION_LESS 2.8.3)
+    set (BUILD_3RD_PARTY NO)
+    message (STATUS "Version of CMake too old for handling option BUILD_3RD_PARTY!")
+  endif ()
+endif (BUILD_3RD_PARTY)
+~~~~
+
+So how is the outcome after all? After several attempts to get things working, there now is a path (optional though) to get the most important dependencies resolved for running the data analysis scripts... and this hopefully in a rather portable manner.
+ 
+**:::**
+ 
+ 
 ### Abschied von AltaVista ###
 
 
@@ -305,18 +356,6 @@ Das besagte [Photoset](http://www.flickr.com/photos/vrijeruimte/sets/72157634317
 <iframe align="center" src="http://www.flickr.com/slideShow/index.gne?group_id=&user_id=90305854@N02&set_id=72157634317128719&tags='Vrede in de Buurt'" frameBorder="0" width="540" height="540" scrolling="no"></iframe>
 
 Ich wuerde mal fast behaupten, dass das, was ich an Uebersichtsbildern zu wenig habe, bei Henk ein wenig zu viel ist; ich hatte ja schon eine etwas laengere Debatte mit Julia ueber die Art des benoetigten Bildmaterials, aus welcher sich ergeben hat, dass ich in Zukunft wohl noch haeufiger das Weitwinkel in die Hand nehmen muss.
- 
-**:::**
- 
- 
-### Und wieder ein Kopfhoerer ###
-
-
-
-
-_Tue, 25. June 2013 -- 09:44_
-
-Also irgendwie halten die Dinger bei mir nie sonderlich lange. Seit gestern hat das Paar Kopfhoerer, welches Julia mir gegeben hatte, den Geist aufgegeben. Nachdem sich die Isolierung rund um das Kabel an einer Stelle begonnen hatte abzuloesen, scheint es nun das Kabel selber erwischt zu haben, denn nach einer Periode zerhackter Tonuebermittlung ist es nun komplett still geworden. Ich bekomme zwar noch -- wenn ich ein wenig an dem Kabel biege -- ein leichtes Knacken zu hoeren, aber das war es dann auch schon. Wie sich einmal wieder herausstellt ist wirklich das Kabel der Schwachpunkt: wenn dieses nicht eine gewisse Steifigkeit vorweisen kann, dann ist es nur eine Frage der Zeit (und diese muss noch nicht einmal sonderlich lang sein), ehe das in der Hosetasche tragen eines iPod so einen Tribut fordert. Der Punkt auf der anderen Seite ist natuerlich, dass nach wie vor dieser kleiner Player am besten mit dem Rechner kooperiert, so dass sich Inhalte ohne nennenswerten Aufwand synchronisieren lassen; die zwischenzeitliche Verwendung des Handy hatte ich ja mit aus diesem Grunde eingestellt, weil es mir einfach nicht gelingen wollte einen vernuenftigen Mechanismus zu finden, ueber welchen sich Geraete abgleichen liessen. Wo es jetzt also wohl drauf hinauslaeuft ist, dass ich mich nach einem neuen Paar Mini-Kopfhoerer umschauen muss, unter Beachtung gewisser Mindestanforderungen, was die Stabilitaet von Stecker und Kabel betrifft.
  
 **:::**
  

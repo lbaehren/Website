@@ -1,0 +1,50 @@
+---
+title: "Familiar solution"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Wed, 03. July 2013 -- 22:36_
+
+It is a familiar solution to a familiar problem: trying to aid in the installation of required external packages -- external to the TROPOMI SWIR calibration software package -- I once more have set up a collection of [CMake](http://www.cmake.org) wrapper scripts to handle download, configuration, build and installation.
+
+~~~~
+3rd_party/
+├── doxygen
+├── h5py
+├── kapteyn
+├── libconfig
+├── matplotlib
+├── pyfits
+└── scipy
+~~~~
+
+Trying to test and document the Python SWIR package getting all the dependencies resolved both on my laptop and the number of virtual machines was rather straight forward; with full access right on each of the systems I have been able to install packages and make adjustments to get everything working with each other. However when moving to the desktop machine at the institute (which I am using rarely for everyday work) I kept running into problems to have all the bits and pieces working together: the configuration scripts (for a reason I still have not fully understood) would not pick up the previously installed packages, thereby causing the loading of any custom Python modules to fail. Since in the somewhat longer run the computing environments are going to change anyway, I at least wanted to put in a safety net. Given the alternative to start installing software packages one by one manually, I wanted to put in place some automation to help along the way; hence remembering the Ansatz taken for the [LOFAR](http://www.lofar.org) User Software and the [AARTFAAC](http://www.aartfaac.org) software I set up a small collection of CMake scripts which would encapsulate all the necessary actions as much as possible.
+
+~~~~
+ExternalProject_Add (pyfits
+  PREFIX ${CMAKE_CURRENT_BINARY_DIR}
+  DOWNLOAD_DIR download
+  SOURCE_DIR source
+  URL ${PYFITS_SOURCE}
+  BUILD_IN_SOURCE 1
+  CONFIGURE_COMMAND ""
+  BUILD_COMMAND ${PYTHON_EXECUTABLE} setup.py build
+  INSTALL_COMMAND ${PYTHON_EXECUTABLE} setup.py install --prefix=${CMAKE_INSTALL_PREFIX}
+)
+~~~~
+
+While the `ExternalProject_Add()` provides an elegant mechanism to handle all the step of installing an external software package, this macro was introduced with the release 2.8.3 of CMake. Even though this version is quite old these days, Linux distributions such as the only recently superseded [Debian](http://www.debian.org) 6 ("Squeeze") would still be stuck on version 2.8.2 after all. Expecting however, that upgrading always is a touchy thing and therefore quite a few older systems are out there, at least some minimal safety measure needs to be taken inside the configuration scripts (instead of blindly using a feature which might not be available):
+
+~~~~
+if (BUILD_3RD_PARTY)
+  if (${CMAKE_VERSION} VERSION_LESS 2.8.3)
+    set (BUILD_3RD_PARTY NO)
+    message (STATUS "Version of CMake too old for handling option BUILD_3RD_PARTY!")
+  endif ()
+endif (BUILD_3RD_PARTY)
+~~~~
+
+So how is the outcome after all? After several attempts to get things working, there now is a path (optional though) to get the most important dependencies resolved for running the data analysis scripts... and this hopefully in a rather portable manner.
