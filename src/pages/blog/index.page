@@ -9,6 +9,63 @@ tags: Blog
  
 **:::**
  
+### lofarsoft on Github ###
+
+
+
+
+_Thu, 04. July 2013 -- 20:26_
+
+Having worked on [LOFAR](/work/lofar.html) for quite a number of years in a rather visible position, it is little of a surprise that once in a while I am still receiving emails concerning the [LOFAR User Software](http://www.lofar.org/wiki/doku.php?id=public:user_software:user_software) (LUS). The latest email exchange -- which was was an inquiry about the PyBDSM/Anaamika source finding package -- resulted in me actually having a look at some of the recent activities in LUS land: as it turns quite a bit of the information on the [LOFAR Wiki](http://www.lofar.org/wiki) is rather outdated. In order to provide some useful feedback, I updated my local working copies from the central [Subversion](http://subversion.apache.org) repository hosted at [ASTRON](http://www.astron.nl) and started searching through the commit messages. As it turns out, PyBDSM was removed from the LUS collection/repository more than a year ago, without this being reflected in any shape or form in the documentation hosted on the LOFAR Wiki:
+
+> Author: rafferty
+>
+> Date: Fri May 11 2012 09:36:49 GMT+0200 (CEST)
+>
+> Subject: Removal of PyBDSM (moved to the LOFAR repository).
+
+After relaying this information back to Bonn, I decided that it was about time to provide people with an interest in the LUS collection with an additional route to obtain the software: remembering the struggle it took to even move from CVS to Subversion it is of little surprise that a tool/platform combination such as [Git](http://www.git-scm.com)/[Github](http://www.github.com) never was adopted officially (though I would assume that most of the developers locally are running their changes through Git) by ASTRON. While smaller and more dynamic project teams (such as [AARTFAAC](http://www.aartfaac.org)) have been embracing elements of social coding, I am not expecting any sort of official Git support for any of the LOFAR user software within the foreseeable future. But since the software itself is still open, as is the case as well for the original Subversion repository, it is not such a big deal to actually create a Git clone:
+
+~~~~
+git svn clone -s http://usg.lofar.org/svn/code lofarsoft
+~~~~
+
+The main ingredient when starting out on this though is an ample amount of time. Actually this is less critical than it may sound, because once started the only thing to ensure is that the computer is left running and with network connection. Once the cloning process was completed, the creation of a repository on Github went rather quickly -- so here it is, the address of the Git mirror repository:
+
+[github.com/lbaehren/lofarsoft](https://github.com/lbaehren/lofarsoft)
+
+Something I noted -- or better: was made aware of -- is the fact that there are quite a few large binary chunks embedded into the LOFAR User Software: though I can guess the motivation for dumping complete snapshots of external software packages into the repository, I never considered this a very smart way. Since the idea to modularize the software collection and break it up into smaller pieces -- which then dynamically could be re-assembled -- was never put in action, the footprint of a local working copy is considerable.
+
+~~~~
+Counting objects: 182837, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (75472/75472), done.
+Writing objects: 100% (182837/182837), 1.31 GiB | 605.00 KiB/s, done.
+Total 182837 (delta 117555), reused 169109 (delta 104045)
+remote: Error code: 31cb6b0a91a911e2d3bd2b73fe7f34bb
+remote: warning: Large files detected.
+remote: warning: File src/Pulsar/external/tempo2/tempo2-2012.6.1.tar.gz is 59.77 MB;
+        this is larger than GitHub's recommended maximum file size of 50 MB
+remote: warning: File src/Pulsar/scripts/lambda_mollweide_haslam408_dsds.fits is 64.01 MB;
+        this is larger than GitHub's recommended maximum file size of 50 MB
+remote: warning: File src/Pulsar/external/tempo2/tempo2-2012.6.1.tar.gz is 59.76 MB;
+        this is larger than GitHub's recommended maximum file size of 50 MB
+remote: warning: File src/Pulsar/external/tempo2/tempo2-2012.6.1.tar.gz is 59.73 MB;
+        this is larger than GitHub's recommended maximum file size of 50 MB
+remote: warning: File src/CR-Tools/data/LOPES-CalTable/AntennaGainFaktor/table.f0i is 75.34 MB;
+        this is larger than GitHub's recommended maximum file size of 50 MB
+remote: warning: File data/lopes/LOPES-CalTable/AntennaGainFaktor/table.f0i is 75.34 MB;
+        this is larger than GitHub's recommended maximum file size of 50 MB
+remote: warning: File data/lopes/LOPES-CalTable/AntennaGainFaktor/table.f0i is 65.20 MB;
+        this is larger than GitHub's recommended maximum file size of 50 MB
+remote: warning: See http://git.io/iEPt8g for more information.
+~~~~
+
+The good news after all now is: whatever is in the central Subversion repository, now also can be retrieved from Github, saving you the time and hassle to create a full clone yourself. On the downside though it is worth mentioning, that the central repository no longer hosts a number of projects, which have been moved to different locations.
+ 
+**:::**
+ 
+ 
 ### Familiar solution ###
 
 
@@ -336,26 +393,6 @@ Einen moeglichen Schlenker weiter gen Osten (in Richtung Lunetten) habe ich nach
 ![Bridge in Nieuw Hoograve](/blog/2013/2013-06/hdr_20130625_201816_bridge.jpg)
 
 In diesem von Goylaan (Norden), Waterlinieweg (Osten), A12 (Sueden) und Vaartse Rijn (Westen) begrenzten Gebiet findet sich einiges an Abwechslung: ein wenig geschuetzt hinter Baeumen gelegen gibt es hier ein muslemisches (?) Gebetshaus, mehrere Betriebe und Sportanlagen. Was letztere betrifft hat sich nun auch endlich das Raetsel um all die Ruderboote auf den Kanaelen in Richtung Innenstadt gelueftet: direkt an der Bruecke der A12 ueber den Vaartse Rijn befindet sich das Hauptquartier der [Utrechtsche Studenten Roeivereeniging](http://www.usrtriton.nl/index.php) -- von dort aus bricht die Flotte an Boote zu ihren Trainingsrunden auf.
- 
-**:::**
- 
- 
-### Vrede in de Buurt TV ###
-
-
-
-
-_Tue, 25. June 2013 -- 15:37_
-
-Waehrend ich immer noch dabei bin, die Ereignisse vom Wochenende in einer einigermassen vertraeglichen Form aufzuschreiben, kommt hier schon wieder eine Mail rein:
-
-> Er zijn al veel prachtige foto's van de Vrede in de Buurt TV studio online gezet door Lars Baehren - en hier ook mijn set foto's erbij, met vooral foto's van voor de live uitzending (en een foto van Lars ;)
-
-Das besagte [Photoset](http://www.flickr.com/photos/vrijeruimte/sets/72157634317128719) habe ich mal direkt als Slideshow mit angehangen:
-
-<iframe align="center" src="http://www.flickr.com/slideShow/index.gne?group_id=&user_id=90305854@N02&set_id=72157634317128719&tags='Vrede in de Buurt'" frameBorder="0" width="540" height="540" scrolling="no"></iframe>
-
-Ich wuerde mal fast behaupten, dass das, was ich an Uebersichtsbildern zu wenig habe, bei Henk ein wenig zu viel ist; ich hatte ja schon eine etwas laengere Debatte mit Julia ueber die Art des benoetigten Bildmaterials, aus welcher sich ergeben hat, dass ich in Zukunft wohl noch haeufiger das Weitwinkel in die Hand nehmen muss.
  
 **:::**
  
