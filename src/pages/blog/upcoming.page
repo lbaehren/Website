@@ -224,20 +224,6 @@ One of the immediate outcomes of the above integration steps was, that as with t
         ERROR_VARIABLE TestPythonModuleError
         )
 
-### Testing SWIR C library on multiple platforms ###
-
-Yes, testing does matter and is useful! Sure, often this is not the most popular subject when it comes to software development, but trying to build and run your code on multiple platforms will help increasing its quality.
-
-![Testing summary](/blog/2013/2013-03/2013-03-21_testing_summary.png)
-
- * [CMake](http://www.cmake.org)
- * [CTest]()
- * [CDash](http://www.cdash.org)
- * [VirtualBox](https://www.virtualbox.org)
- * [Debian](http://www.debian.org)
- * [Fedora](http://fedoraproject.org)
- * [CentOS](http://www.centos.org)
-
 ### Galashow der Meistermagier ###
 
 Da koennen die Vorankuendigungen auch noch so toll sein und in noch so grossen Buchstaben daherkommen -- unter einer "Galashow der Meistermagier" verstehe dann doch etwas anderes als das, was da vor knapp zwei Wochen unter dem Dach des Jungen Theater Bonn geboten wurde.
