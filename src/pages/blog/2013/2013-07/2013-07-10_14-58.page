@@ -1,0 +1,17 @@
+---
+title: "D3 firmware A: 2.03 / B:2.03"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Wed, 10. July 2013 -- 14:58_
+
+Na das klingt doch mal nach einer wirklich nuetzlichen Erweiterung der Funktionalitaet meiner D3:
+
+> A Use GPS to set camera clock item has been added to the GPS item in the setup menu. When Yes is selected, date and time information acquired via connection to a GPS device is used to set the camera’s internal clock. After selecting Yes for the first time, turn the camera off and then on again to reacquire GPS data.
+
+Auch wenn ich das GPS nicht permanent auf der Kamera montiert habe, so bietet sich doch immer wieder einmal die Gelegenheit einen derartigen Zeitabgleich durchzufuehren; gegenueber der manuellen Variante scheint mir dies doch eine Spur genauer, so dass ich einfach mal schauen werde, dass ich bei naechstbester Gelegenheit die [neue Firmware](https://support.nikonusa.com/app/answers/detail/a_id/18282) installiert bekomme.
+
+Schade nur, dass sich die Updates vor allen Dingen auf die professionellen Kameras beschraenken; da Nikon aber leider dazu neigt die Software unter Verschluss zu halten, stehen die Chancen, diese Features auch auf der D300 benutzen zu koennen recht schlecht.

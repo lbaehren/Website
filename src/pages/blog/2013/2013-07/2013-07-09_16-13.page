@@ -1,0 +1,17 @@
+---
+title: "Extracting an audio track from a video file"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 09. July 2013 -- 16:13_
+
+I knew there was a way to get this job done; needing to extract the audio track from a (music) video, I have been looking at various tools to help me with the task. The first stop -- the _Streaming Wizard_ which comes as part of the [VLC Player](http://www.videolan.org/vlc/index.html) -- failed to deliver, not even starting up on the conversion. After a hand full of attempts to tweak the control parameters, I decided that probably it was better to go for a command line tool (which of course also would have the advantage of being scriptable to process multiple input files quite easily). Obvious choice here would be [MPlayer](http://www.mplayerhq.hu), which not only is capable of reading/playing quite a long list of formats, but also through is countless options can be fine-tuned to act as a swiss-army-knife when dealing with all of these multimedia formats; a companion program, [MEncoder](http://en.wikipedia.org/wiki/MEncoder), can take an input stream or file and transcode it into several different output formats, optionally applying various transforms along the way. The latter provided exactly the type of functionality I was looking for to extract the audio track:
+
+~~~~
+mencoder <video file> -oac mp3lame -ovc frameno -o <audio file>
+~~~~
+
+Applying this to the video I have been downloading from [YouTube](http://www.youtube.com) I now finally have the mp3 file, which can be integrated into the playlist.

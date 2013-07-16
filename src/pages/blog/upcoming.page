@@ -18,6 +18,13 @@ tags: Blog
 ----
 **in preparation ...**
 
+### Video mix-up ###
+
+Jetzt verstehe ich glaube ich auch ein wenig besser, wie es da zu diesem Mix-up kommen konnte. Vor einer Weile hatte ich ja auf einen Beitrag von [Jason Odell](http://www.theimagedoctors.com/bio.html) (yep, einem der beiden _Image Doctors_) reagiert, weil dieser auf ein Musikvideo verwies welches eine inkorrekte Kombination von Musik und Bild enthielt: das Video fuer [Helloween](http://www.helloween.org)'s "Dr. Stein" von _Unarmed: Best of 25th anniversary_ (2010), unterlegt mit der Original-Musik vom _Keeper of the Seven Keys, Pt. 2_ (1988) album.
+
+![Dr. Stein by Helloween](/blog/2013/2013-07/2013-07-09_Helloween.png)
+
+Einer der Nebeneffekte von diesem Zwischenfall war dann allerdings, dass ich mich daran erinnert habe, dass es doch schon eine ganze Weile her war, dass ich mir die beiden _Keeper of the Seven Keys_ Alben angehoert habe.
 
 ### Vrede in de Buurt TV ###
 
@@ -464,35 +471,6 @@ Das ist wirklich ein bemerkenswertes Gespraech, welchen ich nur allen ans Herz l
  * [fxpodcast: Alvy Ray Smith](http://www.fxguide.com/fxpodcasts/fxpodcast-alvy-ray-smith)
  * [Alvy Ray Smith: RGBA, the birth of compositing & the founding of Pixar](http://www.fxguide.com/featured/alvy-ray-smith-rgba-the-birth-of-compositing-the-founding-of-pixar)
  * Interview with Jim Blinn (FX-Podcast, Episode 224)
-
-### Analyzing Rails logfiles ###
-
-Logfile represent a precious resource for profiling and debugging -- hardly surprising that any slightly more complex application will generate some sort of log of its operations. While of course the logging itself is a topic by itself, the subsequent analysis of the created logs borders at scientific data analysis.
-
-With a web application such as [prometheus](http://www.prometheus-bildarchiv.de), actually a multitude of log files is being generated. most important amongst those are:
-
- * Apache Web Server logs
- * Ruby on Rails application logs
-
-[request-log-analyzer](https://github.com/wvanbergen/request-log-analyzer)
-
-> This is a simple command line tool to analyze request log files in various formats to produce a performance report. Its purpose is to find what actions are best candidates for optimization.
-
-~~~~
-Process blockers (> 1 sec duration)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-CollectionController#feed.html [GET]        ┃ 45 hits ┃ 37.5% ┃ ░░░░░░
-PresentationController#feed.html [GET]      ┃ 29 hits ┃ 24.2% ┃ ░░░░
-ImageController#feed.html [GET]             ┃ 14 hits ┃ 11.7% ┃ ░░
-ImageController#large.html [GET]            ┃ 12 hits ┃ 10.0% ┃ ░░
-CollectionController#images.html [GET]      ┃  5 hits ┃  4.2% ┃ ░
-CollectionController#edit.html [GET]        ┃  4 hits ┃  3.3% ┃ ░
-SearchController#advanced_search.html [GET] ┃  3 hits ┃  2.5% ┃ 
-CollectionController#own.html [GET]         ┃  3 hits ┃  2.5% ┃ 
-ImageController#show.html [GET]             ┃  2 hits ┃  1.7% ┃ 
-SearchController#search.html [GET]          ┃  2 hits ┃  1.7% ┃ 
-PandoraController#js.html [GET]             ┃  1 hits ┃  0.8% ┃ 
-~~~~
 
 ### Baumarktritter ###
 

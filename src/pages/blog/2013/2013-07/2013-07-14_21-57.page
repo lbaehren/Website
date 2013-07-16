@@ -1,0 +1,25 @@
+---
+title: "Foto-Mustertafel"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Sun, 14. July 2013 -- 21:57_
+
+Also Spass hat dies ja noch nie so wirklich gemacht: Bilder fuer den Personalausweis machen ist immer so eine Aktion welche ich tendiere so lange wie moeglihch mir her zu schieben, weil ich den Vorgang als solchen einfach nicht so sonderlich toll finde. Da ich mich nun aber doch endlich einmal dringend darum kuemmern muess einen Ersatz fuer meinen im kommenden Monat ablaufenden Ausweis zu erhalten, stand am heutige Nachmittag endlich mal noch eine Foto-Session auf dem Programm. Angesichts der Tatsache, dass der Haushalt in Sachen Foto-Ausruestung ja recht gut ausgestattet ist, war eigentlich von Anfang klar, dass man sich die Kosten fuer ein Studio sparen konnte; selbst wenn ich die eigene Arbeitszeit mit einrechne, dann bin ich nicht wirklich ueberzeugt, dass in den resultierenden Bildern ein Faktor 20 oder mehr zu sehen ist (vor allen Dingen, wenn ich bedenke, wie die Fotos verwendet werden).
+
+> Qualitativ hochwertige Fotos sind die Grundlage einer einwand- freien Wiedergabe des Bildes und Voraussetzung für die Anwendung der Gesichtsbiometrie in Pässen.
+
+Liest sich ja sehr beeindruckend, nur wenn ich mir anschaue, wie der Prozess dann wirklich funktioniert, dann duerfte ziemlich klar sein, an welcher Stelle der eigentliche Schwachpunkt in der Kette zu finden ist: egal in welcher Weise das Original-Bild aufgenommen wurde, die Version, welche zusammen mit den Personaldaten eingeschickt wird, ist ein Scan des Abzuges -- eine Moeglichkeit das digitale Original einzuschicken besteht allem Anschein nach nicht.
+
+Referenz fuer das Shooting waren natuerlich die Angaben auf der _Foto-Mustertafel_, welche von der [Bundesdruckerei](http://www.bundesdruckerei.de) als Orientierung zur Verfuegung gestellt wird:
+
+> Dieser Foto-Mustertafel sind die Qualitätsmerkmale zu entnehmen, die die Eignung der Fotos für den vorgesehenen Einsatz in Pässen gewährleisten. Es ist dringend erforderlich, die hier beschriebenen Anforderungen zu beachten, da sonst eine biometrische Erkennung des Antragstellers sowie die einwandfreie Wiedergabe des Bildes im Dokument nicht gewährleistet sind.
+
+Die weiteren Beschreibungen sind recht ausfuehrlich und spezifisch, e.g. was die geometrischen Komposition des Bildes betrifft; aus diesem Grunde waren die permanten Versuche mich zum Lachen zu bringen ein wenig problematisch... unter diesen Bedingungen eine einigermassen symmetrische Ablichtung der Gesichtszuege hinzukriegen ist recht schwierig. Erschwerend kam noch hinzu, dass bei der ersten Serie an Aufnahmen die Belichtung nicht gleichmaessig war, so dass es merkliche Unterschiede in der Helligkeit und Farbe der Gesichtshaut zu verzeichnen gab; um diese Unebenheiten auszugleichen musste ich in die Maske -- die ist zwar ebenfalls keine Sache, welche mir sonderlich viel Spass bereitet, aber schaut man sich die Resultate an, dann macht sich diese kleine Hilfestellung durchaus bemerkbar.
+
+![Bildauswahl fuer Ausweis](/blog/2013/2013-07/2013-07-14_passfotos.png)
+
+Nach dem Import aller Aufnahmen, folgte zunaechst einmal das grosse Sortieren; es bedurfte vier bis fuenf Durchlaeufe, um die obigen drei Bilder herauszufiltern (kleiner Tip: ruhig grosszuegig mit Tags umgehen, um mit jedem Durchgang die Auswahl weiter einzuengen). Im Anschluss daran ging es dann ans Zuschneiden, gleichmaessig machen des Hintergrundes und ein paar kleine kosmetischen Korrekturen; da so ein Headshot fuer den Ausweis recht einfach ist was die Bildelemente betrifft, bedurfte es einer letzten Endes ueberschaubaren Anzahl an Color Control Points und Retouch Brush Einsaetzen.
