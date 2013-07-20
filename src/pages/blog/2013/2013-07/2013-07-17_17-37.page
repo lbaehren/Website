@@ -1,0 +1,26 @@
+---
+title: "Killing test errors"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Wed, 17. July 2013 -- 17:37_
+
+It has been taking me the first two days of this week, but now I finally I managed to track down the errors resulting in failure of test programs in the SWIR calibration software. At least on all tested 64-bit systems (ok, minus my desktop machine here at [SRON](http://www.sron.nl), but this is under investigation now) all the tests now succeed -- hence I have merged the development branch back into _master_ in order to once more simplify pulling changes from my fork on [Github](https://github.com/lbaehren).
+
+~~~~
+Updating 67fc7e2..84f95ac
+Fast-forward
+ source/c/swir/data/dataset.c     |   6 +-
+ source/c/swir/data/dataset.h     |   3 +-
+ source/c/swir/data/ndarray.c     | 103 ++++++++++---------
+ source/c/tests/test_dataset.c    | 294 ++++++++++++++++++++----------------------------------
+ source/c/tests/test_dataset_2d.c | 316 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ source/c/tests/test_dataset_3d.c | 267 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ source/c/tests/test_ndarray.c    | 216 +++++++++++++++++++++++-----------------
+ 7 files changed, 871 insertions(+), 334 deletions(-)
+ create mode 100644 source/c/tests/test_dataset_2d.c
+ create mode 100644 source/c/tests/test_dataset_3d.c
+~~~~
