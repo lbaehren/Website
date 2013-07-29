@@ -1,0 +1,67 @@
+---
+title: "Move to Doxygen"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Fri, 26. July 2013 -- 20:10_
+
+This is a little something which has been bugging me for quite a while now: for a long time I have been wanting to change the local homepage used for the web-browsers on my computer, moving it from manually written HTML code to something generated from a more simple markup syntax. Given the fact that [Doxygen](http://www.doxygen.org) for a while now has been supporting [Markdown](http://en.wikipedia.org/wiki/Markdown) as a syntax (which I also have been using for some of the extended documentation for the TROPOMI SWIR calibration software), the decision was rather easy. Finally now this week I have been taking little while of an evening to make the necessary changes, setting up the overall (infra-)structure and filling in the basic contents.
+
+~~~~
+Lars' local webpages    {#mainpage}
+====================
+
+<center>
+
+<table border="0" width="90%">
+
+  <tr valign="top">
+
+    <td width="25%">
+      Personal pages
+      --------------
+
+      * [Lars' local Wiki](http://127.0.0.1/~lars/wiki/doku.php)
+      * [www.larsbaehren.de](http://www.larsbaehren.de)
+        * [local build version](http://127.0.0.1/~lars/larsbaehren.com/build/website)
+        * [local release version](http://127.0.0.1/~lars/larsbaehren.com/release/website)
+      * [www.larsbaehren.com](http://www.larsbaehren.com)
+    </td>
+~~~~
+
+While the starting page still contains quite a bit of HTML in order to get the multi-column layout (which simply makes the page contents more compact and thereby avoid the need to scroll), the remainder of the pages is basically straight-forward Markup:
+
+~~~~
+Work    {#work}
+====
+
+Projects
+--------
+
+ * \subpage work_aartfaac
+ * \subpage work_lofar
+ * \subpage work_tropomi
+
+Institutes
+----------
+
+ * \subpage work_astron (_Netherlands Institute for Radio Astronomy_)
+ * \subpage work_sron (_Netherlands Institute for Space Research_)
+~~~~
+
+Naturally the whole process of generating the HTML output from the source files is driven by [CMake](http://www.cmake.org); this way not only pages can be generated on the fly (e.g. by scanning other directories or inspecting system characteristics), but also all of the usual features of a normal software build are available (such as and out-of-source build and installation of the generated files).
+
+~~~~
+.
+├── CMakeLists
+└── pages
+    ├── Cinema
+    ├── Computing
+    ├── Photography
+    └── Work
+~~~~
+
+One of the things you may ask is: why all of this in the first place? Very simple. Given the fact that I tend to work with various web browers -- sometimes out of the need to be able to access certain pages, sometimes out of interest to test an alternative program -- using bookmarks does not seem like a good idea. Keeping information in a transportable format, which also can be moved across platforms, without a minimum of overhead hence seems like the way to go.

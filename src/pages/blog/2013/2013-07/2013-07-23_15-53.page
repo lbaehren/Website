@@ -1,0 +1,25 @@
+---
+title: "Not supported"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 23. July 2013 -- 15:53_
+
+Here is yet another thing which makes me wanna scream:
+
+~~~~
+      C does not support default arguments
+                                  hid_t fid=0);
+~~~~
+
+Not only am I not able to overload functions, but as well I am not able to write something like
+
+~~~~
+void swir_data_h5_show_metatable (struct swir_data_mtbl_rec *mtbl,
+                                  hid_t fid=0);
+~~~~
+
+Would somebody please explain to me, why this apparently is so much better then e.g. C++ ?

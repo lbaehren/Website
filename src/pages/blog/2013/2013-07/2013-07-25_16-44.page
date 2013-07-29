@@ -1,0 +1,43 @@
+---
+title: "Unbrauchbar"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Thu, 25. July 2013 -- 16:44_
+
+Ok, damit ist der Arbeitsplatzrechner hier im Institut endgueltig unbrauchbar geworden (zumindest fuer den Moment):
+
+~~~~
+Reading package lists... Error!
+E: Write error - write (28: No space left on device)
+E: Can't mmap an empty file
+E: Failed to truncate file - ftruncate (9: Bad file descriptor)
+E: The package lists or status file could not be parsed or opened.
+~~~~
+
+Schon seit einer ganzen Weile machte der Rechner nichts anderes mehr, als die Festplatte permanent am Laufen zu halten. Was da aber genau passiert ist nicht so wirklich erkennbar, denn ein `top` liefert keine brauchbaren Hinweise. Schaut man sich das Dateisystem ein wenig genauer an, dann wird klar, dass das Problem noch nicht einmal bei mir zu liegen scheint:
+
+~~~~
+Filesystem                                              Size  Used Avail Use% Mounted on
+rootfs                                                   29G   29G     0 100% /
+udev                                                     10M     0   10M   0% /dev
+tmpfs                                                   389M  736K  388M   1% /run
+/dev/disk/by-uuid/879a53df-f22b-4db6-9205-104dbfa2d79a   29G   29G     0 100% /
+tmpfs                                                   5.0M     0  5.0M   0% /run/lock
+tmpfs                                                   2.0G   84K  2.0G   1% /run/shm
+/dev/sda3                                               431G   55G  377G  13% /data
+tmpfs                                                   2.0G  1.6M  2.0G   1% /tmp
+venus:/nimble/software/local                            500G  346G  155G  70% /opt/local
+venus.sron.nl:/nimble/homedirs/larsb                    3.0T  1.6T  1.5T  51% /home/larsb
+~~~~
+
+Alle Bereiche, auf welche zugreifen kann, sind demnach ok, aber aus irgendeinem Grunde ist das `rootfs` komplett voll. Versuche dies weiterzuverfolgen nicht bisher fehlgeschlagen, so dass ich leider nicht einmal genau sagen, wo sich da Daten auftuermen. Dummerweise hat sich mittlerweile der Desktop verabschiedet, so dass ich den Rechner noch nicht einmal neu starten kann (ohne direkt auf den Aus-Knopf zu druecken); es gaebe da natuerlich noch 
+
+~~~~
+shutdown -r now
+~~~~
+
+aber selbst mit einem `sudo` ist mir dies nicht zugaenglich. Da werde ich dann wohl doch einmal nach der brutalen Methode greifen, um die Machine wiederzubeleben.
