@@ -9,6 +9,9 @@ configure_file (
 
 ## === Process project sub-directories ===
 
+## Doumentation
+add_subdirectory (doc)
+
 ## Source code (C/C++)
 add_subdirectory (code)
 

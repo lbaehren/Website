@@ -171,7 +171,6 @@ endif (DOXYGEN_EXECUTABLE)
 
 ## Project sub-directories
 
-add_subdirectory (doc)
 add_subdirectory (src)
 
 ## ==============================================================================
