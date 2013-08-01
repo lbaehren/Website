@@ -1,0 +1,15 @@
+---
+title: "Skype-Alternative"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Wed, 31. July 2013 -- 09:28_
+
+Nach so etwas habe ich immer wieder einmal gesucht, ohne wirklich fuendig zu werden:
+
+> Der in noch mitten in der Entstehung steckende Instant-Messenger [Tox](http://tox.im) setzt für die Verschlüsselung auf die [NaCL-Bibliothek](http://nacl.cr.yp.to), die das Erzeugen der Schlüsselpaare und das Signieren von Nachrichten vereinfacht. Tox verteilt Nachrichten zudem über Peer-to-Peer-Verbindungen direkt zwischen den Tox-Instanzen – eine zentrale Infrastruktur wie etwa bei XMPP/Jabber aus Server und Client braucht es nicht. Die Tox-Clients finden sich stattdessen über Distributed Hash Tables (DHT), das etwa auch das Filesharing-Netz Bittorrent für den serverlosen Betrieb einsetzt.
+
+[Wie Heise News berichten](http://www.heise.de/newsticker/meldung/Skype-Alternative-Tox-einfach-verschluesselt-dezentral-1926996.html), haben sich die Entwickler das Ziel gesetzt, mit Tox einen vollwertigen Skype-Ersatz zu schaffen. Das Projekt befindet sich zwar immer noch in den Kinderschuhen, aber beachtenswert erscheint mir das Vorhaben in jedem Fall.
