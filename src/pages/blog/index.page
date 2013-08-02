@@ -9,6 +9,58 @@ tags: Blog
  
 **:::**
  
+### Rueckreise - Letzter Teil ###
+
+
+
+
+_Thu, 01. August 2013 -- 21:25_
+
+Da hat es ja doch alles gut geplappt... auch wenn allem Anschein nach der Bus vom Hauptbahnhof zurueck nach Hause das schwaechste Glied in der Kette war. Ein wenig bin ich dies ja schon gewohnt, dass die 609 nicht so wirklich verlaesslich ist, folgerichtig musste ich da ein wenig mehr Wartezeit in Kauf nehmen, als dies eigentlich noetig gewesen waere. Nun bin ich aber wieder heil angekommen, so dass ich zunaechst einmal den knurrenden Magen ein wenig fuettern kann...
+ 
+**:::**
+ 
+ 
+### Rueckreise - Teil 3 ###
+
+
+
+
+_Thu, 01. August 2013 -- 19:58_
+
+Damit hatte ich ja ueberhaupt nicht gerechnet: statt mit jede Menge Verspaetung den vorletzten Abschnitt der Heimreise anzutreten, bin ich nun gut 30 Minuten frueher unterwegs. Statt um 20:22 Uhr mit dem ICE in Koeln einzutreffen, wa ich bereits um zehn vor acht am Hauptbahnhof, so dass ich mir umgehend die naechste Bahn in Richtung Bonn geschnappt habe. Ich werde dann zwar in Bonn noch einmal schauen muessen, wie ich das letzte Stueck der Reise hinter mich gebrancht kriege, aber dies duerfe hoffentlich das geringste Problem darstellen.
+
+![Bus Ride Eindhoven - Cologne](/blog/2013/2013-08/2013-08-01_Eindhoven-Cologne.png)
+
+Die Fahrt, welche etwa eineinhalb Stunden gedauert hat, ging eigentlich ganz ertraeglich vorbei. Der etwas redseelige Niederlaender, welcher mir gegenueber sass und sich mit einem Englaender unterhielt, war war ein wenig nervig, aber dies hat mich dennoch nicht daran gehindert noch ein klein wenig zu arbeiten. Sicher, so ein Bus ist in keinster Weise mit einem ICE zu vergleichen, aber wenn es darum geht Paper zu lesen ist dies durchaus ok.
+ 
+**:::**
+ 
+ 
+### Rueckreise - Teil 2 ###
+
+
+
+
+_Thu, 01. August 2013 -- 17:56_
+
+Ok, was die Hilfestellungen vor Ort betrifft liess es hier in Eindhoven doch ein wenig zu wuenschen uebrig. Ich hatte ja damit gerechnet, dass es vom Gleis an Informationen fuer die Reisenden gibt, aber dem war leider nicht so. Stattdessen bin ich erst einmal zum falschen Ende des Bahnhofs gelaufen -- naemlich dort wo die Busse abfahren -- um dort nichts vorzufinden, was mich weiter in Richtung Deutschland bringen koennte. Also habe ich auf dem Absatz kehrt gemacht und bin zum Ausgang Richtung Innenstadt gelaufen; schon von der Stationshalle aus liessen sich da einige Busse erkennen, welche sich deutlich von normalen Linienbussen abhoben. In der Tat handelte es sich hierbei um Reisebusse, von welchen hier gleich drei Stueck vor Ort warten, so dass die Reise weitergehen kann, sobald ausreichend viele Leute eingestiegen sind (koennte noch eine kleine Weile dauern, weil die Reisenden hier in kleineren Gruppe eintreffen).
+ 
+**:::**
+ 
+ 
+### Rueckreise - Teil 1 ###
+
+
+
+
+_Thu, 01. August 2013 -- 16:50_
+
+Na, da bin ich ja mal gespannt, wie die werden wird. Basierend auf den Informationen, welche ich online finden konnte, bin ich hier in Utrecht zur Reiseinformation gestiefelt, um mir da einfach noch einmal eine Bestaetigung einzuholen. Waehrend ich dort noch gewartet habe, konnte ich bei einem anderen Informationsgespraech zuhoeren, welches exakt diese Bestaetigung enthielt. Folgerichtig bin ich direkt zu Gleis 15 gelaufen, um mir den IC nach Eindhoven zu schnappen. Dort angekommen sollte ich in der Lage sein den Bus nach Koeln ausfindig zu machen; so wie ich aber die Niederlaender kenne, duerften dort auf dem Bahnsteig bereits jede Menge Mitarbeiter unterwegs sein, welche die Reisenden abfangen und weiterleiten.
+ 
+**:::**
+ 
+ 
 ### ICE 159 ###
 
 
@@ -195,161 +247,6 @@ Wer jetzt aber nicht die Zeit (und vielleicht auch das Geld) hat, die 9288 km zw
 > The great Trans Siberian Railway, the pride of Russia, goes across two continents, 12 regions and 87 cities. The joint project of Google and the Russian Railways lets you take a trip along the famous route and see Baikal, Khekhtsirsky range, Barguzin mountains, Yenisei river and many other picturesque places of Russia without leaving your house. During the trip, you can enjoy Russian classic literature, brilliant images by photographer Anton Lange and fascinating stories about the most attractive sites on the route.
 
 Ist natuerlich nicht das gleiche, als wenn man selber mit dem Zug unterwegs ist, aber um vielleicht mal einen ersten Eindruck zu kriegen kann dies sicherlich nicht schaden.
- 
-**:::**
- 
- 
-### Move to Doxygen ###
-
-
-
-
-_Fri, 26. July 2013 -- 20:10_
-
-This is a little something which has been bugging me for quite a while now: for a long time I have been wanting to change the local homepage used for the web-browsers on my computer, moving it from manually written HTML code to something generated from a more simple markup syntax. Given the fact that [Doxygen](http://www.doxygen.org) for a while now has been supporting [Markdown](http://en.wikipedia.org/wiki/Markdown) as a syntax (which I also have been using for some of the extended documentation for the TROPOMI SWIR calibration software), the decision was rather easy. Finally now this week I have been taking little while of an evening to make the necessary changes, setting up the overall (infra-)structure and filling in the basic contents.
-
-~~~~
-Lars' local webpages    {#mainpage}
-====================
-
-<center>
-
-<table border="0" width="90%">
-
-  <tr valign="top">
-
-    <td width="25%">
-      Personal pages
-      -----------
-
-      * [Lars' local Wiki](http://127.0.0.1/~lars/wiki/doku.php)
-      * [www.larsbaehren.de](http://www.larsbaehren.de)
-        * [local build version](http://127.0.0.1/~lars/larsbaehren.com/build/website)
-        * [local release version](http://127.0.0.1/~lars/larsbaehren.com/release/website)
-      * [www.larsbaehren.com](http://www.larsbaehren.com)
-    </td>
-~~~~
-
-While the starting page still contains quite a bit of HTML in order to get the multi-column layout (which simply makes the page contents more compact and thereby avoid the need to scroll), the remainder of the pages is basically straight-forward Markup:
-
-~~~~
-Work    {#work}
-====
-
-Projects
------
-
- * \subpage work_aartfaac
- * \subpage work_lofar
- * \subpage work_tropomi
-
-Institutes
--------
-
- * \subpage work_astron (_Netherlands Institute for Radio Astronomy_)
- * \subpage work_sron (_Netherlands Institute for Space Research_)
-~~~~
-
-Naturally the whole process of generating the HTML output from the source files is driven by [CMake](http://www.cmake.org); this way not only pages can be generated on the fly (e.g. by scanning other directories or inspecting system characteristics), but also all of the usual features of a normal software build are available (such as and out-of-source build and installation of the generated files).
-
-~~~~
-.
-├── CMakeLists
-└── pages
-    ├── Cinema
-    ├── Computing
-    ├── Photography
-    └── Work
-~~~~
-
-One of the things you may ask is: why all of this in the first place? Very simple. Given the fact that I tend to work with various web browers -- sometimes out of the need to be able to access certain pages, sometimes out of interest to test an alternative program -- using bookmarks does not seem like a good idea. Keeping information in a transportable format, which also can be moved across platforms, without a minimum of overhead hence seems like the way to go.
- 
-**:::**
- 
- 
-### Unbrauchbar ###
-
-
-
-
-_Thu, 25. July 2013 -- 16:44_
-
-Ok, damit ist der Arbeitsplatzrechner hier im Institut endgueltig unbrauchbar geworden (zumindest fuer den Moment):
-
-~~~~
-Reading package lists... Error!
-E: Write error - write (28: No space left on device)
-E: Can't mmap an empty file
-E: Failed to truncate file - ftruncate (9: Bad file descriptor)
-E: The package lists or status file could not be parsed or opened.
-~~~~
-
-Schon seit einer ganzen Weile machte der Rechner nichts anderes mehr, als die Festplatte permanent am Laufen zu halten. Was da aber genau passiert ist nicht so wirklich erkennbar, denn ein `top` liefert keine brauchbaren Hinweise. Schaut man sich das Dateisystem ein wenig genauer an, dann wird klar, dass das Problem noch nicht einmal bei mir zu liegen scheint:
-
-~~~~
-Filesystem                                              Size  Used Avail Use% Mounted on
-rootfs                                                   29G   29G     0 100% /
-udev                                                     10M     0   10M   0% /dev
-tmpfs                                                   389M  736K  388M   1% /run
-/dev/disk/by-uuid/879a53df-f22b-4db6-9205-104dbfa2d79a   29G   29G     0 100% /
-tmpfs                                                   5.0M     0  5.0M   0% /run/lock
-tmpfs                                                   2.0G   84K  2.0G   1% /run/shm
-/dev/sda3                                               431G   55G  377G  13% /data
-tmpfs                                                   2.0G  1.6M  2.0G   1% /tmp
-venus:/nimble/software/local                            500G  346G  155G  70% /opt/local
-venus.sron.nl:/nimble/homedirs/larsb                    3.0T  1.6T  1.5T  51% /home/larsb
-~~~~
-
-Alle Bereiche, auf welche zugreifen kann, sind demnach ok, aber aus irgendeinem Grunde ist das `rootfs` komplett voll. Versuche dies weiterzuverfolgen nicht bisher fehlgeschlagen, so dass ich leider nicht einmal genau sagen, wo sich da Daten auftuermen. Dummerweise hat sich mittlerweile der Desktop verabschiedet, so dass ich den Rechner noch nicht einmal neu starten kann (ohne direkt auf den Aus-Knopf zu druecken); es gaebe da natuerlich noch 
-
-~~~~
-shutdown -r now
-~~~~
-
-aber selbst mit einem `sudo` ist mir dies nicht zugaenglich. Da werde ich dann wohl doch einmal nach der brutalen Methode greifen, um die Machine wiederzubeleben.
- 
-**:::**
- 
- 
-### Pale blue dot ###
-
-
-
-
-_Wed, 24. July 2013 -- 17:40_
-
-Also dies ist doch mal deutlich interessanter als die Aufregung rund um die britische Thronfolge (mit ihren doch eher unspektakulaeren Bildern):
-
-> Die Saturn-Sonde Cassini hat ein seltenes Foto von der Erde aus größerer Entfernung geknipst. Die von der NASA nun veröffentlichte hochaufgelöste Farbaufnahme zeigt die Erde und ihren Trabanten aus 1,5 Milliarden Kilometer Entfernung unterhalb der Ringe des Saturn. Unser Heimatplanet ist als kleiner blauer, der Mond als weißer Punkt erkennbar. Außerdem hat die Merkur-Sonde Messenger die Erde aus 98 Millionen Kilometer Entfernung auf einem Schwarzweißbild festgehalten.
-
-Obige Meldung entstammt [Heise News](http://www.heise.de/newsticker/meldung/Saturn-Sonde-Cassini-fotografiert-die-Erde-aus-1-5-Milliarden-Kilometern-1921889.html), aber die [Original-Mitteilung](http://science.nasa.gov/science-news/science-at-nasa/2013/23jul_palebluedot) kommt natuerlich von der [NASA](http://www.nasa.gov), welche die am 19 Juli aufgenommenen Bilder veroeffentlicht hat.
-
-> The cameras on NASA's [Cassini spacecraft](http://en.wikipedia.org/wiki/Cassini%E2%80%93Huygens) captured this rare look at Earth and its moon from Saturn orbit on July 19, 2013. Taken while performing a large wide-angle mosaic of the entire Saturn ring system, narrow-angle camera images were deliberately inserted into the sequence in order to image Earth and its moon. This is the second time that Cassini has imaged Earth from within Saturn's shadow, and only the third time ever that our planet has been imaged from the outer solar system.
-
-| ![Cassini spacecraft image taken on July 19, 2013](/blog/2013/2013-07/2013-07-23_PIA17171.jpg) |
-| Image Credit: [NASA](http://www.nasa.gov)/[JPL-Caltech](http://www.jpl.nasa.gov)/[Space Science Institute](http://www.spacescience.org) |
-
-Wer es gerne ein klein wenig genauer -- von der technischen und wissenschaftlichen Seite her -- haben moechte, der sei hier auf die [Original-Bildbeschreibung](http://www.jpl.nasa.gov/spaceimages/details.php?id=PIA17171) verwiesen.
- 
-**:::**
- 
- 
-### Hartnaeckig ###
-
-
-
-
-_Wed, 24. July 2013 -- 10:33_
-
-[Wie letzte Woche berichtet](/blog/2013/2013-07/2013-07-18_16-19.html), hatte ich wieder einmal eine Nachricht von einer Headhunter-Agentur bekommen, mit dem Angebot einer Anstellung in Hamburg. Da die Beschreibung aber sehr in Richtung dessen ging, was ich bei [prometheus](http://prometheus-bildarchiv.de) gemacht habe, musste ich nicht lange nachdenken ob ich da interessiert waere. Dies hatte ich dann auch in einer Mail mitgeteilt. Allem Anschein nach ist die Dame am anderen Ende der Unterhaltung wohl ein wenig hartnaeckiger:
-
-> Hallo Lars,
->
-> erst einmal vielen Dank für deine Antwort!
->
-> Was für Umfeld wäre denn verlockend?
-
-Das ist natuerlich ein geschickter Schachzug: statt eine ablehnende Antwort zu akzeptieren, versucht man einfach die Unterhaltung aufrecht zu erhalten um so einen moeglichen Ansatzpunkt zu erhalten. Da werde ich mir mal ueberlegen ob und wie ich darauf reagieren werde.
  
 **:::**
  
