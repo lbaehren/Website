@@ -1,0 +1,11 @@
+---
+title: "Zuhause"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Thu, 08. August 2013 -- 11:33_
+
+Das ist mir jetzt aber nicht das erste Mal passiert diese Woche: noch bevor ich ueberhaupt aufgestanden bin, habe ich mir schon den nebem dem Bett stehenden Rechner geschnappt und mit dem Programmieren angefangen. Dies ist mir schon eine Weile nicht mehr vorgekommen, aber da ich derzeit doch langsam dabei bin eine klarere Idee davon zu bekommen, wie welche Dinge implementiert werden koennen, ist es a) mehr eine mechanische Arbeit und b) faellt es mir dann deutlich schwerer zwischendurch zu stoppen. Als eine Folge dessen, befinde ich mich immer noch bei mir in der Wohnung statt im Institut. Rein von der Produktivitaet her ist dies aber ganz ok, denn seit ich wach bin, habe ich recht fleissig neue Funktionalitaet implementiert und auch die Dokumentation (mit der Beschreibung wie dies zu machen ist) erweitert.
