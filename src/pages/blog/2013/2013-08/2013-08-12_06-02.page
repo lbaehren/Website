@@ -1,0 +1,26 @@
+---
+title: "Fertig gerechnet"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Mon, 12. August 2013 -- 06:02_
+
+Da hat es ja doch noch gut geklappt. Als ich vor dem ins Bett gehen noch einmal einen Blick auf den Fortgang des Scripts zur Aktualisierung der Foto-Metadaten geworfen habe, bewegten wir uns schon knapp unter der 20000er Schwelle. Da ich ueber den Abend verteilt aber schon ein paar Mal nach dem Stand geschaut hatte, liess sich damit einigermassen abschaetzen, welche Restlaufzeit wohl noch verbleiben wuerde. Als ich dann vorhin -- vor dem Abschalten des NAS und dem Einpacken des Laptop -- einen Blick auf das Terminal-Fenster geworfen habe, konnte ich folgendes ablesen:
+
+~~~~
+== /Volumes/Photography/2008/RAW/2008-10-18 Nijmegen/dsc_20081018_131444.NEF [29922/29929]
+== /Volumes/Photography/2008/RAW/2008-10-18 Nijmegen/dsc_20081018_131358.NEF [29923/29929]
+== /Volumes/Photography/2008/RAW/2008-10-18 Nijmegen/dsc_20081018_104709.NEF [29924/29929]
+== /Volumes/Photography/2008/RAW/2008-10-18 Nijmegen/dsc_20081018_125207.NEF [29925/29929]
+== /Volumes/Photography/2008/RAW/2008-10-18 Nijmegen/dsc_20081018_144927.NEF [29926/29929]
+== /Volumes/Photography/2008/RAW/2008-10-18 Nijmegen/dsc_20081018_142143.NEF [29927/29929]
+== /Volumes/Photography/2008/RAW/2008-10-18 Nijmegen/dsc_20081018_125258.NEF [29928/29929]
+== /Volumes/Photography/2008/RAW/2008-10-18 Nijmegen/dsc_20081018_125230.NEF [29929/29929]
+  201 directories scanned
+29929 image files updated
+~~~~
+
+Damit haette ich also sechs Jahrgaenge abgearbeitet. Fertig bin ich damit zwar noch nicht, aber wenn ich dies ein wenig im Blick habe, dann duerften die verbleibenden Ordner vom Datenumfang deutlich kleiner sein; wenn ich die Aktion vom zurueckliegenden Wochenende noch einmal wiederhole, dann duerfte ich also alle RAW angepasst haben.

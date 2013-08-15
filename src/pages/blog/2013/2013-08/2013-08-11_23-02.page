@@ -1,0 +1,17 @@
+---
+title: "Das grosse Rechnen"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Sun, 11. August 2013 -- 23:02_
+
+... hat es ab diesem Wochenende gleich in zweierlei Hinsicht gegeben: auf der einen Seite sind wir gerade dabei die Finanzen zu sortieren, um uns auf den potentiellen Hauskauf vorzubereiten. Dies wird sicherlich noch ein wenig Zahlen durch die Gegend schieben erfordern, aber so vom grundsaetzlichen Trend her scheint sich doch alles im Bereich des Machbaren zu bewegen (auch wenn dafuer sicherlich ein paar Anstrengungen noetig werden).
+
+Mehr auf der Computer-technischen Seite habe ich hier seit dem gestrigen Mittag eine Reihe von Jobs angeworfen, welche -- wenn denn alles durchgelaufen ist -- dazu fuehren werden, dass ich endlich mal noch die Lizenz-Information aller meiner Bilder eingetragen und vereinheitlicht habe. Nachdem ich eine Anfrage zur Verwendung eines meiner Bilder gekommen hatte, welche eben nicht mehr alleine als private und nicht-kommerziell eingestuft werden konnte, musste ich mir diesbezueglich eine vernuenftige Vorgehensweise ueberlegen. Da ich mir gluecklicherweise hierzu schon ein wenig eher ein paar Gedanken gemacht hatte, musste ich da nicht komplett bei Null anfangen; rein vom Ansatz her war eigentlich recht klar dass eine [Creative Commons License](http://creativecommons.org/licenses) am besten zu dem passen wuerde, wie ich mich und meine Photographie sehe. Mit dieser Entscheidung allerdings noch in keinster Weise geklaert, wa die Frage, wie es denn nun rein praktisch funktionieren wuerde die komplette Bilder-Sammlung durchzuarbeiten und die Metadaten aller Fotos anzupassen. Gluecklicherweise  musste ich da nicht zu lange suchen, ehe ich auf [ExifTool](http://www.sno.phy.queensu.ca/~phil/exiftool) gestossen bin, ein kleines Tool, welches sich von der Kommandozeile starten laesst:
+
+> ExifTool is a platform-independent Perl library plus a command-line application for reading, writing and editing meta information in a wide variety of files. ExifTool supports many different metadata formats including EXIF, GPS, IPTC, XMP, JFIF, GeoTIFF, ICC Profile, Photoshop IRB, FlashPix, AFCP and ID3, as well as the maker notes of many digital cameras by Canon, Casio, FLIR, FujiFilm, GE, HP, JVC/Victor, Kodak, Leaf, Minolta/Konica-Minolta, Nikon, Olympus/Epson, Panasonic/Leica, Pentax/Asahi, Phase One, Reconyx, Ricoh, Samsung, Sanyo, Sigma/Foveon and Sony.
+
+Nach dem Ausknobeln der entsprechend Anweisungen laeuft ExifTool nun bereits den zweiten Tag in Folge; vor allen Dinge die Jahrgaenge 2009 und 2008 stellen sich als ein harter Brocken heraus, denn an die je 30000 Bilder abzuarbeiten dauert eine Weile. Jetzt hoffe ich nur mal, dass der derzeit noch laufende Rechenvorgang fuer die Bilder von 2008 noch vor meiner Abfahrt in den fruehen Morgenstunden fertig wird.

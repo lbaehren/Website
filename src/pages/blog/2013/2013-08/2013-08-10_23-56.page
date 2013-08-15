@@ -1,0 +1,26 @@
+---
+title: "Create PDF for Kindle"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Sat, 10. August 2013 -- 23:56_
+
+Well, I am still new to this, but after spending a little bit of time this evening on how to get contents onto the Kindle (a slightly older version 4 reader), I also managed to dig out some basic information on how to use LaTeX to create a PDF which fit well to the display of the Kindle.
+
+~~~~
+\documentclass[10pt,openright=false]{scrreprt}
+\usepackage[paperwidth=3.6in,paperheight=4.5in, total={3.35in,4.25in}]{geometry}
+
+\pagestyle{empty}
+
+\begin{document}
+
+% Your contents goes here
+
+\end{document}
+~~~~
+
+Of course, the main disadvantage of the PDF format w.r.t. the Kindle or Mobipocket format is, that the layout is static, i.e. rotating of the display no longer will be a sensible option. On the other -- just from the little bit of experimenting I have been doing this evening -- a properly generated PDF may be closer to the reading experience of a well-printed book-page. While the first experiments essentially tried to get the basic layout right -- which I think is ok now -- the kind of obvious next step is to look at adding features such as hyperlinks for better navigation inside the document. From what I can tell to far, the build-in methods to move around are not that great -- being able to augment this from within the document itself might be quite useful.
