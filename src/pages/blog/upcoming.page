@@ -10,6 +10,7 @@ tags: Blog
 **:::**
 
  * http://www.storagereview.com
+ * http://arthursbookshelf.com
 
 ----
 **completed ...**
@@ -18,6 +19,36 @@ tags: Blog
 
 ----
 **in preparation ...**
+
+
+### Social Experiment ###
+
+Das ist doch einmal ein paar Versuche wert... Wie schon einige Male, ist es mir heute Morgen -- als ich auf dem Weg ins Institut war -- wieder einmal passiert, dass der Bus -- obwohl ich mich passend an der Haltestelle positioniert hatte -- ein Stueck entfernt von mir gehalten hat... direkt vor dem dort wartende Maedel.
+
+### Python bindings for C/C++ using Boost.Python ###
+
+~~~~
+python_add_module (pyswir
+    pyswir.h
+    pyswir.cc
+    pyswir_data.cc
+    pyswir_l01b.cc
+    pyswir_math.cc
+    pyswir_stats.cc
+    pyswir_utils.cc
+    )
+~~~~
+
+Linker instructions
+
+~~~~
+target_link_libraries (pyswir
+    swir++
+    ${Boost_PROGRAM_OPTIONS_LIBRARY}
+    ${Boost_PYTHON_LIBRARY}
+    ${PYTHON_LIBRARIES}
+    )
+~~~~
 
 
 ### Musikalische Funde ###
@@ -401,22 +432,6 @@ Dass dem nicht ganz so war, machte eine eher ueberraschende Episode unterwegs de
 
 **:::**
 
-### Prometheus (2012) ###
-
-Es gibt wohl nur wenige Filme in diesem Jahr, welche mit solcher Spannung erwartet worden sind,
-wie [Prometheus](http://www.imdb.com/title/tt1446714); sicher, es gab so einige Streifen
-welchen man entgegenfiebern konnte, aber ich wuesste jetzt so auf Anhieb keinen anderen Film
-welcher in vergleichbarer Weise den Bogen zu einem absoluten Sci-Fi Kino Meilenstein spannen
-kann. Ich denke mal die Ankuendigung von [Ridley Scott](http://www.imdb.com/name/nm0000631)
-sich (zumindest einem Teil) der Fragen zuzuwenden, welche seit  [Alien](http://www.imdb.com/title/tt0078748) (1979) im Raum standen, hat schon fuer einiges an Wirbel gesorgt; da ist es nur verstaendlichen, wenn fuer so manchen [heiliger Sci-Fi Boden](/blog/2012/2012-09/2012-09-18_23-10.html) betreten wird.
-
- - [H. R. Giger](http://www.hrgiger.com)
- - Jodorowsky's Dune
- - [Alien vs. Predator](http://www.imdb.com/title/tt0471072)
- - [The Connection Between Prometheus And Alien](http://wegotthiscovered.com/movies/big-small-beginnings-prometheus-connection-alien)
-
-**:::**
-
 ### The Black Hole ###
 
 > While speaking to director [Joe Kosinski](http://www.imdb.com/name/nm2676052) about the Blu-ray/DVD release of [TRON: LEGACY](http://www.imdb.com/title/tt1104001) (which arrives on April 5), [ASSIGNMENT X spoke to the helmer](http://www.assignmentx.com/2011/exclusive-the-latest-news-on-disneys-the-black-hole-remake) about one of his next projects -- the reboot of Disney’s 1979 cult classic [THE BLACK HOLE](http://www.imdb.com/title/tt0078869).
@@ -488,12 +503,6 @@ Wenn es eine Sache gibt, welche bei dem Umzug von Amsterdam nach Bonn definitiv 
 
 Ich muss sagen, dass was dies betrifft diese Woche wirklich sehr gut
 war und ich nun vielleicht ein wenig mehr im Reinen mit mir selber und den Dingen bin. Wozu ich die vergangenen Tage ja recht umfangreich benutzt habe war, mein Buero so weit es denn geht auszuleeren: wenn man bedenkt dass ich seit meinem Umzug nach Dwingeloo Anfang 2004 durchgehend einen eigenen Arbeitsplatz gehabt habe (auch wenn jener in der Zwischenzeit dreimal umgezogen ist), dann duerfte schon klar sein, dass sich so einiges an Material ansammelt. Ich glaube da muss man noch nicht einmal ueber einen ausgepraegten Sammlersinn verfuegen: es reicht alleine schon aus die diversen Arbeitsunterlagen und -materialien zu beruecksichtigen, welche man sich griffbereit haelt. Auch wenn sicherlich der Anteil an elektonischen Dokumenten zugenommen hat, so ist eine Papierversion nach wie vor ungeschlagen, wenn man etwas haben will, das man ueberall hin mitnehmen kann und worauf man munter Kommentare und Anmerkungen anbringen kann. Dementsprechend hatte ich einiges an Ordnern in Schreibtischnaehe, was nun (nach Durchsicht) in die grosse Papierkiste in der Halle gewandert ist.
-
-### Bundesgartenschau Koblenz ###
-
-So weit ich mich erinnern kann war ich noch nie auf einer Bundesgartenschau; ich kenne zwar mittlerweile in paar ehemalige Gelaende (man bedenke, dass man in Bonn ja eines direkt vor der Nase hat, aber auch Hamburg kenne ich mittlerweile ein wenig), aber wirklich waehrend der Veranstaltung war ich bisher noch nicht dort. Zeit also dies endich einmal noch nachzuholen: so ist es dann mehr also nur guenstig, dass die diesjaehrige BUGA mit ihrem Ausrichtungsort Koblenz in recht guter Reichweite liegt. Bot sich folgerichtig also an, mal einen Tagesausflug Richtung Sueden einzuplanen, um sich Gelaende und Ausstellung einmal ein wenig anzuschauen. Mit dem Pfingstwochenende vor der Tuere, bot sich eine gute Gelegenheit, so dass sich das Vorhaben recht zeitnah in die Tat umsetzen liess: also einmal ein Weilchen an den Rechner setzen, um sich kundig zu machen was es denn alles so zu besichtigen gibt (ok, man muss hier ja nicht den riesigen Plan entwerfen, ab es ist schon ganz sinnvoll einmal zu schauen, ob es an dem anvisierten Tag vielleicht irgendwelche besonderen Veranstaltungen gibt). Es spricht sicherlich nichts dagegen einfach mal nur so frei der Nase nach auf Entdeckungsreise zu gehen, aber ein klein wenig Vorbereitung kann sicherlich nicht schaden, vor allen Dingen wenn man sich den Tag ein wenig einteilen muss; dass heisst natuerlich auf der anderen Seite nicht, dass man nun den ganzen Tag komplett von vorne bis hinten durchplanen muss, aber ein paar Orientierungspunkte koennen durchaus nuetzlich sein.
-
-Aufbruch war fuer den fruehen Sonntag Morgen angesetzt, was eigentlich auch recht gut geklappt hat; ist zwar immer mit einem leichten Risiko verbunden, wenn man sich eine bestimmte Uhrzeit vornimmt, aber diesmal hat es mit dem Absprung doch recht gut geklappt.
 
 ### Bremerhaven - Nachtrag 1: Geschmackslabor ###
 
