@@ -9,6 +9,24 @@ tags: Blog
  
 **:::**
  
+### Summer promo ###
+
+
+
+
+_Tue, 27. August 2013 -- 17:34_
+
+Als langjaehriger [Drobo](http://www.drobo.com)-Benutzer stehe ich nach wie vor noch auf dem Mail-Verteiler, wenn es um Neuigkeiten geht. So kommt es denn auch, das ich eben die Nachrichten in Sachen Sommer-Specials erhalten habe, welche vor allen Dingen bei den Business Modellen deutliche Preiskuerzungen vorzuweisen hat:
+
+ - B1200i 12-bay iSCSI storage starting at $5699
+ - B800i 8-bay iSCSI storage starting at $1799
+ - B800fs 8-bay Network storage starting at $1199
+
+Klingt alles ganz nett, aber ich bin da doch seit einer Weile nicht mehr im Geschaeft: seit ich beschlossen habe fuer die groesseren Datenmengen lieber auf [Synology](http://www.synology.com) zu setzen, stehen die eiden Drobos derzeit ohne jegliche Festplatten bei mir zuhause. Das muss jetzt nicht dauerhaft so bleiben -- in der Tat habe ich schon ueberlegt, dass ich bald mal ein Drobo hier in Utrecht hinstellen werde -- aber Bedarf an Neuanschaffungen gibt es bei mir diesbezueglich definitiv nicht.
+ 
+**:::**
+ 
+ 
 ### Zune ###
 
 
@@ -238,46 +256,6 @@ Auch wenn ich ja schon probiere, meine Sammlung an Podcasts -- sei es Nachrichte
 > TED is a nonprofit devoted to Ideas Worth Spreading. It started out (in 1984) as a conference bringing together people from three worlds: Technology, Entertainment, Design. Since then its scope has become ever broader. Along with two annual conferences -- the TED Conference on the West Coast each spring, and the TEDGlobal conference in Edinburgh UK each summer -- TED includes the award-winning TED Talks video site, the Open Translation Project and TED Conversations, the inspiring TED Fellows and TEDx programs, and the annual TED Prize.
 
 Da jetzt irgendwelche Beitraege besonders hervorzuheben ist nicht so einfach -- es gibt einfach sehr viele Talks, welche hoerenswert sind, so dass es also an jedem Einzelnen liegt sich durch die Liste durchzuarbeiten. Was im Zusammenhang mit dem gestrigen [Beitrag zum Hyperloop Projekt](/blog/2013/2013-08/2013-08-13_15-15.html) allerdings vielleicht interesant sein koennte, ist das [Gespraech](http://www.ted.com/talks/elon_musk_the_mind_behind_tesla_spacex_solarcity.html) mit [Space X](http://www.spacex.com) und [Tesla Motors](http://www.teslamotors.com) Gruender [Elon Musk](http://www.ted.com/speakers/elon_musk.html) zu den diversen Zukunftsprojekten, welche von ihm vorangetrieben werden.
- 
-**:::**
- 
- 
-### Hyperloop ###
-
-
-
-
-_Tue, 13. August 2013 -- 15:15_
-
-Es klingt ein klein wenig wie Science-Fiction, aber was [Elon Musk](http://elonmusk.com) da vorschlaegt ist eben nicht nur eine reine Spinnerei, sondern ein durchaus ernsthaft gemeintes Projekt fuer den Personentransport zwischen Ballungszentren im Abstand von bis zu 1500 km:
-
-> The Hyperloop (or something similar) is, in my opinion, the right solution for the specific case of high traffic city pairs that are less than about 1500 km or 900 miles apart. Around that inflection point, I suspect that supersonic air travel ends up being faster and cheaper. With a high enough altitude and the right geometry, the sonic boom noise on the ground would be no louder than current airliners, so that isn’t a showstopper. Also, a quiet supersonic plane immediately solves every long distance city pair without the need for a vast new worldwide infrastructure.
-
-![Hyperloop concept design drawing](/blog/2013/2013-08/hyperloop.jpg)
-
-Auch wenn die eine oder andere Meldung in Bezug auf den Entwurf an die Oeffentlichkeit gedrungen war, so gab es den offiziellen Startschuss wohl am gestrigen Tage ueber einen Eintrag auf dem [Tesla Motors Blog](http://www.teslamotors.com/blog/hyperloop). Mit ausgeloest durch die Unzufriedenheit mit der zur Zeit angestrebten Loesung fuer ein Hochgeschwindigkeits-Bahnnetz (welchen von den Kosten her mittlerweile bei jenseits der 60 Milliarden, und damit dem doppelten der urspruenglich veranschlagten Summe, liegt), setzt Musk einfach noch einmal einen Schritt zurueck an, um ganz grundsaetzlich zu fragen, was denn die Anforderungen an ein neues Transportsystem sein koennen.
-
-> If we are to make a massive investment in a new transportation system, then the return should by rights be equally massive. Compared to the alternatives, it should ideally be:
->
-> * Safer
-> * Faster
-> * Lower cost
-> * More convenient
-> * Immune to weather
-> * Sustainably self-powering
-> * Resistant to Earthquakes
-> * Not disruptive to those along the route
-
-Ausgehend von diesen Randbedingungen ergibt sich ein Entwurf, welcher durchaus lesenswert ist und welcher am zahlreichen Stellen diskutiert wird:
-
- * [Hyperloop: San Francisco to L.A. in 30 minutes](http://money.cnn.com/2013/08/12/news/economy/hyperloop-elon-musk/index.html) -- CNN, 2013-08-12
- * [Hyperloop: Elon Musk’s Really Rapid Transit System](http://allthingsd.com/20130812/hyperloop-elon-musks-really-rapid-transit-system) -- AllThingsD, 2013-08-12
- * [Elon Musk Will Likely Build His Own Hyperloop Prototype](http://allthingsd.com/20130812/elon-musk-will-likely-build-his-own-hyperloop-prototype) -- AllThingsD, 2013-08-12
- * [Hyperloop: Elon Musk stellt Rohrpost für Menschen vor](http://www.heise.de/newsticker/meldung/Hyperloop-Elon-Musk-stellt-Rohrpost-fuer-Menschen-vor-1934205.html) -- Heise News, 2013-08-13
- * [Hyperloop—a theoretical, 760 mph transit system made of sun, air, and magnets](http://arstechnica.com/business/2013/08/hyperloop-a-theoretical-760-mph-transit-system-made-of-sun-air-and-magnets) -- Ars Technica, 2013-08-13
- * [In 35 Minuten nach Los Angeles](http://www.tagesschau.de/wirtschaft/hyperloop100.html) -- Tagesschau.de, 2013-08-13
-
-Wem die diversen Nachrichten-Artikel letzten Endes zu allgemein gehalten sind und lieber doch etwas mehr Details erfahren moechte, dem sei die [Hyperloop Preliminary Design Study](http://www.spacex.com/sites/spacex/files/hyperloop_alpha-20130812.pdf) -- ein technisches Paper -- ans Herz gelegt; was ich von den insgesamt 56 Seiten bisher gelesen habe klingt zwar herausfordernd aber wohl im Bereich des Machbaren. Da _Hyperloop_ auch als ein Open Design Concept gedacht ist, gibt es die Moeglichkeit sich mit Anmerkungen und Ideen in die weitere Entwicklung einzubringen.
  
 **:::**
  
