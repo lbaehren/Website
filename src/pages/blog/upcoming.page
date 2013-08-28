@@ -21,12 +21,13 @@ tags: Blog
 **in preparation ...**
 
 
-### Kandidaten-Check ###
+### Banking-Trojaner für Linux ###
 
-> Mit dem Kandidaten-Check können Sie auf spielerische Weise herausfinden, ob Sie bei wichtigen politischen Themen mit den Kandidatinnen und Kandidaten in Ihrem Wahlkreis übereinstimmen oder nicht. Auf diese Weise erhalten Sie eine Orientierung für die Abgabe Ihrer Erststimme bei der anstehenden Wahl.
+[Heise News](http://www.heise.de/newsticker/meldung/Erster-Banking-Trojaner-fuer-Linux-analysiert-1943718.html)
 
-![Kandidaten-Check Ergebnisse](/blog/2013/2013-08/2013-08-27_Kandidatencheck.png)
-
+> Der Antivirenhersteller Avast hat den [ersten Banking-Trojaner für Linux](http://www.heise.de/newsticker/meldung/Linux-Banking-Trojaner-in-freier-Wildbahn-gesichtet-1932533.html) einer [detaillierten Analyse](http://blog.avast.com/2013/08/27/linux-trojan-hand-of-thief-ungloved) unterzogen. Dabei zeigte sich, dass der Trojaner-Entwickler einigen Aufwand betrieben hat, um sein Werk selbst vor geschulten Augen zu verstecken.
+>
+> Es fängt damit an, dass die Linux-Malware Hand of Thief größtenteils verschlüsselt ist. Nach dem Start schaut sie sich erst mal ausführlich auf dem System um: Die Malware versucht herauszufinden, ob sie in einer virtuellen Maschine läuft – und damit potenziell unter Beobachtung eines Virenforscher steht. Hierzu durchsucht sie die von cpuinfo ausgegebenen Prozessorinformationen nach Zeichenfolgen wie "QEMU". Die SCSI-Geräte durchfilzt sie unter anderem nach "VMWARE". Wird der Schädling fündig, bricht er die Ausführung sofort ab. Das Gleiche geschieht auf Systemen, die mittels chroot abgesichert sind.
 
 ### Social Experiment ###
 
