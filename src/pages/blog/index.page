@@ -9,6 +9,80 @@ tags: Blog
  
 **:::**
  
+### Fleissig ###
+
+
+
+
+_Sun, 01. September 2013 -- 00:04_
+
+Na, wenn dies mal kein fleissiger Start in den September war...
+
+Nach dem grossen Abernten auf dem Feld in Uedorf am Nachmittag, stand heute Abend das sauber machen und einlegen/-kochen auf dem Programm. Bei den Bergen an Gemuese und Kraeutern dauert dies schon eine Weile, aber weitestgehend ist alles schon weg. Die Kueche selber sah zwischenzeitlich zwar ein wenig wie ein Acker aus -- da ueberall Gruenzeug herumlag -- aber soweit es geht ist alles schon weggepackt und aufgraeumt. Morgen kommt dann noch einmal ein kleiner Nachtrag an die Reihe, denn von den Kraeutern war so viel da, dass dies heute Abend einfach nicht zu schaffen war.
+ 
+**:::**
+ 
+ 
+### Ernte ###
+
+
+
+
+_Sat, 31. August 2013 -- 20:01_
+
+Das hat sich doch gelohnt: heute Nachmittag haben wir noch einmal einen Abstecher zum Feld bei Uedorf gemacht, um dort einiges an Gemuese abzuernten. Nach der Waerme und dem Regen der vergangenen Tage war es jetzt noetig einiges an Pflanzen aus der Erde zu holen.
+
+![Ernte](/blog/2013/2013-08/dsc_20130831_153155.jpg)
+
+Diese Auswahl ist nur ein kleiner Teil von dem, womit wir zurueck nach Hause gekommen sind: insgesamt waren es drei Kisten, welche bereits teilsweise ausgeraeumt sind. Der restliche Abend wird demnach nun also weitestgehend im Zeichen des Einmachens und Einkochens stehen.
+ 
+**:::**
+ 
+ 
+### Zugfinder ###
+
+
+
+
+_Fri, 30. August 2013 -- 23:26_
+
+Ich bin doch immer wieder verbluefft, was sich so alles fuer Dinge in den Server Logfiles finden lassen. Waehrend der Information von welcher Seite aus Leute zu mir gekommen sind, finde ich die Auflistung mit den Suchbegriffen recht unterhaltsam. Mitunter lassen sich da auch Dinge finden, auf welche ich so fuer mich wahrscheinlich so schnell nicht gekommen waere -- welche aber allem Anschein nach fuer andere Menschen interessant waren. In diese Kategorie gehoert seit diesem Monat die Suche nach dem -- derzeit -- zwischen Amsterdam und Frankfurt verkehrenden __ICE 159__; aufgrund von Bauarbeiten sind sowohl Fahrstrecke als auch Fahrplan angepasst, so dass da schon haeufiger einmal eine Kontrolle noetig wird, wie denn am jeweiligen Tag die Verbindung aussieht. Dies -- und die anschliessenden Abenteuer waehrend der Fart -- waren auch Anlass fuer eine kurze Notiz im Blog, so dass letzterer bei einer Suche mit Google ebenfalls aufgelistet wird.
+
+![Google search ICE 159](/blog/2013/2013-08/2013-08-28_ice_159.png)
+
+Na gut, das fuer sich genommen war jetzt noch nicht einmal der interessanteste Teil an der Sache, denn was deutlich mehr meine Aufmerksamkeit auf sich gezogen hatte, war der an Stelle zwei aufgefuehrte Treffer: [Zugfinder](http://www.zugfinder.de). Hatte ich bis zu diesem Zeitpunkt noch nicht von gehoert, so dass ich dies mal noch schnellstens versucht habe nachzuholen. Was sich dann aber unter der Adresse finden liess, waere durchaus eine Erwaehnung wert:
+
+> Auf diesen Seiten sehen Sie die aktuellen Positionen der Fernzüge in Deutschland, aufgeteilt nach Regionen. Die Zugpositionen werden ermittelt aus den aktuellen Ankunftszeiten, verechnet mit Fahrplanzeiten. Bahnfans können somit Fotostandorte prüfen, Bahnfahrer wissen, wo sie gerade sind.
+>
+> Zusätzlich werden alle gesammelten Verspätungsdaten gespeichert, um für die nächsten Reisen Anhaltspunkte zu finden: Mithilfe der Zugsuche können die Daten der letzten 30 Tage angesehen werden (sofern Daten gesammelt wurden), weitere Statistiken geben Auskunft über Verspätungen deutscher Fernzüge im Allgemeinen.
+
+Bemerkswert an den Seiten ist, dass die gesammelten Verspaetungsdaten noch einmal unter verschiedenen Kriterien zusammengefasst werden -- dies kann dann nach Region oder auch Zugtypus sein. Alles in allem also ein Angebot, welches fuer den interessierten Bahnfahrer einiges an Lesestoff bietet.
+
+... und weil dies ja der urspruengliche Aufhaenger fuer diesen Fund war: hier einmal exemplarisch die Daten fuer den [ICE 159](http://www.zugfinder.de/zuginfo.php?zugnr=ICE_159).
+
+![Verspätungsdaten und Pünktlichkeit von ICE 159](/blog/2013/2013-08/2013-08-28_Zugfinder.png)
+ 
+**:::**
+ 
+ 
+### Banking-Trojaner für Linux ###
+
+
+
+
+_Thu, 29. August 2013 -- 11:16_
+
+Auch wenn die Menge an Schadsoftware -- Viren, Wuermer, Trojaner, etc. -- unter Linux nie mit dem mithalten konnte, was vor allen Dingen unter Windows ein Problem war, so heisst dies doch keinesfalls, dass man sich um Angriffe von aussen keinerlei Gedanken machen muss. [Wie jetzt auf Heise News nachzulesen war](http://www.heise.de/newsticker/meldung/Erster-Banking-Trojaner-fuer-Linux-analysiert-1943718.html), scheinen sich da einige Leute wirklich Muehe gegeben habe einen Schaedling zusammen zu bauen, welcher nach allen Regeln der Kunst versucht seine Anwesenheit zu verbergen:
+
+> Der Antivirenhersteller Avast hat den [ersten Banking-Trojaner für Linux](http://www.heise.de/newsticker/meldung/Linux-Banking-Trojaner-in-freier-Wildbahn-gesichtet-1932533.html) einer [detaillierten Analyse](http://blog.avast.com/2013/08/27/linux-trojan-hand-of-thief-ungloved) unterzogen. Dabei zeigte sich, dass der Trojaner-Entwickler einigen Aufwand betrieben hat, um sein Werk selbst vor geschulten Augen zu verstecken.
+>
+> Es fängt damit an, dass die Linux-Malware Hand of Thief größtenteils verschlüsselt ist. Nach dem Start schaut sie sich erst mal ausführlich auf dem System um: Die Malware versucht herauszufinden, ob sie in einer virtuellen Maschine läuft – und damit potenziell unter Beobachtung eines Virenforscher steht. Hierzu durchsucht sie die von cpuinfo ausgegebenen Prozessorinformationen nach Zeichenfolgen wie "QEMU". Die SCSI-Geräte durchfilzt sie unter anderem nach "VMWARE". Wird der Schädling fündig, bricht er die Ausführung sofort ab. Das Gleiche geschieht auf Systemen, die mittels chroot abgesichert sind.
+
+Liest man sich den Artikel noch ein wenig weiter durch, dann wird recht deutlich, dass da nicht nur ein paar Hobby-Bastler taetig waren, sondern einiges an Programmier- und System-Kenntnis eingeflossen ist. Dass dieser Angriffsversuch dennoch aufgeflogen ist, zeugt wiederum von der Expertise der Sicherheitsexperten, welchen es trotz all der verschiedenen Verbergungsstrategien gelungen ist den Schaedling ausfindig zu machen.
+ 
+**:::**
+ 
+ 
 ### Kandidaten-Check ###
 
 
@@ -188,78 +262,6 @@ So kann man es natuerlich auch versuchen zu organisieren: als Julia und ich gest
 ![Einkaufsliste](/blog/2013/2013-08/dsc_20130817_Einkaufsliste.jpg)
 
 Auch wenn ich die Idee an sich schon einmal ganz witzig finde, so muss ich doch sagen, dass dies letzten Endes wohl einfach zu unflexibel ist, wenn man dies in unserem Haushalt zum Einsatz bringen wollte. Eine der deutlichen Schwaechen ist auch, dass es einige Posten auf der Liste gibt, welche man sich komplett sparen koennte (Wurst, Zucker, Spuelmaschinentabs); andererseits gibt es dann wiederum Eintraege, welche einfach viel zu unspezifisch sind (Obst, Gemuese) und fuer sich genommen fast solche ein komplette Liste in Anspruch nehmen koennten. Aber gut, war einfach mal eine nette Entdeckung am Rande, aber nichts, was zum Kaufen animierte haette.
- 
-**:::**
- 
- 
-### Flohmarkt ###
-
-
-
-
-_Sat, 17. August 2013 -- 20:52_
-
-Was Flohmaerkte hier in der Gegend betrifft so ist und bleibt die Rheinaue einfach der beste Anlaufpunkt. Wie heute wieder festgestellt, ist dorrt einfach die Auswahl an Staenden (und auch an den Staenden) deutlich vielfaeltiger als auf den diversen kleineren Veranstaltungen, welche es hier und ueber das Stadtgebiet verteilt gibt. Das heisst jetzt natuerlich immer noch nicht, dass man eine Garantie dafuer hat auch wirklich fuendig zu werden -- so bin ich zum Beispiel mit (fast) leeren Haenden zurueckgekommen -- aber die Chancen auch etwas ausgefallenere Dinge zu erstehen sind doch noch einmal ganz anders. Netterweise hat heute das Wetter toll mitgespielt (auch wenn es ein paar Grad weniger durchaus auch getan haetten), so dass die Rheinaue wieder gut besucht war. Das letzte Mal fuer dieses Jahr war es aber noch nicht, so dass es zumindest im kommenden Monat noch einmal eine Chance gibt.
- 
-**:::**
- 
- 
-### Burka Avenger ###
-
-
-
-
-_Fri, 16. August 2013 -- 10:36_
-
-Unter der Ueberschrift [Pakistans Catwoman](http://www.zeit.de/kultur/film/2013-08/comic-burka-avenger) stellt _Zeit Online_ Reporterin Mariam Lau eine neue Comic-Heldin der oestlichen Art vor:
-
-> Pakistan hat eine neue Superheldin. Die Lehrerin Jiya schwingt sich als Rächerin über Pakistans Dächer. In einer Burka. Ist das nun Revolution oder Rückschritt?
-
-Aufmerksam geworden bin ich auf diese Animationsserie ueber einen [Beitrag auf Tagesschau.de](http://www.tagesschau.de/ausland/burkawoman100.html):
-
-> Hunderttausende schalten in Pakistan den Fernseher ein, wenn sie über den Bildschirm fliegt: Superheldin "Burka Avenger" kämpft schwarz verschleiert gegen das Unrecht. Und doch ist die Comic-Serie eine Provokation für die Taliban im Land.
-
-Schaut man sich ein klein wenig im Netz um, dann finden sich nicht nur ein [Eintrag in der IMDb](http://www.imdb.com/title/tt3091810), sondern auch die [offizielle Website](http://www.burkaavenger.com) der Serie. Da die Serie nun auch international ausgestrahlt wird, gibt Zusammenfassungen und Hintergrundinformationen ebenfalls in Englisch.
-
-![Burka Avenger](/blog/2013/2013-08/2013-08-16_Burka_Avenger.jpg)
-
-> The Burka Avenger is an amazing action-comedy animated TV series that follows the adventures of the Burka Avenger and three young kids in the imaginary city of Halwapur as they fight the evil Baba Bandook and his henchmen.
->
-> The Burka Avenger TV series comprises of 13 episodes of 22 minutes each. Featuring guest appearances and original songs from some of the biggest musical acts from across South Asia (including Ali Zafar, Haroon, Ali Azmat, Josh and many others), Burka Avenger is a must see for kids and adults alike.
->
-> The main goals of the Burka Avenger TV series are to make people laugh, to entertain and to send out positive social messages to the youth.
-
-In wie weit diese Serie hier im Westen groessere Zustimmung finden wird, muss sich wohl noch zeigen; nimmt man sich aber die Zeit, um ein wenig mehr im Netz auf die Suche zu gehen, dann zeigt sich aber doch, dass _Burka Avenger_ schon jetzt einiges an Diskussionen ausgeloest hat.
- 
-**:::**
- 
- 
-### Transportkonzepte fuer die Zukunft ###
-
-
-
-
-_Thu, 15. August 2013 -- 18:32_
-
-Wie so haeufig bedarf es mitunter nur eines kleines Anstosses, um die Dinge ins Rollen zu bringen... Nachdem ich einige Zeit damit verbracht habe mich ueber die Beginn dieser Woche vorgestellte [Hyperloop Design Studie](/blog/2013/2013-08/2013-08-13_15-15.html) kundig zu machen, habe ich mir auch die anderen Umtriebe von Elon Musk ein wenig genauer unter die Lupe zu nehmen. Keinesfalls unumstritten, muss man dem Mann lassen, dass er es nicht nur schafft fuer ambitionierte Ideen Begeisterung zu schaffen, sondern es eben nicht alleine dabei belaesst. Einen sehr schoenen Ueberblick bekommt man durch [das bei der D11 Conference gefuehrte Interview](http://allthingsd.com/video/?video_id=1F7C3196-2B5D-4A1F-9FD0-B8DF95FFC97D), welches auch ein wenig die hinter den Vorhaben liegenden Grundideen erkennen laesst.
-
-Passenderweise findet sich heute aus [Heise News](http://www.heise.de) ein Bericht ueber die [Probefahrt im Tesla Model S](http://www.heise.de/newsticker/meldung/Elektroautos-Probefahrt-im-Tesla-Model-S-1935834.html); wie der ausfuehrlichere Artikel weiter erklaert, faehrt [Tesla](http://www.teslamotors.com) in vielerlei Hinsicht [Der Konkurrenz weit voraus](http://www.heise.de/tr/artikel/Der-Konkurrenz-weit-voraus-1932824.html) -- in wie weit dies aber dazu fuehren wird, dass vollelektrische Autos in naher Zukunft erkennbar mehr auf deutschen Strassen zu sehen sind, muss sich allerdings noch zeigen.
- 
-**:::**
- 
- 
-### Doppelbesteuerungsabkommen ###
-
-
-
-
-_Wed, 14. August 2013 -- 14:12_
-
-Da sich fuer mich dieses Jahr zum ersten Mal eine recht neue Situation bietet, habe ich nun endlich auch einmal damit begonnen mich kundig zu machen, damit ich ein wenig genauer weiss, was ich vor allen Dingen dann machen muss (oder kann), wenn es um so Dinge wie Steuererklaerung geht. Da ich ja gesehen habe, was es fuer einen Unterschied macht, wenn man dem Staat nicht einfach so stillschweigend sein Geld ueberlaesst, sondern ueber eine Steuererklaerung einem zustehende Betraege wieder zurueckbekommt, geht es nun also darum herauszufinden wie es ist, wenn man zwar den Hauptwohnsitz in Deutschland hat, aber in der den Niederlanden arbeitet. Schaut man sich ein klein wenig um, dann stoesst man hier recht schnell auf das
-
-> Abkommen zwischen der Bundesrepublik Deutschland und dem Königreich der Niederlande zur Vermeidung der Doppelbesteuerung und zur Verhinderung der Steuerverkürzung auf dem Gebiet der Steuern vom Einkommen (nach dem letzten Stand vom 12. April 2012)
-
-Das klingt zwar alles recht gut, nur gibt es an der Sache bisher leider noch einen entscheidenden Haken: das Abkommen ist noch nicht in Kraft getreten! Geht man noch einmal etwas auf die Suche dann findet man, dass das Abkommen aller Wahrscheinlichkeit nach am 1.1.2014 in Kraft treten wird, aber ob sich dies dann rueckwirkend auf 2013 anwenden laesst, kann ich nicht beurteilen. Sieht also ganz danach aus, als koennte der Schreibkram noch einmal eine Ecke komplizierter werden, als ich befuernchtet hatte.
  
 **:::**
  

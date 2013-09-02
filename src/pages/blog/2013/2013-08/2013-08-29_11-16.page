@@ -1,0 +1,17 @@
+---
+title: "Banking-Trojaner für Linux"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Thu, 29. August 2013 -- 11:16_
+
+Auch wenn die Menge an Schadsoftware -- Viren, Wuermer, Trojaner, etc. -- unter Linux nie mit dem mithalten konnte, was vor allen Dingen unter Windows ein Problem war, so heisst dies doch keinesfalls, dass man sich um Angriffe von aussen keinerlei Gedanken machen muss. [Wie jetzt auf Heise News nachzulesen war](http://www.heise.de/newsticker/meldung/Erster-Banking-Trojaner-fuer-Linux-analysiert-1943718.html), scheinen sich da einige Leute wirklich Muehe gegeben habe einen Schaedling zusammen zu bauen, welcher nach allen Regeln der Kunst versucht seine Anwesenheit zu verbergen:
+
+> Der Antivirenhersteller Avast hat den [ersten Banking-Trojaner für Linux](http://www.heise.de/newsticker/meldung/Linux-Banking-Trojaner-in-freier-Wildbahn-gesichtet-1932533.html) einer [detaillierten Analyse](http://blog.avast.com/2013/08/27/linux-trojan-hand-of-thief-ungloved) unterzogen. Dabei zeigte sich, dass der Trojaner-Entwickler einigen Aufwand betrieben hat, um sein Werk selbst vor geschulten Augen zu verstecken.
+>
+> Es fängt damit an, dass die Linux-Malware Hand of Thief größtenteils verschlüsselt ist. Nach dem Start schaut sie sich erst mal ausführlich auf dem System um: Die Malware versucht herauszufinden, ob sie in einer virtuellen Maschine läuft – und damit potenziell unter Beobachtung eines Virenforscher steht. Hierzu durchsucht sie die von cpuinfo ausgegebenen Prozessorinformationen nach Zeichenfolgen wie "QEMU". Die SCSI-Geräte durchfilzt sie unter anderem nach "VMWARE". Wird der Schädling fündig, bricht er die Ausführung sofort ab. Das Gleiche geschieht auf Systemen, die mittels chroot abgesichert sind.
+
+Liest man sich den Artikel noch ein wenig weiter durch, dann wird recht deutlich, dass da nicht nur ein paar Hobby-Bastler taetig waren, sondern einiges an Programmier- und System-Kenntnis eingeflossen ist. Dass dieser Angriffsversuch dennoch aufgeflogen ist, zeugt wiederum von der Expertise der Sicherheitsexperten, welchen es trotz all der verschiedenen Verbergungsstrategien gelungen ist den Schaedling ausfindig zu machen.
