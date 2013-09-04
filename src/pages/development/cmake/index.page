@@ -1,6 +1,6 @@
 ---
 title: CMake
-in_menu: true
+in_menu: false
 author: Lars Baehren
 tags: Computing, Software, Development
 ---
@@ -53,4 +53,4 @@ For more information visit the [project's repository page](https://github.com/lb
 
 ### Further reading ###
 
- * [Project configuration](./cmake/project_configuration.html)
+ * [Project configuration](/development/cmake/project_configuration.html)
