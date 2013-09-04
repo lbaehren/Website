@@ -9,6 +9,70 @@ tags: Blog
  
 **:::**
  
+### Chance verpasst ###
+
+
+
+
+_Wed, 04. September 2013 -- 08:56_
+
+Da haette man wirklich gut zuschlagen koennen: im Zuge der gestrigen Bekanntgabe der Nokia Mobiltelefonsparte durch Microsoft hat es an den Boersen ein regelrechtes Kursfeuer gegeben. Waehrend die Microsoft Aktie erst einmal abgesackt ist, machten die Papier der Finnen zunaechst einmal einen deutlichen Sprung nach oben:
+
+![Nokia stock](/blog/2013/2013-09/2013-09-03_Nokia_stock.png)
+
+Schaut man sich die Zusammenfassungen auf diversen Boersen-Seiten an, dann muessen da einige Leute satte Gewinne mitgenommen haben: bei einem Sprung von rund 2.80 EUR hinauf nach 4.20 EUR gab es ein deutliches Plus -- wenn man da also rechtzeitig eingestiegen war (oder vielleicht sogar noch Aktien im Besitz hatte), hatte hier die Chance die eigenen Bilanzen aufzupolieren.
+ 
+**:::**
+ 
+ 
+### Knapp verpasst ###
+
+
+
+
+_Tue, 03. September 2013 -- 10:11_
+
+Hm, das ist also der Preis dafuer, dass ich nicht noch gestern Abend losgerannt bin, um mir Milch zu kaufen. Als ich gerade noch schnell in den Albert Hein gesprungen bin, musste ich sehr zu meiner Enttaeuschung feststellen, dass der Bus der Linie 71 bereits an der Haltestelle stand, als ich aus dem Laden kam. Da der Verkehr hier auf der Hauptstrasse um diese Tageszeit immer noch dicht ist, konnte man vergessen mal eben einen Sprint einzulegen. Somit komme ich also eine halbe Stunde spaeter im Institut an, was ein wenig aergerlich ist. Immerhin kann ich die Zwischenzeit aber noch ein wenig nutzen, denn schliesslich habe ich ja das Laptop und brauche somit nur eine Sitzgelegenheit (auch wenn dies leider ein wenig trickreich ist, weil die Busstation keine Bank hat).
+ 
+**:::**
+ 
+ 
+### Bye, bye, Nokia ###
+
+
+
+
+_Tue, 03. September 2013 -- 08:47_
+
+Vollkommen unerwartet duerfte dies wohl nicht kommen (zumindest fuer diejenigen, welche dies unter Beobachtung hatten), aber eingeschlagen ist [die Meldung](http://www.heise.de/newsticker/meldung/Microsoft-kauft-Nokias-Kerngeschaeft-1947127.html) doch:
+
+![Meldung Heise News](/blog/2013/2013-09/2013-09-03_Nokia.png)
+
+> Nokia verkauft seine Geräte- und Dienstleistungssparte an Microsoft. Der Kaufpreis beträgt 3,79 Milliarden Euro. Dazu kommen 1,65 Milliarden Euro für Patente und andere Lizenzen, geht aus einer Mitteilung hervor. Darüber hinaus gewährt Microsoft Nokia sehr günstige Kredite in Höhe von bis zu 1,5 Milliarden Euro. Der einstige Handy-Weltmarktführer dürfte fast die Hälfte seines Umsatzes einbüßen. Im Zuge des Verkaufs sollen etwa 32.000 Beschäftigte zu Microsoft wechseln, wozu auch die Manager Stephen Elop, Jo Harlow, Juha Putkiranta, Timo Toikkanen und Chris Weber zählen. Für Elop schließt sich damit ein Kreis.
+
+Waehrend sich die Meldungen ueber das Geschehen noch ueberschlagen, gibt es auch schon erste Spekulationen, in wie weit dieser Schritt in der Diskussion um die die [Nachfolge von Microsoft CEO Steve Balmer](http://www.heise.de/newsticker/meldung/Elop-Sinofsky-Gates-Wer-folgt-auf-Steve-Ballmer-1944511.html) relevant sein duerfte. Es wird zwar immer wieder darauf hingewiesen, dass Nokia weiterhin erhalten bleibt, aber dies klingt doch schon sehr nach einem [Abschied auf Raten](http://www.wallstreet-online.de/nachricht/6316535-nokia-kapitulation) fuer die Finnen.
+ 
+**:::**
+ 
+ 
+### Video Bibliothek ###
+
+
+
+
+_Mon, 02. September 2013 -- 21:10_
+
+Da habe ich es ja doch noch vor dem Ende des Wochenendes geschafft die Grenze zu knacken. Im Zuge meiner ersten Umzugsvorbereitungen -- keine Sorge, noch ist es nicht so ernst, denn schliesslich ja noch keine neue Bleibe gefunden -- habe ich jetzt einmal damit begonnen die diversen bei mir im Schrank stehenden DVD zu sichten und ggf. auszusortieren. Bei weitem nicht alles, was da Platz auf den Regalboeden einnimmt musst ich wirklich als Silberling bei mir in der Wohnung stehen haben -- in so machen Faellen reicht es vollkommen aus, wenn ich eine entsprechend digitalisierte Version archiviert habe (was natuerlich wieder andere Anforderungen mit sich bringt). Folgerichtig war mein Rechner also das abgelaufene Wochenende rund im die Uhr damit beschaeftigt DVD zu rippen und somit in die auf dem [Synology NAS](http://www.synology.com/products/product.php?product_name=DS2413) liegende Video-Sammlung zu erweitern. Grundsaetzlich ist dies sowieso eine ganz nette Idee, denn manchmal hat man einfach keine Lust stundelang vor dem Regal mit den DVDs hin und her zu laufen und sich zu ueberlegen, was man denn immer noch einmal schauen wollte; liegen die Filme allerdings abrufbereit auf dem hauseigenen Multimedia-Server, dann ist es ein leichtes (oder zumindest: ein leichteres) in dem vorliegenden Bestand zu stoebern. Unterstuetzt durch eine entsprechende Software laesst sich dieses Stoebern sogar noch ein wenig ausweiten: statt einfach nur blind in der Sammlung herumzustochern, wird es mit einem Male moeglich nach bestimmten Schlagwoertern zu suchen -- egal ob es sich dabei um einen bestimmten Schauspieler oder Regisseur handelt, oder man sich einfach nur innerhalb eines Genres umschauen will. Es gibt also ausreichend Argumente die Film-Sammlung nicht einfach nur in Form von Silberlingen im Regal stehen zu habem, sondern in leicht zugaenglichem Format auf einem in heimische Intranet eingeklinkten Server abzulegen. Was dies allerdings erfordert, ist dass man eine Moeglichkeit hat, die auf den DVDs befindlichen Daten so aufzubereiten, dass man sie ohne weiteres an anderer Stelle ablegen kann.
+
+Dies waere nun die Stelle, an welcher [Handbrake](http://handbrake.fr) in Spiel kommt: in der Weise, wie der [VLC Player](http://www.videolan.org/vlc) einfach mittlerweile die Standardadresse ist, wenn es um das Abspielen von Multimediadateien geht (auch wenn darueber den [MPlayer](http://www.mplayerhq.hu) natuerlich nicht komplett vergesse...) so ist __Handbrake__ einfach das Tool der Wahl wenn es um das Transcoden von Videos geht. Es braucht zwar ein wenig Feintuning, um die Einstellungen zu optimieren, aber wenn man sie da einmal eingependelt hat, dann muss man eigenlich nur noch dafuer sorgen, dass der Rechner in regelmaessigen Abstaenden mit neuerem Material gefuettert wird. Sonderlich beeilen muss man sich mit letzteren allerdings nichts, denn so eine DVD bei hoher Aufloesung zu transcoden dauert schon eine Weile. Trotzdem hat es aber gereicht, dass noch am Sonntag Abend die Film-Bibliothek die 1000er Marke ueberschritten hat noch ehe ich am Ende angekommen bin...
+
+![Video collection](/blog/2013/2013-09/2013-09-02_Video_collection.png)
+
+Auch wenn die Suche nach einer neuen Bleibe ja nach wie vor weitergeht, so ist jetzt schon klar, dass es nach dem Einzug an den schrittweisen Aufbau einer hausinternen IT-Infrastruktur gehen wird... da wird dann auch der Multimedia-Server einen ihm gebuehrenden Platz bekommen.
+ 
+**:::**
+ 
+ 
 ### Fleissig ###
 
 
@@ -200,68 +264,6 @@ Dass der letzte Punkt nicht mehr zu einem Aufschrei fuehrt, will mir immer noch 
  * [NSA-Affäre: Was wir wissen und was wir nicht wissen](http://www.heise.de/ct/artikel/NSA-Affaere-Was-wir-wissen-und-was-wir-nicht-wissen-1939810.html)
  * [Warum die NSA-Affäre auch Tante Grete betrifft, die gar nicht auf Facebook ist](http://www.heise.de/ct/artikel/Warum-die-NSA-Affaere-auch-Tante-Grete-betrifft-die-gar-nicht-auf-Facebook-ist-1939834.html)
  * [Wie die Geheimdienste den Rechtsstaat aushöhlen](http://www.heise.de/ct/artikel/Wie-die-Geheimdienste-den-Rechtsstaat-aushoehlen-1939888.html)
- 
-**:::**
- 
- 
-### Power of Supercomputing ###
-
-
-
-
-_Wed, 21. August 2013 -- 22:05_
-
-... as presented by [DreamWorks](http://www.dreamworksanimation.com):
-
-> In partnership with the [Council on Competitiveness](http://www.compete.org), Dreamworks produced a short animated film on the importance of high performance computing to the U.S. economy.
-
-I a recent [post on Google+](https://plus.google.com/107363503261150463012/posts/W9W3Tcmu8bw) engineer and recording artist [Antonis Karalis](https://plus.google.com/u/0/107363503261150463012/about) pointed out this short-film, employing [The Penguins of Madagascar](http://en.wikipedia.org/wiki/The_Penguins_of_Madagascar) as main characters to present the applications and relevance of High Performance Computing (HPC). Nice point to bring the whole thing around of course is, that the short film itself has been made using HPC.
- 
-**:::**
- 
- 
-### Unter Wasser ###
-
-
-
-
-_Tue, 20. August 2013 -- 19:40_
-
-Das war alles andere als ein angenehmer Fund, welchen ich da gestern Abend machen musste, als ich im Anschluss an einen recht langen Tag hier in Utrecht in der Wohnung eingetroffen bin: als ich damit begonnen habe di aus Bonn mitgenommenen Lebensmittel auszupacken und im Kuehlschrank zu verstauen, musste ich leider feststellen, dass die Arbeitsplatte rund um das Waschbecken unter Wasser stand. Das war jetzt nicht das erste Mal, dass ich da mit Wasser zu schaffen hatte, aber bisher hatte es sich doch in Grenzen gehalten; gestern Abend allerdings hatte sich der See sogar so weit ausgebreitet, dass das Wasser sich ueber die Kante eine Weg in Richtung Fussboden gesucht hatte. Gluecklicherweise hatte ich genau an der Stelle noch etwas stehen, das in der Lage war die Fluessigkeit aufzufangen, aber das haette auch noch einmal anders laufen koennen. Die ganz offensichtlichen Moeglichkeiten habe ich sofort nachgeschaut: weder aber war der Wasserhahn aufgedreht gewesen, noch war irgendwo an der Wand die Spur eines Leck zu finden. Gut, irgendwoher muss das Wasser aber gekommen sein, so dass ich heute Morgen noch einmal einen genaueren Blick auf die Situation geworfen habe: das einzige, was mir zu diesem Zeitpunkt nachvollziehbar erscheint ist, dass der Dichtungsring am oberen Ende des Wasserhahns undicht ist und daher das Wasser am niedrigsten Punkt der Biegung statt weiter in Richtung Waschbecken zu laufen einfach nach unten auf die Arbeitsplatte tropft. Das werde ich diese Woche in jedem Fall in Erfahrung bringen muessen, damit sich dies abstellen laesst; wenn ich alleine ueber das Wochenende nicht hier bin, dann ist dies vielleicht nicht ganz so schlimm, aber ich habe keinerlei Lust nach einer laengeren Abwesenheit in einen Swimming-Pool zurueckzukehren.
- 
-**:::**
- 
- 
-### Kleines Problem ###
-
-
-
-
-_Mon, 19. August 2013 -- 06:52_
-
-Na das geht ja wieder super los: der ICE Richtung Amsterdam steht immer noch hier in Koeln am Bahnsteig und soeben kam die folgende Durchsage:
-
-> Meine Damen und Herren. Unsere Abfahrt wird sich noch ein wenig verzoegern -- wir haben noch ein kleines Problem.
-
-So eine Formulierung hinterlaesst -- auch aufgrund entsprechender Erfahrungen -- ein ungutes Gefuehln, denn dies kann so ziemlich alles sein.
-
-... waehrend ich hier gerade noch am Schreiben bin, gab es noch eine weitere Durchsage: dementsprechend warten wir noch auf den Lokfuehrer des Zuges. Wo dieser geblieben ist und wann er hier eintreffen wird, laesst sich leider noch abschaetzen. Da werde ich mich also noch etwas gedulden muessen, ehe es los geht.
- 
-**:::**
- 
- 
-### Einkaufsliste ###
-
-
-
-
-_Sun, 18. August 2013 -- 19:56_
-
-So kann man es natuerlich auch versuchen zu organisieren: als Julia und ich gestern auch dem Flohmarkt in der Rheinaue unterwegs waren, ist das folgende Brett fuer den Vermerkt von Einkaeufen aufgefallen --
-
-![Einkaufsliste](/blog/2013/2013-08/dsc_20130817_Einkaufsliste.jpg)
-
-Auch wenn ich die Idee an sich schon einmal ganz witzig finde, so muss ich doch sagen, dass dies letzten Endes wohl einfach zu unflexibel ist, wenn man dies in unserem Haushalt zum Einsatz bringen wollte. Eine der deutlichen Schwaechen ist auch, dass es einige Posten auf der Liste gibt, welche man sich komplett sparen koennte (Wurst, Zucker, Spuelmaschinentabs); andererseits gibt es dann wiederum Eintraege, welche einfach viel zu unspezifisch sind (Obst, Gemuese) und fuer sich genommen fast solche ein komplette Liste in Anspruch nehmen koennten. Aber gut, war einfach mal eine nette Entdeckung am Rande, aber nichts, was zum Kaufen animierte haette.
  
 **:::**
  
