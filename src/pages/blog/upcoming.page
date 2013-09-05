@@ -21,6 +21,33 @@ tags: Blog
 **in preparation ...**
 
 
+### Merging TROPOMI SWIR documentation ###
+
+Writing and generating a decent documentation for a software package is one thing -- doing the very same for a software, which actually is comprised of multiple programming languages and multiple modules/sub-packages is another. Having worked with [Doxygen](http://www.doxygen.org) for quite a while now, this pretty much seems like the tool of choice; however, while extracting and organizing information of C/C++ source code is straight forward, doing the same for the [Python](http://www.python.org) bits and pieces turned out to be a bit more tricky. Nevertheless, after testing different approaches to the problem I now seem to have come up with a result, which both contains API documentation (more geared towards developers) and extended documentation (more directed to users). With a little bit of luck all of this soon can be merged into the main branch of the project's code base, making the changes available to everybody.
+
+![Doxygen documentation for TROPOMI SWIR](/blog/2013/2013-09/2013-09-04_tropomi_doxygen.png)
+
+Underlying this is the following cascade or hierarchy of group definitions
+
+~~~~
+  swir                             ...  TROPOMI SWIR calibration software
+  |-- swir_data
+  |-- swir_l01b
+  |-- swir_math
+  |-- swir_stats
+  |-- swir_utils
+  |-- swir_c                       ...  C programming language components
+  |   |- swir_c_libs4
+  |   |- swir_c_tests
+  |   `- swir_c_tools
+  |-- swir_cpp                     ...  C++ programming language components
+  |   |- swir_cpp_lib
+  |   |- swir_cpp_tests
+  |   `- swir_cpp_tools
+  `-- swir_python                  ...  Python programming language components
+      |- swir_python_scripts
+      `- swir_python_tests
+~~~~
 
 ### Langeweile ###
 
