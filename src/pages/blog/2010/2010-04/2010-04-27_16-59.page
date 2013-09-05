@@ -8,20 +8,19 @@ author: Lars Baehren
 
 _Tue, 27. April 2010 -- 16:59_
 
-
-
 Also wenn dies kein Argument fuer die Verwendung von Backups war...
 
 Einen guten Teil des gestrigen Abends habe ich damit zugebracht Anpassungen innerhlab der DAL vorzunehmen, welche Auswirkungen auf andere Pakete haben. Da man derartige Aenderungen natuerlich nicht ohne entsprechendes Testen einchecken sollte, habe ich heute Morgen noch ein wenig daran weitergearbeitet, im wesentlichen um noch alle Abhaengigkeiten zu beruecksichtigen. Wenn auch von dem Software Meeting unterbrochen, so hatte ich dann am fruehen Nachmittag so weit alles klar, so dass ich meine Aenderungen in SVN einchecken konnte. Da zeitgleich Maaijke in Groningen noch ein paar Aenderungen an der RFI Mitigation vorgenommen hat -- was bedeutet, dass endlich Kalpanas furchtbarer Code verschwindet -- wollte ich noch einmal einen letzten Test-Durchlauf machen, um sicher zu gehen, dass alles zusammenpasst. Teil dieses Test Durchlaufes war, dass ich -- wie so ueblich -- das Build-Verzeichnis komplett leerraeume und dann von Null anfange; dummerweise ist mir dabei ein kleiner Tipfehler unterlaufen, so dass ich mit einem Male alle meine seit gestern an den CR-Tools gemachten Aenderungen los war. Statt einem
-<code bash>
+
+~~~~
 rm -rf *
 cmake ../../src/CR-Tools
-</code>
+~~~~
+
 war ich ein wenig schnell und habe so den Zeilenumbruch verpasst, was dazu fuehrte, dass ich stattdessen
-<code bash>
+
+~~~~
 rm -rf * cmake ../../src/CR-Tools
-</code>
-ausgefuehrt habe -- was natuerlich etwas sehr, sehr anderes ist. Bevor ich also realisiert hatte, was da gerade geschehen war, war das komplette ''src/CR-Tools'' in der Tonne verschwunden; da ich ja 90% der Zeit von der Kommandozeile aus arbeite, gab es also nicht noch einen Muelleimer, aus welchem ich die Files wieder haette hervorzaubern koennen. Die erste Massnahme war also, schnell noch einmal einen neuen Checkout zu machen... als ich dann aber festgestellt habe, wie viele Aenderungen ich haette rekonstruieren muessen, schien es mir das beste, meine Sachen zu packen und nach Hause zu verschwinden, damit ich via //Time-Machine// den Zustand vor dem Aufbruch heute Morgen wieder herstellen konnte. In so einer Situation zeigt sich dann wieder einmal, wie einfach und wirkungsvoll die von [[http://www.apple.com|Apple]] seit Mac OS X "Leopard" eingefuehrte Backup Loesung ist: //Time-Machine// starten, Ordner auswaehlen, einen Schritt zurueck in der Zeit gehen und wieder herstellen -- das war es auch schon. 
+~~~~
 
-
-~~DISCUSSION~~
+ausgefuehrt habe -- was natuerlich etwas sehr, sehr anderes ist. Bevor ich also realisiert hatte, was da gerade geschehen war, war das komplette ''src/CR-Tools'' in der Tonne verschwunden; da ich ja 90% der Zeit von der Kommandozeile aus arbeite, gab es also nicht noch einen Muelleimer, aus welchem ich die Files wieder haette hervorzaubern koennen. Die erste Massnahme war also, schnell noch einmal einen neuen Checkout zu machen... als ich dann aber festgestellt habe, wie viele Aenderungen ich haette rekonstruieren muessen, schien es mir das beste, meine Sachen zu packen und nach Hause zu verschwinden, damit ich via _Time-Machine_ den Zustand vor dem Aufbruch heute Morgen wieder herstellen konnte. In so einer Situation zeigt sich dann wieder einmal, wie einfach und wirkungsvoll die von [Apple](http://www.apple.com) seit Mac OS X "Leopard" eingefuehrte Backup Loesung ist: _Time-Machine_ starten, Ordner auswaehlen, einen Schritt zurueck in der Zeit gehen und wieder herstellen -- das war es auch schon.
