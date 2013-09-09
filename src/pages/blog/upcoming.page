@@ -20,12 +20,38 @@ tags: Blog
 ----
 **in preparation ...**
 
+### Draussen sitzen ###
+
+![Terasse](/blog/2013/2013-09/dsc_20130907_133723.jpg)
+
 
 ### Merging TROPOMI SWIR documentation ###
 
 Writing and generating a decent documentation for a software package is one thing -- doing the very same for a software, which actually is comprised of multiple programming languages and multiple modules/sub-packages is another. Having worked with [Doxygen](http://www.doxygen.org) for quite a while now, this pretty much seems like the tool of choice; however, while extracting and organizing information of C/C++ source code is straight forward, doing the same for the [Python](http://www.python.org) bits and pieces turned out to be a bit more tricky. Nevertheless, after testing different approaches to the problem I now seem to have come up with a result, which both contains API documentation (more geared towards developers) and extended documentation (more directed to users). With a little bit of luck all of this soon can be merged into the main branch of the project's code base, making the changes available to everybody.
 
 ![Doxygen documentation for TROPOMI SWIR](/blog/2013/2013-09/2013-09-04_tropomi_doxygen.png)
+
+Even though the previous paragraph almost verbatim has been posted to [Google+](https://plus.google.com), the blog certainly is the more suitable place for providing a bit more background information on the problem and the efforts to solve it.
+
+When I came on board for working at the TROPOMI SWIR calibration effort at [SRON](http://www.sron.nl) there already existed a stock of source code (mostly written in C); documentation-wise the only thing available -- at least related to the source code itself -- were a few inline comments, such that getting a quick glance at the overall structure and organization of the software was a bit cumbersome. So in case the usual "The code is the documentation" was not enough, something extra had to be put in place. Given the character of the code base, using Doxygen pretty much seemed like the obvious choice. If you have ever worked with a (slightly larger) C/C++ code base then hopefully you are aware what Doxygen can do even without a minimum of extra work: the basic setup is quite simple -- essentially tell it where to find the source files to process -- and will produce a nice overall view onto your code base. If of course you are adding a view extra bits here and there -- such as description of function parameters of class methods -- the quality of the outcome immediately will make another jump.
+
+Generation of Doxygen configuration file:
+
+~~~~
+configure_file (
+    ${CMAKE_CURRENT_SOURCE_DIR}/doxygen.config.in
+    ${CMAKE_CURRENT_BINARY_DIR}/doxygen.config
+    )
+~~~~
+
+What this will do is to substitute the placeholders in the input file (``doxygen.conf.in``) with the appropriate values, as determined by CMake:
+
+~~~~
+HTML_HEADER            = ${DOXYGEN_HTML_HEADER}
+HTML_FOOTER            = ${DOXYGEN_HTML_FOOTER}
+HTML_STYLESHEET        = ${CMAKE_CURRENT_SOURCE_DIR}/doxygen.css
+~~~~
+
 
 Underlying this is the following cascade or hierarchy of group definitions
 
@@ -45,8 +71,33 @@ Underlying this is the following cascade or hierarchy of group definitions
   |   |- swir_cpp_tests
   |   `- swir_cpp_tools
   `-- swir_python                  ...  Python programming language components
+      |- swir_python_algorithms
+      |- swir_python_l01b
       |- swir_python_scripts
       `- swir_python_tests
+~~~~
+
+For the C source files:
+
+~~~~
+/*!
+ * @file io.h
+ * @ingroup swir_c_libs4
+ * @ingroup swir_io
+ * @brief Routines for file-based data I/O
+ */
+~~~~
+
+For the Python modules:
+
+~~~~
+## @ingroup swir_python_l01b
+## @{
+
+"""@package swir.l01b
+"""
+
+## @}
 ~~~~
 
 ### Langeweile ###
