@@ -20,10 +20,6 @@ tags: Blog
 ----
 **in preparation ...**
 
-### Draussen sitzen ###
-
-![Terasse](/blog/2013/2013-09/dsc_20130907_133723.jpg)
-
 
 ### Merging TROPOMI SWIR documentation ###
 
@@ -35,7 +31,22 @@ Even though the previous paragraph almost verbatim has been posted to [Google+](
 
 When I came on board for working at the TROPOMI SWIR calibration effort at [SRON](http://www.sron.nl) there already existed a stock of source code (mostly written in C); documentation-wise the only thing available -- at least related to the source code itself -- were a few inline comments, such that getting a quick glance at the overall structure and organization of the software was a bit cumbersome. So in case the usual "The code is the documentation" was not enough, something extra had to be put in place. Given the character of the code base, using Doxygen pretty much seemed like the obvious choice. If you have ever worked with a (slightly larger) C/C++ code base then hopefully you are aware what Doxygen can do even without a minimum of extra work: the basic setup is quite simple -- essentially tell it where to find the source files to process -- and will produce a nice overall view onto your code base. If of course you are adding a view extra bits here and there -- such as description of function parameters of class methods -- the quality of the outcome immediately will make another jump.
 
-Generation of Doxygen configuration file:
+Configuration settings, other than default, are communicated to Doxygen by means of a configuration file:
+
+~~~~
+doxygen [configName]
+~~~~
+
+The configuration file contains sections with configuration options related to:
+
+ - Project related configuration options;
+ - build related configuration options;
+ - warning and progress messages;
+ - input files;
+ - source browsing;
+ - generation of the alphabetical class index;
+ - generation of the HTML output;
+ - etc.
 
 ~~~~
 configure_file (
