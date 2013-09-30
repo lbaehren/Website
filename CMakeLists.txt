@@ -45,6 +45,7 @@ set (INSTALL_PREFIX               "${PROJECT_SOURCE_DIR}/release"   )
 set (INSTALL_PREFIX_WEBSITE       "${INSTALL_PREFIX}/website"       )
 set (INSTALL_PREFIX_DOCUMENTATION "${INSTALL_PREFIX}/documentation" )
 set (PROJECT_UPLOAD_PATH          "/Volumes/webdav/webseiten"       )
+set (PROJECT_LIVEDISK_URL         "https://382611-ftp.livedisk.df.eu/webdav")
 
 ## ==============================================================================
 ##
