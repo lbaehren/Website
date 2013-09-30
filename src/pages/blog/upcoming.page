@@ -21,6 +21,11 @@ tags: Blog
 **in preparation ...**
 
 
+### Rueckblick Urlaub am Weissensee ###
+
+ - [Flickr Photoset](http://www.flickr.com/photos/larsbaehren/sets/72157635531348642)
+
+
 ### Merging TROPOMI SWIR documentation ###
 
 Writing and generating a decent documentation for a software package is one thing -- doing the very same for a software, which actually is comprised of multiple programming languages and multiple modules/sub-packages is another. Having worked with [Doxygen](http://www.doxygen.org) for quite a while now, this pretty much seems like the tool of choice; however, while extracting and organizing information of C/C++ source code is straight forward, doing the same for the [Python](http://www.python.org) bits and pieces turned out to be a bit more tricky. Nevertheless, after testing different approaches to the problem I now seem to have come up with a result, which both contains API documentation (more geared towards developers) and extended documentation (more directed to users). With a little bit of luck all of this soon can be merged into the main branch of the project's code base, making the changes available to everybody.
