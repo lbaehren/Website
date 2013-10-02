@@ -1,0 +1,19 @@
+---
+title: "Unbegreiflich"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 01. October 2013 -- 22:10_
+
+Wenn ich etwas wie [diese Meldung](http://www.heise.de/newsticker/meldung/Exploit-fuer-ungepatchte-Internet-Explorer-Luecke-1970621.html) hier lese, dann kann ich mich nur am Kopf packen:
+
+> Internet-Explorer-Nutzer aufgepasst: Das Waffenarsenal des Angriffsframeworks Metasploit wurde um ein Modul ergänzt, das die kritische Zero-Day-Lücke im IE ausnutzen kann. Somit kann sich nun jedermann eine passende Exploit-Webseite zusammenbauen. Das Modul `ie_setmousecapture_uaf` entstand, nachdem ein Sicherheitsforscher den Angriffscode mit dem JavaScript-Deobfuscator jsunpack untersucht hatte, wodurch der Code in das öffentlich zugänglich Archiv des Dienstes aufgenommen wurde.
+>
+> \[...\]
+> 
+> Da die Schwachstelle grundsätzlich die IE-Versionen 6 bis 11 betrifft, ist es nur eine Frage der Zeit, bis auch für die übrigen Ausgaben passende Exploits in Umlauf gebracht werden. Wer den Internet Explorer nutzt, sollte daher umgehend das von Microsoft bereitgestellte Fix-it-Tool installieren, das die Lücke provisorisch abdichtet. Einen vollwertigen Patch, der dann auch automatisch über Windows Update verteilt wird, soll am Oktober-Patchday -- also Dienstag, den 8. Oktober -- veröffentlicht werden. Wer seinen IE hingegen nicht absichert, riskiert, dass sein System beim Surfen mit Schadcode infiziert wird.
+
+Dass angesichts solcher wiederkehrenden Entdeckungen Institute wie z.B. das [KNMI](http://www.knmi.nl) immer noch weitestgehend auf eine Windows-basierte Arbeitsplatz-Umgebung setzt, ist mir vollkommen unbegreiflich. Gestern noch, als ich nach einer Moeglichkeit gesucht habe von aussen auf den Testrechner zugreifen zu koennen, wurde mir geradezu automatisch der Internet-Explorer ans Herz gelegt, um mich dann damit ueber das Portal am Institut anzumelden. Dass es eine meiner allerersten Handlungen am Montag war, einen anderen Browser auf dem Rechner zu installieren, scheint dabei komplett untergegangen zu sein...
