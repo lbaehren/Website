@@ -37,6 +37,21 @@ if (script_blog_recent AND PROJECT_SOURCE_DIR_BLOG)
 endif (script_blog_recent AND PROJECT_SOURCE_DIR_BLOG)
 
 ##_______________________________________________________________________________
+## Mount the livedisk
+
+find_program (WEBDAV_EXECUTABLE mount_webdav
+  HINTS ${CMAKE_INSTALL_PREFIX}
+  PATH_SUFFIXES bin sbin
+  )
+
+if (WEBDAV_EXECUTABLE)
+    add_custom_target (mount_livedisk
+        COMMAND ${WEBDAV_EXECUTABLE} ${PROJECT_LIVEDISK_URL} ${PROJECT_UPLOAD_PATH}
+        COMMENT "Mounting livedisk ..."
+        )
+endif (WEBDAV_EXECUTABLE)
+
+##_______________________________________________________________________________
 ## Publish the website online
 
 #        -a, --archive               archive mode; equals -rlptgoD (no -H,-A,-X)
@@ -55,11 +70,15 @@ find_program (RSYNC_EXECUTABLE rsync
   )
 
 if (RSYNC_EXECUTABLE)
-  add_custom_target (online
-    COMMAND ${RSYNC_EXECUTABLE} -axuP ${CMAKE_INSTALL_PREFIX}/website/* ${PROJECT_UPLOAD_PATH}
-    WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
-    COMMENT "Publishing website - uploading generated pages ..."
-    )
+
+    add_custom_target (online
+        COMMAND ${RSYNC_EXECUTABLE} -axuP ${CMAKE_INSTALL_PREFIX}/website/* ${PROJECT_UPLOAD_PATH}
+        WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
+        COMMENT "Publishing website - uploading generated pages ..."
+        )
+
 else (RSYNC_EXECUTABLE)
+
   message (STATUS "Unable to publish generated pages - missing rsync!")
+
 endif (RSYNC_EXECUTABLE)
