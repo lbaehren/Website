@@ -9,6 +9,64 @@ tags: Blog
  
 **:::**
  
+### Unbegreiflich ###
+
+
+
+
+_Tue, 01. October 2013 -- 22:10_
+
+Wenn ich etwas wie [diese Meldung](http://www.heise.de/newsticker/meldung/Exploit-fuer-ungepatchte-Internet-Explorer-Luecke-1970621.html) hier lese, dann kann ich mich nur am Kopf packen:
+
+> Internet-Explorer-Nutzer aufgepasst: Das Waffenarsenal des Angriffsframeworks Metasploit wurde um ein Modul ergänzt, das die kritische Zero-Day-Lücke im IE ausnutzen kann. Somit kann sich nun jedermann eine passende Exploit-Webseite zusammenbauen. Das Modul `ie_setmousecapture_uaf` entstand, nachdem ein Sicherheitsforscher den Angriffscode mit dem JavaScript-Deobfuscator jsunpack untersucht hatte, wodurch der Code in das öffentlich zugänglich Archiv des Dienstes aufgenommen wurde.
+>
+> \[...\]
+> 
+> Da die Schwachstelle grundsätzlich die IE-Versionen 6 bis 11 betrifft, ist es nur eine Frage der Zeit, bis auch für die übrigen Ausgaben passende Exploits in Umlauf gebracht werden. Wer den Internet Explorer nutzt, sollte daher umgehend das von Microsoft bereitgestellte Fix-it-Tool installieren, das die Lücke provisorisch abdichtet. Einen vollwertigen Patch, der dann auch automatisch über Windows Update verteilt wird, soll am Oktober-Patchday -- also Dienstag, den 8. Oktober -- veröffentlicht werden. Wer seinen IE hingegen nicht absichert, riskiert, dass sein System beim Surfen mit Schadcode infiziert wird.
+
+Dass angesichts solcher wiederkehrenden Entdeckungen Institute wie z.B. das [KNMI](http://www.knmi.nl) immer noch weitestgehend auf eine Windows-basierte Arbeitsplatz-Umgebung setzt, ist mir vollkommen unbegreiflich. Gestern noch, als ich nach einer Moeglichkeit gesucht habe von aussen auf den Testrechner zugreifen zu koennen, wurde mir geradezu automatisch der Internet-Explorer ans Herz gelegt, um mich dann damit ueber das Portal am Institut anzumelden. Dass es eine meiner allerersten Handlungen am Montag war, einen anderen Browser auf dem Rechner zu installieren, scheint dabei komplett untergegangen zu sein...
+ 
+**:::**
+ 
+ 
+### Bahnfahren wird wieder teuerer ###
+
+
+
+
+_Tue, 01. October 2013 -- 10:49_
+
+[Wie Tagesschau.de berichtet](http://www.tagesschau.de/wirtschaft/bahn1630.html), plant die [Deutsche Bahn](http://www.bahn.de) mit Beginn des Winterfahrplans die Fahrpreise anzuheben:
+
+> Die Deutsche Bahn erhöht zum Winterfahrplan Mitte Dezember ihre Fahrpreise. Nach Konzernangaben verteuern sich Fahrten im Fernverkehr durchschnittlich um 2,5 Prozent. Im Nahverkehr werden die Tickets im Schnitt um 2,9 Prozent teurer. Grund für das Plus sind laut DB die gestiegenen Personalkosten.
+>
+> \[...\]
+>
+> Auch die Kosten für die BahnCard werden zum 15. Dezember steigen. Statt 249 Euro müssen Reisende für die BahnCard 50 (zweite Klasse) künftig 255 Euro zahlen. Die BahnCard 50 (erste Klasse) kostet 515 Euro statt 498 Euro. Ausgenommen von den Erhöhungen sind die ermäßigten BahnCards für Jugendliche und Senioren sowie die BahnCard 100. Platzreservierungen verteuern sich um 50 Cent auf 4,50 Euro für die erste und die zweite Klasse.
+
+In wie weit sich dies auf meine finanziellen Planungen auswirkt werde ich wohl im Detail noch abklaeren muessen; wenn aber die BahnCard 50 teuerer wird, dann duerfte wohl auch der Preis fuer die BahnCard 25 anehoben werden (auch wenn dies angesichts der Gueltigkeitsdauer wohl noch am ehesten zu verkraften sein duerfte). Interessanter wird es aber bei den Bahnverbindungen selber: ich hoffe mal ganz stark darauf, dass es nach wie vor die Sonderangebote fuer die internationalen Zugverbindungen geben wird, so dass ich durch entsprechend zeitige Buchung im Rahmen des Budgets bleiben kann; einen Kommentar in diese Richtung hatte ich gestern Abend zwar bei der Ausgabe der Tagesschau aufgeschnappt, aber dies gilt es noch zu verifizieren.
+
+Wie nicht anders zu erwarten loest so eine Preiserhoehung wieder eine heftige Diskussion aus, bei welcher sich die Punkte der Kritiker durchaus nachvollziehen lassen. Mir ist zwar schon klar, dass die Kostenkalkulation der Bahn auch von den Energiepreisen abhaengig ist, aber ich faende es auch einmal nett, wenn solche Erhoehungen mit einem Ausbau des Serviceangebots einhergehen wuerden -- dies ist fuer mich zu diesem Zeitpunkt noch nicht so recht zu erkennen.
+ 
+**:::**
+ 
+ 
+### Nachfragen lohnt sich ###
+
+
+
+
+_Mon, 30. September 2013 -- 19:26_
+
+Da war es aber doch gut, dass ich da endlich noch einmal eine Mail geschickt hatte:
+
+> I acttually never received any request, maybe it came in my spam box. I will check the possibility to share a room with Catalina, I just have to switch some rooms. I will get back to you about this tomorrow.
+
+Da ich bisher noch keinerlei Rueckmeldung in Sachen Unterkunft fuer das anstehende [ProgPower Europe](http://www.progpowereurope.com) Festival in Baarlo erhalten hatte, ist heute endlich mal noch eine Anfrage rausgegangen, um in Erfahrung zu bringen, was denn da der Stand der Sachen ist. Wie sich herausstellt, ist da bei der Reservierung fuer die Unterkunft etwas ganz schwer daneben gegangen... und ich hoffe mal, dass sich dies noch aussortieren laesst. Ich weiss, dass ich seinerzeit einige Schwierigkeiten mit dem Online-Formular hatte, aber dass davon ueberhaupt nicht bei der Festival-Organisation eingetroffen war ist schon ein unangenehme Ueberraschung. Wenn ich mich dann aber recht entsinne, dann ist Rene immer sehr bemueht auch solche Faelle noch irgendwie geregelt zu kriegen, so dass ich einfach mal darauf hoffe eine positive Rueckmeldung aus Baarlo zu kriegen.
+ 
+**:::**
+ 
+ 
 ### Wahlen bei den Nachbarn ###
 
 
@@ -205,42 +263,6 @@ Was dies von der rein praktischen Seite fuer diesen Abend bedeutet: kein Yoga, s
 _Thu, 19. September 2013 -- 23:10_
 
 Das ist aber wirklich schon eine Weile her, dass ich Donnerstag Abend im Wellpoint zum Sport war. Seit dem ich die Stelle in Utrecht angetreten habe, gibt dies mein woechentlicher Plan nicht mehr her, da ich typischerweise ja erst am Abend wieder hier im Rheinland bin. Dies reicht dann zwar dafuer, dass ich mich mit Julia am Bahnhof treffen kann, so dass wir nach Hause fahren koennen, aber wenn ich versuchen wuerde bereits um sechs Uhr im Wellpoint aufzutauchen, dann muesste ich schon am Mittag von Utrecht aus aufbrechen. So aber bin ich heute mal in den Genuss zweier Stunden gekommen... mit anschliessendem Besuch in der Sauna. Auch wenn wir in der vergangenen Woche alles andere gemacht haben als einfach nur auf der faulen Haut zu liegen, so merkt man doch, wie leicht es ist aus der Uebung zu kommen; dies macht sich vielleicht noch nicht einmal so sehr bei den Ausdaueruebungen bemerkbarm aber den eher koordinativen Teilen bin ich doch gleich einige Male ziemlich aus dem Takt geraten.
- 
-**:::**
- 
- 
-### Zurueck in Bonn ###
-
-
-
-
-_Wed, 18. September 2013 -- 22:46_
-
-Das war er also fast schon wieder, der erste Tag nach dem Urlaub am [Weissensee](http://www.weissensee.com). Vor allen Dingen war dies gepraegt, die Dinge hier vor Ort wieder in die Gaenge zu bringen. In der Zwischenzeit ist da schon ein wenig liegen geblieben, so dass ich erst einmal in Mails und Ticker-Meldungen Ordnung schaffen musste. Ferner habe ich mich natuerlich auch darum gekuemmert die im Laufe der letzten Woche aufgenommenen Bilder vom Rechner auf das NAS zu schieben -- durchgeschaut und nachgearbeitet werden muss da allerdings immer noch einiges, denn die Zugfahrt am Dienstag war da weitem nicht ausreichend. Wenn ich dies einigermassen im Blick haben, dann ist der ueberwiegende Teil der Aufnahmen Rohmaterial fuer HDR-Bilder, so dass ich da noch einmal Arbeit reinstecken muss, ehe sich die fertigen Resultate praesentieren lassen.
- 
-**:::**
- 
- 
-### Angekommen ###
-
-
-
-
-_Tue, 17. September 2013 -- 23:24_
-
-So, da sind wir also wieder zurueck in Bonn. Heute Abend um kurz nach sieben (mit wenigen Minuten Verspaetung) ist unser EC im Bahnhof eingefahren. Mit dem Anschluss haben wir dann ziemlich Schwein gehabt, denn den Bus der Linie 609 haben wir gerade noch gekriegt, so dass eine unnoetige Wartezeit entfiel. Der weitere nette Nebeneffekt war, dass wir bis zur Haltestelle Weierbornstrasse fahren konnte, so dass sich der Fussmarsch mit Gepaeck minimieren liess. Insgesamt sind wir -- wenn man also alles einrechnet -- elfeinhalb Stunden unterwegs gewesen, welche aber durch die diversen Aktivitaeten unterwegs recht angenehm vorbeigingen.
- 
-**:::**
- 
- 
-### Warten in Rosenheim ###
-
-
-
-
-_Tue, 17. September 2013 -- 13:06_
-
-Das ist natuerlich mal wieder eines jener Dinge, welche sich nicht einplanen lassen, wenn man auf Reisen geht. Wir stehen hier gerade in Rosenheim am Bahnhof fest, weil es auf der vor uns liegenden Strecke einen Notarzteinsatz gibt -- aufgrund dessen ist der Zugverkehr bis auf weiteres gestoppt und wir muessen mal schauen, wann es weiter geht. Bisher verlaeuft die Fahrt aber recht angenehm (immerhin haben wir ja schon die ersten vier Stunden um) und ich habe geschafft in unterwegs einige der waehrend der letzten Tage geschossenen Bilder zu sortieren und nachzubearbeiten.
  
 **:::**
  
