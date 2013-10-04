@@ -9,6 +9,30 @@ tags: Blog
  
 **:::**
  
+### Angekommen ###
+
+
+
+
+_Fri, 04. October 2013 -- 12:48_
+
+... und auch schon eingecheckt. Die Busfahrt von Roermond verlief recht glatt, auch wenn dies natuerlich ein wenig laenger dauert, als wenn man von Venlo aus unterwegs ist. Wir erst einmal alle Sachen ins Zimmer geschmissen und werdebald wohl mal losziehen und die Umgebung erkunden; wie schon bei den vergangenen Malen hat sich ja doch einiges hier vor Ort veraendert, so dass es nicht schaden kann ein kleines Update zu kriegen.
+ 
+**:::**
+ 
+ 
+### Anreise ###
+
+
+
+
+_Fri, 04. October 2013 -- 11:42_
+
+Das geht doch eigentlich recht gut bisher. Wir haben hier in Roermond zwar einen kleinen Abstecher eingelegt, weil Catalina noch zu einem Bankautomaten musste, aber ansonsten verlaeuft die Reise nach Plan. Die wesentliche Aenderung gegenueber den letzten Malen ist, dass die Anreise diesmal nicht ueber Venlo verlaeuft -- was von Nijmegen oder Bonn aus Sinn machen wuerde -- sondern ueber Roermond. Auf diese Weise spart man sich (von Amsterdam und Utrecht kommend) einmal umsteigen, auch wenn dies rein von der Reisezeit keinen sonderlichen Unterschied macht; der wesentliche Unterchied ist, dass man bei dieser Variante einen groesseren Busanteil hat, waehrend es bei einer Anreise von Osten her nur das kleine Stueck zwischen Venlo und Baarlo ist.
+ 
+**:::**
+ 
+ 
 ### Herbstwetter ###
 
 
@@ -274,40 +298,6 @@ Gut dass ich den Abstecher zurueck ins Buero bei [SRON](http://www.sron.nl) nich
  - Pre-orders in Arjen’s webshop will start sometime in September (details TBA)
 
 Liest man die Details weiter durch, dann wird klar, dass es sich bei dem anstehenden Album aller Wahrscheinlichkeit um einen recht grossen Wurf handeln duerfte. Nicht nur macht Herr Lucassen eine komplett neue Story-line innerhalb des Ayreon-Universums auf -- der andere grosse Erzaehlbogen war ja spaetestens seit der Veroeffentlichung von [Timeline](http://www.arjenlucassen.com/content/timeline) abgeschlossen -- sondern das opulente Album wartet mit einer Mixtur aus sehr bekannten und vielversprechenden Namen auf. Wie so ueblich steht Ayreon wieder einmal im Mittelpunkt eines Musiker-Netzwerk, welches sich in alle nur erdenklichen Richtungen ausbreiten laesst. Da bin ich ja echt einmal gespannt, was da auf uns alle zukommt!
- 
-**:::**
- 
- 
-### Arbeiten im KNMI - Tag 1 ###
-
-
-
-
-_Mon, 23. September 2013 -- 21:32_
-
-Das war er also, der erste Tag in einer Reihe von Tagen, an welchen ich statt bei [SRON](http://www.sron.nl) zur Abwechslung halber meine Zeit im [KNMI](http://www.knmi.nl) verbringe. Da letzteres Institut im Rahmen des [TROPOMI](http://www.tropomi.eu) Projektes eine fuehrende Rolle inne hat, ist es noetig entsprechende Rueckkopplung zu kriegen, damit sich die Aktivitaeten bei SRON in das einfuegen lassen, was nur wenige Kilometer entfernt in de Bilt ausgeknobelt wird. Von der praktischen Seite die Software-Entwicklung betreffend heisst dies: die bei uns entwickelten Kalibrations-Algorithmen fuer den SWIR Detektor muessen spaetestens fuer die On-ground Calibration Kampagne in das Calibration Framework integriert werden -- bisher hat aber von uns noch niemand auch nur eine Zeile Code zu sehen bekommen, so dass da durchaus Nachholbedarf besteht. Aus diesen -- und weiteren Gruenden -- ist schon vor einer Weile verabredet worden, das jemand von unserem Team fuer eine Weile am KNMI arbeitet, um Einblick in die dort geschehenden Entwicklungen zu kriegen; rein von der Veranlagung und den Interessen her war eigentlich recht schnell klar, dass dies eine Aufgabe ziemlich nach meinem Geschmack sein wuerde. Auch wenn es mit der praktischen Umsetzung eine Weile auf sich hat warten lassen, so war es heute Morgen endlich so weit; was mich dabei genau erwarten wuerde liess sich nur schwer einschaetzen... und ueberrascht wurde ich da durchaus schon.
-
-![Anreise KNMI](/blog/2013/2013-09/2013-09-23_Anreise_KNMI.png)
-
-Im Gegensatz zu der Anfahrt zu SRON ist man hinaus nach de Bilt schon eine Weile laenger unterwegs; wie man an dem obigen GPS Track erkennen kann bin ich doch eine Weile durch die Gegend gegurkt, ehe ich beim KNMI vor der Eingangstuere gestanden habe -- da gibt es definitiv noch einmal Optimierungsbedarf, so dass ich mir gleich den Reiseplaner noch einmal ein wenig genauer anschauen muss, wie ich dies morgen besser machen kann.
-
-Der Check-in im Institut verlief recht glatt; da ich die notwendigen Daten schon vor einer Weile eingereicht hatte, lag ein Besucherpass bereits abholbereit bei der Rezeption vor. Die Einfuehrung durch Quintus bestand zunaechst einmal darin den diversen Leuten aus dem Entwicklungsteam Hallo zu sagen. Dass mir am Ende von diesem Schnelldurchlauf nicht alle Namen gleich im Gedaechtnis geblieben sind, duerfte wohl nicht sonderlich verwundern. Zum Einpraegen gab es aber noch einmal recht schnell eine weitere Hilfe, denn vor dem Vortrag um 11:00 Uhr fand noch ein kurzes Stand-up Meeting auf dem Gang statt, bei welchen alle Beteiligten in ein bis zwei Minuten berichten sollten, woran sie derzeit arbeiten (was ich eigentlich eine recht nette Idee finde, was mich auch sehr an Scrum Meetings erinnert). Der anschliessende Vortrag drehte sich um die Behandlung der Geo-location Daten, also der Bestimmung von Richtungen und Positionen in einem gemeinsamen Satelliten-Erde System: fuer die Analyse der von den Detektoren aufgezeichneten Daten ist es noetig genau zu wissen wohin genau der Chip im Messinstrument zu welchem Zeitpunkt gezeigt hat... und welche Korrekturen dadurch gegebenenfalls angebracht werden muessen. Auch wenn ich die Grundideen davon schon in einigen Dokumenten gesehen hatte, war es doch mal ganz nett dies in zusammenhaengender Weise dargestellt zu kriegen.
-
-Im Anchluss daran war es dann endlich Zeit mich ein wenig an meinem neuen Arbeitsplatz einzurichten... und genau dies war der Punkt, an welchem es die boese Ueberraschung gab. Statt wie bei allen anderen Jobs, wo ich bisher gearbeitet habe, ein fuer Entwickler im wissenschaftlichen Bereich zugaengliches Betriebssystem zu verwenden, sind alle Arbeitsplatzrechner im KNMI (soweit ich dies bisher beurteilen kann) mit Windows XP Professional ausgestattet. Ehrlich gesagt ist mir das "Professional" dabei ziemlich egal, denn einen wirklich Qualitaetsunterschied ergibt dies in meinen Augen auch nicht -- der blosse Gedanke, mit einem Mal fast ausschliesslich nur noch mit der Maus durch die Gegend klicken zu koennen und auf einen einzigen Desktop beschraenkt zu sein, finde ich alles andere als akzeptabel. Dass eine meiner ersten Handlung darin bestand, mir vor jden weiteren Schritten erst einmal einen vernuenftigen Webbrowser zu installieren, kann da nicht verwundern. Nun bin ich es durchaus gewoehnt via Remote auf anderen Rechnern zu arbeiten -- typischerweise steuere ich bei SRON ja auch meinen dortigen Arbeitsplatzrechner via SSH an, aber die Klimmzuege und Umstaendlichkeit unter Windows laesst einem doch ganz schnell die Lust vergehen. Damit aber noch nicht einmal genug: die einzige Moeglichkeit, ueber welche sich bisher der neu angelegte Email-Account auslesen laesst, ist via Outlook... unter solchen Umstaenden wird es mir fast schon koerperlich unwohl, so dass ich morgen unbedingt nicht noch einmal vergessen darf, dass Ladekabel fuer mein Laptop in der Wohnung liegen zu lassen.
-
-Ich habe bisher nichts gegen die Personen selber einzuwenden, mit welchen ich es fuer die kommenden Wochen deutlich enger zu tun haben werde -- die technische Infrastruktur aber, mit welcher ich da vor Ort konfrontiert werde kann sich in keinster Weise mit dem messen lassen, was ich bei SRON vorgefunden habe, wo man Leuten deutlich mehr individuellen Gestaltungsraum zuzugestehen scheint. Ich weiss nicht ob es wirklich so wichtig ist den Leuten vorzuschreiben, womit sie ihre Arbeit verrichten sollen -- mich hat dies heute vollkommen unnoetig jede Menge Zeit gekostet, welche ich deutlich sinnvoller haette einsetzen koennen.
- 
-**:::**
- 
- 
-### Langer Tag ###
-
-
-
-
-_Sun, 22. September 2013 -- 21:01_
-
-Auch wenn es gestern sicherlich schon ein recht langer Tag war -- letzten Endes war ich ja von fuenf Uhr in der Fruehe bis nach Mitternacht auf den Beinen -- gestaltet sich der heutige Sonntag zumindest vom Gefuehl her noch laenger. Ich habe zwar heute Morgen ein klein wenig ausgeschlafen (nicht zu sehr, was aber schon alleine aufgrund des Weckers nicht so ganz funktionierte), aber spaetestens seit dem Mittag bin ich fleissig dabei die am gestrigen Tag geschossenen Bilder nachzubearbeiten und zu exportieren. Auch wenn es sich insgesamt vielleicht nicht um ganz so viel Aufnahmen wie zeitens eines Musikfestivals handelt (wo ich mich ja vor allen Dingen auf die Musiker konzentrieren wuerde), so sind 1057 Bilder immer noch ausreichend, um mich eine Weile zu beschaeftigen. Was mir in diesem Zuge durchaus zu Gute kommt ist, dass es nur recht wenige Justieren sind, welche ich vor dem Export anbringen muss -- weitestgehend habe ich es doch geschafft gleich in der Kamera das festzuhalten, was ich als Ergebnis haben wollte. Dennoch muss ich natuerlich erst einmal alles sichten, um eine Selektion vornehmen zu koennen... und dies dauert schon eine Weile.
  
 **:::**
  
