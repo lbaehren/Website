@@ -21,6 +21,89 @@ tags: Blog
 **in preparation ...**
 
 
+### We give brass a bad name... ###
+
+[Heavy Hoempa](http://www.heavyhoempa.nl) -- "Massive Brass Rock"
+
+### Gefaellt mir ###
+
+Wie ja bekannt sein duerfte, gehoere ich nicht zu den Leuten, welche sich auf Facebook herumtreiben. Mir moegen dadurch vielleicht manchmal Dinge entgehen, aber ein wirklich schwerwiegendes Argument, welches mich da zum Umdenken bewegen koennte, ist mir bisher noch nicht untergekommen. Dazu zaehlt auch die folgende kleine Episode vom Wochenende (mit einem Nachspiel darueber hinaus)...
+
+Wie in meinem ersten [Eintrag](/blog/2013/2013-10/2013-10-05_12-17.html) zur diesjaehrigen [ProgPower Europe](http://www.progpowereurope.com) Ausgabe ja nachzulesen war, hat [Damian Wilson](http://www.damian-wilson.net) am Freitag Abend den Start ins Wochenende uebernommen.
+
+ * [Damian Wilson auf Facebook](https://www.facebook.com/officialdamianwilson)
+
+![Damian Wilson on Facebook](/blog/2013/2013-10/2013-10-06_Damian_Wilson.png)
+
+Heute Nachmittag kam es aber noch einmal ein Stueck besser:
+
+> Hey Lars,
+>
+> we've used your photo on the [Damian Wilson facebook page](https://www.facebook.com/officialdamianwilson) with your photo credit in the description.
+> We would like to use it on the official homepage as well if you don't mind.
+>
+> Please let us know 
+
+Naja, wenn ich schon so nett gefragt werde, dann lasse ich (hoffe ich doch) nicht lange mit einer Antwort auf mich warten. Da die a) die Herangehensweise so war, wie ich mir dies deutlich oefter wuenschen wuerde und b) so eine Publicity hoffentlich nicht schaden kann, habe ich da umgehend eine Antwort zurueckgeschickt und gruenes Licht gegeben. Dauerte dann andererseits nicht sonderlich lange, da war die Startseite fuer die derzeit laufende Tour auch schon angepasst.
+
+![Damian Wilson on Facebook](/blog/2013/2013-10/2013-10-07_Damian_Wilson.png)
+
+Also ich wuerde schon sagen, dass dies ein kleiner Achtungserfolg: Damian Wilson verwendet -- zumindest fuer eine Weile -- eines meiner Bilder fuer die offizielle Tourwerbung. Da muss ich mir wirklich einmal Gedanken machen, wie ich es schaffe da am Ball zu bleiben...
+
+### Guthaben aufladen ###
+
+Wenn das mal nicht eine praktische Sache ist...
+
+Da ich ja ab morgen Mittag wieder ein wenig aufs Land verschwinde -- Baarlo wuerde ich selbst bei sehr viel Interpretationsspielraum als eine Stadt bezeichnen wollen -- musste ich heute wenigstens noch ein paar der Dinge erledigen, zu welchen ich am Wochenende wohl kaum Gelegenheit haben werde. In die Liste der von Baarlo aus recht schwierig zu regelnden Dinge gehoert es unter anderem, dass es so gut wie unmoeglich waere das Guthaben auf meiner Prepaid-Karte aufzuladen; wenn ich -- und dies ist vor allen Dingen im Ausland relevant -- unter einem bestimmten Mindestbetrag gelandet bin, haette ich noch nicht mal mehr die Moeglichkeit einen Hilferuf nach Hause abzusetzen, so dass jemand anders fuer mich das Guthaben wieder aufladen koennte.
+
+ - [ALDI Talk](http://www.alditalk.de)
+
+![Online Aufladung ALDI Talk](/blog/2013/2013-10/2013-10-03_Online_Aufladung.png)
+
+### Ausgeweitet ###
+
+Sieht doch ganz danach aus, also muesste ich ein wenig mehr in den Eingeweiden des L01b Processor Frameworks herumstochern muss als urspruenglich angedacht. Wie sich mittlerweile herausgestellt hat reicht es eben nicht, einfach nur die `calculate_band_results()` Method zu implementieren, welche typischerweise fuer die Berechnungen vorgesehen ist:
+
+> Note: in order to avoid edge-effects and discontinuities between two bands in a CCD, the algorithm should be applied to data from the full CCD, i.e. by concatenating data from the two bands, rather than to each band separately.
+
+Was dies bedeutet ist, dass sich die Berechnungen eben nicht fuer jedes Band separat (und damit parallel) ausfuehren lassen, sondern dass ich immer zwei zu einem CCD gehoerige Baender kombinieren muss.
+
+~~~~
+    AbstractTaskTarget
+            ^
+            |
+    AbstractAlgorithm
+            ^
+            |
+    TropOcalAlgorithm
+            ^
+            |
+    TropCkdAlgorithm
+            ^
+            |
+    TropPRNUAlgorithm
+~~~~
+
+
+~~~~
+    def calculate_results(self):
+        """ Calculates the results for all bands.
+        """
+        self._logger.info("Enter calculate_results.")
+
+        if self.execute_parallel is False:
+            self._logger.info("Processing bands serial start")
+            for band_nr in self.cfg['process_bands']:
+                self.calculate_band_results(band_nr)
+            self._logger.info("Processing bands done")
+        else:
+            self._logger.info("Processing bands parallel start")
+            wrapped_fun = wrap_process_bands_function(self.calculate_band_results)
+            parallellize_bands(wrapped_fun, self.cfg['process_bands'])
+            self._logger.info("Processing bands parallel done")
+~~~~
+
+
 ### Installing Git ###
 
 ... from source -- if it is not installed on a system -- should not be too big of a problem. However, depending on the state the system you're supposed to be working is in, it might take a little while longer, if you are required to go through some of the dependency chain.
@@ -28,22 +111,27 @@ tags: Blog
 While a simple [Git](http://www.git-scm.com) installation would be rather painless, trying to get `git-svn` support up and running will require considerably more effort; the main additional ingredient -- as already indicated by the name -- of course is [Subversion](http://subversion.apache.org), which in turns comes with its own tail of required packages. The graph below shows the complete dependency tree I have been going through in order to get everything up and running:
 
 ~~~~
-                   Git
-                    |
-                Subversion
-                    |
-  +-----------+----------+--------+-------+
-  |           |          |        |       |
-libapr   libapr-util   SQLite    libz    SWIG
-                                          |
-                                         PCRE
-                                          |
-                                         Perl
+                       Git
+                        |
+                    Subversion
+                        |
+ +-------------+--------+-------+--------+
+ |             |        |       |        |
+libapr-util   SQLite    libz   SWIG     serf
+                                |        |
+                               PCRE      +----------+----------+--------+
+                                |        |          |          |        |
+                               Perl     Scons     OpenSSL     libapr   libapr-util
 ~~~~
 
 Yep, that's right, I even went to install [Perl](http://www.perl.org) from scratch, as the default version on the system turned out to be incomplete. Besides this extra step, I also had to iterate through the configuration settings of the various packages a few times, in order to get all the features enabled, built and installed.
 
  - [libapr-util](http://apr.apache.org) needs to be configured with the `--with-crypto` option in order to provide `apr_md5.h`, which later will be required by Subversion.
+
+~~~~
+./configure --prefix=<path> --with-crypto --with-openssl=<path> --with-apr=<path>
+~~~~
+
  - Git needs to be configured with the `--with-libpcre` and `--with-expat` options.
 
 

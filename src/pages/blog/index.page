@@ -9,6 +9,30 @@ tags: Blog
  
 **:::**
  
+### Ersehntes Feature ###
+
+
+
+
+_Wed, 09. October 2013 -- 22:08_
+
+Nach wie vor wohl noch das Stueck Non-Open-Source, welches mich am meisten an den Mac bindet, ist Apples [iTunes](http://www.apple.com/itunes); nicht dass es hierzu keine Alternativen gaebe, aber entweder sind die einfach nicht so intuitiv bedienbar oder aber ich habe einfach noch nicht ausreichend Zeit damit verbracht mich mit ihnen zu beschaeftigen (wobei man vielleicht argumentieren koennte, dass es sicherlich kein gutes Bild abgibt, wenn ich erst einmal recht viel Zeit darin investieren muss, um vernuenftig mich einem solchen Programm umgehen zu koennen). Was fuer mich -- zumindest bisher immer noch -- ein Argument ist, waere die Integration von Musikverwaltung und so Dingen wie einem Mp3-Player; da mir diesbezueglch der [iPod](http://www.apple.com/ipod), welcher mittlerweile auch schon ein paar Jahre auf dem Buckel hat, nach wie vor gute Dienste leistet, mag ich die recht natlose Verbindung zwischen den Komponenten. Dabei ist mir die Musik garnicht einmal so sehr wichtig -- die bleibt im wesentlichen auf dem Rechner (von ein paar Ausnahmen einmal angesehen). Viel entscheidender ist fuer mich aber der Umgang mit Podcasts: da ich auf diesem Wege ja doch einiges an Informationen zu mir nehme, bin ich ueber jederlei Verbesserungen, welche mir diesbezueglich das Leben leichter machen durchaus dankbar. Gerade was dies betrifft, hat es nun eine Aenderung gegeben, welche ich schon lange gerne gehabt haette (auch wenn es natuerlich schoen waere dies in irgendeiner Weise konfigurieren zu koennen): wenn ich eine Liste mit Folgen aus der gleichen Serie vorliegen habe -- z.B. meine geschaetzen [Deutschlandfunk](http://dlf.de) Interviews -- finde ich es aeusserst laestig, wenn ich staendig von Folge zu Folge klicken muss. Sicher, auf diese Weise gibt es eine kleine Unterbrechung, in welcher man die Gedanken fuer das naechste Gespraech sortieren kann, aber wenn nicht staendig an dem Abspielgeraet herumspielen will, waere es ganz nett eine solche Liste genauso wie in Musikalbum abspielen zu koennen... mit der auf 11.1.1 aktualisierten Version von iTunes scheint dies nun zu gehen! Leider scheint diese Anpassung noch nicht auf dem iPod verfuegbar zu sein, aber wenn ich weiss, dass dies auf dem Rechner geht, dann werde ich sicherlich noch einmal schauen wie es damit auf dem Abspielgeraet aussieht.
+ 
+**:::**
+ 
+ 
+### Klappt wieder ###
+
+
+
+
+_Tue, 08. October 2013 -- 21:32_
+
+Hurra, da habe ich nun auch wieder meine Internetanbindung in der Wohnung. Nach einem Anbieterwechsel und einer neuen Person hier im Haus, welche sich um die Administrativa kuemmert, haengt der Rechner jetzt auch wieder am WLAN. So wie ich eben erfahren habe, muesste ich allerdings auch via Ethernet Zugriff haben, was dann natuerlich die Uebertragungsrate deutlich stabiler ausfallen lassen duerfte. Die fuer mich wesentlichen Punkte sind natuerlich a) dass ich endlich wieder von hier auch skypen kann (so dass ich nicht mehr bis in die Puppen im Institut bleiben muss) und b) dass ich von hier aus meine Mails abarbeiten und Code einchecken kann.
+ 
+**:::**
+ 
+ 
 ### Stecker raus ###
 
 
@@ -265,44 +289,6 @@ Wenn ich etwas wie [diese Meldung](http://www.heise.de/newsticker/meldung/Exploi
 > Da die Schwachstelle grundsätzlich die IE-Versionen 6 bis 11 betrifft, ist es nur eine Frage der Zeit, bis auch für die übrigen Ausgaben passende Exploits in Umlauf gebracht werden. Wer den Internet Explorer nutzt, sollte daher umgehend das von Microsoft bereitgestellte Fix-it-Tool installieren, das die Lücke provisorisch abdichtet. Einen vollwertigen Patch, der dann auch automatisch über Windows Update verteilt wird, soll am Oktober-Patchday -- also Dienstag, den 8. Oktober -- veröffentlicht werden. Wer seinen IE hingegen nicht absichert, riskiert, dass sein System beim Surfen mit Schadcode infiziert wird.
 
 Dass angesichts solcher wiederkehrenden Entdeckungen Institute wie z.B. das [KNMI](http://www.knmi.nl) immer noch weitestgehend auf eine Windows-basierte Arbeitsplatz-Umgebung setzt, ist mir vollkommen unbegreiflich. Gestern noch, als ich nach einer Moeglichkeit gesucht habe von aussen auf den Testrechner zugreifen zu koennen, wurde mir geradezu automatisch der Internet-Explorer ans Herz gelegt, um mich dann damit ueber das Portal am Institut anzumelden. Dass es eine meiner allerersten Handlungen am Montag war, einen anderen Browser auf dem Rechner zu installieren, scheint dabei komplett untergegangen zu sein...
- 
-**:::**
- 
- 
-### Bahnfahren wird wieder teuerer ###
-
-
-
-
-_Tue, 01. October 2013 -- 10:49_
-
-[Wie Tagesschau.de berichtet](http://www.tagesschau.de/wirtschaft/bahn1630.html), plant die [Deutsche Bahn](http://www.bahn.de) mit Beginn des Winterfahrplans die Fahrpreise anzuheben:
-
-> Die Deutsche Bahn erhöht zum Winterfahrplan Mitte Dezember ihre Fahrpreise. Nach Konzernangaben verteuern sich Fahrten im Fernverkehr durchschnittlich um 2,5 Prozent. Im Nahverkehr werden die Tickets im Schnitt um 2,9 Prozent teurer. Grund für das Plus sind laut DB die gestiegenen Personalkosten.
->
-> \[...\]
->
-> Auch die Kosten für die BahnCard werden zum 15. Dezember steigen. Statt 249 Euro müssen Reisende für die BahnCard 50 (zweite Klasse) künftig 255 Euro zahlen. Die BahnCard 50 (erste Klasse) kostet 515 Euro statt 498 Euro. Ausgenommen von den Erhöhungen sind die ermäßigten BahnCards für Jugendliche und Senioren sowie die BahnCard 100. Platzreservierungen verteuern sich um 50 Cent auf 4,50 Euro für die erste und die zweite Klasse.
-
-In wie weit sich dies auf meine finanziellen Planungen auswirkt werde ich wohl im Detail noch abklaeren muessen; wenn aber die BahnCard 50 teuerer wird, dann duerfte wohl auch der Preis fuer die BahnCard 25 anehoben werden (auch wenn dies angesichts der Gueltigkeitsdauer wohl noch am ehesten zu verkraften sein duerfte). Interessanter wird es aber bei den Bahnverbindungen selber: ich hoffe mal ganz stark darauf, dass es nach wie vor die Sonderangebote fuer die internationalen Zugverbindungen geben wird, so dass ich durch entsprechend zeitige Buchung im Rahmen des Budgets bleiben kann; einen Kommentar in diese Richtung hatte ich gestern Abend zwar bei der Ausgabe der Tagesschau aufgeschnappt, aber dies gilt es noch zu verifizieren.
-
-Wie nicht anders zu erwarten loest so eine Preiserhoehung wieder eine heftige Diskussion aus, bei welcher sich die Punkte der Kritiker durchaus nachvollziehen lassen. Mir ist zwar schon klar, dass die Kostenkalkulation der Bahn auch von den Energiepreisen abhaengig ist, aber ich faende es auch einmal nett, wenn solche Erhoehungen mit einem Ausbau des Serviceangebots einhergehen wuerden -- dies ist fuer mich zu diesem Zeitpunkt noch nicht so recht zu erkennen.
- 
-**:::**
- 
- 
-### Nachfragen lohnt sich ###
-
-
-
-
-_Mon, 30. September 2013 -- 19:26_
-
-Da war es aber doch gut, dass ich da endlich noch einmal eine Mail geschickt hatte:
-
-> I acttually never received any request, maybe it came in my spam box. I will check the possibility to share a room with Catalina, I just have to switch some rooms. I will get back to you about this tomorrow.
-
-Da ich bisher noch keinerlei Rueckmeldung in Sachen Unterkunft fuer das anstehende [ProgPower Europe](http://www.progpowereurope.com) Festival in Baarlo erhalten hatte, ist heute endlich mal noch eine Anfrage rausgegangen, um in Erfahrung zu bringen, was denn da der Stand der Sachen ist. Wie sich herausstellt, ist da bei der Reservierung fuer die Unterkunft etwas ganz schwer daneben gegangen... und ich hoffe mal, dass sich dies noch aussortieren laesst. Ich weiss, dass ich seinerzeit einige Schwierigkeiten mit dem Online-Formular hatte, aber dass davon ueberhaupt nicht bei der Festival-Organisation eingetroffen war ist schon ein unangenehme Ueberraschung. Wenn ich mich dann aber recht entsinne, dann ist Rene immer sehr bemueht auch solche Faelle noch irgendwie geregelt zu kriegen, so dass ich einfach mal darauf hoffe eine positive Rueckmeldung aus Baarlo zu kriegen.
  
 **:::**
  
