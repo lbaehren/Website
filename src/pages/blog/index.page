@@ -9,6 +9,28 @@ tags: Blog
  
 **:::**
  
+### Oracles schwieriger Tanz mit Open Source ###
+
+
+
+
+_Thu, 17. October 2013 -- 20:24_
+
+Dass ich nicht unbedingt ein sonderlich Freund von [Oracle](http://www.oracle.com) bin duerfte wohl kein Geheimnis bin; die Art und Weise, in welcher sich das Unternehmen vor allen Dingen Open Source betreffend verhaelt ist nun alles andere Sympathie erzeugend:
+
+> Vor allem durch die Übernahme von Sun Microsystems hatte Oracle etliche Open-Source-Techniken, darunter die freie Bürosoftware OpenOffice.org, die relationale Datenbank MySQL und die Programmiersprache Java, "übernommen". Diese in den Einklang mit Oracles Firmenphilosophie zu bringen und umgekehrt, lief dabei nicht immer reibungslos.
+>
+> Etliche, noch zu Sun-Zeiten als entscheidend geltende Manager und Entwickler kehrten Oracle den Rücken, im Fall von MySQL und OpenOffice.org wanderten gar ganze Communitys zu sich bildenden Konkurrenzprodukten ab. Die Entscheidung, OpenOffice an die Apache Software Foundation zu übergeben, kam angesichts der Tatsache, dass sich schon LibreOffice etabliert hatte, beispielsweise viel zu spät.
+
+Auf diese und weitere Punkte machte heute ein [Artikel auf Heise News](http://www.heise.de/newsticker/meldung/Oracles-schwieriger-Tanz-mit-Open-Source-1980465.html) aufmerksam, in welchen es um den aktuellen Vorstoss von __Oracle__ geht was den potentiellen Einsatz von Open-Source-Software im militaerischen Bereich geht:
+
+> Ein von Oracle für das Verteidigungsministerium der Vereinigten Staaten erstelltes [Whitepaper](http://www.oracle.com/us/products/middleware/cloud-app-foundation/weblogic/dod-and-open-source-software-2012277.pdf) sorgt für Wirbel in der IT-Medienlandschaft, da es einmal mehr zeigt, dass der IT-Konzern ein gespaltenes Verhältnis zu Open-Source-Software hat. Die Autoren des Dokuments "The Department of Defense (DoD) and Open Source Software" legen der Behörde nah, einen Bogen um die Entwicklung mit Open-Source-Software zu machen und lieber den Einsatz kommerzieller Produkte (eben von Oracle) in Erwägung zu ziehen.
+
+Bei so offensichtlichen Eigeninteressen darf man da durchaus ein wenig skeptisch sein, was die Empfehlungen betrifft. Dass es sicherlich ein Spannungsfeld zwischen Open-Source-Software und kommerzieller Produkte gibt ist vollkommen klar -- eine entsprechende Analyse und Bewertung vorzunehmen wuerde ich da allerdings lieber einer deutlich neutraleren Institution ueberlassen wollen.
+ 
+**:::**
+ 
+ 
 ### Noch einmal gratis ###
 
 
@@ -194,24 +216,6 @@ Nach wie vor wohl noch das Stueck Non-Open-Source, welches mich am meisten an de
 _Tue, 08. October 2013 -- 21:32_
 
 Hurra, da habe ich nun auch wieder meine Internetanbindung in der Wohnung. Nach einem Anbieterwechsel und einer neuen Person hier im Haus, welche sich um die Administrativa kuemmert, haengt der Rechner jetzt auch wieder am WLAN. So wie ich eben erfahren habe, muesste ich allerdings auch via Ethernet Zugriff haben, was dann natuerlich die Uebertragungsrate deutlich stabiler ausfallen lassen duerfte. Die fuer mich wesentlichen Punkte sind natuerlich a) dass ich endlich wieder von hier auch skypen kann (so dass ich nicht mehr bis in die Puppen im Institut bleiben muss) und b) dass ich von hier aus meine Mails abarbeiten und Code einchecken kann.
- 
-**:::**
- 
- 
-### Stecker raus ###
-
-
-
-
-_Tue, 08. October 2013 -- 17:40_
-
-Eigentlich ist es ja fast schon ein wenig verwunderlich, dass es ueberhaupt so lange gedauert hat:
-
-> Schlechte Nachricht für Nutzer eines Smartphones mit Symbian oder MeeGo: Ab dem 1. Januar 2014 können Entwickler keine neuen Apps und keine App-Updates für die beiden Betriebssysteme mehr im Nokia Store veröffentlichen. Das teilte Nokia in seinem [Entwickler-Blog](http://developer.nokia.com/Blogs/News/blog/2013/10/04/changes-to-supported-content-types-in-the-nokia-store) mit.
->
-> Die heute bestehenden Apps im Nokia Store können Nutzer zwar auch nach dem 1. Januar 2014 weiterhin herunterladen. Aber im schlechtesten Fall funktionieren einzelne Anwendungen schon bald nicht mehr oder nur noch eingeschränkt. Zum Beispiel, weil Webdienste ihre Schnittstellen ändern, ihre Apps aber nicht daran anpassen können.
-
-Auch wenn der [Artikel auf Heise News](http://www.heise.de/newsticker/meldung/Nokia-Keine-neuen-Apps-fuer-Symbian-und-MeeGo-ab-2014-1974585.html) sich ein wenig ueberrascht zeigt, dass der nun bekannt gegebene Termin deutlich vor dem urspruenglich anvisierten Datum im Jahre 2016 liegt, so war es streng genommen doch wirklich nur eine Frage der Zeit. Schon vor einer Weile ist Nokia ja auf Betriebssysteme aus dem Hause Microsoft umgeschwenkt, so dass alleine schon der Seite her ein Anreiz bestehen musste, Benutzer von der alten auf die neue Platform umziehen zu lassen.
  
 **:::**
  
