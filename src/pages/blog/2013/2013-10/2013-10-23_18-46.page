@@ -1,0 +1,11 @@
+---
+title: "Vor dem Ansprung"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Wed, 23. October 2013 -- 18:46_
+
+Auch wenn ich in den letzten Tagen wieder dazu tendiert habe bis spaeter am Abend hier am [KNMI](http://www.knmi.nl) zu bleiben -- was vor allen Dingen damit zu tun hat, dass angesichts der ICT Infrastruktur das von zuhause arbeiten alles andere als angenehm ist -- sollte ich dies doch nicht komplett zur Gewohnheit werden lassen. Ich hatte bis jetzt noch versucht ein wenig Ordnung in die Routinen zur Generierung der Diagnose-Plots zu bekommen: da ich auch dort wieder auf das gleich Problem gestossen bin, wie dies schon bei der CKD-Berechnung der Fall war -- naemlich dass die komplette Logik fuer die parallele Verarbeitung von Frequenzbaendern aufgesetzt, statt Detektor CCDs als Grundlage zu verwenden -- musste ich zunaechst einmal ein wenig Grundlagen schaffen, damit ich ueberhaupt den sonst stattfindenden Ablauf umgehen kann. Zu einem Teil ist mir dies zwar gelungen, aber Plots kommen leider bisher immer noch nicht am hinteren Ende heraus. Da werde ich mich wohl ein wenig spaeter am Abend noch einmal ein wenig dransetzen muessen, damit ich da morgen wenigstens ein wenig Fortschritt vorweisen kann. Da ich hier vom Institut aus aber die bessere Netzwerkverbindung habe, bin ich gerade noch ein paar Updates durchgegangen, welche von der Wohnung aus mit Sicherheit deutlich laenger dauern wuerden; sobald aber die 267 Updates fuer Fedora 20 durchgelaufen sind, werde ich mich auf den Weg machen. Morgen am spaeten Nachmittag geht es ja wieder auf zurueck nach Bonn, so dass ich auch wieder ein klein wenig Zeit zum Aufraeumen und Tasche packen einplanen sollte... und zwar ohne dass es dadurch morgen frueh zu lange dauert.

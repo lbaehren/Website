@@ -9,6 +9,46 @@ tags: Blog
  
 **:::**
  
+### Vor dem Ansprung ###
+
+
+
+
+_Wed, 23. October 2013 -- 18:46_
+
+Auch wenn ich in den letzten Tagen wieder dazu tendiert habe bis spaeter am Abend hier am [KNMI](http://www.knmi.nl) zu bleiben -- was vor allen Dingen damit zu tun hat, dass angesichts der ICT Infrastruktur das von zuhause arbeiten alles andere als angenehm ist -- sollte ich dies doch nicht komplett zur Gewohnheit werden lassen. Ich hatte bis jetzt noch versucht ein wenig Ordnung in die Routinen zur Generierung der Diagnose-Plots zu bekommen: da ich auch dort wieder auf das gleich Problem gestossen bin, wie dies schon bei der CKD-Berechnung der Fall war -- naemlich dass die komplette Logik fuer die parallele Verarbeitung von Frequenzbaendern aufgesetzt, statt Detektor CCDs als Grundlage zu verwenden -- musste ich zunaechst einmal ein wenig Grundlagen schaffen, damit ich ueberhaupt den sonst stattfindenden Ablauf umgehen kann. Zu einem Teil ist mir dies zwar gelungen, aber Plots kommen leider bisher immer noch nicht am hinteren Ende heraus. Da werde ich mich wohl ein wenig spaeter am Abend noch einmal ein wenig dransetzen muessen, damit ich da morgen wenigstens ein wenig Fortschritt vorweisen kann. Da ich hier vom Institut aus aber die bessere Netzwerkverbindung habe, bin ich gerade noch ein paar Updates durchgegangen, welche von der Wohnung aus mit Sicherheit deutlich laenger dauern wuerden; sobald aber die 267 Updates fuer Fedora 20 durchgelaufen sind, werde ich mich auf den Weg machen. Morgen am spaeten Nachmittag geht es ja wieder auf zurueck nach Bonn, so dass ich auch wieder ein klein wenig Zeit zum Aufraeumen und Tasche packen einplanen sollte... und zwar ohne dass es dadurch morgen frueh zu lange dauert.
+ 
+**:::**
+ 
+ 
+### Grummeln ###
+
+
+
+
+_Tue, 22. October 2013 -- 21:43_
+
+Da hat es sich ueber den Nachmittag hin doch noch zugezogen; als ich heute kurz nach dem Mittagessen ueber die Felder vom KNMI zu SRON gelaufen bin, war es noch richtig schoen sonnig, so dass ich gerne noch ein wenig mehr Zeit an der frischen Luft zugebracht haette (was aber nicht ging, da ich ja zu unserem Progress Meeting unterwegs war). Es kam zwar bereits ein wenig Wind auf, aber es war eben noch angenehm warm. Noch bevor ich dann eben aus dem Institut aufgebrochen bin, war schon mitzubekommen, dass es draussen vor der Tuer ein wenig rauer geworden sein musste: der Wind hatte ein gutes Stueck zugelegt und meldete sich in regelmaessigen Abstaenden am Fenster. Als ich dann unterwegs zur Bushaltestelle war, kamen schon die ersten Tropfen so dass ich mich der Sicherheit halber lieber untergestellt habe. Noch einmal eine Spur unangenehmer wurde es dann, als ich bei mir in der Naehe aus dem Bus gestiegen bin: da prasselten schon Regentropfen in rauen Mengen auf die Strassen nieder, so dass ich schnellsten losgelaufen bin, um nicht durchgeweicht in den restlichen Abend zu starten.
+ 
+**:::**
+ 
+ 
+### Leergeraeumt ###
+
+
+
+
+_Mon, 21. October 2013 -- 08:47_
+
+Auch wenn es dadurch letzte Nacht noch einmal ein klein wenig spaeter geworden ist, so haben wir die grosse Umraeumaktion noch kurz vor Mitternacht beenden koennen. Einer der durchaus groesseren Gegenstaende, welche noch in die untere Wohnung geraeumt werden musste, war die Kuechenzeile, welche -- da ja selber angeschafft (und eben nicht von der Vermieterin) -- nicht in der Wohnung bleiben sollte. Waehrend sich die Unterschraenke noch recht gut ueber die Treppe nach unten transportieren liessen, war es mit der Arbeitsplatte schon ein gutes Stueck schwieriger; mit gut 2,80 m Laenge mussten wir da schon ein wenig zirkeln, um ueberall um die Ecken zu kommen. Hat aber alles geklappt, so dass oben in der Wohnung mit einem Schlag alles deutlich leerer geworden ist.
+
+![Kueche nach dem Ausraeumen](/blog/2013/2013-10/hdr_20131020_235553_Kueche.jpg)
+
+Wie man auf dem Bild erkennen kann, gibt es zwar immer noch einiges an Raeumarbeiten zu erledigen, aber damit geht es dann ab dem Freitag weiter, wenn ich wieder zurueck in Bonn bin. Bis dann gibt es hoffentlich auch schon eine Rueckmeldung von dem Haus, welches wir nun ins Visier gefasst haben.
+ 
+**:::**
+ 
+ 
 ### Abwechslungsreich ###
 
 
@@ -182,55 +222,6 @@ _Sat, 12. October 2013 -- 21:39_
 ... naja, oder zumindest an einem Tag...
 
 Da wir ja immer noch fleissig auf der Suche nach einer Bleibe sind, standen am heutigen Tag gleich drei Besichtigungen auf dem Programm: eine in Duisdorf, eine in Bornheim und eine in Tannenbusch. Wie schon zu vor war wieder einmal interessant mitzubekommen, wie unterschiedlich doch die Preis-Leistungsverhaeltnisse sein koennen: auch wenn die beiden Haeuser, welche wir uns in Bornheim und Tannenbusch angeschaut hatten fuer einen vergleichbaren Preis gehandelt werden sollten, so war sofort klar, dass die Preisvorstellung fuer das Haus in Tannenbusch vollkommen ueberhoeht war. Insgesammt scheint sich dies durchaus als Trend abzuzeichnen: vor allen Dingen in den Faellen wo Immobilien direkt von den Besitzern angeboten werden -- und eben nicht ueber einen Makler laufen -- sind die Vorstellungen darueber, was das Haus erbringen soll/kann, jenseits dessen, was der Markt realistischerweise hergibt.
- 
-**:::**
- 
- 
-### Tomaten koerbeweise ###
-
-
-
-
-_Fri, 11. October 2013 -- 22:42_
-
-Letztes Wochenende war ich ja nicht da fuer die erste Runde -- heute Abend aber hatte ich die Gelegenheit bis ueber beide Ohren in Bergen von Tomaten zu versinken, welche Korb fuer Korb eingekocht und eingemacht werden. Die ganze Operation ist im wesentlichen in zwei Bereiche aufgeteilt: auf der einen Seite haetten wir die Kueche, wo insgesamt fuenf Kochplatten in Gebrauch sind und Reihen an Glaeseren darauf warten befuellt zu werden...
-
-![Tomaten einmachen](/blog/2013/2013-10/hdr_20131011_213555_Tomaten.jpg)
-
-... und auf der anderen Seite gaebe es das Badezimmer, in welchem die in diversen Kisten eingetroffenen Tomaten zunaechst gewaschen und dann fuer die Weiterverarbeitung vorbereitet werden.
-
-![Tomaten in der Badewanne](/blog/2013/2013-10/hdr_20131011_214301_Tomaten.jpg)
- 
-**:::**
- 
- 
-### Recht schnell ###
-
-
-
-
-_Thu, 10. October 2013 -- 21:28_
-
-Da hatte ich mich doch ein wenig geirrt, was die Umsteigeeit eben in Leverkusen betrifft: sobald sich die Tueren am aus Amsterdam kommenden ICE geoeffnet hatten, habe ich eine Stopuhr mitlaufen lassen... bis zu dem Moment, wo sich der ICE auf dem gegenueberliegenden Gleis in Bewegung setzte. Was dabei herauskam? Der ganze Vorgang dauerte halb so lange als erwartet. Daran habe ich sicherlich nichts auszusetzen, denn auf diese Weise musste ich mir hier in Koeln nicht abhetzen und konnte ganz normal zu der auf Gleis 4 eingefahrenen Regionalbahn hinuebergehen.
-
-Jetzt ist es also nicht mehr lange, bis ich endlich wieder in Bonn bin...
- 
-**:::**
- 
- 
-### Buero am KNMI ###
-
-
-
-
-_Thu, 10. October 2013 -- 20:08_
-
-Jetzt ist es doch schon eine Weile, dass ich am [KNMI](http://www.knmi.nl) gearbeitet habe -- was bisher aber immer noch fehlte war zumindest ein minimaler visueller Eindruck von der Arbeitsumgebung, welche sich dort vorfinden laesst. Da es heute Abend -- genauer gesagt: waehrend ich dies hier schreibe -- wieder zurueck nach Bonn geht, hatte ich den Tag ueber das Gepaeck dabei, welches mit auf die Reise gibt. Da ich ja noch die komplette Ausruestung von [ProgPower](http://www.progpowereurope.com) mit in Utrecht hatte, gab es also keinerlei Ausrede nicht endlich mal noch ein Bilder zu machen. Gut, auf dem Gelaende bin ich jetzt nicht rundgelaufen, aber zumindest kann ich zeigen, wie es im Buero aussieht:
-
-![Office at KNMI](/blog/2013/2013-10/hdr_20131010_165813_Office_KNMI.jpg)
-![Office at KNMI](/blog/2013/2013-10/hdr_20131010_165944_Office_KNMI.jpg)
-
-Wie sich recht unschwer erkennen laesst, sieht es selbst in diesem (dem etwas aelteren) Gebaeudefluegel deutlich moderner aus als bei [SRON](http://www.sron.nl). Ich kann allerdings nicht behaupten, dass dies unbedingt ein entscheidender Faktor darin ist, wie sehr man sich in einer bestimmten Umgebung wohl fuehlt. Sicher, ein nicht unwesentlicher Anteil kommt natuerlich dadurch, dass man sich die unmittelbare Arbeitsumgebung entsprechend der eigenen Beduerfnisse und Vorlieben einrichtet -- aber da ich eh nur zeitlich begrenzt beim KNMI sein werde, lohnt es sich nicht so recht, da allzugrossen Aufwand zu betreiben.
  
 **:::**
  
