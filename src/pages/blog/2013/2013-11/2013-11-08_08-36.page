@@ -1,0 +1,17 @@
+---
+title: "Fix Ubuntu"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Fri, 08. November 2013 -- 08:36_
+
+If you're an [Ubuntu](http://www.ubuntu.com) user and you're using the default settings, each time you start typing in Dash (to open an application or search for a file on your computer), your search terms get sent to a variety of third parties, some of which advertise to you. 
+
+One person who dislikes Canonical's search tool is [Micah Lee](https://twitter.com/micahflee) a technologist at the [Electronic Frontier Foundation](https://pressfreedomfoundation.org/about/staff) who maintains the HTTPS Everywhere project and is CTO of the Freedom of the Press Foundation. Lee set up a website called "[Fix Ubuntu](https://fixubuntu.com)", which provides instructions for disabling the Internet search tool.
+
+Interestingly enough, Canonical, the maker of Ubuntu, now [sent an email to Lee](http://arstechnica.com/information-technology/2013/11/canonical-abused-trademark-law-to-target-a-site-critical-of-ubuntu-privacy), asking him to remove Ubuntu word from you domain name and Ubuntu logo from his website:
+
+> Unfortunately, in this instance we cannot give you permission to use Ubuntu trademarks on your website and in your domain name as they may lead to confusion or the misunderstanding that your website is associated with Canonical or Ubuntu.

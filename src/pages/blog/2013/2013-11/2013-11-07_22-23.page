@@ -1,0 +1,23 @@
+---
+title: "Connection failed... yet again"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Thu, 07. November 2013 -- 22:23_
+
+Not that it had not been a pain in the ass before already; however since reviving my activities to work on one of the calibration key data (CKD) calculation algorithms, I have constantly been struggeling with the rather twisted setup for remote accessing the machine(s) on which I would be able to test and run the code. While between most *NIX-type environments [SSH](http://en.wikipedia.org/wiki/Secure_Shell) pretty much would be the standard manner by which to connect from one machine to another:
+
+> Secure Shell (SSH) is a cryptographic network protocol for secure data communication, remote command-line login, remote command execution, and other secure network services between two networked computers that connects, via a secure channel over an insecure network, a server and a client (running SSH server and SSH client programs, respectively). The protocol specification distinguishes between two major versions that are referred to as SSH-1 and SSH-2.
+
+What has been complicating things is the fact, that I have been forced to go through a rather Windows-centric ICT infrastructure: while on-site an enironment such as [Cygwin](http://www.cygwin.com) would allow getting from a desktop PC to the development server, back at [SRON](http://www.sron.nl) I would be outside the internal network and therefore confronted with whatever setup was being provided for remote access. In fact what is being provided is [F5 Application Access](http://www.f5.com/it-management/topics/access):
+
+> Traditional SSL VPN and client-based access solutions lack flexibility and scalability—and performance often can’t keep pace with demand. F5 unified access solutions combine SSL VPN remote access with acceleration and optimization services to provide high-performance, flexible, and scalable access security on a single platform.
+
+Interestingly so I am not realy able to fall in with the praises: way to often connections from have been breaking down or would not even get established. Even though being able to get through the access portal, oh so many times hopping just one step further to the desktop machine (a Windows PC) would fail.
+
+![Connection exception - Connection failed](/blog/2013/2013-11/2013-11-07_Webaccess_connection_failed.png)
+
+Given the fact that we soon need to able to really pick up writing modules running within the calibration framework, another solution has to be found... hopefully removing the need to go through this type of off-site connections.

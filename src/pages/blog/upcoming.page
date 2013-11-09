@@ -16,10 +16,57 @@ tags: Blog
 **completed ...**
 
 
-
 ----
 **in preparation ...**
 
+
+### CMake macros ... and optional parameters
+
+It always comes down to the same thing: if there s something you need to do over and over again, then probabaly it is a good idea to script and automatize it. This very general rule can be applied to almost everything, e.g. to the generation of documents from their LaTeX sources.
+
+> In addition to referencing the formal parameters you can reference the values `${ARGC}` which will be set to the number of arguments passed into the function as well as `${ARGV0} ${ARGV1} ${ARGV2} ...` which will have the actual values of the arguments passed in. This facilitates creating macros with optional arguments. Additionally `${ARGV}` holds the list of all arguments given to the macro and `${ARGN}` holds the list of arguments past the last expected argument. 
+
+~~~~
+macro (add_latex_documents)
+
+    set (_upstreamTarget ${ARGV0})
+
+    ## Get list of LaTeX source files within the directory
+    file (GLOB _sources *.tex)
+
+    foreach (_source ${_sources})
+        get_filename_component(_sourceName ${_source} NAME_WE)
+        if (_upstreamTarget)
+            add_latex_document (${_source} ${_upstreamTarget})
+        else (_upstreamTarget)
+            add_latex_document (${_source})
+        endif (_upstreamTarget)
+    endforeach (_source)
+
+endmacro (add_latex_documents)
+~~~~
+
+### Kamelot Silverthorn Over Europe 2013
+
+![Kamelot Silverthorn Over Europe 2013](/blog/2013/2013-11/Kamelot_Silverthorn_Over_Europe.png)
+
+ - [Tellus Requiem](http://tellusrequiem.com)
+ - [ReVamp](http://revampmusic.com)
+ - [Kamelot](http://www.kamelot.com)
+   - Thomas Youngblood: guitars, backing vocals (1991–present)
+   - Sean Tibbetts: bass (1991–1992, 2009–present)
+   - Casey Grillo: drums (1997–present)
+   - Oliver Palotai: keyboards (2005–present)
+   - Tommy Karevik: lead vocals (2012–present)
+
+> Kamelot have held their very own, very special position in the world of rock and heavy music: their elaborate melodic metal has always opened itself in a remarkably clever way to like-minded styles, integrating progressive elements as well as cross-references to doom/gothic metal and classical music, which have allowed their songs to define their own genre. Two of their most successful releases in particular, namely the albums Karma (2001) and The Black Halo (2005), are prime examples of Kamelot’s multi-layered approach, intensity and outstanding musicality. Their latest offering, Silverthorn, sees the band raise this demanding standard even higher, because Silverthorn is a real masterpiece of grand gestures, gritty melodies and haunting atmospheres. In addition, the album confidently and proudly focuses on the band’s new singer: with his debut, new addition Tommy Karevik from Sweden has proved that he suits Kamelot perfectly in every respect. So should we be talking of a new era or even a new age in view of this new situation? No, we should simply announce that Silverthorn has Kamelot open a new exciting chapter in their long career, with Karevik as their strongest trump card. What a fanfare!
+
+ - [Seventh Wonder](http://www.seventhwonder.se)
+ - After Forever
+
+> In January 2008, After Forever announced on their website, that the band would be taking a break of at least a year, mainly to assess the health problems of vocalist and guitarist Sander Gommans, who had been absent during most of the tour supporting the album After Forever. In an interview with Ragnarök radio, Floor said the band would get together early 2009 to discuss After Forever's future.
+>
+On February 5, 2009, After Forever announced, that they decided to call it quits. The long break, during 2008 and 2009, had made them realize, that they did not feel the passion towards the band any longer.
 
 ### Durststrecke ohne Zaubertrank
 
