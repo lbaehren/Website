@@ -19,6 +19,7 @@ tags: Blog
 ----
 **in preparation ...**
 
+
 ### CMake macros ... and optional parameters
 
 It always comes down to the same thing: if there s something you need to do over and over again, then probabaly it is a good idea to script and automatize it. This very general rule can be applied to almost everything, e.g. to the generation of documents from their LaTeX sources.

@@ -1,0 +1,52 @@
+---
+title: "Eintraege"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Mon, 11. November 2013 -- 08:20_
+
+Auch wenn ich in all den Jahren, in welchen der Blog mittlerweile existiert schon probiert habe recht regelmaessig zu schreiben (ein Stueck weit wohl eine Uebung in Sachen Selbstdisziplin), habe ich mir vor diesem Jahr wohl noch nie vorgenommen wirklich jeden Tag einen kleinen Beitrag einzustellen. Das dieser nun unbedingt jedes Mal wirklich sonderlich geistreichen gewesen ist kann ich nicht mit gutem Gewissen behaupten, aber das Vorhaben hat doch dazu gefuehrt, dass ich eine gewisse Kontinuitaet walten lassen muss; wie ich in der Vergangenheit ja mehrfach erlebt habe, ist es recht gefaehrlich, wenn man erst einmal eine Luecke entstehen laesst -- dann vergehen mitunter schnell einmal Wochen, ehe man sich wieder zusammenreisst.
+
+Das ich mir solche Zusammenhaenge natuerlich auch einmal gerne ein klein wenig genauer anschauen moechte, duerfte nicht sonderlich verwundern: also habe ich als erste einmal die Anzahl der Eintraege pro Jahr unter die Lupe genommen:
+
+    2008    300
+    2009    309
+    2010    363
+    2012    316
+    2011    348
+    2013    517
+
+Da dies fuer sich genommen aber natuerlich ein wenig grob von der zeitlichen Aufloesung her ist, schien es mir deutlich sinnvoller, dies auf Monate herunterzubrechen -- daraus lassen sich dann ja immer noch jaehrliche Summen berechnen. Da wir uns bei einem solchen Vorhaben aber ganz schnell in einem Bereich bewegen, wo es sehr schnell an die Feinarbeit gehen kann, habe ich alles direkt in einem Shell-Script untergebracht:
+
+~~~~
+cd $basedirPages
+
+FILES=`ls| grep -v page`
+
+for FILE in $FILES
+{
+    if [[ -d $FILE ]] ; then
+        YEAR=$FILE
+        ## Get sub-directories with sub-sets per month
+        for MONTH in 01 02 03 04 05 06 07 08 09 10 11 12
+        {
+            if [[ -d $YEAR/$YEAR-$MONTH ]] ; then
+                nofEntries=`find $YEAR/$YEAR-$MONTH -name "*.page" | grep -v index | wc -l`
+                ## Write data to output file for plotting
+                echo "$YEAR/$MONTH    $nofEntries" >> $outfile
+            fi
+        }
+        ## Cummulative statistics per year
+        nofEntries=`find $FILE -name "*.page" | grep -v index | wc -l`
+     fi
+}
+~~~~
+
+Da steckt jetzt keine sonderliche Magie hinter, aber es ermoeglich mir, die Analyse immer wieder durchlaufen zu lassen, ggf. mit jedem Eintrag, um automatisch eine Statistik-Seite erzeugen zu lassen. Haengt man dann noch -- und dies ist dann zumindest fuer mich der naechstlogische Schritt -- die Erzeugung von Plots aus den extrahierten Daten an, erhaelt man Resultate, welche deutlich allgemein-verdaulicher sind.
+
+![Blog entries per month](/blog/2013/2013-11/2013-11-11_nof_entries.png)
+
+Jetzt wo dies aus dem Weg ist, kann ich ja mal richtig damit anfangen mit den Zahlen zu spielen (Histogramme erzeugen, Trends fitten, etc.).
