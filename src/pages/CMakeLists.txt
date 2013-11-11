@@ -31,7 +31,7 @@ if (script_blog_recent AND PROJECT_SOURCE_DIR_BLOG)
     )
 
   ## Dependencies
-  add_dependencies (recent_blog_entries blog)
+  add_dependencies (recent_blog_entries blog stats)
   add_dependencies (Website recent_blog_entries)
 
 endif (script_blog_recent AND PROJECT_SOURCE_DIR_BLOG)

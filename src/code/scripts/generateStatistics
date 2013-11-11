@@ -1,0 +1,36 @@
+#!/bin/bash
+
+basedirPages=${PROJECT_SOURCE_DIR_BLOG}
+outfile=${CMAKE_CURRENT_BINARY_DIR}/nof_entries.data
+
+## Remove potentially already existing output file
+
+rm -f $outfile
+
+## Got through the directories
+
+cd $basedirPages
+
+FILES=`ls| grep -v page`
+
+for FILE in $FILES
+{
+    if [[ -d $FILE ]] ; then
+        YEAR=$FILE
+        echo "Scanning entries for $YEAR ..."
+        ## Get sub-directories with sub-sets per month
+        for MONTH in 01 02 03 04 05 06 07 08 09 10 11 12
+        {
+            if [[ -d $YEAR/$YEAR-$MONTH ]] ; then
+                nofEntries=`find $YEAR/$YEAR-$MONTH -name "*.page" | grep -v index | wc -l`
+                ## Write data to output file for plotting
+                echo "$YEAR/$MONTH    $nofEntries" >> $outfile
+            fi
+        }
+        ##
+        ##  Cummulative statistics per year
+        ##
+        nofEntries=`find $FILE -name "*.page" | grep -v index | wc -l`
+        echo "Scanning entries for $YEAR - $nofEntries entries found."
+     fi
+}
