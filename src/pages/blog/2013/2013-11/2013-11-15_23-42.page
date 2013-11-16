@@ -1,0 +1,38 @@
+---
+title: "Progress notes"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Fri, 15. November 2013 -- 23:42_
+
+Da ich diese Woche ja wieder einiges an Zeit im [KNMI](http://www.knmi.nl) zugebracht habe, musste ich natuerlich dafuer sorgen, dass ich vor allen Dingen Richard auf dem Laufen halte. Zu diesem Zecke bin ich dazu uebergegangen ein kleine (auch wenn man ueber diese Einordnung sicherlich streiten kann) Zusammenfassung zu erstellen und dann zuzustellen. Da ich eh ja dazu neige Dinge im Rechner festzuhalten und in zumindest minimaler Weise zu organisieren, war dies jetzt nicht der riesen Schritt... zumindest nicht fuer, aber die Reaktion darauf war etwas anders:
+
+> Your notes are very impressive with lots of interessting details!
+>
+> Is this the way you work, I mean do you always make notes like this?
+>
+> or is this additional work? or is it additional work to make your usual notes readable for a greater audience?
+
+Ist natuerlich schoen zu hoeren, wenn das, was ich da abgeliefert habe, so gut ankommt. Zugegeben, ein klein wenig mehr Aufwand als das, was ich fuer mich selber machen wuerde ist es schon, aber dies haelt sich immer noch in Grenzen. Was dem allen zugrunde liegt ist eigentlich ganz einfach: auf der einen Seite benutze ich [Taskwarrior](http://taskwarrior.org) fuer die Verwaltung meiner Aufgaben (das ist auch immer noch einmal einen laengeren Eintrag wert...), auf der anderen Seite mache ich davon Gebrauch dass [Doxygen](http://www.doxygen.org) seit einer Weile mit [Markdown](http://daringfireball.net/projects/markdown) umgehen kann -- auf diese Weise lassen sich Notizen ohne sonderlichen Aufwand festhalten:
+
+~~~~
+__ADC non-linearity__ (Lars, Ralph)
+
+ - split of detector pixels across ADCs: which subset of pixels exactly are run
+   through which ADC?
+   - IDL code from Ralph suggests simple split of detector area into four identical
+     regions:
+\code
+FOR i=0,3 DO adc[i,*] = data[i*2,*]*256+data[i*2+1,*]
+\endcode
+   - there might be slight deviations though due to manifacturing imperfections
+   - check with Paul to get exact coverage of ADCs
+ - adapt concept of regions as found on KNMI OCAL framework
+   - flexibility to fine-tune
+   - default set to even subsets
+~~~~
+
+Laeuft dies durch Doxygen durch (was natuerlich via [CMake](http://www.cmake.org) konfiguriert wird), bekomt man wahlweise eine HTML oder PDF Ausgabe. Was ich an der Sache besonders attraktiv finde ist die Tatsache, dass sich mit der Methode Quellcode-Dokumentation mit Notizen verbinden laesst. Eine der wenigen Kleinigkeiten, welche mir bisher nur noch fehlen, waere die Moeglichkeit eine Ausgabe im eBook Format zu erzeugen... das sollte sich aber auch noch regeln lassen.
