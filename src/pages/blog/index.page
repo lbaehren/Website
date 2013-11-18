@@ -9,6 +9,34 @@ tags: Blog
  
 **:::**
  
+### IMDb ratings ###
+
+
+
+
+_Sun, 17. November 2013 -- 21:12_
+
+Also so genau habe ich mir dies bisher auch noch nie angeschaut; die [Internet Movie Database](http://www.imdb.com) (IMDb) gehoert sicherlich mit zu den haeufigst aufgesuchten Plaetzen im Web, aber das heisst bei weitem nicht, dass ich mich ueberall durch die diversesten Unterabteilungen geklickt habe. Waehrend ich persoenlich ja gerne schon einmal etwas mehr auf Erkundungstour gehe, ist Julia in der Regel eher an Trailern und Ratings fuer die Filme interessiert (zwecks Auswahl was sich denn lohnen koennte zu gucken). Was ich dieses Mal bei [Iron Man 3](http://www.imdb.com/title/tt1300854) allerdings das erste Mal gemacht habe, war dem Link ueber die [Details zu dem Rating](http://www.imdb.com/title/tt1300854/ratings) zu folgen -- was sich dahinter verbarg war auch mir neu:
+
+![IMDb ratings Iron Man 3](/blog/2013/2013-11/2013-11-17_IMDb_rating.png)
+
+Das fuer sich genommen war ja schon einmal ganz nett. Was mir dann bei etwas genauerem Hinschauen auffiel war, dass die Votes sogar gleich mehrfach statistisch ausgewertet werden: neben dem gewichteten Mittelwert (_weighted average_), werden sowohl arithmetischer Mittelwert (_arithmetic mean_) und Median mit aufgelistet. Das man dies noch ein gutes Stueck weiter spinnen koennte, duerfte sich wohl von alleine erklaeren -- ohne da aber Zugriff auf die Rohdaten zu haben hat sich dies aber gleich auch schon wieder erledigt (ausserdem mache ich mich da erst einmal lieber noch ein wenig ueber die Daten vom Blog her).
+ 
+**:::**
+ 
+ 
+### Kalte Fuesse ###
+
+
+
+
+_Sat, 16. November 2013 -- 22:23_
+
+Da haben wir uns doch immer wieder bemueht das noch hinzukriegen... aber letzten Endes hat es nicht gereicht, weil die potentielle Verkaeuferin kalte Fuesse bekommen und es sich nun doch anders ueberlegt hat. Nachdem es sich mit dem [Haus in Hersel](/blog/2013/2013-11/2013-11-09_22-07.html) ja hingezogen hatte, waren wir nicht untaetig geblieben sondern hatten weiter potetielle Haeuser durchkaemmt. Im Zuge dieser Suche war uns dann ein Haus gleich um die Ecke, in der Katharinenstrasse ueber den Weg gelaufen, welches sich als sehr interessant herausstellte. Wie sich zwar recht schnell herausstellte war die rechtliche Lage dort ein wenig kompliziert (aufgrund der dort eingetragenen Wohnrechte), aber alles in allem hat uns dies so gut gefallen, dass wir uns da wirklich ins Zeug gelegt haben. Wie oft Julia in der ganzen Zeit dem Makler wirklich hinterhertelefoniert hat, kann ich noch nicht einmal sagen, aber der gute Mann hatte ihre Nummer nach einer Weile schon in seinem Handy abgespeichert. Hat aber leider alles nicht geholfen, denn am heutigen Nachmittag kam dann der Anruf, dass die derzeitige Besizterin es sich nun mit einem Male anders ueberlegt habe und nun das Haus doch nicht mehr verkaufen wolle. Was die Hintergruende betrifft, so laesst sich natuerlich letzten Endes nur spekulieren; wie wir aber  mitbekommen konnten scheint man sich dan in der Familie nicht so ganz gruen gewesen zu sein, so dass man es mitunter wohl lieber vorgezogen hat ueber Anwaelte zu kommunizieren, statt sich gemeinsam an einen Tisch zu setzen. Dass es ueberhaupt erst einmal so weit gekommen ist war wohl der Tatsache geschuldet, dass wir nach ueber einem Jahr, welches das Haus sich nun auf dem Markt befand, die ersten Interessenten waren, welche ueberhaupt so konkret geworden sind, dass es in die Verhandlung ging. Das spricht natuerlich nicht unbedingt fuer das Objekt, denn sollte man es sich da noch einmal anders ueberlegen, dann wird die Verhandlungsposition eher schwaecher denn besser werden. Fuer uns ist dies zunaechst aber einmal schade, denn wir hatten uns da echt Hoffnungen gemacht und waren durchaus bereit einiges an Arbeit und Energie hinein zu investieren, um mit den diversen Besonderheiten klarzukommen. Hat anscheinend nicht sein sollen, so dass uns also nicht viel anderes uebrig bleibt, als die Augen und Ohren weiter offen zu halten und mit der Suche fortzufahren. Vielleicht war dies ja auch einfach nur ein kleiner Wink des Schicksals, dass sich "unser" Haus immer noch irgendwo da draussen befindet und darauf wartet von uns gefunden zu werden.
+ 
+**:::**
+ 
+ 
 ### Progress notes ###
 
 
@@ -279,42 +307,6 @@ One person who dislikes Canonical's search tool is [Micah Lee](https://twitter.c
 Interestingly enough, Canonical, the maker of Ubuntu, now [sent an email to Lee](http://arstechnica.com/information-technology/2013/11/canonical-abused-trademark-law-to-target-a-site-critical-of-ubuntu-privacy), asking him to remove Ubuntu word from you domain name and Ubuntu logo from his website:
 
 > Unfortunately, in this instance we cannot give you permission to use Ubuntu trademarks on your website and in your domain name as they may lead to confusion or the misunderstanding that your website is associated with Canonical or Ubuntu.
- 
-**:::**
- 
- 
-### Connection failed... yet again ###
-
-
-
-
-_Thu, 07. November 2013 -- 22:23_
-
-Not that it had not been a pain in the ass before already; however since reviving my activities to work on one of the calibration key data (CKD) calculation algorithms, I have constantly been struggeling with the rather twisted setup for remote accessing the machine(s) on which I would be able to test and run the code. While between most *NIX-type environments [SSH](http://en.wikipedia.org/wiki/Secure_Shell) pretty much would be the standard manner by which to connect from one machine to another:
-
-> Secure Shell (SSH) is a cryptographic network protocol for secure data communication, remote command-line login, remote command execution, and other secure network services between two networked computers that connects, via a secure channel over an insecure network, a server and a client (running SSH server and SSH client programs, respectively). The protocol specification distinguishes between two major versions that are referred to as SSH-1 and SSH-2.
-
-What has been complicating things is the fact, that I have been forced to go through a rather Windows-centric ICT infrastructure: while on-site an enironment such as [Cygwin](http://www.cygwin.com) would allow getting from a desktop PC to the development server, back at [SRON](http://www.sron.nl) I would be outside the internal network and therefore confronted with whatever setup was being provided for remote access. In fact what is being provided is [F5 Application Access](http://www.f5.com/it-management/topics/access):
-
-> Traditional SSL VPN and client-based access solutions lack flexibility and scalability—and performance often can’t keep pace with demand. F5 unified access solutions combine SSL VPN remote access with acceleration and optimization services to provide high-performance, flexible, and scalable access security on a single platform.
-
-Interestingly so I am not realy able to fall in with the praises: way to often connections from have been breaking down or would not even get established. Even though being able to get through the access portal, oh so many times hopping just one step further to the desktop machine (a Windows PC) would fail.
-
-![Connection exception - Connection failed](/blog/2013/2013-11/2013-11-07_Webaccess_connection_failed.png)
-
-Given the fact that we soon need to able to really pick up writing modules running within the calibration framework, another solution has to be found... hopefully removing the need to go through this type of off-site connections.
- 
-**:::**
- 
- 
-### Zur Feier des Tages ###
-
-
-
-
-_Thu, 07. November 2013 -- 21:57_
-
-... habe ich es vor ein paar Minuten wieder einmal geschafft den Rauchmelder bei mir in der Wohnung auszuloesen. Wie genau dieses bloede Dinge eingestellt ist will mir immer noch nicht so ganz einleuchten: statt irgendetwas anbrennen zu lassen habe ich eigentlich nur die Pfanne vom Herd genommen und versucht mit eine wenig Wasser abzuloeschen. Offensichtlich keine sonderlich gute Idee, denn der dabei mir einem Schlag entstehende Rauch liess die Melder sofort anspringen.
  
 **:::**
  
