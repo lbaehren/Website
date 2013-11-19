@@ -9,6 +9,39 @@ tags: Blog
  
 **:::**
  
+### Ausflug an die Mosel ###
+
+
+
+
+_Mon, 18. November 2013 -- 22:46_
+
+Ok, das war jetzt nicht ein Ausflug um sich einfach eine schoene Zeit zu machen; vielmehr stand der Ausflug noch auf dem Programm, weil der Zahnarzt des Vertrauen nun leider einmal nicht in Bonn seine Praxis hat.
+
+![GPS Track](/blog/2013/2013-11/2013-11-18_GPS_track.png)
+
+Waehrend es bei besseren Lichtverhaeltnissen sicherlich sehr reizvoll gewesen waere, die Umgebung mit der Kamera zu erkunden, habe ich heute die Zeit lieber dafuer genutzt, um noch an dem Kalibrations-Algorithmus zu arbeiten, welchen ich fuer das KNMI fertigstellen soll. Ich kann zwar auch nach diesem Nachmittag nicht behaupten, dass ich mich mit [Python](http://www.python.org) sonderlich wohl fuehle, aber ein Stueck weiter bin ich definitiv gekommen. Zumindest habe ich diesmal damit begonnen mir selber ein klein wenig Infrastruktur zu schreiben (wie ich dies sonst auch in C++ machen wuerde), um mir bei der Loesung der Aufgabe behilflich zu sein.
+
+~~~~
+class Data(object):
+    """ Data object to facilitate passing around input and generated data.
+    """
+    def __init__(self, *args, **kwargs):
+        """ Initialize object's internal data.
+        """
+        self.image_area = []  ## Image area for full CCD
+        self.selection  = []  ## Image area selection slices
+        self.signal     = []  ## Detector signal for full CCD
+        self.f_norm_row = []  ## Row normalization factor
+        self.f_norm_col = []  ## Column normalization factor
+        self.index_row  = []  ## Row number index for selection
+        self.index_col  = []  ## Column number index for selection
+        self.csm        = []  ## Spectral calibration map
+~~~~
+ 
+**:::**
+ 
+ 
 ### IMDb ratings ###
 
 
@@ -289,24 +322,6 @@ Da diese Informationslage leider nicht so ganz neu ist, habe ich mir direkt [die
 > ICE Amsterdam Centraal v 18:34 vertrekt door defect materieel niet vanaf Amsterdam Centraal en Utrecht Centraal, maar vanaf Arnhem. Reist u met binnenlandse treinen naar Arnhem of informeert u bij een van onze medewerkers.
 
 Das heisst also, dass die spezielle Verbindung von Amsterdam Centraal und Utrecht Centraal ausfaellt, der ICE aber wohl von Arnhem aus eingesetzt wird dementsprechend muss ich also schauen, dass ich ein wenig frueher von hier verschwinde, damit ich erst einmal noch mit einem IC nach Arnhem fahren kann... um dort dann hoffentlich meinen Anschluss zu kriegen. Wie ich dies ja schon einmal in der Vergangenheit hatte, kann dies durchaus bedeuten, dass es mit der Heimreise eine laengere Angelegenheit werden kann -- ich hoffe aber mal, dass es nicht wieder ganz so schlimm wird.
- 
-**:::**
- 
- 
-### Fix Ubuntu ###
-
-
-
-
-_Fri, 08. November 2013 -- 08:36_
-
-If you're an [Ubuntu](http://www.ubuntu.com) user and you're using the default settings, each time you start typing in Dash (to open an application or search for a file on your computer), your search terms get sent to a variety of third parties, some of which advertise to you. 
-
-One person who dislikes Canonical's search tool is [Micah Lee](https://twitter.com/micahflee) a technologist at the [Electronic Frontier Foundation](https://pressfreedomfoundation.org/about/staff) who maintains the HTTPS Everywhere project and is CTO of the Freedom of the Press Foundation. Lee set up a website called "[Fix Ubuntu](https://fixubuntu.com)", which provides instructions for disabling the Internet search tool.
-
-Interestingly enough, Canonical, the maker of Ubuntu, now [sent an email to Lee](http://arstechnica.com/information-technology/2013/11/canonical-abused-trademark-law-to-target-a-site-critical-of-ubuntu-privacy), asking him to remove Ubuntu word from you domain name and Ubuntu logo from his website:
-
-> Unfortunately, in this instance we cannot give you permission to use Ubuntu trademarks on your website and in your domain name as they may lead to confusion or the misunderstanding that your website is associated with Canonical or Ubuntu.
  
 **:::**
  
