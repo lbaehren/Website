@@ -1,0 +1,75 @@
+---
+title: "Experimentieren... mit Sicherheitsnetz"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Sat, 23. November 2013 -- 11:19_
+
+Ich glaube es gibt mittlerweile kaum noch eine Sache, welche ich am Rechner mache, ohne nicht zumindest ein minimales Sicherheitsnetz auszuwerfen. Damit begonnen habe ich zwar schon vor einigen Jahren, aber die Konsequenz, mit welcher dies mittlerweile geschieht, ist wohl vor allen der Entdeckung von [Git](http://www.git-scm.com) geschuldet. Ich meine es war seinerzeit [Pim](http://www.astro.ru.nl/~pschella), welcher mich in Nijmegen darauf aufmerksam gemacht hatte (100%ig bin ich mir da allerdings nicht sicher): auch wenn es zu diesem Zeitpunkt noch nicht allzu lange her war, dass wir nach einem laengeren Kampf endlich durchgesetzt hatten von [CVS](http://en.wikipedia.org/wiki/Concurrent_Versions_System) auf [Subversion](http://subversion.apache.org) als primaeres System zur Versionskontrolle umzusteigen, so setzte sich doch recht schnell die Erkenntnis durch, dass man eigentlich noch den folgen Schritt hin zu einem verteilten System gehen muesste. Die im Projekt vorhandene Traegheit liess dies leider nicht zu, aber das hinderte eine stehts groesser werdende Gruppen an Leuten nicht daran zumindest lokal auf **Git** zu setzen, um sich auf diese Weise unabhaengiger von einem zentralen Server zu machen (welcher typischerweise bei einer Zugreise von Nijmegen nach Dwingeloo nicht erreichbar war -- WLAN fuehrten die [NS](http://www.ns.nl) erst spaeter in einigen aus Amsterdam kommenden Zuegen ein). Ueber die Zeit hat sich **Git** immer mehr zu dem Default-Tool entwickelt, wenn es in irgendeiner Weise darum geht Aenderungen nachzuhalten (und ggf. auch rueckgaengig zu machen) -- egal ob nun mit einer ganzen Gruppe von Leuten oder auch fuer mich alleine.
+
+Es duerfte wohl nicht verwunderlich sein, dass neben Quellcode fuer die unterschiedlichsten Software-Entwicklungen auch allerlei Sammlungen an Dokumenten unter dem schuetzenden Dach von Git verwaltet werden; da es ja auch ein leichtes ist mehrere Git Repositories miteinander zu verknuepfen, lassen sich auf diesem gleich noch Backups der Daten organisieren. Schaut man sich z.B. mal die Settings fuer diesen Blog an (oder streng genommen die komplette Website, von welcher der Blog natuerlich der wesentliche Bestandteil ist), dann gibt es neben der Version mit welcher ich wirklich arbeite gleich drei externe Kopien gibt:
+
+~~~~
+github	https://github.com/lbaehren/Website.git (fetch)
+github	https://github.com/lbaehren/Website.git (push)
+nas	/Volumes/home/Repositories/Website.git (fetch)
+nas	/Volumes/home/Repositories/Website.git (push)
+origin	/Users/lars/Repositories/Website (fetch)
+origin	/Users/lars/Repositories/Website (push)
+~~~~
+
+Das sind nicht alleine mal Sicherheitskopien aller Informationen, sondern gleichzeitig auch Verbindungsknoten, ueber welche dies Aenderungen einbinden lassen; wenn ich also mal Aenderungen vornehmen wollte, ohne dass ich z.B. das Laptop griffbereit habe, wuerde mir ein Checkout von dem auf [Github](https://github.com) gehosteten Repository reichen, 
+
+~~~~
+git clone https://github.com/lbaehren/Website.git
+~~~~
+
+um die gewuenschten Anpassungen vorzunehmen (vorausgesetzt natuerlich der entsprechende Rechner hat Git installiert und verfuegt ueber eine Internetverbindung). Sobald diese komplett sind laesst sich die aktualisierte Fassung via
+
+~~~~
+git push
+~~~~
+
+einfach wieder hochladen... und damit von anderer Stelle dann auch wieder abgreifen. Dass die soeben beschriebene Prozedur ueber einen dazwischenliegenden Server laeuft bringt so einige Vorteil mit sich (z.B. dass ich Daten zwischen Rechnern abgleichen kann, welche an unterschiedlichsten Orten stehen), ist aber -- und dies ist der entscheidende Unterschied zu einem System wie Subversion -- nicht davon abhaengig; wenn ich wollte koennte ich statt ueber Github zu gehen auch einfach einen USB-Stick dazwischen schalten und keinerlei Funktionalitaet einbuessen. Willkommen in der Welt der [verteilten Versionsverwaltung](http://en.wikipedia.org/wiki/Distributed_revision_control) (Distributed Version Control).
+
+Die Tatsache, dass Git vollkommen ohne einen zentralen Server auskommt heisst, dass es keinen grossen Aufwand bedeutet eine Anzahl von Dateien und Verzeichnissen unter Versionskontrolle zu stellen; statt Datenbank-Tabellen anlegen zu muessen, Accounts zu verwalten, etc. bedarf es lediglich eines
+
+~~~~
+git init .
+~~~~
+
+in dem Verzeichnis, welches unter Versionskontrolle gestellt werden soll. Wem selbst dies immer noch zu kompliziert ist, dem sei gesagt, dass es auch graphische Benutzeroberflaechen gibt, ueber welche sich ein neues Repository anlegen lassen -- wie so ueblich ist es aber von einem Terminalfenster aus deutlich schneller. Wer nach diesem Start einmal den Inhalt des Verzeichnisses anschaut (z.B. via `ls -al`) wird feststellen, dass dort ein neues Unterverzeichnis angelegt wurde:
+
+~~~~
+Testing/
+├── .git                 <--  Hier bringt Git seine Versionsinformationen unter
+├── cpp
+└── python
+    ├── matplotlib
+    └── ocalfw
+~~~~
+
+Der nette Nebeneffekt davon, dass es sich um `.git` und nicht `git` handelt ist, dass dieser Unterordnung in den gaengigsten Faellen nicht die Auflistung des Verzeichnisinhaltes vermuellt. Darueber hinaus bedeutet dies aber auch, dass alles lokal bleibt und nicht irgendwo in eine Datenbank geschrieben wird; wenn man -- aus welchem Grund auch immer -- die Revisionsgeschichte loswerden moechte, scheisst man einfach den `.git` Ordner weg und gut ist. In vergleichbar einfacher Weise lassen sich natuerlich auch Ableger der unter Versionskontrolle befindlichen Daten anlegen (Git spricht in diesem Fall von "cloning", bzw. einem "remote" Repository):
+
+~~~~
+git clone <original Repo> <neues Repo>
+~~~~
+
+Sollten sich spaeter in dem Original Repository Aenderungen ergeben (was eigentlich ja zu erwarten ist), reicht ein simples
+
+~~~~
+git pull
+~~~~
+
+in der Regel vollkommen ausreichend, um den Ableger auf den neusten Stand zu bringen.
+
+![Pulling changes from Github](/blog/2013/2013-11/2013-11-20_Pull_testing.png)
+
+Wie auch hier wieder deutlich werden sollte: all dies funktioniert ohne die Hilfe eines zentralen Server, welcher die innerhalb der unterschiedlichen Kopien erstellten Aenderungen miteinander abgleichen muss. Das sich damit gleich eine Reihe von Moeglichkeiten eroeffnen duerfte wohl klar sein: so ist es einfach mal eben von einem Rechner zu einem anderen eine Kopie zu "ziehen" oder aber aber fuer sich selber einer Sicherheitskopie anzulegen (z.B. auf einer externen Festplatte). Dass es bei all den Moeglichkeiten mitunter ein klein wenig Einarbeitung erfordert, sollte aber nicht verschwiegen werden: vor allen Dingen Menschen, welche jahrelang mit zentralisierten Systemen wie _Subversion_ gearbeitet haben, muessen sich erst einmal an das "jeder kann mit jedem" und "ich kann das alles auch ohne Server" gewoehnen. Was man aber dabei gewinnt, ist ein hohes Mass an Flexibilitaet und Sicherheit, welches welches unabhaengig von Ort und Tageszeit zur Verfuegung steht:
+
+![Github punch-card](/blog/2013/2013-11/2013-11-21_Github_punchcard.png)
+
+Wie sich aus der [Github punch-card](https://github.com/lbaehren/testing/graphs/punch-card) erkennen laesst, habe ich diese Woche so einiges an Aenderungen eingecheckt, ohne dass ich auch nur ansatzweise in der Naehe einer Internetverbindung oder einer anderweitigen Server-Infrastruktur gewesen waere: in der Tat stammen die ersten Commits vom Montag Nachmittag, wo ich ja als potentieller Fahrer mit beim Zahnarzt war. Nachdem ich es dort geschafft hatte mir eine Aenderung zu verwerfen, welche ich dann eben nicht zurueckholen konnte, habe ich ganz schnell die Reissleine gezogen und Git auf die Scripten losgelassen, mit welchen ich versuchte Loesungsstrategien auszuarbeiten, welche dann anschliessend in dem OCAL Framework verwendet werden koennen. Ein Sicherheitsnetz wie dieses ist viel wert... und es gibt kaum eine Rechtfertigung in solchen Faellen ohne Versionskontrolle zu arbeiten. Also, unbedingt merken fuer das naechste Mal!

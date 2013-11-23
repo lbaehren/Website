@@ -9,6 +9,194 @@ tags: Blog
  
 **:::**
  
+### Experimentieren... mit Sicherheitsnetz ###
+
+
+
+
+_Sat, 23. November 2013 -- 11:19_
+
+Ich glaube es gibt mittlerweile kaum noch eine Sache, welche ich am Rechner mache, ohne nicht zumindest ein minimales Sicherheitsnetz auszuwerfen. Damit begonnen habe ich zwar schon vor einigen Jahren, aber die Konsequenz, mit welcher dies mittlerweile geschieht, ist wohl vor allen der Entdeckung von [Git](http://www.git-scm.com) geschuldet. Ich meine es war seinerzeit [Pim](http://www.astro.ru.nl/~pschella), welcher mich in Nijmegen darauf aufmerksam gemacht hatte (100%ig bin ich mir da allerdings nicht sicher): auch wenn es zu diesem Zeitpunkt noch nicht allzu lange her war, dass wir nach einem laengeren Kampf endlich durchgesetzt hatten von [CVS](http://en.wikipedia.org/wiki/Concurrent_Versions_System) auf [Subversion](http://subversion.apache.org) als primaeres System zur Versionskontrolle umzusteigen, so setzte sich doch recht schnell die Erkenntnis durch, dass man eigentlich noch den folgen Schritt hin zu einem verteilten System gehen muesste. Die im Projekt vorhandene Traegheit liess dies leider nicht zu, aber das hinderte eine stehts groesser werdende Gruppen an Leuten nicht daran zumindest lokal auf **Git** zu setzen, um sich auf diese Weise unabhaengiger von einem zentralen Server zu machen (welcher typischerweise bei einer Zugreise von Nijmegen nach Dwingeloo nicht erreichbar war -- WLAN fuehrten die [NS](http://www.ns.nl) erst spaeter in einigen aus Amsterdam kommenden Zuegen ein). Ueber die Zeit hat sich **Git** immer mehr zu dem Default-Tool entwickelt, wenn es in irgendeiner Weise darum geht Aenderungen nachzuhalten (und ggf. auch rueckgaengig zu machen) -- egal ob nun mit einer ganzen Gruppe von Leuten oder auch fuer mich alleine.
+
+Es duerfte wohl nicht verwunderlich sein, dass neben Quellcode fuer die unterschiedlichsten Software-Entwicklungen auch allerlei Sammlungen an Dokumenten unter dem schuetzenden Dach von Git verwaltet werden; da es ja auch ein leichtes ist mehrere Git Repositories miteinander zu verknuepfen, lassen sich auf diesem gleich noch Backups der Daten organisieren. Schaut man sich z.B. mal die Settings fuer diesen Blog an (oder streng genommen die komplette Website, von welcher der Blog natuerlich der wesentliche Bestandteil ist), dann gibt es neben der Version mit welcher ich wirklich arbeite gleich drei externe Kopien gibt:
+
+~~~~
+github	https://github.com/lbaehren/Website.git (fetch)
+github	https://github.com/lbaehren/Website.git (push)
+nas	/Volumes/home/Repositories/Website.git (fetch)
+nas	/Volumes/home/Repositories/Website.git (push)
+origin	/Users/lars/Repositories/Website (fetch)
+origin	/Users/lars/Repositories/Website (push)
+~~~~
+
+Das sind nicht alleine mal Sicherheitskopien aller Informationen, sondern gleichzeitig auch Verbindungsknoten, ueber welche dies Aenderungen einbinden lassen; wenn ich also mal Aenderungen vornehmen wollte, ohne dass ich z.B. das Laptop griffbereit habe, wuerde mir ein Checkout von dem auf [Github](https://github.com) gehosteten Repository reichen, 
+
+~~~~
+git clone https://github.com/lbaehren/Website.git
+~~~~
+
+um die gewuenschten Anpassungen vorzunehmen (vorausgesetzt natuerlich der entsprechende Rechner hat Git installiert und verfuegt ueber eine Internetverbindung). Sobald diese komplett sind laesst sich die aktualisierte Fassung via
+
+~~~~
+git push
+~~~~
+
+einfach wieder hochladen... und damit von anderer Stelle dann auch wieder abgreifen. Dass die soeben beschriebene Prozedur ueber einen dazwischenliegenden Server laeuft bringt so einige Vorteil mit sich (z.B. dass ich Daten zwischen Rechnern abgleichen kann, welche an unterschiedlichsten Orten stehen), ist aber -- und dies ist der entscheidende Unterschied zu einem System wie Subversion -- nicht davon abhaengig; wenn ich wollte koennte ich statt ueber Github zu gehen auch einfach einen USB-Stick dazwischen schalten und keinerlei Funktionalitaet einbuessen. Willkommen in der Welt der [verteilten Versionsverwaltung](http://en.wikipedia.org/wiki/Distributed_revision_control) (Distributed Version Control).
+
+Die Tatsache, dass Git vollkommen ohne einen zentralen Server auskommt heisst, dass es keinen grossen Aufwand bedeutet eine Anzahl von Dateien und Verzeichnissen unter Versionskontrolle zu stellen; statt Datenbank-Tabellen anlegen zu muessen, Accounts zu verwalten, etc. bedarf es lediglich eines
+
+~~~~
+git init .
+~~~~
+
+in dem Verzeichnis, welches unter Versionskontrolle gestellt werden soll. Wem selbst dies immer noch zu kompliziert ist, dem sei gesagt, dass es auch graphische Benutzeroberflaechen gibt, ueber welche sich ein neues Repository anlegen lassen -- wie so ueblich ist es aber von einem Terminalfenster aus deutlich schneller. Wer nach diesem Start einmal den Inhalt des Verzeichnisses anschaut (z.B. via `ls -al`) wird feststellen, dass dort ein neues Unterverzeichnis angelegt wurde:
+
+~~~~
+Testing/
+├── .git                 <--  Hier bringt Git seine Versionsinformationen unter
+├── cpp
+└── python
+    ├── matplotlib
+    └── ocalfw
+~~~~
+
+Der nette Nebeneffekt davon, dass es sich um `.git` und nicht `git` handelt ist, dass dieser Unterordnung in den gaengigsten Faellen nicht die Auflistung des Verzeichnisinhaltes vermuellt. Darueber hinaus bedeutet dies aber auch, dass alles lokal bleibt und nicht irgendwo in eine Datenbank geschrieben wird; wenn man -- aus welchem Grund auch immer -- die Revisionsgeschichte loswerden moechte, scheisst man einfach den `.git` Ordner weg und gut ist. In vergleichbar einfacher Weise lassen sich natuerlich auch Ableger der unter Versionskontrolle befindlichen Daten anlegen (Git spricht in diesem Fall von "cloning", bzw. einem "remote" Repository):
+
+~~~~
+git clone <original Repo> <neues Repo>
+~~~~
+
+Sollten sich spaeter in dem Original Repository Aenderungen ergeben (was eigentlich ja zu erwarten ist), reicht ein simples
+
+~~~~
+git pull
+~~~~
+
+in der Regel vollkommen ausreichend, um den Ableger auf den neusten Stand zu bringen.
+
+![Pulling changes from Github](/blog/2013/2013-11/2013-11-20_Pull_testing.png)
+
+Wie auch hier wieder deutlich werden sollte: all dies funktioniert ohne die Hilfe eines zentralen Server, welcher die innerhalb der unterschiedlichen Kopien erstellten Aenderungen miteinander abgleichen muss. Das sich damit gleich eine Reihe von Moeglichkeiten eroeffnen duerfte wohl klar sein: so ist es einfach mal eben von einem Rechner zu einem anderen eine Kopie zu "ziehen" oder aber aber fuer sich selber einer Sicherheitskopie anzulegen (z.B. auf einer externen Festplatte). Dass es bei all den Moeglichkeiten mitunter ein klein wenig Einarbeitung erfordert, sollte aber nicht verschwiegen werden: vor allen Dingen Menschen, welche jahrelang mit zentralisierten Systemen wie _Subversion_ gearbeitet haben, muessen sich erst einmal an das "jeder kann mit jedem" und "ich kann das alles auch ohne Server" gewoehnen. Was man aber dabei gewinnt, ist ein hohes Mass an Flexibilitaet und Sicherheit, welches welches unabhaengig von Ort und Tageszeit zur Verfuegung steht:
+
+![Github punch-card](/blog/2013/2013-11/2013-11-21_Github_punchcard.png)
+
+Wie sich aus der [Github punch-card](https://github.com/lbaehren/testing/graphs/punch-card) erkennen laesst, habe ich diese Woche so einiges an Aenderungen eingecheckt, ohne dass ich auch nur ansatzweise in der Naehe einer Internetverbindung oder einer anderweitigen Server-Infrastruktur gewesen waere: in der Tat stammen die ersten Commits vom Montag Nachmittag, wo ich ja als potentieller Fahrer mit beim Zahnarzt war. Nachdem ich es dort geschafft hatte mir eine Aenderung zu verwerfen, welche ich dann eben nicht zurueckholen konnte, habe ich ganz schnell die Reissleine gezogen und Git auf die Scripten losgelassen, mit welchen ich versuchte Loesungsstrategien auszuarbeiten, welche dann anschliessend in dem OCAL Framework verwendet werden koennen. Ein Sicherheitsnetz wie dieses ist viel wert... und es gibt kaum eine Rechtfertigung in solchen Faellen ohne Versionskontrolle zu arbeiten. Also, unbedingt merken fuer das naechste Mal!
+ 
+**:::**
+ 
+ 
+### Rueckreise ###
+
+
+
+
+_Fri, 22. November 2013 -- 18:38_
+
+Irgendwie ist es ja schon immer wieder ein klein wenig seltsam, wenn ich mich hier vonUtrecht aus auf den Heimweg in Richtung Bonn mache. Es gibt Wochen, in welchen ich garnicht erst so richtig hier vor Ort ankomme, es kann aber auch genauso passieren, dass ich die Zugfahrt brauche, um den Uebergang zwischen den beiden Orten und Umgebungen hinzukriegen. Dabei ist es nicht einmal, dass ich zwanghaft versuche gedanklich an einer bestimmten Stelle zu bleiben -- ich denke einfach mal, dass dies ein wenig davon abhaengt, was in der jeweiligen Woche geschieht. Ein Tag so wie er es heute gewesen ist, traegt natuerlich auch nicht so recht dazu bei, sich oertlich sauber einordnen zu koennen: gerade wenn ich mich garnicht grossartig vom Fleck bewege und die ganze Zeit mit den Gedanken bei einer Aufgabe bin, dann geht mir ein wenig die Wahrnehmung dafuer verloren, wo ich mich denn eigentlich befinde. Ist am Montag auch schon so gegangen, als ich mich in der Zahnarztpraxis zum arbeiten hingesetzt habe; haette sich Julia einfach still und heimlich aus der Tuere geschlichen, dann waere mir dies wohl erst nach einer ganzen Weile aufgefallen.
+
+Heute Abend bin ich aber weitestgehend selber fuer den Transport zustaendig: gut, ich muss jetzt nicht den Bus bzw. Zug fahren, aber ich muss schon dafuer Sorge tragen, dass ich rechtzeitig aus der Wohnung zum Bahnhof aufbreche und mich dort bei Zeiten auf dem richtigen Gleis einfinde. Worauf ich nun aber mal gespannt bin ist, wie voll es denn im ICE wird; wenn es irgendwie geht versuche ich eigentlich den letzten ICE zurueck nach Frankfurt zu meiden, aber je nach dem wie die Wochenplanung ausfaellt geht es nicht anders. Schauen wir also einmal, wie es denn heute Abend wird.
+ 
+**:::**
+ 
+ 
+### Heimarbeit ###
+
+
+
+
+_Fri, 22. November 2013 -- 12:08_
+
+Nachdem ich die vergangenen drei Tage wechselweise bei [SRON](http://www.sron.nl) oder am [KNMI](http://www.knmi.nl) zugebracht habe, bleibe ich heute bis auf weiteres in der Wohnung in Utrecht. Dies liegt daran, dass ich letztes Wochenende noch einen Anruf erhalten hatte, dass am heutigen Tage Wartungsarbeiten an den Gasanschluessen durchgefuehrt werden sollen, wofuer der Techniker u.a. auch bei mir in die Wohnung muss. Da ich jetzt nicht einfach meinen Schluessel hier vor Ort lassen wollte, habe ich es einfach mal eingerichtet, dass ich den heutigen Tag weitestgehend von den heimischen vier Waenden aus arbeiten werde; da man mir leider auch keine Zeit mitteilen konnte, wann denn jemand hier auf der Matte steht, habe ich vorsichtshalber mal Bescheid gesagt, dass bis auf weiteres nicht mit mir zu rechnen ist. Das ist fuer sich genommen nicht weiter schlimm, denn schliesslich muss ich fuer einen guten Teil der derzeit laufenden Arbeiten nicht im Institut sitzen; gut, ich muss ggf. nachher noch einmal ein paar Aenderungen in das OCAL Framework einpflegen, aber dies kann ich auf via Remote machen (hoffe ich zumindest). So kommt es also, dass ich hier in der Wohnung sitze (oder wahlweise auf dem Boden liege) und versuche die noch ausstehenden Schritte fuer die _Pixel response non-uniformity_ (PRNU) Korrektur auszuarbeiten...
+ 
+**:::**
+ 
+ 
+### Aus fuer Winamp ###
+
+
+
+
+_Thu, 21. November 2013 -- 18:22_
+
+Auch wenn ich selber nie einen Rechner gehabt habe, welcher unter Windows laeuft, so gibt es doch ein paar Programme welche selbst mir (zumindest vom Namen her) bekannt sind.
+
+> Winamp wurde von Justin Frankels Firma Nullsoft programmiert und 1997 als Shareware veröffentlicht - die Software entwickelte sich zum meistgenutzten Medienplayer und war wohl eines der bekanntesten Windows-Programme. Das Jingle "It really whips the llama's ass!" kannte praktisch jeder Windows-Anwender.
+
+[Wie Heise News nun mitteilt](http://www.heise.de/newsticker/meldung/Mediaplayer-Winamp-ist-am-Ende-2051283.html), wird die Software nun nach 15 Jahren Entwicklung und Support eingestellt:
+
+> Der Mediaplayer Winamp wird nicht mehr weiterentwickelt. Auf der gleichnamigen Website prangt nun ein Hinweis, dass Winamp.com und die dazugehörigen Web-Dienste ab dem 20. Dezember nicht mehr verfügbar sein werden. Ebenso werde die Software nicht mehr zum Download bereit stehen. Winamp bedankt sich bei den Nutzern für 15 Jahre Unterstützung.
+
+Was dies natuerlich bedeutet ist, dass sich bisherige Benutzer auf die Suche nach [Alternativen](http://www.heise.de/download/winamp.html) begeben muessen.
+ 
+**:::**
+ 
+ 
+### Monty-Python-Comeback ###
+
+
+
+
+_Thu, 21. November 2013 -- 17:31_
+
+Na, da darf man ja einmal gespannt sein, was da geboten wird:
+
+> 30 Jahre nach ihrem letzten großen gemeinsamen Projekt formiert sich die britische Komikertruppe Monty Python für eine Bühnenshow neu. In einer einmaligen Show am 1. Juli kommenden Jahres würden sie noch einmal einige ihrer bekanntesten Sketche auf die Bühne bringen. Das gaben John Cleese, Terry Gilliam, Eric Idel, Terry Jones und Michael Palin auf einer Pressekonferenz in London bekannt.
+
+So sonderlich viel Informationen scheint es da bisher noch nicht zu geben (zumindest nicht auf deutschsprachigen Seiten), aber wer will kann gerne einmal schauen [was die Tagesschau zu berichten hat](http://www.tagesschau.de/kultur/monty-python106.html).
+ 
+**:::**
+ 
+ 
+### Ubuntu 14.04 ohne Mir und Unity 8 ###
+
+
+
+
+_Wed, 20. November 2013 -- 17:08_
+
+Die [Meldung auf Heise News](http://www.heise.de/newsticker/meldung/Ubuntu-14-04-verzichtet-auf-Umstellung-von-Display-Server-und-Desktop-2051100.html) war keinesfalls die Einzige zu diesem Thema, aber da vielleicht nicht jeder regelmaessig Computer-Nachrichten liest hier noch einmal die relevante Passage:
+
+> In seiner [Keynote](http://summit.ubuntu.com/uds-1311/meeting/22027/intro-by-jono-bacon-keynote-by-mark-shuttleworth) auf dem [Ubuntu Developer Summit](http://summit.ubuntu.com/uds-1311) hat Ubuntu-Sponsor Mark Shuttleworth die großen Themen für die Arbeit an der kommenden Ubuntu-Version 14.04 LTS (Trusty Tahr) umrissen.
+>
+> Ubuntu 14.04 auf dem Desktop wird nicht auf den neu entwickelten Display-Server Mir und auf die neue Desktop-Variante Unity 8 setzen, sondern beim X Window System und bei Unity 7 bleiben. In eine auf Stabilität optimierte LTS-Version, für die Canonical fünf Jahre Updates garantiert, könne man keine so grundlegend neue Technik aufnehmen, meint Shuttleworth.
+
+Angekuendigt war die Einfuehrung von Mir ja eigentlich schon fuer Ubuntu 13.10, aber da es dort vor allen Dingen noch Probleme mit dem X-Compatibility Layer bei Multi-Display Setups gab, wurden die Plaene eine Release weiter verschoben. Dies scheint allerdings nicht ausgereicht haben, denn fuer die Fruehjahr anstehende naechste LTS Release scheint man sich noch nicht ausreicht sicher zu fuehlen. Auf der einen Seite bedeutet dies, dass die Entwicklung fuer Touch und Desktop Varianten noch eine Weile laenger nicht zusammengefuehrt wird, aber der anderen Seite scheinen moegliche Konflikte mit den Machern diverser Ubuntu-Varianten ein wenig hinausgezoegert zu sein:
+
+> Durch den Verzicht auf Mir entschärft Canonical auch den Streit mit den Ubuntu-Varianten Kubuntu, Xubuntu, Ubuntu Gnome und Lubuntu, die bereits erklärt haben, dass sie nicht auf Mir umstellen wollen.
+
+[Weitere Details](http://www.heise.de/open/meldung/Ubuntu-14-04-Touch-und-Desktop-bleiben-getrennt-2051044.html) lassen sich u.a. auf _Heise Open Source_ nachlesen.
+ 
+**:::**
+ 
+ 
+### Persoenlich regeln ###
+
+
+
+
+_Wed, 20. November 2013 -- 12:26_
+
+Ja, es macht einen deutlichen Unterschied, wie man die Dinge anpackt: so habe ich heute Morgen noch mit Richard zusammengesessen, um ueber meine Arbeit am [KNMI](http://www.knmi.nl) und ein wenig allgemeiner die laengerfristige Zusammenarbeit zwischen den beiden Instituten zu sprechen. Der entscheidende Unterschied: wenn es um derartige Dinge geht, dann geht dies bei Richard in einem direkten Gespraech, wo es Sinn und Zweck der Veranstaltung ist moegliche Hindernisse oder Probleme aus dem Weg zu raeumen, um so das Projekt als Ganzes weiterzubringen. Das ist doch ein deutlicher Unterschied zu dem, was ich anderenorts erfahren habe, wo dies eben nicht der Fall zu sein scheint (zumindest nicht mir gegenueber); selbst organisatorische Dinge habe ich nur auf dem indirekten Wege mitbekommen, was bedeutet dass es eine Weile dauert, ehe die Information bei mir ankommt und ich dementsprechend handeln kann. Im persoenlichen Gespraech geht dies alles viel schneller... und typischerweise kommen bei der Gelegenheit gleich auch noch einmal andere Dinge mit auf den Tisch, so dass auch diesmal das Treffen recht produktiv.
+ 
+**:::**
+ 
+ 
+### Erwartungen statt Fakten ###
+
+
+
+
+_Tue, 19. November 2013 -- 10:56_
+
+Ist keinesfalls das erste Mal, dass ich etwas in dieser Art gelesen habe:
+
+> Also weighing on the company, recent third-quarter earnings that weren't as impressive as Wall Street had hoped. While [Model S](http://www.teslamotors.com/models) deliveries were ahead of [Tesla](http://www.teslamotors.com)'s own expectations, they were lower than those of analysts, and that discrepancy has been troubling the company's share price ever since the day it reported.
+
+Also nur noch einmal um dies zu verstehen: der Boersenkurs ist nach unten gegangen, weil das Unternehmen die Erwartungen der Boersianer nicht erfuellt hat, nicht weil das Unternehmen schlechte Zahlen geschrieben hat. Erwartungen, welche hoeher waren als jene, welche von dem Unternehmen selber veroeffentlicht wurden... Das heisst also die gleichen "Spezialisten", welche zunaechst einen unrealistischen Wachstumswert ansetzen, werten anschliessend die Papier der Firma ab, weil diese eben jene ueberhoehten Erwartungen nicht erfuellt hat. Also da moechte man doch einfach nur mal wieder einen grossen, mit Betongewichten beschwerten, Sack auf dem Boden des Ozeans versenken...
+ 
+**:::**
+ 
+ 
 ### Ausflug an die Mosel ###
 
 
@@ -155,173 +343,6 @@ _Wed, 13. November 2013 -- 22:10_
 Also das war doch eine recht einfach verdauliche und unterhaltsame Lektuere: auf der Fahrt zurueck in die Wohnung, habe ich noch die letzten beiden Kapitel von [Olivia Munn](http://en.wikipedia.org/wiki/Olivia_Munn)s autobiographischen Skizzen unter dem wunderbaren Titel "Suck It, Wonder Woman: The Misadventures of a Hollywood Geek" zuende gelesen. Da ich ja seit einer Weile versuche wieder ein wenig konstanter zu lesen (was natuerlich von recht wechselhaftem Erfolg gekroent ist), habe nach dem letzten Leseabenteuer erst gar keine lange Pause aufkommen lassen, sondern mir recht schnell den kleinen Band vorgenommen. 
 
 Aller Wahrscheinlichkeit haette das Buch kaum meine Aufmerksamkeit auf sich gezogen, waere da nicht [The Newsroom](http://www.imdb.com/title/tt1870479) gewesen, worin [Olivia](http://www.imdb.com/name/nm1601397) in der Rolle der stets scharfzuengig auftretenen [Sloan Sabbith](http://www.imdb.com/character/ch0239659) zu sehen ist. Durch den Charakter in der Serie neugierig geworden muss ich nun feststellen, dass da Fiktion und Realitaet garnicht so weit auseinanderliegen, zumindest was einige Aspekte betrifft. War auf jedem Fall sehr unterhaltsam zu lesen, auch wenn ich dem Buch jetzt keinen sonderlichen Tiefgang unterstellen wollte.
- 
-**:::**
- 
- 
-### Zu nah dran ###
-
-
-
-
-_Tue, 12. November 2013 -- 18:23_
-
-Der Samstag des vergangenen Wochenendes ist ja nun auch schon wieder eine Weile her, so dass es langsam einmal an der Zeit war mich noch einmal um die Bilder zu kuemmern, welche ich bei dieser Gelegenheit in und rund um unseren Garten gemacht habe. Als ich nun heute morgen noch [eine kleine Auswahl davon auf Flickr](http://www.flickr.com/photos/larsbaehren/sets/72157637587191013) hochgeladen und mir anschliessend die Karte mit den geographischen Positionen angeschaut habe, war ich doch recht erstaunt, was ich da zu sehen bekam.
-
-![Flickr map Hardtberg](/blog/2013/2013-11/2013-11-12_Flickr_map_Hardtberg.png)
-
-Grossartig nachdenken musste ich da nicht, aber ueber das Ausmass des Eingriffes war ich schon ein wenig erstaunt: bis zum Gelaende des [Verteidigungsministeriums](http://www.bmvg.de) ist es von dem Garten aus schon noch einmal ein kleines Stueck. Trotzdem aber sind nicht nur die kompletten Schrebergaerten -- welche allem Anschein nach von entscheidender strategischer Bedeutung sind -- sondern auch das Hardtbergbad unter einem grossen Schmierfleck verschwunden. Interessant ist es, wenn man sich im Gegenzug einmal das Kartenmaterial von [Google Maps](http://maps.google.com) anschaut: darauf ist das komplette Gelaende in (fast) allen Einzelheiten zu erkennen.
- 
-**:::**
- 
- 
-### Abschied von GOCE ###
-
-
-
-
-_Mon, 11. November 2013 -- 20:00_
-
-Angekuendigt war dies ja schon eine Weile, aber [in den heutigen Morgenstunden war es dann endlich so weit](http://www.heise.de/newsticker/meldung/Ein-neues-Bild-der-Erde-Satellit-GOCE-ist-verglueht-2043190.html):
-
-> Der Satellit [GOCE](http://www.esa.int/Our_Activities/Observing_the_Earth/GOCE) ist nach vierjähriger Mission in der Atmosphäre verglüht. Er ist am frühen Montagmorgen [in die Atmosphäre eingetreten](http://www.esa.int/Our_Activities/Observing_the_Earth/GOCE/GOCE_completes_its_mission), teilte die Europäische Raumfahrtbehörde Esa mit. Der fünf Meter lange und 1,2 Tonnen schwere Satellit zerbrach beim Herabstürzen in mehrere Teile. Die Wissenschaftler gehen davon aus, dass einige kiloschwere Stücke zur Erde fielen. Schäden wurden aber zunächst nicht bekannt. Dutzende Satelliten endeten bereits ähnlich, ohne dass es Unfälle gab.
->
-> GOCE hatte ein neues Bild der Erde gezeichnet. Mit Messungen des Schwerefelds in zuvor unerreichter Genauigkeit lieferte er erstmals ein weltweites einheitliches und zentimetergenaues Höhenprofil. Unter anderem können damit unterschiedliche Höhenangaben von Bergen vereinheitlicht und Probleme bei Bauvorhaben besser gelöst werden. Die Daten dokumentieren auch den Anstieg des Meeresspiegels und Strömungsveränderungen, die für Klimamodelle wichtig sind. GOCE registrierte auch Infraschallwellen, die das schwere Erdbeben im März 2011 in Japan ausgelöst hatte.
-
-Lokal relevant ist dies, weil [SRON](http://www.sron.nl) eine nicht unerhebliche [Beteiligung an der Mission](http://www.sron.nl/goce-missionsmenu-366.html) hatte, welche sich vor allen Dingen auf das scientific pre-processing und die externe Kalibration der Messinstrumente ertreckte, ohne welche keine vernuenftige wissenschaftliche Analyse der Daten moeglich waere.
- 
-**:::**
- 
- 
-### Eintraege ###
-
-
-
-
-_Mon, 11. November 2013 -- 08:20_
-
-Auch wenn ich in all den Jahren, in welchen der Blog mittlerweile existiert schon probiert habe recht regelmaessig zu schreiben (ein Stueck weit wohl eine Uebung in Sachen Selbstdisziplin), habe ich mir vor diesem Jahr wohl noch nie vorgenommen wirklich jeden Tag einen kleinen Beitrag einzustellen. Das dieser nun unbedingt jedes Mal wirklich sonderlich geistreichen gewesen ist kann ich nicht mit gutem Gewissen behaupten, aber das Vorhaben hat doch dazu gefuehrt, dass ich eine gewisse Kontinuitaet walten lassen muss; wie ich in der Vergangenheit ja mehrfach erlebt habe, ist es recht gefaehrlich, wenn man erst einmal eine Luecke entstehen laesst -- dann vergehen mitunter schnell einmal Wochen, ehe man sich wieder zusammenreisst.
-
-Das ich mir solche Zusammenhaenge natuerlich auch einmal gerne ein klein wenig genauer anschauen moechte, duerfte nicht sonderlich verwundern: also habe ich als erste einmal die Anzahl der Eintraege pro Jahr unter die Lupe genommen:
-
-    2008    300
-    2009    309
-    2010    363
-    2012    316
-    2011    348
-    2013    517
-
-Da dies fuer sich genommen aber natuerlich ein wenig grob von der zeitlichen Aufloesung her ist, schien es mir deutlich sinnvoller, dies auf Monate herunterzubrechen -- daraus lassen sich dann ja immer noch jaehrliche Summen berechnen. Da wir uns bei einem solchen Vorhaben aber ganz schnell in einem Bereich bewegen, wo es sehr schnell an die Feinarbeit gehen kann, habe ich alles direkt in einem Shell-Script untergebracht:
-
-~~~~
-cd $basedirPages
-
-FILES=`ls| grep -v page`
-
-for FILE in $FILES
-{
-    if [[ -d $FILE ]] ; then
-        YEAR=$FILE
-        ## Get sub-directories with sub-sets per month
-        for MONTH in 01 02 03 04 05 06 07 08 09 10 11 12
-        {
-            if [[ -d $YEAR/$YEAR-$MONTH ]] ; then
-                nofEntries=`find $YEAR/$YEAR-$MONTH -name "*.page" | grep -v index | wc -l`
-                ## Write data to output file for plotting
-                echo "$YEAR/$MONTH    $nofEntries" >> $outfile
-            fi
-        }
-        ## Cummulative statistics per year
-        nofEntries=`find $FILE -name "*.page" | grep -v index | wc -l`
-     fi
-}
-~~~~
-
-Da steckt jetzt keine sonderliche Magie hinter, aber es ermoeglich mir, die Analyse immer wieder durchlaufen zu lassen, ggf. mit jedem Eintrag, um automatisch eine Statistik-Seite erzeugen zu lassen. Haengt man dann noch -- und dies ist dann zumindest fuer mich der naechstlogische Schritt -- die Erzeugung von Plots aus den extrahierten Daten an, erhaelt man Resultate, welche deutlich allgemein-verdaulicher sind.
-
-![Blog entries per month](/blog/2013/2013-11/2013-11-11_nof_entries.png)
-
-Jetzt wo dies aus dem Weg ist, kann ich ja mal richtig damit anfangen mit den Zahlen zu spielen (Histogramme erzeugen, Trends fitten, etc.).
- 
-**:::**
- 
- 
-### Herbstfarben ###
-
-
-
-
-_Sun, 10. November 2013 -- 21:29_
-
-Da haben wir am Samstag richtig Glueck mit dem Wetter gehabt. Da an diesem Wochenende noch einmal einiges an Gartenarbeiten auf dem Programm stand, traf es sich sehr gut, dass es eigentlich den ganzen Tag ueber richtig angenehm sonnig war; sicher, wir befinden uns auch schon eine Weile nicht mehr im Bereich des Spaetsommer, aber da der Wind sich zurueckhielt konnte man es draussen richtig gut aushalten. Folgerichtig sind wir direkt nach unserer [Hausbesichtigung](/blog/2013/2013-11/2013-11-09_22-07.html) in Richtung Derletal losgestiefelt, um uns an das Ein- und Umgraben, vor allen Dingen aber an das Zurueckschneiden zu begeben. Um den a) den Garten winterfest zu machen und b) die Berge an Pflanzen vom Hof zu entfernen haben wir uns da richtig ins Zeug gelegt. War wirklich produktiv und wir haben sehr viel geschafft gekriegt.
-
-![Baeume im Derletal](/blog/2013/2013-11/hdr_20131109_163803_Derletal.jpg)
-
-Da die Lichtverhaeltnisse absolut grandios waren, habe ich mich zwischendurch immer wieder einmal fuer zwei Minuten ausgeklinkt, um mit der Dokumentation des Gartens zu beginnen. Ich weiss nicht, was sich der Besitzer des Nachbargartens dabei gedacht hat, aber ein wenig aus dem Rahmen sind wir wahrscheinlich auch so schon gefallen. Als dann alles soweit klar war (zumindest fuer den Tag), bin ich noch einen kleinen Schlenker durchs Derletal gelaufen, damit ich wenigsten noch ein paar Bilder bei untergehender Sonne machen konnte. Ich muss schon sagen, dass ich das Herbstlicht in ganz besonderer Weise mag, weil es einfach viel sanfter ist, gleichzeitig aber eine ganz eigene Faerbung ueber alles verteilt (mit einem spaeten Sommerabend ist dies nicht zu vergleichen). Das Zeitfenster, da mit der Kamera auf Jagd gehen zu koennen, ist nicht sonderlich gross, aber ein paar nette Eindruecke habe ich doch mit zurueckbringen koennen.
- 
-**:::**
- 
- 
-### Hat sich erledigt ###
-
-
-
-
-_Sat, 09. November 2013 -- 22:07_
-
-Es war lange Zeit -- eigentlich seit kurz nachdem wir mit der Suche begonnen hatten -- der Favorit, welcher immer wieder irgendwo im Hintergrund anwesend war; seit dem heutigen Tage aber hat es sich mit dem Haus in Hersel erledigt. Nachdem die Verkaeufer uns ueber Monate mit immer wieder neuen, doch recht fadenscheinigen Gruenden hingehalten hatten, ging am vergangenen Wochenende eine [Mail](/blog/2013/2013-11/2013-11-06_22-14.html) ein, dass es jetzt nun doch mit dem Verkauf weitergehen sollte. So wirklich motiviert waren wir nicht mehr, aber sicherheitshalber haben wir uns noch einmal um einen zweiten Besichtigungstermin bemueht -- schliesslich war es doch schon eine ganze Weile her, dass wir das Haus zuletzt gesehen hatten. Nicht alleine das Erinnerungsvermoegen war hier von entscheidender Bedeutung, sondern auch der Blick auf all die kleinen Dinge bei einem Haus hat sich in der Zwischenzeit deutlich geschaerft -- schliesslich haben wir uns ja mittlerweile eine ganze Reihe anderer Objekte angeschaut.
-
-Das Urteil ueber das Haus in Hersel kam dann aber recht schnell: nach den ersten Feuchtigkeitshinweisen im Keller waren es vor allen Dingen das Wohnzimmer und die Raeume im ersten Geschoss, welche sich bei einer zweiten Betrachtung als deutlich dunkler herausstellten, als wir dies noch in Erinnerung hatten. Wo die Liste der Maengel erst einmal eroeffnet war, ging es recht schnell mit weiteren Negativpunkten. Insgesamt dauerte es eine halbe Stunde bis klar war, dass wir es uns ersparen wuerden ein Gebot fuer das Haus abzugeben; man haette zwar pro-forma an dem Verfahren mitmachen koennen (ohne sich dabei in einem Rahmen zu bewegen, welcher Aussicht auf Erfolg bieten wuerde), aber bei ehrlicher Betrachtung schien dies doch recht unsinnig. Somit hat sich das Haus, auf welches wir so lange immer wieder spekuliert hatten erledigt... aber alles in allem ist es wohl besser so, denn nun haben wir den Kopf wieder ein klein wenig freier was die naechsten Schritte (und Besichtigungen) betrifft.
- 
-**:::**
- 
- 
-### Zu spaeter Stunde ###
-
-
-
-
-_Fri, 08. November 2013 -- 22:32_
-
-...ist es natuerlich schwer noch vernuenftige Anschluesse zu kriegen...
-
-Das hat die Deutsche Bahn ja wieder einmal ganz toll hinbekommen: dadurch dass der ICE 227 -- wir erinnern uns: dieser hat sowohl Amsterdam als auch Utrecht uebersprungen -- mit gut einer halben Stunde aus Arnhem abgefahren ist, sind wir hier in Koeln mit fast einer Stunde in den Bahnhof eingefahren. Nicht nur, dass ich dadurch meinen urspruenglich geplanten Anschlusszug nach Bonn verpasst habe, aber auch die darauffolgende Verbindung hatte sich gleich mit erledigt. Wie ich mit einem Blick auf den Fahrplan feststellen musste gibt es erst um 22:56 Uhr wieder einen Zug nach Bonn, so dass ich a) fast eine dreiviertel Stunde Wartezeit totzuschlagen habe und b) ich fast eineinhalb Stunden spaeter als eigentlich gedacht in Bonn eintreffen werde. Angesichts dieser Tatsache bin ich eben mal noch zur Information unten in der Bahnhofshalle gestiefelt, um mir die Verspaetung fuer eine Fahrpreisrueckerstattung (wenn auch nur teilweise) bestaetigen zu lassen. Das bringt mir natuerlich nicht die dadurch aufgewendete Zeit zurueck, aber zumindest ein klein wenig finanzielle Entschaedigung ist unter diesen Umstaenden durchaus angebracht.
- 
-**:::**
- 
- 
-### Zwischenstop in Arnhem ###
-
-
-
-
-_Fri, 08. November 2013 -- 19:14_
-
-Da bin ich also in Arnhem und warte darauf dass es weiter geht. Der Trip von Utrecht aus verlief ohne Zwischenfaelle, auch wenn es recht voll in dem Zug war (was nicht sonderlich verwundern duerfte, denn schlisslich ist dies immer noch Berufsverkehrzeit. War aber auch nicht dass Problem, denn schliesslich habe ich ja doch ausreichend Bahnkilometer hier in den Niederlanden verfahren.
-
-Was ich allerdings ein wenig befremdlicher fand (auch wenn es mich bei weiterem Nachdenken nicht mehr so sonderlich verwundert), was dass der ICE hier eine halbe Stunde am Bahnsteig stand ohne die Tueren zu oeffnen. Mir ist schon klar, dass man durch das Einsteigen keine Zeit gewinnen wuerde... angenehmer als auf dem windigen Bahnsteig waere dies aber allemal. Das die Deutsche Bahn damit nicht unbedingt freundlich wirkt laesst sich da wohl verstehen: ich finde es eher abweisend, wenn man den Reisenden nicht entgegenkommt -- schliesslich musste die meisten ja schon auf andere Art und Weise hier nach Arnhem anreisen, weil der ICE eben nicht wie geplant ueber die volle Strecke faehrt. So etwas scheint der DB allerdings nicht einmal im Schlaf einzufallen...
- 
-**:::**
- 
- 
-### Defektes Material... bye-bye ICE 227 ###
-
-
-
-
-_Fri, 08. November 2013 -- 17:21_
-
-Da war es doch gut, dass ich gerade noch einmal einen Blick in meine Mails geworfen habe: dort ist -- waehrend ich mich noch mit Werner besprochen habe -- meine Verspaetungswarnung eingegangen. Wie so ueblich laesst sich aus dieser nicht sonderlich viel entnehmen, was auch bei einem Blick auf die angegebene Internetseite nicht sonderlich besser wird:
-
-![Stoerungsmeldung fuer ICE 227](/blog/2013/2013-11/2013-11-08_ICE_227.png)
-
-Da diese Informationslage leider nicht so ganz neu ist, habe ich mir direkt [die aktuellen Reiseinformationen von NSHispeed](http://www.nshispeed.nl/nl/actuele-reisinformatie) geschnappt, welche aus Erfahrung ein gutes Stueck auskunftsfreudiger sind:
-
-> 08-11-2013 16:25
->
-> ICE Amsterdam Centraal v 18:34 vertrekt door defect materieel niet vanaf Amsterdam Centraal en Utrecht Centraal, maar vanaf Arnhem. Reist u met binnenlandse treinen naar Arnhem of informeert u bij een van onze medewerkers.
-
-Das heisst also, dass die spezielle Verbindung von Amsterdam Centraal und Utrecht Centraal ausfaellt, der ICE aber wohl von Arnhem aus eingesetzt wird dementsprechend muss ich also schauen, dass ich ein wenig frueher von hier verschwinde, damit ich erst einmal noch mit einem IC nach Arnhem fahren kann... um dort dann hoffentlich meinen Anschluss zu kriegen. Wie ich dies ja schon einmal in der Vergangenheit hatte, kann dies durchaus bedeuten, dass es mit der Heimreise eine laengere Angelegenheit werden kann -- ich hoffe aber mal, dass es nicht wieder ganz so schlimm wird.
  
 **:::**
  

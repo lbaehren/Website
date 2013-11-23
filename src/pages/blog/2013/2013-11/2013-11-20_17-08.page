@@ -1,0 +1,21 @@
+---
+title: "Ubuntu 14.04 ohne Mir und Unity 8"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Wed, 20. November 2013 -- 17:08_
+
+Die [Meldung auf Heise News](http://www.heise.de/newsticker/meldung/Ubuntu-14-04-verzichtet-auf-Umstellung-von-Display-Server-und-Desktop-2051100.html) war keinesfalls die Einzige zu diesem Thema, aber da vielleicht nicht jeder regelmaessig Computer-Nachrichten liest hier noch einmal die relevante Passage:
+
+> In seiner [Keynote](http://summit.ubuntu.com/uds-1311/meeting/22027/intro-by-jono-bacon-keynote-by-mark-shuttleworth) auf dem [Ubuntu Developer Summit](http://summit.ubuntu.com/uds-1311) hat Ubuntu-Sponsor Mark Shuttleworth die großen Themen für die Arbeit an der kommenden Ubuntu-Version 14.04 LTS (Trusty Tahr) umrissen.
+>
+> Ubuntu 14.04 auf dem Desktop wird nicht auf den neu entwickelten Display-Server Mir und auf die neue Desktop-Variante Unity 8 setzen, sondern beim X Window System und bei Unity 7 bleiben. In eine auf Stabilität optimierte LTS-Version, für die Canonical fünf Jahre Updates garantiert, könne man keine so grundlegend neue Technik aufnehmen, meint Shuttleworth.
+
+Angekuendigt war die Einfuehrung von Mir ja eigentlich schon fuer Ubuntu 13.10, aber da es dort vor allen Dingen noch Probleme mit dem X-Compatibility Layer bei Multi-Display Setups gab, wurden die Plaene eine Release weiter verschoben. Dies scheint allerdings nicht ausgereicht haben, denn fuer die Fruehjahr anstehende naechste LTS Release scheint man sich noch nicht ausreicht sicher zu fuehlen. Auf der einen Seite bedeutet dies, dass die Entwicklung fuer Touch und Desktop Varianten noch eine Weile laenger nicht zusammengefuehrt wird, aber der anderen Seite scheinen moegliche Konflikte mit den Machern diverser Ubuntu-Varianten ein wenig hinausgezoegert zu sein:
+
+> Durch den Verzicht auf Mir entschärft Canonical auch den Streit mit den Ubuntu-Varianten Kubuntu, Xubuntu, Ubuntu Gnome und Lubuntu, die bereits erklärt haben, dass sie nicht auf Mir umstellen wollen.
+
+[Weitere Details](http://www.heise.de/open/meldung/Ubuntu-14-04-Touch-und-Desktop-bleiben-getrennt-2051044.html) lassen sich u.a. auf _Heise Open Source_ nachlesen.
