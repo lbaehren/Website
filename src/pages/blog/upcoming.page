@@ -21,6 +21,23 @@ tags: Blog
 **in preparation ...**
 
 
+### Optimierungsmoeglichkeiten
+
+Es gibt doch immer wieder Moeglichkeiten alltaegliche Ablaeufe ein wenig zu optimieren, auch wenn es sich dabei um Dinge handelt, welche man scheinbat schon aus dem Schlaf absolvieren koennte. Nehmen wir doch einfach mal das Umsteigen in Koelner Hauptbahnhof: der aus Koblenz kommende Regionalexpress (RE 10504) faehrt auf Gleis 2 ein, waehrend mein Anschluss nach Utrecht (ICE 222) -- welcher heute wohl 35 Minuten oder mehr Verspaetung haben wird -- von Gleis 4 abfaehrt. Neben diesem Gleiswechseln kommt noch hinzu, dass der RE recht weit vorne am Bahngleis anhaelt (zum Dom hin), waehrend die Wagen der 2. Klasse im ICE in den Abschnitten C-F zu finden sind. Das bedeutet also, dass ich a) von einem Gleis zum anderen laufen und b) mich auf dem Abfahrtsgleis in umgekehrter Richtung orientieren muss. Die entscheidende Eingebung (soweit man innerhalb dieses bescheidenen Rahmens davon reden kann) war nun, dass es viel mehr Sinn macht, diese beiden Laufabschnitt in umgekehrter Reihenfolge zu absolvieren, d.h. einfach die Seiten des durch die Endpunkte aufgespannten Parallelograms in umgekehrter Richtung abzugehen.
+
+~~~~
+               A     B     C     D     E     F
+Gleis 1   -----+-----o-----+-----+-----+-----+-----
+
+Gleis 2   -----+-----+-----+-----+-----+-----+-----
+Gleis 3   -----+-----+-----+-----+-----+-----+-----
+
+Gleis 4   -----+-----+-----+-----+-----o-----+-----
+Gleis 5   -----+-----+-----+-----+-----+-----+-----
+~~~~
+
+Die sonst immer verwendete Route war gewissermassen die zunaechst einmal intuitive Variante: aus dem Zug aussteigen, sich die naechste Treppe schnappen, ueber den Quertunnel zum Abfahrtsgleis laufen, dort die Treppe hoch und dann zum richtigen Gleisabschnitt laufen. Der entscheidende Nachteil an dieser Variante: ich gerate auf diese Weise genau in den Pulk der ebenfalls in Koeln aussteigenden Reisenden (alles Pendler, also nicht gerade wenige), so dass vor allen Dingen der erste Streckenabschnitt recht zaeh verlaeuft. Wendet man sich aber aus dem Zug aussteigend in die umgekehrte Richtung, dann laessen sich gleich zwei Dinge miteinander kombinieren: ich laufe auf diese Weise schon einmal zum korrekten Gleisabschnitt, wo die Treppe, wenn ich dort angekommen bin, bereits wieder frei ist.
+
 
 ### CMake macros ... and optional parameters
 
