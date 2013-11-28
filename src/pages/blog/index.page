@@ -9,6 +9,97 @@ tags: Blog
  
 **:::**
  
+### Nicht kompatibel ###
+
+
+
+
+_Thu, 28. November 2013 -- 20:08_
+
+Es bleibt wohl dabei: die Ansichten am [KNMI](http://www.knmi.nl) und bei [SRON](http://www.sron.nl), was die Organisation der Arbeitsbedingungen betrifft, sind einfach nicht zusammenzubringen (zumindest nicht auf einen langen Zeitraum). Bevor ich vorhin in Richtung Bushaltestelle losgesprintet bin (der ICE faellt zwar gerne schon einmal aus, auf der anderen Seite wartet er aber leider nicht auf mich), hatte ich noch eine Unterhaltung mit Werner, welche mir wieder einmal klar gemacht hat, warum es Umgebungen gibt, in welchen ich nach Moeglichkeiten nicht arbeiten moechte. Diese Regelversessenheit, wie sie vor allen Dingen in dieser speziellen Abteilung herrscht, ist fuer mich eigentlich nur eines: abschreckend.
+
+Um fair zu sein: diese Ansichten hoere ich nicht das erste Mal... aber alleine nur die Wiederholung macht es in keinster Weise besser oder zutreffender. Eine Umgebung wie das KNMI und ich scheinen einfach auf sehr fundamentalen Niveau nicht miteinander kompatibel zu sein; da bin ich doch recht froh, dass meine Tage dort gezaehlt sind und sich das Ende meines Exils abzeichnet.
+
+Mal einfach ein wenig stichpunktartig:
+
+ - Buerozeiten sind mehr dazu da eingehalten zu werden, denn wirklich zu Produktivitaet zu fuehren. Mir ist vollkommen klar, dass es Sinn macht sich immer wieder mit den Leuten kurzzuschliessen, mit welchen man gemeinsam an einer Sache arbeitet. Was aber der Mehrwert davon ist zu einer viel zu fruehen Tageszeit in einem Buero zu sitzen (wo man dann eh noch halb verschlafen ist), wenn man eh an einer Sache sitzt, welche vor allen Dingen das Implementieren von Code erfordert, hat mir bisher noch keiner erklaeren koennen. Aus irgendeinem Grunde geht am KNMI das Geruecht um, dasss Menschen alleine am Institutsschreibtisch in der Lage sind ihre Arbeit zu machen -- dass dies mit der Wirklichkeit nur noch begrenzt etwas zu tun hat, scheint da keinen zu stoeren. Klarer Pluspunkt fuer SRON!
+
+ - Es ist vollkommen egal, welchen Editor eine Person gebraucht: Coding conventions wie z.B. "Einrueckungen bei schleifen sind vier Leerzeichen weit, Leerzeichen und nicht ein Tab der Laenge vier" sind meines Wissen vollkommen unabhaengig davon ob ich nun **vi**, **vim**, **Nedit**, **Emacs**, **XEmacs**, **Aquamacs**, **KEdit**, **Eclipse** oder was auch immer gebrauche. Aus irgendeinem Grunde scheint diese einfache Wahrheit nicht so ganz in die Koepfe einsickern zu wollen, denn auch eben durfte ich mir wieder anhoeren, dass es ja problematisch sei, dass ich einen anderen Editor als Leute in der Gruppe am KNMI verwende. Warum dies allerdings der Fall ist kann mir noch keiner so wirklich nachvollziehbar erklaeren. In gleicher Weise war bisher auch nicht in Erfahrung zu bringen, was denn der Vorteil daran ist, mich mit einem Editor (oder genauer: einer Entwicklungsumgebung) herumzuschlagen, welche ich a) auch guten Gruenden sonst nie verwenden wurde und b) mich nur unnoetig Zeit kostet, weil mir die Bedienung nicht gelauefig ist. Ich weiss, dass gerade so Dinge wie Editoren ein Punkt sind, ueber welchen sich vortrefflich streiten laesst, aber ich denke doch mal, dass ich ueber die Jahre gelernt habe, dass es sich hierbei um eine sehr individuelle Wahl handelt, welche in der Regel auf praktischen Erfahrungswerten basiert. Wo die ganze Angelegenheit natuerlich vollkommen absurd ist, wenn es bald daran gehen wird, dass ein Teil des im Framework laufenden Codes bei SRON geschrieben werden soll -- da werden wir bestimmt nicht hingehen und die Umgebung des KNMI klonen.
+
+ - Wenn ich so viel Angst vor moderneren Versions-Kontroll Tools wie **Git** habe, dann bitte -- bleibt von mir aus bei **Subversion** als zentrale Infrastruktur. Warum ich dann allerdings lokal fuer mich nicht etwas anderes verwenden sollte, bleibt wohl ein wohlgehuetetes Geheimnis. Aus der Open-Source Community stammenden Arbeistechniken scheint das KNMI insgesamt recht kritisch gegenueber zu stehen, so dass es vollkommen undenkbar scheint, dass jemand Code unter Versionskontrolle halten will, ohne staendig in Verbindung mit einem zentralen Server bleiben zu muessen. Was sind denn die Konsequenzen? Da ich mit Vorliebe unterwegs im Zug arbeit (und da immer wieder einiges geschafft kriege), ziehe ich es vor eine Moeglichkeit zu haben Zwischenschritte sichern zu koennen; vor allen Dingen dann, wenn ich z.B. an einer groesseren Menge an Code-Aenderungen arbeite, bietet mir ein Tool wie Git [das noetige Sicherheitsnetz](/blog/2013/2013-11/2013-11-23_11-19.html) um die Gefahr zu minimieren, dass mir durch eine kleine Unachtsamkeit alles an Aenderungen verloren geht. Ginge es nach der KNMI Methode, dann wuerde ich a) eh nicht wo anders am Institut arbeiten und b) ueber keinerlei direkte Moeglichkeit verfuegen meine Arbeit in regelmaessigen Abstaenden zu sichern -- um bestehende Aenderungen rueckgaengig zu machen und eine fruehere Version wieder herzustellen ist ein Tool wie Subversion auf die Verbindung zu einem Server angewiesen... recht unwahrscheinlich wenn man sich irgendwo unterwegs in einem Zug befindet, wo sich ein Verein die die Telekom jede Minute WLAN teuer bezahlen laesst.
+
+ - Insgesammt scheint die Arbeitsumgebung mehr auf das Befolgen von Regeln und Vorschriften optimiert zu sein, als das Foerdern von kreativem Loesen von Problemen. Ich mag mich da vielleicht irren, aber auf Dauer scheint mir dieses kaum ueber den eigenen Tellerrand hinausschauen doch ein wenig problematisch zu sein. Wirkliche Innovation kommt auf diese Weise wohl kaum zustande. Es besteht aber allem Anschein nach eine ziemliche Angst vor Abweichungen von der Konformitaet, dass auf diese Weise ein letzten Endes eher Technik-konservatives Umfeld entsteht, welches hinter der "wilden Welt" da draussen zurueckbleibt. Was dies betrifft muss ich den Leuten bei SRON wieder einmal ein Kompliment machen: dort war man durchaus neuen Ansaetzen aufgeschlossen, auch wenn dies bedeutete, dass man ein wenig mit dem brechen muss, was bis dahin etabliert war -- das erfordert sicherlich eine gewisse Lernkurve, haelt den Geist aber frisch und fuer neue Dinge empfaenglich.
+
+Wie ich schon gesehen habe, macht es nur wenig Sinn mit den Leuten am KNMI ueber derartige Dinge zu diskutieren -- dort sind anscheinend alle so indoktriniert, dass alles andere als die eigene Arbeitsweise als ein direkter Weg ins Chaos gesehen und wie die Pest von sich gewiesen wird. Fuer mich ist dies aber vielleicht doch auch noch einmal eine ganz brauchbare Erfahrung gewesen, weil ich nun umso besser weiss auf welches Details ich bei der Arbeitsstellenwahl aufpassen muss.
+ 
+**:::**
+ 
+ 
+### Berlusconi verliert sein wichtigstes Amt ###
+
+
+
+
+_Wed, 27. November 2013 -- 18:35_
+
+Dass ich [das](http://www.tagesschau.de/ausland/berlusconi-senat100.html) noch erleben darf:
+
+> Der frühere italienische Regierungschef Silvio Berlusconi muss sein Senatorenmandat mit sofortiger Wirkung abgeben. Die Parlamentskammer stimmte für einen Ausschluss des wegen Steuerbetrugs rechtskräftig verurteilten Politikers. Damit verliert der 77-Jährige sein wichtigstes öffentliches Amt. Zudem darf er sich für sechs weitere Jahre nicht mehr um neue politische Ämter bewerben. Berlusconi hat jetzt zum ersten Mal seit 1994 kein Parlamentsmandat mehr - und verliert auch seine rechtliche Immunität.
+
+Mir ist nie so ganz nachvollziehbar gewesen, wie es der Mann geschafft hat immer wieder hochzukommen, aber mittlerweile gibt es doch auch in Italien ausreichend Menschen welche die Nase voll haben. Ueber Jahre hinweg wurden alle nur erdenklichen Hebel in Bewegung gesetzt, um sich dem Zugriff der Justiz zu entziehen, aber diese Aera scheint sich nun endlich zum Ende zu neigen. Italien bleibt zwar immer noch Italien -- was soviel heissen soll: sag niemals nie -- aber die Chancen auf ein Bounce-Back (oder schlimmer noch: ein Come-Back) werden nun deutlich kleiner.
+ 
+**:::**
+ 
+ 
+### Optimierungsmoeglichkeiten ###
+
+
+
+
+_Wed, 27. November 2013 -- 12:21_
+
+Es gibt doch immer wieder Moeglichkeiten alltaegliche Ablaeufe ein wenig zu optimieren, auch wenn es sich dabei um Dinge handelt, welche man scheinbat schon aus dem Schlaf absolvieren koennte. Nehmen wir doch einfach mal das Umsteigen in Koelner Hauptbahnhof: der aus Koblenz kommende Regionalexpress (RE 10504) faehrt auf Gleis 2 ein, waehrend mein Anschluss nach Utrecht (ICE 222) -- welcher heute wohl 35 Minuten oder mehr Verspaetung haben wird -- von Gleis 4 abfaehrt. Neben diesem Gleiswechseln kommt noch hinzu, dass der RE recht weit vorne am Bahngleis anhaelt (zum Dom hin), waehrend die Wagen der 2. Klasse im ICE in den Abschnitten C-F zu finden sind. Das bedeutet also, dass ich a) von einem Gleis zum anderen laufen und b) mich auf dem Abfahrtsgleis in umgekehrter Richtung orientieren muss. Die entscheidende Eingebung (soweit man innerhalb dieses bescheidenen Rahmens davon reden kann) war nun, dass es viel mehr Sinn macht, diese beiden Laufabschnitt in umgekehrter Reihenfolge zu absolvieren, d.h. einfach die Seiten des durch die Endpunkte aufgespannten Parallelograms in umgekehrter Richtung abzugehen.
+
+~~~~
+               A     B     C     D     E     F
+Gleis 1   --+-----o-----+-----+-----+-----+-----
+
+Gleis 2   --+-----+-----+-----+-----+-----+-----         Variante 1: 1A -> 4A -> 4E
+Gleis 3   --+-----+-----+-----+-----+-----+-----         Variante 2: 1A -> 1E -> 4E
+
+Gleis 4   --+-----+-----+-----+-----o-----+-----
+Gleis 5   --+-----+-----+-----+-----+-----+-----
+~~~~
+
+Die sonst immer verwendete Route war gewissermassen die zunaechst einmal intuitive Variante: aus dem Zug aussteigen, sich die naechste Treppe schnappen, ueber den Quertunnel zum Abfahrtsgleis laufen, dort die Treppe hoch und dann zum richtigen Gleisabschnitt laufen. Der entscheidende Nachteil an dieser Variante: ich gerate auf diese Weise genau in den Pulk der ebenfalls in Koeln aussteigenden Reisenden (alles Pendler, also nicht gerade wenige), so dass vor allen Dingen der erste Streckenabschnitt recht zaeh verlaeuft. Wendet man sich aber aus dem Zug aussteigend in die umgekehrte Richtung, dann laessen sich gleich zwei Dinge miteinander kombinieren: ich laufe auf diese Weise schon einmal zum korrekten Gleisabschnitt (von A nach E), wo die Treppe, wenn ich dort angekommen bin, bereits wieder frei ist. Rein von der Entfernung her laesst sich da (erwartungsgemaess) nichts rausholen, aber es ist doch deutlich angenehmer, sich nicht durch eine Menschenmenge schieben zu muessen (was vor allen Dingen mit schwerem Gepaeck keinen Spass macht).
+ 
+**:::**
+ 
+ 
+### Bedenklicher Ansatz ###
+
+
+
+
+_Tue, 26. November 2013 -- 19:37_
+
+Die Verhandlungen über eine Freihandelszone zwischen USA und EU kommen gut voran...
+
+> ... allerdings wurde einer der Knackpunkte auch zunächst ausgeklammert: gentechnisch veränderte Pflanzen und Lebensmittel. In den USA sind Landwirtschaft und Lebensmittelindustrie ohne Gentechnik nicht mehr denkbar. In der EU dagegen stoßen große Saatgutkonzerne wie Monsanto auf erheblichen Widerstand.
+
+[Tagesschau.de](http://www.tagesschau.de) nimmt diesen Zusammenhang ein wenig zum Anlass mal ein wenig genauer darauf zu schauen, [wie Monsanto die USA verändert](http://www.tagesschau.de/wirtschaft/monsanto112.html). Sobald man sich da auch nur klein wenig naeher mit beschaeftigt, dann werden die unterschiedlichen Sichtweisen auf beiden Seiten des Alantik sichtbar: was in Europa eher als eine suspekte Technologie gesehen wird, ist auf der anderen Seite des Atlantik Ausdruck von Unternehmertum und menschgemachter Brauchbarmachung der Natur. Statt aber Pflanzen "einfach nur" resistenter gegenueber Hitze oder Duerre zu machen, zielt man allem Anschein nach gleich auf einen Bundle-Deal ab:
+
+> Mais, Soja und Baumwolle wurden so verändert, dass ihnen das Unkrautvernichtungsmittel "Roundup" von Monsanto nichts ausmacht. Unkraut und Schädlinge sterben ab, aber das Getreide wächst weiter.
+
+Das dieser Ansatz nicht nur vom Grundsatz, sondern auch aus der Praxis her aeusserst bedenklich ist, zeigt sich daran, dass sich auch in den USA Kritik an Monsantos Produkten regt:
+
+> Immer häufiger klagen Farmer über besonders resistente Unkräuter auf ihren Feldern. Diese sogenannten "Superweeds" wachsen trotz Mehrfachbehandlung mit Herbiziden einfach weiter. Auch Farmer Troy Roush beobachtet die Super-Unkräuter auf seinen riesigen Feldern im US-Bundesstaat Indiana. Roush weiß, dass Monsanto bereits an der nächsten Generation von Gen-Mais und Gen-Soja forscht. Die kann noch stärkere Unkrautvernichter aushalten. "Eine Spirale nach oben" sei das, meint Farmer Roush.
+
+Teil dieser Spirale ist es dann natuerlich auch, dass es immer staerkerer Herbizide bedarf, um die Pflanzen vor Schaedlingen zu schuetzen... davon geraten erstere natuerlich ins Essen und letztere bauen mit der Zeit eine Resistenz auf. Aber ob da wirklich noch an eine gesunde Ernaehrung gedacht wird, darf zumindest einmal bezweifelt werden: von der Art her, wie dies eingerichtet ist, klingt es doch eher danach, dass man versucht den eigenen Gewinn immer weiter zu erhoehen, indem man sich selber Kunden (und Abhaengigkeiten) schafft. Das diese Vorgehensweise auch noch patentrechtlich geschuetzt wird hat schon ein wenig etwas perverses an sich.
+ 
+**:::**
+ 
+ 
 ### Fahrgastrechte-Formular ###
 
 
@@ -235,83 +326,6 @@ Angekuendigt war die Einfuehrung von Mir ja eigentlich schon fuer Ubuntu 13.10, 
 > Durch den Verzicht auf Mir entschärft Canonical auch den Streit mit den Ubuntu-Varianten Kubuntu, Xubuntu, Ubuntu Gnome und Lubuntu, die bereits erklärt haben, dass sie nicht auf Mir umstellen wollen.
 
 [Weitere Details](http://www.heise.de/open/meldung/Ubuntu-14-04-Touch-und-Desktop-bleiben-getrennt-2051044.html) lassen sich u.a. auf _Heise Open Source_ nachlesen.
- 
-**:::**
- 
- 
-### Persoenlich regeln ###
-
-
-
-
-_Wed, 20. November 2013 -- 12:26_
-
-Ja, es macht einen deutlichen Unterschied, wie man die Dinge anpackt: so habe ich heute Morgen noch mit Richard zusammengesessen, um ueber meine Arbeit am [KNMI](http://www.knmi.nl) und ein wenig allgemeiner die laengerfristige Zusammenarbeit zwischen den beiden Instituten zu sprechen. Der entscheidende Unterschied: wenn es um derartige Dinge geht, dann geht dies bei Richard in einem direkten Gespraech, wo es Sinn und Zweck der Veranstaltung ist moegliche Hindernisse oder Probleme aus dem Weg zu raeumen, um so das Projekt als Ganzes weiterzubringen. Das ist doch ein deutlicher Unterschied zu dem, was ich anderenorts erfahren habe, wo dies eben nicht der Fall zu sein scheint (zumindest nicht mir gegenueber); selbst organisatorische Dinge habe ich nur auf dem indirekten Wege mitbekommen, was bedeutet dass es eine Weile dauert, ehe die Information bei mir ankommt und ich dementsprechend handeln kann. Im persoenlichen Gespraech geht dies alles viel schneller... und typischerweise kommen bei der Gelegenheit gleich auch noch einmal andere Dinge mit auf den Tisch, so dass auch diesmal das Treffen recht produktiv.
- 
-**:::**
- 
- 
-### Erwartungen statt Fakten ###
-
-
-
-
-_Tue, 19. November 2013 -- 10:56_
-
-Ist keinesfalls das erste Mal, dass ich etwas in dieser Art gelesen habe:
-
-> Also weighing on the company, recent third-quarter earnings that weren't as impressive as Wall Street had hoped. While [Model S](http://www.teslamotors.com/models) deliveries were ahead of [Tesla](http://www.teslamotors.com)'s own expectations, they were lower than those of analysts, and that discrepancy has been troubling the company's share price ever since the day it reported.
-
-Also nur noch einmal um dies zu verstehen: der Boersenkurs ist nach unten gegangen, weil das Unternehmen die Erwartungen der Boersianer nicht erfuellt hat, nicht weil das Unternehmen schlechte Zahlen geschrieben hat. Erwartungen, welche hoeher waren als jene, welche von dem Unternehmen selber veroeffentlicht wurden... Das heisst also die gleichen "Spezialisten", welche zunaechst einen unrealistischen Wachstumswert ansetzen, werten anschliessend die Papier der Firma ab, weil diese eben jene ueberhoehten Erwartungen nicht erfuellt hat. Also da moechte man doch einfach nur mal wieder einen grossen, mit Betongewichten beschwerten, Sack auf dem Boden des Ozeans versenken...
- 
-**:::**
- 
- 
-### Ausflug an die Mosel ###
-
-
-
-
-_Mon, 18. November 2013 -- 22:46_
-
-Ok, das war jetzt nicht ein Ausflug um sich einfach eine schoene Zeit zu machen; vielmehr stand der Ausflug noch auf dem Programm, weil der Zahnarzt des Vertrauen nun leider einmal nicht in Bonn seine Praxis hat.
-
-![GPS Track](/blog/2013/2013-11/2013-11-18_GPS_track.png)
-
-Waehrend es bei besseren Lichtverhaeltnissen sicherlich sehr reizvoll gewesen waere, die Umgebung mit der Kamera zu erkunden, habe ich heute die Zeit lieber dafuer genutzt, um noch an dem Kalibrations-Algorithmus zu arbeiten, welchen ich fuer das KNMI fertigstellen soll. Ich kann zwar auch nach diesem Nachmittag nicht behaupten, dass ich mich mit [Python](http://www.python.org) sonderlich wohl fuehle, aber ein Stueck weiter bin ich definitiv gekommen. Zumindest habe ich diesmal damit begonnen mir selber ein klein wenig Infrastruktur zu schreiben (wie ich dies sonst auch in C++ machen wuerde), um mir bei der Loesung der Aufgabe behilflich zu sein.
-
-~~~~
-class Data(object):
-    """ Data object to facilitate passing around input and generated data.
-    """
-    def __init__(self, *args, **kwargs):
-        """ Initialize object's internal data.
-        """
-        self.image_area = []  ## Image area for full CCD
-        self.selection  = []  ## Image area selection slices
-        self.signal     = []  ## Detector signal for full CCD
-        self.f_norm_row = []  ## Row normalization factor
-        self.f_norm_col = []  ## Column normalization factor
-        self.index_row  = []  ## Row number index for selection
-        self.index_col  = []  ## Column number index for selection
-        self.csm        = []  ## Spectral calibration map
-~~~~
- 
-**:::**
- 
- 
-### IMDb ratings ###
-
-
-
-
-_Sun, 17. November 2013 -- 21:12_
-
-Also so genau habe ich mir dies bisher auch noch nie angeschaut; die [Internet Movie Database](http://www.imdb.com) (IMDb) gehoert sicherlich mit zu den haeufigst aufgesuchten Plaetzen im Web, aber das heisst bei weitem nicht, dass ich mich ueberall durch die diversesten Unterabteilungen geklickt habe. Waehrend ich persoenlich ja gerne schon einmal etwas mehr auf Erkundungstour gehe, ist Julia in der Regel eher an Trailern und Ratings fuer die Filme interessiert (zwecks Auswahl was sich denn lohnen koennte zu gucken). Was ich dieses Mal bei [Iron Man 3](http://www.imdb.com/title/tt1300854) allerdings das erste Mal gemacht habe, war dem Link ueber die [Details zu dem Rating](http://www.imdb.com/title/tt1300854/ratings) zu folgen -- was sich dahinter verbarg war auch mir neu:
-
-![IMDb ratings Iron Man 3](/blog/2013/2013-11/2013-11-17_IMDb_rating.png)
-
-Das fuer sich genommen war ja schon einmal ganz nett. Was mir dann bei etwas genauerem Hinschauen auffiel war, dass die Votes sogar gleich mehrfach statistisch ausgewertet werden: neben dem gewichteten Mittelwert (_weighted average_), werden sowohl arithmetischer Mittelwert (_arithmetic mean_) und Median mit aufgelistet. Das man dies noch ein gutes Stueck weiter spinnen koennte, duerfte sich wohl von alleine erklaeren -- ohne da aber Zugriff auf die Rohdaten zu haben hat sich dies aber gleich auch schon wieder erledigt (ausserdem mache ich mich da erst einmal lieber noch ein wenig ueber die Daten vom Blog her).
  
 **:::**
  
