@@ -9,6 +9,32 @@ tags: Blog
  
 **:::**
  
+### Abarbeiten ###
+
+
+
+
+_Fri, 29. November 2013 -- 18:59_
+
+Als dies war doch eine recht geschaeftige Woche: nicht nur alleine die Liste der abgearbeiteten Aufgaben ist so lange wie eine Weile nicht mehr (was aber auch damit zusammenhaengen koennte, dass ich einfach viel konsequenter bin mir die Dinge zu notieren und anschliessend abzuhaken), sondern auch rein vom subjektiven Eindruck her scheine ich einiges auf die Reihe bekommen haben:
+
+ - Die am letzten Wochenende begonnene Sortierung der Finanzen (immer wieder einmal noetig) ist ein gutes Stueck weiter gekommen.
+
+ - Die Arbeit am [KNMI](http://www.knmi.nl) befindet sich auf der Zielgeraden.
+
+ - Die Krankenversicherung ist endlich geregelt.
+
+ - Es hat heute Nachmittag bereits wieder eine Hausbesichtigung gegeben, fuer den morgigen Tag steht noch eine weitere auf dem Programm.
+
+Um all dies ein wenig unter Kontrolle und im Blick zu behalten, sorge ich schon seit einer Weile dafuer dass alle Aufgaben ueber [Taskwarrior](http://taskwarrior.org) verwaltet werden; da alle Versuche meine Aufgaben Papier-basiert im Blick zu behalten bisher gescheitert sind, scheint dieses von der Konzeption her recht einfache (aber vom Funktionalitaetsumfang recht beeindruckende) Tool sehr gut in meinen allgemeinen Arbeitsfluss zu passen. Da ich ja doch viel Zeit am Rechner verbringe (und dort vor allen Dingen auf der Kommandozeile), scheint es einfach nur konsequent zu sein, einen Task-Manager zu verwenden, welcher an dieses Umfeld angepasst ist.
+
+![task history](/blog/2013/2013-11/2013-11-29_Task_history.png)
+
+Wie sich erkennen laesst benutze ich _Taskwarrior_ bereits schon eine Weil, aber ich glaube erst in diesem Herbst habe ich wirklich konsequenter damit begonnen private und arbeitsbezogene Aufgaben einzutrage und vorzuhalten. Woran ich jetzt sicherlich noch ein wenig feilen muss ist, dass ich auch kosequent die aufgefuehrten Dinge der Reihe nach abarbeite; was dies betrifft besteht noch Raum zur Verbeserung, aber das scheint sich Stueck fuer Stueck einzupendeln, vor allen Dingen dann wenn ich merke, dass mir dies hilft ein wenig besser meine Zeit zu organisieren.
+ 
+**:::**
+ 
+ 
 ### Nicht kompatibel ###
 
 
@@ -304,28 +330,6 @@ Na, da darf man ja einmal gespannt sein, was da geboten wird:
 > 30 Jahre nach ihrem letzten großen gemeinsamen Projekt formiert sich die britische Komikertruppe Monty Python für eine Bühnenshow neu. In einer einmaligen Show am 1. Juli kommenden Jahres würden sie noch einmal einige ihrer bekanntesten Sketche auf die Bühne bringen. Das gaben John Cleese, Terry Gilliam, Eric Idel, Terry Jones und Michael Palin auf einer Pressekonferenz in London bekannt.
 
 So sonderlich viel Informationen scheint es da bisher noch nicht zu geben (zumindest nicht auf deutschsprachigen Seiten), aber wer will kann gerne einmal schauen [was die Tagesschau zu berichten hat](http://www.tagesschau.de/kultur/monty-python106.html).
- 
-**:::**
- 
- 
-### Ubuntu 14.04 ohne Mir und Unity 8 ###
-
-
-
-
-_Wed, 20. November 2013 -- 17:08_
-
-Die [Meldung auf Heise News](http://www.heise.de/newsticker/meldung/Ubuntu-14-04-verzichtet-auf-Umstellung-von-Display-Server-und-Desktop-2051100.html) war keinesfalls die Einzige zu diesem Thema, aber da vielleicht nicht jeder regelmaessig Computer-Nachrichten liest hier noch einmal die relevante Passage:
-
-> In seiner [Keynote](http://summit.ubuntu.com/uds-1311/meeting/22027/intro-by-jono-bacon-keynote-by-mark-shuttleworth) auf dem [Ubuntu Developer Summit](http://summit.ubuntu.com/uds-1311) hat Ubuntu-Sponsor Mark Shuttleworth die großen Themen für die Arbeit an der kommenden Ubuntu-Version 14.04 LTS (Trusty Tahr) umrissen.
->
-> Ubuntu 14.04 auf dem Desktop wird nicht auf den neu entwickelten Display-Server Mir und auf die neue Desktop-Variante Unity 8 setzen, sondern beim X Window System und bei Unity 7 bleiben. In eine auf Stabilität optimierte LTS-Version, für die Canonical fünf Jahre Updates garantiert, könne man keine so grundlegend neue Technik aufnehmen, meint Shuttleworth.
-
-Angekuendigt war die Einfuehrung von Mir ja eigentlich schon fuer Ubuntu 13.10, aber da es dort vor allen Dingen noch Probleme mit dem X-Compatibility Layer bei Multi-Display Setups gab, wurden die Plaene eine Release weiter verschoben. Dies scheint allerdings nicht ausgereicht haben, denn fuer die Fruehjahr anstehende naechste LTS Release scheint man sich noch nicht ausreicht sicher zu fuehlen. Auf der einen Seite bedeutet dies, dass die Entwicklung fuer Touch und Desktop Varianten noch eine Weile laenger nicht zusammengefuehrt wird, aber der anderen Seite scheinen moegliche Konflikte mit den Machern diverser Ubuntu-Varianten ein wenig hinausgezoegert zu sein:
-
-> Durch den Verzicht auf Mir entschärft Canonical auch den Streit mit den Ubuntu-Varianten Kubuntu, Xubuntu, Ubuntu Gnome und Lubuntu, die bereits erklärt haben, dass sie nicht auf Mir umstellen wollen.
-
-[Weitere Details](http://www.heise.de/open/meldung/Ubuntu-14-04-Touch-und-Desktop-bleiben-getrennt-2051044.html) lassen sich u.a. auf _Heise Open Source_ nachlesen.
  
 **:::**
  
