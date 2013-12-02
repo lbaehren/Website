@@ -9,6 +9,18 @@ tags: Blog
  
 **:::**
  
+### Stille ###
+
+
+
+
+_Mon, 02. December 2013 -- 09:02_
+
+Das ist aber heute Morgen nicht so sonderlich toll hier im ICE 222... Dass ich seit der Abfahrt in Koeln noch keine Zugpersonal ausser dem Getraenkeverkaeufer gesehen habe, kann ich ja noch verkraften. Dass es aber seit Moenchengladbach keinerlei Durchsagen mehr gegeben hat, was die genaue Route und die dementsprechenden Ankunftszeiten in Utrecht und Amsterdam betrifft, finde ich hingegen schon ein wenig aergerlich. Ich weiss leider nicht, mit was fuer einer personellen Besetzung wir heute Morgen unterwegs sind, aber ein paar Hinweise waeren schon ganz nett gewesen. Welche der moeglichen Streckenvarianten von Venlo aus wir denn nur wirklich eingeschlagen haben, liess sich alleine daran erkennen, dass wir mit recht gemaessigtem Tempo durch Eindhoven durchgefahren sind -- ansonsten haette ich vielleicht immer noch darauf gewartet den Bahnsteig in Nijmegen zu Gesicht zu bekommen. Von der Ankunftszeit her duerften wir gut 20 Minuten zu spaet sein; das laesst sich noch aushalten (weil dies fuer mich immer noch reicht, um rechtzeitig bei dem Progress Meeting zu erscheinen), aber auch hier waere ein kurze Durchsage schon ganz brauchbare gewesen.
+ 
+**:::**
+ 
+ 
 ### Umleitung ###
 
 
@@ -308,20 +320,6 @@ Wie auch hier wieder deutlich werden sollte: all dies funktioniert ohne die Hilf
 ![Github punch-card](/blog/2013/2013-11/2013-11-21_Github_punchcard.png)
 
 Wie sich aus der [Github punch-card](https://github.com/lbaehren/testing/graphs/punch-card) erkennen laesst, habe ich diese Woche so einiges an Aenderungen eingecheckt, ohne dass ich auch nur ansatzweise in der Naehe einer Internetverbindung oder einer anderweitigen Server-Infrastruktur gewesen waere: in der Tat stammen die ersten Commits vom Montag Nachmittag, wo ich ja als potentieller Fahrer mit beim Zahnarzt war. Nachdem ich es dort geschafft hatte mir eine Aenderung zu verwerfen, welche ich dann eben nicht zurueckholen konnte, habe ich ganz schnell die Reissleine gezogen und Git auf die Scripten losgelassen, mit welchen ich versuchte Loesungsstrategien auszuarbeiten, welche dann anschliessend in dem OCAL Framework verwendet werden koennen. Ein Sicherheitsnetz wie dieses ist viel wert... und es gibt kaum eine Rechtfertigung in solchen Faellen ohne Versionskontrolle zu arbeiten. Also, unbedingt merken fuer das naechste Mal!
- 
-**:::**
- 
- 
-### Rueckreise ###
-
-
-
-
-_Fri, 22. November 2013 -- 18:38_
-
-Irgendwie ist es ja schon immer wieder ein klein wenig seltsam, wenn ich mich hier vonUtrecht aus auf den Heimweg in Richtung Bonn mache. Es gibt Wochen, in welchen ich garnicht erst so richtig hier vor Ort ankomme, es kann aber auch genauso passieren, dass ich die Zugfahrt brauche, um den Uebergang zwischen den beiden Orten und Umgebungen hinzukriegen. Dabei ist es nicht einmal, dass ich zwanghaft versuche gedanklich an einer bestimmten Stelle zu bleiben -- ich denke einfach mal, dass dies ein wenig davon abhaengt, was in der jeweiligen Woche geschieht. Ein Tag so wie er es heute gewesen ist, traegt natuerlich auch nicht so recht dazu bei, sich oertlich sauber einordnen zu koennen: gerade wenn ich mich garnicht grossartig vom Fleck bewege und die ganze Zeit mit den Gedanken bei einer Aufgabe bin, dann geht mir ein wenig die Wahrnehmung dafuer verloren, wo ich mich denn eigentlich befinde. Ist am Montag auch schon so gegangen, als ich mich in der Zahnarztpraxis zum arbeiten hingesetzt habe; haette sich Julia einfach still und heimlich aus der Tuere geschlichen, dann waere mir dies wohl erst nach einer ganzen Weile aufgefallen.
-
-Heute Abend bin ich aber weitestgehend selber fuer den Transport zustaendig: gut, ich muss jetzt nicht den Bus bzw. Zug fahren, aber ich muss schon dafuer Sorge tragen, dass ich rechtzeitig aus der Wohnung zum Bahnhof aufbreche und mich dort bei Zeiten auf dem richtigen Gleis einfinde. Worauf ich nun aber mal gespannt bin ist, wie voll es denn im ICE wird; wenn es irgendwie geht versuche ich eigentlich den letzten ICE zurueck nach Frankfurt zu meiden, aber je nach dem wie die Wochenplanung ausfaellt geht es nicht anders. Schauen wir also einmal, wie es denn heute Abend wird.
  
 **:::**
  
