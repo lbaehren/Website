@@ -9,7 +9,6 @@ add_custom_target (Website ALL
   WORKING_DIRECTORY ${PROJECT_BINARY_DIR}
   COMMENT "Rendering website from sources ..."
   )
-add_dependencies (Website libblog)
 
 ## Installation instructions
 install(
@@ -31,7 +30,7 @@ if (script_blog_recent AND PROJECT_SOURCE_DIR_BLOG)
     )
 
   ## Dependencies
-  add_dependencies (recent_blog_entries blog stats)
+  add_dependencies (recent_blog_entries blog)
   add_dependencies (Website recent_blog_entries)
 
 endif (script_blog_recent AND PROJECT_SOURCE_DIR_BLOG)

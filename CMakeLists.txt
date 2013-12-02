@@ -127,6 +127,7 @@ foreach (_cmakeModule
   Git
   Doxygen
   Gem
+  Gnuplot
   KWsys
   Rake
   Ruby
