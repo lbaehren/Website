@@ -1,0 +1,20 @@
+---
+title: "Die Zukunft von KDE"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Wed, 11. December 2013 -- 17:56_
+
+Auch wenn ich ja schon lange nicht mehr ein sonderlicher Freund von [KDE](http://www.kde.org) bin -- was einfach daran liegt, dass ich mittlerweile etwas minimalistischere and schlankere Oberflaechen bevorzuge -- so schaue ich doch immer mal rein, wenn es Meldungen ueber das Projekt gibt.
+
+> KDE is an international team co-operating on development and distribution of Free, Open Source Software for desktop and portable computing. Our community has developed a wide variety of applications for communication, work, education and entertainment. We have a strong focus on finding innovative solutions to old and new problems, creating a vibrant, open atmosphere for experimentation.
+
+Teil dieser "innovative solutions" war unter anderem in der Vergangenheit, dass die komplette KDE Code-Basis von den [GNU Autotools](http://en.wikipedia.org/wiki/GNU_build_system) auf [CMake](http://www/cmake.org) umgestellt wurde ([Why the KDE project switched to CMake - and how](http://lwn.net/Articles/188693)). Dieser Vorgang -- und die damit einhergehenden Ueberlegungen -- waren von entscheidender Bedeutung fuer uns _CMake_ als zentrales Element fuer die LOFAR User Software einzusetzen; bei einer so grossen Community und Code-Basis musste es schon gute Argumente geben, wenn man da einen groesseren Schwenk vornehmen will.
+
+> The entire KDE Development Platform is built upon the Qt toolkit from Qt Development Frameworks, a Nokia company. Like Qt, the KDE libraries are LGPL or BSD licensed and enable easy cross-platform development. The KDE community works on enabling KDE applications both on Unix and Unix-like operating systems such as Linux, Sun Solaris and BSD as well as Windows and Mac. Efforts are also directed at supporting KDE on mobile platforms like Symbian, Windows CE and Maemo. Other operating systems like Haiku are supported by a vibrant community.
+
+Also ich heute Nachmittag den [Artikel auf Heise News](http://www.heise.de/open/meldung/Die-Zukunft-von-KDE-Wayland-Qt-5-einheitliche-Plasma-Shell-1848721.html) gesehen habe, musste ich sofort daran denken, wie unterschiedlich die Dinge doch laufen koennen: waehrend [Ubuntu](http://www.ubuntu.com) mit seinem [Mir display Server](https://wiki.ubuntu.com/Mir) zum wiederholten Male eigene Wege einschlaegt (und sich damit recht wenige Freunde macht), setzt das KDE Projekt mit [Wayland](http://wayland.freedesktop.org) recht konsequent auf den in der Open-Source Community skizzierten Pfad weg vom betagten [X](http://en.wikipedia.org/wiki/X_Window_System_core_protocol).
+x
