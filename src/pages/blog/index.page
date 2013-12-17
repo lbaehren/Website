@@ -9,6 +9,35 @@ tags: Blog
  
 **:::**
  
+### Dokumentation ###
+
+
+
+
+_Tue, 17. December 2013 -- 16:05_
+
+Dies ist wieder einmal einer jener Tage, an welchen ich bisher vor allen Dingen damit beschaeftigt bin Informationen zusammenzutragen und als Teil unserer Online Software Dokumentation zur Verfuegung zu stellen. Grundsaeztlich habe ich gegen derartige Aktivitaeten nichts einzuwenden, aber ich finde es immer ein wenig anstrengend, wenn man zunaechst einmal versuchen muss sich die benoetigten Details zusammen zu suchen. In diesem Falle geht es vor allen Dingen um das _OCAL Framework_ innerhalb wessen die Kalibrations-Datensaetze fuer den SWIR Detektor aus den Referenzmessungen ermittelt werden sollen -- da jenes vorwiegen in "agiler Weise" am KNMI entwickelt wird, gibt es leider so gut wie keine brauchbaren schriftlichen Aufzeichnungen, welche ich zu Rate ziehen koennte. Ein klein wenig bin ich aber trotzdem weitergekommen, so dass ich (endlich) vor dem Abend die Aenderungen in unser Repository einchecken kann, um mich dann anschliessend anderen Dingen zuzuwenden.
+
+~~~~
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	deleted:    Processor.md
+#	new file:   Processor/Binary_release.md
+#	new file:   Processor/Code_organization.md
+#	new file:   Processor/Configuration.md
+#	new file:   Processor/index.md
+#	modified:   Testing_Closed_loop.md
+#	deleted:    UVN_ISRF_correction.md
+#	deleted:    UVN_PRNU_correction.md
+#	modified:   index.md
+~~~~
+
+Die Liste der modifierten Dateinen ist zwar nicht so sonderlich lang, aber dies alleine gibt ja noch nicht wieder, wieviel Aenderungen insgesamt bisher stattgefunden haben (und vor allen Dingen wieviel Zeit man damit zugebracht hat, die Hintergrundinformationen zusammenzutragen).
+ 
+**:::**
+ 
+ 
 ### Neue Haltestelle ###
 
 
@@ -291,22 +320,6 @@ Na, das ist ja wieder einmal spannend am heutigen Abend. Endlch in Koeln angekom
 _Thu, 05. December 2013 -- 19:22_
 
 Wenn es lediglich dabei bleibt, dann bin ich wahrscheinlich noch einmal mit einem blauen Auge davon gekommen: noch waehrend der Zug in Utrecht am Bahnsteig gestanden hat kam die Durchsage, dass wir wohl so ziemlich die gleiche Route fahren werden, wie dies am Montag der Fall war. Aufgrund eines Blitzeinschlages ist die Strecke zwischen Arnhem und Oberhausen derzeit nicht befahrbar, so dass der ICE ueber 's-Hertogenbosch und dann Venlo umgeleitet wird. Wie schon bei der Hinfahrt, kann ich mich wohl dabei auf ca. 30 Minuten Verspaetung einstellen, es kommt aber wohl ein wenig darauf an, was es unterwegs denn noch so an der Strecke gibt.
- 
-**:::**
- 
- 
-### Stuermische Vor-Weihnachtszeit ###
-
-
-
-
-_Thu, 05. December 2013 -- 18:46_
-
-Na das ist doch einmal eine Weihnachtsstimmung der besonderen Art: auch wenn hier am Bahnhof Utrecht ueberall Wiehnachtsbeleuchtung aufgehangen ist, so haette man sich dies am heutigen Tage wahrscheinlich fast schon sparen koennen: die Anzeigetafeln ueberall in der Stationshalle flimmern vor lauter Verspaetungs- und Aenderungsmeldungen. Da ist so ziemlich alles drinn -- von 5 Minuten bis hin zu 75 Minuten Verspaetung. Der noerdliche Teil der Niederlande (jenseits von Zwolle) wird [seit 14:00 Uhr nicht mehr befahren](/blog/2013/2013-12/2013-12-05_15-15.html). Wer also heute noch in Richtung Groningen oder Leeuwarden aufbrechen will, duerfte so seine Probleme haben. Schaut man sich passend dazu die Karte mit Stoerungen an, dann ist recht gut zu erkennen, wie sich die Zugausfaelle Stueck fuer Stueck gen Sueden ausbreiten:
-
-![Storingen](/blog/2013/2013-12/2013-12-05T17_07_Storingen.png)
-
-Ich hoffe mal, dass a) das Schlimmste bei uns durch ist und b) nicht allzu viele Schaeden zurueckgeblieben sind; bisher wird der _ICE International_ von Amsterdam nach Frankfurt noch nicht angezeigt, aber alleine die Tatsache, dass es bisher keine Durchsage gegeben hat stimmt mich ein wenig zuversichtlich.
  
 **:::**
  

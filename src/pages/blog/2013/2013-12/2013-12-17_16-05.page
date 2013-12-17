@@ -1,0 +1,28 @@
+---
+title: "Dokumentation"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 17. December 2013 -- 16:05_
+
+Dies ist wieder einmal einer jener Tage, an welchen ich bisher vor allen Dingen damit beschaeftigt bin Informationen zusammenzutragen und als Teil unserer Online Software Dokumentation zur Verfuegung zu stellen. Grundsaeztlich habe ich gegen derartige Aktivitaeten nichts einzuwenden, aber ich finde es immer ein wenig anstrengend, wenn man zunaechst einmal versuchen muss sich die benoetigten Details zusammen zu suchen. In diesem Falle geht es vor allen Dingen um das _OCAL Framework_ innerhalb wessen die Kalibrations-Datensaetze fuer den SWIR Detektor aus den Referenzmessungen ermittelt werden sollen -- da jenes vorwiegen in "agiler Weise" am KNMI entwickelt wird, gibt es leider so gut wie keine brauchbaren schriftlichen Aufzeichnungen, welche ich zu Rate ziehen koennte. Ein klein wenig bin ich aber trotzdem weitergekommen, so dass ich (endlich) vor dem Abend die Aenderungen in unser Repository einchecken kann, um mich dann anschliessend anderen Dingen zuzuwenden.
+
+~~~~
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	deleted:    Processor.md
+#	new file:   Processor/Binary_release.md
+#	new file:   Processor/Code_organization.md
+#	new file:   Processor/Configuration.md
+#	new file:   Processor/index.md
+#	modified:   Testing_Closed_loop.md
+#	deleted:    UVN_ISRF_correction.md
+#	deleted:    UVN_PRNU_correction.md
+#	modified:   index.md
+~~~~
+
+Die Liste der modifierten Dateinen ist zwar nicht so sonderlich lang, aber dies alleine gibt ja noch nicht wieder, wieviel Aenderungen insgesamt bisher stattgefunden haben (und vor allen Dingen wieviel Zeit man damit zugebracht hat, die Hintergrundinformationen zusammenzutragen).
