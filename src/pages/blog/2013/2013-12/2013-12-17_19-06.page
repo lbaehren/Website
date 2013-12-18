@@ -1,0 +1,21 @@
+---
+title: "Fedora 20 freigegeben"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 17. December 2013 -- 19:06_
+
+Nun gibt es sich also endlich, die offizielle Freigabe der 20ten Ausgabe:
+
+> Etwas mehr als [zehn Jahre nach dem ersten Fedora](http://www.heise.de/meldung/Linux-Distribution-Fedora-feiert-zehnjaehriges-Bestehen-2042071.html) hat das [Fedora-Projekt](http://fedoraproject.org) jetzt die zwanzigste Ausgabe seiner Linux-Distribution [zum Download](http://fedoraproject.org/de/get-fedora) [freigegeben](https://lists.fedoraproject.org/pipermail/devel-announce/2013-December/001282.html). Sie trägt den Codenamen "Heisenbug" – ein nach Werner Heisenberg und dem von ihm beschriebenen Beobachtereffekt (Observer effect) benannte Bezeichnung für Software-Fehler, die verschwinden oder das Verhalten ändern, sobald man den Bugs hinterher spürt.
+
+Zumindest als virtuelle Machine hatte ich diese Release schon seit einer ganzen Weile bei mir auf dem Rechner laufen, so dass sich die Menge an Ueberraschungen insgesamt wohl in Grenzen halten duerfte. Es ist aber dennoch recht nett die diversen Neuerungen auch noch einmal in der [Uebersicht](http://www.heise.de/newsticker/meldung/Linux-Distribution-Fedora-20-freigegeben-Sendmail-und-Rsylog-aussen-vor-2068134.html) praesentiert zu bekommen:
+
+> Im Lieferumfang finden sich nicht nur die Desktop-Oberflächen Cinnamon, Gnome, KDE und Mate, sondern nun auch Enlightenment. Als Kernel dient Linux 3.11; der aktuelle Kernel 3.12 soll in den nächsten Tagen als Update nachgereicht werden. Mit Hilfe des Kommandozeilenwerkzeugs "nmcli" lassen sich jetzt Netzwerkverbindungen erstellen und modifizieren; das Konfigurationstool des NetworkManager beherrscht jetzt Bridging und Bonding.
+
+Ein vollstaendigere Besprechung der Neuerungen gibt es in einem [Artikel auf Heise Open Source](http://www.heise.de/open/artikel/Was-Fedora-20-Neues-bringt-2067858.html).
+
+Was ich nun machen werde ist, dass ich noch einmal in Update ueber die bereits bestehenden Installationen laufen lasse, um zu schauen, welche Aktualisierungen da noch an Bord kommen; wirklich grundlegende Aenderungen wuerde ich nicht mehr erwarten, aber ein kleinr Abgleich kann sicherlich nicht schaden. Wann ich dann auch bei Julia auf dem Laptop mal ein Upgrade durchfuehre, muss ich mir noch einmal ueberlegen (dies haengt schlieslich nicht alleine von mir ab), aber fuer den Rechner vom Muetterchen weiss ich schon recht gut, was ich da verwenden werde (auch wenn es bei dem Desktop vielleicht noch einmal einer Abstimmung bedarf).

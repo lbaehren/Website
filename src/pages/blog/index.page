@@ -9,6 +9,42 @@ tags: Blog
  
 **:::**
  
+### Angeklemmt ###
+
+
+
+
+_Wed, 18. December 2013 -- 09:42_
+
+So wie es scheint kann ich nun meine technische Infrastruktur ein gutes Stueck vereinfachen... zumindest was die Anzahl der Geraete betrifft und die Weise in welcher Daten zwischen ihnen abgeglichen werde muessen.
+
+Mit dem Start der Woche habe ich mich daran begeben mir einmal ein wenig genauer vorzunehmen, wie ich denn meine Podcast-Versorgung auf dem neuem Handy sicherstellen kann. Zunaechst einmal bin ich davon ausgegangen, dass alles wie bisher ueber den Rechner und das dort installierte iTunes laeuft -- diese Kette scheint nun nicht mehr noetig zu sein. Waehrend es bei einem iPhone sicherlich ein leichtes sein duerfte Daten mit einem MacBook zu synchronisieren, stellt sich diese Aufgabe bei einem Android Phone als deutlich komplizierter heraus. Die verschiedenen Loesungsansaetze, welche ich mir angeschaut habe, konnte mich allesamt nicht so wirklich zufrieden stellen, so dass ich mich stattdessen nach einer alleinstehenden Variante umgeschaut habe. Da das Galaxy S3 ja ueber eine WLAN Anbindung verfuegt, gibt es rein Internet-technisch keinen nennenswerten Unterschied mehr gegenueber dem Laptop (auch wenn letzteres immer noch die Moeglichkeit haette sich via Ethernet einzuklinken). Folgrichtig benoetigte ich "nur" eine gute App zum Verwalten von Podcasts, um meine Nachrichtenversorgung in gewohnter Weise sicherzustellen. Nach ein wenig Suchen und Testen habe ich da nun wohl eine gute Loesung gefunden: [Podcast Addict](https://play.google.com/store/apps/details?id=com.bambuna.podcastaddict) scheint so ziemlich all das zu bieten, was ich haben moechte... und vielleicht sogar noch ein paar Dinge, welche bisher nicht moeglich waren. Ich werde dies zwar noch ein klein wenig in der Praxis testen muessen, aber ich bin mir jetzt schon ziemlich sicher, dass ich sowohl iTunes, als zentralen Hub zum Download, und den iPod, als mobiles Abspielgeraet, ausmustern kann.
+ 
+**:::**
+ 
+ 
+### Fedora 20 freigegeben ###
+
+
+
+
+_Tue, 17. December 2013 -- 19:06_
+
+Nun gibt es sich also endlich, die offizielle Freigabe der 20ten Ausgabe:
+
+> Etwas mehr als [zehn Jahre nach dem ersten Fedora](http://www.heise.de/meldung/Linux-Distribution-Fedora-feiert-zehnjaehriges-Bestehen-2042071.html) hat das [Fedora-Projekt](http://fedoraproject.org) jetzt die zwanzigste Ausgabe seiner Linux-Distribution [zum Download](http://fedoraproject.org/de/get-fedora) [freigegeben](https://lists.fedoraproject.org/pipermail/devel-announce/2013-December/001282.html). Sie trägt den Codenamen "Heisenbug" – ein nach Werner Heisenberg und dem von ihm beschriebenen Beobachtereffekt (Observer effect) benannte Bezeichnung für Software-Fehler, die verschwinden oder das Verhalten ändern, sobald man den Bugs hinterher spürt.
+
+Zumindest als virtuelle Machine hatte ich diese Release schon seit einer ganzen Weile bei mir auf dem Rechner laufen, so dass sich die Menge an Ueberraschungen insgesamt wohl in Grenzen halten duerfte. Es ist aber dennoch recht nett die diversen Neuerungen auch noch einmal in der [Uebersicht](http://www.heise.de/newsticker/meldung/Linux-Distribution-Fedora-20-freigegeben-Sendmail-und-Rsylog-aussen-vor-2068134.html) praesentiert zu bekommen:
+
+> Im Lieferumfang finden sich nicht nur die Desktop-Oberflächen Cinnamon, Gnome, KDE und Mate, sondern nun auch Enlightenment. Als Kernel dient Linux 3.11; der aktuelle Kernel 3.12 soll in den nächsten Tagen als Update nachgereicht werden. Mit Hilfe des Kommandozeilenwerkzeugs "nmcli" lassen sich jetzt Netzwerkverbindungen erstellen und modifizieren; das Konfigurationstool des NetworkManager beherrscht jetzt Bridging und Bonding.
+
+Ein vollstaendigere Besprechung der Neuerungen gibt es in einem [Artikel auf Heise Open Source](http://www.heise.de/open/artikel/Was-Fedora-20-Neues-bringt-2067858.html).
+
+Was ich nun machen werde ist, dass ich noch einmal in Update ueber die bereits bestehenden Installationen laufen lasse, um zu schauen, welche Aktualisierungen da noch an Bord kommen; wirklich grundlegende Aenderungen wuerde ich nicht mehr erwarten, aber ein kleinr Abgleich kann sicherlich nicht schaden. Wann ich dann auch bei Julia auf dem Laptop mal ein Upgrade durchfuehre, muss ich mir noch einmal ueberlegen (dies haengt schlieslich nicht alleine von mir ab), aber fuer den Rechner vom Muetterchen weiss ich schon recht gut, was ich da verwenden werde (auch wenn es bei dem Desktop vielleicht noch einmal einer Abstimmung bedarf).
+ 
+**:::**
+ 
+ 
 ### Dokumentation ###
 
 
@@ -126,16 +162,16 @@ _Thu, 12. December 2013 -- 18:42_
 Da bin ich ja sogar noch schneller fertig geworden, als dies grob in der Planung vorgesehen war: da ich vorder Abreise vor allen Dingen nur noch ein Kleinigkeiten in Sachen Dokumentation zusammenwerfen und aktualisieren musste, habe ich nebenbei noch die letzte Folge [Witchblade](http://www.imdb.com/title/tt0274298) geschaut. Gestern Abend beim Kochen hatte ich ja noch zwei Folgen "abgearbeitet", so dass jetzt nur noch Folge 12 der zweiten Season ("Ubique") blieb, um damit die Serie komplett zu machen. Da ich im Gegensatz zu Zeiten in Lhee, Nijmegen und Amsterdam ja nicht mehr komplette Wochenenden mit Filme schauen verbringe, hat es ein wenig laenger gedauert um die [insgesamt 24 Folgen](http://epguides.com/Witchblade) hinter mich zu bringen:
 
 ~~~~
-Year Month     Added Completed Deleted Net
-\-\-\-- ------ ----- --------- ------- ---
-2013 July          4         2       0   2
-     August        6         4       0   2
-     September     4         2       0   2
-     October      12         6       0   6
-     November      4         6       0  -2
-     December      0         8       0  -8
+ Year Month     Added Completed Deleted Net
+ - --------- ----- --------- ------- ---
+ 2013 July          4         2       0   2
+      August        6         4       0   2
+      September     4         2       0   2
+      October      12         6       0   6
+      November      4         6       0  -2
+      December      0         8       0  -8
 
-     Average       5         4       0   0
+      Average       5         4       0   0
 ~~~~
 
 Mehr gibt es jetzt nicht, denn die Serie wurde nach der Season 2 abgesetzt, auch wenn die Zuschauerzahlen (nach dem was sich so ausgraben laesst) ungebrochen hoch waren. Was ich jetzt im Anschluss noch machen koennte waere mal einen Blick in die animierte Serie zu werfen; ich bin zwar nicht ueberzeugt davon, dass ich diese komplett schauen werde, aber zum Abrunden waere es sicherlich einmal in welcher Weise die Comics sonst noch in bewegte Bilder umgesetzt worden sind.
@@ -296,30 +332,6 @@ Den Film, seine Geschichte und das darin konstruierte Universum zu beschreiben i
 > [Synecdoche, New York](http://en.wikipedia.org/wiki/Synecdoche,_New_York) marked the directorial debut of iconoclastic, cerebral screenwriter [Charlie Kaufman](http://www.imdb.com/name/nm0442109). [Philip Seymour Hoffman](http://www.imdb.com/name/nm0000450) stars as Caden Cotard, an eccentric playwright who lives with artist Adele Lack ([Catherine Keener](http://www.imdb.com/name/nm0001416)) and their daughter Olive in Schenectady, upstate New York. Prone to neuroses, misgivings and enormous self-doubt, Caden also begins suffering from accelerated physical deterioration -- from blood in his stools to disfigured skin. Upon receiving a prestigious MacArthur grant, Caden decides to use the money to concoct one gigantic play as an analogue of his own life; he builds massive sets amid a New York City warehouse, casts others as his friends, family and acquaintances, and casts others to play the ones he's casting. After Adele whisks Olive off to Europe but demonstrates no sign of returning soon, Caden drifts into a series of relationships with lovers -- first with box office employee Hazel ([Samantha Morton](http://www.imdb.com/name/nm0608090)), who purchases and moves into a house that is perpetually on fire; then with Tammy ([Emily Watson](http://www.imdb.com/name/nm0001833)), an actress assigned to play Hazel in the theatrical project; and subsequently with others. Unfortunately, the play itself grows so big and unwieldy -- and rehearsals go on for so long, taking literally decades -- that it becomes unclear if the production itself will ever launch.
 
 Es duerfte nicht verwundern, dass so eine Geschichte (und die Art in welcher sie erzaehlt wird), geradezu ein gefundenes Fressen fuer allerlei Analyseversuche ist; [The Strangeness of Realism vs. the Realism of the Strange](http://scriptjr.nl/articles/themes-in-synecdoche-new-york) naehert sich dem Material ueber das zugrundeliegende Script -- ich hingegen habe wohl eher den Zugang ueber die Bild- und Tonsprache. So kommt es denn auch, dass ich vor allen Dingen gegen Ende immer wieder an [2001: A Space Odyssey](http://www.imdb.com/title/tt0062622) (1968) oder [Blue Velvet](http://www.imdb.com/title/tt0090756) (1986) denken musste. Genau so wie bei diesen beiden Assoziationen auch, werde ich mir einzelne Passagen sicherlich noch ein weiteres Mal vornehmen muessen -- mir ein wenig mehr Konzentration und entsprechend geschaerftem Blick fuer Details.
- 
-**:::**
- 
- 
-### Und noch eine Umleitung ###
-
-
-
-
-_Thu, 05. December 2013 -- 22:35_
-
-Na, das ist ja wieder einmal spannend am heutigen Abend. Endlch in Koeln angekommen durfte ich feststellen, dass auch hier das grosse wetterbedingte Chaos herrscht: so ziemlich alles was an Zuegen angeschlagen ist kommt mit Verspaetung im Bereich von 60 Minuten und mehr daher -- eher typischer schienen sogar Zeiten in der 110+ Region zu sein. So kommt es dann auch, dass ich den um etwas ueber 70 Minuten verspaeteten RE 5 erwischt habe, mit welchem ich mich nun in Richtung Bonn durchschlagen werde. Fuer den weiteren Verlauf der Heimfahrt ist hierbei entscheident, dass der Zug am heutigen Abend ueber die andere (die rechte) Rheinseite umgeleitet wird, so dass ich zur Abwechslung einmal in Bonn Beuel aufschlagen werde. Von dort aus muss ich mich dann (wahrscheinlich) mit der Linie 609 durchschlagen; dies ist gluecklicherweise nicht ganz so schlimm, weil ich mit dieser Buslinie direkt bis nach Hause durchfahren kann... nur wie oft es da ueberhaupt um diese Zeit noch eine Verbindung gibt weiss ich natuerlich nicht.
- 
-**:::**
- 
- 
-### Umleitung ###
-
-
-
-
-_Thu, 05. December 2013 -- 19:22_
-
-Wenn es lediglich dabei bleibt, dann bin ich wahrscheinlich noch einmal mit einem blauen Auge davon gekommen: noch waehrend der Zug in Utrecht am Bahnsteig gestanden hat kam die Durchsage, dass wir wohl so ziemlich die gleiche Route fahren werden, wie dies am Montag der Fall war. Aufgrund eines Blitzeinschlages ist die Strecke zwischen Arnhem und Oberhausen derzeit nicht befahrbar, so dass der ICE ueber 's-Hertogenbosch und dann Venlo umgeleitet wird. Wie schon bei der Hinfahrt, kann ich mich wohl dabei auf ca. 30 Minuten Verspaetung einstellen, es kommt aber wohl ein wenig darauf an, was es unterwegs denn noch so an der Strecke gibt.
  
 **:::**
  
