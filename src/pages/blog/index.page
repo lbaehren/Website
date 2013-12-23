@@ -9,6 +9,100 @@ tags: Blog
  
 **:::**
  
+### Omegatau Podcast from the Electric Castle ###
+
+
+
+
+_Sun, 22. December 2013 -- 19:21_
+
+This is so great: I just stumbled across [this entry on Google+](https://plus.google.com/100347151288200087365/posts/G7Ya3mLADxc) from them makers of the [Omagetau Podcast](http://omegataupodcast.net):
+
+> In January I will visit Arjen Anthony Lucassen (aka Ayreon) to talk about his music and the technology involved in creating and recording it. If you have questions I should ask them, please send them ASAP.
+
+So what this means is that somewhen begin of next year -- yep, 2014 is coming up fast -- there will be an episode with Arjen on the recording technology behind the [Ayreon](http://www.ayreon.com) albums.
+ 
+**:::**
+ 
+ 
+### Bad aus einer Hand ###
+
+
+
+
+_Sat, 21. December 2013 -- 17:19_
+
+Als wir heute Nachmittag zu Fuss und mit der Bahn unterwegs waren, sind wir in der Naehe vom Probsthof an einem Fachgeschaeft fuer alles rund um die Planung und Einrichtung eines Bades vorbeigekommen. Da wir ja gestern und auch heute Morgen wieder auf Haeusertour waren, konnte es also nicht schaden da einen Abstecher einziulegen und ggf. ein paar neue Ideen zu bekommen. Wie sich allerdings herausstellte ist der Zugang nicht fuer jedermann gedacht: normalerweise ist der vorherige Kontakt mit einem Fachhandwerker erforderlich, ueber welchen dann ein Besuch vereinbart wird. Die kombinierte Argumentation von Julia und mir verschaffte uns dann aber doch den Zutritt, so dass wir uns in Ruhe umschauen konnten. 
+
+Ein paar Anregungen haben wir sicherlich gefunden, aber vom Grundsatz her scheinen wir nir unbedingt die Zielkunden fuer das zu sein, was man da vor Ort versucht zu buendeln:
+
+> Am Anfang steht immer die Idee. Eine klare Vorstellung, wie es aussehen soll - das individuelle Bad zum Wohlfühlen. Bis ins kleinste Detail, bis hin zu den Handgriffen der Duschabtrennung, der idealen Lichtführung oder der Wannenanlage - alles lässt sich virtuell planen. Aber bei der Umsetzung soll nichts dem Zufall überlassen werden, sondern eine klare Struktur, ein starker Partner von Anfang an zur Seite stehen. Der wichtigste und erste Kontakt sollte zum Sanitär-Fachhandwerker Ihres Vertrauens sein. Nur der Badprofi kann die technischen Informationen, die bei einem Neubau oder einer Modernisierung notwendig sind, ermitteln.
+
+Klingt letzten Endes nicht so ganz nach dem, was uns so vorschwebt und wofuer wir wirklich Bedarf haben. Auch schien man da sehr auf einer vorschriftsgetreuen deutschen Ausfuehrung Wert zu legen, welche nicht unbedingt dem entspricht, was sich in der Praxis vorfinden laesst. Ich finde es sicherlich nett auch ein schoenes Badezimmer zu haben, aber irgendwie bin ich da nicht bereit derartige Summen an Geld hinein zu versenken und die Raeumlichkeiten an den darin zu platzierenden Installationen auszurichten.
+ 
+**:::**
+ 
+ 
+### BibTeX Sorgen ###
+
+
+
+
+_Fri, 20. December 2013 -- 22:53_
+
+Also dies soll mal jemand verstehen: seit dem getrigen Abend schlage ich mich hier mit BibTeX herum weil probiere die in einer entsprechenden Sammlung aufgefuehrten Buecher in Form einer Liste auszudrucken. Hat alles mal funktioniert, nur wie es scheint hat sich da in der Zwischenzeit etwas an den bei mir auf dem Rechner installierten LaTeX Paketen veraendert:
+
+~~~~
+(./listing_CG.aux)
+No file listing_CG.bbl.
+! Undefined control sequence.
+\biburlsetup ->\Urlmuskip 
+                          =0mu plus 3mu\relax \mathchardef \UrlBigBreakPenal...
+l.14 See \cite{perlin_1985} 
+                            for further details.
+~~~~
+
+An der BibTeX Datei sollte dies nicht liegen, denn schliesslich scheint keinerlei Probleme damit zu haben; ferner habe ich die Datei schon seit Ewigkeiten nicht mehr angeruehrt, so dass man die Moeglichkeit, dass ich da vielleicht aus Versehen einen Fehler eingebaut habe, ziemlich gut auschliessen kann.
+
+~~~~
+@InProceedings{perlin_1985,
+  author    = "Ken Perlin",
+  title     = "An Image Synthesizer",
+  booktitle = "Computer Graphics, Vol. 19, No. 3.",
+  pages     = "287--296",
+  year      = "1985"
+}
+~~~~
+
+Interessanterweise schlaegt bisher aber selbst eine so simple Anweisung wie
+
+~~~~
+See \cite{perlin_1985} for further details.
+~~~~
+
+so dass wohl die folgenden Schritte angebracht sind:
+
+ - Komplette TeXLive Installation wegschmeissen und neu installieren.
+ - Einen genaueren Blick in das BibTeX Manual werfen und dort nach genauen Instruktionen (und ggf. Beispielen) suchen.
+ - Einfaches Test LaTeX File anlegen und testen.
+
+Ich bin schon ein wenig verwundert, dass gerade so eine Software wie LaTeX mit einem Male derartige Probleme erzeugt; ich hatte dies immer fuer eine Reihe von Tools gehalten, welche solide ohne Ende sind und derartige Dinge eben nicht vorkommen. Verwunderlich, so dass ich dem mal auf den Grund gehen muss.
+ 
+**:::**
+ 
+ 
+### Letzte Fahrt ###
+
+
+
+
+_Thu, 19. December 2013 -- 20:49_
+
+Das ist die also, die letzte ICE Fahrt in diesem Jahr, zurueck von Utrecht nach Bonn. Da ich eben nicht direkt in der gleichen Woche wie Weihnachten unterwegs bin (und dann auch noch nicht an dem ansonsten kritischen Freitag), ist es im Zug gut ertraeglich -- mehr als ansonsten ueblich viel Reisende scheinen am heutigen Abend nicht auf dieser Strecke unterwegs zu sein (was mir natuerlich entgegenkommt). Gross fieberhaftes Arbeiten ist nicht angesagt, auch wenn ich schon noch ein paar Dinge erledigen will, ehe ich denn wieder zuhause bin; es gab noch ein paar Mails und Notizen zu erledigen, so dass ich mich vor allen Dingen um Schreibkram kuemmere -- die vorgeschriebenen Mails koennen dann los, wenn ich zuhause wieder im WLAN eingeklinkt bin.
+ 
+**:::**
+ 
+ 
 ### Metal Evolution ###
 
 
@@ -230,98 +324,6 @@ Da befindet es sich auch schon auf dem Weg nach Bonn:
 Was sich da in dem Paket befindet (zumindest hoffe ich dies) ist ein [Samsung Galaxy S III](http://en.wikipedia.org/wiki/Samsung_Galaxy_S_III) -- das warhscheinlich schon seit einer Weile faellige Upgrade ins Sachen Telephonie und Mobile-Services. Da ich ja nicht immer unbedingt die letzte und neuste Version von allem haben muss (welche dann gerne auch schon einmal am meisten ins Geld geht), schien es mir einfach unsinnig unbedingt nach dem S4 zu greifen. Liest man sich die entsprechenden Beschreibungen und Tests durch, dann gibt es (zumindest fuer mich) keine wirklich ueberzeugenden Argumente, warum ich da unbedingt nach dem neusten Geraet greifen soll, welches Samsung in dieser Serie auf dem Markt hat.
 
 Nachdem sich die Frage nach dem Modell noch einigermassen klaeren liess, war die Wahl der Bezugsquellen ein wenig trickreicher; wie Julia mittels ein wenig Recherche herausfinden konnte, macht es schon Sinn sich da ein wenig umzuschauen, weil die Preisspanne doch nicht zu verachten ist. Sicher, es gaebe die Moeglichkeit einfach in den naechsten Laden zu laufen und sich das Geraet dort zu kaufen, aber so ein Handy zaehlt jetzt wohl nicht unbedingt zu den Dingen, bei welchen auch nur irgendeiner von uns gewillt waere unnoetig viel Geld fuer auszugeben: a) es muss nicht sein immer sofort auf die aktuellste Version zu wechseln, b) das Handy ist mehr Gebrauchsgegenstand als Life-Style Objekt (jaja, ich weiss, das ist nicht sonderlich hip).
- 
-**:::**
- 
- 
-### Einladung zum laenger bleiben ###
-
-
-
-
-_Tue, 10. December 2013 -- 21:29_
-
-Jetzt da ich endlich wieder an meinem -- deutlich mehr auf meine persoenlichen Beduerfnisse zugeschnittenen Schreibisch bei [SRON](http://www.sron.nl) sitze, ist die Versuchung natuerlich recht gross es hier abends auch ein wenig laenger auszuhalten. Da es in Bonn derzeit ja doch recht eng ist, handelt es sich hier im Institut um den einzigen Areitsplatz, wo ich auf den grossen Monitor zurueckgreifen kann -- da verbringt man dann gerne schon einmal ein wenig mehr Zeit am Rechner um die deutlich groessere virtuelle Arbeitsflaeche auszunutzen. Da ich darueber hinaus auch noch fleissig dabei ein wenig in der kompletten SWIR [Doxygen](http://www.doxygen.org) Dokumentation aufzuraeumen -- die scheint naemlich an einzigen Stellen ziemlich kaputt zu sein -- ist es doch ein leichtes die Uhr aus dem Blick zu verlieren. Das soll nun aber nicht heissen, dass ich hier den kompletten Abend a, Schreibtisch zu verbringen gedenke...
- 
-**:::**
- 
- 
-### Sherlock: Series 3 ###
-
-
-
-
-_Mon, 09. December 2013 -- 10:23_
-
-Auch wenn sich die Hinweise auf den Start der mit Spannung erwarteten Staffel 3 von [Sherlock](http://www.imdb.com/title/tt1475582) immer weiter verdichteten, so fehlte (zumindest nach meinem Informationsstand) immer noch ein Termin fuer die Ausstrahlung der Folgen. Als ich eben hier in Utrecht meinen Rechner wieder ins Netz geklemmt habe, um schnell durch alle ueblichen Nachrichtenplatformen zu huepfen, tauchte auf Google+ eine Meldung auf, nach welcher es nun einen offiziellen Starttermin fuer Season 3 gibt. Also schnell [auf Wikipedia](http://en.wikipedia.org/wiki/List_of_Sherlock_episodes) und [den Seiten der BBC](http://www.bbc.co.uk/programmes/b018ttws) nachgeschaut... und siehe da: am 1. Januar 2014 geht es wieder los! 
-
-~~~~
-ID  Proj   Age Urg  Description
---------------------------------------------------
-353 movies 1m   9.8 Sherlock [3.01] The Empty Hearse
-354 movies 1m   4.8 Sherlock [3.02] The Sign of Three
-355 movies 19s -3.2 Sherlock [3.03] His Last Vow
-~~~~
-
-Die Termine habe ich mir sofort mal eingetragen, denn das will ich mir natuerlich nicht entgehen lassen.
- 
-**:::**
- 
- 
-### Bahnmonitor ###
-
-
-
-
-_Sun, 08. December 2013 -- 20:03_
-
-Sicherlich eine der interessanteren Entdeckungen im Laufe diesen Jahres in Sachen Reiseplanung und Reisestatistiken war der [Zugmonitor der Sueddeutschen Zeitung](http://zugmonitor.sueddeutsche.de). Nachdem ich ja wiederholt mit Verspaetungen oder gar Zugausfaellen auf meiner Strecke zwischen Bonn und Utrecht zu schaffen hatte, wollte ich doch einmal nachschauen, in wie weit meine (punktuellen) Erfahrungen repraesentativ sind. Stellt sich heraus, dass meine Erlebnisse nicht so vollkommen einzigartig sind:
-
-> Die Bahn kommt. Zu oft zu spät. Die SZ protokolliert Pünktlichkeitsangaben, die der Konzern im Internet macht, seit Spätsommer 2011 in einer riesigen Datenbank. Sie legt die Schwachstellen des Netzes offen - und ermöglicht eine einzigartige interaktive Deutschlandkarte, auf der jeder Nutzer live den Fernverkehr in Deutschland verfolgen kann.
-
-Wie man anhand des folgendes Bildes sehen kann, laest sich ueber das in der Datenbank gesammlte Material einiges an Statistik ableiten, welche deutlich ueber den einzelnen Zug hinausgeht; so ist es z.B. moeglich sich die Teilabschniite der Strecke anzuschauen, auf welcher ich mich Woche fuer Woche bewege:
-
-![Bahnmonitor fuer Strecke Arnhem - Utrecht](/blog/2013/2013-12/2013-12-08_Bahnmonitor.png)
-
-Der einzige Haken derzeit ist allerdings der folgende:
-
-> Leider ist die Live-Karte zu Verspätungen im Fernverkehr gerade nicht mehr verfügbar, weil die Bahn ihre Datenstrukturen geändert hat, die wir ausgelesen haben. Wir prüfen, wie wir darauf reagieren.
-
-Da die Bahn sicherlich alles andere als begeistert darueber sein duerfte, dass ihr jemand unabhaengiges ueber die Schulter schaut und ggf. mit den Finger auf Schwachstellen verweist, wuerde ich jetzt nicht allzu viel Hoffnung darauf setzen dass der Zugmonitor in kurzer Zeit wieder in der Lage sein wird, seine Arbeit zu erledigen. Eigentlich schade.
- 
-**:::**
- 
- 
-### Verfassungsrechtliche Bedenken ###
-
-
-
-
-_Sat, 07. December 2013 -- 09:46_
-
-Als jemand der weder Fernseher noch Radio besitzt, waeren mir schon die altbekannten GEZ Gebuehren suspekt gewesen; wenn ich mir aber ein wenig genauer anschaue, wie der seit dem 1. Januar 2013 erhobene [Rundfunkbeitrag](http://www.rundfunkbeitrag.de) konstruiert ist, dann kann ich sehr gut verstehen [dass Einzelhaendler schon kurz nach der Einfuehrung eine Klage gegen den Beitrag geprueft haben](http://www.heise.de/newsticker/meldung/Einzelhaendler-pruefen-Klage-gegen-Rundfunkbeitrag-1781465.html):
-
-> Nach der Drogeriekette Rossmann und dem Juristen Ermano Geuer, die in Bayern gegen den nun geltenden Rundfunkbeitrag klagen, sowie einem Fuhrunternehmen, das desgleichen in Rheinland-Pfalz unternimmt, erwägt nun auch der Handelsverband Deutschland (HDE) eine Verfassungsklage. Laut einem Bericht der Süddeutschen Zeitung lässt der HDE ein Gutachten erstellen, welche Aussichten eine solche Klage hätte. Wenn es im Februar abgeschlossen sei, könne es die Grundlage für eine Verfassungsklage gegen den Rundfunkbeitrag werden.
->
-> `(Heise News, 11 Jan 2013)`
-
-Diese Woche nun aber machten Meldungen die Runde, [dass der Rundfunkbreitrag sinken koente](http://www.heise.de/newsticker/meldung/Rundfunkbeitrag-koennte-sinken-2059830.html):
-
-> Bisher war bekannt geworden, dass [ARD](http://www.ard.de), [ZDF](http://www.zdf.de) und [Deutschlandradio](http://www.deutschlandfunk.de) Mehreinnahmen von 500 Millionen Euro zu erwarten haben. Nun sagte der sächsische Ministerpräsident Stanislaw Tillich (CDU) laut einem Bericht der Frankfurter Allgemeinen Zeitung, dass die Sender sogar eine Milliarde Euro mehr einnehmen werden als bisher. Auf welchen Zeitraum sich die Summe bezieht, geht aus dem Bericht nicht hervor, möglicherweise auf eine Gebührenperiode von vier Jahren.
->
-> `(Heise News, 14-Dec-2013)`
-
-Zimelich in das gleiche Horn stiess dann auch ein Beitrag unter der Ueberschrift "[Wird der Rundfunkbeitrag abgesenkt?](http://www.tagesschau.de/inland/rundfunkbeitrag112.html)" (Tagesschau.de, 04 Dec 2013), welcher Verantwortliche bei den oeffentlich-Rechtlichen Medien mit der Aussage zitierte, man wolle ja schliesslich die Buerger nicht mehr belasten als dies unbedingt zur Finanzierung des Angebots noetig sei. So sehr diese Einsicht auch zu loben ist, glaube ich nicht dass dies ausreichen wird, damit Unternehmen wie Sixt ihre Klage zurueckziehen ([Rundfunkbeitrag statt GEZ-Gebühr: Sixt klagt](http://www.heise.de/newsticker/meldung/Rundfunkbeitrag-statt-GEZ-Gebuehr-Sixt-klagt-1973662.html)):
-
-> Der Autovermieter Sixt leistet weiter Widerstand gegen den neuen Rundfunkbeitrag zur Finanzierung des Öffentlich-Rechtlichen Rundfunks. Das Unternehmen habe beim Verwaltungsgericht München eine Klage gegen den Bayerischen Rundfunk eingereicht, erklärte ein Sprecher gegenüber der dpa und bestätigte damit einen Bericht der Bild am Sonntag vom Wochenende. Deutschlands größter Autovermieter hatte bereits im August angekündigt, gegen den "Gebührenwahnsinn" vor Gericht ziehen zu wollen.
->
-> Seit diesem Jahr werden die ungeliebten Rundfunkgebühren als "Rundfunkbeitrag" in Höhe von 17,98 Euro pro Monat erhoben. Mit der Umbenennung erfolgte auch eine Ausweitung der Gebührenpflicht: Zahlen muss nun jeder Haushalt unabhängig davon, ob dort Empfangsgeräte bereitgehalten werden. Auch unterschiedliche Tarife für Radio und Fernsehen gibt es nicht mehr. Unternehmen mit vielen Niederlassungen müssen für jede Filiale zahlen – etwa die Drogeriekette Rossmann, die schon beim Bayerischen Verfassungsgerichtshof geklagt hat.
->
-> `(Heise News, 07 Oct 2013)`
-
-Schaut man sich ein wenig weiter um, dann wird ziemlich klar, dass sich da einiges an Widerstand gegen die Konstruktion des Rundfunkbeitrag regt: seien es [Rechtliche Optionen gegen den neuen Rundfunkbeitrag](http://www.experto.de/verbraucher/rechtliche-optionen-gegen-den-neuen-rundfunkbeitrag.html) oder aber den Beitrag auf verfassungsrechlichem Wege auszuhebeln ([Neues Rechtsgutachten stützt Gegner des Rundfunkbeitrags](http://www.teltarif.de/rundfunkbeitrag-protest-gegner-rechtsgutachten/news/50448.html), teltarif.de, 22 Mar 2013) -- der Gedanke fuer eine Leistung bezahlen zu muessen, welche man garnicht in Anspruch nimmt (oder vielleicht sogar nehmen koennte) scheint wohl so einigen Leuten aufzustossen.
-
-Ich denke mal, dass ich das ganze durchaus klein wenig differenzierter versuche zu betrachten: als jahrelanger treuer Hoerer des _Deutschlandradio_ waere ich durchaus geneigt den Sender ggf. auch finanziell zu unterstuetzen -- auch wenn ich nur einen Ausschnitt aus dem produzierten und angebotenen Programm in Anspruch nehmen kann, so sucht die Qualitaet schon ihresgleichen. So wie der Rundfunkbeitrag aber konstruiert ist, sehe ich nicht, wie meine Unterstuetzung gezielt dort zuteil werden lassen kann, wo ich auch wirklich an einer Fortfuehrung der Leistung interessiert bin.
  
 **:::**
  
