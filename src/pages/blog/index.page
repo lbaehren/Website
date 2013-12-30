@@ -9,6 +9,116 @@ tags: Blog
  
 **:::**
  
+### Nebengleise ###
+
+
+
+
+_Sun, 29. December 2013 -- 21:30_
+
+Da hat es ja doch noch geklappt. Nachdem es heute gegen Mittag recht regnerisch war, oeffnete ich die Wolkendecke anschliessend wieder und gab den Blick auf die Sonne frei. Als ein Resultat daraus praesentierte sich das Licht recht einladent, so dass ich mir ein wenig kurzfristig meine Photoausruestung geschnappt habe und zusammen mit Julia nach Roisdorf gefahren bin. Von dort aus habe ich mich dann zufuss auf den Weg gemacht -- in einem groesseren Bogen via Tannenbusch und Dransdorf wieder zurueck nach Duisdorf. Bei der Streckenwahl bot es sich an einen kleinen Abstecher zu machen, welcher mir schon bei unserem [Spaziergang am Heiligabend](/blog/2013/2013-12/2013-12-24_20-05.html) unter den Naegeln gebrannt hatte: zwischen Dransdorf und Tannenbusch gibt es eine Reihe stillgelegter Gleise, welche ich immer noch einmal (am besten dann natuerlich mit Kamera im Gepaeck) erkunden wollte. Auch wenn ich mich in dem Bereich Richtung Bonner Hauptbahnhof schon einmal ein wenig umgeschaut habe, hatte ich bisher nie die Gelegenheit die Gleise mal weiter nach Norden zu verfolgen; so wie ich dies der Karte entnehmen konnte laufen die Gleise wohl irgendwo in Tannenbusch wieder zusammen, aber auf dem Zwischenstueck kann man sich durchaus parallel zu den aktiven Gleisen fuer Bahn und Zuege bewegen.
+
+![Stillgelegtes Gleis in Tannenbusch](/blog/2013/2013-12/hdr_20131229_151554_Tracks.jpg)
+
+Schon zu Zeiten in Nijmegen fand ich es recht interessant ausgemusterte Bahnstrecken zu erkunden; hier in Bonn bewegt man sich zwar immer noch ein wenig mehr auf dem Stadtgebiet, aber trotzdem gibt es durchaus Gegenden, welche leicht vergessen zu sein scheinen. Auch wenn das Licht leider nicht so optimal zum photographieren war -- was einfach daran liegt, dass die Strecke in einem Einschnitt verlaeuft, in welchen die Sonne nur zu begrenzten Zeiten hineinscheint -- konnte ich zumindest einen Teil der Nebengleise ablaufen und mir so ein wiederum etwas deutlicheres Bild von der Streckenfuehrung machen. Es muss da allerdings immer noch einmal mindestens eine Nebenstrecke geben, welche ich heute noch nicht ablaufen konnte, aber ein Anfang waere zumindest schon einmal gemacht. Jetzt werde ich noch einmal die Karte konsultieren muessen um zu schauen, wie ich den am besten die verbleibenden Abschnitte angehen kann.
+ 
+**:::**
+ 
+ 
+### Nicht nach Plan ###
+
+
+
+
+_Sat, 28. December 2013 -- 22:16_
+
+Da sind direkt mehrere Dinge nicht so gelaufen, wie ich dies ein wenig frueher geplant hatte. Auf der einen Seite hat mich nun auch die Erkaeltung erwischt, so dass ich mich mit den Kamera-Exkursionen ein klein wenig zurueckhalten muss; grundsetzlich ist frische Luft schon etwas feines, aber Bettwaerme ist unter solchen Umstaenden auch nicht zu verachten. Was aber noch hinzukommt ist die Tatsache, dass das Wetter auch nicht unbedingt dazu einlaedt, laengere Fussmaersche zu absolvieren; heute ist es schon seit den Morgenstunden immer am Regnen, so dass ich alle weiteren Erkundungen erst einmal ein wenig auf Eis gelegt habe. Eigentlich recht schade, denn vor allen Dingen die Zeiten, zu welchen Julia ihre Sportkurse geben muss, haetten sich wirklich angeboten ein wenig loszuziehen und die Umgebung unsicher zu machen -- unter diesen Umstaenden werde ich aber wohl damit noch ein wenig warten muessen.
+ 
+**:::**
+ 
+ 
+### Noch ein paar Tage ###
+
+
+
+
+_Fri, 27. December 2013 -- 19:14_
+
+... dann haetten wir auch schon das Ende von 2013 erreicht. Sollte auf em Schlussspurt nicht noch etwas ganz massiv daneben gehen, dann habe ich es dieses Jahr wirklich geschafft jeden Tag einen (zumindest kurzen) Eintrag in dem Blog bereit zu stellen. Mit aktuell 582 Eintraegen seit dem ersten Januar habe ich sogar einiges mehr geschrieben, als minimal noetig gewesen waere; gerade bei so Gelegenheiten wie meinen Zugfahrten habe ich schon ein wenig mehr probiert den Fortgang zu dokumentieren, als anschliessend nur eine Zusammenfassung abzuliefern (ein Vorhaben was typischerweise dann auch dazu tendiert schief zu gehen).
+
+Waehrend ich nach wie vor recht gluecklich bin ueber die Entscheidung, von einer Wiki-basierten Loesung auf eine statische Website umzustellen, so bin ich mit der konkreten Loesung mittlerweile nicht mehr so ganz gluecklich. Dies liegt vor allen Dingen daran, dass a) das Update der Seiten recht lange dauert und b) es einige Features gibt, welche mir von [webgen](http://webgen.rubyforge.org) eben nicht zur Verfuegung gestellt werden. In der Praxis lassen sich die beiden Punkte mit aller Wahrscheinlichkeit nicht voneinander trennen, zumal man wohl letzten Endes immer auch noch die Programmiersprache mit in Betracht ziehen muss, mittels welcher der Website-Generator implementiert ist. Was ich an dieser Stelle eigentlich gerne als liebstes haette duerfte nicht sonderlich schwer zu erraten sein -- aber auch nach laengeren Suchen ist es mir nicht gelungen einen in C++ geschriebenen Website-Generator zu finden, welcher wirklich auf Performance getrimmt ist. Wer meine Skepsis gegenueber Script-Sprachen kennt, der kann vielleicht nachvollziehen, weil ich mir immer noch eine Implementierung wuensche, welche mit kleinstmoeglichem Overhead auf Geschwindigkeit (bei grossen Projekten) getrimmt werden kann... bisher habe ich mich aber noch nicht dazu ueberwinden koennen, selber einmal in diese Richtung taetig zu werden. Allerdings denke ich mir schon, dass es eine Moeglichkeit geben muss, mit welcher sich die Umlaufzeiten reduzieren lassen.
+
+~~~~
+[100%] Rendering website from sources ...
+Starting webgen...
+Updating tree...
+...done in 138.6266 seconds
+Writing changed nodes...
+...done in 1.1686 seconds
+Updating tree...
+...done in 136.0459 seconds
+Writing changed nodes...
+...done in 1.1506 seconds
+Finished
+~~~~
+
+Auch wenn ich fuer die erste Inspektion nicht beide Durchlaeufe noetig habe, so dauert es immerhin noch mehr als zwei Minuten, ehe die Seiten neu aufgebaut sind - vor allen Dingen fuer schnelles Interieren bei kleinen Aenderungen ist dies kein sonderlicher Spass, so dass wohl klar sein duerfte, warum ich den Blick auf der Suche nach Alternativen schweifen lasse.
+ 
+**:::**
+ 
+ 
+### Morgenspaziergang ###
+
+
+
+
+_Thu, 26. December 2013 -- 22:03_
+
+Von der Idee her klang dies eigentlich recht gut: da Julia am heutigen Vormittag ja eine Mammuttour in Sachen Sportstunden zu absolvieren hatte, koennte ich mir eigentlich die Kamera schnappen und (in einem groesseren Bogen) eines der Studios ansteuern und dabei wieder einmal ein wenig Bonn erkunden. Da sich gestern Abend noch recht spontan eine Privatstunde frueh am Morgen ergeben hatte, war also mein Plan dass ich mich vom Brueser Berg aus aufmache und von dort aus der Nase nach in Richtung Tal laufe (was fuer sich genommen nicht unbedingt die genaueste Beschreibung ist). Da ich mich vor allen Dingen oben auf dem Berg noch nie so sonderlich herumgetrieben habe, schien mir dies eine gute Gelegenheit zu sein, mir da einfach mal etwas mehr Zeit zum Erkunden zu nehmen. Waehrend eines der ersten Strassenschilder auf der Route eigentlich recht vielversprechend klangen, musste ich allerdings schon bald feststellen, dass ein zweiter Weihnachtstag (zumal auch noch wenn bei einem wolkenverhangenen Himmel) nicht unbedingt zu den interessantesten Dingen gehoert, welche man sich vorstellen kann.
+
+![Abenteuerweg](/blog/2013/2013-12/dsc_20131226_103649.jpg)
+
+Mit Abenteuer war nicht: die Anzahl an Menschen, welche auf den Strassen unterwegs waren konnte man fast schon an einer Hand abzahlen; selbst in der Fussgaengerzone am Brueser Berg war kaum eine Seele ausfindig zu machen. Ok, es gibt immer wieder die obligatorischen Hundebesitzer, welche bei jedem Wetter und jeder Tageszeit unterwegs sind, aber ansonsten haette ich wahrscheinlich genauso gut mitten in der Nacht durch die Gegend laufen koennen. Was mich persoenlich aber deutlich mehr stoerte war die Tatsache, dass einfach kein vernuenftiges Licht zu finden war -- selbst auf den HDR Bildern ist kaum eine Struktur am Himmel zu erkennen. Unter diesen Bedingungen machte es nicht sonderlich viel Spass durch die Gegend zu laufen; auch wenn ich in Sachen Hoerfutter noch fuer ein paar Stunden bestens versorgt gewesen waere, war einfach nicht erkennbar, wie ich ausreichend photographisch interessantes Material ausfindig machen koennte -- folgerichtig habe ich es bei einer kleinen Runde belassen und werde es lieber in Kuerze noch einmal probieren.
+
+![Edisonallee](/blog/2013/2013-12/hdr_20131226_110503_Brueser_Berg.jpg)
+ 
+**:::**
+ 
+ 
+### Masters of Sex ###
+
+
+
+
+_Wed, 25. December 2013 -- 22:36_
+
+Irgendwie ist es schon ein wenig doof, wenn beim Geschichten erzaehlen diese laengeren Luecken entstehen; dabei ist es mir eigentlich ziemlich gleich, ob es sich dabei um ein Buch, ein Hoerbuch, ein Radiohoerspiel... oder eben um eine Fernsehserie handelt. Das wirklich dumme allerdings bei den letzten beiden Faellen ist, dass man da auf den Fortgang leider keinen wirklichen Einfluss hat, denn wenn neue Folgen erst in einem bestimmten Abstand herausgebracht werden, dann gibt es eben in der Erzaehlung so lange kein Weiterkommen. Waehrend ich dies schon bei [Sherlock](http://www.imdb.com/title/tt1475582) ziemlich bloed fand (gluecklicherweise sind die Tage bis zum Start von [Season 3](http://www.imdb.com/title/tt1475582/episodes?season=3) dort gezaehlt), so habe ich vor kurzem eine weitere Serie entdeckt, bei welcher ich auch Julia wieder einmal mit anstecken konnte (was ja keine so einfache Aufgabe ist):
+
+> [Masters of Sex](http://www.imdb.com/title/tt2137109) stars [Michael Sheen](http://www.imdb.com/name/nm0790688) and [Lizzy Caplan](http://www.imdb.com/name/nm0135221) as real-life pioneers of the science of human sexuality, [William Masters and Virginia Johnson](http://en.wikipedia.org/wiki/Masters_and_Johnson). Their research touched off the sexual revolution and took them from a midwestern teaching hospital to the cover of Time magazine and multiple appearances on Johnny Carson's couch. He is a brilliant scientist out of touch with his own feelings, and she is a single working mother ahead of her time. The series chronicles their unusual lives, romance, and unlikely pop culture trajectory.
+
+So auf dem direkten Wege waere ich wahrscheinlich nicht unbedingt auf die Serie gestossen -- zumal ich jetzt auch nicht unbedingt den besten Ueberblick darueber habe, was so alles an neuen Dingen anlaeuft -- aber als ich vor einer Weile wieder einmal ein wenig gestoebert habe, war der Titel schon ein wenig auffaellig. [Als ich mich dann mal kundig gemacht habe](http://www.sho.com/sho/masters-of-sex/home), worum es sich eigentlich handelt, bin ich natuerlich neugierig geworden und habe mich auf die Suche nach den bisher ausgesendeten Episoden gemacht. Waehrend ich zunaechst davon ausgegangen war, dass die Serie bereits abgelaufen sei, musste ich dann bei einem zweiten Nachlesen feststellen, dass [Season 1](http://www.sho.com/sho/masters-of-sex/season/1) bis kurz vor Weihnachten ueberhaupt erst ausgestrahlt (oder zumindest ueber Kabel gesendet) wurde; bei dem Tempo, in welchem wir uns durch den Rueckstand gearbeitet haben, hiess es dann aber ein wenig gedulden bis zu den beiden abschliessenden Folgen. Vollstaendig war der Erzaehlbogen damit aber immer noch nicht, denn wie sich weiter nachlesen liess, steht noch eine weitere (zweite) Season an... allerdings erst Ende 2014! Das ist dann wirklich eine recht lange Durststrecke, so dass der einmal aufgebaute Spannungsbogen damit schon ein gutes Stueck zerrissen wird (was sehr schade ist, denn ein Cliffhanger verliert schon an Anziehungskraft, wenn die Luecke zu lange wird).
+
+Die Serie bis hierhin war sehr spannend: die Geschichte ist vollgepackt mit gleich einer ganzen Anzahl an Nebenstraengen (welche aber letzten Endes mit zum dem Gesamtbild gehoeren), aber eben auch mit einem Einblick in das gesellschaftspolitische Umfeld, in welchem die beiden Protagonisten ihre Studien gefuehrt und verfasst haben. Vieles von dem, was man da zu hoeren und sehen bekommt, erscheint unter dem heutigen Blickwinkel recht absurd... auch wenn so mancher zu jener Zeit begonnene Kampf bis heute nicht als gewonnen gelten darf. Wirklich sehenswert, was sich (ausnahmsweise) auch in den diversen [Auszeichnungen](http://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Masters_of_Sex) wiederzuspiegeln scheint.
+ 
+**:::**
+ 
+ 
+### Unterwegs in Tannenbusch ###
+
+
+
+
+_Tue, 24. December 2013 -- 20:05_
+
+Manchmal muss ma sich die Dinge einfach ein wenig erlaufen, um sie besser beurteilen zu koennen... Am letzten Freitag (20. Dezember) hatten wir uns am Nordrand von Tannenbusche ein potentielles Haus angeschaut, bei welchem man vielleicht ein paar Abstriche haette machen muessen, aber bei welchem der Eindruck alles in allem doch recht positiv war. Nach ein wenig Bedenkzeit hatte sich Julia dann noch einmal mit dem Verkaeufer in Verbindung gesetzt, um unser grundsaetzliches Interesse kund zu tun. Als dann heute Nachmittag das Vorhaben bestand fuer eine Weile an die frische Luft zu gehen und noch ein klein wenig Sonne zu tanken, sind wir kurzerhand in Richtung Tannenbusch aufgebrochen, um uns die Umgebung mal noch ein wenig ausfuehrlicher aus der Naehe anzuschauen.
+
+![GPS Track](/blog/2013/2013-12/2013-12-24_GPS-Track.png)
+
+Wie man anhand des GPS Tracks erkennen kann, haben wir durchaus unterschiedliche Teile von Tannenbusch abgelaufen: man kann diesen Teil von Bonn sicherlich einfach nur in ein und den gleiche Topf werfen -- da gibt es schon noch einmal Unterschiede je nach dem wo man sich genau befindet.
+ 
+**:::**
+ 
+ 
 ### Besuch in Mittelerde ###
 
 
@@ -203,132 +313,6 @@ Dies ist wieder einmal einer jener Tage, an welchen ich bisher vor allen Dingen 
 ~~~~
 
 Die Liste der modifierten Dateinen ist zwar nicht so sonderlich lang, aber dies alleine gibt ja noch nicht wieder, wieviel Aenderungen insgesamt bisher stattgefunden haben (und vor allen Dingen wieviel Zeit man damit zugebracht hat, die Hintergrundinformationen zusammenzutragen).
- 
-**:::**
- 
- 
-### Neue Haltestelle ###
-
-
-
-
-_Mon, 16. December 2013 -- 06:00_
-
-Lange genug hat es auf der Strecke zwischen Duisdorf und Bonn Hauptbahnhof Fahrplanaendrungen gegeben... ab dieser Woche nun scheint die erste der beiden neuen Haltestellen auf dem Zwischenstueck eroeffnet zu sein und abgefahren zu werden. Der Zug war noch nicht lange wieder in Fahrt, als die Durchsage fuer den Stop am oberen Ende des Messdorfer Feldes kam; zugestiegen ist dort zwar niemand, aber immerhin bedeutet dies, dass es nun eine weitere Stelle gibt, an welcher sich in den Zug Richtung Bonn huepfen laesst. Geschuldet ist dieser neue Stop wohl vor allen Dingen der Tatsache, dass Duisdorf immer weiter auf Endenich und Dransdorf hinzu wachst -- da darf man einmal gespannt bleiben, in wie weit die bisher noch bestehenden Felder dem Bagger zum Opfer fallen werden.
- 
-**:::**
- 
- 
-### Patent auf Live-Streaming von Yogakursen ###
-
-
-
-
-_Sun, 15. December 2013 -- 18:20_
-
-Ich bin doch immer wieder verbluefft welche Blueten vor allen Dingen das US-amerikanische Patentrecht treibt:
-
-> Auch wenn beim Yoga Wettbewerbsdenken generell verpönt ist, stehen Yogastudios natürlich in Konkurrenz zueinander. Nach Ansicht der international tätigen Verbandes Yoga Alliance hat das kalifornische Unternehmen YogaGlo die Grenze der Fairness nun jedoch überschritten: Der Anbieter von Online-Yogakursen ließ sich in den USA das Live-Streaming von "Unterrichtsstunden, einschließlich Yoga," patentieren.
-
-Wie [Heise News](http://www.heise.de/newsticker/meldung/Patent-auf-Live-Streaming-von-Yogakursen-erteilt-2064705.html) in der Mitteilung weiter berichtet, handelt es sich bei der Idee nicht unbedingt um eine Sache, von welcher man vermuten wuerde, dass es ueberhaupt Sinn machen wuerde sich um ein Patent zu bemuehen:
-
-> Eine Kamera im hinteren Bereich des Kursraums (also mit Blick zum vorne stehenden Lehrer) fängt automatisch die laufende Stunde ein und streamt diese ins Internet beziehungsweise zeichnet sie auf. Der Zuschauer bekommt so laut Beschreibung den Eindruck, "in einer echten Klasse zu sein".
-
-Schaut man einmal in den Original-Text des Patent-Antrages, dann klingt dies natuerlich recht grandios:
-
-> The present invention creates an experience of participating in a real class with real students even though the viewer is not actually present in the class. This is accomplished by the unique setup of the classroom, the position of the yoga instructor and yoga participants and the position of the camera imaging the yoga exercises and stretches. The perspective of the viewer watching the captured image is thus one of an actual participant in the class. The instructor is placed at the head of the studio with the yoga participants arranged between the yoga instructor and the camera. A direct line of sight between the camera and the yoga instructor, a "no mat area," is provided so that there is an unobstructed view of the yoga instructor which allows for a participatory view of the yoga class for the viewer.
-
-Dies fuer sich genommen war allen Anschein aber in der ersten Runde nicht ausreichend, so dass der Antragsteller noch einmal nachlegte:
-
-> Nach Angaben der Yoga Alliance lehnt das United States Patent and Trademark Office (USPTO) als zuständige Stelle den ursprünglichen Antrag mit der Begründung ab, die aufgezeigte Vorgehensweise sei ohnehin Stand der Technik (prior art). Daraufhin erweiterte YogaGlo am 8. Oktober den Antrag um den Punkt, dass die Kamera in einer Höhe von 3 Fuß (rund 1 Meter) installiert werden soll, um zu zeigen, "wie es ein Teilnehmer im hinteren Bereich des Raumes den Kurs verfolgen würde". Tatsächlich erteilte das USPTO dem Unternehmen daraufhin das Patent unter der Nummer 8,605,152.
-
-Ich persoenlich kann so eine Sache mit einem heftigen Kopfschuetteln zur Kenntnis nehmen: wenn die Spezifizierung einer Kameraposition und -hoehe schon ausreicht, einen zunaechst erfolglosen Antrag zu Erfolg zu bringen, dann duerfte es doch eigentlich nur ein paar Minuten dauern, ehe man sich gleich eine ganze Waschliste an neuen Patenten aus den Fingern gesaugt hat, welche sich ebenfalls einreichen lassen.
- 
-**:::**
- 
- 
-### Noch mobiler ###
-
-
-
-
-_Sat, 14. December 2013 -- 22:14_
-
-Auch wenn ich ja gestern schon einiges an Funktionalitaeten getest habe, so sind mir heute noch ein paar Kleinigkeiten eingefallen, welche mir noch fehlten, um meine naehere IT-Infrastruktur von meinem neuen Handy aus zu kontrollieren. Was mir besonders gut gefaellt ist die Tatsache, dass ich das [Synology](http://www.synology.com) NAS ([DS2413+](http://www.synology.com/en-global/products/overview/DS2413+)) weitestgehend von meinem Handy aus fernsteuern und kontrollieren kann -- was ich bisher vom Computer aus erledigen musste, kann ich nun recht elegant von meinem Handy aus machen.
- 
-**:::**
- 
- 
-### Mobil ###
-
-
-
-
-_Fri, 13. December 2013 -- 21:20_
-
-Ok, ein klein wenig haette man sich die Nebenwirkungen wahrscheinlich schon denken koennen... Als ich gestern Abend wieder in Bonn eingetroffen bin, stand auf dem Kuechentisch bereits ein kleiner Stapel mit Kartons, in welchen die vor kurzen bestellen neuen Handys angeliefert worden waren. Mit dem Auspacken liess es nicht sonderlich lange auf sich warten, genauso wie mit dem ersten Installieren zusaetzlicher Apps und dem Einklinken ins lokale WLAN. Leider sind die SIM Karten aus dem alten Handy nicht kompatibel, so dass diese noch umgetauscht werden muessen, aber zumindest ueber kann man schon einmal als die Dinge antesten, welche sich ueber einen WLAN-Zugang erledigen lassen:
-
- - Apps installieren:
-   - DB Navigator
-   - NS Reisplanner
-   - Github (der Name duerfte sich wohl von alleine erklaeren)
-   - Gimmr (fuer Flickr Zugang)
-   - Open GPS Tracker
-   - DS Video (Synology app fuer Video Station)
-   - DS Audio (Synology	app fuer Audio Station)
-   - DS Download (Synology app fuer Downloads)
- - Mail Konten einrichten
- - Kalender-Zugang einrichten
-
-Da gibt es wirklich jede Menge neuer Dinge zu entdecken, so dass man sich echt zusammenreissen muss, um nicht den kompletten Tag damit zuzubringen das Handy erkunden... es gibt ja schliesslich auch noch andere Dinge.
- 
-**:::**
- 
- 
-### Witchblade ###
-
-
-
-
-_Thu, 12. December 2013 -- 18:42_
-
-Da bin ich ja sogar noch schneller fertig geworden, als dies grob in der Planung vorgesehen war: da ich vorder Abreise vor allen Dingen nur noch ein Kleinigkeiten in Sachen Dokumentation zusammenwerfen und aktualisieren musste, habe ich nebenbei noch die letzte Folge [Witchblade](http://www.imdb.com/title/tt0274298) geschaut. Gestern Abend beim Kochen hatte ich ja noch zwei Folgen "abgearbeitet", so dass jetzt nur noch Folge 12 der zweiten Season ("Ubique") blieb, um damit die Serie komplett zu machen. Da ich im Gegensatz zu Zeiten in Lhee, Nijmegen und Amsterdam ja nicht mehr komplette Wochenenden mit Filme schauen verbringe, hat es ein wenig laenger gedauert um die [insgesamt 24 Folgen](http://epguides.com/Witchblade) hinter mich zu bringen:
-
-~~~~
- Year Month     Added Completed Deleted Net
- - --------- ----- --------- ------- ---
- 2013 July          4         2       0   2
-      August        6         4       0   2
-      September     4         2       0   2
-      October      12         6       0   6
-      November      4         6       0  -2
-      December      0         8       0  -8
-
-      Average       5         4       0   0
-~~~~
-
-Mehr gibt es jetzt nicht, denn die Serie wurde nach der Season 2 abgesetzt, auch wenn die Zuschauerzahlen (nach dem was sich so ausgraben laesst) ungebrochen hoch waren. Was ich jetzt im Anschluss noch machen koennte waere mal einen Blick in die animierte Serie zu werfen; ich bin zwar nicht ueberzeugt davon, dass ich diese komplett schauen werde, aber zum Abrunden waere es sicherlich einmal in welcher Weise die Comics sonst noch in bewegte Bilder umgesetzt worden sind.
- 
-**:::**
- 
- 
-### Die Zukunft von KDE ###
-
-
-
-
-_Wed, 11. December 2013 -- 17:56_
-
-Auch wenn ich ja schon lange nicht mehr ein sonderlicher Freund von [KDE](http://www.kde.org) bin -- was einfach daran liegt, dass ich mittlerweile etwas minimalistischere and schlankere Oberflaechen bevorzuge -- so schaue ich doch immer mal rein, wenn es Meldungen ueber das Projekt gibt.
-
-> KDE is an international team co-operating on development and distribution of Free, Open Source Software for desktop and portable computing. Our community has developed a wide variety of applications for communication, work, education and entertainment. We have a strong focus on finding innovative solutions to old and new problems, creating a vibrant, open atmosphere for experimentation.
-
-Teil dieser "innovative solutions" war unter anderem in der Vergangenheit, dass die komplette KDE Code-Basis von den [GNU Autotools](http://en.wikipedia.org/wiki/GNU_build_system) auf [CMake](http://www/cmake.org) umgestellt wurde ([Why the KDE project switched to CMake - and how](http://lwn.net/Articles/188693)). Dieser Vorgang -- und die damit einhergehenden Ueberlegungen -- waren von entscheidender Bedeutung fuer uns _CMake_ als zentrales Element fuer die LOFAR User Software einzusetzen; bei einer so grossen Community und Code-Basis musste es schon gute Argumente geben, wenn man da einen groesseren Schwenk vornehmen will.
-
-> The entire KDE Development Platform is built upon the Qt toolkit from Qt Development Frameworks, a Nokia company. Like Qt, the KDE libraries are LGPL or BSD licensed and enable easy cross-platform development. The KDE community works on enabling KDE applications both on Unix and Unix-like operating systems such as Linux, Sun Solaris and BSD as well as Windows and Mac. Efforts are also directed at supporting KDE on mobile platforms like Symbian, Windows CE and Maemo. Other operating systems like Haiku are supported by a vibrant community.
-
-Also ich heute Nachmittag den [Artikel auf Heise News](http://www.heise.de/open/meldung/Die-Zukunft-von-KDE-Wayland-Qt-5-einheitliche-Plasma-Shell-1848721.html) gesehen habe, musste ich sofort daran denken, wie unterschiedlich die Dinge doch laufen koennen: waehrend [Ubuntu](http://www.ubuntu.com) mit seinem [Mir display Server](https://wiki.ubuntu.com/Mir) zum wiederholten Male eigene Wege einschlaegt (und sich damit recht wenige Freunde macht), setzt das KDE Projekt mit [Wayland](http://wayland.freedesktop.org) recht konsequent auf den in der Open-Source Community skizzierten Pfad weg vom betagten [X](http://en.wikipedia.org/wiki/X_Window_System_core_protocol).
-x
  
 **:::**
  

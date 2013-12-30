@@ -1,0 +1,29 @@
+---
+title: "Noch ein paar Tage"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Fri, 27. December 2013 -- 19:14_
+
+... dann haetten wir auch schon das Ende von 2013 erreicht. Sollte auf em Schlussspurt nicht noch etwas ganz massiv daneben gehen, dann habe ich es dieses Jahr wirklich geschafft jeden Tag einen (zumindest kurzen) Eintrag in dem Blog bereit zu stellen. Mit aktuell 582 Eintraegen seit dem ersten Januar habe ich sogar einiges mehr geschrieben, als minimal noetig gewesen waere; gerade bei so Gelegenheiten wie meinen Zugfahrten habe ich schon ein wenig mehr probiert den Fortgang zu dokumentieren, als anschliessend nur eine Zusammenfassung abzuliefern (ein Vorhaben was typischerweise dann auch dazu tendiert schief zu gehen).
+
+Waehrend ich nach wie vor recht gluecklich bin ueber die Entscheidung, von einer Wiki-basierten Loesung auf eine statische Website umzustellen, so bin ich mit der konkreten Loesung mittlerweile nicht mehr so ganz gluecklich. Dies liegt vor allen Dingen daran, dass a) das Update der Seiten recht lange dauert und b) es einige Features gibt, welche mir von [webgen](http://webgen.rubyforge.org) eben nicht zur Verfuegung gestellt werden. In der Praxis lassen sich die beiden Punkte mit aller Wahrscheinlichkeit nicht voneinander trennen, zumal man wohl letzten Endes immer auch noch die Programmiersprache mit in Betracht ziehen muss, mittels welcher der Website-Generator implementiert ist. Was ich an dieser Stelle eigentlich gerne als liebstes haette duerfte nicht sonderlich schwer zu erraten sein -- aber auch nach laengeren Suchen ist es mir nicht gelungen einen in C++ geschriebenen Website-Generator zu finden, welcher wirklich auf Performance getrimmt ist. Wer meine Skepsis gegenueber Script-Sprachen kennt, der kann vielleicht nachvollziehen, weil ich mir immer noch eine Implementierung wuensche, welche mit kleinstmoeglichem Overhead auf Geschwindigkeit (bei grossen Projekten) getrimmt werden kann... bisher habe ich mich aber noch nicht dazu ueberwinden koennen, selber einmal in diese Richtung taetig zu werden. Allerdings denke ich mir schon, dass es eine Moeglichkeit geben muss, mit welcher sich die Umlaufzeiten reduzieren lassen.
+
+~~~~
+[100%] Rendering website from sources ...
+Starting webgen...
+Updating tree...
+...done in 138.6266 seconds
+Writing changed nodes...
+...done in 1.1686 seconds
+Updating tree...
+...done in 136.0459 seconds
+Writing changed nodes...
+...done in 1.1506 seconds
+Finished
+~~~~
+
+Auch wenn ich fuer die erste Inspektion nicht beide Durchlaeufe noetig habe, so dauert es immerhin noch mehr als zwei Minuten, ehe die Seiten neu aufgebaut sind - vor allen Dingen fuer schnelles Interieren bei kleinen Aenderungen ist dies kein sonderlicher Spass, so dass wohl klar sein duerfte, warum ich den Blick auf der Suche nach Alternativen schweifen lasse.
