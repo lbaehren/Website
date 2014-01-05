@@ -1,0 +1,31 @@
+---
+title: "Start in das neue (Blog) Jahr"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Thu, 02. January 2014 -- 21:36_
+
+Halten wir dies vielleicht einmal gleich am Anfang fest: das Vorhaben im letzten Jahr, wirklich jeden Tag zumindest einen kurzen Blog-Eintrag vorzunehmen, habe ich in der Tat durchgehalten; ich kann zwar nicht behaupten, dass es mir in jedem Fall gelungen ist immer sonderlich intelligente Dinge zu berichten oder online zu stellen (daran laesst sich bestimmt noch arbeiten), aber wie ich mit dem offiziellen Abschluss des Jahres feststellen konnte, habe ich meine Quote sogar mehr als nur erfuellt.
+
+~~~~
+Scanning entries for 2013 ...
+Scanning entries for 2013 -      587 entries found.
+Scanning entries for 2014 ...
+Scanning entries for 2014 -        1 entries found.
+~~~~
+
+Eine der Nebenwirkungen des Start in das neue Jahr bedeutet allerdings auch, dass zunaechst einmal der Index erneuert werden muss; als ein Resultat daraus dauert es recht lange, ehe alle Seiten aktualisiert und weggeschrieben sind:
+
+~~~~
+[100%] Rendering website from sources ...
+Starting webgen...
+Updating tree...
+...done in 310.3099 seconds
+Writing changed nodes...
+...done in 359.5535 seconds
+~~~~
+
+Ich denke zwar, dass die Durchlaufzeiten fuer alle weiteren Eintraege nicht mehr so lange sein werden, aber dies aendert nichts an der Tatsache, dass ich mich nach Alternativen fuer die hinter den Webseiten laufende Machinerie umschauen sollte.
