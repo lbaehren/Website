@@ -9,6 +9,22 @@ tags: Blog
  
 **:::**
  
+### Nicht was ich suche ###
+
+
+
+
+_Sun, 05. January 2014 -- 22:37_
+
+Da bin ich bisher aber noch nicht sonderlich gluecklich mit dem, was ich da bisher finden konnte. Da jetzt doch auch mal Bedarf daran besteht das Synology NAS nicht nur fuer die Speicherung meiner Photos zu verwenden, sondern dies zum allgemeinen Storage-Hub zu erklaeren, habe ich heute Abend mal noch versucht alles soweit vorzubereiten, dass dies auch geht. Stellt sich allerdings heraus, dass es garnicht so einfach ist eine im Netzwerk transparente Loesung zu finden, welche es erlaubt die auf der DiskStation abgelegten Photo-Sammlungen zu verwalten und online verfuegbar zu machen. Schaut man sich einmal unter den zur Verfuegung gestellten Anwendungen um, dann duerfte es wohl nicht verwunderlich sein, wenn die erste Wahl auf die [Photo Station](https://www.synology.com/en-us/dsm/home_multimedia_photo_station) faellt:
+
+> Photo Station allows every user to create albums or blogs to share the exciting moments of lives with others. Free yourself from storage limits from 3rd-party providers and enjoy the freedom to upload photos as the capacity of your hard drives allowed.
+
+Da ich ja mit der [Video Station](https://www.synology.com/en-us/dsm/home_multimedia_video_station) und der [Audio Station](https://www.synology.com/en-us/dsm/home_multimedia_audio_station) schon recht gute Erfahrungen habe sammeln koennen -- beide befinden sich hier zuhause bereicht in regelmaessiger Benutzung -- war ich von der Idee einen vergleichbaren Service fuer die Bilder aufzusetzen recht angetan. Stellt sich nur dummerweise heraus, dass es einen entscheidenden Unterschied zwischen den Anwendungen gibt: waehrend _Audio_ und _Video_ Station in der Lage sind eine bestehende Verzeichnisstruktur zu indexieren, besteht _Photo Station_ darauf alles in eine eigene Dateistruktur einzubinden. Dies bedeutet dass ich der _Photo Station_ also nicht einfach sagen "da ist der Order mit meinen Bilder" und ich kriege dann eine wenig spaeter eine Uebersicht -- nein, die Anwendung verlangt von mir dass ich meine komplette, bereits sortierte Sammlung noch einmal neu importiere... und bei dem Vorgang auch noch dieses Organisationsschema verliere. Das hilft mir also nicht weiter, so dass ich mich da also nach einer anderen Loesung umschauen muss.
+ 
+**:::**
+ 
+ 
 ### Falafel-Express ###
 
 
@@ -262,24 +278,6 @@ This is so great: I just stumbled across [this entry on Google+](https://plus.go
 > In January I will visit Arjen Anthony Lucassen (aka Ayreon) to talk about his music and the technology involved in creating and recording it. If you have questions I should ask them, please send them ASAP.
 
 So what this means is that somewhen begin of next year -- yep, 2014 is coming up fast -- there will be an episode with Arjen on the recording technology behind the [Ayreon](http://www.ayreon.com) albums.
- 
-**:::**
- 
- 
-### Bad aus einer Hand ###
-
-
-
-
-_Sat, 21. December 2013 -- 17:19_
-
-Als wir heute Nachmittag zu Fuss und mit der Bahn unterwegs waren, sind wir in der Naehe vom Probsthof an einem Fachgeschaeft fuer alles rund um die Planung und Einrichtung eines Bades vorbeigekommen. Da wir ja gestern und auch heute Morgen wieder auf Haeusertour waren, konnte es also nicht schaden da einen Abstecher einziulegen und ggf. ein paar neue Ideen zu bekommen. Wie sich allerdings herausstellte ist der Zugang nicht fuer jedermann gedacht: normalerweise ist der vorherige Kontakt mit einem Fachhandwerker erforderlich, ueber welchen dann ein Besuch vereinbart wird. Die kombinierte Argumentation von Julia und mir verschaffte uns dann aber doch den Zutritt, so dass wir uns in Ruhe umschauen konnten. 
-
-Ein paar Anregungen haben wir sicherlich gefunden, aber vom Grundsatz her scheinen wir nir unbedingt die Zielkunden fuer das zu sein, was man da vor Ort versucht zu buendeln:
-
-> Am Anfang steht immer die Idee. Eine klare Vorstellung, wie es aussehen soll - das individuelle Bad zum Wohlfühlen. Bis ins kleinste Detail, bis hin zu den Handgriffen der Duschabtrennung, der idealen Lichtführung oder der Wannenanlage - alles lässt sich virtuell planen. Aber bei der Umsetzung soll nichts dem Zufall überlassen werden, sondern eine klare Struktur, ein starker Partner von Anfang an zur Seite stehen. Der wichtigste und erste Kontakt sollte zum Sanitär-Fachhandwerker Ihres Vertrauens sein. Nur der Badprofi kann die technischen Informationen, die bei einem Neubau oder einer Modernisierung notwendig sind, ermitteln.
-
-Klingt letzten Endes nicht so ganz nach dem, was uns so vorschwebt und wofuer wir wirklich Bedarf haben. Auch schien man da sehr auf einer vorschriftsgetreuen deutschen Ausfuehrung Wert zu legen, welche nicht unbedingt dem entspricht, was sich in der Praxis vorfinden laesst. Ich finde es sicherlich nett auch ein schoenes Badezimmer zu haben, aber irgendwie bin ich da nicht bereit derartige Summen an Geld hinein zu versenken und die Raeumlichkeiten an den darin zu platzierenden Installationen auszurichten.
  
 **:::**
  

@@ -1,0 +1,15 @@
+---
+title: "Nicht was ich suche"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Sun, 05. January 2014 -- 22:37_
+
+Da bin ich bisher aber noch nicht sonderlich gluecklich mit dem, was ich da bisher finden konnte. Da jetzt doch auch mal Bedarf daran besteht das Synology NAS nicht nur fuer die Speicherung meiner Photos zu verwenden, sondern dies zum allgemeinen Storage-Hub zu erklaeren, habe ich heute Abend mal noch versucht alles soweit vorzubereiten, dass dies auch geht. Stellt sich allerdings heraus, dass es garnicht so einfach ist eine im Netzwerk transparente Loesung zu finden, welche es erlaubt die auf der DiskStation abgelegten Photo-Sammlungen zu verwalten und online verfuegbar zu machen. Schaut man sich einmal unter den zur Verfuegung gestellten Anwendungen um, dann duerfte es wohl nicht verwunderlich sein, wenn die erste Wahl auf die [Photo Station](https://www.synology.com/en-us/dsm/home_multimedia_photo_station) faellt:
+
+> Photo Station allows every user to create albums or blogs to share the exciting moments of lives with others. Free yourself from storage limits from 3rd-party providers and enjoy the freedom to upload photos as the capacity of your hard drives allowed.
+
+Da ich ja mit der [Video Station](https://www.synology.com/en-us/dsm/home_multimedia_video_station) und der [Audio Station](https://www.synology.com/en-us/dsm/home_multimedia_audio_station) schon recht gute Erfahrungen habe sammeln koennen -- beide befinden sich hier zuhause bereicht in regelmaessiger Benutzung -- war ich von der Idee einen vergleichbaren Service fuer die Bilder aufzusetzen recht angetan. Stellt sich nur dummerweise heraus, dass es einen entscheidenden Unterschied zwischen den Anwendungen gibt: waehrend _Audio_ und _Video_ Station in der Lage sind eine bestehende Verzeichnisstruktur zu indexieren, besteht _Photo Station_ darauf alles in eine eigene Dateistruktur einzubinden. Dies bedeutet dass ich der _Photo Station_ also nicht einfach sagen "da ist der Order mit meinen Bilder" und ich kriege dann eine wenig spaeter eine Uebersicht -- nein, die Anwendung verlangt von mir dass ich meine komplette, bereits sortierte Sammlung noch einmal neu importiere... und bei dem Vorgang auch noch dieses Organisationsschema verliere. Das hilft mir also nicht weiter, so dass ich mich da also nach einer anderen Loesung umschauen muss.
