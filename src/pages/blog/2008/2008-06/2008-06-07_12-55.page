@@ -1,0 +1,30 @@
+---
+title: "Necessary upgrades"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Sat, 07. June 2008 -- 12:55_
+
+After the first step towards expanding the storage space for my pictures, today I purchased the missing pieces of equipment: a second 750 GB hard-drive and a slightly larger USB hub. While the first item was the missing piece to set up a 2-disk RAID1 system to take up the thousands of pictures I have accumulated up to this point, the USB hub is a replacement for the smaller 4 port version used until now. As can be seen from the listing below, the disk taking up the pictures until now was at the end of its capacity:
+
+~~~~
+Filesystem      Size   Used  Avail Capacity  Mounted on
+/dev/disk0s2    149G   110G    38G    74%    /
+/dev/disk3s3    233G   152G    81G    65%    /Volumes/Archive
+/dev/disk4s3    466G   339G   127G    73%    /Volumes/Cinematheque
+/dev/disk1s1    298G   295G   3.2G    99%    /Volumes/Pictures
+/dev/disk2s10   699G   287G   412G    41%    /Volumes/Pictures 1a
+~~~~
+
+Less than 4 GB left on the drive is not even enough for one memory card which goes into the D300 (the smallest one I have is one of 4 GB). However what I already set up before going on vacations was some first-level protection against data loss: along with my regular backup from the laptop's hard-drive I have been mirroring data from `/Volumes/Pictures` onto `/Volumes/Pictures 1a`, the first of the now two 750 GB drives. So in some sense I already had a kind of RAID, only that its capacity was limited by the smaller 300 GB drive. So adding the second 750 GB disk and setting up a RAID 1 not only gives my back room to breath -- I now have storage capacity for the next approx. 400 GB of pictures -- but also lets me sleep a bit easier, as the data are automatically mirrored.
+
+~~~~
+/dev/disk0s2   149G   111G    38G    74%    /
+/dev/disk1s3   466G   339G   127G    73%    /Volumes/Cinematheque
+/dev/disk4s1   298G   201G    97G    68%    /Volumes/Pictures
+/dev/disk3s3   233G   153G    80G    66%    /Volumes/Archive
+/dev/disk6     698G   273G   425G    39%    /Volumes/Pictures RAID1
+~~~~

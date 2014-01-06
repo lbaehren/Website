@@ -1,0 +1,17 @@
+---
+title: "Der Tag im Norden"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Thu, 19. June 2008 -- 19:18_
+
+So, jetzt da ich hier in **Zwolle** den Zug gewechselt habe, befinde ich mich wieder auf dem Weg in den Sueden; zumindest dann, wenn der Zug hier wirklich die Reise antritt und nicht nur im Bahnhof stehen bleibt. 
+
+Auch wenn es heute Morgen ja ein wenig schwierig war rechtzeitig aus dem Bett zu kommen und mich zum Bahnhof zu begeben, so wuerde ich doch mal in jedem Fall sagen, dass sich der Abstecher gelohnt hat. Den ueberwiegenden Teil der Zeit habe ich mit Martin und Marcel zusammengesessen und die Moeglichkeit ausgelotet [CMake](http://www.cmake.org) fuer den Bau der LOFAR Central Software zu verwenden. Schon seit einiger Zeit gibt es einige Unzufiedenheit mit dem derzeit existierenden Build System, so dass sich die Blicke auf die Aktivitaeten der User Software Group gerichtet haben; nach einigen Abwaegungen hatten wir uns ja dafuer entchieden einen anderen Weg einzuschlagen, als dies zuvor bei ASTRON geschehen war. Nach den beiden anderen Streit-/Diskussionspunkten entwickelen die Dinge sich nun auch in dieser Sache in eine Richtung, wie wir sie bereits vor beinahe zwei Jahren fuer sinnvoll erachtet haben; dadurch, dass ich von Beginn dabei war und zu einem grossen Teil fuer unsere Infrastruktur verantwortlich bin, bin ich jetzt in der strategisch wertvollen Situation, dass mein mir angeeignetes Wissen gleich von mehreren Seiten angefragt wird. Insofern war meine Position beim gestrigen Gespraech mit Heino auch recht klar in der Hinsicht, dass ich keine Lust habe mich nur auf eine einzige, sehr CR-spezifisch Sache, beschraenken zu lassen; ich mir die Moeglichkeit erhalten auf dem groesseren Spielfeld aktiv zu sein und nicht alleine in der Nijmegen-Ecke vor mich hin duempeln. 
+
+Wie bereits in der letzten Woche begonnen, so haben wir heute nun gemeinsam damit begonnen, ein paar realistische Aufgaben an das meist wahrscheinlich neue Build System zu stellen; das die in der Kuerze der Zeit gefundenen Loesungen noch nicht dem entsprechen, wie es letzten Endes aussehen wuerde, wenn wirklich der Wechsel von den GNU Autotools hin zu CMake vollzogen wird, war sicherlich zu erwarten und laesst sich durchaus verkraften. Das entscheidende Resultat des Tages ist aber, dass alle Beteiligten -- Martin, Marcel und John -- sehr angetan von dem sind, was ich ihnen heute praesentiert habe. Ich habe zwar keine Ahnung wann die Entscheidung ueber die zukuenftige Vorgehensweise gefaellt wird, aber ich denke mal dass die Wegweiser immer deulicher in die Richung zeigen, fuer welche ich mich entschieden haette; in so fern ist es ein Stueck weit auch eine Genugtuung, dass nach all dem argwoehnischen Beaeugen unserer Aktivitaeten nun wir als diejenigen dastehen, welche auf die lange Sicht doch den richtigen Fuehler hatten. Die letzten drei Tage erweisen sich damit als recht erfolgreich -- Grund genug, dass ich Michael noch ein Update zukommen lassen muss (allein die Tatsache, dass er in die Staaten verschwunden ist bedeutet ja nicht, dass alles komplet in sich zusammenbricht). 
+
+Jetzt muss ich mal noch schauen, dass ich wieder nach Hause komme, damit ich fuer das Wochenende packen kann (dazu gehoert ja auch der von Julia wieder georderte Nachschub Erdbeertee).
