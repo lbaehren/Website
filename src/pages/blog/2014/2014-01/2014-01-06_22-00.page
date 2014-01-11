@@ -1,0 +1,21 @@
+---
+title: "Unterwegs fuer FLOSS Weekly"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Mon, 06. January 2014 -- 22:00_
+
+Nachdem ich letztes Jahr ja schon zwei- oder dreimal in die Richtung taetig geworden bin, habe ich mir auch fuer dieses Jahr wieder vorgenommen ein wenig die Dinge im Netz zu unterstuetzen, von welchen ich selber in der Vergangenheit wiederholt provitiert habe. Aus diesem Grunde habe ich heute eine [Meldung](http://arstechnica.com/information-technology/2014/01/ubuntu-puts-nginx-web-server-on-equal-footing-with-apache) bei [Ars Technica](http://arstechnica.com) zum Anlass genommen wieder einmal fuer [FLOSS Weekly](http://twit.tv/show/floss-weekly) aktiv zu werden.
+
+> The next version of Ubuntu Server is expected to include Nginx in the main archive, meaning it will "sit alongside Apache in 14.04 with full security updates over the life of the release," Canonical employee Jorge Castro wrote today.
+>
+> The open source Nginx has become one of the most popular Web servers after Apache, noted by Ars Reviews Editor Lee Hutchinson for being a "lightweight speed demon." Nginx's upgrade to the main archive comes at a good time because the 14.04 release in April 2014 will be Ubuntu's Long Term Support edition and will thus receive five years of support.
+
+Auch wenn ich diese Meldung schon ein wenig laenger auf dem Schirm hatte -- so war ich schon einmal unterwegs gewesen um mich auf den Seiten des Projektes umzuschauen -- so fiel der Groschen in Sachen Podcast-Verwertbarkeit erst heute kurz nach Mittag. Dies lag wohl unter anderem daran, dass in dem Ars Technica Artikel zumindest direkt eine Kontaktperson angefuehrt war, so dass es eigentlich nicht so schwer sein duerfe eine Anfrage via Mail rauszuschicken:
+
+> "Having [NGINX](http://nginx.org) packages added to any distribution is a great benefit to both our users and the broader web consumer community," Nginx technical evangelist and community manager Sarah Novotny told Ars. "Ubuntu is particularly exciting as it has such a tremendous position as the operating system on the cloud. We are looking forward to working with the [Ubuntu community](http://community.ubuntu.com) to support their packaging."
+
+Ganz so einfach war es dann allerdings doch nicht; ich musste mich ein wenig von Website zu Website hangeln, um herauszufinden, mittels welcher Email sich [Sarah Novotny](http://sarahnovotny.com) erreichen liess. Als dieses Problem allerdings erst einmal geloest war, ging alles weitere recht schnell: waehrend ich an anderer Stelle noch nicht einmal eine Reaktion hatte bekommen koennen, tauchte schon nach Minuten eine Antwort bei mir in der Mailbox auf. Ich hoffe nur mal, dass es jetzt von Seiten Randals alles weiterverfolgt wird, denn sowohl Termin als auch Teilnehmer waeren vorhanden.

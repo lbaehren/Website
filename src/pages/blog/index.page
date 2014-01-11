@@ -9,6 +9,145 @@ tags: Blog
  
 **:::**
  
+### Freitag Abend ###
+
+
+
+
+_Fri, 10. January 2014 -- 17:57_
+
+... und Buschdorf hat mich wieder. Auch wenn die Planungen fuer den Abend (wie auch fuer den morgigen Tag) ein wenig abgeaendert werden mussten, so habe ich mich nun wieder mit Laptop hier im Buero eingerichtet und versuche die Zeit so sinnvoll wie moeglich zu nutzen. Was Aufgaben betrifft gibt es durchaus noch ein paar Dinge zu erledigen, so dass mir ganz bestimmt nicht langweilig werden wird.
+ 
+**:::**
+ 
+ 
+### Mit Luecken ###
+
+
+
+
+_Thu, 09. January 2014 -- 21:42_
+
+Das ist doch mal ein Experiment, auf dessen Resultat ich gespannt bin: seit ich vor dreieinhalb Stunden bei SRON aus der Tuere bin, habe ich den GPS Tracker mitlaufen lassen, um auf diese Weise (vielleicht) meine typische Reiseroute auf Karte zu bringen. Waehrend der Tracker kein Problem damit hat, das Signal zeitens der Busfahrt zu finden, ist es im ICE schon ein wenig schwerer; da dort auch das normale Handy-Signal schon recht wackelig ist, wird es bei GPS noch einmal eine Spur schwerer. Ich musste schon feststellen, dass der Track an zwei oder Stellen unterbrochen war (interessanterweise als wir in Bahnhoefen gestanden haben und nicht auf freier Strecke). Wenn ich wieder zuhause angekommen bin, werde ich mal einen Blick auf den Track werfen...
+ 
+**:::**
+ 
+ 
+### Erste Woche in Utrecht ###
+
+
+
+
+_Thu, 09. January 2014 -- 19:15_
+
+Da ist sie also auch wieder vorbei, meine erste Woche in Utrecht im neuen Jahr. Nicht dass sich grossartig etwas veraendert hatte, aber ich muss doch immer wieder feststellen, dass es schon etwas ausmacht, wenn man einmal fuer zwei Wochen (oder auch laenger) aus dem Rhythmus kommt. Hat jetzt nicht so lange gedauert wieder einen gewissen grundsaetzlichen Ablauf hinzukriegen, aber die anfaengliche Wahrnehmung nach einer Pause ist schon ein wenig anders, als wenn man da kontinuierlich dran bleibt.
+
+Ein wenig geschafft habe ich in der Tat, auch wenn ich nicht das Gefuehl von dem riesigen Wurf habe; es war doch einiges mehr an Kleinkram, welcher abgearbeitet werden musste, so dass es eben nicht das deutlich erkennbare "Aha"-Erlebnis gibt (auch wenn es mir gelungen ist zumindest ein Problem aufzuloesen, welches noch vom letzten Jahr uebrig geblieben war). Allem voran habe ich an der Software-Dokumentation gewerkelt, welche mehr und mehr nicht nur fuer Entwickler, sondern auch normale Benutzer, die bevorzugte Anlaufstelle werden soll. Anfaenglich gab es da zwar ein wenig Meinungsverschiedenheiten, in welche Richtung denn die Arbeit an der Dokumentation gehen sollte, aber seit einer Weile ist dies geklaert, so dass mich immer wieder mal daran setzen, alle einzelnen Teile miteinander zu verbinden und ein Ganzes zu integrieren.
+
+~~~~
+* bbcabe7 [FIX] Typo correction. Moving link to subpage.
+|
+* 76855c3 Merging information on testing procedures.
+|
+* 11db25a Clearer structuring of information on KNMI L01b processor and its relation to
+|         the OCAL framework.
+* 5fcc1e4 Links to subpackages.
+|
+* a71b42a First major clean-up of user and developer documentation; trimming contents
+|         displayed on front-page and organization of subpages, based in input from
+|         Jeanette.
+* 99ff9d6 Setting up area for manuals (both user manuals and manuals more heared towards
+|         developers).
+* c63ffcd Add build of documentation to testing.
+|
+* 2b475d4 Removing obsolete files - documentation embedded into scripts.
+|
+* 4bc26ba Better integration of documentation for Python scripts.
+|
+* f8d590d [Fix] Build of cartefact Python module using setup.py: rename constants.c ->
+|         constants.h and add include guards to the header file.
+* 19b81a0 At least for the time being avoid activation of doxypypy filter script for
+|         Doxygen on Mac OS X, as this will cause Markdown source files to be ignored.
+* 8b39245 Move module definitions (used for grouping contents on the Doxygen documentation)
+|         up one level, simplifying directory structure.
+* ab7511a Source for page placed too deep down inside directory structure and thereby too
+|         hard too find.
+* f58e74a Determine Python installation prefix in order to find the correct tools (e.g.
+|         sphinx-build).
+* 7b595d0 Instructions to build shared library/module for Artefact correction (alternate
+|         route, since current setup.py might not work properly).
+* 5b93863 Replace occurences of 'make' by 'CMAKE_BUILD_TOOL' variable; though most of
+|         the time GNU make will e used on the backend, using a more generic notation
+|         enables switching to another setup.
+* 173f592 Cleaning up main page of the online documentation, with cleaner grouping of
+          contents.
+~~~~
+
+Ganz fertig ist aber leider noch nicht, denn wie sich bei einer Diskussion mit Jeanette herausgestellt hat, muessen die diversen Informationen zum in-house L01b-Processor noch zusammengefuehrt werden. Netterweise habe ich aber noch die Fahrt vor mir, so dass ich diese Baustelle bis zur Ankunft in Bonn auch noch abgeschlossen kriege.
+ 
+**:::**
+ 
+ 
+### Suesswaren aus dem Drucker ###
+
+
+
+
+_Wed, 08. January 2014 -- 22:21_
+
+Bisher hatte ich die [International CES](http://www.cesweb.org) vor allen Dingen als Ausstellung/Messe im Gedaechtnis, bei welcher Neuigkeiten aus dem Bereich Audio und Video vorgestellt werden; alle nur erdenklichen Nachrichtenkanaele, welche sich mit Technik beschaeftigen, sind rund um diese Zeit voll mit Meldungen. Dass darunter allerdings auch derartige Bekanntmachungen fallen haette ich mir so schnell nicht denken lassen:
+
+> [3D Systems](http://www.3dsystems.com) kündigt auf der CES in Las Vegas 3D-Drucker für spezielle Anwendungen an: Der CubeJet erzeugt vielfarbige Modelle so günstig wie nie, der ChefJet druckt essbare Modelle aus Zucker und der CeraJet fertigt die Modelle aus Keramik.
+
+Wie Heise News weiter in der [Meldung](http://www.heise.de/newsticker/meldung/3D-Systems-Zucker-Keramik-und-Farbe-aus-dem-3D-Drucker-2077683.html) berichten, bekommt der Begriff "Cookbook" da noch einmal eine ganz besondere Bedeutung:
+
+> Mit dem ChefJet 3D-Drucker lassen sich Süßwaren aus Zucker drucken. Es soll zwei Modelle geben: Der ChefJet druckt einfarbige Zuckerskulpturen, die Pro-Version kann auch farbige Bonbons fertigen. Wenig überraschend sind Konditoren, Bäcker und Event-Gastronomie die Zielgruppe. Da es sich um künstlerische Berufe handelt, die bislang wohl nur wenig Berührungspunkte mit CAD-Modellen haben, soll eine besonders abgestimmte Software und ein "Digital Cookbook" den Einstieg vereinfachen.
+ 
+**:::**
+ 
+ 
+### Fehlende Updates auf Ubuntu Server ###
+
+
+
+
+_Tue, 07. January 2014 -- 11:35_
+
+Ich kann mir da nur schwer helfen, aber je laenger ich mir dies anschaue, desto weniger bin ich geneigt [Ubuntu](http://www.ubuntu.com) auf einem Produktionssytem einzusetzen, wenn es nicht unbedingt sein muss. Klar, virtuelle Maschinen sind recht unkritisch, denn diese erfuellen bei mir vor allen Dingen eine experimentelle Rolle, wenn ich in der Lage sein will, Code oder Features auf unterschiedlichen Platformen zu testen; die Art und Weise aber in welcher Ubuntu immer und immer wieder Sonderwege geht (und sich damit auch von der Open-Source Community entfremdet) spielen durchaus eine Rolle in den Ueberlegungen beim Aufsetzen eines Systems. Genau in diese Kerbe schlaegt dann auch die folgende [Meldung](http://www.heise.de/newsticker/meldung/Distributionen-patchen-Drupal-ausser-Ubuntu-2075618.html) vom gestrigen Tage ein:
+
+> Die Linux-Distributoren haben die kürzlich gemeldeten Sicherheitsprobleme bei Drupal behoben. Für Debians Drupal6 und Drupal7 sowie für Fedora (2013-22507 und 2013-22352) stehen Updates bereit. Wer Drupal allerdings auf einem Ubuntu-System betreibt, muss sich selbst kümmern.
+
+Schaut man ein wenig genauer hin, dann ist [Drupal](https://drupal.org) keineswegs ein Ausnahmefall: auch ei anderen Paketen, wie man sie typischerweise auf einem Server betreiben wuerde, gibt es Rueckstnd was das Stopfen von Sicherheitsluecken betrifft; da ist es dann auch nicht verwunderlich, dass zur Vorsicht geraten wird:
+
+> Wer also auf seinem Ubuntu-System Server-Software installiert hat, kann sich nicht darauf verlassen, dass die automatischen Sicherheits-Updates deren Lücken beseitigen sondern muss selbst ein scharfes Auge auf die Sicherheitswarnungen der eigentlichen Entwickler haben.
+
+Wenn ich mir die diversen Kommentare anschaue, welche online zu finden sind, dann gibt es da aber nicht nur kritische Stimmen in Bezug auf die Server Variante, sondern auch was die Desktop Version betrifft. Da macht es sicherlich Sinn noch einmal genauer nachzuhoeren...
+ 
+**:::**
+ 
+ 
+### Unterwegs fuer FLOSS Weekly ###
+
+
+
+
+_Mon, 06. January 2014 -- 22:00_
+
+Nachdem ich letztes Jahr ja schon zwei- oder dreimal in die Richtung taetig geworden bin, habe ich mir auch fuer dieses Jahr wieder vorgenommen ein wenig die Dinge im Netz zu unterstuetzen, von welchen ich selber in der Vergangenheit wiederholt provitiert habe. Aus diesem Grunde habe ich heute eine [Meldung](http://arstechnica.com/information-technology/2014/01/ubuntu-puts-nginx-web-server-on-equal-footing-with-apache) bei [Ars Technica](http://arstechnica.com) zum Anlass genommen wieder einmal fuer [FLOSS Weekly](http://twit.tv/show/floss-weekly) aktiv zu werden.
+
+> The next version of Ubuntu Server is expected to include Nginx in the main archive, meaning it will "sit alongside Apache in 14.04 with full security updates over the life of the release," Canonical employee Jorge Castro wrote today.
+>
+> The open source Nginx has become one of the most popular Web servers after Apache, noted by Ars Reviews Editor Lee Hutchinson for being a "lightweight speed demon." Nginx's upgrade to the main archive comes at a good time because the 14.04 release in April 2014 will be Ubuntu's Long Term Support edition and will thus receive five years of support.
+
+Auch wenn ich diese Meldung schon ein wenig laenger auf dem Schirm hatte -- so war ich schon einmal unterwegs gewesen um mich auf den Seiten des Projektes umzuschauen -- so fiel der Groschen in Sachen Podcast-Verwertbarkeit erst heute kurz nach Mittag. Dies lag wohl unter anderem daran, dass in dem Ars Technica Artikel zumindest direkt eine Kontaktperson angefuehrt war, so dass es eigentlich nicht so schwer sein duerfe eine Anfrage via Mail rauszuschicken:
+
+> "Having [NGINX](http://nginx.org) packages added to any distribution is a great benefit to both our users and the broader web consumer community," Nginx technical evangelist and community manager Sarah Novotny told Ars. "Ubuntu is particularly exciting as it has such a tremendous position as the operating system on the cloud. We are looking forward to working with the [Ubuntu community](http://community.ubuntu.com) to support their packaging."
+
+Ganz so einfach war es dann allerdings doch nicht; ich musste mich ein wenig von Website zu Website hangeln, um herauszufinden, mittels welcher Email sich [Sarah Novotny](http://sarahnovotny.com) erreichen liess. Als dieses Problem allerdings erst einmal geloest war, ging alles weitere recht schnell: waehrend ich an anderer Stelle noch nicht einmal eine Reaktion hatte bekommen koennen, tauchte schon nach Minuten eine Antwort bei mir in der Mailbox auf. Ich hoffe nur mal, dass es jetzt von Seiten Randals alles weiterverfolgt wird, denn sowohl Termin als auch Teilnehmer waeren vorhanden.
+ 
+**:::**
+ 
+ 
 ### Nicht was ich suche ###
 
 
@@ -157,127 +296,6 @@ Schon zu Zeiten in Nijmegen fand ich es recht interessant ausgemusterte Bahnstre
 _Sat, 28. December 2013 -- 22:16_
 
 Da sind direkt mehrere Dinge nicht so gelaufen, wie ich dies ein wenig frueher geplant hatte. Auf der einen Seite hat mich nun auch die Erkaeltung erwischt, so dass ich mich mit den Kamera-Exkursionen ein klein wenig zurueckhalten muss; grundsetzlich ist frische Luft schon etwas feines, aber Bettwaerme ist unter solchen Umstaenden auch nicht zu verachten. Was aber noch hinzukommt ist die Tatsache, dass das Wetter auch nicht unbedingt dazu einlaedt, laengere Fussmaersche zu absolvieren; heute ist es schon seit den Morgenstunden immer am Regnen, so dass ich alle weiteren Erkundungen erst einmal ein wenig auf Eis gelegt habe. Eigentlich recht schade, denn vor allen Dingen die Zeiten, zu welchen Julia ihre Sportkurse geben muss, haetten sich wirklich angeboten ein wenig loszuziehen und die Umgebung unsicher zu machen -- unter diesen Umstaenden werde ich aber wohl damit noch ein wenig warten muessen.
- 
-**:::**
- 
- 
-### Noch ein paar Tage ###
-
-
-
-
-_Fri, 27. December 2013 -- 19:14_
-
-... dann haetten wir auch schon das Ende von 2013 erreicht. Sollte auf em Schlussspurt nicht noch etwas ganz massiv daneben gehen, dann habe ich es dieses Jahr wirklich geschafft jeden Tag einen (zumindest kurzen) Eintrag in dem Blog bereit zu stellen. Mit aktuell 582 Eintraegen seit dem ersten Januar habe ich sogar einiges mehr geschrieben, als minimal noetig gewesen waere; gerade bei so Gelegenheiten wie meinen Zugfahrten habe ich schon ein wenig mehr probiert den Fortgang zu dokumentieren, als anschliessend nur eine Zusammenfassung abzuliefern (ein Vorhaben was typischerweise dann auch dazu tendiert schief zu gehen).
-
-Waehrend ich nach wie vor recht gluecklich bin ueber die Entscheidung, von einer Wiki-basierten Loesung auf eine statische Website umzustellen, so bin ich mit der konkreten Loesung mittlerweile nicht mehr so ganz gluecklich. Dies liegt vor allen Dingen daran, dass a) das Update der Seiten recht lange dauert und b) es einige Features gibt, welche mir von [webgen](http://webgen.rubyforge.org) eben nicht zur Verfuegung gestellt werden. In der Praxis lassen sich die beiden Punkte mit aller Wahrscheinlichkeit nicht voneinander trennen, zumal man wohl letzten Endes immer auch noch die Programmiersprache mit in Betracht ziehen muss, mittels welcher der Website-Generator implementiert ist. Was ich an dieser Stelle eigentlich gerne als liebstes haette duerfte nicht sonderlich schwer zu erraten sein -- aber auch nach laengeren Suchen ist es mir nicht gelungen einen in C++ geschriebenen Website-Generator zu finden, welcher wirklich auf Performance getrimmt ist. Wer meine Skepsis gegenueber Script-Sprachen kennt, der kann vielleicht nachvollziehen, weil ich mir immer noch eine Implementierung wuensche, welche mit kleinstmoeglichem Overhead auf Geschwindigkeit (bei grossen Projekten) getrimmt werden kann... bisher habe ich mich aber noch nicht dazu ueberwinden koennen, selber einmal in diese Richtung taetig zu werden. Allerdings denke ich mir schon, dass es eine Moeglichkeit geben muss, mit welcher sich die Umlaufzeiten reduzieren lassen.
-
-~~~~
-[100%] Rendering website from sources ...
-Starting webgen...
-Updating tree...
-...done in 138.6266 seconds
-Writing changed nodes...
-...done in 1.1686 seconds
-Updating tree...
-...done in 136.0459 seconds
-Writing changed nodes...
-...done in 1.1506 seconds
-Finished
-~~~~
-
-Auch wenn ich fuer die erste Inspektion nicht beide Durchlaeufe noetig habe, so dauert es immerhin noch mehr als zwei Minuten, ehe die Seiten neu aufgebaut sind - vor allen Dingen fuer schnelles Interieren bei kleinen Aenderungen ist dies kein sonderlicher Spass, so dass wohl klar sein duerfte, warum ich den Blick auf der Suche nach Alternativen schweifen lasse.
- 
-**:::**
- 
- 
-### Morgenspaziergang ###
-
-
-
-
-_Thu, 26. December 2013 -- 22:03_
-
-Von der Idee her klang dies eigentlich recht gut: da Julia am heutigen Vormittag ja eine Mammuttour in Sachen Sportstunden zu absolvieren hatte, koennte ich mir eigentlich die Kamera schnappen und (in einem groesseren Bogen) eines der Studios ansteuern und dabei wieder einmal ein wenig Bonn erkunden. Da sich gestern Abend noch recht spontan eine Privatstunde frueh am Morgen ergeben hatte, war also mein Plan dass ich mich vom Brueser Berg aus aufmache und von dort aus der Nase nach in Richtung Tal laufe (was fuer sich genommen nicht unbedingt die genaueste Beschreibung ist). Da ich mich vor allen Dingen oben auf dem Berg noch nie so sonderlich herumgetrieben habe, schien mir dies eine gute Gelegenheit zu sein, mir da einfach mal etwas mehr Zeit zum Erkunden zu nehmen. Waehrend eines der ersten Strassenschilder auf der Route eigentlich recht vielversprechend klangen, musste ich allerdings schon bald feststellen, dass ein zweiter Weihnachtstag (zumal auch noch wenn bei einem wolkenverhangenen Himmel) nicht unbedingt zu den interessantesten Dingen gehoert, welche man sich vorstellen kann.
-
-![Abenteuerweg](/blog/2013/2013-12/dsc_20131226_103649.jpg)
-
-Mit Abenteuer war nicht: die Anzahl an Menschen, welche auf den Strassen unterwegs waren konnte man fast schon an einer Hand abzahlen; selbst in der Fussgaengerzone am Brueser Berg war kaum eine Seele ausfindig zu machen. Ok, es gibt immer wieder die obligatorischen Hundebesitzer, welche bei jedem Wetter und jeder Tageszeit unterwegs sind, aber ansonsten haette ich wahrscheinlich genauso gut mitten in der Nacht durch die Gegend laufen koennen. Was mich persoenlich aber deutlich mehr stoerte war die Tatsache, dass einfach kein vernuenftiges Licht zu finden war -- selbst auf den HDR Bildern ist kaum eine Struktur am Himmel zu erkennen. Unter diesen Bedingungen machte es nicht sonderlich viel Spass durch die Gegend zu laufen; auch wenn ich in Sachen Hoerfutter noch fuer ein paar Stunden bestens versorgt gewesen waere, war einfach nicht erkennbar, wie ich ausreichend photographisch interessantes Material ausfindig machen koennte -- folgerichtig habe ich es bei einer kleinen Runde belassen und werde es lieber in Kuerze noch einmal probieren.
-
-![Edisonallee](/blog/2013/2013-12/hdr_20131226_110503_Brueser_Berg.jpg)
- 
-**:::**
- 
- 
-### Masters of Sex ###
-
-
-
-
-_Wed, 25. December 2013 -- 22:36_
-
-Irgendwie ist es schon ein wenig doof, wenn beim Geschichten erzaehlen diese laengeren Luecken entstehen; dabei ist es mir eigentlich ziemlich gleich, ob es sich dabei um ein Buch, ein Hoerbuch, ein Radiohoerspiel... oder eben um eine Fernsehserie handelt. Das wirklich dumme allerdings bei den letzten beiden Faellen ist, dass man da auf den Fortgang leider keinen wirklichen Einfluss hat, denn wenn neue Folgen erst in einem bestimmten Abstand herausgebracht werden, dann gibt es eben in der Erzaehlung so lange kein Weiterkommen. Waehrend ich dies schon bei [Sherlock](http://www.imdb.com/title/tt1475582) ziemlich bloed fand (gluecklicherweise sind die Tage bis zum Start von [Season 3](http://www.imdb.com/title/tt1475582/episodes?season=3) dort gezaehlt), so habe ich vor kurzem eine weitere Serie entdeckt, bei welcher ich auch Julia wieder einmal mit anstecken konnte (was ja keine so einfache Aufgabe ist):
-
-> [Masters of Sex](http://www.imdb.com/title/tt2137109) stars [Michael Sheen](http://www.imdb.com/name/nm0790688) and [Lizzy Caplan](http://www.imdb.com/name/nm0135221) as real-life pioneers of the science of human sexuality, [William Masters and Virginia Johnson](http://en.wikipedia.org/wiki/Masters_and_Johnson). Their research touched off the sexual revolution and took them from a midwestern teaching hospital to the cover of Time magazine and multiple appearances on Johnny Carson's couch. He is a brilliant scientist out of touch with his own feelings, and she is a single working mother ahead of her time. The series chronicles their unusual lives, romance, and unlikely pop culture trajectory.
-
-So auf dem direkten Wege waere ich wahrscheinlich nicht unbedingt auf die Serie gestossen -- zumal ich jetzt auch nicht unbedingt den besten Ueberblick darueber habe, was so alles an neuen Dingen anlaeuft -- aber als ich vor einer Weile wieder einmal ein wenig gestoebert habe, war der Titel schon ein wenig auffaellig. [Als ich mich dann mal kundig gemacht habe](http://www.sho.com/sho/masters-of-sex/home), worum es sich eigentlich handelt, bin ich natuerlich neugierig geworden und habe mich auf die Suche nach den bisher ausgesendeten Episoden gemacht. Waehrend ich zunaechst davon ausgegangen war, dass die Serie bereits abgelaufen sei, musste ich dann bei einem zweiten Nachlesen feststellen, dass [Season 1](http://www.sho.com/sho/masters-of-sex/season/1) bis kurz vor Weihnachten ueberhaupt erst ausgestrahlt (oder zumindest ueber Kabel gesendet) wurde; bei dem Tempo, in welchem wir uns durch den Rueckstand gearbeitet haben, hiess es dann aber ein wenig gedulden bis zu den beiden abschliessenden Folgen. Vollstaendig war der Erzaehlbogen damit aber immer noch nicht, denn wie sich weiter nachlesen liess, steht noch eine weitere (zweite) Season an... allerdings erst Ende 2014! Das ist dann wirklich eine recht lange Durststrecke, so dass der einmal aufgebaute Spannungsbogen damit schon ein gutes Stueck zerrissen wird (was sehr schade ist, denn ein Cliffhanger verliert schon an Anziehungskraft, wenn die Luecke zu lange wird).
-
-Die Serie bis hierhin war sehr spannend: die Geschichte ist vollgepackt mit gleich einer ganzen Anzahl an Nebenstraengen (welche aber letzten Endes mit zum dem Gesamtbild gehoeren), aber eben auch mit einem Einblick in das gesellschaftspolitische Umfeld, in welchem die beiden Protagonisten ihre Studien gefuehrt und verfasst haben. Vieles von dem, was man da zu hoeren und sehen bekommt, erscheint unter dem heutigen Blickwinkel recht absurd... auch wenn so mancher zu jener Zeit begonnene Kampf bis heute nicht als gewonnen gelten darf. Wirklich sehenswert, was sich (ausnahmsweise) auch in den diversen [Auszeichnungen](http://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Masters_of_Sex) wiederzuspiegeln scheint.
- 
-**:::**
- 
- 
-### Unterwegs in Tannenbusch ###
-
-
-
-
-_Tue, 24. December 2013 -- 20:05_
-
-Manchmal muss ma sich die Dinge einfach ein wenig erlaufen, um sie besser beurteilen zu koennen... Am letzten Freitag (20. Dezember) hatten wir uns am Nordrand von Tannenbusche ein potentielles Haus angeschaut, bei welchem man vielleicht ein paar Abstriche haette machen muessen, aber bei welchem der Eindruck alles in allem doch recht positiv war. Nach ein wenig Bedenkzeit hatte sich Julia dann noch einmal mit dem Verkaeufer in Verbindung gesetzt, um unser grundsaetzliches Interesse kund zu tun. Als dann heute Nachmittag das Vorhaben bestand fuer eine Weile an die frische Luft zu gehen und noch ein klein wenig Sonne zu tanken, sind wir kurzerhand in Richtung Tannenbusch aufgebrochen, um uns die Umgebung mal noch ein wenig ausfuehrlicher aus der Naehe anzuschauen.
-
-![GPS Track](/blog/2013/2013-12/2013-12-24_GPS-Track.png)
-
-Wie man anhand des GPS Tracks erkennen kann, haben wir durchaus unterschiedliche Teile von Tannenbusch abgelaufen: man kann diesen Teil von Bonn sicherlich einfach nur in ein und den gleiche Topf werfen -- da gibt es schon noch einmal Unterschiede je nach dem wo man sich genau befindet.
- 
-**:::**
- 
- 
-### Besuch in Mittelerde ###
-
-
-
-
-_Mon, 23. December 2013 -- 21:35_
-
-Auch wenn 2013 eine ganze Reihe an interessanten -- und von der Produktion her hochwertigen -- Filmen gesehen hat, so stand [The Hobbit: The Desolation of Smaug](http://www.imdb.com/title/tt1170358) mit Sicherheit bei recht vielen Leuten ziemlich weit oben auf der Liste der Erwartungen. Auch wenn der erste der Filme mit recht gemischten Reaktionen empfangen wurde, so verband sich mit Smaug als ein Hauptcharakter doch einiges an Hoffnung -- wohl auch mit einer der Gruende, warum ich daran interessiert war den Film auf einer grossen Leinwand zu sehen.
-
-![Kinokarte](/blog/2013/2013-12/2013-12-21_Hobbit.jpg)
-
-Da der Kino-Besuch ja nicht sofort nach dem Anlaufen stattfand, waren in der Zwischenzeit schon einiges an Informationen erhaeltlich, so dass ich eben nicht vollkommen unvorbereitet in Richtung Mittelerde losgezogen bin. Was mich im Vorfeld deutlich mehr als Reviews interessiert hat, waren Artikel und Hintergrundberichte zur Schaffung des Filmes; vor allen Dingen auf [FX-Guide](http://www.fxguide.com) habe ich mich durch Artilel gelesen und Podcasts gehoert. Herauszuheben waeren hier der exzellente Artikel [Meet Smaug](http://www.fxguide.com/featured/meet-smaug), welches auf ein kleines Detail in Bezug auf die DVD-Edition hinweisst:
-
-> Interestingly, in [the first Hobbit film](http://www.imdb.com/title/tt0903624), Weta Digital made a four-legged Smaug with wings on his back to facilitate scenes of the dragon rampaging through villages. But in The Desolation of Smaug, the character had to be able to emote through his hands – which necessitated a return to a two-legged dragon with wings on his arms. Jackson agreed to the change so long as Smaug was fixed on the DVD version of the first film – which [Weta Digital](http://www.wetafx.co.nz) did.
-
-Wer daruber hinaus weiter in die Tiefe gehen will, was die visuellen Effekte betrifft, dem seien ausserdem die beiden folgenden Podcast Episoden ans Herz gelegt:
-
- - [fxpodcast #268: The Hobbit: The Desolation of Smaug](http://www.fxguide.com/fxpodcasts/fxpodcast-268-the-hobbit-the-desolation-of-smaug) (fxpodcast #268, December 18, 2013)
- - [the vfx show #177: The Hobbit: The Desolation of Smaug](http://www.fxguide.com/thevfxshow/the-vfx-show-177-the-hobbit-the-desolation-of-smaug) (the vfx show #177, December 20, 2013)
- 
-**:::**
- 
- 
-### Omegatau Podcast from the Electric Castle ###
-
-
-
-
-_Sun, 22. December 2013 -- 19:21_
-
-This is so great: I just stumbled across [this entry on Google+](https://plus.google.com/100347151288200087365/posts/G7Ya3mLADxc) from them makers of the [Omagetau Podcast](http://omegataupodcast.net):
-
-> In January I will visit Arjen Anthony Lucassen (aka Ayreon) to talk about his music and the technology involved in creating and recording it. If you have questions I should ask them, please send them ASAP.
-
-So what this means is that somewhen begin of next year -- yep, 2014 is coming up fast -- there will be an episode with Arjen on the recording technology behind the [Ayreon](http://www.ayreon.com) albums.
  
 **:::**
  

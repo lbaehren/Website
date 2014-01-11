@@ -1,0 +1,54 @@
+---
+title: "Erste Woche in Utrecht"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Thu, 09. January 2014 -- 19:15_
+
+Da ist sie also auch wieder vorbei, meine erste Woche in Utrecht im neuen Jahr. Nicht dass sich grossartig etwas veraendert hatte, aber ich muss doch immer wieder feststellen, dass es schon etwas ausmacht, wenn man einmal fuer zwei Wochen (oder auch laenger) aus dem Rhythmus kommt. Hat jetzt nicht so lange gedauert wieder einen gewissen grundsaetzlichen Ablauf hinzukriegen, aber die anfaengliche Wahrnehmung nach einer Pause ist schon ein wenig anders, als wenn man da kontinuierlich dran bleibt.
+
+Ein wenig geschafft habe ich in der Tat, auch wenn ich nicht das Gefuehl von dem riesigen Wurf habe; es war doch einiges mehr an Kleinkram, welcher abgearbeitet werden musste, so dass es eben nicht das deutlich erkennbare "Aha"-Erlebnis gibt (auch wenn es mir gelungen ist zumindest ein Problem aufzuloesen, welches noch vom letzten Jahr uebrig geblieben war). Allem voran habe ich an der Software-Dokumentation gewerkelt, welche mehr und mehr nicht nur fuer Entwickler, sondern auch normale Benutzer, die bevorzugte Anlaufstelle werden soll. Anfaenglich gab es da zwar ein wenig Meinungsverschiedenheiten, in welche Richtung denn die Arbeit an der Dokumentation gehen sollte, aber seit einer Weile ist dies geklaert, so dass mich immer wieder mal daran setzen, alle einzelnen Teile miteinander zu verbinden und ein Ganzes zu integrieren.
+
+~~~~
+* bbcabe7 [FIX] Typo correction. Moving link to subpage.
+|
+* 76855c3 Merging information on testing procedures.
+|
+* 11db25a Clearer structuring of information on KNMI L01b processor and its relation to
+|         the OCAL framework.
+* 5fcc1e4 Links to subpackages.
+|
+* a71b42a First major clean-up of user and developer documentation; trimming contents
+|         displayed on front-page and organization of subpages, based in input from
+|         Jeanette.
+* 99ff9d6 Setting up area for manuals (both user manuals and manuals more heared towards
+|         developers).
+* c63ffcd Add build of documentation to testing.
+|
+* 2b475d4 Removing obsolete files - documentation embedded into scripts.
+|
+* 4bc26ba Better integration of documentation for Python scripts.
+|
+* f8d590d [Fix] Build of cartefact Python module using setup.py: rename constants.c ->
+|         constants.h and add include guards to the header file.
+* 19b81a0 At least for the time being avoid activation of doxypypy filter script for
+|         Doxygen on Mac OS X, as this will cause Markdown source files to be ignored.
+* 8b39245 Move module definitions (used for grouping contents on the Doxygen documentation)
+|         up one level, simplifying directory structure.
+* ab7511a Source for page placed too deep down inside directory structure and thereby too
+|         hard too find.
+* f58e74a Determine Python installation prefix in order to find the correct tools (e.g.
+|         sphinx-build).
+* 7b595d0 Instructions to build shared library/module for Artefact correction (alternate
+|         route, since current setup.py might not work properly).
+* 5b93863 Replace occurences of 'make' by 'CMAKE_BUILD_TOOL' variable; though most of
+|         the time GNU make will e used on the backend, using a more generic notation
+|         enables switching to another setup.
+* 173f592 Cleaning up main page of the online documentation, with cleaner grouping of
+          contents.
+~~~~
+
+Ganz fertig ist aber leider noch nicht, denn wie sich bei einer Diskussion mit Jeanette herausgestellt hat, muessen die diversen Informationen zum in-house L01b-Processor noch zusammengefuehrt werden. Netterweise habe ich aber noch die Fahrt vor mir, so dass ich diese Baustelle bis zur Ankunft in Bonn auch noch abgeschlossen kriege.

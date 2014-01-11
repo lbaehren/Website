@@ -1,0 +1,19 @@
+---
+title: "Fehlende Updates auf Ubuntu Server"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 07. January 2014 -- 11:35_
+
+Ich kann mir da nur schwer helfen, aber je laenger ich mir dies anschaue, desto weniger bin ich geneigt [Ubuntu](http://www.ubuntu.com) auf einem Produktionssytem einzusetzen, wenn es nicht unbedingt sein muss. Klar, virtuelle Maschinen sind recht unkritisch, denn diese erfuellen bei mir vor allen Dingen eine experimentelle Rolle, wenn ich in der Lage sein will, Code oder Features auf unterschiedlichen Platformen zu testen; die Art und Weise aber in welcher Ubuntu immer und immer wieder Sonderwege geht (und sich damit auch von der Open-Source Community entfremdet) spielen durchaus eine Rolle in den Ueberlegungen beim Aufsetzen eines Systems. Genau in diese Kerbe schlaegt dann auch die folgende [Meldung](http://www.heise.de/newsticker/meldung/Distributionen-patchen-Drupal-ausser-Ubuntu-2075618.html) vom gestrigen Tage ein:
+
+> Die Linux-Distributoren haben die kürzlich gemeldeten Sicherheitsprobleme bei Drupal behoben. Für Debians Drupal6 und Drupal7 sowie für Fedora (2013-22507 und 2013-22352) stehen Updates bereit. Wer Drupal allerdings auf einem Ubuntu-System betreibt, muss sich selbst kümmern.
+
+Schaut man ein wenig genauer hin, dann ist [Drupal](https://drupal.org) keineswegs ein Ausnahmefall: auch ei anderen Paketen, wie man sie typischerweise auf einem Server betreiben wuerde, gibt es Rueckstnd was das Stopfen von Sicherheitsluecken betrifft; da ist es dann auch nicht verwunderlich, dass zur Vorsicht geraten wird:
+
+> Wer also auf seinem Ubuntu-System Server-Software installiert hat, kann sich nicht darauf verlassen, dass die automatischen Sicherheits-Updates deren Lücken beseitigen sondern muss selbst ein scharfes Auge auf die Sicherheitswarnungen der eigentlichen Entwickler haben.
+
+Wenn ich mir die diversen Kommentare anschaue, welche online zu finden sind, dann gibt es da aber nicht nur kritische Stimmen in Bezug auf die Server Variante, sondern auch was die Desktop Version betrifft. Da macht es sicherlich Sinn noch einmal genauer nachzuhoeren...
