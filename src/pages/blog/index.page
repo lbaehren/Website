@@ -9,6 +9,148 @@ tags: Blog
  
 **:::**
  
+### Foto Paradies testen ###
+
+
+
+
+_Sun, 19. January 2014 -- 21:56_
+
+Wenn dies mal wirklich so einfach waere, wie dies hier klingt:
+
+> __Welche Dateiformate kann ich bei der Bestellung verwenden?__
+>
+> Sie können folgende Digitalfotoformate verwenden: JPG (JPEG), TIF (TIFF), BMP, GIF, PICT (PCT), PNG, ADOBE PHOTOSHOP (PSD, EPS). Wenn Sie Ihre Digitalfotos auswählen, sollten Sie sicherstellen, dass die Bildauflösung hoch genug ist, um qualitativ hochwertige Fotos zu gewährleisten.
+
+Da ich solchen Angaben aber nicht wirklich vertraue, lege ich da testweise lieber einmal selber Hand an: da ich einer von Julia Kursteilnehmerinnen die Fotos von unserem Weissensee-Urlaub zugesagt habe -- die Dame war schliesslich dafuer verantwortlich, dass wir ueberhaupt dorthin gefahren sind -- wollte ich doch lieber auf Nummer sicher gehen, dass sich die Bilder ueberhaupt auslesen und dann ausdrucken lassen. Vor allen Dingen aus dem Grund, dass ich in der Vergangenheit wiederholt Probleme mit den nach JPG exportierten HDRs hatte, waere es schon ganz gut zu wissen, wie es damit ausschaut, wenn man eine Photo-CD z.B. zum DM schleppen wuerde. Waehrend ich bei einer professionellen Druckerei keiner Bedenken haette, wuerde ich einfach mal vermuten, dass die typischen Anforderungen in so einem Drogerie-Markt etwas anders sind. Machen wir also den Test: man nehme eine Reihe von Bildern in diversen Formaten, packe diese auf unterschiedliche Speichermedien und renne damit in den naechsten Laden (auch wenn dies streng genommen nicht der Fall war).
+
+ - RAW -> JPG
+ - RAW -> TIFF (8bit, no compression)
+ - RAW -> TIFF (16bit, no compression)
+ - HDR -> JPG
+ - HDR -> TIFF (16bit, no compression)
+
+Wie sich herausstellt sind die Angaben auf den [Foto Paradies](http://www.fotoparadies.de) Seiten nicht komplett: von den fuenf Bildern -- welche grundsaetzlich mit den aufgefuehrten Digitalfotoformaten uebereinstimmen, liessen sich gerade einmal zwei einlesen:
+
+ - RAW -> JPG
+ - RAW -> TIFF (8bit, no compression)
+
+Die 16bit TIFFs liessen sich nicht einmal als Preview anzeigen (und sind damit vollkommen unbrauchbar), aber auch das aus dem HDR exportierte JPG liess sich nicht verwenden; angesichts der Tatsache aber, dass der ueberwiegende Anteil der Bilder, welche ich zugesagt habe, HDR Aufnahmen sind, stellt dies wirklich ein Problem dar. Wie sich dies nun loesen laesst, weiss ich leider noch nicht -- da werde ich aber in jedem Fall mal dranbleiben, denn schliesslich bringt es ja wenig, wenn ich der Dame ein CD mit Bildern in die Hand druecke welche sie nur begrenzt verwenden kann. Sicher, es gaebe in der Tat immer noch den Weg ueber eine Druckerei, aber andererseits wuerde schon mal gerne wissen, was sich in einem Laden wie DM realisieren laesst.
+ 
+**:::**
+ 
+ 
+### Merging GPS tracks ###
+
+
+
+
+_Sat, 18. January 2014 -- 20:04_
+
+This is not too rare of a problem... actually with quite a simple solution: you have a collection of GPS tracks -- e.g. recorded via an app on your mobile phone -- which you want to organize in such a way, that you end up with one file per day. For whatever reason no complete track was generated in the first place, but instead of keeping all the little bit around, you'd rather end up with one data set containing the individual segments; that this indeed can be accomodated becomes evident from keeping in mind that basically a GPX file internally uses XML in order to represent the track information.
+
+~~~~
+<trkpt lat="50.709352059179835" lon="7.046773483076821">
+  <ele>170.5547262157751</ele>
+  <time>2014-01-12T13:21:00Z</time>
+  <extensions>
+    <gpx10:speed>1.0826374292373657</gpx10:speed>
+    <ogt10:accuracy>8.0</ogt10:accuracy>
+    <gpx10:course>321.3857421875</gpx10:course>
+  </extensions>
+</trkpt>
+~~~~
+
+If you look at the file as a whole, you willl notice that following the file-header there is a block enclosing the information of the track
+
+~~~~
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<gpx version="1.1" creator="OsmAnd" ...>
+  <trk>
+
+    ...
+
+  </trk>
+</gpx>
+~~~~
+
+As a result of the above it becomes rather straight forward how to combine individual tracks into a single data set. While of course a number of tools exist which will help you to do the job, all it actually needs is a text editor
+
+_1.__ Concatenate the individual files -- this e.g. can be done via a simple set of Bash instructions, such as
+
+~~~~
+FILES=`ls 2013-12-16_*`
+for FILE in $FILES ; { cat $FILE >> 2013-12-16.gpx ; rm $FILE ; } ;
+~~~~
+
+The resulting data set will look something along the following lines:
+
+~~~~
+      <trkpt lat="50.779999" lon="7.1845283">
+        <ele>105.79742782151801</ele>
+        <hdop>8.0</hdop>
+        <time>2013-12-16T07:55:11Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<gpx version="1.1" creator="OsmAnd" ...>
+  <trk>
+    <trkseg>
+      <trkpt lat="50.7784425" lon="7.077948">
+        <ele>88.98101672681007</ele>
+        <hdop>8.0</hdop>
+        <time>2013-12-16T11:09:34Z</time>
+      </trkpt>
+~~~~
+
+__2.__ Remove end-of-file marker and the file-header in between tracks:
+
+~~~~
+      <trkpt lat="50.779999" lon="7.1845283">
+        <ele>105.79742782151801</ele>
+        <hdop>8.0</hdop>
+        <time>2013-12-16T07:55:11Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+  <!-- Begin of next track -->
+  <trk>
+    <trkseg>
+      <trkpt lat="50.7784425" lon="7.077948">
+        <ele>88.98101672681007</ele>
+        <hdop>8.0</hdop>
+        <time>2013-12-16T11:09:34Z</time>
+      </trkpt>
+~~~~
+
+
+There you go -- all of the individual tracks have been merged (or combined) into a single data set, which then in turn will make e.g. matching of pictures to the track information (in ordet to embed the GPS data) considerably more simple than needing to deal with a whole bunch of individual shorter tracks.
+ 
+**:::**
+ 
+ 
+### Tscherniheim ###
+
+
+
+
+_Fri, 17. January 2014 -- 11:08_
+
+Einer der Nebeneffekte davon, dass ich diese Woche Bilder aus dem zurueckliegenden Jahr nachbearbeitet habe ist, dass ich natuerlich auch versuche ein wenig Informationen zu den Motiven zusammenzutragen. Vor allen Dingen in den Faellen, wenn es sich um Aufnahmen von oertlich durchaus wichtigen Objekten handelt, probiere ich in der Regel schon ein wenig Hintergundinformationen beizufuegen. So geschehen unter anderem bei dem folgenden Bild, welches ich waehrend unserer laengsten Wanderung rund um den [Weissensee](http://www.weissensee.com/de) gemacht habe:
+
+![Katholische Kapelle Tscherniheim](/blog/2014/2014-01/hdr_20130914_165650_Kapelle.jpg)
+
+Da die meisten Karten da nicht sonderlich viel hergeben, musste ich mich auf dem Umweg ueber den durch das Tal verlaufenden Bach (das einzige wirkliche Identifizierungsmerkmal auf den Karten) zu einem brauchbaren Treffer hangeln:
+
+> [Tscherniheim](http://de.wikipedia.org/wiki/Tscherniheim) war ein von 1621 bis 1879 bestehendes Waldglashüttendorf in den Gailtaler Alpen in Oberkärnten. Von den ehemals rund vierzig Gebäuden der Kärntner Glashütte ist nur eine katholischen Kapelle am Rande einer Almwiese erhalten. Die vom Weißensee aus zugängliche Wüstung in 1163 m Seehöhe liegt auf dem Gemeindegebiet von Hermagor-Pressegger See.
+
+Von dem Dorf ist in der Tat nicht sonderlich viel uebrig geblieben: ausser der Kapelle steht kein weiteres Gebaeude mehr, es gibt lediglich ein paar Schilder, welche daran erinnern, dass hier einmal eine weit ueber das Tal hinaus bekannte Siedlung existiert hat.
+ 
+**:::**
+ 
+ 
 ### Noch rechtzeitig ###
 
 
@@ -241,66 +383,6 @@ Ein wenig geschafft habe ich in der Tat, auch wenn ich nicht das Gefuehl von dem
 ~~~~
 
 Ganz fertig ist aber leider noch nicht, denn wie sich bei einer Diskussion mit Jeanette herausgestellt hat, muessen die diversen Informationen zum in-house L01b-Processor noch zusammengefuehrt werden. Netterweise habe ich aber noch die Fahrt vor mir, so dass ich diese Baustelle bis zur Ankunft in Bonn auch noch abgeschlossen kriege.
- 
-**:::**
- 
- 
-### Suesswaren aus dem Drucker ###
-
-
-
-
-_Wed, 08. January 2014 -- 22:21_
-
-Bisher hatte ich die [International CES](http://www.cesweb.org) vor allen Dingen als Ausstellung/Messe im Gedaechtnis, bei welcher Neuigkeiten aus dem Bereich Audio und Video vorgestellt werden; alle nur erdenklichen Nachrichtenkanaele, welche sich mit Technik beschaeftigen, sind rund um diese Zeit voll mit Meldungen. Dass darunter allerdings auch derartige Bekanntmachungen fallen haette ich mir so schnell nicht denken lassen:
-
-> [3D Systems](http://www.3dsystems.com) kündigt auf der CES in Las Vegas 3D-Drucker für spezielle Anwendungen an: Der CubeJet erzeugt vielfarbige Modelle so günstig wie nie, der ChefJet druckt essbare Modelle aus Zucker und der CeraJet fertigt die Modelle aus Keramik.
-
-Wie Heise News weiter in der [Meldung](http://www.heise.de/newsticker/meldung/3D-Systems-Zucker-Keramik-und-Farbe-aus-dem-3D-Drucker-2077683.html) berichten, bekommt der Begriff "Cookbook" da noch einmal eine ganz besondere Bedeutung:
-
-> Mit dem ChefJet 3D-Drucker lassen sich Süßwaren aus Zucker drucken. Es soll zwei Modelle geben: Der ChefJet druckt einfarbige Zuckerskulpturen, die Pro-Version kann auch farbige Bonbons fertigen. Wenig überraschend sind Konditoren, Bäcker und Event-Gastronomie die Zielgruppe. Da es sich um künstlerische Berufe handelt, die bislang wohl nur wenig Berührungspunkte mit CAD-Modellen haben, soll eine besonders abgestimmte Software und ein "Digital Cookbook" den Einstieg vereinfachen.
- 
-**:::**
- 
- 
-### Fehlende Updates auf Ubuntu Server ###
-
-
-
-
-_Tue, 07. January 2014 -- 11:35_
-
-Ich kann mir da nur schwer helfen, aber je laenger ich mir dies anschaue, desto weniger bin ich geneigt [Ubuntu](http://www.ubuntu.com) auf einem Produktionssytem einzusetzen, wenn es nicht unbedingt sein muss. Klar, virtuelle Maschinen sind recht unkritisch, denn diese erfuellen bei mir vor allen Dingen eine experimentelle Rolle, wenn ich in der Lage sein will, Code oder Features auf unterschiedlichen Platformen zu testen; die Art und Weise aber in welcher Ubuntu immer und immer wieder Sonderwege geht (und sich damit auch von der Open-Source Community entfremdet) spielen durchaus eine Rolle in den Ueberlegungen beim Aufsetzen eines Systems. Genau in diese Kerbe schlaegt dann auch die folgende [Meldung](http://www.heise.de/newsticker/meldung/Distributionen-patchen-Drupal-ausser-Ubuntu-2075618.html) vom gestrigen Tage ein:
-
-> Die Linux-Distributoren haben die kürzlich gemeldeten Sicherheitsprobleme bei Drupal behoben. Für Debians Drupal6 und Drupal7 sowie für Fedora (2013-22507 und 2013-22352) stehen Updates bereit. Wer Drupal allerdings auf einem Ubuntu-System betreibt, muss sich selbst kümmern.
-
-Schaut man ein wenig genauer hin, dann ist [Drupal](https://drupal.org) keineswegs ein Ausnahmefall: auch ei anderen Paketen, wie man sie typischerweise auf einem Server betreiben wuerde, gibt es Rueckstnd was das Stopfen von Sicherheitsluecken betrifft; da ist es dann auch nicht verwunderlich, dass zur Vorsicht geraten wird:
-
-> Wer also auf seinem Ubuntu-System Server-Software installiert hat, kann sich nicht darauf verlassen, dass die automatischen Sicherheits-Updates deren Lücken beseitigen sondern muss selbst ein scharfes Auge auf die Sicherheitswarnungen der eigentlichen Entwickler haben.
-
-Wenn ich mir die diversen Kommentare anschaue, welche online zu finden sind, dann gibt es da aber nicht nur kritische Stimmen in Bezug auf die Server Variante, sondern auch was die Desktop Version betrifft. Da macht es sicherlich Sinn noch einmal genauer nachzuhoeren...
- 
-**:::**
- 
- 
-### Unterwegs fuer FLOSS Weekly ###
-
-
-
-
-_Mon, 06. January 2014 -- 22:00_
-
-Nachdem ich letztes Jahr ja schon zwei- oder dreimal in die Richtung taetig geworden bin, habe ich mir auch fuer dieses Jahr wieder vorgenommen ein wenig die Dinge im Netz zu unterstuetzen, von welchen ich selber in der Vergangenheit wiederholt provitiert habe. Aus diesem Grunde habe ich heute eine [Meldung](http://arstechnica.com/information-technology/2014/01/ubuntu-puts-nginx-web-server-on-equal-footing-with-apache) bei [Ars Technica](http://arstechnica.com) zum Anlass genommen wieder einmal fuer [FLOSS Weekly](http://twit.tv/show/floss-weekly) aktiv zu werden.
-
-> The next version of Ubuntu Server is expected to include Nginx in the main archive, meaning it will "sit alongside Apache in 14.04 with full security updates over the life of the release," Canonical employee Jorge Castro wrote today.
->
-> The open source Nginx has become one of the most popular Web servers after Apache, noted by Ars Reviews Editor Lee Hutchinson for being a "lightweight speed demon." Nginx's upgrade to the main archive comes at a good time because the 14.04 release in April 2014 will be Ubuntu's Long Term Support edition and will thus receive five years of support.
-
-Auch wenn ich diese Meldung schon ein wenig laenger auf dem Schirm hatte -- so war ich schon einmal unterwegs gewesen um mich auf den Seiten des Projektes umzuschauen -- so fiel der Groschen in Sachen Podcast-Verwertbarkeit erst heute kurz nach Mittag. Dies lag wohl unter anderem daran, dass in dem Ars Technica Artikel zumindest direkt eine Kontaktperson angefuehrt war, so dass es eigentlich nicht so schwer sein duerfe eine Anfrage via Mail rauszuschicken:
-
-> "Having [NGINX](http://nginx.org) packages added to any distribution is a great benefit to both our users and the broader web consumer community," Nginx technical evangelist and community manager Sarah Novotny told Ars. "Ubuntu is particularly exciting as it has such a tremendous position as the operating system on the cloud. We are looking forward to working with the [Ubuntu community](http://community.ubuntu.com) to support their packaging."
-
-Ganz so einfach war es dann allerdings doch nicht; ich musste mich ein wenig von Website zu Website hangeln, um herauszufinden, mittels welcher Email sich [Sarah Novotny](http://sarahnovotny.com) erreichen liess. Als dieses Problem allerdings erst einmal geloest war, ging alles weitere recht schnell: waehrend ich an anderer Stelle noch nicht einmal eine Reaktion hatte bekommen koennen, tauchte schon nach Minuten eine Antwort bei mir in der Mailbox auf. Ich hoffe nur mal, dass es jetzt von Seiten Randals alles weiterverfolgt wird, denn sowohl Termin als auch Teilnehmer waeren vorhanden.
  
 **:::**
  
