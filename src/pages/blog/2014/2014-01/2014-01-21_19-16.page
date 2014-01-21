@@ -1,0 +1,36 @@
+---
+title: "Clang update"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 21. January 2014 -- 19:16_
+
+Das haette ich mir vielleicht besser fuer die kommende Nacht aufgehoben. Nachdem ich heute Nachmittag ein paar Aufraeumarbeiten unter meinen Python Paketen durchfuehren musste, ist mir aufgefallen, dass ein eine [Clang](http://clang.llvm.org) Version bei mir auf dem Rechner installiert habe, welche mindestens eine Release hinter der aktuellen Version hinterherhinkt. Ein erster Versuch des Upgrad von 3.3 nach 3.4 schlug bedauerlicherweise fehl
+
+~~~~
+--->  Verifying checksums for clang-3.4
+--->  Extracting clang-3.4
+--->  Applying patches to clang-3.4
+--->  Configuring clang-3.4
+--->  Building clang-3.4
+Error: org.macports.build for port clang-3.4 returned: command execution failed
+To report a bug, follow the instructions in the guide:
+    http://guide.macports.org/#project.tickets
+Error: Processing of port clang-3.4 failed
+~~~~
+
+so dass ich mich entschlossen habe direkt eine Version weiter zu ziehen:
+
+~~~~
+--->  Fetching distfiles for clang-3.5
+--->  Verifying checksums for clang-3.5
+--->  Extracting clang-3.5
+--->  Applying patches to clang-3.5
+--->  Configuring clang-3.5
+--->  Building clang-3.5
+~~~~
+
+Frameworks und Compiler bauen ist typischerweise ein wenig aufwendiger, so dass mein Laptop schon seit gut einer Stunde am Schwitzen ist... da hoffe ich doch mal, dass es diesmal glatt geht, denn ich habe mir mittlerweile angewoehnt _Clang_ statt _GCC_ als Compiler fuer die Arbeit zu verwenden.
