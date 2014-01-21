@@ -9,6 +9,30 @@ tags: Blog
  
 **:::**
  
+### Und wieder alleine ###
+
+
+
+
+_Mon, 20. January 2014 -- 11:52_
+
+Na, das war aber wirklich ein kurzes Gastspiel: nachdem ich die letzte Woche ja schon alleine hier im Buero zugebracht habe, bin ich heute fuer den Rest des Tages wohl auch wieder alleine. Der Grund dafuer liegt in der Tatsache, das Jeanette Aerger mit ihren Kontaktlinsen hat und daher halb blind durch die Gegend stolperte. Auch wenn ich durchaus fuer so manche Dinge den Unterschied zwischen mit und ohne Brille merke, so benoetigen meine Augen deutlich weniger Korrektur. Vor allen Dingen was das Lesen betrifft bin ich ja gluecklicherweise nicht auf Hilfsmittel angewiesen, so dass es mir nichts ausmachen wuerde, wenn ich z.B. mal meine Brille zuhause vergessen wuerden; hat man aber nicht nur mit deutlich mehr [Dioptrie](http://de.wikipedia.org/wiki/Dioptrie), sondern auch noch mit irgendwelchen seltenen Verkruemmungen zu kaempfen, dann kann es wohl schnell passieren, dass es um die visuelle Orientierung geschehen ist. Wenn es dann auch noch ausgerechnet darum geht groessere Mengen Dokumente zu lesen und zu schreiben, bringt es natuerlich nur recht wenig, wenn die Augen schon nach kurzer Zeit schlapp machen. Demnach eben das kurze Gastspiel -- ich habe wieder das Buero fuer mich und kann in aller Ruhe (und ohne jemandem durch eventuelles Mitsummen auf die Nerven zu gehen) die L01b-Prozessor Module fertig schreiben, damit diese endlich eingecheckt werden koennen.
+ 
+**:::**
+ 
+ 
+### Jahrestag ###
+
+
+
+
+_Mon, 20. January 2014 -- 10:02_
+
+Ganz genau werde ich dies wohl nicht hinbekommen - weil sich die Tage ja immer ein klein wenig verschieben -- aber wenn mich mein Gedaechtnis nicht vollkommen im Stich laesst, dann bin ich heute (oder eben morgen) ein Jahr hier bei [SRON](http://www.sron.nl). Schaut man einmal im Blog nach, dann findet sich dort am 21 Januar 2013 ein [Eintrag](/blog/2013/2013-01/2013-01-21_05-45.html), welcher mit der Aufzeichnung der Reise von Bonn nach Utrecht beginnt. Waehrend ich mich vor einem Jahr allerdings mit Schnee (und dadurch bedingten Zugausfaellen) herumschlagen musste, verlief die Fahrt am heutigen Morgen ohne nennenswerte Zwischenfaelle.
+ 
+**:::**
+ 
+ 
 ### Foto Paradies testen ###
 
 
@@ -316,73 +340,6 @@ Das Timing haette nicht besser gewaehlt sein koennen, denn als ich wieder unten 
 _Fri, 10. January 2014 -- 17:57_
 
 ... und Buschdorf hat mich wieder. Auch wenn die Planungen fuer den Abend (wie auch fuer den morgigen Tag) ein wenig abgeaendert werden mussten, so habe ich mich nun wieder mit Laptop hier im Buero eingerichtet und versuche die Zeit so sinnvoll wie moeglich zu nutzen. Was Aufgaben betrifft gibt es durchaus noch ein paar Dinge zu erledigen, so dass mir ganz bestimmt nicht langweilig werden wird.
- 
-**:::**
- 
- 
-### Mit Luecken ###
-
-
-
-
-_Thu, 09. January 2014 -- 21:42_
-
-Das ist doch mal ein Experiment, auf dessen Resultat ich gespannt bin: seit ich vor dreieinhalb Stunden bei SRON aus der Tuere bin, habe ich den GPS Tracker mitlaufen lassen, um auf diese Weise (vielleicht) meine typische Reiseroute auf Karte zu bringen. Waehrend der Tracker kein Problem damit hat, das Signal zeitens der Busfahrt zu finden, ist es im ICE schon ein wenig schwerer; da dort auch das normale Handy-Signal schon recht wackelig ist, wird es bei GPS noch einmal eine Spur schwerer. Ich musste schon feststellen, dass der Track an zwei oder Stellen unterbrochen war (interessanterweise als wir in Bahnhoefen gestanden haben und nicht auf freier Strecke). Wenn ich wieder zuhause angekommen bin, werde ich mal einen Blick auf den Track werfen...
- 
-**:::**
- 
- 
-### Erste Woche in Utrecht ###
-
-
-
-
-_Thu, 09. January 2014 -- 19:15_
-
-Da ist sie also auch wieder vorbei, meine erste Woche in Utrecht im neuen Jahr. Nicht dass sich grossartig etwas veraendert hatte, aber ich muss doch immer wieder feststellen, dass es schon etwas ausmacht, wenn man einmal fuer zwei Wochen (oder auch laenger) aus dem Rhythmus kommt. Hat jetzt nicht so lange gedauert wieder einen gewissen grundsaetzlichen Ablauf hinzukriegen, aber die anfaengliche Wahrnehmung nach einer Pause ist schon ein wenig anders, als wenn man da kontinuierlich dran bleibt.
-
-Ein wenig geschafft habe ich in der Tat, auch wenn ich nicht das Gefuehl von dem riesigen Wurf habe; es war doch einiges mehr an Kleinkram, welcher abgearbeitet werden musste, so dass es eben nicht das deutlich erkennbare "Aha"-Erlebnis gibt (auch wenn es mir gelungen ist zumindest ein Problem aufzuloesen, welches noch vom letzten Jahr uebrig geblieben war). Allem voran habe ich an der Software-Dokumentation gewerkelt, welche mehr und mehr nicht nur fuer Entwickler, sondern auch normale Benutzer, die bevorzugte Anlaufstelle werden soll. Anfaenglich gab es da zwar ein wenig Meinungsverschiedenheiten, in welche Richtung denn die Arbeit an der Dokumentation gehen sollte, aber seit einer Weile ist dies geklaert, so dass mich immer wieder mal daran setzen, alle einzelnen Teile miteinander zu verbinden und ein Ganzes zu integrieren.
-
-~~~~
-* bbcabe7 [FIX] Typo correction. Moving link to subpage.
-|
-* 76855c3 Merging information on testing procedures.
-|
-* 11db25a Clearer structuring of information on KNMI L01b processor and its relation to
-|         the OCAL framework.
-* 5fcc1e4 Links to subpackages.
-|
-* a71b42a First major clean-up of user and developer documentation; trimming contents
-|         displayed on front-page and organization of subpages, based in input from
-|         Jeanette.
-* 99ff9d6 Setting up area for manuals (both user manuals and manuals more heared towards
-|         developers).
-* c63ffcd Add build of documentation to testing.
-|
-* 2b475d4 Removing obsolete files - documentation embedded into scripts.
-|
-* 4bc26ba Better integration of documentation for Python scripts.
-|
-* f8d590d [Fix] Build of cartefact Python module using setup.py: rename constants.c ->
-|         constants.h and add include guards to the header file.
-* 19b81a0 At least for the time being avoid activation of doxypypy filter script for
-|         Doxygen on Mac OS X, as this will cause Markdown source files to be ignored.
-* 8b39245 Move module definitions (used for grouping contents on the Doxygen documentation)
-|         up one level, simplifying directory structure.
-* ab7511a Source for page placed too deep down inside directory structure and thereby too
-|         hard too find.
-* f58e74a Determine Python installation prefix in order to find the correct tools (e.g.
-|         sphinx-build).
-* 7b595d0 Instructions to build shared library/module for Artefact correction (alternate
-|         route, since current setup.py might not work properly).
-* 5b93863 Replace occurences of 'make' by 'CMAKE_BUILD_TOOL' variable; though most of
-|         the time GNU make will e used on the backend, using a more generic notation
-|         enables switching to another setup.
-* 173f592 Cleaning up main page of the online documentation, with cleaner grouping of
-          contents.
-~~~~
-
-Ganz fertig ist aber leider noch nicht, denn wie sich bei einer Diskussion mit Jeanette herausgestellt hat, muessen die diversen Informationen zum in-house L01b-Processor noch zusammengefuehrt werden. Netterweise habe ich aber noch die Fahrt vor mir, so dass ich diese Baustelle bis zur Ankunft in Bonn auch noch abgeschlossen kriege.
  
 **:::**
  
