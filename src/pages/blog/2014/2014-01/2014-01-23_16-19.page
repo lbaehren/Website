@@ -1,0 +1,20 @@
+---
+title: "Aerger mit Python"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Thu, 23. January 2014 -- 16:19_
+
+Da wollte ich jetzt endlich noch einmal die _ADC Conversion_ abrunden, da fliegt mir Python auch schon wieder um die Ohren:
+
+~~~~
+Traceback (most recent call last):
+  File "scripts/l01b.py", line 198, in <module>
+    from swir.l01b.main import Processor
+ImportError: No module named main
+~~~~
+
+Habe mir natuerlich direkt einmal angeschaut, ob ich vielleicht etwas an dem Code selber verbogen habe, aber so wie ich dies bisher erkennen kann, scheint dies nicht der Fall zu sein. Folgerichtig bleibt mir also nur wieder uebrig irgendwo in meinem System-Setup zu suchen, denn was ja immer noch passieren kann ist, dass irgendein Pfad durcheinander gekommen ist -- dumm ist nur, dass sich dies deutlich weniger einfacher ausfindig machen laesst, als dies bei einem Fehler im Code selber der Fall waere.

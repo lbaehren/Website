@@ -9,6 +9,27 @@ tags: Blog
  
 **:::**
  
+### Aerger mit Python ###
+
+
+
+
+_Thu, 23. January 2014 -- 16:19_
+
+Da wollte ich jetzt endlich noch einmal die _ADC Conversion_ abrunden, da fliegt mir Python auch schon wieder um die Ohren:
+
+~~~~
+Traceback (most recent call last):
+  File "scripts/l01b.py", line 198, in <module>
+    from swir.l01b.main import Processor
+ImportError: No module named main
+~~~~
+
+Habe mir natuerlich direkt einmal angeschaut, ob ich vielleicht etwas an dem Code selber verbogen habe, aber so wie ich dies bisher erkennen kann, scheint dies nicht der Fall zu sein. Folgerichtig bleibt mir also nur wieder uebrig irgendwo in meinem System-Setup zu suchen, denn was ja immer noch passieren kann ist, dass irgendein Pfad durcheinander gekommen ist -- dumm ist nur, dass sich dies deutlich weniger einfacher ausfindig machen laesst, als dies bei einem Fehler im Code selber der Fall waere.
+ 
+**:::**
+ 
+ 
 ### SRON am Abend ###
 
 
@@ -355,18 +376,6 @@ Da habe ich mir leider recht lange Zeit gelassen, um mich wirklich einmal hinzus
 >   - Are there specific effects preset required for the provided solos (or perhaps just dry sound)?
 
 Schon klar, dass haette ich alles noch ein wenig besser ausformuliert und besser strukturiert einsenden koennen, aber da ich es leider vergessen habe frueher mit dem notieren zu beginnen, ist dies wohl mehr ein Snapshot der diversen Dinge, welche mir mehr oder weniger spontan fuer eine Unterhaltung einfallen wuerden. Egal nun aber, ob die Fragen beruecksichtigt werden oder nicht, ich bin jetzt schon mal gespannt auf die Ausstrahlung der Episode (was aber wohl noch eine Weile dauern wird).
- 
-**:::**
- 
- 
-### Photography updates ###
-
-
-
-
-_Tue, 14. January 2014 -- 12:13_
-
-Angesichts der Tatsache, dass der ueberwiegende Teil der Arbeit an meiner Website in den [Blog](/blog/index.html) fliesst, ist es wahrscheinlich nicht sonderlich verwunderlich, dass andere Bereiche ein klein wenig zu kurz kommen. Vor allen in der Sektion [Software Development](/development/index.html) habe ich schon seit Ewigkeiten nicht mehr nach dem Rechten geschaut, aber auch was die [Photographie](/photography/index.html) betrifft kann ich nicht behaupten sonderlich schriftstellerisch aktiv gewesen zu sein. Da ich in den letzten Tagen aber wieder ein wenig mehr an der Bearbeitung und Organisation von Bildern gesessen habe, schien es nur konsequent, zumindest einmal einen kurzen Blick auf die entsprechenden Seiten zu werfen. Als ich jetzt einmal etwas genauer nachgeschaut habe, musste ich z.B. feststellen, dass ich immer noch keine Seite fuer [ProgPower 2013](/photography/concerts_festivals/2013-10_progpower.html) angelegt hatte; es gab zwar einen Link auf der _Concerts and Festivals_ Seite, aber viel weiter als dort kam man bisher nicht. Um also den Bereich nicht komplett verweisen zu lassen, habe ich nun zumindest schon einmal die Seite fuer das zurueckliegende Festival -- mit einer Auswahl an Bilder -- angelegt. Das entbindet mich zwar nicht sonder Pflicht mich dann auch noch einmal an die Aufnahmen vom Festival zu setzen (von welchen viele immer noch bei mir zuhause im Archiv lagern), aber zumindest waere damit der Startpunkt auf meinen Seiten gesetzt.
  
 **:::**
  
