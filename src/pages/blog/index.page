@@ -9,6 +9,18 @@ tags: Blog
  
 **:::**
  
+### Nicht gluecklich mit Thunderbird ###
+
+
+
+
+_Thu, 23. January 2014 -- 19:45_
+
+Und da haetten wir wieder einmal ein Verhalten, welches ich ziemlich nervig finde: Vor ein paar Minuten hatten wir den ueblichen Stop in Arnhem, so dass ich schnell noch versucht habe eine Nachricht an Julia anzusetzen (was wahrscheinlich dank dem offenen WLAN auch funktioniert hat). Parallel dazu habe ich dann auch noch probiert die Anfrage an Jeanette rauszuschicken, welche ich auf dem Stueck von Utrecht an geschrieben habe -- um es gleich vorwegzunehmen: es hat nicht geklappt. Da ich fuer die halbe Stunde zwischendurch ja offline war, landete die fertig geschriebene Mail in der _Outbox_, sozusagen dem Sprungbrett von welchem aus es in naechster Instanz dann hinausgeht in die grosse weite Welt. So einfach scheint dies aber nun doch nicht zu gehen, denn waehrend die Nachricht an Julia (welche ich vor Ort geschrieben habe) recht schnell vom Rechner verschwandt, sass die Mail an Jeanette ohne sich zu regen in dem Ordner, ohne dass sich etwas bewegte. Folgerichtig kam mir also der Gedanke doch einmal mit einem Links-Klick auf die Nachricht zu gehen und zu schauen, ob es da nicht eine "Jetzt absenden" Option gibt -- war aber nicht. Auch die _Outbox_ selber scheint keine weitere Kontrolle zuzulassen, ueber welche sich das Abschicken zu einem bestimmten Zeitpunkt triggern laesst; wenn man also lediglich ueber ein kurzes Zeitfenster verfuegt, waehrend dessen die Mails verschickt werden koennen, dann ist man da echt aufgeschmissen. Da ich mich da aber nicht so einfach geschlagen geben wollte, habe ich _Thunderbird_ kurzerhand beendet und dann wieder gestartet -- meine Erwartung waere hier gewesen, dass das Programm nachschaut, ob eine Verbindung moeglich ist und ggf. neue Mails abruft und in der _Outbox_ befindliche Benachrichtigungen abschickt... war aber leider nicht der Fall. Auch wenn ich schon ein Stueck weit aus Ueberzeugung hin zu Open-Source Projekten migriert bin, so finde ich es doch ein wenig irritant, wenn ich mich immer wieder mit dem E-Mail Client herumschlagen muss.
+ 
+**:::**
+ 
+ 
 ### Aerger mit Python ###
 
 
@@ -345,37 +357,6 @@ _Wed, 15. January 2014 -- 20:05_
 Das es bei mir im Archiv noch jede Menge an Bildern gibt, welche ich bisher noch nicht nachbarbeitet habe ist grundsaetzlich ja nichts neues. Mir scheint es aber ein wenig, als ob gerade am Endes des letzten Jahres besonders viele Aufnahmen liegen geblieben sind und lediglich auf dem direkten Wege von der Kamera auf den heimischen Server gewandert sind. Die Tatsache, dass ich ja hier bei [SRON](http:/www.sron.nl) meine Stelle angetreten habe, hat sicherlich seinen Teil dazu beigetragen; durch die Pendelei fehlt mir ja ein von der frueheren Stationaritaet, bei welcher ich mitunter Naechte zuhause am Rechner damit zugebracht habe durch die Aufnahmen zu gehen. Spaestens aber seit es ab dem Herbst an die Suche nach einer neuen dauerthaften Bleibe gegangen ist, sind die Lebensverhaeltnisse ausgesprochen beengt; als eines der Resultate hiervon habe ich lediglich noch in Utrecht einen der beiden grossen Apple Displays aufgebaut, an welchem die Bildernachberarbeitung ja ungleich angenehmer ist. Damit ich also endlich einmal ein wenig weiterkomme mit dem Sortieren und Aufbereiten, habe ich mir eine kleine Auswahl auf as Laptop gepackt; nachdem die wesentlichen Tagesgeschaefte abgehalndelt sind, mache ich mich dann im Buero daran die vor allen Dingen fuer die HDR-Sequenzen notwendigen Korrekturen anzubringen. Macht schon einen gewaltigen Unterschied ob ich dafuer in einen 15'' Monitor starre oder einen 23'' Display vor der Nase stehen habe. So kommt es dann auch, dass all die Bearbeitungsschritte, welche anderweitig Ewigkeiten gedauert haetten (und ggf. auch nicht zu einem sonderlich zufriedenstellenden Ergebnis gefuehrt haetten) hier recht schnell ueber die Beuhne gehen. Nachdem ich mich so gestern Abend ueber die Bilder vom vergangenen Wochenende (dem Spaziergang durch Roisdorf und Bornheim) hergemacht habe, ist heute ein Stapel an Aufnahmen vom Urlaub am Weissensee dran...
 
 ![Stampferhof](/blog/2014/2014-01/hdr_20130914_104213_Stampferhof.jpg)
- 
-**:::**
- 
- 
-### Fragen an Arjen ###
-
-
-
-
-_Wed, 15. January 2014 -- 11:31_
-
-Da habe ich mir leider recht lange Zeit gelassen, um mich wirklich einmal hinzusetzen und eine Reihe von Fragen zu formulieren, welche mir fuer das anstehende [omega tau](http://omegataupodcast.net) Interview mit [Arjen Lucassen](http://www.arjenlucassen.com) einfallen. Komplett und in aller Ruhe zusammengestellt ist die Liste leider nicht, aber ich wollte mir die Chance doch nicht komplett entgehen lassen, wenigsten ein paar Punkte zu dem Podcast beizutragen.
-
-> - Rig rundown Electric Castle:
->   - (Analog) sythesizers
->   - Guitar rig
->   - Recording and mixing chain
-> - How has your recording process changed over the years, based on changes in technology?
-> - Do you yourself record outside your own studio, e,g, when looking for a special sound or instrument/ambient combination?
-> - How is the musical material being exchanged:
->   - Shared online folder (Dropbox-type setup)?
->   - FTP directory?
->   - Physical media (sending and receiving CDs/DVDs)?
-> - When tracks are being recorded outside the Electric Castle, do you send a checklist/cheat-sheet with technical requirements?
-> - Instrumental solos:
->   - At which stage is the musical base material delivered to the solo instrumentalists? After recording of the base tracks or after adding vocals?
->   - Is there some sort of creative feedback loop in the recording process of the solos? Do the soloist simply take off and have a go at the material, or is there some interaction on guiding the outcome?
->   - Where does to the selection of different takes happen? Is this done by the instrumentalist him-/herself or do you get to pick from a range of takes?
->   - Are there specific effects preset required for the provided solos (or perhaps just dry sound)?
-
-Schon klar, dass haette ich alles noch ein wenig besser ausformuliert und besser strukturiert einsenden koennen, aber da ich es leider vergessen habe frueher mit dem notieren zu beginnen, ist dies wohl mehr ein Snapshot der diversen Dinge, welche mir mehr oder weniger spontan fuer eine Unterhaltung einfallen wuerden. Egal nun aber, ob die Fragen beruecksichtigt werden oder nicht, ich bin jetzt schon mal gespannt auf die Ausstrahlung der Episode (was aber wohl noch eine Weile dauern wird).
  
 **:::**
  
