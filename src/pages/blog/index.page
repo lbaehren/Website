@@ -9,6 +9,30 @@ tags: Blog
  
 **:::**
  
+### Photo Station ###
+
+
+
+
+_Sat, 25. January 2014 -- 22:34_
+
+Wie cool ist dies hier fuer die hausinterne Multimedia-Archivierung und Bereitstellung:
+
+> [Photo Station](http://www.synology.com/en-us/dsm/home_multimedia_photo_station) allows every user to create albums or blogs to share the exciting moments of lives with others. Free yourself from storage limits from 3rd-party providers and enjoy the freedom to upload photos as the capacity of your hard drives allowed.
+>
+> - Share photos and daily activities through online album and blog
+> - Flexible viewing method including Photo Wall, Timeline, album categories
+> - Social network integration: share photos onto Facebook, Picasa, Google+, Plurk, and Twitter
+
+Ist zwar immer ganz nett sich derartige Beschreibungen durchzulesen, aber wenn man sich dies via Testbetrieb einmal selber anschauen kann, ist dies doch eine andere Geschichte. Ein klein wenig gespielt hatte ich damit ja schon einmal vor einer Weile, aber da ich mich mittlerweile fuer die hausinterne Datenverwaltung in Sachen Multimedia (also vor allen Dingen Musik, Filme, und nun auch Bilder) verantwortlich erklaert habe, scheint es einfach nur logisch zu sein, die entsprechende zentrale Infrastruktur aufzusetzen. Was jetzt dabei herumkommt ist wirklich sehr nett:
+
+![Photo station](/blog/2014/2014-01/2014-01-25_Photo_Station.png)
+
+Was bekomme ich also auf diese Weise? Nicht nur eine Photo-Verwaltung, sondern gewissemassen eine Art private [Flickr](http://www.flickr.com) Website. Ich muss zwar noch einmal schauen, welche Bildformate insgesamt akzeptiert werden (so habe ich z.B. bisher keine Ahnnung, wie es um RAWs bestellt ist), denn abhaengig davon kann ich mir ueberlegen, ob ich nur die exportierten oder gleich alle Bilder in die _Photo Station_ schmeisse.
+ 
+**:::**
+ 
+ 
 ### XING vs. LinkedIn ###
 
 
@@ -353,20 +377,6 @@ Da hat es ja doch noch geklappt: auch wenn ich mir ein wenig mehr Zeit gelassen 
 Habe Markus direkt mal noch eine Antwort geschickt, dass ich gespannt bin, wie denn die Unterhaltung ausfallen wird; wie oben angefuehrt findet diese am kommenden Samstag statt, aber bis zur Veroeffentlichung des Podcast duerfte wohl noch ein wenig Zeit vergehen.
 
 Da ich derzeit was dies betrifft wohl ein glueckliches Haendchen habe -- so scheint es in Kuerze auch zu einem durch mich vermittelten [FLOSS-Weekly](http://twit.tv/show/floss-weekly) Interview zu kommen -- werde ich wohl noch eine weitere Mail rausschicken, um nachzufragen, ob es fuer _Omage Tau_ nicht interessant sein koennte mit jemandem aus der Raumfahrtindustrie zu sprechen. Da ich bei [SRON](http://www.sron.nl) ja recht gut an der Quelle sitze, koennte ich auch hier versuchen zu vermitteln. Also einfach mal eine Anfrage an Markus senden und schauen, was da so zurueckkommt...
- 
-**:::**
- 
- 
-### Nicht Dein Vater ###
-
-
-
-
-_Thu, 16. January 2014 -- 16:39_
-
-Ich wuerde dies wohl mal den "invertierten Luke" nennen: habe soeben ein sehr nettes [Posting](https://plus.google.com/116287041150844298254/posts/1d54sJc8ukq) auf Google+ gefunden, welches mal mit einem etwas humoristischeren Blickwinkel auf die ganze NAS Affaere schaut.
-
-![Nicht Dein Vater](/blog/2014/2014-01/2014-01-16_NAS.jpg)
  
 **:::**
  
