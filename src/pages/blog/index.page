@@ -9,6 +9,46 @@ tags: Blog
  
 **:::**
  
+### XING vs. LinkedIn ###
+
+
+
+
+_Fri, 24. January 2014 -- 09:37_
+
+Vertreten bin ich auf beiden Platformen, einigermassen identifizieren kann ich mich allerdings nur mit einer:
+
+ - [XING](https://www.xing.com) (bis Ende 2006 openBC für Open Business Club) ist ein soziales Netzwerk, in der Mitglieder vorrangig ihre beruflichen und/oder privaten Kontakte zu anderen Personen verwalten und neue Kontakte finden können. Einzelne Nutzer oder auch Unternehmen können bei XING ein eigenes Profil von sich anlegen, Fachpersonal selber suchen, Stellenangebote einstellen, Veranstaltungen organisieren und sich an Diskussionen in Fachgruppen beteiligen. Betreiber des Portals ist die XING AG in Hamburg, deren Aktien seit Dezember 2006 an der Börse und seit September 2011 im TecDAX notiert sind.
+
+ - [LinkedIn](http://www.linkedin.com) ist ein webbasiertes soziales Netzwerk zur Pflege bestehender Geschäftskontakte und zum Knüpfen von neuen geschäftlichen Verbindungen. Es ist mit über 259 Millionen registrierten Nutzern in mehr als 200 Ländern (Stand: Juni 2013) die derzeit größte weltweite Plattform dieser Art und gehört laut Alexa zu den 500 weltweit meistbesuchten Internetseiten.
+
+Langes Raten darueber, in welcher Umgebung ich mich wohl am ehesten wohl fuehle, duerfte an dieser Stelle nicht noetig sein. Von seiner ganzen Art finde ich _XING_ einfach "sehr deutsch" -- und ich meine dies nicht unbedingt als Kompliment. Vor allen aber dann, wenn versucht internationale Kontakte zu knuepfen, ist _LinkedIn_ eindeutig die bessere Wahl. Da ich da nun nach wie vor mein Augenmerk drauf gerichtet habe, versuche ich dementsprechend mein [LinkedIn Profil](http://www.linkedin.com/profile/view?id=134900181) zumindest einigermassen aktuell zu halten. Ok, das soll nun nicht unbedingt bedeuten, dass ich mich auf _XING_ nun ueberhaupt nicht mehr blicken lasse, aber wenn Aenderungen vorzunehmen gibt, dann nehme ich die typischerweise zunaechst auf _LinkedIn_ vor -- so auch geschehen diese Woche.
+
+Da ich mittlerweile ein wenig mehr Python Erfahrung vorzuweisen habe (was jetzt aber noch bedeutet das ich mich da sonderlich wohl fuehle oder die Sprache anfange zu moegen), wollte ich diese Information auch in meine Profile einbauen: waehrend dies auf _LinkedIn_ recht schnell ging, dauerte es deutlich laenger, ehe ich einen einigermassen geeigneten Platz bei meinem [XING Profil](https://www.xing.com/profile/Lars_Baehren?sc_o=mxb_p) finden konne, wo sich die eintragen liess.
+
+![Skills at XING profile](/blog/2014/2014-01/2014-01-21_Skills_LindedIn.png)
+
+![Skills at LinkedIn profile](/blog/2014/2014-01/2014-01-21_Skills_XING.png)
+
+Schaue ich mir nun aber die beiden Profil im direkten Vergleich an, dann muss ich wieder einmal anerkennen, dass _LinkedIn_ die Informationen in einer (zumindest fuer meinen Geschmack) uebersichtlicheren und klareren Form praesentiert: Dazu gehoert nicht nur, dass eine eine separate Sektion mit dem Titel "Skills & Expertise" gibt, sondern auch dass es moeglich ist die angegebenen Faehigkeiten von (ehemaligen) Kollegen bestaetigen zu lassen. Eine durchaus sinnvolle Funktion.
+ 
+**:::**
+ 
+ 
+### Von unterwegs ###
+
+
+
+
+_Thu, 23. January 2014 -- 21:29_
+
+Das war doch eine recht gute Entdeckung: vor einer Weile habe ich herausgefunden, dass er hier am Hauptbahnhof Koeln einen groesseren Telekom Hotspot gibt, ueber welchen man fuer 30 Minuten gratis Internetzugang erhaelt. War mir lange Zeit nicht bewusst gewesen (es koennte natuerlich auch sein, dass es das Angebot noch nicht so sonderlich lange gibt, was ich aber fuer weniger wahrscheinlich halte). Wenn man also keine groesseren Datentransfers vorhat, sondern eben nur mal schnell Mails checken und/oder abschicken will, dann ist dies vollkommen ausreichend. So muesste ich es sogar schaffen die letzten Blog-Eintraege noch von unterwegs online zu stellen, noch ehe ich wieder zurueck in Bonn bin...
+
+![Hotspot Bahnhof Koeln](/blog/2014/2014-01/2014-01-23_Hotspot_Koeln.png)
+ 
+**:::**
+ 
+ 
 ### Nicht gluecklich mit Thunderbird ###
 
 
@@ -327,36 +367,6 @@ _Thu, 16. January 2014 -- 16:39_
 Ich wuerde dies wohl mal den "invertierten Luke" nennen: habe soeben ein sehr nettes [Posting](https://plus.google.com/116287041150844298254/posts/1d54sJc8ukq) auf Google+ gefunden, welches mal mit einem etwas humoristischeren Blickwinkel auf die ganze NAS Affaere schaut.
 
 ![Nicht Dein Vater](/blog/2014/2014-01/2014-01-16_NAS.jpg)
- 
-**:::**
- 
- 
-### Aquamacs 3.0preview (5) ###
-
-
-
-
-_Thu, 16. January 2014 -- 15:40_
-
-Da muss ich nicht wirklich lange zoegern waehrend es sicherlich so manche Software Pakete gibt, wo man lieber mit dem Update ein wenig vorsichtig ist, bin ich bei [Aquamacs](http://aquamacs.org) da nicht so zoegerlich.
-
-> Aquamacs is an Aqua-native build of the powerful Emacs text editor. By "Aqua-native," we mean more than just the fact that this version of Emacs runs as a standard OS X application.  Aquamacs features extensive customization: it will feel and behave mostly like an Aqua program - while still being a real GNU Emacs with all the ergonomy and extensibility you've come to expect from this world-class editor.
-
-Da ich ueber die Jahre so einiges an Editoren ausprobiert habe, kann ich schon mit recht gutem Gewissen sagen, dass (zumindest auf dem Mac) _Aquamacs_ mein absoluter Favourit ist; von der Bedienung her ist da eine sehr schoene Balance zwischen den GNU Emacs Wurzeln und der OS X Arbeitsumgebung gefunden wurden, so dass der Umgebung sich sehr intuitiv gestaltet. Gibt es dann da ein Update zu vermelden, bin ich natuerlich neugierig herauszufinden, welche neuen Features es zu entdecken gibt...
- 
-**:::**
- 
- 
-### Bilder nachbearbeiten ###
-
-
-
-
-_Wed, 15. January 2014 -- 20:05_
-
-Das es bei mir im Archiv noch jede Menge an Bildern gibt, welche ich bisher noch nicht nachbarbeitet habe ist grundsaetzlich ja nichts neues. Mir scheint es aber ein wenig, als ob gerade am Endes des letzten Jahres besonders viele Aufnahmen liegen geblieben sind und lediglich auf dem direkten Wege von der Kamera auf den heimischen Server gewandert sind. Die Tatsache, dass ich ja hier bei [SRON](http:/www.sron.nl) meine Stelle angetreten habe, hat sicherlich seinen Teil dazu beigetragen; durch die Pendelei fehlt mir ja ein von der frueheren Stationaritaet, bei welcher ich mitunter Naechte zuhause am Rechner damit zugebracht habe durch die Aufnahmen zu gehen. Spaestens aber seit es ab dem Herbst an die Suche nach einer neuen dauerthaften Bleibe gegangen ist, sind die Lebensverhaeltnisse ausgesprochen beengt; als eines der Resultate hiervon habe ich lediglich noch in Utrecht einen der beiden grossen Apple Displays aufgebaut, an welchem die Bildernachberarbeitung ja ungleich angenehmer ist. Damit ich also endlich einmal ein wenig weiterkomme mit dem Sortieren und Aufbereiten, habe ich mir eine kleine Auswahl auf as Laptop gepackt; nachdem die wesentlichen Tagesgeschaefte abgehalndelt sind, mache ich mich dann im Buero daran die vor allen Dingen fuer die HDR-Sequenzen notwendigen Korrekturen anzubringen. Macht schon einen gewaltigen Unterschied ob ich dafuer in einen 15'' Monitor starre oder einen 23'' Display vor der Nase stehen habe. So kommt es dann auch, dass all die Bearbeitungsschritte, welche anderweitig Ewigkeiten gedauert haetten (und ggf. auch nicht zu einem sonderlich zufriedenstellenden Ergebnis gefuehrt haetten) hier recht schnell ueber die Beuhne gehen. Nachdem ich mich so gestern Abend ueber die Bilder vom vergangenen Wochenende (dem Spaziergang durch Roisdorf und Bornheim) hergemacht habe, ist heute ein Stapel an Aufnahmen vom Urlaub am Weissensee dran...
-
-![Stampferhof](/blog/2014/2014-01/hdr_20130914_104213_Stampferhof.jpg)
  
 **:::**
  
