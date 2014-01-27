@@ -9,6 +9,22 @@ tags: Blog
  
 **:::**
  
+### Ausgelastet ###
+
+
+
+
+_Sun, 26. January 2014 -- 22:09_
+
+Bisher ist es ja eigentlich hoechstens der Fall gewesen, dass die Netzwerkkarte (oder zumindest eine der beiden) der Synology DiskStation etwas zu tun hat: sei es nun wenn ich Daten aus dem Internet herunterlade, oder wenn z.B. Filme und Musik von der Station auf Laptop oder Handy streame. Seit dem ist allerdings gestern das komplette Archiv an Photos begonnen habe in die _Photo Station_ zu importieren, sieht die Situation schon ganz anders aus:
+
+![Synology CPU Utilization](/blog/2014/2014-01/2014-01-26_CPU_Utilization.png)
+
+Wie man anhand des Resource Monitor erkennen kann, ist die DiskStation doch recht gut mit dem indexieren der tausenden von Aufnahmen beschaeftigt. Ist dies erst einmal geschehen -- und bei einem Teil der Bestaende habe ich dies ja schon ausprobieren koennen - dann kann ich auf diversesten Wegen auf die komplette Sammlung zurueckgreifen (und so ggf. auch Dinge wiederentdecken). Bis allerdings alles abgearbeitet ist, duerfte es wohl noch ein paar Tage dauern, denn schliesslich gilt es alles was ich so an Aufnahmen archiviert habe, aufzubereiten.
+ 
+**:::**
+ 
+ 
 ### Photo Station ###
 
 
@@ -357,26 +373,6 @@ Da die meisten Karten da nicht sonderlich viel hergeben, musste ich mich auf dem
 > [Tscherniheim](http://de.wikipedia.org/wiki/Tscherniheim) war ein von 1621 bis 1879 bestehendes Waldglashüttendorf in den Gailtaler Alpen in Oberkärnten. Von den ehemals rund vierzig Gebäuden der Kärntner Glashütte ist nur eine katholischen Kapelle am Rande einer Almwiese erhalten. Die vom Weißensee aus zugängliche Wüstung in 1163 m Seehöhe liegt auf dem Gemeindegebiet von Hermagor-Pressegger See.
 
 Von dem Dorf ist in der Tat nicht sonderlich viel uebrig geblieben: ausser der Kapelle steht kein weiteres Gebaeude mehr, es gibt lediglich ein paar Schilder, welche daran erinnern, dass hier einmal eine weit ueber das Tal hinaus bekannte Siedlung existiert hat.
- 
-**:::**
- 
- 
-### Noch rechtzeitig ###
-
-
-
-
-_Thu, 16. January 2014 -- 19:22_
-
-Da hat es ja doch noch geklappt: auch wenn ich mir ein wenig mehr Zeit gelassen habe eine Liste an moeglichen Fragen fuer das anstehende [Omega Tau](http://omegataupodcast.net) Podcast Interview mit [Arjen Lucassen](http://www.arjenlucassen.com) einzusenden, scheine ich es dennoch geschafft zu haben:
-
->> ich hoffe mal nicht, dass ich komplett zu spaet fuer das Gespraech bin Arjen bin - ich ein klein wenig Fragen gesammelt, welche von einem technisch-kreativen Gesichtspunkt her interessant sein koennten:
->
-> cool - ich habe sie ihn meine Liste eingebaut. Interview ist Samstag, passt als noch.
-
-Habe Markus direkt mal noch eine Antwort geschickt, dass ich gespannt bin, wie denn die Unterhaltung ausfallen wird; wie oben angefuehrt findet diese am kommenden Samstag statt, aber bis zur Veroeffentlichung des Podcast duerfte wohl noch ein wenig Zeit vergehen.
-
-Da ich derzeit was dies betrifft wohl ein glueckliches Haendchen habe -- so scheint es in Kuerze auch zu einem durch mich vermittelten [FLOSS-Weekly](http://twit.tv/show/floss-weekly) Interview zu kommen -- werde ich wohl noch eine weitere Mail rausschicken, um nachzufragen, ob es fuer _Omage Tau_ nicht interessant sein koennte mit jemandem aus der Raumfahrtindustrie zu sprechen. Da ich bei [SRON](http://www.sron.nl) ja recht gut an der Quelle sitze, koennte ich auch hier versuchen zu vermitteln. Also einfach mal eine Anfrage an Markus senden und schauen, was da so zurueckkommt...
  
 **:::**
  
