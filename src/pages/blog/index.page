@@ -9,6 +9,26 @@ tags: Blog
  
 **:::**
  
+### Nginx @ FLOSS Weekly ###
+
+
+
+
+_Mon, 27. January 2014 -- 16:54_
+
+Hurra -- das Datum steht jetzt fest! Vor ein paar Minuten kam via Google+ die Nachricht rein, dass die von mir mit eingefaedelte [FLOSS Weekly](http://twit.tv/show/floss-weekly) Episode zu [Nginx](http://wiki.nginx.org/Main) nun offiziell im Sendeplan gebucht ist:
+
+![nginx announcement](/blog/2014/2014-01/2014-01-27_FLOSS_Weekly.png)
+
+Da bin ich doch einmal gespannt, was die Folge zu bieten hat; rein nach dem, was ich bisher so gelesen habe, scheint es sich wieder einmal um eine Software zu handeln, mit welcher man im Alltag viel haeufiger konfrontiert ist, als man dies ueberhaupt mitbekommt.
+
+> Nginx (pronounced engine-x) is a free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server. Igor Sysoev started development of Nginx in 2002, with the first public release in 2004. Nginx now hosts nearly 12.18% (22.2M) of active sites across all domains. Nginx is known for its high performance, stability, rich feature set, simple configuration, and low resource consumption.
+
+Die Liste der Websites, welche _Nginx_ einsetzen ist recht eindrucksvoll; da kribbeln es einen natuerlich in den Fingern auf einmal ein wenig mit der Software zu spielen und mal eine Testinstallation aufzusetzen.
+ 
+**:::**
+ 
+ 
 ### Wieder leerer ###
 
 
@@ -274,97 +294,6 @@ Wie sich herausstellt sind die Angaben auf den [Foto Paradies](http://www.fotopa
  - RAW -> TIFF (8bit, no compression)
 
 Die 16bit TIFFs liessen sich nicht einmal als Preview anzeigen (und sind damit vollkommen unbrauchbar), aber auch das aus dem HDR exportierte JPG liess sich nicht verwenden; angesichts der Tatsache aber, dass der ueberwiegende Anteil der Bilder, welche ich zugesagt habe, HDR Aufnahmen sind, stellt dies wirklich ein Problem dar. Wie sich dies nun loesen laesst, weiss ich leider noch nicht -- da werde ich aber in jedem Fall mal dranbleiben, denn schliesslich bringt es ja wenig, wenn ich der Dame ein CD mit Bildern in die Hand druecke welche sie nur begrenzt verwenden kann. Sicher, es gaebe in der Tat immer noch den Weg ueber eine Druckerei, aber andererseits wuerde schon mal gerne wissen, was sich in einem Laden wie DM realisieren laesst.
- 
-**:::**
- 
- 
-### Merging GPS tracks ###
-
-
-
-
-_Sat, 18. January 2014 -- 20:04_
-
-This is not too rare of a problem... actually with quite a simple solution: you have a collection of GPS tracks -- e.g. recorded via an app on your mobile phone -- which you want to organize in such a way, that you end up with one file per day. For whatever reason no complete track was generated in the first place, but instead of keeping all the little bit around, you'd rather end up with one data set containing the individual segments; that this indeed can be accomodated becomes evident from keeping in mind that basically a GPX file internally uses XML in order to represent the track information.
-
-~~~~
-<trkpt lat="50.709352059179835" lon="7.046773483076821">
-  <ele>170.5547262157751</ele>
-  <time>2014-01-12T13:21:00Z</time>
-  <extensions>
-    <gpx10:speed>1.0826374292373657</gpx10:speed>
-    <ogt10:accuracy>8.0</ogt10:accuracy>
-    <gpx10:course>321.3857421875</gpx10:course>
-  </extensions>
-</trkpt>
-~~~~
-
-If you look at the file as a whole, you willl notice that following the file-header there is a block enclosing the information of the track
-
-~~~~
-<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
-<gpx version="1.1" creator="OsmAnd" ...>
-  <trk>
-
-    ...
-
-  </trk>
-</gpx>
-~~~~
-
-As a result of the above it becomes rather straight forward how to combine individual tracks into a single data set. While of course a number of tools exist which will help you to do the job, all it actually needs is a text editor
-
-_1.__ Concatenate the individual files -- this e.g. can be done via a simple set of Bash instructions, such as
-
-~~~~
-FILES=`ls 2013-12-16_*`
-for FILE in $FILES ; { cat $FILE >> 2013-12-16.gpx ; rm $FILE ; } ;
-~~~~
-
-The resulting data set will look something along the following lines:
-
-~~~~
-      <trkpt lat="50.779999" lon="7.1845283">
-        <ele>105.79742782151801</ele>
-        <hdop>8.0</hdop>
-        <time>2013-12-16T07:55:11Z</time>
-      </trkpt>
-    </trkseg>
-  </trk>
-</gpx>
-<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
-<gpx version="1.1" creator="OsmAnd" ...>
-  <trk>
-    <trkseg>
-      <trkpt lat="50.7784425" lon="7.077948">
-        <ele>88.98101672681007</ele>
-        <hdop>8.0</hdop>
-        <time>2013-12-16T11:09:34Z</time>
-      </trkpt>
-~~~~
-
-__2.__ Remove end-of-file marker and the file-header in between tracks:
-
-~~~~
-      <trkpt lat="50.779999" lon="7.1845283">
-        <ele>105.79742782151801</ele>
-        <hdop>8.0</hdop>
-        <time>2013-12-16T07:55:11Z</time>
-      </trkpt>
-    </trkseg>
-  </trk>
-  <!-- Begin of next track -->
-  <trk>
-    <trkseg>
-      <trkpt lat="50.7784425" lon="7.077948">
-        <ele>88.98101672681007</ele>
-        <hdop>8.0</hdop>
-        <time>2013-12-16T11:09:34Z</time>
-      </trkpt>
-~~~~
-
-
-There you go -- all of the individual tracks have been merged (or combined) into a single data set, which then in turn will make e.g. matching of pictures to the track information (in ordet to embed the GPS data) considerably more simple than needing to deal with a whole bunch of individual shorter tracks.
  
 **:::**
  
