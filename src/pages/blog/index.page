@@ -9,6 +9,18 @@ tags: Blog
  
 **:::**
  
+### Angenehmer ###
+
+
+
+
+_Tue, 28. January 2014 -- 01:10_
+
+Also das ist doch schon deutlich angenehmer, mit einer guten externen Tastatur zu arbeiten, als die ganze Zeit hier in der Wohnung auf der internen Laptop Tastatur schreiben zu muessen. Waehrend ich sowohl im Buero als auch zuhause in Bonn alles so eingerichtet habe, dass das Laptop sich in eine ganze Peripherie an Geraeten einfuegt, geht es hier in der Wonung doch eher minimalistisch zu; vor allen Dingen dann, wenn ich abends mal noch mehr an Schreibarbeit erledigen will (oder vielleicht auch muss), dann fand ich dies immer ein wenig umstaendlicher, als dies z.B. im Buero der Fall waere. Da ich dort aber nicht die komplette Nacht zubringen moechte, sollte ich also schauen, dass ich auch anderenorts zumindest ueber eine einigermassen vernuenftige Infrastruktur verfuege. Dazu zaehlt -- woran ich diese Woche endlich einmal gedacht habe -- u.a. eine vernueftige Tastatur (was uebrigends typischerweise auch zu etwas wenig Rechtschreibfehlern bei den Blog-Eintraegen fuehrt, weil die Tasten besser ansprechen). Ich muss mir allerdings noch einmal Gedanken darueber machen, ob ich mir hier nicht zumindest eine minimale Arbeitsecke einrichten kann... so wie jetzt auf dem Boden zu liegen ist vielleicht nicht immer unbedingt die beste Loesung.
+ 
+**:::**
+ 
+ 
 ### Nginx @ FLOSS Weekly ###
 
 
@@ -263,37 +275,6 @@ Na, das war aber wirklich ein kurzes Gastspiel: nachdem ich die letzte Woche ja 
 _Mon, 20. January 2014 -- 10:02_
 
 Ganz genau werde ich dies wohl nicht hinbekommen - weil sich die Tage ja immer ein klein wenig verschieben -- aber wenn mich mein Gedaechtnis nicht vollkommen im Stich laesst, dann bin ich heute (oder eben morgen) ein Jahr hier bei [SRON](http://www.sron.nl). Schaut man einmal im Blog nach, dann findet sich dort am 21 Januar 2013 ein [Eintrag](/blog/2013/2013-01/2013-01-21_05-45.html), welcher mit der Aufzeichnung der Reise von Bonn nach Utrecht beginnt. Waehrend ich mich vor einem Jahr allerdings mit Schnee (und dadurch bedingten Zugausfaellen) herumschlagen musste, verlief die Fahrt am heutigen Morgen ohne nennenswerte Zwischenfaelle.
- 
-**:::**
- 
- 
-### Foto Paradies testen ###
-
-
-
-
-_Sun, 19. January 2014 -- 21:56_
-
-Wenn dies mal wirklich so einfach waere, wie dies hier klingt:
-
-> __Welche Dateiformate kann ich bei der Bestellung verwenden?__
->
-> Sie können folgende Digitalfotoformate verwenden: JPG (JPEG), TIF (TIFF), BMP, GIF, PICT (PCT), PNG, ADOBE PHOTOSHOP (PSD, EPS). Wenn Sie Ihre Digitalfotos auswählen, sollten Sie sicherstellen, dass die Bildauflösung hoch genug ist, um qualitativ hochwertige Fotos zu gewährleisten.
-
-Da ich solchen Angaben aber nicht wirklich vertraue, lege ich da testweise lieber einmal selber Hand an: da ich einer von Julia Kursteilnehmerinnen die Fotos von unserem Weissensee-Urlaub zugesagt habe -- die Dame war schliesslich dafuer verantwortlich, dass wir ueberhaupt dorthin gefahren sind -- wollte ich doch lieber auf Nummer sicher gehen, dass sich die Bilder ueberhaupt auslesen und dann ausdrucken lassen. Vor allen Dingen aus dem Grund, dass ich in der Vergangenheit wiederholt Probleme mit den nach JPG exportierten HDRs hatte, waere es schon ganz gut zu wissen, wie es damit ausschaut, wenn man eine Photo-CD z.B. zum DM schleppen wuerde. Waehrend ich bei einer professionellen Druckerei keiner Bedenken haette, wuerde ich einfach mal vermuten, dass die typischen Anforderungen in so einem Drogerie-Markt etwas anders sind. Machen wir also den Test: man nehme eine Reihe von Bildern in diversen Formaten, packe diese auf unterschiedliche Speichermedien und renne damit in den naechsten Laden (auch wenn dies streng genommen nicht der Fall war).
-
- - RAW -> JPG
- - RAW -> TIFF (8bit, no compression)
- - RAW -> TIFF (16bit, no compression)
- - HDR -> JPG
- - HDR -> TIFF (16bit, no compression)
-
-Wie sich herausstellt sind die Angaben auf den [Foto Paradies](http://www.fotoparadies.de) Seiten nicht komplett: von den fuenf Bildern -- welche grundsaetzlich mit den aufgefuehrten Digitalfotoformaten uebereinstimmen, liessen sich gerade einmal zwei einlesen:
-
- - RAW -> JPG
- - RAW -> TIFF (8bit, no compression)
-
-Die 16bit TIFFs liessen sich nicht einmal als Preview anzeigen (und sind damit vollkommen unbrauchbar), aber auch das aus dem HDR exportierte JPG liess sich nicht verwenden; angesichts der Tatsache aber, dass der ueberwiegende Anteil der Bilder, welche ich zugesagt habe, HDR Aufnahmen sind, stellt dies wirklich ein Problem dar. Wie sich dies nun loesen laesst, weiss ich leider noch nicht -- da werde ich aber in jedem Fall mal dranbleiben, denn schliesslich bringt es ja wenig, wenn ich der Dame ein CD mit Bildern in die Hand druecke welche sie nur begrenzt verwenden kann. Sicher, es gaebe in der Tat immer noch den Weg ueber eine Druckerei, aber andererseits wuerde schon mal gerne wissen, was sich in einem Laden wie DM realisieren laesst.
  
 **:::**
  
