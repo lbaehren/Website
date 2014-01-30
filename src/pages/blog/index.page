@@ -9,6 +9,22 @@ tags: Blog
  
 **:::**
  
+### Diesmal nicht ###
+
+
+
+
+_Thu, 30. January 2014 -- 21:26_
+
+So sehr kann man sich also daran gewoehnen: bei meinem Donnerstag-abendlichen Zwischenstop hier in Koeln habe ich (fast schon automatisch) den Rechner versucht in das lokale WLAN einzuklinken. Ist recht nett, wenn ich von hier aus schon einmal Mails checken und ggf. auch wegschicken kann. Dummerweise allerdings scheint heute Abend irgendetwas nicht zu stimmen, denn sowohl mit dem Handy als auch mit dem Laptop gelingt es mir nicht einen Zugangscode anzufordern. Ich schaffe es zwar auf die Anmeldungsseite, aber wenn ich das ausgefuellte Formular abschicke, erhalte ich lediglich eine Fehlermeldung:
+
+> Verbindungsaufbau nicht moeglich. Ein technischer Fehler ist aufgetreten (13). Bitte versuchen Sie es spaeter erneut.
+
+Die Frage ob ich in der Lage bin irgendetwas sinnvolles mit Fehler 13 anzufangen, ueberlassen ich mal dem Leser...
+ 
+**:::**
+ 
+ 
 ### Sochi's Indigenous People ###
 
 
@@ -20,7 +36,7 @@ Es ist nicht mehr lange hin bis zum Start der [2014 Winter Olympics](http://www.
 
 > [Reuters](http://www.reuters.com) photographer [Thomas Peter](http://blogs.reuters.com/tom-peter) spent time documenting [Sochi's Circassian community](http://blogs.reuters.com/photographers-blog/2014/01/21/searching-for-circassians) as the city prepares for the 2014 Winter Olympics. Circassians are a people indigenous to the North Caucasus region, most of whom were scattered across the globe by a 19th century tsarist military campaign that caused the deaths of huge numbers. Many Circassians have called for the killings to be recognized as genocide, and have campaigned against the Sochi 2014 Winter Olympics, set to take place in the very same broad valleys and mountain slopes they say hold the bones of their ancestors. A delegation of Circassians hailing from Saudi Arabia, Jordan, Syria, Turkey, Israel, Canada, Germany and the United States travelled to the North Caucasus to visit historic sites of their ancestor's homeland ahead of the Olympics.
 
-Gestossen bin ich auf [die Dokumentation(http://www.boston.com/bigpicture/2014/01/sochis_indigenous_people.html) ueber die [Google+ Eintraege](https://plus.google.com/u/0/+BigPicture/posts) von [The Big Picture](http://www.boston.com/bigpicture), einem recht bekannten Blog des [Boston Globe](http://www.boston.com)
+Gestossen bin ich auf [die Dokumentation](http://www.boston.com/bigpicture/2014/01/sochis_indigenous_people.html) ueber die [Google+ Eintraege](https://plus.google.com/u/0/+BigPicture/posts) von [The Big Picture](http://www.boston.com/bigpicture), einem recht bekannten Blog des [Boston Globe](http://www.boston.com)
 
 > The Big Picture is a blog of the best in photojournalism, shown large.  We capture both the big news stories of the day and others that are simply striking images from some of the best photographers working today.
 
@@ -269,30 +285,6 @@ so dass ich mich entschlossen habe direkt eine Version weiter zu ziehen:
 ~~~~
 
 Frameworks und Compiler bauen ist typischerweise ein wenig aufwendiger, so dass mein Laptop schon seit gut einer Stunde am Schwitzen ist... da hoffe ich doch mal, dass es diesmal glatt geht, denn ich habe mir mittlerweile angewoehnt _Clang_ statt _GCC_ als Compiler fuer die Arbeit zu verwenden.
- 
-**:::**
- 
- 
-### FreeBSD 10.0 ###
-
-
-
-
-_Tue, 21. January 2014 -- 13:37_
-
-Das ist doch wieder einmal eine [Meldung auf Heise News](http://www.heise.de/newsticker/meldung/Freies-Unix-Derivat-FreeBSD-10-0-GCC-und-make-fehlen-in-Standardinstallation-2089953.html), welche mich neugierig macht:
-
-> Das jetzt erhältlichen FreeBSD 10.0 setzt standardmäßig auf Clang und Bmake. Die Entwickler haben zudem die Unterstützung für Microsofts Hypervisor und AMD64-System ausgebaut.
-
-Auch wenn ich mich bisher nicht sonderlich viel mit FreeDSD beschaeftigt habe (was fuer sich genommen eigentlich schon eine Wissensluecke ist), finde ich es immer wieder interessant, wenn sich Projekte dazu entschliessen Teile ihrer Infrastruktur zu veraendern und anzupassen. Nun ist [Clang](http://clang.llvm.org) nicht mehr ganz neu, aber das FreeBSD jetzt hingeht und GCC als Default-Compiler abloest finde ich schon bemerkenswert (und natuerlich auch Wert einmal auzuprobieren). Bisher noch nicht bei mir auf dem Radar war [Bmake](http://www.crufty.net/help/sjg/bmake.html):
-
-> bmake is a portable version of NetBSD's make(1) utility, conveniently packaged using a configure script, for other environments which may lack NetBSD's libraries, regular expression code, etc.
-
-Da alles rund um Konfigurations- und Build-Systeme ja zu den Dingen gehoert, wofuer ich mich schon seit ein paar Jahren interessiere (und was ich auch dementsprechend in meiner CV auffuehren wuerde), bin ich da ausreichend neugierig geworden, um mir mal den Vermerk fuer eine Installation (zumindest als VM) zu setzen. Stellt sich allerdings heraus, dass es da leider ein kleines Problem gibt: der FTP-Server, auf welchem die Installationsmedian zu finden sein sollen, verfuegt lediglich ueber Dateien ohne jeglichen Inhalt.
-
-![FreeBSD FTP directory](/blog/2014/2014-01/2014-01-21_FreeBSD.png)
-
-Sicherheitshalber habe ich schnell einmal auf den diversen Mirrors nachgeschaut, aber ueberall finde ich die gleiche Situation vor. Keine Ahnung, was da passiert ist, aber so wird es mit der Installation zunaechst einmal nichts.
  
 **:::**
  
