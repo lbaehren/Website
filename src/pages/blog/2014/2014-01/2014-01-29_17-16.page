@@ -1,0 +1,21 @@
+---
+title: "Alles andere als optimal"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Wed, 29. January 2014 -- 17:16_
+
+Nachdem es ja einige Zeit mit dem Zugag gedauert hat, habe ich mich heute Morgen zum ersten Mal auf der _Integrated Data Analysis Facility_ (IDAF) des [KNMI](http://www.knmi.nl) eingeloggt. Wie ich allerdings rechtschnell verstellen musste, befindet sich das System aus Sicht des Software Stacks in einem alles andere als Entwickler-freundlichen Zustand. Aufbauend auf _Red Hat Enterprise Linux Server release 6.5_ sind die meisten der installierten Tools auf einem recht alten Stand:
+
+~~~~
+    CMake      | 2.6-patch 4
+    gcc (GCC)  | 4.4.7 20120313 (Red Hat 4.4.7-4)
+    nano       | 2.0.9
+    Subversion | 1.6.11 (r934486)
+    Wget       | 1.12
+~~~~
+
+Damit ist es allerdings nicht getan: was vollkommen fehlt ist z.B. [Git](http://git-scm.com), so dass ich mich mich einmal direkt daran begeben habe zumindest eine lokale Version zu installieren. Wenn ich mir den Rest des Inventars anschaue, dann werde ich da wohl noch einige Pakete von Hand installieren (sei es weil diese ziemlich veraltet sind oder eben vollstaendig fehlen).
