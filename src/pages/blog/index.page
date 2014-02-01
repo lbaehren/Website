@@ -9,6 +9,58 @@ tags: Blog
  
 **:::**
  
+### Android SDK ###
+
+
+
+
+_Sat, 01. February 2014 -- 21:06_
+
+Das gehoert ja zu einem der Themenfelder, welche ich mir dieses Jahr -- auch vollkommen unabhaengig von der Arbeit -- einmal vornehmen wollte: nachdem ich ja mittlerweile ueber ein [Android](http://www.android.com)-basiertes Smartphone verfuege, wollte ich mich der Platform doch auch von der Software-technischen Seite her naehern. In wie weit aus mir dann der grosse Mobile-Developer wird kann ich noch nicht abschaetzen, aber da mir inzwischen auch fuer die Arbeit einige Dinge eingefallen sind, fuer welche die Unterstuetzung mobiler Endgeraete interessant waere, hatte ich ich mir als ersten Schritt zumindest schon einmal die Installation des [Android SDK](http://developer.android.com/sdk/index.html) aufgeschrieben.
+
+> The Android SDK provides you the API libraries and developer tools necessary to build, test, and debug apps for Android.
+
+Ein moegliches Paket hatte ich mir schon vor dem Jahreswechsel an Land gezogen, aber zumindest einmal die Zeit zum Auspacken hatte ich mir bisher nicht genommen -- dies habe ich dann heute Nachmittag (zwischen zwei Exkursionen zu Baumaerkten) nachgeholt. Was ich dabei allerdings zu sehen bekam, wollte mir nicht so wirklcih gefallen: statt "einfach nur" das SDK auf die lokale Festplatte zu schreiben, tauchten dort noch eine Reihe anderer Komponenten auf, vorrangig eine angepasste Version der [Eclipse IDE](https://www.eclipse.org). Nun habe ich nicht unbedingt etwas gegen _Eclipse_, aber man hat mir einfach zu oft versucht dies als Notwendigkeit unterzujubeln, ohne dass es dafuer eine Notwendigkeit gab. Folgerichtig habe ich also die weiteren Installationsschritte abgebrochen und mich erst einmal auf die Suche nach alternativen Vorgehensweisen umzuschauen. Nach ein klein wenig Suchen habe ich dann einen Artikel unter der Ueberschrift [Installing and Using the Android SDK on Mac OS X without Eclipse IDE](http://mediarealm.com.au/articles/2013/02/installing-and-using-android-sdk-mac-os-x-without-eclipse-ide) gefunden, worin der Author nicht nur seinem Unmut ueber das Bundle Gehoer verschaffte, sondern auch gleich eine Beschreibung dafuer lieferte, wie sich vorgehen laesst, um sich bei der Installation auf die wirklich notwendigen Teile zu beschraenken. So weit, so gut.
+
+Eine Ueberraschung gab es dann allerdings, als ich (wie im README angeraten) ein Update angeworfen habe:
+
+~~~~
+./tools/android update sdk --no-ui
+~~~~
+
+Das so begonnene Download lief ein Weile lange munter ueber den Rechner, bis es dann endlich zum Ende kam und mir verkuendete, dass nun die Installation von 71 Paketen abgeschlossen sei:
+
+~~~~
+ Installing Google APIs, Android API 4, revision 2
+    Installed Google APIs, Android API 4, revision 299%)
+  Downloading Google APIs, Android API 3, revision 3
+  Installing Google APIs, Android API 3, revision 3
+    Installed Google APIs, Android API 3, revision 399%)
+    Updated ADB to support the USB devices declared in the SDK add-ons.
+    Stopping ADB server succeeded.
+    Starting ADB server succeeded.
+  Done. 71 packages installed.
+~~~~
+
+Nun gut, alleine die Anzahl der Pakete ist es nicht nicht -- viel interessanter war es dann schon einmal nachzuschauen, welchen Abdruck das SDK denn nun auf der Festplatte einnahm:
+
+~~~~
+ 92K	./tools/templates/projects/NewAndroidLibrary
+4.0K	./tools/templates/projects/NewJavaLibrary/root/src/library_package
+4.0K	./tools/templates/projects/NewJavaLibrary/root/src
+ 12K	./tools/templates/projects/NewJavaLibrary/root
+ 40K	./tools/templates/projects/NewJavaLibrary
+224K	./tools/templates/projects
+1.4M	./tools/templates
+ 94M	./tools
+9.5G	.
+~~~~
+
+Yep, richtig gelesen. Ich persoenlich finde dies ein wenig uebertrieben, aber wenn man so ziemlich jede irgendwann einmal veroeffentlichte Android API mit in das SDk packt, dann duerfte es wohl nicht sonderlich ueberraschen. Ich denke mal, dass ich mir dies noch einmal ein wenig genauer anschauen muss, denn ich kann mir beim besten Willen nicht vorstellen, dass ich wirklich alles, was da installiert wurde, auch wirklich noetig habe.
+ 
+**:::**
+ 
+ 
 ### Alles schneller ###
 
 
@@ -260,18 +312,6 @@ Ist schon eine Weile her, dass ich hier in Institut mit Kamera unterwegs war. Da
 ![SRON at Night](/blog/2014/2014-01/hdr_20140122_201207_SRON.jpg)
 
 Um zumindest einmal wieder ein wenig Uebung zu kriegen, habe ich mir heute Abend die Kamera geschnappt und bin ein klein wenig durch das Institut gelaufen. Es gibt in der Tat noch einige Ecken, welche ich bisher noch nicht (mit Kamera) erkundet habe; bisher bin ich vor allen Dingen auf der ersten Etage und im Eingangsbereich unterwegs gewesen. Was ich bis jetzt weitestgehend ausgelassen habe sind die zweite Etage und die Labors im Keller -- folgerichtig waren dies die Bereich, wo ich mich heute Abend als erstes angeschaut habe...
- 
-**:::**
- 
- 
-### Neue Bleibe ###
-
-
-
-
-_Wed, 22. January 2014 -- 17:30_
-
-Wow, es sieht ganz danach aus, als haette die Suche ein Ende gefunden. Ich habe gerade noch mit Julia gesprochen und demnach haben wir -- wenn nicht noch etwas ganz massiv dazwischen kommt -- am Freitag bereits einen Termin beim Notar.
  
 **:::**
  
