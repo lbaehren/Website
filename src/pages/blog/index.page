@@ -9,6 +9,22 @@ tags: Blog
  
 **:::**
  
+### Marker ###
+
+
+
+
+_Mon, 03. February 2014 -- 20:46_
+
+Wie sehr ich mich doch mittlerweile daran gewoehnt habe: sobald ich mir die Kamera schnappe, um vor die Haustuere zu gehen, habe ich entweder den GPS-Tracker des Handy oder die GPS-Einheit der Kamera (typischerweise beide) laufen. So kommt es dann auch, dass die meisten Ausfuege recht gut dokumentiert sind -- der Sonntag Nachmittag bildet da keine Ausnahme:
+
+![GPS positions](/blog/2014/2014-02/2014-02-03_GPS_positions.png)
+
+Sicher, dies sind nur die Punkte, an welchen ich Bilder aufgenommen habe (und eben nicht die komplette Wegstrecke, welche ich zurueckgelegt habe), aber ich denke doch mal, dass dies einen Eindruck davon vermittelt, wo ich unterwegs gewesen.
+ 
+**:::**
+ 
+ 
 ### Wieder Utrecht ###
 
 
@@ -291,18 +307,6 @@ _Thu, 23. January 2014 -- 21:29_
 Das war doch eine recht gute Entdeckung: vor einer Weile habe ich herausgefunden, dass er hier am Hauptbahnhof Koeln einen groesseren Telekom Hotspot gibt, ueber welchen man fuer 30 Minuten gratis Internetzugang erhaelt. War mir lange Zeit nicht bewusst gewesen (es koennte natuerlich auch sein, dass es das Angebot noch nicht so sonderlich lange gibt, was ich aber fuer weniger wahrscheinlich halte). Wenn man also keine groesseren Datentransfers vorhat, sondern eben nur mal schnell Mails checken und/oder abschicken will, dann ist dies vollkommen ausreichend. So muesste ich es sogar schaffen die letzten Blog-Eintraege noch von unterwegs online zu stellen, noch ehe ich wieder zurueck in Bonn bin...
 
 ![Hotspot Bahnhof Koeln](/blog/2014/2014-01/2014-01-23_Hotspot_Koeln.png)
- 
-**:::**
- 
- 
-### Nicht gluecklich mit Thunderbird ###
-
-
-
-
-_Thu, 23. January 2014 -- 19:45_
-
-Und da haetten wir wieder einmal ein Verhalten, welches ich ziemlich nervig finde: Vor ein paar Minuten hatten wir den ueblichen Stop in Arnhem, so dass ich schnell noch versucht habe eine Nachricht an Julia anzusetzen (was wahrscheinlich dank dem offenen WLAN auch funktioniert hat). Parallel dazu habe ich dann auch noch probiert die Anfrage an Jeanette rauszuschicken, welche ich auf dem Stueck von Utrecht an geschrieben habe -- um es gleich vorwegzunehmen: es hat nicht geklappt. Da ich fuer die halbe Stunde zwischendurch ja offline war, landete die fertig geschriebene Mail in der _Outbox_, sozusagen dem Sprungbrett von welchem aus es in naechster Instanz dann hinausgeht in die grosse weite Welt. So einfach scheint dies aber nun doch nicht zu gehen, denn waehrend die Nachricht an Julia (welche ich vor Ort geschrieben habe) recht schnell vom Rechner verschwandt, sass die Mail an Jeanette ohne sich zu regen in dem Ordner, ohne dass sich etwas bewegte. Folgerichtig kam mir also der Gedanke doch einmal mit einem Links-Klick auf die Nachricht zu gehen und zu schauen, ob es da nicht eine "Jetzt absenden" Option gibt -- war aber nicht. Auch die _Outbox_ selber scheint keine weitere Kontrolle zuzulassen, ueber welche sich das Abschicken zu einem bestimmten Zeitpunkt triggern laesst; wenn man also lediglich ueber ein kurzes Zeitfenster verfuegt, waehrend dessen die Mails verschickt werden koennen, dann ist man da echt aufgeschmissen. Da ich mich da aber nicht so einfach geschlagen geben wollte, habe ich _Thunderbird_ kurzerhand beendet und dann wieder gestartet -- meine Erwartung waere hier gewesen, dass das Programm nachschaut, ob eine Verbindung moeglich ist und ggf. neue Mails abruft und in der _Outbox_ befindliche Benachrichtigungen abschickt... war aber leider nicht der Fall. Auch wenn ich schon ein Stueck weit aus Ueberzeugung hin zu Open-Source Projekten migriert bin, so finde ich es doch ein wenig irritant, wenn ich mich immer wieder mit dem E-Mail Client herumschlagen muss.
  
 **:::**
  
