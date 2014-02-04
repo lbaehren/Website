@@ -9,6 +9,22 @@ tags: Blog
  
 **:::**
  
+### Hausbesitzer ###
+
+
+
+
+_Tue, 04. February 2014 -- 17:15_
+
+Es ist vollbracht - vor ein paar Minuten erreichte mich via SMS die Mitteilung, dass der Kaufvertrag unterschrieben ist:
+
+![Meldung](/blog/2014/2014-02/2014-02-04_180515_Haushauf.jpg)
+
+Das heisst also dass die wesentlichen formalen Huerden im Vorfeld ueberwunden sind -- so richtig geht der "Spass" nun aber erst los, denn da wird noch einiges an Arbeit noetig sein, um alles so herzurichten, dass man ueberhaupt mit dem Gedanken spielen kann die ersten Gegenstaende in die neuen vier Waende umziehen zu lassen. Ist auf jeden Fall sehr spannend und ich bin mal auf den detailierten Bericht heute Abend gespannt.
+ 
+**:::**
+ 
+ 
 ### Pull requests ###
 
 
@@ -16,7 +32,7 @@ tags: Blog
 
 _Tue, 04. February 2014 -- 13:02_
 
-Ich bin immer wieder begeistert darueber, wie einfac es doch ist via [Github](https://github.com) Code-Patches einzuschicken:
+Ich bin immer wieder begeistert darueber, wie einfach es doch ist via [Github](https://github.com) Code-Patches einzuschicken:
 
  - Original Repository forken;
  - Aenderungen vornehmen (und natuerlich testen);
@@ -289,22 +305,6 @@ Die Liste der Websites, welche _Nginx_ einsetzen ist recht eindrucksvoll; da kri
 _Mon, 27. January 2014 -- 07:26_
 
 Da wird es doch gleich wieder ein gutes Stueck entspannter: wenn der ICE 222 in Duesseldorf einfaehrt verlaesst eine recht grosse Zahl an Reisender den Zug, so dass es anschliessend deutlich weniger voll. Ich hatte zwar schon in Koeln einen Sitzplatz ergattern koennen, nur war alles ein wenig enger, als dies mittlerweile der Fall ist. Es gibt doch eine ganze Reihe an Pendlern, welche Duesseldorf mit dem ICE anfahren, so dass die Wagen auf dem Streckenabschnitt von Koeln Hauptbahnhof durchaus schon einmal etwas voller werden. Da die Anzahl der Neuzusteiger in Duesseldorf andererseite recht vertraeglich ist, geht es deutlich entspannter auf den Rest der Reise.
- 
-**:::**
- 
- 
-### Ausgelastet ###
-
-
-
-
-_Sun, 26. January 2014 -- 22:09_
-
-Bisher ist es ja eigentlich hoechstens der Fall gewesen, dass die Netzwerkkarte (oder zumindest eine der beiden) der Synology DiskStation etwas zu tun hat: sei es nun wenn ich Daten aus dem Internet herunterlade, oder wenn z.B. Filme und Musik von der Station auf Laptop oder Handy streame. Seit dem ist allerdings gestern das komplette Archiv an Photos begonnen habe in die _Photo Station_ zu importieren, sieht die Situation schon ganz anders aus:
-
-![Synology CPU Utilization](/blog/2014/2014-01/2014-01-26_CPU_Utilization.png)
-
-Wie man anhand des Resource Monitor erkennen kann, ist die DiskStation doch recht gut mit dem indexieren der tausenden von Aufnahmen beschaeftigt. Ist dies erst einmal geschehen -- und bei einem Teil der Bestaende habe ich dies ja schon ausprobieren koennen - dann kann ich auf diversesten Wegen auf die komplette Sammlung zurueckgreifen (und so ggf. auch Dinge wiederentdecken). Bis allerdings alles abgearbeitet ist, duerfte es wohl noch ein paar Tage dauern, denn schliesslich gilt es alles was ich so an Aufnahmen archiviert habe, aufzubereiten.
  
 **:::**
  
