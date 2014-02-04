@@ -9,6 +9,68 @@ tags: Blog
  
 **:::**
  
+### Pull requests ###
+
+
+
+
+_Tue, 04. February 2014 -- 13:02_
+
+Ich bin immer wieder begeistert darueber, wie einfac es doch ist via [Github](https://github.com) Code-Patches einzuschicken:
+
+ - Original Repository forken;
+ - Aenderungen vornehmen (und natuerlich testen);
+ - Pull request schicken.
+
+![Github pull requests](/blog/2014/2014-02/2014-02-04_Pull_requests.png)
+
+Finde ich klasse, dass es da seitens Evert und mir nicht sonderlich viel Arbeit erforderte um Richard davonzu ueberzeugen statt dem hausinternen Subversion-Server auf Git und Github umzusteigen. Gerade fuer die Kollaboration ist dies echt eine feine Sache; selbst wenn man den Code nicht direkt der Oeffentlichkeit zugaenglich machen will (was bei uns ja der Fall waere), so ist es doch recht haeufig immer noch deutlich kostenguenstiger die paar Dollar pro Jahr zu investieren, als dies ueber die hausinterne IT laufen zu lassen (eine Rechnung welche hier durchaus mit zu der Entscheidung beigetragen hat) -- will man dann spaeter den Code der Allgemeinheit zugaenglich machen muss man lediglich das Haekchen hinter dem Tab "Private Repository" wegmachen.
+ 
+**:::**
+ 
+ 
+### Netter Tipfehler ###
+
+
+
+
+_Tue, 04. February 2014 -- 10:32_
+
+Da ist mir doch noch eine Kleinigkeit aufgefallen, welche offensichtlich dem Author durch die Lappen gegangen ist. In dem erwaehnten [Artikel auf Heise News](http://www.heise.de/newsticker/meldung/NSA-Skandal-Kritiker-in-den-USA-wollen-Geheimdienst-austrocknen-2104896.html) heisst es am Anfang:
+
+> Aus Protest gegen die enthüllten Überwachungspraktiken wollen mehrere Bürgerrechtsgruppen mit der Kampagne "Nullify NSA!" in den USA dem Geheimdienst NSA buchstäblich das Wasser abdrehen.
+
+Im Anschluss daran geht es ein klein wenig in die Details, auch unter Erwaehnung anderer Initiativen. Was sich dann allerdings im letzten Abschnitt finden laesst, wuerde ich eindeutig als einen Tipfehler identifizieren wollen (auch wenn man dies bei so Manchen auch unter der Rubrick "Freudscher Versprecher" abheften koennte):
+
+> Nullify USA will nun eine landesweite Kampagne lostreten, um weitere lokale Unterstützung zu gewinnen.
+
+Da kann man schon einmal in Versuchung geraten... ;-)
+ 
+**:::**
+ 
+ 
+### Trockenlegung ###
+
+
+
+
+_Tue, 04. February 2014 -- 10:31_
+
+Das ist doch mal ein interessanter Ansatz:
+
+> Von unten will derzeit eine Bewegung in den USA gegen die massenhafte Kommunikationsüberwachung durch die NSA vorgehen. Bundesstaaten sollen die Kooperation mit der NSA verbieten und ihr dann beispielsweise das Wasser abdrehen.
+
+Weiter fuehrt die [Meldung auf Heise News](http://www.heise.de/newsticker/meldung/NSA-Skandal-Kritiker-in-den-USA-wollen-Geheimdienst-austrocknen-2104896.html) aus:
+
+> Aus Protest gegen die enthüllten Überwachungspraktiken wollen mehrere Bürgerrechtsgruppen mit der Kampagne "[Nullify NSA!](http://offnow.org)" in den USA dem Geheimdienst NSA buchstäblich das Wasser abdrehen. Dafür fordern sie von den Parlamenten der Bundesstaaten, eine Unterstützung der NSA gesetzlich zu verbieten und dem Geheimdienst so etwa den Zugang zur Wasserversorgung zu untersagen.
+>
+> Das würde auf dem mehrfach bestätigten Grundsatz beruhen, dass Bundesstaaten nicht verpflichtet sind, der Bundesregierung bei der Erfüllung ihrer Arbeit zu helfen. Beispielhaft richtet sich der Blick der Überwachungsgegner nun nach Utah, wo die NSA kürzlich ein gigantisches Rechenzentrum eröffnet wurde. Ohne gewaltige Mengen an Kühlwasser müsste es den Betrieb einstellen.
+
+In wie weit eine solche Vorgehensweise wirklich zum Erfolg fuehren kann darf einmal dahingestellt sein; anerkennen muss man aber, dass des sich hierbei mal um eine recht kreative Vorgehensweise handelt. Ich kann mir da gut vorstellen, dass dies auch angesichts der in diesem Jahr noch anstehenden Wahlen zu weiteren Ideen fuehren wird, mit welchen sich die potentiellen Volksvertreter auseinandersetzen werden muessen.
+ 
+**:::**
+ 
+ 
 ### Marker ###
 
 
@@ -243,70 +305,6 @@ Bisher ist es ja eigentlich hoechstens der Fall gewesen, dass die Netzwerkkarte 
 ![Synology CPU Utilization](/blog/2014/2014-01/2014-01-26_CPU_Utilization.png)
 
 Wie man anhand des Resource Monitor erkennen kann, ist die DiskStation doch recht gut mit dem indexieren der tausenden von Aufnahmen beschaeftigt. Ist dies erst einmal geschehen -- und bei einem Teil der Bestaende habe ich dies ja schon ausprobieren koennen - dann kann ich auf diversesten Wegen auf die komplette Sammlung zurueckgreifen (und so ggf. auch Dinge wiederentdecken). Bis allerdings alles abgearbeitet ist, duerfte es wohl noch ein paar Tage dauern, denn schliesslich gilt es alles was ich so an Aufnahmen archiviert habe, aufzubereiten.
- 
-**:::**
- 
- 
-### Photo Station ###
-
-
-
-
-_Sat, 25. January 2014 -- 22:34_
-
-Wie cool ist dies hier fuer die hausinterne Multimedia-Archivierung und Bereitstellung:
-
-> [Photo Station](http://www.synology.com/en-us/dsm/home_multimedia_photo_station) allows every user to create albums or blogs to share the exciting moments of lives with others. Free yourself from storage limits from 3rd-party providers and enjoy the freedom to upload photos as the capacity of your hard drives allowed.
->
-> - Share photos and daily activities through online album and blog
-> - Flexible viewing method including Photo Wall, Timeline, album categories
-> - Social network integration: share photos onto Facebook, Picasa, Google+, Plurk, and Twitter
-
-Ist zwar immer ganz nett sich derartige Beschreibungen durchzulesen, aber wenn man sich dies via Testbetrieb einmal selber anschauen kann, ist dies doch eine andere Geschichte. Ein klein wenig gespielt hatte ich damit ja schon einmal vor einer Weile, aber da ich mich mittlerweile fuer die hausinterne Datenverwaltung in Sachen Multimedia (also vor allen Dingen Musik, Filme, und nun auch Bilder) verantwortlich erklaert habe, scheint es einfach nur logisch zu sein, die entsprechende zentrale Infrastruktur aufzusetzen. Was jetzt dabei herumkommt ist wirklich sehr nett:
-
-![Photo station](/blog/2014/2014-01/2014-01-25_Photo_Station.png)
-
-Was bekomme ich also auf diese Weise? Nicht nur eine Photo-Verwaltung, sondern gewissemassen eine Art private [Flickr](http://www.flickr.com) Website. Ich muss zwar noch einmal schauen, welche Bildformate insgesamt akzeptiert werden (so habe ich z.B. bisher keine Ahnnung, wie es um RAWs bestellt ist), denn abhaengig davon kann ich mir ueberlegen, ob ich nur die exportierten oder gleich alle Bilder in die _Photo Station_ schmeisse.
- 
-**:::**
- 
- 
-### XING vs. LinkedIn ###
-
-
-
-
-_Fri, 24. January 2014 -- 09:37_
-
-Vertreten bin ich auf beiden Platformen, einigermassen identifizieren kann ich mich allerdings nur mit einer:
-
- - [XING](https://www.xing.com) (bis Ende 2006 openBC für Open Business Club) ist ein soziales Netzwerk, in der Mitglieder vorrangig ihre beruflichen und/oder privaten Kontakte zu anderen Personen verwalten und neue Kontakte finden können. Einzelne Nutzer oder auch Unternehmen können bei XING ein eigenes Profil von sich anlegen, Fachpersonal selber suchen, Stellenangebote einstellen, Veranstaltungen organisieren und sich an Diskussionen in Fachgruppen beteiligen. Betreiber des Portals ist die XING AG in Hamburg, deren Aktien seit Dezember 2006 an der Börse und seit September 2011 im TecDAX notiert sind.
-
- - [LinkedIn](http://www.linkedin.com) ist ein webbasiertes soziales Netzwerk zur Pflege bestehender Geschäftskontakte und zum Knüpfen von neuen geschäftlichen Verbindungen. Es ist mit über 259 Millionen registrierten Nutzern in mehr als 200 Ländern (Stand: Juni 2013) die derzeit größte weltweite Plattform dieser Art und gehört laut Alexa zu den 500 weltweit meistbesuchten Internetseiten.
-
-Langes Raten darueber, in welcher Umgebung ich mich wohl am ehesten wohl fuehle, duerfte an dieser Stelle nicht noetig sein. Von seiner ganzen Art finde ich _XING_ einfach "sehr deutsch" -- und ich meine dies nicht unbedingt als Kompliment. Vor allen aber dann, wenn versucht internationale Kontakte zu knuepfen, ist _LinkedIn_ eindeutig die bessere Wahl. Da ich da nun nach wie vor mein Augenmerk drauf gerichtet habe, versuche ich dementsprechend mein [LinkedIn Profil](http://www.linkedin.com/profile/view?id=134900181) zumindest einigermassen aktuell zu halten. Ok, das soll nun nicht unbedingt bedeuten, dass ich mich auf _XING_ nun ueberhaupt nicht mehr blicken lasse, aber wenn Aenderungen vorzunehmen gibt, dann nehme ich die typischerweise zunaechst auf _LinkedIn_ vor -- so auch geschehen diese Woche.
-
-Da ich mittlerweile ein wenig mehr Python Erfahrung vorzuweisen habe (was jetzt aber noch bedeutet das ich mich da sonderlich wohl fuehle oder die Sprache anfange zu moegen), wollte ich diese Information auch in meine Profile einbauen: waehrend dies auf _LinkedIn_ recht schnell ging, dauerte es deutlich laenger, ehe ich einen einigermassen geeigneten Platz bei meinem [XING Profil](https://www.xing.com/profile/Lars_Baehren?sc_o=mxb_p) finden konne, wo sich die eintragen liess.
-
-![Skills at XING profile](/blog/2014/2014-01/2014-01-21_Skills_LindedIn.png)
-
-![Skills at LinkedIn profile](/blog/2014/2014-01/2014-01-21_Skills_XING.png)
-
-Schaue ich mir nun aber die beiden Profil im direkten Vergleich an, dann muss ich wieder einmal anerkennen, dass _LinkedIn_ die Informationen in einer (zumindest fuer meinen Geschmack) uebersichtlicheren und klareren Form praesentiert: Dazu gehoert nicht nur, dass eine eine separate Sektion mit dem Titel "Skills & Expertise" gibt, sondern auch dass es moeglich ist die angegebenen Faehigkeiten von (ehemaligen) Kollegen bestaetigen zu lassen. Eine durchaus sinnvolle Funktion.
- 
-**:::**
- 
- 
-### Von unterwegs ###
-
-
-
-
-_Thu, 23. January 2014 -- 21:29_
-
-Das war doch eine recht gute Entdeckung: vor einer Weile habe ich herausgefunden, dass er hier am Hauptbahnhof Koeln einen groesseren Telekom Hotspot gibt, ueber welchen man fuer 30 Minuten gratis Internetzugang erhaelt. War mir lange Zeit nicht bewusst gewesen (es koennte natuerlich auch sein, dass es das Angebot noch nicht so sonderlich lange gibt, was ich aber fuer weniger wahrscheinlich halte). Wenn man also keine groesseren Datentransfers vorhat, sondern eben nur mal schnell Mails checken und/oder abschicken will, dann ist dies vollkommen ausreichend. So muesste ich es sogar schaffen die letzten Blog-Eintraege noch von unterwegs online zu stellen, noch ehe ich wieder zurueck in Bonn bin...
-
-![Hotspot Bahnhof Koeln](/blog/2014/2014-01/2014-01-23_Hotspot_Koeln.png)
  
 **:::**
  

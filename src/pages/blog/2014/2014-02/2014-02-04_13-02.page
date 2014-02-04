@@ -1,0 +1,19 @@
+---
+title: "Pull requests"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 04. February 2014 -- 13:02_
+
+Ich bin immer wieder begeistert darueber, wie einfac es doch ist via [Github](https://github.com) Code-Patches einzuschicken:
+
+ - Original Repository forken;
+ - Aenderungen vornehmen (und natuerlich testen);
+ - Pull request schicken.
+
+![Github pull requests](/blog/2014/2014-02/2014-02-04_Pull_requests.png)
+
+Finde ich klasse, dass es da seitens Evert und mir nicht sonderlich viel Arbeit erforderte um Richard davonzu ueberzeugen statt dem hausinternen Subversion-Server auf Git und Github umzusteigen. Gerade fuer die Kollaboration ist dies echt eine feine Sache; selbst wenn man den Code nicht direkt der Oeffentlichkeit zugaenglich machen will (was bei uns ja der Fall waere), so ist es doch recht haeufig immer noch deutlich kostenguenstiger die paar Dollar pro Jahr zu investieren, als dies ueber die hausinterne IT laufen zu lassen (eine Rechnung welche hier durchaus mit zu der Entscheidung beigetragen hat) -- will man dann spaeter den Code der Allgemeinheit zugaenglich machen muss man lediglich das Haekchen hinter dem Tab "Private Repository" wegmachen.
