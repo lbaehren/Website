@@ -9,6 +9,41 @@ tags: Blog
  
 **:::**
  
+### Bürgerumfrage zum Thema Sperrmüll ###
+
+
+
+
+_Thu, 06. February 2014 -- 20:22_
+
+Umfragen gibt es ja fast schon wie Sand am Meer, so dass ich da eher selten breit schlagen lasse; wenn es sich aber wirklich einmal um ein Anliegen handelt, welches sprichwoertlich vor der Tuere liegt, dann werfe ich da gerne aber auch einmal einen genaueren Blick drauf. So geschehen in diesem Fall:
+
+> Liebe Bonnerinnen und Bonner,
+>
+> vor 15 Jahren wurde aufgrund einer Umfrage beschlossen, die vier festen Sperrmülltermine pro Jahr beizubehalten.
+>
+> Inzwischen haben sich Wünsche und Lebensgewohnheiten geändert. Um ein aktuelles Meinungsbild zu erhalten und entsprechend Angebote entwickeln zu können, hat die [bonnorange AöR](http://www.bonnorange.de) einen [Fragebogen zu dem Thema](http://www.bonnorange.de/wir-ueber-uns.html) entwickelt. Sie können uns ab sofort Ihre Meinung mitteilen.
+
+Mache ich doch gerne... Dass sich die Lebensgewohnheiten in vielerlei Hinsicht im Laufe der letzten 15 Jahre geaendert haben will ich gerne glauben; was allerdings die Auswirkung auf den Sperrmuell betrifft, so wage ich doch einmal zu behaupten, dass es auch ein gutes Stueck davon anhaengt, in welchen Strassen man so unterwegs ist. Laeuft man ein klein wenig durch die Gegend, so faellt recht deutlich auf, dass es Strassen gibt, wo die Buergersteige leer sind, waehrend man in anderen Gegenden foermlich ueber Berge an Material klettern muss.
+
+Aber gut, letzteres ist an dieser Stelle vielleicht nicht so sehr der wichtige Punkt -- viel wichtiger ist hingegen, dass _bonnorange_ die Fuehler ausstreckt, um in Erfahrung zu bringen, in welcher Weise in Zukunft der Sperrmuell entsorgt werden kann. Dabei reichen die Optionen von
+
+ - mehr allgemeinen Terminen pro Jahr,
+ - weniger allgemeinen Terminen pro Jahr,
+ - Abholungen auf Bestellung,
+ - Kombination aus allgemeinen Terminen und bestellten Abholungen.
+
+Das hierzu auszufuellende Online-Formular ist denkbar einfach -- dauert ein bis zwei Minuten und schon ist man fertig. Um allerdings zu verhindern, dass jemand hingeht und auf automatisierte Weise den Fragebogen ausfuellen laesst (was man dann gleich in tausendfacher Weise machen koennte), hat man sich eine kleine Huerde einfallen lassen, um derartige Zugriffe zu unterbinden:
+
+> Bitte beachten Sie, dass der Umfrage ein [CAPTCHA](http://www.captcha.net) in Form einer Rechenaufgabe vorgeschaltet ist. Dieser CAPTCHA ermöglicht die Unterscheidung, ob ein Mensch oder eine Maschine den Fragebogen ausfüllt. Denn leider werden Roboter ("Bots" genannt) häufig verwendet, um Fragebögen, oft auch in großer Stückzahl, auszufüllen. Dies würde das Ergebnis der Umfrage verfälschen und unter Umständen unbrauchbar machen. Wenn Sie keinen Internetzugang haben oder den CAPTCHA nicht überwinden können, wenden Sie sich bitte an die Rufnummer 0228 - 77 55 77.
+
+Agesichts des Schwierigkeitsgrades der gestellten Rechenaufgabe, will ich einfach mal hoffen, dass die Macher mit "nicht überwinden können" eher technische Probleme im Hinterkopf hatten...
+
+![Sicherheitsabfrage](/blog/2014/2014-02/2014-02-06_Sicherheitsabfrage.png)
+ 
+**:::**
+ 
+ 
 ### An der frischen Luft ###
 
 
@@ -293,26 +328,6 @@ Damit ist es allerdings nicht getan: was vollkommen fehlt ist z.B. [Git](http://
 _Tue, 28. January 2014 -- 01:10_
 
 Also das ist doch schon deutlich angenehmer, mit einer guten externen Tastatur zu arbeiten, als die ganze Zeit hier in der Wohnung auf der internen Laptop Tastatur schreiben zu muessen. Waehrend ich sowohl im Buero als auch zuhause in Bonn alles so eingerichtet habe, dass das Laptop sich in eine ganze Peripherie an Geraeten einfuegt, geht es hier in der Wonung doch eher minimalistisch zu; vor allen Dingen dann, wenn ich abends mal noch mehr an Schreibarbeit erledigen will (oder vielleicht auch muss), dann fand ich dies immer ein wenig umstaendlicher, als dies z.B. im Buero der Fall waere. Da ich dort aber nicht die komplette Nacht zubringen moechte, sollte ich also schauen, dass ich auch anderenorts zumindest ueber eine einigermassen vernuenftige Infrastruktur verfuege. Dazu zaehlt -- woran ich diese Woche endlich einmal gedacht habe -- u.a. eine vernueftige Tastatur (was uebrigends typischerweise auch zu etwas wenig Rechtschreibfehlern bei den Blog-Eintraegen fuehrt, weil die Tasten besser ansprechen). Ich muss mir allerdings noch einmal Gedanken darueber machen, ob ich mir hier nicht zumindest eine minimale Arbeitsecke einrichten kann... so wie jetzt auf dem Boden zu liegen ist vielleicht nicht immer unbedingt die beste Loesung.
- 
-**:::**
- 
- 
-### Nginx @ FLOSS Weekly ###
-
-
-
-
-_Mon, 27. January 2014 -- 16:54_
-
-Hurra -- das Datum steht jetzt fest! Vor ein paar Minuten kam via Google+ die Nachricht rein, dass die von mir mit eingefaedelte [FLOSS Weekly](http://twit.tv/show/floss-weekly) Episode zu [Nginx](http://wiki.nginx.org/Main) nun offiziell im Sendeplan gebucht ist:
-
-![nginx announcement](/blog/2014/2014-01/2014-01-27_FLOSS_Weekly.png)
-
-Da bin ich doch einmal gespannt, was die Folge zu bieten hat; rein nach dem, was ich bisher so gelesen habe, scheint es sich wieder einmal um eine Software zu handeln, mit welcher man im Alltag viel haeufiger konfrontiert ist, als man dies ueberhaupt mitbekommt.
-
-> Nginx (pronounced engine-x) is a free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server. Igor Sysoev started development of Nginx in 2002, with the first public release in 2004. Nginx now hosts nearly 12.18% (22.2M) of active sites across all domains. Nginx is known for its high performance, stability, rich feature set, simple configuration, and low resource consumption.
-
-Die Liste der Websites, welche _Nginx_ einsetzen ist recht eindrucksvoll; da kribbeln es einen natuerlich in den Fingern auf einmal ein wenig mit der Software zu spielen und mal eine Testinstallation aufzusetzen.
  
 **:::**
  
