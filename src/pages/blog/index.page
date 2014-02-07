@@ -9,6 +9,20 @@ tags: Blog
  
 **:::**
  
+### Durch den Regen ###
+
+
+
+
+_Fri, 07. February 2014 -- 13:06_
+
+Also dies macht wirklich keinen Spass. Nicht nur, dass der Wetterfrosch mehr oder weniger konstanten Regen angesagt... diese Vorhersage trifft leider auch noch zu. So kommt es also, dass ich eben von der Wohnung zur Bushaltestelle schwimmen durfte, um endlich den (deutlich verspaeteten) Bus zu erwischen. Gluecklicherweise sitze ich nun im Zug nach Den Haag (von wo aus es dann weiter geht nach Delft), aber zur guten Laune tragen diese Rahmenbedingungen in keinster Weise bei.
+
+Da ich noch einige an Vorbereitungen fuer den heutigen Abend vornehmen musste, bin ich insgesamt schon gut eine Stunde spaeter als eigentlich anvisiert unterwegs. Dies aergert mich schon ein wenig, denn ich wollte einfach etwas mehr Zeit vor Ort haben, damit ich noch die Gelegenheit habe mit Bart und/oder Erik zu sprechen. Ich hoffe aber doch mal, dass zumindest dies noch funktioniert, denn so oft bin ich ja schliesslich nicht in Delft -- da macht es schon Sinn die Gelegenheit zu nutzen direkt mit den Menschen dort vor Ort zu reden.
+ 
+**:::**
+ 
+ 
 ### Ueberall Regen ###
 
 
@@ -306,28 +320,6 @@ Gestossen bin ich auf [die Dokumentation](http://www.boston.com/bigpicture/2014/
 > The Big Picture is a blog of the best in photojournalism, shown large.  We capture both the big news stories of the day and others that are simply striking images from some of the best photographers working today.
 
 Wie so ueblich bei den _Big Picture_ Beitraegen, handelt es sich um qualitativ hochwertigen Photojournalismus, welcher Geschichten mit dem Blick durch die Kamera erzaehlt. Kann ich nur empfehlen immer wieder mal reinzuschauen.
- 
-**:::**
- 
- 
-### Alles andere als optimal ###
-
-
-
-
-_Wed, 29. January 2014 -- 17:16_
-
-Nachdem es ja einige Zeit mit dem Zugag gedauert hat, habe ich mich heute Morgen zum ersten Mal auf der _Integrated Data Analysis Facility_ (IDAF) des [KNMI](http://www.knmi.nl) eingeloggt. Wie ich allerdings rechtschnell verstellen musste, befindet sich das System aus Sicht des Software Stacks in einem alles andere als Entwickler-freundlichen Zustand. Aufbauend auf _Red Hat Enterprise Linux Server release 6.5_ sind die meisten der installierten Tools auf einem recht alten Stand:
-
-~~~~
-    CMake      | 2.6-patch 4
-    gcc (GCC)  | 4.4.7 20120313 (Red Hat 4.4.7-4)
-    nano       | 2.0.9
-    Subversion | 1.6.11 (r934486)
-    Wget       | 1.12
-~~~~
-
-Damit ist es allerdings nicht getan: was vollkommen fehlt ist z.B. [Git](http://git-scm.com), so dass ich mich mich einmal direkt daran begeben habe zumindest eine lokale Version zu installieren. Wenn ich mir den Rest des Inventars anschaue, dann werde ich da wohl noch einige Pakete von Hand installieren (sei es weil diese ziemlich veraltet sind oder eben vollstaendig fehlen).
  
 **:::**
  
