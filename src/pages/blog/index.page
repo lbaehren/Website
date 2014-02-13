@@ -9,6 +9,26 @@ tags: Blog
  
 **:::**
  
+### Von wegen Open ###
+
+
+
+
+_Thu, 13. February 2014 -- 17:44_
+
+Je mehr ich ueber [Android](http://www.android.com) zu lesen bekomme, desto weniger bleibt von meinem frueheren Eindruck eines Open-Source Projektes bestehen. Einen interessanten Blick hinter die Kulissen bot [Ars Technica](http://arstechnica.com) in dem Artikel [Google’s iron grip on Android](http://arstechnica.com/gadgets/2013/10/googles-iron-grip-on-android-controlling-open-source-by-any-means-necessary):
+
+> Google has always given itself some protection against alternative versions of Android. What many people think of as "Android" actually falls into two categories: the open parts from the Android Open Source Project (AOSP), which are the foundation of Android, and the closed source parts, which are all the Google-branded apps. While Google will never go the entire way and completely close Android, the company seems to be doing everything it can to give itself leverage over the existing open source project. And the company's main method here is to bring more and more apps under the closed source "Google" umbrella.
+
+Eine sehr nette Ergaenzung zu diesen Ausfuehrungen gab es nun unter der Ueberschrift [New Android OEM licensing terms leak](http://arstechnica.com/gadgets/2014/02/new-android-oem-licensing-terms-leak-open-comes-with-restrictions):
+
+> The least understood area of the Android ecosystem has always been the highly secretive Google Play Apps licensing process. While Android is open source, the Google applications, like the Play Store, Gmail, Google Maps, Google Play Services, and others must be licensed. This licensing agreement is called the "Mobile Application Distribution Agreement" (MADA) and comes with tons of restrictions. Previously, MADA details have come out of the Skyhook case, but those agreements were from 2009, a time when Android was only at version 1.1. Thanks to the still ongoing Oracle v. Google trial, a "new" version of the Google App licensing agreement has been made public.
+
+Waren es ansonsten doch eher [Apple](http://www.apple.com) oder [Microsoft](http://www.microsoft.com), welche man mit drakonische Auflagen in Verbindung bringen wuerde, so scheint Google dem in keinster Weise nachzustehen. Dies platziert definitiv einen Daempfer auf die Begeisterung fuer die [iOS](https://www.apple.com/ios) Alternative.
+ 
+**:::**
+ 
+ 
 ### Charlie's Angels... the (almost) original series ###
 
 
@@ -265,22 +285,6 @@ Weiter fuehrt die [Meldung auf Heise News](http://www.heise.de/newsticker/meldun
 > Das würde auf dem mehrfach bestätigten Grundsatz beruhen, dass Bundesstaaten nicht verpflichtet sind, der Bundesregierung bei der Erfüllung ihrer Arbeit zu helfen. Beispielhaft richtet sich der Blick der Überwachungsgegner nun nach Utah, wo die NSA kürzlich ein gigantisches Rechenzentrum eröffnet wurde. Ohne gewaltige Mengen an Kühlwasser müsste es den Betrieb einstellen.
 
 In wie weit eine solche Vorgehensweise wirklich zum Erfolg fuehren kann darf einmal dahingestellt sein; anerkennen muss man aber, dass des sich hierbei mal um eine recht kreative Vorgehensweise handelt. Ich kann mir da gut vorstellen, dass dies auch angesichts der in diesem Jahr noch anstehenden Wahlen zu weiteren Ideen fuehren wird, mit welchen sich die potentiellen Volksvertreter auseinandersetzen werden muessen.
- 
-**:::**
- 
- 
-### Marker ###
-
-
-
-
-_Mon, 03. February 2014 -- 20:46_
-
-Wie sehr ich mich doch mittlerweile daran gewoehnt habe: sobald ich mir die Kamera schnappe, um vor die Haustuere zu gehen, habe ich entweder den GPS-Tracker des Handy oder die GPS-Einheit der Kamera (typischerweise beide) laufen. So kommt es dann auch, dass die meisten Ausfuege recht gut dokumentiert sind -- der Sonntag Nachmittag bildet da keine Ausnahme:
-
-![GPS positions](/blog/2014/2014-02/2014-02-03_GPS_positions.png)
-
-Sicher, dies sind nur die Punkte, an welchen ich Bilder aufgenommen habe (und eben nicht die komplette Wegstrecke, welche ich zurueckgelegt habe), aber ich denke doch mal, dass dies einen Eindruck davon vermittelt, wo ich unterwegs gewesen.
  
 **:::**
  
