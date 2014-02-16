@@ -9,6 +9,18 @@ tags: Blog
  
 **:::**
  
+### Mit zwei linken Schuhen ###
+
+
+
+
+_Sun, 16. February 2014 -- 21:40_
+
+.... ist es nicht so wirklich toll probieren Sport zu machen. Kann ich jetzt aus eigener Erfahrung sagen, den als ich heute Morgen im Wellpoint die Tasche mit den Schuhen ausgepackt habe, musste ich feststellen, dass ich statt einem zusammengehoerenden Paar, zwei Schuhe fuer den linken Fuss dabei hatte. Da sich da nun auch nichts mehr dran aendern liess, habe ich mich also kurzerhand entschlossen den Kurs barfuss zu absolvieren. Bedenken hatte ich ein klein wenig, weil ich nicht so richtig einzuschaetzen vermochte, in wie weit ich auch an den Fuessen schwitze, denn dies haette bei dem Holzboden im Kursraum eine recht schluepfrige Angelegenheit werden koennen. War aber alles kein Problem, denn da die Sohle nicht eingeschlossen wird, bleibt alles atmungsaktiv und es gibt keinerlei ausgestaute Waerme, welche Schwitzen verursachen koennte. Was ich allerdings in diesem Zuge mit einer gewissen Befriedigung feststellen konnte war, dass sich die viele Fivefinger Lauferei wirklich auszahlt: da ich ja schon seit langer Zeit nichts anderes mehr zum Sport anziehe, sind meine Fuesse die Bewegungsablaeufe recht gut gewoehnt und die Muskulatur zeigt keinerlei Ermuedungserscheinungen. Ich kann mir gut vorstellen, dass dies komplett anders ausgehen kann, wenn man ansonsten immer nur mit Sportschuhen antanzt -- da ist man einfach einen gewissen Halt gewohnt, was eben auch bedeutet, dass bestimmte Muskel im Fuss einfach nicht entsprechend trainiert werden. So aber konnte ich die Stunde ohne Probleme absolvieren... auch wenn dies nicht unbedingt heisst, dass ich nicht bei naechsten Mal wieder ein vollstanediges Paar Fivefinger mitbringen sollte (ist einfach waermer an den Fuessen).
+ 
+**:::**
+ 
+ 
 ### Und noch ein Pinguin ###
 
 
@@ -20,13 +32,13 @@ Das war jetzt aber doch ein groessere Vorhaben... wenn auch die Probleme an ande
 
 Nachdem es mit dem bisherigen System mehr und mehr Probleme gegeben hatte (was bis dahin ging, dass sich der Rechner kaum noch ansprechen liess), wurde es wohl wirklich einmal Zeit da Hand anzulegen und alles so umzustellen, dass es auch dauerhaft mit der Wartung einfacher wird. Mein Vorschlag also war, das mehr humpelnde als laufende Windows 7 durch ein aktuelles [Fedora](http://fedoraproject.org) zu ersetzen. Da ich mir durchaus dessen bewusst bin, dass es fuer jemanden, der immer nur mit der einen oder anderen Version von Windows gearbeitet hat, eine Umstellung ist mit einem Mal ein Linux vor die Nase gesetzt zu bekommen, so wuerde ich doch mal behaupten, dass es sich bei einem solchen Unterfangen bei weitem nicht mehr um riesen Schock handelt, wie dies einmal der Fall war. Sicher, so manche Anwendung sieht anders aus, aber wenn zuvor schon mit Firefox oder LibreOffice gearbeitet hat, dann trifft man in jedem Fall wieder auf Bekannte. Wie dies allerdings schon bei der Umstellung von Julias Laptop der Fall war, so ging auch hier wieder einiges an Zeit nur fuer das Backup der bisherigen Bestandsdaten drauf; sicher, mindestens die Haelfte davon konnte man anschliessend direkt wieder wegschmeissen, aber diese Auswahl wollte ich dann doch lieber ein wenig spaeter machen und nicht schon alles auf dem Live-System durchfuehren. Insgesamt sind die Schritte aber doch recht straight-forward:
 
- 1. Mit Knoppix Live-Linux CD den Rechner booten und das existierende System in Augenschein nehmen.
+ 1. Mit [Knoppix](http://www.knoppix.org) Live-Linux CD den Rechner booten und das existierende System in Augenschein nehmen.
  2. Zu sichernde Daten von dem alten System auf eine externe Festplatte verschieben (im Zweifelsfalls lohnt es sich hier vorher schon einmal ein wenig auszusortieren, um nicht Gigabyteweise Windows-Backups durch die Gegend zu schieben).
  3. Rechner runterfahren.
  4. Boot von Fedora Installations-CD (wenn man Netzwerkverbindung hat, bietet sich die ``netinstall`` Variante an, weil man da nicht nur recht flexibel zu Software Komponenten konfigurieren kann, sondern auch gleich von allem die aktuellste Variante kriegt).
  5. Vornehmen der ueblichen System-Konfiguration (Partition, zu installierende Pakete, Benutzerkonten, etc.)... und dann den Rechner machen lassen.
  6. Boot in das neu installierte System.
- 7. Installation weiterer benoetigter Pakete (e.g. Firefox, Thunderbird, etc.).
+ 7. Installation weiterer benoetigter Pakete (e.g. [Firefox](http://www.mozilla.org/en-US/firefox), [Thunderbird](http://www.mozilla.org/en-US/thunderbird), etc.).
  8. Einrichten von Email-Konten.
  9. Import von Firefox Profile vom Backup.
  10. Import der Benutzerdaten vom Backup.
@@ -263,26 +275,6 @@ Es ist vollbracht - vor ein paar Minuten erreichte mich via SMS die Mitteilung, 
 ![Meldung](/blog/2014/2014-02/2014-02-04_180515_Haushauf.jpg)
 
 Das heisst also dass die wesentlichen formalen Huerden im Vorfeld ueberwunden sind -- so richtig geht der "Spass" nun aber erst los, denn da wird noch einiges an Arbeit noetig sein, um alles so herzurichten, dass man ueberhaupt mit dem Gedanken spielen kann die ersten Gegenstaende in die neuen vier Waende umziehen zu lassen. Ist auf jeden Fall sehr spannend und ich bin mal auf den detailierten Bericht heute Abend gespannt.
- 
-**:::**
- 
- 
-### Pull requests ###
-
-
-
-
-_Tue, 04. February 2014 -- 13:02_
-
-Ich bin immer wieder begeistert darueber, wie einfach es doch ist via [Github](https://github.com) Code-Patches einzuschicken:
-
- - Original Repository forken;
- - Aenderungen vornehmen (und natuerlich testen);
- - Pull request schicken.
-
-![Github pull requests](/blog/2014/2014-02/2014-02-04_Pull_requests.png)
-
-Finde ich klasse, dass es da seitens Evert und mir nicht sonderlich viel Arbeit erforderte um Richard davonzu ueberzeugen statt dem hausinternen Subversion-Server auf Git und Github umzusteigen. Gerade fuer die Kollaboration ist dies echt eine feine Sache; selbst wenn man den Code nicht direkt der Oeffentlichkeit zugaenglich machen will (was bei uns ja der Fall waere), so ist es doch recht haeufig immer noch deutlich kostenguenstiger die paar Dollar pro Jahr zu investieren, als dies ueber die hausinterne IT laufen zu lassen (eine Rechnung welche hier durchaus mit zu der Entscheidung beigetragen hat) -- will man dann spaeter den Code der Allgemeinheit zugaenglich machen muss man lediglich das Haekchen hinter dem Tab "Private Repository" wegmachen.
  
 **:::**
  

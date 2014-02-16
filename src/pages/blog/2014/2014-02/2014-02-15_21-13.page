@@ -12,13 +12,13 @@ Das war jetzt aber doch ein groessere Vorhaben... wenn auch die Probleme an ande
 
 Nachdem es mit dem bisherigen System mehr und mehr Probleme gegeben hatte (was bis dahin ging, dass sich der Rechner kaum noch ansprechen liess), wurde es wohl wirklich einmal Zeit da Hand anzulegen und alles so umzustellen, dass es auch dauerhaft mit der Wartung einfacher wird. Mein Vorschlag also war, das mehr humpelnde als laufende Windows 7 durch ein aktuelles [Fedora](http://fedoraproject.org) zu ersetzen. Da ich mir durchaus dessen bewusst bin, dass es fuer jemanden, der immer nur mit der einen oder anderen Version von Windows gearbeitet hat, eine Umstellung ist mit einem Mal ein Linux vor die Nase gesetzt zu bekommen, so wuerde ich doch mal behaupten, dass es sich bei einem solchen Unterfangen bei weitem nicht mehr um riesen Schock handelt, wie dies einmal der Fall war. Sicher, so manche Anwendung sieht anders aus, aber wenn zuvor schon mit Firefox oder LibreOffice gearbeitet hat, dann trifft man in jedem Fall wieder auf Bekannte. Wie dies allerdings schon bei der Umstellung von Julias Laptop der Fall war, so ging auch hier wieder einiges an Zeit nur fuer das Backup der bisherigen Bestandsdaten drauf; sicher, mindestens die Haelfte davon konnte man anschliessend direkt wieder wegschmeissen, aber diese Auswahl wollte ich dann doch lieber ein wenig spaeter machen und nicht schon alles auf dem Live-System durchfuehren. Insgesamt sind die Schritte aber doch recht straight-forward:
 
- 1. Mit Knoppix Live-Linux CD den Rechner booten und das existierende System in Augenschein nehmen.
+ 1. Mit [Knoppix](http://www.knoppix.org) Live-Linux CD den Rechner booten und das existierende System in Augenschein nehmen.
  2. Zu sichernde Daten von dem alten System auf eine externe Festplatte verschieben (im Zweifelsfalls lohnt es sich hier vorher schon einmal ein wenig auszusortieren, um nicht Gigabyteweise Windows-Backups durch die Gegend zu schieben).
  3. Rechner runterfahren.
  4. Boot von Fedora Installations-CD (wenn man Netzwerkverbindung hat, bietet sich die ``netinstall`` Variante an, weil man da nicht nur recht flexibel zu Software Komponenten konfigurieren kann, sondern auch gleich von allem die aktuellste Variante kriegt).
  5. Vornehmen der ueblichen System-Konfiguration (Partition, zu installierende Pakete, Benutzerkonten, etc.)... und dann den Rechner machen lassen.
  6. Boot in das neu installierte System.
- 7. Installation weiterer benoetigter Pakete (e.g. Firefox, Thunderbird, etc.).
+ 7. Installation weiterer benoetigter Pakete (e.g. [Firefox](http://www.mozilla.org/en-US/firefox), [Thunderbird](http://www.mozilla.org/en-US/thunderbird), etc.).
  8. Einrichten von Email-Konten.
  9. Import von Firefox Profile vom Backup.
  10. Import der Benutzerdaten vom Backup.
