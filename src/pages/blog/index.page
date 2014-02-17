@@ -9,6 +9,44 @@ tags: Blog
  
 **:::**
  
+### Git von Source ###
+
+
+
+
+_Mon, 17. February 2014 -- 21:33_
+
+Nachdem sich immer mehr abzeichnet, dass fuer die erfolgreiche Ausfuehrung der _On-ground Calibration_ eine Mixture aus Software Komponenten notwendig wird, habe ich mir heute mal ein wenig genauer angeschaut, in wie weit es denn moeglich ist, unsere Software auf dem offiziellen System ans Laufen zu bringen. Stellt sich heraus, dass gleich eine ganze Reihe an Vorraussetungen nicht erfuellt sind (von denen ich mir bisher noch nicht sicher bin, wodurch diese nun genau bedingt werden); um aber zumindest schon einmal eine Uebersicht zu bekommen, habe ich es einfach mal probiert mit dem dem (scheinbar) einfachsten anzutesten: dem Auschecken des Source-Codes. Wie ich allerdings sehr zu meinem Bedauern feststellen musste, gibt es auf dem Server kein [Git](http://git-scm.com) installiert, so dass ich a) weder aus unser Repository zugreifen kann, noch b) lokale Versionskontrolle zur Verfuegung steht. Um dem abzuhelfen, habe ich mich daran gemacht, _Git_ komplett von Source zu installieren, weil a) kann ich nicht einfach den Paket-Manager anwerfen und b) habe ich so die Moeglichkeit die gewuenschten Features mit einzubauen (wie z.B. die Kommunikation ueber verschluesselte Verbindungen).
+
+In der Anleitung finden sich netterweise auch noch einmal die Abhaengigkeiten aufgefuehrt, so dass man eine Liste vor sich hat, welche sich dann Schritt fuer Schritt abarbeiten laesst:
+
+> To install Git, you need to have the following libraries that Git depends on:
+>
+> - [curl](http://curl.haxx.se),
+> - [zlib](http://www.zlib.net),
+> - [openssl](http://www.openssl.org),
+> - [expat](http://sourceforge.net/projects/expat),
+> - [libiconv](https://www.gnu.org/software/libiconv).
+
+Da ich es ja immer auch ein wenig anschaulicher finde, wenn man derartige Dinge in Form einer Zeichnung vor Augen hat, habe ich einfach mal mit dem Zeichnen ein kleinen Abhaengigkeitsbaums begonnen:
+
+~~~~
+                     git
+                      |
+      +---+--------+--------+--------+
+      |      |        |        |        |
+     curl   zlib   openssl   expat   libiconv
+      |
+  ++----+
+  |        |
+ zlib   openssl
+~~~~
+
+Wie man daran erkennen kann, kommen ganz schnell weitere (indirekte) Abhaengigkeite mit ins Spiel, so dass man nach einer Weile (auch wenn dies hier sicherlich nicht so schlimm ist), bei einem ganzen Geflecht an Paketabhaengigkeiten landet. Dass sich da anbietet dies Verkettungen in ein Script zu packen, damit man alles halb-automatisch durchlaufen lassen kann, duerfte wohl nachvollziehbar sein. Immerhin kann ich so -- sollte dies denn noetig werden -- die vorgenommen Schritte reproduzieren (und habe gleichzeitig auch ein Stueck weit Dokumentation vorliegen). Was dies bedauerlicherweise aber immer noch nicht loest, sind die Probleme mit der Konfiguration des Servers, denn so wie es scheint, sind einfach bestimmte Operationen nicht zugestanden... unter anderem der Datentransfer via SSH, was also den ansonsten ueblichen Zugriff auf [Github](http://www.github.com) verhindert :(
+ 
+**:::**
+ 
+ 
 ### Mit zwei linken Schuhen ###
 
 
@@ -259,22 +297,6 @@ So genial wie das Wetter gestern Mittag war, hatte ich nicht sonderlich viel Lus
 ![The Zone](/blog/2014/2014-02/dsc_20140204_144643.jpg)
 
 Dass es mit einem Makro-Objektiv aber immer wieder interessante Details zu entdecken gibt, duerfte (hoffentlich) das obige Bild deutlich machen. Es muessen dabei noch nicht einmal unbedingt sonderlich kleine Strukturen sein, welche man da vor die Linse setzt, aber der zustande kommende Eindruck ist doch immer noch einmal ein anderer, als wenn ich ein normales Zoom-Objektiv verwende. Da ich es ja mag, Dinge (photographisch) mal aus einer anderen Perspektive zu betrachten, ist dies in der Tat ein reizvoller Ansatz, naemlich z.B. bei einem Spaziergang lediglich ein Makro mitzunehmen -- dies hilft typischerweise dabei den Blick fuer Dinge zu schaerfen, welche einem ansonsten eher nicht auffallen.
- 
-**:::**
- 
- 
-### Hausbesitzer ###
-
-
-
-
-_Tue, 04. February 2014 -- 17:15_
-
-Es ist vollbracht - vor ein paar Minuten erreichte mich via SMS die Mitteilung, dass der Kaufvertrag unterschrieben ist:
-
-![Meldung](/blog/2014/2014-02/2014-02-04_180515_Haushauf.jpg)
-
-Das heisst also dass die wesentlichen formalen Huerden im Vorfeld ueberwunden sind -- so richtig geht der "Spass" nun aber erst los, denn da wird noch einiges an Arbeit noetig sein, um alles so herzurichten, dass man ueberhaupt mit dem Gedanken spielen kann die ersten Gegenstaende in die neuen vier Waende umziehen zu lassen. Ist auf jeden Fall sehr spannend und ich bin mal auf den detailierten Bericht heute Abend gespannt.
  
 **:::**
  
