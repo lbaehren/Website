@@ -1,11 +1,12 @@
 ---
-title: Data Access Library
-in_menu: true
-author: Lars Baehren
+title: "Data Access Library (DAL)"
+in_menu: false
+lang: en
+author: "Lars Baehren"
 tags: LOFAR, Development, HDF5, FITS
 ---
 
-## Data Access Library (DAL) ##
+## {title:} ##
 
 The [Data Access Library](https://github.com/nextgen-astrodata/DAL) (DAL) is a library that abstracts the underlying file format from the user when working with radio astronomy data. Underlying formats may include HDF5, AIPS++/CASA tables, FITS or specific raw formats. This library is available to both the C/C++ developer and the Python user via the "pydal" module.
 

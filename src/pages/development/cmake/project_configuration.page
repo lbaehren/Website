@@ -1,7 +1,8 @@
 ---
 title: "Project configuration"
 in_menu: false
-author: Lars Baehren
+lang: en
+author: "Lars Baehren"
 ---
 
 ## CMake :: {title:} ##

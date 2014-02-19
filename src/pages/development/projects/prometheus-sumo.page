@@ -1,7 +1,8 @@
 ---
 title: prometheus-sumo
-in_menu: true
-author: Lars B&auml;hren
+in_menu: false
+lang: en
+author: "Lars Baehren"
 tags: Development
 ---
 
@@ -17,7 +18,7 @@ The source for prometheus-sumo is hosted on Github at; go there to read about th
 git clone git://github.com/lbaehren/prometheus-sumo.git
 ~~~~
 
-in order to to clone into a local working copy. 
+in order to to clone into a local working copy.
 
 In order to now configure and build the project "out of source" -- hence keeping your options open to cleanly remove intermediate/temporary files -- run the `boostrap` script
 
