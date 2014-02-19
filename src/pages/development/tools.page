@@ -11,7 +11,7 @@ tags: Development Computing
 
 ### ... for documentation generation
 
- - [Doxygen](doxygen/index.html) is a documentation generator, a tool for writing software reference documentation. The documentation is written within code, and is thus relatively easy to keep up to date. Doxygen can cross reference documentation and code, so that the reader of a document can easily refer to the actual code.
+ - [Doxygen](/development/tools/doxygen.html) is a documentation generator, a tool for writing software reference documentation. The documentation is written within code, and is thus relatively easy to keep up to date. Doxygen can cross reference documentation and code, so that the reader of a document can easily refer to the actual code.
 
 **:::**
 

@@ -1,13 +1,12 @@
 ---
 title: "Projects"
 in_menu: false
-lang: en
 author: "Lars Baehren"
 tags: Development Computing
 ---
 
 ## Development projects ##
 
- - The [Data Access Library](projects/dal.html) (DAL) is a library that abstracts the underlying file format from the user when working with radio astronomy data. Underlying formats may include HDF5, AIPS++/CASA tables, FITS or specific raw formats. This library is available to both the C/C++ developer and the Python user via the "pydal" module.
+ - The [Data Access Library](/development/projects/dal.html) (DAL) is a library that abstracts the underlying file format from the user when working with radio astronomy data. Underlying formats may include HDF5, AIPS++/CASA tables, FITS or specific raw formats. This library is available to both the C/C++ developer and the Python user via the "pydal" module.
 
- - [prometheus-sumo](projects/prometheus-sumo.html) is a simple (almost) virtual package, to ease the retrieval of the various components in the software stack for "[prometheus](/work/prometheus.html) -- The Distributed Digital Image Archive for Research and Studies".
+ - [prometheus-sumo](/development/projects/prometheus-sumo.html) is a simple (almost) virtual package, to ease the retrieval of the various components in the software stack for "[prometheus](/work/prometheus.html) -- The Distributed Digital Image Archive for Research and Studies".
