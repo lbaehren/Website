@@ -25,11 +25,11 @@ Da ich es ja immer auch ein wenig anschaulicher finde, wenn man derartige Dinge 
 ~~~~
                      git
                       |
-      +------+--------+--------+--------+
+      +---------+--------+--------+--------+
       |      |        |        |        |
      curl   zlib   openssl   expat   libiconv
       |
-  +---+----+
+  +------+----+
   |        |
  zlib   openssl
 ~~~~
