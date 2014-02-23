@@ -9,6 +9,76 @@ tags: Blog
  
 **:::**
  
+### Aufraeumarbeiten hinter den Kulissen ###
+
+
+
+
+_Sat, 22. February 2014 -- 08:38_
+
+Mit einer gewissen Regelmaessigkeit geschieht es, dass ich bei mir auf dem Rechner versuche ein wenig mehr Ordnung in meine diversen Datenbestaende zu bringen. Angesichts der Unmenge an Dateien -- egal ob Audio, Video, Code oder "einfach nur" Text -- besteht eigentlich kontinuierlich die Gefahr da den Ueberblick zu verlieren. Aus diesem Grunde versuche ich eigentlich schon, dass ich, wenn sich die Gelegenheit bietet, Dinge automatisiere oder zumindest in eine systematische Struktur bringe, welche sich dafuer eignen wuerde.
+
+Zuletzt ist dies geschehen, als ich mir einmal angeschaut habe wie denn eigentlich die diversen Websites organisiert sind, welche in der einen oder anderen Weise hier ueber den Rechner laufen. Prominent (und auch nach aussen sichtbare) waere da natuerlich ``larsbaehren.de``, wo vor allen Dingen dieser Blog zu finden ist (aber natuerlich auch noch andere Dinge, wenn schon diese rein vom Umfang her recht wenig ins Gewicht fallen). Bis vor einer Weile habe ich viele Notizen ueber eine lokal gehostete [Dokuwiki](http://dokuwiki.org) archiviert -- davon bin ich mittlerweile ein gutes Stueck abgekommen und versuche stattdessen quer ueber diverse Verzeichnisse verstreute Informationen via [Doxygen](http://www.doxygen.org) zusammen zu binden. Folgerichtig gibt es ein Verzeichnis mit der Bauanleitung fuer die Erstellung lokal verfuegbarer statischer Webseiten. Derzeit noch nicht weiter als in der konzeptionellen Phase -- aber auch das soll sich ja noch aendern -- waeren da die Seiten fuer die Domain, welche sich Julia vor einer Weile zugelegt hat. Es kommt also schon etwas zusammenm, so dass durchaus ein wenig da Risiko besteht sich den Rechner zu zu muellen; um aber gerade dieses Risiko einigermassen gering zu halten, habe ich damit begonnen die Dinge von zwei Enden her zu buendeln:
+
+ - Auf der eine will ich eine konsistente Weise haben, in welcher die fertigen Seiten auf meinem Rechner lokal zu finden sind. Da fuer jeden Benutzer unter Mac OS X typischerweise das Verzeichnis ``Sites`` fuer derartige Dinge reserviert ist, erscheint mir die folgende Struktur recht logisch:
+
+~~~~
+ ./Sites
+   |-- anuyoga.de
+   |-- larsbaehren.de
+   `-- local_pages
+~~~~
+
+ - Auf der anderen Seite gibt es eine Reihe an Quellen, aus welchen die fertigen Seiten bzw. Websites gebaut werden; dies betrifft nicht alleine Text und Bilder, sondern ggf. auch Infrastruktur, wie Konfigurations-Skripte und Programm-Code. Vom Prinzip her wiederholt sich eine gewisse Basisstruktur, welche sich dann in einem gemeinsamen Container unterbringen laesst; mit ein wenig zusaetzlicher Logik kann man die diversen Unterprojekte zusammenbinden und gemeinsam ansteuern.
+
+~~~~
+ Websites
+ |-- anuyoga.de
+ |-- common
+ |   |-- cmake
+ |   |-- code
+ |   `-- doxygen
+ |-- larsbaehren.de
+ |-- local_pages
+ |   `-- pages
+ `-- new_site
+     |-- code
+     `-- pages
+~~~~
+
+Um einen Anfang zu machen, habe diese Woche damit begonnen die Basis-Struktur anzulegen und (wie man anhand der folgenden [Git](http://git-scm.com)-Commits sehen kann) die Teile aus unterschiedlichen Bereichen des Filesystems zusammenzutragen.
+
+~~~~
+* commit e15cfa2feeafe0d5f735202f223277a059098a9d
+| Author: Lars Baehren <lbaehren@gmail.com>
+| Date:   Wed Feb 19 01:18:07 2014 +0100
+| 
+|     Handle case where no custom LaTeX header file is found.
+|  
+* commit 82edb185c39399f3c097e99a709c78a29022de33
+| Author: Lars Baehren <lbaehren@gmail.com>
+| Date:   Wed Feb 19 01:10:37 2014 +0100
+| 
+|     Collection of local pages.
+|  
+* commit 96d25e795c28f3ab6ab158354994ca621eaa0034
+| Author: Lars Baehren <lbaehren@gmail.com>
+| Date:   Wed Feb 19 01:10:02 2014 +0100
+| 
+|     Custom header and footer sections for HTML and LaTeX output.
+|  
+* commit cf188b1352c1595112a0b8edaa9977d91d73959f
+  Author: Lars Baehren <lbaehren@gmail.com>
+  Date:   Wed Feb 19 01:05:43 2014 +0100
+  
+      Basic set of common files.
+~~~~
+
+Mittlerweile in die Sammlung integriert sind die lokalen (via Doxygen generierten) Seiten. Grundsaetzlich waere der Umzug dieser Website der naechste logische Schritt, aber dafuer muss ich mir noch einmal durch den Kopf gehen lassen, wie ich die Git-Histories auf sinnvolle Weise kombiniert kriege; die wahrscheinlichste Loesung erscheint mir die Verwendung von Gits _Subtrees_ Feature, aber die Details werde ich wohl noch ausarbeiten.
+ 
+**:::**
+ 
+ 
 ### Visitenkarte ###
 
 
@@ -294,22 +364,6 @@ Soweit ich mich erinnern kann habe ich bisher noch nie bei einer Reise innerhalb
 _Sun, 09. February 2014 -- 20:50_
 
 Wenn ich mal auf die Uhr schaue, dann muesste Julia jetzt mittlerweile irgendwo zwischen Duesseldorf und Koeln sein -- der ICE 227 kommt planmaessig um 21:12 Uhr in Koeln an, so dass es bis dahin nicht mehr weit sein kann. Fuer meinen eigenen Rueckweg -- welcher kilometermaessig deutlich kuerzer war -- habe ich beinahe die gleiche Zeit gebraucht; dies liegt vor allen Dingen daran, dass ich die Kamera dabei hatte und noch einen kleinen Spaziergang durch das naechtliche Utrecht unternommen habe. Jetzt wieder zurueck bin ich natuerlich mal auf die Resultate gespannt -- vor allen Dingen weil ich schon eine ganze Weile nicht mehr in der Innenstadt unterwegs war (egal ob nun mit oder oder Kamera).
- 
-**:::**
- 
- 
-### Unterwegs nach Delft ###
-
-
-
-
-_Sat, 08. February 2014 -- 12:27_
-
-Eigentlich kann man mittlerweile schon davon ausgehen, dass ich, wenn ich ein wenig laenger unterwegs bin, den GPS Tracker laufen habe. Vor allen Dingen dann, wenn ich in Gegenden unterwegs bin, wo ich nicht unbedingt jeden Tag langskomme, ist es natuerlich recht nett anschliessend eine Aufzeichnung zur Verfuegung stehen zu haben. Genau aus diesem Grunde haette in nun auch einmal den Trip von Utrecht nach Delft (zum [S\[&\]T](http://www.stcorp.nl) Q-Meeting) dokumentiert:
-
-![Utrecht nach Delft](/blog/2014/2014-02/2014-02-07_Utrcht-Delft.png)
-
-Schaut man sich dies alles auf der Karte an, dann ist es eigentlich kein so langer Trip -- was ich vor allen Dingen immer wieder zu vergessen scheine ist, wie kurz denn die Strecke zwischen Den Haag (oder wahlweise Rotterdam) und Delft ist; da ich ja auch weiss, dass sich ein Besuch des Q-Meetings durchaus in barem Geld auszahlt, scheint es doch rech gut zu sein, sich den Freitag Nachmittag fuer eine kleine Reise weiter in den Westen der Niederlande einzuplanen.
  
 **:::**
  
