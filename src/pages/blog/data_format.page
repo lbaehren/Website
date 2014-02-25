@@ -5,7 +5,7 @@ author: Lars Baehren
 tags: Blog Data Development
 ---
 
-##{title:}##
+# Blog | {title:} #
 
 A number of data formats have been considered for the long-term storage of the
 blog entries; main driving force behind this was the need to have the contents
