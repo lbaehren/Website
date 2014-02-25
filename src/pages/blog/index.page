@@ -9,6 +9,18 @@ tags: Blog
  
 **:::**
  
+### Mehr also nur der Blog ###
+
+
+
+
+_Tue, 25. February 2014 -- 21:02_
+
+Ab und zu muss ich mich wieder einmal daran erinnern, dass es schon Sinn macht die Website nicht alleine mit dem Blog zu fuellen, sondern auch noch andere Dinge -- welche ein wenig mehr thematisch gruppiert sind -- online zu setzen. Neben der Sammlung an [Photographie](/photography/index.html)-bezogenen Seiten, gibt es ein paar Informationen in Sachen Software-Entwicklung, welche ein klein wenig versuchen zu reflektieren, was ich so im Zuge meiner Arbeit (aber natuerlich auch anderweitig) mache. Nachdem mir letzte Woche aufgefallen ist, wie noetig es doch ist, auf den zugehoerigen Seiten ein wenig aufzuraeumen, habe ich mir nun vorgenommen, auch laengerfristig dafuer zu sorgen, dass es eben nicht alleine der Blog ist, welcher gepflegt wird. Genau aus diesem Grund bin ich nun dazu uebergegangen zumindest einen Teil der diversen elektronischen Notizen -- welche ich auf die eine oder andere Art angesammelt habe -- einzuarbeiten; einen Anfang machen Hinweise zu [Development Tools](/development/tools.html), welche ich bei meiner alltaeglichen Arbeit einsetze. Da kann ich mittlerweile doch einiges an Hintergrundwissen vorweisen, welches auch fuer Andere in Interesse sein kann -- Grund genug also, derartige Beitraege nicht einfach nur in ein lokales Archiv zu stopfen, sondern der Allgemeinheit zugaenglich zu machen.
+ 
+**:::**
+ 
+ 
 ### Kostenlos ###
 
 
@@ -339,31 +351,6 @@ Noch ein paar Minuten, dann geht die Show auf Sendung:
 ![Announcement](/blog/2014/2014-02/2014-02-12_FLOSS_Weekly.png)
 
 Was mich persoenlich daran freut, ist dass es sich dabei eine Folge handelte, welche ich mitgeholfen habe moeglich zu machen: so wie ich Randal verstanden habe, stand [nginx](http://wiki.nginx.org/Main) wohl schon recht lange auf der Wunschliste fuer [FLOSS Weekly](http://twit.tv/show/floss-weekly) -- bisher allerdings nicht zustande gekommen war ein Kontakt mit den Machern des Webservers. Ohne von diesem Detail zu wissen hatte ich mir die Wunschliste der Show vorgenommen, einfach mal ein wenig recherchiert und dann eine Anfrage rausgeschickt; alles weitere ging dann recht schnell, so dass ich natuerlich auch mal darauf gespannt bin, was es denn zu ueber das Projekt zu berichten gibt.
- 
-**:::**
- 
- 
-### Schon lange erledigt ###
-
-
-
-
-_Tue, 11. February 2014 -- 15:50_
-
-Immer wieder interessant, welche Notizen sich so auf dem Rechner finden lassen, wenn man einmal ein klein wenig stoebern geht... oder nach bestimmten Begriffen sucht. So geschehen in diesem Fall:
-
-~~~~
-Name        Value
--------- --------------------------------------
-ID          60
-Description Update english language version of CV.
-Status      Pending
-UUID        0c965e34-a7b2-4591-a6cb-a5b8ac7c85a0
-Entered     2012-03-08 10:30:38 (1.9 yrs)
-Urgency     2
-~~~~
-
-Ich habe zwar sicherheitshalber noch einmal nacchgeschaut, aber spaetestens mit der Bewerbung bei [S\[&\]T](http://www.stcorp.nl) vor eineinhalb Jahren, muesste diese Aufgabe erledigt worden sein. Da ich zu diesem Zeitpunkt aber wohl a) noch nicht so konsequent mit dem Verwenden des [Taskwarrior](http://taskwarrior.org) war und b) die Tasks nicht ausreichend mit Tags versehen waren, ist es durchaus moeglich, dass eingetragene Aufgaben einfach im System verloren gegangen sind. Ich denke mal was dies betrifft hat sich doch einiges veraendert, so dass ich die Chancen fuer eine Wiederholung eines solchen Vorfalls als deutlich geringer einstufen wuerde.
  
 **:::**
  
