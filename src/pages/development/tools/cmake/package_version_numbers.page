@@ -5,7 +5,26 @@ author: "Lars Baehren"
 tags: Development Computing CMake
 ---
 
-## {title:} ##
+## CMake | {title:} ##
+
+**:::**
+
+### Summary ###
+
+Typically the main components of an external package - such as e.g. an
+external library -- of interest are the header file(s) (i.e. the path to have them
+included into your source code) and the library file(s) used during linking.
+However properties of packages change, such that the dependency needs to be
+expressed more specifically w.r.t. a certain version.
+
+### Description ###
+
+~~~~
+ <package>_VERSION       = full provided version string
+ <package>_VERSION_MAJOR = major version if provided, else 0
+ <package>_VERSION_MINOR = minor version if provided, else 0
+ <package>_VERSION_PATCH = patch version if provided, else 0
+~~~~
 
 Here is a simple test program which will call the underlying library and then output
 the version information found therein:
@@ -21,8 +40,7 @@ int main ()
 }
 ~~~~
 
-The following instructions are used in the corresponding CMake module, to build and run the
-above test program, as well as capturing its output.
+The following instructions are used in the corresponding [CMake](/development/tools/cmake.html) module, to build and run the above test program, as well as capturing its output.
 
 ~~~~
  if (HDF5_HDF5_LIBRARY AND HDF5_INCLUDES)
