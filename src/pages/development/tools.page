@@ -40,23 +40,10 @@ Wikipedia has a nice article providing [basic comparisons for common text editor
 
 #### nano
 
-For years Pine was THE program used to read email on a Unix system. The Pico text editor is
-the portion of the program one would use to compose his or her mail messages. Many beginners
-to Unix flocked to Pico and Pine because of their well organized, easy to use interfaces.
-With the proliferation of GNU/Linux in the mid to late 90's, many University students became
-intimately familiar with the strengths (and weaknesses) of Pine and Pico.
+GNU [nano](http://www.nano-editor.org) is a small and friendly text editor. Besides basic text editing, nano offers many extra features like an interactive search and replace, go to line and column number, auto-indentation, feature toggles, internationalization support, and filename tab completion.
 
-The [Debian GNU/Linux](http://www.debian.org) distribution, known for its strict standards
-in distributing truly "free" software (i.e. software with no restrictions on redistribution), would not include a
-binary package for Pine or Pico. Many people had a serious dilemma: they loved these
-programs, but the versions available at the time were not truly free software in the GNU
-sense of the word.
+For years Pine was THE program used to read email on a Unix system. The Pico text editor is the portion of the program one would use to compose his or her mail messages. Many beginners to Unix flocked to Pico and Pine because of their well organized, easy to use interfaces. With the proliferation of GNU/Linux in the mid to late 90's, many University students became intimately familiar with the strengths (and weaknesses) of Pine and Pico.
 
 #### Aquamacs
 
-Aquamacs is an Aqua-native build of the powerful Emacs text editor. By "Aqua-native,"
-we mean more than just the fact that this version of Emacs runs as a standard OS X
-application.  Aquamacs features extensive customization: it will feel and behave mostly
-like an Aqua program - while still being a real GNU Emacs with all the ergonomy and
-extensibility you've come to expect from this world-class editor. It's beeen adapted
-by David Reitter, based on GNU Emacs by Richard Stallman and many others.
+[Aquamacs](http://aquamacs.org) is an Aqua-native build of the powerful Emacs text editor. By "Aqua-native," we mean more than just the fact that this version of Emacs runs as a standard OS X application.  Aquamacs features extensive customization: it will feel and behave mostly like an Aqua program - while still being a real GNU Emacs with all the ergonomy and extensibility you've come to expect from this world-class editor. It's beeen adapted by David Reitter, based on GNU Emacs by Richard Stallman and many others.
