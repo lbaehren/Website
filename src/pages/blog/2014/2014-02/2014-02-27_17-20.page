@@ -1,0 +1,23 @@
+---
+title: "Zeit fuer Alternativen"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Thu, 27. February 2014 -- 17:20_
+
+Nachdem ich diese bereits via [DPReview](http://www.dpreview.com/news/2014/02/25/nikon-releases-beta-version-of-next-generation-capture-nx-software) erfahren hatte, legen [Heise News](http://www.heise.de/newsticker) nun ebenfalls mit einer [Nachricht](http://www.heise.de/newsticker/meldung/Nikon-Erste-Beta-des-kostenlosen-Rawkonverters-Capture-NX-D-verfuegbar-2125334.html) nach:
+
+> Nikon ersetzt den bisherigen kommerziellen Rawkonverter Capture NX2 durch das kostenlose Capture NX-D. Die neue Software hat zwar eine zeitgemäße Oberfläche, aber es fehlt eine wichtige Funktion ihres Vorgängers.
+
+Liest man man an der Stelle einmal weiter, dann macht sich schon ein wenig Enttaeuschung breit: 
+
+ - Eine der Funktionen, welche angeblich eingestampft werden soll, ist die _U-Point Technology_, d.h. die Moeglichkeit Aenderungen lokal vorzunehmen. Waehren Programme wie Photoshop das Konzept von Layern (bzw. Masken) verwenden, fand ich die Art und Weise wie dies bei Capture geloest war sehr effizient. Wenn ich bedenke, wie gut ich mit diesem Tool eher chirurgische Eingriffe an den Bildern habe vornehmen koennen, dann finde ich es sehr schade, sollte dies nicht weitergefuehrt werden.
+
+ - Apropos weitergefuehrt: so wie jetzt angekuendigt, soll Capture NX2 nur noch bis zum Sommer gepflegt werden -- ist dann Capture NX-D erst einmal veroeffentlicht, wird es keine weiteren Updates mehr fuer die aeltere Software geben, so dass weder Bug-Fixes neue Funktionalitaet zu erwarten ist.
+
+ - Mit Capture NX-D scheint es einen Schnitt zu geben was die Systemanforderungen betrifft; so wird auf der Mac OS X Seite wohl nur noch 10.8 und aufwaerts unterstuetzt. Da ich bei mir auf dem Laptop immer noch 10.6.8 fahre, gibt es keinen Migrationspfad zu der neuen Software (zumindest nicht ohne ein Upgrade des Betriebssystems und was dies betrifft bin ich mir eben nicht so ganz sicher, da ich so aus dem Stand noch nicht einmal sagen koennte, ob dies mit der existierenden Hardware ginge). Da ich dem Verbleib mit OS X ja eh ein klein wenig kritisch gegenueberstehe -- ich denke mal da gibt es fuer einfach noch ein paar ungeloeste Fragen -- sollte ich mich auch schon aus diesem Grunde nach Alternativen umschauen.
+
+Einer der Plaene fuer dieses Jahr -- unabhaengig von den nun eintreffenden Nachrichten -- war es, dass ich mir noch einmal Open-Source Loesungen wie [Darktable](http://www.darktable.org) genauer anschaue; da bei den meisten kommerziellen Produkten eine Beschraenkung auf Windows und/oder Mac OS besteht, bietet freie Software hier deutlich bessere Perspektiven. Von jetzt auf gleich alles umstellen wird sicherlich nicht moeglich sein, aber zumindest schon einmal die Fuehler ausstrecken scheint doch ganz angebracht zu sein.
