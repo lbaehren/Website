@@ -9,6 +9,22 @@ tags: Blog
  
 **:::**
  
+### Gartenarbeit (mit Kamera) ###
+
+
+
+
+_Sat, 01. March 2014 -- 20:32_
+
+Da das Wetter fuer einen guten Teil des gestrigen Tages doch recht vielversprechend aussah, war fuer den Nachmittag ein wenig Gartenarbeit auf dem Programm. Nachdem es am vergangenen Samstag ja schon einmal gut drei Stunden [Gemeinschaftsarbeit](/blog/2014/2014-02/2014-02-23_21-26.html) gab, wurde es nun auch einmal Zeit etwas am eigenen Garten zu machen. Nach dem ersten Testlauf im vergangenen Jahr (da allerdings noch als zeitlich recht begrenztes Experiment), steht in diesem Jahr deutlich mehr auf dem Plan -- da wundert es wohl auch nicht, dass die Plaene etwas ambitionierter ausfallen. Da soll allerdings keinesfalls heissen, dass lediglich Unkraut jaeten und umgraben angesagt war; da die Lichtverhaeltnisse schon im Laufe des Vormittages recht vielversprechend waren, habe ich selbstverstaendlich Kamera und Stativ mitgenommen, um so ab und zu zwischendurch ein paar Bilder machen zu koennen.
+
+![Blick ueber die Schrebergaerten](/blog/2014/2014-03/hdr_20140228_142949_Schrebergarten.jpg)
+
+Nachdem es die letzten Wochen ja eher ein wenig farblos war, laesst sich schon erkennen, dass die Pflanzen der Meinung sind, dass der tiefste Winter (falls man ueberhaupt davon reden konnte) vorbei ist. Schaut man sich ein wenig in den Schrebergaerten um, dass merkt man doch recht deutlich, dass es ueberall zaghaft zu gruenen beginnt -- Grund genug also diese Zwischenperiode in Bildern festzuhalten.
+ 
+**:::**
+ 
+ 
 ### Drunken monkeys working in a circus clown car ###
 
 
@@ -332,34 +348,6 @@ Wie man daran erkennen kann, kommen ganz schnell weitere (indirekte) Abhaengigke
 _Sun, 16. February 2014 -- 21:40_
 
 .... ist es nicht so wirklich toll probieren Sport zu machen. Kann ich jetzt aus eigener Erfahrung sagen, den als ich heute Morgen im Wellpoint die Tasche mit den Schuhen ausgepackt habe, musste ich feststellen, dass ich statt einem zusammengehoerenden Paar, zwei Schuhe fuer den linken Fuss dabei hatte. Da sich da nun auch nichts mehr dran aendern liess, habe ich mich also kurzerhand entschlossen den Kurs barfuss zu absolvieren. Bedenken hatte ich ein klein wenig, weil ich nicht so richtig einzuschaetzen vermochte, in wie weit ich auch an den Fuessen schwitze, denn dies haette bei dem Holzboden im Kursraum eine recht schluepfrige Angelegenheit werden koennen. War aber alles kein Problem, denn da die Sohle nicht eingeschlossen wird, bleibt alles atmungsaktiv und es gibt keinerlei ausgestaute Waerme, welche Schwitzen verursachen koennte. Was ich allerdings in diesem Zuge mit einer gewissen Befriedigung feststellen konnte war, dass sich die viele Fivefinger Lauferei wirklich auszahlt: da ich ja schon seit langer Zeit nichts anderes mehr zum Sport anziehe, sind meine Fuesse die Bewegungsablaeufe recht gut gewoehnt und die Muskulatur zeigt keinerlei Ermuedungserscheinungen. Ich kann mir gut vorstellen, dass dies komplett anders ausgehen kann, wenn man ansonsten immer nur mit Sportschuhen antanzt -- da ist man einfach einen gewissen Halt gewohnt, was eben auch bedeutet, dass bestimmte Muskel im Fuss einfach nicht entsprechend trainiert werden. So aber konnte ich die Stunde ohne Probleme absolvieren... auch wenn dies nicht unbedingt heisst, dass ich nicht bei naechsten Mal wieder ein vollstanediges Paar Fivefinger mitbringen sollte (ist einfach waermer an den Fuessen).
- 
-**:::**
- 
- 
-### Und noch ein Pinguin ###
-
-
-
-
-_Sat, 15. February 2014 -- 21:13_
-
-Das war jetzt aber doch ein groessere Vorhaben... wenn auch die Probleme an anderen Stellen auftauchten, als ich sie mir im Vorfeld haette denken lassen. Alles in allem verlief die Neuinstallation von Mutterns Laptop recht glatt, so dass alle wichtigen Dunktionen wieder zur Verfuegung stehen (es gibt sogar noch ein paar Extras).
-
-Nachdem es mit dem bisherigen System mehr und mehr Probleme gegeben hatte (was bis dahin ging, dass sich der Rechner kaum noch ansprechen liess), wurde es wohl wirklich einmal Zeit da Hand anzulegen und alles so umzustellen, dass es auch dauerhaft mit der Wartung einfacher wird. Mein Vorschlag also war, das mehr humpelnde als laufende Windows 7 durch ein aktuelles [Fedora](http://fedoraproject.org) zu ersetzen. Da ich mir durchaus dessen bewusst bin, dass es fuer jemanden, der immer nur mit der einen oder anderen Version von Windows gearbeitet hat, eine Umstellung ist mit einem Mal ein Linux vor die Nase gesetzt zu bekommen, so wuerde ich doch mal behaupten, dass es sich bei einem solchen Unterfangen bei weitem nicht mehr um riesen Schock handelt, wie dies einmal der Fall war. Sicher, so manche Anwendung sieht anders aus, aber wenn zuvor schon mit Firefox oder LibreOffice gearbeitet hat, dann trifft man in jedem Fall wieder auf Bekannte. Wie dies allerdings schon bei der Umstellung von Julias Laptop der Fall war, so ging auch hier wieder einiges an Zeit nur fuer das Backup der bisherigen Bestandsdaten drauf; sicher, mindestens die Haelfte davon konnte man anschliessend direkt wieder wegschmeissen, aber diese Auswahl wollte ich dann doch lieber ein wenig spaeter machen und nicht schon alles auf dem Live-System durchfuehren. Insgesamt sind die Schritte aber doch recht straight-forward:
-
- 1. Mit [Knoppix](http://www.knoppix.org) Live-Linux CD den Rechner booten und das existierende System in Augenschein nehmen.
- 2. Zu sichernde Daten von dem alten System auf eine externe Festplatte verschieben (im Zweifelsfalls lohnt es sich hier vorher schon einmal ein wenig auszusortieren, um nicht Gigabyteweise Windows-Backups durch die Gegend zu schieben).
- 3. Rechner runterfahren.
- 4. Boot von Fedora Installations-CD (wenn man Netzwerkverbindung hat, bietet sich die ``netinstall`` Variante an, weil man da nicht nur recht flexibel zu Software Komponenten konfigurieren kann, sondern auch gleich von allem die aktuellste Variante kriegt).
- 5. Vornehmen der ueblichen System-Konfiguration (Partition, zu installierende Pakete, Benutzerkonten, etc.)... und dann den Rechner machen lassen.
- 6. Boot in das neu installierte System.
- 7. Installation weiterer benoetigter Pakete (e.g. [Firefox](http://www.mozilla.org/en-US/firefox), [Thunderbird](http://www.mozilla.org/en-US/thunderbird), etc.).
- 8. Einrichten von Email-Konten.
- 9. Import von Firefox Profile vom Backup.
- 10. Import der Benutzerdaten vom Backup.
- 11. Drucker einrichten.
-
-Laeuft in der Regel alles recht gut durch, auch wenn es -- wie ich feststellen konnte -- schon einmal an einer vollkommen unerwarteten Ecke haken kann. Der Rechner ist aber wieder unter den Lebenden und laeuft nun wieder deutlich stabiler. Mission acomplished!
  
 **:::**
  
