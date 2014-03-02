@@ -9,6 +9,22 @@ tags: Blog
  
 **:::**
  
+### Making Ayreon’s Music ###
+
+
+
+
+_Sun, 02. March 2014 -- 19:37_
+
+Da habe ich nun eine Weile mit Spannung drauf gewartet... kein Wunder also dass ich einen kleinen Freudensprung eingelegt habe, als die Podcast-Folge am Freitag Abend auf meinem Handy auftauchte:
+
+> In this episode [we](http://omegataupodcast.net) talk with [Arjen Anthony Lucassen](http://www.arjenlucassen.com), the man behind [Ayreon](http://www.ayreon.com) about his music. We discuss about composition, instruments, recording, editing, mastering, as well as about some other random relating to his music and the music business. The episode also contains some of his songs to give non-Ayreon fans the necessary background. We also included parts of those songs Arjen cited as influences or used as examples for classical sounds.
+
+Die erste [Ankuendigung](/blog/2013/2013-12/2013-12-22_19-21.html) gab es bereits im Dezember, das Interview selber war dann [Mitte Januar](https://plus.google.com/100347151288200087365/posts/gBwsD9WRrow) -- seit dem war ich natuerlich recht gespannt, wann die Folge denn online gehen wuerde. Da es nun so weit war, hatte ich grossartiges Hoerfutter fuer den Samstag Nachmittag, wo ich mit Kamera durch Bonn unterwegs war (und ich meine damit nicht um irgendwelche Karnevalaktivitaeten festzuhalten). Die Folge dauert knapp ueber zweineinhalb Stunden, was mir aber garnicht so lange vorkam, weil ich einfach faszinieren fand, mal einen etwas detailierteren Blick hinter die Kulissen geboten zu kriegen, wie Arjen denn seine Alben erstellt. __Definitiv empfehlenswert!__
+ 
+**:::**
+ 
+ 
 ### Bestellung ist raus ###
 
 
@@ -314,44 +330,6 @@ Nach ein wenig weiterer Recherche bin ich auf __Dolphin__ gestossen, angeblich e
 ![Best Android Web Browsers](/blog/2014/2014-02/2014-02-18_Browser_comparison.png)
 
 Den nun aktuellsten Test fahre ich seit dem heutigen Morgen, zu einem guten Teil motiviert durch die Seite, auf welcher ich die obige Uebersicht finden konnte. Der __Lightning Browser__ kommt, wenn ich nach der Beschreibung gehe, in zwei Varianten daher -- eine freie und eine kostenpflichtige -- und vereint (wenn man den Stimmen online glauben darf) die besten Eigenschafte von _Dolphin_ und _Chrome_. Die Tatsache, dass in der freien Variante die Anzahl der gleichzeitig offenen Tabs auf fuenf beschraenkt ist, stoert mich nicht so sonderlich -- auf dem Rechner habe ich gerne schon einmal ein Dutzend offen, aber auf dem Handy waren es meines Wissens bisher maximal drei. Isr natuerlich noch zu frueh, um ein Urteil abzugeben, aber der erste Eindruck ist schon einmal recht positiv. Zu fumm nur, dass ich bisher noch keine Moeglichkeit gefunden habe die diversen vorinstallierten Programme von dem Geraet zu schmeissen -- wenn ich die eh nicht benutze, finde ich es ziemlich unsinnig, wenn diese mir den Speicher zumuellen.
- 
-**:::**
- 
- 
-### Git von Source ###
-
-
-
-
-_Mon, 17. February 2014 -- 21:33_
-
-Nachdem sich immer mehr abzeichnet, dass fuer die erfolgreiche Ausfuehrung der _On-ground Calibration_ eine Mixture aus Software Komponenten notwendig wird, habe ich mir heute mal ein wenig genauer angeschaut, in wie weit es denn moeglich ist, unsere Software auf dem offiziellen System ans Laufen zu bringen. Stellt sich heraus, dass gleich eine ganze Reihe an Vorraussetungen nicht erfuellt sind (von denen ich mir bisher noch nicht sicher bin, wodurch diese nun genau bedingt werden); um aber zumindest schon einmal eine Uebersicht zu bekommen, habe ich es einfach mal probiert mit dem dem (scheinbar) einfachsten anzutesten: dem Auschecken des Source-Codes. Wie ich allerdings sehr zu meinem Bedauern feststellen musste, gibt es auf dem Server kein [Git](http://git-scm.com) installiert, so dass ich a) weder aus unser Repository zugreifen kann, noch b) lokale Versionskontrolle zur Verfuegung steht. Um dem abzuhelfen, habe ich mich daran gemacht, _Git_ komplett von Source zu installieren, weil a) kann ich nicht einfach den Paket-Manager anwerfen und b) habe ich so die Moeglichkeit die gewuenschten Features mit einzubauen (wie z.B. die Kommunikation ueber verschluesselte Verbindungen).
-
-In der Anleitung finden sich netterweise auch noch einmal die Abhaengigkeiten aufgefuehrt, so dass man eine Liste vor sich hat, welche sich dann Schritt fuer Schritt abarbeiten laesst:
-
-> To install Git, you need to have the following libraries that Git depends on:
->
-> - [curl](http://curl.haxx.se),
-> - [zlib](http://www.zlib.net),
-> - [openssl](http://www.openssl.org),
-> - [expat](http://sourceforge.net/projects/expat),
-> - [libiconv](https://www.gnu.org/software/libiconv).
-
-Da ich es ja immer auch ein wenig anschaulicher finde, wenn man derartige Dinge in Form einer Zeichnung vor Augen hat, habe ich einfach mal mit dem Zeichnen ein kleinen Abhaengigkeitsbaums begonnen:
-
-~~~~
-                     git
-                      |
-      +------+--------+--------+--------+
-      |      |        |        |        |
-     curl   zlib   openssl   expat   libiconv
-      |
-  +---+----+
-  |        |
- zlib   openssl
-~~~~
-
-Wie man daran erkennen kann, kommen ganz schnell weitere (indirekte) Abhaengigkeite mit ins Spiel, so dass man nach einer Weile (auch wenn dies hier sicherlich nicht so schlimm ist), bei einem ganzen Geflecht an Paketabhaengigkeiten landet. Dass sich da anbietet dies Verkettungen in ein Script zu packen, damit man alles halb-automatisch durchlaufen lassen kann, duerfte wohl nachvollziehbar sein. Immerhin kann ich so -- sollte dies denn noetig werden -- die vorgenommen Schritte reproduzieren (und habe gleichzeitig auch ein Stueck weit Dokumentation vorliegen). Was dies bedauerlicherweise aber immer noch nicht loest, sind die Probleme mit der Konfiguration des Servers, denn so wie es scheint, sind einfach bestimmte Operationen nicht zugestanden... unter anderem der Datentransfer via SSH, was also den ansonsten ueblichen Zugriff auf [Github](http://www.github.com) verhindert :(
  
 **:::**
  
