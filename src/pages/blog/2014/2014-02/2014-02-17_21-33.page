@@ -23,15 +23,16 @@ In der Anleitung finden sich netterweise auch noch einmal die Abhaengigkeiten au
 Da ich es ja immer auch ein wenig anschaulicher finde, wenn man derartige Dinge in Form einer Zeichnung vor Augen hat, habe ich einfach mal mit dem Zeichnen ein kleinen Abhaengigkeitsbaums begonnen:
 
 ~~~~
-                     git
-                      |
-      +---------+--------+--------+--------+
-      |      |        |        |        |
-     curl   zlib   openssl   expat   libiconv
-      |
+                           git
+                            |
+         +---------+--------+--------+--------+
+         |         |        |        |        |
+        curl      zlib   openssl   expat   libiconv
+         |
   +------+----+
-  |        |
- zlib   openssl
+  |           |
+ zlib      openssl
 ~~~~
 
-Wie man daran erkennen kann, kommen ganz schnell weitere (indirekte) Abhaengigkeite mit ins Spiel, so dass man nach einer Weile (auch wenn dies hier sicherlich nicht so schlimm ist), bei einem ganzen Geflecht an Paketabhaengigkeiten landet. Dass sich da anbietet dies Verkettungen in ein Script zu packen, damit man alles halb-automatisch durchlaufen lassen kann, duerfte wohl nachvollziehbar sein. Immerhin kann ich so -- sollte dies denn noetig werden -- die vorgenommen Schritte reproduzieren (und habe gleichzeitig auch ein Stueck weit Dokumentation vorliegen). Was dies bedauerlicherweise aber immer noch nicht loest, sind die Probleme mit der Konfiguration des Servers, denn so wie es scheint, sind einfach bestimmte Operationen nicht zugestanden... unter anderem der Datentransfer via SSH, was also den ansonsten ueblichen Zugriff auf [Github](http://www.github.com) verhindert :(
+Wie man daran erkennen kann, kommen ganz schnell weitere (indirekte) Abhaengigkeite mit ins Spiel, so dass 
+man nach einer Weile (auch wenn dies hier sicherlich nicht so schlimm ist), bei einem ganzen Geflecht an Paketabhaengigkeiten landet. Dass sich da anbietet dies Verkettungen in ein Script zu packen, damit man alles halb-automatisch durchlaufen lassen kann, duerfte wohl nachvollziehbar sein. Immerhin kann ich so -- sollte dies denn noetig werden -- die vorgenommen Schritte reproduzieren (und habe gleichzeitig auch ein Stueck weit Dokumentation vorliegen). Was dies bedauerlicherweise aber immer noch nicht loest, sind die Probleme mit der Konfiguration des Servers, denn so wie es scheint, sind einfach bestimmte Operationen nicht zugestanden... unter anderem der Datentransfer via SSH, was also den ansonsten ueblichen Zugriff auf [Github](http://www.github.com) verhindert :(
