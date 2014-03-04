@@ -1,0 +1,34 @@
+---
+title: "Aufraeumarbeiten"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 04. March 2014 -- 14:23_
+
+Wenn es ja eines gibt, was ich nicht leiden kann, dann ist es mit einer Software konfrontiert zu sein, wo die Einzelteil einfach nur auf die Schnelle zusammengestoepselt sind. Gluecklicherweise kann man dies bei dem OCAL Framework in in seiner Gaenze behaupten, aber was mich schon seit der ersten Beruehrung mit den Paket gestoert hat ist, dass die diversen Tasks, welche nicht direkt im Python-Code implementiert sind auf eine ganze Reihe von Shell-Scripten verteilt sind, von denen man teilweise wissen muss wo sie sich befinden, um diese ueberhaupt einsetzen zu koennen. Da dies dann natuerlich einer der Punkte ist, wo es mich in den Fingerspitzen juckt, habe ich mich heute Mittag endlich mal daran gemacht, da ein wenig aufzuraeumen:
+
+~~~~
+docs: doc_sphinx doc_doxygen
+
+manual: doc_doxygen
+
+doc_sphinx:
+	sphinx-apidoc -o doc . -f
+	cd doc && export PYTHONPATH=${OCALFW} && make html
+
+doc_doxygen: doc/manual/doxygen.conf
+	     doxygen doc/manual/doxygen.conf
+~~~~
+
+So wie ich es sehe ist dies lediglich ein erster Schritt, aber fuer alles weitere werde ich wohl noch einmal das ok einholen muessen. Ich denke aber mal, dass es sicherlich nicht schaden kann, einen funktionierenden Prototypen vorweisen zu koennen, an welchem sich die angestrebte Funktionialitaet demonstrieren laesst; da ich aber nicht nur die bereits vorhandene Funktionalitaet reproduziere, sondern auch noch eine neuen Extras bieten kann, denke ich mal schon, dass es gute Argumente gibt die einmal begonnenen Aufraeumarbeiten fortzusetzen. Die Aenderungen sind jetzt auf jeden Fall online:
+
+~~~~
+Adding         Makefile
+Sending        doc/manual/doxygen.conf
+Deleting       doc/manual/make_manual.sh
+Transmitting file data ..
+Committed revision 1616.
+~~~~

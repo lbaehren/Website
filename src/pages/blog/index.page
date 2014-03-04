@@ -9,6 +9,41 @@ tags: Blog
  
 **:::**
  
+### Aufraeumarbeiten ###
+
+
+
+
+_Tue, 04. March 2014 -- 14:23_
+
+Wenn es ja eines gibt, was ich nicht leiden kann, dann ist es mit einer Software konfrontiert zu sein, wo die Einzelteil einfach nur auf die Schnelle zusammengestoepselt sind. Gluecklicherweise kann man dies bei dem OCAL Framework in in seiner Gaenze behaupten, aber was mich schon seit der ersten Beruehrung mit den Paket gestoert hat ist, dass die diversen Tasks, welche nicht direkt im Python-Code implementiert sind auf eine ganze Reihe von Shell-Scripten verteilt sind, von denen man teilweise wissen muss wo sie sich befinden, um diese ueberhaupt einsetzen zu koennen. Da dies dann natuerlich einer der Punkte ist, wo es mich in den Fingerspitzen juckt, habe ich mich heute Mittag endlich mal daran gemacht, da ein wenig aufzuraeumen:
+
+~~~~
+docs: doc_sphinx doc_doxygen
+
+manual: doc_doxygen
+
+doc_sphinx:
+	sphinx-apidoc -o doc . -f
+	cd doc && export PYTHONPATH=${OCALFW} && make html
+
+doc_doxygen: doc/manual/doxygen.conf
+	     doxygen doc/manual/doxygen.conf
+~~~~
+
+So wie ich es sehe ist dies lediglich ein erster Schritt, aber fuer alles weitere werde ich wohl noch einmal das ok einholen muessen. Ich denke aber mal, dass es sicherlich nicht schaden kann, einen funktionierenden Prototypen vorweisen zu koennen, an welchem sich die angestrebte Funktionialitaet demonstrieren laesst; da ich aber nicht nur die bereits vorhandene Funktionalitaet reproduziere, sondern auch noch eine neuen Extras bieten kann, denke ich mal schon, dass es gute Argumente gibt die einmal begonnenen Aufraeumarbeiten fortzusetzen. Die Aenderungen sind jetzt auf jeden Fall online:
+
+~~~~
+Adding         Makefile
+Sending        doc/manual/doxygen.conf
+Deleting       doc/manual/make_manual.sh
+Transmitting file data ..
+Committed revision 1616.
+~~~~
+ 
+**:::**
+ 
+ 
 ### Angenehm leer ###
 
 
@@ -306,22 +341,6 @@ Geht doch! Nachdem ich gestern Morgen die bestellten [Esstisch-Stuehle angeholt]
 ![Stuehle](/blog/2014/2014-02/hdr_20140219_225709_Chairs.jpg)
 
 Wie schon mit eigentlichen Einrichtungsgegenstaenden -- Schraenke, Tische, Bett -- bin ich doch immer wieder erstaunt, wie sich diese kleine Zimmer hier nutzen laesst. Ist ja wirklich nicht viel Platz (da war selbst mein Zimmer im Studentenwohnheim groesser), aber wenn man ein wenig schiebt und sich entsprechende Loesungen einfallen laesst, bleibt immer noch ausreichend Raum, um sich nicht wie in einer Abstellkammer zu fuehlen. Das schoene an den Stuehlen ist, dass sich ohne Problem drei Stueck uebereinander aufbauen lassen, so dass sich die notwendige Grundflaeche recht gering halten laesst. Ich denke mal so werde ich es ohne weiteres noch eine Weile aushalten koennen.
- 
-**:::**
- 
- 
-### Abgeholt ###
-
-
-
-
-_Wed, 19. February 2014 -- 13:27_
-
-Die Arbeiten im Haus haben zwar noch nicht begonnen, aber die ersten Neuanschaffungen stehen bereits hier in Utrecht bereit. Nachdem wir am letzten Wochenende einen sehr schoenen Stuhl fuer den Esstisch gefunden hatten, bin ich heute Morgen bei [Leen Bakker](http://www.leenbakker.nl) vorbeigelaufen, um die Stuehl einzusammen. Eigentlich haette ich ja einen Anruf kriegen sollen, wenn die Bestellung in der oertlichen Niederlassung eingetroffen sind, aber aus irgendeinem Grund hatte sich da niemand gemeldet; da es aber hiess, dass es nicht laenger als Freitag dauern sollte, war ich mir ziemlich sicher, dass der Fehler wohl irgendwo in der Kommunikationskette gewesen sein musste.
-
-Wie erwartet lagen die die Stuehle im Lager fuer die Abholung bereit. Da ich aber zu Fussunterwegs war, konnte ich natuerlich nicht direkt alle sechs Stuehle auf einmal mitnehmen, so dass in jedem Fall mehrere Touren notwenig werden mussten -- die Anzahl eben dieser Touren stand noch zur Debatte, denn dies wuerde a) von der Verpackung und b) dem Gewicht der Stuehle abhaengen. Da diese aber einzeln mit Papier umwickelt waren (und eben nicht noch einmal in eine grosse Box gestopft waren), war es ein leichtes mindestens zwei mit der Sitzflaeche aufeinander gestellt mitzunehmen. Da ich darueber hinaus auf der Gewichtsseite noch ein paar Reserven hatte, habe ich mir noch einen zusaetzlichen Stuehl in die andere Hand genommen, so dass ich insgesamt mit zweimal laufen ausgekommen bin (was mir natuerlich auch einiges an Zeit erspart hat).
-
-Was ich mir jetzt nur noch ueberlegen muss ist, wie ich die Stuehle nach Bonn transportiert kriege...
  
 **:::**
  
