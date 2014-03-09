@@ -5,29 +5,154 @@ author: Lars Baehren
 tags: Blog
 ---
 
-# Blog :: {title:} #
+# Blog | {title:} #
 
 **:::**
 
  * http://www.storagereview.com
  * http://arthursbookshelf.com
 
+ * Data Abstraction Library
+ * Data Abstraction Layer
+ * Data Abstraction Routines Collection (DARC)
+ * Data Access Routines Collection (DARC)
+ * Common Data Access Routines
+
 ----
 **completed ...**
-
 
 
 ----
 **in preparation ...**
 
 
+
+### Finding errors by testing
+
+~~~~
+ TestTimestamp.cc:82: error in "construction": Incorrect value for Hour.
+~~~~
+
+~~~~
+ BOOST_CHECK_MESSAGE ( t.year()   == year,   "Incorrect value for Year."   );
+ BOOST_CHECK_MESSAGE ( t.month()  == month,  "Incorrect value for Month."  );
+ BOOST_CHECK_MESSAGE ( t.day()    == day,    "Incorrect value for Day."    );
+ BOOST_CHECK_MESSAGE ( t.hour()   == hour,   "Incorrect value for Hour."   );
+ BOOST_CHECK_MESSAGE ( t.minute() == minute, "Incorrect value for Minute." );
+ BOOST_CHECK_MESSAGE ( t.second() == second, "Incorrect value for Second." );
+~~~~
+
+~~~~
+ itsYear     = year;
+ itsMonth    = month;
+ itsDay      = day;
+ itsMinute   = hour;
+ itsMinute   = minute;
+~~~~
+
+
+### Abwanderung
+
+Als ob dies jetzt nun wieder eine sonderlich neue Erkenntnis waere:
+
+> Deutschland leidet unter einer Abwanderung von Forschern und Entwicklern, andere europäische Länder profitieren hingegen von Zuwanderung. Zu diesem Ergebnis kommt eine Studie im Auftrag der Bundesregierung.
+
+[Artikel auf Heise News](http://www.heise.de/newsticker/meldung/Gutachten-Wissenschaftler-wandern-aus-Deutschland-ab-2121742.html)
+
+> Bereits in ihrem Jahresgutachten 2013 ([PDF](http://www.e-fi.de/fileadmin/Gutachten/EFI_2013_Gutachten_deu.pdf)) hatten die EFI-Experten wie schon in den Jahren zuvor eine weitere Öffnung Deutschlands und Erleichterungen für den Zuzug qualifizierter Einwanderer gefordert. "Staaten wie Kanada haben zielführende Systeme eingerichtet, die besonders hoch qualifizierte Personen anziehen und gut in das Land integrieren. Deutschland kann von diesen Beispielen lernen", raten die Gutachter. Sie bemängeln auch, dass die Initiativen zur Anerkennung ausländischer Abschlüsse bislang nicht erfolgreich seien und die Potentiale von Frauen in Wissenschaft und Forschung ebenfalls zu wenig genutzt würden.
+
+
+### Status quo der Versionskontrolle
+
+[Artikel auf Heise Developer](http://www.heise.de/developer/artikel/Status-quo-der-Versionskontrolle-1979724.html)
+
+> Als besonders leidenschaftlich lässt sich das Verhältnis zwischen dem Versionierungswerkzeug und seinem Benutzer, dem Entwickler, üblicherweise nicht bezeichnen. Aus der Sicht vieler Entwickler steht das Tool im besten Fall nicht im Weg. Der eine oder andere freut sich auch über eine leistungsfähige GUI und über performantes Einchecken von Änderungen, wohl wissend, dass es auch Tools gibt, die einen an dieser Stelle mitunter mit langen Wartezeiten quälen. 
+
+
+### Utrecht bei Nacht
+
+Je nach dem wie man es betrachtet ist es fast schon ein wenig erschreckend: das letzte Mal, dass ich mit Kamera in der Innenstadt unterwegs war -- egal ob nun bei Tag oder bei Nacht -- muss schon eine ganze Weile her sein. Ich habe jetzt zwar nicht Zugriff auf mein Archiv, aber ich wuerde doch einmal mit ziemlicher Sicherheits sagen, dass ich in den letzten drei Monaten wohl kaum ein einziges Mal zum Photographieren in der Stadt unterwegs war. Ok, ich bin ein wenig hier in Hoograve und am Uithof herumgelaufen, aber von einem wirklich auf Motivsuche konzentrierten Spaziergang konnte man da wohl kaum reden. Aus diesem Grund bin ich eigentlich ganz froh, dass ich mich am Sonntag Abend dazu ueberwinden konnte noch einmal in Ruhe loszuziehen, nachdem ich Julia zum Zug gebracht hatte... letzten Endes war ich dann fast so lange unterwegs wie Julia bis Duesseldorf.
+
+![GPS Track Photowalk](/blog/2014/2014-02/2014-02-10_Photowalk.png)
+
+Wa so eine Karte natuerlich nicht zeigen kann ist, was ich so alles auf dem Weg entdeckt habe; aus der aufgezeichneten Route duerfte zwar klar werden, dass ich alles andere den direkten Weg nach Hause gelaufen bin (nicht nur gibt es da gleich eine ganze Reihe Schlenker, sondern ich habe vor allen Dingen ein wenig versucht die eher kleineren Nebenstrassen, oder Gassen, zu erkunden).
+
+![Buurkerhof Utrecht](/blog/2014/2014-02/hdr_20140209_203839_Buurkerhof.jpg)
+
+### Avoid Integrated Development environments (IDEs)
+
+> I was reading your blog and thought that your knowledge would be of great value to our users, who pay our experts a premium for advice.
+>
+> Our platform, called Wizpert, is a fast growing community of experts, where users seek advice and coaching on a wide range of topics, such as programming languages (PHP, C++, JavaScript, etc.), computers and more.
+>
+> If you decide to sign up, you will also get a customized Wizpert button to place on your blog - it will allow engaged readers to connect with you directly at your convenience for a live conversation.
+
+
+Article [10 things I wish I knew when I started coding](http://blog.wizpert.com/10-things-i-wish-i-knew-when-i-started-coding)
+
+> Avoid Integrated Development environments (IDEs): yes, IDEs make your life easier in the short-run, but developing programs ‘manually’, using notepads and commands pays off longer term. It forces you to deal with compiling and execution, library assignment, etc., making your concepts clearer and your code easier to debug.
+
+ - [Eclipse](https://www.eclipse.org)
+ - [KDevelop](http://kdevelop.org)
+ - [Xcode](https://developer.apple.com/xcode)
+
+
+### Aneignung
+
+Also ein klein wenig fuehle ich mich da doch an so manche Untersuchungsausschuesse des Deutschen Bundestages erinnert, wo mit einem Male Materialien als klassifiziert erklaert wurden, welche zuvor in Tageszeitungen veroeffentlicht worden waren (was dann zu eben so absurden Dingen fuehrte dass jemand seinen eigenen Artikel nicht mehr haette lesen duerfen).
+
+~~~~
+# Copyright 2014 KNMI
+# This software is the proprietary information of KNMI
+# All rights Reserved
+""" Module containing utility functions for accessing full detector data from LX
+    files.
+"""
+~~~~
+
+~~~~
+* commit 969b497595c0eb3be264fd172a1ee9d6f1c9f132
+  Author: bahren <bahren@0cc184cd-a8c2-4f43-91e4-3451699bf036>
+  Date:   Tue Oct 15 16:38:18 2013 +0000
+  
+      Coding style adjustments, using both comments provided by Werner and output from pyLint.
+      
+      git-svn-id: https://svn.knmi.nl/svn/tropocal/ocalfw/trunk@690
+~~~~
+
+
+### Collapsing coefficients
+
+ - [Chebyshev polynomials](http://en.wikipedia.org/wiki/Chebyshev_polynomials)
+
+~~~~
+//    N/K     0     1      2      3       4     5      6    7      8    9   10
+//
+//     0      1
+//     1      0     1
+//     2     -1     0      2
+//     3      0    -3      0      4
+//     4      1     0     -8      0       8
+//     5      0     5      0    -20       0    16
+//     6     -1     0     18      0     -48     0     32
+//     7      0    -7      0     56       0  -112      0    64
+~~~~
+
+ - All matrix elements : N^2
+ - Upper/lower triangle without diagonal : ( N^2 - N ) / 2
+ - Upper/lower triangle with diagonal : N/2 * ( N + 1 )
+
+### Sherlock - Season 3
+
+ - [IMDb entry](http://www.imdb.com/title/tt1475582)
+ - [Benedict Cumberbatch](http://www.imdb.com/name/nm1212722)
+ - [Martin Freeman](http://www.imdb.com/name/nm0293509)
+
 ### Fragebogen
 
  - http://www.ldpe.nl
- - http://www.ldpe.nl/opq360
 
-> Sie wurden von einem Ihrer Bekannten („der Teilnehmer") eingeladen, den LDT360 Fragebogen auszufüllen.
-Dies ist der erste Schritt, um dem Teilnehmer eine Rückmeldung zu geben.
+> Sie wurden von einem Ihrer Bekannten („der Teilnehmer") eingeladen, den [LDT360 Fragebogen](http://www.ldpe.nl/opq360) auszufüllen. Dies ist der erste Schritt, um dem Teilnehmer eine Rückmeldung zu geben.
 >
 > Der Teilnehmer möchte von Ihnen erfahren, wie Sie ihn / sie sowohl während Ihrer gemeinsamen Zusammenarbeit und in der Gesellschaft anderer erleben. Ihre Anregungen helfen ihm / ihr ein Bewusstsein darüber zu entwickeln, wie sich das Verhalten auf andere auswirkt. Der erste Schritt für Sie wird sein, den Fragebogen zu beantworten, indem Sie die 32 Persönlichkeitsdimensionen anhand des OPQ-Modells auf einer Skala von 1 bis 10 bewerten.
 >
@@ -228,7 +353,7 @@ Was dies bedeutet ist, dass sich die Berechnungen eben nicht fuer jedes Band sep
 
 ### Installing Git ###
 
-... from source -- if it is not installed on a system -- should not be too big of a problem. However, depending on the state the system you're supposed to be working is in, it might take a little while longer, if you are required to go through some of the dependency chain.
+... [from source](/development/git/installation.html) -- if it is not installed on a system -- should not be too big of a problem. However, depending on the state the system you're supposed to be working is in, it might take a little while longer, if you are required to go through some of the dependency chain.
 
 While a simple [Git](http://www.git-scm.com) installation would be rather painless, trying to get `git-svn` support up and running will require considerably more effort; the main additional ingredient -- as already indicated by the name -- of course is [Subversion](http://subversion.apache.org), which in turns comes with its own tail of required packages. The graph below shows the complete dependency tree I have been going through in order to get everything up and running:
 
@@ -257,14 +382,9 @@ Yep, that's right, I even went to install [Perl](http://www.perl.org) from scrat
  - Git needs to be configured with the `--with-libpcre` and `--with-expat` options.
 
 
-### Rueckblick Urlaub am Weissensee ###
-
- - [Flickr Photoset](http://www.flickr.com/photos/larsbaehren/sets/72157635531348642)
-
-
 ### Merging TROPOMI SWIR documentation ###
 
-Writing and generating a decent documentation for a software package is one thing -- doing the very same for a software, which actually is comprised of multiple programming languages and multiple modules/sub-packages is another. Having worked with [Doxygen](http://www.doxygen.org) for quite a while now, this pretty much seems like the tool of choice; however, while extracting and organizing information of C/C++ source code is straight forward, doing the same for the [Python](http://www.python.org) bits and pieces turned out to be a bit more tricky. Nevertheless, after testing different approaches to the problem I now seem to have come up with a result, which both contains API documentation (more geared towards developers) and extended documentation (more directed to users). With a little bit of luck all of this soon can be merged into the main branch of the project's code base, making the changes available to everybody.
+Writing and generating a decent documentation for a software package is one thing -- doing the very same for a software, which actually is comprised of multiple programming languages and multiple modules/sub-packages is another. Having worked with [Doxygen](/development/tools/doxygen.html) for quite a while now, this pretty much seems like the tool of choice; however, while extracting and organizing information of C/C++ source code is straight forward, doing the same for the [Python](http://www.python.org) bits and pieces turned out to be a bit more tricky. Nevertheless, after testing different approaches to the problem I now seem to have come up with a result, which both contains API documentation (more geared towards developers) and extended documentation (more directed to users). With a little bit of luck all of this soon can be merged into the main branch of the project's code base, making the changes available to everybody.
 
 ![Doxygen documentation for TROPOMI SWIR](/blog/2013/2013-09/2013-09-04_tropomi_doxygen.png)
 
@@ -409,14 +529,6 @@ Verbringt man ein wenig Zeit damit sich auf [YouTube](http://www.youtube.com) um
  * [Draconia](http://www.draconia.nostramusic.com)
  * http://www.donlinke.com/musicals
 
-
-### Video mix-up ###
-
-Jetzt verstehe ich glaube ich auch ein wenig besser, wie es da zu diesem Mix-up kommen konnte. Vor einer Weile hatte ich ja auf einen Beitrag von [Jason Odell](http://www.theimagedoctors.com/bio.html) (yep, einem der beiden _Image Doctors_) reagiert, weil dieser auf ein Musikvideo verwies welches eine inkorrekte Kombination von Musik und Bild enthielt: das Video fuer [Helloween](http://www.helloween.org)'s "Dr. Stein" von _Unarmed: Best of 25th anniversary_ (2010), unterlegt mit der Original-Musik vom _Keeper of the Seven Keys, Pt. 2_ (1988) album.
-
-![Dr. Stein by Helloween](/blog/2013/2013-08/Helloween_Dr-Stein.png)
-
-Einer der Nebeneffekte von diesem Zwischenfall war dann allerdings, dass ich mich daran erinnert habe, dass es doch schon eine ganze Weile her war, dass ich mir die beiden _Keeper of the Seven Keys_ Alben angehoert habe.
 
 ### Vrede in de Buurt TV ###
 
