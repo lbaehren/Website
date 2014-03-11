@@ -12,11 +12,12 @@ tags: Blog
  * http://www.storagereview.com
  * http://arthursbookshelf.com
 
- * Data Abstraction Library
- * Data Abstraction Layer
  * Data Abstraction Routines Collection (DARC)
  * Data Access Routines Collection (DARC)
  * Common Data Access Routines
+ - Data Concepts Common Abstraction
+ - Common Data Constructs Abstraction Layer
+ - Core Data Abstraction Layer
 
 ----
 **completed ...**

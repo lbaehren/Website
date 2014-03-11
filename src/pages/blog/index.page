@@ -9,6 +9,43 @@ tags: Blog
  
 **:::**
  
+### Upgrading to Mavericks ###
+
+
+_Tue, 11. March 2014 -- 22:46_
+
+Es war eigentlich schon eine ganze Weile ueberfaellig, aber nachdem ich mich am vergangenen Wochenende noch einmal so richtig ueber einiges Fehlverhalten meines MacBook Pro geaergert hatte, wurde es jetzt endlich Zeit aus der [Mac OS X](http://www.apple.com/osx) Vergangenheit in die Gegenwart zu kommen. Angesichts der Tatsache, dass die aktuelle OS X Version bei 10.9.2 liegt, war ich mit 10.6.8 doch ein klein wenig ins Hintertreffen geraten. Waehrend ich da bei einem Linux System deutlich wenig Skrupel habe an der Version des Betriebssystems zu schrauben, halte ich mich da bei Mac OS X ein wenig zurueck -- ein Stueck weit mag dies natuerlich auch der Tatsache geschuldet gewesen sein, dass dieser Vorgang bisher immer mit den Anschaffungskosten fuer das neue System verbunden war. Letzteres hat sich interessanterweise mit _Mavericks_ geaendert, so dass es nun bis recht weit zurueck die [Moeglichkeit eines kostenlosen Upgrades](http://www.apple.com/osx/how-to-upgrade) gibt; [Apple](http://www.apple.com) scheint wohl mittlerweile deutlich mehr Geld mit den diversen Apps zu verdienen, als mit dem Betriebssystem unterwelchem diese laufen. Da ist es schon ein strategisch nachvollziehbarer Schritt, wenn man es Nutzern so einfach wie moeglich macht gleichzuziehen... um dann anschliessend Geld an den Zukaeufen zu verdienen.
+
+Wieder in Utrecht eingetroffenen, habe ich gestern Mittag das Laptop aus der unmittelbaren Produktionsumgebung ausgeklinkt (und mir stattdessen den ansonsten eher wenig verwendeten Arbeitsplatzrechner geschnappt) und das Upgrade angeworfen. Wie sich allerdings herausstellte, ist dies nicht ganz so einfach, wie man viellicht glauben moechte: mittlerweile schickt Apple so ziemlich alles Software-Installationen durch den _App Store_, wo zunaechst erst einmal ein Account eingerichtet werden muss. Von allen Dingen, welche mit dem Uprade verbunden waren, stellte dies letzten Endes den kompliziertesten Teil dar: da selbst fuer ein kostenloses Download ein voll-funktionsfaehiger Account eingerichtet werden muss, war ich damit eine Weile beschaeftigt. Bedauerlicherweise reichte mein Benutzerkonto auf [developer.apple.com](https://developer.apple.com) nicht aus, so dass ich eine Reihe Angaben ausfuellen musste, ehe ich dann endlich das Upgrade starten konnte. Von diesem Zeitpunkt allerdings verlief alles recht glatt (auch wenn mitunter die Anzeige fuer die noch verbleibende Zeit vollkommen daneben war).
+
+Nachdem das Upgrade erfolgreich durchgelaufen war, konnte ich mich dann daran machen, die sich aus diesem Wechsel ergebenden Aenderungen in Angriff zu nehmen. Da ich ja doch eine nicht unerhebliche Menge an Paketen via [MacPorts](http://www.macports.org) installiert habe -- vor allen Dingen Tools und Bibliotheken fuer die Software-Entwicklung -- mussten diese nun auch gleichziehen. Da ich dieses "Vergnuegen" aber schon einmal frueher hatte, lag einiges an Hilfen vor, welche ich nur noch einmal ein wenig aufpolieren und aktualisieren musste. Von besonderer Hilfe war hier, dass ich wichtigstens Pakete fuer eine neue Installation in einem Script untergebracht hatte, welches den Rest dann mehr oder weniger selbststaendig erledigen konnte (ok, ein paar kleine Fehler habe ich da noch ausbuegeln muessen, aber das war doch eher gering gegenueber dem Fall wo ich alles von Hand haette erledigen muessen). Da ich auf der Hinfahrt am Montag ja noch das urspruengiche Bash-Script in ein ``Makefile`` umgeschrieben hatte (da waren die kuerzlich gemachten Erfahrungen fuer die Installation der SWIR Software ganz hilfreich), war es ein leichtes Pakete nach Kategorien zu gruppieren und Abhaengigkeiten zu beruecksichtigen:
+
+~~~~
+science: math
+	${PORT_COMMAND} cfitsio
+	${PORT_COMMAND} curl +ssl
+	${PORT_COMMAND} gsl-devel
+	${PORT_COMMAND} hdf5-18 +cxx
+	${PORT_COMMAND} netcdf +netcdf4
+	${PORT_COMMAND} netcdf-cxx
+
+math:
+	${PORT_COMMAND} fftw-3
+	${PORT_COMMAND} gmp
+	${PORT_COMMAND} mpfr
+~~~~
+
+Wie erwartet war dann nur noch ein
+
+~~~~
+make science
+~~~~
+
+noetig, um die entsprechend Instruktionen (in einfach wiederholbarer Weise) auszufuehren. Dauert zwar schon eine Weile gerade die groesseren Pakete zu bauen, aber wenn dies einfach nur im Hintergrund durchlaufen kann, ohne dass ich mich da staendig drum kuemmern muss, ist dies schon eine grosse Hilfe. Ein paar Kleinigkeiten gibt es zwar noch aufzuraeumen, aber ansonsten ist alles "up and running".
+ 
+**:::**
+ 
+ 
 ### Ungewohnte Richtung ###
 
 
@@ -266,23 +303,6 @@ Einer der Plaene fuer dieses Jahr -- unabhaengig von den nun eintreffenden Nachr
 _Wed, 26. February 2014 -- 19:13_
 
 Auch wenn ich ja schon eine Weile auf dieser Strecke pendele, so hatte ich eine derartige Begruendung fuer eine Umleitung auch noch nicht: aufgrund eines Bombenfundes in Duisburg, wird der ICE 227 am heutigen Abend einen Bogen um den dortigen Bahnhof machen. Da werde ich sicherheitshalber gleich mal noch das Aufnahme-Tool starten, damit ich die naechste Durchsage mitschneiden kann...
- 
-**:::**
- 
- 
-### Landwirtschaftliche Genuesse ###
-
-
-
-
-_Wed, 26. February 2014 -- 10:09_
-
-Ein wenig vorgewarnt war ich ja schon vor dem Aufbruch ins Institut, aber hier angekommen habe ich nun die Chance dies auch mit den eigenen Sinnen zu erfahren:
-
-> At this moment we experience a bad smell throughout the building. This is due to agricultural activities in the neighborhood of the building.
-> It can do no harm but we hope for it to be over soon.
-
-Bisher -- und ich weiss nicht ob dies einfach ein Stueck weit an meiner leicht verstopften Nase liegt -- haelt es sich mit dem Geruch in Grenzen; letzte Woche hatten wir durchaus unangenehmere Duftnoten durch die Korridore wabern (das hatte mehr etwas von angeschmortem Plastik), aber wenn es so wie derzeit bleibt, dann wuerde einem dies ohne den entsprechenden Hinweis wohl kaum auffallen.
  
 **:::**
  
