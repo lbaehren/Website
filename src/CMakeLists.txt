@@ -22,12 +22,3 @@ add_subdirectory (templates)
 
 ## Source files for the web pages
 add_subdirectory (pages)
-
-##______________________________________________________________________________
-## Target dependencies
-
-add_dependencies (Website libblog)
-
-if (GNUPLOT_EXECUTABLE)
-  add_dependencies (blog stats)
-endif ()
