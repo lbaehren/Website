@@ -30,6 +30,8 @@ int test_operators (unsigned int const &length=10)
     std::cout << "-- vectDouble = " << vectDouble << std::endl;
     std::cout << "-- vectString = " << vectString << std::endl;
   }
+
+  return 0;
 }
 
 //_______________________________________________________________________________

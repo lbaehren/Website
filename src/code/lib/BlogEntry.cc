@@ -100,6 +100,9 @@ namespace Blog { // Namespace Blog -- begin
        os << "    <menu></menu>"                           << std::endl;
        os << "    <body>" << itsText <<"</body>"           << std::endl;
        os << "  </entry>"                                  << std::endl;
+       break;
+    default:
+        os << "" << std::endl;
     };
   }
 
