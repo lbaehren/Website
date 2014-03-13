@@ -76,7 +76,7 @@ set (PROJECT_LIVEDISK_URL         "https://382611-ftp.livedisk.df.eu/webdav")
 ##
 
 find_path (PROJECT_SOURCE_DIR_CODE
-  NAMES lib/BlogConfig.h.in lib/BlogNode.h lib/Timestamp.h
+  NAMES scripts/CMakeLists.txt scripts/blog_index
   PATHS ${CMAKE_CURRENT_SOURCE_DIR}
   PATH_SUFFIXES src code src/code
   )
