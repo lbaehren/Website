@@ -28,6 +28,14 @@ listOfEntries ()
 }
 
 ##____________________________________________________________________
+##                                                        extractTitle
+
+extractTitle ()
+{
+    grep "title\:" $varBasedir/$1 | sed s/\#\#\{title\:\}\#\#// | sed s/"title\: "// | sed s/\"//g | grep -v "##"
+}
+
+##____________________________________________________________________
 ##                                                  writeRecentEntries
 
 writeRecentEntries ()
@@ -52,7 +60,7 @@ writeRecentEntries ()
   ## --- Recent entries ---
   for FILE in $varEntries
   {
-    varTitle=`cat $varBasedir/$FILE | grep "title\:" | sed s/\#\#\{title\:\}\#\#// | sed s/"title\: "// | sed s/\"//g`
+    varTitle=`extractTitle ${FILE}`
     varText=`cat $varBasedir/$FILE | grep -v "title\:" | grep -v "author\:" | grep -v "tags\:" | grep -v "menu\:" | sed s/"---"//`
     echo " "                   >> $varBasedir/index.page
     echo "### ${varTitle} ###" >> $varBasedir/index.page
