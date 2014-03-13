@@ -9,7 +9,46 @@ tags: Blog
  
 **:::**
  
+### Merging code ###
+
+
+
+
+_Wed, 12. March 2014 -- 22:01_
+
+Es ist doch immer wieder erstaunlich, was sich ueber die Zeit so alles Quellcode ansammelt -- dabei ist es eigentlich fast schon egal, ob es sich um Code handelt, welchen man speziell fuer ein bestimmtes Projekt bei der Arbeit geschrieben hat, oder ob es sich dabei um private Vorhaben handelt. Beruecksichtigt man darueber hinaus noch diverse Experimente mit Open-Source Projekten, dann muss man schon ein wenig aufpassen, dass man da nicht den Ueberblick verliert. Geschieht dies aber doch, dann kann dies eine Reihe von Folgen haben:
+
+ - Mitunter gute Loesungsansaetze verschwinden und sind nicht mehr auffindbar.
+ - Frueher schon einmal entwickelter Code zur Loesung eines bestimmten Problems ist nicht mehr auffindbar und man muss deshalb versuchen das gleiche Problem ein weiteres Mal zu loesen.
+ - Einmal geschriebener Code lebt an mehreren unterschiedlichen Stellen weiter und neu hinzugefuegte Funktionalitaet findet nicht mehr den Weg zurueck an die urspruengliche Quelle.
+
+Ich denke mal, dass sich da mit Sicherheit noch eine Reihe anderer Szenarios aufzaehlen liessen, aber wo es fuer mich einfach ganz praktisch drauf hinauslaeuft ist, dass ich meinen Code noch besser buendeln muss. Genau aus diesem Grunde war das System-Upgrade Beginn dieser Woche der perfekte Anlass mit dem Aufraeumen zu beginnen. Was ich folgerichtig also gemacht habe ist, dass ich vor allen Dingen den Code fuer die [Taskwarrior](http://taskwarrior.org)-Erweiterungen und den Blog zusammengefuehrt habe; dazu gehoeren natuerlich auch Quelen, welche aus der Entwicklung der [DAL](/development/projects/dal.html) entstammen und versuche recht allgemeine Abstraktionen bereitzustellen.
+
+~~~~
+.
+|-- cmake                     ...  Custom CMake modules
+|-- doc                       ...  Documentation
+`-- src
+    |-- libs                  ...  Source code from which to generate libraries
+    |   |-- blog
+    |   |-- coda++
+    |   |-- dal
+    |   `-- task
+    |-- tests                 ...  Collection of test programs
+    |   |-- blog
+    |   |-- dal
+    |   `-- task
+    `-- tools                 ...  Collection of application programs
+~~~~
+
+Fertig mit dem Aufraeumarbeiten bin ich noch nicht, aber insgesamt habe ich doch ein recht gutes Gefuehl, dass ich mich da auf einem guten Wege befinde.
+ 
+**:::**
+ 
+ 
 ### Upgrading to Mavericks ###
+
+
 
 
 _Tue, 11. March 2014 -- 22:46_
@@ -291,18 +330,6 @@ Liest man man an der Stelle einmal weiter, dann macht sich schon ein wenig Entta
  - Mit Capture NX-D scheint es einen Schnitt zu geben was die Systemanforderungen betrifft; so wird auf der Mac OS X Seite wohl nur noch 10.8 und aufwaerts unterstuetzt. Da ich bei mir auf dem Laptop immer noch 10.6.8 fahre, gibt es keinen Migrationspfad zu der neuen Software (zumindest nicht ohne ein Upgrade des Betriebssystems und was dies betrifft bin ich mir eben nicht so ganz sicher, da ich so aus dem Stand noch nicht einmal sagen koennte, ob dies mit der existierenden Hardware ginge). Da ich dem Verbleib mit OS X ja eh ein klein wenig kritisch gegenueberstehe -- ich denke mal da gibt es fuer einfach noch ein paar ungeloeste Fragen -- sollte ich mich auch schon aus diesem Grunde nach Alternativen umschauen.
 
 Einer der Plaene fuer dieses Jahr -- unabhaengig von den nun eintreffenden Nachrichten -- war es, dass ich mir noch einmal Open-Source Loesungen wie [Darktable](http://www.darktable.org) genauer anschaue; da bei den meisten kommerziellen Produkten eine Beschraenkung auf Windows und/oder Mac OS besteht, bietet freie Software hier deutlich bessere Perspektiven. Von jetzt auf gleich alles umstellen wird sicherlich nicht moeglich sein, aber zumindest schon einmal die Fuehler ausstrecken scheint doch ganz angebracht zu sein.
- 
-**:::**
- 
- 
-### Umleitung ###
-
-
-
-
-_Wed, 26. February 2014 -- 19:13_
-
-Auch wenn ich ja schon eine Weile auf dieser Strecke pendele, so hatte ich eine derartige Begruendung fuer eine Umleitung auch noch nicht: aufgrund eines Bombenfundes in Duisburg, wird der ICE 227 am heutigen Abend einen Bogen um den dortigen Bahnhof machen. Da werde ich sicherheitshalber gleich mal noch das Aufnahme-Tool starten, damit ich die naechste Durchsage mitschneiden kann...
  
 **:::**
  

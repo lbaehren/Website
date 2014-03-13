@@ -1,0 +1,36 @@
+---
+title: "Merging code"
+in_menu: false
+author: "Lars Baehren"
+---
+
+## {title:} ##
+
+_Wed, 12. March 2014 -- 22:01_
+
+Es ist doch immer wieder erstaunlich, was sich ueber die Zeit so alles Quellcode ansammelt -- dabei ist es eigentlich fast schon egal, ob es sich um Code handelt, welchen man speziell fuer ein bestimmtes Projekt bei der Arbeit geschrieben hat, oder ob es sich dabei um private Vorhaben handelt. Beruecksichtigt man darueber hinaus noch diverse Experimente mit Open-Source Projekten, dann muss man schon ein wenig aufpassen, dass man da nicht den Ueberblick verliert. Geschieht dies aber doch, dann kann dies eine Reihe von Folgen haben:
+
+ - Mitunter gute Loesungsansaetze verschwinden und sind nicht mehr auffindbar.
+ - Frueher schon einmal entwickelter Code zur Loesung eines bestimmten Problems ist nicht mehr auffindbar und man muss deshalb versuchen das gleiche Problem ein weiteres Mal zu loesen.
+ - Einmal geschriebener Code lebt an mehreren unterschiedlichen Stellen weiter und neu hinzugefuegte Funktionalitaet findet nicht mehr den Weg zurueck an die urspruengliche Quelle.
+
+Ich denke mal, dass sich da mit Sicherheit noch eine Reihe anderer Szenarios aufzaehlen liessen, aber wo es fuer mich einfach ganz praktisch drauf hinauslaeuft ist, dass ich meinen Code noch besser buendeln muss. Genau aus diesem Grunde war das System-Upgrade Beginn dieser Woche der perfekte Anlass mit dem Aufraeumen zu beginnen. Was ich folgerichtig also gemacht habe ist, dass ich vor allen Dingen den Code fuer die [Taskwarrior](http://taskwarrior.org)-Erweiterungen und den Blog zusammengefuehrt habe; dazu gehoeren natuerlich auch Quelen, welche aus der Entwicklung der [DAL](/development/projects/dal.html) entstammen und versuche recht allgemeine Abstraktionen bereitzustellen.
+
+~~~~
+.
+|-- cmake                     ...  Custom CMake modules
+|-- doc                       ...  Documentation
+`-- src
+    |-- libs                  ...  Source code from which to generate libraries
+    |   |-- blog
+    |   |-- coda++
+    |   |-- dal
+    |   `-- task
+    |-- tests                 ...  Collection of test programs
+    |   |-- blog
+    |   |-- dal
+    |   `-- task
+    `-- tools                 ...  Collection of application programs
+~~~~
+
+Fertig mit dem Aufraeumarbeiten bin ich noch nicht, aber insgesamt habe ich doch ein recht gutes Gefuehl, dass ich mich da auf einem guten Wege befinde.

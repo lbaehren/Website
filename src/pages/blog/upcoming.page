@@ -142,23 +142,6 @@ Also ein klein wenig fuehle ich mich da doch an so manche Untersuchungsausschues
  - Upper/lower triangle without diagonal : ( N^2 - N ) / 2
  - Upper/lower triangle with diagonal : N/2 * ( N + 1 )
 
-### Sherlock - Season 3
-
- - [IMDb entry](http://www.imdb.com/title/tt1475582)
- - [Benedict Cumberbatch](http://www.imdb.com/name/nm1212722)
- - [Martin Freeman](http://www.imdb.com/name/nm0293509)
-
-### Fragebogen
-
- - http://www.ldpe.nl
-
-> Sie wurden von einem Ihrer Bekannten („der Teilnehmer") eingeladen, den [LDT360 Fragebogen](http://www.ldpe.nl/opq360) auszufüllen. Dies ist der erste Schritt, um dem Teilnehmer eine Rückmeldung zu geben.
->
-> Der Teilnehmer möchte von Ihnen erfahren, wie Sie ihn / sie sowohl während Ihrer gemeinsamen Zusammenarbeit und in der Gesellschaft anderer erleben. Ihre Anregungen helfen ihm / ihr ein Bewusstsein darüber zu entwickeln, wie sich das Verhalten auf andere auswirkt. Der erste Schritt für Sie wird sein, den Fragebogen zu beantworten, indem Sie die 32 Persönlichkeitsdimensionen anhand des OPQ-Modells auf einer Skala von 1 bis 10 bewerten.
->
-> Bitte beachten Sie bei Ihrer Bewertung, dass es weder eine „gute" noch ein „schlechte" Punktzahl gibt. Sowohl niedrigere als auch höhere Werte stellen potentielle Qualitäten und mögliche Fallstricke dar. Der Teilnehmer ist interessiert daran, zu erfahren, wie er sein Verhalten durch die Entwicklung seiner Stärken und seiner potenziellen Qualitäten effektiver gestalten kann und die Wirkungslosigkeit möglicher negativer Verhaltensmuster zu vermeiden.
-
-
 ### Being Erica
 
  - http://www.cbc.ca/beingerica
@@ -306,50 +289,6 @@ Da ich ja ab morgen Mittag wieder ein wenig aufs Land verschwinde -- Baarlo wuer
  - [ALDI Talk](http://www.alditalk.de)
 
 ![Online Aufladung ALDI Talk](/blog/2013/2013-10/2013-10-03_Online_Aufladung.png)
-
-### Ausgeweitet ###
-
-Sieht doch ganz danach aus, also muesste ich ein wenig mehr in den Eingeweiden des L01b Processor Frameworks herumstochern muss als urspruenglich angedacht. Wie sich mittlerweile herausgestellt hat reicht es eben nicht, einfach nur die `calculate_band_results()` Method zu implementieren, welche typischerweise fuer die Berechnungen vorgesehen ist:
-
-> Note: in order to avoid edge-effects and discontinuities between two bands in a CCD, the algorithm should be applied to data from the full CCD, i.e. by concatenating data from the two bands, rather than to each band separately.
-
-Was dies bedeutet ist, dass sich die Berechnungen eben nicht fuer jedes Band separat (und damit parallel) ausfuehren lassen, sondern dass ich immer zwei zu einem CCD gehoerige Baender kombinieren muss.
-
-~~~~
-    AbstractTaskTarget
-            ^
-            |
-    AbstractAlgorithm
-            ^
-            |
-    TropOcalAlgorithm
-            ^
-            |
-    TropCkdAlgorithm
-            ^
-            |
-    TropPRNUAlgorithm
-~~~~
-
-
-~~~~
-    def calculate_results(self):
-        """ Calculates the results for all bands.
-        """
-        self._logger.info("Enter calculate_results.")
-
-        if self.execute_parallel is False:
-            self._logger.info("Processing bands serial start")
-            for band_nr in self.cfg['process_bands']:
-                self.calculate_band_results(band_nr)
-            self._logger.info("Processing bands done")
-        else:
-            self._logger.info("Processing bands parallel start")
-            wrapped_fun = wrap_process_bands_function(self.calculate_band_results)
-            parallellize_bands(wrapped_fun, self.cfg['process_bands'])
-            self._logger.info("Processing bands parallel done")
-~~~~
-
 
 ### Installing Git ###
 
