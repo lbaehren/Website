@@ -9,6 +9,66 @@ tags: Blog
  
 **:::**
  
+### Testen lohnt sich ###
+
+
+
+
+_Wed, 19. March 2014 -- 21:28_
+
+_Anmerkung: Ich hatte zwar schon vor einer Weile mit einem entsprechenden Beitrag begonnen, aber wie dies gerne schon einmal passiert, sind die Notizen ein wenig in Vergessenheit geraten. Da ich es aber nicht einfach nur bei ein paar Code-Snippets belassen wollte (und ich beim Schreiben ein wenig ins Stocken geraten bin), hat es nun doch deutlich laenger mit der Veroeffentlichung gedauert, als dies eigentlich geplant war._
+
+Es gibt (zumindest soweit ich dies beurteilen kann) immer zwei Dinge, welche bei der Software-Entwicklung eher stiefmuetterlich behandelt werden: Dokumentation und Testen. Spricht man mit den Leuten, dann werden alle natuerlich zustimmen, dass es sich in beiden Faellen um sehr wichtige Dinge handelt... aber zunaechst sei es ja erst einmal wichtiger die Software fertig zu kriegen. Warum dies nicht als integraler Bestandteil gesehen wird, wollte mir noch nie so recht einleuchten. Vor allen Dingen was die Dokumentation betrifft, wird es einem durch Tools wie [Doxygen](http://www.doxygen.org) doch eher leicht gemacht -- da ist kein sonderlicher Extra-Aufwand noetig, um die wesentliche Struktur und Funktionalitaet gut lesbar bereitzustellen. Dem gegenueber ist das Schreiben vernuenftiger Tests schon ein wenig mehr Aufwand, aber dabei handelt es sich (meines Erachtens) um sinnvoll investierte Zeit, welche einem spaetere Kopfschmerzen ersparen kann.
+
+__Fall 1: DAL C++ code__
+
+[Wie vor einer Woche berichtet](/blog/2014/2014-03/2014-03-12_22-01.html), habe ich einiges an Aufraeumarbeiten an dem ueber die letzten Jahre entstandenen Code durchgefuehrt. Teil der Aktion war allerdings nicht einfach nur dass Zusammenkopieren von Verzeichnissen, sondern -- und dies machte hier ja absolut Sinn -- auch das Ausmisten von mehrfach vorhandenen Implementierungen und damit verbunden das Testen der Routinen. So passierte es dann auch, dass ich in einer Klasse, welche ich vor Jahren in die [DAL](/development/projects/dal.html) integriert hatte, einen Fehler ausfindig gemacht habe, welcher dort recht lange geschlummert haben muss:
+
+~~~~
+ itsYear     = year;
+ itsMonth    = month;
+ itsDay      = day;
+ itsMinute   = hour;
+ itsMinute   = minute;
+~~~~
+
+Aufgefallen ist mir die falsche Zuweisung durch das systematische Testen der oeffentlichen Schnittstelle ("public API"), wo ich daran gegangen bin die internen Parameter einzeln auf ihre Richtigkeit hin zu ueberpruefen:
+
+~~~~
+ BOOST_CHECK_MESSAGE ( t.year()   == year,   "Incorrect value for Year."   );
+ BOOST_CHECK_MESSAGE ( t.month()  == month,  "Incorrect value for Month."  );
+ BOOST_CHECK_MESSAGE ( t.day()    == day,    "Incorrect value for Day."    );
+ BOOST_CHECK_MESSAGE ( t.hour()   == hour,   "Incorrect value for Hour."   );
+ BOOST_CHECK_MESSAGE ( t.minute() == minute, "Incorrect value for Minute." );
+ BOOST_CHECK_MESSAGE ( t.second() == second, "Incorrect value for Second." );
+~~~~
+
+Das angesichts der oben wiedergegebenen Doppelzuweisung ein Fehler auftauchte duerfte wohl nicht verwundern:
+
+~~~~
+ TestTimestamp.cc:82: error in "construction": Incorrect value for Hour.
+~~~~
+
+Ausgehend von dieser Meldung war es dann nicht mehr allzu schwer den Fehler ausfindig zu machen und zu beheben. Dass dieser sich ueberhaupt so lange hat verstecken koennen, lag bedauerlicherweise mit daran, dass es zum frueheren Zeitpunkt noch einige Luecken in der Testabdeckung ("Coverage") gab -- dies ist nun korregiert.
+
+__Fall 2: OCAL framework Python code__
+
+Wie schon im vorherigen Fall, hat auch diese Woche wieder gezeigt, dass ausgibiges und systematisches Testen so manche Ueberraschungen zu Tage foerden kann... mit ein wenig zusaetzlicher Arbeit aber dazu fuehrt, dass der getestete Code in seiner Qualitaet verbessert wird. So habe ich mich die letzten beiden Tage damit herumgeschlagen Routinen zum Generieren von Diagnose-Plots zu testen, um auf diese Wise zu sehen, ob diese unseren Anspruechen genuegen (will heissen: in der Lage sind die Resultate zu liefern, welche wir gerne zur Ueberpruefung der Datenanalyse haetten). Da ich also eh einiges ausprobieren musste, habe ich kurzentschlossen meinen Code direkt als Unit-Test aufgesetzt, um damit auch automatisch von dem Integrations-Server aufgerufen zu werden. Waehrend sich das erste derartige Experiment ohne grundlegende Probleme abschliessen liess (was mich trotzdem einiges an Zeit gekostet hat, einfach weil es an einer vernuenftigen Dokumentation fehlte), lieferte der Test fuer die Erzeugung eines [Surface-Plots](http://matplotlib.org/mpl_toolkits/mplot3d/tutorial.html#surface-plots) ein eher weniger erfreuliches Resultat:
+
+~~~~
+  test_create_object (surface_plot_utest.SurfacePlotTestCase)
+  Test creation of a new SurfacePlot object. ... ok
+  test_plotting_imageplot (surface_plot_utest.SurfacePlotTestCase)
+  Test plotting surface using the 'draw()' method. ... ERROR
+  test_plotting_matplotlib (surface_plot_utest.SurfacePlotTestCase)
+  Test creation of surface plot using Matplotlib directly. ... ok
+~~~~
+
+Um so weit es geht anderweitige Fehler auszuschliessen, habe ich sicherheitshalber den gleichen Plot noch einmal auf dem "Fusswege" erzeugt, um auf diese Weise aber auch nachweisen zu koennen, dass der Fehler nicht in den zugrundeliegenden Graphik-Routinen liegt. Nach einigem hin und her hatte ich also den Fehler so gut es ging isoliert, so dass es an der Zeit war das Problem zu melden. Stellt sich heraus, dass da in der Tat ein Fehler vorlag, welcher in dem Abstraktions-Layer zu finden war; da a) bisher keinerlei Unit-Tests hierfuer vorhanden waren noch b) die Python Klasse anderweitig gross eingesetzt wurde, fand keinerlei Ueberpruefung statt. Letzteres -- und auch der Fehler selber -- sind jetzt behoben.
+ 
+**:::**
+ 
+ 
 ### Entourage (2015) ###
 
 
@@ -287,41 +347,6 @@ Sicher, es gibt immer noch eine ganze Reihe (zumindest fuer mich) weisser Flecke
 ![GPS locations Utrecht](/blog/2014/2014-03/2014-03-05_GPS-locations.png)
 
 Da ich letzte Nacht (nach unserem Dinner) noch einmal unterwegs war, gibt es wieder ein paar neue Punkte auf der Karte. Das soll allerdings keinesfalls bedeuten, dass ich nur noch die Gegenden aufsuchen werde, wo ich bisher noch keine GPS Tags vorzuweisen habe -- auch gestern bin ich wieder an Orten vorbeigekommen, wo es einfach Sinn machen wird, noch einmal zu anderen Tageszeiten mit der Kamera aufzutauchen.
- 
-**:::**
- 
- 
-### Aufraeumarbeiten ###
-
-
-
-
-_Tue, 04. March 2014 -- 14:23_
-
-Wenn es ja eines gibt, was ich nicht leiden kann, dann ist es mit einer Software konfrontiert zu sein, wo die Einzelteil einfach nur auf die Schnelle zusammengestoepselt sind. Gluecklicherweise kann man dies bei dem OCAL Framework in in seiner Gaenze behaupten, aber was mich schon seit der ersten Beruehrung mit den Paket gestoert hat ist, dass die diversen Tasks, welche nicht direkt im Python-Code implementiert sind auf eine ganze Reihe von Shell-Scripten verteilt sind, von denen man teilweise wissen muss wo sie sich befinden, um diese ueberhaupt einsetzen zu koennen. Da dies dann natuerlich einer der Punkte ist, wo es mich in den Fingerspitzen juckt, habe ich mich heute Mittag endlich mal daran gemacht, da ein wenig aufzuraeumen:
-
-~~~~
-docs: doc_sphinx doc_doxygen
-
-manual: doc_doxygen
-
-doc_sphinx:
-	sphinx-apidoc -o doc . -f
-	cd doc && export PYTHONPATH=${OCALFW} && make html
-
-doc_doxygen: doc/manual/doxygen.conf
-	     doxygen doc/manual/doxygen.conf
-~~~~
-
-So wie ich es sehe ist dies lediglich ein erster Schritt, aber fuer alles weitere werde ich wohl noch einmal das ok einholen muessen. Ich denke aber mal, dass es sicherlich nicht schaden kann, einen funktionierenden Prototypen vorweisen zu koennen, an welchem sich die angestrebte Funktionialitaet demonstrieren laesst; da ich aber nicht nur die bereits vorhandene Funktionalitaet reproduziere, sondern auch noch eine neuen Extras bieten kann, denke ich mal schon, dass es gute Argumente gibt die einmal begonnenen Aufraeumarbeiten fortzusetzen. Die Aenderungen sind jetzt auf jeden Fall online:
-
-~~~~
-Adding         Makefile
-Sending        doc/manual/doxygen.conf
-Deleting       doc/manual/make_manual.sh
-Transmitting file data ..
-Committed revision 1616.
-~~~~
  
 **:::**
  

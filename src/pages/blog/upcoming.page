@@ -27,30 +27,6 @@ tags: Blog
 **in preparation ...**
 
 
-### Finding errors by testing
-
-~~~~
- TestTimestamp.cc:82: error in "construction": Incorrect value for Hour.
-~~~~
-
-~~~~
- BOOST_CHECK_MESSAGE ( t.year()   == year,   "Incorrect value for Year."   );
- BOOST_CHECK_MESSAGE ( t.month()  == month,  "Incorrect value for Month."  );
- BOOST_CHECK_MESSAGE ( t.day()    == day,    "Incorrect value for Day."    );
- BOOST_CHECK_MESSAGE ( t.hour()   == hour,   "Incorrect value for Hour."   );
- BOOST_CHECK_MESSAGE ( t.minute() == minute, "Incorrect value for Minute." );
- BOOST_CHECK_MESSAGE ( t.second() == second, "Incorrect value for Second." );
-~~~~
-
-~~~~
- itsYear     = year;
- itsMonth    = month;
- itsDay      = day;
- itsMinute   = hour;
- itsMinute   = minute;
-~~~~
-
-
 ### Abwanderung
 
 Als ob dies jetzt nun wieder eine sonderlich neue Erkenntnis waere:
