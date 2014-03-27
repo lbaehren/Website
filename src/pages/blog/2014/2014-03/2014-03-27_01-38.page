@@ -1,0 +1,46 @@
+---
+title: "Kleine Aenderungen"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-03-27T01:38:33.00Z
+---
+
+## {title:} ##
+
+_Thu, 27. March 2014 -- 01:38_
+
+Wenn es sich so direkt nebeneinander anschaut, dann sieht es nicht wirklich
+sonderlich spannend aus... vom Ergebnis her ist aber schon nicht ganz ohne
+Bedeutung:
+
+~~~~
+-   Copyright &copy; 2004-2013 Lars B&auml;hren |
++   Copyright &copy; 2004-{date: { format: %Y}} Lars B&auml;hren |
+~~~~
+
+Da ich ja im Zuge des Domains ummelden ein wenig begonnen habe mir noch einmal
+unterschiedliche Generatoren fuer statische Webseiten anzuschauen, habe ich auch
+noch einmal einen kritischen Blick auf meine derzeitige Platform geworfen. Im
+Zuge dieser Aktion sind mit ein paar Details aufgefallen, welche es zwecks
+Optionen offen halten Sinn macht anzupassen. So habe ich nun endlich mal noch
+dafuer gesorgt, dass ein Timestamp mit in den Header jeden Eintrages geschrieben
+wird:
+
+~~~~
++date: 2004-01-09T19:52:00.0Z
+~~~~
+
+Wenn dieser Eintrag korrekt vorgenommen wird, erhaelt man nicht nur zusaetzliche
+Flexibilitaet bei der Auswahl der Dateinamen (welcher aber wohl auch weiterhin
+Datum und Uhrzeit enthalten werden), sondern es laesst sich dem Page-Builder
+auch mitteilen, in welcher Weise man die Datumsinformation auf den fertigen Seiten
+angezeigt haben moechte.
+
+Und wo wir schon bei Datumsangaben sind: die Fusszeile auf den Seiten sollte
+natuerlich auch die korrekte Jahreszahl tragen. Dies liesse sich vom Prinzip her
+zwar dadurch loesen, dass man die entsprechende Angabe im Template jedes Jahr
+anpasst, aber aus Entwicklerperspektive waere dies doch recht unbefriedigend.
+Folgerichtig habe ich die (deutlich ueberarbeitete) Anleitung noch einmal genauer
+unter die Lupe genommen und bin dort fuendig geworden - nun wird die Jahreszahl
+endlich dynamisch eingebunden und braucht nicht mehr von Hand eingetragen werden.
+

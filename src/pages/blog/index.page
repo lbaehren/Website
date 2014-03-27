@@ -9,6 +9,52 @@ tags: Blog
  
 **:::**
  
+### Kleine Aenderungen ###
+
+date: 2014-03-27T01:38:33.00Z
+
+
+
+_Thu, 27. March 2014 -- 01:38_
+
+Wenn es sich so direkt nebeneinander anschaut, dann sieht es nicht wirklich
+sonderlich spannend aus... vom Ergebnis her ist aber schon nicht ganz ohne
+Bedeutung:
+
+~~~~
+-   Copyright &copy; 2004-2013 Lars B&auml;hren |
++   Copyright &copy; 2004-{date: { format: %Y}} Lars B&auml;hren |
+~~~~
+
+Da ich ja im Zuge des Domains ummelden ein wenig begonnen habe mir noch einmal
+unterschiedliche Generatoren fuer statische Webseiten anzuschauen, habe ich auch
+noch einmal einen kritischen Blick auf meine derzeitige Platform geworfen. Im
+Zuge dieser Aktion sind mit ein paar Details aufgefallen, welche es zwecks
+Optionen offen halten Sinn macht anzupassen. So habe ich nun endlich mal noch
+dafuer gesorgt, dass ein Timestamp mit in den Header jeden Eintrages geschrieben
+wird:
+
+~~~~
++date: 2004-01-09T19:52:00.0Z
+~~~~
+
+Wenn dieser Eintrag korrekt vorgenommen wird, erhaelt man nicht nur zusaetzliche
+Flexibilitaet bei der Auswahl der Dateinamen (welcher aber wohl auch weiterhin
+Datum und Uhrzeit enthalten werden), sondern es laesst sich dem Page-Builder
+auch mitteilen, in welcher Weise man die Datumsinformation auf den fertigen Seiten
+angezeigt haben moechte.
+
+Und wo wir schon bei Datumsangaben sind: die Fusszeile auf den Seiten sollte
+natuerlich auch die korrekte Jahreszahl tragen. Dies liesse sich vom Prinzip her
+zwar dadurch loesen, dass man die entsprechende Angabe im Template jedes Jahr
+anpasst, aber aus Entwicklerperspektive waere dies doch recht unbefriedigend.
+Folgerichtig habe ich die (deutlich ueberarbeitete) Anleitung noch einmal genauer
+unter die Lupe genommen und bin dort fuendig geworden - nun wird die Jahreszahl
+endlich dynamisch eingebunden und braucht nicht mehr von Hand eingetragen werden.
+ 
+**:::**
+ 
+ 
 ### 20 Jahre Deutschlandfunk ###
 
 
@@ -285,43 +331,6 @@ Also da soll noch einmal jemand behaupten [Branches](http://git-scm.com/book/en/
 ![SWIR network graph](/blog/2014/2014-03/2014-03-13_Network_graph.png)
 
 Dauerhaft muessen diese sicherlich nicht auf [Github](https://github.com) vorgehalten werden, aber um a) den eigenen ``master`` Branch sauber zu halten und b) klar definierte Pull requests abzugeben ist dies schon eine nette Sache. Alleine im Laufe der letzten beiden Tag habe ich zwei neue _Feature branches_ angelegt, um dort notwendige Korrekturen zu sammeln und anschliessend zwecks Integration in die Hauptlinie einzusenden.
- 
-**:::**
- 
- 
-### Merging code ###
-
-
-
-
-_Wed, 12. March 2014 -- 22:01_
-
-Es ist doch immer wieder erstaunlich, was sich ueber die Zeit so alles Quellcode ansammelt -- dabei ist es eigentlich fast schon egal, ob es sich um Code handelt, welchen man speziell fuer ein bestimmtes Projekt bei der Arbeit geschrieben hat, oder ob es sich dabei um private Vorhaben handelt. Beruecksichtigt man darueber hinaus noch diverse Experimente mit Open-Source Projekten, dann muss man schon ein wenig aufpassen, dass man da nicht den Ueberblick verliert. Geschieht dies aber doch, dann kann dies eine Reihe von Folgen haben:
-
- - Mitunter gute Loesungsansaetze verschwinden und sind nicht mehr auffindbar.
- - Frueher schon einmal entwickelter Code zur Loesung eines bestimmten Problems ist nicht mehr auffindbar und man muss deshalb versuchen das gleiche Problem ein weiteres Mal zu loesen.
- - Einmal geschriebener Code lebt an mehreren unterschiedlichen Stellen weiter und neu hinzugefuegte Funktionalitaet findet nicht mehr den Weg zurueck an die urspruengliche Quelle.
-
-Ich denke mal, dass sich da mit Sicherheit noch eine Reihe anderer Szenarios aufzaehlen liessen, aber wo es fuer mich einfach ganz praktisch drauf hinauslaeuft ist, dass ich meinen Code noch besser buendeln muss. Genau aus diesem Grunde war das System-Upgrade Beginn dieser Woche der perfekte Anlass mit dem Aufraeumen zu beginnen. Was ich folgerichtig also gemacht habe ist, dass ich vor allen Dingen den Code fuer die [Taskwarrior](http://taskwarrior.org)-Erweiterungen und den Blog zusammengefuehrt habe; dazu gehoeren natuerlich auch Quellen, welche aus der Entwicklung der [DAL](/development/projects/dal.html) entstammen und versuche recht allgemeine Abstraktionen bereitzustellen.
-
-~~~~
-.
-|-- cmake                     ...  Custom CMake modules
-|-- doc                       ...  Documentation
-`-- src
-    |-- libs                  ...  Source code from which to generate libraries
-    |   |-- blog
-    |   |-- coda++
-    |   |-- dal
-    |   `-- task
-    |-- tests                 ...  Collection of test programs
-    |   |-- blog
-    |   |-- dal
-    |   `-- task
-    `-- tools                 ...  Collection of application programs
-~~~~
-
-Fertig mit dem Aufraeumarbeiten bin ich noch nicht, aber insgesamt habe ich doch ein recht gutes Gefuehl, dass ich mich da auf einem guten Wege befinde.
  
 **:::**
  
