@@ -9,9 +9,41 @@ tags: Blog
  
 **:::**
  
+### Keine Verbindung ###
+
+
+
+
+_Thu, 27. March 2014 -- 01:44_
+
+Keine Ahnung was da eigentlich los ist, aber die Verbindung, ueber welche ich
+normalerweise die Updates fuer meine Website hochlade, ist heute Abend recht
+wackelig:
+
+~~~~
+[100%] Publishing website - uploading generated pages ...
+sending incremental file list
+rsync: writefd_unbuffered failed to write 4 bytes to socket [sender]: Broken pipe (32)
+rsync: mkdir "/Volumes/webdav/webseiten" failed: Operation timed out (60)
+rsync error: error in file IO (code 11) at main.c(637) [Receiver=3.0.9]
+rsync: connection unexpectedly closed (9 bytes received so far) [sender]
+rsync error: error in rsync protocol data stream (code 12) at io.c(605) [sender=3.0.9]
+make[3]: *** [src/pages/CMakeFiles/online] Error 12
+make[2]: *** [src/pages/CMakeFiles/online.dir/all] Error 2
+make[1]: *** [src/pages/CMakeFiles/online.dir/rule] Error 2
+make: *** [online] Error 2
+~~~~
+
+Komplett gerissen scheint der Draht hin zur Aussenwelt allerdings noch nicht zu
+sein, denn im Internet surfen geht nach wie vor. Da werde ich also die aktuellsten
+Beitraege und Aenderungen einfach lokal bereitstellen, ehe ich wieder auf den
+Server zugreifen kann.
+ 
+**:::**
+ 
+ 
 ### Kleine Aenderungen ###
 
-date: 2014-03-27T01:38:33.00Z
 
 
 
@@ -315,22 +347,6 @@ Im Zuge unserer grossen Tour durch die Gartenbaumschulen in der Umgebung, haben 
 ![GPS Track](/blog/2014/2014-03/2014-03-14_GPS_track.png)
 
 Die Strecke war im Vergleich zum letzten Mal gluecklicherweise ein wenig kuerzer und die Pflanze ein gutes Stueck kleiner; so war ich nach 40 Minuten am Ziel angekommen. Was von der Planung (naemlich keiner in diesem Fall) etwas unguenstiger verlaufen war als bei der letzten derartigen Aktion, war die Tatsache dass ich diesmal leider keine Kopfhoerer dabei hatte, so dass unterwegs Podcasts hoeren leider keine Option war; sollte ich einfach dran denken, mich bei derartigen Ausfluegen auf solche Szenarien vorzubereiten, damit ich mir den Spaziergang ein klein wenig angenehmer (und unterhaltsamer bzw. informativer) gestalten kann.
- 
-**:::**
- 
- 
-### SWIR Network graph ###
-
-
-
-
-_Thu, 13. March 2014 -- 19:16_
-
-Also da soll noch einmal jemand behaupten [Branches](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging) waeren ein nutzloses und schwer zu gebrauchendes Feature. Waehrend dies vielleicht noch fuer [Subversion](http://subversion.apache.org) zutreffen mag, ist dies unter [Git](http://git-scm.com) ein ganz natuerlicher Bestandteil des Arbeitsflusses. So kommt es denn auch, dass ein Blick auf den [Network Graph Visualizer](https://github.com/blog/39-say-hello-to-the-network-graph-visualizer) derzeit gleich eine Vielzahl an Branches aufzeigt, welche fuer diverse Gruppen an Aenderungen angelegt wurden:
-
-![SWIR network graph](/blog/2014/2014-03/2014-03-13_Network_graph.png)
-
-Dauerhaft muessen diese sicherlich nicht auf [Github](https://github.com) vorgehalten werden, aber um a) den eigenen ``master`` Branch sauber zu halten und b) klar definierte Pull requests abzugeben ist dies schon eine nette Sache. Alleine im Laufe der letzten beiden Tag habe ich zwei neue _Feature branches_ angelegt, um dort notwendige Korrekturen zu sammeln und anschliessend zwecks Integration in die Hauptlinie einzusenden.
  
 **:::**
  

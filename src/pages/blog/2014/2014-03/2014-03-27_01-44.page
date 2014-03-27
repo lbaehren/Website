@@ -1,0 +1,33 @@
+---
+title: "Keine Verbindung"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-03-27T01:44:23.00Z
+---
+
+## {title:} ##
+
+_Thu, 27. March 2014 -- 01:44_
+
+Keine Ahnung was da eigentlich los ist, aber die Verbindung, ueber welche ich
+normalerweise die Updates fuer meine Website hochlade, ist heute Abend recht
+wackelig:
+
+~~~~
+[100%] Publishing website - uploading generated pages ...
+sending incremental file list
+rsync: writefd_unbuffered failed to write 4 bytes to socket [sender]: Broken pipe (32)
+rsync: mkdir "/Volumes/webdav/webseiten" failed: Operation timed out (60)
+rsync error: error in file IO (code 11) at main.c(637) [Receiver=3.0.9]
+rsync: connection unexpectedly closed (9 bytes received so far) [sender]
+rsync error: error in rsync protocol data stream (code 12) at io.c(605) [sender=3.0.9]
+make[3]: *** [src/pages/CMakeFiles/online] Error 12
+make[2]: *** [src/pages/CMakeFiles/online.dir/all] Error 2
+make[1]: *** [src/pages/CMakeFiles/online.dir/rule] Error 2
+make: *** [online] Error 2
+~~~~
+
+Komplett gerissen scheint der Draht hin zur Aussenwelt allerdings noch nicht zu
+sein, denn im Internet surfen geht nach wie vor. Da werde ich also die aktuellsten
+Beitraege und Aenderungen einfach lokal bereitstellen, ehe ich wieder auf den
+Server zugreifen kann.
