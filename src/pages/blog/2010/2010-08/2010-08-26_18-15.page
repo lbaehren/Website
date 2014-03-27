@@ -2,15 +2,32 @@
 title: "Geduldsprobe"
 in_menu: false
 author: Lars Baehren
+date: 2010-08-26T18:15:00.0Z
 ---
 
 ## {title:} ##
 
 _Thu, 26. August 2010 -- 18:15_
 
-
-
-Also da muss man dann doch schon mal ein wenig mehr Zeit und Geduld mitbringen. Nachdem ich gestern ja noch die komplette [[http://www.finkproject.org|Fink]] Installation auf meinem Rechner in die Tonne getreten habe -- ein Vorhaben, welche ich schon laenger realisieren wollte -- teste ich seit dem die [[http://www.cmake.org|CMake]]-basierte Umgebung, um diverse 3rd-Party Pakete zu installieren. Sehr zu meiner Freude kann ich feststellen, dass ich da recht gute Arbeit abgeliefert habe, denn in gewisser Weise habe ich mich eine Art Paket-Manager geschrieben, mit welchem ich alle externen Pakete installieren kann, welche entweder nicht mit Mac OS kommen, oder aber in einer anderen Version benoetigt werden. Nachdem ich gestern ja schon recht erfolgreich die Installation von [[http://tug.org/texlive|TexLive]] hinter mich gebracht habe (welche fast komplett automatisch ablaeuft), stand heute noch PELICAN auf dem Programm. Wie ich bei diesem Vorhaben allerdings feststellen musste, fehlte mir dafuer eine Installation von [[http://qt.nokia.com|Qt]] :-( Wer schon einmal Qt von Source gebaut hat (ich denke mal Nicole duerfte dies sicherlich gemacht haben), der weiss, dass dies eine Aktion ist, fuer welche man eine gehoerige Anzahl CPU Zyklen einplanen kann, denn das Paket ist riesig und braucht Ewigkeiten um zu bauen. Gluecklicherweise kann man nicht sonderlich viel falsch machen, aber es dauert halt eben sehr, sehr lange, bis alles fertig ist. So war dann also meine Rechner den ueberwiegenden Teil des Nachmittages damit beschaeftigt, sich durch den Quellcode zu wuehlen, bis er vor wenigen Minuten damit fertig geworden ist.
-
-
-~~DISCUSSION~~
+Also da muss man dann doch schon mal ein wenig mehr Zeit und Geduld mitbringen.
+Nachdem ich gestern ja noch die komplette [Fink](http://www.finkproject.org)
+Installation auf meinem Rechner in die Tonne getreten habe -- ein Vorhaben,
+welche ich schon laenger realisieren wollte -- teste ich seit dem die
+[CMake](http://www.cmake.org)-basierte Umgebung, um diverse 3rd-Party Pakete zu
+installieren. Sehr zu meiner Freude kann ich feststellen, dass ich da recht gute
+Arbeit abgeliefert habe, denn in gewisser Weise habe ich mich eine Art
+Paket-Manager geschrieben, mit welchem ich alle externen Pakete installieren
+kann, welche entweder nicht mit Mac OS kommen, oder aber in einer anderen
+Version benoetigt werden. Nachdem ich gestern ja schon recht erfolgreich die
+Installation von [[http://tug.org/texlive|TexLive]] hinter mich gebracht habe
+(welche fast komplett automatisch ablaeuft), stand heute noch PELICAN auf dem
+Programm. Wie ich bei diesem Vorhaben allerdings feststellen musste, fehlte mir
+dafuer eine Installation von [[http://qt.nokia.com|Qt]] :-( Wer schon einmal Qt
+von Source gebaut hat (ich denke mal Nicole duerfte dies sicherlich gemacht
+haben), der weiss, dass dies eine Aktion ist, fuer welche man eine gehoerige
+Anzahl CPU Zyklen einplanen kann, denn das Paket ist riesig und braucht
+Ewigkeiten um zu bauen. Gluecklicherweise kann man nicht sonderlich viel falsch
+machen, aber es dauert halt eben sehr, sehr lange, bis alles fertig ist. So war
+dann also meine Rechner den ueberwiegenden Teil des Nachmittages damit
+beschaeftigt, sich durch den Quellcode zu wuehlen, bis er vor wenigen Minuten
+damit fertig geworden ist.

@@ -2,32 +2,33 @@
 title: "Server trouble"
 in_menu: false
 author: Lars Baehren
+date: 2010-08-22T17:01:00.0Z
 ---
 
 ## {title:} ##
 
 _Sun, 22. August 2010 -- 17:01_
 
-
-
 It has been a few days now, but the situation keep getting worse -- as of lately there is considerable trouble with the server hosting the LOFAR User Software (LUS) Repository and the [[http://usg.lofar.org/forum|Users Forum]].
 
 First signs of trouble showed up at the beginning of the week, when looking in the issue that the [[http://usg.lofar.org/doxygen|Doxygen documentation]] would no longer be build automatically. On inspection it turned out, that [[http://www.cmake.org|CMake]] would not be able to find a valid installation of a C++ compiler; this is kind of strange, because this is one of the core ingredients of the system. As I have not been making any type of modifications there, I have a hard time understanding where this problem was coming from. In order however to mitigate this, I have been checking the system status, also running
-<code bash>
+
+~~~~
 apt-get update && apt-get upgrade
-</code>
+~~~~
+
 to make sure I have not been missing out on any critical system updates. While this seemed not to be the case, I noticed however, that installation of some of the packages was held back, therefore requiring manual inspection and installation. Strangely enough the only thing still recognized by CMake was the C compiler, while support for C++ still was dropped.
 
 Things became worse the following day, when a number of emails showed up in my inbox, pointing out that the SVN repository was unreachable. Since the major fraction of the LUS development is channeled through this repository, it has become a vital part of the infrastructure (which also has cause me to consider moving it to the official LOFAR SVN server, though this might require some work also moving all the accounts); as a consequence a longer downtime of the repository inevitably will result in an interruption of the work flow, pushing changes back and forth.
 
 After inspection of the logfiles, the best solution I was able to come up with, in order to get the system back online in a clean way, was to actually reboot the server, thereby resetting all the services to their initial state. Unfortunately only part of the services came back online after this:
 
-| [[http://usg.lofar.org|usg.lofar.org]]          | up |
-| [[http://usg.lofar.org/forum|usg.lofar.org/forum]]    | down |
-| [[http://usg.lofar.org/doxygen|usg.lofar.org/doxygen]]  | up, but outdated |
-| [[http://usg.lofar.org/websvn|usg.lofar.org/websvn]]   | up |
+| [usg.lofar.org](http://usg.lofar.org)                 | up       |
+| [usg.lofar.org/forum](http://usg.lofar.org/forum)     | down     |
+| [usg.lofar.org/doxygen](http://usg.lofar.org/doxygen) | up, but outdated |
+| [usg.lofar.org/websvn](http://usg.lofar.org/websvn)   | up   |
 
-Still busy trying to track down what was wrong with the forum, the machine was dropping out bit by bit under my hands; first of all the repository once more went offline, next the webserver stopped and finally the machine was not even reachable through SSH anymore.
-
-
-~~DISCUSSION~~
+Still busy trying to track down what was wrong with the forum, the machine was
+dropping out bit by bit under my hands; first of all the repository once more
+went offline, next the webserver stopped and finally the machine was not even
+reachable through SSH anymore.

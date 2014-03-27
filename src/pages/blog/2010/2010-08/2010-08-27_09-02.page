@@ -2,13 +2,12 @@
 title: "Encapsulation of Large and/or Complex Astronomical Data"
 in_menu: false
 author: Lars Baehren
+date: 2010-08-27T09:02:00.0Z
 ---
 
 ## {title:} ##
 
 _Fri, 27. August 2010 -- 09:02_
-
-
 
 Looks like we are moving forward on the issue of establishing HDF5 as a generally accepted file format within the astronomical community:
 
@@ -20,5 +19,3 @@ Looks like we are moving forward on the issue of establishing HDF5 as a generall
 
 In order to get the discussion going with the wider astronomical community, a special session is planned for the upcoming ADASS. I think it will be very interesting to see who people will be reacting -- though it is pretty clear, that new-generation telescopes will be spitting amounts of data, which go beyond what established data formats can handle, I am expecting considerable resistance against change.
 
-
-~~DISCUSSION~~
