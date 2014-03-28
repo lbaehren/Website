@@ -14,54 +14,24 @@ _Last modified: {date:}_
  * http://www.storagereview.com
  * http://arthursbookshelf.com
 
- * Data Abstraction Routines Collection (DARC)
- * Data Access Routines Collection (DARC)
- * Common Data Access Routines
+ - Data Abstraction Routines Collection (DARC)
+ - Data Access Routines Collection (DARC)
+ - Common Data Access Routines
  - Data Concepts Common Abstraction
  - Common Data Constructs Abstraction Layer
  - Core Data Abstraction Layer
+
+ - [Bigger than life: Drone flight documents Alaskan ice caves](http://www.dpreview.com/news/2014/03/27/bigger-than-life-drone-flight-documents-alaskan-ice-caves)
+
 
 ----
 **completed ...**
 
 
+
+
 ----
 **in preparation ...**
-
-### Zusammengefuehrt
-
-Das wurde aber mal Zeit: nachdem ich vor einer Weile ja schon damit begonnen
-hatte diversen ueber meinen Rechner verstreuten Source zusammenzufassen (und
-damit auch gemeinsam verwenden zu koennen), habe ich gestern Abend noch den
-ausstehenden Schritt vollzogen, um auch die Quellen fuer die diversen Websites
-- egal ob fuer online oder lediglich lokal - zuammenzufuehren. Wie auch schon
-bei dem Source Code, hat es mich einfach genervt, dass es immer wieder eine Reihe
-an Funktionalitaet und Machinerie gibt, welche letzten Ende wiederverwendbar ist.
-Wesentlicher Bestandteil dieser Machinerie sind die [CMake](http://www.cmake.org)
-Scripten, welche fuer die Konfiguration und die Erzeugung der Build-Targets
-verantwortlich sind; gerade dann, wenn ich unter der Haube mit verschiedenen
-Generatoren arbeite -- [Webgen](http://webgen.gettalong.org), [Doxygen](http://www.doxygen.org),
-[Jekyll](http://jekyllrb.com) -- ist es schon ganz nett.
-
-~~~~
-Websites
-|-- build
-|   |-- local_pages
-|   `-- www.larsbaehren.com
-|-- common
-|   |-- cmake
-|   |-- code
-|   `-- doxygen
-|-- local_pages
-|-- test_doxygen
-|-- test_jekyll
-|-- test_pelican
-|-- www.anuyoga.de
-|-- www.anuyoga.eu
-|-- www.anuyoga.info
-|-- www.anuyoga.net
-`-- www.larsbaehren.com
-~~~~
 
 
 
@@ -80,7 +50,7 @@ Als ob dies jetzt nun wieder eine sonderlich neue Erkenntnis waere:
 
 [Artikel auf Heise Developer](http://www.heise.de/developer/artikel/Status-quo-der-Versionskontrolle-1979724.html)
 
-> Als besonders leidenschaftlich lässt sich das Verhältnis zwischen dem Versionierungswerkzeug und seinem Benutzer, dem Entwickler, üblicherweise nicht bezeichnen. Aus der Sicht vieler Entwickler steht das Tool im besten Fall nicht im Weg. Der eine oder andere freut sich auch über eine leistungsfähige GUI und über performantes Einchecken von Änderungen, wohl wissend, dass es auch Tools gibt, die einen an dieser Stelle mitunter mit langen Wartezeiten quälen. 
+> Als besonders leidenschaftlich lässt sich das Verhältnis zwischen dem Versionierungswerkzeug und seinem Benutzer, dem Entwickler, üblicherweise nicht bezeichnen. Aus der Sicht vieler Entwickler steht das Tool im besten Fall nicht im Weg. Der eine oder andere freut sich auch über eine leistungsfähige GUI und über performantes Einchecken von Änderungen, wohl wissend, dass es auch Tools gibt, die einen an dieser Stelle mitunter mit langen Wartezeiten quälen.
 
 
 ### Utrecht bei Nacht
@@ -128,9 +98,9 @@ Also ein klein wenig fuehle ich mich da doch an so manche Untersuchungsausschues
 * commit 969b497595c0eb3be264fd172a1ee9d6f1c9f132
   Author: bahren <bahren@0cc184cd-a8c2-4f43-91e4-3451699bf036>
   Date:   Tue Oct 15 16:38:18 2013 +0000
-  
+
       Coding style adjustments, using both comments provided by Werner and output from pyLint.
-      
+
       git-svn-id: https://svn.knmi.nl/svn/tropocal/ocalfw/trunk@690
 ~~~~
 
@@ -225,7 +195,7 @@ within a terminal window yields a nicely rendered colorful graphical representat
 
 It always comes down to the same thing: if there s something you need to do over and over again, then probabaly it is a good idea to script and automatize it. This very general rule can be applied to almost everything, e.g. to the generation of documents from their LaTeX sources.
 
-> In addition to referencing the formal parameters you can reference the values `${ARGC}` which will be set to the number of arguments passed into the function as well as `${ARGV0} ${ARGV1} ${ARGV2} ...` which will have the actual values of the arguments passed in. This facilitates creating macros with optional arguments. Additionally `${ARGV}` holds the list of all arguments given to the macro and `${ARGN}` holds the list of arguments past the last expected argument. 
+> In addition to referencing the formal parameters you can reference the values `${ARGC}` which will be set to the number of arguments passed into the function as well as `${ARGV0} ${ARGV1} ${ARGV2} ...` which will have the actual values of the arguments passed in. This facilitates creating macros with optional arguments. Additionally `${ARGV}` holds the list of all arguments given to the macro and `${ARGN}` holds the list of arguments past the last expected argument.
 
 ~~~~
 macro (add_latex_documents)
@@ -286,7 +256,7 @@ Heute Nachmittag kam es aber noch einmal ein Stueck besser:
 > we've used your photo on the [Damian Wilson facebook page](https://www.facebook.com/officialdamianwilson) with your photo credit in the description.
 > We would like to use it on the official homepage as well if you don't mind.
 >
-> Please let us know 
+> Please let us know
 
 Naja, wenn ich schon so nett gefragt werde, dann lasse ich (hoffe ich doch) nicht lange mit einer Antwort auf mich warten. Da die a) die Herangehensweise so war, wie ich mir dies deutlich oefter wuenschen wuerde und b) so eine Publicity hoffentlich nicht schaden kann, habe ich da umgehend eine Antwort zurueckgeschickt und gruenes Licht gegeben. Dauerte dann andererseits nicht sonderlich lange, da war die Startseite fuer die derzeit laufende Tour auch schon angepasst.
 
@@ -617,7 +587,7 @@ With Clang:
 
 ~~~~
 [ 14%] Building C object source/c/swir/CMakeFiles/s4.dir/data/dataset.c.o
-/Users/lars/CodeDevelopment/Projects/Work/TROPOMI/swir/source/c/swir/data/dataset.c:596:11: warning: 
+/Users/lars/CodeDevelopment/Projects/Work/TROPOMI/swir/source/c/swir/data/dataset.c:596:11: warning:
       comparison of unsigned expression < 0 is always false [-Wtautological-compare]
                                 if (d < 0) {
                                     ~ ^ ~
