@@ -4,11 +4,61 @@ in_menu: false
 author: Lars Baehren
 tags: Blog
 ---
-
+ 
 # {title:} #
-
+ 
 **:::**
+ 
+### Nachmittag im Wald ###
 
+
+
+
+_Sun, 30. March 2014 -- 22:16_
+
+Hier mal noch ein weitere kleiner photographischer Eindruck vom gestrigen Nachmittag
+im Garten (naja streng genommen nur aus der Naehe des Gartens):
+
+![Nachmittag im Wald](/blog/2014/2014-03/hdr_20140329_162537_Tree.jpg)
+
+Waehrend das gestrige Bild ja mit dem Macro entstanden war, handelt es sich bei
+dieser Aufnahme (wieder einmal) um eine HDR Serie, welche mit dem Weitwinkel
+aufgenommen wurde. Statt einfach nur zwischen den Schrebergaerten herumzulaufen, habe
+ich einfach mal einen Abstecher in den nahegelegenen Wald eingeschlagen, um dort
+einfach mal zu schauen, welche Effekte denn das durch die Baeume fallende Licht zu bieten hat.
+Wirklich sehr schoen, auch wenn ich da sicherlich noch einmal ein wenig probieren
+muss, wie sich dies am besten einfangen lasst; ein paar Versuche in die Richtung habe ich
+ja schon unternommen, aber das kann immer noch einmal besser werden.
+ 
+**:::**
+ 
+ 
+### Die Ernte hat begonnen ###
+
+
+
+
+_Sat, 29. March 2014 -- 22:13_
+
+Es ist zwar immer noch vergleichsweise frueh im Jahr -- zumindest was die
+Nutzpflanzen betrifft -- aber am Ende des heutigen Abstechers in den Schrebergarten
+haben wir die ersten Ertraege mit nach Hause nehmen koennen. Waren noch keine Unmengen,
+aber fuer die Zubereitung eines sehr leckeren Dips hat es definitiv gereicht.
+
+![Pflanzen im Garten](/blog/2014/2014-03/dsc_20140329_165954.jpg)
+
+So wie hier auf dem Bild regt es sich mittlerweile aber in diversen Beeten; die
+diversen Samen und Pflanzen, welche Julia in die Erde gesetzt hat, lassen ihre
+Triebe aus dem Boden schauen und geben sich zu erkennen. Auch wenn ich mir bisher
+nicht die Muehe gemacht habe wirklich systematisch den Fortgang im Garten zu dokumentieren
+-- wozu natuerlich auch gehoeren wuerde ein und die gleich Einstellung in regelmaessigen
+Zeitabstaenden einzufangen -- so faellt doch schon recht deutlich auf, dass es auf
+den Bildern recht farbenfroh wird. Ein Teil dieser Farben sind Blueten... warten wir
+aber noch ein wenig, gibt es hoffentlich die Chance eigenes Obst zu naschen...
+ 
+**:::**
+ 
+ 
 ### Zusammengefuehrt ###
 
 
@@ -69,10 +119,10 @@ Building-Blocks davon losgeloest einsetzen koennen. Wer weiss, vielleicht kommen
 im Zuge dieser Aktivitaeten auch noch ein paar Zeilen Code heraus, welche sich
 mit der Allgemeinheit teilen lassen (so weit ist es bisher aber definitiv noch
 nicht).
-
+ 
 **:::**
-
-
+ 
+ 
 ### Keine Verbindung ###
 
 
@@ -102,10 +152,10 @@ Komplett gerissen scheint der Draht hin zur Aussenwelt allerdings noch nicht zu
 sein, denn im Internet surfen geht nach wie vor. Da werde ich also die aktuellsten
 Beitraege und Aenderungen einfach lokal bereitstellen, ehe ich wieder auf den
 Server zugreifen kann.
-
+ 
 **:::**
-
-
+ 
+ 
 ### Kleine Aenderungen ###
 
 
@@ -119,7 +169,6 @@ Bedeutung:
 
 ~~~~
 -   Copyright &copy; 2004-2013 Lars B&auml;hren |
-+   Copyright &copy; 2004-{date: { format: %Y}} Lars B&auml;hren |
 ~~~~
 
 Da ich ja im Zuge des Domains ummelden ein wenig begonnen habe mir noch einmal
@@ -131,7 +180,6 @@ dafuer gesorgt, dass ein Timestamp mit in den Header jeden Eintrages geschrieben
 wird:
 
 ~~~~
-+date: 2004-01-09T19:52:00.0Z
 ~~~~
 
 Wenn dieser Eintrag korrekt vorgenommen wird, erhaelt man nicht nur zusaetzliche
@@ -147,10 +195,10 @@ anpasst, aber aus Entwicklerperspektive waere dies doch recht unbefriedigend.
 Folgerichtig habe ich die (deutlich ueberarbeitete) Anleitung noch einmal genauer
 unter die Lupe genommen und bin dort fuendig geworden - nun wird die Jahreszahl
 endlich dynamisch eingebunden und braucht nicht mehr von Hand eingetragen werden.
-
+ 
 **:::**
-
-
+ 
+ 
 ### 20 Jahre Deutschlandfunk ###
 
 
@@ -171,10 +219,10 @@ Als fleissiger Hoerer des Deutschlandradio kann ich den diversen Lobreden, welch
 > 20 Jahre Deutschlandradio - täglich 500 Minuten Nachrichten, rund 260 Stunden Eigenproduktionen in Wort und Musik, wöchentlich rund 890 Minuten Wissenschaft und Bildung. Über zwei Millionen Hörerinnen und Hörer täglich. [Deutschlandradio](http://www.deutschlandradio.de) mit den Programmen [DLF](http://www.deutschlandfunk.de), [DLRK](http://www.deutschlandradiokultur.de) und [DRadio Wissen](http://dradiowissen.de). 20 Jahre Deutschlandradio, bundesweit und werbefrei.
 
 So viel Ohrenfutter, wie da ausgestrahlt wird, kann eine einzelne Person wohl kaum verdauen (ist jetzt auch nicht mein Ziel); da ist es schon gut, dass es auch die Moeglichkeit Inhalte zu abonieren und spaeter zu hoeren. Meine treue Gefolgschaft geht wohl spaetestens auf das Jahr 2004 zurueck, als ich nach Dwingeloo gezogen bin; mit der Umsiedlung in den Norden der Niederlande ware der Deutschlandfunk die kontinuierlichste und verlaesslichste Nachrichtenquelle, welche ich in gut transportabler Weise ueber das Internet abgreifen konnte. Gut zehn Jahre spaeter zeichnen die [Eintraege auf last.fm](http://www.last.fm/user/larsbaehren/library/music/Deutschlandradio) recht gut nach dass ich auch ueber den Wechsel von Endgeraeten und Wohnorten hinweg, dem Sender treu geblieben bin.
-
+ 
 **:::**
-
-
+ 
+ 
 ### Neues Zuhause ###
 
 
@@ -187,10 +235,10 @@ Hurra, die erste der Domains ist online... auf wenn es bisher noch keinen grossa
 ![anuyoga.de](/blog/2014/2014-03/2014-03-25_anuyoga.png)
 
 Ausgangspunkt -- zumindst zu einem erheblichen Teil -- waren die guten Erfahrungen, welche ich ueber das letzte Jahr mit [DomainFactory](http://www.df.eu) gemacht habe; waehrend [1&1](https://www.1und1.de) als Anbieter mit Sicherheit mehr in aller Munde ist -- was sich im Wesentlichen wohl auch auf entsprechende Werbepraesenz zurueckfuehren laesst -- war mir _DomainFactory_ seinerzeit bei [prometheus](http://prometheus-bildarchiv.de) ans Herz gelegt worden. Da bei Julia in Kuerze auch der Ablauf des bestehenden Vertrages ins Haus stand, war dies der ideale Zeitpunkt die Webhosting-Angelegenheiten neu zu sortieren. Um es mal gleich vorweg zu nehmen: wenn man bereits ueber registrierte Domains verfuegt, sollte man durchaus ein klein wenig mehr Zeit fuer den Vorgang einplanen, denn schliesslich ist es nicht ausreichend einfach nur einen Vertrag zu kuendigen und an anderer Stelle zu unterschreiben. Gluecklicherweise habe ich ja alle Unterlagen von meinem Wechsel aufgehoebn, so dass ich da noch einmal nachschauen konnte, was genau ich seinerzeit gemacht habe -- auch wenn es sicherlich das eine oder andere extra-Detail zu beruecksichtigen gab. Aber: nach ein klein wenig Mail-Verkehr tauchen die Domains nicht nur in der Konto-Uebersicht auf, sondern die online angezeigte Nachricht stammt bereits von _DomainFactory_.
-
+ 
 **:::**
-
-
+ 
+ 
 ### Geduldsprobe ###
 
 
@@ -199,10 +247,10 @@ Ausgangspunkt -- zumindst zu einem erheblichen Teil -- waren die guten Erfahrung
 _Mon, 24. March 2014 -- 07:49_
 
 Das ist schon eine Geduldsprobe: der ICE 222 ist heute mit (mittlerweile) einer Stunde Verspaetung unterwegs ins Richtung Amsterdam. "Unterwegs" bedeutet in diesem Fall, dass wir in der Tat gerade erst in Koeln abgefahren sind, was bedeutet, dass wir durchaus noch mehr Verspaetung unterwegs aufsammeln koennen (was ich mal nicht hoffe). Was mich ein wenig skeptisch macht ist die Tatsache, dass es laut Durchsage technische Stoerungen am Zug gegeben hat -- aus Erfahrung muss ich also (im schlimmsten Fall) damit rechnen, dass wir unterwegs liegen bleiben und den Zug wechseln muessen (auch wenn ich mal hoffe, dass es nicht so weit kommen wird). Da es die letzten Naechte doch recht ordentlich abgekuehlt st, war es recht frostig auf dem Bahnsteig; da a) die Verspaetungszeit immer wieder angepasst wurde und b) die Zuganzeige unterhalb der Gleise ein wenig duerftig ist, konnte ich mich nicht einfach abseilen bis der Zug einfaehrt -- waere ja aergerlich, wenn ich mich irgendwo ins Warme verkrieche, dadurch dann aber den Zug verpasse, wenn dieser endlich eintrifft. Faehrt von Gleis 1 aus ab, hat man den Warteraum in Reichweite, von Gleis 5 aus allerdings haette man massiv Schwierigkeiten den Zug zu erwischen, sollte dieser mit einem Male an der Bahnsteigkante auftauchen.
-
+ 
 **:::**
-
-
+ 
+ 
 ### Tannenbusch erkunden ###
 
 
@@ -215,10 +263,10 @@ Heute war es endlich so weit: nachdem ich zwar so schon einiges von dem Haus erf
 ![Tree at Sunset](/blog/2014/2014-03/hdr_20140323_181644_Tree_at_Sunset.jpg)
 
 Im Anschluss an den Besuch haben wir noch einmal eine kleine Runde durch das noerdliche Ende von Tannenbusch eingelegt. Dies hat ein wenig den bisherigen Eindruck verstaerkt, dass wir es in der Tat mit dem netteren Ende des Ortsteiles zu tun haben: bin hin zu den Felder jenseits der Bebauung sind es nur ein paar Minuten, andererseits ist die Autobahn in Richtung Koeln ausreichend weit weg, so dass man diese nicht staendig in den Ohren hat. Ich bin da einfach mal gespannt ab bald ein wenig ausgibiger (natuerlich auch mit Kamera) auf Erkundungstour zu gehen).
-
+ 
 **:::**
-
-
+ 
+ 
 ### Fotos machen ###
 
 
@@ -231,10 +279,10 @@ Angesichts der Tatsache, dass wir doch so einiges an Gemuese und Obst ueber den 
 ![Hof Mandt](/blog/2014/2014-03/dsc_20140322_152012.jpg)
 
 Von den mehr als 600 Bildern sind mittlerweile schon eine ganze Reihe rausgeflogen: auch wenn es mitunter die Lichtverhaeltnisse waren, so lag das Problem in fast 90% der Faelle in den Gesichtsausdruecken der Beteiligten. Da ich eben nicht vorgehe wie mal eben durchrasenden Damen und Herren von der Presse, versuche ich schon natuerliche Situationen einzufangen -- die eher gequaelten Laecheln auf den gestellten Bildern spare ich mir dann doch lieber. Diese Vorgehensweise erfordert sicherlich ein wenig mehr Geduld (und bietet weniger vorhersagbare Resultate), aber was ich beim Sichten der Aufnahmen bisher habe sehen koennen, geht doch recht gut in die Richtung, welche mir vorschwebt.
-
+ 
 **:::**
-
-
+ 
+ 
 ### Kampf gegen soziale Medien ###
 
 
@@ -255,10 +303,10 @@ Dass die Sperrung eines einzelnen Service allerdings nicht so ohne weiteres funk
 ![Twitter statement on blocking in Turkey](/blog/2014/2014-03/2014-03-21_Twitter_Turkey.png)
 
 Ich denke mal im Laufe der kommenden Stunden und Tage werde da noch einige kreative Moeglichkeiten auftauchen, wie sich die Sperrung umgehen laesst -- bleibt dann mal abzuwarten, ob offizielle Stellen in der Tuerkei dann nachziehen. Worauf es dann letzten Endes hinauslaufen wird ist ein konstanter Wettlauf der Regierung mit einer internationalen Community, welche derartige Eingriffe wohl nicht so ohne weiteres akzeptieren wird. Letzten Endes wuerde ich da auf das Netz setzen, es sei denn die nun getroffenen Massnahmen werden zu einer noch viel umfangreicheren Kontrolle aller Kommunikationswege ausgeweitet.
-
+ 
 **:::**
-
-
+ 
+ 
 ### Auf dem Weg ins Institut ###
 
 
@@ -271,10 +319,10 @@ Als ich heute Morgen in Richtung [SRON](http://www.sron.nl) aufgebrochen bin und
 ![Ausblick von der Haltestelle](/blog/2014/2014-03/dsc_20140320_101729.jpg)
 
 Wie sich erkennen laesst (zumindest hoffe ich dies) bietet sich von der Bushaltestelle ein rechter guter Ausblick auf die Kreuzung, mit allen ihrem Berufsverkehr (auch wenn es um kurz nach zehn schon deutlich weniger geknubbelt war, als dies eine Stunde frueher noch der Fall waere). In dem Gebaeude auf der anderen Strassenseite (hier groessenteils durch den Bus verdeckt) befinden sich ein _Albert Hein_ und zwei tuerkische Lebensmittelgeschaefte, ein Fahrradladen und noch ein paar andere Geschaefte, welche aber nicht weiter von Bedeutung fuer mich sind. Nicht dass ich sonderlich viel in Utrecht einkaufen wuerde -- typischerweise komme ich mit einem Liter Milch aus -- aber im Zweifelsfall sind es nur ein paar Meter von der Wohnung aus.
-
+ 
 **:::**
-
-
+ 
+ 
 ### Testen lohnt sich ###
 
 
@@ -331,10 +379,10 @@ Wie schon im vorherigen Fall, hat auch diese Woche wieder gezeigt, dass ausgibig
 ~~~~
 
 Um so weit es geht anderweitige Fehler auszuschliessen, habe ich sicherheitshalber den gleichen Plot noch einmal auf dem "Fusswege" erzeugt, um auf diese Weise aber auch nachweisen zu koennen, dass der Fehler nicht in den zugrundeliegenden Graphik-Routinen liegt. Nach einigem hin und her hatte ich also den Fehler so gut es ging isoliert, so dass es an der Zeit war das Problem zu melden. Stellt sich heraus, dass da in der Tat ein Fehler vorlag, welcher in dem Abstraktions-Layer zu finden war; da a) bisher keinerlei Unit-Tests hierfuer vorhanden waren noch b) die Python Klasse anderweitig gross eingesetzt wurde, fand keinerlei Ueberpruefung statt. Letzteres -- und auch der Fehler selber -- sind jetzt behoben.
-
+ 
 **:::**
-
-
+ 
+ 
 ### Entourage (2015) ###
 
 
@@ -351,10 +399,10 @@ _Entourage_ schliesst sich damit [Veronica Mars](http://www.imdb.com/title/tt277
 ![Adrian Grenier Filmography](/blog/2014/2014-03/2014-03-17_Entourage.png)
 
 Die Zufaelligkeit kam in diesem Falle daher, dass ich eigentlich im Blog von [Chase Jarvis](http://www.chasejarvis.com) nach den aktuellen Photo-Shoots schauen wollte (wovon es ja kleine Haeppchen auf Google+ zu lesen gab); auf diesem Wege war ich dann wieder ueber [chasejarvis live](http://blog.chasejarvis.com/blog/live) Folge mit [Adrian Grenier](http://www.imdb.com/name/nm0004978), welcher ja in _Entourage_ die Hauptrolle spielt. Erst einmal gedanklich in dieser Ecke angekommen, war es natuerlich nur noch ein recht kleiner Sprung im Sinne von "was ist eigentlichen aus den Plaenen fuer den Film geworden" -- eine Frage, welche ich nun mit einer konkreten Antwort (und sogar einem damit verbundenen Datum) versehen kann.
-
+ 
 **:::**
-
-
+ 
+ 
 ### Kein Strom ###
 
 
@@ -363,34 +411,6 @@ Die Zufaelligkeit kam in diesem Falle daher, dass ich eigentlich im Blog von [Ch
 _Mon, 17. March 2014 -- 07:19_
 
 Das ist nicht unbedingt das, womit ich hier auf der Reise von Bonn nach Utrecht gerechnet habe: entweder habe ich einen recht unguenstigen Platz erwischt oder aber es gibt generell Probleme mit der Stromversorgung an den Sitzplaetzen hier im ICE 222. Was ich ja durchaus kenne, ist dass es am Grenzuebergang bei Emmerich einen kurzen Aussetzer in der Versorgung gibt (was wohl einfach mit dem Wechel vom deutschen ins niederlaendische Netz zu tun hat; dass aber schon zwischen Koeln und Duesseldorf keinerlei Saft auf der Steckdose ist, gehoert nicht unbedingt zu den normalen Gegebenheiten. Da ich ja schon auf der Fahrt von Bonn nach Koeln mit dem Laptop gearbeitet habe, waren die Accus schon vor dem Einsteigen in den ICE nicht mehr voll -- aber auch schon wuerde es recht knapp bis Utrecht, denn schliesslich beschraenke ich mich in der Regel ja nicht einfach darauf Mails zu lesen und schreiben (wenn der Compiler regelmaessig laeuft zieht dies einfach deutlich mehr Resourcen). Unter diesen Umstaenden werde ich meine Arbeitsplanungen fuer die Fahrt wohl ein klein wenig anpassen muessen -- gluecklicherweise habe ich noch ein paar Dokumente mit im Gepaeck, welche ich alternativ lesen kann.
-
+ 
 **:::**
-
-
-### Und wieder gepackt ###
-
-
-
-
-_Sun, 16. March 2014 -- 22:32_
-
-Da haette ich also wieder alles in so weit zusammengelegt und zusammengepackt, dass ich morgen frueh wieder in Richtung Utrecht aufbrechen kann. Es gibt leider keine wirkliche Moeglichkeit Dinge einfach komplett abreisefertig in die Ecke zu stellen -- vor allen der Photorucksack (in welchem sich ja auch immer das Laptop befindet) wird hier wie dort benutzt, so dass ich schauen muss alles wieder in den Zustand zu versetzen, dass alle notwendigen Utensilien verpackt sind. Die Reisetasche selber stellt hingegen fast schon den einfacheren Teil dar, denn was Klamotten betrifft kann ich mitunter auf einen vorhandenen Vorrat zurueckgreifen -- da sind es also vor allen Dingen nur noch die Lebensmittel, welche kurz vor dem Aufbruch vom Kuehlschrank aus in die Tasche wandern muessen.
-
-**:::**
-
-
-### Raritaet ###
-
-
-
-
-_Sat, 15. March 2014 -- 21:46_
-
-Also dies ist ja schon ein Schaetzchen: als ich heute Abend den Rechner aufgemacht habe, welchen wir von Muttern mitgebracht hatten, damit ich die darin eingebaute Festplatte von Daten saeubern kann, war ich ja recht erstaunt, was ich da aus dem Inneren des Rechners zog:
-
-![Festplatte](/blog/2014/2014-03/dsc_20140315_213105.jpg)
-
-Bei diesem Anblick komme ich mir doch gleich wie in einer Zeitmachine vor -- ich weiss garnicht mehr, wann ich ueberhaupt das letzte Mal eine intern verbaute Festplatte mit weniger als einem TB in den Haenden gehabt habe. Spaetestens seit dem Kauf des zweiten [Drobo](http://en.wikipedia.org/wiki/Drobo) bin ich -- um mit den Speicherplatzanforderungen Schritt zu halten -- dazu uebergangen in der 2 TB und spaeter dann 3 TB Region einzukaufen. Das Synology NAS faehrt derzeit zwar noch einen Mix, in welchem drei 1 TB Platten eingeklinkt sind, aber alles was kleiner ist wird bestenfalls noch als mobiler Speicher eingesetzt. Folgerichtig mache ich nicht mehr, als ein Secure Erase ueber die Platte laufen zu lassen, damit diese dann anschliessend wieder in den Rechner eingebaut und der Altelektronik-Verwertung zugefuehrt werden kann.
-
-**:::**
-
+ 
