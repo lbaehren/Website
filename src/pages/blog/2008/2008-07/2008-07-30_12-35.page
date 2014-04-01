@@ -1,0 +1,80 @@
+---
+title: "Traumatized by Steve"
+in_menu: false
+author: Lars Baehren
+date: 2008-07-30Z12:35:00Z
+---
+
+## {title:} ##
+
+_Wed, 30. July 2008 -- 12:35_
+
+I just have been rushing to my desk at the University after an encounter of the unexpected kind. Working from home this morning I have been busy getting the support for [Mac OS X](http://www.apple.com/macosx) fully integrated with the [CMake](http://www.cmake.org)-based configuration environment. Until now there is still the problem, that for some reason (still evading me why) the Cosmic Ray code won't build from the same code tree as on other platforms. Since I ran into a dead end already quite some while back, I decided to start a separate branch, trying to get the configuration for Mac OS X working from scratch -- an endeavor which after some hours of hard work turned out successful. So what I have been running for most of the time now is an arrangement like this
+
+~~~~
+.--src
+   |-- CR-Tools
+   |   |-- apps
+   |   |-- implement
+   |   `-- test
+   `-- cr
+   |   |-- apps -> ../CR-Tools/apps
+   |   |-- implement
+   |   `-- test -> ../CR-Tools/test
+~~~~
+
+where I -- of course -- have been using the same source files, but a different setup for the configuration framework. Now on a general perspective, this is of course not the way things are supposed to be: the role of the configuration system indeed is to figure and how to build your software on very different systems/platforms given the same source code, working off the same code tree. So in order to get to that, I renewed my efforts to integrate the CMake scripts written for Mac OS X into the scripts working on several Linux flavors ([Debian](http://www.debian.org), [SUSE](http://www.opensuse.org), [Kubuntu](http://www.kubuntu.org)). However for some reason still evading me I would not be able to build the core library of the CR-Tools (``libcr.a``); while the contents of ``test`` works -- and actually compiles and links against the same libraries as the files in ``implement`` I still would get a screen full of error messages. So in a sort of last attempt to exclude possible errors from parsing directory names, I decided to rename ``CR-Tools`` into something without any extra symbols in it... and was in for a surprise. The standard Linux/UNIX behavior in mind I ran a simple
+
+~~~~
+mv CR-Tools CR
+~~~~
+
+to be left with one sub-directory only. So instead of having both ``cr`` and ``CR`` side by side I was left with a directory ``cr`` only! Afraid of having lost work done during the last 12 hours (well, in principle I do have backups of everything each 2 hours), I packed up all my stuff and headed for the University.
+
+In order to better understand what just had been happening I decied for a very simple test to be run on multiple machines: start with the creation of two directories and sample files therein -- e.g.
+
+~~~~
+mkdir CR-Tools cr
+touch CR-Tools/a.txt
+touch cr/b.txt
+~~~~
+
+Testing the created directory structure via the ``tree`` commando would yield:
+
+~~~~
+.
+|-- CR-Tools
+|   `-- a.txt
+`-- cr
+    `-- b.txt
+~~~~
+
+Now start moving directories:
+
+~~~~
+mv CT-Tools CR
+~~~~
+
+The outcome of moving the directories -- as it turns out -- indeed is dependent on the platform:
+
+  * Mac OS X
+
+~~~~
+.
+`-- cr
+    |-- CR-Tools
+    |   `-- a.txt
+    `-- b.txt
+~~~~
+
+  * Debian GNU Linux
+
+~~~~
+.
+|-- CR
+|   `-- a.txt
+`-- cr
+    `-- b.txt
+~~~~
+
+So why the hell Mac OS X behaves in the way it does I still haven't been able to understand. Having a little bit of time thinking about it though, I am suspecting that this might have something to do with different file systems which can be employed on a partition (I would actually need to get to the bottom of this to prove it). Nevertheless I am quite shocked, that the UNIX which Steve sent into my home, comes with a few quirks of unexpected nature -- this definitely put a damper on my mood and impression of the operating systems.

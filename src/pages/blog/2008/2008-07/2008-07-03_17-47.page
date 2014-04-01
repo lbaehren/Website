@@ -1,0 +1,30 @@
+---
+title: "Auf der Suche nach den Daten"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Thu, 03. July 2008 -- 17:47_
+
+Anlaesslich des -- leicht verspaeteten -- Zwischenstop in **Zwolle** hier mal eine kurze Geschichte aus dem Arbeitsleben...
+
+Einer der Vorteile, dass ich ja regelmaessig bei [ASTRON](http://www.astron.nl) bin ist, dass ich damit die Moeglichkeit habe einigen Dingen recht direkt nachzugehen, welche andere Leute im wesentlichen nur via Telefon oder Mail nachgehen koennen. Hinzu kommt sicherlich zu einem guten Teil auch die Tatsache, dass mein Gesicht nach wie vor sehr gut in Dwingeloo bekannt und gern gesehen ist -- eine Kombination die so in dieser Weise bestimmt nicht auf alle Leute aus der Abteilung in Nijmegen zutrifft. So kommt es also, dass mir haeufig doch einige Dinge moeglich sind -- oder Informationen zur Verfuegung stehen -- welche fuer andere nur schwer zu erreichen sind; auch auf diesem Hintergrund ist nachvollziehbar, dass ich durch meine regelmaessigen Abstecher in den Norden als ein Verbindungsglied zwischen Nijmegen und Dwingeloo funktioniere. Neben dem allgemeinen Informationsaustausch gibt es immer wieder einmal konkrete Auftraege, so wie dieses Mal bisher verschollen gebliebenen Daten einer Beobachtung nachzuspueren.
+
+Wie ich schon mehrfach in Mitschriften des [LOFAR Software Meeting](http://usg.lofar.org/wiki/doku.php?id=documents:minutes:progress_meeting_lofar_software) gelesen habe, hatte es einige Probleme mit einer irgendwann zu Beginn April angeforderten Beobachtung gegeben; auch wenn nie wirkliche Details auftachten, so gab es doch immer wieder mal ein paar Hinweise darauf, dass die Angelegenheit nicht komplett in Vergessenheit geraten war, aber ein wenig auf kleiner Flamme vor sich hinkoechelte. Da sich aber sowohl in Nijmegen als auch in Groningen langsam Unruhe regte, schien es doch ganz sinnvoll, dass ich der Sache ein wenig auf den Zahn fuehle; durch die physische Anwesenheit ist es natuerlich deutlich einfacher auch einfach mal direkt bei den Leuten im Buero aufzutauchen, was doch etwas ganz anderes ist als nur eine Mail zu schreiben. Nun gut, also bin ich nach dem Mittagessen mal ein wenig rundgelaufen...
+
+Der erste Stop auf der Reise war -- wie es ja eigentlich logische sein sollte -- der _Operations Rooms_ der Sternwachte, von wo aus ja sowohl das Westerbork Teleskop als auch LOFAR betrieben werden sollen. Schon nach fuenf Minuten stellt sich allerdings heraus, dass keiner der beiden anwesenden Operatoere so richtig weiss was Sache ist; keiner der beiden kann sich an die entsprechende Beobachtung erinnern und so bekomme ich zunaechst einmal den Verweis doch im Obervations-Katalog nachzuschauen (wobei mir leider erst spaeter einfaellt, dass bei einem guten Support dies sofort haette passieren muessen). Wo denn die Daten geblieben sind, sollte in der Tat die Beobachtung durchgefuehrt worden sein -- vielleicht sollte ich mich diesbezueglich eher bei jemand anders erkundigen. Also gut, die naechste Station waere damit Stefan Wijnholds, welcher ja einer der aktiven Benutzer der LOFAR Stationen ist; alles was ich dort aber zu hoeren bekomme ist genau das, was ich bereits in den Minutes lesen konnte. Immerhin kommt Stefan dann noch auf die Idee, dass ich vielleicht bei Ronald Nijboer vorbeischauen sollte, da dieser ja schliesslich ein wenig Ueberblick darueber haben sollte, was fuer Test-Beobachtungen durchgefuehrt werden. Dementsprechend ziehe ich also nach dem naechsten Zimmer weiter... Wie sich allerdings herausstellt weiss auch Ronald nicht viel mehr; er verweisst zwar -- wie schon Stefan zuvor -- unter anderem auf Michael, aber von jenem weiss ich durch ein kurzes Gespraech am Mittwoch, dass dieser noch weniger weiss was der Stand der Sachen ist. Eine der naechsten Massnahmen: noch ein einmal die Minutes der Software Meetings durchgehen, um zumindest eine ungefaehre Idee davon zu haben, wann denn die Beobachtung durchgefuehrt wurde. Mit einem groben Zeitraum ausgestattet nehmen wir uns den Observations-Katalog vor und finden... nichts! Keine Beobachtung der angefragten Art ist in der Liste zu finden, was fuer mich entweder bedeutet, dass (a) diese Beobachtung nie durchgefuehrt worden ist oder aber (b) die von den Operators gefuehrte Liste unvollstaendig ist. Welche der beiden Moeglichkeiten mich nun mehr beunruhigen soll weiss ich noch nicht, aber sonderlich vertrauensweckend ist keine Variante.
+
+Wo stehen wir also damit? In einer vor der Abreise abgeschickten Mail an eine ganze Reihe Leute haetten wir da folgende Feststellungen:
+
+ - Even though the observation seems to have been carried out, no data were shipped to either Kalpana or people at Nijmegen.
+ - No entry of the observation can be found in the observation catalogue!
+ - None of the operators is aware of the fact that such an observation was carried out; in fact their suggestion was to contact S. Wijnholds, R. Nijboer or A. Horneffer - of which none was involved in the observation, hence have no further information but what was in the minutes of the software meeting.
+ - The only people with possible involvement in this observation left to ask -- Ruud and Adriaan -- are either sick or on vacation.
+
+Da ich Rene -- als Leiter der Sternwachte -- mit in der Adressatenliste stehen hatte, habe ich mir abschliessend erlaubt, meine Bedenken ueber die Art auszudruecken, in welcher die Dinge derzeit behandelt werden:
+
+> This is a very frustrating situation, since I had been hoping for a slightly more organized fashion in which the observatory was taking care of the observations; as far as I can judge from following up the issue, no notifications were passed along, such that neither is clear if the data still exist nor -- if they do -- what their status and location is. 
+
+Ich lasse mich einmal ueberraschen, was denn als naechstes passiert. Bis dahin aber bleiben die Daten -- so sie denn wirklich aufgenommen wurden -- erst einmal verschollen.
