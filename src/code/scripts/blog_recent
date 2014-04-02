@@ -2,6 +2,7 @@
 
 varExtension=".page"
 varOutfile="index.page"
+varYear=`date +%Y`
 
 ## Base/Root directory of the blog entries
 varBasedir=`pwd`
@@ -53,7 +54,7 @@ writeRecentEntries ()
   for FILE in $varEntries
   {
     varTitle=`blog_entry --get-title ${FILE}`
-    varText=`cat $varBasedir/$FILE | grep -v "title\:"  | grep -v "date\:" | grep -v "author\:" | grep -v "tags\:" | grep -v "menu\:" | sed s/"---"//`
+    varText=`cat $varBasedir/$FILE | grep -v "title\:"  | grep -v "date\: ${varYear}" | grep -v "author\:" | grep -v "tags\:" | grep -v "menu\:" | sed s/"---"//`
     echo " "                   >> $varBasedir/index.page
     echo "### ${varTitle} ###" >> $varBasedir/index.page
     echo "${varText}"          >> $varBasedir/index.page

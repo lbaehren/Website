@@ -1,7 +1,5 @@
 
 foreach (script
-    blog_entry
-    blog_index
     blog_recent
     convertEntries
     )
