@@ -1,0 +1,40 @@
+---
+title: "Directory listings with Wget"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-04-03T11:57:20.00Z
+---
+
+## {title:} ##
+
+_Thu, 03. April 2014 -- 11:57_
+
+It is and remains one of the most useful tools I know when it comes to transferring files:
+
+> [GNU Wget](https://www.gnu.org/software/wget) is a free software package for retrieving files using HTTP, HTTPS and FTP, the most widely-used Internet protocols. It is a non-interactive commandline tool, so it may easily be called from scripts, cron jobs, terminals without X-Windows support, etc.
+
+One of the things I recently learned is how to retrieve the listing of a remote directory (e.g. on a FTP server); while of course
+
+~~~~
+wget <baseurl>/*.<suffix>
+~~~~
+
+is great to download all files of a given suffix, once in a while I'd actually like to have the listing itself; especially when running a longer download it is nice not needing to step through the whole list time and time again, but to feet Wget a list of URLs to work through and then tick off the files which have been retrieved already. That indeed such a list is being generated can be seen from the fact that when running something like the above instruction Wget creates a listing... but then removes it after the fact:
+
+~~~~
+==> PASV ... done.    ==> LIST ... done.
+
+    [ <=>                                   ] 2,503       --.-K/s   in 0.009s
+
+2014-04-03 10:38:13 (258 KB/s) - ‘.listing’ saved [2503]
+
+Removed ‘.listing’.
+~~~~
+
+If you look around -- or somewhat deeper into the Wget documentation -- you will find that indeed there is a way to retrieve and keep such a listing:
+
+~~~~
+wget <url> --spider --no-remove-listing
+~~~~
+
+This still is not yet the desired list of URLs, but with a few scripting instructions around the previous statement, generating a list -- which then in turn can be passed along to other tools as well -- is rather straight-forward.

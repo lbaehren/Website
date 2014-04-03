@@ -9,6 +9,62 @@ tags: Blog
  
 **:::**
  
+### Directory listings with Wget ###
+
+
+
+
+_Thu, 03. April 2014 -- 11:57_
+
+It is and remains one of the most useful tools I know when it comes to transferring files:
+
+> [GNU Wget](https://www.gnu.org/software/wget) is a free software package for retrieving files using HTTP, HTTPS and FTP, the most widely-used Internet protocols. It is a non-interactive commandline tool, so it may easily be called from scripts, cron jobs, terminals without X-Windows support, etc.
+
+One of the things I recently learned is how to retrieve the listing of a remote directory (e.g. on a FTP server); while of course
+
+~~~~
+wget <baseurl>/*.<suffix>
+~~~~
+
+is great to download all files of a given suffix, once in a while I'd actually like to have the listing itself; especially when running a longer download it is nice not needing to step through the whole list time and time again, but to feet Wget a list of URLs to work through and then tick off the files which have been retrieved already. That indeed such a list is being generated can be seen from the fact that when running something like the above instruction Wget creates a listing... but then removes it after the fact:
+
+~~~~
+==> PASV ... done.    ==> LIST ... done.
+
+    [ <=>                                   ] 2,503       --.-K/s   in 0.009s
+
+2014-04-03 10:38:13 (258 KB/s) - ‘.listing’ saved [2503]
+
+Removed ‘.listing’.
+~~~~
+
+If you look around -- or somewhat deeper into the Wget documentation -- you will find that indeed there is a way to retrieve and keep such a listing:
+
+~~~~
+wget <url> --spider --no-remove-listing
+~~~~
+
+This still is not yet the desired list of URLs, but with a few scripting instructions around the previous statement, generating a list -- which then in turn can be passed along to other tools as well -- is rather straight-forward.
+ 
+**:::**
+ 
+ 
+### Bye, bye Ubuntu One ###
+
+
+
+
+_Wed, 02. April 2014 -- 16:58_
+
+Da wird es wohl Zeit sich nach einer Alternative umzuschauen:
+
+> Ubuntu-Hersteller Canonical stellt seinen Dropbox-aehnlichen Speicherdienst Ubuntu One ein. Die Synchronisierung von Daten mit Ubuntu-One-Clients endet zum 1. Juni; die Daten sollen noch bis zum 31. Juli zum Download auf den Ubuntu-One-Servern bereitgehalten werden, danach werden sie geloescht. Schon jetzt ist es nicht mehr moeglich, Musik und zusaetzlichen Speicherplatz im Ubuntu-One-Store zu kaufen. Die kommende Ubuntu-Version 14.04 LTS soll bereits ohne Ubuntu-One-Integration ausgeliefert werden.
+
+Wie [Heise News](http://www.heise.de/newsticker/meldung/Canonical-beerdigt-seinen-Speicher-und-Musikdienst-Ubuntu-One-2160685.html) zurecht anmerken, gibt es mittlerweile doch zu starke Konkurenz, so dass sich der Service fuer Canonical wohl nicht mehr rechnet. Fuer die weitere Planung heisst dies also, dass ich mir Gedanken ueber eine alternative Loesung machen sollte, denn schliesslich ist es schon ganz nett, wenn sich Daten auf derart einfache Weise zwischen unterschiedlichen Rechner hin und her schieben lassen. Innerhalb der Hauswaende leistet das Synology sehr gute Dienste, aber da jenes ja nicht nach aussen sichtbar ist, muss ich da einen anderen Weg gehen. Gluecklicherweise ist bis zum Abschalten noch ein wenig Zeit, so dass ich mich ein wenig umschauen kann, was es sonst noch so alles gibt.
+ 
+**:::**
+ 
+ 
 ### Hartnaeckig ###
 
 
@@ -239,6 +295,7 @@ Bedeutung:
 
 ~~~~
 -   Copyright &copy; 2004-2013 Lars B&auml;hren |
++   Copyright &copy; 2004-{date: { format: %Y}} Lars B&auml;hren |
 ~~~~
 
 Da ich ja im Zuge des Domains ummelden ein wenig begonnen habe mir noch einmal
@@ -250,6 +307,7 @@ dafuer gesorgt, dass ein Timestamp mit in den Header jeden Eintrages geschrieben
 wird:
 
 ~~~~
++date: 2004-01-09T19:52:00.0Z
 ~~~~
 
 Wenn dieser Eintrag korrekt vorgenommen wird, erhaelt man nicht nur zusaetzliche
@@ -373,82 +431,6 @@ Dass die Sperrung eines einzelnen Service allerdings nicht so ohne weiteres funk
 ![Twitter statement on blocking in Turkey](/blog/2014/2014-03/2014-03-21_Twitter_Turkey.png)
 
 Ich denke mal im Laufe der kommenden Stunden und Tage werde da noch einige kreative Moeglichkeiten auftauchen, wie sich die Sperrung umgehen laesst -- bleibt dann mal abzuwarten, ob offizielle Stellen in der Tuerkei dann nachziehen. Worauf es dann letzten Endes hinauslaufen wird ist ein konstanter Wettlauf der Regierung mit einer internationalen Community, welche derartige Eingriffe wohl nicht so ohne weiteres akzeptieren wird. Letzten Endes wuerde ich da auf das Netz setzen, es sei denn die nun getroffenen Massnahmen werden zu einer noch viel umfangreicheren Kontrolle aller Kommunikationswege ausgeweitet.
- 
-**:::**
- 
- 
-### Auf dem Weg ins Institut ###
-
-
-
-
-_Thu, 20. March 2014 -- 20:34_
-
-Als ich heute Morgen in Richtung [SRON](http://www.sron.nl) aufgebrochen bin und wieder einmal -- wie mir dies in der letzten Zeit haeufiger zu passieren scheint -- an der Bushaltestelle auf ein Transportmittel warten musste, ist mir eingefallen, dass ich bisher eigentlich noch recht wenig von dem habe sehen lassen, was sich auf dem Wege von einer Tuer zur anderen befindet. Ob dies jetzt mal so sonderlich spannend ist, sei einmal dahingestellt, aber von der Vollstaendigkeit her macht es schon Sinn ein klein wenig davon nachzureichen. Da ich zu diesem Zeitpunkt allerdings schon ein wenig bepackt unterwegs war -- Rucksack, Tasche und Stativ -- wollte ich nicht grossartig mit dem Kramen anfangen; folgerichtig habe ich also zu der Handy-Kamera gegriffen.
-
-![Ausblick von der Haltestelle](/blog/2014/2014-03/dsc_20140320_101729.jpg)
-
-Wie sich erkennen laesst (zumindest hoffe ich dies) bietet sich von der Bushaltestelle ein rechter guter Ausblick auf die Kreuzung, mit allen ihrem Berufsverkehr (auch wenn es um kurz nach zehn schon deutlich weniger geknubbelt war, als dies eine Stunde frueher noch der Fall waere). In dem Gebaeude auf der anderen Strassenseite (hier groessenteils durch den Bus verdeckt) befinden sich ein _Albert Hein_ und zwei tuerkische Lebensmittelgeschaefte, ein Fahrradladen und noch ein paar andere Geschaefte, welche aber nicht weiter von Bedeutung fuer mich sind. Nicht dass ich sonderlich viel in Utrecht einkaufen wuerde -- typischerweise komme ich mit einem Liter Milch aus -- aber im Zweifelsfall sind es nur ein paar Meter von der Wohnung aus.
- 
-**:::**
- 
- 
-### Testen lohnt sich ###
-
-
-
-
-_Wed, 19. March 2014 -- 21:28_
-
-_Anmerkung: Ich hatte zwar schon vor einer Weile mit einem entsprechenden Beitrag begonnen, aber wie dies gerne schon einmal passiert, sind die Notizen ein wenig in Vergessenheit geraten. Da ich es aber nicht einfach nur bei ein paar Code-Snippets belassen wollte (und ich beim Schreiben ein wenig ins Stocken geraten bin), hat es nun doch deutlich laenger mit der Veroeffentlichung gedauert, als dies eigentlich geplant war._
-
-Es gibt (zumindest soweit ich dies beurteilen kann) immer zwei Dinge, welche bei der Software-Entwicklung eher stiefmuetterlich behandelt werden: Dokumentation und Testen. Spricht man mit den Leuten, dann werden alle natuerlich zustimmen, dass es sich in beiden Faellen um sehr wichtige Dinge handelt... aber zunaechst sei es ja erst einmal wichtiger die Software fertig zu kriegen. Warum dies nicht als integraler Bestandteil gesehen wird, wollte mir noch nie so recht einleuchten. Vor allen Dingen was die Dokumentation betrifft, wird es einem durch Tools wie [Doxygen](http://www.doxygen.org) doch eher leicht gemacht -- da ist kein sonderlicher Extra-Aufwand noetig, um die wesentliche Struktur und Funktionalitaet gut lesbar bereitzustellen. Dem gegenueber ist das Schreiben vernuenftiger Tests schon ein wenig mehr Aufwand, aber dabei handelt es sich (meines Erachtens) um sinnvoll investierte Zeit, welche einem spaetere Kopfschmerzen ersparen kann.
-
-__Fall 1: DAL C++ code__
-
-[Wie vor einer Woche berichtet](/blog/2014/2014-03/2014-03-12_22-01.html), habe ich einiges an Aufraeumarbeiten an dem ueber die letzten Jahre entstandenen Code durchgefuehrt. Teil der Aktion war allerdings nicht einfach nur dass Zusammenkopieren von Verzeichnissen, sondern -- und dies machte hier ja absolut Sinn -- auch das Ausmisten von mehrfach vorhandenen Implementierungen und damit verbunden das Testen der Routinen. So passierte es dann auch, dass ich in einer Klasse, welche ich vor Jahren in die [DAL](/development/projects/dal.html) integriert hatte, einen Fehler ausfindig gemacht habe, welcher dort recht lange geschlummert haben muss:
-
-~~~~
- itsYear     = year;
- itsMonth    = month;
- itsDay      = day;
- itsMinute   = hour;
- itsMinute   = minute;
-~~~~
-
-Aufgefallen ist mir die falsche Zuweisung durch das systematische Testen der oeffentlichen Schnittstelle ("public API"), wo ich daran gegangen bin die internen Parameter einzeln auf ihre Richtigkeit hin zu ueberpruefen:
-
-~~~~
- BOOST_CHECK_MESSAGE ( t.year()   == year,   "Incorrect value for Year."   );
- BOOST_CHECK_MESSAGE ( t.month()  == month,  "Incorrect value for Month."  );
- BOOST_CHECK_MESSAGE ( t.day()    == day,    "Incorrect value for Day."    );
- BOOST_CHECK_MESSAGE ( t.hour()   == hour,   "Incorrect value for Hour."   );
- BOOST_CHECK_MESSAGE ( t.minute() == minute, "Incorrect value for Minute." );
- BOOST_CHECK_MESSAGE ( t.second() == second, "Incorrect value for Second." );
-~~~~
-
-Das angesichts der oben wiedergegebenen Doppelzuweisung ein Fehler auftauchte duerfte wohl nicht verwundern:
-
-~~~~
- TestTimestamp.cc:82: error in "construction": Incorrect value for Hour.
-~~~~
-
-Ausgehend von dieser Meldung war es dann nicht mehr allzu schwer den Fehler ausfindig zu machen und zu beheben. Dass dieser sich ueberhaupt so lange hat verstecken koennen, lag bedauerlicherweise mit daran, dass es zum frueheren Zeitpunkt noch einige Luecken in der Testabdeckung ("Coverage") gab -- dies ist nun korregiert.
-
-__Fall 2: OCAL framework Python code__
-
-Wie schon im vorherigen Fall, hat auch diese Woche wieder gezeigt, dass ausgibiges und systematisches Testen so manche Ueberraschungen zu Tage foerden kann... mit ein wenig zusaetzlicher Arbeit aber dazu fuehrt, dass der getestete Code in seiner Qualitaet verbessert wird. So habe ich mich die letzten beiden Tage damit herumgeschlagen Routinen zum Generieren von Diagnose-Plots zu testen, um auf diese Wise zu sehen, ob diese unseren Anspruechen genuegen (will heissen: in der Lage sind die Resultate zu liefern, welche wir gerne zur Ueberpruefung der Datenanalyse haetten). Da ich also eh einiges ausprobieren musste, habe ich kurzentschlossen meinen Code direkt als Unit-Test aufgesetzt, um damit auch automatisch von dem Integrations-Server aufgerufen zu werden. Waehrend sich das erste derartige Experiment ohne grundlegende Probleme abschliessen liess (was mich trotzdem einiges an Zeit gekostet hat, einfach weil es an einer vernuenftigen Dokumentation fehlte), lieferte der Test fuer die Erzeugung eines [Surface-Plots](http://matplotlib.org/mpl_toolkits/mplot3d/tutorial.html#surface-plots) ein eher weniger erfreuliches Resultat:
-
-~~~~
-  test_create_object (surface_plot_utest.SurfacePlotTestCase)
-  Test creation of a new SurfacePlot object. ... ok
-  test_plotting_imageplot (surface_plot_utest.SurfacePlotTestCase)
-  Test plotting surface using the 'draw()' method. ... ERROR
-  test_plotting_matplotlib (surface_plot_utest.SurfacePlotTestCase)
-  Test creation of surface plot using Matplotlib directly. ... ok
-~~~~
-
-Um so weit es geht anderweitige Fehler auszuschliessen, habe ich sicherheitshalber den gleichen Plot noch einmal auf dem "Fusswege" erzeugt, um auf diese Weise aber auch nachweisen zu koennen, dass der Fehler nicht in den zugrundeliegenden Graphik-Routinen liegt. Nach einigem hin und her hatte ich also den Fehler so gut es ging isoliert, so dass es an der Zeit war das Problem zu melden. Stellt sich heraus, dass da in der Tat ein Fehler vorlag, welcher in dem Abstraktions-Layer zu finden war; da a) bisher keinerlei Unit-Tests hierfuer vorhanden waren noch b) die Python Klasse anderweitig gross eingesetzt wurde, fand keinerlei Ueberpruefung statt. Letzteres -- und auch der Fehler selber -- sind jetzt behoben.
  
 **:::**
  
