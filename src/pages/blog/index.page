@@ -9,6 +9,68 @@ tags: Blog
  
 **:::**
  
+### Ein wenig langsam... aber moeglich ###
+
+
+
+
+_Thu, 03. April 2014 -- 21:49_
+
+Typischerweise ist es ja eine der ersten Handlung, wenn ich am Donnerstag Abend
+wieder zuhause in Bonn bin, dass ich den Rechner ins heimische WLAN einklinke um
+
+ - unterwegs geschriebene Mails abzuschicken,
+ - unterwegs geschriebenen Code ins Repository einzuchecken,
+ - unterwegs geschriebene Blog-Eintraege online zu setzen.
+
+Waehrend letzterer Punkt nicht unbedingt der wichtigste von allen ist, so finde
+ich es doch ganz nett, wenn derartige Dinge -- welche eben nicht komplett von alleine
+geschehen -- schon erledigt sind, wenn ich zuhause eintreffe. Wie ja schon mehrfach
+berichtet gibt es am Koelner Bahnhof ja einen (oder gleich mehrere, je ja nach dem,
+wie man es genau definiert) Internet Hotspot der Telekom, ueber welchen ich mich schon
+so manches Mal eingeklinkt habe. Am heutigen habe ich wieder einmal von dem Service
+gebraucht gemacht, um allen drei Aktivitaeten nachzugehen. Dabei sollte man natuerlich
+ein wenig im Hinterkopf behalten, dass die Uebertragungsraten nicht mit dem zu vergleichen
+sind, was im heimischen WLAN oder im Institut zur Verfuegung steht. So kommt es denn auch,
+dass der Upload der Web-Seiten nicht mehr ganz fertig geworden ist -- der Zug fuhr aus dem
+Bahnhof aus, ehe alle Daten uebertragen waren:
+
+~~~~
+[100%] Publishing website - uploading generated pages ...
+sending incremental file list
+blog/
+blog/2014.html
+       18310 100%    0.00kB/s    0:00:00 (xfer#1, to-check=1069/1098)
+blog/archive.html
+       11080 100%  163.94kB/s    0:00:00 (xfer#2, to-check=1068/1098)
+blog/index.html
+       34968 100%    0.34kB/s    0:01:39 (xfer#3, to-check=1066/1098)
+blog/upcoming.html
+       94968 100%   16.82kB/s    0:00:05 (xfer#4, to-check=1065/1098)
+
+rsync: recv_generator: mkdir "/Volumes/webdav/webseiten/photography/api" failed: Operation timed out (60)
+*** Skipping any contents from this failed directory ***
+photography/articles/
+~~~~
+
+Beim Quellcode sieht es deutlich besser aus: nicht nur sind es typischerweise weniger
+Daten, welche uebertragen werden muessen, sondern durch die in [Git](http://www.git-scm.com)
+eingebaute Kompression laesst sich die zur Verfuegung stehende Bandweite sehr gut
+ausreizen -- so kommt es denn auch, dass die Updates alle raus gegangen sind:
+
+~~~~
+Counting objects: 67, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (22/22), done.
+Writing objects: 100% (22/22), 3.12 KiB | 0 bytes/s, done.
+Total 22 (delta 19), reused 0 (delta 0)
+To git@github.com:lbaehren/swir.git
+   7a81f7e..255ddd1  devel -> devel
+~~~~
+ 
+**:::**
+ 
+ 
 ### Knapp ###
 
 
@@ -419,22 +481,6 @@ Heute war es endlich so weit: nachdem ich zwar so schon einiges von dem Haus erf
 ![Tree at Sunset](/blog/2014/2014-03/hdr_20140323_181644_Tree_at_Sunset.jpg)
 
 Im Anschluss an den Besuch haben wir noch einmal eine kleine Runde durch das noerdliche Ende von Tannenbusch eingelegt. Dies hat ein wenig den bisherigen Eindruck verstaerkt, dass wir es in der Tat mit dem netteren Ende des Ortsteiles zu tun haben: bin hin zu den Felder jenseits der Bebauung sind es nur ein paar Minuten, andererseits ist die Autobahn in Richtung Koeln ausreichend weit weg, so dass man diese nicht staendig in den Ohren hat. Ich bin da einfach mal gespannt ab bald ein wenig ausgibiger (natuerlich auch mit Kamera) auf Erkundungstour zu gehen).
- 
-**:::**
- 
- 
-### Fotos machen ###
-
-
-
-
-_Sat, 22. March 2014 -- 21:41_
-
-Angesichts der Tatsache, dass wir doch so einiges an Gemuese und Obst ueber den [Hof Mandt](http://www.hofladen-mandt.de) in Alfter beziehen, lag es nahe, zum Anlass der offiziellen Eroeffnung des neuen Hofladens dort vorbeizuschauen. Auch wenn ich mit Heike und Karl-Heinz bisher nicht so sonderlich viel zu tun hatte, so war doch spaetestens seit einer Woche klar, dass ich den heutigen Nachmittag zu einem grossen Teil mit der Kamera in der Hand zubringen wuerde. Auch wenn schon damit zu rechnen war, dass es vielleicht den einen oder anderen Besuch der lokalen Presse geben wuerde (der Hof ist immerhin ein wenig bekannter in der Umgebung), schien es doch eher unwahrscheinlich, dass irgendetwas an Bildmaterial fuer den Hof selber eingefangen werden wuerde -- Grund genug also die Kamera in die Hand zu nehmen und dies sicherzustellen.
-
-![Hof Mandt](/blog/2014/2014-03/dsc_20140322_152012.jpg)
-
-Von den mehr als 600 Bildern sind mittlerweile schon eine ganze Reihe rausgeflogen: auch wenn es mitunter die Lichtverhaeltnisse waren, so lag das Problem in fast 90% der Faelle in den Gesichtsausdruecken der Beteiligten. Da ich eben nicht vorgehe wie mal eben durchrasenden Damen und Herren von der Presse, versuche ich schon natuerliche Situationen einzufangen -- die eher gequaelten Laecheln auf den gestellten Bildern spare ich mir dann doch lieber. Diese Vorgehensweise erfordert sicherlich ein wenig mehr Geduld (und bietet weniger vorhersagbare Resultate), aber was ich beim Sichten der Aufnahmen bisher habe sehen koennen, geht doch recht gut in die Richtung, welche mir vorschwebt.
  
 **:::**
  

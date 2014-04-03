@@ -1,0 +1,63 @@
+---
+title: "Ein wenig langsam... aber moeglich"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-04-03T21:49:50.00Z
+---
+
+## {title:} ##
+
+_Thu, 03. April 2014 -- 21:49_
+
+Typischerweise ist es ja eine der ersten Handlung, wenn ich am Donnerstag Abend
+wieder zuhause in Bonn bin, dass ich den Rechner ins heimische WLAN einklinke um
+
+ - unterwegs geschriebene Mails abzuschicken,
+ - unterwegs geschriebenen Code ins Repository einzuchecken,
+ - unterwegs geschriebene Blog-Eintraege online zu setzen.
+
+Waehrend letzterer Punkt nicht unbedingt der wichtigste von allen ist, so finde
+ich es doch ganz nett, wenn derartige Dinge -- welche eben nicht komplett von alleine
+geschehen -- schon erledigt sind, wenn ich zuhause eintreffe. Wie ja schon mehrfach
+berichtet gibt es am Koelner Bahnhof ja einen (oder gleich mehrere, je ja nach dem,
+wie man es genau definiert) Internet Hotspot der Telekom, ueber welchen ich mich schon
+so manches Mal eingeklinkt habe. Am heutigen habe ich wieder einmal von dem Service
+gebraucht gemacht, um allen drei Aktivitaeten nachzugehen. Dabei sollte man natuerlich
+ein wenig im Hinterkopf behalten, dass die Uebertragungsraten nicht mit dem zu vergleichen
+sind, was im heimischen WLAN oder im Institut zur Verfuegung steht. So kommt es denn auch,
+dass der Upload der Web-Seiten nicht mehr ganz fertig geworden ist -- der Zug fuhr aus dem
+Bahnhof aus, ehe alle Daten uebertragen waren:
+
+~~~~
+[100%] Publishing website - uploading generated pages ...
+sending incremental file list
+blog/
+blog/2014.html
+       18310 100%    0.00kB/s    0:00:00 (xfer#1, to-check=1069/1098)
+blog/archive.html
+       11080 100%  163.94kB/s    0:00:00 (xfer#2, to-check=1068/1098)
+blog/index.html
+       34968 100%    0.34kB/s    0:01:39 (xfer#3, to-check=1066/1098)
+blog/upcoming.html
+       94968 100%   16.82kB/s    0:00:05 (xfer#4, to-check=1065/1098)
+
+rsync: recv_generator: mkdir "/Volumes/webdav/webseiten/photography/api" failed: Operation timed out (60)
+*** Skipping any contents from this failed directory ***
+photography/articles/
+~~~~
+
+Beim Quellcode sieht es deutlich besser aus: nicht nur sind es typischerweise weniger
+Daten, welche uebertragen werden muessen, sondern durch die in [Git](http://www.git-scm.com)
+eingebaute Kompression laesst sich die zur Verfuegung stehende Bandweite sehr gut
+ausreizen -- so kommt es denn auch, dass die Updates alle raus gegangen sind:
+
+~~~~
+Counting objects: 67, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (22/22), done.
+Writing objects: 100% (22/22), 3.12 KiB | 0 bytes/s, done.
+Total 22 (delta 19), reused 0 (delta 0)
+To git@github.com:lbaehren/swir.git
+   7a81f7e..255ddd1  devel -> devel
+~~~~
+
