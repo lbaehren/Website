@@ -9,6 +9,50 @@ tags: Blog
  
 **:::**
  
+### Von innen betrachtet ###
+
+
+
+
+_Tue, 08. April 2014 -- 19:06_
+
+Ich weiss nicht, wie oft ich daran vorbeigefahren bin und mir vorgenommen habe einmal mit der
+Kamera in der Hand dort langs zu laufen: entlang der Bahnstrecke von Bonn nach Koeln stehen
+zwischen Bonn-Tannanbusch und Roisdorf eine Reihe Gewaechshaeuser entlang der Gleise, welche
+mit Graffiti besprueht sind. Da ich immer wieder versuche Graffiti auch an etwas ausgefalleneren
+Orten ausfindig zu machen (und dann natuerlich auch zu dokumentieren), hat es mich schon
+seit Ewigkeiten gereizt einmal ein Stueck weit entlang der Bahngleise zu laufen, damit ich
+ich mir die Graffiti genauer anschauen konnte. Angesichts des sonnigen Wetters bin ich
+dann gestern am spaeteren Nachmittag kurzentschlossen zusammen mit Julia aufgebrochen,
+um dann von Dransdorf aus eine laengere Runde zu laufen. So lange, wie es dann allerdings geworden ist
+hatte ich dies urspruenglich allerdings noch nicht einmal geplant, aber weil ich dann verucht habe
+gewissermassen zwei potentielle Touren miteinander zu verbinden, war ich dann deutlich laenger
+unterwegs, als ich mir dies eigentlich vorgenommen hatte.
+
+![Gewaechshaus](/blog/2014/2014-04/hdr_20140407_181925_Greenhouse.jpg)
+
+Einer der netten Nebeneffekte dieser ausgedehnten Tour war es, dass ich mir die Gewaechshaeuser
+entlang der Bahnstrecke wirklich einmal genauer aus der Naehe anschauen konnte. Wie ich bei
+dieser Gelegenheit herausfinden konnte sehen die Graffiti aus dem Fenster eines vorbeirauschenden
+Zuges deutlich besser aus, als dies ein wenig mehr aus der Naehe der Fall ist. Immerhin
+aber konnte ich ein wenig mit dem Licht der langsam untergehenden Sonne herumspieln, denn je nach
+Blickwinkel wurden die Spruehbilder von hinten angeleuchtet, was man so in der Art typischerweise
+ja eben nicht zu Gesicht bekommt. Statt aber nur um die Gewaechshaeuser herumzuschleichen
+war ich natuerlich auch einmal daran interessiert einen kleinen Blick hinein zu werfen. Da weit
+und breit niemand zu sehen war, habe ich mich ein wenig naeher herangetraut und so dann auch
+einen offenen Eingang gefunden, durch welchen ich mal einen genaueren Blick in das Innenleben
+eines der Gewaechshaeuser werfen konnte. Nicht dass ich da nun wer weis was aussergewoehnliches
+erwartet haette, aber ich war vor allen Dingen einfach mal neugierig auf die Lichtverhaeltnisse
+unter dem Glasdach (man erinnere sich: ich war mit Kamera unterwegs und vor allen Dingen
+auf der Suche nach Motiven fuer HDR Aufnahmen). Von dem, was ich da so zu sehen bekommen habe,
+bin ich natuerlich nur noch neugieriger geworden -- so frage ich mich z.B. wie dies erst
+wirken mag, wenn man es (ein wenig mehr in Richtung Sommer) mit so einem richtig blutroten
+Sonnenuntergang zu tun hat, welcher den kompletten Innenraum des Gewaechshauses aufgluehen laesst.
+Da werde ich also wohl nicht einmal aufbrechen muessen, damit ich diese Frage beantworten kann.
+ 
+**:::**
+ 
+ 
 ### Fotowanderung ###
 
 
@@ -456,39 +500,6 @@ Building-Blocks davon losgeloest einsetzen koennen. Wer weiss, vielleicht kommen
 im Zuge dieser Aktivitaeten auch noch ein paar Zeilen Code heraus, welche sich
 mit der Allgemeinheit teilen lassen (so weit ist es bisher aber definitiv noch
 nicht).
- 
-**:::**
- 
- 
-### Keine Verbindung ###
-
-
-
-
-_Thu, 27. March 2014 -- 01:44_
-
-Keine Ahnung was da eigentlich los ist, aber die Verbindung, ueber welche ich
-normalerweise die Updates fuer meine Website hochlade, ist heute Abend recht
-wackelig:
-
-~~~~
-[100%] Publishing website - uploading generated pages ...
-sending incremental file list
-rsync: writefd_unbuffered failed to write 4 bytes to socket [sender]: Broken pipe (32)
-rsync: mkdir "/Volumes/webdav/webseiten" failed: Operation timed out (60)
-rsync error: error in file IO (code 11) at main.c(637) [Receiver=3.0.9]
-rsync: connection unexpectedly closed (9 bytes received so far) [sender]
-rsync error: error in rsync protocol data stream (code 12) at io.c(605) [sender=3.0.9]
-make[3]: *** [src/pages/CMakeFiles/online] Error 12
-make[2]: *** [src/pages/CMakeFiles/online.dir/all] Error 2
-make[1]: *** [src/pages/CMakeFiles/online.dir/rule] Error 2
-make: *** [online] Error 2
-~~~~
-
-Komplett gerissen scheint der Draht hin zur Aussenwelt allerdings noch nicht zu
-sein, denn im Internet surfen geht nach wie vor. Da werde ich also die aktuellsten
-Beitraege und Aenderungen einfach lokal bereitstellen, ehe ich wieder auf den
-Server zugreifen kann.
  
 **:::**
  
