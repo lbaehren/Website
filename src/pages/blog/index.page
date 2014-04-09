@@ -9,6 +9,69 @@ tags: Blog
  
 **:::**
  
+### Rechnungen mit LaTeX und KOMA-Script ###
+
+
+
+
+_Wed, 09. April 2014 -- 18:16_
+
+Das haette eigentlich schon eine Weile erledig sein muessen, aber nachdem gestern Abend
+einfach das Limit erreicht war, habe ich heute Morgen einen guten Teil meiner Fahrt im
+[ICE 222](http://www.zugfinder.de/zuginfo.php?zugnr=ICE_222) damit zugebracht endlich mal
+noch das Grundgeruest fuer zu erstellende Rechnungen anzufertigen. Nachdem ich mittlerweile
+ja die Visitenkarten habe (sowohl in ausreichender Menge als auch in guter Qualitaet),
+macht es natuerlich Sinn, ggf. bestimmte Design-Elemente zu uebernehmen, um so eine
+Wiedererkennung moglich zu machen. Folgerichtig habe ich mich also den LaTeX-Quellcode
+der Karte geschnappt und diesen in das Template fuer die Rechnungen eingearbeitet.
+
+~~~~
+\setkomavar{firsthead}{
+    \begin{flushleft}
+        \color{GreenYellow} \Huge\bf Lars B\"ahren
+    \end{flushleft}
+    \begin{flushright}
+        \color{GreenYellow}
+        \begin{tabular}{r|l}
+                          & \bf\color{Black} Software development \\
+                          & \bf\color{Black} Photography \\
+                          &  \\
+        \color{RoyalBlue} address & \color{Black} Brunnenstrasse 18, 53123 Bonn \\
+        \color{RoyalBlue} phone   & \color{Black} (+49)\,(0)178 1780389 \\
+        \color{RoyalBlue} email   & \color{Black} lbaehren{\myfont{\small @}}gmail.com \\
+        \color{RoyalBlue} url     & \color{Black} www.larsbaehren.de \\
+        \color{RoyalBlue} skype   & \color{Black} larsbaehren
+        \end{tabular}
+    \end{flushright}
+}
+~~~~
+
+Laesst man dies dann durch LaTeX laufen, so bekommt man einen recht ansprechenden
+Briefkopf, welcher sich sowohl von der Farbgebung als auch der Anordnung der Textelemente
+eng an die [Gestaltung der Visitenkarte](/blog/2014/2014-02/2014-02-21_09-46.html)
+anlehnt (was ja eben der Hintergedanke war):
+
+![Briefkopf Invoice](/blog/2014/2014-04/2014-04-09_Invoice.png)
+
+Ein wesentliches Element hierbei war die ueber das [KOMA-Script](http://www.ctan.org/pkg/koma-script)
+Paket bereitsgestellte _Letter_ Klasse, welche sich -- wie dies auch bei den anderen
+Standard-Dokumenten der Fall ist -- sehr flexibel konfigurieren laesst:
+
+> The KOMA-Script bundle provides drop-in replacements for the ``article``/``report``/``book`` classes with emphasis on typography and versatility. There is also a letter class, different from all other letter classes.
+
+Der wesentliche Unterschied zu den bisherigen Verwendungen von ``scrlttr2`` war in diesem
+Fall allerdings, dass ich deutlich mehr Gebrauch von der internen Funktionalitaet machen
+musste, weil sich sonst der Briefkopf nicht in der gewuenschten Weise erstellen liess.
+Wie man andererseits anhand des obigen Codes erkennen kann, war dies nicht viel anderes
+als jede vergleichbaren Layout-Anweisungen unter LaTeX. Was ich mir jetzt noch vornehmen
+muss ist die dazugehoerige Fusszeile der Briefseiten, in welche u.a. die Bankverbindung
+mit eingebaut werden muss; die Daten selber habe ich schon in dem Style-File abgelegt,
+jetzt muss ich nur noch die das Layout fertig machen... dann kann das laengst ueberfaellige
+Schreiben auch endlich raus.
+ 
+**:::**
+ 
+ 
 ### Von innen betrachtet ###
 
 
@@ -436,70 +499,6 @@ nicht die Muehe gemacht habe wirklich systematisch den Fortgang im Garten zu dok
 Zeitabstaenden einzufangen -- so faellt doch schon recht deutlich auf, dass es auf
 den Bildern recht farbenfroh wird. Ein Teil dieser Farben sind Blueten... warten wir
 aber noch ein wenig, gibt es hoffentlich die Chance eigenes Obst zu naschen...
- 
-**:::**
- 
- 
-### Zusammengefuehrt ###
-
-
-
-
-_Fri, 28. March 2014 -- 15:22_
-
-Das wurde aber mal Zeit: nachdem ich vor einer Weile ja schon damit begonnen
-hatte diversen ueber meinen Rechner verstreuten Source zusammenzufassen (und
-damit auch gemeinsam verwenden zu koennen), habe ich gestern Abend noch den
-ausstehenden Schritt vollzogen, um auch die Quellen fuer die diversen Websites
-- egal ob fuer online oder lediglich lokal - zuammenzufuehren. Wie auch schon
-bei dem Source Code, hat es mich einfach genervt, dass es immer wieder eine Reihe
-an Funktionalitaet und Machinerie gibt, welche letzten Ende wiederverwendbar ist.
-Wesentlicher Bestandteil dieser Machinerie sind die [CMake](http://www.cmake.org)
-Scripten, welche fuer die Konfiguration und die Erzeugung der Build-Targets
-verantwortlich sind; gerade dann, wenn ich unter der Haube mit verschiedenen
-Generatoren arbeite -- [Webgen](http://webgen.gettalong.org), [Doxygen](http://www.doxygen.org),
-[Jekyll](http://jekyllrb.com) -- ist es schon ganz nett, wenn ich die typischen
-Aktionen (wie z.B. das Bauen der Seiten) auf ein und die gleiche Weise durchfuehren
-kann. So etwas wie ein
-
-~~~~
-make install
-~~~~
-
-sollte letzten Endes nicht davon abhaengig sein, was fuer ein Tool nun genau dahinter
-steckt -- was dies betrifft ist _CMake_ einfach eine tolle Sache.
-
-~~~~
-Websites
-|-- build                         ...  Build directory with temporary files
-|   |-- local_pages
-|   `-- www.larsbaehren.com
-|-- common                        ...  Common infrastructure used for all projects
-|   |-- cmake
-|   |-- code
-|   `-- doxygen
-|-- local_pages                   ...  Local web pages, generated using Doxygen
-|-- test_doxygen
-|-- test_jekyll                   ...  Test website, generated using Jekyll
-|-- test_pelican
-|-- www.anuyoga.de
-|-- www.anuyoga.eu
-|-- www.anuyoga.info
-|-- www.anuyoga.net
-`-- www.larsbaehren.com           ...  Personal website, generated using Webgen
-~~~~
-
-100%ig fertig mit allem bin ich zwar noch nicht, aber die Struktur als solche
-steht nun; woran ich derzeit vor allen Dingen noch arbeite, ist dass ich die alten
-Shell-Scripten durch C++ Code ersetzt bekomme. Letzten Endes will ich schon dafuer
-sorgen, dass ich wichtige Konzepte und wiederkehrende Aktionen in einem recht
-transportablen Code untergebracht kriege. Wenn dann mal wieder ein Umzug ansteht
--- sei es von einem Rechner zu einem anderen, oder aber auch die Migration von
-einem Generator zu einem anderen -- dann wuerde ich gerne die wichtigsten
-Building-Blocks davon losgeloest einsetzen koennen. Wer weiss, vielleicht kommen
-im Zuge dieser Aktivitaeten auch noch ein paar Zeilen Code heraus, welche sich
-mit der Allgemeinheit teilen lassen (so weit ist es bisher aber definitiv noch
-nicht).
  
 **:::**
  
