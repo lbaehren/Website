@@ -26,6 +26,8 @@ a single source tree. CMake also supports static and dynamic library builds.
 
  - [Doxygen](/development/tools/doxygen.html) is a documentation generator, a tool for writing software reference documentation. The documentation is written within code, and is thus relatively easy to keep up to date. Doxygen can cross reference documentation and code, so that the reader of a document can easily refer to the actual code.
 
+ - [TeX/LaTeX](/development/latex.html) represents the state-of-the-art in computer typesetting. It s particularly valuable where the document, article, or book to be produced contains a lot of mathematics, and where the user is concerned about typographic quality. TeX software offers both writer and publisher the opportunity to produce technical text, in an attractive form, with the speed and efficiency of a computer system.
+
 **:::**
 
 ### ... for version control
