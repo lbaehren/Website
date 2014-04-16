@@ -1,0 +1,39 @@
+---
+title: "Schnell unterwegs"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-04-16T21:25:48.00Z
+created_at: 2014-04-16T21:25:48.00Z
+---
+
+## {title:} ##
+
+_Wed, 16. April 2014 -- 21:25_
+
+Also das ist doch doch schon recht beeindruckend: waehrend ich ja durchaus gewohnt bin
+vom Institut aus hohe Datentransferraten zu erzielen, scheint das WLAN hier bei mir in der
+Wohnung auch nicht von schlechten Eltern zu sein:
+
+~~~~
+Connecting to ftp.nluug.nl (ftp.nluug.nl)|192.87.102.42|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1592786944 (1.5G) [application/octet-stream]
+Saving to: 'solydk64_201401.iso'
+
+100%[========================================================>] 1,592,786,944 7.28MB/s   in 3m 36s
+
+2014-04-16 09:49:15 (7.03 MB/s) - 'solydk64_201401.iso' saved [1592786944/1592786944]
+~~~~
+
+Als ich heute Morgen -- vor der Fahrt ins Institut -- noch zwei ISO-Images fuer die
+Installation einer mir bisher unbekannten Linux-Distribution aus dem Netz ziehen wollte,
+war ich doch recht ueberrascht wie schnell dies ging. Sicher, letzten Endes ist es
+immer ein Zusammenspiel mehrerer Faktoren, aber zumindest im haeuslichen Bereich gehe
+ich meistens davon aus, dass die wesentlich zu tragen kommende Bremse auf dem letzten
+Teilstueck zu finden ist. Nicht aber so in diesem Fall. Ob dies nun das Maximum ist, was
+das WLAN zu leisten vermag, kann ich nicht sagen, aber mehr als 7 MB/s habe ich in Bonn
+noch nie zu sehen bekommen. Was sich daraus allerdings auf der anderen Seite als Problem ergibt
+ist, dass sich die Festplatte umso schneller anfuellt -- derartige Transfers sollte man
+also nicht in groesserer Zahl ueber Nacht laufen lassen, denn ansonsten kann es recht leicht
+passieren, dass der vorhandene Speicherplatz in kuerzester Zeit aufgebraucht ist.
+

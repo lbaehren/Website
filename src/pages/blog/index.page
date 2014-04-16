@@ -9,6 +9,281 @@ tags: Blog
  
 **:::**
  
+### Schnell unterwegs ###
+
+
+
+
+_Wed, 16. April 2014 -- 21:25_
+
+Also das ist doch doch schon recht beeindruckend: waehrend ich ja durchaus gewohnt bin
+vom Institut aus hohe Datentransferraten zu erzielen, scheint das WLAN hier bei mir in der
+Wohnung auch nicht von schlechten Eltern zu sein:
+
+~~~~
+Connecting to ftp.nluug.nl (ftp.nluug.nl)|192.87.102.42|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1592786944 (1.5G) [application/octet-stream]
+Saving to: 'solydk64_201401.iso'
+
+100%[========================================================>] 1,592,786,944 7.28MB/s   in 3m 36s
+
+2014-04-16 09:49:15 (7.03 MB/s) - 'solydk64_201401.iso' saved [1592786944/1592786944]
+~~~~
+
+Als ich heute Morgen -- vor der Fahrt ins Institut -- noch zwei ISO-Images fuer die
+Installation einer mir bisher unbekannten Linux-Distribution aus dem Netz ziehen wollte,
+war ich doch recht ueberrascht wie schnell dies ging. Sicher, letzten Endes ist es
+immer ein Zusammenspiel mehrerer Faktoren, aber zumindest im haeuslichen Bereich gehe
+ich meistens davon aus, dass die wesentlich zu tragen kommende Bremse auf dem letzten
+Teilstueck zu finden ist. Nicht aber so in diesem Fall. Ob dies nun das Maximum ist, was
+das WLAN zu leisten vermag, kann ich nicht sagen, aber mehr als 7 MB/s habe ich in Bonn
+noch nie zu sehen bekommen. Was sich daraus allerdings auf der anderen Seite als Problem ergibt
+ist, dass sich die Festplatte umso schneller anfuellt -- derartige Transfers sollte man
+also nicht in groesserer Zahl ueber Nacht laufen lassen, denn ansonsten kann es recht leicht
+passieren, dass der vorhandene Speicherplatz in kuerzester Zeit aufgebraucht ist.
+ 
+**:::**
+ 
+ 
+### Donaldismus ###
+
+
+
+
+_Tue, 15. April 2014 -- 21:53_
+
+Also dies ist definitiv ein Thema mit welchen ich mich bisher noch nicht beschaeftigt
+habe; das kann kann allerdings auch zu einem grossen Teil daran liegen, dass ich mir bisher
+nicht einmal der Tatsache bewusst war, dass es soetwas ueberhaupt gibt.
+
+> Als Donaldismus bezeichnet man die Beschäftigung mit der fiktiven Familie Duck und die Erforschung von familiären, biologischen, technischen, soziologischen und gruppendynamischen Prozessen in der fiktiven Stadt Entenhausen, im englischen Original des Comics als die Städte Duckburg und Mouseton bezeichnet.
+
+In der aktuellen, diese Woche erschienenen Folge von [megamagisch](http://megamagis.ch)
+beschaeftigen sich [Arne](https://kleinerdrei.net) und [Sarah](http://sarahburrini.com) mit einem
+eher ungewoehnlichen Forschungsfeld. Dass sich geschlossene Universen zu so manchen
+Aktivitaeten anbieten ist besten von z.B. _Star Wars_ oder natuerlich Tolkiens
+[Mittelerde](http://de.wikipedia.org/wiki/Tolkiens_Welt) bekannt -- allem Anschein nach aber stehen die Bewunderer der stehts vom
+Pech verfolgten Ende dem in nichts nach. Vielmehr noch: Arbeiten zum Thema werden in regelmaessigen
+Zeitabschnitten veroeffentlicht und unterliegen dem gleichen wissenschaftlichen Diskurs,
+wie dies Z.B. im Bereich der Physik oder Astronomie der Fall ist.
+
+> Die [D.O.N.A.L.D.](http://www.donald.org) befasst sich mit der Erforschung der Familie Duck und des Entenhausener Universums (bzw. der diesbezüglich überlieferten Quellen und Berichte) in jeglicher Hinsicht. Bisher wurde unter anderem bereits über viele natur- und geisteswissenschaftliche Themen geforscht. Des Weiteren wurde auf Grundlage der Geschichten ein Stadtplan von Entenhausen erstellt, der im Jahr 2008 präsentiert wurde.
+>
+> Die Forschung beschränkt sich dabei hauptsächlich auf die Donald-Duck-Geschichten des amerikanischen Zeichners Carl Barks, die von Erika Fuchs ins Deutsche übersetzt wurden. Geschichten von anderen Zeichnern werden dagegen weitgehend ignoriert. Durch diese Einschränkung ergibt sich ein in sich geschlossenes Forschungsgebiet, das nur von wenigen Donaldisten verlassen wird.
+
+Um die Forschenden nicht nur als Einzelkaempfer durch die Gegend laufen zu lassen gibt
+sogar eine eigene Akademie:
+
+> Die [Akademie der Donaldistischen Wissenschaften](http://www.donald.org/forschung/adw) verleiht alljährlich den Professor-Püstele-Preis. Dieser Preis wird demjenigen Donaldisten verliehen, der im vergangenen donaldistischen Jahr die überzeugendste wissenschaftliche Arbeit vorgelegt hat. In die Auswahl aufgenommen werden ausschließlich Berichte, die im Zentralorgan der D.O.N.A.L.D. bzw. dessen Sonderveröffentlichungen publiziert wurden. Neben dem wissenschaftlichen Gehalt haben auch die Gewaltigkeit des Wortschwalles und die Form der Darlegung und nicht zuletzt deren persönliche Vorlieben Einfluss auf die Entscheidung der Juroren.
+
+Da habe ich heute morgen auf dem Weg zum Institut einige Male kraeftig schlucken muessen, als
+ich mit dem Hoeren der Sendung begonnen habe. Ich muss allerdings sagen, dass ich die Aktivitaeten
+auf der anderen Seite nun so abwegig auch nun nicht fand -- schliesslich sind mir da aus
+anderen Kreisen schon vergleichbare (wenn auch nicht so formal organisiert) Dinge untergekommen.
+Ein faszinierndes Stueck Nerd-Kultur und ich kann diese Sendung waermstens empfehlen;
+[megamagisch](http://megamagis.ch) schien zwischenzeitlich ein wenig auf der Kippe zu stehen,
+aber mittlerweile scheint der Podcast wieder auf stabileren Fuessen zu stehen, so ich
+mal gespannt bin, was es als naechstes zu hoeren gibt. Weiter so!
+ 
+**:::**
+ 
+ 
+### Blackbody radiation ###
+
+
+
+
+_Mon, 14. April 2014 -- 21:58_
+
+Da schlage ich mich also wieder einmal mit den Untiefen von Python herum... und aergere
+mich das eine und andere Mal, dass die Sprache eben nicht -- zumindest nach meinem
+Verstaendnis -- die Funktionalotaeten bietet, welche ich mir wuenschen wuerde, um Teile
+unserer Software systematisch von Grund auf aufzubauen. Das aktuellste Beispiel waeren
+die Arbeiten um die von einem Schwarzkoerper-Strahler angegebene Leistung zu berechnen.
+Wie ich ja beim Durchlesen des ATBD (Algorithm Theoretical Baseline Document) sehr
+schnell sehen konnte, gibt es vor allen Dingen bei den Strahlungskorrekturen eine ganze
+Reihe von Stellen, wo optische oder strahlungsphysikalische Zusammenhaenge benoetigt
+werden. Da sich dies nicht unbedingt alles in vorgefertigter Weise vorfinden laesst
+-- zumindest nicht ohne weitere externe Abhaengigkeiten der Software herbeizufuehren --
+wird es da also noetig die entsprechenden Formeln und Gleichungssysteme zu programmieren.
+Da so eine Plank-Kurve einiges an Potenzierungen und Multiplikationen aufweist,
+versuche ich natuerlich von der Moeglichkeit des Pufferns Gebrauch zu machen; wenn
+die abgegebene Strahlungsleistung nur noch von den Variablen Temperatur (T) und
+Frequenz (nu) abhaengt, dann laessen sich die entsprechendes Zusammenfassen einige
+der Rechenschritte vorausschauend durchfuehren, so dass ich die Zwischenresultate
+spaeter dann einfach weiterverwenden kann. Fuer mich klingt dies dann sofort wieder
+nach Datenkapselung, bei der ich nur noch die wirklich einstellbaren Werte nach draussen
+sichbar mache und damit gleichzeitig die numerischen Tricks hinter den Kulissen eben
+hinter diesen verbergen kann (klar, sie sind nicht weg, aber die sichtbare Komplexizitaet
+des entsprechenden Software-Bausteins laesst sich so recht minimal halten).
+
+Um ein derartiges Problem zu loesen, wuerde ich -- teils aus einer gewissen Gewohnheit, zum
+andere aber natuerlich auch aus Sprachfaehigkeitsgruenden -- zu einer Sprache wie
+C++ greifen, weil ich da eben sehr schoen Daten kapseln und eine wohl-definierte
+Schnittstelle nach aussen bereitstellen kann. Dies bringt mir fuer das OCAL Framework
+nur leider nicht so sonderlich viel, weil jenes naemlich komplett in Python geschrieben
+ist und bisher in keinster Weise darauf ausgelegt ist, Erweiterungen in anderen
+Sprachen aufzunehmen. Was dies fuer mich bedeutet ist, dass ich meine Ideen von
+Datenkapselung und oeffentlicher Schnittstelle so ziemlich begraben kann. Nach ein wenig
+Hin und Her habe ich nun zwar eine einigermassen akzeptable Loesung gefunden, wie ich da
+vorgehen kann, aber elegant und wirklich sauber finde ich dies definitiv nicht.
+
+~~~~
+class BlackbodyRadiation (object):
+    """ Model function for the radiation of a black blody.
+    """
+
+    # Required physical constants
+    from scipy.constants import h,c,k
+
+    def __init__(self):
+        """ Constructor.
+        """
+        self.a0_freq = 2*self.h/(self.c**2)
+        self.a1_freq = self.h/self.k
+
+        self.a0_wave = 2*self.h*(self.c**2)
+        self.a1_wave = self.h*self.c/self.k
+
+    def radiance_by_freq (freq, T):
+        """ Blackbody radiation as funciton of temperature and frequency.
+            T in K, f in Hz
+        """
+        return self.a0_freq*(freq**3)*(1/(exp((self.a1_freq*freq)/T)-1))
+~~~~
+
+So einigermassen als Aequivalent zu der Python ``__init__`` Methode kann wohl
+der folgende Teil aus dem C++ Code gelten:
+
+~~~~
+    void BlackbodyRadiation::init (const double& temperature)
+    {
+        // reset the array storing function parameters
+        itsParams.clear();
+        // p[0] : Temperature in Kelvin
+        itsParams.push_back(temperature);
+        // p[1] : c^2 - Lightspeed squared
+        itsParams.push_back(swir::math::c*swir::math::c);
+        // p[2] : 2 h c^2
+        itsParams.push_back(2.0*swir::math::h*itsParams[1]);
+        // p[3] : 2 h / c^2
+        itsParams.push_back(2.0*swir::math::h/itsParams[1]);
+        // p[4] : h c / k
+        itsParams.push_back(swir::math::h*swir::math::c/swir::math::k);
+    }
+~~~~
+
+Der Vorteil an der letzteren Variante ist, dass die ``init`` Funktion hier als
+``private`` deklariert ist und a) mir nicht das Interface zumuellt, bzw. b) die
+intern gebufferten Zwischenschritte nicht einfach von draussen abgegriffen werden
+koennen. So wie die Dinge stehen, werde ich wohl ein wenig parallel an beiden Varianten
+schreiben, vor allen Dingen weil ich fuer die spaeter anstehende In-flight Kalibration
+eben alles sauber von unter her aufbauen koennen moechte -- wenn man dann die entsprechenden
+Funktionalitaeten auch via Python gebrauchen moechte, laesst sich dies immer noch in
+Form von Bindings anbieten.
+ 
+**:::**
+ 
+ 
+### Mehrsprachig ###
+
+
+
+
+_Sun, 13. April 2014 -- 22:52_
+
+So langsam wird es doch; nachdem die erste Fassung der Rechnung an
+[Rotslab](http://www.rotslab.nl) rausgegangen ist, habe ich noch ein paar kleine
+Nachbesserungen vornehmen muessen. Bei dieser Gelegenheit habe ich dann auch direkt
+einmal mit den Arbeiten begonnen, welche es mir ermoeglichen in Zukunft sprachlich
+angepasste Rechnungen zu versenden. Da ich mich ja auch weiterhin ueber Landesgrenzen
+hinweg zu bewegen gedenke, macht es schon Sinn derartige Vorgaenge in so weit zu
+vereinheitlichen, dass a) ich nicht jedes Mal von vorne anfangen muss, b) meine Schreiben
+sprachunabhaengig einen gewissen Wiedererkennungswert aufweisen und c) ich was nur eben geht
+automatisieren kann. Aus diesem Grunde habe ich mittlerweile auch damit begonnen
+sprachspezifische Einstellungen weiterzureichen, so dass Textfelder ohne Aufwand
+an die jeweilige Sprache angepasst werden. Im Style-File sieht dies dann so auch
+(wie man erkennen kann, habe ich noch nicht fuer alle Label die passende Uebersetzung
+gefunden):
+
+~~~~
+\DeclareOption{dutch}{  %% =============================================== Dutch
+    \newcommand\nameInvoice{Factuur}
+    \newcommand\nameInvoiceNumber{Factuurnummer}
+    \newcommand\nameTaxNumber{Fiscaal nummer}
+    \newcommand\thankYou{Wij danken u voor het in ons gestelde vertrouwen!}
+    \newcommand\nameDescription{Omschrijving}
+    \newcommand\nameQuantity{Antaal}
+    % Name and adress
+    \newcommand\nameAddress{Postadres}
+    \newcommand\namePhone{Telefoon}
+    }
+\DeclareOption{english}{  %% =========================================== English
+    \newcommand\nameInvoice{Invoice}
+    \newcommand\nameInvoiceNumber{Invoice no.}
+    \newcommand\nameTaxNumber{Tax~reg.~number}
+    \newcommand\thankYou{Thank You for Your Business!}
+    \newcommand\nameDescription{Description}
+    \newcommand\nameQuantity{Quantity}
+    % Name and adress
+    \newcommand\nameAddress{Postal address}
+    \newcommand\namePhone{Phone}
+    }
+\DeclareOption{german}{  %% ============================================= German
+    \newcommand\nameInvoice{Rechnung}
+    \newcommand\nameInvoiceNumber{Rechnungsnummer}
+    \newcommand\nameTaxNumber{Steuernummer}
+    \newcommand\thankYou{...}
+    \newcommand\nameDescription{Beschreibung}
+    \newcommand\nameQuantity{Anzahl}
+    % Name and adress
+    \newcommand\nameAddress{Anschrift}
+    \newcommand\namePhone{Telefon}
+    }
+\ProcessOptions
+~~~~
+
+Die Verwendung ist dann -- in LaTeX-typischer Weise -- recht einfach:
+
+~~~~
+\usepackage[english]{invoice}
+~~~~
+
+... einfach bei der Einbindung des Style-Paket die gewuenschte Sprache als
+Option mitgeben und schon werden die entsprechend definiterten Textelemente in
+der lokalisierten Version gesetzt. 100%ig zufrieden bin ich mit der Automatisierung
+bisher zwar noch nicht, aber die naechste (noch einmal deutlich verallgemeinernde)
+Itertation werde ich mich fuer spaeter aufsparen -- zunaechst muss morgen die korregierte
+Rechnung raus, dann kann mich um die Arbeiten hinter den Kulissen kuemmern.
+ 
+**:::**
+ 
+ 
+### Aus dem Rhythmus ###
+
+
+
+
+_Sat, 12. April 2014 -- 22:36_
+
+Also es macht schon etwas aus, wen ich -- wie in dieser Woche geschehen -- von dem
+ansonsten gewohnten Reiseschema abweiche. Den ganzen Tag ueber bin ich durch die Gegend
+gelaufen, immer wieder der festen Ueberzeigung, dass wir Freitag haben. Ich denke mal
+der Trip in den Garten hat letzten Endes ein wenig wir Abhilfe gesorgt, denn von den anderen
+Aktivitaeten und Umstaenden her haette mich wohl kaum etwas auf den richtigen Pfad gesetzt.
+In einem Fall wie diesem kann es in der Tat schon einmal gut sein, wenn sich Dinge
+einigermassen eingespielt haben: was z.B. den Weg in Richtung Bahnhof betrifft --
+was ja noetig ist, wenn ich den ICE kriegen will -- ist es schon ganz gut die entscheidenden
+Zeiten mehr oder wenig im Gefuehl zu haben. Als ich gestern Nachmittag noch bei
+[SRON](http://www.sron.nl) musste ich wirklich aufpassen, dass ich rechtzeitig losgekommen
+bin, weil ich rein vom Gefuehl her noch im "Mittwoch-Modus" war. Aber gut, die Wecker fuer
+Montag Morgen sind schon wieder gestellt, so dass ich da wieder einigermassen abgesichert
+bin.
+ 
+**:::**
+ 
+ 
 ### Mit Hund ###
 
 
@@ -303,192 +578,6 @@ recht hands-on und mit dem Fokus auf die musikalische Begegnung zwischen den bet
 Musikern. Ich denke mal, dass ich mich da mal ein wenig durch die zurueckliegenden Folgen
 hoeren und schauen muss, vor allen Dingen auch, weil sich da einige Musiker in der Liste
 befinden, von welchen ich bisher noch nicht gehoert habe.
- 
-**:::**
- 
- 
-### Ein wenig langsam... aber moeglich ###
-
-
-
-
-_Thu, 03. April 2014 -- 21:49_
-
-Typischerweise ist es ja eine der ersten Handlung, wenn ich am Donnerstag Abend
-wieder zuhause in Bonn bin, dass ich den Rechner ins heimische WLAN einklinke um
-
- - unterwegs geschriebene Mails abzuschicken,
- - unterwegs geschriebenen Code ins Repository einzuchecken,
- - unterwegs geschriebene Blog-Eintraege online zu setzen.
-
-Waehrend letzterer Punkt nicht unbedingt der wichtigste von allen ist, so finde
-ich es doch ganz nett, wenn derartige Dinge -- welche eben nicht komplett von alleine
-geschehen -- schon erledigt sind, wenn ich zuhause eintreffe. Wie ja schon mehrfach
-berichtet gibt es am Koelner Bahnhof ja einen (oder gleich mehrere, je ja nach dem,
-wie man es genau definiert) Internet Hotspot der Telekom, ueber welchen ich mich schon
-so manches Mal eingeklinkt habe. Am heutigen habe ich wieder einmal von dem Service
-gebraucht gemacht, um allen drei Aktivitaeten nachzugehen. Dabei sollte man natuerlich
-ein wenig im Hinterkopf behalten, dass die Uebertragungsraten nicht mit dem zu vergleichen
-sind, was im heimischen WLAN oder im Institut zur Verfuegung steht. So kommt es denn auch,
-dass der Upload der Web-Seiten nicht mehr ganz fertig geworden ist -- der Zug fuhr aus dem
-Bahnhof aus, ehe alle Daten uebertragen waren:
-
-~~~~
-[100%] Publishing website - uploading generated pages ...
-sending incremental file list
-blog/
-blog/2014.html
-       18310 100%    0.00kB/s    0:00:00 (xfer#1, to-check=1069/1098)
-blog/archive.html
-       11080 100%  163.94kB/s    0:00:00 (xfer#2, to-check=1068/1098)
-blog/index.html
-       34968 100%    0.34kB/s    0:01:39 (xfer#3, to-check=1066/1098)
-blog/upcoming.html
-       94968 100%   16.82kB/s    0:00:05 (xfer#4, to-check=1065/1098)
-
-rsync: recv_generator: mkdir "/Volumes/webdav/webseiten/photography/api" failed: Operation timed out (60)
-*** Skipping any contents from this failed directory ***
-photography/articles/
-~~~~
-
-Beim Quellcode sieht es deutlich besser aus: nicht nur sind es typischerweise weniger
-Daten, welche uebertragen werden muessen, sondern durch die in [Git](http://www.git-scm.com)
-eingebaute Kompression laesst sich die zur Verfuegung stehende Bandweite sehr gut
-ausreizen -- so kommt es denn auch, dass die Updates alle raus gegangen sind:
-
-~~~~
-Counting objects: 67, done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (22/22), done.
-Writing objects: 100% (22/22), 3.12 KiB | 0 bytes/s, done.
-Total 22 (delta 19), reused 0 (delta 0)
-To git@github.com:lbaehren/swir.git
-   7a81f7e..255ddd1  devel -> devel
-~~~~
- 
-**:::**
- 
- 
-### Knapp ###
-
-
-
-
-_Thu, 03. April 2014 -- 19:13_
-
-Also es kann durchaus schon einmal knapp werden mit dem Trip zum Bahnhof. Wenn
-ich wie heute a) ein wenig spaeter aufbreche und b) die Busse nicht vernuenftig
-fahren, dann kann dies durchaus bedeuten, dass wenig Zeit bleibt zwischen der Ankunft
-auf dem Bahngleis und dem Einfahren des ICE. Heute war es eben besonders aergerlich,
-weil der Bus der Linie 12, welcher bei der Ankunft an der Haltestelle noch mit sechs Minuten
-angezeigt wurde, mit einem Male komplett von der Anzeigetafel verschwandt und stattdessen
-der Hinweis auftauchte, dass dieser ausfallen wuerde. Auf die naechste 12 zu warten schien
-einfach ein wenig zu risikoreich, denn wenn da einmal der Wurm drin sitzt geht da leicht schon
-einmal noch mehr schief. Also habe ich mich schnellstens zu der um die Ecke befindlichen
-Haltestelle der Linie 28 begeben, um auf der alternativen Route zum Bahnhof zu kommen
-(und vor allen Dingen rechtzeitig um meinen Zug zu kriegen).
-
-Da muss ich wieder ein wenig mehr drauf achten: ich habe zwar den Wecker auf sechs Uhr
-stehen, aber ich neige mitunter dazu doch noch ein paar Kleinigkeiten zu erledigen
--- da wird es dann gerne etwas spaeter, ehe ich aus dem Institut verschwinde. Wenn dann
-auch noch Probleme bei der Busverbindung auftauchen kann es schon mal knapp werden... dabei
-lassen sich derartige Engpaesse ja eigentlich recht einfach verhindern.
- 
-**:::**
- 
- 
-### Directory listings with Wget ###
-
-
-
-
-_Thu, 03. April 2014 -- 11:57_
-
-It is and remains one of the most useful tools I know when it comes to transferring files:
-
-> [GNU Wget](https://www.gnu.org/software/wget) is a free software package for retrieving files using HTTP, HTTPS and FTP, the most widely-used Internet protocols. It is a non-interactive commandline tool, so it may easily be called from scripts, cron jobs, terminals without X-Windows support, etc.
-
-One of the things I recently learned is how to retrieve the listing of a remote directory (e.g. on a FTP server); while of course
-
-~~~~
-wget <baseurl>/*.<suffix>
-~~~~
-
-is great to download all files of a given suffix, once in a while I'd actually like to have the listing itself; especially when running a longer download it is nice not needing to step through the whole list time and time again, but to feet Wget a list of URLs to work through and then tick off the files which have been retrieved already. That indeed such a list is being generated can be seen from the fact that when running something like the above instruction Wget creates a listing... but then removes it after the fact:
-
-~~~~
-==> PASV ... done.    ==> LIST ... done.
-
-    [ <=>                                   ] 2,503       --.-K/s   in 0.009s
-
-2014-04-03 10:38:13 (258 KB/s) - ‘.listing’ saved [2503]
-
-Removed ‘.listing’.
-~~~~
-
-If you look around -- or somewhat deeper into the Wget documentation -- you will find that indeed there is a way to retrieve and keep such a listing:
-
-~~~~
-wget <url> --spider --no-remove-listing
-~~~~
-
-This still is not yet the desired list of URLs, but with a few scripting instructions around the previous statement, generating a list -- which then in turn can be passed along to other tools as well -- is rather straight-forward.
- 
-**:::**
- 
- 
-### Bye, bye Ubuntu One ###
-
-
-
-
-_Wed, 02. April 2014 -- 16:58_
-
-Da wird es wohl Zeit sich nach einer Alternative umzuschauen:
-
-> Ubuntu-Hersteller Canonical stellt seinen Dropbox-aehnlichen Speicherdienst Ubuntu One ein. Die Synchronisierung von Daten mit Ubuntu-One-Clients endet zum 1. Juni; die Daten sollen noch bis zum 31. Juli zum Download auf den Ubuntu-One-Servern bereitgehalten werden, danach werden sie geloescht. Schon jetzt ist es nicht mehr moeglich, Musik und zusaetzlichen Speicherplatz im Ubuntu-One-Store zu kaufen. Die kommende Ubuntu-Version 14.04 LTS soll bereits ohne Ubuntu-One-Integration ausgeliefert werden.
-
-Wie [Heise News](http://www.heise.de/newsticker/meldung/Canonical-beerdigt-seinen-Speicher-und-Musikdienst-Ubuntu-One-2160685.html) zurecht anmerken, gibt es mittlerweile doch zu starke Konkurenz, so dass sich der Service fuer Canonical wohl nicht mehr rechnet. Fuer die weitere Planung heisst dies also, dass ich mir Gedanken ueber eine alternative Loesung machen sollte, denn schliesslich ist es schon ganz nett, wenn sich Daten auf derart einfache Weise zwischen unterschiedlichen Rechner hin und her schieben lassen. Innerhalb der Hauswaende leistet das Synology sehr gute Dienste, aber da jenes ja nicht nach aussen sichtbar ist, muss ich da einen anderen Weg gehen. Gluecklicherweise ist bis zum Abschalten noch ein wenig Zeit, so dass ich mich ein wenig umschauen kann, was es sonst noch so alles gibt.
- 
-**:::**
- 
- 
-### Hartnaeckig ###
-
-
-
-
-_Tue, 01. April 2014 -- 22:30_
-
-Es ist ja nun schon eine Weile her, dass ich mein Laptop von [Mac OS X](http://www.apple.com/osx)
-10.5.8 auf 10.9.2 umgestellt habe -- so 100%ig nach Wunsch ist das neue Setup allerdings
-immer noch nicht (was vielleicht auch daran liegt, dass ich da nicht so sonderlich viel Zeit rein
-investiert habe). Waehrend die meisten Umstellungen recht glatt verlaufen sind, muss
-ich mich immer noch mit den neuen Messaging System anfreunden; [Apple](http://www.apple.com)
-nennt dies _Notifications_ -- einen Teil eben dieser Benachrichtigungen sollte ich allerdings
-bald mal abstellen, denn wie ich festellen konnte, gibt es Sperrfeuer, wenn auch andere
-Programme Erinnerungen von sich geben.
-
-![Thunderbird Lightning reminder](/blog/2014/2014-04/2014-04-01_Lightning_reminder.png)
-
-In besonderer Weise nervig finde ich die Tatsache, dass sich _Notifications_ (zumindest
-so wie dies bei mir derzeit noch passiert) sich nicht so ganz mit [Lightning](http://www.mozilla.org/en-US/projects/calendar)
-versteht, welcher innerhalb von [Thunderbird](https://www.mozilla.org/en-US/thunderbird)
-den Zugriff auf Terminkalender bereitstellt. Waehrend einfache Kalendereintraege kein
-Problem darstellen, sind Eintraege mit Erinnerungen (wie ich sie mir z.B. fuer die Bushfahrt
-zurueck vom Institut eingestellt habe) durchaus trickreich. Da sowohl _Lightning_ als auch
-[Calendar](https://www.apple.com/osx/apps/#calendar) auf den Kalender zugreifen, kriege ich
-dementsprechend auch die Erinnerungen in zweifacher Ausfertigung. Waehrend man diese
-Tatsache alleine vielleicht noch ein "leicht nervig" einordnen koennte, finde ich es
-ziemlich nervig wenn sich beide Programme gegenseitig in die Quere kommen. Auch wenn ich
-die Details noch immer nicht so richtig verstehe, so habe ich doch den begruendeten Verdacht,
-dass zumindest eines der beiden Programme Aenderungen an dem Kalendereintrag selber vornimmt,
-denn sobald ich die _Lightning_ Meldung wegklicke, kriege ich die Warnung, dass die lokale
-Version des Kalendereintrages nicht mehr mit dem auf dem Server uebereinstimmt. Diese
-Diskrepanz ist aber nicht einfach mit einem "meine Aenderungen uebernehmen" erledigt,
-denn nach der voreingestellten Schlummerpause taucht das Alarmfenster erneut auf und laesst
-sich nur mit einigem Durchhaltevermoegen vom Desktop verbannen. Da wird wahrscheinlich mal
-ein Ausflug in die Tiefen der Konfigurations-Einstellungen noetig, um dies abzustellen...
  
 **:::**
  

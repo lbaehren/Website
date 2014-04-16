@@ -1,0 +1,76 @@
+---
+title: "Mehrsprachig"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-04-13T22:52:41.00Z
+created_at: 2014-04-13T22:52:41.00Z
+---
+
+## {title:} ##
+
+_Sun, 13. April 2014 -- 22:52_
+
+So langsam wird es doch; nachdem die erste Fassung der Rechnung an
+[Rotslab](http://www.rotslab.nl) rausgegangen ist, habe ich noch ein paar kleine
+Nachbesserungen vornehmen muessen. Bei dieser Gelegenheit habe ich dann auch direkt
+einmal mit den Arbeiten begonnen, welche es mir ermoeglichen in Zukunft sprachlich
+angepasste Rechnungen zu versenden. Da ich mich ja auch weiterhin ueber Landesgrenzen
+hinweg zu bewegen gedenke, macht es schon Sinn derartige Vorgaenge in so weit zu
+vereinheitlichen, dass a) ich nicht jedes Mal von vorne anfangen muss, b) meine Schreiben
+sprachunabhaengig einen gewissen Wiedererkennungswert aufweisen und c) ich was nur eben geht
+automatisieren kann. Aus diesem Grunde habe ich mittlerweile auch damit begonnen
+sprachspezifische Einstellungen weiterzureichen, so dass Textfelder ohne Aufwand
+an die jeweilige Sprache angepasst werden. Im Style-File sieht dies dann so auch
+(wie man erkennen kann, habe ich noch nicht fuer alle Label die passende Uebersetzung
+gefunden):
+
+~~~~
+\DeclareOption{dutch}{  %% =============================================== Dutch
+    \newcommand\nameInvoice{Factuur}
+    \newcommand\nameInvoiceNumber{Factuurnummer}
+    \newcommand\nameTaxNumber{Fiscaal nummer}
+    \newcommand\thankYou{Wij danken u voor het in ons gestelde vertrouwen!}
+    \newcommand\nameDescription{Omschrijving}
+    \newcommand\nameQuantity{Antaal}
+    % Name and adress
+    \newcommand\nameAddress{Postadres}
+    \newcommand\namePhone{Telefoon}
+    }
+\DeclareOption{english}{  %% =========================================== English
+    \newcommand\nameInvoice{Invoice}
+    \newcommand\nameInvoiceNumber{Invoice no.}
+    \newcommand\nameTaxNumber{Tax~reg.~number}
+    \newcommand\thankYou{Thank You for Your Business!}
+    \newcommand\nameDescription{Description}
+    \newcommand\nameQuantity{Quantity}
+    % Name and adress
+    \newcommand\nameAddress{Postal address}
+    \newcommand\namePhone{Phone}
+    }
+\DeclareOption{german}{  %% ============================================= German
+    \newcommand\nameInvoice{Rechnung}
+    \newcommand\nameInvoiceNumber{Rechnungsnummer}
+    \newcommand\nameTaxNumber{Steuernummer}
+    \newcommand\thankYou{...}
+    \newcommand\nameDescription{Beschreibung}
+    \newcommand\nameQuantity{Anzahl}
+    % Name and adress
+    \newcommand\nameAddress{Anschrift}
+    \newcommand\namePhone{Telefon}
+    }
+\ProcessOptions
+~~~~
+
+Die Verwendung ist dann -- in LaTeX-typischer Weise -- recht einfach:
+
+~~~~
+\usepackage[english]{invoice}
+~~~~
+
+... einfach bei der Einbindung des Style-Paket die gewuenschte Sprache als
+Option mitgeben und schon werden die entsprechend definiterten Textelemente in
+der lokalisierten Version gesetzt. 100%ig zufrieden bin ich mit der Automatisierung
+bisher zwar noch nicht, aber die naechste (noch einmal deutlich verallgemeinernde)
+Itertation werde ich mich fuer spaeter aufsparen -- zunaechst muss morgen die korregierte
+Rechnung raus, dann kann mich um die Arbeiten hinter den Kulissen kuemmern.
+

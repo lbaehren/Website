@@ -1,0 +1,98 @@
+---
+title: "Blackbody radiation"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-04-14T21:58:00.00Z
+created_at: 2014-04-14T21:58:00.00Z
+---
+
+## {title:} ##
+
+_Mon, 14. April 2014 -- 21:58_
+
+Da schlage ich mich also wieder einmal mit den Untiefen von Python herum... und aergere
+mich das eine und andere Mal, dass die Sprache eben nicht -- zumindest nach meinem
+Verstaendnis -- die Funktionalotaeten bietet, welche ich mir wuenschen wuerde, um Teile
+unserer Software systematisch von Grund auf aufzubauen. Das aktuellste Beispiel waeren
+die Arbeiten um die von einem Schwarzkoerper-Strahler angegebene Leistung zu berechnen.
+Wie ich ja beim Durchlesen des ATBD (Algorithm Theoretical Baseline Document) sehr
+schnell sehen konnte, gibt es vor allen Dingen bei den Strahlungskorrekturen eine ganze
+Reihe von Stellen, wo optische oder strahlungsphysikalische Zusammenhaenge benoetigt
+werden. Da sich dies nicht unbedingt alles in vorgefertigter Weise vorfinden laesst
+-- zumindest nicht ohne weitere externe Abhaengigkeiten der Software herbeizufuehren --
+wird es da also noetig die entsprechenden Formeln und Gleichungssysteme zu programmieren.
+Da so eine Plank-Kurve einiges an Potenzierungen und Multiplikationen aufweist,
+versuche ich natuerlich von der Moeglichkeit des Pufferns Gebrauch zu machen; wenn
+die abgegebene Strahlungsleistung nur noch von den Variablen Temperatur (T) und
+Frequenz (nu) abhaengt, dann laessen sich die entsprechendes Zusammenfassen einige
+der Rechenschritte vorausschauend durchfuehren, so dass ich die Zwischenresultate
+spaeter dann einfach weiterverwenden kann. Fuer mich klingt dies dann sofort wieder
+nach Datenkapselung, bei der ich nur noch die wirklich einstellbaren Werte nach draussen
+sichbar mache und damit gleichzeitig die numerischen Tricks hinter den Kulissen eben
+hinter diesen verbergen kann (klar, sie sind nicht weg, aber die sichtbare Komplexizitaet
+des entsprechenden Software-Bausteins laesst sich so recht minimal halten).
+
+Um ein derartiges Problem zu loesen, wuerde ich -- teils aus einer gewissen Gewohnheit, zum
+andere aber natuerlich auch aus Sprachfaehigkeitsgruenden -- zu einer Sprache wie
+C++ greifen, weil ich da eben sehr schoen Daten kapseln und eine wohl-definierte
+Schnittstelle nach aussen bereitstellen kann. Dies bringt mir fuer das OCAL Framework
+nur leider nicht so sonderlich viel, weil jenes naemlich komplett in Python geschrieben
+ist und bisher in keinster Weise darauf ausgelegt ist, Erweiterungen in anderen
+Sprachen aufzunehmen. Was dies fuer mich bedeutet ist, dass ich meine Ideen von
+Datenkapselung und oeffentlicher Schnittstelle so ziemlich begraben kann. Nach ein wenig
+Hin und Her habe ich nun zwar eine einigermassen akzeptable Loesung gefunden, wie ich da
+vorgehen kann, aber elegant und wirklich sauber finde ich dies definitiv nicht.
+
+~~~~
+class BlackbodyRadiation (object):
+    """ Model function for the radiation of a black blody.
+    """
+
+    # Required physical constants
+    from scipy.constants import h,c,k
+
+    def __init__(self):
+        """ Constructor.
+        """
+        self.a0_freq = 2*self.h/(self.c**2)
+        self.a1_freq = self.h/self.k
+
+        self.a0_wave = 2*self.h*(self.c**2)
+        self.a1_wave = self.h*self.c/self.k
+
+    def radiance_by_freq (freq, T):
+        """ Blackbody radiation as funciton of temperature and frequency.
+            T in K, f in Hz
+        """
+        return self.a0_freq*(freq**3)*(1/(exp((self.a1_freq*freq)/T)-1))
+~~~~
+
+So einigermassen als Aequivalent zu der Python ``__init__`` Methode kann wohl
+der folgende Teil aus dem C++ Code gelten:
+
+~~~~
+    void BlackbodyRadiation::init (const double& temperature)
+    {
+        // reset the array storing function parameters
+        itsParams.clear();
+        // p[0] : Temperature in Kelvin
+        itsParams.push_back(temperature);
+        // p[1] : c^2 - Lightspeed squared
+        itsParams.push_back(swir::math::c*swir::math::c);
+        // p[2] : 2 h c^2
+        itsParams.push_back(2.0*swir::math::h*itsParams[1]);
+        // p[3] : 2 h / c^2
+        itsParams.push_back(2.0*swir::math::h/itsParams[1]);
+        // p[4] : h c / k
+        itsParams.push_back(swir::math::h*swir::math::c/swir::math::k);
+    }
+~~~~
+
+Der Vorteil an der letzteren Variante ist, dass die ``init`` Funktion hier als
+``private`` deklariert ist und a) mir nicht das Interface zumuellt, bzw. b) die
+intern gebufferten Zwischenschritte nicht einfach von draussen abgegriffen werden
+koennen. So wie die Dinge stehen, werde ich wohl ein wenig parallel an beiden Varianten
+schreiben, vor allen Dingen weil ich fuer die spaeter anstehende In-flight Kalibration
+eben alles sauber von unter her aufbauen koennen moechte -- wenn man dann die entsprechenden
+Funktionalitaeten auch via Python gebrauchen moechte, laesst sich dies immer noch in
+Form von Bindings anbieten.
