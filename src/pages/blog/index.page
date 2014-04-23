@@ -9,6 +9,82 @@ tags: Blog
  
 **:::**
  
+### Amerhof ###
+
+
+
+
+_Wed, 23. April 2014 -- 21:36_
+
+Auch dies hier ist Utrecht -- kein sonderlich spektakulaerer Platz, aber ein Ort in der
+Naehe der Wohnung, an welchen sich oberflaechliche Besucher der Stadt wohl eher nicht
+verirren werden:
+
+![Amerhof](/blog/2014/2014-04/hdr_20140422_185343_Amerhof.jpg)
+
+Auch wenn ich mir bisher nie so richtig die Muehe gemacht habe einen Touristenfuehrer
+oder dergleichen zu Rate zu ziehen, so wuerde ich doch mal starkt vermuten, dass die
+ueberwiegende Zahl der aufgefuehrten Besichtigungsorte vor allen Dinge noerdlich der
+Bahngleise -- und damit in unmittelbarer Umgebung des alten Stadtkernes -- liegen. Von
+diesem zentralen Bereich aus erstreckt sich Utrecht aber durchaus noch ein ganzes Stueck
+in Richtung Westen (auf Amsterdam hin) und nach Sueden; vor allen Dingen im suedlichen Bereich
+befindet sich dabei eine Mixtur aus aelteren Stadtvierteln (bzw. ehemaliegen Vororten)
+und komplett neu entstandenen (und immer noch in der Entstehung befindlichen) Gebieten.
+Mich persoenlich reizt dies natuerlich tausendmal mehr, als dort herumzulaufen, wo man
+-- vor allen Dingen in der nun wieder angebrochenen Jahreszeit -- ueber Scharen an Touristen
+stolpert (obwohl ich hier zur Verteidigung von Utrecht ganz klar sagen muss, dass wir es
+hier in keinster Weise mit Amsterdamer Verhaeltnissen zu tun haben).
+
+Was ich auch schon an den vorherigen Wohnorten probiert habe ist, vor allen Dingen in den
+Stadtbereichen mit der Kamera unterwegs zu sein, wo man eher weniger Bildmaterial von
+finden wird. Dies hat den Vorteil, dass ich mit eher weniger photographierten Motiven
+zurueck kommen kann und so in der Lage bin einen Blick auf die Stadt anzubieten, welcher
+eher weniger zu finden ist. Gut, ganz so leer wird eine Suche nach Motiven aus den
+Utrechter Stadtteilen Hoograve und Rivierenwijk vielleicht nicht ausfallen, aber wenn
+es gut geht kann ich zumindest ein klein wenig dazu beitragen, diese Gegend in ansprechender
+Weise zu praesentieren.
+
+![View along the Vaartsche Rijn](/blog/2014/2014-04/hdr_20140422_190018_Vaartsche_Rijn.jpg)
+
+Wofuer diese Exkursionen -- auch wenn es sich gestern streng genommen nicht wirklich um
+etwas dergleichen gehandelt hat -- aber auch ein sehr interessanter Test sind, ist die
+Frage in wie weit das verfuegbare Kartenmaterial in der Lage ist die von mir aufgesuchten
+Orte nicht nur abzubilden, sondern am besten auch zu benennen. Als ich via
+[Google Maps](http://maps.google.com) probiert habe den Namen des im ersten Bild
+gezeigten Platzes ausfindig zu machen, wurde ich leider enttaeuscht: waehrend ich
+ohne weiteres die Namen der umliegenden Strassen ablesen konnte, war der Amerhof lediglich
+als ein grauer Fleck inmitten der umliegenden Haeuserblocks verzeichnet. Als ich hingegen
+[OpenStreetMap](http://www.openstreetmap.org) zu Rate gezogen habe, erschloss sich mir
+eine ungleich groessere Anzahl an Informationen (und damit meine ich nicht nur eingezeichnete
+Details). Ich denke mal das lohnt sich in jedem Fall mal im Blick zu halten, denn ich kann
+mir schon gut vorstellen das letztere Resource aufgrund des Funktionsprinzips einfach
+ganz ander in der Lage ist lokale Gegebenheiten (welche mitunter alleine Ortsansaessigen
+bekannt sind) abzubilden.
+ 
+**:::**
+ 
+ 
+### Unterwegs nach Delft ###
+
+
+
+
+_Tue, 22. April 2014 -- 10:10_
+
+Und da sitze ich auch schon wieder im Zug. Nachdem ich die Fahrt von Bonn nach Utrecht
+recht gut ueberstanden habe (der ICE war erfreulich puenktlich), bin ich nur schnell bei
+mir in der Wohnung reingesprungen, um dann umgehend wieder loszuziehen. Heute Mittag um
+12 Uhr gibt es ein Treffen bei S\[&\]T in Delft, was bedeutet dass Utrecht eigentlich nicht
+nur Durchgangsstation ist; wenn alles glatt geht sollte ich in ziemlich genau einer
+Stunde in Delft eintreffen, was mir dann noch ausreichend Zeit gibt um zu den Bueroraeumen
+zu gelangen (hoffe ich zumindest). Sicherheitshalber habe ich mit Richard schon vereinbart,
+dass ich heute wohl nicht mehr bei [SRON](http://www.sron.nl) auftauchen werde, denn
+wann genau ich es schaffen werde wieder aus Delft aufzubrechen, kann ich derzeit noch nicht
+absehen.
+ 
+**:::**
+ 
+ 
 ### Und wieder vorbei ###
 
 
@@ -512,113 +588,6 @@ hier und dort mal in eine Luecke einzufuegen; so kommt es denn auch, dass ich mi
 die erste Season komplett habe und definitiv mal auf Season zwei gespannt bin. Sowohl die
 Personen als auch die Gegebenheiten sind ordendlich schraeg, aber wer ein Vorliebe fuer eben
 derartige Produktionen hat, sei die Serie waermstens empfohlen.
- 
-**:::**
- 
- 
-### Rechnungen mit LaTeX und KOMA-Script ###
-
-
-
-
-_Wed, 09. April 2014 -- 18:16_
-
-Das haette eigentlich schon eine Weile erledig sein muessen, aber nachdem gestern Abend
-einfach das Limit erreicht war, habe ich heute Morgen einen guten Teil meiner Fahrt im
-[ICE 222](http://www.zugfinder.de/zuginfo.php?zugnr=ICE_222) damit zugebracht endlich mal
-noch das Grundgeruest fuer zu erstellende Rechnungen anzufertigen. Nachdem ich mittlerweile
-ja die Visitenkarten habe (sowohl in ausreichender Menge als auch in guter Qualitaet),
-macht es natuerlich Sinn, ggf. bestimmte Design-Elemente zu uebernehmen, um so eine
-Wiedererkennung moglich zu machen. Folgerichtig habe ich mich also den LaTeX-Quellcode
-der Karte geschnappt und diesen in das Template fuer die Rechnungen eingearbeitet.
-
-~~~~
-\setkomavar{firsthead}{
-    \begin{flushleft}
-        \color{GreenYellow} \Huge\bf Lars B\"ahren
-    \end{flushleft}
-    \begin{flushright}
-        \color{GreenYellow}
-        \begin{tabular}{r|l}
-                          & \bf\color{Black} Software development \\
-                          & \bf\color{Black} Photography \\
-                          &  \\
-        \color{RoyalBlue} address & \color{Black} Brunnenstrasse 18, 53123 Bonn \\
-        \color{RoyalBlue} phone   & \color{Black} (+49)\,(0)178 1780389 \\
-        \color{RoyalBlue} email   & \color{Black} lbaehren{\myfont{\small @}}gmail.com \\
-        \color{RoyalBlue} url     & \color{Black} www.larsbaehren.de \\
-        \color{RoyalBlue} skype   & \color{Black} larsbaehren
-        \end{tabular}
-    \end{flushright}
-}
-~~~~
-
-Laesst man dies dann durch LaTeX laufen, so bekommt man einen recht ansprechenden
-Briefkopf, welcher sich sowohl von der Farbgebung als auch der Anordnung der Textelemente
-eng an die [Gestaltung der Visitenkarte](/blog/2014/2014-02/2014-02-21_09-46.html)
-anlehnt (was ja eben der Hintergedanke war):
-
-![Briefkopf Invoice](/blog/2014/2014-04/2014-04-09_Invoice.png)
-
-Ein wesentliches Element hierbei war die ueber das [KOMA-Script](http://www.ctan.org/pkg/koma-script)
-Paket bereitsgestellte _Letter_ Klasse, welche sich -- wie dies auch bei den anderen
-Standard-Dokumenten der Fall ist -- sehr flexibel konfigurieren laesst:
-
-> The KOMA-Script bundle provides drop-in replacements for the ``article``/``report``/``book`` classes with emphasis on typography and versatility. There is also a letter class, different from all other letter classes.
-
-Der wesentliche Unterschied zu den bisherigen Verwendungen von ``scrlttr2`` war in diesem
-Fall allerdings, dass ich deutlich mehr Gebrauch von der internen Funktionalitaet machen
-musste, weil sich sonst der Briefkopf nicht in der gewuenschten Weise erstellen liess.
-Wie man andererseits anhand des obigen Codes erkennen kann, war dies nicht viel anderes
-als jede vergleichbaren Layout-Anweisungen unter LaTeX. Was ich mir jetzt noch vornehmen
-muss ist die dazugehoerige Fusszeile der Briefseiten, in welche u.a. die Bankverbindung
-mit eingebaut werden muss; die Daten selber habe ich schon in dem Style-File abgelegt,
-jetzt muss ich nur noch die das Layout fertig machen... dann kann das laengst ueberfaellige
-Schreiben auch endlich raus.
- 
-**:::**
- 
- 
-### Von innen betrachtet ###
-
-
-
-
-_Tue, 08. April 2014 -- 19:06_
-
-Ich weiss nicht, wie oft ich daran vorbeigefahren bin und mir vorgenommen habe einmal mit der
-Kamera in der Hand dort langs zu laufen: entlang der Bahnstrecke von Bonn nach Koeln stehen
-zwischen Bonn-Tannanbusch und Roisdorf eine Reihe Gewaechshaeuser entlang der Gleise, welche
-mit Graffiti besprueht sind. Da ich immer wieder versuche Graffiti auch an etwas ausgefalleneren
-Orten ausfindig zu machen (und dann natuerlich auch zu dokumentieren), hat es mich schon
-seit Ewigkeiten gereizt einmal ein Stueck weit entlang der Bahngleise zu laufen, damit ich
-ich mir die Graffiti genauer anschauen konnte. Angesichts des sonnigen Wetters bin ich
-dann gestern am spaeteren Nachmittag kurzentschlossen zusammen mit Julia aufgebrochen,
-um dann von Dransdorf aus eine laengere Runde zu laufen. So lange, wie es dann allerdings geworden ist
-hatte ich dies urspruenglich allerdings noch nicht einmal geplant, aber weil ich dann verucht habe
-gewissermassen zwei potentielle Touren miteinander zu verbinden, war ich dann deutlich laenger
-unterwegs, als ich mir dies eigentlich vorgenommen hatte.
-
-![Gewaechshaus](/blog/2014/2014-04/hdr_20140407_181925_Greenhouse.jpg)
-
-Einer der netten Nebeneffekte dieser ausgedehnten Tour war es, dass ich mir die Gewaechshaeuser
-entlang der Bahnstrecke wirklich einmal genauer aus der Naehe anschauen konnte. Wie ich bei
-dieser Gelegenheit herausfinden konnte sehen die Graffiti aus dem Fenster eines vorbeirauschenden
-Zuges deutlich besser aus, als dies ein wenig mehr aus der Naehe der Fall ist. Immerhin
-aber konnte ich ein wenig mit dem Licht der langsam untergehenden Sonne herumspieln, denn je nach
-Blickwinkel wurden die Spruehbilder von hinten angeleuchtet, was man so in der Art typischerweise
-ja eben nicht zu Gesicht bekommt. Statt aber nur um die Gewaechshaeuser herumzuschleichen
-war ich natuerlich auch einmal daran interessiert einen kleinen Blick hinein zu werfen. Da weit
-und breit niemand zu sehen war, habe ich mich ein wenig naeher herangetraut und so dann auch
-einen offenen Eingang gefunden, durch welchen ich mal einen genaueren Blick in das Innenleben
-eines der Gewaechshaeuser werfen konnte. Nicht dass ich da nun wer weis was aussergewoehnliches
-erwartet haette, aber ich war vor allen Dingen einfach mal neugierig auf die Lichtverhaeltnisse
-unter dem Glasdach (man erinnere sich: ich war mit Kamera unterwegs und vor allen Dingen
-auf der Suche nach Motiven fuer HDR Aufnahmen). Von dem, was ich da so zu sehen bekommen habe,
-bin ich natuerlich nur noch neugieriger geworden -- so frage ich mich z.B. wie dies erst
-wirken mag, wenn man es (ein wenig mehr in Richtung Sommer) mit so einem richtig blutroten
-Sonnenuntergang zu tun hat, welcher den kompletten Innenraum des Gewaechshauses aufgluehen laesst.
-Da werde ich also wohl nicht einmal aufbrechen muessen, damit ich diese Frage beantworten kann.
  
 **:::**
  

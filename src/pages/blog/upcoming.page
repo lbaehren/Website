@@ -33,6 +33,21 @@ _Last modified: {date:}_
 **in preparation ...**
 
 
+### Task dependencies
+
+Planning the majority of my todo items via [Taskwarrior](http://taskwarrior.org), I am constantly looking to better understand the tool and expand the ways I am able to use it.
+
+One of the reoccuring problems to solve when tracking a collection of related tasks is to somehow capture their relationship with each other; such a relationship can be that task are part of the same project (e.g. ``tropomi``, ``books`` or ``private``), share a common property (expressed through attributes such as ``travel``, ``bug``, ``finance`` or ``audiobook``) or in their execution order depend on each other.
+
+~~~~
+task 289 modif depend:552-573
+~~~~
+
+~~~~
+task 574-593 modif depend:552-573
+~~~~
+
+
 ### Status quo der Versionskontrolle
 
 [Artikel auf Heise Developer](http://www.heise.de/developer/artikel/Status-quo-der-Versionskontrolle-1979724.html)
