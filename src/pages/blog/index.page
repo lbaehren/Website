@@ -9,6 +9,57 @@ tags: Blog
  
 **:::**
  
+### Spannende Woche ###
+
+
+
+
+_Mon, 28. April 2014 -- 06:40_
+
+Ok, das war ein wirklich kurzes Wochenende: da ich ja erst am Freitag Abend wieder in
+Bonn eingetroffen bin und mich heute Morgen bereits wieder auf dem Weg nach Utrecht befinde,
+waren es rein effektiv gerade einmal zwei Tage -- das ist natuerlich etwas wenig. In gewisser
+Weise gibt es dann diese Woche den Ausgleich: angesichts des nahenden 1. Mai bleibe ich nur
+bis Mittwoch Nachmittag in Utrecht, so dass es effektiv nur zwei Uebernachtungen sind.
+Die Tatsache aber, dass ich dann wieder im Lande bin, bedeutet keinesfalls, dass es
+Gelegenheit gibt sich auszuruhen: wie bereits angemerkt, findet diese Woche die Uebergabe
+Hauses statt (zumindest so die Planung), was bedeutet dass ab dem Donnerstag das grosse Ausmisten
+und Vorbereiten fuer die Renovierung auf dem Plan steht. Ich bin ja mal gespannt, ob wirklich
+alles so glatt verlaeuft, wie dies geplant ist -- ich wuensche mir natuerlich keine
+Ueberraschungen auf der Zielgeraden, aber realistischerweise macht es wohl Sinn sich
+da mental zumindest drauf vorzubereiten.
+
+Was die nachrichten-technische Begleitung der Aktivitaeten betrifft habe ich mir auch
+schon ein wenig Gedanken gemacht; so wie wieder Blog urspruenglich ja entstanden ist,
+um mir das regelmaessige Versenden von Mail-Benachrichtigungen zu ersparen, werde ich
+wohl versuchen ein Kombination von Blog und [Flickr](http://www.flickr.com) zu verwenden,
+um auf diese Weise Updates unter die Leute zu bringen.
+ 
+**:::**
+ 
+ 
+### Nicht mehr lange ###
+
+
+
+
+_Sun, 27. April 2014 -- 14:49_
+
+Yep, es dauert nicht mehr lange, dann kann es losgehen mit den Arbeiten am Haus.
+Sicher, es gibt immer noch eine nicht-verschwindende Wahrscheinlichkeit dass es
+auf den letzten Meter zur Uebergabe noch einmal zu Komplikationen kommt, aber
+ich versuche einfach mal positiv zu bleiben, dass alles glatt laueft. Der
+aktuelle Plan ist, dass es am Mittwoch Nachmittag zur SChluesseluebergabe
+kommt... rechtzeitig um den ersten Mai fuer eine erste Aufraeumaktion zu nutzen.
+Genau voraus zu planen, was so alles notwendig werden wird, is ein wenig schwer:
+wenn es einfach nur darum ginge ein komplett leergeraeumtes Haus zu uebernehmen,
+waere dies eine Sache -- ich erwarte aber eher, dass wir ein paar Wochen nur
+damit beschaeftigt sein duerften alles auszuraeumen und uns zu allen Ecken des
+Hauses Zugang zu verschaffen.
+ 
+**:::**
+ 
+ 
 ### Abstecher nach Koeln ###
 
 
@@ -490,104 +541,6 @@ schreiben, vor allen Dingen weil ich fuer die spaeter anstehende In-flight Kalib
 eben alles sauber von unter her aufbauen koennen moechte -- wenn man dann die entsprechenden
 Funktionalitaeten auch via Python gebrauchen moechte, laesst sich dies immer noch in
 Form von Bindings anbieten.
- 
-**:::**
- 
- 
-### Mehrsprachig ###
-
-
-
-
-_Sun, 13. April 2014 -- 22:52_
-
-So langsam wird es doch; nachdem die erste Fassung der Rechnung an
-[Rotslab](http://www.rotslab.nl) rausgegangen ist, habe ich noch ein paar kleine
-Nachbesserungen vornehmen muessen. Bei dieser Gelegenheit habe ich dann auch direkt
-einmal mit den Arbeiten begonnen, welche es mir ermoeglichen in Zukunft sprachlich
-angepasste Rechnungen zu versenden. Da ich mich ja auch weiterhin ueber Landesgrenzen
-hinweg zu bewegen gedenke, macht es schon Sinn derartige Vorgaenge in so weit zu
-vereinheitlichen, dass a) ich nicht jedes Mal von vorne anfangen muss, b) meine Schreiben
-sprachunabhaengig einen gewissen Wiedererkennungswert aufweisen und c) ich was nur eben geht
-automatisieren kann. Aus diesem Grunde habe ich mittlerweile auch damit begonnen
-sprachspezifische Einstellungen weiterzureichen, so dass Textfelder ohne Aufwand
-an die jeweilige Sprache angepasst werden. Im Style-File sieht dies dann so auch
-(wie man erkennen kann, habe ich noch nicht fuer alle Label die passende Uebersetzung
-gefunden):
-
-~~~~
-\DeclareOption{dutch}{  %% =============================================== Dutch
-    \newcommand\nameInvoice{Factuur}
-    \newcommand\nameInvoiceNumber{Factuurnummer}
-    \newcommand\nameTaxNumber{Fiscaal nummer}
-    \newcommand\thankYou{Wij danken u voor het in ons gestelde vertrouwen!}
-    \newcommand\nameDescription{Omschrijving}
-    \newcommand\nameQuantity{Antaal}
-    % Name and adress
-    \newcommand\nameAddress{Postadres}
-    \newcommand\namePhone{Telefoon}
-    }
-\DeclareOption{english}{  %% =========================================== English
-    \newcommand\nameInvoice{Invoice}
-    \newcommand\nameInvoiceNumber{Invoice no.}
-    \newcommand\nameTaxNumber{Tax~reg.~number}
-    \newcommand\thankYou{Thank You for Your Business!}
-    \newcommand\nameDescription{Description}
-    \newcommand\nameQuantity{Quantity}
-    % Name and adress
-    \newcommand\nameAddress{Postal address}
-    \newcommand\namePhone{Phone}
-    }
-\DeclareOption{german}{  %% ============================================= German
-    \newcommand\nameInvoice{Rechnung}
-    \newcommand\nameInvoiceNumber{Rechnungsnummer}
-    \newcommand\nameTaxNumber{Steuernummer}
-    \newcommand\thankYou{...}
-    \newcommand\nameDescription{Beschreibung}
-    \newcommand\nameQuantity{Anzahl}
-    % Name and adress
-    \newcommand\nameAddress{Anschrift}
-    \newcommand\namePhone{Telefon}
-    }
-\ProcessOptions
-~~~~
-
-Die Verwendung ist dann -- in LaTeX-typischer Weise -- recht einfach:
-
-~~~~
-\usepackage[english]{invoice}
-~~~~
-
-... einfach bei der Einbindung des Style-Paket die gewuenschte Sprache als
-Option mitgeben und schon werden die entsprechend definiterten Textelemente in
-der lokalisierten Version gesetzt. 100%ig zufrieden bin ich mit der Automatisierung
-bisher zwar noch nicht, aber die naechste (noch einmal deutlich verallgemeinernde)
-Itertation werde ich mich fuer spaeter aufsparen -- zunaechst muss morgen die korregierte
-Rechnung raus, dann kann mich um die Arbeiten hinter den Kulissen kuemmern.
- 
-**:::**
- 
- 
-### Aus dem Rhythmus ###
-
-
-
-
-_Sat, 12. April 2014 -- 22:36_
-
-Also es macht schon etwas aus, wen ich -- wie in dieser Woche geschehen -- von dem
-ansonsten gewohnten Reiseschema abweiche. Den ganzen Tag ueber bin ich durch die Gegend
-gelaufen, immer wieder der festen Ueberzeigung, dass wir Freitag haben. Ich denke mal
-der Trip in den Garten hat letzten Endes ein wenig wir Abhilfe gesorgt, denn von den anderen
-Aktivitaeten und Umstaenden her haette mich wohl kaum etwas auf den richtigen Pfad gesetzt.
-In einem Fall wie diesem kann es in der Tat schon einmal gut sein, wenn sich Dinge
-einigermassen eingespielt haben: was z.B. den Weg in Richtung Bahnhof betrifft --
-was ja noetig ist, wenn ich den ICE kriegen will -- ist es schon ganz gut die entscheidenden
-Zeiten mehr oder wenig im Gefuehl zu haben. Als ich gestern Nachmittag noch bei
-[SRON](http://www.sron.nl) musste ich wirklich aufpassen, dass ich rechtzeitig losgekommen
-bin, weil ich rein vom Gefuehl her noch im "Mittwoch-Modus" war. Aber gut, die Wecker fuer
-Montag Morgen sind schon wieder gestellt, so dass ich da wieder einigermassen abgesichert
-bin.
  
 **:::**
  
