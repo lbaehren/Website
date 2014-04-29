@@ -4,7 +4,7 @@
 
 ## Build instructions
 add_custom_target (Website ALL
-  COMMAND ${WEBGEN_EXECUTABLE} render
+  COMMAND ${WEBGEN_EXECUTABLE} generate
   DEPENDS ${PROJECT_BINARY_DIR}/config.yaml
   WORKING_DIRECTORY ${PROJECT_BINARY_DIR}
   COMMENT "Rendering website from sources ..."
