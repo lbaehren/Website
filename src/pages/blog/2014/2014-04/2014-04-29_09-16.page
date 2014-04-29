@@ -1,0 +1,34 @@
+---
+title: "Keine Updates"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-04-29T09:16:02.00Z
+created_at: 2014-04-29T09:16:02.00Z
+---
+
+## {title:} ##
+
+_Tue, 29. April 2014 -- 09:16_
+
+... zumindest nicht online; da ich gestern -- vielleicht ein wenig voreilig -- ein Upgrade
+von [Webgen](http://webgen.gettalong.org) vorgenommen habe, gibt es derzeit noch
+Probleme die Seiten zu generieren. Nachdem es lange Zeit recht still geblieben ist um
+Webgen, hat es nun vor einer Weile einen Versionssprung von 0.5 nach 1.0 gegeben.
+Die im Zuge dieses Upgrades an der Render Engine vorgenommenen Aenderungen --
+auch was die Parameter im Seiten-Template betrifft -- scheinen mit der aelteren Version
+in einigen Faellen nicht vertraeglich sein sein; fuer mich bedeutet dies, dass ich
+or nicht einfach nur an der Konfiguration etwas drehen muss, sondern auch an einem Teil
+der Seiten selber.
+
+~~~~
+ERROR Could not resolve '/stylesheets/index.html' in language 'en' in </blog/2003.en.html>
+ERROR Could not resolve '/stylesheets/index.html' in language 'en' in </blog/2003.en.html>
+ERROR Could not resolve '/stylesheets/index.html' in language 'en' in </blog/2003.en.html>
+ERROR Could not resolve '/templates/index.html' in language 'en' in </blog/2003.en.html>
+ERROR Could not resolve '/templates/index.html' in language 'en' in </blog/2003.en.html>
+ERROR Could not resolve '/templates/index.html' in language 'en' in </blog/2003.en.html>
+~~~~
+
+Wie sich an den Fehlermeldungen (vielleicht) erkennen laesst, gibt es derzeit aber noch
+ein paar weitere grundsaetzliche Probleme, um welche ich mich kuemmern muss, ehe die
+naechsten Eintraege online gehen koennen.

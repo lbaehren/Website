@@ -13,10 +13,10 @@ Wenn es sich so direkt nebeneinander anschaut, dann sieht es nicht wirklich
 sonderlich spannend aus... vom Ergebnis her ist aber schon nicht ganz ohne
 Bedeutung:
 
-~~~~
+~~~~~~
 -   Copyright &copy; 2004-2013 Lars B&auml;hren |
-+   Copyright &copy; 2004-{date: { format: %Y}} Lars B&auml;hren |
-~~~~
++   Copyright &copy; 2004-{date: { format: \%Y}} Lars B&auml;hren |
+~~~~~~
 
 Da ich ja im Zuge des Domains ummelden ein wenig begonnen habe mir noch einmal
 unterschiedliche Generatoren fuer statische Webseiten anzuschauen, habe ich auch
