@@ -1,8 +1,33 @@
+#--------------------------------------------------------------------------------
+# Copyright (c) 2004-2014, Lars Baehren <lbaehren@gmail.com>
+# All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without modification,
+# are permitted provided that the following conditions are met:
+#
+#  * Redistributions of source code must retain the above copyright notice, this
+#    list of conditions and the following disclaimer.
+#  * Redistributions in binary form must reproduce the above copyright notice,
+#    this list of conditions and the following disclaimer in the documentation
+#    and/or other materials provided with the distribution.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+# DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+# SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+# CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+# OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#--------------------------------------------------------------------------------
+
 ## ==============================================================================
 ##
 ##  CMake project settings
 ##
-## ==============================================================================
+## =============================================================================
 
 ## Name of the project handled by CMake
 project (www.larsbaehren.com)
@@ -17,7 +42,8 @@ cmake_policy (VERSION 2.8)
 set (PROJECT_VERSION_MAJOR 0 )
 set (PROJECT_VERSION_MINOR 1 )
 set (PROJECT_VERSION_PATCH 0 )
-set (PROJECT_VERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}")
+set (PROJECT_VERSION_SERIES "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}")
+set (PROJECT_VERSION "${PROJECT_VERSION_SERIES}.${PROJECT_VERSION_PATCH}")
 
 ## ==============================================================================
 ##
@@ -107,20 +133,7 @@ set (PROJECT_BINARY_DIR_PAGES ${PROJECT_BINARY_DIR}/src/pages)
 ##__________________________________________________________
 ## Custom CMake modules
 
-find_path (PROJECT_CMAKE_MODULE_PATH
-  NAMES FindGem.cmake FindRake.cmake
-  PATHS ${PROJECT_SOURCE_DIR}
-  PATH_SUFFIXES src src/code src/config src/code/CMakeModules
-  )
-
-if (PROJECT_CMAKE_MODULE_PATH)
-  set (CMAKE_MODULE_PATH ${PROJECT_CMAKE_MODULE_PATH} CACHE PATH
-    "CMake module path"
-    FORCE
-    )
-else (PROJECT_CMAKE_MODULE_PATH)
-  message (WARNING "Failed to locate custom CMake modules!")
-endif (PROJECT_CMAKE_MODULE_PATH)
+list (INSERT CMAKE_MODULE_PATH 0 "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
 foreach (_cmakeModule
   Boost
@@ -170,6 +183,14 @@ endif (DOXYGEN_EXECUTABLE)
 ##  Build targets/instructions
 ##
 ## ==============================================================================
+
+## Configuration file for Webgen
+
+configure_file (
+  ${PROJECT_SOURCE_DIR}/webgen.config.in
+  ${PROJECT_BINARY_DIR}/webgen.config
+  )
+
 
 ## Project sub-directories
 
