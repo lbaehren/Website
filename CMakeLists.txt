@@ -1,4 +1,4 @@
-#--------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------
 # Copyright (c) 2004-2014, Lars Baehren <lbaehren@gmail.com>
 # All rights reserved.
 #
@@ -21,9 +21,9 @@
 # CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 # OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-#--------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------
 
-## ==============================================================================
+## =============================================================================
 ##
 ##  CMake project settings
 ##
@@ -45,11 +45,11 @@ set (PROJECT_VERSION_PATCH 0 )
 set (PROJECT_VERSION_SERIES "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}")
 set (PROJECT_VERSION "${PROJECT_VERSION_SERIES}.${PROJECT_VERSION_PATCH}")
 
-## ==============================================================================
+## =============================================================================
 ##
 ##  Configuration/Build options
 ##
-## ==============================================================================
+## =============================================================================
 
 ## Load test driver and enable it
 include (CTest)
@@ -73,11 +73,11 @@ set (INSTALL_PREFIX_DOCUMENTATION "${INSTALL_PREFIX}/documentation" )
 set (PROJECT_UPLOAD_PATH          "/Volumes/webdav/webseiten"       )
 set (PROJECT_LIVEDISK_URL         "https://382611-ftp.livedisk.df.eu/webdav")
 
-## ==============================================================================
+## =============================================================================
 ##
 ##  System inspection
 ##
-## ==============================================================================
+## =============================================================================
 
 ## Project source directories
 ##
@@ -178,11 +178,11 @@ if (DOXYGEN_EXECUTABLE)
 
 endif (DOXYGEN_EXECUTABLE)
 
-## ==============================================================================
+## =============================================================================
 ##
 ##  Build targets/instructions
 ##
-## ==============================================================================
+## =============================================================================
 
 ## Configuration file for Webgen
 
@@ -196,11 +196,11 @@ configure_file (
 
 add_subdirectory (src)
 
-## ==============================================================================
+## =============================================================================
 ##
 ##  Clean-up
 ##
-## ==============================================================================
+## =============================================================================
 
 set_property (DIRECTORY
   APPEND PROPERTY ADDITIONAL_MAKE_CLEAN_FILES
@@ -209,45 +209,45 @@ set_property (DIRECTORY
   ${PROJECT_SOURCE_DIR}/config.yaml
   )
 
-## ==============================================================================
+## =============================================================================
 ##
 ##  Configuration summary
 ##
-## ==============================================================================
+## =============================================================================
 
 ## Display summary of configuration settings
 
-message (STATUS "------------------------------------------------------------"    )
-message (STATUS "[Website] Configuration summary."                                )
-message (STATUS "------------------------------------------------------------ "   )
-message (STATUS " System configuration:"                                          )
-message (STATUS " .. Processor type .............. = ${CMAKE_SYSTEM_PROCESSOR}"   )
-message (STATUS " .. CMake executable ............ = ${CMAKE_COMMAND}"            )
-message (STATUS " .. CMake version ............... = ${CMAKE_VERSION}"            )
-message (STATUS " .. System name ................. = ${CMAKE_SYSTEM}"             )
-message (STATUS " .. C++ compiler ................ = ${CMAKE_CXX_COMPILER}"       )
-message (STATUS " .. C compiler .................. = ${CMAKE_C_COMPILER}"         )
-message (STATUS " .. size(void*) ................. = ${CMAKE_SIZEOF_VOID_P}"      )
-message (STATUS " Project configuration:"                                         )
-message (STATUS " .. Version number .............. = ${PROJECT_VERSION}"          )
-message (STATUS " .. Installation prefix ......... = ${CMAKE_INSTALL_PREFIX}"     )
-message (STATUS " .. Installation prefix Website . = ${INSTALL_PREFIX_WEBSITE}"   )
-message (STATUS " .. Pages source directory ...... = ${PROJECT_SOURCE_DIR_PAGES}" )
-message (STATUS " .. Blog source directory ....... = ${PROJECT_SOURCE_DIR_BLOG}"  )
-message (STATUS " .. Custom CMake modules ........ = ${PROJECT_CMAKE_MODULE_PATH}")
-message (STATUS " .. Path to upload location ..... = ${PROJECT_UPLOAD_PATH}"      )
-message (STATUS " External tools & packages:"                                     )
-message (STATUS " .. Doxygen executable .......... = ${DOXYGEN_EXECUTABLE}"       )
-message (STATUS " .. Doxygen version ............. = ${DOXYGEN_VERSION}"          )
-message (STATUS " .. Ruby executable ............. = ${RUBY_EXECUTABLE}"          )
-message (STATUS " .. Ruby version ................ = ${RUBY_VERSION}"             )
-message (STATUS " .. Path to Ruby library ........ = ${RUBY_LIBRARIES}"           )
-message (STATUS " .. Include directory ........... = ${RUBY_INCLUDES}"            )
-message (STATUS " .. Gem executable .............. = ${GEM_EXECUTABLE}"           )
-message (STATUS " .. Gem executable version ...... = ${GEM_VERSION}"              )
-message (STATUS " .. Rake executable ............. = ${RAKE_EXECUTABLE}"          )
-message (STATUS " .. Rake executable version ..... = ${RAKE_VERSION}"             )
-message (STATUS " .. Webgen executable ........... = ${WEBGEN_EXECUTABLE}"        )
-message (STATUS " .. Webgen executable version ... = ${WEBGEN_VERSION}"           )
-message (STATUS "------------------------------------------------------------ "   )
+message ( "------------------------------------------------------------"    )
+message ( "[Website] Configuration summary."                                )
+message ( "------------------------------------------------------------ "   )
+message ( " System configuration:"                                          )
+message ( " .. Processor type .............. = ${CMAKE_SYSTEM_PROCESSOR}"   )
+message ( " .. CMake executable ............ = ${CMAKE_COMMAND}"            )
+message ( " .. CMake version ............... = ${CMAKE_VERSION}"            )
+message ( " .. System name ................. = ${CMAKE_SYSTEM}"             )
+message ( " .. C++ compiler ................ = ${CMAKE_CXX_COMPILER}"       )
+message ( " .. C compiler .................. = ${CMAKE_C_COMPILER}"         )
+message ( " .. size(void*) ................. = ${CMAKE_SIZEOF_VOID_P}"      )
+message ( " Project configuration:"                                         )
+message ( " .. Version number .............. = ${PROJECT_VERSION}"          )
+message ( " .. Installation prefix ......... = ${CMAKE_INSTALL_PREFIX}"     )
+message ( " .. Installation prefix Website . = ${INSTALL_PREFIX_WEBSITE}"   )
+message ( " .. Pages source directory ...... = ${PROJECT_SOURCE_DIR_PAGES}" )
+message ( " .. Blog source directory ....... = ${PROJECT_SOURCE_DIR_BLOG}"  )
+message ( " .. Custom CMake modules ........ = ${PROJECT_CMAKE_MODULE_PATH}")
+message ( " .. Path to upload location ..... = ${PROJECT_UPLOAD_PATH}"      )
+message ( " External tools & packages:"                                     )
+message ( " .. Doxygen executable .......... = ${DOXYGEN_EXECUTABLE}"       )
+message ( " .. Doxygen version ............. = ${DOXYGEN_VERSION}"          )
+message ( " .. Ruby executable ............. = ${RUBY_EXECUTABLE}"          )
+message ( " .. Ruby version ................ = ${RUBY_VERSION}"             )
+message ( " .. Path to Ruby library ........ = ${RUBY_LIBRARIES}"           )
+message ( " .. Include directory ........... = ${RUBY_INCLUDES}"            )
+message ( " .. Gem executable .............. = ${GEM_EXECUTABLE}"           )
+message ( " .. Gem executable version ...... = ${GEM_VERSION}"              )
+message ( " .. Rake executable ............. = ${RAKE_EXECUTABLE}"          )
+message ( " .. Rake executable version ..... = ${RAKE_VERSION}"             )
+message ( " .. Webgen executable ........... = ${WEBGEN_EXECUTABLE}"        )
+message ( " .. Webgen executable version ... = ${WEBGEN_VERSION}"           )
+message ( "------------------------------------------------------------ "   )
 
