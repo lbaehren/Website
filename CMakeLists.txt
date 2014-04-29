@@ -51,9 +51,16 @@ set (PROJECT_VERSION "${PROJECT_VERSION_SERIES}.${PROJECT_VERSION_PATCH}")
 ##
 ## =============================================================================
 
-## Load test driver and enable it
-include (CTest)
-enable_testing()
+option (VERBOSE_CONFIGURE  "Enhanced verbosity during configuration?"               NO  )
+option (WITH_TESTS         "Enable the CTest test driver and build test programs?"  NO  )
+
+##__________________________________________________________
+## Handle option: Enable test driver and build test programs?
+
+if (WITH_TESTS)
+  include (CTest)
+  enable_testing()
+endif (WITH_TESTS)
 
 ##__________________________________________________________
 ## Installation prefix
@@ -135,23 +142,32 @@ set (PROJECT_BINARY_DIR_PAGES ${PROJECT_BINARY_DIR}/src/pages)
 
 list (INSERT CMAKE_MODULE_PATH 0 "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
-foreach (_cmakeModule
-  Boost
-  Git
-  Doxygen
-  Gem
-  Gnuplot
-  KWsys
-  Rake
-  Ruby
-  Webgen
-  )
-  ## Verbosity of module
-  string (TOUPPER ${_cmakeModule} _varModule)
-  set (${_varModule}_FIND_QUIETLY YES )
-  ## load the module
-  find_package (${_cmakeModule})
-endforeach (_cmakeModule)
+foreach (_externalPackage
+    Boost
+    Git
+    Doxygen
+    Gem
+    Gnuplot
+    KWsys
+    Rake
+    Ruby
+    Webgen
+    )
+
+    ## Convert module name to upper-case
+    string (TOUPPER ${_externalPackage} _externalPackageVar)
+
+    ## Verbosity of the script to find the package
+    if (VERBOSE_CONFIGURE)
+        set (${_externalPackageVar}_FIND_QUIETLY NO)
+    else (VERBOSE_CONFIGURE)
+        set (${_externalPackageVar}_FIND_QUIETLY YES)
+    endif (VERBOSE_CONFIGURE)
+
+    ## Find the package
+    find_package (${_externalPackage} REQUIRED)
+
+endforeach (_externalPackage)
 
 ##____________________________________________________________________
 ## Extract Doxygen version number
