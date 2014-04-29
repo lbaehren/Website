@@ -1,0 +1,35 @@
+#####
+# This is a webgen configuration file which uses YAML as its syntax.
+#
+# The general syntax is:
+#
+#   configuration.option.name: value
+#
+# Have a look at the documentation of the individual configuration options to see the allowed format
+# of the values. Since this is a YAML file, you can easily set configuration options as strings,
+# integers, dates, arrays, hashes and more.
+#
+# The available configuration options can be found on the homepage in the Configuration Option
+# Reference at
+#
+#     http://webgen.gettalong.org/documentation/reference/configuration_options.html
+#
+# More info about YAML itself can be found at http://www.yaml.org/
+#####
+
+##______________________________________________________________________________
+## Source directories with the files from which the web pages are getting
+## generated. Exact locations will be filled in after this file has been
+## processes by CMake, which is responsible for the overall configuration.
+
+sources: [[/, file_system, ${PROJECT_SOURCE_DIR}/src/pages], [/, file_system, ${PROJECT_SOURCE_DIR}/src/images]]
+
+##______________________________________________________________________________
+## Destination directory to which the generated website will be written.
+
+destination: [file_system, ${PROJECT_BINARY_DIR}/website]
+
+##______________________________________________________________________________
+## Configuration of Menus
+
+tag.menu.style: nested
