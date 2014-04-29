@@ -1,11 +1,11 @@
 
 
 ##______________________________________________________________________________
-## Generate Webgen configuration file ===
+## Generate Webgen configuration file
 
 configure_file (
-  ${CMAKE_CURRENT_SOURCE_DIR}/config.yaml.in
-  ${PROJECT_BINARY_DIR}/config.yaml
+  ${PROJECT_SOURCE_DIR}/webgen.config.in
+  ${PROJECT_BINARY_DIR}/webgen.config
   )
 
 ##______________________________________________________________________________

@@ -184,14 +184,6 @@ endif (DOXYGEN_EXECUTABLE)
 ##
 ## =============================================================================
 
-## Configuration file for Webgen
-
-configure_file (
-  ${PROJECT_SOURCE_DIR}/webgen.config.in
-  ${PROJECT_BINARY_DIR}/webgen.config
-  )
-
-
 ## Project sub-directories
 
 add_subdirectory (src)
