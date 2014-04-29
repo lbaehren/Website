@@ -1,22 +1,27 @@
-# +-----------------------------------------------------------------------------+
-# |   Copyright (C) 2012                                                        |
-# |   Lars B"ahren (lbaehren@gmail.com)                                         |
-# |                                                                             |
-# |   This program is free software; you can redistribute it and/or modify      |
-# |   it under the terms of the GNU General Public License as published by      |
-# |   the Free Software Foundation; either version 2 of the License, or         |
-# |   (at your option) any later version.                                       |
-# |                                                                             |
-# |   This program is distributed in the hope that it will be useful,           |
-# |   but WITHOUT ANY WARRANTY; without even the implied warranty of            |
-# |   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the             |
-# |   GNU General Public License for more details.                              |
-# |                                                                             |
-# |   You should have received a copy of the GNU General Public License         |
-# |   along with this program; if not, write to the                             |
-# |   Free Software Foundation, Inc.,                                           |
-# |   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.                 |
-# +-----------------------------------------------------------------------------+
+#-------------------------------------------------------------------------------
+# Copyright (c) 2004-2014, Lars Baehren <lbaehren@gmail.com>
+# All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without modification,
+# are permitted provided that the following conditions are met:
+#
+#  * Redistributions of source code must retain the above copyright notice, this
+#    list of conditions and the following disclaimer.
+#  * Redistributions in binary form must reproduce the above copyright notice,
+#    this list of conditions and the following disclaimer in the documentation
+#    and/or other materials provided with the distribution.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+# DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+# SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+# CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+# OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#-------------------------------------------------------------------------------
 
 # - Check for the presence of WEBGEN
 #
@@ -28,19 +33,19 @@
 #  WEBGEN_LFLAGS     = Linker flags (optional)
 
 if (NOT WEBGEN_FOUND)
-    
+
   if (NOT WEBGEN_ROOT_DIR)
     set (WEBGEN_ROOT_DIR ${CMAKE_INSTALL_PREFIX})
   endif (NOT WEBGEN_ROOT_DIR)
-  
+
   ##_____________________________________________________________________________
   ## Check for the executable
-  
+
   find_program (WEBGEN_EXECUTABLE webgen
     HINTS ${WEBGEN_ROOT_DIR}  ${CMAKE_INSTALL_PREFIX}
     PATH_SUFFIXES bin
     )
-  
+
   ##_____________________________________________________________________________
   ## Extract program version
 
@@ -70,14 +75,14 @@ if (NOT WEBGEN_FOUND)
 	list(GET WEBGEN_VERSION_LIST 1 WEBGEN_VERSION_MINOR)
 	list(GET WEBGEN_VERSION_LIST 2 WEBGEN_VERSION_PATCH)
       endif (WEBGEN_VERSION)
-      
+
     endif (NOT WEBGEN_RESULT_VARIABLE)
-    
+
   endif (WEBGEN_EXECUTABLE)
-  
+
   ##_____________________________________________________________________________
   ## Actions taken when all components have been found
-  
+
   if (WEBGEN_EXECUTABLE)
     set (WEBGEN_FOUND TRUE)
   else (WEBGEN_EXECUTABLE)
@@ -91,7 +96,7 @@ if (NOT WEBGEN_FOUND)
       endif (NOT WEBGEN_LIBRARIES)
     endif (NOT WEBGEN_FIND_QUIETLY)
   endif (WEBGEN_EXECUTABLE)
-  
+
   if (WEBGEN_FOUND)
     if (NOT WEBGEN_FIND_QUIETLY)
       message (STATUS "Found components for Webgen")
@@ -104,14 +109,14 @@ if (NOT WEBGEN_FOUND)
       message (FATAL_ERROR "Could not find Webgen!")
     endif (WEBGEN_FIND_REQUIRED)
   endif (WEBGEN_FOUND)
-  
+
   ##_____________________________________________________________________________
   ## Mark advanced variables
-  
+
   mark_as_advanced (
     WEBGEN_ROOT_DIR
     WEBGEN_INCLUDES
     WEBGEN_LIBRARIES
     )
-  
+
 endif (NOT WEBGEN_FOUND)
