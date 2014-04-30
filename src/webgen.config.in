@@ -37,11 +37,16 @@ destination: [file_system, ${PROJECT_BINARY_DIR}/website]
 
 #path_handler.default_template: ${PROJECT_SOURCE_DIR}/src/pages/default.template
 
+# Base URL of the generated website
+website.base_url: http:/www.larsbaehren.com
+
 # The menu rendering style that should be used. The value can either be 'nested'
 # for a nested menu or 'flat' for a flat menu.
 tag.menu.style: "nested"
+
 # Additional options passed to the tidy command (-q is always used).
 content_processor.tidy.options: "-utf8"
+
 # Specifies whether dummy index paths should automatically be created.
 misc.dummy_index.enabled: false
 
