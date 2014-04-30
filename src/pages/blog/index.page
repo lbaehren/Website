@@ -9,6 +9,52 @@ tags: Blog
  
 **:::**
  
+### Uebergabe ###
+
+
+
+
+_Wed, 30. April 2014 -- 16:19_
+
+Da ist es also geschehen: ich habe gerade noch den Anruf bekommen, dass die Uebergabe
+der Hausschluessel erfolgreich verlaufen ist und wir demnach nun wirklich die Amthohheit
+ueber das Haus habe. Da dies nun also in trockenen Tuechern ist, kann es also gleich
+morgen mit den ersten Aufraeumarbeiten losgehen. So wie ich dies eben von Julia erfahren
+habe, scheint sich sogar wirklich ein wenig im Haus verbessert haben, aber ich rechne
+nach wie vor damit, dass wir wohl einen neues (kuenstliches) Gebirge im Bonner Norden
+aufschichten werden...
+ 
+**:::**
+ 
+ 
+### Kleine Schritte ###
+
+
+
+
+_Tue, 29. April 2014 -- 23:56_
+
+Es ist leider immer noch nicht wieder so weit: auch wenn ich heute Abend -- nachdem ich
+aus dem Institut zurueck gekommen bin -- schon einiges an Zeit darauf verwendet habe mich
+durch die diversen Fehlermeldungen durch zu wuehlen, so habe ich leider immer noch nicht
+wieder alles in einem Zustand, von welchem aus ich in gewohnter Weise den Blog fuettern
+kann. Sicher, neue Eintraege erstellen ist kein Thema, dafuer habe ich mittlerweile meine
+selbstgeschriebene Infrastruktur, aber letzten Endes muessen ja schon Webseiten gebaut
+werden, welche ich dann anschliessend online stellen kann. Was sich leider immer noch
+nicht so wirklich bei Webgen geaendert hat, ist die Dokumentation, welche ich nach wie
+vor fuer stark verbesserungswuerdig halte; es finden sich zwar Berge an Details zu
+diversesten Einstellungen, aber eine vernuenftige Uebersicht darueber, wie die Teile
+insgesamt zusammenspielen gibt es immer noch nicht. So muss ich mich also Stueck fuer
+Stueck vorantasten, was natuerlich eine Weile dauert, vor allen Dingen wenn man bedenkt,
+wie lange es dauert die komplette Website von Null auf zu generieren, wenn man Aenderungen
+an dem Seiten-Template vornimmt. Wie es im Moment ausschaut, werde ich den Rechner einfach
+mal ueber Nacht weiter werkeln lassen muessen... um dann mit ein wenig Glueck am Morgen
+zumindest mal eine vollstaendige Version der Website vorzufinden (nicht dass die dann
+schon so sein duerfte, wie ich es haben will).
+ 
+**:::**
+ 
+ 
 ### Keine Updates ###
 
 
@@ -399,86 +445,6 @@ auf dieser Strecke auch um diese Zeit noch los ist -- da kann es schon einmal au
 bei einem normal langen Zug ein wenig enger werden. Streicht man da aber auch noch die Wagons
 zusammen, kann man sich wohl vorstellen, dass das Fahrerlebnis ein klein wenig was von
 einer Huehnerfarm an sich hat.
- 
-**:::**
- 
- 
-### Schnell unterwegs ###
-
-
-
-
-_Wed, 16. April 2014 -- 21:25_
-
-Also das ist doch doch schon recht beeindruckend: waehrend ich ja durchaus gewohnt bin
-vom Institut aus hohe Datentransferraten zu erzielen, scheint das WLAN hier bei mir in der
-Wohnung auch nicht von schlechten Eltern zu sein:
-
-~~~~
-Connecting to ftp.nluug.nl (ftp.nluug.nl)|192.87.102.42|:80... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 1592786944 (1.5G) [application/octet-stream]
-Saving to: 'solydk64_201401.iso'
-
-100%[========================================================>] 1,592,786,944 7.28MB/s   in 3m 36s
-
-2014-04-16 09:49:15 (7.03 MB/s) - 'solydk64_201401.iso' saved [1592786944/1592786944]
-~~~~
-
-Als ich heute Morgen -- vor der Fahrt ins Institut -- noch zwei ISO-Images fuer die
-Installation einer mir bisher unbekannten Linux-Distribution aus dem Netz ziehen wollte,
-war ich doch recht ueberrascht wie schnell dies ging. Sicher, letzten Endes ist es
-immer ein Zusammenspiel mehrerer Faktoren, aber zumindest im haeuslichen Bereich gehe
-ich meistens davon aus, dass die wesentlich zu tragen kommende Bremse auf dem letzten
-Teilstueck zu finden ist. Nicht aber so in diesem Fall. Ob dies nun das Maximum ist, was
-das WLAN zu leisten vermag, kann ich nicht sagen, aber mehr als 7 MB/s habe ich in Bonn
-noch nie zu sehen bekommen. Was sich daraus allerdings auf der anderen Seite als Problem ergibt
-ist, dass sich die Festplatte umso schneller anfuellt -- derartige Transfers sollte man
-also nicht in groesserer Zahl ueber Nacht laufen lassen, denn ansonsten kann es recht leicht
-passieren, dass der vorhandene Speicherplatz in kuerzester Zeit aufgebraucht ist.
- 
-**:::**
- 
- 
-### Donaldismus ###
-
-
-
-
-_Tue, 15. April 2014 -- 21:53_
-
-Also dies ist definitiv ein Thema mit welchen ich mich bisher noch nicht beschaeftigt
-habe; das kann kann allerdings auch zu einem grossen Teil daran liegen, dass ich mir bisher
-nicht einmal der Tatsache bewusst war, dass es soetwas ueberhaupt gibt.
-
-> Als Donaldismus bezeichnet man die Beschäftigung mit der fiktiven Familie Duck und die Erforschung von familiären, biologischen, technischen, soziologischen und gruppendynamischen Prozessen in der fiktiven Stadt Entenhausen, im englischen Original des Comics als die Städte Duckburg und Mouseton bezeichnet.
-
-In der aktuellen, diese Woche erschienenen Folge von [megamagisch](http://megamagis.ch)
-beschaeftigen sich [Arne](https://kleinerdrei.net) und [Sarah](http://sarahburrini.com) mit einem
-eher ungewoehnlichen Forschungsfeld. Dass sich geschlossene Universen zu so manchen
-Aktivitaeten anbieten ist besten von z.B. _Star Wars_ oder natuerlich Tolkiens
-[Mittelerde](http://de.wikipedia.org/wiki/Tolkiens_Welt) bekannt -- allem Anschein nach aber stehen die Bewunderer der stehts vom
-Pech verfolgten Ende dem in nichts nach. Vielmehr noch: Arbeiten zum Thema werden in regelmaessigen
-Zeitabschnitten veroeffentlicht und unterliegen dem gleichen wissenschaftlichen Diskurs,
-wie dies Z.B. im Bereich der Physik oder Astronomie der Fall ist.
-
-> Die [D.O.N.A.L.D.](http://www.donald.org) befasst sich mit der Erforschung der Familie Duck und des Entenhausener Universums (bzw. der diesbezüglich überlieferten Quellen und Berichte) in jeglicher Hinsicht. Bisher wurde unter anderem bereits über viele natur- und geisteswissenschaftliche Themen geforscht. Des Weiteren wurde auf Grundlage der Geschichten ein Stadtplan von Entenhausen erstellt, der im Jahr 2008 präsentiert wurde.
->
-> Die Forschung beschränkt sich dabei hauptsächlich auf die Donald-Duck-Geschichten des amerikanischen Zeichners Carl Barks, die von Erika Fuchs ins Deutsche übersetzt wurden. Geschichten von anderen Zeichnern werden dagegen weitgehend ignoriert. Durch diese Einschränkung ergibt sich ein in sich geschlossenes Forschungsgebiet, das nur von wenigen Donaldisten verlassen wird.
-
-Um die Forschenden nicht nur als Einzelkaempfer durch die Gegend laufen zu lassen gibt
-sogar eine eigene Akademie:
-
-> Die [Akademie der Donaldistischen Wissenschaften](http://www.donald.org/forschung/adw) verleiht alljährlich den Professor-Püstele-Preis. Dieser Preis wird demjenigen Donaldisten verliehen, der im vergangenen donaldistischen Jahr die überzeugendste wissenschaftliche Arbeit vorgelegt hat. In die Auswahl aufgenommen werden ausschließlich Berichte, die im Zentralorgan der D.O.N.A.L.D. bzw. dessen Sonderveröffentlichungen publiziert wurden. Neben dem wissenschaftlichen Gehalt haben auch die Gewaltigkeit des Wortschwalles und die Form der Darlegung und nicht zuletzt deren persönliche Vorlieben Einfluss auf die Entscheidung der Juroren.
-
-Da habe ich heute morgen auf dem Weg zum Institut einige Male kraeftig schlucken muessen, als
-ich mit dem Hoeren der Sendung begonnen habe. Ich muss allerdings sagen, dass ich die Aktivitaeten
-auf der anderen Seite nun so abwegig auch nun nicht fand -- schliesslich sind mir da aus
-anderen Kreisen schon vergleichbare (wenn auch nicht so formal organisiert) Dinge untergekommen.
-Ein faszinierndes Stueck Nerd-Kultur und ich kann diese Sendung waermstens empfehlen;
-[megamagisch](http://megamagis.ch) schien zwischenzeitlich ein wenig auf der Kippe zu stehen,
-aber mittlerweile scheint der Podcast wieder auf stabileren Fuessen zu stehen, so ich
-mal gespannt bin, was es als naechstes zu hoeren gibt. Weiter so!
  
 **:::**
  
