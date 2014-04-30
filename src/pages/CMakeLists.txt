@@ -1,23 +1,5 @@
 
 ##_______________________________________________________________________________
-## Target: Render the website
-
-## Build instructions
-add_custom_target (Website ALL
-  COMMAND ${WEBGEN_EXECUTABLE} generate
-  DEPENDS ${PROJECT_BINARY_DIR}/config.yaml
-  WORKING_DIRECTORY ${PROJECT_BINARY_DIR}
-  COMMENT "Rendering website from sources ..."
-  )
-
-## Installation instructions
-install(
-  DIRECTORY ${PROJECT_BINARY_DIR}/website
-  DESTINATION ${CMAKE_INSTALL_PREFIX}
-  USE_SOURCE_PERMISSIONS
-  )
-
-##_______________________________________________________________________________
 ## Build the page with the most recent blog entries
 
 if (script_blog_recent AND PROJECT_SOURCE_DIR_BLOG)

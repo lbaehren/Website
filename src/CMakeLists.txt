@@ -31,6 +31,23 @@ configure_file (
   ${CMAKE_CURRENT_BINARY_DIR}/webgen.config
   )
 
+##_______________________________________________________________________________
+## Build instructions for website
+
+add_custom_target (Website ALL
+  COMMAND ${WEBGEN_EXECUTABLE} generate ${CMAKE_CURRENT_BINARY_DIR}/webgen.config
+  WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+  COMMENT "Rendering website from sources ..."
+  )
+
+## Installation instructions
+install(
+  DIRECTORY ${PROJECT_BINARY_DIR}/website
+  DESTINATION ${CMAKE_INSTALL_PREFIX}
+  USE_SOURCE_PERMISSIONS
+  )
+
+
 ##______________________________________________________________________________
 ## Process project sub-directories
 
