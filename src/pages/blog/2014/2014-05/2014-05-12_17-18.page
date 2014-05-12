@@ -1,0 +1,50 @@
+---
+title: "enum as template argument"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-05-12T17:18:19.00Z
+created_at: 2014-05-12T17:18:19.00Z
+---
+
+## {title:} ##
+
+_Mon, 12. May 2014 -- 17:18_
+
+Looks as though the main issue has been resolved now: the idea of using values from
+an enumeration as template parameter for a class now finally works. While the original
+code already was close to what it had to be, it required a little bit of internet
+search to connect the missing dots: instead of writing
+
+~~~~
+template <typename T> class Lx
+~~~~
+
+the correct code had to be
+
+~~~~
+template <swir::data::StorageFormat T> class Lx
+~~~~
+
+since ``StorageFormat`` was a custom defined enumeration. With this bit out of the
+way I now can go ahead and set up some of the subsequent code the way I originally
+already had been envisioning this for the _Data Access Library_ (DAL) developed for
+the [LOFAR](http://www.lofar.org) radio-telescope.
+
+~~~~
+Updating 4ead572..4c8b46e
+Fast-forward
+ source/cpp/libs/pyswir/pyswir_data.cc     |   4 -
+ source/cpp/libs/swir/data/Lx.cc           |  41 +++++++++
+ source/cpp/libs/swir/data/Lx.h            | 233 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ source/cpp/libs/swir/data/Product.cc      |  49 -----------
+ source/cpp/libs/swir/data/Product.h       |  23 -----
+ source/cpp/libs/swir/data/StorageFormat.h |  35 ++------
+ source/cpp/tests/swir/TestLx.cc           |  74 ++++++++++++++++
+ source/cpp/tests/swir/TestProduct.cc      |  34 --------
+ 8 files changed, 356 insertions(+), 137 deletions(-)
+ create mode 100644 source/cpp/libs/swir/data/Lx.cc
+ create mode 100644 source/cpp/libs/swir/data/Lx.h
+ create mode 100644 source/cpp/tests/swir/TestLx.cc
+~~~~
+
+
