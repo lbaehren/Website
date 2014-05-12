@@ -1,24 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="{lang:}">
+<!doctype html>
+<html lang="{lang:}" class="no-js">
+
+  <!-- HTML header - BEGIN ---------------------------------------------------->
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Web presence of Lars Baehren" />
-    <meta name="keywords" content="Website,Development,Photography" />
-    <meta name="author" content="Lars Baehren / Original design: Andreas Viklund - http://andreasviklund.com/" />
+
+    <!-- Author information - BEGIN -->
+    <meta name="author" content="Lars Baehren &lt;lbaehren@gmail.com&gt; / Original design: Andreas Viklund - http://andreasviklund.com" />
+    <meta name="DC.creator" content="Lars Baehren" />
+    <meta name="DC.title" content="Lars Baehren's Homepage" />
+    <meta name="Copyright" content="&copy; 2004-{date: {format: '%Y'}} Lars Baehren" />
+    <meta name="dcterms.rights" content="&copy; 2004-{date: {format: '%Y'}} Lars Baehren" />
+    <!-- Author information - END   -->
+
+    <!-- Contents description - BEGIN -->
+    <meta name="description" content="Lars Baehren's Homepage" />
+    <meta name="keywords" content="Website, Development, Photography" />
     <meta name="generator" content="webgen - http://webgen.gettalong.org" />
+    <!-- Contents description - END -->
+
     <link rel="stylesheet" type="text/css" href="{relocatable: default.css}" media="screen,projection" />
     <title>{title:}</title>
   </head>
+  <!-- HTML header - END ------------------------------------------------------>
 
   <body>
     <div id="wrap">
+
+      <!-- Page header - BEGIN -->
       <div id="header">
         <h1><a href="{relocatable: /index.html}">Lars B&auml;hren</a></h1>
         <h2>Software development / Photography</h2>
       </div>
+      <!-- Page header - END -->
 
-      <!-- Frame across the horizontal span of the page -->
+      <!-- Contact information - BEGIN ---------------------------------------->
       <div id="contentwide">
         <p class="textcenter">
             &nbsp;|&nbsp;
@@ -40,10 +56,11 @@
             &nbsp;|&nbsp;
             </p>
       </div>
+      <!-- Contact information - BEGIN ---------------------------------------->
 
 	  <div id="avmenu">
         <h2 class="hide">Site menu:</h2>
-        {menu: {max_levels: 3}}
+        {menu: {options: {mi: {in_menu: true}, flatten: false, sort: false}}}
       </div>
 
 	<!--
@@ -68,11 +85,10 @@
 
       <div id="content">
         <webgen:block name="content" />
-		<div id="breadcrumbs">
-		  {breadcrumb_trail: }
-        </div>
+		<div id="breadcrumbs">{breadcrumb_trail: {separator: '/'}}</div>
       </div>
 
+      <!-- Page footer - BEGIN -->
 	  <div id="footer">
         <p>
         Copyright &copy; 2004-{date: {format: '%Y'}} Lars B&auml;hren |
@@ -80,7 +96,10 @@
         Design by <a href="http://andreasviklund.com">Andreas Viklund</a>
         </p>
       </div>
-    </div>
-  </body>
-</html>
+      <!-- Page footer - END -->
 
+    </div>
+
+  </body>
+
+</html>
