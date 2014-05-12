@@ -41,7 +41,7 @@ writeRecentEntries ()
   ## --- Header of index page ---
   echo "---"                   > $varBasedir/index.page
   echo "title: Blog"          >> $varBasedir/index.page
-  echo "in_menu: false"       >> $varBasedir/index.page
+  echo "in_menu: true"        >> $varBasedir/index.page
   echo "author: Lars Baehren" >> $varBasedir/index.page
   echo "tags: Blog"           >> $varBasedir/index.page
   echo "---"                  >> $varBasedir/index.page
