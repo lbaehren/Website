@@ -51,8 +51,8 @@ set (PROJECT_VERSION "${PROJECT_VERSION_SERIES}.${PROJECT_VERSION_PATCH}")
 ##
 ## =============================================================================
 
-option (VERBOSE_CONFIGURE  "Enhanced verbosity during configuration?"               NO  )
-option (WITH_TESTS         "Enable the CTest test driver and build test programs?"  NO  )
+option (VERBOSE_CONFIGURE "Enhanced verbosity during configuration?" NO )
+option (WITH_TESTS        "Enable the CTest test driver?"            NO )
 
 ##__________________________________________________________
 ## Handle option: Enable test driver and build test programs?

@@ -21,11 +21,16 @@
 ## Source directories with the files from which the web pages are getting
 ## generated. Exact locations will be filled in after this file has been
 ## processes by CMake, which is responsible for the overall configuration.
+##
+## The ordering of the entries is relevant:
+##
+##  1. Path to the directory with the template for the page layout.
+##  2. Path to the sources from which the resulting website is generated.
+##  3. Path to the image files included into the images.
 
-sources: [[/, file_system, ${PROJECT_SOURCE_DIR}/src/pages],
+sources: [[/, file_system, ${PROJECT_SOURCE_DIR}/ext/templates/data/lars01/src],
+          [/, file_system, ${PROJECT_SOURCE_DIR}/src/pages],
           [/, file_system, ${PROJECT_SOURCE_DIR}/src/images]]
-#sources: [[/, file_system, ${PROJECT_SOURCE_DIR}/src/pages],
-#          [/, file_system, ${PROJECT_SOURCE_DIR}/src/images]]
 
 ##______________________________________________________________________________
 ## Destination directory to which the generated website will be written.
@@ -34,8 +39,6 @@ destination: [file_system, ${PROJECT_BINARY_DIR}/website]
 
 ##______________________________________________________________________________
 ## Configuration of Menus
-
-#path_handler.default_template: ${PROJECT_SOURCE_DIR}/src/pages/default.template
 
 # Base URL of the generated website
 website.base_url: http:/www.larsbaehren.com
