@@ -28,14 +28,14 @@
       </div>
       <!-- Page header - END -------------------------------------------------->
 
-      <!--
-      <img id="frontphoto" src="{relocatable: images/front.jpg}" width="760" height="175" alt="" />
-      -->
       <p class="textright">Location: {breadcrumb_trail:}</p>
 
       <div id="leftside">
+
         <h2 class="hide">Menu:</h2>
-        <div class="avmenu">{menu: {options: {sort: true, mi: {in_menu: true}, siblings: [0,-1]}}}</div>
+        <div class="avmenu">
+          {menu: {options: {mi: {in_menu: true}, sort: true, siblings: [0, -1]}}}
+        </div>
 
         <div class="announce">
           <h2>Latest news:</h2>
@@ -44,6 +44,7 @@
           data, slowly getting the output to where it is supposed to be.</p>
           <p class="textright"><a href="{relocatable: /blog/index.html}">Read more...</a></p>
         </div>
+
       </div>
 
       <!-- Page main contents - BEGIN ----------------------------------------->
