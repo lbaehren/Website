@@ -41,33 +41,29 @@ p {
 /* === Header =============================================================== */
 
 #header {
-    height:  45px;
-    margin:  10px 0 0;
-    padding: 0;
+    height:     250px;
+    margin:     10px 0 0;
+    padding:    0;
+    background: #ffffff url(images/front.jpg) bottom left repeat;
 }
 
 #header h1 {
-    background-color:inherit;
-    color:#505050;
-    float:left;
-    font-size:2em;
-    margin:0 0 10px;
-    width:350px;
+    color:     #eeeeee;
+    font-size: 4em;
+    margin:    5px 0 5px;
+    width:     600px;
 }
 
 #header h2 {
-    background-color: inherit;
-    color:            #505050;
-    float:            left;
-    font-size:        1.5em;
-    margin:           0 0 10px;
-    width:            350px;
+    color:      #eeeeee;
+    font-size:  2em;
+    margin:     5px 0 5px;
+    width:      600px;
 }
 
 #header h1 a {
-    background-color:inherit;
-    color:#505050;
-    text-decoration:none;
+    color:            #eeeeee;
+    text-decoration:  none;
 }
 
 #header p {
@@ -84,7 +80,8 @@ p {
     margin: 0 0 10px;
 }
 
-/*Left and right sidebar */
+/* === Left and right sidebar =============================================== */
+
 #leftside {clear:left; float:left; margin:0 0 5px; padding:0; width:140px;}
 #rightside {float:right; line-height:1.4em; margin:0 0 5px; padding:0; width:140px;}
 #leftside p,#leftside ul, #rightside p,#rightside ul {margin:0 0 16px; padding:0;}
@@ -112,7 +109,17 @@ p {
     width:       140px;
 }
 
-#leftside .avmenu li a, #leftside .avmenu li span, #rightside .avmenu li a, #rightside .avmenu li span {background-color:#f4f4f4; border-left:4px solid #ccc; color:#505050; float:left; font-weight:700; margin-bottom:5px; padding:5px 1px 5px 5px; text-decoration:none; width:130px;}
+#leftside .avmenu li a, #leftside .avmenu li span, #rightside .avmenu li a, #rightside .avmenu li span {
+    background-color:#f4f4f4;
+    border-left:4px solid #ccc;
+    color:#505050;
+    float:left;
+    font-weight:700;
+    margin-bottom:5px;
+    padding:5px 1px 5px 5px;
+    text-decoration:none;
+    width:130px;
+}
 
 #leftside .avmenu li a:hover, #leftside .avmenu li a.current, #leftside .avmenu li.webgen-menu-item-selected a, #leftside .avmenu li.webgen-menu-item-selected span, #rightside .avmenu li a:hover, #rightside .avmenu li a.current, #rightside .avmenu li.webgen-menu-item-selected a, #rightside .avmenu li.webgen-menu-item-selected span {background-color:#eaeaea; border-left:4px solid #286ea0; color:#505050;}
 
@@ -237,8 +244,8 @@ blockquote p {
  */
 
 pre {
-    border-top:          1px solid #e1cc89;
-    border-bottom:       1px solid #e1cc89;
+    border-top:          1px solid #286ea0;
+    border-bottom:       1px solid #286ea0;
     margin:              16px;
     padding: 7px 7px 7px 11px;
     background:          #f4f4f4;

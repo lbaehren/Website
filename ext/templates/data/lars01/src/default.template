@@ -28,7 +28,9 @@
       </div>
       <!-- Page header - END -------------------------------------------------->
 
+      <!--
       <img id="frontphoto" src="{relocatable: images/front.jpg}" width="760" height="175" alt="" />
+      -->
       <p class="textright">Location: {breadcrumb_trail:}</p>
 
       <div id="leftside">
