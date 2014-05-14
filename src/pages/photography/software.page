@@ -6,32 +6,41 @@ author: Lars Baehren
 
 ## {title:} ##
 
-### Commercial ###
+### Photo management applications
 
-* [Lightroom](http://www.adobe.com/products/photoshop-lightroom.html) (Adobe)
-* [Aperture](http://www.apple.com/aperture) (Apple)
-* [Capture NX](http://imaging.nikon.com/lineup/software/capturenx2) (Nik Software)
+ - Open source
 
-### Open source ###
+   * [darktable](http://www.darktable.org) is an open source photography workflow application and RAW developer. A virtual lighttable and darkroom for photographers. It manages your digital negatives in a database, lets you view them through a zoomable lighttable and enables you to develop raw images and enhance them.
+     * [Flickr group](http://www.flickr.com/groups/darktable)
+     * [Github repository](https://github.com/darktable-org/darktable)
 
-* [darktable](http://www.darktable.org) is an open source photography workflow application and RAW developer. A virtual lighttable and darkroom for photographers. It manages your digital negatives in a database, lets you view them through a zoomable lighttable and enables you to develop raw images and enhance them.
-  * [Flickr group](http://www.flickr.com/groups/darktable)
-  * [Github repository](https://github.com/darktable-org/darktable)
+   * [digiKam](http://www.digikam.org) is an advanced digital photo management application for KDE, which makes importing and organizing digital photos a "snap". The photos are organized in albums which can be sorted chronologically, by folder layout or by custom collections.
 
-* [digiKam](http://www.digikam.org) is an advanced digital photo management application for KDE, which makes importing and organizing digital photos a "snap". The photos are organized in albums which can be sorted chronologically, by folder layout or by custom collections.
+   * [gPhoto2](http://gphoto.org) is a free, redistributable, ready to use set of digital camera software applications for Unix-like systems, written by a whole team of dedicated volunteers around the world. It supports more than 1400 cameras. gPhoto2 runs on a large range of UNIX-like operating system, including Linux, FreeBSD, NetBSD, MacOS X, etc.
 
-* [gPhoto2](http://gphoto.org) is a free, redistributable, ready to use set of digital camera software applications for Unix-like systems, written by a whole team of dedicated volunteers around the world. It supports more than 1400 cameras. gPhoto2 runs on a large range of UNIX-like operating system, including Linux, FreeBSD, NetBSD, MacOS X, etc.
+   * [Droplet](https://github.com/fuxi83/Droplet) is an open-source project developed by [Stefan Brenner](http://www.stefanbrenner.com), designed for microcontroller-based high-speed photography, with the special emphasis on Droplet-Photography and Liquid Art.
 
-* [Luminance HDR](http://qtpfsgui.sourceforge.net) is an open source graphical user interface application that aims to provide a workflow for HDR imaging.
+   * [Raw Photo Processor](http://www.raw-photo-processor.com) (RPP) is a Raw converter for Mac OS X (10.4, 10.5, 10.6 and 10.7 only), supporting almost all available digital Raw formats made for photographers by a photographer-software engineer.
 
-* [Droplet](https://github.com/fuxi83/Droplet) is an open-source project developed by [Stefan Brenner](http://www.stefanbrenner.com), designed for microcontroller-based high-speed photography, with the special emphasis on Droplet-Photography and Liquid Art.
+   * [gThumb](https://live.gnome.org/gthumb) is an image viewer and browser for the GNOME Desktop. It also includes an importer tool for transferring photos from cameras. gThumb is available for most Linux distributions, just do a search for gthumb in the package manager.
 
-* [Raw Photo Processor](http://www.raw-photo-processor.com) (RPP) is a Raw converter for Mac OS X (10.4, 10.5, 10.6 and 10.7 only), supporting almost all available digital Raw formats made for photographers by a photographer-software engineer.
+ - Commercial
 
-* [gThumb](https://live.gnome.org/gthumb) is an image viewer and browser for the GNOME Desktop. It also includes an importer tool for transferring photos from cameras. gThumb is available for most Linux distributions, just do a search for gthumb in the package manager. 
+   - [Lightroom](http://www.adobe.com/products/photoshop-lightroom.html) (Adobe)
+   - [Aperture](http://www.apple.com/aperture) (Apple)
+   - [Capture NX](http://imaging.nikon.com/lineup/software/capturenx2) (Nik Software)
 
-## Data formats ##
+## HDR photography
 
-* [Description of Exif file format](http://www.media.mit.edu/pia/Research/deepview/exif.html)
+  - [Luminance HDR](http://qtpfsgui.sourceforge.net) is an open source graphical user interface application that aims to provide a workflow for HDR imaging.
+  - Picturenaut
+  - Photomatix Pro (HDRsoft)
+  - HDR Efex Pro (Nik Software)
+  - Merge to HDR Pro (Adobe)
+  - [HDR creation script](http://linuxdarkroom.tassy.net/hdr-creation-script)
 
-* **OpenEXR** is a high dynamic-range (HDR) image file format developed by Industrial Light & Magic (ILM) for use in computer imaging applications. ILM subsequently released the source code and adjoining material as open source software.
+## Data formats
+
+ * [Description of Exif file format](http://www.media.mit.edu/pia/Research/deepview/exif.html)
+
+ * **OpenEXR** is a high dynamic-range (HDR) image file format developed by Industrial Light & Magic (ILM) for use in computer imaging applications. ILM subsequently released the source code and adjoining material as open source software.

@@ -9,26 +9,47 @@ tags: Photography
 
 ![Field in HDR](/photography/hdr/field.jpg)
 
-**Related pages:** \| [Reading material](./hdr/reading.html) \| [Software](hdr/software.html) \|
 
-### Workflow ###
+### Workflow
 
-Camera setup:
+#### Camera setup
 
-  - Set camera to RAW modus.
-  - Clean lens and image sensor. This is even more important with HDR than with 'normal' images, as due to the enhanced contrast range the dust specs show up more prominently.
-  - Take dust reference photo, for later substraction.
-  - Activate shutter delay, to reduce vibrations originating from flipping mirror.
-  - Set Picture control to a neutral setting. (Nikon)
-  - Set autobracketing, typically 5 steps with -2, -1, 0, +1, +2 EV.
-  - Activate _Interval timer shooting_ with 5 frames per instance.
+ - Set camera to RAW modus.
+ - Clean lens and image sensor. This is even more important with HDR than with 'normal' images, as due to the enhanced contrast range the dust specs show up more prominently.
+ - Take dust reference photo, for later substraction.
+ - Activate shutter delay, to reduce vibrations originating from flipping mirror.
+ - Set Picture control to a neutral setting. (Nikon)
+ - Set autobracketing, typically 5 steps with -2, -1, 0, +1, +2 EV.
+ - Activate _Interval timer shooting_ with 5 frames per instance.
 
-RAW processing:
+#### RAW processing
 
-  - Set Picture control to a neutral setting, if not done in camera.
-  - Correction for chromatic aberration.
-  - Substraction of dust reference picture.
-  - Export images as 16bit TIFF.
+ - Set Picture control to a neutral setting, if not done in camera.
+ - Correction for chromatic aberration.
+ - Substraction of dust reference picture.
+ - Export images as 16bit TIFF.
 
-HDR processing:
+#### HDR processing
+
+ - Load previously exported images into _Luminance HDR_
+
+
+### Reading material
+
+#### Books
+
+  - David Nightengale: 'Practical HDR: A Complete Guide to Creating High Dynamic Range Images with Your Digital SLR'
+
+#### Papers
+
+ * K. Devlin (2002) A review of tone reproduction techniques
+
+#### Tutorials
+
+  * [HDR Software overview](http://wiki.panotools.org/HDR_Software_overview)
+  * The [HDR Cookbook](http://farbspiel-photo.com/learn/hdr-cookbook) (Author: Klaus Hermann) is a free collection of practical, in-depth tutorials on High Dynamic Range (HDR) photography and some variants like HDR Panorama and Vertorama photography. It extends far beyond the contents of many websites and books on this subject by giving hands-on information on professional shooting and post-processing techniques.
+  * [HDR for the Rest of Us](http://www.dpreview.com/articles/1944596440/hdr-for-the-rest-of-us) (Author:  Rick Sammon) Most of us think of HDR images as surreal creations that bear little resemblance to the 'real' world. Rick Sammon shows how it is possible to reap the benefits of capturing an extended dynamic range in a more natural-looking image.
+  * [Setting Up Your Digital Camera For HDR Shooting](http://digital-photography-school.com/setting-up-your-digital-camera-for-hdr-shooting) -- James Brandon
+  * [How to Auto Bracket With a Nikon D300](http://www.ehow.com/how_7247277_auto-bracket-nikon-d300.html) -- Robert Hainer
+  * [How to Meter and Control Exposure on a Nikon DSLR](http://dpanswers.com/content/nikon_exposure.php) -- Gisle Hannemyr
 
