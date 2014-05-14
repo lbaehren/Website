@@ -1,0 +1,49 @@
+---
+title: "Installing Git from source"
+in_menu: false
+author: "Lars Baehren"
+tags: Computing Git
+---
+
+
+##{title:}##
+
+
+Let’s get into using some Git. First things first—you have to install it. You can get it a number of ways; the two major ones are to install it from source or to install an existing package for your platform.
+
+If you can, it’s generally useful to install Git from source, because you’ll get the most recent version. Each version of Git tends to include useful UI enhancements, so getting the latest version is often the best route if you feel comfortable compiling software from source. It is also the case that many Linux distributions contain very old packages; so unless you’re on a very up-to-date distro or are using backports, installing from source may be the best bet.
+
+To install Git, you need to have the following libraries that Git depends on:
+
+ - [curl](http://curl.haxx.se),
+ - [zlib](http://www.zlib.net),
+ - [openssl](http://www.openssl.org),
+ - [expat](http://sourceforge.net/projects/expat),
+ - [libiconv](https://www.gnu.org/software/libiconv).
+
+~~~~
+                     git
+                      |
+      +------+--------+--------+--------+
+      |      |        |        |        |
+     curl   zlib   openssl   expat   libiconv
+      |
+  +---+----+
+  |        |
+ zlib   openssl
+~~~~
+
+Extra configuration options:
+
+ - openssl
+
+    ./config --prefix=${prefix}
+
+ - curl
+
+    ./configure --prefix=${prefix} --with-zlib=${prefix} --with-ssh=${prefix}
+
+ - Git
+
+    ./configure --prefix=${prefix} --with-zlib=${prefix} --with-iconv=${prefix} --with-openssl=${prefix
+} --with-expat=${prefix} --with-curl=${prefix}
