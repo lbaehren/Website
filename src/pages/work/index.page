@@ -11,7 +11,8 @@ author: Lars Baehren
 [SRON - Netherlands Institute for Space Research](http://www.sron.nl), Utrecht, The Netherlands \\
 Jan 2013 -- present
 
- * Sentinel 5-Precursor/TROPOMI
+ * Project: [LOFAR](/work/tropomi.html)
+ * Calibration software for the Sentinel 5-Precursor/TROPOMI SWIR detector
 
 ### Software Design Engineer ###
 
@@ -34,6 +35,7 @@ April 2012 -- January 2013 (10 months)
 [ASTRON](http:/www.astron.nl), Dwingeloo, The Netherlands \\
 October 2011 -- December 2011 (3 months)
 
+ * Project: [LOFAR](/work/lofar.html)
  * Contract work for the Radio Observatory (RO).
  * Configuration- and build-environment for LOFAR User Software (LUS) collection.
  * Migration and consolidation of Wiki-based documentation.
