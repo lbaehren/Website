@@ -1,0 +1,82 @@
+---
+title: "Tools"
+in_menu: false
+author: "Lars Baehren"
+tags: Development Computing
+---
+
+# Development | {title:} #
+
+{:toc}
+
+**:::**
+
+### ... for configuration and building
+{:.editing}
+
+ - [CMake](/development/tools/cmake.html) is an extensible, open-source system that manages
+   the build process in an operating system and compiler independent manner. Unlike
+   many cross-platform systems, CMake is designed to be used in conjunction with
+   the native build environment. Simple configuration files placed in each source
+   directory (called `CMakeLists.txt` files) are used to generate standard build files (e.g.,
+   `makefiles` on Unix and projects/workspaces in Windows MSVC) which are used in
+   the usual way. CMake can compile source code, create libraries, generate
+   wrappers, and build executables in arbitrary combinations. CMake supports
+   in-place and out-of-place builds, and can therefore support multiple builds from
+   a single source tree. CMake also supports static and dynamic library builds.
+
+### ... for documentation generation
+{:.documentation}
+
+ - [Doxygen](/development/tools/doxygen.html) is a documentation generator, a
+   tool for writing software reference documentation. The documentation is written
+   within code, and is thus relatively easy to keep up to date. Doxygen can cross
+   reference documentation and code, so that the reader of a document can easily
+   refer to the actual code.
+
+ - [TeX/LaTeX](/development/latex/index.html) represents the state-of-the-art in
+   computer typesetting. It s particularly valuable where the document, article,
+   or book to be produced contains a lot of mathematics, and where the user is
+   concerned about typographic quality. TeX software offers both writer and
+   publisher the opportunity to produce technical text, in an attractive form,
+   with the speed and efficiency of a computer system.
+
+**:::**
+
+### ... for version control
+{:.scm}
+
+ - [Git](http://git-scm.com) is a free and open source distributed version
+   control system designed to handle everything from small to very large projects
+   with speed and efficiency. Git is easy to learn and has a tiny footprint with
+   lightning fast performance. It outclasses SCM tools like Subversion, CVS,
+   Perforce, and ClearCase with features like cheap local branching, convenient
+   staging areas, and multiple workflows.
+
+**:::**
+
+### ... for editing
+{:.editing}
+
+Wikipedia has a nice article providing [basic comparisons for common text editors](http://en.wikipedia.org/wiki/Comparison_of_text_editors).
+
+ - GNU [nano](http://www.nano-editor.org) is a small and friendly text editor.
+   Besides basic text editing, nano offers many extra features like an interactive
+   search and replace, go to line and column number, auto-indentation, feature
+   toggles, internationalization support, and filename tab completion.
+
+   For years Pine was THE program used to read email on a Unix system. The Pico
+   text editor is the portion of the program one would use to compose his or her
+   mail messages. Many beginners to Unix flocked to Pico and Pine because of their
+   well organized, easy to use interfaces. With the proliferation of GNU/Linux in
+   the mid to late 90's, many University students became intimately familiar with
+   the strengths (and weaknesses) of Pine and Pico.
+
+ - [Aquamacs](http://aquamacs.org) is an Aqua-native build of the powerful Emacs
+   text editor. By "Aqua-native," we mean more than just the fact that this
+   version of Emacs runs as a standard OS X application. Aquamacs features
+   extensive customization: it will feel and behave mostly like an Aqua program -
+   while still being a real GNU Emacs with all the ergonomy and extensibility
+   you've come to expect from this world-class editor. It's beeen adapted by David
+   Reitter, based on GNU Emacs by Richard Stallman and many others.
+
