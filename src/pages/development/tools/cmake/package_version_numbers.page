@@ -40,7 +40,8 @@ int main ()
 }
 ~~~~
 
-The following instructions are used in the corresponding [CMake](/development/tools/cmake.html) module, to build and run the above test program, as well as capturing its output.
+The following instructions are used in the corresponding [CMake](/development/tools/cmake/index.html)
+module, to build and run the above test program, as well as capturing its output.
 
 ~~~~
  if (HDF5_HDF5_LIBRARY AND HDF5_INCLUDES)

@@ -1,12 +1,13 @@
 ---
 title: CMake
 in_menu: false
-lang: en
 author: "Lars Baehren"
 tags: Computing, Software, Development
 ---
 
-## {title:} ##
+## {title:}
+
+### Overview
 
 [CMake](http://www.cmake.org) is an extensible, open-source system that manages
 the build process in an operating system and compiler independent manner. Unlike
@@ -33,7 +34,24 @@ generate code that is then compiled and linked into a final application. Because
 CMake is open source, and has a simple, extensible design, CMake can be extended
 as necessary to support new features.
 
-### CMake modules ###
+### Usage
+
+Using CMake is simple. The build process is controlled by creating one or more
+``CMakeLists.txt`` files in each directory (including subdirectories) that make up
+a project. Each ``CMakeLists.txt`` consists of one or more commands. Each command
+has the form
+
+~~~~
+COMMAND (args...)
+~~~~
+
+where ``COMMAND`` is the name of the command, and args is a white-space separated
+list of arguments. CMake provides many pre-defined commands, but if you need to,
+you can add your own commands. In addition, the advanced user can add other
+makefile generators for a particular compiler/OS combination. (While Unix and MSVC++
+is supported currently, other developers are adding other compiler/OS support.)
+
+### CMake modules
 
 Having worked with __CMake__ for a number of years, I have been enjoying the growing
 functionality of the ecosystem surrounding the cross-platform Makefile generator.
@@ -52,6 +70,7 @@ git clone git://github.com/lbaehren/CMakeModules.git
 
 For more information visit the [project's repository page](https://github.com/lbaehren/CMakeModules).
 
-### Further reading ###
+### Further reading
 
- * [Project configuration](/development/cmake/project_configuration.html)
+ - [Project configuration](/development/tools/cmake/project_configuration.html)
+ - [Determine package version numbers](/development/tools/cmake/package_version_numbers.html)
