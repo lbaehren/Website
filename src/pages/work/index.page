@@ -27,6 +27,7 @@ Jan 2013 -- present
 [prometheus - Das digitale Bildarchiv für Forschung und Lehre](http://prometheus-bildarchiv.de), Cologne, Germany \\
 April 2012 -- January 2013 (10 months)
 
+ * Project: [prometheus](/work/prometheus.html)
  * Application development using Ruby on Rails
  * Documentation of application components and procedures
 
@@ -53,24 +54,26 @@ October 2010 -- September 2011 (1 year)
 [Department of Astrophysics](https://www.astro.ru.nl), Radboud Universiteit, Nijmegen, The Netherlands \\
 Oct 2008 -- Sep 2010 (2 years)
 
-* Continued development of near-field imaging software for LOFAR radio-telescope.
-* Configuration- and build-environment for LOFAR User Software (LUS) collection.
-* Lead-developer of of the [Data Access Library](/development/projects/dal.html) (DAL), to enable creation of and access to LOFAR standard data-products based on the HDF5 data-format.
+ * Continued development of near-field imaging software for LOFAR radio-telescope.
+ * Configuration- and build-environment for LOFAR User Software (LUS) collection.
+ * Lead-developer of of the [Data Access Library](/development/projects/dal.html) (DAL), to enable creation of and access to LOFAR standard data-products based on the HDF5 data-format.
 
 ### Junior Researcher ###
 
 [Department of Astrophysics](https://www.astro.ru.nl), Radboud Universiteit, Nijmegen, The Netherlands \\
 May 2007 -- Sep 2008 (1 year 5 months)
 
-* Continued development of near-field imaging software for LOFAR radio-telescope.
-* Configuration- and build-environment for LOFAR User Software (LUS) collection.
-* Lead-developer of of the [Data Access Library](/development/projects/dal.html) (DAL), to enable creation of and access to LOFAR standard data-products based on the HDF5 data-format.
+ * Project: [LOFAR](/work/lofar.html)
+ * Continued development of near-field imaging software for LOFAR radio-telescope.
+ * Configuration- and build-environment for LOFAR User Software (LUS) collection.
+ * Lead-developer of of the [Data Access Library](/development/projects/dal.html) (DAL), to enable creation of and access to LOFAR standard data-products based on the HDF5 data-format.
 
 ### Junior Researcher ###
 
 [ASTRON](http:/www.astron.nl), Dwingeloo, The Netherlands \\
 January 2004 -- Apr 2007 (3 years 4 months)
 
+ * Project: [LOFAR](/work/lofar.html)
  * Software development for the LOPES (LOFAR Prototype Station) experiment at Karlsruhe
  * Development of an all-sky, near-field imager for the radio time-series data
  * Configuration and build environment for the software package.
