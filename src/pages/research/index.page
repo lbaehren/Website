@@ -2,9 +2,11 @@
 title: Research
 in_menu: true
 author: Lars Baehren
-tags: Research
 ---
 
 #{title:}#
 
 Since moving to the Netherlands in 2004 I have been working on the development and commissioning of the [Low Frequency Array](/work/lofar.html) (LOFAR) -- a novel radio telescope under construction in the Netherlands, but also including international partners from other european countries. My main involvement has been with the High-Energy Cosmic Rays Key Science Project, based at the Radboud University Nijmegen. Whereas the main goal of our scientific analysis is geared towards the understanding of the radio from extensive cosmic ray air-showers, the incoming data almost are saturated with all sorts of signals -- be they of natural or human-made origin; one of the topics I have been working is the detection of radio signatures from electric discharges (lightnings) in thunderstorms. 
+
+ - [Cosmic ray airshowers](/research/cosmic_rays.html)
+ - Radio emission from lightning discharges
