@@ -50,14 +50,14 @@ p {
 #header h1 {
     color:     #eeeeee;
     font-size: 4em;
-    margin:    5px 0 5px;
+    margin:    5px 10px 5px;
     width:     600px;
 }
 
 #header h2 {
     color:      #eeeeee;
     font-size:  2em;
-    margin:     5px 0 5px;
+    margin:     5px 10px 5px;
     width:      600px;
 }
 
@@ -225,6 +225,39 @@ li {
     display:none;
 }
 
+/* === Tables =============================================================== */
+
+table {
+    margin: 0 0 16px 0;
+    padding: 0;
+    line-height: 1.3em;
+    border-collapse: collapse;
+    border: 1px solid #286ea0;
+}
+
+caption {
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 0;
+    padding: 6px 0 8px 0;
+}
+
+th {
+    padding:    7px;
+    text-align: left;
+    background: #eaeaea url(images/menubg2.gif) bottom left repeat-x;
+    color:      #505050;
+}
+
+td {
+    padding:    7px;
+    font-size:  0.9em;
+    text-align: left;
+    background: #f4f4f4 url(images/menubg.gif) bottom left repeat-x;
+    color:      #303030;
+}
+
 /* === Quoted text ========================================================== */
 
 blockquote {
@@ -269,4 +302,3 @@ pre {
     background:          #f4f4f4 url(images/menubg.gif) bottom left repeat-x;
     color:               #505050;
 }
-

@@ -34,9 +34,11 @@
 
         <h2 class="hide">Menu:</h2>
         <div class="avmenu">
-          {menu: {options: {mi: {in_menu: true}, sort: true, siblings: [0, -1]}}}
+          <!-- {menu: {options: {mi: {in_menu: true}, sort: true, siblings: [0, -1]}}} -->
+          {menu: {options: {sort: true, absolute_levels: [0,2], mi: {in_menu: true}}}}
         </div>
 
+        <!--
         <div class="announce">
           <h2>Latest news:</h2>
           <p><strong>Tue May 13 19:02:26 CEST 2014</strong><br />
@@ -44,6 +46,7 @@
           data, slowly getting the output to where it is supposed to be.</p>
           <p class="textright"><a href="{relocatable: /blog/index.html}">Read more...</a></p>
         </div>
+        -->
 
       </div>
 
