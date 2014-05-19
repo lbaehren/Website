@@ -28,7 +28,29 @@
       </div>
       <!-- Page header - END -------------------------------------------------->
 
-      <p class="textright">Location: {breadcrumb_trail:}</p>
+      <!-- Contact information - BEGIN ---------------------------------------->
+      <div id="contact">
+        <p class="textcenter">
+            &nbsp;|&nbsp;
+            Mail: <a href="mailto:lbaehren@gmail.com">lbaehren@gmail.com</a>
+            &nbsp;|&nbsp;
+            Skype: <a href="skype:larsbaehren">larsbaehren</a>
+            &nbsp;|&nbsp;
+            <a href="https://plus.google.com/u/0/100581156331078830632" target="_blank">Google+</a>
+            &nbsp;|&nbsp;
+            <a href="https://github.com/lbaehren" target="_blank">Github</a>
+            &nbsp;|&nbsp;
+            <a href="http://www.flickr.com/photos/larsbaehren" target="_blank">Flickr</a>
+            &nbsp;|&nbsp;
+            <a href="http://www.last.fm/user/larsbaehren" target="_blank">last.fm</a>
+            &nbsp;|&nbsp;
+            <a href="https://www.xing.com/profile/Lars_Baehren?sc_o=mxb_p" target="_blank">XING</a>
+            &nbsp;|&nbsp;
+            <a href="http://www.linkedin.com/profile/view?id=134900181" target="_blank">LinkedIn</a>
+            &nbsp;|&nbsp;
+            </p>
+      </div>
+      <!-- Contact information - BEGIN ---------------------------------------->
 
       <div id="leftside">
 
@@ -52,6 +74,7 @@
 
       <!-- Page main contents - BEGIN ----------------------------------------->
       <div id="content">
+        <p class="breadcrumb">Location: {breadcrumb_trail:}</p>
         <webgen:block name="content" />
       </div>
       <!-- Page main contents - END ------------------------------------------->

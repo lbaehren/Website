@@ -148,7 +148,13 @@ p {
     padding:     0 0 0 10px;
 }
 
-#contentwide2 {border-right:1px solid #e0e0e0; line-height:1.5em; margin:0 150px 5px 0; padding:0 10px 0 0;}
+#contentwide2 {
+    border-right: 1px solid #e0e0e0;
+    line-height:  1.5em;
+    margin:       0 150px 5px 0;
+    padding:      0 10px 0 0;
+}
+
 #content h2,#contentwide h2,#contentwide2 h2 {font-size:1.6em; margin:0 0 10px;}
 #content h3,#contentwide h3,#contentwide2 h3 {font-size:1.3em; margin:0 0 8px;}
 
@@ -171,6 +177,28 @@ p {
 
 li {
     text-align: justify;
+}
+
+.breadcrumb {
+    float:      top;
+    text-align: right;
+    margin:     5px 0;
+}
+
+/* ==- Contact information ================================================== */
+
+#contact {
+    margin:        10px 0 10px 0px;
+    padding:       0;
+    line-height:   2.0em;
+    font-size:     1.1em;
+    text-align:    left;
+    border-bottom: 1.5px solid #dadada;
+}
+
+.textcenter {
+    text-align: center;
+    margin:     -10px 0 4px 0;
 }
 
 /* === Footer =============================================================== */
