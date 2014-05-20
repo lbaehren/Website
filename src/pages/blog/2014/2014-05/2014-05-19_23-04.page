@@ -1,0 +1,31 @@
+---
+title: "Wieder da"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-05-19T23:04:38.00Z
+created_at: 2014-05-19T23:04:38.00Z
+---
+
+## {title:} ##
+
+_Mon, 19. May 2014 -- 23:04_
+
+Wie so ueblich sind es doch eher die kleinen Dinge, welchen den entscheidenden
+Unterschied machen. So habe ich heute endlich mal noch dafuer gesorgt, dass ein
+allen Anschein nach geschaetztes Feature wieder seinen Platz auf den Webseiten
+gefunden hat:
+
+~~~~
+      <div id="contact">
+        <p class="textcenter">
+            &nbsp;|&nbsp;
+            Mail: <a href="mailto:lbaehren@gmail.com">lbaehren@gmail.com</a>
+            &nbsp;|&nbsp;
+~~~~
+
+Laesst man dies -- und die weiteren dazu gehoerenden Zeilen -- durch Webgen laufen,
+so bekommt man die Navigationsreihe mit den Kontakt-Moeglichkeiten zurueck. Auch
+wenn es zwei oder drei Iterationen bedurfte, um das Layout in gewuenschter Weise
+hinzubiegen, so scheint das recht vertraute Seiten-Element nun wieder dort zu sein
+wo es hingehoert. Damit haette ich also eine Baustelle weniger, um welche ich mich
+kuemmern muss.

@@ -9,6 +9,169 @@ tags: Blog
  
 **:::**
  
+### Wieder da ###
+
+
+
+
+_Mon, 19. May 2014 -- 23:04_
+
+Wie so ueblich sind es doch eher die kleinen Dinge, welchen den entscheidenden
+Unterschied machen. So habe ich heute endlich mal noch dafuer gesorgt, dass ein
+allen Anschein nach geschaetztes Feature wieder seinen Platz auf den Webseiten
+gefunden hat:
+
+~~~~
+      <div id="contact">
+        <p class="textcenter">
+            &nbsp;|&nbsp;
+            Mail: <a href="mailto:lbaehren@gmail.com">lbaehren@gmail.com</a>
+            &nbsp;|&nbsp;
+~~~~
+
+Laesst man dies -- und die weiteren dazu gehoerenden Zeilen -- durch Webgen laufen,
+so bekommt man die Navigationsreihe mit den Kontakt-Moeglichkeiten zurueck. Auch
+wenn es zwei oder drei Iterationen bedurfte, um das Layout in gewuenschter Weise
+hinzubiegen, so scheint das recht vertraute Seiten-Element nun wieder dort zu sein
+wo es hingehoert. Damit haette ich also eine Baustelle weniger, um welche ich mich
+kuemmern muss.
+ 
+**:::**
+ 
+ 
+### IC 2221 ###
+
+
+
+
+_Thu, 15. May 2014 -- 21:55_
+
+Sieht doch ganz danach aus, als wuerde ich gerade einmal mit einem blauen
+Auge davon kommen. Auch wenn der ICE 227 mit gut 40 Minuten Verspaetung hier in
+Koeln eingetroffen ist, werde ich -- wenn denn alles gut geht -- nur mir geringer
+Verspaetung in Bonn aufschlagen. Dem Tip des ICE Zugpersonals folgend, habe ich
+mich statt der RB 48 (welche schon weg ist) den IC 2221 geschnappt, mit welchem
+ich um 22:12 Uhr in Bonn sein sollte. Die damit entstehenden sechs Minuten
+Verspaetung am Reiseziel duerften sich noch recht gut verkraften lassen.
+
+Bin ein wenig erstaunt, wieviel Platz hier im IC ist; waehrend es auch der Strecke
+Utrecht - Koeln durchaus ein wenig eng wurde, verteilen sich die wenigen Reisenden
+recht uebersichtlich ueber den Zug. Ist aber schon ok, denn so kann ich mich noch
+ein klein wenig an einen der Tische setzen und weiter schreiben bzw. programmieren...
+ 
+**:::**
+ 
+ 
+### Recht spaet ###
+
+
+
+
+_Thu, 15. May 2014 -- 19:50_
+
+So hatte ich mir die Rueckreise eigentlich nicht vorgestellt: aufgrund einer Stoerung
+kurz vor Utrecht (von Amsterdam aus gesehen) ist der ICE 227 am heutigen Abend mit
+gut 40 Minuten Verspaetung unterwegs. Dies bedeutet wohl, dass ich mit ziemlicher
+Sicherheit davon ausgehen kann, dass ich meinen Anschluss in Koeln nicht erreiche.
+Als kleine Vorwarnung habe ich eben schon einmal eine SMS an Julia geschickt, aber
+weiter etwas an der Sache aendern laesst sich von meiner Warte her nun auch nicht.
+Es waere natuerlich schon, wenn wird es schaffen koennten unterwegs noch Zeit gut
+zu machen, aber fest damit rechnen wuerde ich nicht. Somit stelle ich mich einfach
+mal auf einen laengeren Aufenthalt in Koeln ein, was in Konsequenz natuerlich auch
+dass sich meine Ankunft in Bonn noch weiter nach hinten hinaus verschiebt -- ich
+denke mal, dass da also wieder der Griff nach dem Fahrtgast-Formular ansteht, damit
+ich zumindest einen Teil der Fahrtkosten zurueck erstattet kriege.
+ 
+**:::**
+ 
+ 
+### Schoen bunt ###
+
+
+
+
+_Thu, 15. May 2014 -- 10:44_
+
+Mittlerweile hae ich ja aufgehoert zu zaehlen, wie viele Editoren ich eigentlich
+inzwischen ausprobiert und  in der einen oder anderen Form parallel bei mir auf dem
+Rechner betreibe... da kommt es nicht so sehr darauf an, wenn dieser Sammlung ein
+weiterer Eintrag hinzugefuegt wird.
+
+> Der Projekt-Hosting-Dienst [GitHub](https://github.com) hat nun einen eigenen,
+> Texteditor vorgestellt, der sich in den Browser integriert und mit dem Entwickler
+> ihren Code schreiben und bearbeiten können. [Atom](https://atom.io), so der Name
+> des Editors, hat derzeit Beta-Status und ist nur auf Einladung verfügbar, für
+> die man sich bewerben kann.
+
+Diese [Meldung auf Heise Developer](http://www.heise.de/developer/meldung/Ein-Texteditor-fuer-GitHub-2126844.html)
+liegt schon eine kleine Weile zurueck, so dass das Projekt mittlerweile aus der
+Beta-Phase raus ist und ganz normal zum Download bereit steht. Bisher scheint es
+alleine fuer Mac OS X ein Installations-Paket zu geben, aber ich hoffe doch mal,
+dass die diversen Linux-Distributionen recht schnell nachziehen werden (ansonsten
+ist dann wieder Installation von [Source](https://github.com/atom/atom) angesagt).
+
+![Screenshot Atom editor](/blog/2014/2014-05/2014-05-15_Atom_editor.png)
+
+Von dem, was ich bisher zu sehen bekommen habe, bin ich eigentlich recht angetan:
+das ganze Erscheinungsbild ist sehr modern und leicht zu bedienen (was ich vor allen
+Dingen bei der Konfiguration immer sehr wichtig finde) und die Integration mit
+Git als zugrundeliegende Versionskontrolle ist etwas, das ich bisher noch nicht
+ausreichend angetestet habe. Eine Kleinigkeit faellt mir allerdings auf (und dies
+koennte durchaus ein entscheidender Faktor sein): der Editor verfuegt ueber IDE-artige
+Features (was sehr nett sein kann), was auf der anderen Seite aber bedeutet, dass
+zwei Dateine, welche ueber ihr Git-Repository identifizierbar nicht zu dem gleichen
+Projekt gehoeren, nicht als Tabs im gleichen Fenster, sondern aus zwei separate
+Fenster geoeffnet werden -- das macht das hin und her Springen ein wenig schwer, so
+ich da noch einmal schauen muss, ob dies wirklich nicht anders zu konfigurieren ist.
+Ansonsten ist der Eindruck aber sehr positiv (unter anderem deshalb schreibe ich diesen
+Eintrag mit Atom).
+ 
+**:::**
+ 
+ 
+### Stoerung oder nicht ###
+
+
+
+
+_Wed, 14. May 2014 -- 12:56_
+
+Also ist dies nun eine Stoerung oder nicht? Als ich gerade eben auf den Seiten der
+[Nederlandse Spoorwegen](http:/www.ns.nl) nachgeschaut habe, wurde mir angezeigt,
+dass es auf "meiner" Strecke im Bereich von Koeln aufgrund der Bauarbeiten an der
+Bruecke zu Aenderungen im Reiseplan kommen wuerde:
+
+![Stoerungsalarm NS](/blog/2014/2014-05/2014-05-14_Storing.png)
+
+Eine vergleichbare Meldung habe ich schon an anderer Stelle gesehen, aber bei der
+Fahrt am Montag Morgen war davon nichts zu spueren -- ich bin ganz normal am
+Koelner Hauptbahnhof umgestiegen, ohne zunaechst einmal nach Deutz fahren zu muessen.
+Werde ich wohl mal ein wenig im Auge behalten muessen, aer es sieht ein wenig danach
+aus, als haette sich ein Weg gefunden, die Auswirkungen der Bauarbeiten kleiner zu
+halten, als dies urspruenglich gedacht war. Soll mir recht sein, denn fuer die Reise
+ist es angenehmer, wenn ich nicht noch einmal extra umsteigen muss.
+ 
+**:::**
+ 
+ 
+### Einigermassen ok ###
+
+
+
+
+_Wed, 14. May 2014 -- 11:35_
+
+Nein, so 100%ig ist es immer noch nicht das was ich haben will, aber angesichts der
+Tatsache, dass es nun schon zwei Wochen sind, dass Updates online gegangen sind,
+werde ich mich wohl mit dem augenblicklichen Zustand zufrieden geben -- zumindest
+was die Moeglichkeit betrifft Aenderungen hochzuladen. Es wird wahrscheinlich noch
+eine Weile dauern, ehe alles genau so aussieht, wie ich es haben will -- es gibt
+derzeit immer noch Probleme mit dem Menu in der linken Spalte -- aber die grundlegende
+Struktur ist nun wieder da.
+ 
+**:::**
+ 
+ 
 ### Fortschritte ###
 
 
@@ -251,162 +414,6 @@ an dem Seiten-Template vornimmt. Wie es im Moment ausschaut, werde ich den Rechn
 mal ueber Nacht weiter werkeln lassen muessen... um dann mit ein wenig Glueck am Morgen
 zumindest mal eine vollstaendige Version der Website vorzufinden (nicht dass die dann
 schon so sein duerfte, wie ich es haben will).
- 
-**:::**
- 
- 
-### Keine Updates ###
-
-
-
-
-_Tue, 29. April 2014 -- 09:16_
-
-... zumindest nicht online; da ich gestern -- vielleicht ein wenig voreilig -- ein Upgrade
-von [Webgen](http://webgen.gettalong.org) vorgenommen habe, gibt es derzeit noch
-Probleme die Seiten zu generieren. Nachdem es lange Zeit recht still geblieben ist um
-Webgen, hat es nun vor einer Weile einen Versionssprung von 0.5 nach 1.0 gegeben.
-Die im Zuge dieses Upgrades an der Render Engine vorgenommenen Aenderungen --
-auch was die Parameter im Seiten-Template betrifft -- scheinen mit der aelteren Version
-in einigen Faellen nicht vertraeglich sein sein; fuer mich bedeutet dies, dass ich
-or nicht einfach nur an der Konfiguration etwas drehen muss, sondern auch an einem Teil
-der Seiten selber.
-
-~~~~
-ERROR Could not resolve '/stylesheets/index.html' in language 'en' in </blog/2003.en.html>
-ERROR Could not resolve '/stylesheets/index.html' in language 'en' in </blog/2003.en.html>
-ERROR Could not resolve '/stylesheets/index.html' in language 'en' in </blog/2003.en.html>
-ERROR Could not resolve '/templates/index.html' in language 'en' in </blog/2003.en.html>
-ERROR Could not resolve '/templates/index.html' in language 'en' in </blog/2003.en.html>
-ERROR Could not resolve '/templates/index.html' in language 'en' in </blog/2003.en.html>
-~~~~
-
-Wie sich an den Fehlermeldungen (vielleicht) erkennen laesst, gibt es derzeit aber noch
-ein paar weitere grundsaetzliche Probleme, um welche ich mich kuemmern muss, ehe die
-naechsten Eintraege online gehen koennen.
- 
-**:::**
- 
- 
-### Spannende Woche ###
-
-
-
-
-_Mon, 28. April 2014 -- 06:40_
-
-Ok, das war ein wirklich kurzes Wochenende: da ich ja erst am Freitag Abend
-wieder in Bonn eingetroffen bin und mich heute Morgen bereits wieder auf dem Weg
-nach Utrecht befinde, waren es rein effektiv gerade einmal zwei Tage -- das ist
-natuerlich etwas wenig. In gewisser Weise gibt es dann diese Woche den
-Ausgleich: angesichts des nahenden 1. Mai bleibe ich nur bis Mittwoch Nachmittag
-in Utrecht, so dass es effektiv nur zwei Uebernachtungen sind. Die Tatsache
-aber, dass ich dann wieder im Lande bin, bedeutet keinesfalls, dass es
-Gelegenheit gibt sich auszuruhen: wie bereits angemerkt, findet diese Woche die
-Uebergabe Hauses statt (zumindest so die Planung), was bedeutet dass ab dem
-Donnerstag das grosse Ausmisten und Vorbereiten fuer die Renovierung auf dem
-Plan steht. Ich bin ja mal gespannt, ob wirklich alles so glatt verlaeuft, wie
-dies geplant ist -- ich wuensche mir natuerlich keine Ueberraschungen auf der
-Zielgeraden, aber realistischerweise macht es wohl Sinn sich da mental zumindest
-drauf vorzubereiten.
-
-Was die nachrichten-technische Begleitung der Aktivitaeten betrifft habe ich mir auch
-schon ein wenig Gedanken gemacht; [so wie der Blog urspruenglich ja entstanden ist](/blog/2004/2004-01/2004-01-06_22-08.html),
-um mir das regelmaessige Versenden von Mail-Benachrichtigungen zu ersparen, werde ich
-wohl versuchen ein Kombination von Blog und [Flickr](http://www.flickr.com) zu verwenden,
-um auf diese Weise Updates unter die Leute zu bringen.
- 
-**:::**
- 
- 
-### Nicht mehr lange ###
-
-
-
-
-_Sun, 27. April 2014 -- 14:49_
-
-Yep, es dauert nicht mehr lange, dann kann es losgehen mit den Arbeiten am Haus.
-Sicher, es gibt immer noch eine nicht-verschwindende Wahrscheinlichkeit dass es
-auf den letzten Meter zur Uebergabe noch einmal zu Komplikationen kommt, aber
-ich versuche einfach mal positiv zu bleiben, dass alles glatt laueft. Der
-aktuelle Plan ist, dass es am Mittwoch Nachmittag zur SChluesseluebergabe
-kommt... rechtzeitig um den ersten Mai fuer eine erste Aufraeumaktion zu nutzen.
-Genau voraus zu planen, was so alles notwendig werden wird, is ein wenig schwer:
-wenn es einfach nur darum ginge ein komplett leergeraeumtes Haus zu uebernehmen,
-waere dies eine Sache -- ich erwarte aber eher, dass wir ein paar Wochen nur
-damit beschaeftigt sein duerften alles auszuraeumen und uns zu allen Ecken des
-Hauses Zugang zu verschaffen.
- 
-**:::**
- 
- 
-### Abstecher nach Koeln ###
-
-
-
-
-_Sat, 26. April 2014 -- 20:53_
-
-Also das war doch einmal wieder ein interessanter Abstecher: schon seit einer Weile gab es die Planung mit dem Damen aus dem Yogakurs in der Atempause etwas zu unternehmen. Um dies aber in einem Rahmen abzuhalten, welcher fuer alle Beteiligtne auch durchaus interesant sein kann, passte es doch sehr gut dass Ute angeboten hatte einmal ein wenig einen Einblick hinter die Kulissen der [Alexianer Klostergaertnerei](http://www.alexianer-werkstaetten.de/standort-koeln/klostergaertnerei) in Koeln zu vermitteln:
-
-> Auf rund 2000 Quadratmetern Gewächshausfläche und 10 000 Quadratmetern Freiland produziert die Klostergärtnerei als anerkannte Werkstatt für psychisch behinderte Menschen den größten Teil ihrer Pflanzen selbst. 
->
-> Je nach Art und Schwere der Behinderung wird psychisch behinderten Menschen die Möglichkeit geboten einer beruflichen Tätigkeit in der Klostergärtnerei nachzugehen. Auf abwechslungsreiche Arbeit wird dabei großen Wert gelegt.
->
-> Für die unterschiedlichsten Fähigkeiten der Beschäftigten lassen sich in der Klostergärtnerei die richtigen Aufgaben finden: von einfachen grobmotorischen Arbeiten bis zu anspruchsvollen kreativen Tätigkeiten.
-
-Auch wenn ich mit den Damen ansonsten ja kaum etwas zu tun habe -- schliesslich finden die Kurse ja in einem Damenfitness-Club statt -- ist doch das eine oder andere Detail ueber Julia bei angekommen. So als Ausflug an einem Samstag war dies also eine recht nette Idee, zumal wir eben ueber die Insider-Connection Zugang auch zu den Bereichen bekommen haben, welche einem als normalem Besucher verwehrt sind. Als diese Runde dann beendet war, ging es natuerlich noch an das grosse Pflanzen einkaufen: es gruent zwar bereits ueberall im Hof und im Garten (auch in der Wohnung stapeln sich nachts wieder die Toepfe), aber angesichts der (recht beeindruckenden) grossen Auswahl fuellte sich der Einkaufswagen innerhalb von kurzer Zeit.
-
-![Graffiti](/blog/2014/2014-04/hdr_20140426_122825_Graffiti.jpg)
-
-Bei dem anschliessend Zusammensitzen im Cafe der Gaertnerei habe ich mich dann ein Weile ausgeklinkt, um zumindest ein klein wenig mit der Kamera in der Hand loszulaufen und die Umgebung zu erkunden. Es ergibt sich schliesslich nicht allzu oft dass ich nach Koeln-Westhoven auf die andere Rheinseite komme -- da wollte ich doch dafuer sorgen zumindest ein paar GPS-Marker in der Gegend verbuchen zu koennen. Gut, ich wusste natuerlich nicht ganz so genau, wie lange das Miteinander dauern wuerde, so dass ich nicht auf die grosse Erkundungstour aufgebrochen -- fuer ein paar (nicht nur photographische) Eindrucke hat es aber in jedem Fall gereicht.
- 
-**:::**
- 
- 
-### Bewegung bei Elektroautos ###
-
-
-
-
-_Fri, 25. April 2014 -- 20:11_
-
-[Wie Heise News berichten](http://www.heise.de/newsticker/meldung/Elektromobilitaetsgesetz-Privilegien-fuer-Elektroautos-2177022.html) scheint es wieder einmal einen Vorstoss in Richtung mehr elektro-getriebener Fahrzeuge auf deutschen Strassen zu geben:
-
-> Die Bundesregierung will den Umstieg auf Elektrofahrzeuge beliebter machen. Dazu haben sich nun das Bundesverkehrs- und und das Bundesumweltministerium haben auf Eckpunkte fuer ein Elektromobilitaetsgesetz verstaendigt. Darin wird laut einem Bericht des Handelsblatts festgelegt, welche Art von Fahrzeugen kraeftig als Elektroautos gelten und deshalb Vorteile erhalten. Den Entwurf des Elektromobilitaetsgesetzes muessen die Minister noch abzeichnen.
->
-> In einer ersten Stufe sollen Fahrer von anerkannten Elektroautos Busspuren mitbenutzen duerfen und Sonderparkplaetze nutzen koennen. In einem zweiten Schritt will der Bund Details wie Haftungsfragen oder Regeln zum Aufbau von Ladesaeulen festlegen.
-
-Klingt ja alles ganz nett, aber man darf doch mal gespannt bleiben, was letzten Endes da wirklich auf den Strassen vorzufinden sein wird. Massnahmen gaebe es sicherlich genug -- wie waere es zum Beispiel mal mit der Begrenzung des Benzin-Verkehrs in Innenstaedten?? -- aber typischerweise melden sich bei solchen Gelegenheiten wieder einmal die unterschiedlichsten Interessen zu Wort. Und wenn alle Stricke reissen gibt es ganz bestimmt noch eine Moeglichkeit zu argumentieren, dass dies in irgendeiner Weise eine Gefahr fuer Arbeitsplaetze in Deutschland bedeutet...
-
-Zu dem gegebenen Anlass habe ich es mir natuerlich nicht nehmen lassen, einmal durch die in dem Artikel aufgefuehrten Auto-Modelle zu schauen -- wie so ueblich schreit ein nicht unerheblicher Teil der Wagen gerade zu "Elektro"... was man nicht mit ansprechend verwechseln duerfte. Das es auch anders geht scheint in wirklich konsequenter Weise wohl vor allen Dingen nur Tesla Motor zu demonstrieren, welche mit ihrem "Model S" eben nicht irgendwelche faulen Kompromisse auf den Tisch bringen.
- 
-**:::**
- 
- 
-### Feueralarm? ###
-
-
-
-
-_Thu, 24. April 2014 -- 21:23_
-
-Ich mache hier mal bewusst ein Fragezeichen hinter, denn weder gab es a) ein richtiggehendes
-Alarmsignal noch b) tauchte Evakuierungspersonal auf dem Gang auf. Unter diesen Umstaenden
-denke ich mir war es wohl alleine ein Fruehwarnsystem im Institut, welches sich gemeldet hat.
-Das dies ausgerechnet heute passierte mag nicht so sonderlich verblueffen, denn am spaeteren
-Nachmittag hatten wir es mit einem gehoerigen Unwetter zu tun, welche ueber Utrecht hinweg
-gezogen ist. Was da innerhalb von nur wenigen Minuten vom Himmel prasselte war schon recht
-beeindruckend: nur kurze Zeit vorher war draussen noch alles sonnig und hell -- mit einem
-Male dann krachten die ersten Hagelkoerner (oder sollte ich lieber von Baellen reden?) auf
-die Fensterscheiben. So schnell wie das Wetter vor Ort umgeschlagen war, so schnell
-veraenderte sich dann auch die Umgebung des Instituts: wo eben noch gruener Rasen zu sehen
-war, breitete sich in Windeseile eine weisse Schicht aus Hagel aus. Unter diesen Umstaenden
-habe ich den Aufenthalt im Institut deutlich kuerzer ausfallen lassen, als dies vielleicht
-ansonsten der Fall gewesen waere -- als sich auf dem Wetterradar eine ueberschaubare Luecke
-in der Wolkendecke abzeichnete, habe ich mir schnell eine Sachen gepackt um mir einen
-Bus zurueck in die Wohnung zu schnappen.
  
 **:::**
  

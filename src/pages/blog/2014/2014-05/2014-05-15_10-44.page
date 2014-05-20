@@ -1,0 +1,45 @@
+---
+title: "Schoen bunt"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-05-15T10:44:31.00Z
+created_at: 2014-05-15T10:44:31.00Z
+---
+
+## {title:} ##
+
+_Thu, 15. May 2014 -- 10:44_
+
+Mittlerweile hae ich ja aufgehoert zu zaehlen, wie viele Editoren ich eigentlich
+inzwischen ausprobiert und  in der einen oder anderen Form parallel bei mir auf dem
+Rechner betreibe... da kommt es nicht so sehr darauf an, wenn dieser Sammlung ein
+weiterer Eintrag hinzugefuegt wird.
+
+> Der Projekt-Hosting-Dienst [GitHub](https://github.com) hat nun einen eigenen,
+> Texteditor vorgestellt, der sich in den Browser integriert und mit dem Entwickler
+> ihren Code schreiben und bearbeiten können. [Atom](https://atom.io), so der Name
+> des Editors, hat derzeit Beta-Status und ist nur auf Einladung verfügbar, für
+> die man sich bewerben kann.
+
+Diese [Meldung auf Heise Developer](http://www.heise.de/developer/meldung/Ein-Texteditor-fuer-GitHub-2126844.html)
+liegt schon eine kleine Weile zurueck, so dass das Projekt mittlerweile aus der
+Beta-Phase raus ist und ganz normal zum Download bereit steht. Bisher scheint es
+alleine fuer Mac OS X ein Installations-Paket zu geben, aber ich hoffe doch mal,
+dass die diversen Linux-Distributionen recht schnell nachziehen werden (ansonsten
+ist dann wieder Installation von [Source](https://github.com/atom/atom) angesagt).
+
+![Screenshot Atom editor](/blog/2014/2014-05/2014-05-15_Atom_editor.png)
+
+Von dem, was ich bisher zu sehen bekommen habe, bin ich eigentlich recht angetan:
+das ganze Erscheinungsbild ist sehr modern und leicht zu bedienen (was ich vor allen
+Dingen bei der Konfiguration immer sehr wichtig finde) und die Integration mit
+Git als zugrundeliegende Versionskontrolle ist etwas, das ich bisher noch nicht
+ausreichend angetestet habe. Eine Kleinigkeit faellt mir allerdings auf (und dies
+koennte durchaus ein entscheidender Faktor sein): der Editor verfuegt ueber IDE-artige
+Features (was sehr nett sein kann), was auf der anderen Seite aber bedeutet, dass
+zwei Dateine, welche ueber ihr Git-Repository identifizierbar nicht zu dem gleichen
+Projekt gehoeren, nicht als Tabs im gleichen Fenster, sondern aus zwei separate
+Fenster geoeffnet werden -- das macht das hin und her Springen ein wenig schwer, so
+ich da noch einmal schauen muss, ob dies wirklich nicht anders zu konfigurieren ist.
+Ansonsten ist der Eindruck aber sehr positiv (unter anderem deshalb schreibe ich diesen
+Eintrag mit Atom).
