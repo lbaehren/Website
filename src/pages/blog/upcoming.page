@@ -32,6 +32,7 @@ _Last modified: {date:}_
 **in preparation ...**
 
 
+
 ### Task dependencies
 
 Planning the majority of my todo items via [Taskwarrior](http://taskwarrior.org), I am constantly looking to better understand the tool and expand the ways I am able to use it.
@@ -268,37 +269,6 @@ Da ich ja ab morgen Mittag wieder ein wenig aufs Land verschwinde -- Baarlo wuer
  - [ALDI Talk](http://www.alditalk.de)
 
 ![Online Aufladung ALDI Talk](/blog/2013/2013-10/2013-10-03_Online_Aufladung.png)
-
-### Installing Git ###
-
-... [from source](/development/git/installation.html) -- if it is not installed on a system -- should not be too big of a problem. However, depending on the state the system you're supposed to be working is in, it might take a little while longer, if you are required to go through some of the dependency chain.
-
-While a simple [Git](http://www.git-scm.com) installation would be rather painless, trying to get `git-svn` support up and running will require considerably more effort; the main additional ingredient -- as already indicated by the name -- of course is [Subversion](http://subversion.apache.org), which in turns comes with its own tail of required packages. The graph below shows the complete dependency tree I have been going through in order to get everything up and running:
-
-~~~~
-                       Git
-                        |
-                    Subversion
-                        |
- +-------------+--------+-------+--------+
- |             |        |       |        |
-libapr-util   SQLite    libz   SWIG     serf
-                                |        |
-                               PCRE      +----------+----------+--------+
-                                |        |          |          |        |
-                               Perl     Scons     OpenSSL     libapr   libapr-util
-~~~~
-
-Yep, that's right, I even went to install [Perl](http://www.perl.org) from scratch, as the default version on the system turned out to be incomplete. Besides this extra step, I also had to iterate through the configuration settings of the various packages a few times, in order to get all the features enabled, built and installed.
-
- - [libapr-util](http://apr.apache.org) needs to be configured with the `--with-crypto` option in order to provide `apr_md5.h`, which later will be required by Subversion.
-
-~~~~
-./configure --prefix=<path> --with-crypto --with-openssl=<path> --with-apr=<path>
-~~~~
-
- - Git needs to be configured with the `--with-libpcre` and `--with-expat` options.
-
 
 ### Merging TROPOMI SWIR documentation ###
 
