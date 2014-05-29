@@ -9,6 +9,66 @@ tags: Blog
  
 **:::**
  
+### Morgen mit Wolken ###
+
+
+
+
+_Thu, 29. May 2014 -- 03:30_
+
+Es ist nun schon eine Weile her, dass ich ein wenig von dem versucht habe zu vermitteln,
+was sich so bei meinen Aufenthalten in Utrecht so alles abspielt. Angesichts der
+Tatsache, dass sich sehr viele Aktivitaeten rund um das Haus drehen (was sicherlich auch
+verstaendlich ist), sind andere Eindruecke ein wenig auf der Strecke geblieben --
+Zeit also, die "Berichterstattung" wieder ein klein wenig ausgewogener zu gestalten...
+
+![Blick aus der Wohnung in Utrecht](/blog/2014/2014-05/hdr_20140522_111626_Apartment_Utrecht.jpg)
+
+Teil dieser Bemuehungen ist es natuerlich auch, ab und zu ein paar visuelle Eindruecke
+bereitzustellen. Dazu passt obige Aufnahme, welche ich letzte Woche von Tuer der
+Wohnung aus ueber die Terasse hinweg gemacht habe. Nachdem es gleich mehrere Tage in
+Folge fast schon hochsommerlich warm hier in Utrecht war, hielt der Donnerstag ein
+klein wenig Abkuehlung bereit; dazu beigetragen hat unter anderem wohl auch, dass
+der Himmeln zur Abwechslung mal wieder ein paar Wolken vorzuweisen hatte, so dass
+die Intensitaet der Sonne ein wenig abgemildert wurde. Von der photographischen Seite
+her waren die Wolken genau das, was an den vorhergehenden Tagen gefehlt hatte, um
+einigermassen interessante HDR-Bilder mit dem Weitwinkel zu schiessen (ein einfach nur
+blauer Himmel ist einfach eine zu grosse Flaeche ohne weitere Struktur).
+ 
+**:::**
+ 
+ 
+### Ohne Lenkrad und Bremspedal ###
+
+
+
+
+_Wed, 28. May 2014 -- 12:53_
+
+Ganz unvorbereitet kommt dieses Vorhaben ja nicht: es sind mittlerweile schon ein
+paar Jahre, dass [Google](http://www.google.com) an der Entwicklung von selbstfahrenden
+Autos arbeitet. Wie ich nun aber ueber einen [Artikel in Heise News](http://www.heise.de/newsticker/meldung/Selbstfahrende-Autos-Google-baut-ein-eigenes-Auto-2199035.html)
+erfahren habe, greifen die Kalifornier nun nicht mehr notwendigerweise auf Fahrzeuge
+anderer Hersteller zurueck, sondern haben mit dem Bau eigener Autos begonnen. Schaut
+man sich die Video-Aufnahmen von ein paar Testfahrten an, dann kommt man wohl nicht
+umhin den Entwicklern Achtung zu zollen und sich ueber die vielfaeltigen Einsatzmoeglichkeiten
+Gedanken zu machen.
+
+> Google hofft, mit einem kleinem selbstfahrenden Fahrzeug das Szenario für die
+> Nutzung von Autos in der Zukunft zu treffen. Er denke nicht, dass es überwiegend
+> darum gehen werde, die Fahrzeuge zu besitzen, sagte Google-Mitgründer Sergey
+> Brin laut dpa. "Sie dürften größtenteils als ein Service bereitgestellt werden."
+> Google habe die Technologie, das umzusetzen. "Und es ist wahrscheinlich, dass
+> wir eine Menge Partner haben werden - das könnten Autohersteller, Zulieferer,
+> Dienste-Anbieter, Städte oder Länder sein", sagte Brin.
+
+Was mir da sofort einfaellt ist, dass dies den Job des Taxi-Fahrers in vielen Faellen
+ueberfluessig machen koennte; eine Flotte von selbstfahrenden Autos, welche sich zu
+einem bestimmten Ort bestellen lassen, hat einiges an Potential.
+ 
+**:::**
+ 
+ 
 ### Staubig ###
 
 
@@ -403,70 +463,6 @@ Werde ich wohl mal ein wenig im Auge behalten muessen, aer es sieht ein wenig da
 aus, als haette sich ein Weg gefunden, die Auswirkungen der Bauarbeiten kleiner zu
 halten, als dies urspruenglich gedacht war. Soll mir recht sein, denn fuer die Reise
 ist es angenehmer, wenn ich nicht noch einmal extra umsteigen muss.
- 
-**:::**
- 
- 
-### Einigermassen ok ###
-
-
-
-
-_Wed, 14. May 2014 -- 11:35_
-
-Nein, so 100%ig ist es immer noch nicht das was ich haben will, aber angesichts der
-Tatsache, dass es nun schon zwei Wochen sind, dass Updates online gegangen sind,
-werde ich mich wohl mit dem augenblicklichen Zustand zufrieden geben -- zumindest
-was die Moeglichkeit betrifft Aenderungen hochzuladen. Es wird wahrscheinlich noch
-eine Weile dauern, ehe alles genau so aussieht, wie ich es haben will -- es gibt
-derzeit immer noch Probleme mit dem Menu in der linken Spalte -- aber die grundlegende
-Struktur ist nun wieder da.
- 
-**:::**
- 
- 
-### Fortschritte ###
-
-
-
-
-_Tue, 13. May 2014 -- 19:12_
-
-Angesichts der zur Verfuegung stehenden Zeit und den wohl notwendigen Aenderungen
-geht es nur recht langsam voran mit dem Schritten, welche noetig sind um die Website
--- und damit natuerlich auch den Blog -- wieder voll funktionsfaehig zu machen.
-Nach diversen Versuchen die aelten Vorlagen entsprechend anzupassen, habe ich nun
-den Pfad eingeschlagen ein Layout-Template fuer die aktuelle Webgen Version
-zu nehmen und dort dann Stueck fuer Stueck die Anpassungen einzubauen, welche
-noetig sind um zum alten Layout zurueck zu kommen.
-
-~~~~
-INFO  [create] </blog/2014/2014-05/2014-05-02_23-08.html>
-INFO  [create] </blog/2014/2014-05/2014-05-04_23-28.html>
-INFO  [create] </blog/2014/2014-05/2014-05-05_23-28.html>
-INFO  [create] </blog/2014/2014-05/2014-05-12_06-53.html>
-INFO  [create] </blog/2014/2014-05/2014-05-12_17-18.html>
-INFO  [create] </blog/2014/2014-05/index.html>
-INFO  [create] </blog/2014/2014-06/>
-INFO  [create] </blog/2014/2014-07/>
-INFO  [create] </blog/2014/2014-08/>
-INFO  [create] </blog/2014/2014-09/>
-INFO  [create] </blog/2014/2014-10/>
-INFO  [create] </blog/2014/2014-11/>
-INFO  [create] </blog/2014/2014-12/>
-INFO  [create] </blog/2014/index.html>
-INFO  [create] </blog/archive.html>
-INFO  [create] </blog/data_format.html>
-INFO  [create] </blog/index.html>
-~~~~
-
-Das heisst allerdings nicht notwendigerweise, dass alles genau 100%ig wieder so aussehen
-wird, wie dies davor der Fall, denn schliesslich ist dies eine gute Gelegenheit ein
-paar Kleinigkeiten mit zu ueberarbeiten. Auf dem Weg dahin lerne ich immer wieder ein
-paar Details in Sachen Webdesign hinzu -- auch wenn sich dies garantiert nicht zu einem
-neuen Hobby entwickeln wird, aber bisher habe ich leider noch keine brauchbare Loesung
-gefunden in [Taskwarrior](http://taskwarrior.org)-aehnlicher Weise einen existieren
-C++ Code auf die eigenen Beduerfnisse anzupassen.
  
 **:::**
  
