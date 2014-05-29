@@ -4,71 +4,14 @@ in_menu: true
 author: Lars Baehren
 ---
 
-Welcome to _www.larsbaehren.de_, the website of Lars Baehren.
+## Welcome to my personal website
 
-~~~~
+__What you can find here__
 
-    class AboutMe {
+ - My [Blog](/blog/index.html) which in its various incarnations has been up and
+   running since 2004.
+ - An overview of my [photography activities](/photography/index.html).
+ - The [development](/development/index.html) section will provide you with some
+   insight into the software projects I have been working on.
 
-    public:
-
-        // === Public data =====================================================
-
-        /// My first name
-        std::string myFirstName = "Lars";
-        /// My last name
-        std::string myLastName = "Baehren";
-        /// My occupation
-        std::string myOccupation = "Scientific Software Engineer";
-        /// My website
-        std::string myWebsite = "www.larsbaehren.de";
-
-        // === Public methods ==================================================
-
-        inline std::string name (const bool &reverse=false) {
-            if (reverse) {
-                return (myLastName + ", " + myFirstName);
-            } else {
-                return (myFirstName + " " + myLastName);
-            }
-        }
-
-        inline std::string firstName () {
-            return myFirstName;
-        }
-
-        inline std::string lastName () {
-            return myLastName;
-        }
-
-        inline std::string occupation () {
-            return myOccupation;
-        }
-
-    };  //  class AboutMe - END
-
-~~~~
-
-### Computing ###
-
-Between January 2004 and October 2010 my work has been focussing on the development
-of software for the scientific analysis of the data taken with the LOFAR telescope.
-During the first phase of that period my primary interest has been in the imaging
-of the radio intensity distribution as emitted by cosmic ray air-shower -- but
-also as originating from lightning discharges in thunderstorms. The novel
-capabilities of “digital radio-telescopes” -- the usage of large numbers of cheap
-receptor elements combined with high-performance computing -- allows to explore
-physical processes in unprecedented ways.
-
-### Photography ###
-
-It is now already some years since I picked up my first SLR; as a regular
-visitor of the Rheinkultur festival I developed some interest in the photography
-of musicians and their audience. Finally moving to digital at the end of 2006 I
-have decided to get a bit more serious about photography -- not only spending
-more time going out and using the camera, but also investing in good equipment
-to enable shooting under available light conditions.
-
-This site mainly hosts some technical and background information -- if you want
-to have a look at the pictures themselves, feel free to drop in on [my Flickr
-pages](http://www.flickr.com/photos/larsbaehren).
+![Lars](/lars_2009.jpg)
