@@ -1,9 +1,15 @@
 /*
-Original design: andreas01 (v3.1 - Sep 11, 2012) - A free xhtml/css website template by Andreas Viklund.
-For more information, see http://andreasviklund.com/templates/andreas01/
+ * Original design: andreas01 (v3.1 - Sep 11, 2012)
+ * - A free xhtml/css website template by Andreas Viklund.
+ * - For more information, see http://andreasviklund.com/templates/andreas01
 */
 
-/* Main body */
+/* ========================================================================== */
+/*                                                                            */
+/*  HTML body                                                                 */
+/*                                                                            */
+/* ========================================================================== */
+
 body {
     background: #f4f4f4 url(images/bg.gif) top center repeat-y;
     color:      #404040;
@@ -21,24 +27,28 @@ body {
 
 /* Basic tags */
 a {
-    background-color:inherit;
-    color:#286ea0;
-    font-weight:700;
-    text-decoration:none;
+    background-color: inherit;
+    color:            #286ea0;
+    font-weight:      700;
+    text-decoration:  none;
 }
 a:hover {
-    background-color:inherit;
-    color:#286ea0;
-    text-decoration:underline;
+    background-color: inherit;
+    color:            #286ea0;
+    text-decoration:  underline;
 }
 a img {
-    border:0;
+    border: 0;
 }
 p {
-    margin:0 0 1.4em;
+    margin: 0 0 1.4em;
 }
 
-/* === Header =============================================================== */
+/* ========================================================================== */
+/*                                                                            */
+/*  Header frame                                                              */
+/*                                                                            */
+/* ========================================================================== */
 
 #header {
     height:     250px;
@@ -80,19 +90,47 @@ p {
     margin: 0 0 10px;
 }
 
-/* === Left and right sidebar =============================================== */
+/* ========================================================================== */
+/*                                                                            */
+/*  Left and right sidebar                                                    */
+/*                                                                            */
+/* ========================================================================== */
 
-#leftside {clear:left; float:left; margin:0 0 5px; padding:0; width:140px;}
-#rightside {float:right; line-height:1.4em; margin:0 0 5px; padding:0; width:140px;}
+#leftside {
+    clear:   left;
+    float:   left;
+    margin:  0 0 5px;
+    padding: 0;
+    width:   140px;
+}
+
+#rightside {
+    float:       right;
+    line-height: 1.4em;
+    margin:      0 0 5px;
+    padding:     0;
+    width:       140px;
+}
+
 #leftside p,#leftside ul, #rightside p,#rightside ul {margin:0 0 16px; padding:0;}
+
 #leftside p, #rightside p {font-size:0.9em; line-height:1.4em;}
+
 #leftside li, #rightside li {line-height:1.2em; list-style:none; margin:0 0 6px; padding:0;}
+
 #leftside ul ul, #rightside ul ul {margin:6px 0 0 10px; padding:0;}
+
 #leftside ul ul li, #rightside ul ul li {margin:0 0 4px;}
+
 #leftside ul ul li a, #rightside ul ul li a {font-weight:400;}
+
 #leftside h2,#leftside h3, #rightside h2,#rightside h3 {color:#505050; font-size:1.2em; margin:0 0 8px; padding:0;}
 
-/* === Main menu ============================================================ */
+/* ========================================================================== */
+/*                                                                            */
+/*  Navigation menu in left sidebar                                           */
+/*                                                                            */
+/* ========================================================================== */
 
 #leftside .avmenu > ul, #rightside .avmenu > ul {
     display:    block;
@@ -110,33 +148,50 @@ p {
 }
 
 #leftside .avmenu li a, #leftside .avmenu li span, #rightside .avmenu li a, #rightside .avmenu li span {
-    background-color:#f4f4f4;
-    border-left:4px solid #ccc;
-    color:#505050;
-    float:left;
-    font-weight:700;
-    margin-bottom:5px;
-    padding:5px 1px 5px 5px;
-    text-decoration:none;
-    width:130px;
+    background-color: #f4f4f4;
+    border-left:      4px solid #ccc;
+    color:            #505050;
+    float:            left;
+    font-weight:      700;
+    margin-bottom:    5px;
+    padding:          5px 1px 5px 5px;
+    text-decoration:  none;
+    width:            130px;
 }
 
 #leftside .avmenu li a:hover, #leftside .avmenu li a.current, #leftside .avmenu li.webgen-menu-item-selected a, #leftside .avmenu li.webgen-menu-item-selected span, #rightside .avmenu li a:hover, #rightside .avmenu li a.current, #rightside .avmenu li.webgen-menu-item-selected a, #rightside .avmenu li.webgen-menu-item-selected span {background-color:#eaeaea; border-left:4px solid #286ea0; color:#505050;}
 
-#leftside .avmenu ul ul, #rightside .avmenu ul ul {font-size:0.9em; margin:0 0 0 15px; padding:0 0 5px; width:125px;}
+#leftside .avmenu ul ul, #rightside .avmenu ul ul {
+    font-size: 0.9em;
+    margin:    0 0 0 15px;
+    padding:   0 0 5px;
+    width:     125px;
+}
 
-#leftside .avmenu ul ul a, #rightside .avmenu ul ul a {font-weight:400; padding:3px 1px 3px 5px; width:115px;}
+#leftside .avmenu ul ul a, #rightside .avmenu ul ul a {
+    font-weight: 400;
+    padding:     3px 1px 3px 5px;
+    width:       115px;
+}
 
-#leftside .avmenu ul ul ul, #rightside .avmenu ul ul ul {width:113px;}
+#leftside .avmenu ul ul ul, #rightside .avmenu ul ul ul {
+    width:113px;
+}
 
-#leftside .avmenu ul ul ul a, #rightside .avmenu ul ul ul a {width:100px;}
+#leftside .avmenu ul ul ul a, #rightside .avmenu ul ul ul a {
+    width:100px;
+}
 
-/* === Main content ========================================================= */
+/* ========================================================================== */
+/*                                                                            */
+/*  Main content frame                                                        */
+/*                                                                            */
+/* ========================================================================== */
 
 #content {
     border-left:  1px solid #e0e0e0;
     line-height:  1.5em;
-    width:        560px;
+    width:        600px;
     margin:       0 150px 5px;
     padding:      0 10px;
 }
@@ -161,13 +216,17 @@ p {
 #content img,#contentwide img,#contentwide2 img {
     background: #ccc;
 /*    border:     4px solid #f0f0f0; */
-    color:      #303030;
-    display:    inline;
-    padding:    1px;
+    color:        #303030;
+    display:      inline;
+    padding:      1px;
+    margin-left:  auto;
+    margin-right: auto
 }
 
 #content ul,#contentwide ul,#contentwide2 ul,#content ol,#contentwide ol,#contentwide2 ol {margin:0 0 16px 20px; padding:0;}
+
 #content li,#contentwide li,#contentwide2 li {margin:0; padding:0 0 0 5px;}
+
 #content ul ul,#contentwide ul ul,#contentwide2 ul ul,#content ol ol,#contentwide ol ol,#contentwide2 ol ol {margin:0 0 0 16px; padding:0;}
 
 p {
@@ -185,7 +244,11 @@ li {
     margin:     5px 0;
 }
 
-/* ==- Contact information ================================================== */
+/* ========================================================================== */
+/*                                                                            */
+/*  Contact information                                                       */
+/*                                                                            */
+/* ========================================================================== */
 
 #contact {
     margin:        10px 0 10px 0px;
@@ -201,7 +264,11 @@ li {
     margin:     -10px 0 4px 0;
 }
 
-/* === Footer =============================================================== */
+/* ========================================================================== */
+/*                                                                            */
+/*  Page footer                                                               */
+/*                                                                            */
+/* ========================================================================== */
 
 #footer {
     background:  #fff;
@@ -236,13 +303,29 @@ li {
     font-size: 1.2em;
 }
 
-/* Additional classes */
-.left {float:left; margin:3px 10px 2px 0;}
-.right {float:right; margin:2px 0 2px 10px;}
-.textright {text-align:right; margin:5px 0;}
+/* === Text alignment ======================================================= */
+
+.left {
+    float:left;
+    margin:3px 10px 2px 0;
+}
+
+.right {
+    float:right;
+    margin:2px 0 2px 10px;
+}
+
+.textright {
+    text-align:right;
+    margin:5px 0;
+}
+
 .center {text-align:center;}
+
 .small {font-size:0.8em;}
+
 .bold {font-weight:700;}
+
 .timestamp {font-size:1.2em; margin:-5px 0 15px 10px;}
 .timestamp a {font-weight:400;}
 .announce {background-color:#f4f4f4; border-left:4px solid #ccc; clear:left; color:#505050; font-size:0.9em; line-height:1.5em; margin:10px 0 15px; padding:7px 5px 2px 5px; width:126px;}
@@ -292,7 +375,7 @@ blockquote {
     border-top:    1px solid #d8d8d8;
     border-right:  1px solid #d8d8d8;
     border-bottom: 1px solid #d8d8d8;
-    border-left:   4px solid #cccccc;
+    border-left:   3px solid #286ea0;
     margin:        16px;
     padding:       7px 7px 7px 11px;
     background:    #f4f4f4 url(images/menubg.gif) bottom left repeat-x;
