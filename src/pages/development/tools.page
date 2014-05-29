@@ -72,6 +72,10 @@ Wikipedia has a nice article providing [basic comparisons for common text editor
    the mid to late 90's, many University students became intimately familiar with
    the strengths (and weaknesses) of Pine and Pico.
 
+   __User experience:__ Since I never took to _vi_ of _vim_ I always considered
+   _nano_ as tool of choice when in need of an editor running within the terminal
+   window.
+
  - [Aquamacs](http://aquamacs.org) is an Aqua-native build of the powerful Emacs
    text editor. By "Aqua-native," we mean more than just the fact that this
    version of Emacs runs as a standard OS X application. Aquamacs features
@@ -80,3 +84,19 @@ Wikipedia has a nice article providing [basic comparisons for common text editor
    you've come to expect from this world-class editor. It's beeen adapted by David
    Reitter, based on GNU Emacs by Richard Stallman and many others.
 
+ - [jEdit](http://www.jedit.org) s a text editor available under the GNU GPL version
+   2.0. It is written in Java and runs on any operating system with Java support,
+   including Windows, Linux, Mac OS X, and BSD. jEdit includes syntax highlighting
+   that provides native support for over 200 file formats. Support for additional
+   formats can be added manually using XML files. It supports UTF-8 and many other
+   encodings. It has extensive code folding and text folding capabilities as well
+   as text wrapping that takes indents into account. The application is highly
+   customizable and can be extended with macros written in BeanShell, Jython,
+   JavaScript and some other scripting languages.
+
+ - [Atom](https://atom.io) is a text and source code editor for Linux, OS X and
+   Windows, with support for plug-ins written in Node.js, and embedded
+   [Git](/development/tools/git/index.html) Control, developed by GitHub. Most of
+   the extending packages have free software licenses and are community-built and
+   maintained. Atom is based on Chromium and written in C++. It is used also as an
+   IDE.

@@ -9,8 +9,26 @@ tags: Development Computing
 
 **:::**
 
-## Projects ##
+### Personal background
 
- - The [Data Access Library](/development/projects/dal.html) (DAL) is a library that abstracts the underlying file format from the user when working with radio astronomy data. Underlying formats may include HDF5, AIPS++/CASA tables, FITS or specific raw formats. This library is available to both the C/C++ developer and the Python user via the "pydal" module.
+Between January 2004 and October 2010 my work has been focussing on the development
+of software for the scientific analysis of the data taken with the LOFAR telescope.
+During the first phase of that period my primary interest has been in the imaging
+of the radio intensity distribution as emitted by cosmic ray air-shower -- but
+also as originating from lightning discharges in thunderstorms. The novel
+capabilities of “digital radio-telescopes” -- the usage of large numbers of cheap
+receptor elements combined with high-performance computing -- allows to explore
+physical processes in unprecedented ways.
 
- - [prometheus-sumo](/development/projects/prometheus-sumo.html) is a simple (almost) virtual package, to ease the retrieval of the various components in the software stack for "[prometheus](/work/prometheus.html) -- The Distributed Digital Image Archive for Research and Studies".
+### Projects
+
+ - The [Data Access Library](/development/projects/dal.html) (DAL) is a library
+   that abstracts the underlying file format from the user when working with
+   radio astronomy data. Underlying formats may include HDF5, AIPS++/CASA
+   tables, FITS or specific raw formats. This library is available to both the
+   C/C++ developer and the Python user via the "pydal" module.
+
+ - [prometheus-sumo](/development/projects/prometheus-sumo.html) is a simple
+   (almost) virtual package, to ease the retrieval of the various components in
+   the software stack for "[prometheus](/work/prometheus.html) -- The
+   Distributed Digital Image Archive for Research and Studies".
