@@ -1,0 +1,65 @@
+---
+title: "Rueckreise in den Sueden"
+in_menu: false
+author: Lars Baehren
+date: 2008-08-13T18:20:00.00Z
+created_at: 2008-08-13T18:20:00.00Z
+---
+
+## {title:} ##
+
+_Wed, 13. August 2008 -- 18:20_
+
+So, da waeren wir auch schon wieder auf der Reise zurueck in den Sueden der
+Niederlande; in **Zwolle** habe ich mich von Joris und Michael verabschiedet,
+die ja wahlweise nach Den Haag und Amsterdam weiterreisen. Ich fuer meinen Teil
+habe jetzt noch etwa eineinhalb Stunden, ehe ich wieder vor der heimischen
+Tuere stehe -- Zeit genug also um noch ein wenig zu schreiben und
+programmieren.
+
+Die knapp anderthalb Tage Dwingeloo waren dieser Woche eigentlich recht
+produktiv, auch wenn ich einiges an Zeit fuer Dinge habe aufwenden muessen,
+welche ich nicht auf der Agenda stehen hatte. Nachdem Herr Horneffer beschlossen
+hat quer  durch Joes und meinen Code zu editieren, habe ich einiges an Zeit
+darauf verwenden muessen um aufzuraeumen und alles so aufzusetzen, dass es mit
+meinem Konzept in Einklang ist. Nachdem ich ja am Wochenende noch das
+[Problem mit Konfiguration und Bau auf Mac OS X geloest](2008-08-12_07-43.html)
+hatte, ist der Weg nun frei mich voll auf den Imager zu konzentrieren, auf
+welchen die Leute ja schon seit einer Weile warten; ich erwarte zwar nicht, dass
+ich mich ausschliesslich diesem Problem zuwenden kann (will ich auch ehrlich
+gesagt nicht, weil ich doch ein wenig Abwechlung brauche um nicht vollkommen am
+Rad zu drehen), aber mit einer Reihe von allgemeineren Problemen aus dem Weg
+kann es jetzt wieder daran gehen die Funktionalitaet der Software zu erweitern.
+Einen leichten Anschlag darauf hat Michael aber bereits wieder waehrend der
+Fahrt ach Zwolle veruebt, indem er an meinen Sinn fuer Ordnung und Kontrolle
+appeliert hat -- wenn ich die Zeit finden wuerde mal einen Blick auf den BBS
+Source Code zu werfen koenne dies doch sicherlich nicht schaden... Bisher gibt
+es fuer grosse Teil des Codes keinerlei Review, so dass die Frage nach der
+Verstanedlichkeit durchaus berechtigt ist; es macht schon einen deutlichen
+Unterschied ob man den Code jemandem vor die Nase haelt der damit taeglich zu
+tun hat oder jemandem der damit nichts zu tun hat. Wir reden hier ja sicherlich
+nicht ueber einen grundlegenden Check aller implementierten Algorithmen oder
+Methoden, aber zu schauen ob jemand drittes in der Lage waere etwas mit dem Code
+anzufangen ist sicherlich eine gute Idee. Mal schauen wann ich da einen Blick
+drauf werfen werde. Einer interessanten Punkte ist allerdings auch, dass eine
+Reihe von Punkten, welche in dem Gespraech mit Joris als Wunschliste
+auftauchten, genau das sind, was ich schon seit einer ganzen Weile praktiziere
+und auch fuer den allgemeineren Gebrauch zur Verfuegung gestellt habe (auch wenn
+man realistischerweise sagen muss, dass dies ja nicht automatisch bedeutet, dass
+sich die Leute auch daran halten oder Gebrauch davon machen) -- insofern ist
+schon ein wenig klar, warum diese Anfrage wieder einmal an mich adressiert war.
+
+Gestern Abend haben wir die traditionelle Schnitzel-Night im Gaestehaus
+zugunsten einer Einladung zum Abendessen durch Corina und Michiel ausfallen
+lassen. Da ja auch Michael unlaengst Geburtstag hatte war gestern die erste
+Gelegenheit (nach meiner Absage letzte Woche), dass wir alle vier zusammen
+ausgehen konnten. So waren wir dann also in einem Restaurant in Dwingeloo, um
+uns dort kulinarisch deutlich aufweniger bewirten zu lassen als wir dies selbst
+hinbekommen haetten. Es ist schon eine ganze Weile her, dass wir in dieser
+ueberschaubaren Runde mal laenger in Ruhe zusammengesessen haben und ein wenig
+Zeit zum Reden hatten. Wir natuerlich zu erwarten war, spielten arbeitsbezogene
+Themen nach wir vor eine grosse Rolle (dafuer stecken wir alle einfach viel zu
+tief drin um dies so ohne weiteres abschalten zu koennen), aber dies war doch
+deutlich nicht alles. Ich wuerde mal schon behaupten, dass wir da eine Gruppe
+zusammen haben, welche wesentlich zum Erhalt des gesunden Geisteszustandes
+beitraegt -- eine Sache die manchmal wirklich noetig ist.

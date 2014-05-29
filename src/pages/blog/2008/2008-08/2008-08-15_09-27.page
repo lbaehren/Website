@@ -1,0 +1,85 @@
+---
+title: "Wie man wieder Platz schafft"
+in_menu: false
+author: Lars Baehren
+date: 2008-08-15T09:27:00.00Z
+created_at: 2008-08-15T09:27:00.00Z
+---
+
+## {title:} ##
+
+_Fri, 15. August 2008 -- 09:27_
+
+Ich wundere mich ja nun schon einer Weile wie es dazu kommt, dass der auf meinem
+Laptop zur Verfuegung stehende Plattenplatz so rasant abnimmt. Es gibt
+natuerlich ein paar Ecken im Dateisystem, wo ich erwarten wuerde, dass sich dort
+Daten anhaeufen, aber selbst einem massivem Aufraeumen dort hat sich an der
+Situation bis vor wenigen Minuten nicht sonderlich viel geaendert. Ich weiss zum
+Beispiel, dass die groesste Datenmenge innerhalb meiner iTunes Library anfaellt,
+welche ja stetig mit neuer Musik angefuellt wird, so dass ich hin und wieder
+Sachen auslagern muss; insofern war es sicherlich logisch dort erst einmal
+nachzuschauen, ob da nicht noch irgendwelche Dinge herumgeistern, welche dort
+nichts mehr zu suchen haben -- war aber nicht der Fall (oder zumindest nicht in
+dem Masse, wie es noetig gewesen waere um den Verbrauch an Plattenplatz zu
+erklaeren). Bereits von vorne herein auszuschliessen war der Order mit Filmen:
+typischerweise landen Daten hier nur fuer den Transport bevor alles auf einer
+grossen externen USB Platte landet. Ein weitere Kandidat waere natuerlich der
+ganze Bereich, in welchem die Softwareentwicklung stattfindet; neben den ganzen
+Bibliotheken und Applikationen sind es vor allen Dingen die zwischenzeit
+angelegten Ausgaben der Testprogramme, welche gerne einige GB auffressen. Aber
+gut, dies sind halt alles die Verdaechtigen, welche man so kennt -- trotzdem
+hatte ein Aufraeumen dort keinen nennenswerten Effekt.
+
+An dieser Stelle ist es dann aber doch ganz gut, dass ich von der Art her mehr
+ein UNIX/Linux Benutzer denn ein typischer Mac Benutzer bin: wenn ich nach
+irgendwelchen Informationen innerhalb des Systems suche, dann greife ich
+instinktiv zu einem xterm und gehe von dort aus auf die Suche. Bei dieser
+Gelegenheit ist mir dann wieder eingefallen, dass ich ja schon einige Male in
+einem Bereich von Mac OS X herumgestochert habe, in welchem sich die meisten
+wohl nicht so ohne weiteres herumtreiben: in jedem Benutzerverzeichnis gibt es
+einen ''Library'' Ordner, in welchem Programme z.B. ihre Konfigurationsdaten
+ablegen... aber auch Caches anlegen. Siehe da: ein simples ''du -hs'' lieferte
+mir eine Groesse von knapp 25 GB fuer den Ordner, was deutlich ueber dem liegt,
+was ich gewillt bin zu akzeptieren. Folgerichtig habe ich mal ein wenig
+weitergestochert, hier und da ein paar Ordner rausgeschmissen, bis ich dann auf
+den eigentlichen Uebeltaeter gestossen bin: rund 95% der kompletten Datenmenge
+war in dem ''Nikon'' Verzeichnis zu finden, welcher von _ViewNX_ und _Capture
+NX_ verwendet wird. Bei genauerem Hinschauen stellte sich heraus das es die
+Thumbnail Caches sind, welche ueber die Zeit auf eine mehr als ertraegliche
+Groesse anwachsen, so dass ich hier einmal eingreifen musste; diesmal allerdings
+nicht mit einem direkten ''rm -f *'' sondern in geordneter Weise direkt ueber
+die Cache-Verwaltung von _Capture NX_. Siehe da -- mit einem Mal gibt es
+wieder jede Menge Platz auf der Festplatte:
+
+ * Vor dem Aufraumen:
+~~~~
+Filesystem     Size   Used  Avail Capacity  Mounted on
+/dev/disk0s2   149G   121G    27G    82%    /
+devfs          106K   106K     0B   100%    /dev
+fdesc          1.0K   1.0K     0B   100%    /dev
+<volfs>        512K   512K     0B   100%    /.vol
+/dev/disk6s3   233G   155G    78G    67%    /Volumes/Archive
+/dev/disk5s1   298G    60G   239G    20%    /Volumes/Phototheque
+/dev/disk3s3   466G   418G    47G    90%    /Volumes/Cinematheque
+/dev/disk2     698G   476G   222G    68%    /Volumes/Pictures RAID1
+~~~~
+
+ * Nach dem Aufraeumen:
+~~~~
+Filesystem     Size   Used  Avail Capacity  Mounted on
+/dev/disk0s2   149G   102G    47G    69%    /
+devfs          106K   106K     0B   100%    /dev
+fdesc          1.0K   1.0K     0B   100%    /dev
+<volfs>        512K   512K     0B   100%    /.vol
+/dev/disk6s3   233G   155G    78G    67%    /Volumes/Archive
+/dev/disk5s1   298G    60G   239G    20%    /Volumes/Phototheque
+/dev/disk3s3   466G   418G    47G    90%    /Volumes/Cinematheque
+/dev/disk2     698G   476G   222G    68%    /Volumes/Pictures RAID1
+~~~~
+
+Wie unschwer zu erkennen ist hat der Cache ganze 20 GB aufgefressen! Da muss
+ich mich ja nicht wundern, warum die Anzeige fuer den freien Platz
+kontinuierlich gegen Null strebt. Gut zu wissen, in welchen Ecken man ab und zu
+mal nach dem Rechten schauen muss; jetzt da ich dies weiss habe ich wenigstens
+auch die Moeglichkeit dies ueber einen Cronjob von Zeit zu Zeit mal automatisch
+erledigen zu lassen.
