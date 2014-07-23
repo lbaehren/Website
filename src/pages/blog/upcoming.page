@@ -34,6 +34,37 @@ _Last modified: {date:}_
 **in preparation ...**
 
 
+### Griff nach den Daten
+
+[Heise News](http://www.heise.de/newsticker/meldung/US-Zugriff-auf-EU-Rechenzentren-Berlin-draengte-Microsoft-zur-Klage-2264149.html)
+
+> In dem Prozess geht es um E-Mails eines Microsoft-Kunden, die in einem Rechenzentrum in Irland gespeichert sind. Im Zusammenhang mit Ermittlungen gegen Drogenschmuggel hatte die US-Regierung deren Herausgabe verlangt und ein Richter in New York hat im Dezember 2013 einen Durchsuchungsbefehl ausgestellt – der sich damit auf einen anderen Staat bezog. Gegen den wehrt sich nun Microsoft und wird dabei unter anderem von Apple sowie Cisco unterstützt. Die US-Regierung rechtfertigt ihr Ansinnen mit einem Jahrzehnte alten Gesetz und ist überzeugt, Online-Inhalte seien nicht vom Vierten Zusatzartikel der US-Verfassung (Schutz vor staatlichen Übergriffen) geschützt. Sollte sie sich damit durchsetzen, müssten die US-Unternehmen sie herausgeben und damit gegen (Datenschutz-)Gesetze in den Ländern verstoßen, in denen die Inhalte liegen, warnen sie.
+
+
+### Nur Verlierer
+
+> Ein Gericht in Frankreich hat eine Bloggerin zu einer Geldstrafe verurteilt, weil eine von ihr veröffentlichte negative Restaurantkritik bei Google weit vorne in den Suchergebnissen platziert war. Die französische Bloggerin Caroline Doudet schreibt auf "Cultur'elle" meist über Bücher und Filme und erreicht damit mehr als 3000 regelmäßige Leser. Letzten August hielt sie in ihrem Blog auch einen Restaurantbesuch fest, den sie an einem Ferienort an der Atlantikküste erlebt hatte.
+
+[Heise News](http://www.heise.de/newsticker/meldung/Frankreich-Bloggerin-fuer-Google-Ranking-bestraft-2261934.html)
+
+> "Diese Entscheidung erfindet das Verbrechen, zu hoch bei Google gerankt zu sein", kommentierte Doudet das in einem Eilverfahren gefällte Urteil. Da sie die Angelegenheit hinter sich bringen wolle, werde sie voraussichtlich nicht gegen das Urteil vorgehen. Den fraglichen Artikel hat sie aus ihrem Blog gelöscht; er ist allerdings noch im Internet Archive einsehbar.
+
+### Female vocals - update
+
+ - [Hydria](http://www.last.fm/music/Hydria)
+ - Ex Libris
+ - [Sleeping Romance](http://www.last.fm/music/Sleeping+Romance)
+ - [Feridea](http://www.last.fm/music/Feridea)
+ - [Xiphea](http://www.last.fm/music/Xiphea)
+ - [Sorronia](http://www.last.fm/music/Sorronia)
+ - [Innocens](http://www.last.fm/music/Innocens)
+ - [Pythia](http://www.last.fm/music/Pythia)
+ - [Winter in Eden](http://www.last.fm/music/Winter+In+Eden)
+ - [Yotangor](http://www.last.fm/music/Yotangor)
+ - [Markize](http://www.last.fm/music/Markize)
+ - [Bare Infinity](http://www.last.fm/music/Bare+Infinity)
+ - [Niobeth](http://www.last.fm/music/Niobeth)
+
 ### Script it
 
 Es gibt einfach Dinge, die schreien danach automatisiert zu werden; wenn sich
@@ -51,7 +82,7 @@ auf dem Pruefstand eingespannt war (was aber durchaus ausreichend fuer eine Reih
 Untersuchungen ist, weil eben nicht fuer alles das komplette, zusammengebaute Instrument
 braucht).
 
-~~~~
+~~~~~~~~
 efm2.proc_stop_before_dn2v_no_flagging.ocal
 efm2.proc_stop_after_dn2v_no_flagging.ocal
 
@@ -66,9 +97,9 @@ efm2.proc_stop_after_offset_no_flagging.ocal
 
 efm2.proc_stop_before_v2c_no_flagging.ocal
 efm2.proc_stop_after_v2c_no_flagging.ocal
-~~~~
+~~~~~~~~
 
-~~~~
+~~~~~~~~
 for _step in ${varSteps}
 {
     # Upper-case version of processing stp name
@@ -85,9 +116,9 @@ for _step in ${varSteps}
         }
     }
 }
-~~~~
+~~~~~~~~
 
-~~~~
+~~~~~~~~
 Generating task configuration files for MEM step ...
  --> efm2.proc_stop_before_mem_no_flagging.ocal
  --> efm2.proc_stop_after_mem_no_flagging.ocal
@@ -95,7 +126,7 @@ Generating task configuration files for MEM step ...
  --> efm2_fm.proc_stop_after_mem_no_flagging.ocal
  --> fm.proc_stop_before_mem_no_flagging.ocal
  --> fm.proc_stop_after_mem_no_flagging.ocal
-~~~~
+~~~~~~~~
 
 Was ich bisher auf diese Weise noch nicht mit geloest habe ist, wie ich das zugehoerige ``Makefile`` gleich mit aktualisieren kann: die zur Verfuegung gestellten Build-Targets folgen dem gleich Schema wie schon die Konfigurations-Dateien (schliesslich werden diese letzten Endes ja auch wiederum aufgerufen).
 

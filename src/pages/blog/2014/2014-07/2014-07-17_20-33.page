@@ -1,0 +1,41 @@
+---
+title: "Fuer unterwegs"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-07-17T20:33:01.00Z
+created_at: 2014-07-17T20:33:01.00Z
+---
+
+## {title:} ##
+
+_Thu, 17. July 2014 -- 20:33_
+
+Na wenn dies mal nicht ein Auftrag in letzter Minute war (auch wenn man ueber die
+exakte Bezeichnung sicherlich streiten kann): Julia hat mich, als ich vorhin noch
+in Utrecht am Schreibtisch sass angerufen und mich darum gebeten die Fahrt nach Bonn
+fuer die Erstellung einer Website zu verwenden. Zu diesem Zeitpunkt fehlt es mir
+leider nach wie vor noch an Anhalten, welche ich da einsetzen kann, noch an einer
+genaueren Beschreibung, welche weiteren Anforderungen es denn zu erfuellen gibt.
+Also stochere ich hier ein klein wenig im Dunkeln herum und versuche (so gut dies eben
+geht) zumindest die grundlegenden Infrastruktur bereitzustellen -- ueber die Details
+muss man sich dann wohl morgen noch unterhalten.
+
+~~~~
+INFO  Generating website...
+INFO  [update] </Aktuelles.html>
+INFO  [create] </Beispiele.html>
+INFO  [create] </Beispiele/>
+INFO  [create] </Beispiele/2014-07_Hirschberger.html>
+INFO  [update] </Kontakt.html>
+INFO  [update] </Leistungen.html>
+INFO  [update] </Leistungen/Isolierung.html>
+INFO  [update] </Leistungen/Trockenlegung.html>
+INFO  [update] </Team.html>
+INFO  [update] </index.html>
+INFO  ... done in 0.30 seconds
+~~~~
+
+Auch wenn es sicherlich Sinn machen wuerde sich eine Reihe von Alternativen anzuschauen,
+habe ich mich erst einmal wieder fuer [Webgen](http://webgen.gettalong.org) entschieden,
+weil ich damit einfach am vertrautesten bin, um innerhalb dieser kurzen Zeit etwas
+brauchbares auf die Beine zu stellen.

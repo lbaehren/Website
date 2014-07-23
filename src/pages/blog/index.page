@@ -9,6 +9,163 @@ tags: Blog
  
 **:::**
  
+### Nationaler Trauertag ###
+
+
+
+
+_Wed, 23. July 2014 -- 12:32_
+
+Wer den Kopf in den letzten Tagen nicht komplett in den Sand gesteckt und die Nachrichten auch nur ein klein wenig mitverfolgt hat, der wird wohl mitbekommen haben, dass es sich bei dem im Osten der Ukraine (mit hoechster Wahrscheinlichkeit) abgeschossenen Flug MH17 um eine ueberwiegend mit Niederlaendern besetzte Maschine gehandlet hat; da ist es wohl nicht sonderlich verwunderlich, wenn die Anteilnahme an den Geschehnissen hier vor Ort noch einmal eine ganz andere ist als im Rest der Welt. Aus diesem Grunde ist fuer den morgigen Tag kurzfristig ein Nationaler Trauertag angekuendigt worden:
+
+> Voor het eerst sinds het overlijden van koningin Wilhelmina in 1962 kent Nederland een dag van nationale rouw. Vandaag gaan vlaggen halfstok en worden klokken geluid. Ook wordt een minuut stilte gehouden bij de terugkeer van de stoffelijke overschotten van de slachtoffers van de vliegramp in Oekraïne.
+>
+> In heel Nederland wordt stilgestaan bij het lot van de passagiers van vliegtuig MH17. Uit respect voor de slachtoffers zenden publieke omroepen geen reclames uit, stelt de Tweede Kamer een debat uit en laat Schiphol het vliegverkeer een minuut stilleggen. Er vertrekken of landen dan geen toestellen.
+
+Recht frueh am Morgen ging eine Mail von [S\[&\]T](http://www.stcorp.nl) rund, in welcher auf das Gedanken hingewiesen wurde, ein wenig spaeter folgte dann auch ein Rundschreiben hier bei [SRON](http://www.sron.nl):
+
+> Zoals jullie zullen weten is het vandaag een dag van nationale rouw vanwege de vliegramp in de Oekraïne. In de namiddag, waarschijnlijk rond 16:00 uur, (het tijdstip is nog niet bekend), zal er landelijk een minuut stilte in acht worden gehouden wanneer de eerste vliegtuigen met slachtoffers zullen landen in Eindhoven. Wij vinden het belangrijk dat iedereen de gelegenheid krijgt om vandaag stil te staan bij deze vreselijke gebeurtenis. Het staat iedereen vrij om dat op een eigen wijze te doen, individueel of collectief.
+
+In vergleichbarer Weise wird es wohl an vielen Stellen im Land ablaufen -- auch wenn ich dies hier bisher noch nicht in Gespraechen mitbekommen habe (was wohl vor allen Dingen liegt, dass wir ziemlich beschaeftigt sind), so ist das Land doch ziemlich geschockt.
+ 
+**:::**
+ 
+ 
+### Kleine Aenderung, grosse Wirkung ###
+
+
+
+
+_Tue, 22. July 2014 -- 21:30_
+
+Es sind doch immer wieder die Kleinigkeiten, welche unter Umstaenden entscheidend
+sind. Seit ich vor einer Weile die Erzeugung meiner Website hinter den Kulissen auf
+eine neuere Version von [Webgen](http://webgen.gettalong.org) umgestellt hatte, gab
+es immer noch so ein paar Baustellen, wo mir die Resultate nicht so ganz gefielen.
+Zu einen hat dies sicherlich mit der fehlenden Kenntnis ueber alle Moeglichkeiten von
+_Webgen_ selber zu tun (auch wenn sich die Dokumentation deutlich verbessert hat, so
+dass zumindest von jener Seite her die Huerde nicht mehr so gross ist), zum anderen
+fehlte mir einfach auch ein wenig die Geduld die langen Interationszeiten abzuwarten,
+um verschiedenste Varianten auszuprobieren (durch den Blog sind es mittlerweile so
+viele Seiten, dass ein Komplettdurchlauf schon mal an die 10 Minuten dauern kann).
+Da ich aber Ende letzter Woche [in einer recht spontanen Aktionen](/blog/2014/2014-07/2014-07-17_20-33.html)
+eine Website (also zumindest schon einmal einen Prototypen) fuer Herrn Eckstein aus
+dem Boden gestampft habe, gab es sowohl Gelegenheit als auch Notwendigkeit mich mit
+eben jenen Feinheiten noch einmal etwas eingehender zu beschaeftigen. Da die neue Website
+ja innerhalb von wenigen Sekunden gebaut wird, ist es deutlich einfacher zu experimentieren
+und an den diversen Stellschrauben zu drehen -- was ich in Zuge dessen neu hinzu lerne
+kann ich anschliessend dann natuerlich auch wieder fuer meine eigenen Webseiten
+anwenden.
+
+~~~~~~~~
+ +sort_info: 0
+~~~~~~~~
+
+Da dies sowohl auf meiner eigenen als auch der neuen TODO Liste gestanden hat, habe
+ich mir heute Abend mal den Punkt mit der Sortierung der Eintraege im Menu vorgenommen;
+eine rein alphabetische Sortierung ist wohl nicht das schlimmste, was man sich vorstellen
+kann, aber haeufig moechte man doch die Eintraege in einer bestimmten Reihenfolge angezeigt
+bekommen. Benutzt man allerdings den ``sort_info`` Parameter, kann man flexibel die Seiten
+(und dies bezieht sich nur auf das Menu) anordnen. Zum ersten habe ich nun mal dafuer
+gesorgt, dass der Link zurueck auf die Startseite an oberster Stelle steht (wo er ja
+auch hingehoert); da dies natuerlich zu einer Aenderung an allen Seiten fuehrt, wird
+das Hochladen der Aktiualisierungen wieder mal ein wenig laenger dauern -- gut also,
+das man dies nur anwerfen muss, der Rest dann aber im Hintergrund weiterlaufen kann,
+ohne dass man sich weiter darum kuemmern muss.
+ 
+**:::**
+ 
+ 
+### Langes Wochenende ###
+
+
+
+
+_Mon, 21. July 2014 -- 07:10_
+
+Also wenn man eines ueber das zurueckliegende Wochenende sagen kann, dann
+sicherlich dass es in keinster Weise zum Ausspannen und Ausruhen gedacht war.
+Nachdem durch die heftigen Regenfaelle der letzten Zeit deutlich geworden ist,
+dass das Dach alles andere als wasserdicht ist, wurde recht kurzfristig eine
+Sanierung notwendig (welche so in der Art nicht in der Planung vorgesehen war).
+Um bei den Arbeiten nicht in eine weitere Regenperiode hinein zu geraten, blieb
+lediglich ein kurzes Zeitfenster, um das alte Dach abzutragen und das neue Dach
+aufzubringen (zumindest in dem Masse, dass das Haus wieder regenfest ist). Vor
+allen Dingen diese beiden zuvor genannten Schritten haben am Freitag und Samstag
+stattgefunden... unter alles andere als vorteilhaften Umstaenden. Was dabei vor
+allen Dingen an den Kraeften zehrte war die Kombination von schweren
+Baumaterialien und der konstanten Hitze, welche auf dem Dach noch einmal eine
+Spur gnadenloser zu spueren war. Vor allen Dingen am Freitag kam darueber hinaus
+noch erschwerend hinzu, dass es im Bonner Norden einen grossflaechigen
+Stromausfall gab; im Zuge eines Unfalls im Buschdorfer Umspannwerk, war in ganz
+Tannenbusch die Versorgung unterbrochen, was dazu fuehrte, dass sich der bereits
+aufgebaute Lastenaufzug nicht benutzen liess und alle Materialien von Hand aufs
+Dach getragen werden mussten. Waehrend die Styroporplatten im wesentlichen
+einfach unhandlich waren, war bei den Rollen fuer die Wasserabsperrung das
+Gewicht das, was wirklich zu Buche schlug. Da war es schon ganz gut, dass es mit
+dem Oberlicht im Badezimmer eine alternative Route zur der an der Aussenwand
+angelehnten Leiter gab, so dass wir die Handwerker kontinuierlich mit Nachschub
+versorgen konnten. Als dann endlich der Strom wieder da war ging es mit dem
+Transport deutlich schneller und einfacher. Dennoch haette es aber von den Temperaturen
+her durchaus etwas weniger sein duerfen -- wie die Herren es geschafft haben unter
+diesen Bedingungen so schwere Arbeit zu verrichten, ist schon beeindruckend. Aber:
+am spaeten Samstag Nachmittag war das Dach neu gedeckt und damit wieder regenfast!
+
+![Dachsanierung](/blog/2014/2014-07/hdr_20140718_203236_Hirschberger_Strasse.jpg)
+
+Da parallel zu den Arbeiten auf dem Dach, Julias Eltern fleissig im Keller zu
+Gange waren, konnten wir uns gestern Abend daran machen, den hinteren Raum im
+Keller mit Fliesen auszulegen. Diese Aktion ging zwar erstaunlich schneller
+ueber die Buehne (was wohl vor allen Dingen Julias Geschick beim Verlegen der
+Fliesen geschuldet war), aber trotzdem war es halb elf, ehe wir uns wieder aus
+dem Staub gemacht haben. Wenn jetzt im Laufe der Woche noch die Fugen
+ausgefuellt werden, dann haetten wir es in der Tat mit dem ersten Raum im Haus zu
+tun, welche fertiggestellt und zur Benutzung freigegeben ist. Ich denke mal, dass dies
+dann schon ein bemerkenswerter Abschnitt ist.
+ 
+**:::**
+ 
+ 
+### Fuer unterwegs ###
+
+
+
+
+_Thu, 17. July 2014 -- 20:33_
+
+Na wenn dies mal nicht ein Auftrag in letzter Minute war (auch wenn man ueber die
+exakte Bezeichnung sicherlich streiten kann): Julia hat mich, als ich vorhin noch
+in Utrecht am Schreibtisch sass angerufen und mich darum gebeten die Fahrt nach Bonn
+fuer die Erstellung einer Website zu verwenden. Zu diesem Zeitpunkt fehlt es mir
+leider nach wie vor noch an Anhalten, welche ich da einsetzen kann, noch an einer
+genaueren Beschreibung, welche weiteren Anforderungen es denn zu erfuellen gibt.
+Also stochere ich hier ein klein wenig im Dunkeln herum und versuche (so gut dies eben
+geht) zumindest die grundlegenden Infrastruktur bereitzustellen -- ueber die Details
+muss man sich dann wohl morgen noch unterhalten.
+
+~~~~
+INFO  Generating website...
+INFO  [update] </Aktuelles.html>
+INFO  [create] </Beispiele.html>
+INFO  [create] </Beispiele/>
+INFO  [create] </Beispiele/2014-07_Hirschberger.html>
+INFO  [update] </Kontakt.html>
+INFO  [update] </Leistungen.html>
+INFO  [update] </Leistungen/Isolierung.html>
+INFO  [update] </Leistungen/Trockenlegung.html>
+INFO  [update] </Team.html>
+INFO  [update] </index.html>
+INFO  ... done in 0.30 seconds
+~~~~
+
+Auch wenn es sicherlich Sinn machen wuerde sich eine Reihe von Alternativen anzuschauen,
+habe ich mich erst einmal wieder fuer [Webgen](http://webgen.gettalong.org) entschieden,
+weil ich damit einfach am vertrautesten bin, um innerhalb dieser kurzen Zeit etwas
+brauchbares auf die Beine zu stellen.
+ 
+**:::**
+ 
+ 
 ### Wiederbelebt ###
 
 
@@ -409,142 +566,6 @@ Bei genauerer Inspektion laesst sich deutlich erkennen, dass das Kabel am Ausgan
 nicht nur ohne die Isolierung ist, sondern darueber hinaus kohlrabenschwarz verfaerbt ist.
 Unter diesen Umstaenden werde ich die restliche Fahrt also mit dem Akku bestreiten muessen
 (was also groessere Rechenaktionen ausschliesst).
- 
-**:::**
- 
- 
-### Produktive Reise ###
-
-
-
-
-_Thu, 19. June 2014 -- 21:29_
-
-So mag ich das: wie man u.a. anhand der [Git](http://git-scm.com) Logs erkennen
-kann, habe ich es geschafft die Zugfahrt von Utrecht nach Koeln recht produktiv zu
-nutzen (auch wenn ich es -- da ich offline bin -- noch nicht geschafft haben den I/O
-Fehler in meinen OCALFW Modulen zu beheben).
-
-~~~~
-* commit 9977b6c707bbdcc49dbfcacd179ab7f2a93076a3
-| Author: Lars Baehren <lbaehren@gmail.com>
-| Date:   Thu Jun 19 21:18:59 2014 +0200
-|
-|     Clean-up of algorithm configuration parameters.
-|
-* commit 32be6d354ccd45818a8d0c84ad5c4291d7c06a28
-| Author: Lars Baehren <lbaehren@gmail.com>
-| Date:   Thu Jun 19 20:56:47 2014 +0200
-|
-|     Clean-up of mandatory and optional algorithm parameters: adding missing values
-|     and providing m
-|
-* commit 96774356a3e91136dec30b9db644060c02132bb1
-| Author: Lars Baehren <lbaehren@gmail.com>
-| Date:   Thu Jun 19 19:01:56 2014 +0200
-|
-|     Make HDF5 file handler - required for reading in test data - persistent for
-|     the duration of co
-|
-~~~~
-
-Neben den aufgefuehrten Commits habe ich die Zeit auch wieder dazu genutzt Mails zu
-schreiben und meine Task-Liste ein wenig aufzuraeumen (immer wieder gut, wenn sich
-Eintraege dort streichen lassen). Was ich immer wieder feststellen kann ist, dass
-vor allen Dingen diese abendlichen Zugfahrten eine ganz besondere Qualitaet haben:
-die ueber den tag im Kopf angesammelten Ideen sind bis an den Punkt gereift, wo ich
-mich einfach "nur noch" (zumindest zu einem guten Teil) an den Rechner setzen und
-tippen muss. Dementsprechend werde ich versuchen die verbleibende Fahrtzeit bis Bonn
-noch weiter zu nutzen...
- 
-**:::**
- 
- 
-### Ohne Kamera ###
-
-
-
-
-_Wed, 18. June 2014 -- 23:52_
-
-Da ist ja schon ein wenig ungewohnt, so komplett ohne Photoausruestung die Tage hier
-in Utrecht zu verbringen; aber nachdem ich die vorletzten beiden Wochen den Rucksack
-von Bonn nach Utrecht und wieder zurueck geschleppt habe (auch wenn man diesen Ausdruck
-vielleicht nicht zu woertlich verstehen sollte) ohne auch nur ein einziges Foto mit
-nach Hause zu bringen, habe ich mich entschlossen mich in dieser Wochen wirklich nur
-auf die Dinge zu konzentrieren, welche unbedingt noetig sind. Was damit vor allen Dingen
-gemeint ist waere, dass wir einen recht ambitionierten Zeitplan in Sachen Implementierung
-der Algorithmen fuer die _On-ground Calibration_ (OCAL) fahren, welcher im Kern vorsieht,
-dass alle zwei Wochen ein Algorithmus abgeliefert werden kann. Dass dies schon unter
-normalen Umstaenden recht schwer sein duerfte (vor allen Dingen angesichts der doch
-recht komplizierten Berechnungsschritte, welche in Code umgesetzt werden muessen), so
-duerfen die Aktivitaeten im und rund um's Haus dabei auch nicht auf der Strecke bleiben.
-Da kann ich es mir einfach nicht erlauben sonderlich viel andere Dinge hier in Utrecht
-zu machen, als so viel wie nur irgend moeglich von dem was hier gemacht werden muss
-hier auch abzuarbeiten... nur so habe ich dann fuer die anderen Dinge den Kopf frei,
-wenn ich wieder in Bonn bin.
- 
-**:::**
- 
- 
-### Eine Art der Beliebheitsmessung ###
-
-
-
-
-_Tue, 17. June 2014 -- 12:35_
-
-Also auf diese Art und Weise laesst sich natuerlich auch etwas ueber die
-Beliebheit einer Fernsehserie sagen:
-
-> Die US-Fernsehserie [Game of Thrones](http://www.imdb.com/title/tt0944947) bleibt
-> in den Filesharing-Netzen das Maß der Dinge. Kurz nach der letzten Folge der
-> vierten Staffel, die am Montag in den USA ausgestrahlt wurde, haben über 254.000
-> Nutzer gleichzeitig die gleiche Datei verteilt, berichtet Torrentfreak. Damit hat
-> die Serie ihre eigenen Rekord von Anfang Mai dieses Jahres gebrochen, als es gut
-> 207.000 Nutzer waren.
-
-Wie [Heise News](http://www.heise.de/newsticker/meldung/Game-of-Thrones-toppt-eigenen-Filesharing-Rekord-2227427.html?wt_mc=rss.ho.beitrag.atom)
-weiter in der Meldung berichtet:
-
-> Innerhalb von zwölf Stunden nach der Ausstrahlung der Folge "The Children" auf
-> dem Sender HBO haben 1,5 Millionen Internetnutzer sie sich über Filesharing
-> besorgt. Damit wurden 2 Petabytes Daten durch das Netz gewälzt. Torrentfreak
-> rechnet damit, dass die Zahl der Downloads in den kommenden Tagen noch auf 7,5
-> Millionen ansteigen kann. Eine erhebliche Steigerung gegenüber 2011, als die
-> beliebteste Folge der ersten Staffel der Serie im gesamten Jahr 3,4 Millionen
-> Mal geteilt wurde.
-
-Das so ein Zuschauerverhalten durchaus als ein Mass fuer die Beliebtheit einer Serie
-angesehen werden kann, duerfte wohl recht gut nachvollziehbar sein. Dazu gehoert
-natuerlich auch, dass man eben nicht (zumindest gefuehlte) Ewigkeiten warten will,
-ehe die Folgen in einem anderen Land ausgestrahlt werden oder aber die komplette Season
-als DVD erhaeltlich ist. Dabei wuerde ich durchaus behaupten, dass ein Filesharing mit
-dem Kauf einer DVD-Box keinesfalls im Widerspruch stehen muss: wenn die Macher sich
-da ein wenig Muehe geben und interessante Extras beipacken, dann ist dies durchaus etwas,
-das man gerne der heimischen Sammlung hinzufuegt. Was aber die Zahlen in Sachen
-Filesharing sicherlich deutlich machen ist, dass gerade das Timing fuer eine so
-weltumspannende Fangemeinde wichtig ist -- ein kuenstliches Separieren moeglicher
-Absatzmaerkte ist da wohl eher kontraproduktiv.
- 
-**:::**
- 
- 
-### Durchgekommen ###
-
-
-
-
-_Mon, 16. June 2014 -- 11:50_
-
-Nachdem es in der letzten Woche wetterbedingt nicht moeglich war weiter als bis nach
-Koeln zu kommen, sind die Schaeden an den Strecken wieder so weit behoben, dass ich
-ohne nennenswerte Problem von Bonn nach Utrecht fahren konnte. Das noch bestehende
-Durcheinander in Koeln ist mittlerweile nicht mehr den Sturmschaeden geschuldet,
-sondern liegt einfach an den Bauarbeiten auf der Bruecke rueber nach Deutz. Ein
-klein wenig Verspaetung haben wir dann aber doch aufgesammelt, da es zur Abwechslung
-mal wieder einen Polizeieinsatz im ICE gab... wovon ich allerdings nichts mitbekommen
-habe.
  
 **:::**
  
