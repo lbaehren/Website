@@ -1,0 +1,48 @@
+---
+title: "Koennte ein wenig lange dauern"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-08-21T14:01:33.00Z
+created_at: 2014-08-21T14:01:33.00Z
+---
+
+## {title:} ##
+
+_Thu, 21. August 2014 -- 14:01_
+
+Also wenn dem wirklich so waere, dass waere dies doch ein wenig zu weit in der Zukunft...
+
+~~~~
+    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .     . Done
+    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .     + Started
+450 |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .     X Pending
+    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+    |  +  +  +  +  +  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+    |  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  +  +  +  +  +  +  +  +  +
+    |  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X
+    |  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X
+  0 +-----------------------------------------------------------------------------------
+      26 27 28 29 30 31 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21
+      Jul               Aug
+
+    Add rate:         2.7/d      Estimated completion: 2024-02-29 (9.5 yrs)
+    Done/Delete rate: 2.7/d
+~~~~
+
+Da ich ja schon probiere meine Aufgaben so gut es geht durch [Taskwarrior](http://taskwarrior.org) zu verwalten -- was mir dann auch bei dem Abliefern der woechentlichen Arbeitsberichte hilft -- kann es durchaus schon einmal vorkommen, dass sich die Liste an Tasks recht stark veraendert. Wenn ich, so wie gestern geschehen, die sich aus einer Besprechung ergebenden Aufgaben allesamt eintrage und dann
+
+~~~~
+task burndown.daily pro:tropomi
+~~~~
+
+anwerfe, kann es schon einmal paasieren, dass die Extrapolation der Zeit, welche zum Komplettieren aller Aufgaben erwartet wird, irgendwo ziemlich weit in der Zukunft liegt. Gut, wenn ich es dann im Gegenzug schaffe mehrere kleine Tasks in recht kurzer Zeit abzuarbeiten, dann wandert das Enddatum auch ganz schnell wieder in Richtung heute. Das sollte man sich einfach immer wieder in Erinnerung halten: am stabilsten ist die Extrapolation natuerlich, wenn ich gleich von Anfang an alle Aufgaben fuer ein Projekt weiss und diese direkt eintragen kann; wird dann im folgenden nur noch abgearbeitet, was man sich notiert hat, dann ist das "completion data" deutlich brauchbarer, als wenn immer wieder Dinge mit auf der Liste landen (was andererseits aber auch der realistischere Fall ist).

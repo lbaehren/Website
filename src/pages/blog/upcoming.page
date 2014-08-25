@@ -25,6 +25,7 @@ _Last modified: {date:}_
  - Zhangjiajie National Forest Park
  - [Bigger than life: Drone flight documents Alaskan ice caves](http://www.dpreview.com/news/2014/03/27/bigger-than-life-drone-flight-documents-alaskan-ice-caves)
  - [Metro Utrecht](http://infrastruct.wordpress.com/2009/11/26/metro-utrecht/)
+ - [Nightwish singer comparison](https://www.youtube.com/watch?v=Al54eMCoxUw)
 
 ----
 **completed ...**
@@ -33,37 +34,6 @@ _Last modified: {date:}_
 ----
 **in preparation ...**
 
-
-### Griff nach den Daten
-
-[Heise News](http://www.heise.de/newsticker/meldung/US-Zugriff-auf-EU-Rechenzentren-Berlin-draengte-Microsoft-zur-Klage-2264149.html)
-
-> In dem Prozess geht es um E-Mails eines Microsoft-Kunden, die in einem Rechenzentrum in Irland gespeichert sind. Im Zusammenhang mit Ermittlungen gegen Drogenschmuggel hatte die US-Regierung deren Herausgabe verlangt und ein Richter in New York hat im Dezember 2013 einen Durchsuchungsbefehl ausgestellt – der sich damit auf einen anderen Staat bezog. Gegen den wehrt sich nun Microsoft und wird dabei unter anderem von Apple sowie Cisco unterstützt. Die US-Regierung rechtfertigt ihr Ansinnen mit einem Jahrzehnte alten Gesetz und ist überzeugt, Online-Inhalte seien nicht vom Vierten Zusatzartikel der US-Verfassung (Schutz vor staatlichen Übergriffen) geschützt. Sollte sie sich damit durchsetzen, müssten die US-Unternehmen sie herausgeben und damit gegen (Datenschutz-)Gesetze in den Ländern verstoßen, in denen die Inhalte liegen, warnen sie.
-
-
-### Nur Verlierer
-
-> Ein Gericht in Frankreich hat eine Bloggerin zu einer Geldstrafe verurteilt, weil eine von ihr veröffentlichte negative Restaurantkritik bei Google weit vorne in den Suchergebnissen platziert war. Die französische Bloggerin Caroline Doudet schreibt auf "Cultur'elle" meist über Bücher und Filme und erreicht damit mehr als 3000 regelmäßige Leser. Letzten August hielt sie in ihrem Blog auch einen Restaurantbesuch fest, den sie an einem Ferienort an der Atlantikküste erlebt hatte.
-
-[Heise News](http://www.heise.de/newsticker/meldung/Frankreich-Bloggerin-fuer-Google-Ranking-bestraft-2261934.html)
-
-> "Diese Entscheidung erfindet das Verbrechen, zu hoch bei Google gerankt zu sein", kommentierte Doudet das in einem Eilverfahren gefällte Urteil. Da sie die Angelegenheit hinter sich bringen wolle, werde sie voraussichtlich nicht gegen das Urteil vorgehen. Den fraglichen Artikel hat sie aus ihrem Blog gelöscht; er ist allerdings noch im Internet Archive einsehbar.
-
-### Female vocals - update
-
- - [Hydria](http://www.last.fm/music/Hydria)
- - Ex Libris
- - [Sleeping Romance](http://www.last.fm/music/Sleeping+Romance)
- - [Feridea](http://www.last.fm/music/Feridea)
- - [Xiphea](http://www.last.fm/music/Xiphea)
- - [Sorronia](http://www.last.fm/music/Sorronia)
- - [Innocens](http://www.last.fm/music/Innocens)
- - [Pythia](http://www.last.fm/music/Pythia)
- - [Winter in Eden](http://www.last.fm/music/Winter+In+Eden)
- - [Yotangor](http://www.last.fm/music/Yotangor)
- - [Markize](http://www.last.fm/music/Markize)
- - [Bare Infinity](http://www.last.fm/music/Bare+Infinity)
- - [Niobeth](http://www.last.fm/music/Niobeth)
 
 ### Script it
 
@@ -74,13 +44,13 @@ Fall wo ein programmier-technischer Ansatz Sinn macht. So geschehen auch in
 diesem Fall.
 
 Im Zuge der Vorbereitungen fuer die On-ground Calibration (OCAL) Kampagne von
-[TROPOMI](http://www.tropomi.eu) bin ich derzeit dabei die Kalibrationsschritte
-(und die dafuer noetigen Daten) zu testen; da alleine schon aus Zeitgruenden nicht
-noch einmal alle nur denkbaren Messungen durchgefuehrt werden koennen, beruht ein
-Teil der Kalibrationsinformation aus fruehren Labormessungen, wo alleine der Detektor
-auf dem Pruefstand eingespannt war (was aber durchaus ausreichend fuer eine Reihe von
-Untersuchungen ist, weil eben nicht fuer alles das komplette, zusammengebaute Instrument
-braucht).
+[TROPOMI](http://www.tropomi.eu) bin ich in der letzten Zeit damit beschaeftigt gewesen
+die Kalibrationsschritte (und die dafuer noetigen Daten) zu testen; da alleine schon
+aus Zeitgruenden nicht noch einmal alle nur denkbaren Messungen durchgefuehrt werden
+koennen, beruht ein Teil der Kalibrationsinformation aus fruehren Labormessungen, wo
+alleine der Detektor auf dem Pruefstand eingespannt war (was aber durchaus ausreichend
+fuer eine Reihe von Untersuchungen ist, weil eben nicht fuer alles das komplette,
+zusammengebaute Instrument braucht).
 
 ~~~~~~~~
 efm2.proc_stop_before_dn2v_no_flagging.ocal
@@ -175,13 +145,6 @@ task 289 modif depend:552-573
 ~~~~
 task 574-593 modif depend:552-573
 ~~~~
-
-
-### Status quo der Versionskontrolle
-
-[Artikel auf Heise Developer](http://www.heise.de/developer/artikel/Status-quo-der-Versionskontrolle-1979724.html)
-
-> Als besonders leidenschaftlich lässt sich das Verhältnis zwischen dem Versionierungswerkzeug und seinem Benutzer, dem Entwickler, üblicherweise nicht bezeichnen. Aus der Sicht vieler Entwickler steht das Tool im besten Fall nicht im Weg. Der eine oder andere freut sich auch über eine leistungsfähige GUI und über performantes Einchecken von Änderungen, wohl wissend, dass es auch Tools gibt, die einen an dieser Stelle mitunter mit langen Wartezeiten quälen.
 
 
 ### Utrecht bei Nacht
