@@ -9,6 +9,145 @@ tags: Blog
  
 **:::**
  
+### TROPOMI Quicklooks - a real world example ###
+
+
+
+
+_Wed, 27. August 2014 -- 23:32_
+
+[As already explained](/blog/2014/2014-08/2014-08-26_20-24.html) I have been spending
+a good proportion of my recent time working on the implementation of quicklooks for
+the data taken during the calibration measurement campaign(s). After going from the
+conceptional idea -- what to plot and how -- to a first working implementation, for
+the past two days I now had a chance to actually get some real world experience with
+the routines I have been writing. As it turns out going from simulated test data
+(as used for running the unit tests) to actual measurement data is quite a change...
+and hence the outcome is less clear to read:
+
+![Quicklook](/blog/2014/2014-08/2014_08_25T16_01_00_PreEnvLaserDiodes.png)
+
+While some of the plots are pretty straight-forward to read, especially the 3D
+scatter plot might need some fine-tuning -- some color-coding of the points might
+help to guide the viewer's eyes. Perhaps a good idea to consult event displays used
+in particle physics experiments... 
+ 
+**:::**
+ 
+ 
+### From sketch to implementation ###
+
+
+
+
+_Tue, 26. August 2014 -- 20:24_
+
+Lately I have been spending quite some time working on the implementation of tools
+for the visual inspection of out data as they are being produced by the TROPOMI L01b
+calibration pipeline. As we are heading (in rather quick leaps) towards the on-ground
+calibration measurements (OCAL), preparations are under way to inspection and judgment
+of the measured data in a timely fashion (such that feedback can be given to e.g. adjust
+or even repeat measurements). As it turns out simply starting to write some (Python) code
+for this might not be the best option, because when trying to arrange multiple objects
+(plots in this case) on a page (without some graphical drag-and-drop tool), things quite
+easily can get messed up.
+
+After getting overlapping frames and the like a number of times, I decided that it probably
+would be a good idea to step back from the code at all for a while to address the layout
+first; once there would be reasonably stable description of what exactly to plot and how
+to arrange the individual plots, I could then go about implementing this.
+
+![Sketch of the quicklook page](/blog/2014/2014-08/2014-08-19_Quicklook_sketch.png)
+
+The good thing about a sketch as the above is, that this will give enough information to
+start with the computation of the geometry. Obviously every element on the page has a
+certain position and size -- so using the sketch as an aid it (mainly) is a matter of
+patience to work out the lower-left point of a subplot and its size. Starting off with
+the size of each plot ...
+
+~~~~
+dim_scatter    = [500, 500]
+dim_hist       = [200, dim_scatter[1]]
+dim_lightcurve = [dim_scatter[0]+self.fill[0]+dim_hist[0], 200]
+dim_projection = [(dim_scatter[0]+dim_hist[0]-self.fill[0])/3.0,
+                  (dim_scatter[0]+dim_hist[0]-self.fill[0])/3.0
+                 ]
+dim_figure     = [2.0*self.fill[0]+dim_lightcurve[0],
+                  4.0*self.fill[1]+dim_lightcurve[1]+dim_scatter[1]+dim_projection[1]
+                 ]
+~~~~
+
+... we are able to define the bounding boxes for each of the sub-plots:
+
+~~~~
+rect = {}
+# Total size of the figure
+rect["figure"] = dim_figure
+# Bounding box for the lightcurve of the laser intensity
+rect["lightcurve"] = [self.fill[1]/dim_figure[1],
+                      self.fill[0]/dim_figure[0],
+                      (dim_lightcurve[1])/dim_figure[1],
+                      (dim_lightcurve[0])/dim_figure[0]
+                     ]
+# Bounding box for the 3D scatter plot of the laser track
+rect["scatter"] = [(2*self.fill[1]+dim_lightcurve[1])/dim_figure[1],
+                   self.fill[0]/dim_figure[0],
+                   (dim_scatter[1])/dim_figure[1],
+                   (dim_scatter[0])/dim_figure[0]
+                  ]
+# Bounding box for the histogram of the laser intensities
+rect["hist"] = [(2*self.fill[0]+dim_lightcurve[1])/dim_figure[1],
+                (2*self.fill[1]+dim_scatter[0])/dim_figure[0],
+                (dim_hist[1])/dim_figure[1],
+                (dim_hist[0])/dim_figure[0]
+               ]
+~~~~
+
+Once all the bounding boxes are defined (and are returned in the form of a dictionary),
+we finally can go about creating the plots themselves: first we define the figure
+[axes](http://matplotlib.org/api/axes_api.html) ...
+
+~~~~
+axes = self.axes_scanning_quicklook (data.shape)
+fig  = plt.figure(figsize=(axes["figure"][1]/100, axes["figure"][0]/100))
+
+axis_scatter    = plt.axes(axes["scatter"], projection='3d')
+axis_lightcurve = plt.axes(axes["lightcurve"])
+axis_hist       = plt.axes(axes["hist"])
+~~~~
+
+... and then have [Matplotlib](http://matplotlib.org) display the data as
+[scatter plot](http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.scatter)
+or otherwise:
+
+~~~~
+axis_scatter.scatter(xs=track["x"], ys=track["y"], zs=track["z"],
+                     zdir='z',
+                     cmap=cm.cubehelix)
+axis_scatter.set_xlabel("\nColumn / Wavelength")
+axis_scatter.set_ylabel("\n\nRow / Swath")
+axis_scatter.text2D(0.9, 0.95,
+                    "Track points ({})".format(track["method"]),
+                    verticalalignment='bottom',
+                    horizontalalignment='right',
+                    transform=axis_scatter.transAxes,
+                    color='green')
+~~~~
+
+All of this put together finally yields the overview page as envisioned in the
+original sketch:
+
+![Implementation of the quicklook page](/blog/2014/2014-08/2014-08-19_Quicklook_implementation.png)
+
+As can be guessed the whole process took a while from beginning to end; a good
+fraction of the time I have been struggling with fine-tuning the output of Matplotlib.
+While indeed there are quite a few examples available, I am still missing a more
+systematic demonstration of how exactly the various plot configuration settings
+influence the final outcome.
+ 
+**:::**
+ 
+ 
 ### Nicht verlaesslich ###
 
 
@@ -478,67 +617,6 @@ dies dann aber mitunter einfach ein wenig zu frueh, weil es macht schon einen Un
 ob ich nur am Laptop arbeiten oder aber auf einen groesseren Bildschirm zurueckgreifen
 kann. So kommt es dann also, dass ich die laengere Arbeitszeit im Buero gegen einen
 laengeren Rueckweg eintauschen muss.
- 
-**:::**
- 
- 
-### Google entfernt auch Wikipedia-Link aus seinem Suchindex ###
-
-
-
-
-_Mon, 04. August 2014 -- 16:06_
-
-Da fragt man sich doch wirklich, wieviel absurder dies eigentlich noch werden soll:
-
-> Erstmals ist auch die Wikipedia vom "Recht auf Vergessen" betroffen. Google hat
-> einen Link auf einen Artikel in der Online-Enzyklopädie aus seinem europäischen
-> Suchindex genommen, [berichtet der britische Observer](http://www.theguardian.com/technology/2014/aug/02/wikipedia-page-google-link-hidden-right-to-be-forgotten).
-> Wer die Löschanfrage gestellt hat und an welchem Wikipedia-Artikel er sich stört,
-> wurde bislang nicht bekannt.
-
-Schaue ich mir dies an, dann frage ich mich schon, wo dann eigentlich noch der
-naechstfolgende Schritt bleibt, diese Vorgehensweise gleich auf gedruckte Werke
-anzuwenden: wie waere es, wenn man sich auch gleich mal den Brockhaus vorknoepft und
-dort alles veralteten bzw. ungewuenschten Eintraege aus dem Index nimmt. Oder wie
-sieht es aus mit der lokalen Buecherei: was hindert einen da noch an der Forderung
-Buecher und Zeitungen aus dem Index zu nehmen, welche man fuer veraltet oder
-irrelevant haelt? Diese Urteil des EuGH gehoert so mit zu dem Absurdesten, was mir
-seit langem untergekommen ist. Vielleicht wird es einmal Zeit, dass diese Rechtsprechung
-auf fruehere Urteil des Gerichtes selber angewendet wird...
- 
-**:::**
- 
- 
-### Wieder ein Stueck weiter ###
-
-
-
-
-_Mon, 04. August 2014 -- 05:57_
-
-Da sind wir doch an diesem Wochenende wieder ein gutes Stueck weiter gekommen was
-die Renovierungsarbeiten im Haus betrifft. An den letzten drei Tagen haben sich die
-Dinge in einer Weise veraendert, welche durchaus sichtbar sind. Vor allen Dingen
-was die Vorbereitung fuer die Waende betrifft sind die drei Zimmer im Obergeschoss
-nun in einem Zustand, wo es jetzt vor allen Dingen an dem Einbau der neuen Fenster
-haengt, ehe es weiter gehen kann. Da ist es schon gut, dass aller Vorraussicht am
-kommenden Wochenende die letzten Ueberbleibseln des angefundenen Zustandes
-verschwinden werde; wenn dies dann erledig ist, koennen wir uns an das Streichen der
-Waende machen. Um darauf vorbereitet zu sein, haben wir die Waende bereits gesaeuber,
-gespachtelt, angeschliffen, geebnet, abgeschliffen und grundiert -- da fehlt eigentlich
-nur noch der Startschuss, ehe der Pinsel geschwungen werden kann.
-
-Im unteren Geschoss muss vor allen Dingen noch die Neuverlegung der Elektrik
-abgeschlossen werden -- solange noch die Kanaele offen liegen, kommen wir mit
-den Waenden nicht weitr; die noch fehlenden Arbeitsmaterialien sind allerdings
-schon bestellt, so dass wir auch da noch allzu lange auf die folgenden
-Arbeitsschritte warten sollten. In der Zwischenzeit ist aber schon einmal der
-Keller wieder ein Stueck weiter hergerichtet worden: nach dem zweiten Anstrich
-fuer den Zwischenraum, haben wir gestern Abend noch (als letzte Amtshandlung des
-Tages) Fliesen gelegt. Diese Aktion war aufgrund des Grundrisses ein wenig mehr
-von Schneidearbeiten gepraegt, als dies bisher der Fall war, aber ich denke doch
-dass der Boden recht gut geworden ist.
  
 **:::**
  
