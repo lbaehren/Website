@@ -16,6 +16,8 @@ TROPOMI is an initiative from the Netherlands and is developed in cooperation wi
 
 I have been contracted through S\[&\]T as a _Software Design Engineer_ to work on the algorithms to compute and apply the Key Calibration Data (CKD) sets. These data sets are required for processing the level-0 data into level-1b data. The initial CKD will be derived during the on-ground calibration. It is expected that the characteristics of the instrument change over the mission, therefore (a subset of) the CKD will change along with it.
 
+ - [Quicklooks for data from calibration measurements](/work/tropomi/quicklooks.html)
+
 ### Further reading ###
 
  * M van Weele et al. Science Requirements Document for TROPOMI. Volume I Mission and Science Objectives and Observational Requirements
@@ -24,6 +26,8 @@ I have been contracted through S\[&\]T as a _Software Design Engineer_ to work o
 
 ### Related blog entries ###
 
+  * [TROPOMI Quicklooks -- a real world example](/blog/2014/2014-08/2014-08-27_23-32.html) \| Wed, 27. August 2014 -- 23:32 \|
+  * [From sketch to implementation](/blog/2014/2014-08/2014-08-26_20-24.html) \| Tue, 26. August 2014 -- 20:24 \|
   * [Documentation generation](/blog/2013/2013-04/2013-04-25_13-30.html) \| Thu, 25. April 2013 -- 13:30 \|
   * [Cleaning up build scripts](/blog/2013/2013-04/2013-04-16_11-57.html) \| Tue, 16. April 2013 -- 11:57 \|
   * [TROPOMI code to go](/blog/2013/2013-01/2013-01-23_18-57.html) \| Wed, 23. January 2013 -- 18:57 \|
