@@ -9,6 +9,82 @@ tags: Blog
  
 **:::**
  
+### Add some color to it ###
+
+
+
+
+_Thu, 28. August 2014 -- 20:40_
+
+There is a lot that can happen within a few days: after rolling out the
+[first version of our quicklooks](/blog/2014/2014-08/2014-08-26_20-24.html) for
+the inspection of the data from the pre-environmental tests before the upcoming
+calibration campaign, being confronted with real-world data spawned a flurry of
+changes to the code. First of all there was performance: extracting the track of
+the laser diode shining onto the detector pixels turned out to be prohibitive for
+larger datasets. It took a while going through the underlying routine in order a)
+not only to identify where exactly processing time was burned up but b) come up
+with an improvement. That the latter was indeed the case became evident from a
+number of timing runs: with a factor 4-5 speed-up visual inspection of the data
+from the laser diode scans became feasible. However, as seen from one of the first
+[real-world results](/blog/2014/2014-08/2014-08-27_23-32.html) are number of
+additional modifications where in order...
+
+![Scanning data quicklook](/blog/2014/2014-08/2014-08-28_Quicklook_scanning.png)
+
+If the motion of the scanning laser across the plane of the detector no longer is
+a single smooth motion, but rather a number of subsequent scans (e.g. along one of
+the detector pixel coordinate axes), the resulting plots contain clusters of data
+points for which the time-sequence information -- at least not without some
+additional visual encoding -- becomes lost. As a first measure to gain back some
+insight, the data points are now drawn using a color scale following the chronological
+order. Though already I have seen cases where this still might not be enough to
+disentangle multiple sub-sets of laser measurements, the colouring greatly improves
+readability of the plots and understanding the nature of the measurements.
+ 
+**:::**
+ 
+ 
+### Unterwegs in Utrecht ###
+
+
+
+
+_Thu, 28. August 2014 -- 19:37_
+
+Nachdem ich letzte Woche zu einem Erkundungsmarsch unterwegs war, habe ich mir diese
+Wochen ebensfalls wieder einen Abend (oder genauer gesagt spaeten Nachmittag) genommen,
+um mich ein wenig an der frischen Luft zu nehmen und Utrecht mit der Kamera in der Hand
+zu erkunden. Wie sich anhand der in die Bilder eingebetteten GPS-Positionen erkennen
+laesst, habe ich es durchaus geschafft ein wenig Strecke zurueckzulegen.
+
+![GPS positions](/blog/2014/2014-08/2014-08-27_Photowalk_Utrecht.png)
+
+Was mich (eigentlich schon nach recht kurzer Zeit) ziemlich geaergert hat, war die
+Tatsache dass ich das Stativ nicht dabei hatte; so war natuerlich nicht mit laengeren
+Belichtungszeiten geschweige denn HDR Aufnahmen. Gerade am spaeten Nachmittag, wenn
+die Sonne sich aufmacht vom Himmel zu verschwinden, hat man es mit so einer Bandbreite
+an Helligkeitsstufen und einer Farbpalette zu tun, dass mir HDR einfach als die am
+meisten logische Technik einfaellt, wie man derartige Szenen am besten einfangen
+kann. Ganz mit leeren Haenden (bzw. einer leeren Speicherkarte) bin ich dann allerdings
+doch nicht zurueckgekommen: vor allen Dingen am sued-oestlichen Rand des Hauptbahnhofs
+hatte ich nun endlich einmal die Gelegenheit mir die Graffiti -- welche ich aus dem
+Bus schon so oft gesehen habe -- endlich einmal ein wenig genauer vorzunehmen. Das
+letzte Mal habe ich mich dort sicherlich nicht blicken lassen, denn auch mit dem
+[24-70mm Objektiv](/photography/lenses.html) hatte ich immer noch haeufig einen zu
+engen Blickwinkel.
+
+![Graffiti](/blog/2014/2014-08/dsc_20140827_201551_Graffiti_Utrecht.jpg)
+
+Was ich in jedem Fall wieder festhalten kann -- und der Eindruck ist nicht ganz neu --
+ist dass der Bereich Heldenbuurt/Wittevrouwen (auch) in photographischer Hinsicht
+viel zu bieten hat. Da werde ich sicherlich noch einmal mit Julia losziehen, aber
+auch ansonsten stehen da wohl noch einmal ein paar Ausfluege auf dem Programm
+(dann allerdings mit der entsprechenden Ausruestung).
+ 
+**:::**
+ 
+ 
 ### TROPOMI Quicklooks - a real world example ###
 
 
@@ -562,61 +638,6 @@ an die naechsten Leitungen gehen kann: was nach dem Treppenhaus und dem Wohnzimm
 als naechstes auf dem Programm steht, waeren Esszimmer und Kueche -- das wird noch
 einmal interessant, weil wir uns da an der Decke entlang arbeiten muessen, welche
 aber deutlich hoeher ist, als was wir bisher hatten.
- 
-**:::**
- 
- 
-### Jenseits der 400 ###
-
-
-
-
-_Sat, 09. August 2014 -- 13:35_
-
-Geknackt! Heute Morgen habe ich - mit dem Hochladen der Bilder vom gestrigen Tage
--- die Grenze von 400 Bildern von den Renovierungsarbeiten im Haus ueberschritten.
-Dies ist fuer sich genommen vielleicht nicht unbedingt das wichtigste Mass, aber
-es zeigt doch, dass ich recht kontinuierlich die Arbeiten mit der Kamera begleitet
-habe.
-
-![Screenshot Flickr](/blog/2014/2014-08/2014-08-09_Flickr-photosets.png)
-
-Wofuer die Bildersammlung immer wieder gut ist -- neben dem Update fuer alle
-Interessierten aus dem Freundes- und Familienkreis -- waere das Nachschauen, wie
-weit wir doch mittlerweile gekommen sind. In den zurueckliegenden drei Monaten
-hat sich doch gewaltig etwas veraendert -- aus dem anfaenglichen Chaos ist ein Rohbau
-geworden, welcher sich nun langsam dem naehert, was fuer einen Einzug noetig ist.
-Das soll jetzt keinesfalls heissen, dass wir uns sonderlich viel Unterbrechnungen
-bei den Arbeiten erlauben koennen, aber es zeichnet sich doch langsam ab wie es
-einmal aussehen soll.
- 
-**:::**
- 
- 
-### Unterwegs bei Nacht ###
-
-
-
-
-_Wed, 06. August 2014 -- 23:21_
-
-Da werde ich mich also zu recht spaeter Stunde mit dem Bus durchschlagen, um vom
-Institut zurueck zur Wohnung zu kommen. Nachdem die Deadline von sieben Uhr (fuer
-die letzte direkte Busverbindung) verstrichen war, machte es einfach nicht mehr so
-sehr den Unterschied ob ich nun eine oder zwei Stunden spaeter die Heimreise
-antrete. Gut, grundsaetzlich dauert es schon eine Weile laenger, was einfach daran
-liegt, dass ich zunaechst einmal mit der Linie 28 zum Hauptbahnhof (Utrecht Centraal)
-fahren muss, um von dort aus entweder mit der 1 oder 47 -- je nachdem welche um diese
-Zeit noch verkehrt -- die restliche Strecke anzutreten.
-
-Geschuldet ist all dies dem Umstand, dass waehrend der Sommerferien ein Teil der
-Buslinien nach einem ausgeduennten Fahrplan unterwegs sind. Dies heisst fuer mich
-vor allen Dingen, dass der letzte Bus direkt nach Hoograve (entweder 71 oder 72)
-bereits um 19:00 Uhr faehrt und nicht wie sonst um 21:00 Uhr. Mir persoenlich ist
-dies dann aber mitunter einfach ein wenig zu frueh, weil es macht schon einen Unterschied
-ob ich nur am Laptop arbeiten oder aber auf einen groesseren Bildschirm zurueckgreifen
-kann. So kommt es dann also, dass ich die laengere Arbeitszeit im Buero gegen einen
-laengeren Rueckweg eintauschen muss.
  
 **:::**
  
