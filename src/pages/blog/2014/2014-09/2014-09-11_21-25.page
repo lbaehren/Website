@@ -1,0 +1,74 @@
+---
+title: "In Koeln"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-09-11T21:25:22.00Z
+created_at: 2014-09-11T21:25:22.00Z
+---
+
+## {title:} ##
+
+_Thu, 11. September 2014 -- 21:25_
+
+Da bin ich also mal wieder in Koeln. Auch wenn dies fuer sich genommen garnicht
+einmal so sonderlich erwaehnenswert ist, so ist der heutige Zwischenstop erst
+einmal der letzte fuer die naechsten zehn Tage; kommende Woche bleibe ich ja in
+Bonn, damit wir uns an den Einbau der Heizung machen koennen -- da steht also kein
+Trip nach Utrecht auf dem Plan. Um aber zumindest indirekt ein wenig Arbeit abliefern
+zu koennen habe ich einen Teil der Fahrt noch damit zugebracht an dem Script zu
+basteln, mit welchem ich (so hoffe ich doch mal) in der Lage sein duerfte die
+Timing-Informationen fuer die Quicklooks zu extrahieren, auf welche ich Matthijs
+diese Woche wohl neugierig gemacht habe. Eigentlich waren die Zahlen ja eher so ein
+Nebenprodukt meiner wiederkehrenden Runs der OCAL Framework Tasks, aber da es
+ein wenig darum geht Funktionalitaet fuer die Kalibrationsmessung zu buendeln,
+ist es nun durchaus relevant wie lange welche Processing-Steps brauchen.
+
+Wo ich unterwegs noch eine Weile dran geknabbert habe ist, wie ich die Ausgabe
+der ``time`` Utility angefangen kriege; was mich bei den bisherigen Runs ja
+immer gestoert hat ist, dass die Timing-Information immer irgendwo in den
+munter weiter-scrollenden Log-Messages auftauchte -- ziemlich laestig, wenn man
+plant Tasks gleich dutzendweise laufen zu lassen. Entscheidend ist es hier
+die Standard-Streams noch **vor** dem Aufruf von ``time`` umzubiegen, so laesst
+sich dann die entsprechende Ausgabe abfangen und in einer Datei wegschreiben.
+
+~~~~
+&>task.log time ${RUNTASK} -s 123456 quicklooks/${GROUP}/${FILE}/${TASK}.ocal
+~~~~
+
+Fuegt man dann noch ein wenig ``tr`` und ``sed`` Magic hinzu, so erhaelt man
+ein Logfile, in welchem alle gewuenschten Informationen zu finden sind:
+
+~~~~
+=====================================================================
+proc_raw:['0.44', '0.28', '0.15']
+=====================================================================
+proc_raw:['0.43', '0.28', '0.14']
+=====================================================================
+proc_raw:['0.43', '0.28', '0.14']
+=====================================================================
+proc_raw:['0.44', '0.29', '0.14']
+=====================================================================
+quicklook_raw:['0.43', '0.28', '0.15']
+=====================================================================
+quicklook_raw:['0.43', '0.28', '0.14']
+=====================================================================
+~~~~
+
+Wendet man hierauf noch ein weiteres Mal eine Kombination von ``grep`` und
+``sed`` an, dann erhaelt man eine Ausgabe, welche gueltigem Python-Code
+(eine Liste) entsprechen:
+
+~~~~
+['0.43', '0.28', '0.15']
+['0.43', '0.28', '0.14']
+['0.42', '0.28', '0.14']
+['0.43', '0.28', '0.14']
+['0.43', '0.28', '0.14']
+['0.42', '0.27', '0.14']
+~~~~
+
+Bin ich mal gespannt, ob alles so funtioniert, wie ich mir dies vorgestellt
+habe; meine Erwartung ist schon, dass der Rechner im [KNMI](http://www.knmi.nl)
+einige Stunden beschaeftigt sein wird -- ist der Rest aber ok, dann kann ich
+einfach den Job laufen lassen und anschliessend einfach nur die Logs einsammeln,
+in welchen die Zahlen fuer die gewuenschten Statistiken zu finden sind.

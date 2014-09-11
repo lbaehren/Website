@@ -9,6 +9,303 @@ tags: Blog
  
 **:::**
  
+### In Koeln ###
+
+
+
+
+_Thu, 11. September 2014 -- 21:25_
+
+Da bin ich also mal wieder in Koeln. Auch wenn dies fuer sich genommen garnicht
+einmal so sonderlich erwaehnenswert ist, so ist der heutige Zwischenstop erst
+einmal der letzte fuer die naechsten zehn Tage; kommende Woche bleibe ich ja in
+Bonn, damit wir uns an den Einbau der Heizung machen koennen -- da steht also kein
+Trip nach Utrecht auf dem Plan. Um aber zumindest indirekt ein wenig Arbeit abliefern
+zu koennen habe ich einen Teil der Fahrt noch damit zugebracht an dem Script zu
+basteln, mit welchem ich (so hoffe ich doch mal) in der Lage sein duerfte die
+Timing-Informationen fuer die Quicklooks zu extrahieren, auf welche ich Matthijs
+diese Woche wohl neugierig gemacht habe. Eigentlich waren die Zahlen ja eher so ein
+Nebenprodukt meiner wiederkehrenden Runs der OCAL Framework Tasks, aber da es
+ein wenig darum geht Funktionalitaet fuer die Kalibrationsmessung zu buendeln,
+ist es nun durchaus relevant wie lange welche Processing-Steps brauchen.
+
+Wo ich unterwegs noch eine Weile dran geknabbert habe ist, wie ich die Ausgabe
+der ``time`` Utility angefangen kriege; was mich bei den bisherigen Runs ja
+immer gestoert hat ist, dass die Timing-Information immer irgendwo in den
+munter weiter-scrollenden Log-Messages auftauchte -- ziemlich laestig, wenn man
+plant Tasks gleich dutzendweise laufen zu lassen. Entscheidend ist es hier
+die Standard-Streams noch **vor** dem Aufruf von ``time`` umzubiegen, so laesst
+sich dann die entsprechende Ausgabe abfangen und in einer Datei wegschreiben.
+
+~~~~
+&>task.log time ${RUNTASK} -s 123456 quicklooks/${GROUP}/${FILE}/${TASK}.ocal
+~~~~
+
+Fuegt man dann noch ein wenig ``tr`` und ``sed`` Magic hinzu, so erhaelt man
+ein Logfile, in welchem alle gewuenschten Informationen zu finden sind:
+
+~~~~
+=====================================================================
+proc_raw:['0.44', '0.28', '0.15']
+=====================================================================
+proc_raw:['0.43', '0.28', '0.14']
+=====================================================================
+proc_raw:['0.43', '0.28', '0.14']
+=====================================================================
+proc_raw:['0.44', '0.29', '0.14']
+=====================================================================
+quicklook_raw:['0.43', '0.28', '0.15']
+=====================================================================
+quicklook_raw:['0.43', '0.28', '0.14']
+=====================================================================
+~~~~
+
+Wendet man hierauf noch ein weiteres Mal eine Kombination von ``grep`` und
+``sed`` an, dann erhaelt man eine Ausgabe, welche gueltigem Python-Code
+(eine Liste) entsprechen:
+
+~~~~
+['0.43', '0.28', '0.15']
+['0.43', '0.28', '0.14']
+['0.42', '0.28', '0.14']
+['0.43', '0.28', '0.14']
+['0.43', '0.28', '0.14']
+['0.42', '0.27', '0.14']
+~~~~
+
+Bin ich mal gespannt, ob alles so funtioniert, wie ich mir dies vorgestellt
+habe; meine Erwartung ist schon, dass der Rechner im [KNMI](http://www.knmi.nl)
+einige Stunden beschaeftigt sein wird -- ist der Rest aber ok, dann kann ich
+einfach den Job laufen lassen und anschliessend einfach nur die Logs einsammeln,
+in welchen die Zahlen fuer die gewuenschten Statistiken zu finden sind.
+ 
+**:::**
+ 
+ 
+### Feueralarm ###
+
+
+
+
+_Tue, 09. September 2014 -- 20:19_
+
+Das hatte ich bisher auch noch nicht.. Waehrend ich bei [ASTRON](http://www.astron.nl)
+durchaus einige Male aus der Arbeit gerissen wurde, um aufgrund eines Feueralarms das
+Gebaeude zu verlassen, ist mir dies hier bei [SRON](http://www.sron.nl) noch nicht
+vorgekommen. Vorhin -- gerade einmal ein paar Minuten nach Beginn des [Apple](http://www.apple.com)
+Special Event -- ging hier auf der ersten Etage der Alarm los. Da wir uns ausserhalb
+der normalen Arbeitszeiten befanden, war die Wahrscheinlichkeit einer Uebung recht
+gering. Also mal schnell das Laptop in den Rucksack gestopft und in Richtung Rezeption
+losgesteifelt; noch bevor ich allerdings dort ankam, bildete sich bereits eine kleine
+Gruppe hier auf dem Gang, welche sich daran machte der Ursache des Alarms nachzugehen.
+Da war aber nichts zu sehen, so dass die Versammlung sich in Richtung Ausgang verschob.
+Dort angekommen konnte sich immer niemand so wirklich zum Verlassen des Gebaeudes
+aufraffen, weil von der ganzen Indizienlage her einfach recht unwahrscheinlich war,
+dass es sich um einen wirklichen Brandalarm handelte. Die ersten, welche von ausserhalb
+eintraffen, waren die Leute vom Sicherheitsdienst, erst ein paar Minuten spaeter
+gefolgt von einem Loeschwagen der Feuerwehr. Da alles wenig nach einem Notfall aussah,
+habe ich die Zeit in der Eingangshalle einfach noch ein wenig zum Arbeiten genutzt
+-- netterweise war meine Remote-Verbindung ins [KNMI](http://www.knmi.nl) durch das
+Schliessen des Rechners nur eingefroren, aber nicht zusammengebrochen, so dass ich
+sogar direkt in dem Editor-Fenster weitermachen konnte.
+
+Insgesamt hat die ganze Aktion vielleicht eine halbe Stunde gedauert, dann habe ich
+mich mich aber auch schon wieder aufgemacht zurueck in Richtung Buero. Ich haette
+natuerlich auch einfach die Gelegenheit nutzen koennen und mich in Richtung Wohnung
+abzusetzen, aber da ich a) noch einen frisch aufgebruehten Becher Tee auf dem Schreibtisch
+stehen hatte und b) ich noch eine Weile den grossen Monitor ausnutzen wollte, schien
+es mir einfach das Beste die Zeit bis zum letzten Bus in Richtung Hoograve noch am
+Arbeitsplatz auszunutzen.
+ 
+**:::**
+ 
+ 
+### Zu Gast bei Veronica Mars ###
+
+
+
+
+_Thu, 04. September 2014 -- 21:36_
+
+Nachdem ich ja [Anfang dieser Woche](/blog/2014/2014-09/2014-09-02_20-43.html) mit
+der letzten Folge von [Odyssey 5](http://www.imdb.com/title/tt0318236) fertig geworden
+bin, habe ich mich recht unmittelbar auf die Season zwei von [Veronica Mars](http://www.imdb.com/title/tt0412253)
+gestuerzt. Die Serie sitzt mir (wie man zumindest ein Stueck weit auch anhand der
+Taskwarrior-Eintraege erkennen kann) schon eine ganze Weile im Nacken...und die
+Tatsache dass da in diesem Jahr auch noch ein Film hinzugekommen ist, hat die Sache
+eigentlich nur noch "schlimmer" gemacht.
+
+~~~~
+Year Month     Added Completed Deleted Net
+____ _________ _____ _________ _______ ___
+2011 December     19        17       0   2
+2012 January      11         5       5   1
+     June          1         1       0   0
+     August        3         2       0   1
+2013 March         5         9       0  -4
+2014 January       1         0       0   1
+     March         1         1       0   0
+     April        42         0       0  42
+     September     0         9       0  -9
+~~~~
+
+Was ich mir aber zumindest vorgenommen hatte war, dass ich mich nicht an den Film
+begebe, wenn ich vorher nicht alle drei Seasons komplett durchgeschaut habe; Season
+eins liegt schon eine ganze Weile zurueck und auch bei Season drei bin ich schon
+durchgeszappt -- dazwischen ist aber irgendwie Niemandsland, so dass ich mich nun
+daran gemacht habe diese Weisen Flecken auf der Karte mit Inhalt zu fuellen. Laesst
+sich alles recht erfolgreich an, unter anderem auch weil ich es schaffe einige der
+eher langweiligen Taetigkeiten (zumindest was die Aufmerksamkeit betrifft) mit dem
+dem gucken (bzw. hoeren) zu kombinieren.
+
+Als ich bei [Season 2, Episode 6](http://www.imdb.com/title/tt0739539) angelangt bin,
+habe ich aber mehrfach hinschauen muessen... vorwiegend, weil ich einfach meinen Augen
+nicht trauen wollte. Wie aber eine schnelle Recherche in der [Internet Movie Database](http://www.imdb.com)
+ergab (ich wollte nicht bis zum Abspann warten), hatte da in der Tat [Joss Whedon](http://www.imdb.com/name/nm0923736)
+einen Gastauftritt in der Serie. Eigentlich ist der Mann ja eher dafuer bekannt sich
+hinter der Kamera -- oder gar hinter Schreibmaschine bzw. Computer -- aufzuhalten,
+aber bei ein paar Gelegenheiten scheint er da wohl mal eine Ausnahme gemacht zu haben.
+So komt es also, dass der Schoepfer von [Firefly](http://www.imdb.com/title/tt0303461),
+[Dollhouse](http://www.imdb.com/title/tt2376425) (nur um mal die ersten Dinge zu nennen,
+welche mir da einfallen), hier einen recht schleimigen und gelangweilten Chef einer
+Leihwagenfirma spielt. Durchaus eine witzige Ueberraschung.
+ 
+**:::**
+ 
+ 
+### Kabouter ###
+
+
+
+
+_Wed, 03. September 2014 -- 23:38_
+
+Manchmal laeuft man einfach immer wieder an den Dingen vorbei, ohne dass einem so
+wirklich der weitere Zusammenhang klar wird. In diese Kategorie (auch wenn man dies
+jetzt vielleicht nicht zu sehr ueberbewerten sollte) faellt sicherlich auch eine
+Entdeckung, welche ich Anfang dieser Woche gemacht habe:
+
+> De [Kabouter](http://kbtr.nl) wordt afgebeeld met een rode puntmuts en heeft
+> vaak een grote mond met opvallende tanden en een baard met meerdere, ronde punten.
+> Het figuur verschijnt in verschillende kleuren en kan verschillende gedaantes
+> aannemen, zoals die van een duivel of een skelet. Meestal wordt een enkele kabouter
+> afgebeeld, maar in sommige pieces zijn er optisch honderden te onderscheiden.
+> Op sommige plaatsen verschijnt de KBTR in pieces die samen met een of meerdere
+> andere graffiti artiesten zijn gemaakt. Tevens wordt hij vaak geflankeerd door
+> zijn vriend Erwtje, een groen mannetje met een groot hoofd.
+
+Ueber den Weg gelaufen mit den dem Typen mit der roten Dreiecksmuetze schon einige
+Male, aber ausser der anscheinend groesseren Verbreitung war mit da bisher nichts
+weiter bekannt. Als ich diese Woche allerdings ein wenig in Sachen Graffit in Utrecht
+recherchiert habe, ist mit klar geworden, dass es da durchaus eine groessere
+Fangemeinde gibt. Ich selber habe den Kabouter in der vergangenen Woche noch gleich
+mehrfach abgelichtet, als ich ein wenig [in Utrecht unterwegs](/blog/2014/2014-08/2014-08-28_19-37.html)
+war:
+
+![Kabouter](/blog/2014/2014-09/dsc_20140827_200953_Kabouter.jpg)
+
+Einer der fuer mich hilfreichen Hinweise war, dass ich nun auch weiss, wie ich meine
+eigenen Bilder besser mit Tags versehen kann: laesst man z.B. auf Flickr eine
+[Suche nach dem Kuerzel KBTR](https://www.flickr.com/search/?q=KBTR) laufen, so foerdert
+dies doch so einige Treffer zu Tage. Da ich aber einfach nur anschauen auf Dauer
+nicht so sonderlich spannend finde, habe ich mir natuerlich durchaus ueberlegt,
+wie ich denn die photographische Sammlung ein wenig erweitern kann. Wirft man einmal
+einen Blick auf die [Kabouter map](https://maps.google.com/maps/ms?ie=UTF8&hl=nl&oe=UTF8&msa=0&msid=203076503789740088332.00049c780948d687f78d7&ll=52.08457,5.116882&spn=0.07384,0.145912&z=12&source=embed&dg=feature),
+dann liegt der Verdacht recht nahe, dass es da noch einiges an Entdeckungspotential
+gibt... vor allen Dingen wenn der ueberwiegende Teil der bisher existierenden Aufnahmen
+in der Regel ohne GPS Informationen angeliefert wird.
+ 
+**:::**
+ 
+ 
+### Rechnen zum Schulstart ###
+
+
+
+
+_Tue, 02. September 2014 -- 21:31_
+
+Na wenn dies mal nicht wieder ein Argument dafuer ist, warum ich auch nach mehreren
+Jahren dem Oe3-Wecker als Hoerer treu bin: der [Mikromann](http://oe3.orf.at/comedy/stories/mikromann)
+hat an den letzten beiden Tagen wieder einmal in einer brillianten Weise
+zugeschlagen, bei welcher man sich nur am Kopf packen kann, wenn man sich die
+Antworten anhoert.
+
+> "Wie heisst es in der Mathematik richtig: '7 mal 8 ist 58' oder '7 mal 8 ergibt 58'?"
+
+Wer sich bei so einer hochkomplizierten Frage doch vielleicht erst einmal an etwas
+Einfacherem versuchen will, fuer den gaebe es gaebe es durchaus eine Alternative:
+
+> "Wie heisst es in der Mathematik richtig: '9 und 12 sind 23' oder '9 und 12 ist 23'?"
+
+Das es auch hier -- trotz der allgemein als einfach eingestuften Addition (im Vergleich
+mit einer Multiplikation) -- immer noch recht fragwuerdige Antworten (und vor allen Dingen
+Begruendungen) herauskommen, stimmt schon ein wenig nachdenklich.
+ 
+**:::**
+ 
+ 
+### Odyssey 5 ###
+
+
+
+
+_Tue, 02. September 2014 -- 20:43_
+
+Wie man erkennen kann, war ich mit [Odyssey 5](http://www.imdb.com/title/tt0318236)
+doch eine Weile beschaeftigt: fuer die 20 Episoden habe ich insgesamt etwas mehr als
+ein halbes Jahre benoetigt, aber auf der anderen Seite sollte man sicherlich auch
+nicht vergessen, dass ich in der Zwischenzeit ja keinstenfalls abstinent war.
+
+~~~~
+Year Month     Added Completed Deleted Net
+- --------- ----- --------- ------- ---
+2014 January      21         1       0  20
+     February     20         0      20   0
+     April         0         4       0  -4
+     May           1         6       0  -5
+     June          1         0       0   1
+     July          0         2       0  -2
+     August        0         5       0  -5
+     September     0         5       0  -5
+
+     Average       5         2       2   0
+~~~~
+
+Aufmerksam geworden bin ich auf [Odyssey 5](http://en.wikipedia.org/wiki/Odyssey_5)
+-- wenn ich mich da korrekt entsinne -- als ich seinerzeit ein wenig ueber (nach Ansicht
+so mancher) fruehzeitig abgesetzte Fernsehserien recherchiert habe. Bei der Gelegenheit
+waren mir durchaus einige bis dato unbekannte Titel untergekommen -- so unter
+anderem [Arrested Development](/blog/2014/2014-04/2014-04-10_22-00.html) -- wo
+ich mich eben nur nach und nach durchschauen kann. Die Tatsache aber, dass es sich
+um eine Science-Fiction Serie handelt, welche vor ihrem eigentlichen Abschluss
+abgesetzt wurde, macht es fuer schon recht interessant; folgerichtig also bin ich
+ein wenig auf Suche gegangen, denn ich finde es schon am besten wenn ich mir selber
+ein Bild von der Sache (oder der Serie) machen kann.
+
+> The story revolves around a set of people on a routine spaceflight of the
+> space shuttle Odyssey, on August 7, 2007: four astronauts, a scientist, and a
+> television news reporter. However, during the course of the flight, the Earth
+> rapidly dissolves into a fiery ball and suddenly implodes. Before regaining
+> control of the Odyssey, one astronaut is killed. The remaining five crew members
+> resign themselves to death, but a non-organic being called the Seeker rescues
+> them. Fifty other worlds have been destroyed in the same way as Earth, but the
+> Seeker has always arrived too late to observe it and this is the first time he
+> has found survivors. He offers to send them back in time five years (and
+> therefore to present day, at the time of the series), so that they can prevent
+> the disaster. He sends only their consciousnesses back, and not their physical
+> bodies, as physical time travel is impossible. The mission commander knows only
+> a codeword associated with the disastrous event: Leviathan.
+
+Das Risiko bei einem solchen Vorhaben ist es durchaus, dass man anschliessend ein
+wenig unbefriedigt zurueck bleibt: der Erzaehlfaden bricht einfach ab, weil zumindest
+eine zweite Season fehlt, in welcher der Plot zu einem Abschluss gebracht werden
+koennte. So aber haengt die Geschichte in der Luft... und eine Aufloesung wird es
+wohl nicht mehr geben.
+ 
+**:::**
+ 
+ 
 ### Add some color to it ###
 
 
@@ -396,248 +693,6 @@ ausreichend zu tun, so dass laengere Expeditionen wohl ein wenig auf sich warten
 Vielleicht aber ergibt sich auch einmal wieder die Gelegenheit, dass ich es schaffe
 zusammen mit Julia loszuziehen -- in dem Falle waere die heutige Exkursion dann wohl
 als eine Art erster Vorerkundung einzuordnen.
- 
-**:::**
- 
- 
-### Langer Abend ###
-
-
-
-
-_Tue, 19. August 2014 -- 23:37_
-
-Das hat doch alles ein wenig laenger gedauert -- auch wenn dies nun nicht so sonderlich
-ueberraschend war. Dass es mit dem Computer-Support durchaus ein wenig schwieriger
-werden kann, sollte man nicht unterschaetzen; auch wenn ich mittlerweile ueber den
-[TeamViewer](http://www.teamviewer.com) eine Moeglichkeit habe direkt auf Mutterns
-Laptop zugreifen zu koennen, haengt es immer noch von dem jeweiligen Problem (welches
-es zu loesen gibt) ab, wie lange es letzten Endes dauert. Aber gut, am Ende der Aktion
-waren nicht nur die Urlaubsbilder ausgepackt (diese kamen naemlich als ein Zip-Archiv),
-sondern auch [Skype](http://www.skype.com) funktionierte wieder. Als dies dann
-abgeschlossen war, konnte ich wieder den TROPOMI-eigenen Problemen zuwenden. Da ich
-ja eh wieder jenseits der Grenze war, wo es noch eine direkte Busverbindung zurueck
-gibt, war die Hemmschwelle einfach noch ein wenig laenger zu bleiben relativ gering.
-Da aber auch die Linie 28 irgendwann einmal nicht mehr faehrt (die genauen Zeiten sollte
-ich mir wirklich einmal irgendwo auf dem Schreibtisch hinterlegen), habe ich dann gegen
-halb elf die Zelte abgebrochen um in Richtung Bushaltestelle loszuziehen...
- 
-**:::**
- 
- 
-### Wieder ein Stueck weiter ###
-
-
-
-
-_Mon, 18. August 2014 -- 06:54_
-
-Da wird es also wieder Zeit, dass ich gedanklich umschalte: nach den letzten drei
-Tagen in Bonn befinde ich mich nun wieder im ICE 222 in Richtung Amsterdam, unterwegs
-nach Utrecht, um dort bis Donnerstag Nachmittag bei [SRON](http://www.sron.nl) zu
-arbeiten. Waehrend es bis Mai diesen Jahres das Wochenende immer eine Zeit der
-Entspannung war, hat sich dies mit dem Beginn der Renovierunsarbeiten im Haus natuerlich
-grundlegend geaendert. Auch wenn die Fortschritte (mittlerweile) deutlich erkennbar
-sind, so bedeuten die Aktivitaeten doch, dass es nur wenige Pausen gibt, in welchen
-man mal (ein wenig laenger) zur Ruhe kommen kann. Ich denke mal, dass es schon eine
-ziemliche Erleichterung sein wird, wenn alles fertig ist und wir unser neues zuhause
-geniessen koennen. Bis es soweit ist, wird es aber noch eine Weile dauern.
-
-![Hauseingang](/blog/2014/2014-08/hdr_20140815_095800_Hirschberger_Strasse.jpg)
-
-Auf dem Wege zu dem angestrebten Ziel hin, hat es in der vergangenen Woche (und
-auch am Wochenende selber) durchaus wieder einige deutliche Fortschritte zu verzeichnen
-gegeben. Am sichtbarsten nach aussen hin -- aber was die Raumwirkung im Inneren betrifft
--- ist natuerlich der Einbau der neuen Fenster; das Verschwinden der alten Rahmen
-mit den dreckigen Glasscheiben laesst die Raeume mit einem Schlag gleich viel
-freundlicher erscheinen. Komplett fertig sind die Arbeiten noch nicht, da noch eine
-Scheibe und ein paar Leisten montiert werden muessen, aber dies duerfte im Laufe des
-heutigen Tages abgeschlossen sein. Was nun erst einmal auf dem Plan steht sind die
-Vorbereitungen fuer die Einweihungsparty am kommenden Wochenende; da dies von Beginn
-an ja ein wenig als eine Art Baustellen-Party angekuendigt war, werden wir uns jetzt
-nicht sonderlich viel Muehe machen, alles 100%ig praesentabel zu kriegen -- es wird
-alles einfach ein wenig rustikaler ausfallen.
-
-![Elektroinstallation](/blog/2014/2014-08/dsc_20140817_160940.jpg)
- 
-**:::**
- 
- 
-### Eine Weile her ###
-
-
-
-
-_Thu, 14. August 2014 -- 20:32_
-
-... dass ich in Utrecht mit Kamera unterwegs war, um Bilder wie dieses hier zu
-schiessen:
-
-![Fahrrad bei SRON](/blog/2014/2014-08/hdr_20140625_194322_Bike.jpg)
-
-Aufgrund der anhaltenden -- und sich immer wieder veraendernden -- Deadlines faellt
-es mir schwer, mich einfach mal fuer eine Weile auszuklinken, um in Ruhe mit der Kamera
-in der Hand auf die Suche nach Motiven zu gehen. Ist schon ein wenig schade, denn
-vor allen Dingen jetzt mit dem August kommen wir schon wieder in die Zeit, wo die
-Lichtverhaeltnisse am fruehen Abend wirklich toll sind. Ich habe mich da schon einige
-Male geaergt, dass mir da so manche Bilder entgangen sind... da sollte ich wirklich
-einmal ueberlegen, ob ich dies nicht ab der kommenden Woche aendern kann. Sicher,
-einfach nur in der Ecke liegt die Kamera nicht (zumindest die keinere), weil ich
-ja fleissig damit beschaeftigt bin die Renovierungsarbeiten im Haus zu dokumentieren;
-das ist allerdings in keinster Weise das Gleich, wie wenn man explizit mit der Kamera
-loszieht und sich in den Motivsuche Modus versetzt. Zumindest ein wenig von dem spaeten
-Sommer in Utrecht einzufangen, sollte ich nicht vergessen -- waere einfach zu schade.
- 
-**:::**
- 
- 
-### Abbey Road ###
-
-
-
-
-_Wed, 13. August 2014 -- 21:12_
-
-Ich glaube es gibt in der Tat nur sehr wenige Musik-Alben, deren Cover ueber eine derartige
-Bekanntheit und Sogwirkung verfuegen wie [Abbey Road](http://en.wikipedia.org/wiki/Abbey_Road)
-der Beatles. Spontan wuerden mir vielleicht noch [Sgt. Pepper's Lonely Hearts Club Band](http://en.wikipedia.org/wiki/Sgt._Pepper%27s_Lonely_Hearts_Club_Band)
-der Beatles und [Dark Side of the Moon](http://en.wikipedia.org/wiki/Dark_Side_Of_The_Moon)
-sowie [The Wall](http://en.wikipedia.org/wiki/The_Wall) von Pink Floyd einfallen -- aber
-was die Wirkung auf die allgemeine Popkultur betrifft ist das Bild der "Fab Four" auf
-dem Zebrastreifen wahrscheinlich ungeschlagen:
-
-> \[Ian\] Macmillan was given only a ten minute window at about 11:30 AM to snap a
-> photo of John Lennon, Paul McCartney, George Harrison and Ringo Starr crossing the
-> street at Abbey Road. That cover photograph has since become one of the most famous
-> and most imitated album covers in recording history.
-
-So sehr eingeweiht in die diversen Details die Entstehung des Albums (und des damit
-verbundenen Bildmaterials) betreffend, bin ich nun auch wieder nicht, aber als ich diese Woche
-den [Artikel auf dpreview](http://www.dpreview.com/articles/1416788933/beatles-abbey-road-cover-photo-was-shot-45-years-ago-today)
-anlaesslich der 45-jaehrigen Jubilaeums der Photosession gesehen habe, konnte ich mich doch
-nicht zurueckhalten mal ein klein wenig genauer nachzuschauen; so habe ich dann auch u.a. [eine sehr schoene Seite](http://www.feelnumb.com/2009/03/05/live-abbey-road-webcam-and-photos) gefunden, auf welcher die diversen Bilder aufgefuehrt werden, welche es nicht auf das Cover des Albums geschafft haben.
-
-> The photograph on the sleeve of 'Abbey Road' by The Beatles is among the most famous
-> images in popular music, and it was taken 45 years ago today. The debate about
-> whether Abbey Road was The Beatles final album continues (it definitely was though,
-> and anyone who thinks 1970's Let it Be counts is just wrong) but for a whole
-> generation of fans, the image of John, Paul, George and Ringo walking across the
-> street outside Abbey Road studios in London signifies the end of an era.
-
-Wie sehr schoen aus dem Namen erkennbar ist, wurde das Album in den legendaeren [Abbey Road Studios](http://www.abbeyroad.com) in London aufgenommen; die Beatles waren aber keinesfalls die einzigen, welche sich mit dort getaetigten Aufnahmen verewigt haben -- ich denke wenn man einmal ein klein wenig online auf die Suche geht, wird man da auf eine lange Liste aller nur erdenklichen Tontraeger stossen, deren Rohmaterial bei Abbey Road auf dem Aether gefischt wurde. Was dabei vielleicht fuer so manchen eine Ueberraschung sein koennte waere die Tatsache, dass Abbey Road auch fuer die Aufnahme einer langen Reihe an [Film-Scores](http://www.imdb.com/company/co0105292) verantwortlich ist.
-
-> [Guardians of the Galaxy](http://www.imdb.com/title/tt2015381) made its box office debut at the weekend, shooting straight to no.1 on both sides of the Atlantic.
->
-> The film smashed records in the US, where it scored the biggest ever opening weekend for an August release.
->
-> [Tyler Bates](http://www.imdb.com/name/nm0061045)’ score was recorded by Abbey Road’s [Andrew Dudman](http://www.abbeyroad.com/Engineers/Engineer/16/Andrew-Dudman) in [Studio One](http://www.abbeyroad.com/Studio/5/Studio-One), assisted by Lewis Jones and Matt Jones.
-
-Waehrend die Innenraume der Studios nicht einfach so ohne weiteres zugaenglich sind
--- duerfte auch recht schwer werden, da noch sinnvoll arbeiten zu koennen -- sieht es
-draussen auf der Strasse schon ganz anders aus. Der Fussgaengerueberweg, ueber welchen
-die "Fab Four" vor nun 45 Jahren gewandelt sind, hat sich zu einem Magneten fuer
-Fans und jedwede andere Art von Touristen entwickelt. Schaut man einmal auf Websites
-wie [abbeyroadcrossing.com](http://www.abbeyroadcrossing.com) nach, dann finden sich
-dort hunderte (wenn nicht gar tausende) von Aufnahmen, welche Menschen aus aller Welt
-bei der Ueberquerung der Strasse zeigen. Die Resultate sind nicht immer sonderlich nah
-am Original angesiedelt, aber dies ist mit aller Wahrscheintlichkeit noch nicht einmal
-so sehr der Sinn und Zweck der Aktion -- da gewesen sein ist hier das Entscheidende.
-Was ich persoenlich aber noch viel beeindruckender finde ist der Umstand, dass es
-auf der Website des Studios (direkt im Hauptmenue verankert) eine sogenannte
-[Crossing Cam](http://www.abbeyroad.com/crossing) gibt: die Webcam muss irgendwo
-an der Frontseite des Studios angebracht sein und schickt rund um die Uhr bewegte
-Bilder vom Fussgaengerueberweg in der Abbey Road hinaus in alle Welt. Man mag dies
-glauben oder nicht: es scheint kaum eines Tages- oder Nachtzeit zu geben, wo nicht eine
-Gruppe von Menschen am Strassenrand steht um sich wenige Augenblicke spaeter beim
-Gang ueber den Zebrastreifen ablichten zu lassen.
-
-Nun sind Webcams vielleicht nicht unbedingt die spannenste aller Unterhaltungsquellen,
-aber ich muss schon sagen, dass von der "Crossing Cam" schon eine gewisse Faszination
-ausgeht. Selbst Julia hat sich davon packen lassen und sass minutenlang im Bett, um sich
-die Szenen anzuschauen, welche sich da in London abspielen. Ich glaube da muss man
-selber einmal reingeschaut haben, um eine Idee dafuer zu kriegen, ueber was fuer eine
-Anziehungskraft dieser auch auf Menschen ausuebt, welche zu dem Zeitpunkt, wo die Bilder
-entstanden sind, noch lange nicht geboren waren. Wuerde ich mir beim einem Abstecher auf
-die Insel aber wohl auch nicht entgehen lassen...
- 
-**:::**
- 
- 
-### Omegatau einmal anders ###
-
-
-
-
-_Tue, 12. August 2014 -- 22:48_
-
-Wenn ich meiner Trackliste auf [last.fm](http://www.last.fm) glauben darf, dann ist
-es nun seit Dezember 2012, dass ich den [omegatau-Podcast](http://omegataupodcast.net)
-in meiner regelmaessigen Rotation an ueber das Internet verbreiteten Sendungen habe.
-In dieser Zeit habe ich auf diesem Wege ein ganze Reihe an interessanten Themen zu
-Gehoer bekommen -- wirft man einmal einen kleinen Blick in das [Archiv](http://omegataupodcast.net/download-archive)
-der zurueckliegenden Sendungen, dann duerfte die reichhaltige Palette an Themen deutlich
-werden.
-
-> Wenn man einen Wissenschafts- und Technikpodcast ins Leben ruft, dann kann man ihn
-> durchaus “wtpodcast” nennen. Nur klingt das, ehrlich gesagt, nicht sehr “sexy”.
-> Außerdem führt dieser Name zu Verständnisproblemen, wenn man auch englischsprachige
-> Hörer und Hörerinnen erreichen möchte. Ersetzt man dagegen das w durch ein griechisches
-> omega und das t durch ein griechisches tau, sehen die Buchstaben ihrer äußeren Form
-> nach noch ganz ähnlich aus, man erhält jedoch den viel klangvolleren Namen:
-> “omegataupodcast”. Ein Name, der leicht auch in verschiedenen Sprachen funktionieren
-> kann.
-
-Wie ich nun heute mittels eines [Beitrag auf Google+](https://plus.google.com/100347151288200087365/posts/H6TbV9K6Wpm)
-mitbekommen habe, sind die beiden Macher von _omagetau_ -- Nora Ludewig und Markus Völter --
-jetzt Gaeste bei [Radiomono.net](http://www.radiomono.net) gewesen, um dort ein wenig
-ueber die Entstehungsgeschichtes und Hintergruende ihres Podcast zu berichten. Ok, wenn
-man es denn genau nimmt: _radiomono.net_ war [zu Besuch in Stuttgart](http://www.radiomono.net/?podcast=rmn-013-omegataupodcastbesuch),
-um dort das Gespraech aufzuzeichnen. Sicherlich recht interessant da einmal ein klein wenig
-hinter die Kulissen zu schauen.
- 
-**:::**
- 
- 
-### Kabel verlegen ###
-
-
-
-
-_Mon, 11. August 2014 -- 06:14_
-
-Dies war zwar einiges an Bastelarbeit, aber am Wochenende sind wir doch wieder ein
-gutes Stueck vorangekommen. Waehrend das wirklich grosse -- und deutlich zu sehende
-Ereignis -- noch bis heute auf sich warten laesst (naemlich das Einsetzen der neuen
-Fenster), haben wir uns an den letzten beiden Taten mit der Elektrik herumgeschlagen.
-
-Nach einer genaueren Betrachtung der Installation -- sowohl was Steckdosen als auch
-die Beleuchtung betrifft -- hat sich herausgestellt, dass es gute Gruende dafuer
-gibt, zumindest einen Teil der Verkablung neu zu machen. Vor allen Dingen die
-Verschaltung mit den Sicherungen war alles andere auf der Hoehe der Zeit. Um die
-Arbeiten aber nicht komplet ausarten zu lassen, haben wir einen (so denke ich doch
-mal) recht guten Kompromis getroffen, bei welchem wir die bestehenden Anschluesse
-(so weit dies Sinn macht) beibehalten, die Verschaltung und Versorgung in den Waenden
-aber aktualisiert wird. Teil dieser Arbeiten war dann das Ziehen neuer Leitungen,
-welche dast ausschliesslich unter dem Putz verlegt werden muessen (will man nicht
-tiefere Spalte in die Waende hauen); nachdem sich das Befestigen der neuen Kabel
-auf der Wand mittels Naegeln als wenig sinnvoll erwies, haben wir mit der Verwendung
-eines Stegleitungsklebers nun scheinbar eine Alternative gefunden, mittels welcher
-sich die Kabel recht schonend auf der Wand anbringen lassen, ehe alles anschliessend
-wieder zugespachtelt wird.
-
-![Stromkabel](/blog/2014/2014-08/2014-08-09_193320.jpg)
-
-Da die Kabel aufgrund ihrer inneren Struktur alles andere als flexibel sind, stellt
-sich vor allen Dingen das Verlegen von Kurven als eine Herausforderung dar. Um die
-Stromkabel durch zu starkes Verbiegen nicht zu beschaedigen, muss man sich durchaus
-etwas einfallen, wenn es darum geht um Ecken zu kommen. Ein wenig Recherche foerderte
-zwar Tips fuer das Verlegen zu Tage, aber wie so ueblich geben sich die Dinge in der
-Praxis noch einmal ein wenig trickreicher. Die Resultate der letzten beiden Tage
-sehen aber schon recht vielversprechend aus, so dass es am kommenden Wochenende
-an die naechsten Leitungen gehen kann: was nach dem Treppenhaus und dem Wohnzimmer
-als naechstes auf dem Programm steht, waeren Esszimmer und Kueche -- das wird noch
-einmal interessant, weil wir uns da an der Decke entlang arbeiten muessen, welche
-aber deutlich hoeher ist, als was wir bisher hatten.
  
 **:::**
  
