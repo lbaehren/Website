@@ -29,14 +29,14 @@
 ##
 ## =============================================================================
 
-## Name of the project handled by CMake
-project (www.larsbaehren.com)
+# Name of the project
+project (larsbaehren)
 
 ## Minimum required version of CMake to configure the project
-cmake_minimum_required (VERSION 2.8)
+cmake_minimum_required (VERSION 2.8.2)
 
 ## Enforced CMake policy
-cmake_policy (VERSION 2.8)
+cmake_policy (VERSION 2.8.2)
 
 ## Project release version (major.minor.patch)
 set (PROJECT_VERSION_MAJOR 0 )
@@ -92,11 +92,10 @@ set (PROJECT_LIVEDISK_URL         "https://382611-ftp.livedisk.df.eu/webdav")
 ## `-- src
 ##     |-- code                    ...  PROJECT_SOURCE_DIR_CODE
 ##     |   |-- CMakeModules        ...  PROJECT_CMAKE_MODULE_PATH
-##     |   |-- apps
 ##     |   |-- external
 ##     |   |-- lib
-##     |   |-- scripts
-##     |   `-- tests
+##     |   |-- tests
+##     |   `-- tools
 ##     |-- images
 ##     |-- pages                   ...  PROJECT_SOURCE_DIR_PAGES
 ##     |   |-- blog                ...  PROJECT_SOURCE_DIR_BLOG
@@ -109,7 +108,7 @@ set (PROJECT_LIVEDISK_URL         "https://382611-ftp.livedisk.df.eu/webdav")
 ##
 
 find_path (PROJECT_SOURCE_DIR_CODE
-  NAMES scripts/CMakeLists.txt scripts/blog_index
+  NAMES tools/CMakeLists.txt scripts/blog_index
   PATHS ${CMAKE_CURRENT_SOURCE_DIR}
   PATH_SUFFIXES src code src/code
   )
@@ -152,6 +151,7 @@ foreach (_externalPackage
     Rake
     Ruby
     Webgen
+    YAML
     )
 
     ## Convert module name to upper-case
@@ -257,5 +257,5 @@ message ( " .. Rake executable ............. = ${RAKE_EXECUTABLE}"          )
 message ( " .. Rake executable version ..... = ${RAKE_VERSION}"             )
 message ( " .. Webgen executable ........... = ${WEBGEN_EXECUTABLE}"        )
 message ( " .. Webgen executable version ... = ${WEBGEN_VERSION}"           )
+message ( " .. YAML C++ library ............ = ${YAML_LIBRARIES}"           )
 message ( "------------------------------------------------------------ "   )
-

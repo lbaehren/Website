@@ -32,7 +32,7 @@
 #include <sstream>
 #include <vector>
 
-#include <dal/data/StorageFormat.h>
+#include <dal/StorageFormat.h>
 
 namespace Blog { // Namespace Blog -- begin
 

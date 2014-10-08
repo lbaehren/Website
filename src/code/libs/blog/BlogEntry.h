@@ -36,8 +36,8 @@
 #include <yaml-cpp/yaml.h>
 
 #include <dal/Time.h>
-#include <dal/data/StorageFormat.h>
-#include <dal/io/iostream.h>
+#include <dal/StorageFormat.h>
+#include <dal/iostream.h>
 
 using namespace dal::io;
 

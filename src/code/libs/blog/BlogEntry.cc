@@ -129,8 +129,8 @@ namespace Blog {
         os << "[BlogEntry] Summary of internal parameters." << std::endl;
         os << "-- Title     = " << itsTitle                 << std::endl;
         os << "-- Author    = " << itsAuthor                << std::endl;
-        os << "-- Time = " << itsTime.rfc2822()   << std::endl;
-        os << "             = " << itsTime.iso8601()   << std::endl;
+        os << "-- Time      = " << itsTime.rfc2822()        << std::endl;
+        os << "             = " << itsTime.iso8601()        << std::endl;
         os << "-- Tags      = " << itsTags                  << std::endl;
         os << "-- Filename  = " << filename(false)          << std::endl;
     }
@@ -200,33 +200,14 @@ namespace Blog {
     std::string BlogEntry::header_keyword (const std::string& filename,
                                            const std::string& keyword)
     {
-        bool status = true;
-        std::ifstream infile (filename.c_str());
-        YAML::Parser parser(infile);
+        std::string result = "";
+        YAML::Node infile = YAML::LoadFile(filename);
 
-        YAML::Node doc;
-        parser.GetNextDocument(doc);
-
-        std::map<std::string, std::string> header;
-        std::map<std::string, std::string>::iterator it;
-
-        for(YAML::Iterator it=doc.begin();it!=doc.end();++it) {
-            std::string key, value;
-            it.first() >> key;
-            it.second() >> value;
-            header[key] = value;
+        if (infile[keyword]) {
+            result = infile[keyword].as<std::string>();
         }
 
-        // Check for the specified keyword
-        it = header.find(keyword);
-        if (it == header.end()) {
-            return "";
-        } else {
-            return it->second;
-        }
-
-        infile.close();
+        return result;
     }
 
 }  //  namespace Blog - END
-
