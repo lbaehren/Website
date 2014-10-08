@@ -23,31 +23,33 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //------------------------------------------------------------------------------
 
-#ifndef BLOG_APPLICATION_BASE_H
-#define BLOG_APPLICATION_BASE_H
+#ifndef BLOG_APPLICATION_BLOG_ENTRY_H
+#define BLOG_APPLICATION_BLOG_ENTRY_H
 
-#include <iostream>
-#include <boost/program_options.hpp>
-#include <boost/program_options/options_description.hpp>
+#include "ApplicationBase.h"
 
-namespace bpo = boost::program_options;
 
 namespace blog {
 
     /*!
-     * @class ApplicationBase
-     * @brief Base class for application programs
+     * @class ApplicationBlogEntry
+     * @brief Class implementing functionality of the `blog_entry` application program
      * @ingroup blog
      * @author Lars Baehren
      */
-    class ApplicationBase {
+    class ApplicationBlogEntry : public ApplicationBase {
 
+    public:
+
+        // === Public member functions =========================================
+
+        /// Constructor
+        ApplicationBlogEntry (int argc, char *argv[]);
+
+        /// Actually run the application
+        int run ();
+        
     protected:
-
-        // === Protected attributes ============================================
-
-        bpo::variables_map itsVariablesMap;
-        bpo::options_description itsOptionsDescription;
 
         // === Protected member functions ======================================
 
@@ -59,17 +61,7 @@ namespace blog {
          * get an overview of the available options use `--help` when running the
          * program.
          */
-        virtual void setOptionsDescription () = 0;
-
-    public:
-
-        // === Public member functions =========================================
-
-        /// Constructor
-        ApplicationBase (int argc, char *argv[]);
-
-        /// Actually run the application
-        virtual int run () = 0;
+        void setOptionsDescription ();
 
     };
 
