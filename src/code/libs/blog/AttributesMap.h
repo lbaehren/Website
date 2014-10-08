@@ -31,7 +31,7 @@
 #include <set>
 #include <vector>
 
-namespace Blog { // Namespace Blog -- begin
+namespace blog { // namespace blog -- begin
 
   /*!
     \class AttributesMap
@@ -100,6 +100,6 @@ namespace Blog { // Namespace Blog -- begin
 
   };
 
-} // Namespace Blog -- end
+} // namespace blog -- end
 
 #endif

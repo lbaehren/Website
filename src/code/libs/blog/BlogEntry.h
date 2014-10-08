@@ -41,7 +41,7 @@
 
 using namespace dal::io;
 
-namespace Blog { // Namespace Blog -- begin
+namespace blog { // namespace blog -- begin
 
     /*!
      * \class BlogEntry
@@ -215,6 +215,6 @@ namespace Blog { // Namespace Blog -- begin
 
     };
 
-} // Namespace Blog -- end
+} // namespace blog -- end
 
 #endif

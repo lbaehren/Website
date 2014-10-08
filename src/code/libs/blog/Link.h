@@ -34,7 +34,7 @@
 
 #include <dal/StorageFormat.h>
 
-namespace Blog { // Namespace Blog -- begin
+namespace blog { // namespace blog -- begin
 
   /*!
     \class Link
@@ -118,6 +118,6 @@ namespace Blog { // Namespace Blog -- begin
 
   };
 
-} // Namespace Blog -- end
+} // namespace blog -- end
 
 #endif

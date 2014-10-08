@@ -25,7 +25,7 @@
 
 #include "Link.h"
 
-namespace Blog { // Namespace Blog -- begin
+namespace blog { // namespace blog -- begin
 
   // ============================================================================
   //
@@ -98,4 +98,4 @@ namespace Blog { // Namespace Blog -- begin
     os << "-- Internal?  .... = " << itsInternal         << std::endl;
   }
 
-} // Namespace Blog -- end
+} // namespace blog -- end

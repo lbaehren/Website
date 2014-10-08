@@ -25,7 +25,7 @@
 
 #include <blog/blog_config.h>
 
-namespace Blog {
+namespace blog {
 
   //! Type of the node in the blog structure
   enum NodeType {

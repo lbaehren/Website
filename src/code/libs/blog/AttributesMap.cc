@@ -25,7 +25,7 @@
 
 #include "AttributesMap.h"
 
-namespace Blog { // Namespace Blog -- begin
+namespace blog { // namespace blog -- begin
 
   // ===========================================================================
   //
@@ -111,4 +111,4 @@ namespace Blog { // Namespace Blog -- begin
     return true;
   }
 
-} // Namespace Blog -- end
+} // namespace blog -- end

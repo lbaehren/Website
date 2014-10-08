@@ -25,7 +25,7 @@
 
 #include "BlogEntry.h"
 
-namespace Blog {
+namespace blog {
 
     // =========================================================================
     //
@@ -210,4 +210,4 @@ namespace Blog {
         return result;
     }
 
-}  //  namespace Blog - END
+}  //  namespace blog - END

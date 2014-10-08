@@ -33,7 +33,7 @@
 #include <set>
 #include <string>
 
-namespace Blog {
+namespace blog {
 
   /*!
     \class PivotEntry
@@ -145,7 +145,7 @@ namespace Blog {
 
   }; // Class PivotEntry -- end
 
-}; // namespace Blog -- end
+}; // namespace blog -- end
 
 #endif /* PIVOTENTRY_H */
 

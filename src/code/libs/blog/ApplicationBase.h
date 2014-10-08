@@ -23,41 +23,33 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //------------------------------------------------------------------------------
 
-#include "BlogNode.h"
+#ifndef BLOG_APPLICATION_BASE_H
+#define BLOG_APPLICATION_BASE_H
+
+#include <iostream>
+#include <boost/program_options.hpp>
+#include <boost/program_options/options_description.hpp>
+
+namespace bpo = boost::program_options;
 
 namespace blog {
 
-  // ============================================================================
-  //
-  //  Construction
-  //
-  // ============================================================================
+    /// \class ApplicationBase
+    /// \brief Base class for application programs
+    /// \ingroup blog
+    class ApplicationBase {
 
-  BlogNode::BlogNode (NodeType const type)
-   : itsType (type)
-  {
-  }
+    protected:
 
-  // ============================================================================
-  //
-  //  Static methods
-  //
-  // ============================================================================
+        bpo::variables_map itsVariablesMap;
 
-  std::string nodeTypeName (NodeType const type)
-  {
-    std::string name;
+    public:
 
-    switch (type) {
-    case Directory:
-      name = "Directory";
-    case Entry:
-      name = "Entry";
-    case Index:
-      name = "Index";
+        /// Constructor
+        ApplicationBase (int argc, char *argv[]);
+
     };
 
-    return name;
-  }
-
 }
+
+#endif
