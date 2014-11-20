@@ -9,11 +9,12 @@ PATH_UPCOMING=upcoming
 #
 # ==============================================================================
 
+#_______________________________________________________________________________
+#                                                                  create_header
+
 ## Create header of a new blog entry
 #
-#  @param title
-#  @param timestamp
-#  @param timeheader
+#  @param title -- Title of the newly created blog entry.
 #
 create_header ()
 {
@@ -35,29 +36,64 @@ create_header ()
     echo "_${varTimeheader}_"
 }
 
+#_______________________________________________________________________________
+#                                                                    create_file
+
 ## Create a new file
 #
-#  @param filename
-#  @param title
-#  @param tmestamp
+#  @param filename -- Name of the newly created file for the blog entry.
+#  @param title    -- Title of the newly created blog entry.
 #
 create_file ()
 {
     varFilename=$1
     varTitle=$2
-    varTimestamp=$3
-    varTimeheader=$4
 
     varOutfile=${PATH_BASEDIR}/${PATH_UPCOMING}/${varFilename}
 
-    echo "Creating new file ${varFilename} ..."
-    echo " - Title     = ${varTitle}"
-    echo " - Timestamp = ${varTimestamp}"
-
     # create header for new entry
-    create_header ${varTitle} ${varTimestamp} ${varTimeheader} >> ${varOutfile}
+    create_header ${varTitle} >> ${varOutfile}
+
+    # update the index file
+    create_index_file > ${PATH_BASEDIR}/${PATH_UPCOMING}/index.page
 }
 
+#_______________________________________________________________________________
+#                                                              create_index_file
+
+create_index_file ()
+{
+    # change into the directory for which to create the index
+    cd ${PATH_BASEDIR}/${PATH_UPCOMING}
+
+    echo "---"
+    echo "title: \"Upcoming blog entries\""
+    echo "in_menu: false"
+    echo "author: \"Lars Baehren\""
+    echo "---"
+    echo ""
+    echo "## {title:} ##"
+    echo ""
+    echo "_`date`_"
+    echo ""
+
+    FILES=`ls *.page | grep -v index`
+
+    for FILE in $FILES
+    {
+        # extract the title of the entry
+        varEntry=`grep "title: \"" ${FILE} | sed s/"title: \""// | sed s/\"//`
+        # extract time header line
+        varTimeheader=`cat ${FILE} | grep "_" | grep "\-\-" | sed s/_//g`
+        # set up link pointing to the generated page
+        varLink="/blog/${PATH_UPCOMING}/`echo $FILE | sed s/".page"/""/`.html"
+
+        echo " * [${varEntry}](${varLink}) \| ${varTimeheader}"
+    }
+
+    # change back to the base directory
+    cd ${PATH_BASEDIR}
+}
 
 # ==============================================================================
 #
@@ -69,14 +105,21 @@ create_file ()
 # File name ...... : "2014-09-02_20-43.page"
 # Time header line : "_Fri, 01. August 2014 -- 19:09_"
 
-varYear=`date +%Y`
-varMonth=`date +%Y`
 varYearMonth=`date +%Y-%m`
 varYearMonthDay=`date +%Y-%m-%d`
 varHourMinuteSecond=`date +%H:%M:%S`
-varTimestamp="${varYearMonthDay}T${varHourMinuteSecond}.00Z"
+varTimestamp=`date +%Y-%m-%dT%H:%M:%S.00Z`
 
 varFilename="`date +%Y-%m-%d`_`date +%H-%M`.page"
 
-# Create new file
-create_file ${varFilename} "New_entry" ${varTimestamp} ${varTimeheader}
+
+case $1 in
+    "-I")
+        echo " - Updating index file for upcoming entries - START"
+        create_index_file > ${PATH_BASEDIR}/${PATH_UPCOMING}/index.page
+        echo " - Updating index file for upcoming entries - END"
+    ;;
+    *)
+        create_file ${varFilename} "New_entry" ${varTimestamp}
+    ;;
+esac
