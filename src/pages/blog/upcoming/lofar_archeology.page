@@ -1,0 +1,22 @@
+---
+title: "LOFAR Archeology"
+in_menu: false
+author: "Lars Baehren"
+---
+
+## {title:} ##
+
+_archived_
+
+Es ist doch immer wieder interessant, was sich so alles finden laesst, wenn man einmal einmal ein klein wenig in den Tiefen der diversen LOFAR Dokumente, Repositories und Websites suchen geht. Vor einer Weile hatte ich mich ja umgeschaut, um Informationen fuer meinen Pizza Lunch Talk zusammenzusuchen: auch wenn es mir dabei ja vor allen Dingen um Belege fuer wichtige Ereignisse in der LOFAR Geschichte ging, so waren mir dabei wieder Dinge untergekommen, welche ich ich fast schon wieder vergessen hatte.
+
+> "Purpose and scope
+>
+> This document defines a set of tasks to be performed by the LOFAR Users Software Group (USG) as part of the LOFAR project. The primary objective of this work package is thhe definition of a set of standard data product output formats, which will be used to store and export LOFAR data to users. This work will be performed in coordination with the LOFAR Engineering group and the Key Science Projects (KSPs).
+>
+> This statement of work covers the activities from Q2 2006 to Q1 2007.
+Context and motivation
+>
+> The natural interface between the standard pipelines and the science pipelines is a well-defined set of standard LOFAR data products. These products are the outputs of the pipelines which run on the BlueGene and the post-processing cluster and the natural starting points for the science pipelines.
+>
+> Based on the discussion with the LOFAR Engineering group, we have agreed that the User Software group will work with the KSPs to provide the specifications for these standard data products since the Science Pipelines provide the baseline requirements for their form and content. Initially these data products will consist of three distinct types of data output: time series data, (u,v) visibility data, and a variety of multi-dimensional “images” (time, frequency, etc.), all of which can essentially be represented as multi-dimensional data cubes. Additional standard data products may be defined as the project evolves."

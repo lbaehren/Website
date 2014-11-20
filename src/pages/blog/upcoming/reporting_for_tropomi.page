@@ -1,0 +1,57 @@
+---
+title: "Reporting"
+in_menu: false
+author: "Lars Baehren"
+---
+
+## {title:} ##
+
+_archived_
+
+Im constantly finding out new ways of how to use and especially customize [Taskwarrior](http://taskwarrior.org), the command-line todo list manager of my choice for quite a while now (as also can be seen from the history information the tool keeps).
+
+With now formally being asked to provide weekly (informal) progress reports, I was looking for a way to use the information already stored inside the Taskwarrior database to also (at least more of less) generate an overview of the tasks I have been working on throughout the week.
+
+~~~~
+curses=off
+defaultwidth=100
+report.trop.description=Progress reporting for TROPOMI
+report.trop.columns=end,due,description
+report.trop.labels=End,Due,Description
+report.trop.sort=end+,description+
+report.trop.filter=status:completed end.after:socw end.before:tomorrow pro:tropomi
+report.trop.dateformat=D-b-Y
+~~~~
+
+With that out of the way, the missing piece of the puzzle -- at least for me, at least at this point in time -- was the question of how to deal with the task burndown; running
+
+~~~~
+task burndown
+~~~~
+
+within a terminal window yields a nicely rendered colorful graphical representation.
+
+~~~~
+250 |
+    |
+    |
+    |                                                                             .  .
+    |                                                                 .  .  .  .  .  .
+    |                                                        .  .  .  .  .  .  .  .  .
+    |                                            .  .  .  .  .  .  .  .  .  .  .  .  .     . Done
+    |                                      .  .  .  .  .  .  .  .  .  .  .  .  .  .  .     + Started
+125 |                    .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .     X Pending
+    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+    |  .  .  .  .  .  .  .  +  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+    |  X  X  X  X  X  X  X  X  X  X  X  X  X  +  X  X  X  X  X  X  X  X  X  X  X  X  X
+  0 +-----------------------------------------------------------------------------------
+      14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 01 02 03 04 05 06 07 08 09 10
+      Nov                                                Dec
+
+    Add rate:         5.6/d      Estimated completion: 2014-02-27 (11 wks)
+    Done/Delete rate: 5.9/d
+~~~~
