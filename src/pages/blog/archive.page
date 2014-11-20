@@ -16,7 +16,7 @@ realize that sending around a bunch of emails wasn't going to cut it -- hence I
 moved to a solution with greater flexibility for me in assembling contents (as
 well as archiving it) and more flexibility for others to tune in and out.
 
-
+<% a = { '01'=>'Jan', '02'=>'Feb', '03'=>'Mar', '04'=>'Apr', '05'=>'May', '06'=>'Jun' } %>
 <% mNum=['01','02','03','04','05','06','07','08','09','10','11','12'] %>
 <% mName=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'] %>
 <% for varYear in 2004..DateTime.now.year %>
