@@ -1,0 +1,46 @@
+---
+title: "Viel zu lange"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-11-20T20:58:56.00Z
+created_at: 2014-11-20T20:58:56.00Z
+---
+
+## {title:} ##
+
+_Thu, 20. November 2014 -- 20:58_
+
+Es ist wirklich schon viel zu lange her, dass ich das letzte Mal einen Eintrag im
+Blog vorgenommen habe. Wenn ich bedenke was alles so in der Zwischenzeit passiert ist,
+dann mueste ich eigentlich seitenweise Lesematerial produziert haben... stattdessen
+ist es mir gelungen einen Teil der hinter den Kulissen werkelnden Infrastruktur zu
+zerschiessen. Ist jetzt nichts, was sich nicht reparieren liesse, aber um dies zu
+machen, muesste ich mir wirklich einmal explizit die Zeit dafuer nehmen. Gerade aber
+an der Stelle hat es immer wieder gekrankt.
+
+----
+create_file ()
+{
+    varFilename=$1
+    varTitle=$2
+
+    varOutfile=${PATH_BASEDIR}/${PATH_UPCOMING}/${varFilename}
+
+    # create header for new entry
+    create_header ${varTitle} >> ${varOutfile}
+
+    # update the index file
+    create_index_file > ${PATH_BASEDIR}/${PATH_UPCOMING}/index.page
+}
+----
+
+Um zumindest eine minimale Funktionalitaet vom Boden zu kriegen, sind eigentlich
+garnicht einmal so sonderlich viel Dinge noetig; erkennen laesst sich dies anhand der
+Tatsache, dass ich mir einen Teil der heutigen Fahrt zurueck nach Bonn dafuer abgestellt
+habe um zumindest behelfsmaessig ein kleines Bash-Script zu basteln, mit welchem ich
+neue Blog-Eintraege generieren und zumindest schon einmal in einem _Staging_ Ordner
+ablegen kann; dies eroeffnet mir dann auch die Moeglichkeit eine Sache anzugehen, welche
+ich schon seit langem im Hinterkopf hatte, naemlich einen Bereich zu haben, wo sich
+an laengeren Eintraegen arbeiten laesst, um dies dann spaeter lediglich noch zu
+veroeffentlichen. Bis zu Letzterem wird es noch eine Weile dauern, aber zumindest ein
+Anfang ist gemacht.
