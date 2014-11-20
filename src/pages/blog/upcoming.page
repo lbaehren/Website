@@ -28,6 +28,11 @@ _Last modified: {date:}_
  - [Nightwish singer comparison](https://www.youtube.com/watch?v=Al54eMCoxUw)
  - [Portnoy, Sheehan, MacAlpine, Sherinian - Apocalypse 1470 B.C.](https://www.youtube.com/watch?v=zt6WSSlyu3s)
  - [Holzöle und Holzwachse im Vergleich](http://www.wikidorf.de/reintechnisch/Inhalt/HolzOelenProdukte)
+ - [Rails vs Django: an in-depth technical comparison](https://bernardopires.com/2014/03/rails-vs-django-an-in-depth-technical-comparison)
+
+ - Avid Juicy 3 (Bremsen fuer Carver Sprint 02)
+   - https://www.sram.com/_media/pdf/avid/dealers/TM_MY08_D.pdf
+   - https://www.sram.com/_media/pdf/avid/dealers/TM_MY08_E.pdf
 
 ----
 **completed ...**
@@ -35,7 +40,6 @@ _Last modified: {date:}_
 
 ----
 **in preparation ...**
-
 
 ### Script it
 
@@ -455,40 +459,6 @@ For the Python modules:
 ~~~~
 
 
-### Social Experiment ###
-
-Das ist doch einmal ein paar Versuche wert... Wie schon einige Male, ist es mir
-heute Morgen -- als ich auf dem Weg ins Institut war -- wieder einmal passiert,
-dass der Bus -- obwohl ich mich passend an der Haltestelle positioniert hatte --
-ein Stueck entfernt von mir gehalten hat... direkt vor dem dort wartende Maedel.
-
-
-### Python bindings for C/C++ using Boost.Python ###
-
-~~~~
-python_add_module (pyswir
-    pyswir.h
-    pyswir.cc
-    pyswir_data.cc
-    pyswir_l01b.cc
-    pyswir_math.cc
-    pyswir_stats.cc
-    pyswir_utils.cc
-    )
-~~~~
-
-Linker instructions
-
-~~~~
-target_link_libraries (pyswir
-    swir++
-    ${Boost_PROGRAM_OPTIONS_LIBRARY}
-    ${Boost_PYTHON_LIBRARY}
-    ${PYTHON_LIBRARIES}
-    )
-~~~~
-
-
 ### Musikalische Funde ###
 
 So wie es aussieht, habe ich derzeit meine Straehne, was Rock Opern betrifft. Waehrend ich immer noch gespannt darauf warte, dass es endlich einmal ein wenig konkretere Informationen in Bezug auf das noch fuer dieses Jahr angekuendigte [Ayreon](http://www.ayreon.com) Album gibt, bin ich in der Zwischenzeit auf zwei Projekte gestossen, welche weit oben am Ende der musikalischen Skala angesiedelt sind:
@@ -752,30 +722,6 @@ Eine der netten "Nebenwirkungen" der Tatsache, dass Julia ja regelmaessig zum Yo
 
 > Die Entstehung des Schokoladenriesen Stollwerck aus einem Konditoreibetrieb des Biedermeier beruhte auf dem unternehmerischen Ehrgeiz mehrerer Generationen. 1870 siedelten sich die Gebrüder Stollwerck hinter der Severinskirche an, wo mit dem "süßen Dreieck" eine die eher schlichte Wohnhausbebauung übersteigernde Geschäftshaus- und Fabrikarchitektur entstand. Die einzig erhalten gebliebene Ecke dieser Anlage gehörte nicht zu den aufwendigsten; ihre für die Gründerzeit typische Ziegelarchitektur verbindet Formen der Gotik und Renaissance. Die Ecke des Baus ist abgeflacht und durch zwei seitlich flankierende, kleine Giebel betont. Die in jedem Geschoß wechselnden Fensterformen bereichern die Fassaden, hinter denen sich Büro- oder Produktionsräume verbergen konnten. Bald griff die Fabrik auf das anschließende Gelände an der Annostraße über, wo auch eine Produktion für Schokoladenverarbeitungsmaschinen und Verkaufsautomaten entstand.
 
-### Installation of header files... made easy ###
-
-I am always surprised what else there is to discover in terms of functionality, once taking the time to not only skim the [CMake](http://www.cmake.org) documentation, but to actually read it a bit more carefully:
-
-> Installation of directories may be controlled with fine granularity using the PATTERN or REGEX options. These "match" options specify a globbing pattern or regular expression to match directories or files encountered within input directories. They may be used to apply certain options (see below) to a subset of the files and directories encountered. The full path to each input file or directory (with forward slashes) is matched against the expression. A PATTERN will match only complete file names: the portion of the full path matching the pattern must occur at the end of the file name and be preceded by a slash. A REGEX will match any portion of the full path but it may use '/' and '$' to simulate the PATTERN behavior. By default all files and directories are installed whether or not they are matched. The FILES_MATCHING option may be given before the first match option to disable installation of files (but not directories) not matched by any expression. For example, the code
->
->~~~~
->  install(DIRECTORY src/ DESTINATION include/myproj
->          FILES_MATCHING PATTERN "*.h")
->~~~~
->
-> will extract and install header files from a source tree.
-
-Just so happens that indeed I was trying to remind myself of how to best install header files -- in this case of our TROPOMI onground calibration software -- once all components (libraries and tools) have been sucessfully built.
-
-~~~~
-install(
-  DIRECTORY ${CMAKE_CURRENT_BINARY_DIR} DESTINATION include
-  FILES_MATCHING
-  PATTERN "CMakeFiles" EXCLUDE
-  PATTERN "*.h"
-  )
-~~~~
-
 ### Drobo and alternatives ###
 
 It is for quite a while now that the large of my two Drobos is reminding me to add some more disk space to it; given the fact that the machine already is equiped with 4x 3TB drives, the only possibility right now would be to start adding 4TB drives -- given prices on these drives however this is not the path I'd be willing to pursue at this point.
@@ -808,39 +754,6 @@ It is for quite a while now that the large of my two Drobos is reminding me to a
 | Noise Level           | 23.1 dB(A)                       | 21.5 dB(A)                           |
 | Power Consumption     | 71.5W (Access);                  | 111.1W (Access);                     |
 |                       | 28.6W (HDD Hibernation)          | 41.8W (HDD Hibernation)              |
-
-### Rebuilding broken ports ###
-
-Now this is what I really would call a usefull feature helping to arrive at a more stable system: following up on an issue raised during today's [TROPOMI](/work/tropomi.html) progress meeting, I went back to a little something I already had started earlier last week, namely the extraction of a template for the new LaTeX documents. In order to simplify the creation of a new document (or even several thereof) the skeleton of the LaTeX source, alongside style packages, should be made available to everybody in the project to have a common starting point from which to continue editing.
-
-Once the basic preparation of all source files was done, I went to check the resulting (PDF or Postscript) output... only to encounter a runtime error when firing up the LaTeX tool-chain:
-
-~~~~
-dyld: Library not loaded: /opt/local/lib/libtiff.3.dylib
-  Referenced from: /opt/local/lib/libpoppler.34.dylib
-  Reason: image not found
-~~~~
-
-Judging by the path to the shared library, this had to be a problem with my [MacPorts](http://www.macports.org) installation, though the specific error was something I could not remember having encountered before (at least not for a long while). Hence -- at least to my mind -- the next obvious thing to do, was trying to reinstall the package in question:
-
-~~~~
-sudo port install tiff
-~~~~
-
-However since the library was installed already the first part of the process went by rather quickly
-
-~~~~
---->  Computing dependencies for tiff
---->  Cleaning tiff
---->  Updating database of binaries: 100.0%
---->  Scanning binaries for linking errors: 100.0%
---->  Found 66 broken file(s), matching files to ports
---->  Found 3 broken port(s), determining rebuild order
---->  Rebuilding in order
-     poppler @0.22.0
-     podofo @0.9.1
-     qt4-mac @4.8.4
-~~~~
 
 ### The Hobbit: An Unexpected Journey - Close-up ###
 
