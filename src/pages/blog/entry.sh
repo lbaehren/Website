@@ -247,10 +247,12 @@ publish_entry ()
 
         # Parse the input file to replace the time information
         cat $1 | sed s/"`cat $1 | grep \"date: [0-9]*\"`"/"date: ${varTimestamp}"/ | sed s/"${varTimeheaderSource}"/"${varTimeheaderNew}"/ > ${varEntry}
-        # open the newly created file for further editing
-        open -a ${EDITOR} ${varEntry}
         # Remove the input file
         rm -f $1
+
+        # open the newly created file for further editing
+        echo " -> loading published entry into editor for final changes ..."
+        open -a ${EDITOR} ${varEntry}
 
     fi
 }
