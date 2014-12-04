@@ -18,7 +18,7 @@ zerschiessen. Ist jetzt nichts, was sich nicht reparieren liesse, aber um dies z
 machen, muesste ich mir wirklich einmal explizit die Zeit dafuer nehmen. Gerade aber
 an der Stelle hat es immer wieder gekrankt.
 
-----
+~~~~~~~~
 create_file ()
 {
     varFilename=$1
@@ -32,7 +32,7 @@ create_file ()
     # update the index file
     create_index_file > ${PATH_BASEDIR}/${PATH_UPCOMING}/index.page
 }
-----
+~~~~~~~~
 
 Um zumindest eine minimale Funktionalitaet vom Boden zu kriegen, sind eigentlich
 garnicht einmal so sonderlich viel Dinge noetig; erkennen laesst sich dies anhand der

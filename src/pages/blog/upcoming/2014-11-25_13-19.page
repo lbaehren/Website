@@ -1,0 +1,30 @@
+---
+title: "Repair completed"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-11-25T13:19:01.00Z
+created_at: 2014-11-25T13:19:01.00Z
+---
+
+## {title:} ##
+
+_Tue, 25. November 2014 -- 13:19_
+
+Na, das ist doch mal mal wieder eine gute Nachricht, welche mich da aus den heimischen
+Gefilden erreicht:
+
+> Dear user,
+>
+>
+> The system has completed repairing the degraded storage space (Volume 1) with
+Hot Spare disk (Disk 11).
+>
+>
+> Sincerely,
+> Synology DiskStation
+
+Nachdem ich am letzten Wochenende zwei Festplatten in der [DiskStation](https://www.synology.com/en-global/products/DS2413+)
+ausgetauscht habe, brauchte das System (erwartungsgemaess) eine Weile, um die Integritaet der
+Daten wieder herzustellen und alles auf die neue Konfiguration abzustimmen. Da ich mir
+aber vor einer Weile die Email-Benachrichtigung eingestellt hatte, kriege ich sogar
+hier in Utrecht mit, dass sich zuhause abspielt (zumindest was die IT-Infrastruktur betrifft).
