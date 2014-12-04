@@ -14,9 +14,14 @@ print_help ()
 {
     echo "usage: entry.sh [-I|--index] [-P|--publish]"
     echo ""
-    echo " -H|--help     Print this help and exit."
-    echo " -I|--index    Update index files."
-    echo " -P|--publish  Publish an entry."
+    echo " -N | --new           Create a new blog entry."
+    echo " -H | --help          Print this help and exit."
+    echo " -I | --index         Update index files."
+    echo " -L | --list    PATH  List entries in a given directory; if no further argument"
+    echo "                      is provided the entries available for publication are"
+    echo "                      displayed."
+    echo " -P | --publish FILE  Publish an entry. If no further argument is provided"
+    echo "                      entries available for publication are listed."
 }
 
 #_______________________________________________________________________________
@@ -71,7 +76,7 @@ get_timeheader ()
     else
         # check if the file path is valid
         if [ -f $1 ] ; then
-            varTimeheader=`cat $1 | grep "_" | grep "\-\-" | sed s/_//g`
+            varTimeheader=`cat $1 | grep -v "\[" | grep ":" | grep "_" | grep "\-\-" | sed s/_//g`
             echo ${varTimeheader}
         else
             echo ""
@@ -202,16 +207,22 @@ create_index_file ()
 }
 
 #_______________________________________________________________________________
-#                                                                  list_upcoming
+#                                                                   list_entries
 
-list_upcoming ()
+list_entries ()
 {
+    if [ -z $1 ] ; then
+        varDirectory=${PATH_UPCOMING}
+    else
+        varDirectory=$1
+    fi
+
     cd ${PATH_BASEDIR}
 
-    for FILE in `ls ${PATH_UPCOMING} | grep -v index.page`
+    for FILE in `ls ${varDirectory} | grep -v index.page`
     {
-        varTitle=`get_entry_title ${PATH_UPCOMING}/${FILE}`
-        varTimeheader=`get_timeheader ${PATH_UPCOMING}/${FILE}`
+        varTitle=`get_entry_title ${varDirectory}/${FILE}`
+        varTimeheader=`get_timeheader ${varDirectory}/${FILE}`
         echo " - ${FILE} | ${varTitle} | ${varTimeheader}"
     }
 }
@@ -223,7 +234,7 @@ publish_entry ()
 {
     if [ -z $1 ] ; then
         echo " -> Entries available for publication:"
-        list_upcoming
+        list_entries
     else
         varTitle=`get_entry_title $1`
         varFilename=`get_filename`
@@ -274,6 +285,14 @@ varTimestamp=`get_timestamp`
 varFilename=`get_filename`
 
 case $1 in
+    "-N")
+        echo "Creating file for new blog entry ..."
+        create_file ${varFilename} "New_entry" ${varTimestamp}
+    ;;
+    "--new")
+        echo "Creating file for new blog entry ..."
+        create_file ${varFilename} "New_entry" ${varTimestamp}
+    ;;
     "-H")
         print_help
     ;;
@@ -284,6 +303,12 @@ case $1 in
         echo "Updating index file for upcoming entries ..."
         create_index_file > ${PATH_BASEDIR}/${PATH_UPCOMING}/index.page
     ;;
+    "-L")
+        list_entries $2
+    ;;
+    "--list")
+        list_entries $2
+    ;;
     "-P")
         publish_entry $2
     ;;
@@ -291,7 +316,6 @@ case $1 in
         publish_entry $2
     ;;
     *)
-        echo "Creating file for new blog entry ..."
-        create_file ${varFilename} "New_entry" ${varTimestamp}
+        print_help
     ;;
 esac
