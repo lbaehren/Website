@@ -1,0 +1,43 @@
+---
+title: "Listing blog entries"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-12-04T19:56:07.00Z
+created_at: 2014-12-04T19:48:14.00Z
+---
+
+## {title:} ##
+
+_Thu, 04. December 2014 -- 19:56_
+
+While some of the machinery is not back online again, I am making some progress
+on streamlining the tools supposed to be working behind the scenes. Given the fact
+that the current routine to list the contents of a directory (in terms of available
+blog entries) now already is an improvement w.r.t. the older version, generalising
+it a little it further only seemed like a logical step. The first iteration specifically
+had been written with the idea in mind to list upcoming entries (and offer them
+for publication); however extraction of further details was pretty generic, such
+that the only thing left to adjust was the path w.r.t. which the listing was extracted.
+
+~~~~~~~~
+list_entries ()
+{
+    if [ -z $1 ] ; then
+        varDirectory=${PATH_UPCOMING}
+    else
+        varDirectory=$1
+    fi
+
+    cd ${PATH_BASEDIR}
+
+    for FILE in `ls ${varDirectory} | grep -v index.page`
+    {
+        varTitle=`get_entry_title ${varDirectory}/${FILE}`
+        varTimeheader=`get_timeheader ${varDirectory}/${FILE}`
+        echo " - ${FILE} | ${varTitle} | ${varTimeheader}"
+    }
+}
+~~~~~~~~
+
+The default behaviour has been kept, such that if now further argument is provided,
+the contents of the directory with entries in preparation is listed.

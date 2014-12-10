@@ -85,6 +85,36 @@ get_timeheader ()
 }
 
 #_______________________________________________________________________________
+#                                                         list_of_recent_entries
+
+list_of_recent_entries ()
+{
+    nofEntries=$1
+    tmpFile=entries.txt
+
+    cd ${PATH_BASEDIR}
+
+    for FILE in `ls ${PATH_BASEDIR}`
+    {
+        if [ -d "$FILE" ]
+        then
+            find $FILE -name "*.page" | grep -v index | grep -v upcoming >> ${tmpFile}
+        fi
+    }
+
+    # Sort through the list of entries
+    varEntries=`cat ${tmpFile} | tail -n ${nofEntries} | sort -r`
+    rm -f ${tmpFile}
+
+    for FILE in ${varEntries}
+    {
+        varTitle=`get_entry_title ${FILE}`
+        varTimeheader=`get_timeheader ${FILE}`
+        echo " - ${FILE} | ${varTitle} | ${varTimeheader}"
+    }
+}
+
+#_______________________________________________________________________________
 #                                                                  create_header
 
 ## Create header of a new blog entry
@@ -283,6 +313,7 @@ varYearMonthDay=`date +%Y-%m-%d`
 varHourMinuteSecond=`date +%H:%M:%S`
 varTimestamp=`get_timestamp`
 varFilename=`get_filename`
+varRecentEntries=15
 
 case $1 in
     "-N")
@@ -302,6 +333,7 @@ case $1 in
     "-I")
         echo "Updating index file for upcoming entries ..."
         create_index_file > ${PATH_BASEDIR}/${PATH_UPCOMING}/index.page
+        list_of_recent_entries ${varRecentEntries}
     ;;
     "-L")
         list_entries $2
