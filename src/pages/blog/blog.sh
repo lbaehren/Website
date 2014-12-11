@@ -240,8 +240,6 @@ create_index_file_blog ()
     {
         # extract the title of the entry
         varEntry=`get_entry_title ${FILE}`
-        # extract time header line
-        varTimeheader=`get_timeheader ${FILE}`
 
         echo ""                       >> ${varOutfile}
         echo "**:::**"                >> ${varOutfile}
