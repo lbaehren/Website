@@ -90,12 +90,9 @@ set (PROJECT_LIVEDISK_URL         "https://382611-ftp.livedisk.df.eu/webdav")
 ##
 ## .                               ...  PROJECT_SOURCE_DIR
 ## `-- src
-##     |-- code                    ...  PROJECT_SOURCE_DIR_CODE
+##     |-- code
 ##     |   |-- CMakeModules        ...  PROJECT_CMAKE_MODULE_PATH
-##     |   |-- external
-##     |   |-- lib
-##     |   |-- tests
-##     |   `-- tools
+##     |   `-- external
 ##     |-- images
 ##     |-- pages                   ...  PROJECT_SOURCE_DIR_PAGES
 ##     |   |-- blog                ...  PROJECT_SOURCE_DIR_BLOG
@@ -106,15 +103,6 @@ set (PROJECT_LIVEDISK_URL         "https://382611-ftp.livedisk.df.eu/webdav")
 ##     |   `-- work
 ##     `-- templates
 ##
-
-find_path (PROJECT_SOURCE_DIR_CODE
-  NAMES tools/CMakeLists.txt scripts/blog_index
-  PATHS ${CMAKE_CURRENT_SOURCE_DIR}
-  PATH_SUFFIXES src code src/code
-  )
-if (NOT PROJECT_SOURCE_DIR_CODE)
-  message (SEND_ERROR "Missing code source dir (PROJECT_SOURCE_DIR_CODE)")
-endif (NOT PROJECT_SOURCE_DIR_CODE)
 
 find_path (PROJECT_SOURCE_DIR_BLOG
   NAMES upcoming.page archive.page 2012.page 2011.page 2010.page
@@ -238,6 +226,7 @@ message ( " .. C compiler .................. = ${CMAKE_C_COMPILER}"         )
 message ( " .. size(void*) ................. = ${CMAKE_SIZEOF_VOID_P}"      )
 message ( " Project configuration:"                                         )
 message ( " .. Version number .............. = ${PROJECT_VERSION}"          )
+message ( " .. Build directory ............. = ${PROJECT_BINARY_DIR}"       )
 message ( " .. Installation prefix ......... = ${CMAKE_INSTALL_PREFIX}"     )
 message ( " .. Installation prefix Website . = ${INSTALL_PREFIX_WEBSITE}"   )
 message ( " .. Pages source directory ...... = ${PROJECT_SOURCE_DIR_PAGES}" )

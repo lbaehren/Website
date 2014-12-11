@@ -53,7 +53,7 @@ find_program (RSYNC_EXECUTABLE rsync
 if (RSYNC_EXECUTABLE)
 
     add_custom_target (online
-        COMMAND ${RSYNC_EXECUTABLE} -axuzP ${CMAKE_INSTALL_PREFIX}/website/* ${PROJECT_UPLOAD_PATH}
+        COMMAND ${RSYNC_EXECUTABLE} -axuzP ${PROJECT_BINARY_DIR}/website/* ${PROJECT_UPLOAD_PATH}
         WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
         COMMENT "Publishing website - uploading generated pages ..."
         )
