@@ -26,7 +26,8 @@ print_help ()
 
 #_______________________________________________________________________________
 #                                                                  get_timestamp
-
+# Get the timestamp based on the date and time of day.
+#
 get_timestamp ()
 {
     echo `date +%Y-%m-%dT%H:%M:%S.00Z`
@@ -58,6 +59,23 @@ get_entry_title ()
         if [ -f $1 ] ; then
             varTitle=`grep "title: \"" $1 | sed s/"title: \""// | sed s/\"//`
             echo ${varTitle}
+        else
+            echo ""
+        fi
+    fi
+}
+
+#_______________________________________________________________________________
+#                                                                 get_entry_body
+
+get_entry_body ()
+{
+    if [ -z $1 ] ; then
+        echo ""
+    else
+        # check if the file path is valid
+        if [ -f $1 ] ; then
+            cat $1 | sed 1,/"##"/d
         else
             echo ""
         fi
@@ -106,12 +124,7 @@ list_of_recent_entries ()
     varEntries=`cat ${tmpFile} | tail -n ${nofEntries} | sort -r`
     rm -f ${tmpFile}
 
-    for FILE in ${varEntries}
-    {
-        varTitle=`get_entry_title ${FILE}`
-        varTimeheader=`get_timeheader ${FILE}`
-        echo " - ${FILE} | ${varTitle} | ${varTimeheader}"
-    }
+    echo ${varEntries}
 }
 
 #_______________________________________________________________________________
@@ -142,39 +155,6 @@ create_header ()
 }
 
 #_______________________________________________________________________________
-#                                                         writeHeaderYearArchive
-
-## Create header for contents of year folder
-#
-#  @param outfile -- File to which the output will be written.
-#  @param year    -- Year for which to create the index file.
-#  @param month   -- [optional] Month of the year for which to create the index file.
-#
-create_index_file_header ()
-{
-    varOutfile=${1}
-    varYear=${2}
-
-    if [ -z "$3" ]
-        then
-        varTitle = "${varYear}"
-    else
-        varTitle = "${3} ${varYear}"
-    fi
-
-    echo "-- Writing header for ${varOutfile} ..."
-
-    echo "---"                                        > ${varOutfile}
-    echo "title: ${varTitle}"                        >> ${varOutfile}
-    echo "in_menu: false"                            >> ${varOutfile}
-    echo "author: \"Lars Baehren\""                  >> ${varOutfile}
-    echo "---"                                       >> ${varOutfile}
-    echo ""                                          >> ${varOutfile}
-    echo "## Blog entries | {title:} ##"             >> ${varOutfile}
-    echo ""                                          >> ${varOutfile}
-}
-
-#_______________________________________________________________________________
 #                                                                    create_file
 
 ## Create a new file
@@ -196,13 +176,13 @@ create_file ()
     open -a ${EDITOR} ${varOutfile}
 
     # update the index file
-    create_index_file > ${PATH_BASEDIR}/${PATH_UPCOMING}/index.page
+    create_index_file_upcoming > ${PATH_BASEDIR}/${PATH_UPCOMING}/index.page
 }
 
 #_______________________________________________________________________________
-#                                                              create_index_file
+#                                                     create_index_file_upcoming
 
-create_index_file ()
+create_index_file_upcoming ()
 {
     # change into the directory for which to create the index
     cd ${PATH_BASEDIR}/${PATH_UPCOMING}
@@ -230,6 +210,45 @@ create_index_file ()
         varLink="/blog/${PATH_UPCOMING}/`echo $FILE | sed s/".page"/""/`.html"
 
         echo " * [${varEntry}](${varLink}) \| ${varTimeheader}"
+    }
+
+    # change back to the base directory
+    cd ${PATH_BASEDIR}
+}
+
+#_______________________________________________________________________________
+#                                                         create_index_file_blog
+
+create_index_file_blog ()
+{
+    varOutfile=${PATH_BASEDIR}/index.page
+
+    # change into the directory for which to create the index
+    cd ${PATH_BASEDIR}
+
+    echo "---"                         > ${varOutfile}
+    echo "title: \"Blog\""            >> ${varOutfile}
+    echo "in_menu: false"             >> ${varOutfile}
+    echo "author: \"Lars Baehren\""   >> ${varOutfile}
+    echo "---"                        >> ${varOutfile}
+    echo ""                           >> ${varOutfile}
+    echo "# {title:} #"               >> ${varOutfile}
+
+    FILES=`list_of_recent_entries $1`
+
+    for FILE in $FILES
+    {
+        # extract the title of the entry
+        varEntry=`get_entry_title ${FILE}`
+        # extract time header line
+        varTimeheader=`get_timeheader ${FILE}`
+
+        echo ""                       >> ${varOutfile}
+        echo "**:::**"                >> ${varOutfile}
+        echo ""                       >> ${varOutfile}
+        echo "### ${varEntry} ###"    >> ${varOutfile}
+        echo ""                       >> ${varOutfile}
+        get_entry_body ${FILE}        >> ${varOutfile}
     }
 
     # change back to the base directory
@@ -332,8 +351,8 @@ case $1 in
     ;;
     "-I")
         echo "Updating index file for upcoming entries ..."
-        create_index_file > ${PATH_BASEDIR}/${PATH_UPCOMING}/index.page
-        list_of_recent_entries ${varRecentEntries}
+        create_index_file_upcoming > ${PATH_BASEDIR}/${PATH_UPCOMING}/index.page
+        create_index_file_blog ${varRecentEntries}
     ;;
     "-L")
         list_entries $2

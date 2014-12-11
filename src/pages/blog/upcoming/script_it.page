@@ -1,0 +1,84 @@
+---
+title: "Script it"
+in_menu: false
+author: "Lars Baehren"
+---
+
+## {title:} ##
+
+_archived_
+
+Es gibt einfach Dinge, die schreien danach automatisiert zu werden; wenn sich
+deutlich erkennbar ein Wiederholungsmuster abzeichnet, welches nur von ein paar
+wohldefinierten Eingangsgroessen abhaengt, dann ist dies fuer mich ein klarer
+Fall wo ein programmier-technischer Ansatz Sinn macht. So geschehen auch in
+diesem Fall.
+
+Im Zuge der Vorbereitungen fuer die On-ground Calibration (OCAL) Kampagne von
+[TROPOMI](http://www.tropomi.eu) bin ich in der letzten Zeit damit beschaeftigt gewesen
+die Kalibrationsschritte (und die dafuer noetigen Daten) zu testen; da alleine schon
+aus Zeitgruenden nicht noch einmal alle nur denkbaren Messungen durchgefuehrt werden
+koennen, beruht ein Teil der Kalibrationsinformation aus fruehren Labormessungen, wo
+alleine der Detektor auf dem Pruefstand eingespannt war (was aber durchaus ausreichend
+fuer eine Reihe von Untersuchungen ist, weil eben nicht fuer alles das komplette,
+zusammengebaute Instrument braucht).
+
+~~~~~~~~
+efm2.proc_stop_before_dn2v_no_flagging.ocal
+efm2.proc_stop_after_dn2v_no_flagging.ocal
+
+efm2.proc_stop_before_mem_no_flagging.ocal
+efm2.proc_stop_after_mem_no_flagging.ocal
+
+efm2.proc_stop_before_artcorr_no_flagging.ocal
+efm2.proc_stop_after_artcorr_no_flagging.ocal
+
+efm2.proc_stop_before_offset_no_flagging.ocal
+efm2.proc_stop_after_offset_no_flagging.ocal
+
+efm2.proc_stop_before_v2c_no_flagging.ocal
+efm2.proc_stop_after_v2c_no_flagging.ocal
+~~~~~~~~
+
+~~~~~~~~
+for _step in ${varSteps}
+{
+    # Upper-case version of processing stp name
+    varStepName=`echo ${_step} | tr "[a-z]" "[A-Z]"`
+
+    echo "Generating task configuration files for ${varStepName} step ..."
+
+    for _data in ${varData}
+    {
+
+        for _stop in ${varStops}
+        {
+            write_taskfile ${_data} ${_step} ${_stop}
+        }
+    }
+}
+~~~~~~~~
+
+~~~~~~~~
+Generating task configuration files for MEM step ...
+ --> efm2.proc_stop_before_mem_no_flagging.ocal
+ --> efm2.proc_stop_after_mem_no_flagging.ocal
+ --> efm2_fm.proc_stop_before_mem_no_flagging.ocal
+ --> efm2_fm.proc_stop_after_mem_no_flagging.ocal
+ --> fm.proc_stop_before_mem_no_flagging.ocal
+ --> fm.proc_stop_after_mem_no_flagging.ocal
+~~~~~~~~
+
+Was ich bisher auf diese Weise noch nicht mit geloest habe ist, wie ich das zugehoerige ``Makefile`` gleich mit aktualisieren kann: die zur Verfuegung gestellten Build-Targets folgen dem gleich Schema wie schon die Konfigurations-Dateien (schliesslich werden diese letzten Endes ja auch wiederum aufgerufen).
+
+~~~~
+dn2v: dn2v.efm2 dn2v.efm2_fm
+
+dn2v.efm2:
+	${RUNTASK} efm2.proc_stop_before_dn2v_no_flagging.ocal ${BANDS}
+	${RUNTASK} efm2.proc_stop_after_dn2v_no_flagging.ocal ${BANDS}
+
+dn2v.efm2_fm:
+	${RUNTASK} efm2_fm.proc_stop_before_dn2v_no_flagging.ocal ${BANDS}
+	${RUNTASK} efm2_fm.proc_stop_after_dn2v_no_flagging.ocal ${BANDS}
+~~~~

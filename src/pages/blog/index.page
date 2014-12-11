@@ -1,17 +1,175 @@
 ---
-title: Blog
+title: "Blog"
 in_menu: false
-author: Lars Baehren
-tags: Blog
+author: "Lars Baehren"
 ---
- 
+
 # {title:} #
- 
+
 **:::**
- 
+
+### Daten weg ###
+
+
+_Thu, 11. December 2014 -- 18:12_
+
+So kann man sich natuerlich auch selber sabotieren: durch die Verwechslung eines
+Dateinamens habe ich mir (noch vor Arnhem) die Daten gekillt, welche ich mir noch
+extra fuer die Reise auf das Laptop geschaufelt hatte. Zunaechst dachte ich, dass
+ich mit den Code selber zu weit gegangen bin - zu viele Schritte ohne zwischenzeitliches
+Backup -- aber nach ein wenig Suche stellte sich heraus, dass der Code (weitestgehend)
+ok war... sieht man einmal von der Tatsache ab, dass ich an einer Stelle den falschen
+Pfad verwendet habe. Der Effekt von dieser Aktion war, dass ich eben genau jene
+Daten ueberschrieben habe, welche ich zum Testen verwenden wollte. Sieht also ganz
+danach aus, als kann ich mir zumindest dieses Vorhaben fuer die Rueckfahrt abschreiben.
+
+**:::**
+
+### Wieder einen Schritt naeher ###
+
+
+_Wed, 10. December 2014 -- 22:23_
+
+Und doch endlich wieder einmal einen kleinen Schritt weiter. Waehrend ich in der
+Zwischenzeit durchaus ein paar wenige Eintraege geschrieben habe, ist die Infrastruktur
+immer noch nicht auf dem Stand, dass ich ohne weiteres den Blog mit allen dazu
+gehoerenden Seiten aktualisieren kann. Was mir derzeit noch fehlt ist, dass die
+Index-Seiten und die Seite mit den letzten Eintraegen aufs Neue gebaut werden; zumindest
+was letzteres betrifft habe ich nun einen kleinen Fortschritt machen koennen:
+
+~~~~~~~~
+    for FILE in `ls ${PATH_BASEDIR}`
+    {
+        if [ -d "$FILE" ]
+        then
+            find $FILE -name "*.page" | grep -v index | grep -v upcoming >> ${tmpFile}
+        fi
+    }
+
+    # Sort through the list of entries
+    varEntries=`cat ${tmpFile} | tail -n ${nofEntries} | sort -r`
+~~~~~~~~
+
+Derzeit spuckt die Routine nur eine Liste mit den wesentlichen Eigenchaften der
+Eintraege aus, aber der folgende Schritt darauf eine Seite zu basteln duerfte
+(zumindest hoffe ich dies) nicht mehr so schwer sein.
+
+Rein von der technischen Seite her bin ich mit dem bisher erstellten recht zufrieden:
+was ich bis jetzt am Laufen habe ist deutlich modularer was die einzelnen Schritte
+betrifft, welche es auszufuehren gibt. Dadurch dass alles als ein Bash Script geschrieben
+ist, gibt es zwar nicht die gleiche Art der Modularisierung, wie die dies z.B. bei
+C++ kriegen wuerde, aber da es eben nicht einfach nur ein gigantisches Script ist,
+kann ich die einzelnen Teile auf immer wieder neue Weise zusammenfuegen. Dabei gibt
+es einfach ein paar Standardaufgaben, welche man einmal implementieren sollte... und
+dann ist es aber auch gut damit. Was jetzt aber noch ansteht ist, dass ich mir noch
+einmal ein wenig Zeit dafuer reserviere, um alle Bauteile zusammenzufuegen und die
+Index-Seiten auch wirklich wieder zu generieren. Wenn dies der Fall ist, steht den
+regelmaessigen Updates nichts mehr im Weg.
+
+**:::**
+
+### Listing blog entries ###
+
+
+_Thu, 04. December 2014 -- 19:56_
+
+While some of the machinery is not back online again, I am making some progress
+on streamlining the tools supposed to be working behind the scenes. Given the fact
+that the current routine to list the contents of a directory (in terms of available
+blog entries) now already is an improvement w.r.t. the older version, generalising
+it a little it further only seemed like a logical step. The first iteration specifically
+had been written with the idea in mind to list upcoming entries (and offer them
+for publication); however extraction of further details was pretty generic, such
+that the only thing left to adjust was the path w.r.t. which the listing was extracted.
+
+~~~~~~~~
+list_entries ()
+{
+    if [ -z $1 ] ; then
+        varDirectory=${PATH_UPCOMING}
+    else
+        varDirectory=$1
+    fi
+
+    cd ${PATH_BASEDIR}
+
+    for FILE in `ls ${varDirectory} | grep -v index.page`
+    {
+        varTitle=`get_entry_title ${varDirectory}/${FILE}`
+        varTimeheader=`get_timeheader ${varDirectory}/${FILE}`
+        echo " - ${FILE} | ${varTitle} | ${varTimeheader}"
+    }
+}
+~~~~~~~~
+
+The default behaviour has been kept, such that if now further argument is provided,
+the contents of the directory with entries in preparation is listed.
+
+**:::**
+
+### Ablehnungsreflexe ###
+
+
+_Thu, 04. December 2014 -- 09:34_
+
+ Manchmal bin ich dann doch noch verwundert ueber das, was ich so bei einem
+Radiointerview zu hoeren kriegen. Angesichts der diese Woche noch anstehenden
+Wahl des Ministerpraesidenten von Thueringen hat die dortige CDU die Order
+gegeben "alles zu tun dass Bodo Ramelow nicht gewaehlt" wird. Von der Fixierung
+her auf dieses Ziel muss ich sofort an die Vorgehensweise der Republikaner in
+den USA stattfinden: statt zu versuchen einen Gegenentwurf vorzustellen
+definitiert man sich eigentlich nur noch ueber Fundamentalopposition zum
+politischen Mitbewerber. Das einzig verbleibende humoristische an der Situation
+ist, dass es durch das grosse Ausschliessen -- welche mitterweile in beide
+Richtungen des politischen Spektrums anzutreffen ist -- immer absurder wird.
+Vielleicht sollte man den armen CDU Politikern in Thueringen schon einmal
+politisches Asyl in einem anderen Bundesland anbieten ;)
+
+**:::**
+
+### Kein guter Start ###
+
+
+_Mon, 01. December 2014 -- 07:47_
+
+Irgendwie setzt sich die Pannenserie fort... Nachdem ich heute Morgen zuhause schon
+so manche Probleme mit der Koordination meiner morgendlichen Taetigkeiten hatte --
+so ist es mir gelungen mein Handy in die Kueche liegen lassen, was mir gleucklicherweise
+dadurch aufgefallen ist, dass das Signal auf dem Kopfhoerer zusammenbrach -- scheine
+ich nun auch mit dem ICE Probleme zu kriegen. Waehrend es in Koeln noch recht glatt
+werden wir nun erst einmal gut 30 Minuten bis zur Weiterfahrt warten muessen. Die
+Tatsache, dass ein technischer Fehler am Zug als Grund angegeben wurde, stimmt mich
+allerdings nicht so hoffnungsvoll, denn dies kann auch durchaus bedeuten, dass dieser
+ICE komplett eingestellt wird und ich mich mit einer anderen Verbindung nach Utrecht
+durchschlagen muss. Nicht, dass ich da allzu pessimistische Stimmung verbreiten wollte,
+aber mittlerweile habe ich nun doch ausreichend viele Bahnfahrten hinter mich gebracht,
+dass mir bestimmte Ablaeufe durchaus bekannt sind.
+
+**:::**
+
+### Zu anderer Zeit ###
+
+
+_Thu, 27. November 2014 -- 19:45_
+
+Da muss ich wirklich aufpassen, wenn ich dies in Zukunft oefters machen will; ich bin
+mittlerweile so auf den ICE um 19:02 Uhr eingeschossen, so dass durchaus ein Risiko
+bestand, dass ich noch rechtzeitig aus dem Institut verschwinde. Da ich meine Reiseplanungen
+ein wenig in die Richtung versuche anzupassen, dass ich frueher am Abend in Bonn bin
+-- sonst wird es typischerweise nach Mitternacht, ehe ich wirklich im Bett bin.
+Netterweise frequentiert der ICE zwischen Amsterdam und Frankfurt ja im 2-Stunden Takt,
+so dass ich jetzt einfach mal die Verbindung um 17:00 Uhr austesten werde -- da muss
+sich noch zeigen, in wie weit dies gegenueber der spaeteren Verbindung wirklich ein
+Vorteil ist. Einen recht grossen Einfluss auf das Vorankommen hat natuerlich -- wie dies
+ja so ueblich ist -- wie es mit dem Transfer vom Uithof zum Bahnhof aussieht; ich musste
+eben schon feststellen, dass die Linie 12 zwar enger getaktet ist, dafuer aber die
+Linie 28 (welche ich gerne schon einmal als Alternative verwende) erst nach 17 Uhr
+wieder verkehrt. Aber gut, ich werde dies jetzt mal eine Weile testen, denn nur von
+einem Mal ist mit Sicherheit kein vernuenftiges Urteil moeglich.
+
+**:::**
+
 ### Wieder in Utrecht ###
-
-
 
 
 _Mon, 22. September 2014 -- 22:45_
@@ -24,13 +182,10 @@ Abwesenheit ein wenig gedauert, bis ich wieder Fuss gefasst habe; aus diesem Gru
 habe ich mir zunaechst einmal die Aufgaben geschnappt, welche eher begrenzt vom
 Umfang und recht gut definiert sind. Nach dieser "Aufwaermuebung" kann ich mich dann
 an die Dinge begeben, welche ein wenig mehr Zeit und Kontinuitaet erfordern.
- 
+
 **:::**
- 
- 
+
 ### In Koeln ###
-
-
 
 
 _Thu, 11. September 2014 -- 21:25_
@@ -97,13 +252,10 @@ habe; meine Erwartung ist schon, dass der Rechner im [KNMI](http://www.knmi.nl)
 einige Stunden beschaeftigt sein wird -- ist der Rest aber ok, dann kann ich
 einfach den Job laufen lassen und anschliessend einfach nur die Logs einsammeln,
 in welchen die Zahlen fuer die gewuenschten Statistiken zu finden sind.
- 
+
 **:::**
- 
- 
+
 ### Feueralarm ###
-
-
 
 
 _Tue, 09. September 2014 -- 20:19_
@@ -135,13 +287,10 @@ abzusetzen, aber da ich a) noch einen frisch aufgebruehten Becher Tee auf dem Sc
 stehen hatte und b) ich noch eine Weile den grossen Monitor ausnutzen wollte, schien
 es mir einfach das Beste die Zeit bis zum letzten Bus in Richtung Hoograve noch am
 Arbeitsplatz auszunutzen.
- 
+
 **:::**
- 
- 
+
 ### Zu Gast bei Veronica Mars ###
-
-
 
 
 _Thu, 04. September 2014 -- 21:36_
@@ -188,13 +337,10 @@ So komt es also, dass der Schoepfer von [Firefly](http://www.imdb.com/title/tt03
 [Dollhouse](http://www.imdb.com/title/tt2376425) (nur um mal die ersten Dinge zu nennen,
 welche mir da einfallen), hier einen recht schleimigen und gelangweilten Chef einer
 Leihwagenfirma spielt. Durchaus eine witzige Ueberraschung.
- 
+
 **:::**
- 
- 
+
 ### Kabouter ###
-
-
 
 
 _Wed, 03. September 2014 -- 23:38_
@@ -233,13 +379,10 @@ einen Blick auf die [Kabouter map](https://maps.google.com/maps/ms?ie=UTF8&hl=nl
 dann liegt der Verdacht recht nahe, dass es da noch einiges an Entdeckungspotential
 gibt... vor allen Dingen wenn der ueberwiegende Teil der bisher existierenden Aufnahmen
 in der Regel ohne GPS Informationen angeliefert wird.
- 
+
 **:::**
- 
- 
+
 ### Rechnen zum Schulstart ###
-
-
 
 
 _Tue, 02. September 2014 -- 21:31_
@@ -260,13 +403,10 @@ Einfacherem versuchen will, fuer den gaebe es gaebe es durchaus eine Alternative
 Das es auch hier -- trotz der allgemein als einfach eingestuften Addition (im Vergleich
 mit einer Multiplikation) -- immer noch recht fragwuerdige Antworten (und vor allen Dingen
 Begruendungen) herauskommen, stimmt schon ein wenig nachdenklich.
- 
+
 **:::**
- 
- 
+
 ### Odyssey 5 ###
-
-
 
 
 _Tue, 02. September 2014 -- 20:43_
@@ -278,7 +418,7 @@ nicht vergessen, dass ich in der Zwischenzeit ja keinstenfalls abstinent war.
 
 ~~~~
 Year Month     Added Completed Deleted Net
-- --------- ----- --------- ------- ---
+---- --------- ----- --------- ------- ---
 2014 January      21         1       0  20
      February     20         0      20   0
      April         0         4       0  -4
@@ -321,13 +461,10 @@ wenig unbefriedigt zurueck bleibt: der Erzaehlfaden bricht einfach ab, weil zumi
 eine zweite Season fehlt, in welcher der Plot zu einem Abschluss gebracht werden
 koennte. So aber haengt die Geschichte in der Luft... und eine Aufloesung wird es
 wohl nicht mehr geben.
- 
+
 **:::**
- 
- 
+
 ### Add some color to it ###
-
-
 
 
 _Thu, 28. August 2014 -- 20:40_
@@ -357,13 +494,10 @@ insight, the data points are now drawn using a color scale following the chronol
 order. Though already I have seen cases where this still might not be enough to
 disentangle multiple sub-sets of laser measurements, the colouring greatly improves
 readability of the plots and understanding the nature of the measurements.
- 
+
 **:::**
- 
- 
+
 ### Unterwegs in Utrecht ###
-
-
 
 
 _Thu, 28. August 2014 -- 19:37_
@@ -397,263 +531,3 @@ ist dass der Bereich Heldenbuurt/Wittevrouwen (auch) in photographischer Hinsich
 viel zu bieten hat. Da werde ich sicherlich noch einmal mit Julia losziehen, aber
 auch ansonsten stehen da wohl noch einmal ein paar Ausfluege auf dem Programm
 (dann allerdings mit der entsprechenden Ausruestung).
- 
-**:::**
- 
- 
-### TROPOMI Quicklooks - a real world example ###
-
-
-
-
-_Wed, 27. August 2014 -- 23:32_
-
-[As already explained](/blog/2014/2014-08/2014-08-26_20-24.html) I have been spending
-a good proportion of my recent time working on the implementation of quicklooks for
-the data taken during the calibration measurement campaign(s). After going from the
-conceptional idea -- what to plot and how -- to a first working implementation, for
-the past two days I now had a chance to actually get some real world experience with
-the routines I have been writing. As it turns out going from simulated test data
-(as used for running the unit tests) to actual measurement data is quite a change...
-and hence the outcome is less clear to read:
-
-![Quicklook](/blog/2014/2014-08/2014_08_25T16_01_00_PreEnvLaserDiodes.png)
-
-While some of the plots are pretty straight-forward to read, especially the 3D
-scatter plot might need some fine-tuning -- some color-coding of the points might
-help to guide the viewer's eyes. Perhaps a good idea to consult event displays used
-in particle physics experiments... 
- 
-**:::**
- 
- 
-### From sketch to implementation ###
-
-
-
-
-_Tue, 26. August 2014 -- 20:24_
-
-Lately I have been spending quite some time working on the implementation of tools
-for the visual inspection of out data as they are being produced by the TROPOMI L01b
-calibration pipeline. As we are heading (in rather quick leaps) towards the on-ground
-calibration measurements (OCAL), preparations are under way to inspection and judgment
-of the measured data in a timely fashion (such that feedback can be given to e.g. adjust
-or even repeat measurements). As it turns out simply starting to write some (Python) code
-for this might not be the best option, because when trying to arrange multiple objects
-(plots in this case) on a page (without some graphical drag-and-drop tool), things quite
-easily can get messed up.
-
-After getting overlapping frames and the like a number of times, I decided that it probably
-would be a good idea to step back from the code at all for a while to address the layout
-first; once there would be reasonably stable description of what exactly to plot and how
-to arrange the individual plots, I could then go about implementing this.
-
-![Sketch of the quicklook page](/blog/2014/2014-08/2014-08-19_Quicklook_sketch.png)
-
-The good thing about a sketch as the above is, that this will give enough information to
-start with the computation of the geometry. Obviously every element on the page has a
-certain position and size -- so using the sketch as an aid it (mainly) is a matter of
-patience to work out the lower-left point of a subplot and its size. Starting off with
-the size of each plot ...
-
-~~~~
-dim_scatter    = [500, 500]
-dim_hist       = [200, dim_scatter[1]]
-dim_lightcurve = [dim_scatter[0]+self.fill[0]+dim_hist[0], 200]
-dim_projection = [(dim_scatter[0]+dim_hist[0]-self.fill[0])/3.0,
-                  (dim_scatter[0]+dim_hist[0]-self.fill[0])/3.0
-                 ]
-dim_figure     = [2.0*self.fill[0]+dim_lightcurve[0],
-                  4.0*self.fill[1]+dim_lightcurve[1]+dim_scatter[1]+dim_projection[1]
-                 ]
-~~~~
-
-... we are able to define the bounding boxes for each of the sub-plots:
-
-~~~~
-rect = {}
-# Total size of the figure
-rect["figure"] = dim_figure
-# Bounding box for the lightcurve of the laser intensity
-rect["lightcurve"] = [self.fill[1]/dim_figure[1],
-                      self.fill[0]/dim_figure[0],
-                      (dim_lightcurve[1])/dim_figure[1],
-                      (dim_lightcurve[0])/dim_figure[0]
-                     ]
-# Bounding box for the 3D scatter plot of the laser track
-rect["scatter"] = [(2*self.fill[1]+dim_lightcurve[1])/dim_figure[1],
-                   self.fill[0]/dim_figure[0],
-                   (dim_scatter[1])/dim_figure[1],
-                   (dim_scatter[0])/dim_figure[0]
-                  ]
-# Bounding box for the histogram of the laser intensities
-rect["hist"] = [(2*self.fill[0]+dim_lightcurve[1])/dim_figure[1],
-                (2*self.fill[1]+dim_scatter[0])/dim_figure[0],
-                (dim_hist[1])/dim_figure[1],
-                (dim_hist[0])/dim_figure[0]
-               ]
-~~~~
-
-Once all the bounding boxes are defined (and are returned in the form of a dictionary),
-we finally can go about creating the plots themselves: first we define the figure
-[axes](http://matplotlib.org/api/axes_api.html) ...
-
-~~~~
-axes = self.axes_scanning_quicklook (data.shape)
-fig  = plt.figure(figsize=(axes["figure"][1]/100, axes["figure"][0]/100))
-
-axis_scatter    = plt.axes(axes["scatter"], projection='3d')
-axis_lightcurve = plt.axes(axes["lightcurve"])
-axis_hist       = plt.axes(axes["hist"])
-~~~~
-
-... and then have [Matplotlib](http://matplotlib.org) display the data as
-[scatter plot](http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.scatter)
-or otherwise:
-
-~~~~
-axis_scatter.scatter(xs=track["x"], ys=track["y"], zs=track["z"],
-                     zdir='z',
-                     cmap=cm.cubehelix)
-axis_scatter.set_xlabel("\nColumn / Wavelength")
-axis_scatter.set_ylabel("\n\nRow / Swath")
-axis_scatter.text2D(0.9, 0.95,
-                    "Track points ({})".format(track["method"]),
-                    verticalalignment='bottom',
-                    horizontalalignment='right',
-                    transform=axis_scatter.transAxes,
-                    color='green')
-~~~~
-
-All of this put together finally yields the overview page as envisioned in the
-original sketch:
-
-![Implementation of the quicklook page](/blog/2014/2014-08/2014-08-19_Quicklook_implementation.png)
-
-As can be guessed the whole process took a while from beginning to end; a good
-fraction of the time I have been struggling with fine-tuning the output of Matplotlib.
-While indeed there are quite a few examples available, I am still missing a more
-systematic demonstration of how exactly the various plot configuration settings
-influence the final outcome.
- 
-**:::**
- 
- 
-### Nicht verlaesslich ###
-
-
-
-
-_Mon, 25. August 2014 -- 07:18_
-
-Wie schwer kann es eigentlich sein, ein Ansage die Wagenreihung eines Zuges betreffend
-richtig zu kriegen? Als der ICE 222 eben in Koeln einfuhr entsprach die Wagenreihung
-genau dem umgekehrten dessen, was noch wenige Augenblicke vorher ueber die Lautsprecher
-angesagt wurde. Wie gleich mehrfach darauf hingewiesen wurde, sollte der ICE heute
-in umgekehrter Reihenfolge verkehren: dies wuerde also bedeuten, dass die Wagen der
-1. Klasse bei der Eingfahrt in Koeln im vorderen Bereich des Zuges, und damit in den
-Gleisabschnitten D-E zu finden sein wuerden. Was hingegen ueber sowohl Anzeige als
-auch Ansage verbreitet wurde war, dass die 1. Klasse im Abschnitt B zu finden sein
-wuerde, was dann fuer mich also heissen wuerde, dass ich irgendwo zwischen Abschnitt
-C und E einsteigen kann. Als der ICE dann (mit einer Verspaetung von 20 Minuten)
-im Bahnhof auftauchte, war die Wagenreihung genau umgekehrt gegenueber dem was angezeigt
-und angesagt worden war. Dass es unter diesen Umstaenden eine leichtes Chaos auf dem
-Bahnsteig gibt duerfte wohl nicht sonderlich verwundern; haette man natuerlich alles
-vermeiden koennen, aber das wuerde natuerlich voraussetzen, dass man korrekte Informationen
-erhaelt (was anscheinend nicht ganz so einfach ist).
- 
-**:::**
- 
- 
-### Warten in Koeln ###
-
-
-
-
-_Mon, 25. August 2014 -- 06:41_
-
-Also das kommt mir nun alles andere als gelegen. Hier gab es gerade noch eine Durchsage,
-dass der ICE 222 nach Amsterdam mit einer (derzeitigen) Verspaetung von ca. 20 Minuten
-erwartet wird. Waehrend dies fuer sich genommen (angesichts der Termperaturen) schon
-recht unangenehm ist, bin ich darueber hinaus auch ein wenig skeptisch, was die weitere
-Reise betrifft. Als Grund fuer die Verspaetung wurden hier "technische Probleme am
-Zug" genannt, was durchaus auch schon laengeren Verspaetungen oder gar Umsteigeaktionen
-unterwegs gefuehrt hat. Nun, ich hoffe mal, dass es da nicht zum auessersten kommt, aber
-insgesammt werde ich mich da in jedem Fall schon einmal auf ein spaeteres Eintreffen
-in Utrecht einstellen koennen.
- 
-**:::**
- 
- 
-### Unterwegs in Utrecht ###
-
-
-
-
-_Fri, 22. August 2014 -- 14:50_
-
-Vielleicht sollte ich doch noch einmal zumindest einen kleinen Eindruck von meinem
-kurzen Ausflug nach [Nieuwegein](http://de.wikipedia.org/wiki/Nieuwegein) wiedergeben;
-es sind jetzt zwar nicht so sonderlich viele Bilder geworden (die Sonne verschwindet
-mittlerweile doch eine ganze Ecke frueher), aber fuer eine erste Idee von der Umgebung
-reicht es vielleicht.
-
-![Nieuwegein](/blog/2014/2014-08/dsc_20140820_194329_Nieuwegein.jpg)
-
-Noch als ich im Bus sass musste ich an eine Trabantenstadt denken: die Art wie die
-Strassen angelegt und die Haeuser ausgerichtet sind, laesst deutlich erkennen, dass
-hier kaum etwas organisch gewachsen, sondern mehr oder weniger auf dem Reissbrett
-entworfen worden ist. Aber, und das wiederum fand ich ueberraschend, es gibt auch
-kleiner Ecken, welche aus dem geradlinigen Schema herausfallen - das sind dann aber
-auch deutlich erkennbar wohlhabendere Nachbarschaften.
- 
-**:::**
- 
- 
-### Koennte ein wenig lange dauern ###
-
-
-
-
-_Thu, 21. August 2014 -- 14:01_
-
-Also wenn dem wirklich so waere, dass waere dies doch ein wenig zu weit in der Zukunft...
-
-~~~~
-    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .     . Done
-    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .     + Started
-450 |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .     X Pending
-    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-    |  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-    |  +  +  +  +  +  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-    |  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  +  +  +  +  +  +  +  +  +
-    |  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X
-    |  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X  X
-  0 +--------------------------------------------------------------------------------
-      26 27 28 29 30 31 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21
-      Jul               Aug
-
-    Add rate:         2.7/d      Estimated completion: 2024-02-29 (9.5 yrs)
-    Done/Delete rate: 2.7/d
-~~~~
-
-Da ich ja schon probiere meine Aufgaben so gut es geht durch [Taskwarrior](http://taskwarrior.org) zu verwalten -- was mir dann auch bei dem Abliefern der woechentlichen Arbeitsberichte hilft -- kann es durchaus schon einmal vorkommen, dass sich die Liste an Tasks recht stark veraendert. Wenn ich, so wie gestern geschehen, die sich aus einer Besprechung ergebenden Aufgaben allesamt eintrage und dann
-
-~~~~
-task burndown.daily pro:tropomi
-~~~~
-
-anwerfe, kann es schon einmal paasieren, dass die Extrapolation der Zeit, welche zum Komplettieren aller Aufgaben erwartet wird, irgendwo ziemlich weit in der Zukunft liegt. Gut, wenn ich es dann im Gegenzug schaffe mehrere kleine Tasks in recht kurzer Zeit abzuarbeiten, dann wandert das Enddatum auch ganz schnell wieder in Richtung heute. Das sollte man sich einfach immer wieder in Erinnerung halten: am stabilsten ist die Extrapolation natuerlich, wenn ich gleich von Anfang an alle Aufgaben fuer ein Projekt weiss und diese direkt eintragen kann; wird dann im folgenden nur noch abgearbeitet, was man sich notiert hat, dann ist das "completion data" deutlich brauchbarer, als wenn immer wieder Dinge mit auf der Liste landen (was andererseits aber auch der realistischere Fall ist).
- 
-**:::**
- 

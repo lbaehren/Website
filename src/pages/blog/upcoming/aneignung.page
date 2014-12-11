@@ -1,0 +1,30 @@
+---
+title: "Aneignung"
+in_menu: false
+author: "Lars Baehren"
+---
+
+## {title:} ##
+
+_archived_
+
+Also ein klein wenig fuehle ich mich da doch an so manche Untersuchungsausschuesse des Deutschen Bundestages erinnert, wo mit einem Male Materialien als klassifiziert erklaert wurden, welche zuvor in Tageszeitungen veroeffentlicht worden waren (was dann zu eben so absurden Dingen fuehrte dass jemand seinen eigenen Artikel nicht mehr haette lesen duerfen).
+
+~~~~
+# Copyright 2014 KNMI
+# This software is the proprietary information of KNMI
+# All rights Reserved
+""" Module containing utility functions for accessing full detector data from LX
+    files.
+"""
+~~~~
+
+~~~~
+* commit 969b497595c0eb3be264fd172a1ee9d6f1c9f132
+  Author: bahren <bahren@0cc184cd-a8c2-4f43-91e4-3451699bf036>
+  Date:   Tue Oct 15 16:38:18 2013 +0000
+
+      Coding style adjustments, using both comments provided by Werner and output from pyLint.
+
+      git-svn-id: https://svn.knmi.nl/svn/tropocal/ocalfw/trunk@690
+~~~~
