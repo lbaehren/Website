@@ -8,6 +8,118 @@ author: "Lars Baehren"
 
 **:::**
 
+### Repair completed ###
+
+
+_Mon, 15. December 2014 -- 08:00_
+
+Das ist natuerlich eine Art von Benachrichtigung, wie ich sie gerne zu lesen bekomme:
+
+> Dear user,
+>
+>
+> The system has completed repairing the degraded storage space (Volume 1) with
+Hot Spare disk (Disk 11).
+>
+>
+> Sincerely,
+> Synology DiskStation
+
+Nachdem ich am letzten November-Wochenende zwei Festplatten in der [DiskStation](https://www.synology.com/en-global/products/DS2413+)
+ausgetauscht habe, brauchte das System (erwartungsgemaess) eine Weile, um die Integritaet der
+Daten wieder herzustellen und alles auf die neue Konfiguration abzustimmen. Da ich mir
+aber vor einer Weile die Email-Benachrichtigung eingestellt hatte, kriege ich sogar
+hier in Utrecht mit, dass sich zuhause abspielt (zumindest was die IT-Infrastruktur betrifft).
+Dazu gehoert natuerlich auch, wenn eine der im NAS eingebauten Festplatten einen Fehler
+aufweist:
+
+> Dear user,
+>
+> The system is now using Hot Spare disk (Disk 11) to repair the degraded storage space (Volume 1).
+>
+> Sincerely,
+> Synology DiskStation
+
+Von den 12 Einschueben, welche zur Verfuegung stehen, werden lediglich 11 aktiv genutzt;
+um die Verfuegbarkeit des Systems im Falle eines Festplattenfehlers sicherzustellen,
+ist eine Platte als "Hot Spare" reserviert. Kommt es also zu einem Ausfall, dann kann
+der Server direkt mit der Wiederherstellung der Daten beginnen, ohne dass ich dafuer
+erst einmal eine neue Festplatte einbauen muss -- dies macht die ganze Sache einfach
+deutlich entspannter.
+
+**:::**
+
+### Funktioniert wieder ###
+
+
+_Thu, 11. December 2014 -- 21:49_
+
+Das ich es je geschafft mir die Daten, welche ich zum arbeiten mitgenommen hatte,
+durch einen doofen Programmierfehler zu zerschiessen (was bedeutet dass ich diese von
+zuhause noch einmal uebertragen muss), konnte ich nicht wie geplant an dem Code fuer
+die Generierung der Testdaten fuer meine Algorithmen arbeiten. Aus diesem Grunde habe
+ich mich dann der Maschinerie hinter dem Blog zugewandt, welche einfach schon zu
+lange ein paar recht wichtige Funktionalitaeten vermisst hat; dazu gehorte vor allen
+Dingen der Zusammenbau der [Index-Seite fuer den Blog](/blog/index.html). Wie so
+ueblich enthaelt diese Seite die letzten N Eintraege in chronologisch umgekehrter Folge
+-- worauf sich dann auch die Aufgabe ableiten laesst, welche es zu loesen gibt. Einen
+Teil davon hatte ich ja bereits (neu und kompakter) implementiert, aber was mir eben
+noch fehlte war der letzte Schritt, naemlich aus der Liste der letzten Eintraege die
+Seite zusammenzubauen. Einen nicht unerheblichen Teil davon konnte ich von der Routine
+verwenden, welche fuer den Index der in Vorbereitung befindlichen Eintraege zustaendig
+ist -- der wesentliche Unterschied ist allerdings dass ich nicht nur die Ueberschriften
+sondern auch den vollen Text brauche.
+
+In der Verhangenheit hatte dies mitunter zu einigen merkwuerdigen Resulaten gefuehrt,
+weil ich via diverser `grep` Statements probiert habe sowohl den Header als auch andere
+Metadaten herauszufiltern. Wenn dann einer der Patterns auch im Text des Blog-Eintrages
+auftauchte, konnte es durchaus schon einmal passieren, dass vereinzelte Passagen
+verschluckt wurden. Damit duerfte nun aber Schluss sein -- und dies mit einem
+Bruchteil an Code!
+
+Mit zu verdanken habe ich dies dem [Advanced Bash-Scripting Guide](http://www.tldp.org/LDP/abs/html),
+einer Sammlung an Anleitungen und Ausfuehrungen, welche mir schon so manches Mal
+beim Scripten geholfen hat. Der Ausgangspunkt meiner Ueberlegungen war, dass ich
+es via `sed` schaffen sollte einfach den kompletten Header abzuschneiden, so das
+ich mir alle weiteren Verrenkungen mit `grep` sparen kann. Da mein Wissen in
+Sachen "Regular Expressions" sich doch immer wieder als ein wenig lueckenhaft
+herausstellt, war da der Zeitpunkt gekommen, einmal wieder den Guide zu Hand zu
+nehmen. Praktischerweise findet sich darin gegen Ende ein "Sed and Awk
+Micro−Primer", wo ich dann den folgenden Befehl finden konnte:
+
+~~~~~~~~
+sed 11,/^$/d
+~~~~~~~~
+
+Als Beschreibung hierzu hiess es:
+
+> Delete from beginning of input up to, and including first blank line.
+
+Das kam der Sache schon ziemlich nahe und lieferte auf Anhieb gleich ein Ergebnis,
+welches ich verwenden konnte: einfach die entsprechende Datei via `cat` ausgeben lassen
+und dann in `sed` pipen.
+
+~~~~~~~~
+cat $1 | sed 11,/^$/d
+~~~~~~~~
+
+An der Stelle ist mir dann aufgefallen, dass sich dies sogar noch ein wenig mehr verbessern
+laesst, indem ich nicht nach der ersten Leerzeile, sondern nach der eh herauszufilternden
+Titelzeile suche (weil diese eh anders aufbereitet werden muss). Einfach mal schnell
+ausprobieren...
+
+~~~~~~~~
+cat $1 | sed 1,/"##"/d
+~~~~~~~~
+
+... und siehe da, schon habe ich ein fertiges Script, welches nir die Index-Seite fuer den
+Blog produziert. Das schoene daran ist, dass dies mit deutlich weniger Code und deutlich
+weniger Anfaelligkeit gegenueber dem was im Eintrag selber steht geschieht (wo es in der
+Vergangenheit naemlich durchaus schon einmal Probleme gab). Damit kann also der Blog fuer
+das erste **endlich** wieder online gehen!
+
+**:::**
+
 ### Daten weg ###
 
 
@@ -403,131 +515,3 @@ Einfacherem versuchen will, fuer den gaebe es gaebe es durchaus eine Alternative
 Das es auch hier -- trotz der allgemein als einfach eingestuften Addition (im Vergleich
 mit einer Multiplikation) -- immer noch recht fragwuerdige Antworten (und vor allen Dingen
 Begruendungen) herauskommen, stimmt schon ein wenig nachdenklich.
-
-**:::**
-
-### Odyssey 5 ###
-
-
-_Tue, 02. September 2014 -- 20:43_
-
-Wie man erkennen kann, war ich mit [Odyssey 5](http://www.imdb.com/title/tt0318236)
-doch eine Weile beschaeftigt: fuer die 20 Episoden habe ich insgesamt etwas mehr als
-ein halbes Jahre benoetigt, aber auf der anderen Seite sollte man sicherlich auch
-nicht vergessen, dass ich in der Zwischenzeit ja keinstenfalls abstinent war.
-
-~~~~
-Year Month     Added Completed Deleted Net
----- --------- ----- --------- ------- ---
-2014 January      21         1       0  20
-     February     20         0      20   0
-     April         0         4       0  -4
-     May           1         6       0  -5
-     June          1         0       0   1
-     July          0         2       0  -2
-     August        0         5       0  -5
-     September     0         5       0  -5
-
-     Average       5         2       2   0
-~~~~
-
-Aufmerksam geworden bin ich auf [Odyssey 5](http://en.wikipedia.org/wiki/Odyssey_5)
--- wenn ich mich da korrekt entsinne -- als ich seinerzeit ein wenig ueber (nach Ansicht
-so mancher) fruehzeitig abgesetzte Fernsehserien recherchiert habe. Bei der Gelegenheit
-waren mir durchaus einige bis dato unbekannte Titel untergekommen -- so unter
-anderem [Arrested Development](/blog/2014/2014-04/2014-04-10_22-00.html) -- wo
-ich mich eben nur nach und nach durchschauen kann. Die Tatsache aber, dass es sich
-um eine Science-Fiction Serie handelt, welche vor ihrem eigentlichen Abschluss
-abgesetzt wurde, macht es fuer schon recht interessant; folgerichtig also bin ich
-ein wenig auf Suche gegangen, denn ich finde es schon am besten wenn ich mir selber
-ein Bild von der Sache (oder der Serie) machen kann.
-
-> The story revolves around a set of people on a routine spaceflight of the
-> space shuttle Odyssey, on August 7, 2007: four astronauts, a scientist, and a
-> television news reporter. However, during the course of the flight, the Earth
-> rapidly dissolves into a fiery ball and suddenly implodes. Before regaining
-> control of the Odyssey, one astronaut is killed. The remaining five crew members
-> resign themselves to death, but a non-organic being called the Seeker rescues
-> them. Fifty other worlds have been destroyed in the same way as Earth, but the
-> Seeker has always arrived too late to observe it and this is the first time he
-> has found survivors. He offers to send them back in time five years (and
-> therefore to present day, at the time of the series), so that they can prevent
-> the disaster. He sends only their consciousnesses back, and not their physical
-> bodies, as physical time travel is impossible. The mission commander knows only
-> a codeword associated with the disastrous event: Leviathan.
-
-Das Risiko bei einem solchen Vorhaben ist es durchaus, dass man anschliessend ein
-wenig unbefriedigt zurueck bleibt: der Erzaehlfaden bricht einfach ab, weil zumindest
-eine zweite Season fehlt, in welcher der Plot zu einem Abschluss gebracht werden
-koennte. So aber haengt die Geschichte in der Luft... und eine Aufloesung wird es
-wohl nicht mehr geben.
-
-**:::**
-
-### Add some color to it ###
-
-
-_Thu, 28. August 2014 -- 20:40_
-
-There is a lot that can happen within a few days: after rolling out the
-[first version of our quicklooks](/blog/2014/2014-08/2014-08-26_20-24.html) for
-the inspection of the data from the pre-environmental tests before the upcoming
-calibration campaign, being confronted with real-world data spawned a flurry of
-changes to the code. First of all there was performance: extracting the track of
-the laser diode shining onto the detector pixels turned out to be prohibitive for
-larger datasets. It took a while going through the underlying routine in order a)
-not only to identify where exactly processing time was burned up but b) come up
-with an improvement. That the latter was indeed the case became evident from a
-number of timing runs: with a factor 4-5 speed-up visual inspection of the data
-from the laser diode scans became feasible. However, as seen from one of the first
-[real-world results](/blog/2014/2014-08/2014-08-27_23-32.html) are number of
-additional modifications where in order...
-
-![Scanning data quicklook](/blog/2014/2014-08/2014-08-28_Quicklook_scanning.png)
-
-If the motion of the scanning laser across the plane of the detector no longer is
-a single smooth motion, but rather a number of subsequent scans (e.g. along one of
-the detector pixel coordinate axes), the resulting plots contain clusters of data
-points for which the time-sequence information -- at least not without some
-additional visual encoding -- becomes lost. As a first measure to gain back some
-insight, the data points are now drawn using a color scale following the chronological
-order. Though already I have seen cases where this still might not be enough to
-disentangle multiple sub-sets of laser measurements, the colouring greatly improves
-readability of the plots and understanding the nature of the measurements.
-
-**:::**
-
-### Unterwegs in Utrecht ###
-
-
-_Thu, 28. August 2014 -- 19:37_
-
-Nachdem ich letzte Woche zu einem Erkundungsmarsch unterwegs war, habe ich mir diese
-Wochen ebensfalls wieder einen Abend (oder genauer gesagt spaeten Nachmittag) genommen,
-um mich ein wenig an der frischen Luft zu nehmen und Utrecht mit der Kamera in der Hand
-zu erkunden. Wie sich anhand der in die Bilder eingebetteten GPS-Positionen erkennen
-laesst, habe ich es durchaus geschafft ein wenig Strecke zurueckzulegen.
-
-![GPS positions](/blog/2014/2014-08/2014-08-27_Photowalk_Utrecht.png)
-
-Was mich (eigentlich schon nach recht kurzer Zeit) ziemlich geaergert hat, war die
-Tatsache dass ich das Stativ nicht dabei hatte; so war natuerlich nicht mit laengeren
-Belichtungszeiten geschweige denn HDR Aufnahmen. Gerade am spaeten Nachmittag, wenn
-die Sonne sich aufmacht vom Himmel zu verschwinden, hat man es mit so einer Bandbreite
-an Helligkeitsstufen und einer Farbpalette zu tun, dass mir HDR einfach als die am
-meisten logische Technik einfaellt, wie man derartige Szenen am besten einfangen
-kann. Ganz mit leeren Haenden (bzw. einer leeren Speicherkarte) bin ich dann allerdings
-doch nicht zurueckgekommen: vor allen Dingen am sued-oestlichen Rand des Hauptbahnhofs
-hatte ich nun endlich einmal die Gelegenheit mir die Graffiti -- welche ich aus dem
-Bus schon so oft gesehen habe -- endlich einmal ein wenig genauer vorzunehmen. Das
-letzte Mal habe ich mich dort sicherlich nicht blicken lassen, denn auch mit dem
-[24-70mm Objektiv](/photography/lenses.html) hatte ich immer noch haeufig einen zu
-engen Blickwinkel.
-
-![Graffiti](/blog/2014/2014-08/dsc_20140827_201551_Graffiti_Utrecht.jpg)
-
-Was ich in jedem Fall wieder festhalten kann -- und der Eindruck ist nicht ganz neu --
-ist dass der Bereich Heldenbuurt/Wittevrouwen (auch) in photographischer Hinsicht
-viel zu bieten hat. Da werde ich sicherlich noch einmal mit Julia losziehen, aber
-auch ansonsten stehen da wohl noch einmal ein paar Ausfluege auf dem Programm
-(dann allerdings mit der entsprechenden Ausruestung).

@@ -1,0 +1,75 @@
+---
+title: "Funktioniert wieder"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-12-11T21:49:14.00Z
+created_at: 2014-12-11T20:02:00.00Z
+---
+
+## {title:} ##
+
+_Thu, 11. December 2014 -- 21:49_
+
+Das ich es je geschafft mir die Daten, welche ich zum arbeiten mitgenommen hatte,
+durch einen doofen Programmierfehler zu zerschiessen (was bedeutet dass ich diese von
+zuhause noch einmal uebertragen muss), konnte ich nicht wie geplant an dem Code fuer
+die Generierung der Testdaten fuer meine Algorithmen arbeiten. Aus diesem Grunde habe
+ich mich dann der Maschinerie hinter dem Blog zugewandt, welche einfach schon zu
+lange ein paar recht wichtige Funktionalitaeten vermisst hat; dazu gehorte vor allen
+Dingen der Zusammenbau der [Index-Seite fuer den Blog](/blog/index.html). Wie so
+ueblich enthaelt diese Seite die letzten N Eintraege in chronologisch umgekehrter Folge
+-- worauf sich dann auch die Aufgabe ableiten laesst, welche es zu loesen gibt. Einen
+Teil davon hatte ich ja bereits (neu und kompakter) implementiert, aber was mir eben
+noch fehlte war der letzte Schritt, naemlich aus der Liste der letzten Eintraege die
+Seite zusammenzubauen. Einen nicht unerheblichen Teil davon konnte ich von der Routine
+verwenden, welche fuer den Index der in Vorbereitung befindlichen Eintraege zustaendig
+ist -- der wesentliche Unterschied ist allerdings dass ich nicht nur die Ueberschriften
+sondern auch den vollen Text brauche.
+
+In der Verhangenheit hatte dies mitunter zu einigen merkwuerdigen Resulaten gefuehrt,
+weil ich via diverser `grep` Statements probiert habe sowohl den Header als auch andere
+Metadaten herauszufiltern. Wenn dann einer der Patterns auch im Text des Blog-Eintrages
+auftauchte, konnte es durchaus schon einmal passieren, dass vereinzelte Passagen
+verschluckt wurden. Damit duerfte nun aber Schluss sein -- und dies mit einem
+Bruchteil an Code!
+
+Mit zu verdanken habe ich dies dem [Advanced Bash-Scripting Guide](http://www.tldp.org/LDP/abs/html),
+einer Sammlung an Anleitungen und Ausfuehrungen, welche mir schon so manches Mal
+beim Scripten geholfen hat. Der Ausgangspunkt meiner Ueberlegungen war, dass ich
+es via `sed` schaffen sollte einfach den kompletten Header abzuschneiden, so das
+ich mir alle weiteren Verrenkungen mit `grep` sparen kann. Da mein Wissen in
+Sachen "Regular Expressions" sich doch immer wieder als ein wenig lueckenhaft
+herausstellt, war da der Zeitpunkt gekommen, einmal wieder den Guide zu Hand zu
+nehmen. Praktischerweise findet sich darin gegen Ende ein "Sed and Awk
+Micro−Primer", wo ich dann den folgenden Befehl finden konnte:
+
+~~~~~~~~
+sed 11,/^$/d
+~~~~~~~~
+
+Als Beschreibung hierzu hiess es:
+
+> Delete from beginning of input up to, and including first blank line.
+
+Das kam der Sache schon ziemlich nahe und lieferte auf Anhieb gleich ein Ergebnis,
+welches ich verwenden konnte: einfach die entsprechende Datei via `cat` ausgeben lassen
+und dann in `sed` pipen.
+
+~~~~~~~~
+cat $1 | sed 11,/^$/d
+~~~~~~~~
+
+An der Stelle ist mir dann aufgefallen, dass sich dies sogar noch ein wenig mehr verbessern
+laesst, indem ich nicht nach der ersten Leerzeile, sondern nach der eh herauszufilternden
+Titelzeile suche (weil diese eh anders aufbereitet werden muss). Einfach mal schnell
+ausprobieren...
+
+~~~~~~~~
+cat $1 | sed 1,/"##"/d
+~~~~~~~~
+
+... und siehe da, schon habe ich ein fertiges Script, welches nir die Index-Seite fuer den
+Blog produziert. Das schoene daran ist, dass dies mit deutlich weniger Code und deutlich
+weniger Anfaelligkeit gegenueber dem was im Eintrag selber steht geschieht (wo es in der
+Vergangenheit naemlich durchaus schon einmal Probleme gab). Damit kann also der Blog fuer
+das erste **endlich** wieder online gehen!

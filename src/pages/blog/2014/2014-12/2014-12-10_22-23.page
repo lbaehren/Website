@@ -1,0 +1,47 @@
+---
+title: "Wieder einen Schritt naeher"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-12-10T22:23:26.00Z
+created_at: 2014-12-10T21:26:02.00Z
+---
+
+## {title:} ##
+
+_Wed, 10. December 2014 -- 22:23_
+
+Und doch endlich wieder einmal einen kleinen Schritt weiter. Waehrend ich in der
+Zwischenzeit durchaus ein paar wenige Eintraege geschrieben habe, ist die Infrastruktur
+immer noch nicht auf dem Stand, dass ich ohne weiteres den Blog mit allen dazu
+gehoerenden Seiten aktualisieren kann. Was mir derzeit noch fehlt ist, dass die
+Index-Seiten und die Seite mit den letzten Eintraegen aufs Neue gebaut werden; zumindest
+was letzteres betrifft habe ich nun einen kleinen Fortschritt machen koennen:
+
+~~~~~~~~
+    for FILE in `ls ${PATH_BASEDIR}`
+    {
+        if [ -d "$FILE" ]
+        then
+            find $FILE -name "*.page" | grep -v index | grep -v upcoming >> ${tmpFile}
+        fi
+    }
+
+    # Sort through the list of entries
+    varEntries=`cat ${tmpFile} | tail -n ${nofEntries} | sort -r`
+~~~~~~~~
+
+Derzeit spuckt die Routine nur eine Liste mit den wesentlichen Eigenchaften der
+Eintraege aus, aber der folgende Schritt darauf eine Seite zu basteln duerfte
+(zumindest hoffe ich dies) nicht mehr so schwer sein.
+
+Rein von der technischen Seite her bin ich mit dem bisher erstellten recht zufrieden:
+was ich bis jetzt am Laufen habe ist deutlich modularer was die einzelnen Schritte
+betrifft, welche es auszufuehren gibt. Dadurch dass alles als ein Bash Script geschrieben
+ist, gibt es zwar nicht die gleiche Art der Modularisierung, wie die dies z.B. bei
+C++ kriegen wuerde, aber da es eben nicht einfach nur ein gigantisches Script ist,
+kann ich die einzelnen Teile auf immer wieder neue Weise zusammenfuegen. Dabei gibt
+es einfach ein paar Standardaufgaben, welche man einmal implementieren sollte... und
+dann ist es aber auch gut damit. Was jetzt aber noch ansteht ist, dass ich mir noch
+einmal ein wenig Zeit dafuer reserviere, um alle Bauteile zusammenzufuegen und die
+Index-Seiten auch wirklich wieder zu generieren. Wenn dies der Fall ist, steht den
+regelmaessigen Updates nichts mehr im Weg.

@@ -1,0 +1,21 @@
+---
+title: "Daten weg"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-12-11T18:12:36.00Z
+created_at: 2014-12-11T18:06:03.00Z
+---
+
+## {title:} ##
+
+_Thu, 11. December 2014 -- 18:12_
+
+So kann man sich natuerlich auch selber sabotieren: durch die Verwechslung eines
+Dateinamens habe ich mir (noch vor Arnhem) die Daten gekillt, welche ich mir noch
+extra fuer die Reise auf das Laptop geschaufelt hatte. Zunaechst dachte ich, dass
+ich mit den Code selber zu weit gegangen bin - zu viele Schritte ohne zwischenzeitliches
+Backup -- aber nach ein wenig Suche stellte sich heraus, dass der Code (weitestgehend)
+ok war... sieht man einmal von der Tatsache ab, dass ich an einer Stelle den falschen
+Pfad verwendet habe. Der Effekt von dieser Aktion war, dass ich eben genau jene
+Daten ueberschrieben habe, welche ich zum Testen verwenden wollte. Sieht also ganz
+danach aus, als kann ich mir zumindest dieses Vorhaben fuer die Rueckfahrt abschreiben.
