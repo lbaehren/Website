@@ -290,6 +290,7 @@ publish_entry ()
         varTimeheaderSource=`get_timeheader $1`
         varTimeheaderNew=`get_timeheader`
         varTimestamp=`get_timestamp`
+        varRecentEntries=15
 
         echo " -> Entry \"${varTitle}\" selected for publication"
         echo "    - Source file : $1"
@@ -312,6 +313,10 @@ publish_entry ()
         echo " -> loading published entry into editor for final changes ..."
         open -a ${EDITOR} ${varEntry}
 
+        # Rebuild the blog index
+        echo " -> rebuilding blog index pages ..."
+        create_index_file_upcoming > ${PATH_BASEDIR}/${PATH_UPCOMING}/index.page
+        create_index_file_blog ${varRecentEntries}
     fi
 }
 
@@ -348,6 +353,11 @@ case $1 in
         print_help
     ;;
     "-I")
+        echo "Updating index file for upcoming entries ..."
+        create_index_file_upcoming > ${PATH_BASEDIR}/${PATH_UPCOMING}/index.page
+        create_index_file_blog ${varRecentEntries}
+    ;;
+    "--index")
         echo "Updating index file for upcoming entries ..."
         create_index_file_upcoming > ${PATH_BASEDIR}/${PATH_UPCOMING}/index.page
         create_index_file_blog ${varRecentEntries}
