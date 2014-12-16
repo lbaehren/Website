@@ -8,6 +8,118 @@ author: "Lars Baehren"
 
 **:::**
 
+### Preparing to copy ###
+
+
+_Tue, 16. December 2014 -- 21:00_
+
+Ok, das kann mal noch eine Weile dauern, ehe es ueberhaupt so richtig losgeht:
+
+![Finder window](/blog/2014/2014-12/2014-12-16_File_copy.png)
+
+Heute Nachmittag habe ich hier im Institut eine groessere Sammlung an Festplatten
+-- alle irgendwo zwischen 120 GB und 1 TB -- einsammeln koennen und diese zwecks
+Weiterverwendung in das [Drobo](http://www.drobo.com/storage-products) gesteckt,
+welches ich hier auf dem Schreibtisch stehen habe. Da ich zuletzt ja ein wenig
+Schwierigkeiten mit der Festplatte hatte, auf welcher mein [Time Machine](http://support.apple.com/en-us/HT201250)
+Backup liegt, hat es mich schon eine Weile gejuckt endlich einmal weg von der
+Single-Disk Loesung zu kommen. Da ich das Drobo eh fuer diesen Zweck angedacht hatte,
+es mir bisher aber leider immer noch an Festpatten mangelte, war dies heute natuerlich
+eine willkommene Gelegenheit da endlich einmal taetig zu werden. Wie dies ja bei
+(groesseren) Betrieben durchaus schon einmal ueblich ist (vor allen Dingen wenn die
+ICT eine gewisse Groesse ueberschreitet), wird in regelmaessigen Abstaenden die
+alte Computer-Ausruestung unter den Mitarbeitern verscherbelt -- so auch hier bei
+[SRON](http://www.sron.nl). Ich hatte dem allerdings nicht sonderlich viel Beachtung
+geschenkt, weil ich jetzt nicht unbedingt den Bedarf an alten Computern habe -- da
+bedurfte es schon einer Rundmail...
+
+> De verloting is weer klaar, maar ik heb nog wat oudere computers over.
+> in de "oude bibliotheek" in de kelder kan je nog kijken of er nog iets voor je is.
+
+... und einem etwas spaeteren Gespraech mit Tobias, um es bei mir klingeln zu lassen,
+dass es sich ja nicht nur um komplette Rechnern, sondern auch um allerlei Bauteile
+handeln kann. Also schnell mal runter und den Keller gerannt, um zu schauen was sich
+dort noch so finden liess. Da ich mit meinem recht spezifischen Wunsch wohl ein wenig
+ausserhalb dessen lag, was die meisten anderen haben wollten, hatte ich noch eine
+groessere Kiste mit Festplatten zur Auswahl. Wirklich davon gebrauchen konnte ich
+nur einen Teil -- weil ich eben nur mit SATA Platten etwas anfangen kann -- aber
+ich bin doch mit einem recht ansehnlichen Stapel zurueck ins Buero gekommen. Aus diesem
+Vorrat habe ich mir (erwartungsgemaess) die groessten Platten geschnappt und ins
+Drobo eingebaut -- schon eine Weile her, dass ich dies zum letzten Mal gemacht habe
+(seitdem die [Synology DiskStation](https://www.synology.com/en-global/products/DS2413+)
+die Rolle des zentralen Datenhub uebernommen hat, hatten die Dobos bis auf weiteres
+keine Aufgabe).
+
+![Drobo disk pack](/blog/2014/2014-12/2014-12-16_Drobo_disk_pack.png)
+
+Da ich vorhabe die einzelne Festplatte auszumustern -- oder zumindest an anderer Stelle
+einzusetzen -- sollte ich erst einmal noch dafuer sorgen, dass die bisher darauf abgelegten
+Daten auf das Drobo umkopiert werden. Statt dies (wie eigentlich ueblich) von der
+Kommandozeile aus zu machen, habe ich die diversen Verzeichnisse ueber den Finder
+durch die Gegend gezogen; waehrend die [Git](http://git-scm.com) Repositories recht
+schnell kopiert waren, ist die _Time Machine_ Datenbank doch schon ein Stueck groesser.
+Und waehrend ein Kommando wie `mv` oder `cp` sofort mit der Arbeit beginnt, inventarisiert
+der Finder zunaechst erst einmal alles, was er dann anschliessend durch die Gegend
+schiebt; alleine schon dieser erste Schritt kann mehrere Minuten dauern, bevor ueberhaupt
+ein einzelnes Bit von A nach B bewegt wird. Angesichts der Tatsache, dass es gut
+230 GB sind, welche via USB Verbindung durch die Gegend geschoben werden muessen...
+da spiele sogar mit dem Gedanken den Rechner ausnahmsweise mal ueber Nacht im Institut
+stehen zu lassen.
+
+**:::**
+
+### Drahtlos - kopflos ###
+
+
+_Tue, 16. December 2014 -- 13:01_
+
+Also einen entscheidenden Nachteil haben drahtlose Kopfhoerer schon: es ist ziemlich
+leicht beim Verlassen des Hauses (der Wohnung) Dinge zurueck zu lassen. Erstaunlicherweise
+sind davon bei mir aber nicht die Kopfhoerer selber betroffen, sondern ich neige eher
+dazu das Handy nicht mitzunehmen/einzupacken. So war ich letzte Woche Montag schon ein
+gutes Stueck aus dem Haus, als mit einem Male der Ton auf den Kopfhoerern zusammenbrach;
+Da ih aber wusste dass alle Akkus aufgeladen waren, foerderte eine Inspektion der
+Taschen schnell den Kern des Problems zu Tage. Heute Morgen dann ist es mir erst deutlich
+spaeter aufgefallen (was vor allen Dingen daran lag, dass ich nicht Nachrichten gehoert
+sondern in einem [TROPOMI](http://www.tropomi.eu) Dokument gelesen habe): ich stand
+schon eine Weile an der Bushaltestelle, als ich bei dem Versuch nach der Urzeit zu schauen
+feststellen durfte, dass wohl noch einmal ein Abstecher zurueck in die Wohnung faellig
+werden wuerde. Was dies betrifft ist ein Kopfhoerer mit Kabel definitiv von Vorteil --
+die Kombo zusammen mit dem Handy ist deutlich weniger leicht zu uebersehen und zu
+vergessen.
+
+**:::**
+
+### Mit Hund unterwegs ###
+
+
+_Mon, 15. December 2014 -- 22:20_
+
+Schon suess, die Kleine! Dieses Foto habe ich nur wenige Minuten vor dem Zeitpunkt
+gemacht, zu welchem Julias Yoga-Damen aus der [Atempause](https://plus.google.com/100836942898820199676/about)
+gerannt kamen... und schnurgerade auf uns zukamen (und ich bin mir ziemlich sicher
+bin, dass dies nichts mit mir zu tun hatte).
+
+![Sofia](/blog/2014/2014-12/dsc_20141214_153447_Sofia.jpg)
+
+Neben der Tatsache, dass man im Haus deutlich mehr aufpassen muss, was man so in der
+Gegend herumliegen laesst -- will man es nicht verschleppt oder angekaut haben --
+sind es nun wieder auch die regelmaessigen Ausfluege an die frische Luft, welche
+als klarer Hinweis darauf gelten koennen, dass es wieder einen Hund im Haus gibt.
+An diesem Sonntag ist es gerade einmal eine Woche, dass wir die kleine spanische
+Hundedame in der Naehe von Frankfurt abgeholt haben... es ist aber schon zu erkennen,
+wie sich alle Seiten aufeinander einstellen. Da sich das Wetter am Sonntag von der
+sehr freundlichen Seite zeigte, war dies die (fast schon zu) perfekte Gelegenheit
+fuer einen Spaziergang ueber die Felder in Richtung Roisdorf. Zumindest was einen Teil
+der Strecke entspricht war dies die Tour, welche ziemlich genau eine Woche davor auch
+schon gelaufen war -- da allerdings noch um mich mit Julia zu treffen und dann in
+Richtung Frankfurt aufzubrechen. Diesen Sonntag war aber mehr Aufmerksamkeit fuer meine
+Begleitung erforderlich, so dass die Motivsuche ein wenig in den Hintergrund treten
+musste. Hat aber recht gut geklappt, so wir sogar mit ein wenig Zeitreserve bei der
+Atempause angekommen sind.
+
+**:::**
+
 ### Repair completed ###
 
 
@@ -449,69 +561,3 @@ So komt es also, dass der Schoepfer von [Firefly](http://www.imdb.com/title/tt03
 [Dollhouse](http://www.imdb.com/title/tt2376425) (nur um mal die ersten Dinge zu nennen,
 welche mir da einfallen), hier einen recht schleimigen und gelangweilten Chef einer
 Leihwagenfirma spielt. Durchaus eine witzige Ueberraschung.
-
-**:::**
-
-### Kabouter ###
-
-
-_Wed, 03. September 2014 -- 23:38_
-
-Manchmal laeuft man einfach immer wieder an den Dingen vorbei, ohne dass einem so
-wirklich der weitere Zusammenhang klar wird. In diese Kategorie (auch wenn man dies
-jetzt vielleicht nicht zu sehr ueberbewerten sollte) faellt sicherlich auch eine
-Entdeckung, welche ich Anfang dieser Woche gemacht habe:
-
-> De [Kabouter](http://kbtr.nl) wordt afgebeeld met een rode puntmuts en heeft
-> vaak een grote mond met opvallende tanden en een baard met meerdere, ronde punten.
-> Het figuur verschijnt in verschillende kleuren en kan verschillende gedaantes
-> aannemen, zoals die van een duivel of een skelet. Meestal wordt een enkele kabouter
-> afgebeeld, maar in sommige pieces zijn er optisch honderden te onderscheiden.
-> Op sommige plaatsen verschijnt de KBTR in pieces die samen met een of meerdere
-> andere graffiti artiesten zijn gemaakt. Tevens wordt hij vaak geflankeerd door
-> zijn vriend Erwtje, een groen mannetje met een groot hoofd.
-
-Ueber den Weg gelaufen mit den dem Typen mit der roten Dreiecksmuetze schon einige
-Male, aber ausser der anscheinend groesseren Verbreitung war mit da bisher nichts
-weiter bekannt. Als ich diese Woche allerdings ein wenig in Sachen Graffit in Utrecht
-recherchiert habe, ist mit klar geworden, dass es da durchaus eine groessere
-Fangemeinde gibt. Ich selber habe den Kabouter in der vergangenen Woche noch gleich
-mehrfach abgelichtet, als ich ein wenig [in Utrecht unterwegs](/blog/2014/2014-08/2014-08-28_19-37.html)
-war:
-
-![Kabouter](/blog/2014/2014-09/dsc_20140827_200953_Kabouter.jpg)
-
-Einer der fuer mich hilfreichen Hinweise war, dass ich nun auch weiss, wie ich meine
-eigenen Bilder besser mit Tags versehen kann: laesst man z.B. auf Flickr eine
-[Suche nach dem Kuerzel KBTR](https://www.flickr.com/search/?q=KBTR) laufen, so foerdert
-dies doch so einige Treffer zu Tage. Da ich aber einfach nur anschauen auf Dauer
-nicht so sonderlich spannend finde, habe ich mir natuerlich durchaus ueberlegt,
-wie ich denn die photographische Sammlung ein wenig erweitern kann. Wirft man einmal
-einen Blick auf die [Kabouter map](https://maps.google.com/maps/ms?ie=UTF8&hl=nl&oe=UTF8&msa=0&msid=203076503789740088332.00049c780948d687f78d7&ll=52.08457,5.116882&spn=0.07384,0.145912&z=12&source=embed&dg=feature),
-dann liegt der Verdacht recht nahe, dass es da noch einiges an Entdeckungspotential
-gibt... vor allen Dingen wenn der ueberwiegende Teil der bisher existierenden Aufnahmen
-in der Regel ohne GPS Informationen angeliefert wird.
-
-**:::**
-
-### Rechnen zum Schulstart ###
-
-
-_Tue, 02. September 2014 -- 21:31_
-
-Na wenn dies mal nicht wieder ein Argument dafuer ist, warum ich auch nach mehreren
-Jahren dem Oe3-Wecker als Hoerer treu bin: der [Mikromann](http://oe3.orf.at/comedy/stories/mikromann)
-hat an den letzten beiden Tagen wieder einmal in einer brillianten Weise
-zugeschlagen, bei welcher man sich nur am Kopf packen kann, wenn man sich die
-Antworten anhoert.
-
-> "Wie heisst es in der Mathematik richtig: '7 mal 8 ist 58' oder '7 mal 8 ergibt 58'?"
-
-Wer sich bei so einer hochkomplizierten Frage doch vielleicht erst einmal an etwas
-Einfacherem versuchen will, fuer den gaebe es gaebe es durchaus eine Alternative:
-
-> "Wie heisst es in der Mathematik richtig: '9 und 12 sind 23' oder '9 und 12 ist 23'?"
-
-Das es auch hier -- trotz der allgemein als einfach eingestuften Addition (im Vergleich
-mit einer Multiplikation) -- immer noch recht fragwuerdige Antworten (und vor allen Dingen
-Begruendungen) herauskommen, stimmt schon ein wenig nachdenklich.

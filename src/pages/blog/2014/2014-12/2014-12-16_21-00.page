@@ -1,0 +1,64 @@
+---
+title: "Preparing to copy"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-12-16T21:00:28.00Z
+created_at: 2014-12-16T20:10:07.00Z
+---
+
+## {title:} ##
+
+_Tue, 16. December 2014 -- 21:00_
+
+Ok, das kann mal noch eine Weile dauern, ehe es ueberhaupt so richtig losgeht:
+
+![Finder window](/blog/2014/2014-12/2014-12-16_File_copy.png)
+
+Heute Nachmittag habe ich hier im Institut eine groessere Sammlung an Festplatten
+-- alle irgendwo zwischen 120 GB und 1 TB -- einsammeln koennen und diese zwecks
+Weiterverwendung in das [Drobo](http://www.drobo.com/storage-products) gesteckt,
+welches ich hier auf dem Schreibtisch stehen habe. Da ich zuletzt ja ein wenig
+Schwierigkeiten mit der Festplatte hatte, auf welcher mein [Time Machine](http://support.apple.com/en-us/HT201250)
+Backup liegt, hat es mich schon eine Weile gejuckt endlich einmal weg von der
+Single-Disk Loesung zu kommen. Da ich das Drobo eh fuer diesen Zweck angedacht hatte,
+es mir bisher aber leider immer noch an Festpatten mangelte, war dies heute natuerlich
+eine willkommene Gelegenheit da endlich einmal taetig zu werden. Wie dies ja bei
+(groesseren) Betrieben durchaus schon einmal ueblich ist (vor allen Dingen wenn die
+ICT eine gewisse Groesse ueberschreitet), wird in regelmaessigen Abstaenden die
+alte Computer-Ausruestung unter den Mitarbeitern verscherbelt -- so auch hier bei
+[SRON](http://www.sron.nl). Ich hatte dem allerdings nicht sonderlich viel Beachtung
+geschenkt, weil ich jetzt nicht unbedingt den Bedarf an alten Computern habe -- da
+bedurfte es schon einer Rundmail...
+
+> De verloting is weer klaar, maar ik heb nog wat oudere computers over.
+> in de "oude bibliotheek" in de kelder kan je nog kijken of er nog iets voor je is.
+
+... und einem etwas spaeteren Gespraech mit Tobias, um es bei mir klingeln zu lassen,
+dass es sich ja nicht nur um komplette Rechnern, sondern auch um allerlei Bauteile
+handeln kann. Also schnell mal runter und den Keller gerannt, um zu schauen was sich
+dort noch so finden liess. Da ich mit meinem recht spezifischen Wunsch wohl ein wenig
+ausserhalb dessen lag, was die meisten anderen haben wollten, hatte ich noch eine
+groessere Kiste mit Festplatten zur Auswahl. Wirklich davon gebrauchen konnte ich
+nur einen Teil -- weil ich eben nur mit SATA Platten etwas anfangen kann -- aber
+ich bin doch mit einem recht ansehnlichen Stapel zurueck ins Buero gekommen. Aus diesem
+Vorrat habe ich mir (erwartungsgemaess) die groessten Platten geschnappt und ins
+Drobo eingebaut -- schon eine Weile her, dass ich dies zum letzten Mal gemacht habe
+(seitdem die [Synology DiskStation](https://www.synology.com/en-global/products/DS2413+)
+die Rolle des zentralen Datenhub uebernommen hat, hatten die Dobos bis auf weiteres
+keine Aufgabe).
+
+![Drobo disk pack](/blog/2014/2014-12/2014-12-16_Drobo_disk_pack.png)
+
+Da ich vorhabe die einzelne Festplatte auszumustern -- oder zumindest an anderer Stelle
+einzusetzen -- sollte ich erst einmal noch dafuer sorgen, dass die bisher darauf abgelegten
+Daten auf das Drobo umkopiert werden. Statt dies (wie eigentlich ueblich) von der
+Kommandozeile aus zu machen, habe ich die diversen Verzeichnisse ueber den Finder
+durch die Gegend gezogen; waehrend die [Git](http://git-scm.com) Repositories recht
+schnell kopiert waren, ist die _Time Machine_ Datenbank doch schon ein Stueck groesser.
+Und waehrend ein Kommando wie `mv` oder `cp` sofort mit der Arbeit beginnt, inventarisiert
+der Finder zunaechst erst einmal alles, was er dann anschliessend durch die Gegend
+schiebt; alleine schon dieser erste Schritt kann mehrere Minuten dauern, bevor ueberhaupt
+ein einzelnes Bit von A nach B bewegt wird. Angesichts der Tatsache, dass es gut
+230 GB sind, welche via USB Verbindung durch die Gegend geschoben werden muessen...
+da spiele sogar mit dem Gedanken den Rechner ausnahmsweise mal ueber Nacht im Institut
+stehen zu lassen.
