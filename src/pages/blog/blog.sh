@@ -317,6 +317,9 @@ publish_entry ()
         echo " -> rebuilding blog index pages ..."
         create_index_file_upcoming > ${PATH_BASEDIR}/${PATH_UPCOMING}/index.page
         create_index_file_blog ${varRecentEntries}
+
+        # log publishing of entry via TaskWarrior
+        task log pro:website +blog -- "Blog entry: ${varTitle}"
     fi
 }
 
