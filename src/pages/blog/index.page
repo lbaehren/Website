@@ -8,6 +8,233 @@ author: "Lars Baehren"
 
 **:::**
 
+### Buecher photographieren ###
+
+
+_Sat, 20. December 2014 -- 16:53_
+
+Eine der Kleinigkeiten, welche ich vorhin mal noch schnell erledigt habe -- ehe das
+Tageslicht schon wieder verschunden ist -- war einen Teil der Buecher abzuphotographieren,
+welche sich hier in den diversen Kisten stapeln. Das sind nicht nur eigene Bestaende,
+sondern vor allen Dingen Buecher welche wir entweder hier im Haus gefunden oder aus
+Fremdbestaenden uebernommen haben. Alles davon behalten geht deutlich ueber die zur
+Verfuegung stehenden Lagermoeglichkeiten hinaus, so dass wirklich nur das im Haus
+bleibt, was auch selber gelesen wird -- der Rest laesst sich (hoffentlich) ueber eine
+Kombination von Flohmarkt, eBay und Amazon unter das Volk bringen. Da es aber eben nicht
+von allen Buechern ohne weiteres brauchbare Infos online zu finden gibt, ist es
+typischerweise an mir, all das abzulichten, was dann online angeboten wird. Dementsprechend
+habe ich mir vorhin nach dem Essen mal Kamera und Stativ geschnappt und eine kleine
+Photo-Session eingelegt.
+
+![Books](/blog/2014/2014-12/2014-12-20_Books.png)
+
+Die Resultate laufen zumindest durch eine minimale Pipeline, weil ich (mit auch aufgrund
+der Lichtverhaeltnisse) zumindest ein [-1, 0, +1] Bracketing geschosssen habe (will also
+heissen HDR). Ich weiss zwar nicht ob dies immer wirklich noetig ist, aber zumindest
+gibt es so Bildmaterial mit vernuenftigen Farben und ausreichend Detailaufloesung.
+Der zweite Batch laeuft derzeit noch durch die Konvertierung, aber das ich dies seit
+einer Weile einigermassen automatisiert habe, muss ich da nicht mehr die ganze Zeit am
+Rechner sitzen bleiben und alles von Hand machen (und fuer die noch verbleibenden Schritte
+wird bald mal ein kleines Script faellig).
+
+**:::**
+
+### Daten sichern ###
+
+
+_Sat, 20. December 2014 -- 00:20_
+
+Da muss ich mal schnell eine Sicherheitskopie von machen: da ich nun auch den
+dritten der zum Algorithmen testen noetigen Datensaetze erzeugt habe -- was einige
+Zeit in Anspruch genommen hat -- will ich schon dafuer sorgen, dass ich nun an den
+zweiten Schritt gehen kann. Da macht es sicherlich Sinn nicht immer wieder die Testdaten
+von neuem zu generieren, sondern einmal zu erzeugen und dann irgendwo abzulegen.
+
+~~~~~~~~
+report.detector4.nc                          100% 1440     1.4KB/s   00:00
+quicklook_detector4.pdf                      100%  784     0.8KB/s   00:00
+task.status.txt                              100%    8     0.0KB/s   00:00
+task.log                                     100%   15KB  14.9KB/s   00:00
+report.detector4.nc                          100% 1795     1.8KB/s   00:00
+testdata_absirr_band8.nc                     100% 1102MB  91.8MB/s   00:12
+testdata_absirr_band7.nc                     100% 1102MB  91.8MB/s   00:12
+wavelength_map_detector4.nc                  100% 2016KB   2.0MB/s   00:00
+task.status.txt                              100%    8     0.0KB/s   00:00
+ckd_transmittance_detector4.nc               100% 4023KB   3.9MB/s   00:00
+task.log                                     100%   38KB  38.5KB/s   00:00
+report.detector4.nc                          100% 1440     1.4KB/s   00:00
+quicklook_detector4.pdf                      100%   13MB  13.4MB/s   00:00
+task.status.txt                              100%    8     0.0KB/s   00:00
+task.log                                     100%   36KB  35.8KB/s   00:00
+testdata_relirr_band7.nc                     100%   12GB  86.1MB/s   02:20
+report.detector4.nc                          100% 1781     1.7KB/s   00:00
+wavelength_map_detector4.nc                  100% 2016KB   2.0MB/s   00:00
+task.status.txt                              100%    8     0.0KB/s   00:00
+ckd_transmittance_detector4.nc               100% 4023KB   3.9MB/s   00:00
+testdata_relirr_band8.nc                     100%   12GB  85.5MB/s   02:21
+task.log                                     100%   89KB  89.3KB/s   00:00
+rerun.sh                                     100%  565     0.6KB/s   00:00
+trl1brb8g.lx.nc                              100%   17GB  84.8MB/s   03:25
+pass-15.ocal_pre_processing.png              100%   32KB  32.0KB/s   00:00
+gseDat.nc                                    100%   15KB  15.1KB/s   00:00
+ckd-index.xml                                100%   12     0.0KB/s   00:00
+pass-20.nominal_processing.png               100%  133KB 133.5KB/s   00:00
+trl1brb7g.lx.nc                              100%   17GB  82.7MB/s   03:30
+ckd-check.xml                                100%   12     0.0KB/s   00:00
+task.status.txt                              100%    8     0.0KB/s   00:00
+proc_table.xml                               100% 5553     5.4KB/s   00:00
+joborder-000.cfg                             100% 8660     8.5KB/s   00:00
+pass-10.ckd_handling.png                     100%   27KB  27.2KB/s   00:00
+engDat.nc                                    100%   14MB  13.5MB/s   00:00
+logfile_L01b.txt                             100%  453KB 452.7KB/s   00:00
+task.log                                     100%   10KB  10.2KB/s   00:00
+~~~~~~~~
+
+Ich bin immer wieder recht angetan, wie die Transferraten zwischen den Instituten doch
+im Vergleich zu dem sind, was hier zuhause zur Verfuegung steht. Gut, die Anforderungen
+schon deutlich andere, aber liebaeugeln moechte man damit ja schon.
+
+**:::**
+
+### Kurz vor dem Start ###
+
+
+_Fri, 19. December 2014 -- 21:51_
+
+Das versprechend ja ein paar interessante Weihnachtstage zu werden. Nach all der
+Vorbereitung (welche noch nicht 100%ig abgeschlossen ist) stehen ab dem Sonntag (!)
+die `post_env` Messungen fuer TROPOMI an -- dies ist der letzte Check bevor es Ernst
+wird uns mit der On-Ground Calibration (OCAL) losgehen kann. Fuer alle Beteiligten
+heisst dies natuerlich erhoehte (Alarm-)Bereitschaft: so sind im Vorfeld schon mal
+alle Telefonnummern und Skype-Accounts eingesammelt worden, um moeglichst schnell
+(und ggf. rund um die Uhr) erreichbar zu sein. Fuer mich heisst dies, dass ich an den
+kommenden Tagen wahrscheinlich so manches Mal auf einen Hilferuf reagieren muss (zumindest
+in der anstehenden Startphase). Da ist es doch ganz gut, dass die Generierung der
+Test-Datensaetze nun klappt und ich mich den Scripten zuwenden kann, welche auf dem
+[KNMI](http://www.knmi.nl) CLuster und bei [SRON](http://www.sron.nl) laufen muessen.
+
+**:::**
+
+### Letzte Fahrt in diesem Jahr ###
+
+
+_Thu, 18. December 2014 -- 18:23_
+
+Vorhin beim Aufbrechen habe ich noch kurz daran gedacht -- wo ich mich von Paul und
+Evert verabschiedet habe -- aber zwischenzeitlich war ich den Gedanken doch mehr
+beim Coden... Dies ist in der Tat der letzte ICE Fahrt zwischen Utrecht und Bonn in
+diesem Jahr; zumindest reisetechnisch waere dieses Jahr damit in ein paar Stunden
+abgeschlossen (sieht man einmal von der einen oder anderen Strassenbahnfahrt vor Ort
+ab, welche in den kommenden zwei Wochen wohl noch anstehen wird).
+
+![ICE Reiseplan](/blog/2014/2014-12/dsc_20141218_180640_ICE_Reiseplan.jpg)
+
+Heute ist der ICE deutlich leerer, als dies noch letzte Woche der Fall war; dies hat
+natuerlich von der praktischen Seite den grossen Vorteil, dass es ein leichtes war einen
+Platz an einem der Tische zu finden, was da Arbeiten deutlich einfacher macht. So habe
+ich auch schon vor Arnheim das Problem mit dem Schreiben der Metadaten geloest, welches
+mich die letzten Tage umgetrieben und immer wieder aufgehalten hat. Das besonders
+schoene an der Sache ist, dass die nun gefundene Loesung nicht nur funktioniert, sondern
+auch insgesamt mit weniger Code auskommt (welcher dann auch eleganter ist).
+
+~~~~~~~~
+    # Create instance of TestData object
+    testdata = utils.lx_testdata (infile, band_nr, reftime=reftime)
+~~~~~~~~
+
+Ok, man koennte hier natuerlich einfach sagen, dass die Komplexizitaet einfach nur
+an eine andere Stelle verschoben wurde, aber a) ist der nun dort zu findende Code
+deutlich aufgeraeumter und b) habe ich nun eine Funktion zur Verfuegung, welche ich
+immer wieder verwenden kann. Da werde ich mich noch mal daran machen muessen, die
+erzeugten Testdaten auch in dem Kalibrations-Algorithmus einzulessen (denn schliesslich
+war dies ja die Motivation fuer die ganze Aktion).
+
+**:::**
+
+### Vorweihnachtlich leer ###
+
+
+_Thu, 18. December 2014 -- 14:58_
+
+Also man merkt doch, dass es sich nicht mehr (zumindest in mancherlei Hinsicht)
+normalen Arbeitstag handelt: seit dem Mittag ist es hier im Institut recht ausgestorben,
+was vor allen Dingen wohl damit zu tun hat, dass es heute eine Weihnachts-/Jahresendefeier
+gibt -- da sind doch einige Leute hin verschwunden, so dass wir hier nur noch mit
+einer keinen Besetzung zurueckgeblieben sind, welche hier die Stellung haellt. Da aber
+die TROPOMI On-Ground Kalibration ab der folgenden Wochen ansteht, gibt es wenig Grund
+sich auszuruhen: so habe ich nach dem Treffen heute Morgen mit Paul und Matthijs noch
+einmal eine Reihe Aufgaben auf meiner TODO-Liste stehen, welche abgearbeitet werden
+wollen. Werde ich mich Sicherheits nicht alles heute noch schaffen (das war auch eh
+nicht geplant), aber bis zur Abfahrt wollte ich wenigstens noch ein paar Kleinigkeiten
+fertigstellen.
+
+**:::**
+
+### Uhrzeit ablesen beim Autofahren ist verbotene Handynutzung ###
+
+
+_Wed, 17. December 2014 -- 13:39_
+
+Dass die Benutzung mobiler Geraete gleich in mehrerlei Hinsicht eine Herausforderung
+fuer den (Strassen-)Verkehr darstellt ist mir schon klar; in wie weit sich der
+Deutsche Gesetzgeber da allerdings austoben muss, ist sicherlich eine andere Sache.
+So bin ich vorhin via [Heise News](http://www.heise.de/newsticker/meldung/Uhrzeit-ablesen-beim-Autofahren-ist-verbotene-Handynutzung-2498870.html)
+auf ein neues Gerichtsurteil aufmerksam gemacht wurden, welches es durchaus wert
+ist an dieser Stelle auch noch einmal erwaehnt zu werden:
+
+> Ein Autofahrer darf während der Fahrt nicht einmal die Uhrzeit auf seinem
+> Handy ablesen. Das entschied das Pfälzische Oberlandesgericht (OLG) Zweibrücken.
+> Nach Auffassung der Richter liegt darin eine sogenannte bestimmungsgemäße
+> Nutzung des Handys und damit ein Verstoß gegen die Straßenverkehrsordnung, der
+> die Zahlung eines Bußgeldes rechtfertige (Az.: 1 Ss 1/14).
+
+So wie das Gericht da argumentiert mag man dies (rein formal) vielleicht vertreten
+koennen, aber in letzter Konsequenz muss man dies dann wohl doch wieder in die
+Schublade mit der Aufschrift "Unsinniges" einsortieren (und am liebsten vergessen, wenn
+es nicht teuer werden koennte). Geht es hier eher um moegliche Ablenkungen beim
+Autofahren, oder wirklich um den Gebrauch des Handy; sollte es wirklich (woran ich
+ein wenig meine Zweifel habe) um eine potentielle Ablenkung gehen, wie steht es dann
+um die folgenden Dinge:
+
+ - aus einer Wasserflasche trinken;
+ - auf die Armbanduhr schauen;
+ - Sender am Autoradio einstellen;
+ - das Navi bedienen;
+ - den Ausdruck des Routenplaner zu Rate ziehen...
+
+Ich denke mal mit einem wenig Nachdenken laesst sich da ohne Probleme noch eine
+weitaus laengere Liste aufstellen. Wenn man es sich dann genauer ueberlegt finden
+sich vielleicht endlich noch die guten Argumente dafuer den Fahrer komplett vom
+Steuer zu entfernen (wie z.B. Google dies ja vormacht)...
+
+**:::**
+
+### Durchgelaufen ###
+
+
+_Wed, 17. December 2014 -- 10:34_
+
+Das sieht doch schon einmal gut aus. Nachdem ich gestern Abend ja losgezogen bin
+ohne das Laptop mitnehmen, weil dieses ja ueber Nacht die Backup-Daten von der
+einzelnen Festplatte auf das wieder in Betrieb genommene Drobo umkopieren sollte,
+war ich doch recht erleichtert, dass dieser Vorgang wohl erfolgreich gewesen ist.
+
+![Drobo capacity](/blog/2014/2014-12/2014-12-17_Drobo_capacity.png)
+
+Wie sich bei einem Vergleich mit dem Screenshot im [gestrigen Eintrag](/blog/2014/2014-12/2014-12-16_21-00.html)
+erkennen laesst, habe ich vor dem Absprung aus dem Institut sogar mal noch die kleinste
+der vier Festplatten gegen eine etwas groessere ausgetauscht. Da ich ja gleich mit einem
+ganzen Stapel an Festplatten zurueckgekommen war, habe ich nicht auf Anhieb die
+Auswahl getroffen, womit ich den zur Verfuegung stehenden Speicherplatz maximiert kriege
+-- das nette ist aber, dass sich dies bei einem Drobo problemlos korregieren laesst:
+einfach alte Festplatte rausziehen und neue einsetzen (keine Schrauben noetig)...
+fertig.
+
+Mit dem heutigen Morgen geht das Drobo nun online und bekommt somit offiziell die
+Aufgabe zugewiesen meinen _Time Machine_ Backups ein zuhause zu bieten.
+
+**:::**
+
 ### Preparing to copy ###
 
 
@@ -328,236 +555,3 @@ list_entries ()
 
 The default behaviour has been kept, such that if now further argument is provided,
 the contents of the directory with entries in preparation is listed.
-
-**:::**
-
-### Ablehnungsreflexe ###
-
-
-_Thu, 04. December 2014 -- 09:34_
-
- Manchmal bin ich dann doch noch verwundert ueber das, was ich so bei einem
-Radiointerview zu hoeren kriegen. Angesichts der diese Woche noch anstehenden
-Wahl des Ministerpraesidenten von Thueringen hat die dortige CDU die Order
-gegeben "alles zu tun dass Bodo Ramelow nicht gewaehlt" wird. Von der Fixierung
-her auf dieses Ziel muss ich sofort an die Vorgehensweise der Republikaner in
-den USA stattfinden: statt zu versuchen einen Gegenentwurf vorzustellen
-definitiert man sich eigentlich nur noch ueber Fundamentalopposition zum
-politischen Mitbewerber. Das einzig verbleibende humoristische an der Situation
-ist, dass es durch das grosse Ausschliessen -- welche mitterweile in beide
-Richtungen des politischen Spektrums anzutreffen ist -- immer absurder wird.
-Vielleicht sollte man den armen CDU Politikern in Thueringen schon einmal
-politisches Asyl in einem anderen Bundesland anbieten ;)
-
-**:::**
-
-### Kein guter Start ###
-
-
-_Mon, 01. December 2014 -- 07:47_
-
-Irgendwie setzt sich die Pannenserie fort... Nachdem ich heute Morgen zuhause schon
-so manche Probleme mit der Koordination meiner morgendlichen Taetigkeiten hatte --
-so ist es mir gelungen mein Handy in die Kueche liegen lassen, was mir gleucklicherweise
-dadurch aufgefallen ist, dass das Signal auf dem Kopfhoerer zusammenbrach -- scheine
-ich nun auch mit dem ICE Probleme zu kriegen. Waehrend es in Koeln noch recht glatt
-werden wir nun erst einmal gut 30 Minuten bis zur Weiterfahrt warten muessen. Die
-Tatsache, dass ein technischer Fehler am Zug als Grund angegeben wurde, stimmt mich
-allerdings nicht so hoffnungsvoll, denn dies kann auch durchaus bedeuten, dass dieser
-ICE komplett eingestellt wird und ich mich mit einer anderen Verbindung nach Utrecht
-durchschlagen muss. Nicht, dass ich da allzu pessimistische Stimmung verbreiten wollte,
-aber mittlerweile habe ich nun doch ausreichend viele Bahnfahrten hinter mich gebracht,
-dass mir bestimmte Ablaeufe durchaus bekannt sind.
-
-**:::**
-
-### Zu anderer Zeit ###
-
-
-_Thu, 27. November 2014 -- 19:45_
-
-Da muss ich wirklich aufpassen, wenn ich dies in Zukunft oefters machen will; ich bin
-mittlerweile so auf den ICE um 19:02 Uhr eingeschossen, so dass durchaus ein Risiko
-bestand, dass ich noch rechtzeitig aus dem Institut verschwinde. Da ich meine Reiseplanungen
-ein wenig in die Richtung versuche anzupassen, dass ich frueher am Abend in Bonn bin
--- sonst wird es typischerweise nach Mitternacht, ehe ich wirklich im Bett bin.
-Netterweise frequentiert der ICE zwischen Amsterdam und Frankfurt ja im 2-Stunden Takt,
-so dass ich jetzt einfach mal die Verbindung um 17:00 Uhr austesten werde -- da muss
-sich noch zeigen, in wie weit dies gegenueber der spaeteren Verbindung wirklich ein
-Vorteil ist. Einen recht grossen Einfluss auf das Vorankommen hat natuerlich -- wie dies
-ja so ueblich ist -- wie es mit dem Transfer vom Uithof zum Bahnhof aussieht; ich musste
-eben schon feststellen, dass die Linie 12 zwar enger getaktet ist, dafuer aber die
-Linie 28 (welche ich gerne schon einmal als Alternative verwende) erst nach 17 Uhr
-wieder verkehrt. Aber gut, ich werde dies jetzt mal eine Weile testen, denn nur von
-einem Mal ist mit Sicherheit kein vernuenftiges Urteil moeglich.
-
-**:::**
-
-### Wieder in Utrecht ###
-
-
-_Mon, 22. September 2014 -- 22:45_
-
-Da hat mich Utrecht wieder. Nachdem in der vergangenen Woche -- nun auch einmal
-fuer mich -- eine etwas intensiere Arbeitsphase im Haus auf dem Programm stand,
-muss ich mich nun wieder darum kuemmern, dass es mit der Fertigstellung der Software
-fuer die TROPOMI On-ground Calibration (OCAL) klappt. Hat natuerlich nach der
-Abwesenheit ein wenig gedauert, bis ich wieder Fuss gefasst habe; aus diesem Grunde
-habe ich mir zunaechst einmal die Aufgaben geschnappt, welche eher begrenzt vom
-Umfang und recht gut definiert sind. Nach dieser "Aufwaermuebung" kann ich mich dann
-an die Dinge begeben, welche ein wenig mehr Zeit und Kontinuitaet erfordern.
-
-**:::**
-
-### In Koeln ###
-
-
-_Thu, 11. September 2014 -- 21:25_
-
-Da bin ich also mal wieder in Koeln. Auch wenn dies fuer sich genommen garnicht
-einmal so sonderlich erwaehnenswert ist, so ist der heutige Zwischenstop erst
-einmal der letzte fuer die naechsten zehn Tage; kommende Woche bleibe ich ja in
-Bonn, damit wir uns an den Einbau der Heizung machen koennen -- da steht also kein
-Trip nach Utrecht auf dem Plan. Um aber zumindest indirekt ein wenig Arbeit abliefern
-zu koennen habe ich einen Teil der Fahrt noch damit zugebracht an dem Script zu
-basteln, mit welchem ich (so hoffe ich doch mal) in der Lage sein duerfte die
-Timing-Informationen fuer die Quicklooks zu extrahieren, auf welche ich Matthijs
-diese Woche wohl neugierig gemacht habe. Eigentlich waren die Zahlen ja eher so ein
-Nebenprodukt meiner wiederkehrenden Runs der OCAL Framework Tasks, aber da es
-ein wenig darum geht Funktionalitaet fuer die Kalibrationsmessung zu buendeln,
-ist es nun durchaus relevant wie lange welche Processing-Steps brauchen.
-
-Wo ich unterwegs noch eine Weile dran geknabbert habe ist, wie ich die Ausgabe
-der ``time`` Utility angefangen kriege; was mich bei den bisherigen Runs ja
-immer gestoert hat ist, dass die Timing-Information immer irgendwo in den
-munter weiter-scrollenden Log-Messages auftauchte -- ziemlich laestig, wenn man
-plant Tasks gleich dutzendweise laufen zu lassen. Entscheidend ist es hier
-die Standard-Streams noch **vor** dem Aufruf von ``time`` umzubiegen, so laesst
-sich dann die entsprechende Ausgabe abfangen und in einer Datei wegschreiben.
-
-~~~~
-&>task.log time ${RUNTASK} -s 123456 quicklooks/${GROUP}/${FILE}/${TASK}.ocal
-~~~~
-
-Fuegt man dann noch ein wenig ``tr`` und ``sed`` Magic hinzu, so erhaelt man
-ein Logfile, in welchem alle gewuenschten Informationen zu finden sind:
-
-~~~~
-=====================================================================
-proc_raw:['0.44', '0.28', '0.15']
-=====================================================================
-proc_raw:['0.43', '0.28', '0.14']
-=====================================================================
-proc_raw:['0.43', '0.28', '0.14']
-=====================================================================
-proc_raw:['0.44', '0.29', '0.14']
-=====================================================================
-quicklook_raw:['0.43', '0.28', '0.15']
-=====================================================================
-quicklook_raw:['0.43', '0.28', '0.14']
-=====================================================================
-~~~~
-
-Wendet man hierauf noch ein weiteres Mal eine Kombination von ``grep`` und
-``sed`` an, dann erhaelt man eine Ausgabe, welche gueltigem Python-Code
-(eine Liste) entsprechen:
-
-~~~~
-['0.43', '0.28', '0.15']
-['0.43', '0.28', '0.14']
-['0.42', '0.28', '0.14']
-['0.43', '0.28', '0.14']
-['0.43', '0.28', '0.14']
-['0.42', '0.27', '0.14']
-~~~~
-
-Bin ich mal gespannt, ob alles so funtioniert, wie ich mir dies vorgestellt
-habe; meine Erwartung ist schon, dass der Rechner im [KNMI](http://www.knmi.nl)
-einige Stunden beschaeftigt sein wird -- ist der Rest aber ok, dann kann ich
-einfach den Job laufen lassen und anschliessend einfach nur die Logs einsammeln,
-in welchen die Zahlen fuer die gewuenschten Statistiken zu finden sind.
-
-**:::**
-
-### Feueralarm ###
-
-
-_Tue, 09. September 2014 -- 20:19_
-
-Das hatte ich bisher auch noch nicht.. Waehrend ich bei [ASTRON](http://www.astron.nl)
-durchaus einige Male aus der Arbeit gerissen wurde, um aufgrund eines Feueralarms das
-Gebaeude zu verlassen, ist mir dies hier bei [SRON](http://www.sron.nl) noch nicht
-vorgekommen. Vorhin -- gerade einmal ein paar Minuten nach Beginn des [Apple](http://www.apple.com)
-Special Event -- ging hier auf der ersten Etage der Alarm los. Da wir uns ausserhalb
-der normalen Arbeitszeiten befanden, war die Wahrscheinlichkeit einer Uebung recht
-gering. Also mal schnell das Laptop in den Rucksack gestopft und in Richtung Rezeption
-losgesteifelt; noch bevor ich allerdings dort ankam, bildete sich bereits eine kleine
-Gruppe hier auf dem Gang, welche sich daran machte der Ursache des Alarms nachzugehen.
-Da war aber nichts zu sehen, so dass die Versammlung sich in Richtung Ausgang verschob.
-Dort angekommen konnte sich immer niemand so wirklich zum Verlassen des Gebaeudes
-aufraffen, weil von der ganzen Indizienlage her einfach recht unwahrscheinlich war,
-dass es sich um einen wirklichen Brandalarm handelte. Die ersten, welche von ausserhalb
-eintraffen, waren die Leute vom Sicherheitsdienst, erst ein paar Minuten spaeter
-gefolgt von einem Loeschwagen der Feuerwehr. Da alles wenig nach einem Notfall aussah,
-habe ich die Zeit in der Eingangshalle einfach noch ein wenig zum Arbeiten genutzt
--- netterweise war meine Remote-Verbindung ins [KNMI](http://www.knmi.nl) durch das
-Schliessen des Rechners nur eingefroren, aber nicht zusammengebrochen, so dass ich
-sogar direkt in dem Editor-Fenster weitermachen konnte.
-
-Insgesamt hat die ganze Aktion vielleicht eine halbe Stunde gedauert, dann habe ich
-mich mich aber auch schon wieder aufgemacht zurueck in Richtung Buero. Ich haette
-natuerlich auch einfach die Gelegenheit nutzen koennen und mich in Richtung Wohnung
-abzusetzen, aber da ich a) noch einen frisch aufgebruehten Becher Tee auf dem Schreibtisch
-stehen hatte und b) ich noch eine Weile den grossen Monitor ausnutzen wollte, schien
-es mir einfach das Beste die Zeit bis zum letzten Bus in Richtung Hoograve noch am
-Arbeitsplatz auszunutzen.
-
-**:::**
-
-### Zu Gast bei Veronica Mars ###
-
-
-_Thu, 04. September 2014 -- 21:36_
-
-Nachdem ich ja [Anfang dieser Woche](/blog/2014/2014-09/2014-09-02_20-43.html) mit
-der letzten Folge von [Odyssey 5](http://www.imdb.com/title/tt0318236) fertig geworden
-bin, habe ich mich recht unmittelbar auf die Season zwei von [Veronica Mars](http://www.imdb.com/title/tt0412253)
-gestuerzt. Die Serie sitzt mir (wie man zumindest ein Stueck weit auch anhand der
-Taskwarrior-Eintraege erkennen kann) schon eine ganze Weile im Nacken...und die
-Tatsache dass da in diesem Jahr auch noch ein Film hinzugekommen ist, hat die Sache
-eigentlich nur noch "schlimmer" gemacht.
-
-~~~~
-Year Month     Added Completed Deleted Net
-____ _________ _____ _________ _______ ___
-2011 December     19        17       0   2
-2012 January      11         5       5   1
-     June          1         1       0   0
-     August        3         2       0   1
-2013 March         5         9       0  -4
-2014 January       1         0       0   1
-     March         1         1       0   0
-     April        42         0       0  42
-     September     0         9       0  -9
-~~~~
-
-Was ich mir aber zumindest vorgenommen hatte war, dass ich mich nicht an den Film
-begebe, wenn ich vorher nicht alle drei Seasons komplett durchgeschaut habe; Season
-eins liegt schon eine ganze Weile zurueck und auch bei Season drei bin ich schon
-durchgeszappt -- dazwischen ist aber irgendwie Niemandsland, so dass ich mich nun
-daran gemacht habe diese Weisen Flecken auf der Karte mit Inhalt zu fuellen. Laesst
-sich alles recht erfolgreich an, unter anderem auch weil ich es schaffe einige der
-eher langweiligen Taetigkeiten (zumindest was die Aufmerksamkeit betrifft) mit dem
-dem gucken (bzw. hoeren) zu kombinieren.
-
-Als ich bei [Season 2, Episode 6](http://www.imdb.com/title/tt0739539) angelangt bin,
-habe ich aber mehrfach hinschauen muessen... vorwiegend, weil ich einfach meinen Augen
-nicht trauen wollte. Wie aber eine schnelle Recherche in der [Internet Movie Database](http://www.imdb.com)
-ergab (ich wollte nicht bis zum Abspann warten), hatte da in der Tat [Joss Whedon](http://www.imdb.com/name/nm0923736)
-einen Gastauftritt in der Serie. Eigentlich ist der Mann ja eher dafuer bekannt sich
-hinter der Kamera -- oder gar hinter Schreibmaschine bzw. Computer -- aufzuhalten,
-aber bei ein paar Gelegenheiten scheint er da wohl mal eine Ausnahme gemacht zu haben.
-So komt es also, dass der Schoepfer von [Firefly](http://www.imdb.com/title/tt0303461),
-[Dollhouse](http://www.imdb.com/title/tt2376425) (nur um mal die ersten Dinge zu nennen,
-welche mir da einfallen), hier einen recht schleimigen und gelangweilten Chef einer
-Leihwagenfirma spielt. Durchaus eine witzige Ueberraschung.

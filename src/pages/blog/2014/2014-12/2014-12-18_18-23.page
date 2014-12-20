@@ -1,0 +1,40 @@
+---
+title: "Letzte Fahrt in diesem Jahr"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-12-18T18:23:10.00Z
+created_at: 2014-12-18T18:09:21.00Z
+---
+
+## {title:} ##
+
+_Thu, 18. December 2014 -- 18:23_
+
+Vorhin beim Aufbrechen habe ich noch kurz daran gedacht -- wo ich mich von Paul und
+Evert verabschiedet habe -- aber zwischenzeitlich war ich den Gedanken doch mehr
+beim Coden... Dies ist in der Tat der letzte ICE Fahrt zwischen Utrecht und Bonn in
+diesem Jahr; zumindest reisetechnisch waere dieses Jahr damit in ein paar Stunden
+abgeschlossen (sieht man einmal von der einen oder anderen Strassenbahnfahrt vor Ort
+ab, welche in den kommenden zwei Wochen wohl noch anstehen wird).
+
+![ICE Reiseplan](/blog/2014/2014-12/dsc_20141218_180640_ICE_Reiseplan.jpg)
+
+Heute ist der ICE deutlich leerer, als dies noch letzte Woche der Fall war; dies hat
+natuerlich von der praktischen Seite den grossen Vorteil, dass es ein leichtes war einen
+Platz an einem der Tische zu finden, was da Arbeiten deutlich einfacher macht. So habe
+ich auch schon vor Arnheim das Problem mit dem Schreiben der Metadaten geloest, welches
+mich die letzten Tage umgetrieben und immer wieder aufgehalten hat. Das besonders
+schoene an der Sache ist, dass die nun gefundene Loesung nicht nur funktioniert, sondern
+auch insgesamt mit weniger Code auskommt (welcher dann auch eleganter ist).
+
+~~~~~~~~
+    # Create instance of TestData object
+    testdata = utils.lx_testdata (infile, band_nr, reftime=reftime)
+~~~~~~~~
+
+Ok, man koennte hier natuerlich einfach sagen, dass die Komplexizitaet einfach nur
+an eine andere Stelle verschoben wurde, aber a) ist der nun dort zu findende Code
+deutlich aufgeraeumter und b) habe ich nun eine Funktion zur Verfuegung, welche ich
+immer wieder verwenden kann. Da werde ich mich noch mal daran machen muessen, die
+erzeugten Testdaten auch in dem Kalibrations-Algorithmus einzulessen (denn schliesslich
+war dies ja die Motivation fuer die ganze Aktion).

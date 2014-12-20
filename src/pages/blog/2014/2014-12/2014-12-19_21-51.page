@@ -1,0 +1,23 @@
+---
+title: "Kurz vor dem Start"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-12-19T21:51:45.00Z
+created_at: 2014-12-19T21:45:54.00Z
+---
+
+## {title:} ##
+
+_Fri, 19. December 2014 -- 21:51_
+
+Das versprechend ja ein paar interessante Weihnachtstage zu werden. Nach all der
+Vorbereitung (welche noch nicht 100%ig abgeschlossen ist) stehen ab dem Sonntag (!)
+die `post_env` Messungen fuer TROPOMI an -- dies ist der letzte Check bevor es Ernst
+wird uns mit der On-Ground Calibration (OCAL) losgehen kann. Fuer alle Beteiligten
+heisst dies natuerlich erhoehte (Alarm-)Bereitschaft: so sind im Vorfeld schon mal
+alle Telefonnummern und Skype-Accounts eingesammelt worden, um moeglichst schnell
+(und ggf. rund um die Uhr) erreichbar zu sein. Fuer mich heisst dies, dass ich an den
+kommenden Tagen wahrscheinlich so manches Mal auf einen Hilferuf reagieren muss (zumindest
+in der anstehenden Startphase). Da ist es doch ganz gut, dass die Generierung der
+Test-Datensaetze nun klappt und ich mich den Scripten zuwenden kann, welche auf dem
+[KNMI](http://www.knmi.nl) CLuster und bei [SRON](http://www.sron.nl) laufen muessen.

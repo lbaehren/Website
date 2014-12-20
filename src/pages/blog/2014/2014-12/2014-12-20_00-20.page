@@ -1,0 +1,61 @@
+---
+title: "Daten sichern"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-12-20T00:20:07.00Z
+created_at: 2014-12-19T23:09:58.00Z
+---
+
+## {title:} ##
+
+_Sat, 20. December 2014 -- 00:20_
+
+Da muss ich mal schnell eine Sicherheitskopie von machen: da ich nun auch den
+dritten der zum Algorithmen testen noetigen Datensaetze erzeugt habe -- was einige
+Zeit in Anspruch genommen hat -- will ich schon dafuer sorgen, dass ich nun an den
+zweiten Schritt gehen kann. Da macht es sicherlich Sinn nicht immer wieder die Testdaten
+von neuem zu generieren, sondern einmal zu erzeugen und dann irgendwo abzulegen.
+
+~~~~~~~~
+report.detector4.nc                          100% 1440     1.4KB/s   00:00
+quicklook_detector4.pdf                      100%  784     0.8KB/s   00:00
+task.status.txt                              100%    8     0.0KB/s   00:00
+task.log                                     100%   15KB  14.9KB/s   00:00
+report.detector4.nc                          100% 1795     1.8KB/s   00:00
+testdata_absirr_band8.nc                     100% 1102MB  91.8MB/s   00:12
+testdata_absirr_band7.nc                     100% 1102MB  91.8MB/s   00:12
+wavelength_map_detector4.nc                  100% 2016KB   2.0MB/s   00:00
+task.status.txt                              100%    8     0.0KB/s   00:00
+ckd_transmittance_detector4.nc               100% 4023KB   3.9MB/s   00:00
+task.log                                     100%   38KB  38.5KB/s   00:00
+report.detector4.nc                          100% 1440     1.4KB/s   00:00
+quicklook_detector4.pdf                      100%   13MB  13.4MB/s   00:00
+task.status.txt                              100%    8     0.0KB/s   00:00
+task.log                                     100%   36KB  35.8KB/s   00:00
+testdata_relirr_band7.nc                     100%   12GB  86.1MB/s   02:20
+report.detector4.nc                          100% 1781     1.7KB/s   00:00
+wavelength_map_detector4.nc                  100% 2016KB   2.0MB/s   00:00
+task.status.txt                              100%    8     0.0KB/s   00:00
+ckd_transmittance_detector4.nc               100% 4023KB   3.9MB/s   00:00
+testdata_relirr_band8.nc                     100%   12GB  85.5MB/s   02:21
+task.log                                     100%   89KB  89.3KB/s   00:00
+rerun.sh                                     100%  565     0.6KB/s   00:00
+trl1brb8g.lx.nc                              100%   17GB  84.8MB/s   03:25
+pass-15.ocal_pre_processing.png              100%   32KB  32.0KB/s   00:00
+gseDat.nc                                    100%   15KB  15.1KB/s   00:00
+ckd-index.xml                                100%   12     0.0KB/s   00:00
+pass-20.nominal_processing.png               100%  133KB 133.5KB/s   00:00
+trl1brb7g.lx.nc                              100%   17GB  82.7MB/s   03:30
+ckd-check.xml                                100%   12     0.0KB/s   00:00
+task.status.txt                              100%    8     0.0KB/s   00:00
+proc_table.xml                               100% 5553     5.4KB/s   00:00
+joborder-000.cfg                             100% 8660     8.5KB/s   00:00
+pass-10.ckd_handling.png                     100%   27KB  27.2KB/s   00:00
+engDat.nc                                    100%   14MB  13.5MB/s   00:00
+logfile_L01b.txt                             100%  453KB 452.7KB/s   00:00
+task.log                                     100%   10KB  10.2KB/s   00:00
+~~~~~~~~
+
+Ich bin immer wieder recht angetan, wie die Transferraten zwischen den Instituten doch
+im Vergleich zu dem sind, was hier zuhause zur Verfuegung steht. Gut, die Anforderungen
+schon deutlich andere, aber liebaeugeln moechte man damit ja schon.
