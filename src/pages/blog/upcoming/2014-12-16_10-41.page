@@ -1,0 +1,20 @@
+---
+title: "Lint your code in Atom"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-12-16T10:41:14.00Z
+created_at: 2014-12-16T10:41:14.00Z
+---
+
+## {title:} ##
+
+_Tue, 16. December 2014 -- 10:41_
+
+![Screenshot](/blog/2014/2014-12/2014-12-09_Atom_Linter.png)
+
+ - [Atom editor](https://atom.io)
+ - [Atom Packages](https://atom.io/packages)
+ - [Package documentation](http://atomlinter.github.io/Linter)
+
+ - [LOFAR](http://www.lofar.org)
+ - [TROPOMI](http://www.tropomi.eu)

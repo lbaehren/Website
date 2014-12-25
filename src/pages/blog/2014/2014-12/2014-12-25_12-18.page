@@ -1,0 +1,32 @@
+---
+title: "Weihnachtsarbeit"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-12-25T12:18:49.00Z
+created_at: 2014-12-25T12:12:59.00Z
+---
+
+## {title:} ##
+
+_Thu, 25. December 2014 -- 12:18_
+
+Da passiert doch wirklich etwas. Nach ein klein wenig Bastelarbeit habe ich es rechtzeitig
+vor Heiligabend geschafft noch den Cronjob ans Laufen zu bringen, mit welche nicht nur
+die Quicklooks der Messungen eingesammelt, sondern anschliessend auch auf einen Rechner
+bei SRON umkopiert werden.
+
+~~~~~~~~
+File statistics (11:00):
+ - Measurement set : post_env
+ - Total nof files : 470
+ - Existing files  : 469
+ - New files ..... : 1
+~~~~~~~~
+
+Auch wenn ich nicht direkt in die Geschehnisse vor Ort eingebunden bin, so kann ich
+zumindest anhand der Dateinamen erkennen, dass nun wirklich die Messungen laufen, welche
+laut dem rundgeschickten Zeitplan an der Reihe waeren. So 100%ig kann dies aber noch
+nicht zufrieden stellen, denn schliesslich sind bisher nirgendwo die Quicklooks zu finden,
+welche von unserer Seite aus erzeugt werden sollten. Da werde ich wohl ueber die kommenden
+Tage noch einmal schauen was da los ist, denn schliesslich waere die Information schon
+wichtig fuer die weiteren Entscheidungen.

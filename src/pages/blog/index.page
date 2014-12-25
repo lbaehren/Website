@@ -8,6 +8,73 @@ author: "Lars Baehren"
 
 **:::**
 
+### The Interview ###
+
+
+_Thu, 25. December 2014 -- 12:35_
+
+Die Reihe zweifelhaften Entscheidungen rund um [The Interview](http://www.imdb.com/title/tt2788710)
+scheinen irgendwie nicht abreissen zu wollen. Nachdem sich Sony nach einigem hin
+und her nun dazu entschlossen hat den Film online zu veroeffentlichen, frage ich
+mich, wieso es dann immer noch eine Begrenzung auf einzelne Laender gibt. Schaut man
+auf der [offiziellen Website](https://www.seetheinterview.com) fuer den Film nach,
+findet man dort unter dem Punkt "Frequently Asked Questions" folgende Aussage:
+
+> **Can I purchase this from outside the US?**
+>
+> While we do hope to see the release of The Interview across the globe, for the
+> time being this is limited to the USA only. You can only purchase the movie with
+> a US card, and can only stream it from a US IP address.
+
+Da schreibt doch einfach nur danach, den Film auf anderen als den offiziellen Kanaelen
+zu verbreiten. [Wie The Verge berichtet](http://www.theverge.com/2014/12/24/7448253/sonys-the-interview-site-accidentally-let-anyone-download)
+wird dies zusaetzlich dadurch befeuert, dass es gerade auf Sony's offizieller Website
+fuer digitalen Filmverleih eine Sicherheitsluecke gegeben hat:
+
+> It's been an interesting day for Kernel, the site powering Sony's digital
+> rentals of The Interview in the US. Not only did it briefly buckle under the
+> pressure of people hammering its site to watch the movie, but apparently it
+> didn't do a great job in securing copies of the film, either. Those who spent
+> $5.99 to watch a 48-hour rental of The Interview on their browser could simply
+> share the URL of the film with anyone else. Worse yet, anyone who had access to
+> the link was able to save an unprotected copy locally through a super obvious
+> loophole, something The Verge was able to confirm from different browsers and
+> locations.
+
+Dass auf diesem Wege erhaltene Kopien nicht alleine auf dem Rechner bleiben, wo sie
+zunaechst abgespeichert wurden, sondern recht bald den Weg zu einem breiteren
+internationalen Publikum finden werden, duerfte wohl wenig verwundern.
+
+**:::**
+
+### Weihnachtsarbeit ###
+
+
+_Thu, 25. December 2014 -- 12:18_
+
+Da passiert doch wirklich etwas. Nach ein klein wenig Bastelarbeit habe ich es rechtzeitig
+vor Heiligabend geschafft noch den Cronjob ans Laufen zu bringen, mit welche nicht nur
+die Quicklooks der Messungen eingesammelt, sondern anschliessend auch auf einen Rechner
+bei SRON umkopiert werden.
+
+~~~~~~~~
+File statistics (11:00):
+ - Measurement set : post_env
+ - Total nof files : 470
+ - Existing files  : 469
+ - New files ..... : 1
+~~~~~~~~
+
+Auch wenn ich nicht direkt in die Geschehnisse vor Ort eingebunden bin, so kann ich
+zumindest anhand der Dateinamen erkennen, dass nun wirklich die Messungen laufen, welche
+laut dem rundgeschickten Zeitplan an der Reihe waeren. So 100%ig kann dies aber noch
+nicht zufrieden stellen, denn schliesslich sind bisher nirgendwo die Quicklooks zu finden,
+welche von unserer Seite aus erzeugt werden sollten. Da werde ich wohl ueber die kommenden
+Tage noch einmal schauen was da los ist, denn schliesslich waere die Information schon
+wichtig fuer die weiteren Entscheidungen.
+
+**:::**
+
 ### Buecher photographieren ###
 
 
@@ -473,85 +540,3 @@ ok war... sieht man einmal von der Tatsache ab, dass ich an einer Stelle den fal
 Pfad verwendet habe. Der Effekt von dieser Aktion war, dass ich eben genau jene
 Daten ueberschrieben habe, welche ich zum Testen verwenden wollte. Sieht also ganz
 danach aus, als kann ich mir zumindest dieses Vorhaben fuer die Rueckfahrt abschreiben.
-
-**:::**
-
-### Wieder einen Schritt naeher ###
-
-
-_Wed, 10. December 2014 -- 22:23_
-
-Und doch endlich wieder einmal einen kleinen Schritt weiter. Waehrend ich in der
-Zwischenzeit durchaus ein paar wenige Eintraege geschrieben habe, ist die Infrastruktur
-immer noch nicht auf dem Stand, dass ich ohne weiteres den Blog mit allen dazu
-gehoerenden Seiten aktualisieren kann. Was mir derzeit noch fehlt ist, dass die
-Index-Seiten und die Seite mit den letzten Eintraegen aufs Neue gebaut werden; zumindest
-was letzteres betrifft habe ich nun einen kleinen Fortschritt machen koennen:
-
-~~~~~~~~
-    for FILE in `ls ${PATH_BASEDIR}`
-    {
-        if [ -d "$FILE" ]
-        then
-            find $FILE -name "*.page" | grep -v index | grep -v upcoming >> ${tmpFile}
-        fi
-    }
-
-    # Sort through the list of entries
-    varEntries=`cat ${tmpFile} | tail -n ${nofEntries} | sort -r`
-~~~~~~~~
-
-Derzeit spuckt die Routine nur eine Liste mit den wesentlichen Eigenchaften der
-Eintraege aus, aber der folgende Schritt darauf eine Seite zu basteln duerfte
-(zumindest hoffe ich dies) nicht mehr so schwer sein.
-
-Rein von der technischen Seite her bin ich mit dem bisher erstellten recht zufrieden:
-was ich bis jetzt am Laufen habe ist deutlich modularer was die einzelnen Schritte
-betrifft, welche es auszufuehren gibt. Dadurch dass alles als ein Bash Script geschrieben
-ist, gibt es zwar nicht die gleiche Art der Modularisierung, wie die dies z.B. bei
-C++ kriegen wuerde, aber da es eben nicht einfach nur ein gigantisches Script ist,
-kann ich die einzelnen Teile auf immer wieder neue Weise zusammenfuegen. Dabei gibt
-es einfach ein paar Standardaufgaben, welche man einmal implementieren sollte... und
-dann ist es aber auch gut damit. Was jetzt aber noch ansteht ist, dass ich mir noch
-einmal ein wenig Zeit dafuer reserviere, um alle Bauteile zusammenzufuegen und die
-Index-Seiten auch wirklich wieder zu generieren. Wenn dies der Fall ist, steht den
-regelmaessigen Updates nichts mehr im Weg.
-
-**:::**
-
-### Listing blog entries ###
-
-
-_Thu, 04. December 2014 -- 19:56_
-
-While some of the machinery is not back online again, I am making some progress
-on streamlining the tools supposed to be working behind the scenes. Given the fact
-that the current routine to list the contents of a directory (in terms of available
-blog entries) now already is an improvement w.r.t. the older version, generalising
-it a little it further only seemed like a logical step. The first iteration specifically
-had been written with the idea in mind to list upcoming entries (and offer them
-for publication); however extraction of further details was pretty generic, such
-that the only thing left to adjust was the path w.r.t. which the listing was extracted.
-
-~~~~~~~~
-list_entries ()
-{
-    if [ -z $1 ] ; then
-        varDirectory=${PATH_UPCOMING}
-    else
-        varDirectory=$1
-    fi
-
-    cd ${PATH_BASEDIR}
-
-    for FILE in `ls ${varDirectory} | grep -v index.page`
-    {
-        varTitle=`get_entry_title ${varDirectory}/${FILE}`
-        varTimeheader=`get_timeheader ${varDirectory}/${FILE}`
-        echo " - ${FILE} | ${varTitle} | ${varTimeheader}"
-    }
-}
-~~~~~~~~
-
-The default behaviour has been kept, such that if now further argument is provided,
-the contents of the directory with entries in preparation is listed.

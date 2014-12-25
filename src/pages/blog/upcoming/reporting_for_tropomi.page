@@ -55,3 +55,21 @@ within a terminal window yields a nicely rendered colorful graphical representat
     Add rate:         5.6/d      Estimated completion: 2014-02-27 (11 wks)
     Done/Delete rate: 5.9/d
 ~~~~
+
+While the overall burndown might be a nice thing to have, breaking down the progress per
+group of tasks (or work-packages for that matter) has turned out to be way more useful.
+
+~~~~~~~~
+Group of tasks          open compl Complete 0%                        100% Estimated completion
+----------------------- ---- ----- --------------------------------------- --------------------
+radiometry_swir            8    80      90% ===========================
+radiometry_swir.abs_irr    3    14      82% ========================
+radiometry_swir.abs_rad    1    17      94% ============================
+radiometry_swir.rel_irr    4    19      82% ========================
+radiometry_swir.bsdf       0    18
+straylight_swir            8    23      74% ======================
+prf_swir                   9     9      50% ===============
+dpqf_swir                  3    26      89% ==========================     2014-12-19 (3 days)
+wavelength_swir           15     3      16% =====
+quicklook                 11   113      91% ===========================    2015-01-27 (6 wks)
+~~~~~~~~
