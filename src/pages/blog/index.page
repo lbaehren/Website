@@ -8,6 +8,180 @@ author: "Lars Baehren"
 
 **:::**
 
+### Photo-Start ins neue Jahr ###
+
+
+_Thu, 01. January 2015 -- 02:23_
+
+So ganz wollte ich mir dies ja nicht entgehen lassen: mit dem ersten Silvester / Neujahr
+hier im Haus, wollte ich doch wenigsten einmal einen kleinen Eindruck davon bekommen
+(und ggf. weitervermitteln) wie sich der Jahreswechsel hier in Tannnenbusch gestaltet.
+Also bin ich kurz nach Mitternacht mal zu einer kleinen Tour in die Umgebung aufgebrochen
+um so vielleicht ein paar Eindrueck mitbringen zu koennen. Wie sich allerdings heraustellt
+bin ich nicht so sonderlich an dem Feuerwerk selber interessiert, sondern eher an
+Bildern, welche die Kombination von Licht und Feuerwerksrauch erzeugen...
+
+![Tannenbusch nach Mitternacht](/blog/2015/2015-01/dsc_20150101_015600_Tannenbusch.jpg)
+
+So kommt es denn auch, dass ich eher Bilder wie dem obigen nachgejagt habe -- ist leider
+deutlich schwerer da etwas Gutes zu finden (vor allen Dingen wenn einem staendig Leute durch
+das Blickfeld laufen) als man so denkt, aber mit ein paar brauchbaren Aufnahmen bin
+ich dann doch wahrscheinlich zurueckgekommen. Ist ein wenig eine Geduldsprobe, wenn
+man da im Kalten steht und darauf wartet bis die Kamera mit einer Serie von Aufnahmen
+fertig ist -- da ist es doch recht angenehm wieder im Warmen zu sein.
+
+**:::**
+
+### Fast vorbei ###
+
+
+_Wed, 31. December 2014 -- 23:03_
+
+Noch ein paar Stunden, dann heisst es Abschied nehmen von 2014. Nachdem ich vor allen
+Dingen im vorherigen Jahr recht konsequent mit dem Schreiben war, gab es vor allen Dingen
+Ende Sommer bis in den Herbst hinein einen grossen Aussetzer. Ausgerechnet (wieder
+einmal) zu dem Zeitpunkt wo man viel haette berichten koennen, habe ich mich selber
+damit abgeschossen, indem die Bastelarbeiten an den Scripten hinter den Kulissen
+von Blog und Website weitere Updates verhinderten. Dies ist nun gleucklicherweise seit
+einer Weile behoben, nur das Loch in der Berichterstattung bleibt bestehen.
+
+Vorhin waren wir noch einmal eine Runde mit Sofia unterwegs: bei den Boellern, welche
+ueberall gezuendet werden, kriegt der Hund so richtig Stress, so dass es schon eine
+groessere Aktion war mal eine Runde zu laufen. Zurueck zuhause scheint es sich
+wieder ein wenig einzurenken, aber so gegen Mitternacht gemeinsam vor die Tuere gehen
+scheint nicht unbedingt eine gute Idee zu sein. Andererseits muss man dem Hund schon
+zu Gute halten, dass es in den letzten drei Wochen einiges Fortschritten gegeben hat,
+so dass es kommendes Silvester sicherlich deutlich anders aussehen wird.
+
+**:::**
+
+### Supporting TROPOMI OCAL ###
+
+
+_Mon, 29. December 2014 -- 19:34_
+
+It is happening: after month and years of preparations the TROPOMI instrument not
+only is at the [Centre Spatial de Liege](http://www.csl.ulg.ac.be) (CSL) [testing
+facility](http://www.csl.ulg.ac.be/jcms/c_5574), but since a few days there is a
+continuous stream of measurement data coming in!
+
+> CSL is an active research centre in the fields of space instruments, space testing
+> and technologies. CSL is highly known as a test centre but it as also important
+> activities in space instrumentation and advanced technologies. For years, the CSL
+> has been an “ESA-coordinated facility”. Today, the Testing Department operates five
+> thermal-vacuum chambers with volumes ranging from 1 to 170 m³, two shakers (88 to
+> 200 kN) and a number of specialized equipments all located in a 1,000-m² clean room
+> area (ISO 5 to ISO 7).
+
+So while there is still the need to continue working on the calibration algorithms,
+there of course is the more immediate need to respond to any problems encountered
+while the calibration measurements are running. Part of this support was the request
+arriving this afternoon for the creation of a small webpage to provide an overview
+of the available quicklook documents (basically a collection of diagnostics plots).
+Nothing big, just a simple webpage with a list of files (and a link for downloading
+them) -- something like this:
+
+![Webpage screenshot](/blog/2014/2014-12/2014-12-29_quicklooks_page.png)
+
+The pretty much straight-forward way to do this is (once more) coming up with a short
+shell script to locate the PDF files... and write out some HTML code. The latter is
+something I haven't been doing in quite a while: what I have been doing instead was
+to run some simple markup text files through e.g. [Doxygen](http://www.doxygen.org)
+or -- as is the case for this website -- use a static website generator to handle the
+task. So this time it is back to the basics.
+
+~~~~~~~~
+html_header ()
+{
+    echo "<html>"
+    echo "  <head>"
+    echo "    <meta name=\"author\" content=\"Lars Baehren\" />"
+    echo "    <meta name=\"description\" content=\"TROPOMI SWIR quicklooks\" />"
+    echo "    <meta name=\"keywords\" content=\"TROPOMI, SWIR, Quicklook, SRON\" />"
+    echo "    <meta name=\"generator\" content=\"Lars Baehren\" />"
+    echo "  <head>"
+    echo "  <body>"
+    echo ""
+    echo "    <h1>TROPOMI SWIR quicklooks</h1>"
+    echo ""
+    echo "    <i>Page generated `date`</i>"
+    echo ""
+}
+~~~~~~~~
+
+Luckily nothing fancy is required, so whipping a few lines of bash script to generate
+HTML output isn't a big deal. Of course there always is the risk to start overdoing it
+once there first working version is out: there is always something to tweak and improve,
+be it making adjustments to the layout, add navigation links, etc. However for the
+time being nothing of the like is in the works, so all there is to it is to let "cron"
+run the script(s) and provide the people back at SRON or CSL (Luik, BE) with the input
+they need.
+
+**:::**
+
+### Sonntagspaziergang ###
+
+
+_Sun, 28. December 2014 -- 20:35_
+
+Was fuer ein Wetter! Nachdem eigentlich schon seit einer Weile alles unter Bergen
+von Schnee begraben sein sollte, stellte sich heute Morgen bei einem Blick aus dem
+Fernster nicht nur heraus, dass von einer durchgehenden weissen Schneedecke nirgends
+etwas zu sehen war, sondern auch noch dass der Tag recht freundlich zu werden versprach.
+Kalt zwar, aber doch recht sonnig. Folgerichtig habe ich gleich Kamera und Stativ
+mit zum Sport genommen, so dass ich von Mondorf aus zurueck in Richtung Tannenbusch
+laufen konnte. Habe ich auch gemacht, nur leider fiel die Route etwas anders aus, als
+ich dies gehofft hatte. Auch wenn ich gleich mehrmals auf den Seiten der [Rheinfaehre Mondorf](http://www.rheinfaehre-mondorf.de)
+nachgeschaut hatte, war ich doch ein wenig ueberrascht, als ich heute Mittag dann vor einem
+Schild stand, welches mit mitteilte, dass zwischen dem 23. Dezember und dem 5. Januar
+keinerlei Faehrverkehr geplant ist. Dies bedeutete nicht nur, dass mein anvisierter
+Weg ueber den Rhein angeschnitten war, sondern dass ein laengerer Marsch zur Nordbruecke
+auf dem Programm stand. Nun habe ich nicht grundsaeztlich etwas gegen die Umgebung der
+Siegmuendung einzuwenden, aber ich hatte doch eigentlich eher vorgehabt [Graurheindorf](http://de.wikipedia.org/wiki/Graurheindorf)
+und Buschdorf unsicher zu machen -- das werde ich mir nun zunaechst einmal fuer eine andere
+Gelegenheit aufsparen muessen.
+
+![Heinrich-Hertz-Europakolleg](/blog/2014/2014-12/hdr_20141228_153854_Heinrich-Hertz-Europakolleg.jpg)
+
+Was mich bei der ganzen Sache dann doch wieder ein klein wenig versoehnlich stimmt ist,
+dass ich trotzdem mit ein paar brauchbaren Bildern zurueck nach Hause gekommen bin.
+Vor allen Dingen nach der Rheinueberquerung habe ich in Graurheindorf (dem mehr Richtung
+Innenstadt gelegenen Teil) ein paar der Ecken angesteuert, welche ich mir schon eine
+Weile mal etwas genauer angeschaut haben wollte: dazu gehoert u.a. der Gruendstreifen
+auf der Rueckseite des [Heinrich-Hertz-Europakolleg](http://www.hhek.bonn.de) und die sich
+daran anschliessenden Sportanlagen.
+
+![Tannennbusch](/blog/2014/2014-12/hdr_20141228_163008_Tannenbusch.jpg)
+
+Vom Timing her hat es gerade noch so gereicht, dass ich in Tannenbusch angekommen ein
+paar der goldenen Sonnenstrahlen mitnehmen konnte. Zwar gab es jetzt nicht unbedingt
+sonderlich viele Stellen, an welchen ich hier photographisch haette zuschlagen koennen,
+aber immerhin konnte ich doch mein Portfolio fuer den Stadtteil wieder ein klein wenig
+aufbessern; ich bleibe dabei nach wie vor bei meinem Vorhaben, eben ein wenig andere
+Eindruecke einzufangen, als was man ansonsten bei einer Bildersuche zu dieser Gegend
+geboten bekommt.
+
+**:::**
+
+### Aenderung der Reiseplanung ###
+
+
+_Sun, 28. December 2014 -- 01:02_
+
+Da wird es wohl nichts mit den Reiseplaenen fuer das neue Jahr. Nachdem im
+Laufe des gestrigen Abends immer mehr die Wettermeldungen reinkamen, stellte sich
+recht schnell heraus, dass es wohl keine gute Idee sein wuerde an den Reiseplaenen nach
+Utrecht festzuhalten. Eigentlich war ja angedacht, dass Julia und ich Anfang kommender
+Woche mit dem Auto nach Utrecht fahren, um auf diese Weise dann endlich einmal die
+dort zwischengelagerten Stuehle nach Bonn zu ueberfuehren. Da setzt allerdings ein wenig
+voraus, dass das Wetter mitspielt, denn sollte aus den angekuendigten Schneeverwehungen
+ernst werden, dann will man unter diesen Umstaenden ganz bestimmt nicht ohne Not
+irgendwo mit dem Auto unterwegs sein. Also werde ich wohl noch eine Woche hier in
+Bonn dran haengen -- was eine der netten Nebenwirkungen ist -- und dann erst am
+5. Januar wieder in die Niederlande verschwinden.
+
+**:::**
+
 ### The Interview ###
 
 
@@ -96,7 +270,7 @@ Photo-Session eingelegt.
 ![Books](/blog/2014/2014-12/2014-12-20_Books.png)
 
 Die Resultate laufen zumindest durch eine minimale Pipeline, weil ich (mit auch aufgrund
-der Lichtverhaeltnisse) zumindest ein [-1, 0, +1] Bracketing geschosssen habe (will also
+der Lichtverhaeltnisse) zumindest ein \[-1, 0, +1\] Bracketing geschosssen habe (will also
 heissen HDR). Ich weiss zwar nicht ob dies immer wirklich noetig ist, aber zumindest
 gibt es so Bildmaterial mit vernuenftigen Farben und ausreichend Detailaufloesung.
 Der zweite Batch laeuft derzeit noch durch die Konvertierung, aber das ich dies seit
@@ -359,184 +533,3 @@ ein einzelnes Bit von A nach B bewegt wird. Angesichts der Tatsache, dass es gut
 230 GB sind, welche via USB Verbindung durch die Gegend geschoben werden muessen...
 da spiele sogar mit dem Gedanken den Rechner ausnahmsweise mal ueber Nacht im Institut
 stehen zu lassen.
-
-**:::**
-
-### Drahtlos - kopflos ###
-
-
-_Tue, 16. December 2014 -- 13:01_
-
-Also einen entscheidenden Nachteil haben drahtlose Kopfhoerer schon: es ist ziemlich
-leicht beim Verlassen des Hauses (der Wohnung) Dinge zurueck zu lassen. Erstaunlicherweise
-sind davon bei mir aber nicht die Kopfhoerer selber betroffen, sondern ich neige eher
-dazu das Handy nicht mitzunehmen/einzupacken. So war ich letzte Woche Montag schon ein
-gutes Stueck aus dem Haus, als mit einem Male der Ton auf den Kopfhoerern zusammenbrach;
-Da ih aber wusste dass alle Akkus aufgeladen waren, foerderte eine Inspektion der
-Taschen schnell den Kern des Problems zu Tage. Heute Morgen dann ist es mir erst deutlich
-spaeter aufgefallen (was vor allen Dingen daran lag, dass ich nicht Nachrichten gehoert
-sondern in einem [TROPOMI](http://www.tropomi.eu) Dokument gelesen habe): ich stand
-schon eine Weile an der Bushaltestelle, als ich bei dem Versuch nach der Urzeit zu schauen
-feststellen durfte, dass wohl noch einmal ein Abstecher zurueck in die Wohnung faellig
-werden wuerde. Was dies betrifft ist ein Kopfhoerer mit Kabel definitiv von Vorteil --
-die Kombo zusammen mit dem Handy ist deutlich weniger leicht zu uebersehen und zu
-vergessen.
-
-**:::**
-
-### Mit Hund unterwegs ###
-
-
-_Mon, 15. December 2014 -- 22:20_
-
-Schon suess, die Kleine! Dieses Foto habe ich nur wenige Minuten vor dem Zeitpunkt
-gemacht, zu welchem Julias Yoga-Damen aus der [Atempause](https://plus.google.com/100836942898820199676/about)
-gerannt kamen... und schnurgerade auf uns zukamen (und ich bin mir ziemlich sicher
-bin, dass dies nichts mit mir zu tun hatte).
-
-![Sofia](/blog/2014/2014-12/dsc_20141214_153447_Sofia.jpg)
-
-Neben der Tatsache, dass man im Haus deutlich mehr aufpassen muss, was man so in der
-Gegend herumliegen laesst -- will man es nicht verschleppt oder angekaut haben --
-sind es nun wieder auch die regelmaessigen Ausfluege an die frische Luft, welche
-als klarer Hinweis darauf gelten koennen, dass es wieder einen Hund im Haus gibt.
-An diesem Sonntag ist es gerade einmal eine Woche, dass wir die kleine spanische
-Hundedame in der Naehe von Frankfurt abgeholt haben... es ist aber schon zu erkennen,
-wie sich alle Seiten aufeinander einstellen. Da sich das Wetter am Sonntag von der
-sehr freundlichen Seite zeigte, war dies die (fast schon zu) perfekte Gelegenheit
-fuer einen Spaziergang ueber die Felder in Richtung Roisdorf. Zumindest was einen Teil
-der Strecke entspricht war dies die Tour, welche ziemlich genau eine Woche davor auch
-schon gelaufen war -- da allerdings noch um mich mit Julia zu treffen und dann in
-Richtung Frankfurt aufzubrechen. Diesen Sonntag war aber mehr Aufmerksamkeit fuer meine
-Begleitung erforderlich, so dass die Motivsuche ein wenig in den Hintergrund treten
-musste. Hat aber recht gut geklappt, so wir sogar mit ein wenig Zeitreserve bei der
-Atempause angekommen sind.
-
-**:::**
-
-### Repair completed ###
-
-
-_Mon, 15. December 2014 -- 08:00_
-
-Das ist natuerlich eine Art von Benachrichtigung, wie ich sie gerne zu lesen bekomme:
-
-> Dear user,
->
->
-> The system has completed repairing the degraded storage space (Volume 1) with
-Hot Spare disk (Disk 11).
->
->
-> Sincerely,
-> Synology DiskStation
-
-Nachdem ich am letzten November-Wochenende zwei Festplatten in der [DiskStation](https://www.synology.com/en-global/products/DS2413+)
-ausgetauscht habe, brauchte das System (erwartungsgemaess) eine Weile, um die Integritaet der
-Daten wieder herzustellen und alles auf die neue Konfiguration abzustimmen. Da ich mir
-aber vor einer Weile die Email-Benachrichtigung eingestellt hatte, kriege ich sogar
-hier in Utrecht mit, dass sich zuhause abspielt (zumindest was die IT-Infrastruktur betrifft).
-Dazu gehoert natuerlich auch, wenn eine der im NAS eingebauten Festplatten einen Fehler
-aufweist:
-
-> Dear user,
->
-> The system is now using Hot Spare disk (Disk 11) to repair the degraded storage space (Volume 1).
->
-> Sincerely,
-> Synology DiskStation
-
-Von den 12 Einschueben, welche zur Verfuegung stehen, werden lediglich 11 aktiv genutzt;
-um die Verfuegbarkeit des Systems im Falle eines Festplattenfehlers sicherzustellen,
-ist eine Platte als "Hot Spare" reserviert. Kommt es also zu einem Ausfall, dann kann
-der Server direkt mit der Wiederherstellung der Daten beginnen, ohne dass ich dafuer
-erst einmal eine neue Festplatte einbauen muss -- dies macht die ganze Sache einfach
-deutlich entspannter.
-
-**:::**
-
-### Funktioniert wieder ###
-
-
-_Thu, 11. December 2014 -- 21:49_
-
-Das ich es je geschafft mir die Daten, welche ich zum arbeiten mitgenommen hatte,
-durch einen doofen Programmierfehler zu zerschiessen (was bedeutet dass ich diese von
-zuhause noch einmal uebertragen muss), konnte ich nicht wie geplant an dem Code fuer
-die Generierung der Testdaten fuer meine Algorithmen arbeiten. Aus diesem Grunde habe
-ich mich dann der Maschinerie hinter dem Blog zugewandt, welche einfach schon zu
-lange ein paar recht wichtige Funktionalitaeten vermisst hat; dazu gehorte vor allen
-Dingen der Zusammenbau der [Index-Seite fuer den Blog](/blog/index.html). Wie so
-ueblich enthaelt diese Seite die letzten N Eintraege in chronologisch umgekehrter Folge
--- worauf sich dann auch die Aufgabe ableiten laesst, welche es zu loesen gibt. Einen
-Teil davon hatte ich ja bereits (neu und kompakter) implementiert, aber was mir eben
-noch fehlte war der letzte Schritt, naemlich aus der Liste der letzten Eintraege die
-Seite zusammenzubauen. Einen nicht unerheblichen Teil davon konnte ich von der Routine
-verwenden, welche fuer den Index der in Vorbereitung befindlichen Eintraege zustaendig
-ist -- der wesentliche Unterschied ist allerdings dass ich nicht nur die Ueberschriften
-sondern auch den vollen Text brauche.
-
-In der Verhangenheit hatte dies mitunter zu einigen merkwuerdigen Resulaten gefuehrt,
-weil ich via diverser `grep` Statements probiert habe sowohl den Header als auch andere
-Metadaten herauszufiltern. Wenn dann einer der Patterns auch im Text des Blog-Eintrages
-auftauchte, konnte es durchaus schon einmal passieren, dass vereinzelte Passagen
-verschluckt wurden. Damit duerfte nun aber Schluss sein -- und dies mit einem
-Bruchteil an Code!
-
-Mit zu verdanken habe ich dies dem [Advanced Bash-Scripting Guide](http://www.tldp.org/LDP/abs/html),
-einer Sammlung an Anleitungen und Ausfuehrungen, welche mir schon so manches Mal
-beim Scripten geholfen hat. Der Ausgangspunkt meiner Ueberlegungen war, dass ich
-es via `sed` schaffen sollte einfach den kompletten Header abzuschneiden, so das
-ich mir alle weiteren Verrenkungen mit `grep` sparen kann. Da mein Wissen in
-Sachen "Regular Expressions" sich doch immer wieder als ein wenig lueckenhaft
-herausstellt, war da der Zeitpunkt gekommen, einmal wieder den Guide zu Hand zu
-nehmen. Praktischerweise findet sich darin gegen Ende ein "Sed and Awk
-Micro−Primer", wo ich dann den folgenden Befehl finden konnte:
-
-~~~~~~~~
-sed 11,/^$/d
-~~~~~~~~
-
-Als Beschreibung hierzu hiess es:
-
-> Delete from beginning of input up to, and including first blank line.
-
-Das kam der Sache schon ziemlich nahe und lieferte auf Anhieb gleich ein Ergebnis,
-welches ich verwenden konnte: einfach die entsprechende Datei via `cat` ausgeben lassen
-und dann in `sed` pipen.
-
-~~~~~~~~
-cat $1 | sed 11,/^$/d
-~~~~~~~~
-
-An der Stelle ist mir dann aufgefallen, dass sich dies sogar noch ein wenig mehr verbessern
-laesst, indem ich nicht nach der ersten Leerzeile, sondern nach der eh herauszufilternden
-Titelzeile suche (weil diese eh anders aufbereitet werden muss). Einfach mal schnell
-ausprobieren...
-
-~~~~~~~~
-cat $1 | sed 1,/"##"/d
-~~~~~~~~
-
-... und siehe da, schon habe ich ein fertiges Script, welches nir die Index-Seite fuer den
-Blog produziert. Das schoene daran ist, dass dies mit deutlich weniger Code und deutlich
-weniger Anfaelligkeit gegenueber dem was im Eintrag selber steht geschieht (wo es in der
-Vergangenheit naemlich durchaus schon einmal Probleme gab). Damit kann also der Blog fuer
-das erste **endlich** wieder online gehen!
-
-**:::**
-
-### Daten weg ###
-
-
-_Thu, 11. December 2014 -- 18:12_
-
-So kann man sich natuerlich auch selber sabotieren: durch die Verwechslung eines
-Dateinamens habe ich mir (noch vor Arnhem) die Daten gekillt, welche ich mir noch
-extra fuer die Reise auf das Laptop geschaufelt hatte. Zunaechst dachte ich, dass
-ich mit den Code selber zu weit gegangen bin - zu viele Schritte ohne zwischenzeitliches
-Backup -- aber nach ein wenig Suche stellte sich heraus, dass der Code (weitestgehend)
-ok war... sieht man einmal von der Tatsache ab, dass ich an einer Stelle den falschen
-Pfad verwendet habe. Der Effekt von dieser Aktion war, dass ich eben genau jene
-Daten ueberschrieben habe, welche ich zum Testen verwenden wollte. Sieht also ganz
-danach aus, als kann ich mir zumindest dieses Vorhaben fuer die Rueckfahrt abschreiben.
