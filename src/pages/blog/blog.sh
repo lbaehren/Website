@@ -94,7 +94,7 @@ get_timeheader ()
     else
         # check if the file path is valid
         if [ -f $1 ] ; then
-            varTimeheader=`cat $1 | grep -v "\[" | grep ":" | grep "_" | grep "\-\-" | sed s/_//g`
+            varTimeheader=`cat $1 | grep -v "\[" | grep ":" | grep "_" | grep -v "\-r\-" | grep "\-\-" | sed s/_//g`
             echo ${varTimeheader}
         else
             echo ""
@@ -256,6 +256,10 @@ create_index_file_blog ()
 #_______________________________________________________________________________
 #                                                                   list_entries
 
+## List blog entries within a given directory
+#
+#  @param dir - Directory for which to list the entries
+#
 list_entries ()
 {
     if [ -z $1 ] ; then

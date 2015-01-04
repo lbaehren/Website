@@ -1,0 +1,12 @@
+---
+title: 2015
+in_menu: true
+author: "Lars Baehren"
+---
+
+## Blog entries | {title:} ##
+
+<% mName=['January','February','March','April','May','June','July','August','September','October','November','December'] %>
+<% for n in 0..11 %>
+### <%= #{mName[n]} %> ###
+<% end %>
