@@ -10,8 +10,10 @@ _Saturday, 10 January 2004 -- 14:02_
 
 So, hier nur noch einmal ein kurzer Beitrag zu der "Warum ist das STW-Netzwerk so lahm"-Diskussion: ich habe gerade mal die letzten Ergaenzungen meiner neuen Sammlung nach hier uebertragen (IAEF Bonn -> ASTRON):
 
+~~~~
     Dawson's Creek - [1x03] - Kiss.avi      100% 348MB 2.7MB/s 02:04
-    Dawson's Creek - [1x04] - Discovery.avi 100% 348MB 2.8MB/s 02:02 
+    Dawson's Creek - [1x04] - Discovery.avi 100% 348MB 2.8MB/s 02:02
     Dawson's Creek - [1x05] - Hurricane.avi 100% 348MB 2.8MB/s 02:02
+~~~~
 
 Die Tatsache, dass exakt die gleichen Rechner daran beteiligt sind scheint doch eine recht gute Bestaetigung fuer den Verdacht zu sein, dass das VPN ganz erheblich zur Performance-Minderung innerhalb des Stw-Netzwerks beitraegt. Ich meine, die gleiche Operation in Bonn muesste noch nicht einmal raus ins DFN, sondern koennte Uni-intern laufen. Dass die dabei zu erwartende hoehere Datenuebertragungsgeschwindigkeit nicht zu beobachten ist laesst doch arg den Verdacht aufkommen, dass es in Bonn eine nicht zu vernachlaessigende Bremse gibt (was mir aber bereits vorher schon einmal aufgefallen war, als die Bandbreite um gut einen Faktor 3 in den Keller gegangen ist).

@@ -64,19 +64,19 @@ code instructions can be kept a bit more generic, making the script modular enou
 adding a new feature with little effort.
 
 ~~~~~~~~ bash
-md_header ()
-{
-    varTitle=$1
-    varAnchor=$2
-    varTitleLength=`echo ${varTitle} | wc -c`
-    ((varTitleLength--))
-    s=$(printf "%-${varTitleLength}s" "=")
-    varUnderscore=`echo "${s// /=}"`
+    md_header ()
+    {
+        varTitle=$1
+        varAnchor=$2
+        varTitleLength=`echo ${varTitle} | wc -c`
+        ((varTitleLength--))
+        s=$(printf "%-${varTitleLength}s" "=")
+        varUnderscore=`echo "${s// /=}"`
 
-    echo "${varTitle}  {#${varAnchor}}"
-    echo "${varUnderscore}"
-    echo ""
-}
+        echo "${varTitle}  {#${varAnchor}}"
+        echo "${varUnderscore}"
+        echo ""
+    }
 ~~~~~~~~
 
 [Markdown support](http://www.stack.nl/~dimitri/doxygen/manual/markdown.html) was

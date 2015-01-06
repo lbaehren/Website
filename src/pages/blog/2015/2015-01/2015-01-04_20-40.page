@@ -20,10 +20,10 @@ mehr mit dem Ausgangsmaterial zu tun hat, sondern einfach nur noch durchlaufend
 nummeriert ist:
 
 ~~~~~~~~
--rw-r--r--   1 lars  staff  115371820 Jan  4 20:01 hdr_1.exr
--rw-r--r--   1 lars  staff  115662843 Jan  4 20:03 hdr_2.exr
--rw-r--r--   1 lars  staff  116396095 Jan  4 20:05 hdr_3.exr
--rw-r--r--   1 lars  staff  116093543 Jan  4 20:06 hdr_4.exr
+    -rw-r--r--   1 lars  staff  115371820 Jan  4 20:01 hdr_1.exr
+    -rw-r--r--   1 lars  staff  115662843 Jan  4 20:03 hdr_2.exr
+    -rw-r--r--   1 lars  staff  116396095 Jan  4 20:05 hdr_3.exr
+    -rw-r--r--   1 lars  staff  116093543 Jan  4 20:06 hdr_4.exr
 ~~~~~~~~
 
 Was ich aber gerne moechte ist, dass die HDR Datei -- wie dies auch beim Rohmaterial
@@ -35,46 +35,46 @@ gluecklicherweise Schluss, denn mit ein paar Zeilen [Bash](http://www.gnu.org/so
 kann man auch diese Aufgaben dem Rechner ueberlassen.
 
 ~~~~~~~~
-      36 input images found.
-0   0   dsc_20150103_170548.TIF  <=  HDR 1
-1   1   dsc_20150103_170549.TIF
-2   2   dsc_20150103_170551.TIF
-3   3   dsc_20150103_170553.TIF
-4   4   dsc_20150103_170556.TIF
-5   5   dsc_20150103_170559.TIF
-6   6   dsc_20150103_170605.TIF
-7   7   dsc_20150103_170616.TIF
-8   8   dsc_20150103_170635.TIF
-9   0   dsc_20150103_171207.TIF  <=  HDR 2
-10   1   dsc_20150103_171208.TIF
-11   2   dsc_20150103_171210.TIF
-12   3   dsc_20150103_171212.TIF
-13   4   dsc_20150103_171214.TIF
-14   5   dsc_20150103_171218.TIF
-15   6   dsc_20150103_171223.TIF
-16   7   dsc_20150103_171233.TIF
-17   8   dsc_20150103_171251.TIF
-18   0   dsc_20150103_190226.TIF  <=  HDR 3
-19   1   dsc_20150103_190228.TIF
-20   2   dsc_20150103_190230.TIF
-21   3   dsc_20150103_190233.TIF
-22   4   dsc_20150103_190237.TIF
-23   5   dsc_20150103_190245.TIF
-24   6   dsc_20150103_190259.TIF
-25   7   dsc_20150103_190325.TIF
-26   8   dsc_20150103_190359.TIF
-27   0   dsc_20150103_204801.TIF  <=  HDR 4
-28   1   dsc_20150103_204803.TIF
-29   2   dsc_20150103_204805.TIF
-30   3   dsc_20150103_204809.TIF
-31   4   dsc_20150103_204814.TIF
-32   5   dsc_20150103_204824.TIF
-33   6   dsc_20150103_204843.TIF
-34   7   dsc_20150103_204916.TIF
-35   8   dsc_20150103_204950.TIF
+          36 input images found.
+    0   0   dsc_20150103_170548.TIF  <=  HDR 1
+    1   1   dsc_20150103_170549.TIF
+    2   2   dsc_20150103_170551.TIF
+    3   3   dsc_20150103_170553.TIF
+    4   4   dsc_20150103_170556.TIF
+    5   5   dsc_20150103_170559.TIF
+    6   6   dsc_20150103_170605.TIF
+    7   7   dsc_20150103_170616.TIF
+    8   8   dsc_20150103_170635.TIF
+    9   0   dsc_20150103_171207.TIF  <=  HDR 2
+    10   1   dsc_20150103_171208.TIF
+    11   2   dsc_20150103_171210.TIF
+    12   3   dsc_20150103_171212.TIF
+    13   4   dsc_20150103_171214.TIF
+    14   5   dsc_20150103_171218.TIF
+    15   6   dsc_20150103_171223.TIF
+    16   7   dsc_20150103_171233.TIF
+    17   8   dsc_20150103_171251.TIF
+    18   0   dsc_20150103_190226.TIF  <=  HDR 3
+    19   1   dsc_20150103_190228.TIF
+    20   2   dsc_20150103_190230.TIF
+    21   3   dsc_20150103_190233.TIF
+    22   4   dsc_20150103_190237.TIF
+    23   5   dsc_20150103_190245.TIF
+    24   6   dsc_20150103_190259.TIF
+    25   7   dsc_20150103_190325.TIF
+    26   8   dsc_20150103_190359.TIF
+    27   0   dsc_20150103_204801.TIF  <=  HDR 4
+    28   1   dsc_20150103_204803.TIF
+    29   2   dsc_20150103_204805.TIF
+    30   3   dsc_20150103_204809.TIF
+    31   4   dsc_20150103_204814.TIF
+    32   5   dsc_20150103_204824.TIF
+    33   6   dsc_20150103_204843.TIF
+    34   7   dsc_20150103_204916.TIF
+    35   8   dsc_20150103_204950.TIF
 
- - nof. input images = 36
- - nof. HDR images   = 4
+     - nof. input images = 36
+     - nof. HDR images   = 4
 ~~~~~~~~
 
 Die Kleinigkeit, welche mir jetzt noch fehlt -- und dies waere dann noch einmal ein
