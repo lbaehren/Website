@@ -19,7 +19,7 @@ had been written with the idea in mind to list upcoming entries (and offer them
 for publication); however extraction of further details was pretty generic, such
 that the only thing left to adjust was the path w.r.t. which the listing was extracted.
 
-~~~~~~~~
+~~~~~~~~ bash
 list_entries ()
 {
     if [ -z $1 ] ; then

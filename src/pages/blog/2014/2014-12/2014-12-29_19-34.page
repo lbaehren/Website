@@ -40,7 +40,7 @@ to run some simple markup text files through e.g. [Doxygen](http://www.doxygen.o
 or -- as is the case for this website -- use a static website generator to handle the
 task. So this time it is back to the basics.
 
-~~~~~~~~
+~~~~~~~~ bash
 html_header ()
 {
     echo "<html>"

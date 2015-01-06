@@ -31,9 +31,9 @@ plant Tasks gleich dutzendweise laufen zu lassen. Entscheidend ist es hier
 die Standard-Streams noch **vor** dem Aufruf von ``time`` umzubiegen, so laesst
 sich dann die entsprechende Ausgabe abfangen und in einer Datei wegschreiben.
 
-~~~~
+~~~~~~~~ bash
 &>task.log time ${RUNTASK} -s 123456 quicklooks/${GROUP}/${FILE}/${TASK}.ocal
-~~~~
+~~~~~~~~
 
 Fuegt man dann noch ein wenig ``tr`` und ``sed`` Magic hinzu, so erhaelt man
 ein Logfile, in welchem alle gewuenschten Informationen zu finden sind:

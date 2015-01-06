@@ -1,0 +1,86 @@
+---
+title: "Supporting TROPOMI OCAL (2)"
+in_menu: false
+author: "Lars Baehren"
+date: 2015-01-05T23:30:56.00Z
+created_at: 2015-01-05T17:21:16.00Z
+---
+
+## {title:} ##
+
+_Mon, 05. January 2015 -- 23:30_
+
+[As mentioned before](/blog/2014/2014-12/2014-12-29_19-34.html) the **TROPO**spheric
+**M**onitoring **I**nstrument ([TROPOMI](/work/tropomi.html)) is at the [Centre Spatial de Liege](http://www.csl.ulg.ac.be)
+(CSL) [testing facility](http://www.csl.ulg.ac.be/jcms/c_5574) being subjected to
+a long list of intense calibration measurements. And while data are streaming back to
+the participating institutes, processing and analysis need to keep up with what is
+being done at the test facility.
+
+As a small contribution to this I have been setting up a number of scripts to operate
+at the back-end of the standard processing pipeline, collecting generated diagnostics
+plots and making them available in a fashion more convenient than digging through
+multiple levels of output directories. In a first version I have been creating a very
+simple web page directly from a Bash script -- something to get off the ground quick
+to help people out (here at the institute as well as on site in Belgium). But with
+the growing amount of data the original approach no longer was viable -- hence I
+decided to delegate the web page creation to [Doxygen](http://www.doxygen.org), shifting
+the focus to providing to easier navigation and access. The new version of the web
+pages (there now are multiple instead of the original single one) looks something like
+this:
+
+![Quicklooks webpage](/blog/2015/2015-01/2015-01-05_webpage_quicklooks.png)
+
+One of the things I added this morning is the information on a) the number of files
+collected underneath a given category and b) the number of pages the PDF files with
+the diagnostics plots have. If anything this gives an idea of the data volume (or
+lack thereof) for given combination of measurement types an corresponding diagnostics.
+
+The mechanics behind the scenes are fairly straight-forward (and are the bits which
+were done rather quickly); first of all -- in order to make things self-contained and
+not rely on a whole collection of configuration and template files -- I am writing
+out a minimal configuration script for [Doxygen](http://www.doxygen.org):
+
+~~~~~~~~
+    echo "DOXYFILE_ENCODING      = UTF-8"
+    echo "PROJECT_NAME           = \"${varPageTitle}\""
+    echo "FULL_PATH_NAMES        = NO"
+    echo "MARKDOWN_SUPPORT       = YES"
+    echo "SHOW_NAMESPACES        = NO"
+    echo "INPUT                  = ${varTmpDir}"
+    echo "RECURSIVE              = YES"
+    echo "IMAGE_PATH             = ${varSourceDirectories}"
+    echo "HTML_OUTPUT            = ${varTargetDir}"
+    echo "GENERATE_HTML          = YES"
+    echo "GENERATE_LATEX         = NO"
+    echo "GENERATE_XML           = NO"
+    echo "GENERATE_RTF           = NO"
+~~~~~~~~
+
+Written as a simple Bash function -- with the output directed to a file -- the same
+variables are used as for the remainder of the script. The source files for the individual
+pages is broken into a header segment and the main contents; this way once more
+code instructions can be kept a bit more generic, making the script modular enough that
+adding a new feature with little effort.
+
+~~~~~~~~
+md_header ()
+{
+    varTitle=$1
+    varAnchor=$2
+    varTitleLength=`echo ${varTitle} | wc -c`
+    ((varTitleLength--))
+    s=$(printf "%-${varTitleLength}s" "=")
+    varUnderscore=`echo "${s// /=}"`
+
+    echo "${varTitle}  {#${varAnchor}}"
+    echo "${varUnderscore}"
+    echo ""
+}
+~~~~~~~~
+
+[Markdown support](http://www.stack.nl/~dimitri/doxygen/manual/markdown.html) was
+introduced in Doxygen version 1.8.0 and simplifies greatly the usage of the tool as
+a static website generator. Instead of writing all the HTML code manually (or at least
+explicitely from the script), the intermediate product is a couple of simple markup
+files, which then in turn via Doxygen are converted into a rather nice-looking website.

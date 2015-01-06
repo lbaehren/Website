@@ -41,7 +41,7 @@ Also wenn dem wirklich so waere, dass waere dies doch ein wenig zu weit in der Z
 
 Da ich ja schon probiere meine Aufgaben so gut es geht durch [Taskwarrior](http://taskwarrior.org) zu verwalten -- was mir dann auch bei dem Abliefern der woechentlichen Arbeitsberichte hilft -- kann es durchaus schon einmal vorkommen, dass sich die Liste an Tasks recht stark veraendert. Wenn ich, so wie gestern geschehen, die sich aus einer Besprechung ergebenden Aufgaben allesamt eintrage und dann
 
-~~~~
+~~~~ bash
 task burndown.daily pro:tropomi
 ~~~~
 

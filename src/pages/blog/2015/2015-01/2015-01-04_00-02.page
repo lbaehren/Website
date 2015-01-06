@@ -1,0 +1,38 @@
+---
+title: "Gelegenheit zum Upgrade"
+in_menu: false
+author: "Lars Baehren"
+date: 2015-01-04T00:02:32.00Z
+created_at: 2015-01-03T23:22:33.00Z
+---
+
+## {title:} ##
+
+_Sun, 04. January 2015 -- 00:02_
+
+Das passte doch sehr gut. Nachdem dies schon eine Weile auf der Liste der zu erledigenden
+Dinge stand, haben heute Nachmittag/Abend endlich einmal die Umbauarbeiten an der
+heimischen IT stattgefunden. Da es ja einiges gibt, was hier am hausinternen
+Netz haengt, macht es durchaus Sinn sich ein wenig Gedanken ueber die Verschaltung
+zu machen, vor allen Dingen um den Datenverkehr in bestmoeglicher Weise zu leiten.
+Um alles an Kabeln neu ziehen zu koennen musste natuerlich alles fuer eine Weile offline
+gehen, so dass anschliessend dann ein Neustart noetig wurde. Da mir bei dem Synology
+NAS schon seit einer Weile die Erinnerung fuer ein moegliches Systemupdate entgegenblinkte,
+schien dies der perfekte Zeitpunkt zu sein, dies mal gleich noch mit zu erledigen. Folgerichtig
+habe ich das Update gleich mal angeworfen, nachdem die DiskStation wieder hochgefahren
+war...
+
+![Synology DSM update](/blog/2015/2015-01/2015-01-03_Synology_DSM_update.png)
+
+Verlief alles ohne Probleme, auch wenn ich mittlerweile so im Verzug war, dass zwei
+Updates durchgefuehrt werden mussten. Der dafuer benoetigte Zeitraum stimmte aber recht
+mit dem ueberein, was mir zu Beginn des Prozesses angekuendigt wurde, so dass die
+eigentliche Downtime recht gering blieb (schliesslich konnte man in der Zwischenzeit ja
+immer noch Daten hin und her schieben).
+
+![Synology packages up-to-date](/blog/2015/2015-01/2015-01-03_Synology_packages.png)
+
+An den "neuen Look" muss ich mich noch ein wenig gewoehnen: es faellt schon auf, dass
+sich die ganzen Bedienelemente ein wenig an dem orientieren, was man so von Apps mobiler
+Geraete gewohnt ist -- auch einem grossen Bildschirm wirkt dies nicht immer unbedingt
+passend.

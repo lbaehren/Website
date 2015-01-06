@@ -43,7 +43,7 @@ herausstellt, war da der Zeitpunkt gekommen, einmal wieder den Guide zu Hand zu
 nehmen. Praktischerweise findet sich darin gegen Ende ein "Sed and Awk
 Micro−Primer", wo ich dann den folgenden Befehl finden konnte:
 
-~~~~~~~~
+~~~~~~~~ bash
 sed 11,/^$/d
 ~~~~~~~~
 
@@ -55,7 +55,7 @@ Das kam der Sache schon ziemlich nahe und lieferte auf Anhieb gleich ein Ergebni
 welches ich verwenden konnte: einfach die entsprechende Datei via `cat` ausgeben lassen
 und dann in `sed` pipen.
 
-~~~~~~~~
+~~~~~~~~ bash
 cat $1 | sed 11,/^$/d
 ~~~~~~~~
 
@@ -64,7 +64,7 @@ laesst, indem ich nicht nach der ersten Leerzeile, sondern nach der eh herauszuf
 Titelzeile suche (weil diese eh anders aufbereitet werden muss). Einfach mal schnell
 ausprobieren...
 
-~~~~~~~~
+~~~~~~~~ bash
 cat $1 | sed 1,/"##"/d
 ~~~~~~~~
 

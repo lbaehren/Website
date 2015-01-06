@@ -55,7 +55,7 @@ sich doch bei Schritt 2 bzw. 3-4 und 5-7 deutliche Einsparungen erzielen:
    die Tone-Mapping Parameter als eine Konfigurationsdatei zu exportieren, welche sich
    (da reiner ASCII Text) sogar von Hand aus noch anpassen laesst.
 
-~~~~
+~~~~ bash
 TMOSETTINGSVERSION=0.6
 XSIZE=4288
 TMO=Mantiuk06

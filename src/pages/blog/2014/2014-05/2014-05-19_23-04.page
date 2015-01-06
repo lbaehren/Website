@@ -15,7 +15,7 @@ Unterschied machen. So habe ich heute endlich mal noch dafuer gesorgt, dass ein
 allen Anschein nach geschaetztes Feature wieder seinen Platz auf den Webseiten
 gefunden hat:
 
-~~~~
+~~~~ html
       <div id="contact">
         <p class="textcenter">
             &nbsp;|&nbsp;

@@ -17,7 +17,7 @@ gehoerenden Seiten aktualisieren kann. Was mir derzeit noch fehlt ist, dass die
 Index-Seiten und die Seite mit den letzten Eintraegen aufs Neue gebaut werden; zumindest
 was letzteres betrifft habe ich nun einen kleinen Fortschritt machen koennen:
 
-~~~~~~~~
+~~~~~~~~ bash
     for FILE in `ls ${PATH_BASEDIR}`
     {
         if [ -d "$FILE" ]

@@ -18,7 +18,7 @@ den Pfad eingeschlagen ein Layout-Template fuer die aktuelle Webgen Version
 zu nehmen und dort dann Stueck fuer Stueck die Anpassungen einzubauen, welche
 noetig sind um zum alten Layout zurueck zu kommen.
 
-~~~~
+~~~~ bash
 INFO  [create] </blog/2014/2014-05/2014-05-02_23-08.html>
 INFO  [create] </blog/2014/2014-05/2014-05-04_23-28.html>
 INFO  [create] </blog/2014/2014-05/2014-05-05_23-28.html>

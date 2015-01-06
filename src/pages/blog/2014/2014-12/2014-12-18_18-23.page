@@ -27,7 +27,7 @@ mich die letzten Tage umgetrieben und immer wieder aufgehalten hat. Das besonder
 schoene an der Sache ist, dass die nun gefundene Loesung nicht nur funktioniert, sondern
 auch insgesamt mit weniger Code auskommt (welcher dann auch eleganter ist).
 
-~~~~~~~~
+~~~~~~~~ python
     # Create instance of TestData object
     testdata = utils.lx_testdata (infile, band_nr, reftime=reftime)
 ~~~~~~~~

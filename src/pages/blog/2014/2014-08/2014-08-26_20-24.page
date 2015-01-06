@@ -33,7 +33,7 @@ certain position and size -- so using the sketch as an aid it (mainly) is a matt
 patience to work out the lower-left point of a subplot and its size. Starting off with
 the size of each plot ...
 
-~~~~
+~~~~ python
 dim_scatter    = [500, 500]
 dim_hist       = [200, dim_scatter[1]]
 dim_lightcurve = [dim_scatter[0]+self.fill[0]+dim_hist[0], 200]
@@ -47,7 +47,7 @@ dim_figure     = [2.0*self.fill[0]+dim_lightcurve[0],
 
 ... we are able to define the bounding boxes for each of the sub-plots:
 
-~~~~
+~~~~ python
 rect = {}
 # Total size of the figure
 rect["figure"] = dim_figure
@@ -75,7 +75,7 @@ Once all the bounding boxes are defined (and are returned in the form of a dicti
 we finally can go about creating the plots themselves: first we define the figure
 [axes](http://matplotlib.org/api/axes_api.html) ...
 
-~~~~
+~~~~ python
 axes = self.axes_scanning_quicklook (data.shape)
 fig  = plt.figure(figsize=(axes["figure"][1]/100, axes["figure"][0]/100))
 
@@ -88,7 +88,7 @@ axis_hist       = plt.axes(axes["hist"])
 [scatter plot](http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.scatter)
 or otherwise:
 
-~~~~
+~~~~ python
 axis_scatter.scatter(xs=track["x"], ys=track["y"], zs=track["z"],
                      zdir='z',
                      cmap=cm.cubehelix)

@@ -8,6 +8,236 @@ author: "Lars Baehren"
 
 **:::**
 
+### Supporting TROPOMI OCAL (2) ###
+
+
+_Mon, 05. January 2015 -- 23:30_
+
+[As mentioned before](/blog/2014/2014-12/2014-12-29_19-34.html) the **TROPO**spheric
+**M**onitoring **I**nstrument ([TROPOMI](/work/tropomi.html)) is at the [Centre Spatial de Liege](http://www.csl.ulg.ac.be)
+(CSL) [testing facility](http://www.csl.ulg.ac.be/jcms/c_5574) being subjected to
+a long list of intense calibration measurements. And while data are streaming back to
+the participating institutes, processing and analysis need to keep up with what is
+being done at the test facility.
+
+As a small contribution to this I have been setting up a number of scripts to operate
+at the back-end of the standard processing pipeline, collecting generated diagnostics
+plots and making them available in a fashion more convenient than digging through
+multiple levels of output directories. In a first version I have been creating a very
+simple web page directly from a Bash script -- something to get off the ground quick
+to help people out (here at the institute as well as on site in Belgium). But with
+the growing amount of data the original approach no longer was viable -- hence I
+decided to delegate the web page creation to [Doxygen](http://www.doxygen.org), shifting
+the focus to providing to easier navigation and access. The new version of the web
+pages (there now are multiple instead of the original single one) looks something like
+this:
+
+![Quicklooks webpage](/blog/2015/2015-01/2015-01-05_webpage_quicklooks.png)
+
+One of the things I added this morning is the information on a) the number of files
+collected underneath a given category and b) the number of pages the PDF files with
+the diagnostics plots have. If anything this gives an idea of the data volume (or
+lack thereof) for given combination of measurement types an corresponding diagnostics.
+
+The mechanics behind the scenes are fairly straight-forward (and are the bits which
+were done rather quickly); first of all -- in order to make things self-contained and
+not rely on a whole collection of configuration and template files -- I am writing
+out a minimal configuration script for [Doxygen](http://www.doxygen.org):
+
+~~~~~~~~
+    echo "DOXYFILE_ENCODING      = UTF-8"
+    echo "PROJECT_NAME           = \"${varPageTitle}\""
+    echo "FULL_PATH_NAMES        = NO"
+    echo "MARKDOWN_SUPPORT       = YES"
+    echo "SHOW_NAMESPACES        = NO"
+    echo "INPUT                  = ${varTmpDir}"
+    echo "RECURSIVE              = YES"
+    echo "IMAGE_PATH             = ${varSourceDirectories}"
+    echo "HTML_OUTPUT            = ${varTargetDir}"
+    echo "GENERATE_HTML          = YES"
+    echo "GENERATE_LATEX         = NO"
+    echo "GENERATE_XML           = NO"
+    echo "GENERATE_RTF           = NO"
+~~~~~~~~
+
+Written as a simple Bash function -- with the output directed to a file -- the same
+variables are used as for the remainder of the script. The source files for the individual
+pages is broken into a header segment and the main contents; this way once more
+code instructions can be kept a bit more generic, making the script modular enough that
+adding a new feature with little effort.
+
+~~~~~~~~
+md_header ()
+{
+    varTitle=$1
+    varAnchor=$2
+    varTitleLength=`echo ${varTitle} | wc -c`
+    ((varTitleLength--))
+    s=$(printf "%-${varTitleLength}s" "=")
+    varUnderscore=`echo "${s// /=}"`
+
+    echo "${varTitle}  {#${varAnchor}}"
+    echo "${varUnderscore}"
+    echo ""
+}
+~~~~~~~~
+
+[Markdown support](http://www.stack.nl/~dimitri/doxygen/manual/markdown.html) was
+introduced in Doxygen version 1.8.0 and simplifies greatly the usage of the tool as
+a static website generator. Instead of writing all the HTML code manually (or at least
+explicitely from the script), the intermediate product is a couple of simple markup
+files, which then in turn via Doxygen are converted into a rather nice-looking website.
+
+**:::**
+
+### Zwischenschritt automatisiert ###
+
+
+_Sun, 04. January 2015 -- 20:40_
+
+Eine sehr nuetzliche Sache: nachdem ich schon seit einer Weile einen Teil der HDR
+Berechnungen im Batch-Modus laufen lasse, habe ich ueber die Feiertage endlich mal
+noch das lange faellige Script geschrieben, mit welchem sich auch die Umbennenung
+der urspruenglich von [Luminance HDR](http://qtpfsgui.sourceforge.net) erzeugten
+HDR Dateien erledigen laesst. Fuettert man das Programm mit einer Reihe an RAW oder
+TIFF Bildern, so bekommt man eine Sammlung an HDR Dateien, deren Name leider nichts
+mehr mit dem Ausgangsmaterial zu tun hat, sondern einfach nur noch durchlaufend
+nummeriert ist:
+
+~~~~~~~~
+-rw-r--r--   1 lars  staff  115371820 Jan  4 20:01 hdr_1.exr
+-rw-r--r--   1 lars  staff  115662843 Jan  4 20:03 hdr_2.exr
+-rw-r--r--   1 lars  staff  116396095 Jan  4 20:05 hdr_3.exr
+-rw-r--r--   1 lars  staff  116093543 Jan  4 20:06 hdr_4.exr
+~~~~~~~~
+
+Was ich aber gerne moechte ist, dass die HDR Datei -- wie dies auch beim Rohmaterial
+der Fall ist -- die Datumsinformation traegt, so dass es einfach ist Dinge zu sortieren
+und wieder zu finden. Von allen Arbeitsschritten war dies bisher derjenige, welcher
+mich wahrscheinlich am meisten Zeit gekostet hat (sieht man einmal von der Beschriftung
+der Bilder ab, welche sich aber eben nicht automatisieren laesst). Damit ist nun aber
+gluecklicherweise Schluss, denn mit ein paar Zeilen [Bash](http://www.gnu.org/software/bash)
+kann man auch diese Aufgaben dem Rechner ueberlassen.
+
+~~~~~~~~
+      36 input images found.
+0   0   dsc_20150103_170548.TIF  <=  HDR 1
+1   1   dsc_20150103_170549.TIF
+2   2   dsc_20150103_170551.TIF
+3   3   dsc_20150103_170553.TIF
+4   4   dsc_20150103_170556.TIF
+5   5   dsc_20150103_170559.TIF
+6   6   dsc_20150103_170605.TIF
+7   7   dsc_20150103_170616.TIF
+8   8   dsc_20150103_170635.TIF
+9   0   dsc_20150103_171207.TIF  <=  HDR 2
+10   1   dsc_20150103_171208.TIF
+11   2   dsc_20150103_171210.TIF
+12   3   dsc_20150103_171212.TIF
+13   4   dsc_20150103_171214.TIF
+14   5   dsc_20150103_171218.TIF
+15   6   dsc_20150103_171223.TIF
+16   7   dsc_20150103_171233.TIF
+17   8   dsc_20150103_171251.TIF
+18   0   dsc_20150103_190226.TIF  <=  HDR 3
+19   1   dsc_20150103_190228.TIF
+20   2   dsc_20150103_190230.TIF
+21   3   dsc_20150103_190233.TIF
+22   4   dsc_20150103_190237.TIF
+23   5   dsc_20150103_190245.TIF
+24   6   dsc_20150103_190259.TIF
+25   7   dsc_20150103_190325.TIF
+26   8   dsc_20150103_190359.TIF
+27   0   dsc_20150103_204801.TIF  <=  HDR 4
+28   1   dsc_20150103_204803.TIF
+29   2   dsc_20150103_204805.TIF
+30   3   dsc_20150103_204809.TIF
+31   4   dsc_20150103_204814.TIF
+32   5   dsc_20150103_204824.TIF
+33   6   dsc_20150103_204843.TIF
+34   7   dsc_20150103_204916.TIF
+35   8   dsc_20150103_204950.TIF
+
+ - nof. input images = 36
+ - nof. HDR images   = 4
+~~~~~~~~
+
+Die Kleinigkeit, welche mir jetzt noch fehlt -- und dies waere dann noch einmal ein
+lohnenswertes Projekt -- ist das Kopieren der Metadaten von den Rohbildern in das HDR
+(falls dies so ohne weiteres geht); bedauerlicherweise gehen diese Informationen naemlich
+beim Zusammenrechnen verloren und muessen am Ende noch von Hand eingefuegt werden.
+
+**:::**
+
+### Gelegenheit zum Upgrade ###
+
+
+_Sun, 04. January 2015 -- 00:02_
+
+Das passte doch sehr gut. Nachdem dies schon eine Weile auf der Liste der zu erledigenden
+Dinge stand, haben heute Nachmittag/Abend endlich einmal die Umbauarbeiten an der
+heimischen IT stattgefunden. Da es ja einiges gibt, was hier am hausinternen
+Netz haengt, macht es durchaus Sinn sich ein wenig Gedanken ueber die Verschaltung
+zu machen, vor allen Dingen um den Datenverkehr in bestmoeglicher Weise zu leiten.
+Um alles an Kabeln neu ziehen zu koennen musste natuerlich alles fuer eine Weile offline
+gehen, so dass anschliessend dann ein Neustart noetig wurde. Da mir bei dem Synology
+NAS schon seit einer Weile die Erinnerung fuer ein moegliches Systemupdate entgegenblinkte,
+schien dies der perfekte Zeitpunkt zu sein, dies mal gleich noch mit zu erledigen. Folgerichtig
+habe ich das Update gleich mal angeworfen, nachdem die DiskStation wieder hochgefahren
+war...
+
+![Synology DSM update](/blog/2015/2015-01/2015-01-03_Synology_DSM_update.png)
+
+Verlief alles ohne Probleme, auch wenn ich mittlerweile so im Verzug war, dass zwei
+Updates durchgefuehrt werden mussten. Der dafuer benoetigte Zeitraum stimmte aber recht
+mit dem ueberein, was mir zu Beginn des Prozesses angekuendigt wurde, so dass die
+eigentliche Downtime recht gering blieb (schliesslich konnte man in der Zwischenzeit ja
+immer noch Daten hin und her schieben).
+
+![Synology packages up-to-date](/blog/2015/2015-01/2015-01-03_Synology_packages.png)
+
+An den "neuen Look" muss ich mich noch ein wenig gewoehnen: es faellt schon auf, dass
+sich die ganzen Bedienelemente ein wenig an dem orientieren, was man so von Apps mobiler
+Geraete gewohnt ist -- auch einem grossen Bildschirm wirkt dies nicht immer unbedingt
+passend.
+
+**:::**
+
+### Abfallkalender in elektronischer Form ###
+
+
+_Fri, 02. January 2015 -- 20:32_
+
+Na wenn dies mal nicht ein Grund ist eine Anfrage an [Bonn Orange](https://www.bonnorange.de)
+rauszuschicken: ich habe eben mal noch damit begonnen die Abfalltermine fuer das neue
+Jahr in den elektronischen Kalender einzutragen und musste bei der Gelegenheit (wieder
+einmal) feststellen wie vollkommen unnoetig kompliziert dies doch ist. Es gibt zwar die
+Moeglichkeit sich eine [Uebersicht der Abfuhrtermine](https://www.bonnorange.de/abfuhrtermine.html)
+zusammenstellen zu lassen, aber alles was es als Export-Optionen gibt, sind zwei
+unterschiedlich formatierte PDFs. Dies ist zwar ganz nett, wenn man sich eine Erinnerung
+an den Kuehlschrank haengen will (einfach nur ausdrucken), aber fuer den Kalender im
+Handy oder Rechner ist dies alles andere als brauchbar -- erst ausdrucken und dann wieder
+alles eintippen ist nun wirklich nicht das, was ich mir so unter einem zeitgemaessen
+Angebot vorstelle. Folgerichtige habe ich eben mal schnell eine Mail angeschickt:
+
+> Sehr geehrte Damen und Herren,
+>
+> gibt es eigentlich auch die Moeglichkeit den persoenlichen Abfallkalender auch in
+> iCal oder XML Format bereitzustellen? Die Druckversion als PDF ist zwar recht nett,
+> aber diese ist leider nicht fuer den Import in ein einen elektronischen Kalender
+> (Handy, PC) geeignet. Da die Uebersicht eh je nach Adresse zusammengestellt wird,
+> wuerde es sich hierbei lediglich um ein alternatives Download-Format handeln welches
+> platform-uebergreifend lesbar ist. Ich waere mit Sicherheit nicht der einzige, der
+> sich ueber diesen Service freuen wuerde.
+>
+> Mit freundlichen Gruessen,
+>
+> Lars Baehren
+
+Ist sicherlich nicht aus der Luft gegriffen -- mal schauen, was da zurueck kommt.
+
+**:::**
+
 ### Photo-Start ins neue Jahr ###
 
 
@@ -389,147 +619,3 @@ deutlich aufgeraeumter und b) habe ich nun eine Funktion zur Verfuegung, welche 
 immer wieder verwenden kann. Da werde ich mich noch mal daran machen muessen, die
 erzeugten Testdaten auch in dem Kalibrations-Algorithmus einzulessen (denn schliesslich
 war dies ja die Motivation fuer die ganze Aktion).
-
-**:::**
-
-### Vorweihnachtlich leer ###
-
-
-_Thu, 18. December 2014 -- 14:58_
-
-Also man merkt doch, dass es sich nicht mehr (zumindest in mancherlei Hinsicht)
-normalen Arbeitstag handelt: seit dem Mittag ist es hier im Institut recht ausgestorben,
-was vor allen Dingen wohl damit zu tun hat, dass es heute eine Weihnachts-/Jahresendefeier
-gibt -- da sind doch einige Leute hin verschwunden, so dass wir hier nur noch mit
-einer keinen Besetzung zurueckgeblieben sind, welche hier die Stellung haellt. Da aber
-die TROPOMI On-Ground Kalibration ab der folgenden Wochen ansteht, gibt es wenig Grund
-sich auszuruhen: so habe ich nach dem Treffen heute Morgen mit Paul und Matthijs noch
-einmal eine Reihe Aufgaben auf meiner TODO-Liste stehen, welche abgearbeitet werden
-wollen. Werde ich mich Sicherheits nicht alles heute noch schaffen (das war auch eh
-nicht geplant), aber bis zur Abfahrt wollte ich wenigstens noch ein paar Kleinigkeiten
-fertigstellen.
-
-**:::**
-
-### Uhrzeit ablesen beim Autofahren ist verbotene Handynutzung ###
-
-
-_Wed, 17. December 2014 -- 13:39_
-
-Dass die Benutzung mobiler Geraete gleich in mehrerlei Hinsicht eine Herausforderung
-fuer den (Strassen-)Verkehr darstellt ist mir schon klar; in wie weit sich der
-Deutsche Gesetzgeber da allerdings austoben muss, ist sicherlich eine andere Sache.
-So bin ich vorhin via [Heise News](http://www.heise.de/newsticker/meldung/Uhrzeit-ablesen-beim-Autofahren-ist-verbotene-Handynutzung-2498870.html)
-auf ein neues Gerichtsurteil aufmerksam gemacht wurden, welches es durchaus wert
-ist an dieser Stelle auch noch einmal erwaehnt zu werden:
-
-> Ein Autofahrer darf während der Fahrt nicht einmal die Uhrzeit auf seinem
-> Handy ablesen. Das entschied das Pfälzische Oberlandesgericht (OLG) Zweibrücken.
-> Nach Auffassung der Richter liegt darin eine sogenannte bestimmungsgemäße
-> Nutzung des Handys und damit ein Verstoß gegen die Straßenverkehrsordnung, der
-> die Zahlung eines Bußgeldes rechtfertige (Az.: 1 Ss 1/14).
-
-So wie das Gericht da argumentiert mag man dies (rein formal) vielleicht vertreten
-koennen, aber in letzter Konsequenz muss man dies dann wohl doch wieder in die
-Schublade mit der Aufschrift "Unsinniges" einsortieren (und am liebsten vergessen, wenn
-es nicht teuer werden koennte). Geht es hier eher um moegliche Ablenkungen beim
-Autofahren, oder wirklich um den Gebrauch des Handy; sollte es wirklich (woran ich
-ein wenig meine Zweifel habe) um eine potentielle Ablenkung gehen, wie steht es dann
-um die folgenden Dinge:
-
- - aus einer Wasserflasche trinken;
- - auf die Armbanduhr schauen;
- - Sender am Autoradio einstellen;
- - das Navi bedienen;
- - den Ausdruck des Routenplaner zu Rate ziehen...
-
-Ich denke mal mit einem wenig Nachdenken laesst sich da ohne Probleme noch eine
-weitaus laengere Liste aufstellen. Wenn man es sich dann genauer ueberlegt finden
-sich vielleicht endlich noch die guten Argumente dafuer den Fahrer komplett vom
-Steuer zu entfernen (wie z.B. Google dies ja vormacht)...
-
-**:::**
-
-### Durchgelaufen ###
-
-
-_Wed, 17. December 2014 -- 10:34_
-
-Das sieht doch schon einmal gut aus. Nachdem ich gestern Abend ja losgezogen bin
-ohne das Laptop mitnehmen, weil dieses ja ueber Nacht die Backup-Daten von der
-einzelnen Festplatte auf das wieder in Betrieb genommene Drobo umkopieren sollte,
-war ich doch recht erleichtert, dass dieser Vorgang wohl erfolgreich gewesen ist.
-
-![Drobo capacity](/blog/2014/2014-12/2014-12-17_Drobo_capacity.png)
-
-Wie sich bei einem Vergleich mit dem Screenshot im [gestrigen Eintrag](/blog/2014/2014-12/2014-12-16_21-00.html)
-erkennen laesst, habe ich vor dem Absprung aus dem Institut sogar mal noch die kleinste
-der vier Festplatten gegen eine etwas groessere ausgetauscht. Da ich ja gleich mit einem
-ganzen Stapel an Festplatten zurueckgekommen war, habe ich nicht auf Anhieb die
-Auswahl getroffen, womit ich den zur Verfuegung stehenden Speicherplatz maximiert kriege
--- das nette ist aber, dass sich dies bei einem Drobo problemlos korregieren laesst:
-einfach alte Festplatte rausziehen und neue einsetzen (keine Schrauben noetig)...
-fertig.
-
-Mit dem heutigen Morgen geht das Drobo nun online und bekommt somit offiziell die
-Aufgabe zugewiesen meinen _Time Machine_ Backups ein zuhause zu bieten.
-
-**:::**
-
-### Preparing to copy ###
-
-
-_Tue, 16. December 2014 -- 21:00_
-
-Ok, das kann mal noch eine Weile dauern, ehe es ueberhaupt so richtig losgeht:
-
-![Finder window](/blog/2014/2014-12/2014-12-16_File_copy.png)
-
-Heute Nachmittag habe ich hier im Institut eine groessere Sammlung an Festplatten
--- alle irgendwo zwischen 120 GB und 1 TB -- einsammeln koennen und diese zwecks
-Weiterverwendung in das [Drobo](http://www.drobo.com/storage-products) gesteckt,
-welches ich hier auf dem Schreibtisch stehen habe. Da ich zuletzt ja ein wenig
-Schwierigkeiten mit der Festplatte hatte, auf welcher mein [Time Machine](http://support.apple.com/en-us/HT201250)
-Backup liegt, hat es mich schon eine Weile gejuckt endlich einmal weg von der
-Single-Disk Loesung zu kommen. Da ich das Drobo eh fuer diesen Zweck angedacht hatte,
-es mir bisher aber leider immer noch an Festpatten mangelte, war dies heute natuerlich
-eine willkommene Gelegenheit da endlich einmal taetig zu werden. Wie dies ja bei
-(groesseren) Betrieben durchaus schon einmal ueblich ist (vor allen Dingen wenn die
-ICT eine gewisse Groesse ueberschreitet), wird in regelmaessigen Abstaenden die
-alte Computer-Ausruestung unter den Mitarbeitern verscherbelt -- so auch hier bei
-[SRON](http://www.sron.nl). Ich hatte dem allerdings nicht sonderlich viel Beachtung
-geschenkt, weil ich jetzt nicht unbedingt den Bedarf an alten Computern habe -- da
-bedurfte es schon einer Rundmail...
-
-> De verloting is weer klaar, maar ik heb nog wat oudere computers over.
-> in de "oude bibliotheek" in de kelder kan je nog kijken of er nog iets voor je is.
-
-... und einem etwas spaeteren Gespraech mit Tobias, um es bei mir klingeln zu lassen,
-dass es sich ja nicht nur um komplette Rechnern, sondern auch um allerlei Bauteile
-handeln kann. Also schnell mal runter und den Keller gerannt, um zu schauen was sich
-dort noch so finden liess. Da ich mit meinem recht spezifischen Wunsch wohl ein wenig
-ausserhalb dessen lag, was die meisten anderen haben wollten, hatte ich noch eine
-groessere Kiste mit Festplatten zur Auswahl. Wirklich davon gebrauchen konnte ich
-nur einen Teil -- weil ich eben nur mit SATA Platten etwas anfangen kann -- aber
-ich bin doch mit einem recht ansehnlichen Stapel zurueck ins Buero gekommen. Aus diesem
-Vorrat habe ich mir (erwartungsgemaess) die groessten Platten geschnappt und ins
-Drobo eingebaut -- schon eine Weile her, dass ich dies zum letzten Mal gemacht habe
-(seitdem die [Synology DiskStation](https://www.synology.com/en-global/products/DS2413+)
-die Rolle des zentralen Datenhub uebernommen hat, hatten die Dobos bis auf weiteres
-keine Aufgabe).
-
-![Drobo disk pack](/blog/2014/2014-12/2014-12-16_Drobo_disk_pack.png)
-
-Da ich vorhabe die einzelne Festplatte auszumustern -- oder zumindest an anderer Stelle
-einzusetzen -- sollte ich erst einmal noch dafuer sorgen, dass die bisher darauf abgelegten
-Daten auf das Drobo umkopiert werden. Statt dies (wie eigentlich ueblich) von der
-Kommandozeile aus zu machen, habe ich die diversen Verzeichnisse ueber den Finder
-durch die Gegend gezogen; waehrend die [Git](http://git-scm.com) Repositories recht
-schnell kopiert waren, ist die _Time Machine_ Datenbank doch schon ein Stueck groesser.
-Und waehrend ein Kommando wie `mv` oder `cp` sofort mit der Arbeit beginnt, inventarisiert
-der Finder zunaechst erst einmal alles, was er dann anschliessend durch die Gegend
-schiebt; alleine schon dieser erste Schritt kann mehrere Minuten dauern, bevor ueberhaupt
-ein einzelnes Bit von A nach B bewegt wird. Angesichts der Tatsache, dass es gut
-230 GB sind, welche via USB Verbindung durch die Gegend geschoben werden muessen...
-da spiele sogar mit dem Gedanken den Rechner ausnahmsweise mal ueber Nacht im Institut
-stehen zu lassen.
