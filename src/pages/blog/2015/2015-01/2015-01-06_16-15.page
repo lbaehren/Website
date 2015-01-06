@@ -1,0 +1,37 @@
+---
+title: "Supporting TROPOMI OCAL (3)"
+in_menu: false
+author: "Lars Baehren"
+date: 2015-01-06T16:15:34.00Z
+created_at: 2015-01-06T16:02:54.00Z
+---
+
+## {title:} ##
+
+_Tue, 06. January 2015 -- 16:15_
+
+With the growing amount of data/information coming in from the OCAL measurements,
+a good argument can be made in favour of keeping interfaces to that data clean and
+easily usable. One thing to be considered part of this is small webpage I have been
+setting up to provide an overview of the available diagnostics plots:
+
+![Quicklooks webpage screenshot](/blog/2015/2015-01/2015-01-06_webpage_quicklooks.png)
+
+Pages such as the one above were quite common -- trying to cover all possible combinations
+of measurement type and diagnostic plots there typically only is a subset for which
+viable information exists. In order to avoid bloating the webpages, making it harder
+to find what actually is available, a simple filter has been added to the Bash script
+generating the intermediate files (from which [Doxygen](http://www.doxygen.org) then
+generates the actual HTML pages):
+
+~~~~ bash
+    nofQuicklooks=`find_nof_files $1 $2 ${varQuicklook}`
+    # only create link if there is some contents to link to
+    if [[ ${nofQuicklooks} -ne 0 ]] ; then
+        echo " - \subpage ${varAnchor}  (${nofQuicklooks} files)"
+    fi
+~~~~
+
+A very simple measure, but quite effective -- with this getting around to the actually
+available diagnostics plots becomes more straight forward (and links are added the moment
+the corresponding data arrive).

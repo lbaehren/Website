@@ -63,7 +63,7 @@ pages is broken into a header segment and the main contents; this way once more
 code instructions can be kept a bit more generic, making the script modular enough that
 adding a new feature with little effort.
 
-~~~~~~~~
+~~~~~~~~ bash
 md_header ()
 {
     varTitle=$1

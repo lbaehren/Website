@@ -8,6 +8,39 @@ author: "Lars Baehren"
 
 **:::**
 
+### Supporting TROPOMI OCAL (3) ###
+
+
+_Tue, 06. January 2015 -- 16:15_
+
+With the growing amount of data/information coming in from the OCAL measurements,
+a good argument can be made in favour of keeping interfaces to that data clean and
+easily usable. One thing to be considered part of this is small webpage I have been
+setting up to provide an overview of the available diagnostics plots:
+
+![Quicklooks webpage screenshot](/blog/2015/2015-01/2015-01-06_webpage_quicklooks.png)
+
+Pages such as the one above were quite common -- trying to cover all possible combinations
+of measurement type and diagnostic plots there typically only is a subset for which
+viable information exists. In order to avoid bloating the webpages, making it harder
+to find what actually is available, a simple filter has been added to the Bash script
+generating the intermediate files (from which [Doxygen](http://www.doxygen.org) then
+generates the actual HTML pages):
+
+~~~~ bash
+    nofQuicklooks=`find_nof_files $1 $2 ${varQuicklook}`
+    # only create link if there is some contents to link to
+    if [[ ${nofQuicklooks} -ne 0 ]] ; then
+        echo " - \subpage ${varAnchor}  (${nofQuicklooks} files)"
+    fi
+~~~~
+
+A very simple measure, but quite effective -- with this getting around to the actually
+available diagnostics plots becomes more straight forward (and links are added the moment
+the corresponding data arrive).
+
+**:::**
+
 ### Supporting TROPOMI OCAL (2) ###
 
 
@@ -66,7 +99,7 @@ pages is broken into a header segment and the main contents; this way once more
 code instructions can be kept a bit more generic, making the script modular enough that
 adding a new feature with little effort.
 
-~~~~~~~~
+~~~~~~~~ bash
 md_header ()
 {
     varTitle=$1
@@ -320,7 +353,7 @@ to run some simple markup text files through e.g. [Doxygen](http://www.doxygen.o
 or -- as is the case for this website -- use a static website generator to handle the
 task. So this time it is back to the basics.
 
-~~~~~~~~
+~~~~~~~~ bash
 html_header ()
 {
     echo "<html>"
@@ -583,39 +616,3 @@ kommenden Tagen wahrscheinlich so manches Mal auf einen Hilferuf reagieren muss 
 in der anstehenden Startphase). Da ist es doch ganz gut, dass die Generierung der
 Test-Datensaetze nun klappt und ich mich den Scripten zuwenden kann, welche auf dem
 [KNMI](http://www.knmi.nl) CLuster und bei [SRON](http://www.sron.nl) laufen muessen.
-
-**:::**
-
-### Letzte Fahrt in diesem Jahr ###
-
-
-_Thu, 18. December 2014 -- 18:23_
-
-Vorhin beim Aufbrechen habe ich noch kurz daran gedacht -- wo ich mich von Paul und
-Evert verabschiedet habe -- aber zwischenzeitlich war ich den Gedanken doch mehr
-beim Coden... Dies ist in der Tat der letzte ICE Fahrt zwischen Utrecht und Bonn in
-diesem Jahr; zumindest reisetechnisch waere dieses Jahr damit in ein paar Stunden
-abgeschlossen (sieht man einmal von der einen oder anderen Strassenbahnfahrt vor Ort
-ab, welche in den kommenden zwei Wochen wohl noch anstehen wird).
-
-![ICE Reiseplan](/blog/2014/2014-12/dsc_20141218_180640_ICE_Reiseplan.jpg)
-
-Heute ist der ICE deutlich leerer, als dies noch letzte Woche der Fall war; dies hat
-natuerlich von der praktischen Seite den grossen Vorteil, dass es ein leichtes war einen
-Platz an einem der Tische zu finden, was da Arbeiten deutlich einfacher macht. So habe
-ich auch schon vor Arnheim das Problem mit dem Schreiben der Metadaten geloest, welches
-mich die letzten Tage umgetrieben und immer wieder aufgehalten hat. Das besonders
-schoene an der Sache ist, dass die nun gefundene Loesung nicht nur funktioniert, sondern
-auch insgesamt mit weniger Code auskommt (welcher dann auch eleganter ist).
-
-~~~~~~~~
-    # Create instance of TestData object
-    testdata = utils.lx_testdata (infile, band_nr, reftime=reftime)
-~~~~~~~~
-
-Ok, man koennte hier natuerlich einfach sagen, dass die Komplexizitaet einfach nur
-an eine andere Stelle verschoben wurde, aber a) ist der nun dort zu findende Code
-deutlich aufgeraeumter und b) habe ich nun eine Funktion zur Verfuegung, welche ich
-immer wieder verwenden kann. Da werde ich mich noch mal daran machen muessen, die
-erzeugten Testdaten auch in dem Kalibrations-Algorithmus einzulessen (denn schliesslich
-war dies ja die Motivation fuer die ganze Aktion).
