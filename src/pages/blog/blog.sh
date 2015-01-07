@@ -348,10 +348,12 @@ case $1 in
     "-N")
         echo "Creating file for new blog entry ..."
         create_file ${varFilename} "New_entry" ${varTimestamp}
+        create_index_file_upcoming > ${PATH_BASEDIR}/${PATH_UPCOMING}/index.page
     ;;
     "--new")
         echo "Creating file for new blog entry ..."
         create_file ${varFilename} "New_entry" ${varTimestamp}
+        create_index_file_upcoming > ${PATH_BASEDIR}/${PATH_UPCOMING}/index.page
     ;;
     "-H")
         print_help
