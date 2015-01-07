@@ -8,6 +8,53 @@ author: "Lars Baehren"
 
 **:::**
 
+### Deutlich schneller ###
+
+
+_Wed, 07. January 2015 -- 20:10_
+
+Es gibt durchaus schon einen guten Grund dafuer, dass ich mir ab und zu einmal groessere
+Berge an Papier von Bonn mit nach Utrecht nehme. Ist ist schon ein Unterschied, ob ich
+es mit einem hausueblichen Drucker/Scanner zu tun habe, oder aber mit einer jener
+High-Tech Geraete wie sie hier vor Ort zur Verfuegung stehen: Stapel Papier einlegen,
+Email-Adresse eingeben, noch ein paar Einstellungen anpassen und schon geht es ab.
+Gut, wenn es man so an die 100 Seiten auflegt, dauert es auch hier schon mal eine kleine
+Weile, aber a) ist diese Weile deutlich kuerzer und b) ist die resultierende Qualitaet
+noch einmal eine ganze Ecke besser. Aber seien wir mal realistisch: fuer den heimischen
+Gebrauch waere so ein Druck-Center vollkommener Overkill. Ist aber dennoch ganz nett,
+wenn man ab und zu darauf Zugriff hat, wenn es darum geht einen grossen Stapel Papier
+in digitaler Form in den Rechner zu kriegen.
+
+**:::**
+
+### Abschied von der Mittelwelle ###
+
+
+_Tue, 06. January 2015 -- 18:13_
+
+Wahrscheinlich sind es wirklich nur noch Nostalgiker, welche ueberhaupt die entsprechenden
+Empfangsgeraete haben, mit welchen sich ueber Mittelwelle ausgestrahle Nachrichten
+belauschen liessen. Konsequenterweise stellen die Radiosender dieses Angebot ein:
+
+> Fast alle öffentlich-rechtlichen Radiosender in Deutschland haben den Empfang über Mittelwelle (MW) abgeschafft. Nachdem Südwestrundfunk, Mitteldeutscher Rundfunk, Hessischer Rundfunk, Rundfunk Berlin-Brandenburg, Deutschlandradio Kultur und Radio Bremen dieses Angebot beendet haben, wird auch der Norddeutsche Rundfunk (NDR) von Montag an keine Sendungen mehr über MW ausstrahlen.
+>
+> \[...\]
+>
+> Die Mittelwelle deckt im Hörfunk den Frequenzbereich ungefähr zwischen 530 Kilohertz und 1600 Kilohertz ab. Die Technik spielte beim Aufbau des Radios in Deutschland von den 20er Jahren noch bis in die 50er eine große Rolle. Seit der Nachkriegszeit verdrängte aber die Ultrakurzwelle (UKW) beim breiten Publikum diese Technik weitgehend. Trotz des knarzigen Empfangs wurde die MW aber noch jahrzehntelang von vielen Hörern wegen ihrer großen Reichweite geschätzt. Seit dem Aufkommen des mobilen Internets und der Digitalradio-Geräte gilt die Mittelwelle als Technik von gestern.
+
+[Wie Heise News weiter berichten](http://www.heise.de/newsticker/meldung/Fast-alle-ARD-Radiosender-stellen-Mittelwelle-ein-2512316.html)
+steht aber auch die Sendung via UKW auf der potentiellen Abschussliste:
+
+> Auch UKW wird immer wieder hinterfragt. Deutschlandradio-Intendant Willi Steul zum Beispiel hat sich darüber hinaus wiederholt für eine Abschaltung auch von UKW starkgemacht. Ursprünglich sollten schon bis zum Jahr 2010 alle Radiosender ihren Sendebetrieb auf das digitale DAB (Digital Audio Broadcasting) umgestellt haben. Nach massiven Widerständen hatte der Gesetzgeber einen festen Termin gestrichen.
+
+Die Anzahl der hier vorhandenen Empfangsgeraete duerfte nach sicherlich noch groesser
+Null sein, aber grossartige Verkaufszahlen in dem Segment kann ich mir nur schwerlich
+vorstellen. Ist wahrscheinlich wirklich nur eine Frage der Zeit, bis auch hier das Licht
+ausgeht (auch wenn dies nicht heisst, dass damit automatisch das zugehoerige Frequenzband
+vollkommen frei bleibt).
+
+**:::**
+
 ### Supporting TROPOMI OCAL (3) ###
 
 
@@ -100,19 +147,19 @@ code instructions can be kept a bit more generic, making the script modular enou
 adding a new feature with little effort.
 
 ~~~~~~~~ bash
-md_header ()
-{
-    varTitle=$1
-    varAnchor=$2
-    varTitleLength=`echo ${varTitle} | wc -c`
-    ((varTitleLength--))
-    s=$(printf "%-${varTitleLength}s" "=")
-    varUnderscore=`echo "${s// /=}"`
+    md_header ()
+    {
+        varTitle=$1
+        varAnchor=$2
+        varTitleLength=`echo ${varTitle} | wc -c`
+        ((varTitleLength--))
+        s=$(printf "%-${varTitleLength}s" "=")
+        varUnderscore=`echo "${s// /=}"`
 
-    echo "${varTitle}  {#${varAnchor}}"
-    echo "${varUnderscore}"
-    echo ""
-}
+        echo "${varTitle}  {#${varAnchor}}"
+        echo "${varUnderscore}"
+        echo ""
+    }
 ~~~~~~~~
 
 [Markdown support](http://www.stack.nl/~dimitri/doxygen/manual/markdown.html) was
@@ -138,10 +185,10 @@ mehr mit dem Ausgangsmaterial zu tun hat, sondern einfach nur noch durchlaufend
 nummeriert ist:
 
 ~~~~~~~~
--rw-r--r--   1 lars  staff  115371820 Jan  4 20:01 hdr_1.exr
--rw-r--r--   1 lars  staff  115662843 Jan  4 20:03 hdr_2.exr
--rw-r--r--   1 lars  staff  116396095 Jan  4 20:05 hdr_3.exr
--rw-r--r--   1 lars  staff  116093543 Jan  4 20:06 hdr_4.exr
+    -rw-r--r--   1 lars  staff  115371820 Jan  4 20:01 hdr_1.exr
+    -rw-r--r--   1 lars  staff  115662843 Jan  4 20:03 hdr_2.exr
+    -rw-r--r--   1 lars  staff  116396095 Jan  4 20:05 hdr_3.exr
+    -rw-r--r--   1 lars  staff  116093543 Jan  4 20:06 hdr_4.exr
 ~~~~~~~~
 
 Was ich aber gerne moechte ist, dass die HDR Datei -- wie dies auch beim Rohmaterial
@@ -153,46 +200,46 @@ gluecklicherweise Schluss, denn mit ein paar Zeilen [Bash](http://www.gnu.org/so
 kann man auch diese Aufgaben dem Rechner ueberlassen.
 
 ~~~~~~~~
-      36 input images found.
-0   0   dsc_20150103_170548.TIF  <=  HDR 1
-1   1   dsc_20150103_170549.TIF
-2   2   dsc_20150103_170551.TIF
-3   3   dsc_20150103_170553.TIF
-4   4   dsc_20150103_170556.TIF
-5   5   dsc_20150103_170559.TIF
-6   6   dsc_20150103_170605.TIF
-7   7   dsc_20150103_170616.TIF
-8   8   dsc_20150103_170635.TIF
-9   0   dsc_20150103_171207.TIF  <=  HDR 2
-10   1   dsc_20150103_171208.TIF
-11   2   dsc_20150103_171210.TIF
-12   3   dsc_20150103_171212.TIF
-13   4   dsc_20150103_171214.TIF
-14   5   dsc_20150103_171218.TIF
-15   6   dsc_20150103_171223.TIF
-16   7   dsc_20150103_171233.TIF
-17   8   dsc_20150103_171251.TIF
-18   0   dsc_20150103_190226.TIF  <=  HDR 3
-19   1   dsc_20150103_190228.TIF
-20   2   dsc_20150103_190230.TIF
-21   3   dsc_20150103_190233.TIF
-22   4   dsc_20150103_190237.TIF
-23   5   dsc_20150103_190245.TIF
-24   6   dsc_20150103_190259.TIF
-25   7   dsc_20150103_190325.TIF
-26   8   dsc_20150103_190359.TIF
-27   0   dsc_20150103_204801.TIF  <=  HDR 4
-28   1   dsc_20150103_204803.TIF
-29   2   dsc_20150103_204805.TIF
-30   3   dsc_20150103_204809.TIF
-31   4   dsc_20150103_204814.TIF
-32   5   dsc_20150103_204824.TIF
-33   6   dsc_20150103_204843.TIF
-34   7   dsc_20150103_204916.TIF
-35   8   dsc_20150103_204950.TIF
+          36 input images found.
+    0   0   dsc_20150103_170548.TIF  <=  HDR 1
+    1   1   dsc_20150103_170549.TIF
+    2   2   dsc_20150103_170551.TIF
+    3   3   dsc_20150103_170553.TIF
+    4   4   dsc_20150103_170556.TIF
+    5   5   dsc_20150103_170559.TIF
+    6   6   dsc_20150103_170605.TIF
+    7   7   dsc_20150103_170616.TIF
+    8   8   dsc_20150103_170635.TIF
+    9   0   dsc_20150103_171207.TIF  <=  HDR 2
+    10   1   dsc_20150103_171208.TIF
+    11   2   dsc_20150103_171210.TIF
+    12   3   dsc_20150103_171212.TIF
+    13   4   dsc_20150103_171214.TIF
+    14   5   dsc_20150103_171218.TIF
+    15   6   dsc_20150103_171223.TIF
+    16   7   dsc_20150103_171233.TIF
+    17   8   dsc_20150103_171251.TIF
+    18   0   dsc_20150103_190226.TIF  <=  HDR 3
+    19   1   dsc_20150103_190228.TIF
+    20   2   dsc_20150103_190230.TIF
+    21   3   dsc_20150103_190233.TIF
+    22   4   dsc_20150103_190237.TIF
+    23   5   dsc_20150103_190245.TIF
+    24   6   dsc_20150103_190259.TIF
+    25   7   dsc_20150103_190325.TIF
+    26   8   dsc_20150103_190359.TIF
+    27   0   dsc_20150103_204801.TIF  <=  HDR 4
+    28   1   dsc_20150103_204803.TIF
+    29   2   dsc_20150103_204805.TIF
+    30   3   dsc_20150103_204809.TIF
+    31   4   dsc_20150103_204814.TIF
+    32   5   dsc_20150103_204824.TIF
+    33   6   dsc_20150103_204843.TIF
+    34   7   dsc_20150103_204916.TIF
+    35   8   dsc_20150103_204950.TIF
 
- - nof. input images = 36
- - nof. HDR images   = 4
+     - nof. input images = 36
+     - nof. HDR images   = 4
 ~~~~~~~~
 
 Die Kleinigkeit, welche mir jetzt noch fehlt -- und dies waere dann noch einmal ein
@@ -353,24 +400,24 @@ to run some simple markup text files through e.g. [Doxygen](http://www.doxygen.o
 or -- as is the case for this website -- use a static website generator to handle the
 task. So this time it is back to the basics.
 
-~~~~~~~~ bash
-html_header ()
-{
-    echo "<html>"
-    echo "  <head>"
-    echo "    <meta name=\"author\" content=\"Lars Baehren\" />"
-    echo "    <meta name=\"description\" content=\"TROPOMI SWIR quicklooks\" />"
-    echo "    <meta name=\"keywords\" content=\"TROPOMI, SWIR, Quicklook, SRON\" />"
-    echo "    <meta name=\"generator\" content=\"Lars Baehren\" />"
-    echo "  <head>"
-    echo "  <body>"
-    echo ""
-    echo "    <h1>TROPOMI SWIR quicklooks</h1>"
-    echo ""
-    echo "    <i>Page generated `date`</i>"
-    echo ""
-}
-~~~~~~~~
+~~~~ bash
+    html_header ()
+    {
+        echo "<html>"
+        echo "  <head>"
+        echo "    <meta name=\"author\" content=\"Lars Baehren\" />"
+        echo "    <meta name=\"description\" content=\"TROPOMI SWIR quicklooks\" />"
+        echo "    <meta name=\"keywords\" content=\"TROPOMI, SWIR, Quicklook, SRON\" />"
+        echo "    <meta name=\"generator\" content=\"Lars Baehren\" />"
+        echo "  <head>"
+        echo "  <body>"
+        echo ""
+        echo "    <h1>TROPOMI SWIR quicklooks</h1>"
+        echo ""
+        echo "    <i>Page generated `date`</i>"
+        echo ""
+    }
+~~~~
 
 Luckily nothing fancy is required, so whipping a few lines of bash script to generate
 HTML output isn't a big deal. Of course there always is the risk to start overdoing it
@@ -540,79 +587,3 @@ Der zweite Batch laeuft derzeit noch durch die Konvertierung, aber das ich dies 
 einer Weile einigermassen automatisiert habe, muss ich da nicht mehr die ganze Zeit am
 Rechner sitzen bleiben und alles von Hand machen (und fuer die noch verbleibenden Schritte
 wird bald mal ein kleines Script faellig).
-
-**:::**
-
-### Daten sichern ###
-
-
-_Sat, 20. December 2014 -- 00:20_
-
-Da muss ich mal schnell eine Sicherheitskopie von machen: da ich nun auch den
-dritten der zum Algorithmen testen noetigen Datensaetze erzeugt habe -- was einige
-Zeit in Anspruch genommen hat -- will ich schon dafuer sorgen, dass ich nun an den
-zweiten Schritt gehen kann. Da macht es sicherlich Sinn nicht immer wieder die Testdaten
-von neuem zu generieren, sondern einmal zu erzeugen und dann irgendwo abzulegen.
-
-~~~~~~~~
-report.detector4.nc                          100% 1440     1.4KB/s   00:00
-quicklook_detector4.pdf                      100%  784     0.8KB/s   00:00
-task.status.txt                              100%    8     0.0KB/s   00:00
-task.log                                     100%   15KB  14.9KB/s   00:00
-report.detector4.nc                          100% 1795     1.8KB/s   00:00
-testdata_absirr_band8.nc                     100% 1102MB  91.8MB/s   00:12
-testdata_absirr_band7.nc                     100% 1102MB  91.8MB/s   00:12
-wavelength_map_detector4.nc                  100% 2016KB   2.0MB/s   00:00
-task.status.txt                              100%    8     0.0KB/s   00:00
-ckd_transmittance_detector4.nc               100% 4023KB   3.9MB/s   00:00
-task.log                                     100%   38KB  38.5KB/s   00:00
-report.detector4.nc                          100% 1440     1.4KB/s   00:00
-quicklook_detector4.pdf                      100%   13MB  13.4MB/s   00:00
-task.status.txt                              100%    8     0.0KB/s   00:00
-task.log                                     100%   36KB  35.8KB/s   00:00
-testdata_relirr_band7.nc                     100%   12GB  86.1MB/s   02:20
-report.detector4.nc                          100% 1781     1.7KB/s   00:00
-wavelength_map_detector4.nc                  100% 2016KB   2.0MB/s   00:00
-task.status.txt                              100%    8     0.0KB/s   00:00
-ckd_transmittance_detector4.nc               100% 4023KB   3.9MB/s   00:00
-testdata_relirr_band8.nc                     100%   12GB  85.5MB/s   02:21
-task.log                                     100%   89KB  89.3KB/s   00:00
-rerun.sh                                     100%  565     0.6KB/s   00:00
-trl1brb8g.lx.nc                              100%   17GB  84.8MB/s   03:25
-pass-15.ocal_pre_processing.png              100%   32KB  32.0KB/s   00:00
-gseDat.nc                                    100%   15KB  15.1KB/s   00:00
-ckd-index.xml                                100%   12     0.0KB/s   00:00
-pass-20.nominal_processing.png               100%  133KB 133.5KB/s   00:00
-trl1brb7g.lx.nc                              100%   17GB  82.7MB/s   03:30
-ckd-check.xml                                100%   12     0.0KB/s   00:00
-task.status.txt                              100%    8     0.0KB/s   00:00
-proc_table.xml                               100% 5553     5.4KB/s   00:00
-joborder-000.cfg                             100% 8660     8.5KB/s   00:00
-pass-10.ckd_handling.png                     100%   27KB  27.2KB/s   00:00
-engDat.nc                                    100%   14MB  13.5MB/s   00:00
-logfile_L01b.txt                             100%  453KB 452.7KB/s   00:00
-task.log                                     100%   10KB  10.2KB/s   00:00
-~~~~~~~~
-
-Ich bin immer wieder recht angetan, wie die Transferraten zwischen den Instituten doch
-im Vergleich zu dem sind, was hier zuhause zur Verfuegung steht. Gut, die Anforderungen
-schon deutlich andere, aber liebaeugeln moechte man damit ja schon.
-
-**:::**
-
-### Kurz vor dem Start ###
-
-
-_Fri, 19. December 2014 -- 21:51_
-
-Das versprechend ja ein paar interessante Weihnachtstage zu werden. Nach all der
-Vorbereitung (welche noch nicht 100%ig abgeschlossen ist) stehen ab dem Sonntag (!)
-die `post_env` Messungen fuer TROPOMI an -- dies ist der letzte Check bevor es Ernst
-wird uns mit der On-Ground Calibration (OCAL) losgehen kann. Fuer alle Beteiligten
-heisst dies natuerlich erhoehte (Alarm-)Bereitschaft: so sind im Vorfeld schon mal
-alle Telefonnummern und Skype-Accounts eingesammelt worden, um moeglichst schnell
-(und ggf. rund um die Uhr) erreichbar zu sein. Fuer mich heisst dies, dass ich an den
-kommenden Tagen wahrscheinlich so manches Mal auf einen Hilferuf reagieren muss (zumindest
-in der anstehenden Startphase). Da ist es doch ganz gut, dass die Generierung der
-Test-Datensaetze nun klappt und ich mich den Scripten zuwenden kann, welche auf dem
-[KNMI](http://www.knmi.nl) CLuster und bei [SRON](http://www.sron.nl) laufen muessen.
