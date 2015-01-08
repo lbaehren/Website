@@ -24,7 +24,7 @@ Generatoren arbeite -- [Webgen](http://webgen.gettalong.org), [Doxygen](http://w
 Aktionen (wie z.B. das Bauen der Seiten) auf ein und die gleiche Weise durchfuehren
 kann. So etwas wie ein
 
-~~~~
+~~~~ bash
 make install
 ~~~~
 
@@ -62,4 +62,3 @@ Building-Blocks davon losgeloest einsetzen koennen. Wer weiss, vielleicht kommen
 im Zuge dieser Aktivitaeten auch noch ein paar Zeilen Code heraus, welche sich
 mit der Allgemeinheit teilen lassen (so weit ist es bisher aber definitiv noch
 nicht).
-

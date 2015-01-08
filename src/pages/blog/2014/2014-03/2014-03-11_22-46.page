@@ -14,7 +14,7 @@ Wieder in Utrecht eingetroffenen, habe ich gestern Mittag das Laptop aus der unm
 
 Nachdem das Upgrade erfolgreich durchgelaufen war, konnte ich mich dann daran machen, die sich aus diesem Wechsel ergebenden Aenderungen in Angriff zu nehmen. Da ich ja doch eine nicht unerhebliche Menge an Paketen via [MacPorts](http://www.macports.org) installiert habe -- vor allen Dingen Tools und Bibliotheken fuer die Software-Entwicklung -- mussten diese nun auch gleichziehen. Da ich dieses "Vergnuegen" aber schon einmal frueher hatte, lag einiges an Hilfen vor, welche ich nur noch einmal ein wenig aufpolieren und aktualisieren musste. Von besonderer Hilfe war hier, dass ich wichtigstens Pakete fuer eine neue Installation in einem Script untergebracht hatte, welches den Rest dann mehr oder weniger selbststaendig erledigen konnte (ok, ein paar kleine Fehler habe ich da noch ausbuegeln muessen, aber das war doch eher gering gegenueber dem Fall wo ich alles von Hand haette erledigen muessen). Da ich auf der Hinfahrt am Montag ja noch das urspruengiche Bash-Script in ein ``Makefile`` umgeschrieben hatte (da waren die kuerzlich gemachten Erfahrungen fuer die Installation der SWIR Software ganz hilfreich), war es ein leichtes Pakete nach Kategorien zu gruppieren und Abhaengigkeiten zu beruecksichtigen:
 
-~~~~
+~~~~ make
 science: math
 	${PORT_COMMAND} cfitsio
 	${PORT_COMMAND} curl +ssl
@@ -31,7 +31,7 @@ math:
 
 Wie erwartet war dann nur noch ein
 
-~~~~
+~~~~ bash
 make science
 ~~~~
 

@@ -10,7 +10,7 @@ _Thu, 23. January 2014 -- 16:19_
 
 Da wollte ich jetzt endlich noch einmal die _ADC Conversion_ abrunden, da fliegt mir Python auch schon wieder um die Ohren:
 
-~~~~
+~~~~ python
 Traceback (most recent call last):
   File "scripts/l01b.py", line 198, in <module>
     from swir.l01b.main import Processor

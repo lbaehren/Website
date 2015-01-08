@@ -19,7 +19,7 @@ macht es natuerlich Sinn, ggf. bestimmte Design-Elemente zu uebernehmen, um so e
 Wiedererkennung moglich zu machen. Folgerichtig habe ich mich also den LaTeX-Quellcode
 der Karte geschnappt und diesen in das Template fuer die Rechnungen eingearbeitet.
 
-~~~~ latex
+~~~~ tex
 \setkomavar{firsthead}{
     \begin{flushleft}
         \color{GreenYellow} \Huge\bf Lars B\"ahren

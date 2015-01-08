@@ -13,7 +13,7 @@ Wenn es sich so direkt nebeneinander anschaut, dann sieht es nicht wirklich
 sonderlich spannend aus... vom Ergebnis her ist aber schon nicht ganz ohne
 Bedeutung:
 
-~~~~~~
+~~~~~~ diff
 -   Copyright &copy; 2004-2013 Lars B&auml;hren |
 +   Copyright &copy; 2004-{date: { format: \%Y}} Lars B&auml;hren |
 ~~~~~~
@@ -43,4 +43,3 @@ anpasst, aber aus Entwicklerperspektive waere dies doch recht unbefriedigend.
 Folgerichtig habe ich die (deutlich ueberarbeitete) Anleitung noch einmal genauer
 unter die Lupe genommen und bin dort fuendig geworden - nun wird die Jahreszahl
 endlich dynamisch eingebunden und braucht nicht mehr von Hand eingetragen werden.
-

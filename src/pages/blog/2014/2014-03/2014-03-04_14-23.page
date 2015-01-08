@@ -10,7 +10,7 @@ _Tue, 04. March 2014 -- 14:23_
 
 Wenn es ja eines gibt, was ich nicht leiden kann, dann ist es mit einer Software konfrontiert zu sein, wo die Einzelteil einfach nur auf die Schnelle zusammengestoepselt sind. Gluecklicherweise kann man dies bei dem OCAL Framework in in seiner Gaenze behaupten, aber was mich schon seit der ersten Beruehrung mit den Paket gestoert hat ist, dass die diversen Tasks, welche nicht direkt im Python-Code implementiert sind auf eine ganze Reihe von Shell-Scripten verteilt sind, von denen man teilweise wissen muss wo sie sich befinden, um diese ueberhaupt einsetzen zu koennen. Da dies dann natuerlich einer der Punkte ist, wo es mich in den Fingerspitzen juckt, habe ich mich heute Mittag endlich mal daran gemacht, da ein wenig aufzuraeumen:
 
-~~~~
+~~~~ make
 docs: doc_sphinx doc_doxygen
 
 manual: doc_doxygen

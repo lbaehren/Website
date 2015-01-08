@@ -43,7 +43,7 @@ Datenkapselung und oeffentlicher Schnittstelle so ziemlich begraben kann. Nach e
 Hin und Her habe ich nun zwar eine einigermassen akzeptable Loesung gefunden, wie ich da
 vorgehen kann, aber elegant und wirklich sauber finde ich dies definitiv nicht.
 
-~~~~
+~~~~ python
 class BlackbodyRadiation (object):
     """ Model function for the radiation of a black blody.
     """
@@ -70,7 +70,7 @@ class BlackbodyRadiation (object):
 So einigermassen als Aequivalent zu der Python ``__init__`` Methode kann wohl
 der folgende Teil aus dem C++ Code gelten:
 
-~~~~
+~~~~ cpp
     void BlackbodyRadiation::init (const double& temperature)
     {
         // reset the array storing function parameters

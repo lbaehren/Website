@@ -40,24 +40,24 @@ to run some simple markup text files through e.g. [Doxygen](http://www.doxygen.o
 or -- as is the case for this website -- use a static website generator to handle the
 task. So this time it is back to the basics.
 
-~~~~~~~~ bash
-html_header ()
-{
-    echo "<html>"
-    echo "  <head>"
-    echo "    <meta name=\"author\" content=\"Lars Baehren\" />"
-    echo "    <meta name=\"description\" content=\"TROPOMI SWIR quicklooks\" />"
-    echo "    <meta name=\"keywords\" content=\"TROPOMI, SWIR, Quicklook, SRON\" />"
-    echo "    <meta name=\"generator\" content=\"Lars Baehren\" />"
-    echo "  <head>"
-    echo "  <body>"
-    echo ""
-    echo "    <h1>TROPOMI SWIR quicklooks</h1>"
-    echo ""
-    echo "    <i>Page generated `date`</i>"
-    echo ""
-}
-~~~~~~~~
+~~~~ bash
+    html_header ()
+    {
+        echo "<html>"
+        echo "  <head>"
+        echo "    <meta name=\"author\" content=\"Lars Baehren\" />"
+        echo "    <meta name=\"description\" content=\"TROPOMI SWIR quicklooks\" />"
+        echo "    <meta name=\"keywords\" content=\"TROPOMI, SWIR, Quicklook, SRON\" />"
+        echo "    <meta name=\"generator\" content=\"Lars Baehren\" />"
+        echo "  <head>"
+        echo "  <body>"
+        echo ""
+        echo "    <h1>TROPOMI SWIR quicklooks</h1>"
+        echo ""
+        echo "    <i>Page generated `date`</i>"
+        echo ""
+    }
+~~~~
 
 Luckily nothing fancy is required, so whipping a few lines of bash script to generate
 HTML output isn't a big deal. Of course there always is the risk to start overdoing it
