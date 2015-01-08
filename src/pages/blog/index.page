@@ -8,6 +8,60 @@ author: "Lars Baehren"
 
 **:::**
 
+### ESA, nicht NASA ###
+
+
+_Thu, 08. January 2015 -- 18:19_
+
+Nachdem ich letztes Jahr schon wieder bei [Omegatau](http://omegataupodcast.net)
+und [FLOSS Weekly](http://twit.tv/show/floss-weekly) aktiv geworden bin, was die
+Rueckmeldung und Mithilfe betrifft, so war es um den Jahreswechsel auch mal an der
+Zeit mich mit der [BBC](http://www.bbc.co.uk) in Verbindung zu setzen. Grund dafuer
+war ein -- wie ich fand einfach zu prominenter sachlicher Fehler -- in der letzten
+Ausgabe des [Global News Podcast](http://www.bbc.co.uk/podcasts/series/globalnews)
+vor dem Jahreswechsel:
+
+> Sent: 02 January 2015 21:24  <br>
+> To: Global Podcast  <br>
+> Subject: Factual error in 31-Dec-2014 edition
+>
+>
+> Ladies and Gentlemen,
+>
+>
+> the last edition of the Global News Podcast for the year 2014 contained
+> a prominently features factual error:
+>
+>
+> The Rosetta mission is not run by [NASA](http://www.nasa.gov) - as falsely claim in the
+> introduction to the subsequent report - by the [European Space Agency](http://www.esa.int/ESA)
+> (ESA). Given that in fact this mission was probably THE scientific
+> highlight (especially considering media impact) of 2014 the attribution
+> of the organization responsible should be correct.  <br>
+>
+> For verification check: [rosetta.esa.int](http://rosetta.esa.int)
+
+Was es sonst vielleicht noch alles an Ausrutschern gibt kann ich nur schwer beurteilen,
+aber es gibt einfach Geschichten wie diese, wo ich ziemlich nah an der Quelle sitze
+(zumindest deutlich naeher als der durchschnittliche Hoerer); wenn man mir dann versucht
+zu erzaehlen dass _Rosetta_ eine amerikanische Raumfahrt-Mission ist -- wenn alle
+Live-Bildern von der Landung doch aus dem Kontrollzentrum in Deutschland kamen -- dann
+wird ein Einspruch faellig. Dem Feedback nach, welches ich dann Beginn dieser Woche
+erhalten habe, war ich wohl nicht der einzige, der auf den Fehler hingewiesen hat
+(waere auch wirklich verwunderlich gewesen nach all dem Medien-Zirkus Ende letzten
+Jahres):
+
+> Thanks for pointing this out, and you're not the only listener to have spotted it. I was the producer on duty that night, and I take responsibility for the mistake - it was a bad one and shouldn't have occurred.   We'll be more vigilant in future.
+>
+> Rahul Sarnaik,  <br>
+> Producer,  <br>
+> GLOBAL NEWS,  <br>
+> BBC World Service.
+
+Naja, ich werde einfach mal die Ohren offen halten...
+
+**:::**
+
 ### Deutlich schneller ###
 
 
@@ -556,34 +610,3 @@ nicht zufrieden stellen, denn schliesslich sind bisher nirgendwo die Quicklooks 
 welche von unserer Seite aus erzeugt werden sollten. Da werde ich wohl ueber die kommenden
 Tage noch einmal schauen was da los ist, denn schliesslich waere die Information schon
 wichtig fuer die weiteren Entscheidungen.
-
-**:::**
-
-### Buecher photographieren ###
-
-
-_Sat, 20. December 2014 -- 16:53_
-
-Eine der Kleinigkeiten, welche ich vorhin mal noch schnell erledigt habe -- ehe das
-Tageslicht schon wieder verschunden ist -- war einen Teil der Buecher abzuphotographieren,
-welche sich hier in den diversen Kisten stapeln. Das sind nicht nur eigene Bestaende,
-sondern vor allen Dingen Buecher welche wir entweder hier im Haus gefunden oder aus
-Fremdbestaenden uebernommen haben. Alles davon behalten geht deutlich ueber die zur
-Verfuegung stehenden Lagermoeglichkeiten hinaus, so dass wirklich nur das im Haus
-bleibt, was auch selber gelesen wird -- der Rest laesst sich (hoffentlich) ueber eine
-Kombination von Flohmarkt, eBay und Amazon unter das Volk bringen. Da es aber eben nicht
-von allen Buechern ohne weiteres brauchbare Infos online zu finden gibt, ist es
-typischerweise an mir, all das abzulichten, was dann online angeboten wird. Dementsprechend
-habe ich mir vorhin nach dem Essen mal Kamera und Stativ geschnappt und eine kleine
-Photo-Session eingelegt.
-
-![Books](/blog/2014/2014-12/2014-12-20_Books.png)
-
-Die Resultate laufen zumindest durch eine minimale Pipeline, weil ich (mit auch aufgrund
-der Lichtverhaeltnisse) zumindest ein \[-1, 0, +1\] Bracketing geschosssen habe (will also
-heissen HDR). Ich weiss zwar nicht ob dies immer wirklich noetig ist, aber zumindest
-gibt es so Bildmaterial mit vernuenftigen Farben und ausreichend Detailaufloesung.
-Der zweite Batch laeuft derzeit noch durch die Konvertierung, aber das ich dies seit
-einer Weile einigermassen automatisiert habe, muss ich da nicht mehr die ganze Zeit am
-Rechner sitzen bleiben und alles von Hand machen (und fuer die noch verbleibenden Schritte
-wird bald mal ein kleines Script faellig).
