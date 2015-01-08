@@ -6,8 +6,39 @@ author: "Lars Baehren"
 
 ## Blog archive | {title:} ##
 
-<% mName=['January','February','March','April','May','June','July','August','September','October','November','December'] %>
-<% for n in 0..11 %>
-<% varOutput="### #{mName[n]} ###" %>
-<%= varOutput %>
-<% end %>
+
+### January ###
+
+ * [Photo-Start ins neue Jahr](/blog/2015/2015-01/2015-01-01_02-23.html) \| Thu, 01. January 2015 -- 02:23
+ * [Abfallkalender in elektronischer Form](/blog/2015/2015-01/2015-01-02_20-32.html) \| Fri, 02. January 2015 -- 20:32
+ * [Gelegenheit zum Upgrade](/blog/2015/2015-01/2015-01-04_00-02.html) \| Sun, 04. January 2015 -- 00:02
+ * [Zwischenschritt automatisiert](/blog/2015/2015-01/2015-01-04_20-40.html) \| Sun, 04. January 2015 -- 20:40
+ * [Supporting TROPOMI OCAL (2)](/blog/2015/2015-01/2015-01-05_23-30.html) \| Mon, 05. January 2015 -- 23:30
+ * [Supporting TROPOMI OCAL (3)](/blog/2015/2015-01/2015-01-06_16-15.html) \| Tue, 06. January 2015 -- 16:15
+ * [Abschied von der Mittelwelle](/blog/2015/2015-01/2015-01-06_18-13.html) \| Tue, 06. January 2015 -- 18:13
+ * [Deutlich schneller](/blog/2015/2015-01/2015-01-07_20-10.html) \| Wed, 07. January 2015 -- 20:10
+ * [ESA, nicht NASA](/blog/2015/2015-01/2015-01-08_18-19.html) \| Thu, 08. January 2015 -- 18:19
+
+### February ###
+
+
+### March ###
+
+
+### April ###
+
+
+### May ###
+
+
+### June ###
+
+
+### July ###
+
+
+### August ###
+
+
+### September ###
+

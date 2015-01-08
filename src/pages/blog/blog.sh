@@ -48,6 +48,57 @@ get_filename ()
 }
 
 #_______________________________________________________________________________
+#                                                                 get_month_name
+
+get_month_name ()
+{
+    if [ -z $1 ] ; then
+        varName=""
+    else
+        case $1 in
+            "01")
+                varName="January"
+            ;;
+            "02")
+                varName="February"
+            ;;
+            "03")
+                varName="March"
+            ;;
+            "04")
+                varName="April"
+            ;;
+            "05")
+                varName="May"
+            ;;
+            "06")
+                varName="June"
+            ;;
+            "07")
+                varName="July"
+            ;;
+            "08")
+                varName="August"
+            ;;
+            "09")
+                varName="September"
+            ;;
+            "10")
+                varName="October"
+            ;;
+            "11")
+                varName="November"
+            ;;
+            "12")
+                varName="December"
+            ;;
+        esac
+    fi
+
+    echo ${varName}
+}
+
+#_______________________________________________________________________________
 #                                                                get_entry_title
 
 get_entry_title ()
@@ -217,6 +268,52 @@ create_index_file_upcoming ()
 }
 
 #_______________________________________________________________________________
+#                                                         create_index_file_year
+
+create_index_file_year ()
+{
+    varYear=`date +%Y`
+    varPage="${varYear}/index.page"
+
+    # Generate page header
+    echo "---"                             > ${varPage}
+    echo "title: ${varYear}"              >> ${varPage}
+    echo "in_menu: false"                 >> ${varPage}
+    echo "author: \"Lars Baehren\""       >> ${varPage}
+    echo "---"                            >> ${varPage}
+    echo ""                               >> ${varPage}
+    echo "## Blog archive | {title:} ##"  >> ${varPage}
+    echo ""                               >> ${varPage}
+
+    for varMonth in 01 02 03 04 05 06 07 08 09 10 11 12
+    {
+        dirMonth="${varYear}/${varYear}-${varMonth}"
+        if [ -d ${dirMonth} ] ; then
+
+            varMonthName=`get_month_name ${varMonth}`
+
+            echo ""                        >> ${varPage}
+            echo "### ${varMonthName} ###" >> ${varPage}
+            echo ""                        >> ${varPage}
+
+            FILES=`find ${dirMonth} -name "${varYear}*.page"`
+
+            for FILE in $FILES
+            {
+                # extract the title of the entry
+                varEntry=`get_entry_title ${FILE}`
+                # extract time header line
+                varTimeheader=`get_timeheader ${FILE}`
+                # set up link pointing to the generated page
+                varLink="/blog/`echo $FILE | sed s/".page"/""/`.html"
+
+                echo " * [${varEntry}](${varLink}) \| ${varTimeheader}" >> ${varPage}
+            }
+        fi
+    }
+}
+
+#_______________________________________________________________________________
 #                                                         create_index_file_blog
 
 create_index_file_blog ()
@@ -365,11 +462,13 @@ case $1 in
         echo "Updating index file for upcoming entries ..."
         create_index_file_upcoming > ${PATH_BASEDIR}/${PATH_UPCOMING}/index.page
         create_index_file_blog ${varRecentEntries}
+        create_index_file_year
     ;;
     "--index")
         echo "Updating index file for upcoming entries ..."
         create_index_file_upcoming > ${PATH_BASEDIR}/${PATH_UPCOMING}/index.page
         create_index_file_blog ${varRecentEntries}
+        create_index_file_year
     ;;
     "-L")
         list_entries $2
