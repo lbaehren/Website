@@ -275,7 +275,8 @@ create_index_file_year ()
     varYear=`date +%Y`
     varPage="${varYear}/index.page"
 
-    # Generate page header
+    # === Generate page header ============================
+
     echo "---"                             > ${varPage}
     echo "title: ${varYear}"              >> ${varPage}
     echo "in_menu: false"                 >> ${varPage}
@@ -290,11 +291,27 @@ create_index_file_year ()
         dirMonth="${varYear}/${varYear}-${varMonth}"
         if [ -d ${dirMonth} ] ; then
 
+            varIndexMonth="${varYear}/${varYear}-${varMonth}/index.page"
             varMonthName=`get_month_name ${varMonth}`
+
+            echo " -> Processing ${varMonthName} ${varYear} ..."
+
+            # === Header section for year index ===========
 
             echo ""                        >> ${varPage}
             echo "### ${varMonthName} ###" >> ${varPage}
             echo ""                        >> ${varPage}
+
+            # === Page header for month index =============
+
+            echo "---"                                    > ${varIndexMonth}
+            echo "title: \"${varMonthName} ${varYear}\"" >> ${varIndexMonth}
+            echo "in_menu: false"                        >> ${varIndexMonth}
+            echo "author: \"Lars Baehren\""              >> ${varIndexMonth}
+            echo "---"                                   >> ${varIndexMonth}
+            echo ""                                      >> ${varIndexMonth}
+            echo "## Blog archive | {title:} ##"         >> ${varIndexMonth}
+            echo ""                                      >> ${varIndexMonth}
 
             FILES=`find ${dirMonth} -name "${varYear}*.page"`
 
@@ -308,9 +325,13 @@ create_index_file_year ()
                 varLink="/blog/`echo $FILE | sed s/".page"/""/`.html"
 
                 echo " * [${varEntry}](${varLink}) \| ${varTimeheader}" >> ${varPage}
+                echo " * [${varEntry}](${varLink}) \| ${varTimeheader}" >> ${varIndexMonth}
             }
         fi
     }
+
+    # Create index page in to blog directory
+    cat ${varPage} | sed s#"in_menu: false"#"in_menu: true"# | sed s#"Blog archive"#"Blog entries"# > ${varYear}.page
 }
 
 #_______________________________________________________________________________
@@ -418,6 +439,7 @@ publish_entry ()
         echo " -> rebuilding blog index pages ..."
         create_index_file_upcoming > ${PATH_BASEDIR}/${PATH_UPCOMING}/index.page
         create_index_file_blog ${varRecentEntries}
+        create_index_file_year
 
         # log publishing of entry via TaskWarrior
         task log pro:website +blog -- "Blog entry: ${varTitle}"

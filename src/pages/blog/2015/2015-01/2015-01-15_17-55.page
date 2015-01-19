@@ -1,0 +1,80 @@
+---
+title: "Wo der Doppelpunkt sitzt"
+in_menu: false
+author: "Lars Baehren"
+date: 2015-01-15T17:55:49.00Z
+created_at: 2015-01-15T13:00:24.00Z
+---
+
+## {title:} ##
+
+_Thu, 15. January 2015 -- 17:55_
+
+Geschafft! Das hat mich jetzt zwar ein wenig Zeit gekostet, aber nach laengerem Suchen
+und testen habe ich endlich den Fehler festmachen (und auch beheben) koennen, welcher
+dazu fuehrte, dass ein Teil der in den Algorithmen berechneten Ergebnisse falsch weggeschrieben
+wurden (und ich meine damit nicht nur meinen Code, sondern innerhalb des gesamten Frameworks).
+Worauf es letzten Endes hinauslief war ein recht subtiler Tipfehler in dem Verweis
+auf den Teil eines Arrays: statt
+
+~~~~ python
+    b = a[:, :nofColumns]
+~~~~
+
+stand in der entsprechenden Routine ein
+
+~~~~ python
+    b = a[:, nofColumns:]
+~~~~
+
+was natuerliche keinesfalls das Gleiche ist. Um dies zu verdeutlichen (schliesslich
+kann ich an dieser Stelle dann doch nicht die gleiche Gelaeufigkeit mit entsprechenden
+Code-Schnippseln voraussetzen) hier mal ein ganz einfaches Beispiel: wenn ich mit einem
+ganz einfachen linearen Array starte
+
+~~~~
+    a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+~~~~
+
+kriege ich -- je nachdem welche der beiden zuvor erwaehnten Schreibweissen ich verwende --
+die folgenden Ergebnisse:
+
+~~~~
+    a[:5]  =>  [0, 1, 2, 3, 4]
+
+    a[5:]  =>  [5, 6, 7, 8, 9]
+~~~~
+
+Wie sich also erkennen laesst macht schon einen Unterschied, wie die relative Position
+von Index-Nummer und Doppelpunkt ist. Damit wird dann (hoffentlich) auch verstaendlich
+was fuer eine Auswirkung es haben kann, wenn man statt
+
+~~~~ python
+    b_left  = a[:nofColumns]    #  [0, 1, 2, 3, 4]
+    b_right = a[nofColumns:]    #  [5, 6, 7, 8, 9]
+~~~~
+
+faelschlicherweise das folgende im Code stehen hat:
+
+~~~~ python
+    b_left  = a[:nofColumns]    #  [0, 1, 2, 3, 4]
+    b_right = a[:nofColumns]    #  [0, 1, 2, 3, 4]
+~~~~
+
+Richtig, in `b_left` und `b_right` stehen die gleichen Werte. Das ganze ist durchaus
+subtil genug um recht lange unbemerkt zu bleiben... es sei denn man schaut hier mal
+wirklich genau hin (z.B. durch das Schreiben entsprechender Testroutinen). Genau auf
+diesem Wege bin ich dem Fehler auch auf die Schliche gekommen, weil ich naemlich
+(nur der Sicherheit halber) verifizieren wollte, dass die Daten, welche ich auf die
+Platte wegschreibe und dann wieder einlese auch entsprechen womit ich gestartet bin.
+Wie sich dabei herausstellte war eben genau dies nicht der Fall. Da ich mir da zunaechst
+einmal keinen Reim draus machen konnte habe ich einfach ein wenig weitergegraben, bis
+ich mir die erzeugten Dateien noch einmal auf anderem Wege genauer angeschaut habe:
+dank dem Schema der erzeugten (und weggeschriebenen) Daten trat der Fehler dabei
+recht deutlich in Erscheinung, so dass es jetzt nur noch eine Frage war, wo sich
+der entsprechende Dreher denn finden lassen wuerde. Dass ich dabei in einem recht
+grundlegenden Module des Frameworks fuendig geworden bin, hat schon etwas befriedigendes:
+dies bedeutet naemlich nicht nur, dass der Fehler nicht auf meiner Seite lag, sondern
+dass ich mit der Korrektur automatisch diesen Fehler fuer alle anderen Benutzer mitbehoben
+habe. Interessant, dass dis bisher anscheinend noch niemandem aufgefallen ist, denn
+dies zieht sich dann letzten Endes durch alle Berechnungen hindurch!
