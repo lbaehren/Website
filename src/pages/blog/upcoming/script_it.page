@@ -23,7 +23,7 @@ alleine der Detektor auf dem Pruefstand eingespannt war (was aber durchaus ausre
 fuer eine Reihe von Untersuchungen ist, weil eben nicht fuer alles das komplette,
 zusammengebaute Instrument braucht).
 
-~~~~~~~~
+~~~~
 efm2.proc_stop_before_dn2v_no_flagging.ocal
 efm2.proc_stop_after_dn2v_no_flagging.ocal
 
@@ -38,26 +38,26 @@ efm2.proc_stop_after_offset_no_flagging.ocal
 
 efm2.proc_stop_before_v2c_no_flagging.ocal
 efm2.proc_stop_after_v2c_no_flagging.ocal
-~~~~~~~~
+~~~~
 
-~~~~~~~~
-for _step in ${varSteps}
-{
-    # Upper-case version of processing stp name
-    varStepName=`echo ${_step} | tr "[a-z]" "[A-Z]"`
-
-    echo "Generating task configuration files for ${varStepName} step ..."
-
-    for _data in ${varData}
+~~~~ bash
+    for _step in ${varSteps}
     {
+        # Upper-case version of processing stp name
+        varStepName=`echo ${_step} | tr "[a-z]" "[A-Z]"`
 
-        for _stop in ${varStops}
+        echo "Generating task configuration files for ${varStepName} step ..."
+
+        for _data in ${varData}
         {
-            write_taskfile ${_data} ${_step} ${_stop}
+
+            for _stop in ${varStops}
+            {
+                write_taskfile ${_data} ${_step} ${_stop}
+            }
         }
     }
-}
-~~~~~~~~
+~~~~
 
 ~~~~~~~~
 Generating task configuration files for MEM step ...
@@ -71,14 +71,14 @@ Generating task configuration files for MEM step ...
 
 Was ich bisher auf diese Weise noch nicht mit geloest habe ist, wie ich das zugehoerige ``Makefile`` gleich mit aktualisieren kann: die zur Verfuegung gestellten Build-Targets folgen dem gleich Schema wie schon die Konfigurations-Dateien (schliesslich werden diese letzten Endes ja auch wiederum aufgerufen).
 
-~~~~
-dn2v: dn2v.efm2 dn2v.efm2_fm
+~~~~ make
+    dn2v: dn2v.efm2 dn2v.efm2_fm
 
-dn2v.efm2:
-	${RUNTASK} efm2.proc_stop_before_dn2v_no_flagging.ocal ${BANDS}
-	${RUNTASK} efm2.proc_stop_after_dn2v_no_flagging.ocal ${BANDS}
+    dn2v.efm2:
+    	${RUNTASK} efm2.proc_stop_before_dn2v_no_flagging.ocal ${BANDS}
+    	${RUNTASK} efm2.proc_stop_after_dn2v_no_flagging.ocal ${BANDS}
 
-dn2v.efm2_fm:
-	${RUNTASK} efm2_fm.proc_stop_before_dn2v_no_flagging.ocal ${BANDS}
-	${RUNTASK} efm2_fm.proc_stop_after_dn2v_no_flagging.ocal ${BANDS}
+    dn2v.efm2_fm:
+    	${RUNTASK} efm2_fm.proc_stop_before_dn2v_no_flagging.ocal ${BANDS}
+    	${RUNTASK} efm2_fm.proc_stop_after_dn2v_no_flagging.ocal ${BANDS}
 ~~~~
