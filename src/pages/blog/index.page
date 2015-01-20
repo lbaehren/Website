@@ -8,6 +8,259 @@ author: "Lars Baehren"
 
 **:::**
 
+### Index Seiten ###
+
+
+_Mon, 19. January 2015 -- 22:49_
+
+So, ich denke mal, dass ich jetzt endlich auch die letzten der bisher noch fehlenden
+Index-Seiten angelegt kriege: nachdem die Erzeugung der Uebersichtsseiten fuer die
+Blog-Eintraege eines Jahres ja implementiert war, habe ich mir gerade eben mal noch
+ein paar Minuten geschnappt, um die fehlenden Zeilen Bash Script zu schreiben. Viel
+fehlte nicht mehr:
+
+~~~~ bash
+    # page header segment
+    echo "---"                                               > ${varIndexMonth}
+    echo "title: \"${varMonthName} ${varYear}\""            >> ${varIndexMonth}
+    echo "in_menu: false"                                   >> ${varIndexMonth}
+    echo "author: \"Lars Baehren\""                         >> ${varIndexMonth}
+    echo "---"                                              >> ${varIndexMonth}
+    echo ""                                                 >> ${varIndexMonth}
+
+    # loop over entries during the month
+    echo " * [${varEntry}](${varLink}) \| ${varTimeheader}" >> ${varIndexMonth}
+~~~~
+
+Waehrend ich damit alle wesentlichen Seiten erzeugt haben sollte, bleibt natuerlich
+immer noch das Problem, dass ich es mittlerweile mit so vielen Seiten zu tun habe,
+dass die blosse Generierung aus den Quelldateien locker 10 Minuten brauchen kann.
+Ich denke mal, dass dies mit Sicherheit einer der Punkte ist, welchen ich mir mal
+noch genauer unter die Lupe nehmen muss; grundsaetzlich moechte ich schon die
+Verwendung statischer Seiten beibehalten (es sei denn es gibt einen wirklich guten
+Grund davon abzuweichen), nur letzten Endes habe ich dann mit einem Skalierungsproblem
+zu tun.
+
+**:::**
+
+### Ubuntu: Download updates while installing ###
+
+
+_Mon, 19. January 2015 -- 14:12_
+
+As far as I am concerned I have not seen any (desktop) version of [Ubuntu](http://www.ubuntu.com)
+where this feature works properly:
+
+![Screenshot from install dialog](/blog/2015/2015-01/2015-01-19_Ubuntu_install.png)
+
+My expectation would be that when afterwards rebooting into a newly installed system
+running
+
+~~~~ bash
+    apt-get update
+    apt-get upgrade
+~~~~
+
+should not lead to any further package updates. The contrary is the case: even
+before I manage to open up a terminal window to type in the above commands, the
+"Software Updater" pops up to announce there are several updates available -- not
+the kind of behaviour I would expect when checking the corresponding box earlier in
+the process.
+
+**:::**
+
+### Wo der Doppelpunkt sitzt ###
+
+
+_Thu, 15. January 2015 -- 17:55_
+
+Geschafft! Das hat mich jetzt zwar ein wenig Zeit gekostet, aber nach laengerem Suchen
+und testen habe ich endlich den Fehler festmachen (und auch beheben) koennen, welcher
+dazu fuehrte, dass ein Teil der in den Algorithmen berechneten Ergebnisse falsch weggeschrieben
+wurden (und ich meine damit nicht nur meinen Code, sondern innerhalb des gesamten Frameworks).
+Worauf es letzten Endes hinauslief war ein recht subtiler Tipfehler in dem Verweis
+auf den Teil eines Arrays: statt
+
+~~~~ python
+    b = a[:, :nofColumns]
+~~~~
+
+stand in der entsprechenden Routine ein
+
+~~~~ python
+    b = a[:, nofColumns:]
+~~~~
+
+was natuerliche keinesfalls das Gleiche ist. Um dies zu verdeutlichen (schliesslich
+kann ich an dieser Stelle dann doch nicht die gleiche Gelaeufigkeit mit entsprechenden
+Code-Schnippseln voraussetzen) hier mal ein ganz einfaches Beispiel: wenn ich mit einem
+ganz einfachen linearen Array starte
+
+~~~~
+    a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+~~~~
+
+kriege ich -- je nachdem welche der beiden zuvor erwaehnten Schreibweissen ich verwende --
+die folgenden Ergebnisse:
+
+~~~~
+    a[:5]  =>  [0, 1, 2, 3, 4]
+
+    a[5:]  =>  [5, 6, 7, 8, 9]
+~~~~
+
+Wie sich also erkennen laesst macht schon einen Unterschied, wie die relative Position
+von Index-Nummer und Doppelpunkt ist. Damit wird dann (hoffentlich) auch verstaendlich
+was fuer eine Auswirkung es haben kann, wenn man statt
+
+~~~~ python
+    b_left  = a[:nofColumns]    #  [0, 1, 2, 3, 4]
+    b_right = a[nofColumns:]    #  [5, 6, 7, 8, 9]
+~~~~
+
+faelschlicherweise das folgende im Code stehen hat:
+
+~~~~ python
+    b_left  = a[:nofColumns]    #  [0, 1, 2, 3, 4]
+    b_right = a[:nofColumns]    #  [0, 1, 2, 3, 4]
+~~~~
+
+Richtig, in `b_left` und `b_right` stehen die gleichen Werte. Das ganze ist durchaus
+subtil genug um recht lange unbemerkt zu bleiben... es sei denn man schaut hier mal
+wirklich genau hin (z.B. durch das Schreiben entsprechender Testroutinen). Genau auf
+diesem Wege bin ich dem Fehler auch auf die Schliche gekommen, weil ich naemlich
+(nur der Sicherheit halber) verifizieren wollte, dass die Daten, welche ich auf die
+Platte wegschreibe und dann wieder einlese auch entsprechen womit ich gestartet bin.
+Wie sich dabei herausstellte war eben genau dies nicht der Fall. Da ich mir da zunaechst
+einmal keinen Reim draus machen konnte habe ich einfach ein wenig weitergegraben, bis
+ich mir die erzeugten Dateien noch einmal auf anderem Wege genauer angeschaut habe:
+dank dem Schema der erzeugten (und weggeschriebenen) Daten trat der Fehler dabei
+recht deutlich in Erscheinung, so dass es jetzt nur noch eine Frage war, wo sich
+der entsprechende Dreher denn finden lassen wuerde. Dass ich dabei in einem recht
+grundlegenden Module des Frameworks fuendig geworden bin, hat schon etwas befriedigendes:
+dies bedeutet naemlich nicht nur, dass der Fehler nicht auf meiner Seite lag, sondern
+dass ich mit der Korrektur automatisch diesen Fehler fuer alle anderen Benutzer mitbehoben
+habe. Interessant, dass dis bisher anscheinend noch niemandem aufgefallen ist, denn
+dies zieht sich dann letzten Endes durch alle Berechnungen hindurch!
+
+**:::**
+
+### Zeit nehmen zum Lesen ###
+
+
+_Tue, 13. January 2015 -- 23:00_
+
+Es gibt einfach Dinge, fuer welche man sich bewusst Zeit nehmen muss -- Dinge, welche
+nicht einfach so nebenher, parallel passieren, sondern eine gewisse Mindestkonzentration
+erfordern. Nachrichten, Reportagen, Interviews, etc, anhoeren, das alles laesst sich
+wunderbar mit den diversesten Taetigkeiten kombinieren -- ein Buch lesen aber vertraegt
+sich nur mit einer deutlich kleineren Anzahl von anderen Aktivitaeten. Von diesen
+wenigen gibt es zwar einige besonders angenehme (wie zum Beispiel eine Massage geben),
+aber bei wenig Licht im Regen durch die Gegend laufen gehoert nicht unbedingt zu den
+Umstaenden, welche sich zum Lesen eignen.
+
+Typischerweise scheint es bei mir mit dem Lesen immer ein wenig phasenweise zu kommen:
+ueber einen gewissen Zeitraum bleibe ich konstant dabei und schaffe es so ein Buch
+nach dem anderen "abzuarbeiten" -- dann tritt wieder eine Phase ein, wo meine Leseliste
+keinerlei Anstalten macht kuerzer zu werden. Gut, von alleine passiert letzteres natuerlich
+nicht, da gehoert auch schon ein wenig Selbstdisziplin dazu, so dass ich seit dem Ende
+letzten Jahres schon versuche wieder kontinuierlicher dran zu bleiben. Da macht es dann
+auch Sinn nicht einfach nur eine Liste abzuarbeiten (fuer die derzeit aeltesten Eintraege
+siehe unten), sondern sich eher an der Interessenlage zu orientieren -- so bedeutet
+das Lesen keine Anstrengung sondern Genuss und Bereicherung.
+
+~~~~
+ID Proj  Age  Description
+-- ----- ---- ------------------------------------------
+ 3 books 3.5y Heretics of Dune (Frank Herbert)
+ 4 books 3.5y Chapterhouse Dune (Frank Herbert)
+ 5 books 3.5y The Virgin Suicides (Jeffrey Eugenides)
+ 6 books 3.5y Chronicles of Narnia (C.S. Lewis)
+ 7 books 3.5y White Orleander (Janet Fitch)
+ 8 books 3.5y Picture perfect (Jodi Picault)
+ 9 books 3.5y Nineteen minutes (Jodi Picault)
+10 books 3.5y Perestroika (Michail Gorbatschow)
+11 books 3.5y Die Entdeckung des Himmels (Harry Mulisch)
+12 books 3.5y The Audacity of Hope (Barack Obama)
+~~~~
+
+Zwischen Weihnachten und Neujahr habe ich mit "[Bilder im Kopf: Die Geschichte meines
+Lebens](http://www.amazon.de/Bilder-Kopf-Geschichte-meines-Lebens/dp/3421045666)" begonnen,
+der Autobiographie von [Michael Ballhaus](http://de.wikipedia.org/wiki/Michael_Ballhaus).
+Wer so auf Anhieb nichts mit dem Namen anfangen kann (Schande, Schande, Schande),
+der sollte mal einen Blick auf das [IMDb Profil](http://www.imdb.com/name/nm0000841)
+werfen. Auch wenn ich selbst nicht unbedingt die vollstaendige Liste der Filme, an welchen
+der Mann mitgewirkt hat, aufzaehlen koennte, so sind mir vor allen Dingen die Streifen
+gelaeufig, welche aufgrund ihrer Kamera-Arbeit -- oder einer Erzaehlung, welche der Zeit
+voraus ist -- besonders bemerkenswert sind:
+
+ - [Welt am Draht](http://www.imdb.com/title/tt0070904) (1973)
+ - [The Color of Money](http://www.imdb.com/title/tt0090863) (1986)
+ - [The Last Temptation of Christ](http://www.imdb.com/title/tt0095497) (1988)
+ - [The Fabulous Baker Boys](http://www.imdb.com/title/tt0097322) (1989)
+ - [Goodfellas](http://www.imdb.com/title/tt0099685) (1990)
+ - [The Legend of Bagger Vance](http://www.imdb.com/title/tt0146984) (2000)
+
+... um zumindest mal ein paar zu nennen. In der [ARD Mediathek](http://www.ardmediathek.de)
+gibt es uebrigens auch einen [Beitrag](http://www.ardmediathek.de/tv/ttt-titel-thesen-temperamente/Michael-Ballhaus-Bilder-im-Kopf/Das-Erste/Video?documentId=20239456&bcastId=431902)
+anlaesslich der Buchveroeffentlichung -- ein recht nettes, kurzes Portrait, aber wer
+mehr will, dem sei das Buch waermstens ans Herz gelegt.
+
+Was war jetzt aber der eigentliche Aufhaenger? Als ich "Bilder im Kopf" am Sonntag Abend
+zugemacht habe, hatte ich noch weniger als 100 Seiten zu lesen; da scheint es mir doch
+realistisch, dass ich diesen verbleibenden Rest noch vor dem Ende der Woche -- vielleicht
+aber auch schon vor dem Donnerstag Abend -- schaffe. Motivation habe ich in jedem Fall, denn
+a) ist das Buch wirklich sehr interessant und trotz sein gelegentlichen sprachlichen
+Eigenheiten gut lesbar und b) will ich unbedingt mit "[The Last Ship](http://en.wikipedia.org/wiki/The_Last_Ship_%28novel%29)"
+beginnen.
+
+**:::**
+
+### Ein wenig ruhiger ###
+
+
+_Mon, 12. January 2015 -- 10:01_
+
+Normalerweise benutze ich ja dir Fahrt von Bonn nach Utrecht (und natuerlich auch in
+die andere Richtung) dazu noch ein wenig zu arbeiten und ggf. Dinge erledigen, welche
+ich dann (einmal angekommen) z.B. abschicken kann. Was dies allerdings ein wenig
+voraussetzt ist, dass es mit der Konzentration klappt -- bei der Erkaeltung, welche
+mir immer noch in den Knochen sitzt war es eben darum nicht so sonderlich gestellt.
+Folgerichtig habe ich die Fahrt deutlich ruhiger angehen lassen und lieber noch
+ein bischen Schlaf nachgeholt, damit ich einigermassen erholt im Institut ankomme.
+
+**:::**
+
+### Tannenbusch in HDR ###
+
+
+_Fri, 09. January 2015 -- 19:02_
+
+Sieht ganz danach aus als wuerde ich langsam das Bildmaterial fuer eine kleine Sammlung
+an [Tannenbusch-Impressionen](https://www.flickr.com/photos/larsbaehren/sets/72157645059320272)
+zusammenkriegen. Nachdem ich ein wenig enttaeuscht war von Fotos, welche ich online
+finden konnte, habe ich mir vorgenommen Tannenbusch auch einmal von der fotographisch
+vorteilhafteren Seite zu praesentieren. Ein klein wenig habe ich damit ja schon im
+letzten Jahr begonnen, aber ich denke mal 2015 wird ausreichend Gelegenheiten bieten
+da noch so das eine oder andere Foto hinzuzufuegen.
+
+![Haltestelle Tannenbusch Sued](/blog/2015/2015-01/hdr_20150104_174853_Tannenbusch_Sued.jpg)
+
+Obiges Foto ist vom letzten Sonntag, als ich mir die Kamera geschnappt habe um einfach
+mal eine Stunde lang durch die Gegend zu laufen und nach Motiven zu suchen. Fuendig
+geworden bin ich dabei unter anderen bei der Haltestelle "Tannenbusch Sued" der Bahnlinien
+16 und 63 (ueber welche es eine schnelle Anbindung zum Hauptbahnhof gibt). Dass sich
+mit der Szene etwas interessantes wuerde machen lassen war mir eigentlich direkt klar
+-- nur bei der Nachbearbeitung nachher am Rechner musste ich ein wenig experimentieren,
+denn die Lampen ueber der Bruecke verursachen eine ziemlich starke Verfaerbung von allem
+was sichim Vordergrund befindet. Worauf ich mich dann schliesslich festgelegt habe ist,
+dass ich versuche die Betonwaende auf einen neutralen Ton zu setzen, damit ich dieses
+orange Schimmern wegkriege -- der nette Nebeneffekt davon ist aber, dass sowohl das Metall
+der Aufzuege als auch der Himmel noch einmal eine ganze Ecke kuehler wirken (weil eben
+die Rotanteile herausgefiltert werden).
+
+**:::**
+
 ### ESA, nicht NASA ###
 
 
@@ -393,220 +646,3 @@ das Blickfeld laufen) als man so denkt, aber mit ein paar brauchbaren Aufnahmen 
 ich dann doch wahrscheinlich zurueckgekommen. Ist ein wenig eine Geduldsprobe, wenn
 man da im Kalten steht und darauf wartet bis die Kamera mit einer Serie von Aufnahmen
 fertig ist -- da ist es doch recht angenehm wieder im Warmen zu sein.
-
-**:::**
-
-### Fast vorbei ###
-
-
-_Wed, 31. December 2014 -- 23:03_
-
-Noch ein paar Stunden, dann heisst es Abschied nehmen von 2014. Nachdem ich vor allen
-Dingen im vorherigen Jahr recht konsequent mit dem Schreiben war, gab es vor allen Dingen
-Ende Sommer bis in den Herbst hinein einen grossen Aussetzer. Ausgerechnet (wieder
-einmal) zu dem Zeitpunkt wo man viel haette berichten koennen, habe ich mich selber
-damit abgeschossen, indem die Bastelarbeiten an den Scripten hinter den Kulissen
-von Blog und Website weitere Updates verhinderten. Dies ist nun gleucklicherweise seit
-einer Weile behoben, nur das Loch in der Berichterstattung bleibt bestehen.
-
-Vorhin waren wir noch einmal eine Runde mit Sofia unterwegs: bei den Boellern, welche
-ueberall gezuendet werden, kriegt der Hund so richtig Stress, so dass es schon eine
-groessere Aktion war mal eine Runde zu laufen. Zurueck zuhause scheint es sich
-wieder ein wenig einzurenken, aber so gegen Mitternacht gemeinsam vor die Tuere gehen
-scheint nicht unbedingt eine gute Idee zu sein. Andererseits muss man dem Hund schon
-zu Gute halten, dass es in den letzten drei Wochen einiges Fortschritten gegeben hat,
-so dass es kommendes Silvester sicherlich deutlich anders aussehen wird.
-
-**:::**
-
-### Supporting TROPOMI OCAL ###
-
-
-_Mon, 29. December 2014 -- 19:34_
-
-It is happening: after month and years of preparations the TROPOMI instrument not
-only is at the [Centre Spatial de Liege](http://www.csl.ulg.ac.be) (CSL) [testing
-facility](http://www.csl.ulg.ac.be/jcms/c_5574), but since a few days there is a
-continuous stream of measurement data coming in!
-
-> CSL is an active research centre in the fields of space instruments, space testing
-> and technologies. CSL is highly known as a test centre but it as also important
-> activities in space instrumentation and advanced technologies. For years, the CSL
-> has been an “ESA-coordinated facility”. Today, the Testing Department operates five
-> thermal-vacuum chambers with volumes ranging from 1 to 170 m³, two shakers (88 to
-> 200 kN) and a number of specialized equipments all located in a 1,000-m² clean room
-> area (ISO 5 to ISO 7).
-
-So while there is still the need to continue working on the calibration algorithms,
-there of course is the more immediate need to respond to any problems encountered
-while the calibration measurements are running. Part of this support was the request
-arriving this afternoon for the creation of a small webpage to provide an overview
-of the available quicklook documents (basically a collection of diagnostics plots).
-Nothing big, just a simple webpage with a list of files (and a link for downloading
-them) -- something like this:
-
-![Webpage screenshot](/blog/2014/2014-12/2014-12-29_quicklooks_page.png)
-
-The pretty much straight-forward way to do this is (once more) coming up with a short
-shell script to locate the PDF files... and write out some HTML code. The latter is
-something I haven't been doing in quite a while: what I have been doing instead was
-to run some simple markup text files through e.g. [Doxygen](http://www.doxygen.org)
-or -- as is the case for this website -- use a static website generator to handle the
-task. So this time it is back to the basics.
-
-~~~~ bash
-    html_header ()
-    {
-        echo "<html>"
-        echo "  <head>"
-        echo "    <meta name=\"author\" content=\"Lars Baehren\" />"
-        echo "    <meta name=\"description\" content=\"TROPOMI SWIR quicklooks\" />"
-        echo "    <meta name=\"keywords\" content=\"TROPOMI, SWIR, Quicklook, SRON\" />"
-        echo "    <meta name=\"generator\" content=\"Lars Baehren\" />"
-        echo "  <head>"
-        echo "  <body>"
-        echo ""
-        echo "    <h1>TROPOMI SWIR quicklooks</h1>"
-        echo ""
-        echo "    <i>Page generated `date`</i>"
-        echo ""
-    }
-~~~~
-
-Luckily nothing fancy is required, so whipping a few lines of bash script to generate
-HTML output isn't a big deal. Of course there always is the risk to start overdoing it
-once there first working version is out: there is always something to tweak and improve,
-be it making adjustments to the layout, add navigation links, etc. However for the
-time being nothing of the like is in the works, so all there is to it is to let "cron"
-run the script(s) and provide the people back at SRON or CSL (Luik, BE) with the input
-they need.
-
-**:::**
-
-### Sonntagspaziergang ###
-
-
-_Sun, 28. December 2014 -- 20:35_
-
-Was fuer ein Wetter! Nachdem eigentlich schon seit einer Weile alles unter Bergen
-von Schnee begraben sein sollte, stellte sich heute Morgen bei einem Blick aus dem
-Fernster nicht nur heraus, dass von einer durchgehenden weissen Schneedecke nirgends
-etwas zu sehen war, sondern auch noch dass der Tag recht freundlich zu werden versprach.
-Kalt zwar, aber doch recht sonnig. Folgerichtig habe ich gleich Kamera und Stativ
-mit zum Sport genommen, so dass ich von Mondorf aus zurueck in Richtung Tannenbusch
-laufen konnte. Habe ich auch gemacht, nur leider fiel die Route etwas anders aus, als
-ich dies gehofft hatte. Auch wenn ich gleich mehrmals auf den Seiten der [Rheinfaehre Mondorf](http://www.rheinfaehre-mondorf.de)
-nachgeschaut hatte, war ich doch ein wenig ueberrascht, als ich heute Mittag dann vor einem
-Schild stand, welches mit mitteilte, dass zwischen dem 23. Dezember und dem 5. Januar
-keinerlei Faehrverkehr geplant ist. Dies bedeutete nicht nur, dass mein anvisierter
-Weg ueber den Rhein angeschnitten war, sondern dass ein laengerer Marsch zur Nordbruecke
-auf dem Programm stand. Nun habe ich nicht grundsaeztlich etwas gegen die Umgebung der
-Siegmuendung einzuwenden, aber ich hatte doch eigentlich eher vorgehabt [Graurheindorf](http://de.wikipedia.org/wiki/Graurheindorf)
-und Buschdorf unsicher zu machen -- das werde ich mir nun zunaechst einmal fuer eine andere
-Gelegenheit aufsparen muessen.
-
-![Heinrich-Hertz-Europakolleg](/blog/2014/2014-12/hdr_20141228_153854_Heinrich-Hertz-Europakolleg.jpg)
-
-Was mich bei der ganzen Sache dann doch wieder ein klein wenig versoehnlich stimmt ist,
-dass ich trotzdem mit ein paar brauchbaren Bildern zurueck nach Hause gekommen bin.
-Vor allen Dingen nach der Rheinueberquerung habe ich in Graurheindorf (dem mehr Richtung
-Innenstadt gelegenen Teil) ein paar der Ecken angesteuert, welche ich mir schon eine
-Weile mal etwas genauer angeschaut haben wollte: dazu gehoert u.a. der Gruendstreifen
-auf der Rueckseite des [Heinrich-Hertz-Europakolleg](http://www.hhek.bonn.de) und die sich
-daran anschliessenden Sportanlagen.
-
-![Tannennbusch](/blog/2014/2014-12/hdr_20141228_163008_Tannenbusch.jpg)
-
-Vom Timing her hat es gerade noch so gereicht, dass ich in Tannenbusch angekommen ein
-paar der goldenen Sonnenstrahlen mitnehmen konnte. Zwar gab es jetzt nicht unbedingt
-sonderlich viele Stellen, an welchen ich hier photographisch haette zuschlagen koennen,
-aber immerhin konnte ich doch mein Portfolio fuer den Stadtteil wieder ein klein wenig
-aufbessern; ich bleibe dabei nach wie vor bei meinem Vorhaben, eben ein wenig andere
-Eindruecke einzufangen, als was man ansonsten bei einer Bildersuche zu dieser Gegend
-geboten bekommt.
-
-**:::**
-
-### Aenderung der Reiseplanung ###
-
-
-_Sun, 28. December 2014 -- 01:02_
-
-Da wird es wohl nichts mit den Reiseplaenen fuer das neue Jahr. Nachdem im
-Laufe des gestrigen Abends immer mehr die Wettermeldungen reinkamen, stellte sich
-recht schnell heraus, dass es wohl keine gute Idee sein wuerde an den Reiseplaenen nach
-Utrecht festzuhalten. Eigentlich war ja angedacht, dass Julia und ich Anfang kommender
-Woche mit dem Auto nach Utrecht fahren, um auf diese Weise dann endlich einmal die
-dort zwischengelagerten Stuehle nach Bonn zu ueberfuehren. Da setzt allerdings ein wenig
-voraus, dass das Wetter mitspielt, denn sollte aus den angekuendigten Schneeverwehungen
-ernst werden, dann will man unter diesen Umstaenden ganz bestimmt nicht ohne Not
-irgendwo mit dem Auto unterwegs sein. Also werde ich wohl noch eine Woche hier in
-Bonn dran haengen -- was eine der netten Nebenwirkungen ist -- und dann erst am
-5. Januar wieder in die Niederlande verschwinden.
-
-**:::**
-
-### The Interview ###
-
-
-_Thu, 25. December 2014 -- 12:35_
-
-Die Reihe zweifelhaften Entscheidungen rund um [The Interview](http://www.imdb.com/title/tt2788710)
-scheinen irgendwie nicht abreissen zu wollen. Nachdem sich Sony nach einigem hin
-und her nun dazu entschlossen hat den Film online zu veroeffentlichen, frage ich
-mich, wieso es dann immer noch eine Begrenzung auf einzelne Laender gibt. Schaut man
-auf der [offiziellen Website](https://www.seetheinterview.com) fuer den Film nach,
-findet man dort unter dem Punkt "Frequently Asked Questions" folgende Aussage:
-
-> **Can I purchase this from outside the US?**
->
-> While we do hope to see the release of The Interview across the globe, for the
-> time being this is limited to the USA only. You can only purchase the movie with
-> a US card, and can only stream it from a US IP address.
-
-Da schreibt doch einfach nur danach, den Film auf anderen als den offiziellen Kanaelen
-zu verbreiten. [Wie The Verge berichtet](http://www.theverge.com/2014/12/24/7448253/sonys-the-interview-site-accidentally-let-anyone-download)
-wird dies zusaetzlich dadurch befeuert, dass es gerade auf Sony's offizieller Website
-fuer digitalen Filmverleih eine Sicherheitsluecke gegeben hat:
-
-> It's been an interesting day for Kernel, the site powering Sony's digital
-> rentals of The Interview in the US. Not only did it briefly buckle under the
-> pressure of people hammering its site to watch the movie, but apparently it
-> didn't do a great job in securing copies of the film, either. Those who spent
-> $5.99 to watch a 48-hour rental of The Interview on their browser could simply
-> share the URL of the film with anyone else. Worse yet, anyone who had access to
-> the link was able to save an unprotected copy locally through a super obvious
-> loophole, something The Verge was able to confirm from different browsers and
-> locations.
-
-Dass auf diesem Wege erhaltene Kopien nicht alleine auf dem Rechner bleiben, wo sie
-zunaechst abgespeichert wurden, sondern recht bald den Weg zu einem breiteren
-internationalen Publikum finden werden, duerfte wohl wenig verwundern.
-
-**:::**
-
-### Weihnachtsarbeit ###
-
-
-_Thu, 25. December 2014 -- 12:18_
-
-Da passiert doch wirklich etwas. Nach ein klein wenig Bastelarbeit habe ich es rechtzeitig
-vor Heiligabend geschafft noch den Cronjob ans Laufen zu bringen, mit welche nicht nur
-die Quicklooks der Messungen eingesammelt, sondern anschliessend auch auf einen Rechner
-bei SRON umkopiert werden.
-
-~~~~~~~~
-File statistics (11:00):
- - Measurement set : post_env
- - Total nof files : 470
- - Existing files  : 469
- - New files ..... : 1
-~~~~~~~~
-
-Auch wenn ich nicht direkt in die Geschehnisse vor Ort eingebunden bin, so kann ich
-zumindest anhand der Dateinamen erkennen, dass nun wirklich die Messungen laufen, welche
-laut dem rundgeschickten Zeitplan an der Reihe waeren. So 100%ig kann dies aber noch
-nicht zufrieden stellen, denn schliesslich sind bisher nirgendwo die Quicklooks zu finden,
-welche von unserer Seite aus erzeugt werden sollten. Da werde ich wohl ueber die kommenden
-Tage noch einmal schauen was da los ist, denn schliesslich waere die Information schon
-wichtig fuer die weiteren Entscheidungen.
