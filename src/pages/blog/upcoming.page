@@ -151,11 +151,11 @@ On February 5, 2009, After Forever announced, that they decided to call it quits
 
 Wie ja bekannt sein duerfte, gehoere ich nicht zu den Leuten, welche sich auf Facebook herumtreiben. Mir moegen dadurch vielleicht manchmal Dinge entgehen, aber ein wirklich schwerwiegendes Argument, welches mich da zum Umdenken bewegen koennte, ist mir bisher noch nicht untergekommen. Dazu zaehlt auch die folgende kleine Episode vom Wochenende (mit einem Nachspiel darueber hinaus)...
 
-Wie in meinem ersten [Eintrag](/blog/2013/2013-10/2013-10-05_12-17.html) zur diesjaehrigen [ProgPower Europe](http://www.progpowereurope.com) Ausgabe ja nachzulesen war, hat [Damian Wilson](http://www.damian-wilson.net) am Freitag Abend den Start ins Wochenende uebernommen.
+Wie in meinem ersten [Eintrag](/blog/2013/10/2013-10-05_12-17.html) zur diesjaehrigen [ProgPower Europe](http://www.progpowereurope.com) Ausgabe ja nachzulesen war, hat [Damian Wilson](http://www.damian-wilson.net) am Freitag Abend den Start ins Wochenende uebernommen.
 
  * [Damian Wilson auf Facebook](https://www.facebook.com/officialdamianwilson)
 
-![Damian Wilson on Facebook](/blog/2013/2013-10/2013-10-06_Damian_Wilson.png)
+![Damian Wilson on Facebook](/blog/2013/10/2013-10-06_Damian_Wilson.png)
 
 Heute Nachmittag kam es aber noch einmal ein Stueck besser:
 
@@ -168,7 +168,7 @@ Heute Nachmittag kam es aber noch einmal ein Stueck besser:
 
 Naja, wenn ich schon so nett gefragt werde, dann lasse ich (hoffe ich doch) nicht lange mit einer Antwort auf mich warten. Da die a) die Herangehensweise so war, wie ich mir dies deutlich oefter wuenschen wuerde und b) so eine Publicity hoffentlich nicht schaden kann, habe ich da umgehend eine Antwort zurueckgeschickt und gruenes Licht gegeben. Dauerte dann andererseits nicht sonderlich lange, da war die Startseite fuer die derzeit laufende Tour auch schon angepasst.
 
-![Damian Wilson on Facebook](/blog/2013/2013-10/2013-10-07_Damian_Wilson.png)
+![Damian Wilson on Facebook](/blog/2013/10/2013-10-07_Damian_Wilson.png)
 
 Also ich wuerde schon sagen, dass dies ein kleiner Achtungserfolg: Damian Wilson verwendet -- zumindest fuer eine Weile -- eines meiner Bilder fuer die offizielle Tourwerbung. Da muss ich mir wirklich einmal Gedanken machen, wie ich es schaffe da am Ball zu bleiben...
 
@@ -180,13 +180,13 @@ Da ich ja ab morgen Mittag wieder ein wenig aufs Land verschwinde -- Baarlo wuer
 
  - [ALDI Talk](http://www.alditalk.de)
 
-![Online Aufladung ALDI Talk](/blog/2013/2013-10/2013-10-03_Online_Aufladung.png)
+![Online Aufladung ALDI Talk](/blog/2013/10/2013-10-03_Online_Aufladung.png)
 
 ### Merging TROPOMI SWIR documentation ###
 
 Writing and generating a decent documentation for a software package is one thing -- doing the very same for a software, which actually is comprised of multiple programming languages and multiple modules/sub-packages is another. Having worked with [Doxygen](/development/tools/doxygen.html) for quite a while now, this pretty much seems like the tool of choice; however, while extracting and organizing information of C/C++ source code is straight forward, doing the same for the [Python](http://www.python.org) bits and pieces turned out to be a bit more tricky. Nevertheless, after testing different approaches to the problem I now seem to have come up with a result, which both contains API documentation (more geared towards developers) and extended documentation (more directed to users). With a little bit of luck all of this soon can be merged into the main branch of the project's code base, making the changes available to everybody.
 
-![Doxygen documentation for TROPOMI SWIR](/blog/2013/2013-09/2013-09-04_tropomi_doxygen.png)
+![Doxygen documentation for TROPOMI SWIR](/blog/2013/09/2013-09-04_tropomi_doxygen.png)
 
 Even though the previous paragraph almost verbatim has been posted to [Google+](https://plus.google.com), the blog certainly is the more suitable place for providing a bit more background information on the problem and the efforts to solve it.
 
@@ -289,7 +289,7 @@ Verbringt man ein wenig Zeit damit sich auf [YouTube](http://www.youtube.com) um
 
 ... ist eine ambitionierte _Symphonic Rock Fantasy_ von [Brazen Abbot](http://www.brazenabbot.nostramusic.com) Mastermind [Nikolo Kotzev](http://en.wikipedia.org/wiki/Nikolo_Kotzev).
 
-![Draconia news](/blog/2013/2013-08/2013-08-06_Draconia.png)
+![Draconia news](/blog/2013/08/2013-08-06_Draconia.png)
 
 [Interview By Ville Krannila / March 2012](http://kkdowning.net/interviews/nikolokotzev.html) :
 
@@ -322,7 +322,7 @@ This caught me quite by surprise: not being aware of any rumors that something w
 
 > Amazing things are happening at Flickr. We've made a lot of important upgrades to your service that we wanted you to know about.
 
-![New Flickr page layout](/blog/2013/2013-05/2013-05-21_flickr.png)
+![New Flickr page layout](/blog/2013/05/2013-05-21_flickr.png)
 
 Taking a closer look at the new layout I can't help but noticing the similarity to what Google+ has been introducing a short while ago: changing from a more linear vertical arrangement to a tiled display, trying to make maximum use of available display area. While on the one hand this is great for putting the pictures more into the focus of the viewing experience, for people who like to be more in control of how their pictures are displayed quit a bit harder; obviously, given the time constraints, I did not have the time yet to go exploring about possible options to customize the way in which my photostream is being rendered -- from the post I have been reading so far the options however seem to be limited, such that what you get essentially is what Flickr thinks is best. My guess is though, that during the next few days we are going to see quite a number of (blog) posts about the various ways in which Flickr's new face can be molded into a more personalized experience (this surely happend after Google+ went to the new design in a matter of hours).
 
@@ -449,7 +449,7 @@ It is for quite a while now that the large of my two Drobos is reminding me to a
 
 ### The Hobbit: An Unexpected Journey - Close-up ###
 
-Nach einem [ersten kurzen Kommentar](/blog/2013/2013-01/2013-01-01_23-48.html) in Sachen [The Hobbit: An Unexpected Journey](http://www.imdb.com/title/tt0903624) (2012), sollte ich vielleicht auch noch einmal ein paar mehr Worte darueber verlieren, wie der Film denn auch mich gewirkt hat. Auch wenn da gerade einmal 24 Stunden zwischen dem Anschauen und dem Schreiben liegen, so ist das Kinoerlebnis bereits jetzt schon angereichert um  Folge #160 der [vfx show](http://www.fxguide.com/thevfxshow) -- also eine Besprechung des Filmes vom Blickpunkt der visuellen Effekte her. Was ich auf diesem Wege zu hoeren bekomme habe deckt sich teilweise mit meinen Einschaetzungen, andererseits gibt es durchaus Aspekte welche ich schon aufgrund der unterschiedlichen technischen Voraussetzungen im Kino bisher nicht beurteilen kann (die Projektion im [Metropolis](http://www.metropolis-koeln.de) war zwar in 3D, nicht aber in HFR). Wer sich dem Film ebenfalls von der mehr technischen Seite her naehern will, dem seien die folgenden Beitraege auf [fxguide](http://www.fxguide.com) ans Herz gelegt:
+Nach einem [ersten kurzen Kommentar](/blog/2013/01/2013-01-01_23-48.html) in Sachen [The Hobbit: An Unexpected Journey](http://www.imdb.com/title/tt0903624) (2012), sollte ich vielleicht auch noch einmal ein paar mehr Worte darueber verlieren, wie der Film denn auch mich gewirkt hat. Auch wenn da gerade einmal 24 Stunden zwischen dem Anschauen und dem Schreiben liegen, so ist das Kinoerlebnis bereits jetzt schon angereichert um  Folge #160 der [vfx show](http://www.fxguide.com/thevfxshow) -- also eine Besprechung des Filmes vom Blickpunkt der visuellen Effekte her. Was ich auf diesem Wege zu hoeren bekomme habe deckt sich teilweise mit meinen Einschaetzungen, andererseits gibt es durchaus Aspekte welche ich schon aufgrund der unterschiedlichen technischen Voraussetzungen im Kino bisher nicht beurteilen kann (die Projektion im [Metropolis](http://www.metropolis-koeln.de) war zwar in 3D, nicht aber in HFR). Wer sich dem Film ebenfalls von der mehr technischen Seite her naehern will, dem seien die folgenden Beitraege auf [fxguide](http://www.fxguide.com) ans Herz gelegt:
 
 * [fxpodcast #238: Creature Animation: Gollum, Goblins & 48fps]()
 * [the rc #122: The Hobbit, HFR, new lenses & REDRAY]()

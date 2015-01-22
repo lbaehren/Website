@@ -1,0 +1,19 @@
+---
+title: "Github contributions"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Tue, 08. January 2013 -- 21:32_
+
+Ich bin doch imemr wieder erstaunt, wie aktiv die Macher von [Github](http://www.github.com) sowohl hinter den Kulissen sind als auch was Dinge betrifft, welche deutlich nach aussen sichtbar sind. Als ich mich heute Nachmittag einen schnellen Blick auf meine Repositories werfen wollte, landete ich auf einer Seite, welche ich so in dieser Weise bisher noch nicht gesehen habe:
+
+![New Github front page](/blog/2013/01/2013-01-08_github.png)
+
+Ok, dieses Feature konnte ich bisher noch garnicht sehen, weil es wirklich neu ist; wie ich mittels eines [Beitrag im Github Blog](https://github.com/blog/1360-introducing-contributions) nachlesen konnte ist ist diese Anzeige erst amgestrigen Tage online gegangen -- da muss ich mich also in der Tat nicht wundern, dass mir diese Uebersicht nicht schon frueher aufgefallen ist.
+
+> You're making contributions to projects all over GitHub and we want to show everyone what you're doing. Whenever you commit to a project's default branch or the gh-pages branch, open an issue, or propose a Pull Request, we'll count that as a contribution. Repositories are sorted by your recent impact. A commit today is worth more than a commit last week.
+
+Wie schon von der bisher existierenden Graphen gewohnt ist das Display recht uebersichtlich gestaltet, enthaelt durchaus interessante Informationen und sieht darueber auch noch cool. Way to go!

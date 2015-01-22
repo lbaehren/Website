@@ -1,0 +1,15 @@
+---
+title: "Voll ausgeruestet"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Sun, 30. June 2013 -- 22:26_
+
+Das in der Nacht von Donnerstag auf Freitag angeworfene Upgrade des Storage Space auf dem NAS ist gestern Nachmittag endlich fertig geworden -- seit dem laufen alle Services wieder normal und in der gewohnten Geschwindigkeit. Wie bereits angekuendigt liegt der Gesamtspeicherplatz nun ein kleines Stueck ueberhalb der 19 TB Marke -- damit besteht ein wenig Raum und ich muss mir um das naechste Upgrade eine Weile lang mal keine akuten Gedanken machen.
+
+![NAS Storage](/blog/2013/06/2013-06-30_nas_storage.png)
+
+Jetzt wo also die Mechanik hinter den Kulissen fertig ist, habe ich mich daran gemacht die diversen Services einzurichten: das waere vor allen die _Video Station_, ueber welcher sich ein Zugriff auf die komplette Filmsammlung (zumindest das was in digitaler Form vorliegt) organisieren. Von dem was ich nach dem ersten Index-Durchlauf gesehen habe, ist dies schon einmal recht vielversprechend: alle Bestandstitel werden z.B. nach Serien, Genres, Entstehungsjahren, etc. sortiert und lassen sich ueber ein leicht bediehnbares Interface auswaehlen. Was wohl noch ein klein wenig Arbeit erfordert ist sicherzustellen, dass alle Titel auch korrekt erkannt werden -- fuer den ueberwiegenden Teil der Sammlung scheint dies aber kein Problem zu sein.

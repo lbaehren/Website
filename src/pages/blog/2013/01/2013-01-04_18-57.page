@@ -1,0 +1,35 @@
+---
+title: "Debian Releases"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Fri, 04. January 2013 -- 18:57_
+
+Ich weiss, dass dies nicht unbedingt die wichtigste Sache ist, mit welcher man sich beschaeftigen kann, aber wenn es eine Moeglichkeit gibt, dies irgendwo im Hintergrund laufen zu lassen dann halte ich dies durchaus fuer vertretbar. Auch wenn ich durchaus eine recht lange Tradition als [Debian GNU/Linux](http://www.debian.org) Nutzer vorweisen kann, so habe ich im Laufe des letzten Jahres doch mehr und mehr gefremdelt -- vor allen Dingen aufgrund des Umstandes, dass die Standard-Version (gekennzeichnet mit "stable") mittlerweile arg in die Jahre gekommen ist, ohne dass auf absehbare Zeit Abhilfe zu erwarten ist. Um aber doch ein wenig Ueberblick zu behalten, dass seitens des Projektes in der Mache ist, habe ich mich daran erinnert, dass es ja eben nicht alleine "stable" zur Auswahl gibt, sondern auch noch andere Varianten:
+
+* **stable**
+  * The “stable” distribution contains the latest officially released distribution of Debian.
+  * This is the production release of Debian, the one which we primarily recommend using.
+  * The current “stable” distribution of Debian is version 6.0, codenamed squeeze.
+* **testing**
+  * The “testing” distribution contains packages that haven't been accepted into a “stable” release yet, but they are in the queue for that. The main advantage of using this distribution is that it has more recent versions of software.
+  * The current “testing” distribution is wheezy.
+* **unstable**
+  * The “unstable” distribution is where active development of Debian occurs. Generally, this distribution is run by developers and those who like to live on the edge.
+  * The “unstable” distribution is called sid.
+
+Fuer die Installation gibt es leider keinen direkten Pfad zum Ziel, so dass nichts anderes bleibt, als sich zunaechst eine "stable" einzurichten und dann anschliessend die Paketquellen auszutauschen. Wirft man dann ein 
+
+~~~~
+apt-get update
+apt-get dist-upgrade
+~~~~
+
+an, dann sollte man sich durchaus auf eine laengere Laufzeit gefasst machen; das fuer sich genommen ist allerdings nicht so sonderlich schlimm, denn der Prozess laeuft recht problemlos durch, so dass man dies in der Tat im Hintergrund anwerfen kann.
+
+![VirtualBox CPU settings](/blog/2013/01/2013-01-04_vbox_cpu_settings.png)
+
+Eine Kleinigkeit ist mir allerdings aufgefallen, welche durchaus relevant wird, wenn man ein Upgrade vornimmt: neuere Linux-Kernels erwarten eine PAE/NEX enabled CPU. Installiert man die Distribution also als virtuelle Maschine, dann sollte die entspechende Einstellung aktiviert werden (was via Default nicht der Fall ist), da es ansonsten einen Fehler beim Upgrade gibt.

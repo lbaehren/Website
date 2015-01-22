@@ -1,0 +1,15 @@
+---
+title: "IMDb ratings"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Sun, 17. November 2013 -- 21:12_
+
+Also so genau habe ich mir dies bisher auch noch nie angeschaut; die [Internet Movie Database](http://www.imdb.com) (IMDb) gehoert sicherlich mit zu den haeufigst aufgesuchten Plaetzen im Web, aber das heisst bei weitem nicht, dass ich mich ueberall durch die diversesten Unterabteilungen geklickt habe. Waehrend ich persoenlich ja gerne schon einmal etwas mehr auf Erkundungstour gehe, ist Julia in der Regel eher an Trailern und Ratings fuer die Filme interessiert (zwecks Auswahl was sich denn lohnen koennte zu gucken). Was ich dieses Mal bei [Iron Man 3](http://www.imdb.com/title/tt1300854) allerdings das erste Mal gemacht habe, war dem Link ueber die [Details zu dem Rating](http://www.imdb.com/title/tt1300854/ratings) zu folgen -- was sich dahinter verbarg war auch mir neu:
+
+![IMDb ratings Iron Man 3](/blog/2013/11/2013-11-17_IMDb_rating.png)
+
+Das fuer sich genommen war ja schon einmal ganz nett. Was mir dann bei etwas genauerem Hinschauen auffiel war, dass die Votes sogar gleich mehrfach statistisch ausgewertet werden: neben dem gewichteten Mittelwert (_weighted average_), werden sowohl arithmetischer Mittelwert (_arithmetic mean_) und Median mit aufgelistet. Das man dies noch ein gutes Stueck weiter spinnen koennte, duerfte sich wohl von alleine erklaeren -- ohne da aber Zugriff auf die Rohdaten zu haben hat sich dies aber gleich auch schon wieder erledigt (ausserdem mache ich mich da erst einmal lieber noch ein wenig ueber die Daten vom Blog her).
