@@ -15,7 +15,7 @@ a good argument can be made in favour of keeping interfaces to that data clean a
 easily usable. One thing to be considered part of this is small webpage I have been
 setting up to provide an overview of the available diagnostics plots:
 
-![Quicklooks webpage screenshot](/blog/2015/2015-01/2015-01-06_webpage_quicklooks.png)
+![Quicklooks webpage screenshot](/blog/2015/01/2015-01-06_webpage_quicklooks.png)
 
 Pages such as the one above were quite common -- trying to cover all possible combinations
 of measurement type and diagnostic plots there typically only is a subset for which

@@ -291,7 +291,7 @@ create_index_file_year ()
         dirMonth="${varYear}/${varYear}-${varMonth}"
         if [ -d ${dirMonth} ] ; then
 
-            varIndexMonth="${varYear}/${varYear}-${varMonth}/index.page"
+            varIndexMonth="${varYear}/${varMonth}/index.page"
             varMonthName=`get_month_name ${varMonth}`
 
             echo " -> Processing ${varMonthName} ${varYear} ..."
@@ -407,7 +407,7 @@ publish_entry ()
     else
         varTitle=`get_entry_title $1`
         varFilename=`get_filename`
-        varPath=`date +%Y/%Y-%m`
+        varPath=`date +%Y/%m`
         varEntry="${varPath}/${varFilename}"
         varTimeheaderSource=`get_timeheader $1`
         varTimeheaderNew=`get_timeheader`

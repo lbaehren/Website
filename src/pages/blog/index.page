@@ -53,7 +53,7 @@ Folge (vor Ort im Institut) kam, gab es doch noch einiges Hin und Her -- vor all
 das Auffinden von Gespraechspartner gestaltete sich ein wenig muehsam, so dass ich Ruud
 sehr dankbar bin, dass er sich fuer das Vorhaben begeistern und freimachen konnte.
 
-![Screenshot website](/blog/2015/2015-01/2015-01-18_omegatau_164.png)
+![Screenshot website](/blog/2015/01/2015-01-18_omegatau_164.png)
 
 Am vergangenen Wochenende dann ist [Episode 164](http://omegataupodcast.net/2015/01/164-satellite-based-earth-observation)
 dann erschienen und ich bin (wie sich bestimmt nachvollziehen laesst) sehr gespannt gewesen.
@@ -82,7 +82,7 @@ _Tue, 20. January 2015 -- 22:19_
 
 Attached to the question was a small poll I could not resist to answer:
 
-![Screenshot from Google+](/blog/2015/2015-01/2015-01-20_Storage_space.png)
+![Screenshot from Google+](/blog/2015/01/2015-01-20_Storage_space.png)
 
 I have to say, the numbers themselves unfortunately are not that interesting -- the
 the information I would really find more useful is how that disk space is being set
@@ -133,7 +133,7 @@ _Mon, 19. January 2015 -- 14:12_
 As far as I am concerned I have not seen any (desktop) version of [Ubuntu](http://www.ubuntu.com)
 where this feature works properly:
 
-![Screenshot from install dialog](/blog/2015/2015-01/2015-01-19_Ubuntu_install.png)
+![Screenshot from install dialog](/blog/2015/01/2015-01-19_Ubuntu_install.png)
 
 My expectation would be that when afterwards rebooting into a newly installed system
 running
@@ -454,7 +454,7 @@ a good argument can be made in favour of keeping interfaces to that data clean a
 easily usable. One thing to be considered part of this is small webpage I have been
 setting up to provide an overview of the available diagnostics plots:
 
-![Quicklooks webpage screenshot](/blog/2015/2015-01/2015-01-06_webpage_quicklooks.png)
+![Quicklooks webpage screenshot](/blog/2015/01/2015-01-06_webpage_quicklooks.png)
 
 Pages such as the one above were quite common -- trying to cover all possible combinations
 of measurement type and diagnostic plots there typically only is a subset for which
@@ -501,7 +501,7 @@ the focus to providing to easier navigation and access. The new version of the w
 pages (there now are multiple instead of the original single one) looks something like
 this:
 
-![Quicklooks webpage](/blog/2015/2015-01/2015-01-05_webpage_quicklooks.png)
+![Quicklooks webpage](/blog/2015/01/2015-01-05_webpage_quicklooks.png)
 
 One of the things I added this morning is the information on a) the number of files
 collected underneath a given category and b) the number of pages the PDF files with
