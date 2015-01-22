@@ -1,0 +1,41 @@
+---
+title: "Visitenkarte"
+in_menu: false
+author: "Lars Baehren"
+---
+
+##{title:}##
+
+_Fri, 21. February 2014 -- 09:46_
+
+Ein Anfang waere gemacht! Nachdem ich dies Ewigkeiten vor mir her geschoben und mich derweil unzaehlige Male in Situationen wiedergefunden habe, wo ich eben dies haette gebrauchen koennen, habe ich mich letzte Nacht endlich einmal daran gemacht und einen ersten Entwurf fuer eine Visitenkarte fertiggestellt.
+
+![Entwurf Visitenkarte](/blog/2014/02/2014-02-20_CallingCard.png)
+
+Dies ist ganz sicher noch nicht die endgueltige Version, aber ich denke mal als Start laesst sich damit schon einmal arbeiten. Gerade was diesen letzten Punkt betrifft war ich eine Weile unentschlossen, denn schliesslich will ich von der technischen Seite her einen Ansatz haben, welcher sich laengerfristig verwenden laesst und platform-uebergreifend identische Resultatet liefert. Genau aus diesem Grunde wollte ich eben nicht ein spezielles Graphik-Tool zum Entwerfen benutzen, sondern (soweit machbar) am liebsten mit LaTeX arbeiten -- nicht dass ich da sehr feine Kontrolle ueber alle Elemente auf einer Seite habe (wenn ich denn will), aber ich bekomme vor allen Dingen hochwertige, portable und reproduzierbare Resultate. Da ich zuletzt ja fuer eine kurze Praesentation bei [S\[&\]T](http://www.stcorp.nl) ein wenig mit Layout-Finetuning gespielt hatte, war ich mir ziemlich sicher, dass so eine Visitenkarte kein unueberwindbares Problem darstellen wuerde. Gut, es gibt manche Dinge, welche in LaTeX auf den ersten Blick ein wenig komplizierter sind, als dies bei einem Layout-Programm der Fall waere, aber a) bin ich immer wieder erstaunt, fuer was alles Zusatzpakete existieren und b) gibt es ja immer noch Makros, mittels welcher sich Vorgaenge kapseln lassen. Nach ein klein wenig Recherche hatte ich recht bald alle notwendigen Bestandteile zusammen:
+
+~~~~
+\documentclass[10pt,a4paper]{scrartcl}
+\usepackage[paperheight=54mm,paperwidth=85mm,margin=2mm,showframe,pdftex]{geometry}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[T1]{fontenc}
+\usepackage{wallpaper}
+
+\usepackage[scaled]{beramono}
+\renewcommand*\familydefault{\ttdefault}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
++++ Contents of card +++
+
+\end{document}
+~~~~
+
+Die entscheidenden LaTeX Pakete in diesem Zusammenhang sind:
+
+ - [geometry](http://www.ctan.org/pkg/geometry) kuemmert sich um alles was die Geometrie -- und damit vor allen Dingen die Abmessungen -- der Seite betrifft. Einer der wichtigen Faktoren hierbei ist u.a. dass eben diese Abmessung auch in korrekter Weise mit in das am Ende erzeugte PDF uebernommen werden -- bringt jaalles nichts, wenn man dann nur ein kleines farbiges Feld auf einer Din-A4 Seite vorfindet.
+ - [color](http://www.ctan.org/pkg/color) erlaubt den Zugriff auch Farbdefinitionen, egal ob bereits existent oder selber eingerichtet.
+ - [wallpaper](http://www.ctan.org/pkg/wallpaper) schliesslich erlaubt es Hintergrundbilder einzubinden. Waehrend ich im Bezug auf so ziemlich alle anderen Punkte eine recht gute Idee hatte, wie sich diese realisieren lassen, war dies noch ein entscheidende Frage, welche zu einem Problem haette werden koennen. Da ich aber von den Paketen fuer die Erzeugung von Praesentationen weiss, wie viele Dinge moeglich sind, um das Layout an die eigenen Wuensche anzupassen und eben nicht nur mit Text umzugehen, lag ich mit meiner Vermutung, dass es auch hierfuer schon eine Loesung geben wuerde richtig
+
+Druckreif ist die Karte noch nicht, aber ich denke mal mit dem derzeit existierenden Entwurf laesst sich durchaus arbeiten. Was ich nun aber vor allen Dingen noch einmal benoetige, ist der Zugriff auf das heimische Photoarchiv, damit ich noch einmal schauen kann, ob ich von dem Hintergrundbild nicht noch eine Version kriege, welche sich besser gegenueber dem Text platzieren laesst.

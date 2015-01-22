@@ -1,0 +1,44 @@
+---
+title: "Wieder synchron"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-05-22T16:52:53.00Z
+created_at: 2014-05-22T16:52:53.00Z
+---
+
+## {title:} ##
+
+_Thu, 22. May 2014 -- 16:52_
+
+Da sind die diversen Zweige endlich einmal wieder synchron (zumindest auf der Hauptlinie);
+nach ein wenig testen habe ich eben noch den offenen Pull Request akzeptiert.
+
+![SWIR network graph](/blog/2014/05/2014-05-22_swir_network_graph.png)
+
+Um aber auch mit den bisher noch nicht eingefuegten Zweigen auf dem Laufenden zu
+bleiben, und diese nicht zu sehr auseinander laufen zu lassen, habe ich gleich auch
+mal noch einen lokalen Merge durchgefuehrt:
+
+~~~~
+*   commit b6e07896e323a658d60acd86834a4863e568e2b6
+|\  Merge: fbc311b ebdb6c0
+| | Author: Lars Baehren <lbaehren@gmail.com>
+| | Date:   Thu May 22 16:18:39 2014 +0200
+| |
+| |     Merge branch 'master' into cpp
+| |
+| *   commit ebdb6c07d54843af935eed980854bc36b9683562
+| |\  Merge: c09747d 600e86a
+| | | Author: Lars Baehren <lbaehren@gmail.com>
+| | | Date:   Thu May 22 16:01:36 2014 +0200
+| | |
+| | |     Merge pull request #69 from evertrol/fix-testing
+| | |
+| | |     Fix testing
+| | |
+~~~~
+
+Bisher gibt es noch keine wirkliche Roadmap fuer die in C++ geschriebenen Komponenten,
+aber die damit anvisierte Architektur halte ich nach wie vor fuer sinnvoll, vor allen
+Dingen im Hinblick auf die Produktions-Software, welche fuer die Kalibrierung zustaendig
+ist, sobald sich TROPOMI erst einmal im Orbit befindet.

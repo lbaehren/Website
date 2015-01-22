@@ -1,0 +1,79 @@
+---
+title: "Automatisierung LuminanceHDR"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-06-30T22:59:46.00Z
+created_at: 2014-06-30T22:59:46.00Z
+---
+
+## {title:} ##
+
+_Mon, 30. June 2014 -- 22:59_
+
+Das macht schon einen deutlichen Unterschied: nachdem ich mit dem Bearbeiten --
+bzw. genauer gesagt: dem Verrechnen -- der bei den Renovierungsarbeiten im Haus
+gemachten HDR-Aufnahmen ein gutes Stueck ins Hintertreffen gelangt bin, habe ich
+mich endlich einmal auf die Suche nach Moeglichkeiten begeben, wie sich dieser
+Prozess (oder zumindest ein erheblicher Teil davon) automatisieren laesst. Um dies
+ein klein wenig besser verstehen zu koennen, hier mal eine Auflistung der wesentlichen
+Schritte, welche notwendig sind (bzw. waren) um aus den Einzelaufnahmen ein
+exportfertiges HDR zu erzeugen:
+
+ 1. Eventuelle Korrekturen anbringen.
+ 2. Bilder von RAW nach TIFF konvertieren.
+ 3. Erstellung eines neuen HDR starten und die zuvor exportierten Bilder zum
+    Import in [LuminanceHDR](http://qtpfsgui.sourceforge.net) markieren.
+ 4. Das fertig berechnete HDR abspeichern.
+ 5. Tonemapping Parameter einstellen.
+ 6. Tonemapping berechnen lassen.
+ 7. Resultierendes Bild abspeichern.
+ 8. Metadaten vom ersten der Original-Bilder in das fertige Bild kopieren.
+
+Auch wenn ich nicht alles davon komplett automatisch abgearbeitet kriege, so lassen
+sich doch bei Schritt 2 bzw. 3-4 und 5-7 deutliche Einsparungen erzielen:
+
+ - So kostet es mich persoenlich deutlich wenig Zeit (in welcher ich selber taetig
+   werden muss), wenn ich einfach ale Bilder in einem Durchgang von RAW nach TIFF
+   konvertiere; der Rechner ist damit zwar ggf. eine Weile beschaeftigt, aber dies
+   laeuft eben vollkommen alleine.
+
+ - Das Erstellen der HDRs aus den Eingangsbildern laesst sich (wie ich nun herausgefunden
+   habe) weitestgehend als Batch-Prozess fahren. Basieren alle HDRs auf der gleichen
+   Anzahl Einzelbilder (neun in meinem Fall), so laesst sich dies einfach als eine
+   Art Schrittweite einstellen, mittels welcher die Dateien gruppiert und dann
+   weiter verarbeitet werden. Wie ich mittlerweile feststellen konnte geht dies
+   sehr gut, so dass ich nicht mehr weiter eingreifen muss, bis alle Frames verrechnet
+   und als kombinierte HDRs abgespeichert sind. Gerade gegenueber dem Fall, wo man
+   dies HDR fuer HDR einzeln macht, ist dies schon ein deutlicher Unterschied.
+
+ - Wenn es also geht die HDRs im Batch-Modus zu erstellen, dann waere es natuerlich
+   nur konsequent die gleiche Vorgehensweise auf das anschliessende Tone-Mapping
+   anwenden zu koennen. Vor allen Dingen dann, wenn ich (zum Verwenden eines Art
+   Standard-Look) die gleichen Kontrollparameter verwende, liegt es ja nahe einen
+   Preset zu definieren, welcher sich dann fuer alle Tone-Mapping Berechnungen
+   verwenden laesst. Wie sich herausstellt ist gerade dies moeglich: es gibt die Moeglichkeit
+   die Tone-Mapping Parameter als eine Konfigurationsdatei zu exportieren, welche sich
+   (da reiner ASCII Text) sogar von Hand aus noch anpassen laesst.
+
+~~~~ bash
+TMOSETTINGSVERSION=0.6
+XSIZE=4288
+TMO=Mantiuk06
+CONTRASTFACTOR=1
+SATURATIONFACTOR=1.5
+DETAILFACTOR=7
+CONTRASTEQUALIZATION=NO
+PREGAMMA=0.95
+~~~~
+
+![LuminanceHDR](/blog/2014/06/2014-06-30_LuminanceHDR.png)
+
+Wie schon mit dem Erstellen der HDRs selber bedeutet auch dies hier, dass ich einfach
+nur den Job anwerfen brauche -- der Rest laeuft dann ohne weitere Interaktion durch.
+Was allerdings nach wie vor noch von Hand gemacht werden muss sind so Dinge wie das
+Umbenennen der Dateien (da ich da eine recht gut etablierte Konvention habe, was die
+Namensgebung betrifft) bzw. das Umkopieren der Metadaten. Die aber wirklich zeitaufwendigen
+Arbeitsschritte weitestgehend automatisieren zu koennen ist definitiv ein Fortschritt
+welcher sehr willkommen ist -- immerhin habe ich es auf diese Weise geschafft alles an
+Bildern seit der letzten Woche im Hintergrund durchrechnen zu lassen (so dass ich
+mich jetzt nur noch um die Beschriftungen kuemmern muss, ehe alles online gehen kann).

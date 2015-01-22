@@ -1,0 +1,59 @@
+---
+title: "Testen lohnt sich"
+in_menu: false
+author: "Lars Baehren"
+---
+
+## {title:} ##
+
+_Wed, 19. March 2014 -- 21:28_
+
+_Anmerkung: Ich hatte zwar schon vor einer Weile mit einem entsprechenden Beitrag begonnen, aber wie dies gerne schon einmal passiert, sind die Notizen ein wenig in Vergessenheit geraten. Da ich es aber nicht einfach nur bei ein paar Code-Snippets belassen wollte (und ich beim Schreiben ein wenig ins Stocken geraten bin), hat es nun doch deutlich laenger mit der Veroeffentlichung gedauert, als dies eigentlich geplant war._
+
+Es gibt (zumindest soweit ich dies beurteilen kann) immer zwei Dinge, welche bei der Software-Entwicklung eher stiefmuetterlich behandelt werden: Dokumentation und Testen. Spricht man mit den Leuten, dann werden alle natuerlich zustimmen, dass es sich in beiden Faellen um sehr wichtige Dinge handelt... aber zunaechst sei es ja erst einmal wichtiger die Software fertig zu kriegen. Warum dies nicht als integraler Bestandteil gesehen wird, wollte mir noch nie so recht einleuchten. Vor allen Dingen was die Dokumentation betrifft, wird es einem durch Tools wie [Doxygen](http://www.doxygen.org) doch eher leicht gemacht -- da ist kein sonderlicher Extra-Aufwand noetig, um die wesentliche Struktur und Funktionalitaet gut lesbar bereitzustellen. Dem gegenueber ist das Schreiben vernuenftiger Tests schon ein wenig mehr Aufwand, aber dabei handelt es sich (meines Erachtens) um sinnvoll investierte Zeit, welche einem spaetere Kopfschmerzen ersparen kann.
+
+__Fall 1: DAL C++ code__
+
+[Wie vor einer Woche berichtet](/blog/2014/03/2014-03-12_22-01.html), habe ich einiges an Aufraeumarbeiten an dem ueber die letzten Jahre entstandenen Code durchgefuehrt. Teil der Aktion war allerdings nicht einfach nur dass Zusammenkopieren von Verzeichnissen, sondern -- und dies machte hier ja absolut Sinn -- auch das Ausmisten von mehrfach vorhandenen Implementierungen und damit verbunden das Testen der Routinen. So passierte es dann auch, dass ich in einer Klasse, welche ich vor Jahren in die [DAL](/development/projects/dal.html) integriert hatte, einen Fehler ausfindig gemacht habe, welcher dort recht lange geschlummert haben muss:
+
+~~~~ cpp
+ itsYear     = year;
+ itsMonth    = month;
+ itsDay      = day;
+ itsMinute   = hour;
+ itsMinute   = minute;
+~~~~
+
+Aufgefallen ist mir die falsche Zuweisung durch das systematische Testen der oeffentlichen Schnittstelle ("public API"), wo ich daran gegangen bin die internen Parameter einzeln auf ihre Richtigkeit hin zu ueberpruefen:
+
+~~~~ cmake
+ BOOST_CHECK_MESSAGE ( t.year()   == year,   "Incorrect value for Year."   );
+ BOOST_CHECK_MESSAGE ( t.month()  == month,  "Incorrect value for Month."  );
+ BOOST_CHECK_MESSAGE ( t.day()    == day,    "Incorrect value for Day."    );
+ BOOST_CHECK_MESSAGE ( t.hour()   == hour,   "Incorrect value for Hour."   );
+ BOOST_CHECK_MESSAGE ( t.minute() == minute, "Incorrect value for Minute." );
+ BOOST_CHECK_MESSAGE ( t.second() == second, "Incorrect value for Second." );
+~~~~
+
+Das angesichts der oben wiedergegebenen Doppelzuweisung ein Fehler auftauchte duerfte wohl nicht verwundern:
+
+~~~~
+ TestTimestamp.cc:82: error in "construction": Incorrect value for Hour.
+~~~~
+
+Ausgehend von dieser Meldung war es dann nicht mehr allzu schwer den Fehler ausfindig zu machen und zu beheben. Dass dieser sich ueberhaupt so lange hat verstecken koennen, lag bedauerlicherweise mit daran, dass es zum frueheren Zeitpunkt noch einige Luecken in der Testabdeckung ("Coverage") gab -- dies ist nun korregiert.
+
+__Fall 2: OCAL framework Python code__
+
+Wie schon im vorherigen Fall, hat auch diese Woche wieder gezeigt, dass ausgibiges und systematisches Testen so manche Ueberraschungen zu Tage foerden kann... mit ein wenig zusaetzlicher Arbeit aber dazu fuehrt, dass der getestete Code in seiner Qualitaet verbessert wird. So habe ich mich die letzten beiden Tage damit herumgeschlagen Routinen zum Generieren von Diagnose-Plots zu testen, um auf diese Wise zu sehen, ob diese unseren Anspruechen genuegen (will heissen: in der Lage sind die Resultate zu liefern, welche wir gerne zur Ueberpruefung der Datenanalyse haetten). Da ich also eh einiges ausprobieren musste, habe ich kurzentschlossen meinen Code direkt als Unit-Test aufgesetzt, um damit auch automatisch von dem Integrations-Server aufgerufen zu werden. Waehrend sich das erste derartige Experiment ohne grundlegende Probleme abschliessen liess (was mich trotzdem einiges an Zeit gekostet hat, einfach weil es an einer vernuenftigen Dokumentation fehlte), lieferte der Test fuer die Erzeugung eines [Surface-Plots](http://matplotlib.org/mpl_toolkits/mplot3d/tutorial.html#surface-plots) ein eher weniger erfreuliches Resultat:
+
+~~~~ python
+  test_create_object (surface_plot_utest.SurfacePlotTestCase)
+  Test creation of a new SurfacePlot object. ... ok
+  test_plotting_imageplot (surface_plot_utest.SurfacePlotTestCase)
+  Test plotting surface using the 'draw()' method. ... ERROR
+  test_plotting_matplotlib (surface_plot_utest.SurfacePlotTestCase)
+  Test creation of surface plot using Matplotlib directly. ... ok
+~~~~
+
+Um so weit es geht anderweitige Fehler auszuschliessen, habe ich sicherheitshalber den gleichen Plot noch einmal auf dem "Fusswege" erzeugt, um auf diese Weise aber auch nachweisen zu koennen, dass der Fehler nicht in den zugrundeliegenden Graphik-Routinen liegt. Nach einigem hin und her hatte ich also den Fehler so gut es ging isoliert, so dass es an der Zeit war das Problem zu melden. Stellt sich heraus, dass da in der Tat ein Fehler vorlag, welcher in dem Abstraktions-Layer zu finden war; da a) bisher keinerlei Unit-Tests hierfuer vorhanden waren noch b) die Python Klasse anderweitig gross eingesetzt wurde, fand keinerlei Ueberpruefung statt. Letzteres -- und auch der Fehler selber -- sind jetzt behoben.

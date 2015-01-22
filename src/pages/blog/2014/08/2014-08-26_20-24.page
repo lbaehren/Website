@@ -1,0 +1,114 @@
+---
+title: "From sketch to implementation"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-08-26T20:24:31.00Z
+created_at: 2014-08-26T20:24:31.00Z
+---
+
+## {title:} ##
+
+_Tue, 26. August 2014 -- 20:24_
+
+Lately I have been spending quite some time working on the implementation of tools
+for the visual inspection of out data as they are being produced by the TROPOMI L01b
+calibration pipeline. As we are heading (in rather quick leaps) towards the on-ground
+calibration measurements (OCAL), preparations are under way to inspection and judgment
+of the measured data in a timely fashion (such that feedback can be given to e.g. adjust
+or even repeat measurements). As it turns out simply starting to write some (Python) code
+for this might not be the best option, because when trying to arrange multiple objects
+(plots in this case) on a page (without some graphical drag-and-drop tool), things quite
+easily can get messed up.
+
+After getting overlapping frames and the like a number of times, I decided that it probably
+would be a good idea to step back from the code at all for a while to address the layout
+first; once there would be reasonably stable description of what exactly to plot and how
+to arrange the individual plots, I could then go about implementing this.
+
+![Sketch of the quicklook page](/blog/2014/08/2014-08-19_Quicklook_sketch.png)
+
+The good thing about a sketch as the above is, that this will give enough information to
+start with the computation of the geometry. Obviously every element on the page has a
+certain position and size -- so using the sketch as an aid it (mainly) is a matter of
+patience to work out the lower-left point of a subplot and its size. Starting off with
+the size of each plot ...
+
+~~~~ python
+dim_scatter    = [500, 500]
+dim_hist       = [200, dim_scatter[1]]
+dim_lightcurve = [dim_scatter[0]+self.fill[0]+dim_hist[0], 200]
+dim_projection = [(dim_scatter[0]+dim_hist[0]-self.fill[0])/3.0,
+                  (dim_scatter[0]+dim_hist[0]-self.fill[0])/3.0
+                 ]
+dim_figure     = [2.0*self.fill[0]+dim_lightcurve[0],
+                  4.0*self.fill[1]+dim_lightcurve[1]+dim_scatter[1]+dim_projection[1]
+                 ]
+~~~~
+
+... we are able to define the bounding boxes for each of the sub-plots:
+
+~~~~ python
+rect = {}
+# Total size of the figure
+rect["figure"] = dim_figure
+# Bounding box for the lightcurve of the laser intensity
+rect["lightcurve"] = [self.fill[1]/dim_figure[1],
+                      self.fill[0]/dim_figure[0],
+                      (dim_lightcurve[1])/dim_figure[1],
+                      (dim_lightcurve[0])/dim_figure[0]
+                     ]
+# Bounding box for the 3D scatter plot of the laser track
+rect["scatter"] = [(2*self.fill[1]+dim_lightcurve[1])/dim_figure[1],
+                   self.fill[0]/dim_figure[0],
+                   (dim_scatter[1])/dim_figure[1],
+                   (dim_scatter[0])/dim_figure[0]
+                  ]
+# Bounding box for the histogram of the laser intensities
+rect["hist"] = [(2*self.fill[0]+dim_lightcurve[1])/dim_figure[1],
+                (2*self.fill[1]+dim_scatter[0])/dim_figure[0],
+                (dim_hist[1])/dim_figure[1],
+                (dim_hist[0])/dim_figure[0]
+               ]
+~~~~
+
+Once all the bounding boxes are defined (and are returned in the form of a dictionary),
+we finally can go about creating the plots themselves: first we define the figure
+[axes](http://matplotlib.org/api/axes_api.html) ...
+
+~~~~ python
+axes = self.axes_scanning_quicklook (data.shape)
+fig  = plt.figure(figsize=(axes["figure"][1]/100, axes["figure"][0]/100))
+
+axis_scatter    = plt.axes(axes["scatter"], projection='3d')
+axis_lightcurve = plt.axes(axes["lightcurve"])
+axis_hist       = plt.axes(axes["hist"])
+~~~~
+
+... and then have [Matplotlib](http://matplotlib.org) display the data as
+[scatter plot](http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.scatter)
+or otherwise:
+
+~~~~ python
+axis_scatter.scatter(xs=track["x"], ys=track["y"], zs=track["z"],
+                     zdir='z',
+                     cmap=cm.cubehelix)
+axis_scatter.set_xlabel("\nColumn / Wavelength")
+axis_scatter.set_ylabel("\n\nRow / Swath")
+axis_scatter.text2D(0.9, 0.95,
+                    "Track points ({})".format(track["method"]),
+                    verticalalignment='bottom',
+                    horizontalalignment='right',
+                    transform=axis_scatter.transAxes,
+                    color='green')
+~~~~
+
+All of this put together finally yields the overview page as envisioned in the
+original sketch:
+
+![Implementation of the quicklook page](/blog/2014/08/2014-08-19_Quicklook_implementation.png)
+
+As can be guessed the whole process took a while from beginning to end; a good
+fraction of the time I have been struggling with fine-tuning the output of Matplotlib.
+While indeed there are quite a few examples available, I am still missing a more
+systematic demonstration of how exactly the various plot configuration settings
+influence the final outcome.

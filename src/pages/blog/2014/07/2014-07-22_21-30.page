@@ -1,0 +1,49 @@
+---
+title: "Kleine Aenderung, grosse Wirkung"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-07-22T21:30:13.00Z
+created_at: 2014-07-22T21:30:13.00Z
+---
+
+## {title:} ##
+
+_Tue, 22. July 2014 -- 21:30_
+
+Es sind doch immer wieder die Kleinigkeiten, welche unter Umstaenden entscheidend
+sind. Seit ich vor einer Weile die Erzeugung meiner Website hinter den Kulissen auf
+eine neuere Version von [Webgen](http://webgen.gettalong.org) umgestellt hatte, gab
+es immer noch so ein paar Baustellen, wo mir die Resultate nicht so ganz gefielen.
+Zu einen hat dies sicherlich mit der fehlenden Kenntnis ueber alle Moeglichkeiten von
+_Webgen_ selber zu tun (auch wenn sich die Dokumentation deutlich verbessert hat, so
+dass zumindest von jener Seite her die Huerde nicht mehr so gross ist), zum anderen
+fehlte mir einfach auch ein wenig die Geduld die langen Interationszeiten abzuwarten,
+um verschiedenste Varianten auszuprobieren (durch den Blog sind es mittlerweile so
+viele Seiten, dass ein Komplettdurchlauf schon mal an die 10 Minuten dauern kann).
+Da ich aber Ende letzter Woche [in einer recht spontanen Aktionen](/blog/2014/07/2014-07-17_20-33.html)
+eine Website (also zumindest schon einmal einen Prototypen) fuer Herrn Eckstein aus
+dem Boden gestampft habe, gab es sowohl Gelegenheit als auch Notwendigkeit mich mit
+eben jenen Feinheiten noch einmal etwas eingehender zu beschaeftigen. Da die neue Website
+ja innerhalb von wenigen Sekunden gebaut wird, ist es deutlich einfacher zu experimentieren
+und an den diversen Stellschrauben zu drehen -- was ich in Zuge dessen neu hinzu lerne
+kann ich anschliessend dann natuerlich auch wieder fuer meine eigenen Webseiten
+anwenden.
+
+~~~~~~~~
+  title: "Welcome"
+  author: Lars Baehren
+  in_menu: true
+ +sort_info: 0
+~~~~~~~~
+
+Da dies sowohl auf meiner eigenen als auch der neuen TODO Liste gestanden hat, habe
+ich mir heute Abend mal den Punkt mit der Sortierung der Eintraege im Menu vorgenommen;
+eine rein alphabetische Sortierung ist wohl nicht das schlimmste, was man sich vorstellen
+kann, aber haeufig moechte man doch die Eintraege in einer bestimmten Reihenfolge angezeigt
+bekommen. Benutzt man allerdings den ``sort_info`` Parameter, kann man flexibel die Seiten
+(und dies bezieht sich nur auf das Menu) anordnen. Zum ersten habe ich nun mal dafuer
+gesorgt, dass der Link zurueck auf die Startseite an oberster Stelle steht (wo er ja
+auch hingehoert); da dies natuerlich zu einer Aenderung an allen Seiten fuehrt, wird
+das Hochladen der Aktiualisierungen wieder mal ein wenig laenger dauern -- gut also,
+das man dies nur anwerfen muss, der Rest dann aber im Hintergrund weiterlaufen kann,
+ohne dass man sich weiter darum kuemmern muss.

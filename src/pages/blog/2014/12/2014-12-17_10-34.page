@@ -1,0 +1,30 @@
+---
+title: "Durchgelaufen"
+in_menu: false
+author: "Lars Baehren"
+date: 2014-12-17T10:34:25.00Z
+created_at: 2014-12-17T10:24:48.00Z
+---
+
+## {title:} ##
+
+_Wed, 17. December 2014 -- 10:34_
+
+Das sieht doch schon einmal gut aus. Nachdem ich gestern Abend ja losgezogen bin
+ohne das Laptop mitnehmen, weil dieses ja ueber Nacht die Backup-Daten von der
+einzelnen Festplatte auf das wieder in Betrieb genommene Drobo umkopieren sollte,
+war ich doch recht erleichtert, dass dieser Vorgang wohl erfolgreich gewesen ist.
+
+![Drobo capacity](/blog/2014/12/2014-12-17_Drobo_capacity.png)
+
+Wie sich bei einem Vergleich mit dem Screenshot im [gestrigen Eintrag](/blog/2014/12/2014-12-16_21-00.html)
+erkennen laesst, habe ich vor dem Absprung aus dem Institut sogar mal noch die kleinste
+der vier Festplatten gegen eine etwas groessere ausgetauscht. Da ich ja gleich mit einem
+ganzen Stapel an Festplatten zurueckgekommen war, habe ich nicht auf Anhieb die
+Auswahl getroffen, womit ich den zur Verfuegung stehenden Speicherplatz maximiert kriege
+-- das nette ist aber, dass sich dies bei einem Drobo problemlos korregieren laesst:
+einfach alte Festplatte rausziehen und neue einsetzen (keine Schrauben noetig)...
+fertig.
+
+Mit dem heutigen Morgen geht das Drobo nun online und bekommt somit offiziell die
+Aufgabe zugewiesen meinen _Time Machine_ Backups ein zuhause zu bieten.
