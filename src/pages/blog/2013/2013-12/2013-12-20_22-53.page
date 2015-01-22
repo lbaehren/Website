@@ -10,33 +10,33 @@ _Fri, 20. December 2013 -- 22:53_
 
 Also dies soll mal jemand verstehen: seit dem getrigen Abend schlage ich mich hier mit BibTeX herum weil probiere die in einer entsprechenden Sammlung aufgefuehrten Buecher in Form einer Liste auszudrucken. Hat alles mal funktioniert, nur wie es scheint hat sich da in der Zwischenzeit etwas an den bei mir auf dem Rechner installierten LaTeX Paketen veraendert:
 
-~~~~
+~~~~~~~~
 (./listing_CG.aux)
 No file listing_CG.bbl.
 ! Undefined control sequence.
-\biburlsetup ->\Urlmuskip 
+\biburlsetup ->\Urlmuskip
                           =0mu plus 3mu\relax \mathchardef \UrlBigBreakPenal...
-l.14 See \cite{perlin_1985} 
+l.14 See \cite{perlin_1985}
                             for further details.
-~~~~
+~~~~~~~~
 
 An der BibTeX Datei sollte dies nicht liegen, denn schliesslich scheint keinerlei Probleme damit zu haben; ferner habe ich die Datei schon seit Ewigkeiten nicht mehr angeruehrt, so dass man die Moeglichkeit, dass ich da vielleicht aus Versehen einen Fehler eingebaut habe, ziemlich gut auschliessen kann.
 
-~~~~
-@InProceedings{perlin_1985,
-  author    = "Ken Perlin",
-  title     = "An Image Synthesizer",
-  booktitle = "Computer Graphics, Vol. 19, No. 3.",
-  pages     = "287--296",
-  year      = "1985"
-}
-~~~~
+~~~~~~~~ tex
+    @InProceedings{perlin_1985,
+      author    = "Ken Perlin",
+      title     = "An Image Synthesizer",
+      booktitle = "Computer Graphics, Vol. 19, No. 3.",
+      pages     = "287--296",
+      year      = "1985"
+    }
+~~~~~~~~
 
 Interessanterweise schlaegt bisher aber selbst eine so simple Anweisung wie
 
-~~~~
-See \cite{perlin_1985} for further details.
-~~~~
+~~~~~~~~ tex
+    See \cite{perlin_1985} for further details.
+~~~~~~~~
 
 so dass wohl die folgenden Schritte angebracht sind:
 

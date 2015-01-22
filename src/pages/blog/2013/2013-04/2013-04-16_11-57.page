@@ -10,38 +10,38 @@ _Tue, 16. April 2013 -- 11:57_
 
 It is kind of a never-ending task, even though the changes are getting fewer and fewer each time around (and less urgent to have something fixed). Yesterday I comitted yet another minor tweak to the [CMake](http://www.cmake.org) scripts driving the configuration and build of the SWIR calibration software; after having completed the reorganization of the directory structure I once more came across the manner in which the list of source files to go into the C-library were assembled:.
 
-~~~~
-file (GLOB s4_sources
-    calib/*.c
-    calib/*/*.c
-    data/*.c
-    io/*.c
-    io/*/*.c
-    logging/*.c
-    stats/*.c
-    utils/*.c
-    )
+~~~~ cmake
+    file (GLOB s4_sources
+        calib/*.c
+        calib/*/*.c
+        data/*.c
+        io/*.c
+        io/*/*.c
+        logging/*.c
+        stats/*.c
+        utils/*.c
+        )
 ~~~~
 
 Obviously this already posed a major improvement against the original version which has each and every source file listed explicitely. Nevertheless I still felt that there was a better and more flexible way to handle the assembling of the source files from which the library is getting build. As the code is split into a number of modules (or better: groups of functions) the only really specific point is the name of the directory hosting the source code -- everything else from thereon is generic, so why not take this into account.
 
-~~~~
-foreach (_module
-    calib
-    data
-    io
-    math
-    stats
-    utils
-    )
+~~~~ cmake
+    foreach (_module
+        calib
+        data
+        io
+        math
+        stats
+        utils
+        )
 
-    file (GLOB ${_module}LibSources ${_module}/*.c ${_module}/*/*.c)
+        file (GLOB ${_module}LibSources ${_module}/*.c ${_module}/*/*.c)
 
-    if (${_module}LibSources)
-        list (APPEND s4_sources ${${_module}LibSources})
-    endif (${_module}LibSources)
+        if (${_module}LibSources)
+            list (APPEND s4_sources ${${_module}LibSources})
+        endif (${_module}LibSources)
 
-endforeach (_module)
+    endforeach (_module)
 ~~~~
 
 Though at first sight the new version may look more complicated, it actually is considerably simpler to maintain: if anything was to change in the dircetory structure, a change had to be made in the list of modules only. Surely, I even could have stripped away two additional lines of code, but actually checking against a potentially empty list of files made sense to me.

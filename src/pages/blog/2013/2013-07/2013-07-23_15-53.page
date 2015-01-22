@@ -10,14 +10,14 @@ _Tue, 23. July 2013 -- 15:53_
 
 Here is yet another thing which makes me wanna scream:
 
-~~~~
+~~~~ c
       C does not support default arguments
                                   hid_t fid=0);
 ~~~~
 
 Not only am I not able to overload functions, but as well I am not able to write something like
 
-~~~~
+~~~~ c
 void swir_data_h5_show_metatable (struct swir_data_mtbl_rec *mtbl,
                                   hid_t fid=0);
 ~~~~
