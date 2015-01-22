@@ -8,6 +8,88 @@ author: "Lars Baehren"
 
 **:::**
 
+### Knapp ###
+
+
+_Thu, 22. January 2015 -- 17:11_
+
+Ich sollte es eigentlich besser wissen: um diese Tageszeit versuchen mit der Linie
+12 vom Uithof zum Bahnhof zu gelangen ist ein reines Gluecksspiel. Dass die Strassen
+zwischen Uithof und der Autobahnauffahr vollkommen verstopft sind waere das eine
+-- wenn der Bus aber eh schon mehrere Minuten Verspaetung mit bringt, dann ist die
+Wahrscheinlichkeit wieder gut zu machen noch einmal eine Spur geringer. So kam es dann
+auch, dass ich gerade einmal den Fuss auf den Bahnsteg gesetzt hatte, als der ICE
+auch schon einfuhr. Fuer die Zukunft unbedingt merken: selbst wenn auf den Anzeigen
+die Linie 28/128 spaeter angezeigt wird als die Linie 12, ist es immer noch sinnvoller
+den Weg westlich am Zentrum vorbei zu nehmen, da die Busse hier ueber weite Strecken
+ihre eigene Fahrspur haben und ihr Fortkommen demnach von dem des restlichen Autoverkehr
+entkoppelt ist. Jetzt muss ich nur noch daran denken, die eigenen Ratschlaege auch
+selber zu beruecksichtigen...
+
+**:::**
+
+### Omegatau (164) Satellite-based Earth Observation ###
+
+
+_Wed, 21. January 2015 -- 22:20_
+
+Es war im September letzten Jahres, wo ich mich -- nach dem Anhoeren einer weiteren
+Episode -- entschlossen habe mit [Omegatau](http://omegataupodcast.net) Kontakt aufzunehmen
+
+> Hallo Markus,
+> Hallo Nora,
+>
+> im Anschluss an die (sehr schoene) [Folge mit RadioMono](http://www.radiomono.net/?podcast=rmn-013-omegataupodcastbesuch) war ich schon ein klein wenig in mich gegangen, um einmal zu schauen, in welcher Weise ich Euch noch bei der Suche nach Themen und Gespraechspartnern behilflich sein kann. Gerade die Bemerkung, dass es derzeit ein Shortage an englischen Sendungen geben wuerde hat mich aufmerksam werden lassen. Als ich dann in der nun aktuellen Folge ueber Photogrammetrie (uebrigends sehr schoen, dass Ihr noch diese Schreibung verwendet) Markus Wunsch nach Folgen ueber satellitengestuetzte Beobachtungen hoerte, wollte ich mal eine Variante unterbreiten, ueber welche sich beide Aspekte zusammenbringen lassen.
+
+Mein Aufhaenger Stelle war, dass [Episode 155 – Photogrammetrie im Himalaya](http://omegataupodcast.net/2014/09/155-photogrammetrie-im-himalaya-mwp-teil-2)
+eigentlich nach einem Gegenstueck verlangte, bei welchem man den Blick zurueck auf die
+Erde aus einer noch einmal deutlich groesseren Entfernung wirft, als dies bei einem
+Flugzeug der ist. Und da Markus von sich auch schon anmerkte, dass es eigentlich ganz
+gut waere eine Episode ueber Satelliten-gestuetzte Erdbeobachtungen zu machen, ging bei
+mir direkt ein Licht an. Da ich durch meine Arbeit bei [SRON](https://www.sron.nl)
+ja direkt an der Quelle sitze, schien es einfach logisch zu versuchen die Dinge hier
+zusammenzufuehren. Bis es allerdings von der ersten Idee zur wirklichen Aufnahme der
+Folge (vor Ort im Institut) kam, gab es doch noch einiges Hin und Her -- vor allen Dingen
+das Auffinden von Gespraechspartner gestaltete sich ein wenig muehsam, so dass ich Ruud
+sehr dankbar bin, dass er sich fuer das Vorhaben begeistern und freimachen konnte.
+
+![Screenshot website](/blog/2015/2015-01/2015-01-18_omegatau_164.png)
+
+Am vergangenen Wochenende dann ist [Episode 164](http://omegataupodcast.net/2015/01/164-satellite-based-earth-observation)
+dann erschienen und ich bin (wie sich bestimmt nachvollziehen laesst) sehr gespannt gewesen.
+Dass ich die etwas mehr als zwei Stunden Hoermaterial noch vor der Abfahrt am Montag
+durchbekommen habe, ist vor allen Dingen der Tatsache geschuldet, dass ich am Sonntag
+mit Sofia auf einem sehr langen Spaziergang unterwegs war; so konnte ich nicht nur dem
+Hund (und natuerlich auch mir selber) einiges an Bewegung an der frischen Luft verschaffen,
+sondern auch die komplette Folge von Anfang bis Ende durchhoeren. Das Ergebnis ist sehr schoen
+geworden und ich habe noch einiges hinzu lernen koennen. Wer also ein wenig mehr von
+dem erfahren will, woran bei SRON gearbeitet wird (und womit ich ja auch zum Teil meine
+Zeit verbringe), dem kann ich diese Folge waermstens empfehlen. Beobachtung und
+Versehen der Ablaeufe auf unserem blauen Planeten sind eine Sache, deren Bedeutung man
+sicherlich kaum unterschaetzen kann -- hierzu einen kleinen Beitrag liefern zu koennen
+ist schon etwas, 
+
+**:::**
+
+### How much storage space are you using?﻿ ###
+
+
+_Tue, 20. January 2015 -- 22:19_
+
+[Drobo](https://plus.google.com/u/0/+Drobo) a short while ago posted this on Google+:
+
+> Those hard drives stack up fast! How much storage space are you using?﻿
+
+Attached to the question was a small poll I could not resist to answer:
+
+![Screenshot from Google+](/blog/2015/2015-01/2015-01-20_Storage_space.png)
+
+I have to say, the numbers themselves unfortunately are not that interesting -- the
+the information I would really find more useful is how that disk space is being set
+up and used.
+
+**:::**
+
 ### Index Seiten ###
 
 
@@ -553,96 +635,3 @@ Die Kleinigkeit, welche mir jetzt noch fehlt -- und dies waere dann noch einmal 
 lohnenswertes Projekt -- ist das Kopieren der Metadaten von den Rohbildern in das HDR
 (falls dies so ohne weiteres geht); bedauerlicherweise gehen diese Informationen naemlich
 beim Zusammenrechnen verloren und muessen am Ende noch von Hand eingefuegt werden.
-
-**:::**
-
-### Gelegenheit zum Upgrade ###
-
-
-_Sun, 04. January 2015 -- 00:02_
-
-Das passte doch sehr gut. Nachdem dies schon eine Weile auf der Liste der zu erledigenden
-Dinge stand, haben heute Nachmittag/Abend endlich einmal die Umbauarbeiten an der
-heimischen IT stattgefunden. Da es ja einiges gibt, was hier am hausinternen
-Netz haengt, macht es durchaus Sinn sich ein wenig Gedanken ueber die Verschaltung
-zu machen, vor allen Dingen um den Datenverkehr in bestmoeglicher Weise zu leiten.
-Um alles an Kabeln neu ziehen zu koennen musste natuerlich alles fuer eine Weile offline
-gehen, so dass anschliessend dann ein Neustart noetig wurde. Da mir bei dem Synology
-NAS schon seit einer Weile die Erinnerung fuer ein moegliches Systemupdate entgegenblinkte,
-schien dies der perfekte Zeitpunkt zu sein, dies mal gleich noch mit zu erledigen. Folgerichtig
-habe ich das Update gleich mal angeworfen, nachdem die DiskStation wieder hochgefahren
-war...
-
-![Synology DSM update](/blog/2015/2015-01/2015-01-03_Synology_DSM_update.png)
-
-Verlief alles ohne Probleme, auch wenn ich mittlerweile so im Verzug war, dass zwei
-Updates durchgefuehrt werden mussten. Der dafuer benoetigte Zeitraum stimmte aber recht
-mit dem ueberein, was mir zu Beginn des Prozesses angekuendigt wurde, so dass die
-eigentliche Downtime recht gering blieb (schliesslich konnte man in der Zwischenzeit ja
-immer noch Daten hin und her schieben).
-
-![Synology packages up-to-date](/blog/2015/2015-01/2015-01-03_Synology_packages.png)
-
-An den "neuen Look" muss ich mich noch ein wenig gewoehnen: es faellt schon auf, dass
-sich die ganzen Bedienelemente ein wenig an dem orientieren, was man so von Apps mobiler
-Geraete gewohnt ist -- auch einem grossen Bildschirm wirkt dies nicht immer unbedingt
-passend.
-
-**:::**
-
-### Abfallkalender in elektronischer Form ###
-
-
-_Fri, 02. January 2015 -- 20:32_
-
-Na wenn dies mal nicht ein Grund ist eine Anfrage an [Bonn Orange](https://www.bonnorange.de)
-rauszuschicken: ich habe eben mal noch damit begonnen die Abfalltermine fuer das neue
-Jahr in den elektronischen Kalender einzutragen und musste bei der Gelegenheit (wieder
-einmal) feststellen wie vollkommen unnoetig kompliziert dies doch ist. Es gibt zwar die
-Moeglichkeit sich eine [Uebersicht der Abfuhrtermine](https://www.bonnorange.de/abfuhrtermine.html)
-zusammenstellen zu lassen, aber alles was es als Export-Optionen gibt, sind zwei
-unterschiedlich formatierte PDFs. Dies ist zwar ganz nett, wenn man sich eine Erinnerung
-an den Kuehlschrank haengen will (einfach nur ausdrucken), aber fuer den Kalender im
-Handy oder Rechner ist dies alles andere als brauchbar -- erst ausdrucken und dann wieder
-alles eintippen ist nun wirklich nicht das, was ich mir so unter einem zeitgemaessen
-Angebot vorstelle. Folgerichtige habe ich eben mal schnell eine Mail angeschickt:
-
-> Sehr geehrte Damen und Herren,
->
-> gibt es eigentlich auch die Moeglichkeit den persoenlichen Abfallkalender auch in
-> iCal oder XML Format bereitzustellen? Die Druckversion als PDF ist zwar recht nett,
-> aber diese ist leider nicht fuer den Import in ein einen elektronischen Kalender
-> (Handy, PC) geeignet. Da die Uebersicht eh je nach Adresse zusammengestellt wird,
-> wuerde es sich hierbei lediglich um ein alternatives Download-Format handeln welches
-> platform-uebergreifend lesbar ist. Ich waere mit Sicherheit nicht der einzige, der
-> sich ueber diesen Service freuen wuerde.
->
-> Mit freundlichen Gruessen,
->
-> Lars Baehren
-
-Ist sicherlich nicht aus der Luft gegriffen -- mal schauen, was da zurueck kommt.
-
-**:::**
-
-### Photo-Start ins neue Jahr ###
-
-
-_Thu, 01. January 2015 -- 02:23_
-
-So ganz wollte ich mir dies ja nicht entgehen lassen: mit dem ersten Silvester / Neujahr
-hier im Haus, wollte ich doch wenigsten einmal einen kleinen Eindruck davon bekommen
-(und ggf. weitervermitteln) wie sich der Jahreswechsel hier in Tannnenbusch gestaltet.
-Also bin ich kurz nach Mitternacht mal zu einer kleinen Tour in die Umgebung aufgebrochen
-um so vielleicht ein paar Eindrueck mitbringen zu koennen. Wie sich allerdings heraustellt
-bin ich nicht so sonderlich an dem Feuerwerk selber interessiert, sondern eher an
-Bildern, welche die Kombination von Licht und Feuerwerksrauch erzeugen...
-
-![Tannenbusch nach Mitternacht](/blog/2015/2015-01/dsc_20150101_015600_Tannenbusch.jpg)
-
-So kommt es denn auch, dass ich eher Bilder wie dem obigen nachgejagt habe -- ist leider
-deutlich schwerer da etwas Gutes zu finden (vor allen Dingen wenn einem staendig Leute durch
-das Blickfeld laufen) als man so denkt, aber mit ein paar brauchbaren Aufnahmen bin
-ich dann doch wahrscheinlich zurueckgekommen. Ist ein wenig eine Geduldsprobe, wenn
-man da im Kalten steht und darauf wartet bis die Kamera mit einer Serie von Aufnahmen
-fertig ist -- da ist es doch recht angenehm wieder im Warmen zu sein.
