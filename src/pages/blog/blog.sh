@@ -288,10 +288,10 @@ create_index_file_year ()
 
     for varMonth in 01 02 03 04 05 06 07 08 09 10 11 12
     {
-        dirMonth="${varYear}/${varYear}-${varMonth}"
+        dirMonth="${varYear}/${varMonth}"
         if [ -d ${dirMonth} ] ; then
 
-            varIndexMonth="${varYear}/${varMonth}/index.page"
+            varIndexMonth="${dirMonth}/index.page"
             varMonthName=`get_month_name ${varMonth}`
 
             echo " -> Processing ${varMonthName} ${varYear} ..."
@@ -398,6 +398,8 @@ list_entries ()
 
 #_______________________________________________________________________________
 #                                                                  publish_entry
+#
+#  Publish an entry from the collection of 'upcoming' entries.
 
 publish_entry ()
 {
