@@ -8,6 +8,50 @@ author: "Lars Baehren"
 
 **:::**
 
+### Debian 8 Release Candidate ###
+
+
+_Tue, 27. January 2015 -- 18:34_
+
+Das passt ja eigentlich ziemlich gut: da ich seit einer Weile dabei bin meine Sammlung
+an virtuellen Maschinen zu aktualisieren und auszubauen, habe ich einfach mal die
+[Nachricht auf Heise News](http://www.heise.de/newsticker/meldung/Ausblick-auf-Debian-8-Erster-Release-Candidate-des-Debian-8-Installers-2529296.html)
+zum Anlass genommen mir die aktuellen [Debian](http://www.debian.org) ISOs an Land
+zu ziehen und die Basis-Konfigurationen fuer die virtuellen Maschinen anzulegen.
+
+> Nachdem die hitzigen Debatten um das Init-System in Debian 8 zur Ruhe gekommen sind, konnten sich die Entwickler wieder auf die Fertigstellung von Jessie konzentrieren. Seit dem Freeze Anfang November konnte die Zahl der Release-kritischen Bugs von über 300 auf unter 200 gedrückt werden – Debian 8 ist offenbar auf einem guten Weg.
+>
+> \[...\]
+>
+> Standard-Desktop in Jessie ist die derzeit aktuelle Gnome-Version 3.14 – der zwischenzeitlich diskutierte Umstieg auf Xfce als Standard ist vom Tisch. Xfce steht allerdings ebenso wie LXDE, KDE 4, Cinnamon und Mate zur Wahl. Jessie verwendet den Linux-Kernel 3.16, X.org 7.7 mit dem X-Server 1.16 und die Glibc 2.19. Die Anwendungen sind mit LibreOffice 4.3.2, Iceweasel (Firefox) 31.4 und dem PIM Evolution 3.12 recht aktuell.
+
+Typischerweise richte ich mir -- wenn moeglich -- gleich vier unterschiedliche Varianten
+eines Release ein:
+
+ - Standard Desktop, 64 bit
+ - Standard Desktop, 32 bit
+ - LXDE Desktop, 64 bit
+ - LXDE Desktop, 32 bit
+
+Machdem ich wiederholt die Erfahrung gemacht habe, wie unterschiedlich doch der
+Resourcen-Hunger der unterschiedlichen Desktops ist, habe ich mich noch einmal extra
+mit [LXDE](http://lxde.org) angefreundet:
+
+> The "Lightweight X11 Desktop Environment" is an extremely fast-performing and energy-saving desktop environment. Maintained by an international community of developers, it comes with a beautiful interface, multi-language support, standard keyboard short cuts and additional features like tabbed file browsing. LXDE uses less CPU and less RAM than other environments. It is especially designed for cloud computers with low hardware specifications, such as netbooks, mobile devices (e.g. MIDs) or older computers. LXDE can be installed on many Linux distributions including Debian, Fedora, OpenSUSE and Ubuntu. It is the standard for Knoppix and lubuntu. LXDE also runs on OpenSolaris and BSD. LXDE provides a fast desktop experience; connecting easily with applications in the cloud. LXDE supports a wealth of programs that can be installed locally with Linux systems.
+
+Sehr zu meiner Freunde konnte ich nun feststellen, dass der [Net-Installer](https://www.debian.org/devel/debian-installer)
+in der Tat in der Lage ist alle unterschiedlichen Varianten einzurichten:
+
+![Screenshot Debian installer](/blog/2015/01/2015-01-27_Debian_install.png)
+
+Dies bedeutet nicht nur, dass ich nicht Unmengen an ISO-Images bei mir auf der Festplatte
+(oder in diesem Fall auf dem Drobo) herumliegen habe (zumindest bis zum Abschluss der
+Installation), sondern auch dass ich bei der Installation wirklich die aktuelle Fassung
+aller Software-Pakete kriege -- eine Kleinigkeit welche ja nicht ganz selbstverstaendlich
+ist (wie die wiederholte Erfahrung mit Ubuntu gezeigt hat).
+
+**:::**
+
 ### Festgelaufen ###
 
 
@@ -486,36 +530,3 @@ Null sein, aber grossartige Verkaufszahlen in dem Segment kann ich mir nur schwe
 vorstellen. Ist wahrscheinlich wirklich nur eine Frage der Zeit, bis auch hier das Licht
 ausgeht (auch wenn dies nicht heisst, dass damit automatisch das zugehoerige Frequenzband
 vollkommen frei bleibt).
-
-**:::**
-
-### Supporting TROPOMI OCAL (3) ###
-
-
-_Tue, 06. January 2015 -- 16:15_
-
-With the growing amount of data/information coming in from the OCAL measurements,
-a good argument can be made in favour of keeping interfaces to that data clean and
-easily usable. One thing to be considered part of this is small webpage I have been
-setting up to provide an overview of the available diagnostics plots:
-
-![Quicklooks webpage screenshot](/blog/2015/01/2015-01-06_webpage_quicklooks.png)
-
-Pages such as the one above were quite common -- trying to cover all possible combinations
-of measurement type and diagnostic plots there typically only is a subset for which
-viable information exists. In order to avoid bloating the webpages, making it harder
-to find what actually is available, a simple filter has been added to the Bash script
-generating the intermediate files (from which [Doxygen](http://www.doxygen.org) then
-generates the actual HTML pages):
-
-~~~~ bash
-    nofQuicklooks=`find_nof_files $1 $2 ${varQuicklook}`
-    # only create link if there is some contents to link to
-    if [[ ${nofQuicklooks} -ne 0 ]] ; then
-        echo " - \subpage ${varAnchor}  (${nofQuicklooks} files)"
-    fi
-~~~~
-
-A very simple measure, but quite effective -- with this getting around to the actually
-available diagnostics plots becomes more straight forward (and links are added the moment
-the corresponding data arrive).
