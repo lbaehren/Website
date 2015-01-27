@@ -1,0 +1,16 @@
+---
+title: "Wieder im Rheinland"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Fri, 19. September 2008 -- 22:05_
+
+
+
+Na bitte, da habe ich es ja wieder bis ins Rheinland geschafft. Vor ein paar Minuten bin ich hier am Koelner Bahnhof in den Zug in Richtung Koblenz umgestiegen und befinde mich damit auf dem Weg nach Honnef. Noch einmal rund 45 Minuten, dann sollte ich am Frankenweg vor der Tuere stehen. Ist doch schon eine deutlich laengere Reise, als ich normalerweise von Nijmegen aus antrete. War aber garnicht so schlimm, weil ich im IC in der Naehe einer Steckdose gesessen habe, so dass ich den ueberwiegenden Teil der Fahrt arbeiten konnte. Auf diese Weise konnte ich schon einmal mit den Aktivitaeten beginnen, welche ich eh fuer das Wochenende geplant hatte, naemlich die bisher vorrangig von Joe betreute Data Access Library (DAL) zu erweitern und debuggen. Zuletzt war ich noch auf Fehler gestossen, welche das zukuenftige Arbeiten mit der Library erschweren (oder zumindest momentan unmoeglich machen); da Joe selber aber nur noch fuer einen Tag pro Woche fuer die User Software Group zur Verfuegung steht, sind seine Moeglichkeiten zeitnah groessere Aenderungen an der DAL vorzunehmen natuerlich begrenzt. Folgerichtig habe ich also einen Teil der Verantwortung uebernommen, so dass ich mich die letzten zwei bis drei Stunden damit beschaeftigt habe fehlende Funktionalitaet hinzuzufuegen und Fehlerquellen aufzuspueren. Damit sollte ich natuerlich aufpassen, weil ich mehr und mehr in die Herzstuecke der Library eindringe; da ist einiges an testen erforderlich, denn schliesslich kann ich es mir nicht erlauben, da irgendwelche Dinge kaputt zu machen. Aber gut, bisher habe ich vor allen Dingen Testprogramme ueberarbeitet und die Dokumentation erweitert -- ein Service welcher allen Beteiligten zugute kommt. Fuer die subtileren Probleme werde ich wohl einen Teil des Wochenendes verbraten muessen, denn so manches auf das ich gestossen bin, ist mir nicht ohne weiteres klar geworden.
+
+
+~~DISCUSSION~~

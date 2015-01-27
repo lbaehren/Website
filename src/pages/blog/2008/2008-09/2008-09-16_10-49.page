@@ -1,0 +1,16 @@
+---
+title: "Was geht und was nicht"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Tue, 16. September 2008 -- 10:49_
+
+
+
+Hm, das ist natuerlich nicht unbedingt das, was ich unter einer vernuenftigen Netzwerkverbindung verstehen wuerde. Zwar wird fuer den Workshop ein WLAN zur Verfuegung gestellt, aber was die wirkliche Brauchbakeit betrifft muss man doch einige Abstriche machen. Das groesste Problem ist, dass der normale Email Client nicht funktioniert; alle Versuche mit Apple Mail auf meile Email-Konten zuzugreifen sind bisher fehlgeschlagen, so dass mir allein der Weg ueber die Webseiten bleibt -- was natuerlich nicht meine bevorzugte Methode ist, weil ich so keine Moeglichkeit habe Mails offline zu lesen und beantworten. Die Tatsache, dass der Zugang alle 30 Minuten erneuert werden muss ist noch einigermassen ertraeglich, aber auch nicht das was ich als nutzerfreindlich bezeichnen wuerde. Gluecklicherweise aber erwies sich die Ansage von Michael, dass ''ssh'' nicht funktionieren wuerde, als falsch; ich konnte mich von hier aus auf meinem Rechner bei ATRON einloggen und bin so wenigstens in der Lage noch ein paar Tests laufen zu lassen.
+
+
+~~DISCUSSION~~

@@ -1,0 +1,18 @@
+---
+title: "Funzt endlich"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Mon, 29. September 2008 -- 01:42_
+
+
+
+Also das wurde auch langsam mal Zeit -- nachdem ich wieder einige Stunden hinter mich gebracht habe, um mich durch Joes Code zu arbeiten, ist es mir nun endlich gelungen die rekursive Abbildung der LOFAR Beam-Formed Daten komplett hinzukriegen. Hat mich einiges an Kopfzerbrechen gekostet, weil (a) die DAL definitiv noch einiges an Dokumentation gebrauchen kann und (b) eben doch noch einiges an Funktionalitaet fehlt, was das Leben als Application-Programmer einfacher macht. Aber gut, das Ziel war ja zunaechst einmal die benoetigte Funktionalitaet bereitszustellen, damit es einigermassen einfach moeglich mit den bereits vorliegenden Testdaten arbeiten zu koennen. So wie ich dies sehe ind dafuer bisher nur die aller notwendigsten Methoden implementiert worden, aber wenn man mal so richtig in den Daten rumwuehlen will, dann laesst sich recht schnell eine Wunschliste zusammenstellen. Wo ich aber schon einmal dabei war, habe ich selbstverstaendlich noch ein wenig weiter in dem Code hergestoebert und eine Reihe von Vebesserungen (wuerde ich zumindest einmal behaupten) angebracht. Aus diesem Vorgang laesst sich der folgende Schluss ableiten: Joe ist mit ziemlicher Sicherheit der technisch versiertere Programmierer von uns beiden (da habe ich noch einiges an Grundlagen zu lernen), andererseits scheine ich dafuer weitaus mehr ein Haendchen zu haben alle einzelnen Bestandteile zu einem grossen homogenen Ganzen zu verweben. Insofern ist es also ganz interessant, dass wir beide eben die Schwerpunkte ein wenig anders legen -- wenn man dies kombiniert duerfte dies in jeden Fall zur einer qualitativen Verbesserung der Software beitragen.
+
+Also gut, mit dem noch einmal durchgefuehrten Compile von Grund auf -- einschliesslich dem Laufen lassen aller Tests -- waere diese Phase also erfolgreich zum Abschluss gebracht. Ich denke mal, dass ich damit ein paar Stunden Schlaf verdient habe, ehe es denn in die neue Woche geht.
+
+
+~~DISCUSSION~~

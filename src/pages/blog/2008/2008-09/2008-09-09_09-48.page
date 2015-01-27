@@ -1,0 +1,16 @@
+---
+title: "Passend zur Person"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Tue, 09. September 2008 -- 09:48_
+
+
+
+Na, das war doch wieder einmal eine recht produktive Reise hier bis **Zwolle**. Nachdem ich meine anfaengliche Enttaeuschung darueber ueberwunden hatte, dass wahrscheinlich grandiose Lichtverhaeltnisse am fruehen Morgen an mir vorbeigegangen sind, habe ich mich dem Programmieren zugewandt... und erst in letzter Minute vor der Haltestelle abgebrochen. Ich muss doch wieder einmal feststellen, dass objekt-orientiertes Programmieren meinem fast zwanghaften Verlangen nach Ordnung und Organisation sehr entgegen kommt. Ich habe ja immer wieder mal mit Michael die Diskussionen darueber, ob ich nun als "obsessive compulsive" einzuordnen sei oder nicht; gerade dann wenn es um die Verwaltung von Informationen oder ums Programmieren geht, dann hat er wohl recht -- die Beweislage ist dafuer wohl zu eindeutig, als dass sich dies leugnen liesse. Meine Aktivitaeten auf dem Weg hierher fuegen da wohl nur einen weiteren Beleg hinzu, ausschlag gebend kann dies aber nicht mehr sein. Nachdem ich ja meine Arbeiten an dem Imager wieder aufgenommen habe, bin ich wieder ueber die recht verwickelten Zusammenhaenge bei der Behandlung der Coordinaten gestolpert. Da mir das spezielle Problem aber nun schon mehrfach unter gekommen ist (und dies an verschiedenen Stellen) war es einfach die vollkommen logische Loesung, dies ein fuer alle Mal durch eine in sich konsistente Einheit zu loesen -- weshalb ich also dem //Coordinates// Modul nun eine weitere Klasse hinzugefuegt habe. Auch wenn ich an dem Feintuning spaeter noch einmal ein klein wenig arbeiten muss, so sollte die grundsaetzliche Funktionalitaet bis zur Ankunft in Hoogeveen bereits stehen...
+
+
+~~DISCUSSION~~

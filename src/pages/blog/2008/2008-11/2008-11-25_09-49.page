@@ -1,0 +1,27 @@
+---
+title: "Umsteigen fast nach Plan"
+in_menu: false
+author: "Lars Baehren"
+date: 2008-11-25T09:49:00.00Z
+created_at: 2008-11-25T09:49:00.00Z
+---
+
+## {title:} ##
+
+_Tue, 25 November 2008 -- 09:49_
+
+
+
+Also da hat sich die zwischenzeitlich aufgelaufene Verspaetung doch weniger bemerkbar gemacht, als ich dies befuerchtet hatte. Bereits vor Arnhem mussten wir auf freier Strecke anhalten, weil ein in Richtung Utrecht fahrender Zug zunaechst einmal Vorrang hatte. Unterwegs habe ich dann immer wieder mal mit einem kritischen Blick auf die Uhr geschaut um abschaetzen zu koennen, ob ich meinen Anchluss hier in **Zwolle** noch erreichen koennte. Stellt sich aber heraus, dass trotz einer leichten Verspaetung alles glatt verlaeuft, da auch der aus Amsterdam kommende Zug (welcher dann ja nach Groningen weiterfaehrt) nicht ganz puenktlich war. Die wichtigste Nachricht hieran ist: keine Notwendigkeit das Taxi in Hoogeveen umzubestellen.
+
+Auf dem Weg bis hierhin habe ich mal noch ein wenig Musik einsortiert, ehe ich mich dann schliesslich den fuer diese Woche anstehenden Programmieraufgaben zugewandt habe. Da ja kontinuierlich neues Hoermaterial eintrifft muss ich ein wenig dafuer Sorge tragen, dass ich mit dem Aufarbeiten nicht zu sehr ins Hintertreffen gerate. Ehe ich mit dem Hoeren beginne stelle ich typischerweise erst einmal sicher, dass die Stuecke auch ueber die korrekten Metadaten verfuegen -- schliesslich kann man ja nicht immer davon aufgehen, dass dies der Fall ist. Im minimalsten Fall sollten natuerlich die Titel der einzelnen Stuecke, sowie Album Titel und Kuenstlername eingetragen sein. Dies ist natuerlich nicht nur fuer die eigene Buchhaltung von Belang, sondern letzten Endes auch fuer die Uebermittlung der Eintraege an [[http://last.fm|last.fm]]: nur wenn ein Minimum an Informationen zu den abgespielten Stuecken bereitgestellt wird, macht der Service wirklich Sinn -- hundertfache Eintraege der Art "Unknown Artist" sind nur sehr wenig hilfreich. Daher durchlaufen alle Neueingaenge eine gewisse Standard-Pipeline:
+  - Vollstaendige Version des Albums in "Music/incoming".
+  - Check auf Zeichen, welche von der Shell nicht sauber dargestellt werden.
+  - Erzeugen einer lokalen Playliste: <code bash>ls *.mp3 > index.m3u</code>
+  - Import der Playliste in iTunes.
+  - Editieren der Album Daten: Name des Kuenstlers, Name des Albums, Anzahl der Tracks, Album Artwork
+  - Loeschen des Ordners in "Music/incoming"
+  - Bei naechstbester Gelegenheit: Backup des entsprechenden iTunes Ordners auf das auf dem Drobo befindliche Master-Archive.
+Klingt kompliziert? Ist es absolut nicht, zumindest wenn man es sich ersparen kann die einzelnen Titel allesamt von Hand einzutragen (was mitunter ja auch schoneinmal vorkommen kann).
+
+

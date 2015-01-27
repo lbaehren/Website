@@ -1,0 +1,34 @@
+---
+title: "MathGL vs. PLplot"
+in_menu: false
+author: "Lars Baehren"
+date: 2008-10-19T23:02:00.00Z
+created_at: 2008-10-19T23:02:00.00Z
+---
+
+## {title:} ##
+
+_Sun, 19 October 2008 -- 23:02_
+
+
+
+Ach ja, ich sollte der Vollstaendigkeit natuerlich schon noch anmerken, dass ich dieses Wochenende nicht alleine damit zugebracht habe Artikel fuer das HMM fertigzustellen oder stundenlange Telefonate zu fuehren. Heute am spaeten Nachmittag war das Licht draussen zwischenzeitlich noch so genial, dass ich mir Hals ueber Kopf die Kamera geschnappt habe um noch mal fuer eine halbe Stunde vor die Tuere zu gehen. 
+
+Das andere wesentliche Stueck vom Zeitkuchen ist aber doch wieder fuer etwas draufgegangen, was ich eigentlich auf die normalen Arbeitstage beschraenken sollte; das dumme ist nur, dass ich mich da nur sehr schwer zurueckhalten kann, wenn ich einmal reingeschnuppert habe, so dass ich doch wieder deutlich mehr vor dem Rechner gesessen habe, als noetig gewesen waere. Ohne mir die Sache zu einfach machen zu wollen wuerde ich aber schon behaupten, dass es diesmal wieder Heino gewesen, welcher mich mit seiner Fragerei auf ein Nebengleis gesetzt habe, auf welchem ich bereits am gestrigen Tage schon ein gutes Stueck vorangekommen bin. Nachdem sich meine Ansage, dass der Fehler in den Konfigurations-Instruktionen fuer die potentiell neue graphische Benutzeroberflaeche behoben worden seien, als korrekt erwiesen -- was ich mir auch nicht nehmen lassen konnte entsprechend zu kommentieren, denn dies ist definitiv nicht der einzige zu verzeichnende Fortschritt -- hat Heino seine Arbeiten an dem Code wieder aufgenommen und mit weiteren Komponenten zu spielen zu begonnen. Auch wenn ich immer noch nicht so ganz davon ueberzeugt bin, ob dies die sinnvollste aller moeglichen Aktivitaeten ist (aber dazu sollte sich lieber Michael noch einmal mit Heino unterhalten), so sind dies immer Arbeiten, welche mir nicht sonderlich in die Quere kommen... ausser wenn es darum geht alles mit dem Rest des Codes zu integrieren. Nachdem ich vor einer Weile ja schon die noetigen Aenderungen eingebaut habe um Qt4 verwenden zu koennen, gab es am Freitag eine weitere potentielle Ergaenzung; diesmal handelt es sich um _MathGL//, eine recht uebersichtliche -- auf der GL Engine aufbauende -- Plotting-Library. Da ich ja grundsaetzlich nichts dagegen einzuwenden habe, wenn Leute neue Software erkunden, habe ich selber mal einen Blick auf das Paket geworfen -- auch wohl wissend, dass es eh wieder in meiner Verantwortlichkeit liegen wuerde jenes in das existierende Gesamtframework einzubauen. 
+
+Schon beim ersten Blick auf die Beispiele habe ich so meine Zweifel bekommen, denn was ich da zu sehen bekommen habe kam mir nicht so sonderlich aussergewoehnlich und neu vor. Eher das Gegenteil war der Fall: das bereits eingebundete PLplot Package scheint mit -- zumindest so weit ich dies bisher beurteilen kann -- bereits alle entscheidende Funktionalitaet zu liefern, so dass sich fuer mich schon die Frage danach stellte, warum es unbedingt einer weiteren externen Abhaengigkeit beduerfe. Noch mehr ans Zweifeln bin ich allerdings gekommen, als ich mich dann mal hier zuhause ein wenig naeher mit MathGL beschaeftigt habe, um einen Eindruck davon zu kriegen wieviel Aufwand es denn sein wuerde, jenes einzubinden. Eine Zusammenfassung meiner Befunde ist noch am Samstag Nachmittag (als ich ja im Buero war) an Heino rausgegangen:
+
+> 1) Das Argument der aktiven Entwicklung kann nicht ausschlaggebend sein, denn PLplot wird aktiv entwickelt - und dies von einem groesseren Team, so dass ich in die fortlaufende Entwicklung mehr Vertrauen habe als dies bei MathGL der Fall ist (welche sehr stark von einer einzelnen Person abhaengig zu sein scheint).
+> 2) Die Dokumentation was die Installation bzw. the externen Abhaengigkeiten betrifft laesst mehr als nur zu wuenschen uebrig. Was letzteren Punkt betrifft gibt es keiner Hinweis in irgendeinem der mitgelieferten README oder INSTALL Dateien zu finden und ein simples "./configure; make" hat bisher auf keiner meiner Test-Rechner funktioniert!
+> 3) Um die Core-Library (''libmgl'') zu bauen, musste ich Aenderungen im Source Code vornehmen, weil die als Compiler-Flags gesetzten Parameter nicht akzeptiert wurden. Spatestens an dieser Stelle werde ich grundsaetzlich sehr skeptisch, denn dies zeigt mir, dass im Zweifelsfall bei einem zukuenftigen Upgrade diese Prozedur wiederholt werden muss (es sei denn es werden seitens des Entwicklers entsprechenden Aenderungen am Code vorgenommen).
+> 4) Die HDF5 Routinen scheinen noch von einer aelteren Version der Library auszugehen - aber auch hier: keinerlei Hinweis, keine Dokumentation, so dass man dies durch entsprechende Versuche herausfinden muss. Um ''libmgl_hdf'' zu bauen, musste ich ein weiteres Mal Aenderungen im Source Code vornehmen, um die dort vorliegenden Funktionsaufrufe zu korregieren, damit explizit von dem aelteren API Gebrauch gemacht wird.
+>
+> Wenn ich mir dies in der Gesamtheit anschaue, dann habe ich zu diesem Zeitpunkt nicht sonderlich viel Vertrauen in MathGL; es mag zwar ueber eine Reihe netter Features zu verfuegen, aber
+>
+> a) stimmt mich die fehlende Dokumentation fuer die Installation sehr bedenklich - und die wird gebraucht, weil wir von Source bauen muessen,
+> b) ich musste Aenderungen im Quellcode vornehmen und
+> c) bin ich mir garnicht so sicher, dass es keine vernuenftige Alternative gibt.
+
+Ich bin ja mal gespannt, welche Reaktion darauf hin zurueck kommt. Ich bin mir ziemlich sicher, dass es eine Aussage in der von "Ich denke wir hatten verabredet dass dies keine Prioritaet hat und Du Dich um etwas anderes kuemmern solltest" kommen wird. Der Haken daran ist aber -- und da werde ich mir die Freiheit nehmen drauf hinzuweisen -- dass alle Arbeiten in diese Richtung in meiner Freizeit stattgefunden haben. Waehrend man natuerlich wieder einmal (und sicherlich nicht ganz ohne Berechtigung) einwenden koennte, dass ich nicht auch noch in meiner Freizeit arbeiten sollte, so bleibt aber ein Punkt festzuhalten: was ich in meiner Freizeit mache ist meine Sache. Ob ich da das Wochenende im Bett verbringe, auf Foto-Tour bin... oder eben ein paar Stunden zum Programmieren vor dem Rechner verbringe ist meine Entscheidung. Naja, schauen wir mal, was passiert...
+
+

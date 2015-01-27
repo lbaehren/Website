@@ -1,0 +1,22 @@
+---
+title: "Nervig"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Thu, 04. September 2008 -- 15:53_
+
+
+
+Jaja, ich weiss ja, dass es hundertausende Dinge gibt, welche erledig werden muessen und dass ist -- zumindest nach Nijmegener Lesart -- meine Arbeitszeit voll und ganz auf den CR-Imager konzentrieren sollte... nur wenn hier staendig irgendwelche Dinge an mich herangetragen werden, welche eigentlich durch andere Personen uebernommen werden sollten, dass wird es mit dem konzentrierten und kontinuierlichen Arbeiten doch wenig schwer.
+
+Da Heino ja nicht hier ist musste ich mich eben noch einmal laenger um Sef kuemmern, der ja am Montag hier als Master-Student angefangen hat; damit er ueberhaupt in der Lage ist mit den LOFAR Daten zu arbeiten braucht er natuerlich eine Installation der entsprechenden Software auf seinem Rechner -- was leider mit einigen hausgemachten Problemen beladen ist, fuer welche ich nicht verantwortlich bin (die dann aber doch wieder bei mir landen). Da via default alle User-Daten in einem via NFS gemounteten Home-Verzeichnis abgelegt werden, ist es um die Zugriffzeiten alles andere als rosig bestellt; in der Tat hatte sich der am Dienstag gestartete Check-out aufgrund von Zugriffsproblemen aufgehangen, so dass wir es heute noch einmal probiert habem. Egal aber auch, was fuer Aktionen ich gestartet habe, es dauerte eine Ewigkeit und war damit vollkommen inakzeptabel. Die einzige Moeglichkeit ueberhaupt eni paar Dinge ans Laufen zu bringen war dann, dass wir es mit einer lokalen Installation auf dem Rechner probiert haben, nur dass dies an verfuegbarem Plattenplatz scheiterte; "verfuegbar" bedeutet in diesem Fall naemlich auch, dass es zwar zwei ausreichend grosse Platten gibt, diese allerdings lediglich fuer Root freigegeben sind... auch wenn sich keinerlei Daten darauf befinden und die letzten Zugriffe fuer den Januar 2007 gelistet sind! Fuer mich ein absoluter Schwachfug, um den ich mich eigentlich nicht kuemmern sollte.
+
+Zur gleichen Zeit habe ich dann auch wieder einmal Kalpana an der Leine, welche mir zum wahrscheinlich 100000sten Male (ich habe mittlerweile aufgehoert zu zaehlen) die gleichen Fragen auftischt, welche ich schon die vorherigen 99999 Male beantwortet habe. Meine Bereitschaft die immer und wieder zu erklaeren wenn de Frau mir ganz offensichtlich einfach nicht zuhoeren will ist dementsprechend bbegrenzt. Meine Annahme, dass mit einem Doktortitel auch eine gewisse Mindestbefaehigung in intellektueller Hinsicht einhergehen sollte, ist allem Anschein nach wohl wieder ein wenig zu naiv... Ich habe ja in keinster Weise etwas gegen Fragen, aber wenn die Leute nicht bereit sind zumindest in einem Mindestmass selber mitzudenken, dann werde ich ab irgendeinem Punkt doch sehr genervt. Folgerichtig habe ich beschlossen mich mit nochmaligen Erklaerungen erst einmal eine Weile zurueckzuhalten und zu schauen was passiert.
+
+Ich glaube es wird Zeit, dass ich wieder hier aus dem Buero verschwinde und mich an den heimischen Schreibtisch zurueckziehe -- da habe ich wenigstens die Moeglichkeit mich fuer einen laengeren Zeitraum ungestoert einer einzigen Sache zu widmen, was hier an der Uni einfach nicht moeglich scheint.
+
+
+~~DISCUSSION~~
