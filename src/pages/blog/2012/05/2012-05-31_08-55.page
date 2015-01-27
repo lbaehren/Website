@@ -1,0 +1,37 @@
+---
+title: Graphiken anpassen
+in_menu: false
+---
+
+## {title:} ##
+
+_Thu, 31. May 2012 - 08:55_
+
+Manchmal macht es doch Sinn sich die Dokumentation noch einmal ein klein wenig genauer unter die Lupe zu nehmen... Nach den anfaenglichen Versuchen mittels der Ruby-spezifischen Tools eine einigermassen ansprechende Dokumentation zu erstellen, greife ich mittlerweile wieder zu Doxygen; auch wenn dies bedeutet, dass ich bisher noch nicht erweiterte Dokumentation und Quellcode-Dokumentation zusammenbringen kann, so bin ich doch mit den Resultaten fuer das, was ich vielleicht eine Art _Developer Manual_ nennen wuerde, deutlich zufriedener. Wozu ich bisher einfach keine ernstzunehmende Alternative gefunden habe, sind die Faehigkeiten von Doxygen gleiche mehrere Ausgabeformate abzudecken und dabei gleichzeitig ein recht hohes Mass an Kontrolle ueber das Layout zu bieten -- dass es bisher leider noch keinen vernuenftigen Parser fuer Ruby gibt ist eine Kleinigkeit, welche sehr bedauerlich ist, aber vielleicht ergibt sich da doch noch einmal die Moeglichkeit diese Luecke zu schliessen (ich habe nach ein wenig suchen zumindest schon einmal Versuche fuer eine Syntaxerweiterung gefunden, aber bisher ist mir noch nicht klar, wie brauchbar diese wirklich ist).
+
+So schoen es auch ist, sowohl eine Online-Version (als HTML) als auch eine PDF-Version (via LaTeX) aus einem gemeinsamen Quelltext erzeugen zu koennen, gab es immer noch ein kleines Problem bei der Einbindung von Graphiken. Wenn der Anspruch ja ist einfach mal gewisse Dinge aufzuschreiben, welche sich sonst nirgendwo einmal in geordneter Weise notiert finden, dann macht es natuerlich auch Sinn Screenshots und dergleichen hinzufuegen zu koennen; angesichts der Tatsache, dass es sich bei [prometheus](http://prometheus-bildarchiv.de) um eine Webanwendung handelt, macht es ja schon Sinn eine Idee davon zu haben, was einen denn letzten Endes im Browser erwartet. Wenn man darueber hinaus auch die diversen Tools zur Unterstuetzung des Workflow mit einbeziehen will -- z.B. die [Wiki](http://prometheus-bildarchiv.de/wiki) oder den [Redmine Issue Tracker](http://prometheus-srv.uni-koeln.de/redmine) -- dann ist einfach keine sinnvolle Hilfestellung moeglich, ohne nicht wenigstens einen visuellen Eindruck vermitteln zu koennen. Genau an dieser Stelle wird es dann doch aber ein wenig kniffelig...
+
+Fangen wir doch einfach einmal mit dem an, wie sich das Aussehen von Abbildungen in einem LaTeX Dokument kontrollieren laesst; wenn man einmal von allerlei Spezialpaketen absieht (welche dann noch einmal erweiterte Manipulationsmoeglichkeiten bieten), dann reicht bereits 
+
+    \includegraphics[width=.95\textwidth]{figures/bild.png}
+
+vollkommen aus, um so grundlegende Dinge wie die Anpassung der Groesse zu regeln. Der entscheidende Punkt hierbei ist, dass ich eben nicht die Originaldatei zuschneiden muss, sondern derartige Manipulationen alleine an der Stelle durchfuehre, wo ich die Einbindung geschieht. Im fortgeschrittenen Fall kann dies zum Beispiel auch heissen, dass ich ein und das gleiche Bild gleich an mehreren Stellen verwende, jeweils aber einen unterschiedlichen Ausschnitt waehle. Mit dies im Hinterkopf macht es natuerlich Sinn, vergleichbares fuer die Einbindung von Graphiken in Doxygen haben zu wollen; was mir aber immer wieder Schwierigkeiten bereitet hat ist die Tatsache, dass typischerweise die in LaTeX eingebundenen Abbildungen weit ueber die Abmessungen der Seite hinausreichen. Da ich aber weiss, dass Doxygen einer permanenten Fortentwicklung unterliegt, machte es Sinn noch einmal in die aktuelle Dokumentation zu schauen -- stellt sich heraus, dass es einige Parameter fuer die Einbindungen von Abbildungen gibt, welche ich bisher uebersehen habe:
+
+    \image <format> <file> ["caption"] [<sizeindication>=<size>]
+
+Die Moeglichkeit je nach Ausgabeformat eine unterschiedliche Datei einzubinden war mir durchaus bekannt, aber viel interessanter sind die beiden letzten (optionalen) Argumente:
+
+> The third argument is optional and can be used to specify the caption that is displayed below the image. This argument has to be specified on a single line and between quotes even if it does not contain any spaces. The quotes are stripped before the caption is displayed.
+>
+> The fourth argument is also optional and can be used to specify the width or height of the image. This is only useful for LaTeX output (i.e. ''format=latex''). The sizeindication can be either width or height. The size should be a valid size specifier in LaTeX (for example 10cm or 6in or a symbolic width like ''\textwidth'').
+
+Die Umsetzung fuer die eigenen Zwecke ist damit ein einfaches: zwei separate Eintraege im Source File, einer fuer die HTML Ausgabe, einer fuer die Erzeugung eines PDF-Dokumentes via LaTeX...
+
+    \image html Redmine__Issues_Overview.png
+    \image latex Redmine__Issues_Overview.png "Overview page" width=.9\textwidth
+
+... und schon sieht auch letzteres Format brauchbar aus:
+
+![PDF output of Manual](/blog/2012/05/2012-05-23_manual_pdf_output.png)
+
+Was ich jetzt noch einmal schauen muss ist, in wie weit der letzte Parameter auch bei der HTML Ausgabe funkioniert; idealerweise kann ich dann ohne weitere Manipulationen direkt mit den Screenshots arbeiten, was auf der anderen Seite heisst, dass ich nicht unnoetig an Aufloesung verliere.

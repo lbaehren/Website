@@ -1,0 +1,31 @@
+---
+title: "Nicht fuer schnelle Iteration geeignet"
+in_menu: false
+author: "Lars Baehren"
+date: 2015-01-26T07:15:28.00Z
+created_at: 2015-01-26T07:03:17.00Z
+---
+
+## {title:} ##
+
+_Mon, 26. January 2015 -- 07:15_
+
+Einen entscheidenden Nachteil hat es schon, wenn man sich dazu entschliesst Webseiten
+statisch generieren zu lassen: bei einer entsprechend grossen Anzahl an Seiten kann
+es wirklich sehr lange dauern, bis alles wieder neu gebaut ist.
+
+~~~~
+  INFO  ... done in 1250.57 seconds
+  [100%] Built target Website
+~~~~
+
+Aufgefallen ist mir dies (zum erneuten Male) vor ein paar Minuten, als ich (da
+gluecklicherweise als Hintergrund-Job) ein Update gefahren habe; dummerweise verschluckt
+sich Webgen typischerweise an dem Identifier der Index-Seiten, so dass meine bisher
+einzige Loesung ist alles noch einmal neu durchlaufen zu lassen. Wenn die Zahl
+einigermassen stimmt, dann habe ich es mittlerweile mit mehr als 4300 Seiten im
+Bereich des Blogs zu tun -- bis dies alles abgearbeitet ist, kann dann schon mal einiges
+an Zeit vergehen. Was also mit Sicherheit noch einmal auf Liste gehoert ist, dass ich
+einen Weg finde eben diese Stolperfalle zu beseitigen, denn wenn es moeglich waere
+wirklich nur die veraenderten Seiten neu zu generieren, waere dies schon ein
+erheblicher Zeitgewinn.

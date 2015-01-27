@@ -8,6 +8,51 @@ author: "Lars Baehren"
 
 **:::**
 
+### Festgelaufen ###
+
+
+_Mon, 26. January 2015 -- 23:49_
+
+Also so richtig habe ich die Systematik noch nicht raus: zum wiederholten Male
+scheint ein Job, welchen ich auf dem Server angeworfen habe, einfach einzufrieren
+und nichts mehr zu machen. Schaue ich mir die verbrauchten Resourcen an so zeigt sich
+dass weder CPU-Leistung noch Speicherplatz in kritischer Weise in Beschlag genommen
+werden. Die letzten Meldungen, welche mir im Terminal angezeigt werden lassen durchblicken,
+dass ich keinerlei aussergewoehnliche Anforderungen an das System stelle, was allerdings
+in keinster Weise dabei hilfreich ist nachzuvollziehen, was das schief geht. Einfach nur
+warten und darauf hoffen, dass vielleicht doch noch einmal irgendetwas passiert will
+ich auch nicht -- also habe ich die noch laufende (oder auch nicht) Berechnung
+abgebrochen und den Job erneut angeworfen. Mal gespannt, wie es diesmal laeuft...
+
+**:::**
+
+### Nicht fuer schnelle Iteration geeignet ###
+
+
+_Mon, 26. January 2015 -- 07:15_
+
+Einen entscheidenden Nachteil hat es schon, wenn man sich dazu entschliesst Webseiten
+statisch generieren zu lassen: bei einer entsprechend grossen Anzahl an Seiten kann
+es wirklich sehr lange dauern, bis alles wieder neu gebaut ist.
+
+~~~~
+  INFO  ... done in 1250.57 seconds
+  [100%] Built target Website
+~~~~
+
+Aufgefallen ist mir dies (zum erneuten Male) vor ein paar Minuten, als ich (da
+gluecklicherweise als Hintergrund-Job) ein Update gefahren habe; dummerweise verschluckt
+sich Webgen typischerweise an dem Identifier der Index-Seiten, so dass meine bisher
+einzige Loesung ist alles noch einmal neu durchlaufen zu lassen. Wenn die Zahl
+einigermassen stimmt, dann habe ich es mittlerweile mit mehr als 4300 Seiten im
+Bereich des Blogs zu tun -- bis dies alles abgearbeitet ist, kann dann schon mal einiges
+an Zeit vergehen. Was also mit Sicherheit noch einmal auf Liste gehoert ist, dass ich
+einen Weg finde eben diese Stolperfalle zu beseitigen, denn wenn es moeglich waere
+wirklich nur die veraenderten Seiten neu zu generieren, waere dies schon ein
+erheblicher Zeitgewinn.
+
+**:::**
+
 ### Knapp ###
 
 
@@ -71,7 +116,7 @@ ist schon etwas,
 
 **:::**
 
-### How much storage space are you using?﻿ ###
+### How much storage space are you using? ###
 
 
 _Tue, 20. January 2015 -- 22:19_
@@ -326,7 +371,7 @@ vorteilhafteren Seite zu praesentieren. Ein klein wenig habe ich damit ja schon 
 letzten Jahr begonnen, aber ich denke mal 2015 wird ausreichend Gelegenheiten bieten
 da noch so das eine oder andere Foto hinzuzufuegen.
 
-![Haltestelle Tannenbusch Sued](/blog/2015/2015-01/hdr_20150104_174853_Tannenbusch_Sued.jpg)
+![Haltestelle Tannenbusch Sued](/blog/2015/01/hdr_20150104_174853_Tannenbusch_Sued.jpg)
 
 Obiges Foto ist vom letzten Sonntag, als ich mir die Kamera geschnappt habe um einfach
 mal eine Stunde lang durch die Gegend zu laufen und nach Motiven zu suchen. Fuendig
@@ -474,164 +519,3 @@ generates the actual HTML pages):
 A very simple measure, but quite effective -- with this getting around to the actually
 available diagnostics plots becomes more straight forward (and links are added the moment
 the corresponding data arrive).
-
-**:::**
-
-### Supporting TROPOMI OCAL (2) ###
-
-
-_Mon, 05. January 2015 -- 23:30_
-
-[As mentioned before](/blog/2014/12/2014-12-29_19-34.html) the **TROPO**spheric
-**M**onitoring **I**nstrument ([TROPOMI](/work/tropomi.html)) is at the [Centre Spatial de Liege](http://www.csl.ulg.ac.be)
-(CSL) [testing facility](http://www.csl.ulg.ac.be/jcms/c_5574) being subjected to
-a long list of intense calibration measurements. And while data are streaming back to
-the participating institutes, processing and analysis need to keep up with what is
-being done at the test facility.
-
-As a small contribution to this I have been setting up a number of scripts to operate
-at the back-end of the standard processing pipeline, collecting generated diagnostics
-plots and making them available in a fashion more convenient than digging through
-multiple levels of output directories. In a first version I have been creating a very
-simple web page directly from a Bash script -- something to get off the ground quick
-to help people out (here at the institute as well as on site in Belgium). But with
-the growing amount of data the original approach no longer was viable -- hence I
-decided to delegate the web page creation to [Doxygen](http://www.doxygen.org), shifting
-the focus to providing to easier navigation and access. The new version of the web
-pages (there now are multiple instead of the original single one) looks something like
-this:
-
-![Quicklooks webpage](/blog/2015/01/2015-01-05_webpage_quicklooks.png)
-
-One of the things I added this morning is the information on a) the number of files
-collected underneath a given category and b) the number of pages the PDF files with
-the diagnostics plots have. If anything this gives an idea of the data volume (or
-lack thereof) for given combination of measurement types an corresponding diagnostics.
-
-The mechanics behind the scenes are fairly straight-forward (and are the bits which
-were done rather quickly); first of all -- in order to make things self-contained and
-not rely on a whole collection of configuration and template files -- I am writing
-out a minimal configuration script for [Doxygen](http://www.doxygen.org):
-
-~~~~~~~~
-    echo "DOXYFILE_ENCODING      = UTF-8"
-    echo "PROJECT_NAME           = \"${varPageTitle}\""
-    echo "FULL_PATH_NAMES        = NO"
-    echo "MARKDOWN_SUPPORT       = YES"
-    echo "SHOW_NAMESPACES        = NO"
-    echo "INPUT                  = ${varTmpDir}"
-    echo "RECURSIVE              = YES"
-    echo "IMAGE_PATH             = ${varSourceDirectories}"
-    echo "HTML_OUTPUT            = ${varTargetDir}"
-    echo "GENERATE_HTML          = YES"
-    echo "GENERATE_LATEX         = NO"
-    echo "GENERATE_XML           = NO"
-    echo "GENERATE_RTF           = NO"
-~~~~~~~~
-
-Written as a simple Bash function -- with the output directed to a file -- the same
-variables are used as for the remainder of the script. The source files for the individual
-pages is broken into a header segment and the main contents; this way once more
-code instructions can be kept a bit more generic, making the script modular enough that
-adding a new feature with little effort.
-
-~~~~~~~~ bash
-    md_header ()
-    {
-        varTitle=$1
-        varAnchor=$2
-        varTitleLength=`echo ${varTitle} | wc -c`
-        ((varTitleLength--))
-        s=$(printf "%-${varTitleLength}s" "=")
-        varUnderscore=`echo "${s// /=}"`
-
-        echo "${varTitle}  {#${varAnchor}}"
-        echo "${varUnderscore}"
-        echo ""
-    }
-~~~~~~~~
-
-[Markdown support](http://www.stack.nl/~dimitri/doxygen/manual/markdown.html) was
-introduced in Doxygen version 1.8.0 and simplifies greatly the usage of the tool as
-a static website generator. Instead of writing all the HTML code manually (or at least
-explicitely from the script), the intermediate product is a couple of simple markup
-files, which then in turn via Doxygen are converted into a rather nice-looking website.
-
-**:::**
-
-### Zwischenschritt automatisiert ###
-
-
-_Sun, 04. January 2015 -- 20:40_
-
-Eine sehr nuetzliche Sache: nachdem ich schon seit einer Weile einen Teil der HDR
-Berechnungen im Batch-Modus laufen lasse, habe ich ueber die Feiertage endlich mal
-noch das lange faellige Script geschrieben, mit welchem sich auch die Umbennenung
-der urspruenglich von [Luminance HDR](http://qtpfsgui.sourceforge.net) erzeugten
-HDR Dateien erledigen laesst. Fuettert man das Programm mit einer Reihe an RAW oder
-TIFF Bildern, so bekommt man eine Sammlung an HDR Dateien, deren Name leider nichts
-mehr mit dem Ausgangsmaterial zu tun hat, sondern einfach nur noch durchlaufend
-nummeriert ist:
-
-~~~~~~~~
-    -rw-r--r--   1 lars  staff  115371820 Jan  4 20:01 hdr_1.exr
-    -rw-r--r--   1 lars  staff  115662843 Jan  4 20:03 hdr_2.exr
-    -rw-r--r--   1 lars  staff  116396095 Jan  4 20:05 hdr_3.exr
-    -rw-r--r--   1 lars  staff  116093543 Jan  4 20:06 hdr_4.exr
-~~~~~~~~
-
-Was ich aber gerne moechte ist, dass die HDR Datei -- wie dies auch beim Rohmaterial
-der Fall ist -- die Datumsinformation traegt, so dass es einfach ist Dinge zu sortieren
-und wieder zu finden. Von allen Arbeitsschritten war dies bisher derjenige, welcher
-mich wahrscheinlich am meisten Zeit gekostet hat (sieht man einmal von der Beschriftung
-der Bilder ab, welche sich aber eben nicht automatisieren laesst). Damit ist nun aber
-gluecklicherweise Schluss, denn mit ein paar Zeilen [Bash](http://www.gnu.org/software/bash)
-kann man auch diese Aufgaben dem Rechner ueberlassen.
-
-~~~~~~~~
-          36 input images found.
-    0   0   dsc_20150103_170548.TIF  <=  HDR 1
-    1   1   dsc_20150103_170549.TIF
-    2   2   dsc_20150103_170551.TIF
-    3   3   dsc_20150103_170553.TIF
-    4   4   dsc_20150103_170556.TIF
-    5   5   dsc_20150103_170559.TIF
-    6   6   dsc_20150103_170605.TIF
-    7   7   dsc_20150103_170616.TIF
-    8   8   dsc_20150103_170635.TIF
-    9   0   dsc_20150103_171207.TIF  <=  HDR 2
-    10   1   dsc_20150103_171208.TIF
-    11   2   dsc_20150103_171210.TIF
-    12   3   dsc_20150103_171212.TIF
-    13   4   dsc_20150103_171214.TIF
-    14   5   dsc_20150103_171218.TIF
-    15   6   dsc_20150103_171223.TIF
-    16   7   dsc_20150103_171233.TIF
-    17   8   dsc_20150103_171251.TIF
-    18   0   dsc_20150103_190226.TIF  <=  HDR 3
-    19   1   dsc_20150103_190228.TIF
-    20   2   dsc_20150103_190230.TIF
-    21   3   dsc_20150103_190233.TIF
-    22   4   dsc_20150103_190237.TIF
-    23   5   dsc_20150103_190245.TIF
-    24   6   dsc_20150103_190259.TIF
-    25   7   dsc_20150103_190325.TIF
-    26   8   dsc_20150103_190359.TIF
-    27   0   dsc_20150103_204801.TIF  <=  HDR 4
-    28   1   dsc_20150103_204803.TIF
-    29   2   dsc_20150103_204805.TIF
-    30   3   dsc_20150103_204809.TIF
-    31   4   dsc_20150103_204814.TIF
-    32   5   dsc_20150103_204824.TIF
-    33   6   dsc_20150103_204843.TIF
-    34   7   dsc_20150103_204916.TIF
-    35   8   dsc_20150103_204950.TIF
-
-     - nof. input images = 36
-     - nof. HDR images   = 4
-~~~~~~~~
-
-Die Kleinigkeit, welche mir jetzt noch fehlt -- und dies waere dann noch einmal ein
-lohnenswertes Projekt -- ist das Kopieren der Metadaten von den Rohbildern in das HDR
-(falls dies so ohne weiteres geht); bedauerlicherweise gehen diese Informationen naemlich
-beim Zusammenrechnen verloren und muessen am Ende noch von Hand eingefuegt werden.

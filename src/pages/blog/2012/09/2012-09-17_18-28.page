@@ -1,0 +1,16 @@
+---
+title: "HDR vs. Tonemapping"
+in_menu: false
+author: "Lars Baehren"
+tags: Photography
+---
+
+##{title:}##
+
+_Mon, 17. September 2012 -- 18:28_
+
+Im Anschluss an den [vorherigen Eintrag](/blog/2012/09/2012-09-17_18-08.html) faellt mir noch eine Kleinigkeit ein, welche sich letzte Woche bei einer Diskussion mit Sven ergeben hat. Da wir ebenfalls auf HDR zu sprechend kamen, tauchte mal wieder leichtes Missverstaendnis auf, welches ich schon mehrfach zu lesen bekommen habe:
+
+> Ich finde manchmal, dass die HDR-Aufnahmen zu starke Kontraste zeigen. HDR soll ja nicht heissen, dass alle Objekte auf einmal irgendwie "geriffelt" aussehen. 
+
+Wie ich jetzt ein wenig aus eigener Erfahrung gelernt habe ist dies nicht dem HDR selber zuzuschreiben, sondern dem anschliessenden Tonemapping; das HDR als solches ist einfach nur ein Bild mit einem sehr grossen dynamischen Umfang, welcher weit ueber das hinausgeht was eine Kamera in der Lage ist mit einem einzigen Bild abzubilden. Gleichzeitig bedeutet dies aber leider auch, dass das Bild ueber eine Bandbreite verfuegt, welche von keinem Monitor angezeigt werden kann; darueber hinaus sind auch gaengige Formate wie JPEG nicht darauf ausgelegt eine derartige Bildtiefe abzuspeichern (einer der Gruende warum e.g. die VFX Industrie [OpenEXR](http://www.openexr.com) als Speicherformat verwendet). Als Konsequenz dieser Umstaende muss ein HDR via Tonemapping zurueck in den Farbraum ueberfuehrt werden, welcher sich auf gaengigen Geraeten anzeigen laesst; dieser Vorgang laesst sich auf unterschiedliche Weise mit verschiedensten Algorithmen durchfuehren -- dementsprechend gibt es das sehr viele Parameter, an welchen man drehen kann. Was Du ansprichst ist u.a. so etwas wie einem Detail-Parameter geschuldet: dreht man den immer weiter hoch, dann bekommt man eben sehr stark Strukturen, welche ueber das hinausgehen, was man doch typischerweise mit dem Auge erkennt.

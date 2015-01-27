@@ -1,0 +1,18 @@
+---
+title: "Fedora 18 - Beta Release"
+in_menu: false
+author: "Lars Baehren"
+Tags: Computing Linux
+---
+
+##{title:}##
+
+_Sat, 01. December 2012 -- 11:57_
+
+Hurra, da ist sie nun auch ganz offiziell, die [Beta Release](http://fedoraproject.org/en/get-prerelease) fuer die im Januar 2013 erwartete Version 18 der Fedora Linux Distribution. So wirklich viel Ueberraschungen gibt es hier aber nicht mehr, denn bereits zu dem Zeitpunkt, an dem die Beta urspruenglich faellig war, hatte ich die [Alpha-Release an Land gezogen](/blog/2012/11/2012-11-09_15-25.html) und installiert. Aber gut, mittlerweile sind wir eben einen Schritt weiter und so konnte ich bei Ars Technica einen [Artikel](http://arstechnica.com/information-technology/2012/11/fedora-18-beta-almost-brings-mate-alternative-to-gnome-desktop) lesen, welcher auf die Neuerungen der in Vorbereitung befindlichen Release eingeht. Auch wenn der Fokus zunaechst ein wenig auf dem Desktop liegt, so zeigt sich doch, dass es unter der Haube einige Verbesserungen gibt, welche fuer Entwickler interessan sind:
+
+> Beyond [MATE](http://mate-desktop.org), the [Fedora Project](http://fedoraproject.org) said version 18 also has updates to the KDE, XFCE, and Sugar desktops. GNOME has been updated to version 3.6.
+>
+> Fedora 18 also has improvements aimed at developers and system administrators. For developers, Fedora updates programming languages to [Perl](http://www.perl.org) 5.16 and [Python](http://www.python.org) 3.3, and the Rails framework to 3.2, while also updating the [D](http://dlang.org) and [Haskell](http://www.haskell.org) programming environments.
+
+Da werde ich also mal schauen, dass ich meine Testinstallation aktulalisiert kriege, damit ich ein wenig testen kann -- klingt in jedem Fall schon einmal vielversprechend.

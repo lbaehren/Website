@@ -1,0 +1,16 @@
+---
+title: Commits online
+in_menu: false
+---
+
+## {title:} ##
+
+_Wed, 18. April 2012 - 19:35_
+
+Auch wenn ich an anderer Stelle (naemlich auch Google+) schon einmal eine kurzen Kommentar zu diesem Thema hinterlassen hatte, so sollte ich natuerlich nicht vergessen wenigsten auch noch hier ein paar Anmerkungen zu notieren...
+
+Anfang dieser Woche ist [pandora](http://prometheus.uni-koeln.de/pandora) Version 0.6.5 online gegangen. Das fuer sich genommen waere vielleicht garnicht einmal so bemerkenswert, waere da nicht die Tatsache, dass ich bei dieser Gelegenheit die erste Gelegenheit hatte mal die notwendigen Schritte fuer die Live-Schaltung einer neuen Version der Software -- natuerlich noch unter entsprechender Anleitung -- durchzugehen. Ob ich jetzt alles wieder so komplett und ohne Stolpersteine hinbekommen wuerde weiss ich nicht, aber zumindest habe ich so mal einen Eindruck darueber bekommen, was denn alles noetig ist, um eine neue Version fuer die Benutzer des Bildarchivs online verfuegbar zu machen. Auch wenn ich selber kaum etwas aktiv fuer die Aenderungen zwischen Version 0.6.4 und 0.6.5 habe beitragen koennen, so bot der ganze Vorgang wieder einmal eine hervorrangende Gelegenheit den Zustand von Dokumentation und Installationsscripten zu testen; wie sich herausstellte gab es da durchaus eine Reihe an notwendigen Aenderungen, um einen Durchlauf von Beginn bis Ende hinzukriegen. Dank der tatkraeftigen Hilfe von Jens -- meines Erachtens der Einzige in unserer kleinen Runde, welcher wirklich mit den Interna der Bildarchiv-Software vertraut ist -- hat es dann aber schliesslich geklappt:
+
+![Authoren pandora](/blog/2012/04/2012-04-16_authoren_pandora.png)
+
+Die -- zumindest ganz subjektiv fuer mich -- interessante Neuerung an der neuen Version ist, dass ich nun ganz offiziell auch auf der _pandora_ Seite mit aufgefuehrt bin; nach der Aktualisierung des Tuerschildes waere nun auch dieser Schritt hinter mich gebracht. Dass es jetzt aber umso mehr darum geht, in die aktive Entwicklung einzusteigen, duerfte wohl klar sein; folgerichtig habe ich also die letzten beiden Tage damit zugebracht in den Eingeweiden des Systems zu graben und Inhalte/Funktionalitaeten des Bildarchivs mit dem zugrundeliegenden Code in Verbindung zu bringen.

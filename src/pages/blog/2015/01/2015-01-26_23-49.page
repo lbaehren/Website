@@ -1,0 +1,22 @@
+---
+title: "Festgelaufen"
+in_menu: false
+author: "Lars Baehren"
+date: 2015-01-26T23:49:28.00Z
+created_at: 2015-01-26T23:42:11.00Z
+---
+
+## {title:} ##
+
+_Mon, 26. January 2015 -- 23:49_
+
+Also so richtig habe ich die Systematik noch nicht raus: zum wiederholten Male
+scheint ein Job, welchen ich auf dem Server angeworfen habe, einfach einzufrieren
+und nichts mehr zu machen. Schaue ich mir die verbrauchten Resourcen an so zeigt sich
+dass weder CPU-Leistung noch Speicherplatz in kritischer Weise in Beschlag genommen
+werden. Die letzten Meldungen, welche mir im Terminal angezeigt werden lassen durchblicken,
+dass ich keinerlei aussergewoehnliche Anforderungen an das System stelle, was allerdings
+in keinster Weise dabei hilfreich ist nachzuvollziehen, was das schief geht. Einfach nur
+warten und darauf hoffen, dass vielleicht doch noch einmal irgendetwas passiert will
+ich auch nicht -- also habe ich die noch laufende (oder auch nicht) Berechnung
+abgebrochen und den Job erneut angeworfen. Mal gespannt, wie es diesmal laeuft...
