@@ -41,7 +41,7 @@ Using CMake is simple. The build process is controlled by creating one or more
 a project. Each ``CMakeLists.txt`` consists of one or more commands. Each command
 has the form
 
-~~~~
+~~~~ cmake
 COMMAND (args...)
 ~~~~
 
@@ -64,7 +64,7 @@ to a wider audience.
 
 The collection of CMake find scripts can be obtained from Github via:
 
-~~~~
+~~~~ bash
 git clone git://github.com/lbaehren/CMakeModules.git
 ~~~~
 

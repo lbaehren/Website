@@ -20,52 +20,52 @@ expressed more specifically w.r.t. a certain version.
 ### Description ###
 
 ~~~~
- <package>_VERSION       = full provided version string
- <package>_VERSION_MAJOR = major version if provided, else 0
- <package>_VERSION_MINOR = minor version if provided, else 0
- <package>_VERSION_PATCH = patch version if provided, else 0
+    <package>_VERSION       = full provided version string
+    <package>_VERSION_MAJOR = major version if provided, else 0
+    <package>_VERSION_MINOR = minor version if provided, else 0
+    <package>_VERSION_PATCH = patch version if provided, else 0
 ~~~~
 
 Here is a simple test program which will call the underlying library and then output
 the version information found therein:
 
-~~~~
-#include <H5public.h>
-#include <iostream>
+~~~~ cpp
+    #include <H5public.h>
+    #include <iostream>
 
-int main ()
-{
-    std::cout << H5_VERS_MAJOR << ";" << H5_VERS_MINOR << ";" << H5_VERS_RELEASE;
-    return 0;
-}
+    int main ()
+    {
+        std::cout << H5_VERS_MAJOR << ";" << H5_VERS_MINOR << ";" << H5_VERS_RELEASE;
+        return 0;
+    }
 ~~~~
 
 The following instructions are used in the corresponding [CMake](/development/tools/cmake/index.html)
 module, to build and run the above test program, as well as capturing its output.
 
-~~~~
- if (HDF5_HDF5_LIBRARY AND HDF5_INCLUDES)
+~~~~ cmake
+  if (HDF5_HDF5_LIBRARY AND HDF5_INCLUDES)
 
-     find_file (TestVersionHDF5 TestVersionHDF5.cc
-         HINTS ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_MODULE_PATH}
-         )
+      find_file (TestVersionHDF5 TestVersionHDF5.cc
+          HINTS ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_MODULE_PATH}
+          )
 
-     try_run (
-         HDF5_VERSION_RUN_RESULT_VAR
-         HDF5_VERSION_COMPILE_RESULT_VAR
-         ${CMAKE_CURRENT_BINARY_DIR} ${TestVersionHDF5}
-         CMAKE_FLAGS -DINCLUDE_DIRECTORIES=${HDF5_INCLUDES} -DLINK_LIBRARIES=${HDF5_HDF5_LIBRARY}
-         RUN_OUTPUT_VARIABLE HDF5_VERSION
-         )
+      try_run (
+          HDF5_VERSION_RUN_RESULT_VAR
+          HDF5_VERSION_COMPILE_RESULT_VAR
+          ${CMAKE_CURRENT_BINARY_DIR} ${TestVersionHDF5}
+          CMAKE_FLAGS -DINCLUDE_DIRECTORIES=${HDF5_INCLUDES} -DLINK_LIBRARIES=${HDF5_HDF5_LIBRARY}
+          RUN_OUTPUT_VARIABLE HDF5_VERSION
+          )
 
-     if (HDF5_VERSION)
-         ## extract partial version numbers
-         list (GET HDF5_VERSION 0 HDF5_VERSION_MAJOR)
-         list (GET HDF5_VERSION 1 HDF5_VERSION_MINOR)
-         list (GET HDF5_VERSION 2 HDF5_VERSION_PATCH)
-         ## assemble full version number
-         set (HDF5_VERSION "${HDF5_VERSION_MAJOR}.${HDF5_VERSION_MINOR}.${HDF5_VERSION_PATCH}")
-     endif (HDF5_VERSION)
+      if (HDF5_VERSION)
+          ## extract partial version numbers
+          list (GET HDF5_VERSION 0 HDF5_VERSION_MAJOR)
+          list (GET HDF5_VERSION 1 HDF5_VERSION_MINOR)
+          list (GET HDF5_VERSION 2 HDF5_VERSION_PATCH)
+          ## assemble full version number
+          set (HDF5_VERSION "${HDF5_VERSION_MAJOR}.${HDF5_VERSION_MINOR}.${HDF5_VERSION_PATCH}")
+      endif (HDF5_VERSION)
 
- endif (HDF5_HDF5_LIBRARY AND HDF5_INCLUDES)
+  endif (HDF5_HDF5_LIBRARY AND HDF5_INCLUDES)
 ~~~~

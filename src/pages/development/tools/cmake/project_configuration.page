@@ -24,7 +24,7 @@ MyProject                     ...  Root directory of project
 The first entries in the `CMakeLists.txt` file will be used for book-keeping and
 basic version checking:
 
-~~~~
+~~~~ cmake
 ## Name of the project handled by CMake
 project (Bibliotheque)
 

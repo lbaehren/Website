@@ -7,16 +7,15 @@ author: "Lars Baehren"
 
 ## {title:} ##
 
+~~~~ cmake
+    add_custom_target (DocumentationDoxygen
+        COMMAND ${DOXYGEN_EXECUTABLE} doxygen.config
+        DEPENDS
+        ${CMAKE_CURRENT_BINARY_DIR}/doxygen.config
+        ${DOXYGEN_HTML_STYLESHEET}
+        ${DOXYGEN_HTML_HEADER}
+        ${DOXYGEN_HTML_FOOTER}
+        WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+        COMMENT "Running Doxygen to generate source code documentation"
+        )
 ~~~~
-add_custom_target (DocumentationDoxygen
-    COMMAND ${DOXYGEN_EXECUTABLE} doxygen.config
-    DEPENDS
-    ${CMAKE_CURRENT_BINARY_DIR}/doxygen.config
-    ${DOXYGEN_HTML_STYLESHEET}
-    ${DOXYGEN_HTML_HEADER}
-    ${DOXYGEN_HTML_FOOTER}
-    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
-    COMMENT "Running Doxygen to generate source code documentation"
-    )
-~~~~
-
