@@ -277,14 +277,15 @@ create_index_file_year ()
 
     # === Generate page header ============================
 
-    echo "---"                             > ${varPage}
-    echo "title: ${varYear}"              >> ${varPage}
-    echo "in_menu: false"                 >> ${varPage}
-    echo "author: \"Lars Baehren\""       >> ${varPage}
-    echo "---"                            >> ${varPage}
-    echo ""                               >> ${varPage}
-    echo "## Blog archive | {title:} ##"  >> ${varPage}
-    echo ""                               >> ${varPage}
+    echo "---"                                        > ${varPage}
+    echo "title: \"${varYear}\""                     >> ${varPage}
+    echo "routed_title: \"Blog archive ${varYear}\"" >> ${varPage}
+    echo "in_menu: false"                            >> ${varPage}
+    echo "author: \"Lars Baehren\""                  >> ${varPage}
+    echo "---"                                       >> ${varPage}
+    echo ""                                          >> ${varPage}
+    echo "## Blog archive | {title:} ##"             >> ${varPage}
+    echo ""                                          >> ${varPage}
 
     for varMonth in 01 02 03 04 05 06 07 08 09 10 11 12
     {
