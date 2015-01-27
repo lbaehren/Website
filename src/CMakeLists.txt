@@ -23,19 +23,11 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #-------------------------------------------------------------------------------
 
-##______________________________________________________________________________
-## Generate Webgen configuration file
-
-configure_file (
-  ${CMAKE_CURRENT_SOURCE_DIR}/webgen.config.in
-  ${CMAKE_CURRENT_BINARY_DIR}/webgen.config
-  )
-
 ##_______________________________________________________________________________
 ## Build instructions for website
 
 add_custom_target (Website ALL
-  COMMAND ${WEBGEN_EXECUTABLE} generate ${CMAKE_CURRENT_BINARY_DIR}/webgen.config
+  COMMAND ${WEBGEN_EXECUTABLE} generate ${WEBGEN_CONFIG}
   WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
   COMMENT "Rendering website from sources ..."
   )

@@ -39,9 +39,9 @@ cmake_minimum_required (VERSION 2.8.2)
 cmake_policy (VERSION 2.8.2)
 
 ## Project release version (major.minor.patch)
-set (PROJECT_VERSION_MAJOR 0 )
-set (PROJECT_VERSION_MINOR 1 )
-set (PROJECT_VERSION_PATCH 0 )
+set (PROJECT_VERSION_MAJOR "0" )
+set (PROJECT_VERSION_MINOR "1" )
+set (PROJECT_VERSION_PATCH "0" )
 set (PROJECT_VERSION_SERIES "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}")
 set (PROJECT_VERSION "${PROJECT_VERSION_SERIES}.${PROJECT_VERSION_PATCH}")
 
@@ -188,6 +188,28 @@ endif (DOXYGEN_EXECUTABLE)
 ##
 ## =============================================================================
 
+##______________________________________________________________________________
+## Generate Webgen configuration file
+
+find_file (WEBGEN_CONFIG_IN webgen.config.in
+    PATHS ${PROJECT_SOURCE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}
+)
+
+if (WEBGEN_CONFIG_IN)
+    configure_file (
+        ${WEBGEN_CONFIG_IN}
+        ${PROJECT_BINARY_DIR}/src/webgen.config
+    )
+endif (WEBGEN_CONFIG_IN)
+
+find_file (WEBGEN_CONFIG webgen.config
+    HINTS ${CMAKE_CURRENT_BINARY_DIR}
+    PATHS ${PROJECT_SOURCE_DIR}
+    PATH_SUFFIXES build src
+)
+
+
+##______________________________________________________________________________
 ## Project sub-directories
 
 add_subdirectory (src)
@@ -229,6 +251,7 @@ message ( " .. Version number .............. = ${PROJECT_VERSION}"          )
 message ( " .. Build directory ............. = ${PROJECT_BINARY_DIR}"       )
 message ( " .. Installation prefix ......... = ${CMAKE_INSTALL_PREFIX}"     )
 message ( " .. Installation prefix Website . = ${INSTALL_PREFIX_WEBSITE}"   )
+message ( " .. Webgen configuration file ... = ${WEBGEN_CONFIG}"            )
 message ( " .. Pages source directory ...... = ${PROJECT_SOURCE_DIR_PAGES}" )
 message ( " .. Blog source directory ....... = ${PROJECT_SOURCE_DIR_BLOG}"  )
 message ( " .. Custom CMake modules ........ = ${PROJECT_CMAKE_MODULE_PATH}")

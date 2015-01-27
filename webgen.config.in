@@ -28,9 +28,9 @@
 ##  2. Path to the sources from which the resulting website is generated.
 ##  3. Path to the image files included into the images.
 
-sources: [[/, file_system, ${PROJECT_SOURCE_DIR}/ext/templates/data/lars01/src],
-          [/, file_system, ${PROJECT_SOURCE_DIR}/src/pages],
-          [/, file_system, ${PROJECT_SOURCE_DIR}/src/images]]
+sources: [[/, file_system, ${larsbaehren_SOURCE_DIR}/ext/templates/data/lars01/src],
+          [/, file_system, ${larsbaehren_SOURCE_DIR}/src/pages],
+          [/, file_system, ${larsbaehren_SOURCE_DIR}/src/images]]
 
 ##______________________________________________________________________________
 ## Destination directory to which the generated website will be written.
@@ -52,4 +52,3 @@ content_processor.tidy.options: "-utf8"
 
 # Specifies whether dummy index paths should automatically be created.
 misc.dummy_index.enabled: false
-
