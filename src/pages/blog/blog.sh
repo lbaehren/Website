@@ -22,6 +22,8 @@ print_help ()
     echo "                      displayed."
     echo " -P | --publish FILE  Publish an entry. If no further argument is provided"
     echo "                      entries available for publication are listed."
+    echo " -C | --conver  PATH  Convert entries in PATH from Dokuwiki-based format"
+    echo "                      to Webgen page format."
 }
 
 #_______________________________________________________________________________
@@ -96,6 +98,42 @@ get_month_name ()
     fi
 
     echo ${varName}
+}
+
+#_______________________________________________________________________________
+#                                                               get_month_number
+
+get_month_number ()
+{
+    if [ -z $1 ] ; then
+        MON=""
+    else
+        case $1 in
+            Jan) MON=01 ;;
+            "January") MON=01 ;;
+            Feb) MON=02 ;;
+            "February") MON=02 ;;
+            Mar) MON=03 ;;
+            "March") MON=03 ;;
+            Apr) MON=04 ;;
+            May) MON=05 ;;
+            Jun) MON=06 ;;
+            "Jul") MON=07 ;;
+            "July") MON=07 ;;
+            "Aug") MON=08 ;;
+            "August") MON=08 ;;
+            "Sep") MON=09 ;;
+            "September") MON=09 ;;
+            "Oct") MON=10 ;;
+            "October") MON=10 ;;
+            "Nov") MON=11 ;;
+            "November") MON=11 ;;
+            "Dec") MON=12 ;;
+            "December") MON=12 ;;
+        esac
+    fi
+
+    echo ${MON}
 }
 
 #_______________________________________________________________________________
@@ -189,8 +227,18 @@ create_header ()
 {
     varTitle=$1
     varHourMinuteSecond=`date +`
-    varTimestamp=`get_timestamp`
-    varTimeheader="`date +%a,\ %d.\ %B\ %Y\ --\ %H:%M`"
+
+    if [ -z $2 ] ; then
+        varTimestamp=`get_timestamp`
+    else
+        varTimestamp=$2
+    fi
+
+    if [ -z $3 ] ; then
+        varTimeheader="`date +%a,\ %d.\ %B\ %Y\ --\ %H:%M`"
+    else
+        varTimeheader=$3
+    fi
 
     echo "---"
     echo "title: \"${varTitle}\""
@@ -449,6 +497,57 @@ publish_entry ()
     fi
 }
 
+#_______________________________________________________________________________
+#                                                                convert_entries
+
+## Convert entries within a given directory
+convert_entries ()
+{
+    if [ -z $1 ] ; then
+        echo " ERROR - no such directory ${1}"
+    else
+        for FILE in `find $1 -name "*.txt"`
+        {
+            if [ -f $FILE ] ; then
+
+                # Name of the output file
+                varOutfile=`echo $FILE | sed s/".txt"/".page"/`
+
+                # Extract the title
+                varTitle=`cat $FILE | grep "=====" | sed s/"====="//g | sed s/" "// | sed s/" *$"//`
+
+                # Extract pubication date
+                varDate=`cat ${FILE} | grep -v "${varTitle}" | grep "//" | grep ":" | sed s/"\/\/"//g | grep $1 | grep -v "\[\["`
+                tmpDate=( `echo ${varDate} | sed s/"-"//` )
+                varDayOfWeek=`echo ${tmpDate[0]} | sed s/"\,"//`
+                varDay=`echo ${tmpDate[1]} | sed s/"\."//`
+                varMonthName=${tmpDate[2]}
+                varMonth=`get_month_number ${varMonthName}`
+                varYear=${tmpDate[3]}
+                varHourMinute=${tmpDate[4]}
+
+                # Construct timestamp(s)
+                varTimestamp="${varYear}-${varMonth}-${varDay}T${varHourMinute}:00.00Z"
+                varTimeheader="${varDayOfWeek}, ${varDay} ${varMonthName} ${varYear} -- ${varHourMinute}"
+
+                echo " -> converting $FILE ... ${varOutfile}"
+                create_header "VAR_TITLE" "VAR_TIMESTAMP" "VAR_TIMEHEADER" | \
+                    sed s/"VAR_TITLE"/"${varTitle}"/ | \
+                    sed s/"VAR_TIMESTAMP"/"${varTimestamp}"/ | \
+                    sed s/"VAR_TIMEHEADER"/"${varTimeheader}"/ > ${varOutfile}
+
+                # Main text body of entry
+                cat ${FILE} | grep -v "=====" | \
+                    grep -v "${varDate}" | \
+                    grep -v "{{tag" | \
+                    grep -v "~~DISCUSSION~~" | \
+                    sed s#" //"#" _"# | \
+                    sed s#"// "#"_ "# >> ${varOutfile}
+            fi
+        }
+    fi
+}
+
 # ==============================================================================
 #
 #  Main
@@ -506,6 +605,12 @@ case $1 in
     ;;
     "--publish")
         publish_entry $2
+    ;;
+    "-C")
+        convert_entries $2
+    ;;
+    "--convert")
+        convert_entries $2
     ;;
     *)
         print_help
