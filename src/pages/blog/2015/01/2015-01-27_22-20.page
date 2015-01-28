@@ -1,0 +1,38 @@
+---
+title: "Erste Schritte"
+in_menu: false
+author: "Lars Baehren"
+date: 2015-01-27T22:20:15.00Z
+created_at: 2015-01-27T22:11:48.00Z
+---
+
+## {title:} ##
+
+_Tue, 27. January 2015 -- 22:20_
+
+Einfach nur einen Domain-Namen reservieren kann wohl so ziemlich jeder -- die entsprechende
+Adresse dann aber auch wirklich sinnvoll zu nutzen ist noch einmal ein andere Seite.
+Es ist nun schon eine ganze Weile her, dass sich Julia ebenfalls ein potentielle
+Anlaufstelle im Internet gesichert hat -- was bis jetzt aber immer noch fehlt ist
+der entsprechende Inhalt. Dass zumindest die technischen Aspekte dieser Sache in meiner
+Verantwortlichkeit landen wuerden, war eigentlich von vorne herein klar; was die
+inhaltlichen Details betrifft werde ich mich (wahrscheinlich) weitestgehend zurueckhalten
+(was ja auch Sinn macht), aber woran ich mich nun endlich einmal begeben wollte war
+zumindest eine erste Grundlage zu schaffen. Also habe ich ein wenig mit dem Experimentieren
+begonnen, um zumindest eine vage Idee dafuer zu kriegen, in welche Richtung es denn
+gehen soll.
+
+~~~~
+INFO  Generating website...
+INFO  [create] </artikel.html>
+INFO  [update] </index.html>
+INFO  [update] </kurse.html>
+INFO  [update] </team.html>
+INFO  [update] </wissen.html>
+INFO  ... done in 0.30 seconds
+~~~~
+
+Natuerlich muss als naechstes die Diskussion kommen, was denn genau alles online
+verfuegbar gemacht werde soll. Bis dahin hoffe ich aber zumindest mal die grundsaetzliche
+Infrastruktur angelegt zu haben, so dass es dann um Feinheiten und den Inhalt gehen
+kann.
