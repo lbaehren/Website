@@ -1,344 +1,430 @@
 ---
 title: "2008"
+routed_title: "Blog archive 2008"
 in_menu: false
 author: "Lars Baehren"
-tags: Blog
 ---
 
-## Blog archive | 2008 ##
+## Blog archive | {title:} ##
+
 
 ### January ###
 
-  * [Start ins neue Jahr](/blog/2008/01/2008-01-01_03-28.html) \| Tue, 01. January 2008 -- 03:28 \|
-  * [Nijmegen im Nebel](/blog/2008/01/2008-01-01_13-11.html) \| Tue, 01. January 2008 -- 13:11 \|
-  * [Filling the 2008 calendar](/blog/2008/01/2008-01-01_17-42.html) \| Tue, 01. January 2008 -- 17:42 \|
-  * [In and outside the Electric Castle](/blog/2008/01/2008-01-01_20-12.html) \| Tue, 01. January 2008 -- 20:12 \|
-  * [Nachwirkungen](/blog/2008/01/2008-01-01_23-38.html) \| Tue, 01. January 2008 -- 23:38 \|
-  * [Using DokuWiki as blog engine](/blog/2008/01/2008-01-02_00-50.html) \| Wed, 02. January 2008 -- 00:50 \|
-  * [Christophe Godin](/blog/2008/01/2008-01-02_16-17.html) \| Wed, 02. January 2008 -- 16:17 \|
-  * [Wenn die Karte nicht mehr will](/blog/2008/01/2008-01-02_22-02.html) \| Wed, 02. January 2008 -- 22:02 \|
-  * [Arnhem -- mehr als nur umsteigen](/blog/2008/01/2008-01-03_13-11.html) \| Thu, 03. January 2008 -- 13:11 \|
-  * [Kinderkrankheiten](/blog/2008/01/2008-01-03_13-48.html) \| Thu, 03. January 2008 -- 13:48 \|
-  * [Mit schwerem Gepaeck](/blog/2008/01/2008-01-07_13-36.html) \| Mon, 07. January 2008 -- 13:36 \|
-  * [Start ins Fotographie-Jahr 2008](/blog/2008/01/2008-01-07_14-45.html) \| Mon, 07. January 2008 -- 14:45 \|
-  * [Ausgeschlossen](/blog/2008/01/2008-01-07_22-27.html) \| Mon, 07. January 2008 -- 22:27 \|
-  * [Geschafft](/blog/2008/01/2008-01-08_09-26.html) \| Tue, 08. January 2008 -- 09:26 \|
-  * [LOFAR times-series data](/blog/2008/01/2008-01-08_18-37.html) \| Tue, 08. January 2008 -- 18:37 \|
-  * [More complicated after all](/blog/2008/01/2008-01-09_10-54.html) \| Wed, 09. January 2008 -- 10:54 \|
-  * [Valid until 1. Jan 2008](/blog/2008/01/2008-01-09_13-42.html) \| Wed, 09. January 2008 -- 13:42 \|
-  * [usg.lofar.org offline](/blog/2008/01/2008-01-09_18-03.html) \| Wed, 09. January 2008 -- 18:03 \|
-  * [Fehlerhafter Eindruck](/blog/2008/01/2008-01-10_00-02.html) \| Thu, 10. January 2008 -- 00:02 \|
-  * [USG server still down](/blog/2008/01/2008-01-10_10-55.html) \| Thu, 10. January 2008 -- 10:55 \|
-  * [How to take down USG services](/blog/2008/01/2008-01-10_15-30.html) \| Thu, 10. January 2008 -- 15:30 \|
-  * [USG server remains down](/blog/2008/01/2008-01-11_12-13.html) \| Fri, 11. January 2008 -- 12:13 \|
-  * [USG server down until Monday](/blog/2008/01/2008-01-11_14-56.html) \| Fri, 11. January 2008 -- 14:56 \|
-  * [01011001 Release party](/blog/2008/01/2008-01-11_17-03.html) \| Fri, 11. January 2008 -- 17:03 \|
-  * [Vor dem langen Abend](/blog/2008/01/2008-01-11_20-02.html) \| Fri, 11. January 2008 -- 20:02 \|
-  * [De Ark van Noach](/blog/2008/01/2008-01-11_21-27.html) \| Fri, 11. January 2008 -- 21:27 \|
-  * [Doch nicht Arnhem](/blog/2008/01/2008-01-12_12-58.html) \| Sat, 12. January 2008 -- 12:58 \|
-  * [Doch Arnhem](/blog/2008/01/2008-01-13_13-52.html) \| Sun, 13. January 2008 -- 13:52 \|
-  * [Altbekannter Fehler](/blog/2008/01/2008-01-13_18-40.html) \| Sun, 13. January 2008 -- 18:40 \|
-  * [Start einer Tradition](/blog/2008/01/2008-01-14_00-54.html) \| Mon, 14. January 2008 -- 00:54 \|
-  * [Wieder im Norden](/blog/2008/01/2008-01-14_09-45.html) \| Mon, 14. January 2008 -- 09:45 \|
-  * [Recovering the USG server](/blog/2008/01/2008-01-14_18-24.html) \| Mon, 14. January 2008 -- 18:24 \|
-  * [Bringing back the server (Day 2)](/blog/2008/01/2008-01-15_11-11.html) \| Tue, 15. January 2008 -- 11:11 \|
-  * [Server running again](/blog/2008/01/2008-01-15_16-22.html) \| Tue, 15. January 2008 -- 16:22 \|
-  * [Quo vadis?](/blog/2008/01/2008-01-16_02-34.html) \| Wed, 16. January 2008 -- 02:34 \|
-  * [Und schon wieder weg](/blog/2008/01/2008-01-16_18-19.html) \| Wed, 16. January 2008 -- 18:19 \|
-  * [Ocean Dome](/blog/2008/01/2008-01-16_20-35.html) \| Wed, 16. January 2008 -- 20:35 \|
-  * [First official D300 frames](/blog/2008/01/2008-01-17_01-29.html) \| Thu, 17. January 2008 -- 01:29 \|
-  * [Naechte in Dwingeloo](/blog/2008/01/2008-01-17_02-38.html) \| Thu, 17. January 2008 -- 02:38 \|
-  * [Die Sache mit der Erreichbarkeit](/blog/2008/01/2008-01-17_10-20.html) \| Thu, 17. January 2008 -- 10:20 \|
-  * [Spielzeuge](/blog/2008/01/2008-01-17_16-17.html) \| Thu, 17. January 2008 -- 16:17 \|
-  * [Be careful with the spell-checker](/blog/2008/01/2008-01-18_01-01.html) \| Fri, 18. January 2008 -- 01:01 \|
-  * [Was noch zu regeln war](/blog/2008/01/2008-01-18_15-15.html) \| Fri, 18. January 2008 -- 15:15 \|
-  * [Leider zutreffend](/blog/2008/01/2008-01-19_09-55.html) \| Sat, 19. January 2008 -- 09:55 \|
-  * [Sonntag zuhause](/blog/2008/01/2008-01-20_15-11.html) \| Sun, 20. January 2008 -- 15:11 \|
-  * [Warten auf die Handwerker](/blog/2008/01/2008-01-21_12-16.html) \| Mon, 21. January 2008 -- 12:16 \|
-  * [Laeuft wieder](/blog/2008/01/2008-01-21_17-38.html) \| Mon, 21. January 2008 -- 17:38 \|
-  * [First LOFAR PhD thesis](/blog/2008/01/2008-01-22_16-33.html) \| Tue, 22. January 2008 -- 16:33 \|
-  * [Nachlese vom Dienstag](/blog/2008/01/2008-01-23_08-54.html) \| Wed, 23. January 2008 -- 08:54 \|
-  * [Und noch einmal Dienstag...](/blog/2008/01/2008-01-23_09-47.html) \| Wed, 23. January 2008 -- 09:47 \|
-  * [Waere eine Mitteilung wert](/blog/2008/01/2008-01-24_02-32.html) \| Thu, 24. January 2008 -- 02:32 \|
-  * [Parallele Entwicklung](/blog/2008/01/2008-01-24_09-54.html) \| Thu, 24. January 2008 -- 09:54 \|
-  * [Ein wenig Verwirrung](/blog/2008/01/2008-01-24_17-18.html) \| Thu, 24. January 2008 -- 17:18 \|
-  * [Ayreon Instore & Signeersessie](/blog/2008/01/2008-01-25_13-25.html) \| Fri, 25. January 2008 -- 13:25 \|
-  * [Getting better at it](/blog/2008/01/2008-01-25_15-12.html) \| Fri, 25. January 2008 -- 15:12 \|
-  * [Zurueck aus Delft](/blog/2008/01/2008-01-27_02-21.html) \| Sun, 27. January 2008 -- 02:21 \|
-  * [Ayreon... aftermath](/blog/2008/01/2008-01-27_21-30.html) \| Sun, 27. January 2008 -- 21:30 \|
-  * [Ayreon pictures online](/blog/2008/01/2008-01-28_11-21.html) \| Mon, 28. January 2008 -- 11:21 \|
-  * [The risk you have to live with](/blog/2008/01/2008-01-28_20-48.html) \| Mon, 28. January 2008 -- 20:48 \|
-  * [Frame count](/blog/2008/01/2008-01-29_09-44.html) \| Tue, 29. January 2008 -- 09:44 \|
-  * [Start in das Foto-Wochenende](/blog/2008/01/2008-01-29_23-48.html) \| Tue, 29. January 2008 -- 23:48 \|
-  * [Verspaetung aufgeholt](/blog/2008/01/2008-01-30_09-47.html) \| Wed, 30. January 2008 -- 09:47 \|
-  * [Ayreon -- Into The Electric Castle](/blog/2008/01/2008-01-30_10-51.html) \| Wed, 30. January 2008 -- 10:51 \|
-  * [USG server back online](/blog/2008/01/2008-01-30_12-38.html) \| Wed, 30. January 2008 -- 12:38 \|
-  * [Sonnenuntergang in der Heide](/blog/2008/01/2008-01-30_19-08.html) \| Wed, 30. January 2008 -- 19:08 \|
-  * [Aufloesungserscheinungen](/blog/2008/01/2008-01-31_18-16.html) \| Thu, 31. January 2008 -- 18:16 \|
+ * [Start ins neue Jahr](/blog/2008/01/2008-01-01_03-28.html) \| Tue, 01. January 2008 -- 03:28
+ * [Nijmegen im Nebel](/blog/2008/01/2008-01-01_13-11.html) \| Tue, 01. January 2008 -- 13:11
+ * [Filling the 2008 calendar](/blog/2008/01/2008-01-01_17-42.html) \| Tue, 01. January 2008 -- 17:42
+ * [In and outside the Electric Castle](/blog/2008/01/2008-01-01_20-12.html) \| Tue, 01. January 2008 -- 20:12
+ * [Nachwirkungen](/blog/2008/01/2008-01-01_23-38.html) \| Tue, 01. January 2008 -- 23:38
+ * [Using DokuWiki as blog engine](/blog/2008/01/2008-01-02_00-50.html) \| Wed, 02. January 2008 -- 00:50
+ * [Christophe Godin](/blog/2008/01/2008-01-02_16-17.html) \| Wed, 02. January 2008 -- 16:17
+ * [Wenn die Karte nicht mehr will](/blog/2008/01/2008-01-02_22-02.html) \| Wed, 02. January 2008 -- 22:02
+ * [Arnhem -- mehr als nur umsteigen](/blog/2008/01/2008-01-03_13-11.html) \| Thu, 03. January 2008 -- 13:11
+ * [Kinderkrankheiten](/blog/2008/01/2008-01-03_13-48.html) \| Thu, 03. January 2008 -- 13:48
+ * [Mit schwerem Gepaeck](/blog/2008/01/2008-01-07_13-36.html) \| Mon, 07. January 2008 -- 13:36 Wenn wir rein nach dem Gewicht gehen, dann kaeme jetzt wohl der teuerste Neuzugnag an die Reihe: die D300, welche ich heute Morgen noch in Bonn abgeholt habe. Richtig gelesen, ich habe mir direkt zu Jahresbeginn eine Nikon D300 zugelegt. Das war ja streng genommen unvermeidlich -- und in jedem Fall auch noch vor dem April notwendig -- aber bis vor der Abreise war ich mir nicht so recht klar, ueber welchen Weg ich denn in den Besitzt einer solchen Kamera kommen sollte. Wie angekuendigt und auch zu erwarten, gibt es nur kurze Zeit nach der Markteinfuhrung ziemliche Lieferverzoegerungen; zwar kann man davon ausgehen, dass Nikon fleissig produziert, aber die neuen Kamera finden offensichtlich einen derart reissenden Absatz, dass die Kontingente in den Geschaeften und Versandhaeusern sehr schnell aufgebraucht sind (es hatte ja wohl sogar schon jemand wegen der fuer mich zurueckgelegten D300 gefragt). Die Entscheidung zum Kauf wurde mir dadurch recht einfach gemacht, dass Foto Porst eine Reihe von Aktionsangeboten hatten, welche unter anderem die D300 umfasste; die veranschlagten 1700 EUR lagen sogar noch ein klein wenig unter dem preiswertesten Angebot, welches ich bisher in den Niederlanden gefunden hatte... plus dass ich in diesem Fall hier direkt die Kamera mitnehmen konnte (was allerdings nicht komplett direkt gelang, weil es noch ein kleine Komplikation gab -- dazu aber noch einmal mehr). Nach dem Samstag getaetigten Anzahlung und Reservierung, war ich heute Morgen noch einmal schnell in Bonn, um das gute Stueck einzusammeln... und bereits waehrend der Bahnfahrt zurueck nach Honnef alles zusammenzubauen; einmal an diesem Punkt angelangt gibt es kein Zurueck mehr in die Originalverpackung, so dass sich nun zwei Kameras in meiner Fototasche befinden (jaja, ich weiss, Versicherung regeln!). Auch wenn die D300 ein wenig schwerer ist als meine knapp ueber ein Jahr alte D80, so ist das Gewicht doch recht gut zu verkraften.
+ * [Start ins Fotographie-Jahr 2008](/blog/2008/01/2008-01-07_14-45.html) \| Mon, 07. January 2008 -- 14:45 Bisher noch deutlicher Low-Profile, aber nicht geringer zu schaetzen (vor allen Dingen aus strategischer Sicht), ist die Tatsache, dass die Bilder, welche ich an dem Wochenende vor Neujahr in Nijmegen von Non-Divine gemacht hatte, wohl recht gut bei der Band angekommen sind. So hatte ich bereits am 2. Januar eine Nachricht in meiner Mailbox mit der Anfrage, ob die Bilder auf den Internetseiten der Band verwendet werden koennten; da wuesste ich sicherlich nicht, was fuer einen Einwand ich dagegen haben sollte. Allerdings habe ich mir direkt die Freiheit genommen um eine kleine Gegnleistung zu fragen: Bilder gegen Zugang bei den naechsten auf der Tagesordnung stehenden Konzerten. Die Reaktion darauf war ein umgehendes "Ich habe Dich schon einmal auf die Mailing-Liste gesetzt, um Dich auf dem Laufenden zu halten." Ich denke mal, dass es nicht schaden kann, sich ein wenig Verbindungen aufzubauen, vor allen Dingen, wenn auf diese Weise dann auch leichteren Zugang zu interessanten Events und auch weiteren Bands bekommt. Das sicherlich im Hinterkopf zu behaltende in Sachen Non-Divine ist, dass die Jungs recht heiss in den Medien gehandelt werden, schon eine Reihe bemerkenswerter Touraktivitaeten vorweisen koennen und ueber sehr vielversprechende Zukunftsaussichten verfuegen; da ein wenig am Ball zu bleiben und so diese Entwicklung ein wenig mitdokumentieren zu koennen ist sicherlich spannend. Insofern bin ich also einmal gespannt, wann die Jungs wieder live zu sehen sind -- wenn es nur irgendwie zu machen ist, werde ich in jedem Fall versuchen dort aufzutauchen.
+ * [Ausgeschlossen](/blog/2008/01/2008-01-07_22-27.html) \| Mon, 07. January 2008 -- 22:27
+ * [Geschafft](/blog/2008/01/2008-01-08_09-26.html) \| Tue, 08. January 2008 -- 09:26
+ * [LOFAR times-series data](/blog/2008/01/2008-01-08_18-37.html) \| Tue, 08. January 2008 -- 18:37
+ * [More complicated after all](/blog/2008/01/2008-01-09_10-54.html) \| Wed, 09. January 2008 -- 10:54
+ * [Valid until 1. Jan 2008](/blog/2008/01/2008-01-09_13-42.html) \| Wed, 09. January 2008 -- 13:42
+ * [usg.lofar.org offline](/blog/2008/01/2008-01-09_18-03.html) \| Wed, 09. January 2008 -- 18:03 The server of the User Software Group (USG) -- usg.lofar.org -- currently is offline. The event must have occured somewhen between 15:00h and 17:00h, but there is no indication so far of what went wrong there. With the machine out of reach currently both the website (including the Wiki) and the code repository are out of reach! I am keeping fingers crossed that nothing has crashed -- even with backups at hand it never is fun to reconstruct a system from scratch. Since I am not at ASTRON this week -- unless this becomes required -- I have to rely on the ICT people there; I already sent of a work order, but that I do not expect to be even opened before tomorrow morning. Until then no access to anny of the web-services of the USG is possible :-(
+ * [Fehlerhafter Eindruck](/blog/2008/01/2008-01-10_00-02.html) \| Thu, 10. January 2008 -- 00:02
+ * [USG server still down](/blog/2008/01/2008-01-10_10-55.html) \| Thu, 10. January 2008 -- 10:55
+ * [How to take down USG services](/blog/2008/01/2008-01-10_15-30.html) \| Thu, 10. January 2008 -- 15:30
+ * [USG server remains down](/blog/2008/01/2008-01-11_12-13.html) \| Fri, 11. January 2008 -- 12:13
+ * [USG server down until Monday](/blog/2008/01/2008-01-11_14-56.html) \| Fri, 11. January 2008 -- 14:56
+ * [01011001 Release party](/blog/2008/01/2008-01-11_17-03.html) \| Fri, 11. January 2008 -- 17:03
+ * [Vor dem langen Abend](/blog/2008/01/2008-01-11_20-02.html) \| Fri, 11. January 2008 -- 20:02
+ * [De Ark van Noach](/blog/2008/01/2008-01-11_21-27.html) \| Fri, 11. January 2008 -- 21:27
+ * [Doch nicht Arnhem](/blog/2008/01/2008-01-12_12-58.html) \| Sat, 12. January 2008 -- 12:58
+ * [Doch Arnhem](/blog/2008/01/2008-01-13_13-52.html) \| Sun, 13. January 2008 -- 13:52
+ * [Altbekannter Fehler](/blog/2008/01/2008-01-13_18-40.html) \| Sun, 13. January 2008 -- 18:40
+ * [Start einer Tradition](/blog/2008/01/2008-01-14_00-54.html) \| Mon, 14. January 2008 -- 00:54
+ * [Wieder im Norden](/blog/2008/01/2008-01-14_09-45.html) \| Mon, 14. January 2008 -- 09:45
+ * [Recovering the USG server](/blog/2008/01/2008-01-14_18-24.html) \| Mon, 14. January 2008 -- 18:24
+ * [Bringing back the server (Day 2)](/blog/2008/01/2008-01-15_11-11.html) \| Tue, 15. January 2008 -- 11:11
+ * [Server running again](/blog/2008/01/2008-01-15_16-22.html) \| Tue, 15. January 2008 -- 16:22
+ * [Quo vadis?](/blog/2008/01/2008-01-16_02-34.html) \| Wed, 16. January 2008 -- 02:34
+ * [Und schon wieder weg](/blog/2008/01/2008-01-16_18-19.html) \| Wed, 16. January 2008 -- 18:19
+ * [Ocean Dome](/blog/2008/01/2008-01-16_20-35.html) \| Wed, 16. January 2008 -- 20:35
+ * [First official D300 frames](/blog/2008/01/2008-01-17_01-29.html) \| Thu, 17. January 2008 -- 01:29
+ * [Naechte in Dwingeloo](/blog/2008/01/2008-01-17_02-38.html) \| Thu, 17. January 2008 -- 02:38
+ * [Die Sache mit der Erreichbarkeit](/blog/2008/01/2008-01-17_10-20.html) \| Thu, 17. January 2008 -- 10:20
+ * [Spielzeuge](/blog/2008/01/2008-01-17_16-17.html) \| Thu, 17. January 2008 -- 16:17
+ * [Be careful with the spell-checker](/blog/2008/01/2008-01-18_01-01.html) \| Fri, 18. January 2008 -- 01:01
+ * [Was noch zu regeln war](/blog/2008/01/2008-01-18_15-15.html) \| Fri, 18. January 2008 -- 15:15
+ * [Leider zutreffend](/blog/2008/01/2008-01-19_09-55.html) \| Sat, 19. January 2008 -- 09:55
+ * [Sonntag zuhause](/blog/2008/01/2008-01-20_15-11.html) \| Sun, 20. January 2008 -- 15:11
+ * [Warten auf die Handwerker](/blog/2008/01/2008-01-21_12-16.html) \| Mon, 21. January 2008 -- 12:16
+ * [Laeuft wieder](/blog/2008/01/2008-01-21_17-38.html) \| Mon, 21. January 2008 -- 17:38
+ * [First LOFAR PhD thesis](/blog/2008/01/2008-01-22_16-33.html) \| Tue, 22. January 2008 -- 16:33
+ * [Nachlese vom Dienstag](/blog/2008/01/2008-01-23_08-54.html) \| Wed, 23. January 2008 -- 08:54
+ * [Und noch einmal Dienstag...](/blog/2008/01/2008-01-23_09-47.html) \| Wed, 23. January 2008 -- 09:47
+ * [Waere eine Mitteilung wert](/blog/2008/01/2008-01-24_02-32.html) \| Thu, 24. January 2008 -- 02:32
+ * [Parallele Entwicklung](/blog/2008/01/2008-01-24_09-54.html) \| Thu, 24. January 2008 -- 09:54
+ * [Ein wenig Verwirrung](/blog/2008/01/2008-01-24_17-18.html) \| Thu, 24. January 2008 -- 17:18
+ * [Ayreon Instore & Signeersessie](/blog/2008/01/2008-01-25_13-25.html) \| Fri, 25. January 2008 -- 13:25
+ * [Getting better at it](/blog/2008/01/2008-01-25_15-12.html) \| Fri, 25. January 2008 -- 15:12
+ * [Zurueck aus Delft](/blog/2008/01/2008-01-27_02-21.html) \| Sun, 27. January 2008 -- 02:21
+ * [Ayreon... aftermath](/blog/2008/01/2008-01-27_21-30.html) \| Sun, 27. January 2008 -- 21:30
+ * [Ayreon pictures online](/blog/2008/01/2008-01-28_11-21.html) \| Mon, 28. January 2008 -- 11:21
+ * [The risk you have to live with](/blog/2008/01/2008-01-28_20-48.html) \| Mon, 28. January 2008 -- 20:48
+ * [Frame count](/blog/2008/01/2008-01-29_09-44.html) \| Tue, 29. January 2008 -- 09:44
+ * [Start in das Foto-Wochenende](/blog/2008/01/2008-01-29_23-48.html) \| Tue, 29. January 2008 -- 23:48
+ * [Verspaetung aufgeholt](/blog/2008/01/2008-01-30_09-47.html) \| Wed, 30. January 2008 -- 09:47
+ * [Ayreon -- Into The Electric Castle](/blog/2008/01/2008-01-30_10-51.html) \| Wed, 30. January 2008 -- 10:51
+ * [USG server back online](/blog/2008/01/2008-01-30_12-38.html) \| Wed, 30. January 2008 -- 12:38
+ * [Sonnenuntergang in der Heide](/blog/2008/01/2008-01-30_19-08.html) \| Wed, 30. January 2008 -- 19:08
+ * [Aufloesungserscheinungen](/blog/2008/01/2008-01-31_18-16.html) \| Thu, 31. January 2008 -- 18:16
 
 ### February ###
 
-  * [USG server changes](/blog/2008/02/2008-02-01_09-40.html) \| Fri, 01. February 2008 -- 09:40 \|
-  * [USG server -- the saga continues...](/blog/2008/02/2008-02-01_14-23.html) \| Fri, 01. February 2008 -- 14:23 \|
-  * [Karneval im Schnee (?)](/blog/2008/02/2008-02-02_10-35.html) \| Sat, 02. February 2008 -- 10:35 \|
-  * [Wieder zurueck](/blog/2008/02/2008-02-03_04-54.html) \| Sun, 03. February 2008 -- 04:54 \|
-  * [Zurueck vom Karnevalszug](/blog/2008/02/2008-02-03_16-13.html) \| Sun, 03. February 2008 -- 16:13 \|
-  * [Voll erwischt](/blog/2008/02/2008-02-04_11-22.html) \| Mon, 04. February 2008 -- 11:22 \|
-  * [Doch wieder kompliziert](/blog/2008/02/2008-02-04_18-44.html) \| Mon, 04. February 2008 -- 18:44 \|
-  * [Geht einfach nicht in die Koepfe rein](/blog/2008/02/2008-02-05_09-32.html) \| Tue, 05. February 2008 -- 09:32 \|
-  * [Einfach zu verlockend](/blog/2008/02/2008-02-05_13-27.html) \| Tue, 05. February 2008 -- 13:27 \|
-  * [Zurueck aus Berghem](/blog/2008/02/2008-02-06_00-15.html) \| Wed, 06. February 2008 -- 00:15 \|
-  * [Was einfach auf die Laune geht](/blog/2008/02/2008-02-06_08-30.html) \| Wed, 06. February 2008 -- 08:30 \|
-  * [Muss man in der Tat bei aufpassen](/blog/2008/02/2008-02-06_09-47.html) \| Wed, 06. February 2008 -- 09:47 \|
-  * [Karneval ueberlebt](/blog/2008/02/2008-02-07_15-10.html) \| Thu, 07. February 2008 -- 15:10 \|
-  * [Unausgewogen und unausgeschlafen](/blog/2008/02/2008-02-07_17-17.html) \| Thu, 07. February 2008 -- 17:17 \|
-  * [Reiseplaene](/blog/2008/02/2008-02-08_12-11.html) \| Fri, 08. February 2008 -- 12:11 \|
-  * [Nicht so optimal](/blog/2008/02/2008-02-08_18-52.html) \| Fri, 08. February 2008 -- 18:52 \|
-  * [Ein wenig knapp](/blog/2008/02/2008-02-08_19-51.html) \| Fri, 08. February 2008 -- 19:51 \|
-  * [Zwischenstop in Koeln](/blog/2008/02/2008-02-08_22-03.html) \| Fri, 08. February 2008 -- 22:03 \|
-  * [Geaenderte Rueckreise](/blog/2008/02/2008-02-11_14-43.html) \| Mon, 11. February 2008 -- 14:43 \|
-  * [Auf der Zielgeraden](/blog/2008/02/2008-02-11_16-39.html) \| Mon, 11. February 2008 -- 16:39 \|
-  * [Sonnenuntergang am Drachenfels](/blog/2008/02/2008-02-13_08-41.html) \| Wed, 13. February 2008 -- 08:41 \|
-  * [Und dann waren es vier...](/blog/2008/02/2008-02-13_09-47.html) \| Wed, 13. February 2008 -- 09:47 \|
-  * [Minority Report](/blog/2008/02/2008-02-14_01-07.html) \| Thu, 14. February 2008 -- 01:07 \|
-  * [Was die weiteren Planungen betrifft](/blog/2008/02/2008-02-14_17-16.html) \| Thu, 14. February 2008 -- 17:16 \|
-  * [Neue Moebel](/blog/2008/02/2008-02-15_12-37.html) \| Fri, 15. February 2008 -- 12:37 \|
-  * [Lange Nacht in Groesbeek](/blog/2008/02/2008-02-15_14-38.html) \| Fri, 15. February 2008 -- 14:38 \|
-  * [Fruehlingswetter](/blog/2008/02/2008-02-16_12-11.html) \| Sat, 16. February 2008 -- 12:11 \|
-  * [Warten Backstage](/blog/2008/02/2008-02-16_23-12.html) \| Sat, 16. February 2008 -- 23:12 \|
-  * [Ende Set 1](/blog/2008/02/2008-02-17_00-58.html) \| Sun, 17. February 2008 -- 00:58 \|
-  * [Zurueck aus Groesbeek](/blog/2008/02/2008-02-17_04-07.html) \| Sun, 17. February 2008 -- 04:07 \|
-  * [Noah pictures](/blog/2008/02/2008-02-18_15-32.html) \| Mon, 18. February 2008 -- 15:32 \|
-  * [Und noch mehr Noah Bilder...](/blog/2008/02/2008-02-19_13-46.html) \| Tue, 19. February 2008 -- 13:46 \|
-  * [Geht ja doch](/blog/2008/02/2008-02-20_09-47.html) \| Wed, 20. February 2008 -- 09:47 \|
-  * [Verfruehte Heimreise](/blog/2008/02/2008-02-21_15-19.html) \| Thu, 21. February 2008 -- 15:19 \|
-  * [Foto-loses Wochenende](/blog/2008/02/2008-02-25_11-37.html) \| Mon, 25. February 2008 -- 11:37 \|
-  * [Some compensation for the past weekend](/blog/2008/02/2008-02-25_18-36.html) \| Mon, 25. February 2008 -- 18:36 \|
-  * [Upcoming Threshold Shows](/blog/2008/02/2008-02-26_14-35.html) \| Tue, 26. February 2008 -- 14:35 \|
-  * [Required updates](/blog/2008/02/2008-02-27_08-39.html) \| Wed, 27. February 2008 -- 08:39 \|
-  * [Zwolle -- Marker only](/blog/2008/02/2008-02-27_09-46.html) \| Wed, 27. February 2008 -- 09:46 \|
-  * [Niemand da](/blog/2008/02/2008-02-27_16-27.html) \| Wed, 27. February 2008 -- 16:27 \|
-  * [Non-Divine](/blog/2008/02/2008-02-28_10-39.html) \| Thu, 28. February 2008 -- 10:39 \|
-  * [Querverbindung](/blog/2008/02/2008-02-28_17-17.html) \| Thu, 28. February 2008 -- 17:17 \|
-  * [Karma's Kitchen](/blog/2008/02/2008-02-29_12-37.html) \| Fri, 29. February 2008 -- 12:37 \|
-  * [Nikkor 17-55mm f/2.8](/blog/2008/02/2008-02-29_13-44.html) \| Fri, 29. February 2008 -- 13:44 \|
-  * [Eingetroffen](/blog/2008/02/2008-02-29_17-56.html) \| Fri, 29. February 2008 -- 17:56 \|
+ * [USG server changes](/blog/2008/02/2008-02-01_09-40.html) \| Fri, 01. February 2008 -- 09:40
+ * [USG server -- the saga continues...](/blog/2008/02/2008-02-01_14-23.html) \| Fri, 01. February 2008 -- 14:23
+ * [Karneval im Schnee (?)](/blog/2008/02/2008-02-02_10-35.html) \| Sat, 02. February 2008 -- 10:35
+ * [Wieder zurueck](/blog/2008/02/2008-02-03_04-54.html) \| Sun, 03. February 2008 -- 04:54
+ * [Zurueck vom Karnevalszug](/blog/2008/02/2008-02-03_16-13.html) \| Sun, 03. February 2008 -- 16:13
+ * [Voll erwischt](/blog/2008/02/2008-02-04_11-22.html) \| Mon, 04. February 2008 -- 11:22
+ * [Doch wieder kompliziert](/blog/2008/02/2008-02-04_18-44.html) \| Mon, 04. February 2008 -- 18:44
+ * [Geht einfach nicht in die Koepfe rein](/blog/2008/02/2008-02-05_09-32.html) \| Tue, 05. February 2008 -- 09:32
+ * [Einfach zu verlockend](/blog/2008/02/2008-02-05_13-27.html) \| Tue, 05. February 2008 -- 13:27
+ * [Zurueck aus Berghem](/blog/2008/02/2008-02-06_00-15.html) \| Wed, 06. February 2008 -- 00:15
+ * [Was einfach auf die Laune geht](/blog/2008/02/2008-02-06_08-30.html) \| Wed, 06. February 2008 -- 08:30
+ * [Muss man in der Tat bei aufpassen](/blog/2008/02/2008-02-06_09-47.html) \| Wed, 06. February 2008 -- 09:47
+ * [Karneval ueberlebt](/blog/2008/02/2008-02-07_15-10.html) \| Thu, 07. February 2008 -- 15:10
+ * [Unausgewogen und unausgeschlafen](/blog/2008/02/2008-02-07_17-17.html) \| Thu, 07. February 2008 -- 17:17
+ * [Reiseplaene](/blog/2008/02/2008-02-08_12-11.html) \| Fri, 08. February 2008 -- 12:11
+ * [Nicht so optimal](/blog/2008/02/2008-02-08_18-52.html) \| Fri, 08. February 2008 -- 18:52
+ * [Ein wenig knapp](/blog/2008/02/2008-02-08_19-51.html) \| Fri, 08. February 2008 -- 19:51
+ * [Zwischenstop in Koeln](/blog/2008/02/2008-02-08_22-03.html) \| Fri, 08. February 2008 -- 22:03
+ * [Geaenderte Rueckreise](/blog/2008/02/2008-02-11_14-43.html) \| Mon, 11. February 2008 -- 14:43
+ * [Auf der Zielgeraden](/blog/2008/02/2008-02-11_16-39.html) \| Mon, 11. February 2008 -- 16:39
+ * [Sonnenuntergang am Drachenfels](/blog/2008/02/2008-02-13_08-41.html) \| Wed, 13. February 2008 -- 08:41
+ * [Und dann waren es vier...](/blog/2008/02/2008-02-13_09-47.html) \| Wed, 13. February 2008 -- 09:47
+ * [Minority Report](/blog/2008/02/2008-02-14_01-07.html) \| Thu, 14. February 2008 -- 01:07
+ * [Was die weiteren Planungen betrifft](/blog/2008/02/2008-02-14_17-16.html) \| Thu, 14. February 2008 -- 17:16
+ * [Neue Moebel](/blog/2008/02/2008-02-15_12-37.html) \| Fri, 15. February 2008 -- 12:37
+ * [Lange Nacht in Groesbeek](/blog/2008/02/2008-02-15_14-38.html) \| Fri, 15. February 2008 -- 14:38
+ * [Fruehlingswetter](/blog/2008/02/2008-02-16_12-11.html) \| Sat, 16. February 2008 -- 12:11
+ * [Warten Backstage](/blog/2008/02/2008-02-16_23-12.html) \| Sat, 16. February 2008 -- 23:12
+ * [Ende Set 1](/blog/2008/02/2008-02-17_00-58.html) \| Sun, 17. February 2008 -- 00:58
+ * [Zurueck aus Groesbeek](/blog/2008/02/2008-02-17_04-07.html) \| Sun, 17. February 2008 -- 04:07
+ * [Noah pictures](/blog/2008/02/2008-02-18_15-32.html) \| Mon, 18. February 2008 -- 15:32
+ * [Und noch mehr Noah Bilder...](/blog/2008/02/2008-02-19_13-46.html) \| Tue, 19. February 2008 -- 13:46
+ * [Geht ja doch](/blog/2008/02/2008-02-20_09-47.html) \| Wed, 20. February 2008 -- 09:47
+ * [Verfruehte Heimreise](/blog/2008/02/2008-02-21_15-19.html) \| Thu, 21. February 2008 -- 15:19
+ * [Foto-loses Wochenende](/blog/2008/02/2008-02-25_11-37.html) \| Mon, 25. February 2008 -- 11:37
+ * [Some compensation for the past weekend](/blog/2008/02/2008-02-25_18-36.html) \| Mon, 25. February 2008 -- 18:36
+ * [Upcoming Threshold Shows](/blog/2008/02/2008-02-26_14-35.html) \| Tue, 26. February 2008 -- 14:35
+ * [Required updates](/blog/2008/02/2008-02-27_08-39.html) \| Wed, 27. February 2008 -- 08:39
+ * [Zwolle -- Marker only](/blog/2008/02/2008-02-27_09-46.html) \| Wed, 27. February 2008 -- 09:46
+ * [Niemand da](/blog/2008/02/2008-02-27_16-27.html) \| Wed, 27. February 2008 -- 16:27
+ * [Non-Divine](/blog/2008/02/2008-02-28_10-39.html) \| Thu, 28. February 2008 -- 10:39
+ * [Querverbindung](/blog/2008/02/2008-02-28_17-17.html) \| Thu, 28. February 2008 -- 17:17
+ * [Karma's Kitchen](/blog/2008/02/2008-02-29_12-37.html) \| Fri, 29. February 2008 -- 12:37
+ * [Nikkor 17-55mm f/2.8](/blog/2008/02/2008-02-29_13-44.html) \| Fri, 29. February 2008 -- 13:44
+ * [Eingetroffen](/blog/2008/02/2008-02-29_17-56.html) \| Fri, 29. February 2008 -- 17:56
 
 ### March ###
 
-  * [Neuanschaffungen -- Teil 1](/blog/2008/03/2008-03-01_10-40.html) \| Sat, 01. March 2008 -- 10:40 \|
-  * [Neuanschaffungen -- Teil 2](/blog/2008/03/2008-03-01_11-26.html) \| Sat, 01. March 2008 -- 11:26 \|
-  * [Zurueck aus Zwolle](/blog/2008/03/2008-03-02_02-29.html) \| Sun, 02. March 2008 -- 02:29 \|
-  * [Konzertwochende -- Teil 2](/blog/2008/03/2008-03-03_01-07.html) \| Mon, 03. March 2008 -- 01:07 \|
-  * [Foto-Rucksack](/blog/2008/03/2008-03-04_23-38.html) \| Tue, 04. March 2008 -- 23:38 \|
-  * [Wieder normale Durchreise](/blog/2008/03/2008-03-05_09-48.html) \| Wed, 05. March 2008 -- 09:48 \|
-  * [Frueher zurueck](/blog/2008/03/2008-03-06_15-44.html) \| Thu, 06. March 2008 -- 15:44 \|
-  * [Umbauarbeiten](/blog/2008/03/2008-03-06_16-06.html) \| Thu, 06. March 2008 -- 16:06 \|
-  * [Sonntagsschule](/blog/2008/03/2008-03-09_14-50.html) \| Sun, 09. March 2008 -- 14:50 \|
-  * [Vorsichtsmassnahme](/blog/2008/03/2008-03-11_11-00.html) \| Tue, 11. March 2008 -- 11:00 \|
-  * [Produktive Bahnfahrt](/blog/2008/03/2008-03-12_09-47.html) \| Wed, 12. March 2008 -- 09:47 \|
-  * [Viele kleine Dinge](/blog/2008/03/2008-03-13_17-16.html) \| Thu, 13. March 2008 -- 17:16 \|
-  * [Vor dem Aufbruch ins Wochenende](/blog/2008/03/2008-03-14_14-38.html) \| Fri, 14. March 2008 -- 14:38 \|
-  * [Reisepannen](/blog/2008/03/2008-03-14_18-03.html) \| Fri, 14. March 2008 -- 18:03 \|
-  * [Deutlich entspannter](/blog/2008/03/2008-03-17_10-52.html) \| Mon, 17. March 2008 -- 10:52 \|
-  * [Im Hintergrund](/blog/2008/03/2008-03-17_12-50.html) \| Mon, 17. March 2008 -- 12:50 \|
-  * [Wohl nicht](/blog/2008/03/2008-03-18_09-00.html) \| Tue, 18. March 2008 -- 09:00 \|
-  * [Wie befuerchtet](/blog/2008/03/2008-03-18_10-07.html) \| Tue, 18. March 2008 -- 10:07 \|
-  * [Een nieuwe Noah anno 2008](/blog/2008/03/2008-03-19_00-37.html) \| Wed, 19. March 2008 -- 00:37 \|
-  * [Networking](/blog/2008/03/2008-03-19_10-41.html) \| Wed, 19. March 2008 -- 10:41 \|
-  * [Rundreise](/blog/2008/03/2008-03-20_16-16.html) \| Thu, 20. March 2008 -- 16:16 \|
+ * [Neuanschaffungen -- Teil 1](/blog/2008/03/2008-03-01_10-40.html) \| Sat, 01. March 2008 -- 10:40
+ * [Neuanschaffungen -- Teil 2](/blog/2008/03/2008-03-01_11-26.html) \| Sat, 01. March 2008 -- 11:26
+ * [Zurueck aus Zwolle](/blog/2008/03/2008-03-02_02-29.html) \| Sun, 02. March 2008 -- 02:29
+ * [Konzertwochende -- Teil 2](/blog/2008/03/2008-03-03_01-07.html) \| Mon, 03. March 2008 -- 01:07
+ * [Foto-Rucksack](/blog/2008/03/2008-03-04_23-38.html) \| Tue, 04. March 2008 -- 23:38
+ * [Wieder normale Durchreise](/blog/2008/03/2008-03-05_09-48.html) \| Wed, 05. March 2008 -- 09:48
+ * [Frueher zurueck](/blog/2008/03/2008-03-06_15-44.html) \| Thu, 06. March 2008 -- 15:44
+ * [Umbauarbeiten](/blog/2008/03/2008-03-06_16-06.html) \| Thu, 06. March 2008 -- 16:06
+ * [Sonntagsschule](/blog/2008/03/2008-03-09_14-50.html) \| Sun, 09. March 2008 -- 14:50
+ * [Vorsichtsmassnahme](/blog/2008/03/2008-03-11_11-00.html) \| Tue, 11. March 2008 -- 11:00
+ * [Produktive Bahnfahrt](/blog/2008/03/2008-03-12_09-47.html) \| Wed, 12. March 2008 -- 09:47
+ * [Viele kleine Dinge](/blog/2008/03/2008-03-13_17-16.html) \| Thu, 13. March 2008 -- 17:16
+ * [Vor dem Aufbruch ins Wochenende](/blog/2008/03/2008-03-14_14-38.html) \| Fri, 14. March 2008 -- 14:38
+ * [Reisepannen](/blog/2008/03/2008-03-14_18-03.html) \| Fri, 14. March 2008 -- 18:03
+ * [Deutlich entspannter](/blog/2008/03/2008-03-17_10-52.html) \| Mon, 17. March 2008 -- 10:52
+ * [Im Hintergrund](/blog/2008/03/2008-03-17_12-50.html) \| Mon, 17. March 2008 -- 12:50
+ * [Wohl nicht](/blog/2008/03/2008-03-18_09-00.html) \| Tue, 18. March 2008 -- 09:00
+ * [Wie befuerchtet](/blog/2008/03/2008-03-18_10-07.html) \| Tue, 18. March 2008 -- 10:07
+ * [Een nieuwe Noah anno 2008](/blog/2008/03/2008-03-19_00-37.html) \| Wed, 19. March 2008 -- 00:37
+ * [Networking](/blog/2008/03/2008-03-19_10-41.html) \| Wed, 19. March 2008 -- 10:41
+ * [Rundreise](/blog/2008/03/2008-03-20_16-16.html) \| Thu, 20. March 2008 -- 16:16
 
 ### April ###
 
-  * [Nach langer Sendepause](/blog/2008/04/2008-04-02_09-47.html) \| Wed, 02. April 2008 -- 09:47 \|
-  * [Altair 4](/blog/2008/04/2008-04-03_18-15.html) \| Thu, 03. April 2008 -- 18:15 \|
-  * [Vor dem Aufbruch nach Amsterdam](/blog/2008/04/2008-04-04_17-12.html) \| Fri, 04. April 2008 -- 17:12 \|
-  * [Aufbruch nach Amsterdam](/blog/2008/04/2008-04-05_06-35.html) \| Sat, 05. April 2008 -- 06:35 \|
-  * [Unterwegs in Amsterdam](/blog/2008/04/2008-04-06_08-29.html) \| Sun, 06. April 2008 -- 08:29 \|
-  * [Zurueck aus Utrecht](/blog/2008/04/2008-04-06_16-07.html) \| Sun, 06. April 2008 -- 16:07 \|
-  * [Amsterdam bei Nacht](/blog/2008/04/2008-04-08_00-30.html) \| Tue, 08. April 2008 -- 00:30 \|
-  * [Rueckreise](/blog/2008/04/2008-04-09_20-50.html) \| Wed, 09. April 2008 -- 20:50 \|
-  * [Zurueck aus dem Norden](/blog/2008/04/2008-04-14_00-43.html) \| Mon, 14. April 2008 -- 00:43 \|
-  * [Wenn das Update den Rechner toetet](/blog/2008/04/2008-04-14_09-31.html) \| Mon, 14. April 2008 -- 09:31 \|
-  * [Nach einer ganzen Weile](/blog/2008/04/2008-04-16_10-18.html) \| Wed, 16. April 2008 -- 10:18 \|
-  * [Aktivitaeten und Diskussionen](/blog/2008/04/2008-04-17_19-16.html) \| Thu, 17. April 2008 -- 19:16 \|
-  * [Mal eben vorstellen](/blog/2008/04/2008-04-21_09-42.html) \| Mon, 21. April 2008 -- 09:42 \|
-  * [Kurze Nacht, lange Nacht](/blog/2008/04/2008-04-22_08-45.html) \| Tue, 22. April 2008 -- 08:45 \|
-  * [Wenn die Bordelektrik streikt](/blog/2008/04/2008-04-23_16-20.html) \| Wed, 23. April 2008 -- 16:20 \|
-  * [Geduldsprobe](/blog/2008/04/2008-04-23_23-40.html) \| Wed, 23. April 2008 -- 23:40 \|
-  * [Ghost Opera Tour Part II](/blog/2008/04/2008-04-26_09-11.html) \| Sat, 26. April 2008 -- 09:11 \|
-  * [Zu schoen um drinnen zu bleiben](/blog/2008/04/2008-04-27_17-13.html) \| Sun, 27. April 2008 -- 17:13 \|
-  * [Start in die Woche](/blog/2008/04/2008-04-28_12-12.html) \| Mon, 28. April 2008 -- 12:12 \|
-  * [Was ich mir nicht geben muss](/blog/2008/04/2008-04-29_11-52.html) \| Tue, 29. April 2008 -- 11:52 \|
-  * [MacBook Pro](/blog/2008/04/2008-04-29_12-38.html) \| Tue, 29. April 2008 -- 12:38 \|
+ * [Nach langer Sendepause](/blog/2008/04/2008-04-02_09-47.html) \| Wed, 02. April 2008 -- 09:47
+ * [Altair 4](/blog/2008/04/2008-04-03_18-15.html) \| Thu, 03. April 2008 -- 18:15
+ * [Vor dem Aufbruch nach Amsterdam](/blog/2008/04/2008-04-04_17-12.html) \| Fri, 04. April 2008 -- 17:12
+ * [Aufbruch nach Amsterdam](/blog/2008/04/2008-04-05_06-35.html) \| Sat, 05. April 2008 -- 06:35
+ * [Unterwegs in Amsterdam](/blog/2008/04/2008-04-06_08-29.html) \| Sun, 06. April 2008 -- 08:29
+ * [Zurueck aus Utrecht](/blog/2008/04/2008-04-06_16-07.html) \| Sun, 06. April 2008 -- 16:07
+ * [Amsterdam bei Nacht](/blog/2008/04/2008-04-08_00-30.html) \| Tue, 08. April 2008 -- 00:30
+ * [Rueckreise](/blog/2008/04/2008-04-09_20-50.html) \| Wed, 09. April 2008 -- 20:50
+ * [Zurueck aus dem Norden](/blog/2008/04/2008-04-14_00-43.html) \| Mon, 14. April 2008 -- 00:43
+ * [Wenn das Update den Rechner toetet](/blog/2008/04/2008-04-14_09-31.html) \| Mon, 14. April 2008 -- 09:31
+ * [Nach einer ganzen Weile](/blog/2008/04/2008-04-16_10-18.html) \| Wed, 16. April 2008 -- 10:18
+ * [Aktivitaeten und Diskussionen](/blog/2008/04/2008-04-17_19-16.html) \| Thu, 17. April 2008 -- 19:16
+ * [Mal eben vorstellen](/blog/2008/04/2008-04-21_09-42.html) \| Mon, 21. April 2008 -- 09:42
+ * [Kurze Nacht, lange Nacht](/blog/2008/04/2008-04-22_08-45.html) \| Tue, 22. April 2008 -- 08:45
+ * [Wenn die Bordelektrik streikt](/blog/2008/04/2008-04-23_16-20.html) \| Wed, 23. April 2008 -- 16:20
+ * [Geduldsprobe](/blog/2008/04/2008-04-23_23-40.html) \| Wed, 23. April 2008 -- 23:40
+ * [Ghost Opera Tour Part II](/blog/2008/04/2008-04-26_09-11.html) \| Sat, 26. April 2008 -- 09:11
+ * [Zu schoen um drinnen zu bleiben](/blog/2008/04/2008-04-27_17-13.html) \| Sun, 27. April 2008 -- 17:13
+ * [Start in die Woche](/blog/2008/04/2008-04-28_12-12.html) \| Mon, 28. April 2008 -- 12:12
+ * [Was ich mir nicht geben muss](/blog/2008/04/2008-04-29_11-52.html) \| Tue, 29. April 2008 -- 11:52
+ * [MacBook Pro](/blog/2008/04/2008-04-29_12-38.html) \| Tue, 29. April 2008 -- 12:38
 
 ### May ###
 
-  * [Vorbei der Tanz](/blog/2008/05/2008-05-01_00-36.html) \| Thu, 01. May 2008 -- 00:36 \|
-  * [Paket von/fuer Apple](/blog/2008/05/2008-05-02_15-08.html) \| Fri, 02. May 2008 -- 15:08 \|
-  * [Versuchung](/blog/2008/05/2008-05-02_17-13.html) \| Fri, 02. May 2008 -- 17:13 \|
-  * [Wetter nutzen](/blog/2008/05/2008-05-03_14-27.html) \| Sat, 03. May 2008 -- 14:27 \|
-  * [Bekanntes Problem](/blog/2008/05/2008-05-04_14-09.html) \| Sun, 04. May 2008 -- 14:09 \|
-  * [Auf dem platten Land](/blog/2008/05/2008-05-05_14-02.html) \| Mon, 05. May 2008 -- 14:02 \|
-  * [AF-S DX VR Zoom-Nikkor 18-200mm f/3.5-5.6G IF-ED](/blog/2008/05/2008-05-06_15-48.html) \| Tue, 06. May 2008 -- 15:48 \|
-  * [Doch nicht minimal](/blog/2008/05/2008-05-07_00-38.html) \| Wed, 07. May 2008 -- 00:38 \|
-  * [18-200mm -- first impressions](/blog/2008/05/2008-05-07_08-30.html) \| Wed, 07. May 2008 -- 08:30 \|
-  * [Zwolle einmal anders](/blog/2008/05/2008-05-07_09-55.html) \| Wed, 07. May 2008 -- 09:55 \|
-  * [Erste Bilder von der NAC](/blog/2008/05/2008-05-07_12-59.html) \| Wed, 07. May 2008 -- 12:59 \|
-  * [Nach zwei Tagen NAC ...](/blog/2008/05/2008-05-08_22-26.html) \| Thu, 08. May 2008 -- 22:26 \|
-  * [Rueckreise](/blog/2008/05/2008-05-09_14-50.html) \| Fri, 09. May 2008 -- 14:50 \|
-  * [D300 frame rates](/blog/2008/05/2008-05-10_12-34.html) \| Sat, 10. May 2008 -- 12:34 \|
-  * [Storage upgrade](/blog/2008/05/2008-05-10_14-12.html) \| Sat, 10. May 2008 -- 14:12 \|
-  * [The weekend in photography](/blog/2008/05/2008-05-12_10-11.html) \| Mon, 12. May 2008 -- 10:11 \|
-  * [The way I like it](/blog/2008/05/2008-05-13_11-24.html) \| Tue, 13. May 2008 -- 11:24 \|
-  * [The hell with milk...](/blog/2008/05/2008-05-13_16-27.html) \| Tue, 13. May 2008 -- 16:27 \|
-  * [Predictable random number generator](/blog/2008/05/2008-05-13_19-11.html) \| Tue, 13. May 2008 -- 19:11 \|
-  * [D300 x2](/blog/2008/05/2008-05-14_09-13.html) \| Wed, 14. May 2008 -- 09:13 \|
-  * [Same old problem](/blog/2008/05/2008-05-14_12-04.html) \| Wed, 14. May 2008 -- 12:04 \|
-  * [Abstecher nach Amsterdam](/blog/2008/05/2008-05-14_19-46.html) \| Wed, 14. May 2008 -- 19:46 \|
-  * [Vor dem Absprung](/blog/2008/05/2008-05-16_18-06.html) \| Fri, 16. May 2008 -- 18:06 \|
-  * [Gruppenfoto](/blog/2008/05/2008-05-17_09-40.html) \| Sat, 17. May 2008 -- 09:40 \|
-  * [Reiseplaene](/blog/2008/05/2008-05-17_13-58.html) \| Sat, 17. May 2008 -- 13:58 \|
-  * [Cultures on my street](/blog/2008/05/2008-05-17_14-26.html) \| Sat, 17. May 2008 -- 14:26 \|
-  * [Zielgerade](/blog/2008/05/2008-05-18_08-39.html) \| Sun, 18. May 2008 -- 08:39 \|
-  * [Changes](/blog/2008/05/2008-05-18_09-54.html) \| Sun, 18. May 2008 -- 09:54 \|
-  * [What is happening to the pictures?](/blog/2008/05/2008-05-18_12-13.html) \| Sun, 18. May 2008 -- 12:13 \|
-  * [Frueh fertig](/blog/2008/05/2008-05-18_17-43.html) \| Sun, 18. May 2008 -- 17:43 \|
-  * [Reisebeginn](/blog/2008/05/2008-05-18_18-38.html) \| Sun, 18. May 2008 -- 18:38 \|
-  * [Unterwegs](/blog/2008/05/2008-05-18_20-51.html) \| Sun, 18. May 2008 -- 20:51 \|
-  * [Die lange Nacht des Wartens](/blog/2008/05/2008-05-18_22-27.html) \| Sun, 18. May 2008 -- 22:27 \|
-  * [Chronicles of Narnia](/blog/2008/05/2008-05-18_22-56.html) \| Sun, 18. May 2008 -- 22:56 \|
-  * [Check-in -- Teil 1](/blog/2008/05/2008-05-19_04-44.html) \| Mon, 19. May 2008 -- 04:44 \|
-  * [Check-in -- Teil 2](/blog/2008/05/2008-05-19_05-40.html) \| Mon, 19. May 2008 -- 05:40 \|
-  * [Romaenien -- Tag 2](/blog/2008/05/2008-05-20_21-40.html) \| Tue, 20. May 2008 -- 21:40 \|
-  * [Nach einer Woche Romaenien...](/blog/2008/05/2008-05-26_04-42.html) \| Mon, 26. May 2008 -- 04:42 \|
-  * [Blick in den Rucksack](/blog/2008/05/2008-05-30_09-58.html) \| Fri, 30. May 2008 -- 09:58 \|
-  * [Wieder auf deutschem Boden](/blog/2008/05/2008-05-30_13-30.html) \| Fri, 30. May 2008 -- 13:30 \|
+ * [Vorbei der Tanz](/blog/2008/05/2008-05-01_00-36.html) \| Thu, 01. May 2008 -- 00:36
+ * [Paket von/fuer Apple](/blog/2008/05/2008-05-02_15-08.html) \| Fri, 02. May 2008 -- 15:08
+ * [Versuchung](/blog/2008/05/2008-05-02_17-13.html) \| Fri, 02. May 2008 -- 17:13 Wow, da muss ich mich aber ganz stark zusammenreissen um nicht eine grosse Dummheit zu begehen.. Ich habe gerade eben mal die Suche Preisen fuer das Nikon AF-S DX VR 18-200mm Objektiv gestartet; nach den Erfahrungen vom Koeniginnentag stimme ich mit der grossen Anzahl der Reviews ueberein, dass dies eine grandiose Alround-Linse ist, welche die ueberwiegende Anzahl der Faelle abdeckt, wenn man mit der Kamera unterwegs ist. Statt einen ganzen Rucksack vollgepackt mit Objektiven, reicht das 18-200mm zusammen mit z.B. dem 50mm f/1.4 vollkommen aus. Wenn ich mir denn Mittwoch noch einmal vor Augen halte, dann habe ich doch recht viel Zeit damit verbracht zwischen dem 18-135mm und dem 70-200mm hin und her zu wechseln -- entweder weil ich mit dem einen nicht nah genug heran kam oder eben ein groesseres Blickfeld noetig hatte. Mit dem 18-200mm haette mir wahrscheinlich gut 80% der Objektivwechsel sparen koennen, vor allen Dingen da ich die meiste Zeit eben nicht bei geringem Licht fotographiert habe, so dass ich nicicht bis auf die f/2.8 runter musste. Klingt also logisch, dass das 18-200mm eine anzuratende Allround-Loesung bietet; entscheident dabei ist, dass es sich nicht einfach nur um einen faulen Kompromis handelt, sondern dass Nikor mit dem Objekt ein wirklich hochwertiges Stueck Glas auf den Markt gebracht hat. Folgerichtig habe ich mich also mal ein wenig umgeschaut, wie tief ich denn ins Portemonait greifen muesste, wenn ich mir das gute Teil anschaffe. Stellt sich heraus, dass es garnicht so viel ist, was ich dafuer auf den Tisch legen muesste: bei DigitalStreet hier in der Naehe von Nijmegen (wo ich ja letztes Jahr bereits einiges an Geld gelassen habe), gibt es das 18-200mm fuer 550 EUR zu haben -- und auch direkt auf Vorrat. Da habe ich nicht sonderlich lange ueberleg, und dies direkt vorgemerkt. Was ich dann aber noch schnell machen wollte, was mal zu schauen, wie es denn mit den Preisen fuer die Zusatzgriffe fuer D80 und D300 aussieht... was mir da aber unter die Augen gekommen ist hat mich zusammenzucken lassen:
+ * [Wetter nutzen](/blog/2008/05/2008-05-03_14-27.html) \| Sat, 03. May 2008 -- 14:27
+ * [Bekanntes Problem](/blog/2008/05/2008-05-04_14-09.html) \| Sun, 04. May 2008 -- 14:09
+ * [Auf dem platten Land](/blog/2008/05/2008-05-05_14-02.html) \| Mon, 05. May 2008 -- 14:02
+ * [AF-S DX VR Zoom-Nikkor 18-200mm f/3.5-5.6G IF-ED](/blog/2008/05/2008-05-06_15-48.html) \| Tue, 06. May 2008 -- 15:48
+ * [Doch nicht minimal](/blog/2008/05/2008-05-07_00-38.html) \| Wed, 07. May 2008 -- 00:38
+ * [18-200mm -- first impressions](/blog/2008/05/2008-05-07_08-30.html) \| Wed, 07. May 2008 -- 08:30 Even though it not even are 24 hours since I picked up my latest addition to my lens collection, a AF-S DX VR Zoom-Nikkor 18-200mm f/3.5-5.6G IF-ED, there are a few things I can say already. Especially given the weather and light conditions yesterday evening, there was no way to just stay inside and do nothing; instead I mounted the lens in the D300 and took a little walk, just to get some first ideas what possibilities the new lens would provide me with. As a result of this there are a few very first impressions -- but to be very clear about it: these are just first impressions, not elaborate and detailed test results.
+ * [Zwolle einmal anders](/blog/2008/05/2008-05-07_09-55.html) \| Wed, 07. May 2008 -- 09:55
+ * [Erste Bilder von der NAC](/blog/2008/05/2008-05-07_12-59.html) \| Wed, 07. May 2008 -- 12:59
+ * [Nach zwei Tagen NAC ...](/blog/2008/05/2008-05-08_22-26.html) \| Thu, 08. May 2008 -- 22:26
+ * [Rueckreise](/blog/2008/05/2008-05-09_14-50.html) \| Fri, 09. May 2008 -- 14:50
+ * [D300 frame rates](/blog/2008/05/2008-05-10_12-34.html) \| Sat, 10. May 2008 -- 12:34
+ * [Storage upgrade](/blog/2008/05/2008-05-10_14-12.html) \| Sat, 10. May 2008 -- 14:12
+ * [The weekend in photography](/blog/2008/05/2008-05-12_10-11.html) \| Mon, 12. May 2008 -- 10:11
+ * [The way I like it](/blog/2008/05/2008-05-13_11-24.html) \| Tue, 13. May 2008 -- 11:24
+ * [The hell with milk...](/blog/2008/05/2008-05-13_16-27.html) \| Tue, 13. May 2008 -- 16:27
+ * [Predictable random number generator](/blog/2008/05/2008-05-13_19-11.html) \| Tue, 13. May 2008 -- 19:11
+ * [D300 x2](/blog/2008/05/2008-05-14_09-13.html) \| Wed, 14. May 2008 -- 09:13
+ * [Same old problem](/blog/2008/05/2008-05-14_12-04.html) \| Wed, 14. May 2008 -- 12:04
+ * [Abstecher nach Amsterdam](/blog/2008/05/2008-05-14_19-46.html) \| Wed, 14. May 2008 -- 19:46
+ * [Vor dem Absprung](/blog/2008/05/2008-05-16_18-06.html) \| Fri, 16. May 2008 -- 18:06
+ * [Gruppenfoto](/blog/2008/05/2008-05-17_09-40.html) \| Sat, 17. May 2008 -- 09:40
+ * [Reiseplaene](/blog/2008/05/2008-05-17_13-58.html) \| Sat, 17. May 2008 -- 13:58
+ * [Cultures on my street](/blog/2008/05/2008-05-17_14-26.html) \| Sat, 17. May 2008 -- 14:26
+ * [Zielgerade](/blog/2008/05/2008-05-18_08-39.html) \| Sun, 18. May 2008 -- 08:39
+ * [Changes](/blog/2008/05/2008-05-18_09-54.html) \| Sun, 18. May 2008 -- 09:54
+ * [What is happening to the pictures?](/blog/2008/05/2008-05-18_12-13.html) \| Sun, 18. May 2008 -- 12:13
+ * [Frueh fertig](/blog/2008/05/2008-05-18_17-43.html) \| Sun, 18. May 2008 -- 17:43
+ * [Reisebeginn](/blog/2008/05/2008-05-18_18-38.html) \| Sun, 18. May 2008 -- 18:38
+ * [Unterwegs](/blog/2008/05/2008-05-18_20-51.html) \| Sun, 18. May 2008 -- 20:51 Das ist es ja, was ich so am Zugfahren (vor allen Dingen im ICE) mag: ich kann in Ruhe noch ein wenig arbeiten, lesen, etc. Auf diese Weise habe ich immerhin noch vor Duesseldorf geschafft die Erzeugung der Python Bindings fuer die CR-Tools auch unter Mac OS X ans Laufen zu bringen. Neben dem ewig ueber meinem Kopf haengenden Skymapper ist dies ein weiteres Project, welches lieber gestern als heute fertig gesehen wuerde. Da ich aber nicht alles gleichzeitig machen kann, nehme ich mir die Dinge also eins nach dem anderen vor (zumindest versuche ich dies); dazu gehoert eben auch, dass ich die Erzeugung der Bindings auch endlich auf dem Mac weiterentwickeln kann, denn schliesslich (a) muss es da eh laufen und (b) habe ich das Laptop deutlich mehr unter den Fingern als einen der Linux Rechner im Institut. Aber gut, nach dem Beheben eines kleines Linker Fehlers -- welcher unter dem Linux GCC nicht auftauchte, wohl aber unter dem Mac GCC -- bekomme ich nun ein pycr und kann damit lustig weiterentwickeln.
+ * [Die lange Nacht des Wartens](/blog/2008/05/2008-05-18_22-27.html) \| Sun, 18. May 2008 -- 22:27
+ * [Chronicles of Narnia](/blog/2008/05/2008-05-18_22-56.html) \| Sun, 18. May 2008 -- 22:56
+ * [Check-in -- Teil 1](/blog/2008/05/2008-05-19_04-44.html) \| Mon, 19. May 2008 -- 04:44
+ * [Check-in -- Teil 2](/blog/2008/05/2008-05-19_05-40.html) \| Mon, 19. May 2008 -- 05:40
+ * [Romaenien -- Tag 2](/blog/2008/05/2008-05-20_21-40.html) \| Tue, 20. May 2008 -- 21:40
+ * [Nach einer Woche Romaenien...](/blog/2008/05/2008-05-26_04-42.html) \| Mon, 26. May 2008 -- 04:42
+ * [Blick in den Rucksack](/blog/2008/05/2008-05-30_09-58.html) \| Fri, 30. May 2008 -- 09:58
+ * [Wieder auf deutschem Boden](/blog/2008/05/2008-05-30_13-30.html) \| Fri, 30. May 2008 -- 13:30
 
 ### June ###
 
-  * [Letzter Teil der Rueckreise](/blog/2008/06/2008-06-03_11-41.html) \| Tue, 03. June 2008 -- 11:41 \|
-  * [Abend und Nacht in Koeln](/blog/2008/06/2008-06-03_13-27.html) \| Tue, 03. June 2008 -- 13:27 \|
-  * [Doch geschafft](/blog/2008/06/2008-06-04_09-49.html) \| Wed, 04. June 2008 -- 09:49 \|
-  * [Anschluss mit Verspaetung](/blog/2008/06/2008-06-05_18-32.html) \| Thu, 05. June 2008 -- 18:32 \|
-  * [Wie die Technik Einzug haelt](/blog/2008/06/2008-06-05_19-00.html) \| Thu, 05. June 2008 -- 19:00 \|
-  * [What is happening to the pictures... (2)](/blog/2008/06/2008-06-06_08-09.html) \| Fri, 06. June 2008 -- 08:09 \|
-  * [Necessary upgrades](/blog/2008/06/2008-06-07_12-55.html) \| Sat, 07. June 2008 -- 12:55 \|
-  * [Introducing Kavi Penn Masters...](/blog/2008/06/2008-06-10_09-07.html) \| Tue, 10. June 2008 -- 09:07 \|
-  * [Start in die EM](/blog/2008/06/2008-06-11_08-32.html) \| Wed, 11. June 2008 -- 08:32 \|
-  * [Dichter ran](/blog/2008/06/2008-06-11_09-48.html) \| Wed, 11. June 2008 -- 09:48 \|
-  * [Konzert-Plaene](/blog/2008/06/2008-06-12_18-18.html) \| Thu, 12. June 2008 -- 18:18 \|
-  * [Nicht mit unterwegs](/blog/2008/06/2008-06-13_11-18.html) \| Fri, 13. June 2008 -- 11:18 \|
-  * [Lange Nacht in Hoogeveen](/blog/2008/06/2008-06-18_06-38.html) \| Wed, 18. June 2008 -- 06:38 \|
-  * [Reisen und die Nebenwirkungen](/blog/2008/06/2008-06-19_08-47.html) \| Thu, 19. June 2008 -- 08:47 \|
-  * [Der Tag im Norden](/blog/2008/06/2008-06-19_19-18.html) \| Thu, 19. June 2008 -- 19:18 \|
-  * [Nikkor 80-400mm f/4.5-5.6D ED](/blog/2008/06/2008-06-24_14-58.html) \| Tue, 24. June 2008 -- 14:58 \|
-  * [In Geduld ueben](/blog/2008/06/2008-06-24_22-36.html) \| Tue, 24. June 2008 -- 22:36 \|
-  * [Angekommen](/blog/2008/06/2008-06-25_12-58.html) \| Wed, 25. June 2008 -- 12:58 \|
-  * [Unverhoffte Chance](/blog/2008/06/2008-06-29_10-10.html) \| Sun, 29. June 2008 -- 10:10 \|
-  * [Schlechte Liebhaber](/blog/2008/06/2008-06-29_10-34.html) \| Sun, 29. June 2008 -- 10:34 \|
-  * [Netzwerkprobleme](/blog/2008/06/2008-06-29_20-13.html) \| Sun, 29. June 2008 -- 20:13 \|
+ * [Letzter Teil der Rueckreise](/blog/2008/06/2008-06-03_11-41.html) \| Tue, 03. June 2008 -- 11:41
+ * [Abend und Nacht in Koeln](/blog/2008/06/2008-06-03_13-27.html) \| Tue, 03. June 2008 -- 13:27 Wie zu erwarten gestaltete sich der Abend als eine Mischung von Solo-Stuecken und einer Reihe Dire Straits Songs, wobei der Schwerpunkt natuerlich schon auf dem neueren Material lag. Dennoch waren es aber vor allen Dingen Stuecke wie "Romeo and Juliet" oder "Sultans of Swing" welche zu tosenden Standing-Ovations fuehrten -- die Erwartungshaltung war hier doch ganz klar (was sicherlich auch bei mir der Fall war, schliesslich ist die emotionale Bindung da einfach zu gross). Darueber hinaus gab es -- und dies war sicherlich einer der Highlights -- eine vollstaendige Fassung von "Telegraph Road"; wie mir scheint war ich auch da wieder einer der ersten, welche erkannten wohin die Reise ging, denn trotz neuem Arrangement kam meine Reaktionen eine halbe Ewigkeit vor irgendwem in einem weitem Umkreis (den meisten ist wohl erst ein Licht aufgegangen, als die Gitarre einsetzte). Die Besonderheit: wer den Song ja noch ein wenig im Ohr hat (an sonsten empfehle ich dringend noch einmal zum Album zu greifen), der weiss, dass es fuer eine Weile ein einziger hoher String-Sythesizer Ton ist, welcher allein in der Luft haengt, ehe eine Melodie darueber gelegt wird. War also dieser einzelne Ton noch nicht genug, so war es dann die durch die Flute gespielte Melodie, welche endgueltig erkennen liess, wohin die musikalische Reise in der kommenden Viertelstunde gehen wuerde. Auch wenn "Brothers in Arms" sicherlich das deutlich mehr verkaufte und bekanntere Album ist, so stehe ich nach wie vor zu der Aussage, dass "Love over Gold" der eigentliche Meilenstein innerhalb des Dire Straits Werkes.
+ * [Doch geschafft](/blog/2008/06/2008-06-04_09-49.html) \| Wed, 04. June 2008 -- 09:49
+ * [Anschluss mit Verspaetung](/blog/2008/06/2008-06-05_18-32.html) \| Thu, 05. June 2008 -- 18:32
+ * [Wie die Technik Einzug haelt](/blog/2008/06/2008-06-05_19-00.html) \| Thu, 05. June 2008 -- 19:00
+ * [What is happening to the pictures... (2)](/blog/2008/06/2008-06-06_08-09.html) \| Fri, 06. June 2008 -- 08:09
+ * [Necessary upgrades](/blog/2008/06/2008-06-07_12-55.html) \| Sat, 07. June 2008 -- 12:55
+ * [Introducing Kavi Penn Masters...](/blog/2008/06/2008-06-10_09-07.html) \| Tue, 10. June 2008 -- 09:07
+ * [Start in die EM](/blog/2008/06/2008-06-11_08-32.html) \| Wed, 11. June 2008 -- 08:32
+ * [Dichter ran](/blog/2008/06/2008-06-11_09-48.html) \| Wed, 11. June 2008 -- 09:48
+ * [Konzert-Plaene](/blog/2008/06/2008-06-12_18-18.html) \| Thu, 12. June 2008 -- 18:18
+ * [Nicht mit unterwegs](/blog/2008/06/2008-06-13_11-18.html) \| Fri, 13. June 2008 -- 11:18
+ * [Lange Nacht in Hoogeveen](/blog/2008/06/2008-06-18_06-38.html) \| Wed, 18. June 2008 -- 06:38
+ * [Reisen und die Nebenwirkungen](/blog/2008/06/2008-06-19_08-47.html) \| Thu, 19. June 2008 -- 08:47
+ * [Der Tag im Norden](/blog/2008/06/2008-06-19_19-18.html) \| Thu, 19. June 2008 -- 19:18
+ * [Nikkor 80-400mm f/4.5-5.6D ED](/blog/2008/06/2008-06-24_14-58.html) \| Tue, 24. June 2008 -- 14:58
+ * [In Geduld ueben](/blog/2008/06/2008-06-24_22-36.html) \| Tue, 24. June 2008 -- 22:36
+ * [Angekommen](/blog/2008/06/2008-06-25_12-58.html) \| Wed, 25. June 2008 -- 12:58
+ * [Unverhoffte Chance](/blog/2008/06/2008-06-29_10-10.html) \| Sun, 29. June 2008 -- 10:10
+ * [Schlechte Liebhaber](/blog/2008/06/2008-06-29_10-34.html) \| Sun, 29. June 2008 -- 10:34
+ * [Netzwerkprobleme](/blog/2008/06/2008-06-29_20-13.html) \| Sun, 29. June 2008 -- 20:13
 
 ### July ###
 
-  * [Und noch eine Akkreditierung](/blog/2008/07/2008-07-02_08-33.html) \| Wed, 02. July 2008 -- 08:33 \|
-  * [Doch noch geschafft](/blog/2008/07/2008-07-02_09-53.html) \| Wed, 02. July 2008 -- 09:53 \|
-  * [Ingrid Betancourt frei](/blog/2008/07/2008-07-03_12-18.html) \| Thu, 03. July 2008 -- 12:18 \|
-  * [Auf der Suche nach den Daten](/blog/2008/07/2008-07-03_17-47.html) \| Thu, 03. July 2008 -- 17:47 \|
-  * [Positive Nebenwirkung](/blog/2008/07/2008-07-04_21-06.html) \| Fri, 04. July 2008 -- 21:06 \|
-  * [Auf unbestimmte Zeit](/blog/2008/07/2008-07-04_22-53.html) \| Fri, 04. July 2008 -- 22:53 \|
-  * [Vorbereitung Vierdaagse](/blog/2008/07/2008-07-08_09-48.html) \| Tue, 08. July 2008 -- 09:48 \|
-  * [Nicht ganz frisch](/blog/2008/07/2008-07-09_18-40.html) \| Wed, 09. July 2008 -- 18:40 \|
-  * [Von zuhause aus arbeiten](/blog/2008/07/2008-07-11_11-48.html) \| Fri, 11. July 2008 -- 11:48 \|
-  * [Wie der Kreis sich schliesst](/blog/2008/07/2008-07-13_13-19.html) \| Sun, 13. July 2008 -- 13:19 \|
-  * [Vierdaagse -- Part II](/blog/2008/07/2008-07-16_00-10.html) \| Wed, 16. July 2008 -- 00:10 \|
-  * [Und noch ein Zwischenstop](/blog/2008/07/2008-07-17_17-15.html) \| Thu, 17. July 2008 -- 17:15 \|
-  * [Portraits im Regen](/blog/2008/07/2008-07-17_18-52.html) \| Thu, 17. July 2008 -- 18:52 \|
-  * [Letzter Tag Vierdaagse](/blog/2008/07/2008-07-18_10-47.html) \| Fri, 18. July 2008 -- 10:47 \|
-  * [Albtraum in Farbe](/blog/2008/07/2008-07-18_19-54.html) \| Fri, 18. July 2008 -- 19:54 \|
-  * [Wieder zurueck](/blog/2008/07/2008-07-18_23-21.html) \| Fri, 18. July 2008 -- 23:21 \|
-  * [Gutes Timing](/blog/2008/07/2008-07-19_17-12.html) \| Sat, 19. July 2008 -- 17:12 \|
-  * [Nachwirkungen Vierdaagse](/blog/2008/07/2008-07-20_12-56.html) \| Sun, 20. July 2008 -- 12:56 \|
-  * [24.4MP D3x DSLR](/blog/2008/07/2008-07-20_19-22.html) \| Sun, 20. July 2008 -- 19:22 \|
-  * [Es geht wieder los](/blog/2008/07/2008-07-21_09-11.html) \| Mon, 21. July 2008 -- 09:11 \|
-  * [Mobiles Buero](/blog/2008/07/2008-07-22_09-53.html) \| Tue, 22. July 2008 -- 09:53 \|
-  * [Heimreise](/blog/2008/07/2008-07-23_17-16.html) \| Wed, 23. July 2008 -- 17:16 \|
-  * [Nikon D700](/blog/2008/07/2008-07-24_17-38.html) \| Thu, 24. July 2008 -- 17:38 \|
-  * [Wo ich mich noch zurueckhalten kann](/blog/2008/07/2008-07-24_23-30.html) \| Thu, 24. July 2008 -- 23:30 \|
-  * [Umzug](/blog/2008/07/2008-07-25_12-16.html) \| Fri, 25. July 2008 -- 12:16 \|
-  * [Grenzueberschreitender Sonntagsausflug](/blog/2008/07/2008-07-28_11-33.html) \| Mon, 28. July 2008 -- 11:33 \|
-  * [Traumatized by Steve](/blog/2008/07/2008-07-30_12-35.html) \| Wed, 30. July 2008 -- 12:35 \|
-  * [Vorbereitung Wacken](/blog/2008/07/2008-07-30_17-31.html) \| Wed, 30. July 2008 -- 17:31 \|
+ * [Und noch eine Akkreditierung](/blog/2008/07/2008-07-02_08-33.html) \| Wed, 02. July 2008 -- 08:33
+ * [Doch noch geschafft](/blog/2008/07/2008-07-02_09-53.html) \| Wed, 02. July 2008 -- 09:53
+ * [Ingrid Betancourt frei](/blog/2008/07/2008-07-03_12-18.html) \| Thu, 03. July 2008 -- 12:18
+ * [Auf der Suche nach den Daten](/blog/2008/07/2008-07-03_17-47.html) \| Thu, 03. July 2008 -- 17:47 Der erste Stop auf der Reise war -- wie es ja eigentlich logische sein sollte -- der Operations Rooms der Sternwachte, von wo aus ja sowohl das Westerbork Teleskop als auch LOFAR betrieben werden sollen. Schon nach fuenf Minuten stellt sich allerdings heraus, dass keiner der beiden anwesenden Operatoere so richtig weiss was Sache ist; keiner der beiden kann sich an die entsprechende Beobachtung erinnern und so bekomme ich zunaechst einmal den Verweis doch im Obervations-Katalog nachzuschauen (wobei mir leider erst spaeter einfaellt, dass bei einem guten Support dies sofort haette passieren muessen). Wo denn die Daten geblieben sind, sollte in der Tat die Beobachtung durchgefuehrt worden sein -- vielleicht sollte ich mich diesbezueglich eher bei jemand anders erkundigen. Also gut, die naechste Station waere damit Stefan Wijnholds, welcher ja einer der aktiven Benutzer der LOFAR Stationen ist; alles was ich dort aber zu hoeren bekomme ist genau das, was ich bereits in den Minutes lesen konnte. Immerhin kommt Stefan dann noch auf die Idee, dass ich vielleicht bei Ronald Nijboer vorbeischauen sollte, da dieser ja schliesslich ein wenig Ueberblick darueber haben sollte, was fuer Test-Beobachtungen durchgefuehrt werden. Dementsprechend ziehe ich also nach dem naechsten Zimmer weiter... Wie sich allerdings herausstellt weiss auch Ronald nicht viel mehr; er verweisst zwar -- wie schon Stefan zuvor -- unter anderem auf Michael, aber von jenem weiss ich durch ein kurzes Gespraech am Mittwoch, dass dieser noch weniger weiss was der Stand der Sachen ist. Eine der naechsten Massnahmen: noch ein einmal die Minutes der Software Meetings durchgehen, um zumindest eine ungefaehre Idee davon zu haben, wann denn die Beobachtung durchgefuehrt wurde. Mit einem groben Zeitraum ausgestattet nehmen wir uns den Observations-Katalog vor und finden... nichts! Keine Beobachtung der angefragten Art ist in der Liste zu finden, was fuer mich entweder bedeutet, dass (a) diese Beobachtung nie durchgefuehrt worden ist oder aber (b) die von den Operators gefuehrte Liste unvollstaendig ist. Welche der beiden Moeglichkeiten mich nun mehr beunruhigen soll weiss ich noch nicht, aber sonderlich vertrauensweckend ist keine Variante.
+ * [Positive Nebenwirkung](/blog/2008/07/2008-07-04_21-06.html) \| Fri, 04. July 2008 -- 21:06
+ * [Auf unbestimmte Zeit](/blog/2008/07/2008-07-04_22-53.html) \| Fri, 04. July 2008 -- 22:53
+ * [Vorbereitung Vierdaagse](/blog/2008/07/2008-07-08_09-48.html) \| Tue, 08. July 2008 -- 09:48
+ * [Nicht ganz frisch](/blog/2008/07/2008-07-09_18-40.html) \| Wed, 09. July 2008 -- 18:40
+ * [Von zuhause aus arbeiten](/blog/2008/07/2008-07-11_11-48.html) \| Fri, 11. July 2008 -- 11:48
+ * [Wie der Kreis sich schliesst](/blog/2008/07/2008-07-13_13-19.html) \| Sun, 13. July 2008 -- 13:19
+ * [Vierdaagse -- Part II](/blog/2008/07/2008-07-16_00-10.html) \| Wed, 16. July 2008 -- 00:10
+ * [Und noch ein Zwischenstop](/blog/2008/07/2008-07-17_17-15.html) \| Thu, 17. July 2008 -- 17:15
+ * [Portraits im Regen](/blog/2008/07/2008-07-17_18-52.html) \| Thu, 17. July 2008 -- 18:52 Wow, das ist doch mal wieder eine richtige coole Sache. Ich habe mir beim Essen mal ein wenig die Bilder angeschaut, welche ich Laufe des Nachmittages geschossen habe: dabei stellt sich heraus, dass man gerade im Regen mit dem richtigen Objektiv grandiose Bilder machen kann (vorausgesetzt man findet fuer sich selber einen Platz, wo man seine Fotoausruestung guten Gewissens zum Einsatz bringen kann). Waehrend ich zunaechst noch ein wenig das zuletzt zugelegte AF 80-400mm VR verwendet habe, bin ich kurz vor dem Einsetzen des ersten Regenschauers auf das AF-S 70-200m f/2.8 VR umgestiegen; mit diesem Wechsel verliere ich zwar an Reichweite, dafuer bekomme ich aber eine konstante Blendenoeffnung von f/2.8 ueber den gesamten Zoombereich, was bedeutet dass ich damit genau das Objektiv auf der Kamera sitzen habe, womit sich wunderschoene Portraitaufnahmen machen lassen. Die Absicht war natuerlich in erster Linie auch wieder Gesichter einzufangen und weniger den grossen Ueberblick zu vermitteln (es bringt einfach nicht sonderlich viel wenn ich probiere Dinge zu machen, an welchen ich kein so sonderliches Interesse habe und auch nicht das Auge fuer mitbringe). Mit dem Einsetzen des Regens musste ich mich zunaechst einmal -- wie ja die meisten der Besucher am Wegesrand -- irgendwie ins Trockene retten. Nachdem ich mich dort aber einigermassen eingerichtet habe, konnte ich mich wieder dem eigentlichen Vorhaben fuer den Nachmittag zuwenden, naemlich fotographieren. Zunaechst ist mein Blick erst einmal auf die zahllosen Varianten gefallen, mit welchen sich die Vierdaagse-Teilnehmer gegen den Regen zu schuetzen wussten -- da gab es bisweilen abenteuerliche Konstruktionen zu bewundern. Nach dieser ersten Phase habbe ich mich dann aber wieder allgemeiner der Beobachtung der Laeufer zugewandt. Zu diesem Zeitpunkt habe ich mich auf der van 'T Santstraat befunden, welche zu beiden Seiten durch hohe Baeume gesaeumt wird; durch den Bewuchs tritt ein wenig der visuelle Eindruck eines Tunnels auf, so dann man mit einem entsprechenden Objektiv wunderbare Dinge hinzaubern kann. In der Tat erweisen sich eine gute Anzahl der Aufnahmen sogar noch interessanter, als ich mir dies zunaechst vorstellen wollte: durch die Kombination von starkem Zoom und grosser Blende gelingt es wunderbar eine Person inmitten des Regen zu isolieren und gegen den Hintergrund herauszuarbeiten. Schraubt man dann auch noch die Verschlusszeiten entsprechend runter, so bekommt man die Regentropfen einem Halo gleich in der Luft haengen...
+ * [Letzter Tag Vierdaagse](/blog/2008/07/2008-07-18_10-47.html) \| Fri, 18. July 2008 -- 10:47
+ * [Albtraum in Farbe](/blog/2008/07/2008-07-18_19-54.html) \| Fri, 18. July 2008 -- 19:54
+ * [Wieder zurueck](/blog/2008/07/2008-07-18_23-21.html) \| Fri, 18. July 2008 -- 23:21 Na dies war ja ein kurzer Abend: ich war gerade einmal drei Stunden unterwegs, habe eine Runde gemacht und dann beschlossen, dass ich zuhause am heimischen Schreibtisch letzten Endes doch besser aufgehoben waere. Ich denke mal nicht, dass ich mir die Unmengen Menschen geben muss, von denen zu allem Ueberfluss auch noch ein nicht unerheblicher Anteil stark alkoholisiert durch die Gegend laeuft. Auf dem Schlenker in Richtung zuhause bin ich durch den Park hinter der Waalkade gelaufen -- oder waere Crowdsurfing hier das passerendere Wort? -- wo die Matrixx in diesem Tagen das Ruder uebernommen hat; der komplette Bereich ist ein einziges Meer aus Menschen, welche sich auf engstem Raum zusammendraengen -- also nicht unbedingt mein bevorzugtester Aufenthaltsort. Ich hatte mir aber ueberlegt, dass ich dort noch einmal nach ein paar Position Ausschau halte, von wo aus ich ein paar Bilder machen kann. Allerdings war das Durchschleusen von dem Eingang, durch welchen ich aufs Gelaende gekommen bin, hin einem Punkt mit einem brauchbaren Ueberblick so wenig erfreulich, dass ich einfach keine Lust mehr hatte mich noch laenger vor aufzuhalten... und habe folgerichtig direkt den Heimweg angetreten (was von dort aus ja knapp fuenf Minuten dauert).
+ * [Gutes Timing](/blog/2008/07/2008-07-19_17-12.html) \| Sat, 19. July 2008 -- 17:12
+ * [Nachwirkungen Vierdaagse](/blog/2008/07/2008-07-20_12-56.html) \| Sun, 20. July 2008 -- 12:56
+ * [24.4MP D3x DSLR](/blog/2008/07/2008-07-20_19-22.html) \| Sun, 20. July 2008 -- 19:22
+ * [Es geht wieder los](/blog/2008/07/2008-07-21_09-11.html) \| Mon, 21. July 2008 -- 09:11
+ * [Mobiles Buero](/blog/2008/07/2008-07-22_09-53.html) \| Tue, 22. July 2008 -- 09:53
+ * [Heimreise](/blog/2008/07/2008-07-23_17-16.html) \| Wed, 23. July 2008 -- 17:16
+ * [Nikon D700](/blog/2008/07/2008-07-24_17-38.html) \| Thu, 24. July 2008 -- 17:38
+ * [Wo ich mich noch zurueckhalten kann](/blog/2008/07/2008-07-24_23-30.html) \| Thu, 24. July 2008 -- 23:30
+ * [Umzug](/blog/2008/07/2008-07-25_12-16.html) \| Fri, 25. July 2008 -- 12:16
+ * [Grenzueberschreitender Sonntagsausflug](/blog/2008/07/2008-07-28_11-33.html) \| Mon, 28. July 2008 -- 11:33
+ * [Traumatized by Steve](/blog/2008/07/2008-07-30_12-35.html) \| Wed, 30. July 2008 -- 12:35
+ * [Vorbereitung Wacken](/blog/2008/07/2008-07-30_17-31.html) \| Wed, 30. July 2008 -- 17:31
 
 ### August ###
 
-  * [Boxenstop](/blog/2008/08/2008-08-01_13-31.html) \| Fri, 01. August 2008 -- 13:31 \|
-  * [Rueckkehr in die Zivilisation](/blog/2008/08/2008-08-03_19-25.html) \| Sun, 03. August 2008 -- 19:25 \|
-  * [Wacken und die Folgen](/blog/2008/08/2008-08-07_09-23.html) \| Thu, 07. August 2008 -- 09:23 \|
-  * [Reflections](/blog/2008/08/2008-08-08_18-08.html) \| Fri, 08. August 2008 -- 18:08 \|
-  * [Fuenfstellig](/blog/2008/08/2008-08-11_13-12.html) \| Mon, 11. August 2008 -- 13:12 \|
-  * [Abstecher nach ASTRON](/blog/2008/08/2008-08-11_17-00.html) \| Mon, 11. August 2008 -- 17:00 \|
-  * [Merge of CMake configuration](/blog/2008/08/2008-08-12_07-43.html) \| Tue, 12. August 2008 -- 07:43 \|
-  * [Wieder im Norden](/blog/2008/08/2008-08-12_09-46.html) \| Tue, 12. August 2008 -- 09:46 \|
-  * [Rueckreise in den Sueden](/blog/2008/08/2008-08-13_18-20.html) \| Wed, 13. August 2008 -- 18:20 \|
-  * [Wie man wieder Platz schafft](/blog/2008/08/2008-08-15_09-27.html) \| Fri, 15. August 2008 -- 09:27 \|
-  * [Und noch ein Festival...](/blog/2008/08/2008-08-15_15-39.html) \| Fri, 15. August 2008 -- 15:39 \|
-  * [Emlichheim -- hin und zurueck](/blog/2008/08/2008-08-17_10-40.html) \| Sun, 17. August 2008 -- 10:40 \|
-  * [Gibt es nicht jeden Morgen](/blog/2008/08/2008-08-19_08-42.html) \| Tue, 19. August 2008 -- 08:42 \|
-  * [Durcheinander in Zwolle](/blog/2008/08/2008-08-19_09-52.html) \| Tue, 19. August 2008 -- 09:52 \|
-  * [Viel Gespraechsstoff](/blog/2008/08/2008-08-19_17-35.html) \| Tue, 19. August 2008 -- 17:35 \|
-  * [Kommt mir doch sehr bekannt vor](/blog/2008/08/2008-08-20_17-17.html) \| Wed, 20. August 2008 -- 17:17 \|
-  * [Wochenendaktivitaeten](/blog/2008/08/2008-08-24_11-28.html) \| Sun, 24. August 2008 -- 11:28 \|
-  * [Verpasst](/blog/2008/08/2008-08-25_12-57.html) \| Mon, 25. August 2008 -- 12:57 \|
-  * [Schreibblockade](/blog/2008/08/2008-08-25_21-42.html) \| Mon, 25. August 2008 -- 21:42 \|
-  * [Einfach produktiver](/blog/2008/08/2008-08-26_09-49.html) \| Tue, 26. August 2008 -- 09:49 \|
-  * [Spontane Verlaengerung](/blog/2008/08/2008-08-27_09-28.html) \| Wed, 27. August 2008 -- 09:28 \|
-  * [Boost replacement](/blog/2008/08/2008-08-27_16-06.html) \| Wed, 27. August 2008 -- 16:06 \|
-  * [Vorbereitungen Abbau Pavilion Zuid](/blog/2008/08/2008-08-27_17-54.html) \| Wed, 27. August 2008 -- 17:54 \|
-  * [Ende einer Aera](/blog/2008/08/2008-08-28_18-19.html) \| Thu, 28. August 2008 -- 18:19 \|
-  * [Immer wieder hilfreich](/blog/2008/08/2008-08-29_13-30.html) \| Fri, 29. August 2008 -- 13:30 \|
+ * [Boxenstop](/blog/2008/08/2008-08-01_13-31.html) \| Fri, 01. August 2008 -- 13:31
+ * [Rueckkehr in die Zivilisation](/blog/2008/08/2008-08-03_19-25.html) \| Sun, 03. August 2008 -- 19:25
+ * [Wacken und die Folgen](/blog/2008/08/2008-08-07_09-23.html) \| Thu, 07. August 2008 -- 09:23
+ * [Reflections](/blog/2008/08/2008-08-08_18-08.html) \| Fri, 08. August 2008 -- 18:08
+ * [Fuenfstellig](/blog/2008/08/2008-08-11_13-12.html) \| Mon, 11. August 2008 -- 13:12
+ * [Abstecher nach ASTRON](/blog/2008/08/2008-08-11_17-00.html) \| Mon, 11. August 2008 -- 17:00
+ * [Merge of CMake configuration](/blog/2008/08/2008-08-12_07-43.html) \| Tue, 12. August 2008 -- 07:43
+ * [Wieder im Norden](/blog/2008/08/2008-08-12_09-46.html) \| Tue, 12. August 2008 -- 09:46
+ * [Rueckreise in den Sueden](/blog/2008/08/2008-08-13_18-20.html) \| Wed, 13. August 2008 -- 18:20
+ * [Wie man wieder Platz schafft](/blog/2008/08/2008-08-15_09-27.html) \| Fri, 15. August 2008 -- 09:27
+ * [Und noch ein Festival...](/blog/2008/08/2008-08-15_15-39.html) \| Fri, 15. August 2008 -- 15:39
+ * [Emlichheim -- hin und zurueck](/blog/2008/08/2008-08-17_10-40.html) \| Sun, 17. August 2008 -- 10:40
+ * [Gibt es nicht jeden Morgen](/blog/2008/08/2008-08-19_08-42.html) \| Tue, 19. August 2008 -- 08:42
+ * [Durcheinander in Zwolle](/blog/2008/08/2008-08-19_09-52.html) \| Tue, 19. August 2008 -- 09:52
+ * [Viel Gespraechsstoff](/blog/2008/08/2008-08-19_17-35.html) \| Tue, 19. August 2008 -- 17:35
+ * [Kommt mir doch sehr bekannt vor](/blog/2008/08/2008-08-20_17-17.html) \| Wed, 20. August 2008 -- 17:17
+ * [Wochenendaktivitaeten](/blog/2008/08/2008-08-24_11-28.html) \| Sun, 24. August 2008 -- 11:28 Eben von diesem Luxus habe ich auch direkt zum Beginn des Wochenendes Gebrauch gemacht um meine zuletzt begonnene Lese-Session zum Abschluss zu bringen: nachdem ich zuletzt eine komplette Ausgabe aller sieben Harry Potter Baende gefunden hatte, bin ich doch nicht umhin gekommen endlich einmal noch den letzten Band (Harry Potter and the Deathly Hallows) zu lesen. Ich hatte zwar schon recht bald nach dem urspruenglichen Veroeffentlichungsdatum ein Hoerbuch befunden, aber ohne die entsprechende Geduld dafuer war dies nie so vollstaendig eingesunken, so dass ich einfach noch einmal die geschriebene Version verdauen musste. Mit dem Lesen habe ich irgendwann letzte Woche begonnen, musste aber immer wieder mal zwischendrin unterbrechen; da aber ab dem Freitag Abend nichts mehr in den Weg kommen konnte habe ich mich unter die Bettdecke verkrochen und die noch verbliebenen rund 400 Seiten recht schnell hinter mir gelassen. Das einzig wirklich dumme daran ist nun natuerlich, dass der komplette Zyklus damit abgeschlossen ist -- mehr Lesematerial gibt es da nicht mehr... es bliebe lediglich noch die Moeglichkeit sich mal zwei Wochen von allem anderen auszuklinken und alle Baende hintereinander zu lesen (das steht derzeit allerdings noch nicht so sonderlich hoch auf der Prioritaetenliste). Ehe ich aber so eine Aktion angehen wuerde, muss ich mich zunaechst einmal noch diversen anderen Lesestoff durcharbeiten, denn schliesslich habe ich hier noch eine ganze Reihe Buecher herumliegen, in welche ich bisher kaum mehr als einen kurzen Blick geworfen habe; als naechstes wird es daher wohl man Zeit, dass ich Stephen Kings //The Stand// zu Ende gelesen kriege -- so weit wie ich es bereits geschafft habe sollten die verbleibenden 400 Seiten ja auch noch zu schaffen sein.
+ * [Verpasst](/blog/2008/08/2008-08-25_12-57.html) \| Mon, 25. August 2008 -- 12:57
+ * [Schreibblockade](/blog/2008/08/2008-08-25_21-42.html) \| Mon, 25. August 2008 -- 21:42
+ * [Einfach produktiver](/blog/2008/08/2008-08-26_09-49.html) \| Tue, 26. August 2008 -- 09:49
+ * [Spontane Verlaengerung](/blog/2008/08/2008-08-27_09-28.html) \| Wed, 27. August 2008 -- 09:28
+ * [Boost replacement](/blog/2008/08/2008-08-27_16-06.html) \| Wed, 27. August 2008 -- 16:06
+ * [Vorbereitungen Abbau Pavilion Zuid](/blog/2008/08/2008-08-27_17-54.html) \| Wed, 27. August 2008 -- 17:54
+ * [Ende einer Aera](/blog/2008/08/2008-08-28_18-19.html) \| Thu, 28. August 2008 -- 18:19
+ * [Immer wieder hilfreich](/blog/2008/08/2008-08-29_13-30.html) \| Fri, 29. August 2008 -- 13:30
 
 ### September ###
 
-  * [Abweichend von der ueblichen Routine](/blog/2008/09/2008-09-02_17-46.html) \| Tue, 02. September 2008 -- 17:46 \|
-  * [Rueckreise](/blog/2008/09/2008-09-03_18-19.html) \| Wed, 03. September 2008 -- 18:19 \|
-  * [Nervig](/blog/2008/09/2008-09-04_15-53.html) \| Thu, 04. September 2008 -- 15:53 \|
-  * [Rueckzug nach Hause](/blog/2008/09/2008-09-04_17-09.html) \| Thu, 04. September 2008 -- 17:09 \|
-  * [Wie die Dinge zusammenkommen](/blog/2008/09/2008-09-05_22-41.html) \| Fri, 05. September 2008 -- 22:41 \|
-  * [Zu viele Kompromisse](/blog/2008/09/2008-09-06_13-09.html) \| Sat, 06. September 2008 -- 13:09 \|
-  * [Rueckmeldung](/blog/2008/09/2008-09-06_14-03.html) \| Sat, 06. September 2008 -- 14:03 \|
-  * [Doch gut](/blog/2008/09/2008-09-09_08-30.html) \| Tue, 09. September 2008 -- 08:30 \|
-  * [Passend zur Person](/blog/2008/09/2008-09-09_09-48.html) \| Tue, 09. September 2008 -- 09:48 \|
-  * [Voll gepackt](/blog/2008/09/2008-09-10_17-22.html) \| Wed, 10. September 2008 -- 17:22 \|
-  * [Nicht wie erwartet](/blog/2008/09/2008-09-11_12-43.html) \| Thu, 11. September 2008 -- 12:43 \|
-  * [Aenderung der Reiseplaene](/blog/2008/09/2008-09-12_11-10.html) \| Fri, 12. September 2008 -- 11:10 \|
-  * [Geaenderte Reiseumstaende](/blog/2008/09/2008-09-12_18-39.html) \| Fri, 12. September 2008 -- 18:39 \|
-  * [Koeln](/blog/2008/09/2008-09-12_21-37.html) \| Fri, 12. September 2008 -- 21:37 \|
-  * [Fortgang der Reise](/blog/2008/09/2008-09-15_13-37.html) \| Mon, 15. September 2008 -- 13:37 \|
-  * [Hamburg, Baby](/blog/2008/09/2008-09-15_15-42.html) \| Mon, 15. September 2008 -- 15:42 \|
-  * [Was geht und was nicht](/blog/2008/09/2008-09-16_10-49.html) \| Tue, 16. September 2008 -- 10:49 \|
-  * [Letzter Tag Hamburg](/blog/2008/09/2008-09-19_07-43.html) \| Fri, 19. September 2008 -- 07:43 \|
-  * [Bye, Bye, Hamburg](/blog/2008/09/2008-09-19_16-31.html) \| Fri, 19. September 2008 -- 16:31 \|
-  * [Fotographische Eindruecke aus Hamburg](/blog/2008/09/2008-09-19_19-26.html) \| Fri, 19. September 2008 -- 19:26 \|
-  * [Wieder im Rheinland](/blog/2008/09/2008-09-19_22-05.html) \| Fri, 19. September 2008 -- 22:05 \|
-  * [Der Sonntag in Honnef](/blog/2008/09/2008-09-21_22-06.html) \| Sun, 21. September 2008 -- 22:06 \|
-  * [Rueckreise](/blog/2008/09/2008-09-22_12-18.html) \| Mon, 22. September 2008 -- 12:18 \|
-  * [Fruehere Variante](/blog/2008/09/2008-09-22_17-16.html) \| Mon, 22. September 2008 -- 17:16 \|
-  * [Unbekannte Durchsage](/blog/2008/09/2008-09-22_19-54.html) \| Mon, 22. September 2008 -- 19:54 \|
-  * [Nach einer kurzen Nacht](/blog/2008/09/2008-09-23_08-31.html) \| Tue, 23. September 2008 -- 08:31 \|
-  * [Abstecher nach Amsterdam](/blog/2008/09/2008-09-23_23-20.html) \| Tue, 23. September 2008 -- 23:20 \|
-  * [NFS down](/blog/2008/09/2008-09-26_15-03.html) \| Fri, 26. September 2008 -- 15:03 \|
-  * [Wie die Woche, so der Samstag](/blog/2008/09/2008-09-27_19-31.html) \| Sat, 27. September 2008 -- 19:31 \|
-  * [D80](/blog/2008/09/2008-09-27_21-49.html) \| Sat, 27. September 2008 -- 21:49 \|
-  * [Funzt endlich](/blog/2008/09/2008-09-29_01-42.html) \| Mon, 29. September 2008 -- 01:42 \|
-  * [Verbesserungsfaehig](/blog/2008/09/2008-09-29_09-31.html) \| Mon, 29. September 2008 -- 09:31 \|
-  * [Vertragsverlaengerung](/blog/2008/09/2008-09-29_16-53.html) \| Mon, 29. September 2008 -- 16:53 \|
+ * [Abweichend von der ueblichen Routine](/blog/2008/09/2008-09-02_17-46.html) \| Tue, 02. September 2008 -- 17:46
+ * [Rueckreise](/blog/2008/09/2008-09-03_18-19.html) \| Wed, 03. September 2008 -- 18:19
+ * [Nervig](/blog/2008/09/2008-09-04_15-53.html) \| Thu, 04. September 2008 -- 15:53
+ * [Rueckzug nach Hause](/blog/2008/09/2008-09-04_17-09.html) \| Thu, 04. September 2008 -- 17:09
+ * [Wie die Dinge zusammenkommen](/blog/2008/09/2008-09-05_22-41.html) \| Fri, 05. September 2008 -- 22:41
+ * [Zu viele Kompromisse](/blog/2008/09/2008-09-06_13-09.html) \| Sat, 06. September 2008 -- 13:09
+ * [Rueckmeldung](/blog/2008/09/2008-09-06_14-03.html) \| Sat, 06. September 2008 -- 14:03
+ * [Doch gut](/blog/2008/09/2008-09-09_08-30.html) \| Tue, 09. September 2008 -- 08:30
+ * [Passend zur Person](/blog/2008/09/2008-09-09_09-48.html) \| Tue, 09. September 2008 -- 09:48
+ * [Voll gepackt](/blog/2008/09/2008-09-10_17-22.html) \| Wed, 10. September 2008 -- 17:22
+ * [Nicht wie erwartet](/blog/2008/09/2008-09-11_12-43.html) \| Thu, 11. September 2008 -- 12:43
+ * [Aenderung der Reiseplaene](/blog/2008/09/2008-09-12_11-10.html) \| Fri, 12. September 2008 -- 11:10
+ * [Geaenderte Reiseumstaende](/blog/2008/09/2008-09-12_18-39.html) \| Fri, 12. September 2008 -- 18:39
+ * [Koeln](/blog/2008/09/2008-09-12_21-37.html) \| Fri, 12. September 2008 -- 21:37
+ * [Fortgang der Reise](/blog/2008/09/2008-09-15_13-37.html) \| Mon, 15. September 2008 -- 13:37
+ * [Hamburg, Baby](/blog/2008/09/2008-09-15_15-42.html) \| Mon, 15. September 2008 -- 15:42
+ * [Was geht und was nicht](/blog/2008/09/2008-09-16_10-49.html) \| Tue, 16. September 2008 -- 10:49
+ * [Letzter Tag Hamburg](/blog/2008/09/2008-09-19_07-43.html) \| Fri, 19. September 2008 -- 07:43
+ * [Bye, Bye, Hamburg](/blog/2008/09/2008-09-19_16-31.html) \| Fri, 19. September 2008 -- 16:31
+ * [Fotographische Eindruecke aus Hamburg](/blog/2008/09/2008-09-19_19-26.html) \| Fri, 19. September 2008 -- 19:26
+ * [Wieder im Rheinland](/blog/2008/09/2008-09-19_22-05.html) \| Fri, 19. September 2008 -- 22:05
+ * [Der Sonntag in Honnef](/blog/2008/09/2008-09-21_22-06.html) \| Sun, 21. September 2008 -- 22:06
+ * [Rueckreise](/blog/2008/09/2008-09-22_12-18.html) \| Mon, 22. September 2008 -- 12:18
+ * [Fruehere Variante](/blog/2008/09/2008-09-22_17-16.html) \| Mon, 22. September 2008 -- 17:16
+ * [Unbekannte Durchsage](/blog/2008/09/2008-09-22_19-54.html) \| Mon, 22. September 2008 -- 19:54
+ * [Nach einer kurzen Nacht](/blog/2008/09/2008-09-23_08-31.html) \| Tue, 23. September 2008 -- 08:31
+ * [Abstecher nach Amsterdam](/blog/2008/09/2008-09-23_23-20.html) \| Tue, 23. September 2008 -- 23:20
+ * [NFS down](/blog/2008/09/2008-09-26_15-03.html) \| Fri, 26. September 2008 -- 15:03
+ * [Wie die Woche, so der Samstag](/blog/2008/09/2008-09-27_19-31.html) \| Sat, 27. September 2008 -- 19:31
+ * [D80](/blog/2008/09/2008-09-27_21-49.html) \| Sat, 27. September 2008 -- 21:49
+ * [Funzt endlich](/blog/2008/09/2008-09-29_01-42.html) \| Mon, 29. September 2008 -- 01:42
+ * [Verbesserungsfaehig](/blog/2008/09/2008-09-29_09-31.html) \| Mon, 29. September 2008 -- 09:31
+ * [Vertragsverlaengerung](/blog/2008/09/2008-09-29_16-53.html) \| Mon, 29. September 2008 -- 16:53
 
 ### October ###
 
+ * [Zwischen Arbeit und Festival](/blog/2008/10/2008-10-02_12-28.html) \| Thu, 02 October 2008 -- 12:28
+ * [Arbeitsumgebung](/blog/2008/10/2008-10-02_13-50.html) \| Thu, 02 October 2008 -- 13:50
+ * [DAL build at Groningen](/blog/2008/10/2008-10-02_22-56.html) \| Thu, 02 October 2008 -- 22:56
+ * [New date staff photo](/blog/2008/10/2008-10-03_01-40.html) \| Fri, 03 October 2008 -- 01:40
+ * [Vor dem Sturm](/blog/2008/10/2008-10-03_09-46.html) \| Fri, 03 October 2008 -- 09:46
+ * [Angekommen in Baarlo](/blog/2008/10/2008-10-03_16-09.html) \| Fri, 03 October 2008 -- 16:09
+ * [ProgPower - Tag 1](/blog/2008/10/2008-10-04_00-29.html) \| Sat, 04 October 2008 -- 00:29
+ * [ProgPower - Tag 2](/blog/2008/10/2008-10-05_00-35.html) \| Sun, 05 October 2008 -- 00:35
+ * [Vor der Rueckreise](/blog/2008/10/2008-10-06_10-46.html) \| Mon, 06 October 2008 -- 10:46
+ * [Verspaetung](/blog/2008/10/2008-10-07_10-01.html) \| Tue, 07 October 2008 -- 10:01
+ * [Astronomer or Homeless](/blog/2008/10/2008-10-08_17-18.html) \| Wed, 08 October 2008 -- 17:18
+ * [Arbeiten von zu Hause](/blog/2008/10/2008-10-10_13-23.html) \| Fri, 10 October 2008 -- 13:23
+ * [Geschaeftiges Treiben](/blog/2008/10/2008-10-13_08-47.html) \| Mon, 13 October 2008 -- 08:47
+ * [Und es geht doch um Kontrolle](/blog/2008/10/2008-10-14_09-46.html) \| Tue, 14 October 2008 -- 09:46
+ * [Fotoexperimente am Wochenende](/blog/2008/10/2008-10-15_14-13.html) \| Wed, 15 October 2008 -- 14:13
+ * [Joe the Plumber](/blog/2008/10/2008-10-17_10-10.html) \| Fri, 17 October 2008 -- 10:10
+ * [Status Quo](/blog/2008/10/2008-10-17_18-04.html) \| Fri, 17 October 2008 -- 18:04
+ * [Flickr in Zahlen](/blog/2008/10/2008-10-18_00-27.html) \| Sat, 18 October 2008 -- 00:27
+ * [Schweisstreibende Arbeit](/blog/2008/10/2008-10-18_02-35.html) \| Sat, 18 October 2008 -- 02:35
+ * [Start ins Wochenende](/blog/2008/10/2008-10-18_11-36.html) \| Sat, 18 October 2008 -- 11:36
+ * [Studentischer Grundbedarf](/blog/2008/10/2008-10-18_17-23.html) \| Sat, 18 October 2008 -- 17:23
+ * [Segen und Fluch der Technik](/blog/2008/10/2008-10-18_23-01.html) \| Sat, 18 October 2008 -- 23:01
+ * [Der Sonntag in Nijmegen](/blog/2008/10/2008-10-19_14-05.html) \| Sun, 19 October 2008 -- 14:05
+ * [Playlist Top something](/blog/2008/10/2008-10-19_22-32.html) \| Sun, 19 October 2008 -- 22:32
+ * [MathGL vs. PLplot](/blog/2008/10/2008-10-19_23-02.html) \| Sun, 19 October 2008 -- 23:02
+ * [A metal band with progressive elements](/blog/2008/10/2008-10-20_10-00.html) \| Mon, 20 October 2008 -- 10:00
+ * [Strom weg](/blog/2008/10/2008-10-20_11-49.html) \| Mon, 20 October 2008 -- 11:49
+ * [Schreiben, schreiben, schreiben](/blog/2008/10/2008-10-20_23-51.html) \| Mon, 20 October 2008 -- 23:51
+ * [Open Dag](/blog/2008/10/2008-10-21_00-58.html) \| Tue, 21 October 2008 -- 00:58
+ * [Auf Moebelsuche](/blog/2008/10/2008-10-21_01-19.html) \| Tue, 21 October 2008 -- 01:19
+ * [Wie es mit den Verspaetungen dann wieder klappt](/blog/2008/10/2008-10-21_09-59.html) \| Tue, 21 October 2008 -- 09:59
+ * [Immer noch tot](/blog/2008/10/2008-10-21_16-20.html) \| Tue, 21 October 2008 -- 16:20
+ * [Immer noch nicht erreichbar](/blog/2008/10/2008-10-22_09-48.html) \| Wed, 22 October 2008 -- 09:48
+ * [Leicht angeschlagen](/blog/2008/10/2008-10-22_18-20.html) \| Wed, 22 October 2008 -- 18:20
+ * [Corrupted connection](/blog/2008/10/2008-10-23_11-10.html) \| Thu, 23 October 2008 -- 11:10
+ * [Ruhig betten](/blog/2008/10/2008-10-23_17-00.html) \| Thu, 23 October 2008 -- 17:00
+ * [Wo er die ganze Zeit war](/blog/2008/10/2008-10-24_08-50.html) \| Fri, 24 October 2008 -- 08:50
+ * [Vor dem Sturm](/blog/2008/10/2008-10-24_13-24.html) \| Fri, 24 October 2008 -- 13:24
+ * [The World as you've never seen it before](/blog/2008/10/2008-10-24_16-17.html) \| Fri, 24 October 2008 -- 16:17
+ * [Find the other side of the world](/blog/2008/10/2008-10-29_09-38.html) \| Wed, 29 October 2008 -- 09:38
 
 ### November ###
 
+ * [Rueckreise](/blog/2008/11/2008-11-02_18-37.html) \| Sun, 02 November 2008 -- 18:37
+ * [Wieder in den Niederlanden](/blog/2008/11/2008-11-02_21-04.html) \| Sun, 02 November 2008 -- 21:04
+ * [Wer es sich mit Fockes verdirbt](/blog/2008/11/2008-11-05_00-40.html) \| Wed, 05 November 2008 -- 00:40
+ * [Es ist entschieden](/blog/2008/11/2008-11-05_08-07.html) \| Wed, 05 November 2008 -- 08:07
+ * [Nijmegen im Nebel](/blog/2008/11/2008-11-05_19-11.html) \| Wed, 05 November 2008 -- 19:11
+ * [Was es gebracht hat?](/blog/2008/11/2008-11-06_09-46.html) \| Thu, 06 November 2008 -- 09:46
+ * [Vom Reisen und anderen Aktivitaeten](/blog/2008/11/2008-11-07_17-17.html) \| Fri, 07 November 2008 -- 17:17
+ * [Das Wochenende bisher](/blog/2008/11/2008-11-09_16-46.html) \| Sun, 09 November 2008 -- 16:46
+ * [Nicht mehr lange...](/blog/2008/11/2008-11-10_10-05.html) \| Mon, 10 November 2008 -- 10:05
+ * [Volle Ladung](/blog/2008/11/2008-11-11_17-25.html) \| Tue, 11 November 2008 -- 17:25
+ * [Gruppenfoto](/blog/2008/11/2008-11-12_09-56.html) \| Wed, 12 November 2008 -- 09:56
+ * [Verkehrschaos](/blog/2008/11/2008-11-18_08-27.html) \| Tue, 18 November 2008 -- 08:27
+ * [Wochenende](/blog/2008/11/2008-11-18_08-44.html) \| Tue, 18 November 2008 -- 08:44
+ * [Passt wieder](/blog/2008/11/2008-11-18_09-57.html) \| Tue, 18 November 2008 -- 09:57
+ * [Lieferung Bed](/blog/2008/11/2008-11-18_14-25.html) \| Tue, 18 November 2008 -- 14:25
+ * [Fruehe Rueckreise](/blog/2008/11/2008-11-19_15-44.html) \| Wed, 19 November 2008 -- 15:44
+ * [Bon Voyage](/blog/2008/11/2008-11-21_02-24.html) \| Fri, 21 November 2008 -- 02:24
+ * [Animalympics](/blog/2008/11/2008-11-21_11-29.html) \| Fri, 21 November 2008 -- 11:29
+ * [Storage upgrade](/blog/2008/11/2008-11-21_18-28.html) \| Fri, 21 November 2008 -- 18:28
+ * [Nijmegen im Schneetreiben](/blog/2008/11/2008-11-25_07-32.html) \| Tue, 25 November 2008 -- 07:32
+ * [Lichtspiele in Weiss](/blog/2008/11/2008-11-25_08-42.html) \| Tue, 25 November 2008 -- 08:42
+ * [Umsteigen fast nach Plan](/blog/2008/11/2008-11-25_09-49.html) \| Tue, 25 November 2008 -- 09:49
+ * [Rueckreise](/blog/2008/11/2008-11-26_19-17.html) \| Wed, 26 November 2008 -- 19:17
+ * [Branduebung](/blog/2008/11/2008-11-26_19-35.html) \| Wed, 26 November 2008 -- 19:35
 
 ### December ###
 
+ * [Unterwegs nach Karlsruhe](/blog/2008/12/2008-12-02_14-05.html) \| Tue, 02 December 2008 -- 14:05
+ * [Bahnreisen und Fotomotive](/blog/2008/12/2008-12-02_16-02.html) \| Tue, 02 December 2008 -- 16:02
+ * [Karlsruhe](/blog/2008/12/2008-12-02_17-49.html) \| Tue, 02 December 2008 -- 17:49
+ * [Night VAR_TITLE Day](/blog/2008/12/2008-12-04_00-35.html) \| Thu, 04 December 2008 -- 00:35
+ * [Young LOPES vorbei](/blog/2008/12/2008-12-04_15-31.html) \| Thu, 04 December 2008 -- 15:31
+ * [Unterwegs zurueck in die Niederlande](/blog/2008/12/2008-12-05_17-10.html) \| Fri, 05 December 2008 -- 17:10
+ * [Siegburg](/blog/2008/12/2008-12-05_18-46.html) \| Fri, 05 December 2008 -- 18:46
+ * [Wieder in Nijmegen](/blog/2008/12/2008-12-05_22-11.html) \| Fri, 05 December 2008 -- 22:11
+ * [Wettlauf mit der Zeit](/blog/2008/12/2008-12-09_09-51.html) \| Tue, 09 December 2008 -- 09:51
+ * [Das war es](/blog/2008/12/2008-12-10_17-48.html) \| Wed, 10 December 2008 -- 17:48
+ * [Kerstmannenloop](/blog/2008/12/2008-12-11_09-56.html) \| Thu, 11 December 2008 -- 09:56
+ * [Von unerwarteten Besuchern und laufenden Weihnachtsmaennern](/blog/2008/12/2008-12-18_12-04.html) \| Thu, 18 December 2008 -- 12:04
+ * [Dr. Lafebre](/blog/2008/12/2008-12-19_13-08.html) \| Fri, 19 December 2008 -- 13:08
+ * [Aktivitaeten vor Weihnachten](/blog/2008/12/2008-12-22_15-11.html) \| Mon, 22 December 2008 -- 15:11
+ * [Einsatz in letzter Minute](/blog/2008/12/2008-12-23_17-31.html) \| Tue, 23 December 2008 -- 17:31
+ * [Bildermaterial fuer die Webseiten](/blog/2008/12/2008-12-28_03-05.html) \| Sun, 28 December 2008 -- 03:05
+ * [New Music](/blog/2008/12/2008-12-29_12-38.html) \| Mon, 29 December 2008 -- 12:38
+ * [Das ging aber schnell](/blog/2008/12/2008-12-30_09-53.html) \| Tue, 30 December 2008 -- 09:53
+ * [Laeuft](/blog/2008/12/2008-12-30_14-40.html) \| Tue, 30 December 2008 -- 14:40
+ * [Zwischenstop in Bonn](/blog/2008/12/2008-12-30_19-06.html) \| Tue, 30 December 2008 -- 19:06
+ * [LOFAR on Ice](/blog/2008/12/2008-12-30_19-35.html) \| Tue, 30 December 2008 -- 19:35
