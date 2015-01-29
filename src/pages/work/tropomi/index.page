@@ -1,0 +1,33 @@
+---
+title: TROPOMI
+in_menu: false
+author: Lars B&auml;hren
+---
+
+## Work :: {title:} ##
+
+#### Jan 2013 - present ####
+
+The TROPOspheric Monitoring Instrument (TROPOMI) is a spaceborne nadir viewing spectrometer with bands in the ultraviolet, the visible, the near infrared and the shortwave infrared. TROPOMI is the payload for the ESA/GMES Sentinel 5 Precursor mission, planned for launch in 2014 with 7 years design lifetime. The objective of the mission is to provide high-quality and timely information on the global atmospheric composition for climate and air quality applications. TROPOMI will make daily global observations of key atmospheric constituents, including ozone, nitrogen dioxide, sulfur dioxide, carbon monoxide, methane, formaldehyde and aerosol properties. The Sentinel-5 Precursor mission will extent the current data records from OMI (Ozone Monitoring Instrument) on NASA EOS Aura and SCIAMACHY (SCanning Imaging Absorption spectroMeter for Atmospheric CartograpHY) on ESA Envisat and is the link between the current scientific missions and the operational Sentinel-4/-5 missions.
+
+TROPOMI is an initiative from the Netherlands and is developed in cooperation with [ESA](http://www.esa.int). [KNMI](http://www.knmi.nl) is the Principal Investigator institute for TROPOMI and [SRON](http://www.sron.nl) is the co-PI institute. The [Netherlands Space Office](http://www.spaceoffice.nl) (NSO) manages the TROPOMI project in the Netherlands.
+
+### Role and activities ###
+
+I have been contracted through S\[&\]T as a _Software Design Engineer_ to work on the algorithms to compute and apply the Key Calibration Data (CKD) sets. These data sets are required for processing the level-0 data into level-1b data. The initial CKD will be derived during the on-ground calibration. It is expected that the characteristics of the instrument change over the mission, therefore (a subset of) the CKD will change along with it.
+
+ - [Quicklooks for data from calibration measurements](/work/tropomi/quicklooks.html)
+
+### Further reading ###
+
+ * M van Weele et al. Science Requirements Document for TROPOMI. Volume I Mission and Science Objectives and Observational Requirements
+ * M. Dobber et al. Science Requirements Document for TROPOMI. Volume II: Instrument Requirements UVN
+ * P. Tol at al. Science Requirements Document for TROPOMI. Volume III: Instrument Requirements SWIR
+
+### Related blog entries ###
+
+  * [TROPOMI Quicklooks -- a real world example](/blog/2014/08/2014-08-27_23-32.html) \| Wed, 27. August 2014 -- 23:32 \|
+  * [From sketch to implementation](/blog/2014/08/2014-08-26_20-24.html) \| Tue, 26. August 2014 -- 20:24 \|
+  * [Documentation generation](/blog/2013/04/2013-04-25_13-30.html) \| Thu, 25. April 2013 -- 13:30 \|
+  * [Cleaning up build scripts](/blog/2013/04/2013-04-16_11-57.html) \| Tue, 16. April 2013 -- 11:57 \|
+  * [TROPOMI code to go](/blog/2013/01/2013-01-23_18-57.html) \| Wed, 23. January 2013 -- 18:57 \|
