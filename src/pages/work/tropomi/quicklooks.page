@@ -6,22 +6,22 @@ author: Lars B&auml;hren
 
 ## TROPOMI :: {title:} ##
 
-Note: For some additional reading, also see the [blog entry](/blog/2014/2014-08/2014-08-26_20-24.html)
+Note: For some additional reading, also see the [blog entry](/blog/2014/08/2014-08-26_20-24.html)
 describing the process from the sketch on paper to the actually implemented version
 as part of the TROPOMI software.
 
-![Quicklook](/blog/2014/2014-08/2014_08_25T16_01_00_PreEnvLaserDiodes.png)
+![Quicklook](/blog/2014/08/2014_08_25T16_01_00_PreEnvLaserDiodes.png)
 
 This has been one of the first times the quicklook routines have been applied
 "in the wild".
 
-![Implementation of the quicklook page](/blog/2014/2014-08/2014-08-19_Quicklook_implementation.png)
+![Implementation of the quicklook page](/blog/2014/08/2014-08-19_Quicklook_implementation.png)
 
 The plot above represents the first working implementation, with all the sub-plots
 in the correct positions and the track reconstruction routine applied to a simple
 test dataset (elliptical sweep across the detector plane).
 
-![Sketch of the quicklook page](/blog/2014/2014-08/2014-08-19_Quicklook_sketch.png)
+![Sketch of the quicklook page](/blog/2014/08/2014-08-19_Quicklook_sketch.png)
 
 This is the original sketch with the basic idea for the various plots and their
 arrangement on the page. After getting overlapping frames and the like a number

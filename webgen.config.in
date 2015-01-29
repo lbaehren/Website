@@ -28,14 +28,14 @@
 ##  2. Path to the sources from which the resulting website is generated.
 ##  3. Path to the image files included into the images.
 
-sources: [[/, file_system, ${larsbaehren_SOURCE_DIR}/ext/templates/data/lars01/src],
+sources: [[/, file_system, ${larsbaehren_SOURCE_DIR}/ext/templates/data/lars01],
           [/, file_system, ${larsbaehren_SOURCE_DIR}/src/pages],
           [/, file_system, ${larsbaehren_SOURCE_DIR}/src/images]]
 
 ##______________________________________________________________________________
 ## Destination directory to which the generated website will be written.
 
-destination: [file_system, ${PROJECT_BINARY_DIR}/website]
+destination: [file_system, ${larsbaehren_SOURCE_DIR}/out]
 
 ##______________________________________________________________________________
 ## Configuration of Menus

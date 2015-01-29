@@ -372,10 +372,10 @@ td {
 /* === Quoted text ========================================================== */
 
 blockquote {
-    border-top:    1px solid #d8d8d8;
-    border-right:  1px solid #d8d8d8;
-    border-bottom: 1px solid #d8d8d8;
-    border-left:   3px solid #286ea0;
+    border-top:    1px solid #EAC585;
+    border-right:  1px solid #EAC585;
+    border-bottom: 1px solid #EAC585;
+    border-left:   3px solid #EAC585;
     margin:        16px;
     padding:       7px 7px 7px 11px;
     background:    #f4f4f4 url(images/menubg.gif) bottom left repeat-x;

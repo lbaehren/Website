@@ -36,7 +36,12 @@ well as archiving it) and more flexibility for others to tune in and out.
   for varYear in 2012..DateTime.now.year
   varOutput=" - **#{varYear}** \:"
   for n in 0..11
-  varOutput+=" [#{mName[n]}](/blog/#{varYear}/#{mNum[n]}/index.html) \\|"
+    varFilename="src/pages/blog/#{varYear}/#{mNum[n]}/index.page"
+    if File.file?(varFilename) then
+      varOutput+=" [#{mName[n]}](/blog/#{varYear}/#{mNum[n]}/index.html) \\|"
+    else
+      varOutput+=" #{mName[n]} \\|"
+    end
   end
 %>
 <%= varOutput %>

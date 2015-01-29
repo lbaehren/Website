@@ -1,5 +1,6 @@
+
 #-------------------------------------------------------------------------------
-# Copyright (c) 2004-2014, Lars Baehren <lbaehren@gmail.com>
+# Copyright (c) 2013-2013, Lars Baehren <lbaehren@gmail.com>
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without modification,
@@ -23,31 +24,48 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #-------------------------------------------------------------------------------
 
-##_______________________________________________________________________________
-## Build instructions for website
+# - Check for the presence of 'rsync'
+#
+# The following variables are set when 'rsync' is found:
+#  RSYNC_FOUND      = Set to true, if all components of 'rsync' have been found.
+#  RSYNC_EXECUTABLE = 'rsync' program executable
 
-add_custom_target (Website ALL
-  COMMAND ${WEBGEN_EXECUTABLE} generate ${WEBGEN_CONFIG}
-  WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
-  COMMENT "Rendering website from sources ..."
-  )
+if (NOT RSYNC_FOUND)
 
-## Installation instructions
-install(
-  DIRECTORY ${PROJECT_BINARY_DIR}/website
-  DESTINATION ${CMAKE_INSTALL_PREFIX}
-  USE_SOURCE_PERMISSIONS
-  )
+  if (NOT RSYNC_ROOT_DIR)
+    set (RSYNC_ROOT_DIR ${CMAKE_INSTALL_PREFIX})
+  endif (NOT RSYNC_ROOT_DIR)
 
+  ##____________________________________________________________________________
+  ## Check for the executable
 
-##______________________________________________________________________________
-## Process project sub-directories
+  find_program (RSYNC_EXECUTABLE rsync
+    HINTS ${RSYNC_ROOT_DIR} ${CMAKE_INSTALL_PREFIX}
+    PATH_SUFFIXES bin
+    )
 
-## Doumentation
-add_subdirectory (doc)
+  ##____________________________________________________________________________
+  ## Actions taken when all components have been found
 
-## Source code (C/C++)
-add_subdirectory (code)
+  find_package_handle_standard_args (RSYNC DEFAULT_MSG RSYNC_EXECUTABLE)
 
-## Source files for the web pages
-add_subdirectory (pages)
+  if (RSYNC_FOUND)
+    if (NOT RSYNC_FIND_QUIETLY)
+      message (STATUS "Found components for RSYNC")
+      message (STATUS "RSYNC_ROOT_DIR  = ${RSYNC_ROOT_DIR}")
+      message (STATUS "RSYNC_EXECUTABLE  = ${RSYNC_EXECUTABLE}")
+    endif (NOT RSYNC_FIND_QUIETLY)
+  else (RSYNC_FOUND)
+    if (RSYNC_FIND_REQUIRED)
+      message (FATAL_ERROR "Could not find RSYNC!")
+    endif (RSYNC_FIND_REQUIRED)
+  endif (RSYNC_FOUND)
+
+  ##____________________________________________________________________________
+  ## Mark advanced variables
+
+  mark_as_advanced (
+    RSYNC_ROOT_DIR
+    )
+
+endif (NOT RSYNC_FOUND)

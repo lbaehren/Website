@@ -612,6 +612,12 @@ case $1 in
     "--convert")
         convert_entries $2
     ;;
+    "--get_title")
+        echo "Function not implemented yet!"
+    ;;
+    "--get_date")
+        echo "Function not implemented yet!"
+    ;;
     *)
         print_help
     ;;

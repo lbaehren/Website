@@ -9,13 +9,18 @@
 project (RUBY)
 
 ## Minimum required version of CMake to configure the project
-cmake_minimum_required (VERSION 2.8)
+cmake_minimum_required (VERSION 2.8.2)
 
 ## Enforced CMake policy
-cmake_policy (VERSION 2.8)
+cmake_policy (VERSION 2.8.2)
+
+set (PROJECT_VERSION_MAJOR "1")
+set (PROJECT_VERSION_MINOR "9")
+set (PROJECT_VERSION_PATCH "3")
+set (PROJECT_VERSION_TWEAK "p194")
 
 ##  Package information
-set (RUBY_VERSION_SERIES "1.9")
+set (RUBY_VERSION_SERIES "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}")
 set (RUBY_VERSION        "${RUBY_VERSION_SERIES}.3-p194" )
 set (RUBY_SOURCE_ARCHIVE "ruby-${RUBY_VERSION}.tar.gz" )
 set (RUBY_URL            "http://ftp.ruby-lang.org/pub/ruby/${RUBY_VERSION_SERIES}/${RUBY_SOURCE_ARCHIVE}" )

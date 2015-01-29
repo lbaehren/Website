@@ -137,6 +137,7 @@ foreach (_externalPackage
     Gnuplot
     KWsys
     Rake
+    Rsync
     Ruby
     Webgen
     YAML
@@ -189,30 +190,69 @@ endif (DOXYGEN_EXECUTABLE)
 ## =============================================================================
 
 ##______________________________________________________________________________
-## Generate Webgen configuration file
+## Build instructions for website
 
-find_file (WEBGEN_CONFIG_IN webgen.config.in
-    PATHS ${PROJECT_SOURCE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}
+## Webgen configuration file
+configure_file (
+    ${CMAKE_CURRENT_SOURCE_DIR}/webgen.config.in
+    ${CMAKE_CURRENT_SOURCE_DIR}/webgen.config
 )
 
-if (WEBGEN_CONFIG_IN)
-    configure_file (
-        ${WEBGEN_CONFIG_IN}
-        ${PROJECT_BINARY_DIR}/src/webgen.config
+add_custom_target (Website ALL
+  COMMAND ${WEBGEN_EXECUTABLE} generate
+  WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
+  COMMENT "Rendering website from sources ..."
+  )
+
+## Installation instructions
+install(
+  DIRECTORY ${PROJECT_SOURCE_DIR}/out
+  DESTINATION ${CMAKE_INSTALL_PREFIX}
+  USE_SOURCE_PERMISSIONS
+  )
+
+##______________________________________________________________________________
+## Publish the website online
+
+#        -a, --archive               archive mode; equals -rlptgoD (no -H,-A,-X)
+#            --no-OPTION             turn off an implied OPTION (e.g. --no-D)
+#        -u, --update                skip files that are newer on the receiver
+#            --inplace               update destination files in-place
+#            --append                append data onto shorter files
+#            --append-verify         --append w/old data in file checksum
+#        -x, --one-file-system       don't cross filesystem boundaries
+#        -p, --perms                 preserve permissions
+#            --fileflags             preserve file-flags (aka chflags)
+
+find_program (WEBDAV_EXECUTABLE mount_webdav
+    HINTS ${CMAKE_INSTALL_PREFIX}
+    PATH_SUFFIXES bin sbin
     )
-endif (WEBGEN_CONFIG_IN)
 
-find_file (WEBGEN_CONFIG webgen.config
-    HINTS ${CMAKE_CURRENT_BINARY_DIR}
-    PATHS ${PROJECT_SOURCE_DIR}
-    PATH_SUFFIXES build src
-)
+ if (WEBDAV_EXECUTABLE)
+     add_custom_target (mount_livedisk
+         COMMAND ${WEBDAV_EXECUTABLE} ${PROJECT_LIVEDISK_URL} ${PROJECT_UPLOAD_PATH}
+         COMMENT "Mounting livedisk ..."
+         )
+ endif (WEBDAV_EXECUTABLE)
 
+
+if (RSYNC_EXECUTABLE)
+    add_custom_target (online
+        COMMAND ${RSYNC_EXECUTABLE} -axuzP ${PROJECT_SOURCE_DIR}/out/* ${PROJECT_UPLOAD_PATH}
+        WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
+        COMMENT "Publishing website - uploading generated pages ..."
+        )
+else (RSYNC_EXECUTABLE)
+  message (STATUS "Unable to publish generated pages - missing rsync!")
+endif (RSYNC_EXECUTABLE)
 
 ##______________________________________________________________________________
 ## Project sub-directories
 
-add_subdirectory (src)
+add_subdirectory (src/doc)
+add_subdirectory (src/code)
+
 
 ## =============================================================================
 ##
@@ -224,6 +264,7 @@ set_property (DIRECTORY
   APPEND PROPERTY ADDITIONAL_MAKE_CLEAN_FILES
   ${CMAKE_INSTALL_PREFIX}
   ${PROJECT_SOURCE_DIR}/webgen.cache
+  ${PROJECT_SOURCE_DIR}/webgen.config
   ${PROJECT_SOURCE_DIR}/config.yaml
   )
 
