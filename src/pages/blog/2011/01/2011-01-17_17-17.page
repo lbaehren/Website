@@ -1,0 +1,19 @@
+---
+title: Speicherplatz
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Mon, 17. January 2011 - 17:17_
+
+Das war schon eine Weile auf der Liste, aber nun wurde es doch mal endlich noch Zeit, diese Bestellung rauszugeben. Da ich ja in Sachen Plattenplatz nur schwer genug bekommen kann, werde ich wohl mal dafuer sorgen, die noch verbliebenen 1TB Platten aus zumindest einem der beiden [Drobos](http://www.drobo.com) rauszuschmeissen; im Augenblick ist das erste mit 1.0/1.0/1.0/1.0 und das zweite mit 1.0/1.0/1.5/2.0 bestueckt, so dass es in jedem Fall noch Raum fuer Expansion gibt. Im Augenblick habe ich etwa mehr als dreineinhalb TB an verfugbarem, gesichertem Platz:
+
+![Drobo old status](/blog/2011/01/2011-01-17_drobo_old.png)
+
+Wenn ich nun hingehe und die beiden 1TB Platten jeweils durch eine 2TB Platte ersetze, dann fuehrt dies zu einem deutlichen Sprung in der Kapazitaet:
+
+![Drobo new status](/blog/2011/01/2011-01-17_drobo_new.png)
+
+Ich hoffe doch einmal, das ich mit diesem Upgrade eine Weile Ruhe haben werde...

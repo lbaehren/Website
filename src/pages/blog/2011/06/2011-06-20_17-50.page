@@ -1,0 +1,31 @@
+---
+title: "Peta-scale computing"
+in_menu: false
+author: Lars Baehren
+tags: Computing
+---
+
+## {title:} ##
+
+_Mon, 20. June 2011 -- 17:50_
+
+[That](http://www.hpcwire.com/hpcwire/2011-06-20/japanese_supercomputer_is_new_top500_champ.html) is impressive:
+
+> A Japanese supercomputer took the world title for the fastest computer in the world, after the latest TOP500 list was announced Monday morning at the International Supercomputing Conference in Hamburg, Germany. Fujitsu's K Computer, powered by the latest SPARC64 VIIIfx CPUs and the "Tofu" interconnect delivered a world beating 8.162 petaflops on the Linpack benchmark, vaulting over the now second-place 2.57 petaflop Tianhe-1A supercomputer in China and third-place 1.76 petaflop Jaguar supercomputer in the US.
+
+![K Computer](/blog/2011/06/2011-06-20_k_computer.jpg)
+
+I just was listening to the June 10 edition of _HPCwire Soundbite_, with a program gearing up towards ISC'11, when I decided that it actually might not be too bad of an idea to also have a look at the [online edition of the magazine](http://www.hpcwire.com) as well. As it turns out just today the Japanese have announced a considerable leap in compute performance with their _K computer_:
+
+| 8.16 petaflops | K computer  | Japan |
+| 2.57 petaflops | Tianhe-1A   | China |
+| 1.76 petaflops | Jaguar      | United States |
+| 1.27 petaflops | Nebulae     | China |
+| 1.19 petaflops | TSUBAME 2.0 | Japan |
+| 1.11 petaflops | Cielo       | United States |
+| 1.08 petaflops | Pleiades    | United States |
+| 1.05 petaflops | Hopper      | United States |
+| 1.05 petaflops | Tera-100    | France |
+| 1.04 petaflops | Roadrunner  | United States |
+
+The really remarkable about this list is, by now all of the Top-10 machine deliver more than 1 petaflops in compute capability!

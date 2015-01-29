@@ -197,6 +197,10 @@ configure_file (
     ${CMAKE_CURRENT_SOURCE_DIR}/webgen.config
 )
 
+find_file (WEBGEN_CONFIG webgen.config
+    HINTS ${CMAKE_CURRENT_SOURCE_DIR}
+    )
+
 ##___________________________________________________________________
 ## Build the website
 

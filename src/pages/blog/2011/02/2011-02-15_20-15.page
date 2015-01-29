@@ -1,0 +1,38 @@
+---
+title: "DAL auf eigenen Fuessen"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Tue, 15. February 2011 - 20:15_
+
+Es ist vollbracht: ich habe soeben die erste Aenderungen der aus der LOFAR User Software extrahierten DAL auf [Github](https://github.com/lbaehren/DAL) eingecheckt:
+
+~~~~
+Updating c3f3c13..d133152
+Fast-forward
+ CMakeLists.txt                    |   19 +++++---
+ cmake/CheckExternalPackages.cmake |   37 +++------------
+ cmake/FindBoost.cmake             |    6 ++-
+ cmake/FindCFITSIO.cmake           |    6 ++-
+ cmake/FindCasacore.cmake          |    6 ++-
+ cmake/FindHDF5.cmake              |   87 ++++++++++++++++++-------------------
+ cmake/FindMySQL.cmake             |   28 +++++++-----
+ cmake/FindWCSLIB.cmake            |    6 ++-
+ cmake/dal_config.h.in             |    2 +
+ 9 files changed, 96 insertions(+), 101 deletions(-)
+omhp-uva-23-7:cmake lars$ git push origin
+Counting objects: 36, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (25/25), done.
+Writing objects: 100% (25/25), 3.05 KiB, done.
+Total 25 (delta 20), reused 0 (delta 0)
+To git@github.com:lbaehren/DAL.git
+   c3f3c13..d133152  master -> master
+~~~~
+
+![DAL on Github](/blog/2011/02/2011-02-15_dal_on_github.png)
+
+Kein `git svn rebase` mehr von hier an, sondern alles nur noch via Git! Ich lasse gerade noch einen Test Build auf meinem Laptop durchlaufen, ehe ich anschliessend den derzeit noch im LUS Repository befindlichen Code entfernen werde. Ich bin mal gespannt, wann es die erste Reaktionen darauf geben wird...

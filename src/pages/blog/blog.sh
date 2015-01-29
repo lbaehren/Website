@@ -320,7 +320,12 @@ create_index_file_upcoming ()
 
 create_index_file_year ()
 {
-    varYear=`date +%Y`
+    if [ -z $1 ] ; then
+        varYear=`date +%Y`
+    else
+        varYear=$1
+    fi
+
     varPage="${varYear}/index.page"
 
     # === Generate page header ============================
@@ -548,6 +553,18 @@ convert_entries ()
     fi
 }
 
+convert_directories ()
+{
+    varYear=$1
+
+    cd ${PATH_BASEDIR}/${varYear}
+
+    for NUM in 01 02 03 04 05 06 07 08 09 10 11 12
+    {
+        git mv ${varYear}-${NUM} ${NUM}
+    }
+}
+
 # ==============================================================================
 #
 #  Main
@@ -583,16 +600,24 @@ case $1 in
         print_help
     ;;
     "-I")
-        echo "Updating index file for upcoming entries ..."
-        create_index_file_upcoming > ${PATH_BASEDIR}/${PATH_UPCOMING}/index.page
-        create_index_file_blog ${varRecentEntries}
-        create_index_file_year
+        echo "Updating index files ..."
+        if [ -z $2 ] ; then
+            create_index_file_upcoming > ${PATH_BASEDIR}/${PATH_UPCOMING}/index.page
+            create_index_file_blog ${varRecentEntries}
+            create_index_file_year
+        else
+            create_index_file_year $2
+        fi
     ;;
     "--index")
-        echo "Updating index file for upcoming entries ..."
-        create_index_file_upcoming > ${PATH_BASEDIR}/${PATH_UPCOMING}/index.page
-        create_index_file_blog ${varRecentEntries}
-        create_index_file_year
+        echo "Updating index files ..."
+        if [ -z $2 ] ; then
+            create_index_file_upcoming > ${PATH_BASEDIR}/${PATH_UPCOMING}/index.page
+            create_index_file_blog ${varRecentEntries}
+            create_index_file_year
+        else
+            create_index_file_year $2
+        fi
     ;;
     "-L")
         list_entries $2

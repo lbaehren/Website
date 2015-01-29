@@ -24,12 +24,12 @@ sending incremental file list
 blog/archive.html
 blog/index.html
 blog/2009/2009-03/2009-03-13_02-54.html
-blog/2010/2010-01/2010-01-01_23-13.html
-blog/2010/2010-09/
-blog/2010/2010-09/2010-09-06_11-06.html
-blog/2010/2010-09/dsc_20100905_130518.jpg
-blog/2010/2010-09/dsc_20100905_143200.jpg
-blog/2010/2010-09/dsc_20100905_162328.jpg
+blog/2010/01/2010-01-01_23-13.html
+blog/2010/09/
+blog/2010/09/2010-09-06_11-06.html
+blog/2010/09/dsc_20100905_130518.jpg
+blog/2010/09/dsc_20100905_143200.jpg
+blog/2010/09/dsc_20100905_162328.jpg
 
 sent 415146 bytes  received 298 bytes  166177.60 bytes/sec
 total size is 124117486  speedup is 298.76

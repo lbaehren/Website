@@ -20,7 +20,7 @@ well as archiving it) and more flexibility for others to tune in and out.
   a = { '01'=>'Jan', '02'=>'Feb', '03'=>'Mar', '04'=>'Apr', '05'=>'May', '06'=>'Jun' }
   mNum=['01','02','03','04','05','06','07','08','09','10','11','12']
   mName=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
-  for varYear in 2004..2011
+  for varYear in 2004..2009
   varOutput=" - **#{varYear}** \:"
   for n in 0..11
   varOutput+=" [#{mName[n]}](/blog/#{varYear}/#{varYear}-#{mNum[n]}/index.html) \\|"
@@ -33,7 +33,7 @@ well as archiving it) and more flexibility for others to tune in and out.
   a = { '01'=>'Jan', '02'=>'Feb', '03'=>'Mar', '04'=>'Apr', '05'=>'May', '06'=>'Jun' }
   mNum=['01','02','03','04','05','06','07','08','09','10','11','12']
   mName=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
-  for varYear in 2012..DateTime.now.year
+  for varYear in 2010..DateTime.now.year
   varOutput=" - **#{varYear}** \:"
   for n in 0..11
     varFilename="src/pages/blog/#{varYear}/#{mNum[n]}/index.page"
