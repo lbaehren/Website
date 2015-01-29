@@ -10,7 +10,7 @@ _Tue, 15. June 2010 -- 11:12_
 
 
 
-Ever since discovering [[http://www.cmake.org|CMake]] my configuration and build strategy has changed fundamentally. Though before already I was collecting various build and installation instructions into a number of shell scripts, CMake's ''ExternalProject'' feature provided me with the flexibility and power needed to handle almost any type of package I might want to have installed on the system -- see e.g. instructions for [[http://root.cern.ch|ROOT]]:
+Ever since discovering [CMake](http://www.cmake.org) my configuration and build strategy has changed fundamentally. Though before already I was collecting various build and installation instructions into a number of shell scripts, CMake's ''ExternalProject'' feature provided me with the flexibility and power needed to handle almost any type of package I might want to have installed on the system -- see e.g. instructions for [[http://root.cern.ch|ROOT]]:
 
 <code>
 ExternalProject_Add (root

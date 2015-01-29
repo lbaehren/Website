@@ -10,17 +10,84 @@ created_at: 2008-11-18T08:44:00.00Z
 
 _Tue, 18 November 2008 -- 08:44_
 
+Ok, bevor es hier noch zu Besorgnis und/oder Spekulationen kommt, hier noch ein
+paar Details in Bezug auf das vergangene Wochenende. Auch wenn ich mich ja
+weitestgehend in den eigenen vier Waenden vergraben habe, so soll dies ja
+keinesfalls heissen, dass ich komplett vom Erdboden verschwunden bin.
 
+Nachdem Julia am Freitag Abend wieder zurueck nach Bonn gefahren ist, habe ich
+den Samstag Morgen/Mittag zunaechst einmal fuer einen Abstecher nach Arnhem
+genutzt. Wie sich ja immer deutlicher abgezeichnet hat, musste ich etwas an der
+Kapazitaet des bei mir vorhandenen Festplattenspeichers machen -- in der Weise,
+wie staendig neues Material eintrifft, muss ich einfach schauen, dass ich
+entsprechend Archivierungsmoeglichkeiten schaffe. Waehrend ich fuer meine
+Roh-Bilder ja schon seit einer Weile zwei parallel geschaltete 750GB Platten
+verwende, musste ich nun endlich auch einmal eine Massnahme ergreifen, um der
+Sammlung von Musik und Filmen Herr zu werden. Neben dem schlichten
+Speichervolumen spielt fuer mich die Frage nach Datensicherheit auch stehts mehr
+eine Rolle, so dass ich nicht einfach eine weitere externe USB Festplatte
+anschaffen wollte; mal ganz davon abgesehen, dass dies keinerlei Redundanz
+bieten wuerde bin ich bereits in das Problem gelaufen, dass ich einfach zu viele
+Netzteile und Kabel unter meinen Schreibtisch gestopft habe als mir eigentlich
+lieb waere. Somit war eigentlich schon seit einer Weile klar, dass ich diesmal
+nach einer etwas anderen Loesung suchen muesste. Grundsaetzlich hatte ich ja in
+Richtung eines RAID Systems ueberlegt, nur so wirklich zufriedenstellen wollte
+mich dies auch nicht. Eine ernsthafte Alternative ist mir aber schon seit einer
+Weile zu Ohren gekommen, naemlich ueber die Fotographie Podcast, welche ich ja
+mit so schoener Regelmaessigkeit hoere: ein [Drobo](http://www.drobo.com). Der
+von der Firma _Data Robotics_ entwickelte Disk Robot laesst sich mit insgesamt
+vier Festplatten bestuecken und unterstuetzt auf diese Weise ein gesamt
+Speichervolumen von 16TB; auch wenn der Mark bisher noch keine 4TB Scheiben
+anbietet, so ist das System bereits auf die entsprechenden Kapazitaeten
+aufgelegt, so dass ich jederzeit aufstocken kann. Wie dies geht? Alle im Drobo
+eingesetzten Festplatten sind hot-swapable, so dass ich einfach nur eine 1TB
+Scheibe rausziehen und eine 2 TB Scheibe einsetzen brauche (wenn dies
+erhaeltlich werden). Genau, richtig gehoert -- Festplatten lassen sich im
+laufenden Betrieb austauchen, was zum Beispiel noetig wird, wenn entweder eine
+Platte ausfaellt oder aber eine Platte durch ein grosseres Modell ersetzt werden
+soll... und dies alles ohne irgendwelche Daten zu verlieren. Wundert es da noch,
+dass dieses System zum Beispiel unter professionellen Fotographen sehr populaer
+geworden ist. Dies war dann auch der laengerfristige Hintergedanke, welchen ich
+dabei verfolge. Zunaechst aber mal habe ich mein Drobo mit zwei 1TB Platten
+bestueckt, was sich aber im Laufe der Woche noch aendern wird, weil ich einfach
+noch einmal ein weiteres TB noetig habe. Was ich bisher aber schon machen konnte
+war endlich einmal damit zu beginnen meine lang ersehnte Mediathek
+zusammenzufuegen und die bisher ueber diverse Platten verstreuten Daten zu
+zentrieren. Aufgrund der Tatsache, dass ich die Daten von einer 250 GB und einer
+500 GB Platte eingesammelt habe, ist auf dem Drobo derzeit sogar noch ein wenig
+Luft fuer mehr Material:
 
-Ok, bevor es hier noch zu Besorgnis und/oder Spekulationen kommt, hier noch ein paar Details in Bezug auf das vergangene Wochenende. Auch wenn ich mich ja weitestgehend in den eigenen vier Waenden vergraben habe, so soll dies ja keinesfalls heissen, dass ich komplett vom Erdboden verschwunden bin. 
+![Drobo Dashboard](/blog/2008/2008-11/2008-11-17_drobo_dashboard.png)
 
-Nachdem Julia am Freitag Abend wieder zurueck nach Bonn gefahren ist, habe ich den Samstag Morgen/Mittag zunaechst einmal fuer einen Abstecher nach Arnhem genutzt. Wie sich ja immer deutlicher abgezeichnet hat, musste ich etwas an der Kapazitaet des bei mir vorhandenen Festplattenspeichers machen -- in der Weise, wie staendig neues Material eintrifft, muss ich einfach schauen, dass ich entsprechend Archivierungsmoeglichkeiten schaffe. Waehrend ich fuer meine Roh-Bilder ja schon seit einer Weile zwei parallel geschaltete 750GB Platten verwende, musste ich nun endlich auch einmal eine Massnahme ergreifen, um der Sammlung von Musik und Filmen Herr zu werden. Neben dem schlichten Speichervolumen spielt fuer mich die Frage nach Datensicherheit auch stehts mehr eine Rolle, so dass ich nicht einfach eine weitere externe USB Festplatte anschaffen wollte; mal ganz davon abgesehen, dass dies keinerlei Redundanz bieten wuerde bin ich bereits in das Problem gelaufen, dass ich einfach zu viele Netzteile und Kabel unter meinen Schreibtisch gestopft habe als mir eigentlich lieb waere. Somit war eigentlich schon seit einer Weile klar, dass ich diesmal nach einer etwas anderen Loesung suchen muesste. Grundsaetzlich hatte ich ja in Richtung eines RAID Systems ueberlegt, nur so wirklich zufriedenstellen wollte mich dies auch nicht. Eine ernsthafte Alternative ist mir aber schon seit einer Weile zu Ohren gekommen, naemlich ueber die Fotographie Podcast, welche ich ja mit so schoener Regelmaessigkeit hoere: ein [[http://www.drobo.com|Drobo]]. Der von der Firma _Data Robotics_ entwickelte Disk Robot laesst sich mit insgesamt vier Festplatten bestuecken und unterstuetzt auf diese Weise ein gesamt Speichervolumen von 16TB; auch wenn der Mark bisher noch keine 4TB Scheiben anbietet, so ist das System bereits auf die entsprechenden Kapazitaeten aufgelegt, so dass ich jederzeit aufstocken kann. Wie dies geht? Alle im Drobo eingesetzten Festplatten sind hot-swapable, so dass ich einfach nur eine 1TB Scheibe rausziehen und eine 2 TB Scheibe einsetzen brauche (wenn dies erhaeltlich werden). Genau, richtig gehoert -- Festplatten lassen sich im laufenden Betrieb austauchen, was zum Beispiel noetig wird, wenn entweder eine Platte ausfaellt oder aber eine Platte durch ein grosseres Modell ersetzt werden soll... und dies alles ohne irgendwelche Daten zu verlieren. Wundert es da noch, dass dieses System zum Beispiel unter professionellen Fotographen sehr populaer geworden ist. Dies war dann auch der laengerfristige Hintergedanke, welchen ich dabei verfolge. Zunaechst aber mal habe ich mein Drobo mit zwei 1TB Platten bestueckt, was sich aber im Laufe der Woche noch aendern wird, weil ich einfach noch einmal ein weiteres TB noetig habe. Was ich bisher aber schon machen konnte war endlich einmal damit zu beginnen meine lang ersehnte Mediathek zusammenzufuegen und die bisher ueber diverse Platten verstreuten Daten zu zentrieren. Aufgrund der Tatsache, dass ich die Daten von einer 250 GB und einer 500 GB Platte eingesammelt habe, ist auf dem Drobo derzeit sogar noch ein wenig Luft fuer mehr Material:
+Da ich aber ziemlich genau weiss, dass sich an dem stetigen Strom neuer Daten
+nicht viel aendern wird, werde ich mir wohl am Donnerstag Morgen noch mindestens
+eine weitere Festplatte besorgen: einfach Frontplatte abnehmen, Platte in einen
+freien Slot stecken, Festplatte wieder aufsetzen und fertig ist. Schon ziemlich
+cool, vor allen Dingen wenn man bedenkt, dass ich nur noch ein Verbindungskebel
+zum Rechner und ein Netzteil noetig habe. Ob dies in Zukunft genau so bleiben
+wird kann ich noch nicht sagen, denn ich kann mir durchaus vorstellen einen
+weiteren Drobo anzuschaffen, dann ausschliesslich fuer die Bilder. Streng
+genommen haette ich da natuerlich schon direkt zuschlagen koennen, denn Laden in
+Arnhem faehrt derzeit noch ein Angebot, bei welchem ein Drobo plus 2x1TB Platten
+fuer unter 500 Euro zu kriegen sind -- sehr verlockend.
 
-{{ blog:2008:2008-11:2008-11-17_drobo_dashboard.png }}
+Aber gut, dies war nicht das komplette Wochenende, auch wenn ich einige Zeit in
+das Organisieren meiner Daten gesteckt habe. Ganz zurueckhalten mit dem
+Programmieren konnte ich mich diesmal auch wieder nicht, auch wenn ich mir
+diesmal etwas nicht so sonderlich kritisches vorgenommen habe; ich wollte ja
+schon seit einer Weile mal ein wenig in den Linker-Instruktionen fuer die
+CR-Tools aufraeumen, damit ich auf diese Weise die Groesse der erzeugten
+Executables beschraenken kann. Dies hat sogar funktionert, auch wenn ich sagen
+muss, dass ich mir da deutlich mehr erhofft hatte; es scheint aber so, als ob
+die Kombination von CMake und GCC schon recht effizient arbeitet. Aber auch wenn
+die Dateigroessen nicht so sonderlich geschrumpft sind, so sollte sich zumindest
+die fuer einen vollstaendigen Build benoetigte Zeit verringert haben (ich haette
+da vielleicht mal nachmessen sollen).
 
-Da ich aber ziemlich genau weiss, dass sich an dem stetigen Strom neuer Daten nicht viel aendern wird, werde ich mir wohl am Donnerstag Morgen noch mindestens eine weitere Festplatte besorgen: einfach Frontplatte abnehmen, Platte in einen freien Slot stecken, Festplatte wieder aufsetzen und fertig ist. Schon ziemlich cool, vor allen Dingen wenn man bedenkt, dass ich nur noch ein Verbindungskebel zum Rechner und ein Netzteil noetig habe. Ob dies in Zukunft genau so bleiben wird kann ich noch nicht sagen, denn ich kann mir durchaus vorstellen einen weiteren Drobo anzuschaffen, dann ausschliesslich fuer die Bilder. Streng genommen haette ich da natuerlich schon direkt zuschlagen koennen, denn Laden in Arnhem faehrt derzeit noch ein Angebot, bei welchem ein Drobo plus 2x1TB Platten fuer unter 500 Euro zu kriegen sind -- sehr verlockend.
-
-Aber gut, dies war nicht das komplette Wochenende, auch wenn ich einige Zeit in das Organisieren meiner Daten gesteckt habe. Ganz zurueckhalten mit dem Programmieren konnte ich mich diesmal auch wieder nicht, auch wenn ich mir diesmal etwas nicht so sonderlich kritisches vorgenommen habe; ich wollte ja schon seit einer Weile mal ein wenig in den Linker-Instruktionen fuer die CR-Tools aufraeumen, damit ich auf diese Weise die Groesse der erzeugten Executables beschraenken kann. Dies hat sogar funktionert, auch wenn ich sagen muss, dass ich mir da deutlich mehr erhofft hatte; es scheint aber so, als ob die Kombination von CMake und GCC schon recht effizient arbeitet. Aber auch wenn die Dateigroessen nicht so sonderlich geschrumpft sind, so sollte sich zumindest die fuer einen vollstaendigen Build benoetigte Zeit verringert haben (ich haette da vielleicht mal nachmessen sollen).
-
-Darueber hinaus gibt es vom Wochenende nur wenig spannendes zu berichten. Einer der Gruende dafuer ist in der Tatsache zu finden, dass ich am Montag von Corina die letzten beiden noch ausstehenden Seasons "Gilmore Girls" ausgeliehen bekommen habe; waehrend ich mich unter der Woche ja einigermassen zurueckhalten musste, habe ich den Sonntag mit nur sehr wenig anderem zugebracht, so dass ich mich nun bereits mitten in Season sieben befinde. Das dumme an der Sache ist nur, dass danach definitiv Schluss ist -- mehr gibt es dann nicht.
-
+Darueber hinaus gibt es vom Wochenende nur wenig spannendes zu berichten. Einer
+der Gruende dafuer ist in der Tatsache zu finden, dass ich am Montag von Corina
+die letzten beiden noch ausstehenden Seasons "Gilmore Girls" ausgeliehen
+bekommen habe; waehrend ich mich unter der Woche ja einigermassen zurueckhalten
+musste, habe ich den Sonntag mit nur sehr wenig anderem zugebracht, so dass ich
+mich nun bereits mitten in Season sieben befinde. Das dumme an der Sache ist
+nur, dass danach definitiv Schluss ist -- mehr gibt es dann nicht. 

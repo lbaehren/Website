@@ -11,7 +11,7 @@ _Sun, 22. August 2010 -- 17:01_
 
 It has been a few days now, but the situation keep getting worse -- as of lately there is considerable trouble with the server hosting the LOFAR User Software (LUS) Repository and the [[http://usg.lofar.org/forum|Users Forum]].
 
-First signs of trouble showed up at the beginning of the week, when looking in the issue that the [[http://usg.lofar.org/doxygen|Doxygen documentation]] would no longer be build automatically. On inspection it turned out, that [[http://www.cmake.org|CMake]] would not be able to find a valid installation of a C++ compiler; this is kind of strange, because this is one of the core ingredients of the system. As I have not been making any type of modifications there, I have a hard time understanding where this problem was coming from. In order however to mitigate this, I have been checking the system status, also running
+First signs of trouble showed up at the beginning of the week, when looking in the issue that the [[http://usg.lofar.org/doxygen|Doxygen documentation]] would no longer be build automatically. On inspection it turned out, that [CMake](http://www.cmake.org) would not be able to find a valid installation of a C++ compiler; this is kind of strange, because this is one of the core ingredients of the system. As I have not been making any type of modifications there, I have a hard time understanding where this problem was coming from. In order however to mitigate this, I have been checking the system status, also running
 
 ~~~~
 apt-get update && apt-get upgrade
