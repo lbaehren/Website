@@ -1,11 +1,19 @@
 ---
-title: Ein Kreis ist ein Quadrat 
+title: Ein Kreis ist ein Quadrat
 in_menu: false
 ---
 
 ## {title:} ##
 
-_Monday, 22 March 2004 -- 09:35_ 
+_Monday, 22 March 2004 -- 09:35_
 
-
-Und wieder beginnt der Tag mit einer interessanten Sache: unter dem Titel [[http://www.heise.de/newsticker/meldung/45863|Ein Kreis ist ein Quadrat ist ein Fisch ist ein Seestern]] findet sich bei [[http://www.heise.de|Heise]] ein Bericht von der CeBIT über die Anwendung der im Jahr 1997 von dem belgischen Biologen Johan Gielis entwickelten Superformel. Dabei handelt es sich um eine durch 6 Parameter veränderbare Kurve, mit welcher sich eine erstaunliche Vielfalt von Formen darstellen läßt. Für die mathematisch interessierteren empfehle ich einen Besuch bei [[http://mathworld.wolfram.com/Superellipse.html|Wolfram Research]]; für zusätzliche Hintergrundinfos (und einige nette Beispiele) finden sich weiterhin auf den [[http://astronomy.swin.edu.au/~pbourke/curves/supershape|Seiten von Paul Bourke]], zusammen mit Sourcecode für's eigene Experimentieren.
+ Und wieder beginnt der Tag mit einer interessanten Sache: unter dem Titel
+[Ein Kreis ist ein Quadrat ist ein Fisch ist ein Seestern](http://www.heise.de/newsticker/meldung/45863)
+findet sich bei [Heise](http://www.heise.de) ein Bericht von der CeBIT über die
+Anwendung der im Jahr 1997 von dem belgischen Biologen Johan Gielis entwickelten
+Superformel. Dabei handelt es sich um eine durch 6 Parameter veränderbare Kurve,
+mit welcher sich eine erstaunliche Vielfalt von Formen darstellen läßt. Für die
+mathematisch interessierteren empfehle ich einen Besuch bei [Wolfram Research](http://mathworld.wolfram.com/Superellipse.html);
+für zusätzliche Hintergrundinfos (und einige nette Beispiele) finden sich
+weiterhin auf den [Seiten von Paul Bourke](http://astronomy.swin.edu.au/~pbourke/curves/supershape),
+zusammen mit Sourcecode für's eigene Experimentieren. 
