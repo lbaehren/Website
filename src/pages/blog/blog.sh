@@ -183,7 +183,7 @@ get_timeheader ()
     else
         # check if the file path is valid
         if [ -f $1 ] ; then
-            varTimeheader=`cat $1 | grep -v "\[" | grep ":" | grep "_" | grep -v "\#" | grep -v "\-r\-" | grep "\-\-" | sed s/_//g`
+            varTimeheader=`cat $1 | grep -v "\[" | grep -v "[\(\)]" | grep ":" | grep "_" | grep -v "\#" | grep -v "\-r\-" | grep "\-\-" | sed s/_//g`
             echo ${varTimeheader}
         else
             echo ""
