@@ -8,6 +8,68 @@ author: "Lars Baehren"
 
 **:::**
 
+### Webgen configuration ###
+
+
+_Thu, 29. January 2015 -- 09:01_
+
+Here is a litle something I have been working on last night: after struggling with
+parts of the [Webgen](http://webgen.gettalong.org) configuration for the generation
+of my website, I adjusted a) the path at which the configuration file would be place
+by [CMake](http://www.cmake.org) and b) the location from which the `webgen` executable
+would be called. As it turns out the can make quite a difference: the initial impression
+after a few re-generations of the pages is, that things run faster now (though it still
+takes a while to go through a few thousand source files).
+
+One of the relevant changes has been to no longer place the generated Webgen configuration
+file inside the build directory,
+
+~~~~ cmake
+    configure_file (
+        ${CMAKE_CURRENT_SOURCE_DIR}/webgen.config.in
+        ${CMAKE_CURRENT_BINARY_DIR}/webgen.config
+        )
+~~~~
+
+but instead putting it into the root-level directory:
+
+~~~~ cmake
+    configure_file (
+        ${CMAKE_CURRENT_SOURCE_DIR}/webgen.config.in
+        ${CMAKE_CURRENT_SOURCE_DIR}/webgen.config
+        )
+~~~~
+
+With this adjustment out of the way, the website generation can be run from the
+standard location (i.e. in the same way this would happen when using Webgen to create
+the base-structure for a new site):
+
+~~~~ cmake
+    add_custom_target (Website ALL
+        COMMAND ${WEBGEN_EXECUTABLE} generate
+        WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
+        COMMENT "Rendering website from sources ..."
+        )
+~~~~
+
+The side-effect of this -- something of course I was trying to avoid with the
+out-of-source build in the first place -- is that some changes are made to the
+source directory. Luckily the only thing actually happening is that Webgen will
+create a number of files within the root directory of the project -- adding these
+files to the `clean` target will help to put back everything into its original state.
+
+~~~~ cmake
+    set_property (DIRECTORY
+        APPEND PROPERTY ADDITIONAL_MAKE_CLEAN_FILES
+        ${CMAKE_INSTALL_PREFIX}
+        ${PROJECT_SOURCE_DIR}/webgen.cache
+        ${PROJECT_SOURCE_DIR}/webgen.config
+        ${PROJECT_SOURCE_DIR}/config.yaml
+        )
+~~~~
+
+**:::**
+
 ### Ausgeloest ###
 
 
@@ -479,57 +541,3 @@ dass ich versuche die Betonwaende auf einen neutralen Ton zu setzen, damit ich d
 orange Schimmern wegkriege -- der nette Nebeneffekt davon ist aber, dass sowohl das Metall
 der Aufzuege als auch der Himmel noch einmal eine ganze Ecke kuehler wirken (weil eben
 die Rotanteile herausgefiltert werden).
-
-**:::**
-
-### ESA, nicht NASA ###
-
-
-_Thu, 08. January 2015 -- 18:19_
-
-Nachdem ich letztes Jahr schon wieder bei [Omegatau](http://omegataupodcast.net)
-und [FLOSS Weekly](http://twit.tv/show/floss-weekly) aktiv geworden bin, was die
-Rueckmeldung und Mithilfe betrifft, so war es um den Jahreswechsel auch mal an der
-Zeit mich mit der [BBC](http://www.bbc.co.uk) in Verbindung zu setzen. Grund dafuer
-war ein -- wie ich fand einfach zu prominenter sachlicher Fehler -- in der letzten
-Ausgabe des [Global News Podcast](http://www.bbc.co.uk/podcasts/series/globalnews)
-vor dem Jahreswechsel:
-
-> Sent: 02 January 2015 21:24  <br>
-> To: Global Podcast  <br>
-> Subject: Factual error in 31-Dec-2014 edition
->
->
-> Ladies and Gentlemen,
->
->
-> the last edition of the Global News Podcast for the year 2014 contained
-> a prominently features factual error:
->
->
-> The Rosetta mission is not run by [NASA](http://www.nasa.gov) - as falsely claim in the
-> introduction to the subsequent report - by the [European Space Agency](http://www.esa.int/ESA)
-> (ESA). Given that in fact this mission was probably THE scientific
-> highlight (especially considering media impact) of 2014 the attribution
-> of the organization responsible should be correct.  <br>
->
-> For verification check: [rosetta.esa.int](http://rosetta.esa.int)
-
-Was es sonst vielleicht noch alles an Ausrutschern gibt kann ich nur schwer beurteilen,
-aber es gibt einfach Geschichten wie diese, wo ich ziemlich nah an der Quelle sitze
-(zumindest deutlich naeher als der durchschnittliche Hoerer); wenn man mir dann versucht
-zu erzaehlen dass _Rosetta_ eine amerikanische Raumfahrt-Mission ist -- wenn alle
-Live-Bildern von der Landung doch aus dem Kontrollzentrum in Deutschland kamen -- dann
-wird ein Einspruch faellig. Dem Feedback nach, welches ich dann Beginn dieser Woche
-erhalten habe, war ich wohl nicht der einzige, der auf den Fehler hingewiesen hat
-(waere auch wirklich verwunderlich gewesen nach all dem Medien-Zirkus Ende letzten
-Jahres):
-
-> Thanks for pointing this out, and you're not the only listener to have spotted it. I was the producer on duty that night, and I take responsibility for the mistake - it was a bad one and shouldn't have occurred.   We'll be more vigilant in future.
->
-> Rahul Sarnaik,  <br>
-> Producer,  <br>
-> GLOBAL NEWS,  <br>
-> BBC World Service.
-
-Naja, ich werde einfach mal die Ohren offen halten...

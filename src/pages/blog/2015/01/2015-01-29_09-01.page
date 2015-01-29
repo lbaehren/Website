@@ -1,0 +1,66 @@
+---
+title: "Webgen configuration"
+in_menu: false
+author: "Lars Baehren"
+date: 2015-01-29T09:01:10.00Z
+created_at: 2015-01-29T03:12:11.00Z
+---
+
+## {title:} ##
+
+_Thu, 29. January 2015 -- 09:01_
+
+Here is a litle something I have been working on last night: after struggling with
+parts of the [Webgen](http://webgen.gettalong.org) configuration for the generation
+of my website, I adjusted a) the path at which the configuration file would be place
+by [CMake](http://www.cmake.org) and b) the location from which the `webgen` executable
+would be called. As it turns out the can make quite a difference: the initial impression
+after a few re-generations of the pages is, that things run faster now (though it still
+takes a while to go through a few thousand source files).
+
+One of the relevant changes has been to no longer place the generated Webgen configuration
+file inside the build directory,
+
+~~~~ cmake
+    configure_file (
+        ${CMAKE_CURRENT_SOURCE_DIR}/webgen.config.in
+        ${CMAKE_CURRENT_BINARY_DIR}/webgen.config
+        )
+~~~~
+
+but instead putting it into the root-level directory:
+
+~~~~ cmake
+    configure_file (
+        ${CMAKE_CURRENT_SOURCE_DIR}/webgen.config.in
+        ${CMAKE_CURRENT_SOURCE_DIR}/webgen.config
+        )
+~~~~
+
+With this adjustment out of the way, the website generation can be run from the
+standard location (i.e. in the same way this would happen when using Webgen to create
+the base-structure for a new site):
+
+~~~~ cmake
+    add_custom_target (Website ALL
+        COMMAND ${WEBGEN_EXECUTABLE} generate
+        WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
+        COMMENT "Rendering website from sources ..."
+        )
+~~~~
+
+The side-effect of this -- something of course I was trying to avoid with the
+out-of-source build in the first place -- is that some changes are made to the
+source directory. Luckily the only thing actually happening is that Webgen will
+create a number of files within the root directory of the project -- adding these
+files to the `clean` target will help to put back everything into its original state.
+
+~~~~ cmake
+    set_property (DIRECTORY
+        APPEND PROPERTY ADDITIONAL_MAKE_CLEAN_FILES
+        ${CMAKE_INSTALL_PREFIX}
+        ${PROJECT_SOURCE_DIR}/webgen.cache
+        ${PROJECT_SOURCE_DIR}/webgen.config
+        ${PROJECT_SOURCE_DIR}/config.yaml
+        )
+~~~~
