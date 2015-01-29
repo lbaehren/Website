@@ -19,10 +19,10 @@ werfen eine Fehlermeldung aus, daß kein Audio-Device verfügbar ist:
 
  - aviplay
 ~~~~~~~~
-<audio renderer> : src fmt=0x2000 2ch 48000Hz  0b  24000B/s balign=1 cbsz=18
-<audio renderer> : dst fmt=0x01 2ch 48000Hz 16b 192000B/s balign=4 cbsz=0
-<SDL audio renderer> : No available audio device!
-<aviplay> : Will try audio renderers in this order: noaudio
+\<audio renderer\> : src fmt=0x2000 2ch 48000Hz  0b  24000B/s balign=1 cbsz=18
+\<audio renderer\> : dst fmt=0x01 2ch 48000Hz 16b 192000B/s balign=4 cbsz=0
+\<SDL audio renderer\> : No available audio device!
+\<aviplay\> : Will try audio renderers in this order: noaudio
 ~~~~~~~~
 
  - mplayer

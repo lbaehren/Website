@@ -10,9 +10,12 @@ created_at: 2008-10-02T12:28:00.00Z
 
 _Thu, 02 October 2008 -- 12:28_
 
-
-
-Sp, heute gibt es noch einmal eine kurze Pause, ehe es denn morgen auf geht in die Naehe von Venlo: dort findet an diesem Wochenende (Fri--So) die [[http://progpower.eu/website|Prog-Power Europe 2008]] statt, ein Gelegenheit wieder einmal die Kamera unter verschaerften Bedingungen zum Einsatz zu bringen. Die Teilnehmerlist fuer das Festival liest sich sehr interessant, so dass ich mit qualitativ hochwertigen Beitraegen rechne: 
+So, heute gibt es noch einmal eine kurze Pause, ehe es denn morgen auf geht in
+die Naehe von Venlo: dort findet an diesem Wochenende (Fri--So) die
+[Prog-Power Europe 2008](http://progpower.eu/website) statt, ein Gelegenheit
+wieder einmal die Kamera unter verschaerften Bedingungen zum Einsatz zu bringen.
+Die Teilnehmerlist fuer das Festival liest sich sehr interessant, so dass ich
+mit qualitativ hochwertigen Beitraegen rechne:
 
   * Pagan's Mind
   * Atrox
@@ -23,13 +26,13 @@ Sp, heute gibt es noch einmal eine kurze Pause, ehe es denn morgen auf geht in d
   * Wolverine
   * Sun Caged
   * Cilice
-  * [[http://www.thresh.net|Threshold]]
+  * [Threshold](http://www.thresh.net)
   * Myrath
-  * [[http://www.sayitdigital.com/suspyre|Suspyre]]
+  * [Suspyre](http://www.sayitdigital.com/suspyre)
   * Pathosray
   * 21 Eyes of Ruby
 
-Eine Reihe unbekannter Namen dabei? Macht nichts, dies geht mir genau so. Waehrend ich die Headliner der drei Tage durchaus kenne, finden sich auch einige Namen auf der Liste, welche mir bisher noch nichts sagen -- eine gute Gelegenheit also um den eigenen musikalischen Horizont wieder ein wenig zu erweitern. 
+Eine Reihe unbekannter Namen dabei? Macht nichts, dies geht mir genau so. Waehrend ich die Headliner der drei Tage durchaus kenne, finden sich auch einige Namen auf der Liste, welche mir bisher noch nichts sagen -- eine gute Gelegenheit also um den eigenen musikalischen Horizont wieder ein wenig zu erweitern.
 
 Aufbruch ist morgen frueh -- vollkommen ausreichen angesichts der Tatsache, dass alle halbe Stunde eine Bahnverbindung in Richtung Venlo existiert und die Gesamtreisedauer bei knapp eineinhalb Stunden liegt. Den heutigen Tag habe ich mir -- wie ja auch Freitag und Montag -- freigenommen, so dass ich in Ruhe die Vorbereitungen abschliessen kann. Das ich seit der Rueckkehr aus Hamburg ja eine recht extreme Arbeitsperiode eingelegt habe, ist es um die Vorbereitung noch nicht sonderlich gut bestellt, so dass es gut ist einen extra Tag zur Verfuegung zu haben. Den gestrigen Tag habe ich noch einmal dazu nutzen koennen um eine Reihe von zuletzt aufgetretenen Problemen in der User Software zu beheben; insgesamt konnte ich drei schwerwiegendere Fehler beheben, welche Teils schon seit einer Weile auf der Liste standen:
 
@@ -38,4 +41,3 @@ Aufbruch ist morgen frueh -- vollkommen ausreichen angesichts der Tatsache, dass
   - Seit der Einfuehrung der Boost ''program_options'' Bibliothek hat es wiederkehrende Konflikte mit bereits existierenden Installationen gegeben, welche in der Regel aelter waren als die von uns verwendete Version. Um das Problem der Kommandozeilen Parameter zu loesen hatte ich vor einer Weile die von Boost bereitsgestellte Bibliothek uebernommen -- was allerdings bedeutete, dass eine bestimmte Version noetig war. Grundsaetzlich kein Problem, weil Boost ein Bestandteil unseres Software-Packages ist (einfach der besseren Kontrolle wegen); was allerdings noch fehlte war, dass alle potentiell benoetigten Bibliotheken selber gebaut werden. Diese Kleinigkeit habe ich gestern Nachmittag noch behoben, so dass die Data Access Library nun auch auf dem Rechner in Nijmegen wieder gebaut wird.
 
 Die im Zuge dieser Aktivitaeten wieder auftauchenden Kommentare nehme ich mir besser nicht zu sehr zu Herzen, weil diese -- in bekannter Manier -- nicht so sonderlich nuetzlich waren. Ich denke mal, dass hier wirklich ein klaerendes Gespraech noetig sein wird: es kann schliesslich nicht so weiter gehen, dass staendig hier aus Nijmegen die Querschuesse auf das erfolgen, was wir im Zuge einer gemeinsamen Anstrengung versuchen zu erreichen. Ich muss dringend noch einmal bei Michael anfragen, was denn nun aus dem Vorhaben beworden ist, sich mit Heino und Joerg zusammenzusetzen und die weitere Vorgehensweise zu besprechen -- angedacht war ein Treffen an diesem Freitag, aber bisher habe ich keine weiteren Infos mehr darueber gehoert, so dass ich nicht weiss ob dieses Treffen nun stattfindet oder nicht.
-

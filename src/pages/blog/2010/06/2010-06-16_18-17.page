@@ -8,11 +8,16 @@ author: Lars Baehren
 
 _Wed, 16. June 2010 -- 18:17_
 
+Das war wieder einmal ein Klassiker: kurz bevor ich hier in **Zwolle** den Zug
+gewechselt habe, habe ich mich noch von Anastasia und Ken verabschiedet (die
+beiden reisen ja weiter nach Amsterdam). Als ich dabei einen Blick auf Kens
+Laptop geworfen habe, fiel mir auf, dass er damit beschaeftigt war, Teile der
+ICDs zu editieren. Ein genauerer Blick zeigte mir, dass er gerade damit
+bechaeftigt war Aenderungen vorzunehmen, welche ich noch vor unserer Abreise von
+[ASTRON](http://www.astron.nl) erledigt hatte (auch wenn ich es von der Zeit
+nicht mehr geschafft habe alles in Repository einzuchecken):
 
-
-Das war wieder einmal ein Klassiker: kurz bevor ich hier in **Zwolle** den Zug gewechselt habe, habe ich mich noch von Anastasia und Ken verabschiedet (die beiden reisen ja weiter nach Amsterdam). Als ich dabei einen Blick auf Kens Laptop geworfen habe, fiel mir auf, dass er damit beschaeftigt war, Teile der ICDs zu editieren. Ein genauerer Blick zeigte mir, dass er gerade damit bechaeftigt war Aenderungen vorzunehmen, welche ich noch vor unserer Abreise von [ASTRON](http://www.astron.nl) erledigt hatte (auch wenn ich es von der Zeit nicht mehr geschafft habe alles in Repository einzuchecken):
-
-<code latex>
+~~~~ tex
   \begin{table}[ht]
     \centering
     \begin{tabular}{lp{12cm}}
@@ -42,9 +47,10 @@ Das war wieder einmal ein Klassiker: kurz bevor ich hier in **Zwolle** den Zug g
     \caption{Overview of antenna set configurations.}
     \label{tab:antenna-set}
   \end{table}
-</code>
+~~~~
 
-Meine Anmerkung, dass ich bereits alle entsprechenden Aenderungen vorgenommen haette resultierte in einem leicht unglaeubigen Kopfschuetteln und einem "Wann hast Du das denn gemacht?" Stellt sich also wieder einmal heraus, dass ich einfach schneller war als alle anderen -- dies kann zwar nicht immer der Fall sein, aber wenn es passiert, dann ist es doch schon ganz nett.
-
-
-~~DISCUSSION~~
+ Meine Anmerkung, dass ich bereits alle entsprechenden Aenderungen vorgenommen
+haette resultierte in einem leicht unglaeubigen Kopfschuetteln und einem "Wann
+hast Du das denn gemacht?" Stellt sich also wieder einmal heraus, dass ich
+einfach schneller war als alle anderen -- dies kann zwar nicht immer der Fall
+sein, aber wenn es passiert, dann ist es doch schon ganz nett.
