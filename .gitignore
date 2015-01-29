@@ -6,3 +6,4 @@ release
 ## Individual files
 .DS_Store
 webgen.cache
+webgen.config
