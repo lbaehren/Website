@@ -250,7 +250,6 @@ endif (RSYNC_EXECUTABLE)
 ##______________________________________________________________________________
 ## Project sub-directories
 
-add_subdirectory (src/doc)
 add_subdirectory (src/code)
 
 
@@ -263,6 +262,7 @@ add_subdirectory (src/code)
 set_property (DIRECTORY
   APPEND PROPERTY ADDITIONAL_MAKE_CLEAN_FILES
   ${CMAKE_INSTALL_PREFIX}
+  ${PROJECT_SOURCE_DIR}/tmp
   ${PROJECT_SOURCE_DIR}/webgen.cache
   ${PROJECT_SOURCE_DIR}/webgen.config
   ${PROJECT_SOURCE_DIR}/config.yaml
