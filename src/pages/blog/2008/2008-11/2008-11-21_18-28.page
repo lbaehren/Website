@@ -10,21 +10,40 @@ created_at: 2008-11-21T18:28:00.00Z
 
 _Fri, 21 November 2008 -- 18:28_
 
+It's not even a week that I went to Arnhem in order to buy a Drobo -- including
+two 1 TB drives -- and already I have taken the step to fully mount the system.
+Not necessarily that there was any real urge to perform an upgrade -- the
+storage space would have lasted for a bit -- but seeing the two empty bays on
+the device made such a sad impression that I simply had to fill them up. As a
+consequence I started looking out for the best place within reach to get the
+additional drives (500 GB or larger); turned out that a) not only the shop I was
+last Saturday is the best address close to Nijmegen and b) that the 1 TB Western
+Digital drives I got as part of the offer are the best deal. With the long
+shopping hours on Thursday I decided to make another quick trip to Arnhem to
+pick up the drives (unfortunately the trip back from Dwingeloo the day before
+was a bit to late to to this then).
 
+An hour later -- which also included looking around a bit -- I arrived back
+home, two more 1 TB drives in my pockets, ready to get installed. In order to
+get some feeling for the capabilities the device is praised for, decided to
+insert at least on of the drives while actually transferring data onto the
+Drobo. Worked as smoothly as advertised:
 
-It's not even a week that I went to Arnhem in order to buy a Drobo -- including two 1 TB drives -- and already I have taken the step to fully mount the system. Not necessarily that there was any real urge to perform an upgrade -- the storage space would have lasted for a bit -- but seeing the two empty bays on the device made such a sad impression that I simply had to fill them up. As a consequence I started looking out for the best place within reach to get the additional drives (500 GB or larger); turned out that a) not only the shop I was last Saturday is the best address close to Nijmegen and b) that the 1 TB Western Digital drives I got as part of the offer are the best deal. With the long shopping hours on Thursday I decided to make another quick trip to Arnhem to pick up the drives (unfortunately the trip back from Dwingeloo the day before was a bit to late to to this then).
+ - Remove front plate (which is held in place magnetically, so there are no clips or screws to loosen).
+ - Insert the disks into the empty bays.
+ - Put the front plate back on.
 
-An hour later -- which also included looking around a bit -- I arrived back home, two more 1 TB drives in my pockets, ready to get installed. In order to get some feeling for the capabilities the device is praised for, decided to insert at least on of the drives while actually transferring data onto the Drobo. Worked as smoothly as advertised:
+Yes, that really is all there is to it: no need to stop whatever you are doing
+with or to the data stored on the Drobo. In order to make sure the device was
+busy I actually started the transfer of some video data from the laptop onto the
+Drobo -- adding the new drives however did not require halting any of the
+ongoing activities.
 
-  - Remove front plate (which is held in place magnetically, so there are no clips or screws to loosen).
-  - Insert the disks into the empty bays.
-  - Put the front plate back on.
+| ![Picture](2008-11-20_drobo_01.png) | ![Picture](2008-11-20_drobo_03.png) | ![Picture](2008-11-20_drobo_05.png) |
+| ![Picture](2008-11-20_drobo_02.png) | ![Picture](2008-11-20_drobo_04.png) | ![Picture](2008-11-20_drobo_06.png) |
 
-Yes, that really is all there is to it: no need to stop whatever you are doing with or to the data stored on the Drobo. In order to make sure the device was busy I actually started the transfer of some video data from the laptop onto the Drobo -- adding the new drives however did not require halting any of the ongoing activities.
-
-| {{2008-11-20_drobo_01.png?190}} | {{2008-11-20_drobo_03.png?190}} | {{2008-11-20_drobo_05.png?190}} |
-| {{2008-11-20_drobo_02.png?190}} | {{2008-11-20_drobo_04.png?190}} | {{2008-11-20_drobo_06.png?190}} |
-
-The total amount of available storage space is display by the Drobo Dashboard; I made screen-shots during each step of the upgrade, i.e. before adding the new drives and after each single addition. Controls and storage statistics are updated on the fly as the new drives are added. The system is now filled with 4 TB, which gives me 3 TB of protected storage.
-
-
+The total amount of available storage space is display by the Drobo Dashboard; I
+made screen-shots during each step of the upgrade, i.e. before adding the new
+drives and after each single addition. Controls and storage statistics are
+updated on the fly as the new drives are added. The system is now filled with 4
+TB, which gives me 3 TB of protected storage.

@@ -1,0 +1,22 @@
+---
+title: "Uncharted territory"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Tue, 24. March 2009 -- 08:22_
+
+After digging through some of the pictures taken last year, I picked up some more of the impressions from the trip to Romania. As usually done with most of the [pictures I am putting up on Flickr](http://www.flickr.com/photos/larsbaehren), I was trying to add a geo-tag -- a feature with nicely enables browsing pictures by geographic location. Turns out however, that [Flickr](http://www.flickr.com) has quite a few holes in the mesh covering the surface of the Earth. Even though I had not expected to find a full street-plan of all the places I have been visiting, I was hoping to at least find a low resolution map of regions.
+
+![Flickr map Sinaia](/blog/2009/03/flickr_map_sinaia.png)
+
+As can be seen from the screenhot above, Yahoo failed to fullfil my expectations. Of the many pictures I have been taking during our stay in Sinaia I was expecting at least to find a crude map of the area, which would allow to distinguish the settlement from its surroundings -- thereby allowing to roughly locate the castle outside the town. Romania however appears to be uncharted territory to quite some extend: the above view already was zoomed out quite a bit to get at least something more but a single line -- further zooming in will only result in an empty white area with no features at all.
+
+Possible strategies?
+
+* Try to tag the images as best as possbible (which might not be too good given the standards I am used to when placing pictures on a map of the Netherlands).
+* Get a GPS receiver to in the future record geographic locations and store this information directly as part of the picture's metadata.
+
+In both cases the hope would be that once one would start to populate these still uncharted areas, attention would be drawn to the fact that the maps need some improvement; as long as nobody is placing pictures there, why bother about it...

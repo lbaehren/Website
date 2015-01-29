@@ -1,0 +1,17 @@
+---
+title: "Mehr als die Haelfte"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Thu, 12. March 2009 -- 12:31_
+
+Wenn dies so weitergeht, dann werde ich doch deutlich schneller meinen Plattenplatz erweitern muessen, als ich dies gedacht hatte.
+
+Seit ich meine Speicherkapazitaet ueber ein Drobo erweitert habe, verfuege ich nicht nur ueber so viel Plattenplatz wie noch nie zuvor, sondern vor allen Dingen aber weiss ich meine Daten deutlich sicherer als dies allein mit einer Ansammlung von externen USB Festplatten der Fall waere. Was bisher aber immer noch fehlt ist, dass auch mein Bilder-Archiv umzieht; bisher liegt alles ja noch auf zwei als RAID 0 zusammengeschalteten Platten -- nicht unbedingt die beste Loesung, welche man sich vorstellen kann. Aus diesem Grunde habe ich mich schon vor einer Weile damit abgefunden, dass ich diesen Fruehjahr noch ein zweites Drobo kaufen werde, damit ich meine Sammlung ebenfalls sicher unterbringen kann (mal ganz davon abgesehen, dass die Zugriffsgeschwindigkeit deutlich zu verbessern ist).
+
+![Drobo](/blog/2009/03/2009-03-12_drobo.png)
+
+Wie man an obigen Screenshot sehen kann habe ich es mittlerweile geschafft mehr als die Haelfte des Plattenplatzes auf dem ersten Drobo zu belegen. Wenn also meine Sammlung an Filmen und Musik in dem Masse weiterwaechst, wie dies derzeit der Fall ist, dann sollte ich mir ebenfalls mal darueber Gedanken machen, ob ich bei Gelegenheit nicht mal ein oder zwei der 1TB Platten durch 1.5TB (oder sogar 2TB) Platten ersetze...

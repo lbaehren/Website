@@ -1,0 +1,15 @@
+---
+title: "Eins vor dem Komma"
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Sun, 04. January 2009 -- 22:01_
+
+Manchmal sind es doch einfach nur die kleinen Dinge, welche man sehen will. So habe ich nun eine Weile darauf gewartet, dass auf dem Drobo Dashboard die Anzeige fuer den gebrauchten Speicherplatz ueber die 1 TB Marke klettert. Auch wenn ich in der Zwischenzeit ja eine gehoerige Menge an Daten aus allerlei Ecken zusammengetragen und auf das [Drobo](http://www.drobo.com) kopiert habe, so hat sich die Anzeige in den letzten Wochen doch noch im dreistelligen GB-Bereich bewegt -- dies hat sich mit dem heutigen Abend geaendert:
+
+![Drobo](/blog/2009/01/2009-01-04_drobo.png)
+
+Worueber ich mir bisher allerdings noch nicht 100%ig sicher bin ist, ob seitens des Betriebssystems auch der komplette zur Verfuegung stehende Plattenplatz gesehen wird; was ich einfach noch einmal ueberpruefen muss ist, in wie weit die Anzeige in der Disk Utility mit den Zahlen im Drobo Dashboard uebereinstimmt -- es waere doch sehr schade, wenn ich nicht in der Lage waere die 4 mal 1 TB Platten vollstaendig auszunutzen. Dass ich nicht einfach nur die volle Menge zum Abspeichern von Daten zur Verfuegung stehen habe ist mir schon vollkommen klar -- schliesslich wird ein Teil der Kapazitaet fuer die interne Sicherung verwendet -- aber so ganz traue ich der Sache eben noch nicht. Unabhaengig davon aber werde ich mir wohl dieses Jahr noch ein zweites Drobo anschaffen, da ich einfach mal erwarte, dass mein Speicherbedarf schneller anwaechst, als sich dies mittels eines Platten-Upgrades kompensieren laesst (nur noch einmal zur Erinnerung: die derzeitige interne Belegung laesst sich schrittweise von 1 TB bis zu 4 TB aufruesten).
