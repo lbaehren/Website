@@ -1,0 +1,78 @@
+---
+title: "Merge of CMake configuration"
+in_menu: false
+author: Lars Baehren
+date: 2008-08-12T07:43:00.00Z
+created_at: 2008-08-12T07:43:00.00Z
+---
+
+## {title:} ##
+
+_Tue, 12. August 2008 -- 07:43_
+
+As it turns out [the recent episode of being traumatized by Steve](/blog/2008/07/2008-07-30_12-35.html) in fact had one positive aspect to it: it provided
+me with the missing clue to finally be able to merge the configuration and
+build scripts for Linux and Mac OS X to the CR-Tools package.
+
+Weeding out a number of remaining hick-ups in the CMake scrips to build the
+CR-Tools package, I decided this also was the time to finally get to the bottom
+of the long-standing issue of being unable to build the package from the same
+set of CMake scripts, as has been the case for the other packages in our code
+base. If you keep in mind the basic directory structure:
+
+~~~~
+src
+`-- CR-Tools
+    |-- CMakeLists.txt
+    |-- apps
+    |-- implement
+    |   `-- CMakeLists.txt
+    `-- test
+        `-- CMakeLists.txt
+~~~~
+
+With the bulk of the system inspection and configuration carried out in
+''CR-Tools/CMakeLists.txt'' only little additional configuration and decision
+making would need to be done in the sub-directories. Past attempts trying to
+clean up this top-level configuration script however turned out to be
+ineffective,  because I would be getting pages and pages of compiler errors on
+the inability to properly instantiate any of the objects defined through the
+''casacore'' library. After a little bit more of tweaking I at least would be
+able to use the ''CMakeLists.txt'' scripts in ''test'' and ''apps'' as they were --
+if only I would be running them from a modified versions of top-level script and
+the script in ''implement''. Most interestingly the only main difference between
+the general CMake script and Mac OS-specific script was the ordering of
+registering include directories and project sub-directories. So after trying out
+a number of tricks in a final effort I decided to take the line with the
+instruction under suspicion
+
+~~~~
+if (CR_BUILD_EXTERNAL_TESTS)
+  add_subdirectory (test)
+endif (CR_BUILD_EXTERNAL_TESTS)
+~~~~
+
+and move its position through the configuration file paragraph by paragraph.
+Since the test programs for external packages would build if the above
+instruction was issued before setting up the full set of include directories, I
+decided to moved adding the sub-directory down the line of instructions until
+it would fail to build with the same set of errors as the case for the code in
+''implement''. Indeed it only took very few swaps to run into known trouble
+once more.
+
+After trying to solve this for quite a while now, however this time the previous
+issue of file names under Mac OS X came back to me. With the compiler
+complaining about a number of functions not being defined which should be known
+after including ''/usr/include/math.h'' I decided to force loading of this
+header file from ''CR-Tools/implement/Math.h'' to make the function definitions
+available to the CR-Tools code. This in fact turned out to be the missing piece,
+because with the now issued compiler errors I simply decided to remove the
+''CR-Tools/implement/Math.h'' header file... and bingo -- problem solved!
+
+So in order to follow this up I ran another check on my older PowerBook G4 which
+I had set up with two different partitions -- one as _Mac OS Extended_ and one
+as _UNIX_. Repeating the exercise with moving around folders the problem
+indeed could be traced back to the file systems (and not the operating system as
+I was suspecting at some point). So if you want your file-system to behave
+properly -- and by this I would consider UNIX as the reference -- you better be
+formatting you partition as _UNIX_ and __not__ _Mac OS Extended_.
