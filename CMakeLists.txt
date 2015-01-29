@@ -189,14 +189,16 @@ endif (DOXYGEN_EXECUTABLE)
 ##
 ## =============================================================================
 
-##______________________________________________________________________________
-## Build instructions for website
-
+##___________________________________________________________________
 ## Webgen configuration file
+
 configure_file (
     ${CMAKE_CURRENT_SOURCE_DIR}/webgen.config.in
     ${CMAKE_CURRENT_SOURCE_DIR}/webgen.config
 )
+
+##___________________________________________________________________
+## Build the website
 
 add_custom_target (Website ALL
   COMMAND ${WEBGEN_EXECUTABLE} generate
@@ -204,14 +206,16 @@ add_custom_target (Website ALL
   COMMENT "Rendering website from sources ..."
   )
 
+##___________________________________________________________________
 ## Installation instructions
+
 install(
   DIRECTORY ${PROJECT_SOURCE_DIR}/out
   DESTINATION ${CMAKE_INSTALL_PREFIX}
   USE_SOURCE_PERMISSIONS
   )
 
-##______________________________________________________________________________
+##___________________________________________________________________
 ## Publish the website online
 
 #        -a, --archive               archive mode; equals -rlptgoD (no -H,-A,-X)
@@ -247,7 +251,7 @@ else (RSYNC_EXECUTABLE)
   message (STATUS "Unable to publish generated pages - missing rsync!")
 endif (RSYNC_EXECUTABLE)
 
-##______________________________________________________________________________
+##___________________________________________________________________
 ## Project sub-directories
 
 add_subdirectory (ext)
