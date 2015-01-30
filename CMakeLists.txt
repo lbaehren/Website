@@ -270,6 +270,7 @@ add_subdirectory (ext)
 set_property (DIRECTORY
   APPEND PROPERTY ADDITIONAL_MAKE_CLEAN_FILES
   ${CMAKE_INSTALL_PREFIX}
+  ${PROJECT_SOURCE_DIR}/out
   ${PROJECT_SOURCE_DIR}/tmp
   ${PROJECT_SOURCE_DIR}/webgen.cache
   ${PROJECT_SOURCE_DIR}/webgen.config
