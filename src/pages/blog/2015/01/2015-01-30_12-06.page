@@ -1,0 +1,74 @@
+---
+title: "Transfering static websites"
+in_menu: false
+author: "Lars Baehren"
+date: 2015-01-30T12:06:12.00Z
+created_at: 2015-01-30T11:45:57.00Z
+---
+
+## {title:} ##
+
+_Fri, 30. January 2015 -- 12:06_
+
+Given the number of adjustments to the machinery behind this website -- mainly the
+helper scripts and some of the directory structure -- taking a closer look at the
+contents hosted on the server seemed like a good idea. As it turns out there has been
+quite a lot of contents, which probably should not even have ended up there in the
+first place: I noticed quite a number of temporary files (probably the result of failed
+page generation runs) and directories which no longer should be present. Since the
+synchronization of local (build) version and the version hosted on the server is done
+via `rsync` I had a look at the exact configuration of that transfer:
+
+~~~~ cmake
+    add_custom_target (online
+        COMMAND ${RSYNC_EXECUTABLE} -axuzP ${PROJECT_SOURCE_DIR}/out/* ${PROJECT_UPLOAD_PATH}
+        WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
+        COMMENT "Publishing website - uploading generated pages ..."
+        )
+~~~~
+
+While the command in itself is not wrong -- otherwise I would have trouble even
+transfering the data -- one rather important bit was missing: without the additional
+`--delete` option files will accumulate on the webserver, taking up unnecessary
+space and potentially causing faulty navigation through the website. The remedy
+for this is quite simple:
+
+~~~~ cmake
+    add_custom_target (online
+        COMMAND ${RSYNC_EXECUTABLE} -axuzP --delete ${PROJECT_SOURCE_DIR}/out/* ${PROJECT_UPLOAD_PATH}
+        WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
+        COMMENT "Publishing website - uploading generated pages ..."
+        )
+~~~~
+
+Switching on the `--delete` option for `rsync` in fact causes a clean-up of the
+target directories:
+
+~~~~
+blog/2005/
+blog/2005/2005-01/
+blog/2005/2005-02/
+blog/2005/2005-03/
+blog/2005/2005-04/
+blog/2005/2005-05/
+blog/2005/2005-06/
+blog/2005/2005-07/
+blog/2005/2005-07/2005-07-02_23-18.html
+          8,615 100%    0.00kB/s    0:00:00 (xfr#1, ir-chk=1099/1858)
+blog/2005/2005-08/
+blog/2005/2005-09/
+deleting blog/2005/2005-10/.2005-10-27_09-42.html.FGbjlZ
+deleting blog/2005/2005-10/.2005-10-21_10-00.html.sBBMas
+deleting blog/2005/2005-10/.2005-10-20_22-40.html.5N96yk
+deleting blog/2005/2005-10/.2005-10-20_22-12.html.zGmXwA
+deleting blog/2005/2005-10/.2005-10-08_11-44.html.sJLcG5
+deleting blog/2005/2005-10/.2005-10-02_20-41.html.572TYc
+deleting blog/2005/2005-11/.2005-11-23_07-02.html.CzcxWs
+deleting blog/2005/2005-11/.2005-11-14_16-21.html.L2nUaj
+deleting blog/2005/2005-11/.2005-11-13_21-31.html.0ihb1G
+deleting blog/2005/2005-11/.2005-11-04_20-10.html.RP3cj9
+deleting blog/2005/2005-11/.2005-11-04_19-27.html.KgPIa4
+deleting blog/2005/2005-12/.2005-12-28_12-32.html.UUu1dq
+deleting blog/2005/2005-12/.2005-12-28_00-56.html.WvaZM1
+deleting blog/2005/2005-12/.2005-12-15_17-30.html.agepc6
+~~~~

@@ -8,6 +8,76 @@ author: "Lars Baehren"
 
 **:::**
 
+### Transfering static websites ###
+
+
+_Fri, 30. January 2015 -- 12:06_
+
+Given the number of adjustments to the machinery behind this website -- mainly the
+helper scripts and some of the directory structure -- taking a closer look at the
+contents hosted on the server seemed like a good idea. As it turns out there has been
+quite a lot of contents, which probably should not even have ended up there in the
+first place: I noticed quite a number of temporary files (probably the result of failed
+page generation runs) and directories which no longer should be present. Since the
+synchronization of local (build) version and the version hosted on the server is done
+via `rsync` I had a look at the exact configuration of that transfer:
+
+~~~~ cmake
+    add_custom_target (online
+        COMMAND ${RSYNC_EXECUTABLE} -axuzP ${PROJECT_SOURCE_DIR}/out/* ${PROJECT_UPLOAD_PATH}
+        WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
+        COMMENT "Publishing website - uploading generated pages ..."
+        )
+~~~~
+
+While the command in itself is not wrong -- otherwise I would have trouble even
+transfering the data -- one rather important bit was missing: without the additional
+`--delete` option files will accumulate on the webserver, taking up unnecessary
+space and potentially causing faulty navigation through the website. The remedy
+for this is quite simple:
+
+~~~~ cmake
+    add_custom_target (online
+        COMMAND ${RSYNC_EXECUTABLE} -axuzP --delete ${PROJECT_SOURCE_DIR}/out/* ${PROJECT_UPLOAD_PATH}
+        WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
+        COMMENT "Publishing website - uploading generated pages ..."
+        )
+~~~~
+
+Switching on the `--delete` option for `rsync` in fact causes a clean-up of the
+target directories:
+
+~~~~
+blog/2005/
+blog/2005/2005-01/
+blog/2005/2005-02/
+blog/2005/2005-03/
+blog/2005/2005-04/
+blog/2005/2005-05/
+blog/2005/2005-06/
+blog/2005/2005-07/
+blog/2005/2005-07/2005-07-02_23-18.html
+          8,615 100%    0.00kB/s    0:00:00 (xfr#1, ir-chk=1099/1858)
+blog/2005/2005-08/
+blog/2005/2005-09/
+deleting blog/2005/2005-10/.2005-10-27_09-42.html.FGbjlZ
+deleting blog/2005/2005-10/.2005-10-21_10-00.html.sBBMas
+deleting blog/2005/2005-10/.2005-10-20_22-40.html.5N96yk
+deleting blog/2005/2005-10/.2005-10-20_22-12.html.zGmXwA
+deleting blog/2005/2005-10/.2005-10-08_11-44.html.sJLcG5
+deleting blog/2005/2005-10/.2005-10-02_20-41.html.572TYc
+deleting blog/2005/2005-11/.2005-11-23_07-02.html.CzcxWs
+deleting blog/2005/2005-11/.2005-11-14_16-21.html.L2nUaj
+deleting blog/2005/2005-11/.2005-11-13_21-31.html.0ihb1G
+deleting blog/2005/2005-11/.2005-11-04_20-10.html.RP3cj9
+deleting blog/2005/2005-11/.2005-11-04_19-27.html.KgPIa4
+deleting blog/2005/2005-12/.2005-12-28_12-32.html.UUu1dq
+deleting blog/2005/2005-12/.2005-12-28_00-56.html.WvaZM1
+deleting blog/2005/2005-12/.2005-12-15_17-30.html.agepc6
+~~~~
+
+**:::**
+
 ### Aufbruch ###
 
 
@@ -460,74 +530,3 @@ dies bedeutet naemlich nicht nur, dass der Fehler nicht auf meiner Seite lag, so
 dass ich mit der Korrektur automatisch diesen Fehler fuer alle anderen Benutzer mitbehoben
 habe. Interessant, dass dis bisher anscheinend noch niemandem aufgefallen ist, denn
 dies zieht sich dann letzten Endes durch alle Berechnungen hindurch!
-
-**:::**
-
-### Zeit nehmen zum Lesen ###
-
-
-_Tue, 13. January 2015 -- 23:00_
-
-Es gibt einfach Dinge, fuer welche man sich bewusst Zeit nehmen muss -- Dinge, welche
-nicht einfach so nebenher, parallel passieren, sondern eine gewisse Mindestkonzentration
-erfordern. Nachrichten, Reportagen, Interviews, etc, anhoeren, das alles laesst sich
-wunderbar mit den diversesten Taetigkeiten kombinieren -- ein Buch lesen aber vertraegt
-sich nur mit einer deutlich kleineren Anzahl von anderen Aktivitaeten. Von diesen
-wenigen gibt es zwar einige besonders angenehme (wie zum Beispiel eine Massage geben),
-aber bei wenig Licht im Regen durch die Gegend laufen gehoert nicht unbedingt zu den
-Umstaenden, welche sich zum Lesen eignen.
-
-Typischerweise scheint es bei mir mit dem Lesen immer ein wenig phasenweise zu kommen:
-ueber einen gewissen Zeitraum bleibe ich konstant dabei und schaffe es so ein Buch
-nach dem anderen "abzuarbeiten" -- dann tritt wieder eine Phase ein, wo meine Leseliste
-keinerlei Anstalten macht kuerzer zu werden. Gut, von alleine passiert letzteres natuerlich
-nicht, da gehoert auch schon ein wenig Selbstdisziplin dazu, so dass ich seit dem Ende
-letzten Jahres schon versuche wieder kontinuierlicher dran zu bleiben. Da macht es dann
-auch Sinn nicht einfach nur eine Liste abzuarbeiten (fuer die derzeit aeltesten Eintraege
-siehe unten), sondern sich eher an der Interessenlage zu orientieren -- so bedeutet
-das Lesen keine Anstrengung sondern Genuss und Bereicherung.
-
-~~~~
-ID Proj  Age  Description
--- ----- ---- ------------------------------------------
- 3 books 3.5y Heretics of Dune (Frank Herbert)
- 4 books 3.5y Chapterhouse Dune (Frank Herbert)
- 5 books 3.5y The Virgin Suicides (Jeffrey Eugenides)
- 6 books 3.5y Chronicles of Narnia (C.S. Lewis)
- 7 books 3.5y White Orleander (Janet Fitch)
- 8 books 3.5y Picture perfect (Jodi Picault)
- 9 books 3.5y Nineteen minutes (Jodi Picault)
-10 books 3.5y Perestroika (Michail Gorbatschow)
-11 books 3.5y Die Entdeckung des Himmels (Harry Mulisch)
-12 books 3.5y The Audacity of Hope (Barack Obama)
-~~~~
-
-Zwischen Weihnachten und Neujahr habe ich mit "[Bilder im Kopf: Die Geschichte meines
-Lebens](http://www.amazon.de/Bilder-Kopf-Geschichte-meines-Lebens/dp/3421045666)" begonnen,
-der Autobiographie von [Michael Ballhaus](http://de.wikipedia.org/wiki/Michael_Ballhaus).
-Wer so auf Anhieb nichts mit dem Namen anfangen kann (Schande, Schande, Schande),
-der sollte mal einen Blick auf das [IMDb Profil](http://www.imdb.com/name/nm0000841)
-werfen. Auch wenn ich selbst nicht unbedingt die vollstaendige Liste der Filme, an welchen
-der Mann mitgewirkt hat, aufzaehlen koennte, so sind mir vor allen Dingen die Streifen
-gelaeufig, welche aufgrund ihrer Kamera-Arbeit -- oder einer Erzaehlung, welche der Zeit
-voraus ist -- besonders bemerkenswert sind:
-
- - [Welt am Draht](http://www.imdb.com/title/tt0070904) (1973)
- - [The Color of Money](http://www.imdb.com/title/tt0090863) (1986)
- - [The Last Temptation of Christ](http://www.imdb.com/title/tt0095497) (1988)
- - [The Fabulous Baker Boys](http://www.imdb.com/title/tt0097322) (1989)
- - [Goodfellas](http://www.imdb.com/title/tt0099685) (1990)
- - [The Legend of Bagger Vance](http://www.imdb.com/title/tt0146984) (2000)
-
-... um zumindest mal ein paar zu nennen. In der [ARD Mediathek](http://www.ardmediathek.de)
-gibt es uebrigens auch einen [Beitrag](http://www.ardmediathek.de/tv/ttt-titel-thesen-temperamente/Michael-Ballhaus-Bilder-im-Kopf/Das-Erste/Video?documentId=20239456&bcastId=431902)
-anlaesslich der Buchveroeffentlichung -- ein recht nettes, kurzes Portrait, aber wer
-mehr will, dem sei das Buch waermstens ans Herz gelegt.
-
-Was war jetzt aber der eigentliche Aufhaenger? Als ich "Bilder im Kopf" am Sonntag Abend
-zugemacht habe, hatte ich noch weniger als 100 Seiten zu lesen; da scheint es mir doch
-realistisch, dass ich diesen verbleibenden Rest noch vor dem Ende der Woche -- vielleicht
-aber auch schon vor dem Donnerstag Abend -- schaffe. Motivation habe ich in jedem Fall, denn
-a) ist das Buch wirklich sehr interessant und trotz sein gelegentlichen sprachlichen
-Eigenheiten gut lesbar und b) will ich unbedingt mit "[The Last Ship](http://en.wikipedia.org/wiki/The_Last_Ship_%28novel%29)"
-beginnen.
