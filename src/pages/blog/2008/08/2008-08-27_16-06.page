@@ -8,18 +8,25 @@ author: Lars Baehren
 
 _Wed, 27. August 2008 -- 16:06_
 
+Time for an update: after running into a number of problems with code written by
+Heino, the remaining issues can be tracked down to the
+[Boost library](http://www.boost.org), one of the bigger external components
+were are using for our software. So after some digging around and reading up on
+changes between releases, I decided that this was going to be a good point to
+upgrade. Of course this is not just a matter of simply replacing but stuff, but
+this rather needs to happen in a way which ensures, none of the dependencies in
+our own code base are broken and everything which has been building so far still
+builds. So in preparation I have been running test compiles after swapping the
+releases, giving me enough confidence the anticipated upgrade indeed could be
+carried out. So once everything has been properly submitted to the Subversion
+repository the immediate follow-up step is to check if everything is working
+fine on all supported and used test platforms.
 
+![Picture](http://farm4.static.flickr.com/3121/2803281486_2fb3059d4c_b.jpg)
 
-Time for an update: after running into a number of problems with code written by Heino, the remaining issues can be tracked down to the [[http://www.boost.org|Boost library]], one of the bigger external components were are using for our software. So after some digging around and reading up on changes between releases, I decided that this was going to be a good point to upgrade. Of course this is not just a matter of simply replacing but stuff, but this rather needs to happen in a way which ensures, none of the dependencies in our own code base are broken and everything which has been building so far still builds. So in preparation I have been running test compiles after swapping the releases, giving me enough confidence the anticipated upgrade indeed could be carried out. So once everything has been properly submitted to the Subversion repository the immediate follow-up step is to check if everything is working fine on all supported and used test platforms.
-
-{{http://farm4.static.flickr.com/3121/2803281486_2fb3059d4c_b.jpg?600}}
-
-Terminal windows in clock-wise order: 
-  * SVN update on my desktop machine here at ASTRON.
-  * SVN update on the cosmic rays machine in Nijmegen.
-  * SVN update on the development machine in Amsterdam.
-  * Finished check-in of the upgrade onto the code repository.
-  * Preparation for the test build on my MacBook -- cleaning up all the temporary data such that I am getting a clean start.
-
-
-~~DISCUSSION~~
+Terminal windows in clock-wise order:
+ * SVN update on my desktop machine here at ASTRON.
+ * SVN update on the cosmic rays machine in Nijmegen.
+ * SVN update on the development machine in Amsterdam.
+ * Finished check-in of the upgrade onto the code repository.
+ * Preparation for the test build on my MacBook -- cleaning up all the temporary data such that I am getting a clean start.
