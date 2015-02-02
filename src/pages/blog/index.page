@@ -8,6 +8,153 @@ author: "Lars Baehren"
 
 **:::**
 
+### Mit dem Bus ###
+
+
+_Mon, 02. February 2015 -- 11:01_
+
+Das ist ja alles recht spannend. Da nicht abzusehen ist, wann die Stoerung rund um
+behoben wird, habe ich mir nun einen der Ersatzbusse (welche auf der Rueckseite des
+Bahnhof eingesetzt werden) geschnappt. Ich erwarte jetzt nicht, dass dies sonderlich
+schnell geht, aber immerhin sollte ich auf diese Weise zumindest eine gewisse Chance
+haben noch im Laufe des Tages bei [SRON][http://www.sron.nl] anzukommen.
+
+**:::**
+
+### Nichts geht mehr ###
+
+
+_Mon, 02. February 2015 -- 10:34_
+
+Warum versuchen die Situation zu beschreiben, wenn eine Karte (hoffentlich) viel
+schneller deutlich machen kann, was hier derzeit passsiert (oder eben nicht):
+
+![Actuele Spoorkaart](/blog/2015/02/2015-02-02_Spoorkaart.png)
+
+Ich sitze nach wie vor hier in Arnhem fest und warte darauf, dass sich das Chaos
+rund um Utrecht lichtet. Geht man nach den bisherigen Durchsagen, dann ist leider
+immer noch keine Vorhersage moeglich, so dass ich wohl so lange hier am Bahnhof sitzen
+und noch ein wenig arbeiten werde, bis mich mein Rechner im Stich laesst. Immerhin
+habe ich Internetverbindung, so dass ich nicht nur noch einmal Mails rausschicken
+kann, sondern sogar die Moeglichkeit habe mich auf dem Server im [KNMI](http://www.knmi.nl)
+einzuklinken und die unterwegs geschriebenen Tests laufen zu lassen.
+
+**:::**
+
+### Warten in Arnhem ###
+
+
+_Mon, 02. February 2015 -- 09:37_
+
+Also das kann wohl noch eine Weile dauern: selbst wenn man die eh schon bestehende
+Verspaetung von rund zehn Minuten einrechnet, dann stehen wir nun schon deutlich mehr
+als eine halbe Stunde hier in Arnhem. Dass (und vor allen Dingen wann) es denn weitergeht
+ist auch nach wie vor nicht abzusehen -- je laenger so eine Stoerung dauert, desto
+mehr staut es sich natuerlich auch auf und bis der Verkehr wieder in gewohnter Weise
+fliesst dauert es dann eine Weile.
+
+Als kleine Randnotiz weiss ich von mindestens zwei Gruppen zu berichten, welche gemeinsam
+den Zug verlassen haben, um sich ggf. mit einem (Sammel-)Taxi weiter nach Amsterdam
+aufzumachen. Es hat allerdings nicht allzu lange gedauert bis zumindest eine der beiden
+Gruppen wieder hier im Zug war -- gut 250 EUR fuer 4-5 Leute war dann wohl doch ein wenig
+zu viel.
+
+**:::**
+
+### Stop in Arnhem ###
+
+
+_Mon, 02. February 2015 -- 08:55_
+
+Da war es dies erst einmal was die Weiterreise berifft: aufgrund einer Signalstoerung
+rund um Utrecht Centraal hat der ICE 222 bis auf weiteres hier in Arnhem gestoppt.
+Wie es nun weitergeht ist noch nicht klar -- weder hier im Zug noch draussen auf dem
+Gleis gibt es zu diesem Zeitpunkt weitere Informationen. Aussteigen und sich nach
+einer alternativen Verbindung umschauen bringt unter diesen Umstaenden recht wenig:
+wenn alles rund um Utrecht brach liegt, dann ist es vollkommen egal, ob ich es mit dem
+ICE oder einem Zug der [niederlaendischen Bahn](http://www.ns.nl) probieren wuerde.
+Was allerdings passieren kann ist, dass aufgrund der aufgelaufenen Verspaetung der
+ICE hier umdreht und wieder zurueck nach Frankfurt faehrt (habe ich ja auch schon
+alles gehabt). Bis auf weiteres macht es wenig Sinn groessere Unternehmungen zu starten
+-- also die Ruhe bewahren.
+
+**:::**
+
+### Bordelektronik ###
+
+
+_Mon, 02. February 2015 -- 06:52_
+
+Ich doch immer wieder fasziniert, dass es vor allen Dingen die kleinen Dinge sind,
+welche gerne schon einmal im ICE ausfallen. So scheint heute Morgen wieder einmal
+die Reservierungsanzeige ueber den Sitzen zu spinnen, weshalb ueberall nur ein
+"ggf. reserviert" zu lesen ist. Dies gibt folgerichtig keinerlei Information darueber,
+auf welchen Platz man sich ungestoert setzen kann. Da eben dies aber der Fall ist,
+habe ich mir einfach einen Sitz geschnappt, da die Chance noch einmal aufstehen zu
+muessen mehr oder weniger gleich gross ist, egal welche Wahl ich treffe.
+
+**:::**
+
+### Knabbern ###
+
+
+_Sat, 31. January 2015 -- 13:31_
+
+Also mittlerweile muss man bei Sofia ja schon ein wenig aufpassen: wenn der Hund
+so richtig vom Spieltrieb gepackt wird, dann gibt es nur wenige Dinge, welche vor
+einer Knabberattacke sicher sind. Handelt es sich dabei um das fuer derartige Aktionen
+gedachte Spielzeug, dann ist es eine Sache -- geht aber an Finger, dann sollte man
+sich in jedem Fall ein wenig auf leichte Biss-Spuren einstellen.
+
+![Sofia](/blog/2015/01/dsc_20150130_171825_Sofia.jpg)
+
+In der etwas friedlicheren Variante macht es sich der Hund aber auch einfach mal
+auf dem Wohnzimmerboden bequemt und kaut genuesslich auf dem Seil -- perfekte Gelegenheit
+sich die Kamera zu schnappen und ein paar Momentaufnahmen einzufangen.
+
+**:::**
+
+### Blog Backlog ###
+
+
+_Fri, 30. January 2015 -- 23:55_
+
+Also das nenne ich doch einmal Fortschritt: nachdem sich das Script fuer die Behandlung
+der Blog-Eintraege bestens im "normalen Alltagsgebrauch" bewaehrt hat, habe ich diese
+Woche noch daran gebastelt einen Teil der alten Blog-Eintraege -- welche zwischenzeitlich
+ja ueber eine [Dokuwiki](https://www.dokuwiki.org/dokuwiki) erstellt wurden -- zu
+importieren. Alles kriege ich damit zwar leider noch nicht umgewandelt, aber zumindest
+die Metadaten und das Dateiformat muss ich nicht mehr von Hand bearbeiten. So war es
+dann auch recht leicht Eintraege gleich monatsweise einzubinden:
+
+~~~~
+    [master 25e54cf] Fixing syntax errors.
+     31 files changed, 637 insertions(+), 331 deletions(-)
+     rewrite src/pages/blog/2004/2004-03/2004-03-24_09-36.page (76%)
+     rewrite src/pages/blog/2004/2004-05/2004-05-05_13-33.page (86%)
+     rewrite src/pages/blog/2008/11/2008-11-02_18-37.page (74%)
+     rewrite src/pages/blog/2008/11/2008-11-02_21-04.page (85%)
+     rewrite src/pages/blog/2008/11/2008-11-05_08-07.page (73%)
+     rewrite src/pages/blog/2008/11/2008-11-05_19-11.page (84%)
+     rewrite src/pages/blog/2008/11/2008-11-06_09-46.page (87%)
+     rewrite src/pages/blog/2008/11/2008-11-07_17-17.page (89%)
+     rewrite src/pages/blog/2008/11/2008-11-09_16-46.page (85%)
+     rewrite src/pages/blog/2008/11/2008-11-10_10-05.page (68%)
+     rewrite src/pages/blog/2008/11/2008-11-11_17-25.page (76%)
+     rewrite src/pages/blog/2008/11/2008-11-12_09-56.page (84%)
+     rewrite src/pages/blog/2008/11/2008-11-18_08-27.page (72%)
+     rewrite src/pages/blog/2008/11/2008-11-18_08-44.page (91%)
+     rewrite src/pages/blog/2008/11/2008-11-18_09-57.page (76%)
+     rewrite src/pages/blog/2008/11/2008-11-18_14-25.page (78%)
+     rewrite src/pages/blog/2008/11/2008-11-19_15-44.page (83%)
+~~~~
+
+Gut, ein wenig Feinarbeit an der Formatierung und den Links war noch noetig -- dies
+ist aber vergleichsweise wenig angesichts der Alternative wirklich alles von Hand
+umsetzen zu muessen.
+
+**:::**
+
 ### Transfering static websites ###
 
 
@@ -284,249 +431,3 @@ in keinster Weise dabei hilfreich ist nachzuvollziehen, was das schief geht. Ein
 warten und darauf hoffen, dass vielleicht doch noch einmal irgendetwas passiert will
 ich auch nicht -- also habe ich die noch laufende (oder auch nicht) Berechnung
 abgebrochen und den Job erneut angeworfen. Mal gespannt, wie es diesmal laeuft...
-
-**:::**
-
-### Nicht fuer schnelle Iteration geeignet ###
-
-
-_Mon, 26. January 2015 -- 07:15_
-
-Einen entscheidenden Nachteil hat es schon, wenn man sich dazu entschliesst Webseiten
-statisch generieren zu lassen: bei einer entsprechend grossen Anzahl an Seiten kann
-es wirklich sehr lange dauern, bis alles wieder neu gebaut ist.
-
-~~~~
-  INFO  ... done in 1250.57 seconds
-  [100%] Built target Website
-~~~~
-
-Aufgefallen ist mir dies (zum erneuten Male) vor ein paar Minuten, als ich (da
-gluecklicherweise als Hintergrund-Job) ein Update gefahren habe; dummerweise verschluckt
-sich Webgen typischerweise an dem Identifier der Index-Seiten, so dass meine bisher
-einzige Loesung ist alles noch einmal neu durchlaufen zu lassen. Wenn die Zahl
-einigermassen stimmt, dann habe ich es mittlerweile mit mehr als 4300 Seiten im
-Bereich des Blogs zu tun -- bis dies alles abgearbeitet ist, kann dann schon mal einiges
-an Zeit vergehen. Was also mit Sicherheit noch einmal auf Liste gehoert ist, dass ich
-einen Weg finde eben diese Stolperfalle zu beseitigen, denn wenn es moeglich waere
-wirklich nur die veraenderten Seiten neu zu generieren, waere dies schon ein
-erheblicher Zeitgewinn.
-
-**:::**
-
-### Knapp ###
-
-
-_Thu, 22. January 2015 -- 17:11_
-
-Ich sollte es eigentlich besser wissen: um diese Tageszeit versuchen mit der Linie
-12 vom Uithof zum Bahnhof zu gelangen ist ein reines Gluecksspiel. Dass die Strassen
-zwischen Uithof und der Autobahnauffahr vollkommen verstopft sind waere das eine
--- wenn der Bus aber eh schon mehrere Minuten Verspaetung mit bringt, dann ist die
-Wahrscheinlichkeit wieder gut zu machen noch einmal eine Spur geringer. So kam es dann
-auch, dass ich gerade einmal den Fuss auf den Bahnsteg gesetzt hatte, als der ICE
-auch schon einfuhr. Fuer die Zukunft unbedingt merken: selbst wenn auf den Anzeigen
-die Linie 28/128 spaeter angezeigt wird als die Linie 12, ist es immer noch sinnvoller
-den Weg westlich am Zentrum vorbei zu nehmen, da die Busse hier ueber weite Strecken
-ihre eigene Fahrspur haben und ihr Fortkommen demnach von dem des restlichen Autoverkehr
-entkoppelt ist. Jetzt muss ich nur noch daran denken, die eigenen Ratschlaege auch
-selber zu beruecksichtigen...
-
-**:::**
-
-### Omegatau (164) Satellite-based Earth Observation ###
-
-
-_Wed, 21. January 2015 -- 22:20_
-
-Es war im September letzten Jahres, wo ich mich -- nach dem Anhoeren einer weiteren
-Episode -- entschlossen habe mit [Omegatau](http://omegataupodcast.net) Kontakt aufzunehmen
-
-> Hallo Markus,
-> Hallo Nora,
->
-> im Anschluss an die (sehr schoene) [Folge mit RadioMono](http://www.radiomono.net/?podcast=rmn-013-omegataupodcastbesuch) war ich schon ein klein wenig in mich gegangen, um einmal zu schauen, in welcher Weise ich Euch noch bei der Suche nach Themen und Gespraechspartnern behilflich sein kann. Gerade die Bemerkung, dass es derzeit ein Shortage an englischen Sendungen geben wuerde hat mich aufmerksam werden lassen. Als ich dann in der nun aktuellen Folge ueber Photogrammetrie (uebrigends sehr schoen, dass Ihr noch diese Schreibung verwendet) Markus Wunsch nach Folgen ueber satellitengestuetzte Beobachtungen hoerte, wollte ich mal eine Variante unterbreiten, ueber welche sich beide Aspekte zusammenbringen lassen.
-
-Mein Aufhaenger Stelle war, dass [Episode 155 – Photogrammetrie im Himalaya](http://omegataupodcast.net/2014/09/155-photogrammetrie-im-himalaya-mwp-teil-2)
-eigentlich nach einem Gegenstueck verlangte, bei welchem man den Blick zurueck auf die
-Erde aus einer noch einmal deutlich groesseren Entfernung wirft, als dies bei einem
-Flugzeug der ist. Und da Markus von sich auch schon anmerkte, dass es eigentlich ganz
-gut waere eine Episode ueber Satelliten-gestuetzte Erdbeobachtungen zu machen, ging bei
-mir direkt ein Licht an. Da ich durch meine Arbeit bei [SRON](https://www.sron.nl)
-ja direkt an der Quelle sitze, schien es einfach logisch zu versuchen die Dinge hier
-zusammenzufuehren. Bis es allerdings von der ersten Idee zur wirklichen Aufnahme der
-Folge (vor Ort im Institut) kam, gab es doch noch einiges Hin und Her -- vor allen Dingen
-das Auffinden von Gespraechspartner gestaltete sich ein wenig muehsam, so dass ich Ruud
-sehr dankbar bin, dass er sich fuer das Vorhaben begeistern und freimachen konnte.
-
-![Screenshot website](/blog/2015/01/2015-01-18_omegatau_164.png)
-
-Am vergangenen Wochenende dann ist [Episode 164](http://omegataupodcast.net/2015/01/164-satellite-based-earth-observation)
-dann erschienen und ich bin (wie sich bestimmt nachvollziehen laesst) sehr gespannt gewesen.
-Dass ich die etwas mehr als zwei Stunden Hoermaterial noch vor der Abfahrt am Montag
-durchbekommen habe, ist vor allen Dingen der Tatsache geschuldet, dass ich am Sonntag
-mit Sofia auf einem sehr langen Spaziergang unterwegs war; so konnte ich nicht nur dem
-Hund (und natuerlich auch mir selber) einiges an Bewegung an der frischen Luft verschaffen,
-sondern auch die komplette Folge von Anfang bis Ende durchhoeren. Das Ergebnis ist sehr schoen
-geworden und ich habe noch einiges hinzu lernen koennen. Wer also ein wenig mehr von
-dem erfahren will, woran bei SRON gearbeitet wird (und womit ich ja auch zum Teil meine
-Zeit verbringe), dem kann ich diese Folge waermstens empfehlen. Beobachtung und
-Versehen der Ablaeufe auf unserem blauen Planeten sind eine Sache, deren Bedeutung man
-sicherlich kaum unterschaetzen kann -- hierzu einen kleinen Beitrag liefern zu koennen
-ist schon etwas, 
-
-**:::**
-
-### How much storage space are you using? ###
-
-
-_Tue, 20. January 2015 -- 22:19_
-
-[Drobo](https://plus.google.com/u/0/+Drobo) a short while ago posted this on Google+:
-
-> Those hard drives stack up fast! How much storage space are you using?﻿
-
-Attached to the question was a small poll I could not resist to answer:
-
-![Screenshot from Google+](/blog/2015/01/2015-01-20_Storage_space.png)
-
-I have to say, the numbers themselves unfortunately are not that interesting -- the
-the information I would really find more useful is how that disk space is being set
-up and used.
-
-**:::**
-
-### Index Seiten ###
-
-
-_Mon, 19. January 2015 -- 22:49_
-
-So, ich denke mal, dass ich jetzt endlich auch die letzten der bisher noch fehlenden
-Index-Seiten angelegt kriege: nachdem die Erzeugung der Uebersichtsseiten fuer die
-Blog-Eintraege eines Jahres ja implementiert war, habe ich mir gerade eben mal noch
-ein paar Minuten geschnappt, um die fehlenden Zeilen Bash Script zu schreiben. Viel
-fehlte nicht mehr:
-
-~~~~ bash
-    # page header segment
-    echo "---"                                               > ${varIndexMonth}
-    echo "title: \"${varMonthName} ${varYear}\""            >> ${varIndexMonth}
-    echo "in_menu: false"                                   >> ${varIndexMonth}
-    echo "author: \"Lars Baehren\""                         >> ${varIndexMonth}
-    echo "---"                                              >> ${varIndexMonth}
-    echo ""                                                 >> ${varIndexMonth}
-
-    # loop over entries during the month
-    echo " * [${varEntry}](${varLink}) \| ${varTimeheader}" >> ${varIndexMonth}
-~~~~
-
-Waehrend ich damit alle wesentlichen Seiten erzeugt haben sollte, bleibt natuerlich
-immer noch das Problem, dass ich es mittlerweile mit so vielen Seiten zu tun habe,
-dass die blosse Generierung aus den Quelldateien locker 10 Minuten brauchen kann.
-Ich denke mal, dass dies mit Sicherheit einer der Punkte ist, welchen ich mir mal
-noch genauer unter die Lupe nehmen muss; grundsaetzlich moechte ich schon die
-Verwendung statischer Seiten beibehalten (es sei denn es gibt einen wirklich guten
-Grund davon abzuweichen), nur letzten Endes habe ich dann mit einem Skalierungsproblem
-zu tun.
-
-**:::**
-
-### Ubuntu: Download updates while installing ###
-
-
-_Mon, 19. January 2015 -- 14:12_
-
-As far as I am concerned I have not seen any (desktop) version of [Ubuntu](http://www.ubuntu.com)
-where this feature works properly:
-
-![Screenshot from install dialog](/blog/2015/01/2015-01-19_Ubuntu_install.png)
-
-My expectation would be that when afterwards rebooting into a newly installed system
-running
-
-~~~~ bash
-    apt-get update
-    apt-get upgrade
-~~~~
-
-should not lead to any further package updates. The contrary is the case: even
-before I manage to open up a terminal window to type in the above commands, the
-"Software Updater" pops up to announce there are several updates available -- not
-the kind of behaviour I would expect when checking the corresponding box earlier in
-the process.
-
-**:::**
-
-### Wo der Doppelpunkt sitzt ###
-
-
-_Thu, 15. January 2015 -- 17:55_
-
-Geschafft! Das hat mich jetzt zwar ein wenig Zeit gekostet, aber nach laengerem Suchen
-und testen habe ich endlich den Fehler festmachen (und auch beheben) koennen, welcher
-dazu fuehrte, dass ein Teil der in den Algorithmen berechneten Ergebnisse falsch weggeschrieben
-wurden (und ich meine damit nicht nur meinen Code, sondern innerhalb des gesamten Frameworks).
-Worauf es letzten Endes hinauslief war ein recht subtiler Tipfehler in dem Verweis
-auf den Teil eines Arrays: statt
-
-~~~~ python
-    b = a[:, :nofColumns]
-~~~~
-
-stand in der entsprechenden Routine ein
-
-~~~~ python
-    b = a[:, nofColumns:]
-~~~~
-
-was natuerliche keinesfalls das Gleiche ist. Um dies zu verdeutlichen (schliesslich
-kann ich an dieser Stelle dann doch nicht die gleiche Gelaeufigkeit mit entsprechenden
-Code-Schnippseln voraussetzen) hier mal ein ganz einfaches Beispiel: wenn ich mit einem
-ganz einfachen linearen Array starte
-
-~~~~
-    a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-~~~~
-
-kriege ich -- je nachdem welche der beiden zuvor erwaehnten Schreibweissen ich verwende --
-die folgenden Ergebnisse:
-
-~~~~
-    a[:5]  =>  [0, 1, 2, 3, 4]
-
-    a[5:]  =>  [5, 6, 7, 8, 9]
-~~~~
-
-Wie sich also erkennen laesst macht schon einen Unterschied, wie die relative Position
-von Index-Nummer und Doppelpunkt ist. Damit wird dann (hoffentlich) auch verstaendlich
-was fuer eine Auswirkung es haben kann, wenn man statt
-
-~~~~ python
-    b_left  = a[:nofColumns]    #  [0, 1, 2, 3, 4]
-    b_right = a[nofColumns:]    #  [5, 6, 7, 8, 9]
-~~~~
-
-faelschlicherweise das folgende im Code stehen hat:
-
-~~~~ python
-    b_left  = a[:nofColumns]    #  [0, 1, 2, 3, 4]
-    b_right = a[:nofColumns]    #  [0, 1, 2, 3, 4]
-~~~~
-
-Richtig, in `b_left` und `b_right` stehen die gleichen Werte. Das ganze ist durchaus
-subtil genug um recht lange unbemerkt zu bleiben... es sei denn man schaut hier mal
-wirklich genau hin (z.B. durch das Schreiben entsprechender Testroutinen). Genau auf
-diesem Wege bin ich dem Fehler auch auf die Schliche gekommen, weil ich naemlich
-(nur der Sicherheit halber) verifizieren wollte, dass die Daten, welche ich auf die
-Platte wegschreibe und dann wieder einlese auch entsprechen womit ich gestartet bin.
-Wie sich dabei herausstellte war eben genau dies nicht der Fall. Da ich mir da zunaechst
-einmal keinen Reim draus machen konnte habe ich einfach ein wenig weitergegraben, bis
-ich mir die erzeugten Dateien noch einmal auf anderem Wege genauer angeschaut habe:
-dank dem Schema der erzeugten (und weggeschriebenen) Daten trat der Fehler dabei
-recht deutlich in Erscheinung, so dass es jetzt nur noch eine Frage war, wo sich
-der entsprechende Dreher denn finden lassen wuerde. Dass ich dabei in einem recht
-grundlegenden Module des Frameworks fuendig geworden bin, hat schon etwas befriedigendes:
-dies bedeutet naemlich nicht nur, dass der Fehler nicht auf meiner Seite lag, sondern
-dass ich mit der Korrektur automatisch diesen Fehler fuer alle anderen Benutzer mitbehoben
-habe. Interessant, dass dis bisher anscheinend noch niemandem aufgefallen ist, denn
-dies zieht sich dann letzten Endes durch alle Berechnungen hindurch!
