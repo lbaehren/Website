@@ -2,10 +2,9 @@
 title: "Get back to your code"
 in_menu: false
 author: "Lars Baehren"
-tags: Computing Development
 ---
 
-##{title:}##
+## {title:} ##
 
 _Tue, 11. September 2012 -- 17:30_
 
@@ -66,7 +65,7 @@ enthaelt komt man ganz schnell in den Bereich, wo die zweite der beiden Variante
 nicht nur schwerer zu lesen, sondern auch fehleranfaelliger wird (wenn man sich
 daran macht zusaetzliche Funktionalitaet einzubauen). Deutlich interessanter wird
 es natuerlich, wenn man es mit mehreren ineinandergeschachtelten Strukturen zu
-tun hat -- durch entsprechende Einrueckung zwischen einem Paar geschweifter 
+tun hat -- durch entsprechende Einrueckung zwischen einem Paar geschweifter
 Klammern ist es moeglich recht schnell einen Ueberblick zu kriegen (zumindest aus
 formaler Sicht), so dass die anschliessende tiefergehende Analyse des Code
 leichter faellt.

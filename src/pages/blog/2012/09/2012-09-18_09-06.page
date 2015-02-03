@@ -2,14 +2,22 @@
 title: "Hilfestellung fuer FLOSS Weekly"
 in_menu: false
 author: "Lars Baehren"
-tags: Podcast
 ---
 
-##{title:}##
+## {title:} ##
 
 _Tue, 18. September 2012 -- 09:06_
 
-Es ist ja schon eine ganze Weile, dass ich ein treuer Hoerer von [FLOSS Weekly](http://www.twit.tv/show/floss-weekly) bin; von den diversen Shows, welche innerhalb des [TWiT Netzwerk](http://www.twit.tv) (This Week in Technology) produziert und vertrieben werden ist dies definitiv eine der interessantesten (vor allen Dingen nach dem [Ausscheiden von _TWiT Photo_](/blog/2012/07/2012-07-12_10-43.html)) Sendungen. Auf diesem Wege habe ich schon von so machem Open-Source Projekt erfahren, welches mir ansonsten wahrscheinlich verborgen geblieben waere; sicher ist dies nicht ausreichend um alles, was es da draussen gibt zu kennen, aber die Auswahl bietet doch einen sehr schoenen Querschnitt durch die OSS Landschaft. Und es gibt immer noch Projekte, welches es wert waeren vorgestellt zu werden...
+Es ist ja schon eine ganze Weile, dass ich ein treuer Hoerer von [FLOSS Weekly](http://www.twit.tv/show/floss-weekly)
+bin; von den diversen Shows, welche innerhalb des [TWiT Netzwerk](http://www.twit.tv)
+(This Week in Technology) produziert und vertrieben werden ist dies definitiv
+eine der interessantesten (vor allen Dingen nach dem [Ausscheiden von _TWiT
+Photo_](/blog/2012/07/2012-07-12_10-43.html)) Sendungen. Auf diesem Wege habe
+ich schon von so machem Open-Source Projekt erfahren, welches mir ansonsten
+wahrscheinlich verborgen geblieben waere; sicher ist dies nicht ausreichend um
+alles, was es da draussen gibt zu kennen, aber die Auswahl bietet doch einen
+sehr schoenen Querschnitt durch die OSS Landschaft. Und es gibt immer noch
+Projekte, welches es wert waeren vorgestellt zu werden...
 
 Das ist dann genau der Punkt, wo ich beschlossen habe selber aktiv zu werden. Da [Randal Schwartz](http://www.stonehenge.com/merlyn) immer wieder darauf hinweisst, dass es fuer das Interview arrangieren am effektivsten ist, wenn die Leiter der Projekte sich direkt mit ihm in Verbindung setzen, bin ich nun mal hingegangen und habe versucht eben dies anzustossen.
 

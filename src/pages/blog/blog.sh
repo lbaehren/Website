@@ -183,7 +183,7 @@ get_timeheader ()
     else
         # check if the file path is valid
         if [ -f $1 ] ; then
-            varTimeheader=`cat $1 | grep -v "\[" | grep -v "[\(\)]" | grep ":" | grep "_" | grep -v "\#" | grep -v "\-r\-" | grep "\-\-" | sed s/_//g`
+            varTimeheader=`cat $1 | grep -v "[\(\)]" | grep ":" | grep "_" | grep -v "\#" | grep -v "\"" | grep -v "\-r\-" | grep "\-\-" | sed s/_//g`
             echo ${varTimeheader}
         else
             echo ""
@@ -330,15 +330,15 @@ create_index_file_year ()
 
     # === Generate page header ============================
 
-    echo "---"                                        > ${varPage}
-    echo "title: \"${varYear}\""                     >> ${varPage}
-    echo "routed_title: \"Blog archive ${varYear}\"" >> ${varPage}
-    echo "in_menu: false"                            >> ${varPage}
-    echo "author: \"Lars Baehren\""                  >> ${varPage}
-    echo "---"                                       >> ${varPage}
-    echo ""                                          >> ${varPage}
-    echo "## Blog archive | {title:} ##"             >> ${varPage}
-    echo ""                                          >> ${varPage}
+    echo "---"                             > ${varPage}
+    echo "title: \"${varYear}\""          >> ${varPage}
+    echo "routed_title: \"${varYear}\""   >> ${varPage}
+    echo "in_menu: false"                 >> ${varPage}
+    echo "author: \"Lars Baehren\""       >> ${varPage}
+    echo "---"                            >> ${varPage}
+    echo ""                               >> ${varPage}
+    echo "## Blog archive | {title:} ##"  >> ${varPage}
+    echo ""                               >> ${varPage}
 
     for varMonth in 01 02 03 04 05 06 07 08 09 10 11 12
     {
@@ -552,6 +552,9 @@ convert_entries ()
         }
     fi
 }
+
+#_______________________________________________________________________________
+#                                                            convert_directories
 
 convert_directories ()
 {

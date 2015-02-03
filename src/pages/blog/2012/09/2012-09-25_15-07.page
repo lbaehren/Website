@@ -2,14 +2,19 @@
 title: "Noch mehr Boxen"
 in_menu: false
 author: "Lars Baehren"
-tags: Computing Work Development
 ---
 
-##{title:}##
+## {title:} ##
 
 _Tue, 25. September 2012 -- 15:07_
 
-Ok, fertig bin ich damit noch nicht, aber zumindest habe ich es geschafft wieder einen kleinen Schritt in dem Bemuehen weiterzukommen, die fuer die [Benutzeroberflaeche des Bildarchives](http://www.prometheus-bildarchiv.de) gewuenschten Boxen innerhalb der Seitenleiste zu implementieren. Nachdem der vorletzte Commit weitestgehend aus Aufraeumarbeiten bestand, ist es mir gelungen mit den letzten beiden Sets an Aenderungen ein wenig Fortschritte in Bezug auf Features zu machen.
+Ok, fertig bin ich damit noch nicht, aber zumindest habe ich es geschafft wieder
+einen kleinen Schritt in dem Bemuehen weiterzukommen, die fuer die
+[Benutzeroberflaeche des Bildarchives](http://www.prometheus-bildarchiv.de)
+gewuenschten Boxen innerhalb der Seitenleiste zu implementieren. Nachdem der
+vorletzte Commit weitestgehend aus Aufraeumarbeiten bestand, ist es mir gelungen
+mit den letzten beiden Sets an Aenderungen ein wenig Fortschritte in Bezug auf
+Features zu machen.
 
 ~~~~
 Author: lbaehren

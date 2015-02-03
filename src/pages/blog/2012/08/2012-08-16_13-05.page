@@ -1,15 +1,15 @@
 ---
 title: "Reuters-Blog schon wieder gehackt"
 in_menu: false
-author: "Lars Baehren"
+author: "Lars Bahren"
 ---
 
-##{title:}##
+## {title:} ##
 
 _Thu, 16. August 2012 -- 13:05_
 
 Wie gerade eben [von Heise News berichtet](http://www.heise.de/newsticker/meldung/Reuters-Blog-schon-wieder-gehackt-1668439.html), ist ein Blog der Nachrichtenagentur Reuters gehackt worden. Neben dem recht unangenehmen Umstand, dass auf diese Weise wieder falsche Meldungen die Runde gemacht haben, gab es noch ein kleines Detail zu vermelden, welches aus sicherheitstechnischer Sicht nicht ganz unwichtig waere:
 
-> Die [Blogplattform](http://blogs.reuters.com) von Reuters ist derzeit nicht im Netz erreichbar. Bereits Anfang August kam es zu einem ähnlichen Vorfall: So musste die Plattform offline gehen, weil Hacker falsche Beiträge über den Syrien-Konflikt ins Netz gestellt hatten. Dazu gehörte unter anderem ein fiktives Interview mit einem Anführer der Aufständischem, laut dem sich diese nach Kämpfen mit der syrischen Armee aus der Region Aleppo zurückgezogen hätten. Grund für die Anfälligkeit der Reuters-Blogs ist vermutlich, dass die veraltete Wordpress-Version 3.1.1 genutzt wurde, die zahlreiche Lecks aufweist. Wenige Tage nach dem Blog-Hack wurde laut Reuters auch der Twitteraccount [@ReutersTech](https://twitter.com/ReutersTech) von Unbekannten gekapert und umbenannt, offenbar um Propaganda-Tweets gegen die syrischen Rebellen abzusetzen. 
+> Die [Blogplattform](http://blogs.reuters.com) von Reuters ist derzeit nicht im Netz erreichbar. Bereits Anfang August kam es zu einem ähnlichen Vorfall: So musste die Plattform offline gehen, weil Hacker falsche Beiträge über den Syrien-Konflikt ins Netz gestellt hatten. Dazu gehörte unter anderem ein fiktives Interview mit einem Anführer der Aufständischem, laut dem sich diese nach Kämpfen mit der syrischen Armee aus der Region Aleppo zurückgezogen hätten. Grund für die Anfälligkeit der Reuters-Blogs ist vermutlich, dass die veraltete Wordpress-Version 3.1.1 genutzt wurde, die zahlreiche Lecks aufweist. Wenige Tage nach dem Blog-Hack wurde laut Reuters auch der Twitteraccount [@ReutersTech](https://twitter.com/ReutersTech) von Unbekannten gekapert und umbenannt, offenbar um Propaganda-Tweets gegen die syrischen Rebellen abzusetzen.
 
 Der Meldung folgend habe ich mal schnell auf den [Wordpress](http://wordpress.org)-Seiten nachgeschaut; dort wird 3.4.1 als die aktuelle Version der populaeren Software angegeben, so die Leute bei Reuters doch ein gutes Stueck hinter dem aktuellen Stand hinterherhinken. Derart verbreitet wie Wordpress ist, duerfte es wohl nicht verwundern, dass es jede Menge Leute gibt, welche auf der Suche nach Schwachstellen in der Platform sind.

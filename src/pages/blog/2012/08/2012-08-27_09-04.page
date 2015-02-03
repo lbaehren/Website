@@ -1,13 +1,33 @@
 ---
 title: "Kein guter Start"
 in_menu: false
-author: "Lars Baehren"
+author: "Lars Bahren"
 ---
 
-##{title:}##
+## {title:} ##
 
 _Mon, 27. August 2012 -- 09:04_
 
-Also da muss heute schon noch einiges passieren, um diesen Start in den Tag wieder einzurenken. Bisher ist heute Morgen einfach vollkommen der Wurm drin und es scheint dass eigentlich ziemlich egal ist, wass ich in Angriff nehme... es klappt einfach nicht. 
+Also da muss heute schon noch einiges passieren, um diesen Start in den Tag
+wieder einzurenken. Bisher ist heute Morgen einfach vollkommen der Wurm drin und
+es scheint dass eigentlich ziemlich egal ist, wass ich in Angriff nehme... es
+klappt einfach nicht.
 
-Die erte Niederlage war eine direkte Fortfuehrung dessen, womit ich mich schon gestern Abend lange (erfolglos) herumgeschlagen habe: der Versuch meinen Rechner dazu zu ueberreden die Flyer fuer Julia auszudrucken. Mittlerweile sollte ich wohl alles ausprobiert haben, was auch nur moeglich ist -- ich habe sogar die kompletten, von Apple bereitgestellten und damit offiziellen, Druckertreiber neu installiert, nur um dann auch heute Morgen wieder lediglich die Fehlermeldung zu erhalten, dass das PPD Profil unvollstaendig ist. Da komme ich doch schon ans Gruebeln, vor allen Dingen wenn nirgendwie eine weitergehende Fehlerbeschreibung zu finden ist (ok, es schien noch einmal ein paar Seiten auf Japanisch zu geben, aber die nutzen mir nicht sonderlich viel). Immerhin ist es mir gelungen einen Teil der Entwuerfe als TIFF oder PDF zu exportieren, so dass ich den Druck von Julias Laptop aus starten konnte... nur um dann festzustellen, dass mindestens eine der Druckerpatronen fast leer ist, wodurch die Farbzusammenstellung komplett fuer die Tonne ist. Dieses "Vergnuegen hat mich mittlerweile so manchen Stunden Arbeit gekostet, ohne dass ich auch nur einen entscheidenden Schritt weiter waere: die Vorstellung aber, dass ich eine virtuelle Machine benoetige, um von meinem MacBook Audrucke erledigen zu koennen finde ich wenig attraktiv -- da ist irgendetwas grundsaetzlich im Argen.
+Die erte Niederlage war eine direkte Fortfuehrung dessen, womit ich mich schon
+gestern Abend lange (erfolglos) herumgeschlagen habe: der Versuch meinen Rechner
+dazu zu ueberreden die Flyer fuer Julia auszudrucken. Mittlerweile sollte ich
+wohl alles ausprobiert haben, was auch nur moeglich ist -- ich habe sogar die
+kompletten, von Apple bereitgestellten und damit offiziellen, Druckertreiber neu
+installiert, nur um dann auch heute Morgen wieder lediglich die Fehlermeldung zu
+erhalten, dass das PPD Profil unvollstaendig ist. Da komme ich doch schon ans
+Gruebeln, vor allen Dingen wenn nirgendwie eine weitergehende Fehlerbeschreibung
+zu finden ist (ok, es schien noch einmal ein paar Seiten auf Japanisch zu geben,
+aber die nutzen mir nicht sonderlich viel). Immerhin ist es mir gelungen einen
+Teil der Entwuerfe als TIFF oder PDF zu exportieren, so dass ich den Druck von
+Julias Laptop aus starten konnte... nur um dann festzustellen, dass mindestens
+eine der Druckerpatronen fast leer ist, wodurch die Farbzusammenstellung
+komplett fuer die Tonne ist. Dieses "Vergnuegen hat mich mittlerweile so manchen
+Stunden Arbeit gekostet, ohne dass ich auch nur einen entscheidenden Schritt
+weiter waere: die Vorstellung aber, dass ich eine virtuelle Machine benoetige,
+um von meinem MacBook Audrucke erledigen zu koennen finde ich wenig attraktiv --
+da ist irgendetwas grundsaetzlich im Argen. 

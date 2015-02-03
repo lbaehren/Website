@@ -2,17 +2,28 @@
 title: "Gegengewicht"
 in_menu: false
 author: "Lars Baehren"
-tags: books
 ---
 
-##{title:}##
+## {title:} ##
 
 _Tue, 18. September 2012 -- 20:26_
 
-Also da wird es einfach noch einmal Zeit, dass ich auch etwas anderes mache ausser Nachrichten und Podcasts hoeren. Bei dem Pensum, welchses ich mir da aufgehalst habe wird es schwer noch Zeit fuer so Dinge wie Buecher lesen zu finden. Dazu kommt auch noch, dass alles auf diese Weise recht schwer auf der audiovisuellen Seite ist und mir ab einem gewissen Punkt die Uebung abhanden kommt mit laengeren Texten umzugehen. Ist schon noch einmal eine andere Sache, ob ich programmiere oder in Manuals nachschlage -- da sind alles immer nur recht kurze Textpassagen bzw. eine Suche darin. Wenn ich mir im Gegenzug mal ein Paper oder ein Buch vornehme, dann bekomme ich schon nach kurzer Zeit Schwierigkeiten die Gedanken beisammen zu halten, was auf Dauer einfach kein Zustand ist. Folgerichtig habe ich bei der heutigen Fahrt von Koeln zum Wellpoint dann auch nach einem der Buecher gegriffen, welche schon seit Ewigkeiten auf meiner Liste stehen:
+Also da wird es einfach noch einmal Zeit, dass ich auch etwas anderes mache
+ausser Nachrichten und Podcasts hoeren. Bei dem Pensum, welchses ich mir da
+aufgehalst habe wird es schwer noch Zeit fuer so Dinge wie Buecher lesen zu
+finden. Dazu kommt auch noch, dass alles auf diese Weise recht schwer auf der
+audiovisuellen Seite ist und mir ab einem gewissen Punkt die Uebung abhanden
+kommt mit laengeren Texten umzugehen. Ist schon noch einmal eine andere Sache,
+ob ich programmiere oder in Manuals nachschlage -- da sind alles immer nur recht
+kurze Textpassagen bzw. eine Suche darin. Wenn ich mir im Gegenzug mal ein Paper
+oder ein Buch vornehme, dann bekomme ich schon nach kurzer Zeit Schwierigkeiten
+die Gedanken beisammen zu halten, was auf Dauer einfach kein Zustand ist.
+Folgerichtig habe ich bei der heutigen Fahrt von Koeln zum Wellpoint dann auch
+nach einem der Buecher gegriffen, welche schon seit Ewigkeiten auf meiner Liste
+stehen:
 
 ~~~~
-ID Project Pri Due Active Age  Description                               
+ID Project Pri Due Active Age  Description
  4 books                  1.2y Heretics of Dune (Frank Herbert)
  5 books                  1.2y Chapterhouse Dune (Frank Herbert)         
  6 books                  1.2y The Virgin Suicides (Jeffrey Eugenides)
@@ -25,7 +36,7 @@ ID Project Pri Due Active Age  Description
 13 books                  1.2y Die Entdeckung des Himmels (Harry Mulisch)
 ~~~~
 
-Den Angaben zufolge ist "26a" von Diana Evans wohl eines der ersten Buecher gewesen, welche ich bei dem Schwenk auf den Taskwarrior eingetragen habe; nicht nur ist die Nummer verdaechtig klein, sondern auch der Umstand dass diese Ausgabe bei einem 
+Den Angaben zufolge ist "26a" von Diana Evans wohl eines der ersten Buecher gewesen, welche ich bei dem Schwenk auf den Taskwarrior eingetragen habe; nicht nur ist die Nummer verdaechtig klein, sondern auch der Umstand dass diese Ausgabe bei einem
 
 ~~~~
 task oldest pro:books

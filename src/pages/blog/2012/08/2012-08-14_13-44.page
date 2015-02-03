@@ -1,14 +1,16 @@
 ---
 title: "Entkoppelt"
 in_menu: false
-author: "Lars Baehren"
+author: "Lars Bahren"
 ---
 
-##{title:}##
+## {title:} ##
 
 _Tue, 14. August 2012 -- 13:44_
 
-Na bitte, da hat es also doch endlich geklappt. Dass ich vom Grundsatz her schon auf der richtigen Spur war, konnte ich bereits anhand der Ausgaben sehen, aber leider scheiterte es immer noch an einem kleinen Detail...
+Na bitte, da hat es also doch endlich geklappt. Dass ich vom Grundsatz her schon
+auf der richtigen Spur war, konnte ich bereits anhand der Ausgaben sehen, aber
+leider scheiterte es immer noch an einem kleinen Detail...
 
 Bei meinen Bemuehungen die lang ersehnten Boxen fuer den Schreibtisch des [prometheus Bildarchiv](http://www.prometheus-bildarchiv.de/) zu realisieren -- zumindest in einem Prototypenstadium, so dass es eine Grundlage gibt, auf welcher sich dann die restlichen Details implementieren lassen -- hatte ich staendig noch das Problem, dass das Einklappen und wieder expandieren der Boxen nicht so funktionierte, wie es sein sollte. Statt einfach nur die angeklickte Box ein- oder auszufalten, wurden gleich alle Elemente im Sidebar manipuliert, was keinesfalls dem entspricht, was ich im Visier habe. Nachdem ich alle moeglichen Dinge versucht habe auszuschliessen, ist mir noch ein kleiner -- allerdings wieder einmal recht subtiler -- Fehler aufgefallen, welcher zu dem unerwuenschten Verhalten fuehrte. Der fuer die News-Boxen gschriebene Code enthielt noch ein Seitenelement, bei welchem der Name fest eingetragen war:
 
@@ -18,7 +20,7 @@ Bei meinen Bemuehungen die lang ersehnten Boxen fuer den Schreibtisch des [prome
 </span>
 ~~~~
 
-Um die noetige Flexibilitaet zu haben, sollte dort aber 
+Um die noetige Flexibilitaet zu haben, sollte dort aber
 
 ~~~~
 <span class="scriptonly #{element}_toggle">

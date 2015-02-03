@@ -2,14 +2,23 @@
 title: "CakePHP"
 in_menu: false
 author: "Lars Baehren"
-tags: Computing Podcast
 ---
 
-##{title:}##
+## {title:} ##
 
 _Thu, 20. September 2012 -- 15:47_
 
-[Wie ja bereits berichtet](/blog/2012/09/2012-09-18_09-06.html) versuche ich inzwischen ein klein wenig Hilfestellung bei [FLOSS Weekly](http://www.twit.tv/show/floss-weekly) zu geben. Auch wenn ich in die Produktion des Podcast in keinster Weise eingebunden bin, so habe ich es mir nun doch auf die Fahnen geschrieben beim Kontaktieren der potentiellen Gespraechspartner behilflich zu sein. Da eine [Uebersicht an moeglichen Gaesten und Projekten](https://spreadsheets.google.com/pub?key=pYAJMbVobYCTro_z4LGo3ZQ) online verfuegbar ist, kann ich mir einfach mal die dort oeffentlich zugaenglichen Informationen schnappen und versuchen eventuell bestehende Luecken zu fuellen. In diese Kategorie fiel naemlich bisher auch noch [CakePHP](http://cakephp.org):
+[Wie ja bereits berichtet](/blog/2012/09/2012-09-18_09-06.html) versuche ich
+inzwischen ein klein wenig Hilfestellung bei [FLOSS
+Weekly](http://www.twit.tv/show/floss-weekly) zu geben. Auch wenn ich in die
+Produktion des Podcast in keinster Weise eingebunden bin, so habe ich es mir nun
+doch auf die Fahnen geschrieben beim Kontaktieren der potentiellen
+Gespraechspartner behilflich zu sein. Da eine [Uebersicht an moeglichen Gaesten
+und Projekten](https://spreadsheets.google.com/pub?key=pYAJMbVobYCTro_z4LGo3ZQ)
+online verfuegbar ist, kann ich mir einfach mal die dort oeffentlich
+zugaenglichen Informationen schnappen und versuchen eventuell bestehende Luecken
+zu fuellen. In diese Kategorie fiel naemlich bisher auch noch
+[CakePHP](http://cakephp.org):
 
 > The CakePHP framework provides a robust base for your application. It can handle every aspect, from the user’s initial request all the way to the final rendering of a web page. And since the framework follows the principles of MVC, it allows you to easily customize and extend most aspects of your application.
 >

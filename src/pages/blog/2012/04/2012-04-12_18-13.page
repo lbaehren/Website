@@ -1,11 +1,12 @@
 ---
-title: Und noch ein Tool...
+title: "Und noch ein Tool..."
 in_menu: false
+author: "Lars Baehren"
 ---
 
 ## {title:} ##
 
-_Thu, 12. April 2012 - 18:13_
+_Thu, 12. April 2012 -- 18:13_
 
 Stueck fuer Stueck arbeite ich mich in diesen Tage durch die Sammlung an Software-Paketen und Tools, welche hinter den Kulissen von _prometheus_ zum Einsatz kommen. Waehrend ich zeitlich schon versuche auch schon ein wenig eigene Beitraege hinzuzufuegen (da hat es heute durchaus auch wieder Fortschritte gegeben), so muss ich natuerlich auch lernen mit den Dingen umzugehen, welche bereits in Gebrauch sind. Dazu gehoert dann auch das Bearbeiten der [Homepage](http://www.prometheus-bildarchiv.de): ganz im Gegensatz zu dem, was ich von den letzten Jahren kennen und durchaus schaetzen gelernt habe, haben sich die Prometen fuer einen anderen Weg entschieden (ueber welchen ich mich dann auch ein Stueck weit von Jens habe aufklaeren lassen). Im Gegensatz zu z.B. einer Wiki, bei welcher die Seiten dynamisch -- d.h. erst bei Anfrage -- erzeugt werden, setzt sich die _prometheus_ aus einer Sammlung statischer Seiten zusammen. Statt nun aber direk den HTML-Code zu editieren (was man natuerlich im Extremfall auch machen koennte), erfolgen Aenderungen auf einer Reihe von Seitenvorlagen, aus welchen dann anschliessend die eigentlichen Seiten erzeugt werden, welche ueber den Webserver verfuegbar sind.
 

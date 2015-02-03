@@ -1,0 +1,15 @@
+---
+title: Skymap
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Monday, 02 February 2004 -- 17:43_
+
+Hurra, es hat doch geklappt. Ich habe mich lediglich von der Darstellung auf dem Monitor austricksen lassen. Alles was man machen mußte (wie mir Andreas Nigl jetzt mitgeteilt hat) ist einmal in das Fenster zu zoomen. Und dann - bingo:
+
+![Screenshot](/blog/2004/02/2004-02-02-c.png)
+
+Ok, das ist noch nicht wirklich doll, aber immerhin bedeutet dies, daß die Routinen wirklich durchlaufen und auf eine Karte erzeugen. An der Qualität (und vielleicht auch an der Richtigkeit) wird sicherlich noch zu arbeiten sein, aber die Tatsache, daß die wesentlichen Softwarekomponenten laufen ist doch schon einmal sehr beruhigent. Ich glaube das ist wirklich ein guter Zeitpunkt, um von hier zu verschwinden und ein Abendessen einzunehmen. 

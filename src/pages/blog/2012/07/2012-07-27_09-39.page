@@ -1,15 +1,17 @@
 ---
-title: Ein guter Tag, den Admin zu loben
+title: "Ein guter Tag, den Admin zu loben"
 in_menu: false
-author: Lars Baehren
-tags: Computing
+author: "Lars Baehren"
 ---
 
-##{title:}##
+## {title:} ##
 
 _Fri, 27. July 2012 -- 09:39_
 
-[Heise](http://www.heise.de) wartet angesichts des heutigen "System Administrator Appreciation Day" mit einer nett geschriebenen [Erinnerung](http://www.heise.de/newsticker/meldung/Ein-guter-Tag-den-Admin-zu-loben-1653906.html) an diesen Umstand auf:
+[Heise](http://www.heise.de) wartet angesichts des heutigen "System
+Administrator Appreciation Day" mit einer nett geschriebenen
+[Erinnerung](http://www.heise.de/newsticker/meldung/Ein-guter-Tag-den-Admin-zu-loben-1653906.html)
+an diesen Umstand auf:
 
 > Jeder Admin kennt den Comic [Devotion to Duty](http://xkcd.com/705), in dem ein unkaputtbarer Systemadministrator in eine von Terroristen besetzte Firma eindringt und den Server wieder ans Netz hängt, ohne Rücksicht auf Verluste, im Namen der Uptime. Eigentlich arbeitet jeder Admin so, tagein, tagaus von Terroristen umgeben, die sich User nennen. Von ihnen bekommt er viel zu wenig Anerkennung, da sie sich unter der Administration von Netzen, von Virtualisierungen, von Apps in der Cloud und Webserver-Betrieb nichts vorstellen können in einer IT-Branche, die heute nur noch über "Lösungen" redet. So liegt es im Trend der Zeit, wenn bei Microsoft der Admin-Grad in Microsoft Certified Solutions Master umbenannt wurde, der Lösungsmeister zu ehrenwerten bekannten Berufen wie Bademeister und Bäckermeister aufrückt.
 

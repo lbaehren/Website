@@ -2,10 +2,9 @@
 title: "Status Ihrer Bestellung"
 in_menu: false
 author: "Lars Baehren"
-tags: Photography
 ---
 
-##{title:}##
+## {title:} ##
 
 _Fri, 28. September 2012 -- 11:35_
 

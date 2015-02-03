@@ -1,14 +1,42 @@
 ---
-title: Funktioniert wieder
+title: "Funktioniert wieder"
 in_menu: false
-author: Lars Baehren
-tags: Computing
+author: "Lars Baehren"
 ---
 
-##{title:}##
+## {title:} ##
 
 _Fri, 03. August 2012 -- 08:44_
 
-Also da war es letzten Endes doch nur halb so wild. Nachdem ich mir am Dienstag nicht mehr so sicher war, ob meine [MacPorts](http://www.macports.org) Installation wirklich noch in Ordnung war, habe ich am Abend in den saueren Apfel gebissen und kurzer Hand alles von der Platte geputzt (auch wenn mir im Nachhinein einfaellt, dass ich vielleicht ein paar Konfigurationsdateien uebersehen haben koennte, wodurch die Neuinstallation ein klein wenig glatter verlief, als dies moeglich gewesen waere). Fuer eine Neueinrichtung muss man typischerweise ein wenig Zeit beseite legen, denn da alle Paket komplett von Source gebaut werden -- was gerade bei so Paketen wie [Qt](http://qt-project.org) oder [Boost](http://www.boost.org) schon eine Weile dauern kann -- dauert es doch etwas laenger ehe alles wieder vollstaendig am Laufen ist. Vielleicht noch groesser aber ist das Problem, dass man irgendwie nachhalten muss, welche Paket ueberhaupt installiert sein sollten -- ein wie auch immer gearteter Vermerk ist da sehr hilfreich. Andererseits habe ich schon vor einer ganzen Weile beschossen, dass es durchaus Sinn macht, einfach noch den weiteren logischen Schritt zu machen, naemlich den ganzen Prozess weitestgehend zu automatisieren; folgerichtig habe ich also die Liste der in jedem Fall benoetigten Pakte in einem eigenen Paketmanager abgelegt, so dass ich von einer zentralen Stelle aus alles starten kann. Auch wenn da sicherlich noch einmal ein paar Feineinstellungen noetig werden -- so eine Aktion hilft natuerlich eventuelle Fehler zu Tage treten zu lassen -- so ist doch alles recht glatt verlaufen und ich verfuege mittlerweile wieder ueber alle Software-Pakete, welche ich fuer den tagtaeglichen Betrieb benoetige.
+Also da war es letzten Endes doch nur halb so wild. Nachdem ich mir am Dienstag
+nicht mehr so sicher war, ob meine [MacPorts](http://www.macports.org)
+Installation wirklich noch in Ordnung war, habe ich am Abend in den saueren
+Apfel gebissen und kurzer Hand alles von der Platte geputzt (auch wenn mir im
+Nachhinein einfaellt, dass ich vielleicht ein paar Konfigurationsdateien
+uebersehen haben koennte, wodurch die Neuinstallation ein klein wenig glatter
+verlief, als dies moeglich gewesen waere). Fuer eine Neueinrichtung muss man
+typischerweise ein wenig Zeit beseite legen, denn da alle Paket komplett von
+Source gebaut werden -- was gerade bei so Paketen wie
+[Qt](http://qt-project.org) oder [Boost](http://www.boost.org) schon eine Weile
+dauern kann -- dauert es doch etwas laenger ehe alles wieder vollstaendig am
+Laufen ist. Vielleicht noch groesser aber ist das Problem, dass man irgendwie
+nachhalten muss, welche Paket ueberhaupt installiert sein sollten -- ein wie
+auch immer gearteter Vermerk ist da sehr hilfreich. Andererseits habe ich schon
+vor einer ganzen Weile beschossen, dass es durchaus Sinn macht, einfach noch den
+weiteren logischen Schritt zu machen, naemlich den ganzen Prozess weitestgehend
+zu automatisieren; folgerichtig habe ich also die Liste der in jedem Fall
+benoetigten Pakte in einem eigenen Paketmanager abgelegt, so dass ich von einer
+zentralen Stelle aus alles starten kann. Auch wenn da sicherlich noch einmal ein
+paar Feineinstellungen noetig werden -- so eine Aktion hilft natuerlich
+eventuelle Fehler zu Tage treten zu lassen -- so ist doch alles recht glatt
+verlaufen und ich verfuege mittlerweile wieder ueber alle Software-Pakete,
+welche ich fuer den tagtaeglichen Betrieb benoetige.
 
-Eine kleine Lektion, welche ich darueber aber auch gelernt habe ist, dass ich meine in Vorbereitung befindliche Website, um das Handling der dafuer benoetigten Software erweitert werden sollte. Von der Philosopie her entspricht dies dann letzten Endes der Vorgehensweise wie im Falle der LOFAR User Software -- nach Moeglichkeit sollte ein einzelner Download ausreichen, alles weitere wird dann intern abgearbeitet, inklusive der Behandlung von Abhaengigkeiten. Ganz so weit bin ich noch nicht, aber die notwendigen Vorbereitungen sind bereits getroffen...
+Eine kleine Lektion, welche ich darueber aber auch gelernt habe ist, dass ich
+meine in Vorbereitung befindliche Website, um das Handling der dafuer
+benoetigten Software erweitert werden sollte. Von der Philosopie her entspricht
+dies dann letzten Endes der Vorgehensweise wie im Falle der LOFAR User Software --
+nach Moeglichkeit sollte ein einzelner Download ausreichen, alles weitere wird
+dann intern abgearbeitet, inklusive der Behandlung von Abhaengigkeiten. Ganz so
+weit bin ich noch nicht, aber die notwendigen Vorbereitungen sind bereits
+getroffen... 

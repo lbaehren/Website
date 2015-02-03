@@ -170,8 +170,8 @@ dann auch recht leicht Eintraege gleich monatsweise einzubinden:
 ~~~~
     [master 25e54cf] Fixing syntax errors.
      31 files changed, 637 insertions(+), 331 deletions(-)
-     rewrite src/pages/blog/2004/2004-03/2004-03-24_09-36.page (76%)
-     rewrite src/pages/blog/2004/2004-05/2004-05-05_13-33.page (86%)
+     rewrite src/pages/blog/2004/03/2004-03-24_09-36.page (76%)
+     rewrite src/pages/blog/2004/05/2004-05-05_13-33.page (86%)
      rewrite src/pages/blog/2008/11/2008-11-02_18-37.page (74%)
      rewrite src/pages/blog/2008/11/2008-11-02_21-04.page (85%)
      rewrite src/pages/blog/2008/11/2008-11-05_08-07.page (73%)
@@ -236,31 +236,31 @@ target directories:
 
 ~~~~
 blog/2005/
-blog/2005/2005-01/
-blog/2005/2005-02/
-blog/2005/2005-03/
-blog/2005/2005-04/
-blog/2005/2005-05/
-blog/2005/2005-06/
-blog/2005/2005-07/
-blog/2005/2005-07/2005-07-02_23-18.html
+blog/2005/01/
+blog/2005/02/
+blog/2005/03/
+blog/2005/04/
+blog/2005/05/
+blog/2005/06/
+blog/2005/07/
+blog/2005/07/2005-07-02_23-18.html
           8,615 100%    0.00kB/s    0:00:00 (xfr#1, ir-chk=1099/1858)
-blog/2005/2005-08/
-blog/2005/2005-09/
-deleting blog/2005/2005-10/.2005-10-27_09-42.html.FGbjlZ
-deleting blog/2005/2005-10/.2005-10-21_10-00.html.sBBMas
-deleting blog/2005/2005-10/.2005-10-20_22-40.html.5N96yk
-deleting blog/2005/2005-10/.2005-10-20_22-12.html.zGmXwA
-deleting blog/2005/2005-10/.2005-10-08_11-44.html.sJLcG5
-deleting blog/2005/2005-10/.2005-10-02_20-41.html.572TYc
-deleting blog/2005/2005-11/.2005-11-23_07-02.html.CzcxWs
-deleting blog/2005/2005-11/.2005-11-14_16-21.html.L2nUaj
-deleting blog/2005/2005-11/.2005-11-13_21-31.html.0ihb1G
-deleting blog/2005/2005-11/.2005-11-04_20-10.html.RP3cj9
-deleting blog/2005/2005-11/.2005-11-04_19-27.html.KgPIa4
-deleting blog/2005/2005-12/.2005-12-28_12-32.html.UUu1dq
-deleting blog/2005/2005-12/.2005-12-28_00-56.html.WvaZM1
-deleting blog/2005/2005-12/.2005-12-15_17-30.html.agepc6
+blog/2005/08/
+blog/2005/09/
+deleting blog/2005/10/.2005-10-27_09-42.html.FGbjlZ
+deleting blog/2005/10/.2005-10-21_10-00.html.sBBMas
+deleting blog/2005/10/.2005-10-20_22-40.html.5N96yk
+deleting blog/2005/10/.2005-10-20_22-12.html.zGmXwA
+deleting blog/2005/10/.2005-10-08_11-44.html.sJLcG5
+deleting blog/2005/10/.2005-10-02_20-41.html.572TYc
+deleting blog/2005/11/.2005-11-23_07-02.html.CzcxWs
+deleting blog/2005/11/.2005-11-14_16-21.html.L2nUaj
+deleting blog/2005/11/.2005-11-13_21-31.html.0ihb1G
+deleting blog/2005/11/.2005-11-04_20-10.html.RP3cj9
+deleting blog/2005/11/.2005-11-04_19-27.html.KgPIa4
+deleting blog/2005/12/.2005-12-28_12-32.html.UUu1dq
+deleting blog/2005/12/.2005-12-28_00-56.html.WvaZM1
+deleting blog/2005/12/.2005-12-15_17-30.html.agepc6
 ~~~~
 
 **:::**

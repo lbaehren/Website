@@ -1,14 +1,17 @@
 ---
 title: Zukunft ungewiss
 in_menu: false
-author: Lars Baehren
+author: "Lars Baehren"
 ---
 
-##{title:}##
+## {title:} ##
 
 _Fri, 03. August 2012 -- 18:52_
 
-Nicht nur dass Nokia sich in dem Masse von Microsoft abhaengig zu machen scheint, wie der finnische ehemalige Marktfuehrer in Sachen Handyherstellung an Bedeutung verliert, sondern mittlerweile scheinen wir auch an dem Punkt angekommen zu sein, dass die letzten Juwelen verschwerbelt werde:
+Nicht nur dass Nokia sich in dem Masse von Microsoft abhaengig zu machen
+scheint, wie der finnische ehemalige Marktfuehrer in Sachen Handyherstellung an
+Bedeutung verliert, sondern mittlerweile scheinen wir auch an dem Punkt
+angekommen zu sein, dass die letzten Juwelen verschwerbelt werde:
 
 > Qt provides a sophisticated C++ framework for cross-platform mobile and desktop application development. It was originally created by Norwegian software company Trolltech, which was acquired by Nokia in 2008. Nokia transitioned Qt to an open governance model that has made the project more inclusive and open to independent contributors. Nokia also relicensed the open source version of the toolkit, moving it from the GPL to the more permissive LGPL.
 >

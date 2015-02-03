@@ -4,15 +4,21 @@ in_menu: false
 author: "Lars Baehren"
 ---
 
-##{title:}##
+## {title:} ##
 
 _Thu, 25. October 2012 -- 09:20_
 
-Das ist doch mal wieder eine Publikation, welche man sich merken und fuer welch man sich ein wenig Lesezeit beseite stellen muss: [The Architecture of Open Source Applications](http://www.aosabook.org/en/index.html) ist eine zweibaendige Sammlung an Aufsaetzen zu Open Source Anwendungen und Projekten, welche deren (Entstehungs-)Geschichte und Architektur beleuchtet.
+Das ist doch mal wieder eine Publikation, welche man sich merken und fuer welche
+man sich ein wenig Lesezeit beiseite stellen muss: [The Architecture of Open
+Source Applications](http://www.aosabook.org/en/index.html) ist eine
+zweibaendige Sammlung an Aufsaetzen zu Open Source Anwendungen und Projekten,
+welche deren (Entstehungs-)Geschichte und Architektur beleuchtet.
 
 > Each chapter describes the architecture of an open source application: how it is structured, how its parts interact, why it's built that way, and what lessons have been learned that can be applied to other big design problems. The descriptions are written by the people who know the software best, people with years or decades of experience designing and re-designing complex applications. The applications themselves range in scale from simple drawing programs and web-based spreadsheets to compiler toolkits and multi-million line visualization packages. Some are only a few years old, while others are approaching their thirtieth anniversary. What they have in common is that their creators have thought long and hard about their design, and are willing to share those thoughts with you. We hope you enjoy what they have written.
 
-Das klingt doch als Anliegen recht gut. Wirft man dann mal einen Blick in das Inhaltsverzeichnis, so finden sich da in der Tat sehr unterschiedliche Projekte vertreten:
+Das klingt doch als Anliegen recht gut. Wirft man dann mal einen Blick in das
+Inhaltsverzeichnis, so finden sich da in der Tat sehr unterschiedliche Projekte
+vertreten:
 
 * [Audacity](http://www.aosabook.org/en/audacity.html)
 * [The Bourne-Again Shell](http://www.aosabook.org/en/bash.html)
@@ -22,9 +28,14 @@ Das klingt doch als Anliegen recht gut. Wirft man dann mal einen Blick in das In
 * [Git](http://www.aosabook.org/en/git.html)
 * [Open MPI](http://www.aosabook.org/en/openmpi.html)
 
-Dies ist natuerlich nur eine Auswahl -- fuer alles Weitere empfielt es sich, mal selber einen Blick reinzuwerfen, denn hierbei handelt es sich meiner Ansicht nach um eine wirklich lesenswerte Zusammenstellung (welche ich zumindest in dieser Art noch nicht gesehen habe).
+Dies ist natuerlich nur eine Auswahl -- fuer alles Weitere empfiehlt es sich,
+mal selber einen Blick reinzuwerfen, denn hierbei handelt es sich meiner Ansicht
+nach um eine wirklich lesenswerte Zusammenstellung (welche ich zumindest in
+dieser Art noch nicht gesehen habe).
 
-Einen Aspekt, welchen ich -- mal abgesehen von den einzelnen Artikeln -- durchaus erwaehnenswert finde, ist die Art und Weise, in welcher Software Entwicklung als Taetigkeit eingeordnet wird:
+Einen Aspekt, welchen ich -- mal abgesehen von den einzelnen Artikeln --
+durchaus erwaehnenswert finde, ist die Art und Weise, in welcher Software
+Entwicklung als Taetigkeit eingeordnet wird:
 
 > Carpentry is an exacting craft, and people can spend their entire lives learning how to do it well. But carpentry is not architecture: if we step back from pitch boards and miter joints, buildings as a whole must be designed, and doing that is as much an art as it is a craft or science.
 >
@@ -32,4 +43,9 @@ Einen Aspekt, welchen ich -- mal abgesehen von den einzelnen Artikeln -- durchau
 >
 > Building architecture and software architecture have a lot in common, but there is one crucial difference. While architects study thousands of buildings in their training and during their careers, most software developers only ever get to know a handful of large programs well. And more often than not, those are programs they wrote themselves. They never get to see the great programs of history, or read critiques of those programs' designs written by experienced practitioners. As a result, they repeat one another's mistakes rather than building on one another's successes.
 
-Der letzte Punkt ist dann genau die Stelle, an welcher die Herausgeber der Baende ansetzen: derartige Fehler muessen nicht die Regel sein -- vielmehr ist eigentlich ausreichend Erfahrung vorhanden, um ein weniges Wiederholen der gleichen Fehler zu vermeiden, aber in Sachen Verfuegbareit eben jener Informationen gibt es Nachholbedarf. Dies genau ist es, was _The Architecture of Open Source Applications_ versucht zu aendern.
+Der letzte Punkt ist dann genau die Stelle, an welcher die Herausgeber der
+Baende ansetzen: derartige Fehler muessen nicht die Regel sein -- vielmehr ist
+eigentlich ausreichend Erfahrung vorhanden, um ein weniges Wiederholen der
+gleichen Fehler zu vermeiden, aber in Sachen Verfuegbareit eben jener
+Informationen gibt es Nachholbedarf. Dies genau ist es, was _The Architecture of
+Open Source Applications_ versucht zu aendern.

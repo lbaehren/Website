@@ -6,7 +6,7 @@ tags: Computing Git
 ---
 
 
-##{title:}##
+## {title:} ##
 
 
 Let’s get into using some Git. First things first—you have to install it. You can get it a number of ways; the two major ones are to install it from source or to install an existing package for your platform.

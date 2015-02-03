@@ -5,7 +5,7 @@ author: Lars Baehren
 tags: Computing Typesetting
 ---
 
-##{title:}##
+## {title:} ##
 
 TeX represents the state-of-the-art in computer typesetting. It s particularly valuable where the document, article, or book to be produced contains a lot of mathematics, and where the user is concerned about typographic quality. TeX software offers both writer and publisher the opportunity to produce technical text, in an attractive form, with the speed and efficiency of a computer system.
 

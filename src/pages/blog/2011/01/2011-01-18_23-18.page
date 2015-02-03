@@ -1,14 +1,30 @@
 ---
-title: Org-Mode fuer den Blog
+title: "Org-Mode fuer den Blog"
 in_menu: false
-author: Lars Baehren
+author: "Lars Baehren"
 ---
 
 ## {title:} ##
 
 _Tue, 18. January 2011 -- 23:18_
 
-Eine der Neuentdeckungen -- zumindest von der softwaretechnischen Seite her -- des letzten Jahres war [Org-Mode](http://www.orgmode.org), ein spezieller Modus fuer den Emacs Editor. Da ich in letzterem arbeitsbedingt eh einen grossen Teil meiner Zeit verbringe, ist es sehr reizvoll in der gleichen Umgebung auch strukturierte Listen -- sei es nun Notizen von einem Meeting oder TODO Listen -- verwalten zu koennen. Waehrend ich fuer sehr viele Dinge ja Dokuwiki verwende, so ist letzte eben nicht fuer alle Anwendungen oder Problemstellungen die beste Loesung; was ich aber grundsaetzlich mag ist, wenn ich meine Texte auch mit einer Low-Level Methode veraendern kann, so dass ASCII immer wieder der kleinste gemeinsame Nenner ist. Auf der anderen Seite kann man aber sicherlich auch recht gut feststellen, dass es fuer den Blog den Trend zu verzeichnen gibt, dass ich deutlich weniger viele kurze Beitraege schreibe, sondern mir mitunter Zeit lasse um laengere Berichte zu verfassen. Da dies aber auch ein wenig mehr Zeit erfordert und sich in den meisten Faellen mal nicht so eben schnell in einem Zuge runterschreiben laesst, benoetige ich natuerlich so eine Art Notizbereich fuer neue Blogeintraege, wo ich Entwuerfe und Vermerke sammeln kann, ehe diese einen praesentablen Zustand erreichen.
+Eine der Neuentdeckungen -- zumindest von der softwaretechnischen Seite her --
+des letzten Jahres war [Org-Mode](http://www.orgmode.org), ein spezieller Modus
+fuer den Emacs Editor. Da ich in letzterem arbeitsbedingt eh einen grossen Teil
+meiner Zeit verbringe, ist es sehr reizvoll in der gleichen Umgebung auch
+strukturierte Listen -- sei es nun Notizen von einem Meeting oder TODO Listen --
+verwalten zu koennen. Waehrend ich fuer sehr viele Dinge ja Dokuwiki verwende,
+so ist letzte eben nicht fuer alle Anwendungen oder Problemstellungen die beste
+Loesung; was ich aber grundsaetzlich mag ist, wenn ich meine Texte auch mit
+einer Low-Level Methode veraendern kann, so dass ASCII immer wieder der kleinste
+gemeinsame Nenner ist. Auf der anderen Seite kann man aber sicherlich auch recht
+gut feststellen, dass es fuer den Blog den Trend zu verzeichnen gibt, dass ich
+deutlich weniger viele kurze Beitraege schreibe, sondern mir mitunter Zeit lasse
+um laengere Berichte zu verfassen. Da dies aber auch ein wenig mehr Zeit
+erfordert und sich in den meisten Faellen mal nicht so eben schnell in einem
+Zuge runterschreiben laesst, benoetige ich natuerlich so eine Art Notizbereich
+fuer neue Blogeintraege, wo ich Entwuerfe und Vermerke sammeln kann, ehe diese
+einen praesentablen Zustand erreichen.
 
 ![Org-Mode](/blog/2011/01/2011-01-18_org-mode.png)
 

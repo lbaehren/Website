@@ -4,4 +4,4 @@ in_menu: false
 author: Lars Baehren
 ---
 
-##{title:}##
+## {title:} ##

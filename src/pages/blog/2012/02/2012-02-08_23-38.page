@@ -1,13 +1,12 @@
 ---
-title: Ruby Dokumentation
+title: "Ruby Dokumentation"
 in_menu: false
-author: Lars Baehren
-tags: Computing Development Ruby
+author: "Lars Baehren"
 ---
 
-## Ruby Dokumentation ##
+## {title:} ##
 
-_Wed, 08. February 2012 - 23:38_
+_Wed, 08. February 2012 -- 23:38_
 
 Im Zuge meiner Bemuehungen mich mit der Programmiersprache [Ruby](http://www.ruby-lang.org) und ihrem Oekosystem vertraut zu machen, habe ich mir natuerlich auch mal die Methoden vorgenommen, mit welchen sich Projekte dokumentieren lassen. Da ich kan nicht zu den Leuten gehoere welche das Schreiben von Dokumentation eher als laestig und unnoetig empfinden ("Der Code ist die Dokumentation..."), macht es natuerlich Sinn sich einmal ein klein wenig umzuschauen, wie sich eigene (oder auch fremde) Softwareprojekte, welche sich Ruby bedienen, dokumentieren
 lassen. Wenn ich hier ueber Quellcode-Dokumentation rede, dann schwebt mir

@@ -1,14 +1,15 @@
 ---
 title: ALMA Data Analysis Software Developer
 in_menu: false
-author: Lars Baehren
+author: "Lars Baehren"
 ---
 
 ## {title:} ##
 
-_Wed, 12. January 2011 - 12:08_
+_Wed, 12. January 2011 -- 12:08_
 
-Also wenn [das hier](http://members.aas.org/JobReg/JobDetailPage.cfm?JobID=27174) mal nicht interessant klingt:
+Also wenn [das hier](http://members.aas.org/JobReg/JobDetailPage.cfm?JobID=27174)
+mal nicht interessant klingt:
 
 > Within the Pipeline Systems Department of the Software Development Division, you will be responsible for the development of radio-interferometry data reduction software. You will also be part of the international ALMA Computing team (collaboration of institutes), within the [Offline (Data Analysis) subsystem](http://science.nrao.edu/alma/data-processing.shtml). This subsystem is responsible for the ALMA contribution to the Common Astronomy Software Applications (CASA) package, which will be made available to reduce ALMA data.
 >

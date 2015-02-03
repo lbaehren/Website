@@ -1,13 +1,34 @@
 ---
-title: Web Generatoren testen
+title: "Web Generatoren testen"
 in_menu: false
+author: "Lars Baehren"
 ---
 
-## Web Generatoren testen ##
+## {title:} ##
 
-_Thu, 28. June 2012 - 08:43_
+_Thu, 28. June 2012 -- 08:43_
 
-Mit einer Gruende, weshalb es in Sachen neuer Beitraege recht duenn geworden ist, waere der Tatsache zu verdanken, dass ich mich immer noch auf der Suche nach einer vernuenftigen Loesung fuer eine neue Website befinde. Wie sich herausstellt ist dies garnicht so trivial, wenn versucht die Erzeugung statischer Seiten mit einer qualitativ hochwertigen Einbindung von Bildern verbinden will; wenn ich vorwiegend Text online stellen wollte, waere ich wahrscheinlich schon laengst fertig, aber der entscheidende Schwachpunkt ist derzeit noch der Blog und die Photographie Abteilung. Dabei habe ich mir natuerlich die Muehe gemacht mich ein klein wenig ausgibiger umzuschauen -- so habe ich mittlerweile ein halbes Dutzend Prototypen auf meinem Rechner laufen (alle in leicht unterschidlichen Ausbaustufen), aber keiner davon will mich so richtig zufriedenstellen. Das einzige, was sich immerhin einigermassen deutlich herauskristalisiert ist, dass ich einen Generator fuer statische Seiten bevorzugen wuerde -- alternativ waere vielleicht noch eine Loesung, bei welcher die Seiten via PHP gerendert werden. Was ich aber in jedem Fall versuche gering zu halten, sind die Anforderungen an was auf dem Webserver installiert sein muss; Hintergedanke dabei ist natuerlich, dass ich eine Loesung haben moechte, welche portabel ist und sich ohne groessere Probleme von Computer zu Computer vercshieben laesst. Darueber hinaus bevorzuge ich nach wie vor das Ablegen der Texte in einem human-readable Format, so dass ich mit einem einfachen Editor hingehen und Inhalte anpassen kann.
+Mit einer Gruende, weshalb es in Sachen neuer Beitraege recht duenn geworden
+ist, waere der Tatsache zu verdanken, dass ich mich immer noch auf der Suche
+nach einer vernuenftigen Loesung fuer eine neue Website befinde. Wie sich
+herausstellt ist dies garnicht so trivial, wenn versucht die Erzeugung
+statischer Seiten mit einer qualitativ hochwertigen Einbindung von Bildern
+verbinden will; wenn ich vorwiegend Text online stellen wollte, waere ich
+wahrscheinlich schon laengst fertig, aber der entscheidende Schwachpunkt ist
+derzeit noch der Blog und die Photographie Abteilung. Dabei habe ich mir
+natuerlich die Muehe gemacht mich ein klein wenig ausgibiger umzuschauen -- so
+habe ich mittlerweile ein halbes Dutzend Prototypen auf meinem Rechner laufen
+(alle in leicht unterschidlichen Ausbaustufen), aber keiner davon will mich so
+richtig zufriedenstellen. Das einzige, was sich immerhin einigermassen deutlich
+herauskristalisiert ist, dass ich einen Generator fuer statische Seiten
+bevorzugen wuerde -- alternativ waere vielleicht noch eine Loesung, bei welcher
+die Seiten via PHP gerendert werden. Was ich aber in jedem Fall versuche gering
+zu halten, sind die Anforderungen an was auf dem Webserver installiert sein
+muss; Hintergedanke dabei ist natuerlich, dass ich eine Loesung haben moechte,
+welche portabel ist und sich ohne groessere Probleme von Computer zu Computer
+vercshieben laesst. Darueber hinaus bevorzuge ich nach wie vor das Ablegen der
+Texte in einem human-readable Format, so dass ich mit einem einfachen Editor
+hingehen und Inhalte anpassen kann.
 
 Welche Testinstallationen gibt es also?
 

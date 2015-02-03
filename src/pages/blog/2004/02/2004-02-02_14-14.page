@@ -1,0 +1,15 @@
+---
+title: Arbeitsumgebung
+in_menu: false
+author: Lars Baehren
+---
+
+## {title:} ##
+
+_Monday, 02 February 2004 -- 14:14_
+
+Ok, hier mal ein kleiner Einblick in die lokale Arbeitsumgebung:
+
+![Screenshot](/blog/2004/02/2004-02-02-a.png)
+
+So in etwa sieht der Zustand einer der Arbeitsflaechen auf meinem Computer aus. Hier, eine typische AIPS++ Session bei dem Vorhaben aus den in Karlsruhe gemessenen LOPES Daten eine Himmelskarte zu erzeugen. Das mit 'Skymap Generator' betitelte Fenster ist die graphische Oberflaeche mit welcher sich die Eigenschaften der zu erzeugenden Map einstellen lassen (Kenner der Materie werden hier natuerlich sofort die Benutzung von Tk erkennen). In dem darunterliegenden 'Emacs'-Fenster ist ein Auszug aus dem Quellcode fuer den Skymaper zu erkennen; das ist der Kram, mit dem ich mich seit drei Tagen rumschlage, um alles zu verstehen und anschließend sauber ans Laufen zu bringen. Das Panel mit den viel lustigen Buttons ist die Kontrolloberflaeche fuer die Datendarstellungs- und verarbeitungsroutienen. Wie unschwer zu erraten ist startet der Button 'Skymap' das Skymaper Tool - wie dies hier ja der Fall ist. Das Fenster mit der blauen Kurve beinhaltet die Wiedergabe der mit den Antennen aufgenommenen Daten, in diesem Fall das Resultat einer FFT; die zu erkennenden scharfen Peaks sind leider keine Nutzsignale sondern ein Fernsehsender bzw. damit zusammenhaengende Intermodulationsprodukte (also Frequenzen, welche als Mischprodukte anderer Frequenzen austreten). Fuer eine vernuenftige Verwendung der aufgenomennen Daten muessen diese dominanten Störanteile beseitigt werden, um an das heranzukommen was fuer uns wirklich interessant ist, sich aber leider nur in dem leicht zittrigen niedrigen Signal versteckt. 

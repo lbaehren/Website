@@ -5,7 +5,7 @@ author: "Lars Baehren"
 tags: Development Computing
 ---
 
-##{title:}##
+## {title:} ##
 
 [Doxygen](http://www.doxygen.org) is a documentation generator, a tool for writing software reference documentation. The documentation is written within code, and is thus relatively easy to keep up to date. Doxygen can cross reference documentation and code, so that the reader of a document can easily refer to the actual code.
 

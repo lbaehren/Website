@@ -4,7 +4,7 @@ in_menu: false
 author: Lars Baehren
 ---
 
-##{title:}##
+## {title:} ##
 
 .. is a tool for the generation of static websites -- such as the ones you are
 looking at right now.

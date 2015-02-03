@@ -6,7 +6,7 @@ author: "Lars Baehren"
 tags: Development
 ---
 
-##{title:}##
+## {title:} ##
 
 **prometheus-sumo** is a simple (almost) virtual package, to ease the retrieval of the various components in the software stack for "[prometheus](/work/prometheus.html) -- The Distributed Digital Image Archive for Research and Studies".
 

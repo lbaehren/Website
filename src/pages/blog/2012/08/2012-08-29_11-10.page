@@ -1,21 +1,31 @@
 ---
 title: "Nikon ViewNX2 2.5.0"
 in_menu: false
-author: "Lars Baehren"
-tags: Photography Computing
+author: "Lars Bahren"
 ---
 
-##{title:}##
+## {title:} ##
 
 _Wed, 29. August 2012 -- 11:10_
 
-Das war wirklich ein faelliges Update! Als ich heute Morgen mal noch schnell auf die Mitteilungen des im Hintergrund laufenden _Nikon Messenger_ reagiert habe, konnte ich feststellen dass es ein Update fuer [Nikon ViewNX2](http://www.nikonusa.com/Nikon-Products/Product/Imaging-Software/NVNX2/ViewNX-2.html) gibt. Da ich dieses kostenlos von Nikon bereitgestellte Tools nach wie vor fest im meinen Arbeitsfluss integriert habe, kann es ja nicht schaden eventuelle Verbesserungen mitzunehmen und zu nutzen. Zuletzt hatte sich da allerdings ein Bug eingeschlichen, welchen ich schon ziemlich nervig fand und welcher das Leben schwer machte: beim Selektieren von Bilder unter Verwendung der Numbered Tags sprang die Anzeige stehts wieder zum Anfang einer Sammlung zurueck, so dass ich voellig aus dem Fluss kam. Fuer einen Vorgang wie die erste Selektion nach dem Import von Bildern von der Kamera war dies schon ein ziemliches Problem:
+Das war wirklich ein faelliges Update! Als ich heute Morgen mal noch schnell auf
+die Mitteilungen des im Hintergrund laufenden _Nikon Messenger_ reagiert habe,
+konnte ich feststellen dass es ein Update fuer [Nikon
+ViewNX2](http://www.nikonusa.com/Nikon-Products/Product/Imaging-Software/NVNX2/ViewNX-2.html)
+gibt. Da ich dieses kostenlos von Nikon bereitgestellte Tools nach wie vor fest
+im meinen Arbeitsfluss integriert habe, kann es ja nicht schaden eventuelle
+Verbesserungen mitzunehmen und zu nutzen. Zuletzt hatte sich da allerdings ein
+Bug eingeschlichen, welchen ich schon ziemlich nervig fand und welcher das Leben
+schwer machte: beim Selektieren von Bilder unter Verwendung der Numbered Tags
+sprang die Anzeige stehts wieder zum Anfang einer Sammlung zurueck, so dass ich
+voellig aus dem Fluss kam. Fuer einen Vorgang wie die erste Selektion nach dem
+Import von Bildern von der Kamera war dies schon ein ziemliches Problem:
 
   - Bilder von der Speicherkarte importieren.
   - Wichtigste Metadaten und (wenn sofern nicht bereits vorhanden) GPS Informationen hinzufuegen.
   - Unterscheidung zwischen Bildern fuer weitere Bearbeitung und Bildern fuer die Tonne.
 
-Um bei dem letzten Punkt nicht immer wieder die gleichen Bilder anzuschauen, sondern einfach die bereits eingeordneten Bildern auszublenden gibt es eine recht einfache Vorgehensweise: 
+Um bei dem letzten Punkt nicht immer wieder die gleichen Bilder anzuschauen, sondern einfach die bereits eingeordneten Bildern auszublenden gibt es eine recht einfache Vorgehensweise:
 
 ![Filter attributes in Nikon ViewNX2](/blog/2012/08/2012-08-29_viewnx2.png)
 

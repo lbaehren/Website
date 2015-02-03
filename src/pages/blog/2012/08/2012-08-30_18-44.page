@@ -1,13 +1,33 @@
 ---
 title: "Wenn der Kaffee nicht mehr schmeckt"
 in_menu: false
-author: "Lars Baehren"
+author: "Lars Bahren"
 ---
 
-##{title:}##
+## {title:} ##
 
 _Thu, 30. August 2012 -- 18:44_
 
-So wirklich toll ist dies ja nicht, was da an Meldungen in Sachen Java diese Woche an Land gespuelt wird; egal wohin man sich wendet, ueberall tauchen Berichte zu den oeffentlich gewordenen Sicherheitsluecken auf... und der Art und Weise, in welcher Oracle damit umgeht (oder auch auch nicht, je nach dem auf welchen Standpunkt man sich hier stellen mag). Nachdem ich am gestrigen Abend unseren Rechnern zuhause geschaut habe, waren heute mal die Maschinen bei der Arbeit an der Reihe; was ich dabei versucht habe sicherzustellen ist auch, dass die virtuellen Maschinen -- welche Windows XP, Debian und Ubuntu bereitstellen -- entsprechend konfiguriert sind. Da typischerweise auf jeder Platform gleich mehrere Brower laufen, dauert dies eine Weile, ehe man alle Programme durchgecheckt hat.
+So wirklich toll ist dies ja nicht, was da an Meldungen in Sachen Java diese
+Woche an Land gespuelt wird; egal wohin man sich wendet, ueberall tauchen
+Berichte zu den oeffentlich gewordenen Sicherheitsluecken auf... und der Art und
+Weise, in welcher Oracle damit umgeht (oder auch auch nicht, je nach dem auf
+welchen Standpunkt man sich hier stellen mag). Nachdem ich am gestrigen Abend
+unseren Rechnern zuhause geschaut habe, waren heute mal die Maschinen bei der
+Arbeit an der Reihe; was ich dabei versucht habe sicherzustellen ist auch, dass
+die virtuellen Maschinen -- welche Windows XP, Debian und Ubuntu bereitstellen --
+entsprechend konfiguriert sind. Da typischerweise auf jeder Platform gleich
+mehrere Brower laufen, dauert dies eine Weile, ehe man alle Programme
+durchgecheckt hat.
 
-Was ich aber in besonderer Weise interessant fand, waren die Meldungen, dass die Anfang der Woche oeffentlich gewordenen Sicherheitsluecken schon gut vier Monate bekannt waren; aber weder in der zurueckiegenden Zeit, noch in dieser Woche hat es irgendeine Stellungnahme seitens Oracle gegeben, was doch einige Fragen aufwirft. Wer sich den "Spass" erlaubt da mal ein wenig zu suchen, der wird noch einige Details finden, welche alles anderes als ein gutes Licht auf die Art und Weise werfen, in welcher der Konzern mit einem Problem umgeht, welches die ueberwiegende Anzahl aller Computer in privatem und beruflichem Bereich betreffen kann. Vielleicht wird da einfach mal faellig, dass es zu einer Schadensersatzklage kommt -- in den Vereinigten Staaten waere dies sicherlich denkbar.
+Was ich aber in besonderer Weise interessant fand, waren die Meldungen, dass die
+Anfang der Woche oeffentlich gewordenen Sicherheitsluecken schon gut vier Monate
+bekannt waren; aber weder in der zurueckiegenden Zeit, noch in dieser Woche hat
+es irgendeine Stellungnahme seitens Oracle gegeben, was doch einige Fragen
+aufwirft. Wer sich den "Spass" erlaubt da mal ein wenig zu suchen, der wird noch
+einige Details finden, welche alles anderes als ein gutes Licht auf die Art und
+Weise werfen, in welcher der Konzern mit einem Problem umgeht, welches die
+ueberwiegende Anzahl aller Computer in privatem und beruflichem Bereich
+betreffen kann. Vielleicht wird da einfach mal faellig, dass es zu einer
+Schadensersatzklage kommt -- in den Vereinigten Staaten waere dies sicherlich
+denkbar. 

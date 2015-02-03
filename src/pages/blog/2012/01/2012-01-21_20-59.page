@@ -1,10 +1,34 @@
 ---
-title: Ein Backup zu wenig
+title: "Ein Backup zu wenig"
 in_menu: false
+author: "Lars Baehren"
 ---
 
-## Ein Backup zu wenig ##
+## {title:} ##
 
 _Sat, 21. January 2012 -- 20:59_
 
-Das gibt es doch nicht: auch wenn ich mich staendig darum bemuehe recht gewissenhaft zu sein, was Sicherheitskopien von allen Dingen betrifft, so ist es mir eben doch einmal passiert, dass ich gleich einen groesseren Abschnitt an Text verloren habe. Waehrend ich noch munter an einem ausfuehrlichen Blog-Eintrag schreibe, schaffe ich es wieder einmal aus Versehen die falsche Tastenkombination bei [Aquamacs](http://aquamacs.org) zu erwischen... mit dem Resultat, dass der aktive Buffer ueberschrieben wird und alles Aenderungen erst einmal verschwunden sind. Gut, denke ich mir, ist alles nicht so schlimm, denn schliesslich habe ich mit [Git](http://git-scm.com) ja ein weiteres Auffangnetz, welches es mir erlaube zu einer vorherigen Version zurueckzukehren -- sollte ich also versehentlich Passagen geloescht haben, welche ich eigentlich behalten wollte, dann kann ich diese ohne weiteres wieder aus dem Commit-Cue herausfischen. Der einzige Haken an der Sache: die Aenderungen sind Git natuerlich nur dann bekannt, wenn man zumindest ein `git add` durchgefuehrt hat, ansonsten gilt die Version, welche irgendwann einmal davor eingecheckt worden ist. Wenn ich aber vor lauter Tipperei nicht daran denke a) den sich im Entstehen befindlichen Text abzuspeichern und b) diesen dann auch via Git zu registrieren, dann ist mit einem Male alles weg, wenn mir Aquamacs mit einem Male den Dienst versagt. Das ist natuerlich ziemlich aergerlich, denn wenn man einmal im Schreibfluss ist, gelingt es meist nicht mehr das dabei entstandene Resultat von Null aus zu rekonstruieren. Die Lehre daraus ist also, dass ich mir mal anschauen muss, wie ich nicht nur den Aquamacs Buffer automatisch wegschreiben kann, sondern wie ich denn anschliessend auch noch Git sagen kann die Aenderungen festzuhalten...
+Das gibt es doch nicht: auch wenn ich mich staendig darum bemuehe recht
+gewissenhaft zu sein, was Sicherheitskopien von allen Dingen betrifft, so ist
+es mir eben doch einmal passiert, dass ich gleich einen groesseren Abschnitt an
+Text verloren habe. Waehrend ich noch munter an einem ausfuehrlichen
+Blog-Eintrag schreibe, schaffe ich es wieder einmal aus Versehen die falsche
+Tastenkombination bei [Aquamacs](http://aquamacs.org) zu erwischen... mit dem
+Resultat, dass der aktive Buffer ueberschrieben wird und alles Aenderungen erst
+einmal verschwunden sind. Gut, denke ich mir, ist alles nicht so schlimm, denn
+schliesslich habe ich mit [Git](http://git-scm.com) ja ein weiteres
+Auffangnetz, welches es mir erlaube zu einer vorherigen Version zurueckzukehren --
+sollte ich also versehentlich Passagen geloescht haben, welche ich eigentlich
+behalten wollte, dann kann ich diese ohne weiteres wieder aus dem Commit-Cue
+herausfischen. Der einzige Haken an der Sache: die Aenderungen sind Git
+natuerlich nur dann bekannt, wenn man zumindest ein `git add` durchgefuehrt
+hat, ansonsten gilt die Version, welche irgendwann einmal davor eingecheckt
+worden ist. Wenn ich aber vor lauter Tipperei nicht daran denke a) den sich im
+Entstehen befindlichen Text abzuspeichern und b) diesen dann auch via Git zu
+registrieren, dann ist mit einem Male alles weg, wenn mir Aquamacs mit einem
+Male den Dienst versagt. Das ist natuerlich ziemlich aergerlich, denn wenn man
+einmal im Schreibfluss ist, gelingt es meist nicht mehr das dabei entstandene
+Resultat von Null aus zu rekonstruieren. Die Lehre daraus ist also, dass ich
+mir mal anschauen muss, wie ich nicht nur den Aquamacs Buffer automatisch
+wegschreiben kann, sondern wie ich denn anschliessend auch noch Git sagen kann
+die Aenderungen festzuhalten...

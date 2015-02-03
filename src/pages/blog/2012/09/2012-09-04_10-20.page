@@ -4,10 +4,35 @@ in_menu: false
 author: "Lars Baehren"
 ---
 
-##{title:}##
+## {title:} ##
 
 _Tue, 04. September 2012 -- 10:20_
 
-Das hat mir hat immer noch gefehlt, um die sich im Aufbau befindliche Website Live zu schalten (ok, ich muss mir auch noch einmal ueber das Hosting Gedanken machen, aber ich spreche hier erst einmal noch von der mehr technischen Seite fuer welche ich selber Sorge zu tragen habe). Da der Blog ja -- alleine schon vom Umfang her -- den wohl zentralen Bereich bildet, sollte ich natuerlich dafuer sorgen, dass dieser in vernuenftiger Weise funktioniert, ehe ich in in seiner ueberarbeiteten Fassung fuer den Rest der Welt freigebe. Neben dem (leider nach wie vor noch bestehenden) Problem der dynamischen Skalierung der eingebundenen Bilder, fehlte mir bisher noch die Moeglichkeit einfach mal eine Seite mit den letzten z.B. 10 Eintraegen zu generieren. Es macht ja schon Sinn direkt einen Blick ueber die aktuellen Beitraege zu haben, wenn man den Blog oeffnet, statt sich erst in das [Archiv](/blog/archive.html) hinabbegeben zu muessen; letzteres hat sicherlich seine Berechtigung, wenn es um den Zugriff auf alle zurueckliegenden Beitraege gilt, aber das ist doch etwas anderes als wenn ich weinfach nur wissen will, was es denn aktuell zu lesen gibt.
+Das hat mir hat immer noch gefehlt, um die sich im Aufbau befindliche Website
+Live zu schalten (ok, ich muss mir auch noch einmal ueber das Hosting Gedanken
+machen, aber ich spreche hier erst einmal noch von der mehr technischen Seite
+fuer welche ich selber Sorge zu tragen habe). Da der Blog ja -- alleine schon
+vom Umfang her -- den wohl zentralen Bereich bildet, sollte ich natuerlich
+dafuer sorgen, dass dieser in vernuenftiger Weise funktioniert, ehe ich in in
+seiner ueberarbeiteten Fassung fuer den Rest der Welt freigebe. Neben dem
+(leider nach wie vor noch bestehenden) Problem der dynamischen Skalierung der
+eingebundenen Bilder, fehlte mir bisher noch die Moeglichkeit einfach mal eine
+Seite mit den letzten z.B. 10 Eintraegen zu generieren. Es macht ja schon Sinn
+direkt einen Blick ueber die aktuellen Beitraege zu haben, wenn man den Blog
+oeffnet, statt sich erst in das [Archiv](/blog/archive.html) hinabbegeben zu
+muessen; letzteres hat sicherlich seine Berechtigung, wenn es um den Zugriff auf
+alle zurueckliegenden Beitraege gilt, aber das ist doch etwas anderes als wenn
+ich weinfach nur wissen will, was es denn aktuell zu lesen gibt.
 
-Um diese Luecke endlich mal noch zu fuellen, habe ich die Fahrt von Bonn nach Koeln heute Morgen dazu genutzt die entsprechende Funktionalitaet zu implementieren, s dass sich die Startseite jetzt automatisch aktualisieren laesst; ich muss dies zwar noch mit dem Script fuer die Erstellung eines neuen Blog Eintrages koppeln, aber zumindest werden schon einmal alle benotigte Index-Seiten in einem Zuge erstellt (das ist ja schliesslich etwas, das man nicht von Hand machen moechte). Das Resultat sieht schon einmal brauchbar aus, auch wenn ich mir sicherlich noch einmal den Code vornehmen muss, um diesen ein wenig aufzuraeumen; es geht hier zwar nicht darum irgendwelche Schoenheitspreise zu gewinnen, aber da ich die Infrastruktur schon auf Dauer anlegen will, macht es wenig Sinn da einfach nur eine lose Sammlung von irgendwelchen wuest zusammengestrickten Scripten herumliegen zu haben.
+Um diese Luecke endlich mal noch zu fuellen, habe ich die Fahrt von Bonn nach
+Koeln heute Morgen dazu genutzt die entsprechende Funktionalitaet zu
+implementieren, s dass sich die Startseite jetzt automatisch aktualisieren
+laesst; ich muss dies zwar noch mit dem Script fuer die Erstellung eines neuen
+Blog Eintrages koppeln, aber zumindest werden schon einmal alle benotigte
+Index-Seiten in einem Zuge erstellt (das ist ja schliesslich etwas, das man
+nicht von Hand machen moechte). Das Resultat sieht schon einmal brauchbar aus,
+auch wenn ich mir sicherlich noch einmal den Code vornehmen muss, um diesen ein
+wenig aufzuraeumen; es geht hier zwar nicht darum irgendwelche Schoenheitspreise
+zu gewinnen, aber da ich die Infrastruktur schon auf Dauer anlegen will, macht
+es wenig Sinn da einfach nur eine lose Sammlung von irgendwelchen wuest
+zusammengestrickten Scripten herumliegen zu haben.

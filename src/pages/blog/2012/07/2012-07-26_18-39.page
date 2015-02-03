@@ -1,12 +1,20 @@
 ---
-title: Uebergangsloesung
+title: "Uebergangsloesung"
 in_menu: false
-author: Lars Baehren
+author: "Lars Baehren"
 ---
 
-##{title:}##
+## {title:} ##
 
 _Thu, 26. July 2012 -- 18:39_
 
-Ok, damit haette ich jetzt -- zumindest glaube ich dies -- eine Uebergangsloesung, mit welcher ich zur gleichen Zeit die Eintraege in dem derzeitigen Blog **und** der sich in Vorbereitung befindlichen Website vornehmen kann. Da alles bisher schon ueber ein kleines Script gelaufen ist, mit welchem die Datei fuer den Eintrag angelegt wurde, muesste ich eigentlich "nur" das Script soweit aufbohren, dass gleichzeitig zwei Dateien angelegt werden. Ich muss zwar noch einmal schauen, dass ich nicht nur das Skelet anlege, sondern auch direkt den Text einfuege, aber grundsaetzlich waere ich damit schon einmal einen entscheidenden Schritt weiter: statt anschliessend alle neuen Eintraege von Hand umzukopieren, geht dies nun automatisch.
-
+Ok, damit haette ich jetzt -- zumindest glaube ich dies -- eine
+Uebergangsloesung, mit welcher ich zur gleichen Zeit die Eintraege in dem
+derzeitigen Blog **und** der sich in Vorbereitung befindlichen Website
+vornehmen kann. Da alles bisher schon ueber ein kleines Script gelaufen ist,
+mit welchem die Datei fuer den Eintrag angelegt wurde, muesste ich eigentlich
+"nur" das Script soweit aufbohren, dass gleichzeitig zwei Dateien angelegt
+werden. Ich muss zwar noch einmal schauen, dass ich nicht nur das Skelet
+anlege, sondern auch direkt den Text einfuege, aber grundsaetzlich waere ich
+damit schon einmal einen entscheidenden Schritt weiter: statt anschliessend
+alle neuen Eintraege von Hand umzukopieren, geht dies nun automatisch.
