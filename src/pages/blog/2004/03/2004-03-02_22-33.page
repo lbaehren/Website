@@ -1,11 +1,29 @@
 ---
-title: Letzter Test vor der Nacht
+title: "Letzter Test vor der Nacht"
 in_menu: false
+author: "Lars Baehren"
 ---
 
 ## {title:} ##
 
 _Tuesday, 02 March 2004 -- 22:33_
 
-
-So, ich lasse jetzt noch einmal - sozusagen als letzten Test vor der großen Nacht-Rechnerei - eine Karte von 20 mal 20 Grad zentriert auf die Position der Sonne rechnen. Wenn alles glatt läuft sollte ich in einigen Minuten eine hochauflösende Karte haben, aus der sich nicht nur die Position der Sonne, sondern auch der Beamshape des Antennen-Arrays erkennen läßt (prinzipiell war das ja schon bei der ersten Karte der Fall, nur will ich diesmal noch ein wenig mehr vom Umfeld abgebildet haben). Naja, das dauert jetzt eine kleine Weile, weil der Löwenanteil ja die Unmengen von Multiplikationen mit einer complexwertigen Exponentialfunktion sind; das dürfte definitiv das Bottleneck sein, weil die anderen Operationen vergleichsweise schnell ablaufen sollte. Da bedauerlicherweise aber kein Weg darum herumführt, wird wohl bald mal Zugriff auf einen schnellen Rechner notwendig. Heino hat mir eben schon verkündet, daß er mir Zugriff auf den Cluster unten bei [JIVE](http://www.jive.nl) verschaffen will. Letztendlich - aber das ist noch Zukunftsmusik - soll ich dann auch Zugriff auf den Blue Gene/L bekommen, welcher ja als der zentrale Prozessor für [[http://www.lofar.org|LOFAR]] geplant ist. Das wird natürlich dann eine Liga, in der zu spielen ich bis jetzt kaum gewagt habe mir vorzustellen. Nun ja, aber erst einmal muß ich noch sicherstellen, daß auch alle Komponenten als solche korrekt laufen - das ist ja noch nicht der Fall. 
+So, ich lasse jetzt noch einmal - sozusagen als letzten Test vor der großen
+Nacht-Rechnerei - eine Karte von 20 mal 20 Grad zentriert auf die Position der
+Sonne rechnen. Wenn alles glatt läuft sollte ich in einigen Minuten eine
+hochauflösende Karte haben, aus der sich nicht nur die Position der Sonne,
+sondern auch der Beamshape des Antennen-Arrays erkennen läßt (prinzipiell war
+das ja schon bei der ersten Karte der Fall, nur will ich diesmal noch ein wenig
+mehr vom Umfeld abgebildet haben). Naja, das dauert jetzt eine kleine Weile,
+weil der Löwenanteil ja die Unmengen von Multiplikationen mit einer
+complexwertigen Exponentialfunktion sind; das dürfte definitiv das Bottleneck
+sein, weil die anderen Operationen vergleichsweise schnell ablaufen sollte. Da
+bedauerlicherweise aber kein Weg darum herumführt, wird wohl bald mal Zugriff
+auf einen schnellen Rechner notwendig. Heino hat mir eben schon verkündet, daß
+er mir Zugriff auf den Cluster unten bei [JIVE](http://www.jive.nl) verschaffen
+will. Letztendlich - aber das ist noch Zukunftsmusik - soll ich dann auch
+Zugriff auf den Blue Gene/L bekommen, welcher ja als der zentrale Prozessor für
+[LOFAR](http://www.lofar.org) geplant ist. Das wird natürlich dann eine Liga,
+in der zu spielen ich bis jetzt kaum gewagt habe mir vorzustellen. Nun ja, aber
+erst einmal muß ich noch sicherstellen, daß auch alle Komponenten als solche
+korrekt laufen - das ist ja noch nicht der Fall.

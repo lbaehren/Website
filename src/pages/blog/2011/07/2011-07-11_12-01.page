@@ -1,16 +1,36 @@
 ---
 title: "DAL clean-up"
 in_menu: false
-author: Lars Baehren
+author: "Lars Baehren"
 ---
 
 ## {title:} ##
 
 _Mon, 11. July 2011 -- 12:01_
 
-So what is the current plan these days? Even though the experiment of getting a decent chunk of AARTFAAC-like data from the core stations failed due to failure of the storage nodes to keep up with the data rate (an issue which has been raised now, as this is going to affect quite a range of people), there are a number of (software) building blocks which need to be put in place to allow for the inspection and processing of the data. While the bulk of the processing is going to take place within the PELICAN framework, most of the underlying I/O naturally is to be channeled through the DAL. In order to prepare for this I recently grabbed a few example MeasurementSets, to set up the necessary bits and pieces for reading in that type of data and have is pushed off into the subsequent pipeline modules. Trying not to reinvent the wheel again and making use of already existing functionality I thus went back to some of the original DAL code Joe had been developing to work with a multitude of underlying raw data. Following the basic idea of the DAL to act as an abstraction layer on top of a number of low-level libraries, C++ classes like "dalDataset" should be able to operate on file such as FITS, HDF5 and MeasurementSets. However trying to figure out how to really do that, I have been running into a number of issues, where the code had gotten out of sync with a number of more recent developments, making the integration quite hard. Therefore in order to get on with my plans, I had closer look as Joe's code, resulting in quite a number of clean-up and changes:
+So what is the current plan these days? Even though the experiment of getting a
+decent chunk of AARTFAAC-like data from the core stations failed due to failure
+of the storage nodes to keep up with the data rate (an issue which has been
+raised now, as this is going to affect quite a range of people), there are a
+number of (software) building blocks which need to be put in place to allow for
+the inspection and processing of the data. While the bulk of the processing is
+going to take place within the PELICAN framework, most of the underlying I/O
+naturally is to be channeled through the DAL. In order to prepare for this I
+recently grabbed a few example MeasurementSets, to set up the necessary bits and
+pieces for reading in that type of data and have is pushed off into the
+subsequent pipeline modules. Trying not to reinvent the wheel again and making
+use of already existing functionality I thus went back to some of the original
+DAL code Joe had been developing to work with a multitude of underlying raw
+data. Following the basic idea of the DAL to act as an abstraction layer on top
+of a number of low-level libraries, C++ classes like "dalDataset" should be able
+to operate on file such as FITS, HDF5 and MeasurementSets. However trying to
+figure out how to really do that, I have been running into a number of issues,
+where the code had gotten out of sync with a number of more recent developments,
+making the integration quite hard. Therefore in order to get on with my plans, I
+had closer look as Joe's code, resulting in quite a number of clean-up and
+changes:
 
-~~~~
+~~~~ bash
 Updating 60705b2..988aa66
 Fast-forward
  data/CMakeLists.txt              |    2 +-

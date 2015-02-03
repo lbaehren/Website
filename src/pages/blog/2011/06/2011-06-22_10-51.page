@@ -1,14 +1,18 @@
 ---
 title: "Weichtiere auf dem Rechner"
 in_menu: false
-author: Lars Baehren
+author: "Lars Baehren"
 ---
 
 ## {title:} ##
 
 _Wed, 22. June 2011 -- 10:51_
 
-Was bekomme ich da zu sehen? Ich habe gerade mal noch die letzten Aenderungen an dem _Radio Sky Image ICD_ importiert -- da ich ja auf einem anderen Rechner weitergeschrieben habe, mussten alse verschiedenste Aenderungen miteinander kombiniert werde, so dass Git erst einmal ein ''merge'' durchfuehrt. Was mir bisher allerdings noch nicht untergekommen ist, waere folgende Meldunung:
+Was bekomme ich da zu sehen? Ich habe gerade mal noch die letzten Aenderungen an
+dem _Radio Sky Image ICD_ importiert -- da ich ja auf einem anderen Rechner
+weitergeschrieben habe, mussten alse verschiedenste Aenderungen miteinander
+kombiniert werde, so dass Git erst einmal ein ''merge'' durchfuehrt. Was mir
+bisher allerdings noch nicht untergekommen ist, waere folgende Meldunung:
 
 ~~~~
 From /Volumes/Repositories/usg_documents
