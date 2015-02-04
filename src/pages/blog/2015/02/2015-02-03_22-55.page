@@ -1,0 +1,76 @@
+---
+title: "Aufraeumarbeiten"
+in_menu: false
+author: "Lars Baehren"
+date: 2015-02-03T22:55:41.00Z
+created_at: 2015-02-03T17:53:10.00Z
+---
+
+## {title:} ##
+
+_Tue, 03. February 2015 -- 22:55_
+
+Es gibt doch immer wieder/noch Dinge, welche an dem Blog korregiert werden muessen.
+Bei der mittlerweile vorliegenden Anzahl an Seiten ist es natuerlich nicht ganz so
+einfach da die Uebersicht zu behalten -- weshalb hier vielleicht mal noch das eine
+oder andere Hilfstool noetig wird -- aber gerade bei gezielten Umbauarbeiten kommen
+doch gerne Dinge zu Tage, welche bisher nicht aufgefallen sind. So auch wieder geschehen
+in den letzten Tagen.
+
+Was mich ja schon seit einer Weile gestoert hat ist, dass sich die Verzeichnis-Struktur
+ein Stueck weit vereinfachen liess: statt Jahre und Monate in der folgenden Weise
+zu organisieren
+
+~~~~
+blog
+`-- 2015
+    |-- 2015-01
+    `-- 2015-02
+~~~~
+
+wollte ich schon seit einer Weile mal die folgende Vereinfachung vornehmen:
+
+~~~~
+blog
+`-- 2015
+    |-- 01
+    `-- 02
+~~~~
+
+Da jeder Eintrag selber ja noch einmal den vollstaendigen Zeitcode mitbringt --
+z.B.
+
+~~~~
+2015
+├── 01
+│   ├── 2015-01-01_02-23.page
+│   ├── 2015-01-02_20-32.page
+│   ├── 2015-01-04_00-02.page
+│   ├── 2015-01-04_20-40.page
+~~~~
+
+besteht da kein ersthaftes Risiko Dateien durcheinander zu werfen -- alles aber
+einfach nur in ein Verzeichnis zu werfen ist trotzdem keine sonderlich gute Idee
+(auch wenn ich schon einige Male mit dem Gedanken gespielt habe die Unterordner
+fuer die Monate wegzulassen). Wie dem auch sei: im Zuge der Aufraeumarbeiten (dem
+Umstellen der Verzeichnisstruktur) habe ich natuerlich versucht gleich mal noch eine
+Reihe anderer Dinge mit anzugehen. Dazu gehoerte u.a. dass ich die Index-Seiten mit
+der Uebersicht ueber die Blog-Eintraege eines Jahres einheitlicher gestalten wollte;
+da ein Teil davon zu unterschiedlichen Zeitpunkten erzeugt wurden (durchaus mit
+unterschiedlichen Tools), habe einfach mal das aktuelle Script ueber einige der
+aelteren Jahrgaenge laufen lassen -- was allerdings dabei herauskam war nicht alleine
+Grund zur Freude.
+
+![Blog index page](/blog/2015/02/2015-02-03_Blog_index_page.png)
+
+Da der Blog ja durch diverse Inkarnationen gegangen ist -- von ersten handgeschrieben
+HTML-Seiten quer durch unterschiedliche Generatoren -- gibt es immer noch Stellen
+an welchen die Syntax nicht mit dem uebereinstimmt, was [Webgen](http://webgen.gettalong.org)
+in der Lage ist zu verarbeiten. Was ich irgendwie automatisieren kann, probiere ich natuerlich
+mit in das Blog-Script zu packen -- da ich aber immer noch nicht gewillt bin mir
+einen Lexer zu schreiben, mit welchem ich alle bisher vorgekommenen Styntax parsen und
+transformieren kann, steckt da immer noch Handarbeit mit drin. Was ich allerdings hoffe
+ist, dass ich in nicht allzu ferner Zukunft alles unter einem Dach vereinigt kriege --
+damit haette ich dann auch die Moeglichkeit alles zusammen von einem Format in ein
+anderes zu ueberfuehren (was sicherlich irgendwann mal notwendig werden wird). Zunaechst
+aber bin ich dabei Fehler wie die obigen zu beheben...
