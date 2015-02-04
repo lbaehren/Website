@@ -13,7 +13,7 @@ Also das habe ich ja auch noch nicht gewusst:
 Modues, wenn sich an den Sources Files etwas aendert, waehrend sich die Website
 im Aufbau befunden hat.
 
-~~~~
+~~~~ bash
 MacBook15inch:build lars$ make
 [ 37%] Built target blog
 (in /Users/lars/Sites/larsbaehren.com)
