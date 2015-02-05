@@ -348,7 +348,7 @@ create_index_file_year ()
             varIndexMonth="${dirMonth}/index.page"
             varMonthName=`get_month_name ${varMonth}`
 
-            echo " -> Processing ${varMonthName} ${varYear} ..."
+            echo "    - Processing ${varMonthName} ${varYear} ..."
 
             # === Header section for year index ===========
 
@@ -470,7 +470,8 @@ publish_entry ()
         varTimestamp=`get_timestamp`
         varRecentEntries=15
 
-        echo " -> Entry \"${varTitle}\" selected for publication"
+        echo " -> Entry selected for publication"
+        echo "    - Title       : ${varTitle}"
         echo "    - Source file : $1"
         echo "    - Target file : ${varEntry}"
         echo "    - Time header : ${varTimeheaderSource} -> ${varTimeheaderNew}"
