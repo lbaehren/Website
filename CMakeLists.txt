@@ -247,7 +247,7 @@ find_program (WEBDAV_EXECUTABLE mount_webdav
 
 if (RSYNC_EXECUTABLE)
     add_custom_target (online
-        COMMAND ${RSYNC_EXECUTABLE} -axuzP --delete ${PROJECT_SOURCE_DIR}/out/* ${PROJECT_UPLOAD_PATH}
+        COMMAND ${RSYNC_EXECUTABLE} -axuP --delete ${PROJECT_SOURCE_DIR}/out/* ${PROJECT_UPLOAD_PATH}
         WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
         COMMENT "Publishing website - uploading generated pages ..."
         )
