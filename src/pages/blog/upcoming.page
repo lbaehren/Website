@@ -101,32 +101,6 @@ Article [10 things I wish I knew when I started coding](http://blog.wizpert.com/
  - [Vietnam's Infinite Cave](http://www.youtube.com/watch?v=lgBFl847z-4)
  - [Son Doong Cave](http://www.sondoongcave.org)
 
-### CMake macros ... and optional parameters
-
-It always comes down to the same thing: if there s something you need to do over and over again, then probabaly it is a good idea to script and automatize it. This very general rule can be applied to almost everything, e.g. to the generation of documents from their LaTeX sources.
-
-> In addition to referencing the formal parameters you can reference the values `${ARGC}` which will be set to the number of arguments passed into the function as well as `${ARGV0} ${ARGV1} ${ARGV2} ...` which will have the actual values of the arguments passed in. This facilitates creating macros with optional arguments. Additionally `${ARGV}` holds the list of all arguments given to the macro and `${ARGN}` holds the list of arguments past the last expected argument.
-
-~~~~
-macro (add_latex_documents)
-
-    set (_upstreamTarget ${ARGV0})
-
-    ## Get list of LaTeX source files within the directory
-    file (GLOB _sources *.tex)
-
-    foreach (_source ${_sources})
-        get_filename_component(_sourceName ${_source} NAME_WE)
-        if (_upstreamTarget)
-            add_latex_document (${_source} ${_upstreamTarget})
-        else (_upstreamTarget)
-            add_latex_document (${_source})
-        endif (_upstreamTarget)
-    endforeach (_source)
-
-endmacro (add_latex_documents)
-~~~~
-
 ### Kamelot Silverthorn Over Europe 2013
 
 ![Kamelot Silverthorn Over Europe 2013](/blog/2013/11/Kamelot_Silverthorn_Over_Europe.png)
