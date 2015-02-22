@@ -1,0 +1,106 @@
+---
+title: "Hilfe beim Testen"
+in_menu: false
+author: "Lars Baehren"
+author_url: http://www.larsbaehren.de
+date: 2015-02-18T01:59:44.00Z
+created_at: 2015-02-18T01:17:57.00Z
+sort_info: 1424218677
+---
+
+## {title:} ##
+
+_Wed, 18. February 2015 -- 01:59_
+
+Ich finde es doch immer wieder gut, wenn sich Mittel und Wege finden lassen, mit
+welchen sich Code und Prozeduren strukturell sauber und einfach halten lassen. Dazu
+gehoert (zumindest fuer meinen Geschmack) z.B. dass sich wiederholende Taetigkeiten
+oder Informationsmuster nicht notwendigerweise ausgeschrieben werden muessen, sondern
+sich durchaus in abstrahierter Form notieren lassen.
+
+Zuletzt habe ich dieses Prinzip beim Aufsetzen der Tests fuer die Kalibrationspipeline
+anwenden koennen: eine lange Liste an Konfigurationsdateien anzulegen und einzuchecken
+lasse ich diese von einem einfachen ``Makefile`` bei Bedarf erzeugen -- mit der
+dazugehoerenden Option alles Ueberfluessige anschliessend wieder wegwerfen zu koennen.
+So kommt es dann auch dass ich statt
+
+~~~~
+    l01b_processing/
+    |-- Makefile
+    |-- occ.pro_stop_after_artcorr.ocal
+    |-- occ.pro_stop_after_dccorr.ocal
+    |-- occ.pro_stop_after_dn2v.ocal
+    |-- occ.pro_stop_after_dpqf.ocal
+    |-- occ.pro_stop_after_et.ocal
+    |-- occ.pro_stop_after_mem.ocal
+    |-- occ.pro_stop_after_nonlin.ocal
+    |-- occ.pro_stop_after_offset.ocal
+    |-- occ.pro_stop_after_v2c.ocal
+    |-- occ.pro_stop_before_artcorr.ocal
+    |-- occ.pro_stop_before_dccorr.ocal
+    |-- occ.pro_stop_before_dn2v.ocal
+    |-- occ.pro_stop_before_dpqf.ocal
+    |-- occ.pro_stop_before_et.ocal
+    |-- occ.pro_stop_before_mem.ocal
+    |-- occ.pro_stop_before_nonlin.ocal
+    |-- occ.pro_stop_before_offset.ocal
+    |-- occ.pro_stop_before_v2c.ocal
+    |-- swir_fm.pro_stop_after_artcorr.ocal
+    |-- swir_fm.pro_stop_after_dccorr.ocal
+    |-- swir_fm.pro_stop_after_dn2v.ocal
+    |-- swir_fm.pro_stop_after_dpqf.ocal
+    |-- swir_fm.pro_stop_after_et.ocal
+    |-- swir_fm.pro_stop_after_mem.ocal
+    |-- swir_fm.pro_stop_after_nonlin.ocal
+    |-- swir_fm.pro_stop_after_offset.ocal
+    |-- swir_fm.pro_stop_after_v2c.ocal
+    |-- swir_fm.pro_stop_before_artcorr.ocal
+    |-- swir_fm.pro_stop_before_dccorr.ocal
+    |-- swir_fm.pro_stop_before_dn2v.ocal
+    |-- swir_fm.pro_stop_before_dpqf.ocal
+    |-- swir_fm.pro_stop_before_et.ocal
+    |-- swir_fm.pro_stop_before_mem.ocal
+    |-- swir_fm.pro_stop_before_nonlin.ocal
+    |-- swir_fm.pro_stop_before_offset.ocal
+    |-- swir_fm.pro_stop_before_v2c.ocal
+    |-- template.occ.txt
+    `-- template.swir_fm.txt
+~~~~
+
+nur einen Bruchteil an wirklich notwendigen Informationen vorhalten muss (und selbst
+hier koennte ich wahrscheinlich, mit ein wenig Nachdenken, noch einmal reduzieren):
+
+~~~~
+    l01b_processing/
+    |-- Makefile
+    |-- template.occ.txt
+    `-- template.swir_fm.txt
+~~~~
+
+Dieser Trend setzt sich intern natuerlich fort: statt hier alles auszuschreiben,
+habe ich probiert die Dinge auch hier moeglichst so zu halten, dass es ein leichtes
+waere eine neue Gruppe an Tests hinzuzufuegen.
+
+~~~~ make
+    VAR_STEPS=dpqf dn2v mem artcorr offset v2c nonlin dccorr et
+    VAR_CAMPAIGNS=swir_fm occ
+
+    # Test all correction/processing steps
+    all:
+            for varCampaign in $(VAR_CAMPAIGNS) ; do \
+                    make all."$$varCampaign" ; \
+            done
+
+    # Test all correction/processing steps on SWIR FM data
+    all.swir_fm:
+            for varStep in $(VAR_STEPS) ; do \
+                    make swir_fm."$$varStep" ; \
+            done
+~~~~
+
+Ein wenig aergerlich an der ganzen Sache ich natuerlich, dass ich ueberhaupt ein
+``Makefile`` schreibe -- normalerweise wuerde ich diese Aufgabe [CMake](http://www.cmake.org)
+ueberlassen, weil dies naemlich auch in recht einfacher Weise erlauben wuerde
+Gruppen von Build-Targets zu definieren. In begrenzter Weise ist dies natuerlich
+auch in der nun verwendeten Loesung der Fall, aber fuer meinen Geschmack wuerde
+hier noch ein weiterer Schritt hinzugehoeren (naemlich die vorherige Konfiguration).

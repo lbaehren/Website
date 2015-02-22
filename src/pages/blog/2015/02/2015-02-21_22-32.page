@@ -1,0 +1,34 @@
+---
+title: "Supporting TROPOMI OCAL (4)"
+in_menu: false
+author: "Lars Baehren"
+author_url: http://www.larsbaehren.de
+date: 2015-02-21T22:32:01.00Z
+created_at: 2015-02-21T22:01:21.00Z
+sort_info: 1424552481
+---
+
+## {title:} ##
+
+_Sat, 21. February 2015 -- 22:32_
+
+It is busy times: not only have we been spending the past three weeks on supervising
+the laser measurements (at least those of the team on site), but also back at the
+institute trying to process and inspect the incoming data to assess the suitability
+of the calibration measurements. With all of this going on there of course is a
+considerable risk to -- amongst all the day to day madness -- lose out of sight
+the longer-term planning (e.g. when it comes to important project milestone). One
+of the attempts to keep an eye on the planning has been to revitalize efforts to
+use our [Redmine](http://www.redmine.org) issue tracker. Simply filling in tasks
+of course is not enough: issues kept around in the system should be assigned correctly
+and updated as work progresses.
+
+![TROPOMI Redmine issue tracker](/blog/2015/02/2015-02-21_Redmine_TROPOMI.png)
+
+To get things going on the part of the on-ground calibration, I set aside half an hour
+this afternoon, to start entering and organising tasks related to the next upcoming
+milestones; not complete yet, but once going through the remainder of the calibration
+validation plan (CValP) we should get a reasonable picture of what tasks need to be
+worked on and how we are doing in terms of deliverables.
+
+Back to coding now...

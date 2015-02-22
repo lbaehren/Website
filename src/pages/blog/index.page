@@ -8,6 +8,246 @@ author: "Lars Baehren"
 
 **:::**
 
+### Supporting TROPOMI OCAL (4) ###
+
+
+_Sat, 21. February 2015 -- 22:32_
+
+It is busy times: not only have we been spending the past three weeks on supervising
+the laser measurements (at least those of the team on site), but also back at the
+institute trying to process and inspect the incoming data to assess the suitability
+of the calibration measurements. With all of this going on there of course is a
+considerable risk to -- amongst all the day to day madness -- lose out of sight
+the longer-term planning (e.g. when it comes to important project milestone). One
+of the attempts to keep an eye on the planning has been to revitalize efforts to
+use our [Redmine](http://www.redmine.org) issue tracker. Simply filling in tasks
+of course is not enough: issues kept around in the system should be assigned correctly
+and updated as work progresses.
+
+![TROPOMI Redmine issue tracker](/blog/2015/02/2015-02-21_Redmine_TROPOMI.png)
+
+To get things going on the part of the on-ground calibration, I set aside half an hour
+this afternoon, to start entering and organising tasks related to the next upcoming
+milestones; not complete yet, but once going through the remainder of the calibration
+validation plan (CValP) we should get a reasonable picture of what tasks need to be
+worked on and how we are doing in terms of deliverables.
+
+Back to coding now...
+
+**:::**
+
+### Und weg ist das Wochenende ###
+
+
+_Fri, 20. February 2015 -- 17:07_
+
+Das hatte ich mir alles ein wenig anders vorgestellt: statt einem ruhigen Wochenende
+hier in Bonn habe ich nun gleich zwei Dinge mit hoher Prioriaet am Laufen.
+
+ 1. Vorbereitung fuer ein Telefon-Interview am Mittwoch mit [ESO](http://www.eso.org).
+ 2. Vorbereitung fuer ein fuer ein Audit bei [SRON](http://www.sron.nl).
+
+Muss ich mal schaue, wie ich die Dinge gut unter einen Hut kriege... und gleichzeitig
+noch Gelegenheit zum Schlafen finde.
+
+**:::**
+
+### Der richtige Soundtrack ###
+
+
+_Thu, 19. February 2015 -- 18:03_
+
+Es kommt doch immer wieder auf die richtige Musik fuer die entsprechende Gelegenheit
+an: da ich schauen muss, dass ich bis Bonn noch paar Dinge erledigt bekommen muss
+-- vor allen Dingen den Sidney versprochenen Code fuer die Offset Korrektur
+fertigstellen -- habe ich mich fuer den zu der Situation passenden Soundtrack
+entschieden. Die Kriterien hierfuer sind eigentlich recht einfach: die Musik sollte
+ueber ein recht hohes Energieniveau verfuegen und trotz technischer Brillianz immer
+noch ueber eine entsprechende Eingaengigkeit verfuegen. Als Start habe ich mich daher
+fuer eines der Alben von _Derek Sherinian_ entschieden ("Mythology"); das passt super
+von der ganzen Atmosphaere her ins hilft zweifelsfrei dabei schnell und unter Druck
+zu arbeiten.
+
+**:::**
+
+### Zu Fuss zum Institut ###
+
+
+_Thu, 19. February 2015 -- 09:39_
+
+Aufgrund der Kombination von a) bis tief in die Nacht arbeiten und b) dem wunderschoen
+sonnigen Wetter, habe ich mich gestern Morgen kurzerhand entschlossen den Weg zum
+Institut zu Fuss anzutreten. War ja nicht das erste Mal, dass ich die Strecke gelaufen
+bin, so dass ich eine ungefaehre Idee davon habe, wieviel Zeit ich dafuer noetig habe.
+
+![GPS track](/blog/2015/02/2015-02-19_GPS_track.png)
+
+Da es ferner schon eine ganze Weile her ist, dass ich hier in Utrecht mit Kamera
+unterwegs war, habe ich mir (endlich mal wieder) Kamera und Stativ mitgenommen, um
+ein paar Eindruecke festzuhalten. Gut, ich hatte nicht unbedingt vor eine groessere
+Exkursion zu starten (da ich ja schliesslich ins Institut musste), aber immerhin
+bin ich doch mit ein paar Aufnahmen zurueckgekommen.
+
+**:::**
+
+### Hilfe beim Testen ###
+
+
+_Wed, 18. February 2015 -- 01:59_
+
+Ich finde es doch immer wieder gut, wenn sich Mittel und Wege finden lassen, mit
+welchen sich Code und Prozeduren strukturell sauber und einfach halten lassen. Dazu
+gehoert (zumindest fuer meinen Geschmack) z.B. dass sich wiederholende Taetigkeiten
+oder Informationsmuster nicht notwendigerweise ausgeschrieben werden muessen, sondern
+sich durchaus in abstrahierter Form notieren lassen.
+
+Zuletzt habe ich dieses Prinzip beim Aufsetzen der Tests fuer die Kalibrationspipeline
+anwenden koennen: eine lange Liste an Konfigurationsdateien anzulegen und einzuchecken
+lasse ich diese von einem einfachen ``Makefile`` bei Bedarf erzeugen -- mit der
+dazugehoerenden Option alles Ueberfluessige anschliessend wieder wegwerfen zu koennen.
+So kommt es dann auch dass ich statt
+
+~~~~
+    l01b_processing/
+    |-- Makefile
+    |-- occ.pro_stop_after_artcorr.ocal
+    |-- occ.pro_stop_after_dccorr.ocal
+    |-- occ.pro_stop_after_dn2v.ocal
+    |-- occ.pro_stop_after_dpqf.ocal
+    |-- occ.pro_stop_after_et.ocal
+    |-- occ.pro_stop_after_mem.ocal
+    |-- occ.pro_stop_after_nonlin.ocal
+    |-- occ.pro_stop_after_offset.ocal
+    |-- occ.pro_stop_after_v2c.ocal
+    |-- occ.pro_stop_before_artcorr.ocal
+    |-- occ.pro_stop_before_dccorr.ocal
+    |-- occ.pro_stop_before_dn2v.ocal
+    |-- occ.pro_stop_before_dpqf.ocal
+    |-- occ.pro_stop_before_et.ocal
+    |-- occ.pro_stop_before_mem.ocal
+    |-- occ.pro_stop_before_nonlin.ocal
+    |-- occ.pro_stop_before_offset.ocal
+    |-- occ.pro_stop_before_v2c.ocal
+    |-- swir_fm.pro_stop_after_artcorr.ocal
+    |-- swir_fm.pro_stop_after_dccorr.ocal
+    |-- swir_fm.pro_stop_after_dn2v.ocal
+    |-- swir_fm.pro_stop_after_dpqf.ocal
+    |-- swir_fm.pro_stop_after_et.ocal
+    |-- swir_fm.pro_stop_after_mem.ocal
+    |-- swir_fm.pro_stop_after_nonlin.ocal
+    |-- swir_fm.pro_stop_after_offset.ocal
+    |-- swir_fm.pro_stop_after_v2c.ocal
+    |-- swir_fm.pro_stop_before_artcorr.ocal
+    |-- swir_fm.pro_stop_before_dccorr.ocal
+    |-- swir_fm.pro_stop_before_dn2v.ocal
+    |-- swir_fm.pro_stop_before_dpqf.ocal
+    |-- swir_fm.pro_stop_before_et.ocal
+    |-- swir_fm.pro_stop_before_mem.ocal
+    |-- swir_fm.pro_stop_before_nonlin.ocal
+    |-- swir_fm.pro_stop_before_offset.ocal
+    |-- swir_fm.pro_stop_before_v2c.ocal
+    |-- template.occ.txt
+    `-- template.swir_fm.txt
+~~~~
+
+nur einen Bruchteil an wirklich notwendigen Informationen vorhalten muss (und selbst
+hier koennte ich wahrscheinlich, mit ein wenig Nachdenken, noch einmal reduzieren):
+
+~~~~
+    l01b_processing/
+    |-- Makefile
+    |-- template.occ.txt
+    `-- template.swir_fm.txt
+~~~~
+
+Dieser Trend setzt sich intern natuerlich fort: statt hier alles auszuschreiben,
+habe ich probiert die Dinge auch hier moeglichst so zu halten, dass es ein leichtes
+waere eine neue Gruppe an Tests hinzuzufuegen.
+
+~~~~ make
+    VAR_STEPS=dpqf dn2v mem artcorr offset v2c nonlin dccorr et
+    VAR_CAMPAIGNS=swir_fm occ
+
+    # Test all correction/processing steps
+    all:
+            for varCampaign in $(VAR_CAMPAIGNS) ; do \
+                    make all."$$varCampaign" ; \
+            done
+
+    # Test all correction/processing steps on SWIR FM data
+    all.swir_fm:
+            for varStep in $(VAR_STEPS) ; do \
+                    make swir_fm."$$varStep" ; \
+            done
+~~~~
+
+Ein wenig aergerlich an der ganzen Sache ich natuerlich, dass ich ueberhaupt ein
+``Makefile`` schreibe -- normalerweise wuerde ich diese Aufgabe [CMake](http://www.cmake.org)
+ueberlassen, weil dies naemlich auch in recht einfacher Weise erlauben wuerde
+Gruppen von Build-Targets zu definieren. In begrenzter Weise ist dies natuerlich
+auch in der nun verwendeten Loesung der Fall, aber fuer meinen Geschmack wuerde
+hier noch ein weiterer Schritt hinzugehoeren (naemlich die vorherige Konfiguration).
+
+**:::**
+
+### Hektisch ###
+
+
+_Mon, 16. February 2015 -- 18:19_
+
+Na, das war doch alles ein wenig hektisch am heutigen Tage. Nicht dass ich da
+grundsaetzlich ein Problem mit haette, aber wie sich im Zuge von diversen Diskussionen
+herausstellte, war zumindest ein Teil der gestarteten Aktionen nicht so 100%ig sinnvoll.
+Also mache ich mich erst einmal auf den Weg zurueck und schaue dann lieber heute Abend
+noch einmal nach...
+
+**:::**
+
+### Abend in Tannenbusch ###
+
+
+_Mon, 09. February 2015 -- 19:47_
+
+Da war es doch gut, dass ich Kamera und Stativ mitgenommen habe: als wir am
+gestrigen Sonntag Nachmittag noch einmal mit Sofia losgezogen sind, war das Wetter
+einfach zu schoen, als dass ich mir die Moeglichkeit haette entgehen lassen zumindest
+ein paar Bilder einzufangen. Hundebilder hatte ich jetzt nicht unbedingt auf der Liste
+-- was dies betrifft war ich an den vorherigen Tagen ja schon fleissig gewesen --
+aber ich dachte mir, dass es sicherlich nicht schaden koennte ein wenig von der
+spaet-nachmittaglichen Stimmung in dem Gruenguertel am Nordrand von Tannenbusch
+einzufangen. Hat netterweise dann auch geklappt...
+
+![Sonnenuntergang](/blog/2015/02/hdr_20150208_181705_Tannenbusch.jpg)
+
+Was mir immer noch fehlt sind ein paar wirklich gute Aufnahmen vonn dem Schilf und den
+Baeumen rund um den See -- ich denke aber mal, dass ich dies auch noch hinkriegen
+werde.
+
+**:::**
+
+### Spielen mit Sofia ###
+
+
+_Fri, 06. February 2015 -- 18:45_
+
+Die Kleine kriegt definitiv nicht genug wenn es ums Spielen geht. Als ich gestern
+Abend nach Hause gekommen bin, dauerte es nur wenig Sekunden, bis der Hund die
+Treppe heruntergerast kam, um sich dann direkt das Lieblingsspielzeug zu schnappen
+und mich zum Mitmachen aufzufordern. Gut, habe ich mir nicht zweimal sagen lassen
+-- auch wenn ich zumindest mal meine Sachen abstellen und die Jacke ausziehen wollte.
+
+![Sofia](/blog/2015/02/dsc_20150131_144052_Sofia.jpg)
+
+Am heutigen Nachmittag sind wir dann auf der Hundespielwiese am Rand des Tannenbuscher
+Gruenguertels gewesen. Auch wenn wir etwas spaeter als optimal dort aufgetaucht sind,
+waren doch einige Hunde unterwegs, so dass Sofia die Gelegenheit hatte, sich noch
+einmal deutlich mehr zu verausgaben, als dies hier im Haus moeglich waere. Die
+Nebenwirkung ist natuerlich, dass der Hund anschliessend aussieht wie ein Schwein
+(dies waere wohl noch schlimmer, wenn nicht ein Teil der Faechen noch gefroren ist),
+aber dies ist ja nichts, was sich nicht mit ein wenig Wasser beheben liesse.
+
+**:::**
+
 ### Rueckweg ###
 
 
@@ -205,222 +445,3 @@ und noch ein wenig arbeiten werde, bis mich mein Rechner im Stich laesst. Immerh
 habe ich Internetverbindung, so dass ich nicht nur noch einmal Mails rausschicken
 kann, sondern sogar die Moeglichkeit habe mich auf dem Server im [KNMI](http://www.knmi.nl)
 einzuklinken und die unterwegs geschriebenen Tests laufen zu lassen.
-
-**:::**
-
-### Warten in Arnhem ###
-
-
-_Mon, 02. February 2015 -- 09:37_
-
-Also das kann wohl noch eine Weile dauern: selbst wenn man die eh schon bestehende
-Verspaetung von rund zehn Minuten einrechnet, dann stehen wir nun schon deutlich mehr
-als eine halbe Stunde hier in Arnhem. Dass (und vor allen Dingen wann) es denn weitergeht
-ist auch nach wie vor nicht abzusehen -- je laenger so eine Stoerung dauert, desto
-mehr staut es sich natuerlich auch auf und bis der Verkehr wieder in gewohnter Weise
-fliesst dauert es dann eine Weile.
-
-Als kleine Randnotiz weiss ich von mindestens zwei Gruppen zu berichten, welche gemeinsam
-den Zug verlassen haben, um sich ggf. mit einem (Sammel-)Taxi weiter nach Amsterdam
-aufzumachen. Es hat allerdings nicht allzu lange gedauert bis zumindest eine der beiden
-Gruppen wieder hier im Zug war -- gut 250 EUR fuer 4-5 Leute war dann wohl doch ein wenig
-zu viel.
-
-**:::**
-
-### Stop in Arnhem ###
-
-
-_Mon, 02. February 2015 -- 08:55_
-
-Da war es dies erst einmal was die Weiterreise berifft: aufgrund einer Signalstoerung
-rund um Utrecht Centraal hat der ICE 222 bis auf weiteres hier in Arnhem gestoppt.
-Wie es nun weitergeht ist noch nicht klar -- weder hier im Zug noch draussen auf dem
-Gleis gibt es zu diesem Zeitpunkt weitere Informationen. Aussteigen und sich nach
-einer alternativen Verbindung umschauen bringt unter diesen Umstaenden recht wenig:
-wenn alles rund um Utrecht brach liegt, dann ist es vollkommen egal, ob ich es mit dem
-ICE oder einem Zug der [niederlaendischen Bahn](http://www.ns.nl) probieren wuerde.
-Was allerdings passieren kann ist, dass aufgrund der aufgelaufenen Verspaetung der
-ICE hier umdreht und wieder zurueck nach Frankfurt faehrt (habe ich ja auch schon
-alles gehabt). Bis auf weiteres macht es wenig Sinn groessere Unternehmungen zu starten
--- also die Ruhe bewahren.
-
-**:::**
-
-### Bordelektronik ###
-
-
-_Mon, 02. February 2015 -- 06:52_
-
-Ich doch immer wieder fasziniert, dass es vor allen Dingen die kleinen Dinge sind,
-welche gerne schon einmal im ICE ausfallen. So scheint heute Morgen wieder einmal
-die Reservierungsanzeige ueber den Sitzen zu spinnen, weshalb ueberall nur ein
-"ggf. reserviert" zu lesen ist. Dies gibt folgerichtig keinerlei Information darueber,
-auf welchen Platz man sich ungestoert setzen kann. Da eben dies aber der Fall ist,
-habe ich mir einfach einen Sitz geschnappt, da die Chance noch einmal aufstehen zu
-muessen mehr oder weniger gleich gross ist, egal welche Wahl ich treffe.
-
-**:::**
-
-### Knabbern ###
-
-
-_Sat, 31. January 2015 -- 13:31_
-
-Also mittlerweile muss man bei Sofia ja schon ein wenig aufpassen: wenn der Hund
-so richtig vom Spieltrieb gepackt wird, dann gibt es nur wenige Dinge, welche vor
-einer Knabberattacke sicher sind. Handelt es sich dabei um das fuer derartige Aktionen
-gedachte Spielzeug, dann ist es eine Sache -- geht aber an Finger, dann sollte man
-sich in jedem Fall ein wenig auf leichte Biss-Spuren einstellen.
-
-![Sofia](/blog/2015/01/dsc_20150130_171825_Sofia.jpg)
-
-In der etwas friedlicheren Variante macht es sich der Hund aber auch einfach mal
-auf dem Wohnzimmerboden bequemt und kaut genuesslich auf dem Seil -- perfekte Gelegenheit
-sich die Kamera zu schnappen und ein paar Momentaufnahmen einzufangen.
-
-**:::**
-
-### Blog Backlog ###
-
-
-_Fri, 30. January 2015 -- 23:55_
-
-Also das nenne ich doch einmal Fortschritt: nachdem sich das Script fuer die Behandlung
-der Blog-Eintraege bestens im "normalen Alltagsgebrauch" bewaehrt hat, habe ich diese
-Woche noch daran gebastelt einen Teil der alten Blog-Eintraege -- welche zwischenzeitlich
-ja ueber eine [Dokuwiki](https://www.dokuwiki.org/dokuwiki) erstellt wurden -- zu
-importieren. Alles kriege ich damit zwar leider noch nicht umgewandelt, aber zumindest
-die Metadaten und das Dateiformat muss ich nicht mehr von Hand bearbeiten. So war es
-dann auch recht leicht Eintraege gleich monatsweise einzubinden:
-
-~~~~
-    [master 25e54cf] Fixing syntax errors.
-     31 files changed, 637 insertions(+), 331 deletions(-)
-     rewrite src/pages/blog/2004/03/2004-03-24_09-36.page (76%)
-     rewrite src/pages/blog/2004/05/2004-05-05_13-33.page (86%)
-     rewrite src/pages/blog/2008/11/2008-11-02_18-37.page (74%)
-     rewrite src/pages/blog/2008/11/2008-11-02_21-04.page (85%)
-     rewrite src/pages/blog/2008/11/2008-11-05_08-07.page (73%)
-     rewrite src/pages/blog/2008/11/2008-11-05_19-11.page (84%)
-     rewrite src/pages/blog/2008/11/2008-11-06_09-46.page (87%)
-     rewrite src/pages/blog/2008/11/2008-11-07_17-17.page (89%)
-     rewrite src/pages/blog/2008/11/2008-11-09_16-46.page (85%)
-     rewrite src/pages/blog/2008/11/2008-11-10_10-05.page (68%)
-     rewrite src/pages/blog/2008/11/2008-11-11_17-25.page (76%)
-     rewrite src/pages/blog/2008/11/2008-11-12_09-56.page (84%)
-     rewrite src/pages/blog/2008/11/2008-11-18_08-27.page (72%)
-     rewrite src/pages/blog/2008/11/2008-11-18_08-44.page (91%)
-     rewrite src/pages/blog/2008/11/2008-11-18_09-57.page (76%)
-     rewrite src/pages/blog/2008/11/2008-11-18_14-25.page (78%)
-     rewrite src/pages/blog/2008/11/2008-11-19_15-44.page (83%)
-~~~~
-
-Gut, ein wenig Feinarbeit an der Formatierung und den Links war noch noetig -- dies
-ist aber vergleichsweise wenig angesichts der Alternative wirklich alles von Hand
-umsetzen zu muessen.
-
-**:::**
-
-### Transfering static websites ###
-
-
-_Fri, 30. January 2015 -- 12:06_
-
-Given the number of adjustments to the machinery behind this website -- mainly the
-helper scripts and some of the directory structure -- taking a closer look at the
-contents hosted on the server seemed like a good idea. As it turns out there has been
-quite a lot of contents, which probably should not even have ended up there in the
-first place: I noticed quite a number of temporary files (probably the result of failed
-page generation runs) and directories which no longer should be present. Since the
-synchronization of local (build) version and the version hosted on the server is done
-via `rsync` I had a look at the exact configuration of that transfer:
-
-~~~~ cmake
-    add_custom_target (online
-        COMMAND ${RSYNC_EXECUTABLE} -axuzP ${PROJECT_SOURCE_DIR}/out/* ${PROJECT_UPLOAD_PATH}
-        WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
-        COMMENT "Publishing website - uploading generated pages ..."
-        )
-~~~~
-
-While the command in itself is not wrong -- otherwise I would have trouble even
-transfering the data -- one rather important bit was missing: without the additional
-`--delete` option files will accumulate on the webserver, taking up unnecessary
-space and potentially causing faulty navigation through the website. The remedy
-for this is quite simple:
-
-~~~~ cmake
-    add_custom_target (online
-        COMMAND ${RSYNC_EXECUTABLE} -axuzP --delete ${PROJECT_SOURCE_DIR}/out/* ${PROJECT_UPLOAD_PATH}
-        WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
-        COMMENT "Publishing website - uploading generated pages ..."
-        )
-~~~~
-
-Switching on the `--delete` option for `rsync` in fact causes a clean-up of the
-target directories:
-
-~~~~
-blog/2005/
-blog/2005/01/
-blog/2005/02/
-blog/2005/03/
-blog/2005/04/
-blog/2005/05/
-blog/2005/06/
-blog/2005/07/
-blog/2005/07/2005-07-02_23-18.html
-          8,615 100%    0.00kB/s    0:00:00 (xfr#1, ir-chk=1099/1858)
-blog/2005/08/
-blog/2005/09/
-deleting blog/2005/10/.2005-10-27_09-42.html.FGbjlZ
-deleting blog/2005/10/.2005-10-21_10-00.html.sBBMas
-deleting blog/2005/10/.2005-10-20_22-40.html.5N96yk
-deleting blog/2005/10/.2005-10-20_22-12.html.zGmXwA
-deleting blog/2005/10/.2005-10-08_11-44.html.sJLcG5
-deleting blog/2005/10/.2005-10-02_20-41.html.572TYc
-deleting blog/2005/11/.2005-11-23_07-02.html.CzcxWs
-deleting blog/2005/11/.2005-11-14_16-21.html.L2nUaj
-deleting blog/2005/11/.2005-11-13_21-31.html.0ihb1G
-deleting blog/2005/11/.2005-11-04_20-10.html.RP3cj9
-deleting blog/2005/11/.2005-11-04_19-27.html.KgPIa4
-deleting blog/2005/12/.2005-12-28_12-32.html.UUu1dq
-deleting blog/2005/12/.2005-12-28_00-56.html.WvaZM1
-deleting blog/2005/12/.2005-12-15_17-30.html.agepc6
-~~~~
-
-**:::**
-
-### Aufbruch ###
-
-
-_Thu, 29. January 2015 -- 17:06_
-
-Diesmal ist es gut gegangen, aber es bleibt einfach ein Schwert, welches ueber den
-Abreisetagen haengen bleibt: der ICE wartet nicht am Bahnhof auf mich, was bedeutet,
-dass ich dort rechtzeitig auftauchen muss, damit ich die Rueckreise nach Bonn antreten
-kann. Da kann es durchaus schon einmal knapp werden, vor allen Dingen wenn ich noch
-in einem Problem vertieft bin, wo es sehr einfach ist das Gefuehl fuer die Zeit zu
-verlieren.
-
-**:::**
-
-### Heimarbeit ###
-
-
-_Thu, 29. January 2015 -- 12:43_
-
-Da lohnt es sich einfach nicht, extra zum Institut zu fahren. Nachdem ich wieder einmal
-damit angefangen habe von der Wohnung aus zu arbeiten, macht es einfach wenig Sinn
-fuer ein paar Stunden durch die Gegend zu fahren. Da ich unbedingt noch ein paar
-Kleinigkeiten abgerundet haben moechte, ehe ich spaeter in den Zug nach Bonn steige,
-versuche ich die dem im Wege stehenden Faktoren so klein wenig nur irgend moeglich zu
-halten. Wie sich herausstellt scheint [SRON](http://www.sron.nl) in Sachen TROPOMI am
-heutigen Tage eh recht duenn besetzt zu sein: sowohl Erik, Richard als auch Paul
-arbeiten am heutigen Tage von zuhause (wenn auch aus unterschiedlichen Gruenden), so
-dass (mit ein wenig Glueck) gerade mal noch Evert vor Ort ist. Mir persoenlich bringt
-dies nicht viel, weil wir ja an unterschiedlichen Dingen arbeiten -- da versuche ich
-mich lieber so gut wie moeglich auf die faelligen Tasks zu konzentrieren, was eben auch
-bedeutet, dass ich die Dinge versuche zu vermeiden, welche meine Konzentration unterbrechen
-koennten.
