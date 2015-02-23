@@ -8,11 +8,6 @@ author: Lars Baehren
 
 _Thu, 18. March 2010 -- 16:06_
 
-
-
 Da bin ich also schon wieder in **Zwolle**. Da Michael unbedingt nach Amsterdam zurueckwollte, um an einem Chandra Proposal zu arbeiten, habe ich die Gelegenheit genutzt ebenfalls zu verschwinden. So zaehfluessig wie die Dinge am heutigen Tage verlaufen sind, macht es vielleicht einfach mehr Sinn, wenn ich mich spaeter heute Abend noch einmal zuhause an den Schreibtisch setze.
 
 Derzeit bastel ich ich immer noch daran, wie ich den Umgang mit Tabellen in einer einigermassen leicht-brauchbaren Weise in die DAL eingebaut bekomme. Es ist ja schliesslich nicht nur Anastasia, welche dies fuer die Pulsar Daten haben will, sondern fuer eine Reihe von Anwendungen ist es noetig Daten in Form einer Tabelle anzuordnen; um nicht irgendwelche bereits existierenden Funktionalitaeten zu duplizieren habe ich mir natuerlich den Code angeschaut, welchen Joe seinerzeit geschrieben hat -- ich musste aber feststellen, dass sich da nur Support fuer CASA findet, aber nur sehr begrenzt fuer HDF5, was ja das bevorzugte Format fuer einen Grossteil der LOFAR Daten sein wird. Was ich folgerichtig also gemacht habe, ist mir wieder die HDF5 Dokumentation zur Hand zu nehmen und zu schauen, welche Methoden dort zur Verfuegung stehen -- die original C-Routinen sind aber leider nicht so sonderlich anwendefreundlich, so dass ich mit meinem Vorhaben fortfahren werde, die zugrundeliegende Komplexitaet hinter einem C++ API zu verstecken und so leichter benutzbar zu machen.
-
-
-~~DISCUSSION~~

@@ -1,0 +1,89 @@
+---
+title: "Supporting TROPOMI OCAL (5)"
+in_menu: false
+author: "Lars Baehren"
+author_url: http://www.larsbaehren.de
+date: 2015-02-22T12:52:48.00Z
+created_at: 2015-02-22T12:52:48.00Z
+sort_info: 1424605968
+---
+
+## {title:} ##
+
+_Sun, 22. February 2015 -- 12:52_
+
+Instead of a nice relaxing weekend I am spending a good fraction of the time preparing
+for a meeting the upcoming week.
+
+__a) Initial version__
+
+~~~~ bash
+    #____________________________________________________________________
+    #                              Detector Pixel Quality Flagging (DPQF)
+
+    cd ${OCALFWDIR}/tasks/trop/ckd/swir/dpqf
+    make dependencies
+    make 2015_01_07T02_13_26_MonB
+    make 2015_01_07T03_10_18_MonB
+    make 2015_01_08T09_26_29_dled_lin_sw
+    make clean
+    cd ${varBasedir}
+
+    #____________________________________________________________________
+    #                                         Dark flux correction (DARK)
+
+    cd ${OCALFWDIR}/tasks/trop/ckd/swir/dark
+    make dependencies
+    make 2014_12_28T05_12_16_Rev4425_DrkDpqf
+    cd ${varBasedir}
+
+    #____________________________________________________________________
+    #                                                   Offset correction
+
+    cd ${OCALFWDIR}/tasks/trop/ckd/swir/offset
+    make dependencies
+    make 2015_01_08T09_26_29_dled_lin_sw
+    make 2015_01_08T13_13_32_wls_lin_go
+    make clean
+    cd ${varBasedir}
+~~~~
+
+__b) Simplification 1__
+
+~~~~ bash
+    #____________________________________________________________________
+    #                              Detector Pixel Quality Flagging (DPQF)
+
+    cd ${OCALFWDIR}/tasks/trop/ckd/swir/dpqf
+    make nightly_ckd
+    cd ${varBasedir}
+
+    #____________________________________________________________________
+    #                                         Dark flux correction (DARK)
+
+    cd ${OCALFWDIR}/tasks/trop/ckd/swir/dark
+    make nightly_ckd
+    cd ${varBasedir}
+
+    #____________________________________________________________________
+    #                                                   Offset correction
+
+    cd ${OCALFWDIR}/tasks/trop/ckd/swir/offset
+    make nightly_ckd
+    cd ${varBasedir}
+~~~~
+
+__c) Simplification 2__
+
+~~~~ bash
+    #____________________________________________________________________
+    #                              Detector Pixel Quality Flagging (DPQF)
+    #                                         Dark flux correction (DARK)
+    #                                                   Offset correction
+
+    for TESTS in dark dpqf offset
+    {
+        cd ${OCALFWDIR}/tasks/trop/ckd/swir/${TESTS}
+        make nightly_ckd
+    }
+~~~~

@@ -12,14 +12,14 @@ Also wenn dies kein Argument fuer die Verwendung von Backups war...
 
 Einen guten Teil des gestrigen Abends habe ich damit zugebracht Anpassungen innerhlab der DAL vorzunehmen, welche Auswirkungen auf andere Pakete haben. Da man derartige Aenderungen natuerlich nicht ohne entsprechendes Testen einchecken sollte, habe ich heute Morgen noch ein wenig daran weitergearbeitet, im wesentlichen um noch alle Abhaengigkeiten zu beruecksichtigen. Wenn auch von dem Software Meeting unterbrochen, so hatte ich dann am fruehen Nachmittag so weit alles klar, so dass ich meine Aenderungen in SVN einchecken konnte. Da zeitgleich Maaijke in Groningen noch ein paar Aenderungen an der RFI Mitigation vorgenommen hat -- was bedeutet, dass endlich Kalpanas furchtbarer Code verschwindet -- wollte ich noch einmal einen letzten Test-Durchlauf machen, um sicher zu gehen, dass alles zusammenpasst. Teil dieses Test Durchlaufes war, dass ich -- wie so ueblich -- das Build-Verzeichnis komplett leerraeume und dann von Null anfange; dummerweise ist mir dabei ein kleiner Tipfehler unterlaufen, so dass ich mit einem Male alle meine seit gestern an den CR-Tools gemachten Aenderungen los war. Statt einem
 
-~~~~
+~~~~ bash
 rm -rf *
 cmake ../../src/CR-Tools
 ~~~~
 
 war ich ein wenig schnell und habe so den Zeilenumbruch verpasst, was dazu fuehrte, dass ich stattdessen
 
-~~~~
+~~~~ bash
 rm -rf * cmake ../../src/CR-Tools
 ~~~~
 

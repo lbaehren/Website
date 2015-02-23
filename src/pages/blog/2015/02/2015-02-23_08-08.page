@@ -1,0 +1,55 @@
+---
+title: "Error at path_handler.copy"
+in_menu: false
+author: "Lars Baehren"
+author_url: http://www.larsbaehren.de
+date: 2015-02-23T08:08:49.00Z
+created_at: 2015-02-23T04:37:58.00Z
+sort_info: 1424662678
+---
+
+## {title:} ##
+
+_Mon, 23. February 2015 -- 08:08_
+
+Also, das war es wohl doch nicht einfach nur ein Fehler meinerseits, sondern wirklich
+etwas, das in [Webgen](http://webgen.gettalong.org) selber korregiert werden muss:
+
+> Thanks for the [link to the sources](https://github.com/lbaehren/Website) and the
+> explanation on how to reproduce the bug! I think that I have located the problem and
+> I'm working on a fix.
+
+Ich habe ja schon seit einer Weile das Problem gehabt, dass ich bei Aenderungen an
+einem der Index-Seiten nicht umhin konnte, als die komplette Website neu zu bauen.
+Ursache (zumindest was den Fehler betrifft, mit welchem ich konfrontiert wurde) hierfuer
+war, dass sich ``Webgen`` beim Verwenden des Cache aufgehangen hat und mir daher nichts
+anderes uebrig blieb, als letzteren zu loeschen und alles von Anfang an zu bauen -- nicht
+unbedingt das, wofuer man sich eigentlich einen Cache anlegt.
+
+~~~~
+INFO  Generating website...
+INFO  [update] </blog/>
+INFO  [update] </blog/2003.html>
+webgen encountered a problem:
+  Error at path_handler.copy while creating a node from </blog/2003.en.html#blog-entries--2003>:
+    Can't have two nodes with same alcn: /blog/2003.en.html#blog-entries--2003
+make[2]: *** [CMakeFiles/Website] Error 1
+make[1]: *** [CMakeFiles/Website.dir/all] Error 2
+make: *** [all] Error 2
+~~~~
+
+Am Wochenende war es mir dann endlich zu bloed, so dass ich mein Problem an die
+[Webgen User-Group](https://groups.google.com/forum/#!forum/webgen-users) geschickt
+habe. Dauerte nicht lange, bis sich Thomas Leitner (der Hauptentwickler von ``Webgen``)
+zurueckmeldete; nach ein klein wenig hin und her kam dann die Bestaetigung, dass ich da
+allen Anschein nach einen Fehler im ``path_handler`` gefunden habe. Nun bin ich mal
+gespannt, wie es mit der Korrektur aussieht -- wenn sich dies beheben laesst wuerde
+dies in meinem Fall gleich zu zwei entscheidenden Verbesserungen fuehren:
+
+ 1. Die Generierung der Website duerfte sich halbieren.
+ 2. Bei der Synchronisation mit dem Server, auf welchem die Seiten gehostet sind,
+    muesste ich nur noch die Seiten uebertragen, an welchen ich wirklich etwas
+    geaendert habe.
+
+Dass ich unter diesen Umstaenden sehr gespannt auf das Update bin, duerfte wohl nicht
+verwundern...

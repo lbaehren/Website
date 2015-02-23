@@ -12,7 +12,7 @@ Also da habe mich doch eine Weile mit herumgeschlagen -- doch nun ist das Proble
 
 Die wahrscheinlich entscheidende Eingebung fuer die Loesung des Problems kam mir dann im Laufe des Nachmittages: auch wenn die HDF5 Library vornehmlich aus einem C Interface besteht, gibt es doch auch ein C++ API. Auch wenn ich von letzterem innerhalb der DAL keinen Gebrauch mache -- ich habe es mir zwar angeschaut, aber wirklich zu gewinnen ist damit meiner Ansicht nach nichts -- so konnte es ja nicht schaden, den Quellcode einmal ein wenig genauer unter die Lupe zu nehmen. Wenn das HDF5 C++ Interface die Moeglichkeit unterstuetzen sollte, Kopien von einem Objekt anzufertigen, dann gab es die Moeglichkeit einen brauchbaren Hinweis zu finden. Stellt sich heraus, dass ich mit meiner Vermutung richtig lag:
 
-~~~~
+~~~~ cpp
 H5File::H5File(const H5File& original) : IdComponent(original)
 {
     id = original.getId();
@@ -24,7 +24,7 @@ Waehrend die erste Instruktion nichts anderes ist, als was ich die ganze Zeit sc
 
 Wie macht man dies nun praktisch?
 
-~~~~
+~~~~ cpp
 //_____________________________________________________________________________
 //                                                                    operator=
 

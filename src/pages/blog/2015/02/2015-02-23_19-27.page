@@ -1,0 +1,44 @@
+---
+title: "Commits while on the road"
+in_menu: false
+author: "Lars Baehren"
+author_url: http://www.larsbaehren.de
+date: 2015-02-23T19:27:41.00Z
+created_at: 2015-02-23T09:16:14.00Z
+sort_info: 1424679374
+---
+
+## {title:} ##
+
+_Mon, 23. February 2015 -- 19:27_
+
+Hard to over-estimate the impact the migration to [Git](http://www.git-scm.com) as
+(local) version control management tool has had. Given the fact that I am spending
+a considerable fraction of my time traveling on the train, still being able to commit
+source code changes (and revert changes if need be) is quite essential.
+
+~~~~
+* commit a66c29b1942dd826daa43d4dbb922ce2ec0e45c9
+| Author: Lars Baehren <lbaehren@gmail.com>
+| Date:   Mon Feb 23 09:15:28 2015 +0100
+|
+|     Quicklooks need to be generated per CKD index and measurement campaign
+|
+* commit 0aa9ee8fac43dbafbf2a5890e890639ab12de03c
+| Author: Lars Baehren <lbaehren@gmail.com>
+| Date:   Mon Feb 23 08:58:05 2015 +0100
+|
+|     More generic configuration setup, allowing to test processing using different
+|     CKD index files/sets
+~~~~
+
+The above would not be possible if I would be doing a straight SVN checkout of the
+original [Subversion](https://subversion.apache.org) repository -- using ``git-svn``
+provides me with the additional comfort layer and security layer, which enables me
+to continue working while traveling.
+
+Probably the only (considerably small) draw-back of this setup is, that it works
+quite well, making it harder to find some motivation and use case for testing other
+tools, such as e.g. [Fossil](http://fossil-scm.org/index.html/doc/trunk/www/index.wiki)
+which every since listening to the [episode on FLOSS-Weekly](http://twit.tv/show/floss-weekly/320)
+is high up on my list of software tools to play with).
