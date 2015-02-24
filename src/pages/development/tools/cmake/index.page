@@ -74,4 +74,4 @@ For more information visit the [project's repository page](https://github.com/lb
 
  - [Project configuration](/development/tools/cmake/project_configuration.html)
  - [Determine package version numbers](/development/tools/cmake/package_version_numbers.html)
- - [Optional parameters in macros](/development/tools/cmake/optional_parameters.page.html)
+ - [Optional parameters in macros](/development/tools/cmake/optional_parameters.html)

@@ -32,7 +32,9 @@ them to the actual nightly build. A side-effect of this effort now (once more)
 has been, that I managed to clean up and condense a lot of the instructions
 found throughout the build scripts:
 
-__a) Initial version.__ Strictly speaking this already would be one steps past the
+__a) Initial version__
+
+Strictly speaking this already would be one steps past the
 initial version: already done is some clean-up based on the fact that the tasks per
 calibration step can be controlled from a simple ``Makefile``, which means that the
 master build script only needs to call the appropriate build targets.
@@ -68,7 +70,9 @@ master build script only needs to call the appropriate build targets.
     cd ${varBasedir}
 ~~~~
 
-__b) Simplification 1__ Given the fact that the collection of actual tests per calibration
+__b) Simplification 1__
+
+Given the fact that the collection of actual tests per calibration
 step can change (typically the list should expand, but who knows), it only seems reasonable
 to keep that information in a form that both manual as well as automated testing is
 possible. So in order to unify the overall approach I have been adding a ``nightly_ckd``
@@ -103,7 +107,9 @@ on the resolution.
     cd ${varBasedir}
 ~~~~
 
-__c) Simplification 2__ With the above simplifications already put in place the
+__c) Simplification 2__
+
+With the above simplifications already put in place the
 follow-up is rather straight forward: there is so much repetition and redundancy
 in the code, that we can do another round of clean-up.
 

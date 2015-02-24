@@ -2,6 +2,8 @@
 title: TROPOMI
 in_menu: true
 author: Lars B&auml;hren
+author_url: http://www.larsbaehren.de
+link: {prev: prometheus.html, next: index.html}
 ---
 
 ## Work :: {title:} ##
