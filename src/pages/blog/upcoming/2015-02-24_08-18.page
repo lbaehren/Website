@@ -1,0 +1,70 @@
+---
+title: "Webgen Updates"
+in_menu: false
+author: "Lars Baehren"
+author_url: http://www.larsbaehren.de
+date: 2015-02-24T08:18:15.00Z
+created_at: 2015-02-24T08:18:15.00Z
+sort_info: 1424762295
+---
+
+## {title:} ##
+
+_Tue, 24. February 2015 -- 08:18_
+
+~~~~
+[100%] Rendering website from sources ...
+INFO  Generating website...
+INFO  [update] </blog/>
+INFO  [update] </blog/2015.html>
+INFO  [update] </blog/2015/01/index.html>
+INFO  [update] </blog/2015/02/>
+INFO  [create] </blog/2015/02/2015-02-24_07-59.html>
+INFO  [update] </blog/2015/02/index.html>
+INFO  [update] </blog/2015/index.html>
+INFO  [update] </blog/index.html>
+INFO  [update] </blog/upcoming/>
+INFO  [update] </blog/upcoming/index.html>
+INFO  ... done in 477.85 seconds
+[100%] Built target Website
+~~~~
+
+Generation of the complete website after fixing the page template:
+
+~~~~
+[100%] Rendering website from sources ...
+INFO  Generating website...
+INFO  [update] </blog/>
+INFO  [update] </blog/2003.html>
+INFO  [update] </blog/2003/2003-11/2003-11-03_20-47.html>
+INFO  [update] </blog/2003/2003-11/2003-11-03_20-54.html>
+INFO  [update] </blog/2003/2003-11/2003-11-03_20-57.html>
+
+...
+
+INFO  [update] </writing/book_reviews/moondial.html>
+INFO  [update] </writing/book_reviews/red_rabbit.html>
+INFO  [update] </writing/book_reviews/the_divine_secrets_of_the_ya-ya-sisterhood.html>
+INFO  [update] </writing/book_reviews/the_last_year_of_being_married.html>
+INFO  [update] </writing/book_reviews/the_undutchables.html>
+INFO  [update] </writing/index.html>
+INFO  ... done in 256.40 seconds
+[100%] Built target Website
+~~~~
+
+Repeat of the first test run (now with the updated page template):
+
+~~~~
+[100%] Rendering website from sources ...
+INFO  Generating website...
+INFO  [update] </blog/>
+INFO  [update] </blog/2015.html>
+INFO  [update] </blog/2015/01/index.html>
+INFO  [update] </blog/2015/02/index.html>
+INFO  [update] </blog/2015/index.html>
+INFO  [update] </blog/index.html>
+INFO  [update] </blog/upcoming/2015-02-24_08-18.html>
+INFO  [update] </blog/upcoming/index.html>
+INFO  ... done in 34.14 seconds
+[100%] Built target Website
+~~~~

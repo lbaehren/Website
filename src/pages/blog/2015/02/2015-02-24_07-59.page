@@ -1,0 +1,131 @@
+---
+title: "Supporting TROPOMI OCAL (5)"
+in_menu: false
+author: "Lars Baehren"
+author_url: http://www.larsbaehren.de
+date: 2015-02-24T07:59:37.00Z
+created_at: 2015-02-22T12:52:48.00Z
+sort_info: 1424605968
+---
+
+## {title:} ##
+
+_Tue, 24. February 2015 -- 07:59_
+
+Instead of being able to have some time to relax and take some time off, I have
+been spending a good deal of the past weekend to work on TROPOMI. Pretty much
+everybody body has been called to arms to prepare for a meeting -- originally planned
+at the begin of this week, but now re-scheduled -- in order to make all the
+necessary material available to be used as input. For me this mainly resulted in
+ramping up even more the work on the nightly build and CKD calculations.
+
+Based on what already have been doing so far, this work essentially would split into
+two parts: a) cleanup or create the necessary task task configuration scripts and b)
+get everything to run within the confines of the environment available on the build
+server. Since the latter once still to a certain degree has something of a gray box
+(i.e. luckily enough not being completely black that is), I need to do as much testing
+as possible before-hand. This of course requires a certain flexibility in the way the
+tests are set up, which is why I have been spending a good half of my time setting up
+and fine-tuning wrapper scripts to stage and test components before submitting
+them to the actual nightly build. A side-effect of this effort now (once more)
+has been, that I managed to clean up and condense a lot of the instructions
+found throughout the build scripts:
+
+__a) Initial version__
+
+Strictly speaking this already would be one steps past the
+initial version: already done is some clean-up based on the fact that the tasks per
+calibration step can be controlled from a simple ``Makefile``, which means that the
+master build script only needs to call the appropriate build targets.
+
+~~~~ bash
+    #____________________________________________________________________
+    #                              Detector Pixel Quality Flagging (DPQF)
+
+    cd ${OCALFWDIR}/tasks/trop/ckd/swir/dpqf
+    make dependencies
+    make 2015_01_07T02_13_26_MonB
+    make 2015_01_07T03_10_18_MonB
+    make 2015_01_08T09_26_29_dled_lin_sw
+    make clean
+    cd ${varBasedir}
+
+    #____________________________________________________________________
+    #                                         Dark flux correction (DARK)
+
+    cd ${OCALFWDIR}/tasks/trop/ckd/swir/dark
+    make dependencies
+    make 2014_12_28T05_12_16_Rev4425_DrkDpqf
+    cd ${varBasedir}
+
+    #____________________________________________________________________
+    #                                                   Offset correction
+
+    cd ${OCALFWDIR}/tasks/trop/ckd/swir/offset
+    make dependencies
+    make 2015_01_08T09_26_29_dled_lin_sw
+    make 2015_01_08T13_13_32_wls_lin_go
+    make clean
+    cd ${varBasedir}
+~~~~
+
+__b) Simplification 1__
+
+Given the fact that the collection of actual tests per calibration
+step can change (typically the list should expand, but who knows), it only seems reasonable
+to keep that information in a form that both manual as well as automated testing is
+possible. So in order to unify the overall approach I have been adding a ``nightly_ckd``
+target, which then in turn in what is getting called from the master test script.
+Though one certainly could argue this (at least to some degree) only moves the complexity
+to another level in the processing chain, it considerably modularizes the testing,
+because whatever is called from the master test script (by the build server) can
+previously be tested be individual module -- hence if something would break really
+badly, it would be possible to temporarily disable an individual module while working
+on the resolution.
+
+~~~~ bash
+    #____________________________________________________________________
+    #                              Detector Pixel Quality Flagging (DPQF)
+
+    cd ${OCALFWDIR}/tasks/trop/ckd/swir/dpqf
+    make nightly_ckd
+    cd ${varBasedir}
+
+    #____________________________________________________________________
+    #                                         Dark flux correction (DARK)
+
+    cd ${OCALFWDIR}/tasks/trop/ckd/swir/dark
+    make nightly_ckd
+    cd ${varBasedir}
+
+    #____________________________________________________________________
+    #                                                   Offset correction
+
+    cd ${OCALFWDIR}/tasks/trop/ckd/swir/offset
+    make nightly_ckd
+    cd ${varBasedir}
+~~~~
+
+__c) Simplification 2__
+
+With the above simplifications already put in place the
+follow-up is rather straight forward: there is so much repetition and redundancy
+in the code, that we can do another round of clean-up.
+
+~~~~ bash
+    #____________________________________________________________________
+    #                              Detector Pixel Quality Flagging (DPQF)
+    #                                         Dark flux correction (DARK)
+    #                                                   Offset correction
+
+    for TESTS in dark dpqf offset
+    {
+        cd ${OCALFWDIR}/tasks/trop/ckd/swir/${TESTS}
+        make nightly_ckd
+    }
+~~~~
+
+All of the above of course merely would be an exercise in cosmetics if it was not
+for the fact that this now has enabled me to quicker isolate error, stage changes
+and increase the number of tests which successfully pass the nightly build. Way to
+go...
