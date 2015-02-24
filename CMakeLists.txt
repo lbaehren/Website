@@ -245,9 +245,16 @@ find_program (WEBDAV_EXECUTABLE mount_webdav
  endif (WEBDAV_EXECUTABLE)
 
 
+# -a, --archive               archive mode; equals -rlptgoD (no -H,-A,-X)
+# -c, --checksum              skip based on checksum, not mod-time & size
+# -u, --update                skip files that are newer on the receiver
+# -e, --rsh=COMMAND           specify the remote shell to use
+# -z, --compress              compress file data during the transfer
+# -P                          same as --partial --progress
+# -x, --one-file-system       don't cross filesystem boundaries
 if (RSYNC_EXECUTABLE)
     add_custom_target (online
-        COMMAND ${RSYNC_EXECUTABLE} -axuP --delete ${PROJECT_SOURCE_DIR}/out/* ${PROJECT_UPLOAD_PATH}
+        COMMAND ${RSYNC_EXECUTABLE} -axuzP --delete ${PROJECT_SOURCE_DIR}/out/* ${PROJECT_UPLOAD_PATH}
         WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
         COMMENT "Publishing website - uploading generated pages ..."
         )
