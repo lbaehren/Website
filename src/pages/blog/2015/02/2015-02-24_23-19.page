@@ -1,0 +1,65 @@
+---
+title: "Blindflug beenden"
+in_menu: false
+author: "Lars Baehren"
+author_url: http://www.larsbaehren.de
+date: 2015-02-24T23:19:06.00Z
+created_at: 2015-02-24T23:10:54.00Z
+sort_info: 1424815854
+---
+
+## {title:} ##
+
+_Tue, 24. February 2015 -- 23:19_
+
+Wenn es eine Sache gibt welche ich nicht leiden kann -- und dies ist umso mehr
+der Fall wenn es um das Testen von Software geht -- wenn ich ueber unvollstaendige
+Informationen verfuege. Woran ich mich immer wieder gestoert habe ist der Umstand,
+dass die Software, welche wir abliefern, in einer Umgebung getestet wird, zu welcher
+wir kaum Zugang haben -- von einer Black-Box unterscheidet sich dies nicht sonderlich
+viel. Vor einer Weile schon habe ich mir daher eine Moeglichkeit zusammengebastelt,
+mit welcher ich zumindest einen Teil dessen generieren und extrahieren kann, was von
+der anderen Seite anscheinend mit dafuer verwendet wird, um unsere Arbeit zu bewerten.
+Da dies aber kein dauerhafter Zustand ist, habe ich mir heute Abend -- nachdem ich
+aus dem Insitut zurueckgekommen bin -- ein wenig Zeit beiseite gestellt, um meine
+[CMake](http://www.cmake.org)-Umgebung zu aktualisieren und fuer einen ersten
+Testrun nach langer Zeit anzuwerfen:
+
+~~~~
+Create new tag: 20150224-2201 - Experimental
+Configure project
+   Each . represents 1024 bytes of output
+    .. Size of output: 1K
+Build project
+   Each symbol represents 1024 bytes of output.
+   '!' represents an error and '*' a warning.
+    ............*!!!!!!!!!!!!!!*.*********......*.....  Size: 50K
+    **.***********....................................  Size: 99K
+     Size of output: 99K
+Error(s) when building project
+   50 or more Compiler errors
+   50 or more Compiler warnings
+Test project /home/larsb/CodeDevelopment/Work/TROPOMI/ocalfw/build
+      Start  1: pylint_check_lib
+ 1/61 Test  #1: pylint_check_lib .......................................***Failed   47.66 sec
+      Start  2: pylint_check_algorithms
+ 2/61 Test  #2: pylint_check_algorithms ................................***Failed  114.54 sec
+      Start  3: pylint_check_algorithms_swir
+ 3/61 Test  #3: pylint_check_algorithms_swir ...........................***Failed   31.49 sec
+      Start  4: pylint_check_utest
+ 4/61 Test  #4: pylint_check_utest .....................................***Failed    9.34 sec
+      Start  5: build_documentation
+ 5/61 Test  #5: build_documentation ....................................   Passed  111.63 sec
+      Start  6: algorithms.quicklook.plots_quicklook_swir_utest
+ 6/61 Test  #6: algorithms.quicklook.plots_quicklook_swir_utest ........   Passed   24.27 sec
+      Start  7: algorithms.radiometry_swir.utils_utest
+ 7/61 Test  #7: algorithms.radiometry_swir.utils_utest .................   Passed    0.99 sec
+      Start  8: algorithms.straylight_swir.utils_utest
+ 8/61 Test  #8: algorithms.straylight_swir.utils_utest .................   Passed   27.02 sec
+~~~~
+
+Ich bin mal gespannt, was dabei herauskommt; hoechst wahrscheinlich wird mir dieser
+erste Durchgang noch eine Reihe von Stellen aufzeigen, wo ich meine Testumgebung
+anpassen muss, aber immer gibt mir dies dann schon einmal eine unabhaengige Bewertung
+ueber den Gesamtzustand der Software (welche anders leider nicht verfuegbar gemacht
+wird).
