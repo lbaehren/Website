@@ -226,7 +226,7 @@ list_of_recent_entries ()
 create_header ()
 {
     varTitle=$1
-    varHourMinuteSecond=`date +`
+    varSeconds=`date +"%s"`
 
     if [ -z $2 ] ; then
         varTimestamp=`get_timestamp`
@@ -244,8 +244,10 @@ create_header ()
     echo "title: \"${varTitle}\""
     echo "in_menu: false"
     echo "author: \"Lars Baehren\""
+    echo "author_url: http://www.larsbaehren.de"
     echo "date: ${varTimestamp}"
     echo "created_at: ${varTimestamp}"
+    echo "sort_info: ${varSeconds}"
     echo "---"
     echo ""
     echo "## {title:} ##"
