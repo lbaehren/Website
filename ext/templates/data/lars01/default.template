@@ -56,7 +56,7 @@
 
         <h2 class="hide">Menu:</h2>
         <div class="avmenu">
-          <!-- {menu: {options: {mi: {in_menu: true}, sort: true, siblings: [0, -1]}}} -->
+          <!-- \{menu: {options: {mi: {in_menu: true}, sort: true, siblings: [0, -1]}}} -->
           {menu: {options: {sort: true, absolute_levels: [0,2], mi: {in_menu: true}}}}
         </div>
 
