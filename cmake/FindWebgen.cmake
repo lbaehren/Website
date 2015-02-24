@@ -42,7 +42,7 @@ if (NOT WEBGEN_FOUND)
   ## Check for the executable
 
   find_program (WEBGEN_EXECUTABLE webgen
-    HINTS ${WEBGEN_ROOT_DIR}  ${CMAKE_INSTALL_PREFIX}
+    HINTS /sw ${WEBGEN_ROOT_DIR} ${CMAKE_INSTALL_PREFIX}
     PATH_SUFFIXES bin
     )
 
