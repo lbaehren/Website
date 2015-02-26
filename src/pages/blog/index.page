@@ -8,6 +8,101 @@ author: "Lars Baehren"
 
 **:::**
 
+### Webgen Updates ###
+
+
+_Wed, 25. February 2015 -- 21:50_
+
+[Wie zuletzt berichtet](/blog/2015/02/2015-02-23_08-08.html) hatte ich einige Probleme
+mit [Webgen](http://webgen.gettalong.org), dem Tool welches ich zum erzeugen dieser
+Webseiten verwende. Auf keine Anfrage in der [Webgen User-Group](https://groups.google.com/forum/#!forum/webgen-users)
+hat sich der Lead-Developer des Projektes bei mir zurueckgemeldet und mir -- nachdem
+sich das Problem reproduzieren liess -- bestaetigt dass der Fehler, welcher mir das
+Leben schwer machte, in der Tat im Quellcode sass. Am Montag Abend habe ich mir dann
+die gepatchte Version gezogen und auf meine Seiten losgelassen:
+
+~~~~
+[100%] Rendering website from sources ...
+INFO  Generating website...
+INFO  [update] </blog/>
+INFO  [update] </blog/2015.html>
+INFO  [update] </blog/2015/01/index.html>
+INFO  [update] </blog/2015/02/>
+INFO  [create] </blog/2015/02/2015-02-24_07-59.html>
+INFO  [update] </blog/2015/02/index.html>
+INFO  [update] </blog/2015/index.html>
+INFO  [update] </blog/index.html>
+INFO  [update] </blog/upcoming/>
+INFO  [update] </blog/upcoming/index.html>
+INFO  ... done in 477.85 seconds
+[100%] Built target Website
+~~~~
+
+Ok, es dauerte immer noch eine Weile, bis alles durchgelaufen war, aber enscheidende
+Punkt ist, dass ich nicht zunaecht den kompletten Cache loeschen und alles von
+Anfang an neu generieren musste. Die obige Ausgabe war alles was ich zu sehen bekommen
+habe, nicht seitenweise Log-Messages.
+
+[Thomas Leitner](https://github.com/gettalong) schien recht beeindruckt zu sein von
+meiner Webseite -- leider habe ich die Nachricht nicht mehr, dass es sich wahrscheinlich
+um die seitenmaessig groesste Installation dergleichen handeln wuerde -- und dem Problem
+die Laufzeit betreffend, so dass ein wenig spaeter noch eine weitere Nachricht eintraf,
+in welcher ich den Tip bekam eine kleine Aenderung an dem Template fuer die generierten
+Seiten vorzunehmen. Dem Rat bin ich gerne gefolgt -- als ich dann _Webgen_ wieder
+angeworfen habe, musste die Website komplett neu gebaut werden (weil schliesslich
+das zugrunde liegende Template veraendert wurde)... aber wie sich an der dem Timer
+erkennen laesst, ging dies sogar schneller als die zuvorige Teil-Generierung.
+
+~~~~
+[100%] Rendering website from sources ...
+INFO  Generating website...
+INFO  [update] </blog/>
+INFO  [update] </blog/2003.html>
+INFO  [update] </blog/2003/2003-11/2003-11-03_20-47.html>
+INFO  [update] </blog/2003/2003-11/2003-11-03_20-54.html>
+INFO  [update] </blog/2003/2003-11/2003-11-03_20-57.html>
+
+...
+
+INFO  [update] </writing/book_reviews/moondial.html>
+INFO  [update] </writing/book_reviews/red_rabbit.html>
+INFO  [update] </writing/book_reviews/the_divine_secrets_of_the_ya-ya-sisterhood.html>
+INFO  [update] </writing/book_reviews/the_last_year_of_being_married.html>
+INFO  [update] </writing/book_reviews/the_undutchables.html>
+INFO  [update] </writing/index.html>
+INFO  ... done in 256.40 seconds
+[100%] Built target Website
+~~~~
+
+Mit dieser Aussicht vor Augen, habe ich also den ersten Test noch einmal wiederholt:
+die aktuellen Index-Seiten neu generieren und dann die Website neu bauen...
+
+~~~~
+[100%] Rendering website from sources ...
+INFO  Generating website...
+INFO  [update] </blog/>
+INFO  [update] </blog/2015.html>
+INFO  [update] </blog/2015/01/index.html>
+INFO  [update] </blog/2015/02/index.html>
+INFO  [update] </blog/2015/index.html>
+INFO  [update] </blog/index.html>
+INFO  [update] </blog/upcoming/2015-02-24_08-18.html>
+INFO  [update] </blog/upcoming/index.html>
+INFO  ... done in 34.14 seconds
+[100%] Built target Website
+~~~~
+
+Im Vergleich mit dem ersten Run -- nach Behebung des Fehlers mit dem Cache -- haetten
+wir also einen Faktor 10 an Geschwindigkeitsgewinn (und damit waere nicht nicht der
+Zustand beruecksichtigt, welcher vor der Behebung des Fehlers herrschte). Das ist
+natuerlich nicht die einzige Sache von Belang: der "nette Nebeneffekt" davon, dass
+wirklich nur die veraenderten Seiten neu gebaut werden bedeutet auch, dass nur ein
+Bruchteil dessen via `rsync` auf den Server uebertragen werden muss. Der komplette
+Ablauf -- von der Erstellung eines Blog-Eintrages bis zum Erscheinen auf dem Webserver
+-- geht nun um Laengen schneller!
+
+**:::**
+
 ### Blindflug beenden ###
 
 
@@ -560,30 +655,3 @@ zum Europaplain fahren und dann die Goylaan entlanglaufe.
  dem Aussteigen bei mir gemeldet hat; noch bevor das Gespraech zu Ende war, habe ich
  es bis an die Haustuere geschafft, so dass ich also letzten Endes noch nicht einmal
  alleine unterwegs war. 
-
-**:::**
-
-### Lange Support Session ###
-
-
-_Wed, 04. February 2015 -- 23:01_
-
-Also da ist es doch recht spaet geworden -- so spaet in der Tat, dass ich nun mal
-schauen muss, mit welche Kombination von Bussen ich nun zurueckkomme. Wenn alles gut
-geht komme ich mit der Linie 28 bis an den Rand der Innenstadt, von dort aus geht es
-dann mit der Linie 77 weiter...
-
-So spaet geworden ist es, weil ich insgesamt gut zwei Stunden damit zugebracht habe
-Computer-Support zu geben. Durch die Kombination von Remote-Access und grossem
-Bildschirm war dies zwar immer noch recht akzeptabel, aber letzten Endes geht da
-doch einiges an Zeit ins Land. Was mich persoenlich immer noch ein wenig verwundert
-ist, warum es da derartige Probleme mit der Audio-Konfiguration gibt: nach ein wenig
-hin und her ist es mir zwar gelungen Skype zu ueberzeugen ein- und ausgehenden Ton
-in vernuenftiger Weise miteinander abzustimmen, aber weder Amarok noch Banshee wollten
-die auf dem Rechner liegende Musik abspielen. Mein Verdacht an der Stelle ist, dass
-es in der Tat Probleme mit dem Decodieren der Datei-Formate gibt (was mich schon
-ein wenig wundert): wenn von ueber 800 Titeln gerade einmal zwei anspielbar sind,
-dann scheint es sich doch um ein tieferliegenderes Problem zu handeln. Ich denke
-mal, dass ich da ein meiner virtuellen Maschinen anwerfen werde, um zu schauen
-ob ich dieses Problem zumindest reproduzieren kann -- wenn dies nicht der Fall ist
-wird es wirklich kniffelig.
