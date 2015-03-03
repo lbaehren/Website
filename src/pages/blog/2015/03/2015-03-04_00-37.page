@@ -1,0 +1,60 @@
+---
+title: "Matplotlib: rasterized colorbar"
+in_menu: false
+author: "Lars Baehren"
+author_url: http://www.larsbaehren.de
+date: 2015-03-04T00:37:54.00Z
+created_at: 2015-03-03T12:06:15.00Z
+sort_info: 1425380775
+---
+
+## {title:} ##
+
+_Wed, 04. March 2015 -- 00:37_
+
+One of the pieces of software which is getting quite some beating during the On-ground
+calibration of [TROPOMI](/work/tropomi.html), are the modules for the generation of
+quicklooks. These collections of plots are used in a number of places, most prominently
+of course for the initial inspection of the ongoing calibration measurements, where
+this is kind of a first line of defense against faulty measurements. Other than this
+the plots also play quite a crucial role in the validation of the calibration key
+data (CKD), which are derived from the calibration measurements and later on to be
+used as part of the processing pipeline. With this kept in mind I think it is understandable
+why with an important progress meeting in sight, there has been yet another rush at
+getting a number of details fixed... such as this one:
+
+![Quicklook screenshot](/blog/2015/03/2015-03-03_Matplotlib_colorbar.png)
+
+While most areas with a solid fill -- such as e.g. the histograms -- appear as such
+when printed or displayed on the screen, things look slightly different when turning
+an eye to the [colorbar](http://matplotlib.org/api/colorbar_api.html) associated
+with the image plot. After some online search it turns out that this essentially is
+an issues with the rendering of the PDF - the resolution: use a rasterized colorbar.
+
+> Incidentally, the lines in the pdf are an artifact of most pdf viewers,
+> not a bug in the pdf file.
+
+Given this basic information the remaining question now is: how convince [Matplotlib](http://matplotlib.org)
+to generate a PDF where the colorbar does not show lines at every facet?
+
+
+ - Original version: the colorbar is plotted, attached to the axis labeled
+   ``axis_colorbar``, but nothing further is being done.
+
+~~~~ python
+    fig.colorbar (img,
+                  cax=axis_colorbar,
+                  orientation='vertical',
+                  format=formatter)
+~~~~
+
+ - Updated version: the return from the ``colorbar()`` method is captured, such that
+   we subsequently can enable rasterization.
+
+~~~~ python
+    cb = fig.colorbar (img,
+                       cax=axis_colorbar,
+                       orientation='vertical',
+                       format=formatter)
+    cb.solids.set_rasterized(True)
+~~~~

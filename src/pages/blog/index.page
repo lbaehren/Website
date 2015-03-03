@@ -8,6 +8,101 @@ author: "Lars Baehren"
 
 **:::**
 
+### Matplotlib: rasterized colorbar ###
+
+
+_Wed, 04. March 2015 -- 00:37_
+
+One of the pieces of software which is getting quite some beating during the On-ground
+calibration of [TROPOMI](/work/tropomi.html), are the modules for the generation of
+quicklooks. These collections of plots are used in a number of places, most prominently
+of course for the initial inspection of the ongoing calibration measurements, where
+this is kind of a first line of defense against faulty measurements. Other than this
+the plots also play quite a crucial role in the validation of the calibration key
+data (CKD), which are derived from the calibration measurements and later on to be
+used as part of the processing pipeline. With this kept in mind I think it is understandable
+why with an important progress meeting in sight, there has been yet another rush at
+getting a number of details fixed... such as this one:
+
+![Quicklook screenshot](/blog/2015/03/2015-03-03_Matplotlib_colorbar.png)
+
+While most areas with a solid fill -- such as e.g. the histograms -- appear as such
+when printed or displayed on the screen, things look slightly different when turning
+an eye to the [colorbar](http://matplotlib.org/api/colorbar_api.html) associated
+with the image plot. After some online search it turns out that this essentially is
+an issues with the rendering of the PDF - the resolution: use a rasterized colorbar.
+
+> Incidentally, the lines in the pdf are an artifact of most pdf viewers,
+> not a bug in the pdf file.
+
+Given this basic information the remaining question now is: how convince [Matplotlib](http://matplotlib.org)
+to generate a PDF where the colorbar does not show lines at every facet?
+
+
+ - Original version: the colorbar is plotted, attached to the axis labeled
+   ``axis_colorbar``, but nothing further is being done.
+
+~~~~ python
+    fig.colorbar (img,
+                  cax=axis_colorbar,
+                  orientation='vertical',
+                  format=formatter)
+~~~~
+
+ - Updated version: the return from the ``colorbar()`` method is captured, such that
+   we subsequently can enable rasterization.
+
+~~~~ python
+    cb = fig.colorbar (img,
+                       cax=axis_colorbar,
+                       orientation='vertical',
+                       format=formatter)
+    cb.solids.set_rasterized(True)
+~~~~
+
+**:::**
+
+### Durch den Hagel ###
+
+
+_Mon, 02. March 2015 -- 21:21_
+
+Also das war nicht so wirklich toll vom Timing her: als ich vorhin vom Institut aus
+in Richtung Bushaltestelle losgezogen bin, scheine ich genau den Zeitpunkt erwischt
+zu haben, es nicht nur angefangen hat zu regnen... sondern zu hageln. War jetzt nicht
+unbedingt das, wie ich mir den Start in den Abend vorgestellt hatte, zumal es auf der
+Strecke nichts gibt (zumindest nach dem Schneiden der Baeume am Rand des Weges) was in
+irgendeiner Weise Schutz bieten koennte. Da war ich doch recht froh, als ich mich
+unter das Dach der Bushaltestelle retten konnte... nur um dann festzustellen, dass
+meine Tasche mit einer Schicht Hagelkoerner ueberzogen war.
+
+**:::**
+
+### Nervoes ###
+
+
+_Thu, 26. February 2015 -- 18:37_
+
+Also so nervoes war ich weder bei meinem Interview fuer [S\[&\]T](http://www.stcorp.nl)
+noch fuer [SRON](http://www.sron.nl) -- was dem vielleicht ein wenig nahe kommt war
+das Gespraech seinerzeit bei [ASTRON](http://www.astron.nl). Ist aber vielleicht nicht
+so ganz verwunderlich: in beiden Faellen geht es um Astronomie und (als ein Extra)
+Interferometrie. Wo ich mich durch die ganzen [ESO](http://www.eso.org) Dokumente
+durchwuehle -- natuerlich reicht die Zeit nicht um alles zu lesen, was ich lesen moechte
+-- gehen einfach ueberall Blinklichter vor dem inneren Auge auf. Es gibt einfach Unmengen
+Punkte, welche mir vertraut vorkommen und welche mein Interesse auf sich ziehen: da
+wuerde ich garnicht einmal so sehr den Unterschied machen was alleine die Software-Seite
+betrifft, sondern auch von der physikalisch-technischen Seite geht hier ein Feuerwerk
+in die Luft. Wenn es nach mir ginge, dann wuerde ich am liebsten schon bei dem ersten
+Interview gleich mit Loesungsansaetzen kommen -- das ist aber vielleicht ein etwas
+uebertriebener Anspruch, denn schliesslich wird da immer noch einiges an Einarbeitung
+faellig, wenn es wirklich klappen sollte. Vielleicht muss ich auch die mit Notizen
+beschriebenen Paper, User Manuals, etc. beiseite legen und einfach nur ruhig bleiben
+-- bringt ja nichts, wenn ich vor lauter Begeisterung und Aufregung keinen zusammenhaengenden
+Satz von mir geben kann.
+
+**:::**
+
 ### Webgen Updates ###
 
 
@@ -582,76 +677,3 @@ grundsaetzlich ein Problem mit haette, aber wie sich im Zuge von diversen Diskus
 herausstellte, war zumindest ein Teil der gestarteten Aktionen nicht so 100%ig sinnvoll.
 Also mache ich mich erst einmal auf den Weg zurueck und schaue dann lieber heute Abend
 noch einmal nach...
-
-**:::**
-
-### Abend in Tannenbusch ###
-
-
-_Mon, 09. February 2015 -- 19:47_
-
-Da war es doch gut, dass ich Kamera und Stativ mitgenommen habe: als wir am
-gestrigen Sonntag Nachmittag noch einmal mit Sofia losgezogen sind, war das Wetter
-einfach zu schoen, als dass ich mir die Moeglichkeit haette entgehen lassen zumindest
-ein paar Bilder einzufangen. Hundebilder hatte ich jetzt nicht unbedingt auf der Liste
--- was dies betrifft war ich an den vorherigen Tagen ja schon fleissig gewesen --
-aber ich dachte mir, dass es sicherlich nicht schaden koennte ein wenig von der
-spaet-nachmittaglichen Stimmung in dem Gruenguertel am Nordrand von Tannenbusch
-einzufangen. Hat netterweise dann auch geklappt...
-
-![Sonnenuntergang](/blog/2015/02/hdr_20150208_181705_Tannenbusch.jpg)
-
-Was mir immer noch fehlt sind ein paar wirklich gute Aufnahmen vonn dem Schilf und den
-Baeumen rund um den See -- ich denke aber mal, dass ich dies auch noch hinkriegen
-werde.
-
-**:::**
-
-### Spielen mit Sofia ###
-
-
-_Fri, 06. February 2015 -- 18:45_
-
-Die Kleine kriegt definitiv nicht genug wenn es ums Spielen geht. Als ich gestern
-Abend nach Hause gekommen bin, dauerte es nur wenig Sekunden, bis der Hund die
-Treppe heruntergerast kam, um sich dann direkt das Lieblingsspielzeug zu schnappen
-und mich zum Mitmachen aufzufordern. Gut, habe ich mir nicht zweimal sagen lassen
--- auch wenn ich zumindest mal meine Sachen abstellen und die Jacke ausziehen wollte.
-
-![Sofia](/blog/2015/02/dsc_20150131_144052_Sofia.jpg)
-
-Am heutigen Nachmittag sind wir dann auf der Hundespielwiese am Rand des Tannenbuscher
-Gruenguertels gewesen. Auch wenn wir etwas spaeter als optimal dort aufgetaucht sind,
-waren doch einige Hunde unterwegs, so dass Sofia die Gelegenheit hatte, sich noch
-einmal deutlich mehr zu verausgaben, als dies hier im Haus moeglich waere. Die
-Nebenwirkung ist natuerlich, dass der Hund anschliessend aussieht wie ein Schwein
-(dies waere wohl noch schlimmer, wenn nicht ein Teil der Faechen noch gefroren ist),
-aber dies ist ja nichts, was sich nicht mit ein wenig Wasser beheben liesse.
-
-**:::**
-
-### Rueckweg ###
-
-
-_Thu, 05. February 2015 -- 17:22_
-
-Da bin ich gestern Abend doch noch gut zurueck gekommen. Wie sich anhand der Karte
-erkennen laesst bin ich zwar deutlich mehr Bretzeln gefahren, als dies normalerweise
-der Fall waere, aber leider gibt es nach 21:15 Uhr keine direkten Verbindungen mehr
-(das waere dann Linie 71 oder 72).
-
-![GPS track](/blog/2015/02/2015-02-05_GPS_track.png)
-
-Da ich von der Innenstadt aus mit der Linie 77 -- und nicht, wie besser waere, mit
-der Linie 1 oder 47 -- unterwegs war, musste ich schauen, wo ich am besten aussteigen
-kann, um den Rest des Heimweges zu laufen. Ich wollte einfach mal ein wenig testen und
-bin daher bereits auf Hoehe der Rijnlaan aus dem Bus gehuepft. Die Strecke ist bestens
-bekannt, aber ich scheine mich doch immer noch zu verschaetzen, was die Laenge des
-Verlengde Hoogravenseweg betrifft; das zieht sich schon noch einmal recht ordentlich,
-so dass ich beim naechsten Mal (sollte dies wieder noetig werden) dann doch lieber bis
-zum Europaplain fahren und dann die Goylaan entlanglaufe.
-
- Insgesamt passt es dann aber doch wieder recht gut, weil sich Julia kurz nach
- dem Aussteigen bei mir gemeldet hat; noch bevor das Gespraech zu Ende war, habe ich
- es bis an die Haustuere geschafft, so dass ich also letzten Endes noch nicht einmal
- alleine unterwegs war. 
