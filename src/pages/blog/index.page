@@ -8,6 +8,142 @@ author: "Lars Baehren"
 
 **:::**
 
+### Test Code ###
+
+
+_Thu, 05. March 2015 -- 18:05_
+
+Ich finde es immer wieder ganz gut, wenn ich erst einmal Dinge unter sehr kontrollierten
+Bedingungen test kann, ehe ich mich daran mache neue Funktionalitaet im Produktionscode
+zu implementieren. Aus diesem Grunde schaue ich mir gerade einmal an, wie ich denn
+die Behandlung der Qualitaet-Werte (welche letzten Endes fuer jedes Pixel des Detektors
+zugewiesen werden) am besten aufsetzen kann: sind lediglich ein paar Zeilen Python-Code
+mit welchen ich sowohl ein Array mit Daten und die zugehoerigen Flags generieren kann.
+
+~~~~ python
+  data  = np.random.rand (20, 20)
+  flags = np.zeros (data.shape, dtype=np.int)
+
+  # Assign the flags
+  flags[data<0.01] += 1
+  flags[data<0.10] += 2
+  flags[data>0.90] += 16
+  flags[data>0.99] += 32
+~~~~
+
+Was mich hier natuerlich am meisten interessiert sind die Flags; mit den obigen Kriterien
+fuer die Selektion bekomme ich ein Array, welches folgendermassen aussieht:
+
+~~~~
+[[16  0  0  0  3  0  0  0  0 16  0 16 16 16  0  0 16  0  0  2]
+ [ 0  0  0  0  0  0 16  0  0  0  3  0  0  2  0  0  0 16  0  0]
+ [ 0  0  0  2  0  0  0  0  0 16  0  0  0  0  3  0  0 48  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0  2  0  3 16  0  0  0  0  0]
+ [ 3  0  3 16  0  0  0  0  0  0  0  0  2  2  0 64  0 16 16  0]
+ [ 0  0  0  3  0  0 16 16  0  0  0 48  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0 16 16  0  0  0  0  0  0  0  0 16  0]
+ [ 0  0  0  0  0  0  0  0  0  0 16  0  3  0  0  0  0 48  0 16]
+ [ 0  0  0  0  0  0 16  0  2  0 16  2  0 16  0  0  0  0  0  0]
+ [ 0  0  0  0  2  0  0  0  0  0  0  0  0  2  0  0  0  0  0  0]
+ [ 0  0  0  2  0  0  0  0  2  0 64  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  2  0  0  0  0  0  2  3  0  0  0  2  0  2  0  0]
+ [ 0  3  0  0  0  0 48 16  0  0  0 64  2  0  0  3  0  2 16  2]
+ [ 0  0  0  0  0  0  0  0  0 16  0  0  0  3  0  0  0  0  0  0]
+ [ 0 16  0  0  0  0  0  0 16  0  0  0  0  0  0  0 16  3  0  0]
+ [ 0  0  0  3 48  0  3  0 16  0  0 16  0  0  0  0 16  0  2  0]
+ [ 0  0  0  0  0  0  0  0  0  0  2  0  0 16  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0 16  0  0  0  0  0  0  0  0 16  0]
+ [ 0  0  0  0  2  0  0  0  0  0  0  0  0  0  0 16  0 16  0  0]
+ [ 0  3  2  0 16  0  0  2 48  0  0 16 16  0 16  0 16  0  3  0]]
+~~~~
+
+Fuer den Algorithmus, an welchem ich derzeit arbeite, wirklich interessant sind
+alleine die Eintraege mit einem bestimmten Wert:
+
+~~~~ python
+  print ("FLAG_DEFECTIVE\n{}".format(flags&2))
+~~~~
+
+Ist wirklich so einfach! Das Array, welches am anderen Ende herauskommt enthaelt
+nur noch an Stellen einen Eintrag, wo die Pixelmaske den Wert "2" enthaelt.
+
+~~~~
+[[0 0 0 0 0 2 0 0 0 2 0 0 0 0 0 0 0 0 0 0]
+ [0 2 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0]
+ [0 2 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0]
+ [0 0 2 0 2 2 0 2 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0]
+ [0 0 0 0 0 0 0 0 2 0 0 0 2 0 0 0 0 0 0 0]
+ [0 0 2 0 0 0 0 0 0 2 0 0 2 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 2 0]
+ [0 0 2 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0]
+ [2 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 2 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 2 0 0 0 0]
+ [2 0 0 0 2 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0]]
+~~~~
+
+Worueber ich mir jetzt noch einmal ein klein wenig Gedanken machen muss ist, wie
+die Flags in sinnvoller Weise aufbereiten kann; duerfte wohl ein Scatter-Plot werden...
+
+**:::**
+
+### Keine angenehme Vorstellung ###
+
+
+_Wed, 04. March 2015 -- 19:12_
+
+Das Meeting hier bei [SRON](http://www.sron.nl) ist vorbei. Ob das, was da allerdings
+bei herausgekommen ist unbedingt zur Freude reicht, darf doch sehr bezweifelt werden.
+Warum ich so kritisch bin, laesst sich ganz schnell erklaeren: der wesentliche Vorschlag,
+welcher heute bei dem Treffen als Loesungsansatz vorgeschlagen wurde, ist, dass unser
+Software-Team unter die Kontrolle des KNMI gestellt und dort angesiedelt werden soll.
+Dass ich dies [aus persoenlicher Erfahrung](/blog/2013/11/2013-11-28_20-08.html) fuer
+alles andere positiv halte duerfte wohl nicht ueberraschen; zu schlecht sind einfach
+die Eindruecke, welche von meinem Aufenthalt von vor eineinhalb Jahren uebrig geblieben
+sind. Konkret bedeutet dies: ich sollte mir wirklich gut ueberlegen, wie ich mit
+dieser Situation umzugehen gedenke.
+
+Dass unter diesen Umstaenden die Dinge hier in unserem kleinen Team die Emotionen
+recht blank liegen duerfte wohl wenig verwundern. Da noch nicht alles in Stein gemeisselt
+ist, haben wir vorhin mal die Koepfe zusammengesteckt, um zu formulieren wo jeder
+einzelne von uns die Probleme mit den Plaenen sieht. Ob die daraus nun entstehende
+Antwort wirklich Einfluss auf das weitere Geschehen hat muss sich noch zeigen; recht
+deutlich aber ist, dass niemand so recht begeistert ist von dem, was da kommen soll
+-- niemand hier ist erst seit gestern im Geschaeft, so dass es durchaus deutliche
+Meinungen gibt, welche nun entsprechend kanalisiert werden muessen. Ich fuer meinen
+Teil werde da auch mal sehr in mich gehen muessen, wo ich persoenlich die Grenze
+ziehen sollte und an welcher Stelle ich (unter Beistand von [S\[&\]T](http://www.stcorp.nl)
+natuerlich) zu einem Plan-B uebergehen wuerde.
+
+**:::**
+
+### Und wieder Details ###
+
+
+_Wed, 04. March 2015 -- 10:23_
+
+... und da dachte ich, dass ich einfach ein wenig in Ruhe die diversen Dinge abarbeiten
+kann, welche ich auf meiner Liste hatte. Waehrend in einem anderem Raum die Besprechung
+mit den anderen Projektteilnehmern stattfindet (womit ich gluecklicherweise nicht viel
+zutun habe), versuche ich die Zeit zu nutzen, damit nicht nur die Quicklooks netter
+werden, sondern auch die Algorithmen selber bessere Resultate liefern. Unterbrochen
+wird dies allerdings immer wieder dadurch, dass Paul hier und da immer wieder ein
+paar Kleinigkeiten einfallen, welche sich noch an den Quicklooks -- welche ja auch
+fuer das Reporting der CKD Algorithmen verwendet werden -- noch verbessern lassen.
+Ist natuerlich nicht ganz so geschickt, weil dies ein wenig aus dem Gedankenfluss
+herausreisst -- ich hoffe aber mal, dass ich die wichtigsten Punkte davon nun abgedeckt
+habe, so dass ich mich wieder meinen urspruenglichen Vorhaben zuwenden kann...
+
+**:::**
+
 ### Matplotlib: rasterized colorbar ###
 
 
@@ -544,136 +680,3 @@ noch ueber eine entsprechende Eingaengigkeit verfuegen. Als Start habe ich mich 
 fuer eines der Alben von _Derek Sherinian_ entschieden ("Mythology"); das passt super
 von der ganzen Atmosphaere her ins hilft zweifelsfrei dabei schnell und unter Druck
 zu arbeiten.
-
-**:::**
-
-### Zu Fuss zum Institut ###
-
-
-_Thu, 19. February 2015 -- 09:39_
-
-Aufgrund der Kombination von a) bis tief in die Nacht arbeiten und b) dem wunderschoen
-sonnigen Wetter, habe ich mich gestern Morgen kurzerhand entschlossen den Weg zum
-Institut zu Fuss anzutreten. War ja nicht das erste Mal, dass ich die Strecke gelaufen
-bin, so dass ich eine ungefaehre Idee davon habe, wieviel Zeit ich dafuer noetig habe.
-
-![GPS track](/blog/2015/02/2015-02-19_GPS_track.png)
-
-Da es ferner schon eine ganze Weile her ist, dass ich hier in Utrecht mit Kamera
-unterwegs war, habe ich mir (endlich mal wieder) Kamera und Stativ mitgenommen, um
-ein paar Eindruecke festzuhalten. Gut, ich hatte nicht unbedingt vor eine groessere
-Exkursion zu starten (da ich ja schliesslich ins Institut musste), aber immerhin
-bin ich doch mit ein paar Aufnahmen zurueckgekommen.
-
-**:::**
-
-### Hilfe beim Testen ###
-
-
-_Wed, 18. February 2015 -- 01:59_
-
-Ich finde es doch immer wieder gut, wenn sich Mittel und Wege finden lassen, mit
-welchen sich Code und Prozeduren strukturell sauber und einfach halten lassen. Dazu
-gehoert (zumindest fuer meinen Geschmack) z.B. dass sich wiederholende Taetigkeiten
-oder Informationsmuster nicht notwendigerweise ausgeschrieben werden muessen, sondern
-sich durchaus in abstrahierter Form notieren lassen.
-
-Zuletzt habe ich dieses Prinzip beim Aufsetzen der Tests fuer die Kalibrationspipeline
-anwenden koennen: eine lange Liste an Konfigurationsdateien anzulegen und einzuchecken
-lasse ich diese von einem einfachen ``Makefile`` bei Bedarf erzeugen -- mit der
-dazugehoerenden Option alles Ueberfluessige anschliessend wieder wegwerfen zu koennen.
-So kommt es dann auch dass ich statt
-
-~~~~
-    l01b_processing/
-    |-- Makefile
-    |-- occ.pro_stop_after_artcorr.ocal
-    |-- occ.pro_stop_after_dccorr.ocal
-    |-- occ.pro_stop_after_dn2v.ocal
-    |-- occ.pro_stop_after_dpqf.ocal
-    |-- occ.pro_stop_after_et.ocal
-    |-- occ.pro_stop_after_mem.ocal
-    |-- occ.pro_stop_after_nonlin.ocal
-    |-- occ.pro_stop_after_offset.ocal
-    |-- occ.pro_stop_after_v2c.ocal
-    |-- occ.pro_stop_before_artcorr.ocal
-    |-- occ.pro_stop_before_dccorr.ocal
-    |-- occ.pro_stop_before_dn2v.ocal
-    |-- occ.pro_stop_before_dpqf.ocal
-    |-- occ.pro_stop_before_et.ocal
-    |-- occ.pro_stop_before_mem.ocal
-    |-- occ.pro_stop_before_nonlin.ocal
-    |-- occ.pro_stop_before_offset.ocal
-    |-- occ.pro_stop_before_v2c.ocal
-    |-- swir_fm.pro_stop_after_artcorr.ocal
-    |-- swir_fm.pro_stop_after_dccorr.ocal
-    |-- swir_fm.pro_stop_after_dn2v.ocal
-    |-- swir_fm.pro_stop_after_dpqf.ocal
-    |-- swir_fm.pro_stop_after_et.ocal
-    |-- swir_fm.pro_stop_after_mem.ocal
-    |-- swir_fm.pro_stop_after_nonlin.ocal
-    |-- swir_fm.pro_stop_after_offset.ocal
-    |-- swir_fm.pro_stop_after_v2c.ocal
-    |-- swir_fm.pro_stop_before_artcorr.ocal
-    |-- swir_fm.pro_stop_before_dccorr.ocal
-    |-- swir_fm.pro_stop_before_dn2v.ocal
-    |-- swir_fm.pro_stop_before_dpqf.ocal
-    |-- swir_fm.pro_stop_before_et.ocal
-    |-- swir_fm.pro_stop_before_mem.ocal
-    |-- swir_fm.pro_stop_before_nonlin.ocal
-    |-- swir_fm.pro_stop_before_offset.ocal
-    |-- swir_fm.pro_stop_before_v2c.ocal
-    |-- template.occ.txt
-    `-- template.swir_fm.txt
-~~~~
-
-nur einen Bruchteil an wirklich notwendigen Informationen vorhalten muss (und selbst
-hier koennte ich wahrscheinlich, mit ein wenig Nachdenken, noch einmal reduzieren):
-
-~~~~
-    l01b_processing/
-    |-- Makefile
-    |-- template.occ.txt
-    `-- template.swir_fm.txt
-~~~~
-
-Dieser Trend setzt sich intern natuerlich fort: statt hier alles auszuschreiben,
-habe ich probiert die Dinge auch hier moeglichst so zu halten, dass es ein leichtes
-waere eine neue Gruppe an Tests hinzuzufuegen.
-
-~~~~ make
-    VAR_STEPS=dpqf dn2v mem artcorr offset v2c nonlin dccorr et
-    VAR_CAMPAIGNS=swir_fm occ
-
-    # Test all correction/processing steps
-    all:
-            for varCampaign in $(VAR_CAMPAIGNS) ; do \
-                    make all."$$varCampaign" ; \
-            done
-
-    # Test all correction/processing steps on SWIR FM data
-    all.swir_fm:
-            for varStep in $(VAR_STEPS) ; do \
-                    make swir_fm."$$varStep" ; \
-            done
-~~~~
-
-Ein wenig aergerlich an der ganzen Sache ich natuerlich, dass ich ueberhaupt ein
-``Makefile`` schreibe -- normalerweise wuerde ich diese Aufgabe [CMake](http://www.cmake.org)
-ueberlassen, weil dies naemlich auch in recht einfacher Weise erlauben wuerde
-Gruppen von Build-Targets zu definieren. In begrenzter Weise ist dies natuerlich
-auch in der nun verwendeten Loesung der Fall, aber fuer meinen Geschmack wuerde
-hier noch ein weiterer Schritt hinzugehoeren (naemlich die vorherige Konfiguration).
-
-**:::**
-
-### Hektisch ###
-
-
-_Mon, 16. February 2015 -- 18:19_
-
-Na, das war doch alles ein wenig hektisch am heutigen Tage. Nicht dass ich da
-grundsaetzlich ein Problem mit haette, aber wie sich im Zuge von diversen Diskussionen
-herausstellte, war zumindest ein Teil der gestarteten Aktionen nicht so 100%ig sinnvoll.
-Also mache ich mich erst einmal auf den Weg zurueck und schaue dann lieber heute Abend
-noch einmal nach...

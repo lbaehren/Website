@@ -1,0 +1,93 @@
+---
+title: "Test Code"
+in_menu: false
+author: "Lars Baehren"
+author_url: http://www.larsbaehren.de
+date: 2015-03-05T18:05:40.00Z
+created_at: 2015-03-05T17:32:53.00Z
+sort_info: 1425573173
+---
+
+## {title:} ##
+
+_Thu, 05. March 2015 -- 18:05_
+
+Ich finde es immer wieder ganz gut, wenn ich erst einmal Dinge unter sehr kontrollierten
+Bedingungen test kann, ehe ich mich daran mache neue Funktionalitaet im Produktionscode
+zu implementieren. Aus diesem Grunde schaue ich mir gerade einmal an, wie ich denn
+die Behandlung der Qualitaet-Werte (welche letzten Endes fuer jedes Pixel des Detektors
+zugewiesen werden) am besten aufsetzen kann: sind lediglich ein paar Zeilen Python-Code
+mit welchen ich sowohl ein Array mit Daten und die zugehoerigen Flags generieren kann.
+
+~~~~ python
+  data  = np.random.rand (20, 20)
+  flags = np.zeros (data.shape, dtype=np.int)
+
+  # Assign the flags
+  flags[data<0.01] += 1
+  flags[data<0.10] += 2
+  flags[data>0.90] += 16
+  flags[data>0.99] += 32
+~~~~
+
+Was mich hier natuerlich am meisten interessiert sind die Flags; mit den obigen Kriterien
+fuer die Selektion bekomme ich ein Array, welches folgendermassen aussieht:
+
+~~~~
+[[16  0  0  0  3  0  0  0  0 16  0 16 16 16  0  0 16  0  0  2]
+ [ 0  0  0  0  0  0 16  0  0  0  3  0  0  2  0  0  0 16  0  0]
+ [ 0  0  0  2  0  0  0  0  0 16  0  0  0  0  3  0  0 48  0  0]
+ [ 0  0  0  0  0  0  0  0  0  0  0  2  0  3 16  0  0  0  0  0]
+ [ 3  0  3 16  0  0  0  0  0  0  0  0  2  2  0 64  0 16 16  0]
+ [ 0  0  0  3  0  0 16 16  0  0  0 48  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0 16 16  0  0  0  0  0  0  0  0 16  0]
+ [ 0  0  0  0  0  0  0  0  0  0 16  0  3  0  0  0  0 48  0 16]
+ [ 0  0  0  0  0  0 16  0  2  0 16  2  0 16  0  0  0  0  0  0]
+ [ 0  0  0  0  2  0  0  0  0  0  0  0  0  2  0  0  0  0  0  0]
+ [ 0  0  0  2  0  0  0  0  2  0 64  0  0  0  0  0  0  0  0  0]
+ [ 0  0  0  0  2  0  0  0  0  0  2  3  0  0  0  2  0  2  0  0]
+ [ 0  3  0  0  0  0 48 16  0  0  0 64  2  0  0  3  0  2 16  2]
+ [ 0  0  0  0  0  0  0  0  0 16  0  0  0  3  0  0  0  0  0  0]
+ [ 0 16  0  0  0  0  0  0 16  0  0  0  0  0  0  0 16  3  0  0]
+ [ 0  0  0  3 48  0  3  0 16  0  0 16  0  0  0  0 16  0  2  0]
+ [ 0  0  0  0  0  0  0  0  0  0  2  0  0 16  0  0  0  0  0  0]
+ [ 0  0  0  0  0  0  0  0  0 16  0  0  0  0  0  0  0  0 16  0]
+ [ 0  0  0  0  2  0  0  0  0  0  0  0  0  0  0 16  0 16  0  0]
+ [ 0  3  2  0 16  0  0  2 48  0  0 16 16  0 16  0 16  0  3  0]]
+~~~~
+
+Fuer den Algorithmus, an welchem ich derzeit arbeite, wirklich interessant sind
+alleine die Eintraege mit einem bestimmten Wert:
+
+~~~~ python
+  print ("FLAG_DEFECTIVE\n{}".format(flags&2))
+~~~~
+
+Ist wirklich so einfach! Das Array, welches am anderen Ende herauskommt enthaelt
+nur noch an Stellen einen Eintrag, wo die Pixelmaske den Wert "2" enthaelt.
+
+~~~~
+[[0 0 0 0 0 2 0 0 0 2 0 0 0 0 0 0 0 0 0 0]
+ [0 2 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0]
+ [0 2 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0]
+ [0 0 2 0 2 2 0 2 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0]
+ [0 0 0 0 0 0 0 0 2 0 0 0 2 0 0 0 0 0 0 0]
+ [0 0 2 0 0 0 0 0 0 2 0 0 2 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 2 0]
+ [0 0 2 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0]
+ [2 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 2 0 0]
+ [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 2 0 0 0 0]
+ [2 0 0 0 2 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0]]
+~~~~
+
+Worueber ich mir jetzt noch einmal ein klein wenig Gedanken machen muss ist, wie
+die Flags in sinnvoller Weise aufbereiten kann; duerfte wohl ein Scatter-Plot werden...

@@ -1,0 +1,99 @@
+---
+title: "HFS+ and git"
+in_menu: false
+author: "Lars Baehren"
+author_url: http://www.larsbaehren.de
+date: 2015-03-04T16:28:57.00Z
+created_at: 2015-03-04T16:28:57.00Z
+sort_info: 1425482937
+---
+
+## {title:} ##
+
+_Wed, 04. March 2015 -- 16:28_
+
+Almost sounds like yet another argument to me that it is time to really think about
+moving away from Apple's [OS X](https://www.apple.com/osx) for good. Rebasing my
+local working copy of the calibration framework code I was confronted with the fact
+that someone else accidentally had checked in an almost identical version of an
+already existing file... different only in the using lower-case letters in one,
+upper-case letters in the other version of the file:
+
+~~~~
+-rw-r--r-- 1 larsb larsb 142385 Mar  4 14:45 test_uv.txt
+-rw-r--r-- 1 larsb larsb 116322 Feb 22 18:00 test_UV.txt
+~~~~
+
+Spending a good deal of my time on UNIX/Linux-type systems using file-systems such as
+[ext3](http://en.wikipedia.org/wiki/Ext3) and [ext4](http://en.wikipedia.org/wiki/Ext4)
+one quite easily can forget about the fact that there are other widely used
+[file-systems](http://en.wikipedia.org/wiki/Comparison_of_file_systems) out there, which
+do not support _case sensitivity_. One of those falling into the latter group unfortunately
+is [HFS+](http://en.wikipedia.org/wiki/HFS_Plus) which used along with Apple's OS X.
+
+ - [The case of the OS X filesystem HFS+ and git](http://dertompson.com/2012/08/18/the-case-of-the-os-x-filesystem-hfs-and-git)
+ - [Git](http://git-scm.com)
+
+> HFS+ (the Mac filesystem) is usually configured to be case insensitive but case
+> preserving. This means that the file system will consider foo and FoO to be the
+> same, but when you create a new file it will remember which letters where
+> capitalized and which were not.
+
+A quite common recipe to work around the case where a file simply has been renamed
+-- say e.g. from ``File`` to ``file`` -- is to go through an intermediate step:
+
+~~~~
+git mv File file.tmp
+git mv file.tmp file
+~~~~
+
+If however -- and this is the case I am dealing with here -- both ``File`` and ``file``
+are to co-exist HFS+ (and with that Mac OS) is unable to handle this. Waiting for
+a resolution now...
+
+ 1. Initial status
+
+    ~~~~
+    Changes not staged for commit:
+      (use "git add <file>..." to update what will be committed)
+      (use "git checkout -- <file>..." to discard changes in working directory)
+
+    	modified:   geo/calc/geo_los_run4/test_UV.txt
+    ~~~~
+
+ 2. Remove modified file:
+
+    ~~~~
+    git rm -f geo/calc/geo_los_run4/test_UV.txt
+    ~~~~
+
+    With this the working copy status becomes:
+
+    ~~~~
+    Changes to be committed:
+      (use "git reset HEAD <file>..." to unstage)
+
+     	deleted:    geo/calc/geo_los_run4/test_UV.txt
+
+    Changes not staged for commit:
+      (use "git add/rm <file>..." to update what will be committed)
+      (use "git checkout -- <file>..." to discard changes in working directory)
+
+    	deleted:    geo/calc/geo_los_run4/test_uv.txt
+    ~~~~
+
+ 3. Remove the second of the two files:
+
+    ~~~~
+    git rm -f geo/calc/geo_los_run4/test_uv.txt
+    ~~~~
+
+    With this the working copy status becomes:
+
+    ~~~~
+    Changes to be committed:
+      (use "git reset HEAD <file>..." to unstage)
+
+    	deleted:    geo/calc/geo_los_run4/test_UV.txt
+    	deleted:    geo/calc/geo_los_run4/test_uv.txt
+    ~~~~
