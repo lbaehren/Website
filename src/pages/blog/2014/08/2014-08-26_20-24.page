@@ -34,41 +34,41 @@ patience to work out the lower-left point of a subplot and its size. Starting of
 the size of each plot ...
 
 ~~~~ python
-dim_scatter    = [500, 500]
-dim_hist       = [200, dim_scatter[1]]
-dim_lightcurve = [dim_scatter[0]+self.fill[0]+dim_hist[0], 200]
-dim_projection = [(dim_scatter[0]+dim_hist[0]-self.fill[0])/3.0,
-                  (dim_scatter[0]+dim_hist[0]-self.fill[0])/3.0
-                 ]
-dim_figure     = [2.0*self.fill[0]+dim_lightcurve[0],
-                  4.0*self.fill[1]+dim_lightcurve[1]+dim_scatter[1]+dim_projection[1]
-                 ]
+  dim_scatter    = [500, 500]
+  dim_hist       = [200, dim_scatter[1]]
+  dim_lightcurve = [dim_scatter[0]+self.fill[0]+dim_hist[0], 200]
+  dim_projection = [(dim_scatter[0]+dim_hist[0]-self.fill[0])/3.0,
+                    (dim_scatter[0]+dim_hist[0]-self.fill[0])/3.0
+                   ]
+  dim_figure     = [2.0*self.fill[0]+dim_lightcurve[0],
+                    4.0*self.fill[1]+dim_lightcurve[1]+dim_scatter[1]+dim_projection[1]
+                   ]
 ~~~~
 
 ... we are able to define the bounding boxes for each of the sub-plots:
 
 ~~~~ python
-rect = {}
-# Total size of the figure
-rect["figure"] = dim_figure
-# Bounding box for the lightcurve of the laser intensity
-rect["lightcurve"] = [self.fill[1]/dim_figure[1],
-                      self.fill[0]/dim_figure[0],
-                      (dim_lightcurve[1])/dim_figure[1],
-                      (dim_lightcurve[0])/dim_figure[0]
-                     ]
-# Bounding box for the 3D scatter plot of the laser track
-rect["scatter"] = [(2*self.fill[1]+dim_lightcurve[1])/dim_figure[1],
-                   self.fill[0]/dim_figure[0],
-                   (dim_scatter[1])/dim_figure[1],
-                   (dim_scatter[0])/dim_figure[0]
-                  ]
-# Bounding box for the histogram of the laser intensities
-rect["hist"] = [(2*self.fill[0]+dim_lightcurve[1])/dim_figure[1],
-                (2*self.fill[1]+dim_scatter[0])/dim_figure[0],
-                (dim_hist[1])/dim_figure[1],
-                (dim_hist[0])/dim_figure[0]
-               ]
+  rect = {}
+  # Total size of the figure
+  rect["figure"] = dim_figure
+  # Bounding box for the lightcurve of the laser intensity
+  rect["lightcurve"] = [self.fill[1]/dim_figure[1],
+                        self.fill[0]/dim_figure[0],
+                        (dim_lightcurve[1])/dim_figure[1],
+                        (dim_lightcurve[0])/dim_figure[0]
+                       ]
+  # Bounding box for the 3D scatter plot of the laser track
+  rect["scatter"] = [(2*self.fill[1]+dim_lightcurve[1])/dim_figure[1],
+                     self.fill[0]/dim_figure[0],
+                     (dim_scatter[1])/dim_figure[1],
+                     (dim_scatter[0])/dim_figure[0]
+                    ]
+  # Bounding box for the histogram of the laser intensities
+  rect["hist"] = [(2*self.fill[0]+dim_lightcurve[1])/dim_figure[1],
+                  (2*self.fill[1]+dim_scatter[0])/dim_figure[0],
+                  (dim_hist[1])/dim_figure[1],
+                  (dim_hist[0])/dim_figure[0]
+                 ]
 ~~~~
 
 Once all the bounding boxes are defined (and are returned in the form of a dictionary),
@@ -76,12 +76,12 @@ we finally can go about creating the plots themselves: first we define the figur
 [axes](http://matplotlib.org/api/axes_api.html) ...
 
 ~~~~ python
-axes = self.axes_scanning_quicklook (data.shape)
-fig  = plt.figure(figsize=(axes["figure"][1]/100, axes["figure"][0]/100))
+  axes = self.axes_scanning_quicklook (data.shape)
+  fig  = plt.figure(figsize=(axes["figure"][1]/100, axes["figure"][0]/100))
 
-axis_scatter    = plt.axes(axes["scatter"], projection='3d')
-axis_lightcurve = plt.axes(axes["lightcurve"])
-axis_hist       = plt.axes(axes["hist"])
+  axis_scatter    = plt.axes(axes["scatter"], projection='3d')
+  axis_lightcurve = plt.axes(axes["lightcurve"])
+  axis_hist       = plt.axes(axes["hist"])
 ~~~~
 
 ... and then have [Matplotlib](http://matplotlib.org) display the data as
@@ -89,17 +89,17 @@ axis_hist       = plt.axes(axes["hist"])
 or otherwise:
 
 ~~~~ python
-axis_scatter.scatter(xs=track["x"], ys=track["y"], zs=track["z"],
-                     zdir='z',
-                     cmap=cm.cubehelix)
-axis_scatter.set_xlabel("\nColumn / Wavelength")
-axis_scatter.set_ylabel("\n\nRow / Swath")
-axis_scatter.text2D(0.9, 0.95,
-                    "Track points ({})".format(track["method"]),
-                    verticalalignment='bottom',
-                    horizontalalignment='right',
-                    transform=axis_scatter.transAxes,
-                    color='green')
+  axis_scatter.scatter(xs=track["x"], ys=track["y"], zs=track["z"],
+                       zdir='z',
+                       cmap=cm.cubehelix)
+  axis_scatter.set_xlabel("\nColumn / Wavelength")
+  axis_scatter.set_ylabel("\n\nRow / Swath")
+  axis_scatter.text2D(0.9, 0.95,
+                      "Track points ({})".format(track["method"]),
+                      verticalalignment='bottom',
+                      horizontalalignment='right',
+                      transform=axis_scatter.transAxes,
+                      color='green')
 ~~~~
 
 All of this put together finally yields the overview page as envisioned in the

@@ -42,7 +42,7 @@ a project. Each ``CMakeLists.txt`` consists of one or more commands. Each comman
 has the form
 
 ~~~~ cmake
-COMMAND (args...)
+  COMMAND (args...)
 ~~~~
 
 where ``COMMAND`` is the name of the command, and args is a white-space separated
@@ -65,7 +65,7 @@ to a wider audience.
 The collection of CMake find scripts can be obtained from Github via:
 
 ~~~~ bash
-git clone git://github.com/lbaehren/CMakeModules.git
+  git clone git://github.com/lbaehren/CMakeModules.git
 ~~~~
 
 For more information visit the [project's repository page](https://github.com/lbaehren/CMakeModules).

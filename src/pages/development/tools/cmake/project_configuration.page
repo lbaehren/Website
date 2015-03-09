@@ -15,22 +15,22 @@ has the form `COMMAND (args…)` where `COMMAND` is the name of the command, and
 pre-defined commands, but if you need to, you can add your own commands.
 
 ~~~~
-MyProject                     ...  Root directory of project
-|-- CMakeLists.txt
-|-- doc
-`-- src
+  MyProject                     ...  Root directory of project
+  |-- CMakeLists.txt
+  |-- doc
+  `-- src
 ~~~~
 
 The first entries in the `CMakeLists.txt` file will be used for book-keeping and
 basic version checking:
 
 ~~~~ cmake
-## Name of the project handled by CMake
-project (Bibliotheque)
+  ## Name of the project handled by CMake
+  project (Bibliotheque)
 
-## Minimum required version of CMake to configure the project
-cmake_minimum_required (VERSION 2.8)
+  ## Minimum required version of CMake to configure the project
+  cmake_minimum_required (VERSION 2.8)
 
-## Enforced CMake policy
-cmake_policy (VERSION 2.8)
+  ## Enforced CMake policy
+  cmake_policy (VERSION 2.8)
 ~~~~
