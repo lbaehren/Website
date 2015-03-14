@@ -8,6 +8,209 @@ author: "Lars Baehren"
 
 **:::**
 
+### Film- und Serienhighlights... zu spaet ###
+
+
+_Sat, 14. March 2015 -- 15:35_
+
+Dass ein Paket von [Amazon](http://www.amazon.de) hier eintrifft ist ja nichts neues
+-- dass ich aber einen Brief bei mir auf dem heimischen Schreibtisch vorfinde gehoert
+schon eher zu den Dingen, welche neu sind. Da es schon eine Weile her ist, dass ich
+etwas bestellt habe, war ich mir nicht so ganz sicher, was ich da erwarten konnte
+-- wie es sich aber heraustellte handelte es sich um eine Werbung fuer
+[Prime Instant-Video](http://www.amazon.de/Prime-Instant-Video). Nicht dass mich
+dies sonderlich interessiert haette, aber als ich mir dann noch die beigelegte Karte
+angeschaut habe, war vollkommen klar, wie wenig dieses Angebot zu mir passt:
+
+![Angebot Amazon](/blog/2015/03/2015-03-15_Amazon.png)
+
+Bei den Spielfilmen habe ich mir garnicht erst mal mehr die Muehe gemacht da nachzuschauen,
+denn schon die Liste der Serien war erkennbar veraltet:
+
+ - [Heroes](http://www.imdb.com/title/tt0813715) (2006-2010) ist schon seit ein paar
+   Jahren abgelaufen, so dass ich mich doch ein wenig wundere was daran so neu sein
+   soll.
+ - [Eureka](http://www.imdb.com/title/tt0796264) (2006-2012) war ebenfalls eine ganze
+   Weile lang ein recht heisser Tip -- habe ich mich auch hier an dieser Stelle das
+   eine oder andere Mal drueber ausgelassen -- aber ein Serien-Start ab dem ersten
+   April scheint mir doch hinter dem Gang der Dinge hinterher zu hinken.
+ - [Downton Abbey](http://www.imdb.com/title/tt1606375) befindet sich -- zumindest
+   wie ich dies mittels einer kurzen Recherche auf [IMDb](http://www.imdb.com)
+   nachvollziehen konnte -- noch am wenigsten im Hintertreffen: Season 4 ist Anfang
+   2014 gelaufen, so dass wir da auf einen zeitlichen Versatz von "nur" einem Jahr
+   kommen.
+
+Dass man bestimmte Filme oder Serien durchaus schon mal in die heimische Sammlung
+aufnehmen will kan ich durchaus verstehen -- was allerdings das Mitverfolgen betrifft,
+ist ein zeitlicher Verzug von einem Jahr (oder gar mehr) eine Ewigkeit und alles
+andere als dafuer geeignet um mir ein solches Angebot schmackhaft zu machen.
+
+**:::**
+
+### Unterwegs arbeiten ###
+
+
+_Thu, 12. March 2015 -- 19:43_
+
+Und da bin ich mal wieder unterwegs fleissig. Nachdem beim Aufenthalt im Institut
+heute eher kurz war -- was unter anderem daran liegt, dass ich morgens noch recht
+lange an den Processing-Tests gewerkelt habe, ehe ich losgezogen bin -- habe ich
+nun die Fahrt dafuer verwende an den Dingen zu arbeiten, welche mir von Rutger und
+Paul angetragen wurden. Da ich ohne Internetverbindung nicht weiter die diversen
+Tasks testen kann, habe ich mich stattdessen (wieder einmal) um die Quicklooks
+gekuemmert; wie sich herausstellt gibt es dort immer wieder Dinge, welche sich verbessern
+lassen, wenn man diese auf die unterschiedlichsten Arten an Daten loslaesst.
+
+~~~~
+* commit 7e445200bdacc4dd717d2fd4057fc354ba8c62d8
+| Author: Lars Baehren <lbaehren@gmail.com>
+| Date:   Thu Mar 12 19:18:54 2015 +0100
+|
+|     Fix PyLint warnings
+|
+* commit b7ef3b6ac901e176ee69b6ae3ef5e21dab1793fa
+| Author: Lars Baehren <lbaehren@gmail.com>
+| Date:   Thu Mar 12 19:13:32 2015 +0100
+|
+|     Split method for formatting of annotation from PlotGenerator class, to make
+|     it more generally available. Use that method to format the various info items
+|     added as text to the histogram on the detector plot page.
+|
+* commit 96acbb5446efefe965cd3c764c1bc95dba4c389c
+| Author: Lars Baehren <lbaehren@gmail.com>
+| Date:   Thu Mar 12 18:48:58 2015 +0100
+|
+|     Address a few of the PyLint warnings.
+|
+* commit 2ec13617bdb39eb7fd92704ab599f92fd699ad3d
+| Author: Lars Baehren <lbaehren@gmail.com>
+| Date:   Thu Mar 12 18:12:28 2015 +0100
+|
+|     Make plotting of the line marking the saturation threshold conditional: a
+|     threshold needs to be defined and there actually need to be pixels with a
+|     value larger than that threshold.
+~~~~
+
+Wie schon mehrfach erwaehnt verwendet meine Entwicklungsumgebung [Git](http://git-scm.com)
+als Backbone was die Versionskontrolle betrifft. Fuer mich bedeutet dies, dass ich nicht bis
+zuhause warten muss, um Aenderungen einzuchecken und zu sichern; bei einer Loesung, welche
+von einem zentralen Server abhaengig ist (wie z.B. _Subversion_) waere dies definitiv
+nicht moeglich. So richtig interessant wird dies sicherlich noch einmal, wenn unser
+Entwicklerteam demnaechst mit dem des KNMI zusammengelegt werden soll -- da wird es
+garantiert wieder Diskussionen in Bezug auf die verwendeten Tools geben (einen Streit,
+welchen ich vor gut eineinhalb Jahren ja schon einmal ausgeochten habe).
+
+**:::**
+
+### Chaos in Utrecht ###
+
+
+_Thu, 12. March 2015 -- 18:07_
+
+Das hatten wir doch erst vor einer kurzen Weile: aufgrund eines Feuerwehr-Warnung
+rund um Schipol ist der komplett von dort kommende und dorthin fahrende Zugverkehr
+auf Eis gelegt. Da dies eine von Utrecht aus sehr regelmaessig befahrene Strecke ist,
+duerfte es wohl nicht verwundern, dass da recht schnell groessere Menschenmengen
+zusammenkommen, welche recht ungeduldig nach Reisemoeglichkeiten suchen. Bei einem
+solchen Durcheinander ist es sicherlich nicht verwunderlich, dass auch der ICE 129
+nach Frankfurt mit unter die Raeder gekommen ist: statt (wie ueblich) von Gleis 15
+war (fast) ueberall angeschlagen, dass der Zug heute von Gleis 5 abfahren sollte.
+Gerade dies fuehrte allerdings zu einem noch groesseren Chaos, weil dies auch das
+Gleis war, auf welchem der aus Frankfurt kommende ICE einfuhr. Da die Anzeige zu
+dem Zeitpunkt aber den ICE nach Amsterdam auflistete, gab es beim Ein- und Aussteigen
+einiges an Durcheinander ("Nein, dieser ICE faehrt nicht nach Frankfurt, sondern nach
+Amsterdam"); der "richtige ICE" kam dann aber auch eine Viertelstunde spaeter...
+
+**:::**
+
+### Night of the Prog Festival X ###
+
+
+_Thu, 12. March 2015 -- 09:55_
+
+Sieht ganz danach aus. als waere es vor allen Dingen Julia, die derzeit mit recht
+grossem Erfolg Konzerte und Festivals ausfindig macht, welche den Besuch lohnen.
+Nach dem [Alison Moyet](http://alisonmoyet.com) Konzert vorletztes Wochenende, war
+es das [Night of the Prog Festival](http://www.wiventertainment.com/projekte/21-notp.html),
+welches nun in den Fokus der Aufmerksamkeit geraten ist.
+
+![Festval Poster](/blog/2015/03/Night_of_the_prog_2015.jpg)
+
+Vollkommen unbekannt ist mir das Festival nicht: als vor ein paar Jahren
+[Gazpacho](http://gazpachoworld.com) auf der Loreley eingekehrt sind, war schon einmal
+ein Abstecher dorthin angedacht -- ist leider seinerzeit nichts daraus geworden (immerhin
+haben wir die Herren dann aber bei einem Auftritt in Koeln live erleben koennen).
+Gleiches gilt fuer die Auftritte von [Dream Theater](http://www.dreamtheater.net)
+-- auf der ersten Tour mit Mike Mangini -- und [Eloy](http://www.eloy-legacy.com).
+Wenn ich mir allerdings das Lineup fuer diesen Sommer anschaue, dann gibt es wirklich
+keine Ausrede mehr, nicht alle Hebel in Bewegung zu setzen, um bei dem Festival dabei
+zu sein.
+
+| Time    | Artist                             |
+|---------|------------------------------------|
+| __Friday, 17.07.2015__                      ||
+| 13.30 h | [LUNA KISS](http://lunakiss.co.uk) |
+| 15.00 h | TBA                                |
+| 16.30 h | [BEARDFISH](http://www.beardfishband.com) |
+| 18.20 h | ANNEKE VAN GIERSBERGEN PRESENTS [THE GENTLE STORM](http://en.wikipedia.org/wiki/The_Gentle_Storm) |
+| 20.30 h | [PENDRAGON](http://www.pendragon.mu) |
+| 23.00 h | [CAMEL](http://www.camelproductions.com) |
+|---------|------------------------------------|
+| __Saturday 18. Juli 2015__                  ||
+|---------|------------------------------------|
+| 12.00 h | [IO EARTH](http://www.ioearth.com) |
+| 13.30 h | TBA                                |
+| 15.00 h | [SYLVAN](http://www.sylvan.de/home) |
+| 16.45 h | [LAZULI](http://www.lazuli-music.com) |
+| 18.30 h | [THE ENID](http://www.theenid.co.uk) |
+| 20.30 h | [RIVERSIDE](http://riversideband.pl/en) |
+| 23.00 h | [FISH](http://fish-thecompany.com) - 30th Anniversary Misplaced Childhood Show |
+|---------|-------------------|
+| __Sunday 19. Juli 2015__   ||
+|---------|-------------------|
+| 12.00 h | [SPECIAL PROVIDENCE](http://specialprovidence.eu) |
+| 13.30 h | [KAIPA DACAPO](https://twitter.com/kaipadacapo) |
+| 15.00 h | [HAKEN](http://www.hakenmusic.com) |
+| 16.30 h | [STEVE ROTHERY BAND](http://www.steverothery.com) |
+| 18.15 h | [PAIN OF SALVATION](http://painofsalvation.com) |
+| 20.30 h | [STEVE HACKETT](http://www.hackettsongs.com) plays for the last time "GENESIS REVISITED" |
+
+Auch wenn ich die meisten Bands/Kuenstler kenne (oder zumindest schon einmal von gehoert
+habe), gibt es doch noch ein paar Namen, welche mir bisher unbekannt waren. Also
+habe ich mich daran gemacht da ein wenig zu recherchieren, so dass ich eine Idee davon
+habe, was mich (bzw. uns) da im Juli erwartet. Ein netter Nebeneffekt hiervon ist
+-- wie sich wahrscheinlich schon denken laesst -- dass ich im Zuge dessen auch ueber
+so manche andere Bands stolpere, deren Existenz mir bisher verborgen geblieben sind.
+In die letztere Kategorie gehoeren zum Beispiel [Martigan](http://www.martigan.com)
+-- eine Truppe aus deutschen Landen -- von welchen ich ziemlich begeistert bin,
+mit auch weil sie eine Musik abliefern, wie ich sie vor allen Dingen von britischen
+[neo-prog](http://en.wikipedia.org/wiki/Neo-progressive_rock) Gruppen kenne. Definitiv
+ein Tip zum anspielen.
+
+**:::**
+
+### Geschaeftig ###
+
+
+_Thu, 12. March 2015 -- 09:21_
+
+Mit einer der Gruende, weshalb sich hier mittlerweile die angefangenen (und noch nicht
+fertig geschriebenen) Blog-Eintraege stapeln, ist die Tatsache, dass es im TROPOMI-Land
+recht hektisch zugeht. Nicht dass es vorher eine laue Sache gewesen waere, aber seit
+dem Audit in der vergangene Woche hat der Druck bei den kommenden Deadlines alles
+so gut wie moeglich abzuliefern noch einmal deutlich zugenommen. Es ist sicherlich
+der gesammten Atmosphaere bei [SRON](http://www.sron.nl) geschuldet, dass es immer
+noch recht ertraeglich ist; statt in die grosse Panik zu verfallen und den Leuten
+permanent im Nacken zu sitzen, liegt der Schwerpunkt vor allen Dingen darauf die Arbeit
+so zu organisieren, dass alle Beteiligten mit moeglichst wenigen Steinen im Weg
+produktiv sein koennen. Ob dies dauerhaft so bleiben wird, kann ich noch nicht sagen:
+seitens des Projektes sind einige Aenderungen angestossen worden, von denen noch nicht
+klar ist, wie sich diese auf das tagtaegliche Geschaeft auswirken. Ich versuche es
+einfach mal positiv anzugehen und derweil (wie dies eigentlich immer der Fall ist)
+gute Arbeit abzuliefern -- mehr kann man wohl nicht erwarten.
+
+**:::**
+
 ### Photoshoot mit Hund ###
 
 
@@ -538,150 +741,3 @@ All of the above of course merely would be an exercise in cosmetics if it was no
 for the fact that this now has enabled me to quicker isolate error, stage changes
 and increase the number of tests which successfully pass the nightly build. Way to
 go...
-
-**:::**
-
-### Commits while on the road ###
-
-
-_Mon, 23. February 2015 -- 19:27_
-
-Hard to over-estimate the impact the migration to [Git](http://www.git-scm.com) as
-(local) version control management tool has had. Given the fact that I am spending
-a considerable fraction of my time traveling on the train, still being able to commit
-source code changes (and revert changes if need be) is quite essential.
-
-~~~~
-* commit a66c29b1942dd826daa43d4dbb922ce2ec0e45c9
-| Author: Lars Baehren <lbaehren@gmail.com>
-| Date:   Mon Feb 23 09:15:28 2015 +0100
-|
-|     Quicklooks need to be generated per CKD index and measurement campaign
-|
-* commit 0aa9ee8fac43dbafbf2a5890e890639ab12de03c
-| Author: Lars Baehren <lbaehren@gmail.com>
-| Date:   Mon Feb 23 08:58:05 2015 +0100
-|
-|     More generic configuration setup, allowing to test processing using different
-|     CKD index files/sets
-~~~~
-
-The above would not be possible if I would be doing a straight SVN checkout of the
-original [Subversion](https://subversion.apache.org) repository -- using ``git-svn``
-provides me with the additional comfort layer and security layer, which enables me
-to continue working while traveling.
-
-Probably the only (considerably small) draw-back of this setup is, that it works
-quite well, making it harder to find some motivation and use case for testing other
-tools, such as e.g. [Fossil](http://fossil-scm.org/index.html/doc/trunk/www/index.wiki)
-which every since listening to the [episode on FLOSS-Weekly](http://twit.tv/show/floss-weekly/320)
-is high up on my list of software tools to play with).
-
-**:::**
-
-### Error at path_handler.copy ###
-
-
-_Mon, 23. February 2015 -- 08:08_
-
-Also, das war es wohl doch nicht einfach nur ein Fehler meinerseits, sondern wirklich
-etwas, das in [Webgen](http://webgen.gettalong.org) selber korregiert werden muss:
-
-> Thanks for the [link to the sources](https://github.com/lbaehren/Website) and the
-> explanation on how to reproduce the bug! I think that I have located the problem and
-> I'm working on a fix.
-
-Ich habe ja schon seit einer Weile das Problem gehabt, dass ich bei Aenderungen an
-einem der Index-Seiten nicht umhin konnte, als die komplette Website neu zu bauen.
-Ursache (zumindest was den Fehler betrifft, mit welchem ich konfrontiert wurde) hierfuer
-war, dass sich ``Webgen`` beim Verwenden des Cache aufgehangen hat und mir daher nichts
-anderes uebrig blieb, als letzteren zu loeschen und alles von Anfang an zu bauen -- nicht
-unbedingt das, wofuer man sich eigentlich einen Cache anlegt.
-
-~~~~
-INFO  Generating website...
-INFO  [update] </blog/>
-INFO  [update] </blog/2003.html>
-webgen encountered a problem:
-  Error at path_handler.copy while creating a node from </blog/2003.en.html#blog-entries--2003>:
-    Can't have two nodes with same alcn: /blog/2003.en.html#blog-entries--2003
-make[2]: *** [CMakeFiles/Website] Error 1
-make[1]: *** [CMakeFiles/Website.dir/all] Error 2
-make: *** [all] Error 2
-~~~~
-
-Am Wochenende war es mir dann endlich zu bloed, so dass ich mein Problem an die
-[Webgen User-Group](https://groups.google.com/forum/#!forum/webgen-users) geschickt
-habe. Dauerte nicht lange, bis sich Thomas Leitner (der Hauptentwickler von ``Webgen``)
-zurueckmeldete; nach ein klein wenig hin und her kam dann die Bestaetigung, dass ich da
-allen Anschein nach einen Fehler im ``path_handler`` gefunden habe. Nun bin ich mal
-gespannt, wie es mit der Korrektur aussieht -- wenn sich dies beheben laesst wuerde
-dies in meinem Fall gleich zu zwei entscheidenden Verbesserungen fuehren:
-
- 1. Die Generierung der Website duerfte sich halbieren.
- 2. Bei der Synchronisation mit dem Server, auf welchem die Seiten gehostet sind,
-    muesste ich nur noch die Seiten uebertragen, an welchen ich wirklich etwas
-    geaendert habe.
-
-Dass ich unter diesen Umstaenden sehr gespannt auf das Update bin, duerfte wohl nicht
-verwundern...
-
-**:::**
-
-### Ohne Anzeige ###
-
-
-_Mon, 23. February 2015 -- 07:09_
-
-Einer der Schwaechen des ICE ist eindeutig, dass ein Teil der internen Funktionalitaet
-sehr stark vom Funktionieren der Bordelektronik abhaengt. So kommt es immer wieder
-vor, dass die Anzeigen fuer die Sitzplatz-Reservierungen komplett fehlen (wo auch
-immer die genaue Ursache hierfuer zu suchen waere). Was dies aber bedeutet ist, dass
-man sich so ziemlich an jedem Platz niederlassen kann und doch die gleiche Chance
-hat von irgendeinen Bahnhof an von dort wieder aufgescheucht zu werden. Na gut, mache
-ich mir jetzt einfach mal nicht zu sehr den Kopf drum, denn a) habe ich da nicht
-sonderlich viel Einfluss drauf und b) muss ich mich ja schliesslich irgendwo hinsetzen.
-
-**:::**
-
-### Supporting TROPOMI OCAL (4) ###
-
-
-_Sat, 21. February 2015 -- 22:32_
-
-It is busy times: not only have we been spending the past three weeks on supervising
-the laser measurements (at least those of the team on site), but also back at the
-institute trying to process and inspect the incoming data to assess the suitability
-of the calibration measurements. With all of this going on there of course is a
-considerable risk to -- amongst all the day to day madness -- lose out of sight
-the longer-term planning (e.g. when it comes to important project milestone). One
-of the attempts to keep an eye on the planning has been to revitalize efforts to
-use our [Redmine](http://www.redmine.org) issue tracker. Simply filling in tasks
-of course is not enough: issues kept around in the system should be assigned correctly
-and updated as work progresses.
-
-![TROPOMI Redmine issue tracker](/blog/2015/02/2015-02-21_Redmine_TROPOMI.png)
-
-To get things going on the part of the on-ground calibration, I set aside half an hour
-this afternoon, to start entering and organising tasks related to the next upcoming
-milestones; not complete yet, but once going through the remainder of the calibration
-validation plan (CValP) we should get a reasonable picture of what tasks need to be
-worked on and how we are doing in terms of deliverables.
-
-Back to coding now...
-
-**:::**
-
-### Und weg ist das Wochenende ###
-
-
-_Fri, 20. February 2015 -- 17:07_
-
-Das hatte ich mir alles ein wenig anders vorgestellt: statt einem ruhigen Wochenende
-hier in Bonn habe ich nun gleich zwei Dinge mit hoher Prioriaet am Laufen.
-
- 1. Vorbereitung fuer ein Telefon-Interview am Mittwoch mit [ESO](http://www.eso.org).
- 2. Vorbereitung fuer ein fuer ein Audit bei [SRON](http://www.sron.nl).
-
-Muss ich mal schaue, wie ich die Dinge gut unter einen Hut kriege... und gleichzeitig
-noch Gelegenheit zum Schlafen finde.

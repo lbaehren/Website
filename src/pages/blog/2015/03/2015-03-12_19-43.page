@@ -1,0 +1,61 @@
+---
+title: "Unterwegs arbeiten"
+in_menu: false
+author: "Lars Baehren"
+author_url: http://www.larsbaehren.de
+date: 2015-03-12T19:43:21.00Z
+created_at: 2015-03-12T19:14:45.00Z
+sort_info: 1426184085
+---
+
+## {title:} ##
+
+_Thu, 12. March 2015 -- 19:43_
+
+Und da bin ich mal wieder unterwegs fleissig. Nachdem beim Aufenthalt im Institut
+heute eher kurz war -- was unter anderem daran liegt, dass ich morgens noch recht
+lange an den Processing-Tests gewerkelt habe, ehe ich losgezogen bin -- habe ich
+nun die Fahrt dafuer verwende an den Dingen zu arbeiten, welche mir von Rutger und
+Paul angetragen wurden. Da ich ohne Internetverbindung nicht weiter die diversen
+Tasks testen kann, habe ich mich stattdessen (wieder einmal) um die Quicklooks
+gekuemmert; wie sich herausstellt gibt es dort immer wieder Dinge, welche sich verbessern
+lassen, wenn man diese auf die unterschiedlichsten Arten an Daten loslaesst.
+
+~~~~
+* commit 7e445200bdacc4dd717d2fd4057fc354ba8c62d8
+| Author: Lars Baehren <lbaehren@gmail.com>
+| Date:   Thu Mar 12 19:18:54 2015 +0100
+|
+|     Fix PyLint warnings
+|
+* commit b7ef3b6ac901e176ee69b6ae3ef5e21dab1793fa
+| Author: Lars Baehren <lbaehren@gmail.com>
+| Date:   Thu Mar 12 19:13:32 2015 +0100
+|
+|     Split method for formatting of annotation from PlotGenerator class, to make
+|     it more generally available. Use that method to format the various info items
+|     added as text to the histogram on the detector plot page.
+|
+* commit 96acbb5446efefe965cd3c764c1bc95dba4c389c
+| Author: Lars Baehren <lbaehren@gmail.com>
+| Date:   Thu Mar 12 18:48:58 2015 +0100
+|
+|     Address a few of the PyLint warnings.
+|
+* commit 2ec13617bdb39eb7fd92704ab599f92fd699ad3d
+| Author: Lars Baehren <lbaehren@gmail.com>
+| Date:   Thu Mar 12 18:12:28 2015 +0100
+|
+|     Make plotting of the line marking the saturation threshold conditional: a
+|     threshold needs to be defined and there actually need to be pixels with a
+|     value larger than that threshold.
+~~~~
+
+Wie schon mehrfach erwaehnt verwendet meine Entwicklungsumgebung [Git](http://git-scm.com)
+als Backbone was die Versionskontrolle betrifft. Fuer mich bedeutet dies, dass ich nicht bis
+zuhause warten muss, um Aenderungen einzuchecken und zu sichern; bei einer Loesung, welche
+von einem zentralen Server abhaengig ist (wie z.B. _Subversion_) waere dies definitiv
+nicht moeglich. So richtig interessant wird dies sicherlich noch einmal, wenn unser
+Entwicklerteam demnaechst mit dem des KNMI zusammengelegt werden soll -- da wird es
+garantiert wieder Diskussionen in Bezug auf die verwendeten Tools geben (einen Streit,
+welchen ich vor gut eineinhalb Jahren ja schon einmal ausgeochten habe).

@@ -1,0 +1,41 @@
+---
+title: "When make isn't make..."
+in_menu: false
+author: "Lars Baehren"
+author_url: http://www.larsbaehren.de
+date: 2015-03-13T17:38:36.00Z
+created_at: 2015-03-13T17:38:36.00Z
+sort_info: 1426264716
+---
+
+## {title:} ##
+
+_Fri, 13. March 2015 -- 17:38_
+
+~~~~
+|-- high-gain_140K
+|   |-- 2013_05_24T08_45_56_noise-LED-ON-T140.ocal
+|   |-- 2013_06_03T15_44_21_noise-T140-LEDoff.ocal
+|   |-- 2013_06_03T17_49_22_noise-T140-LED3,4.ocal
+|   |-- 2013_06_03T18_51_57_noise-T140-LED7,94.ocal
+|   |-- ckdindex.xml
+|   |-- quicklook.2013_05_24T08_45_56_noise-LED-ON-T140.ocal
+|   |-- report.closed-loop.ocal
+|   `-- report.ocal
+~~~~
+
+~~~~
+  |-- high-gain_140K
+  |   |-- 2013_05_24T08_45_56_noise-LED-ON-T140.ocal
+  |   |-- 2013_06_03T15_44_21_noise-T140-LEDoff.ocal
+  |   |-- 2013_06_03T17_49_22_noise-T140-LED3,4.ocal
+  |   |-- 2013_06_03T18_51_57_noise-T140-LED7,94.ocal
+  |   |-- ckdindex.xml
+  |   |-- report.closed-loop.ocal
+  |   `-- report.ocal
+~~~~
+
+~~~~ makefile
+  cat template.swir_fm.txt  | sed s/"<<<DATASET>>>"/"noise-T140-LEDoff_FM_2013-06-03T154421.h5"/ | sed s/"<<<PROCEDURE>>>"/"$$l01b_procedure_after"/ | sed s/"<<<TASK>>>"/"high-gain_140K"/ > high-gain_140K/2013_06_03T15_44_21_noise-T140-LEDoff.ocal
+  cat ../template.quicklook.txt | \
+~~~~
