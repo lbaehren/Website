@@ -1,0 +1,61 @@
+---
+title: "Arbeitsstunden mitschreiben"
+in_menu: false
+author: "Lars Baehren"
+author_url: http://www.larsbaehren.de
+date: 2015-04-09T19:47:17.00Z
+created_at: 2015-04-09T19:28:25.00Z
+sort_info: 1428600505
+---
+
+## {title:} ##
+
+_Thu, 09. April 2015 -- 19:47_
+
+Sieht ganz so aus, als wuerde meine -- urspruenglich als ein schneller Hack gedachte
+-- Loesung zum Nachhalten meiner Arbeitszeiten immer nuetzlicher. Da ich wiederholt
+Probleme damit hatte meine Arbeitszeiten in vernuenfiger Weise zu rekonstruieren,
+damit ich diese auf den entsprechenden Wegen einreichen kann, habe ich mich fuer die
+Vorgehensweise von Erik entschieden, naemlich die Arbeitstunden aufzuschreiben. Wenn
+ich weiss wann ich wieviel gearbeitet habe, dann ist es auch noch so sonderlich schwer
+die entsprechenden Zahlen einzutragen. In gewohnter Weise habe ich mich dazu entschieden
+dies nicht einfach in Form von Zetteln anzugehen, sondern direkt in elektronischer
+Form vorzuhalten.
+
+Fuer die grundlegenden Features brauch es nicht viel: einfach ein Anruf von `date`
+und schon hat man den zeitlichen Marker, welchen man in eine entsprechende Log-Datei
+webschreiben kann:
+
+~~~~ bash
+    date +'%s    %a, %Y-%m-%dT%H:%M:%S.00Z'
+~~~~
+
+Um Start- und Endpunkt einer Arbeitsphase auseinanderhalten zu koennen habe ich noch
+schnell zwei Marker hinzugefuegt... schon habe ein simples Log:
+
+~~~~
+1427448854    Fri, 2015-03-27T10:34:14.00Z    START
+1427466617    Fri, 2015-03-27T15:30:17.00Z    END
+1427475212    Fri, 2015-03-27T17:53:32.00Z    START
+1427482312    Fri, 2015-03-27T19:51:52.00Z    END
+~~~~
+
+Das fuer sich genommen ist schon ganz nett, weil ich so in den letzten drei Wochen
+endlich einmal vernuenftig nachhalten konnte, wieviel ich wirklich gearbeitet habe
+-- um dies einmal direkt zu sagen: durch die Mai Deadline haeuft sich da derzeit
+einiges an Stunden an. Bisher allerdings ein wenig unpraktisch war es bisher
+allerdings noch, wirklich die Arbeitsdauer auszurechnen. Da ich aber bisher schon alles
+in recht gut maschinenlesbarer Weise abgespeichert habe, war es eigentlich nur
+konsequent bei dem Stoppen der Zeituhr gleich mal die Arbeitsdauer ausrechnen zu
+lassen. Waren lediglich ein paar Zeilen Bash-Script, schon kriege ich die folgende
+handliche Information angezeigt:
+
+~~~~
+- Start time .... : 1427475212
+- Stop time ..... : 1427482312
+- Time difference : 7100 sec  =>  1:58 h
+~~~~
+
+Was jetzt eigentlich noch fehlt ist eine Moeglichkeit die ueber einen Tag verteilten
+Arbeitsphasen zusammenzurechnen -- mal schauen, ob ich mich da auch noch einmal
+dran setzte, aber mit den jetzigen Aenderungen ist mir schon einmal sehr geholfen.

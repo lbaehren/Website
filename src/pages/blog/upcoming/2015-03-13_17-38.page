@@ -36,6 +36,9 @@ _Fri, 13. March 2015 -- 17:38_
 ~~~~
 
 ~~~~ makefile
-  cat template.swir_fm.txt  | sed s/"<<<DATASET>>>"/"noise-T140-LEDoff_FM_2013-06-03T154421.h5"/ | sed s/"<<<PROCEDURE>>>"/"$$l01b_procedure_after"/ | sed s/"<<<TASK>>>"/"high-gain_140K"/ > high-gain_140K/2013_06_03T15_44_21_noise-T140-LEDoff.ocal
+  cat template.swir_fm.txt  | \
+    sed s/"<<<DATASET>>>"/"noise-T140-LEDoff_FM_2013-06-03T154421.h5"/ | \
+    sed s/"<<<PROCEDURE>>>"/"$$l01b_procedure_after"/ | \
+    sed s/"<<<TASK>>>"/"high-gain_140K"/ > high-gain_140K/2013_06_03T15_44_21_noise-T140-LEDoff.ocal
   cat ../template.quicklook.txt | \
 ~~~~

@@ -8,6 +8,93 @@ author: "Lars Baehren"
 
 **:::**
 
+### Beinahe verschlafen ###
+
+
+_Mon, 20. April 2015 -- 06:36_
+
+Das war knapp -- da haette ich doch eben fast verpasst hier in Koeln auszusteigen!
+Waehrend ich mir fuer die Ankunft in Utrecht einen Alarm eingerichtet habe --
+schliesslich waere es nicht so hilfreich, wenn ich einen Umweg ueber Amsterdam
+fahre -- habe ich bisher immer darauf vertraut, dass ich fuer den eher kurzen Trip
+von Bonn nach Koeln keine Erinnerung brauche. Sieht allerdings ganz danach aus, dass
+sich dies nicht ohne weiteres voraussetzen laesst... vor allen Dingen wenn ich recht
+wenig Schlaf bekommen habe und dementsprechend muede bin. Gluecklicherweise habe ich
+es gerade noch geschafft aufzuspringen und die Tuere zu oeffnen (diese hatten sich
+naemlich schon wieder geschlossen) -- bei einem unfreiwilligen Abstecher nach Koeln-Deutz
+waere es wirklich schwer mit der planmaessigen Weiterreise geworden.
+
+**:::**
+
+### Arbeitsstunden mitschreiben ###
+
+
+_Thu, 09. April 2015 -- 19:47_
+
+Sieht ganz so aus, als wuerde meine -- urspruenglich als ein schneller Hack gedachte
+-- Loesung zum Nachhalten meiner Arbeitszeiten immer nuetzlicher. Da ich wiederholt
+Probleme damit hatte meine Arbeitszeiten in vernuenfiger Weise zu rekonstruieren,
+damit ich diese auf den entsprechenden Wegen einreichen kann, habe ich mich fuer die
+Vorgehensweise von Erik entschieden, naemlich die Arbeitstunden aufzuschreiben. Wenn
+ich weiss wann ich wieviel gearbeitet habe, dann ist es auch noch so sonderlich schwer
+die entsprechenden Zahlen einzutragen. In gewohnter Weise habe ich mich dazu entschieden
+dies nicht einfach in Form von Zetteln anzugehen, sondern direkt in elektronischer
+Form vorzuhalten.
+
+Fuer die grundlegenden Features brauch es nicht viel: einfach ein Anruf von `date`
+und schon hat man den zeitlichen Marker, welchen man in eine entsprechende Log-Datei
+webschreiben kann:
+
+~~~~ bash
+    date +'%s    %a, %Y-%m-%dT%H:%M:%S.00Z'
+~~~~
+
+Um Start- und Endpunkt einer Arbeitsphase auseinanderhalten zu koennen habe ich noch
+schnell zwei Marker hinzugefuegt... schon habe ein simples Log:
+
+~~~~
+1427448854    Fri, 2015-03-27T10:34:14.00Z    START
+1427466617    Fri, 2015-03-27T15:30:17.00Z    END
+1427475212    Fri, 2015-03-27T17:53:32.00Z    START
+1427482312    Fri, 2015-03-27T19:51:52.00Z    END
+~~~~
+
+Das fuer sich genommen ist schon ganz nett, weil ich so in den letzten drei Wochen
+endlich einmal vernuenftig nachhalten konnte, wieviel ich wirklich gearbeitet habe
+-- um dies einmal direkt zu sagen: durch die Mai Deadline haeuft sich da derzeit
+einiges an Stunden an. Bisher allerdings ein wenig unpraktisch war es bisher
+allerdings noch, wirklich die Arbeitsdauer auszurechnen. Da ich aber bisher schon alles
+in recht gut maschinenlesbarer Weise abgespeichert habe, war es eigentlich nur
+konsequent bei dem Stoppen der Zeituhr gleich mal die Arbeitsdauer ausrechnen zu
+lassen. Waren lediglich ein paar Zeilen Bash-Script, schon kriege ich die folgende
+handliche Information angezeigt:
+
+~~~~
+- Start time .... : 1427475212
+- Stop time ..... : 1427482312
+- Time difference : 7100 sec  =>  1:58 h
+~~~~
+
+Was jetzt eigentlich noch fehlt ist eine Moeglichkeit die ueber einen Tag verteilten
+Arbeitsphasen zusammenzurechnen -- mal schauen, ob ich mich da auch noch einmal
+dran setzte, aber mit den jetzigen Aenderungen ist mir schon einmal sehr geholfen.
+
+**:::**
+
+### In Gedanken ###
+
+
+_Wed, 25. March 2015 -- 11:20_
+
+Also da merkt man doch, wie sehr ich in den Gedanken bin: als ich gerade eben zum
+Institut aufgebrochen bin -- erste Etappe ist wie ueblich von der Haustuere zur
+Bushaltestelle -- ist mir erst unterwegs aufgefallen, dass ich meine Brille garnicht
+dabei hatte. So richtige realisiert habe ich dies eigentlich in dem Moment, als ich
+versuchen wollte diese zurecht zu schieben... nur um dann festzustellen, dass mir
+da etwas auf der Nase fehlte.
+
+**:::**
+
 ### Film- und Serienhighlights... zu spaet ###
 
 
@@ -462,282 +549,3 @@ faellig, wenn es wirklich klappen sollte. Vielleicht muss ich auch die mit Notiz
 beschriebenen Paper, User Manuals, etc. beiseite legen und einfach nur ruhig bleiben
 -- bringt ja nichts, wenn ich vor lauter Begeisterung und Aufregung keinen zusammenhaengenden
 Satz von mir geben kann.
-
-**:::**
-
-### Webgen Updates ###
-
-
-_Wed, 25. February 2015 -- 21:50_
-
-[Wie zuletzt berichtet](/blog/2015/02/2015-02-23_08-08.html) hatte ich einige Probleme
-mit [Webgen](http://webgen.gettalong.org), dem Tool welches ich zum erzeugen dieser
-Webseiten verwende. Auf keine Anfrage in der [Webgen User-Group](https://groups.google.com/forum/#!forum/webgen-users)
-hat sich der Lead-Developer des Projektes bei mir zurueckgemeldet und mir -- nachdem
-sich das Problem reproduzieren liess -- bestaetigt dass der Fehler, welcher mir das
-Leben schwer machte, in der Tat im Quellcode sass. Am Montag Abend habe ich mir dann
-die gepatchte Version gezogen und auf meine Seiten losgelassen:
-
-~~~~
-[100%] Rendering website from sources ...
-INFO  Generating website...
-INFO  [update] </blog/>
-INFO  [update] </blog/2015.html>
-INFO  [update] </blog/2015/01/index.html>
-INFO  [update] </blog/2015/02/>
-INFO  [create] </blog/2015/02/2015-02-24_07-59.html>
-INFO  [update] </blog/2015/02/index.html>
-INFO  [update] </blog/2015/index.html>
-INFO  [update] </blog/index.html>
-INFO  [update] </blog/upcoming/>
-INFO  [update] </blog/upcoming/index.html>
-INFO  ... done in 477.85 seconds
-[100%] Built target Website
-~~~~
-
-Ok, es dauerte immer noch eine Weile, bis alles durchgelaufen war, aber enscheidende
-Punkt ist, dass ich nicht zunaecht den kompletten Cache loeschen und alles von
-Anfang an neu generieren musste. Die obige Ausgabe war alles was ich zu sehen bekommen
-habe, nicht seitenweise Log-Messages.
-
-[Thomas Leitner](https://github.com/gettalong) schien recht beeindruckt zu sein von
-meiner Webseite -- leider habe ich die Nachricht nicht mehr, dass es sich wahrscheinlich
-um die seitenmaessig groesste Installation dergleichen handeln wuerde -- und dem Problem
-die Laufzeit betreffend, so dass ein wenig spaeter noch eine weitere Nachricht eintraf,
-in welcher ich den Tip bekam eine kleine Aenderung an dem Template fuer die generierten
-Seiten vorzunehmen. Dem Rat bin ich gerne gefolgt -- als ich dann _Webgen_ wieder
-angeworfen habe, musste die Website komplett neu gebaut werden (weil schliesslich
-das zugrunde liegende Template veraendert wurde)... aber wie sich an der dem Timer
-erkennen laesst, ging dies sogar schneller als die zuvorige Teil-Generierung.
-
-~~~~
-[100%] Rendering website from sources ...
-INFO  Generating website...
-INFO  [update] </blog/>
-INFO  [update] </blog/2003.html>
-INFO  [update] </blog/2003/2003-11/2003-11-03_20-47.html>
-INFO  [update] </blog/2003/2003-11/2003-11-03_20-54.html>
-INFO  [update] </blog/2003/2003-11/2003-11-03_20-57.html>
-
-...
-
-INFO  [update] </writing/book_reviews/moondial.html>
-INFO  [update] </writing/book_reviews/red_rabbit.html>
-INFO  [update] </writing/book_reviews/the_divine_secrets_of_the_ya-ya-sisterhood.html>
-INFO  [update] </writing/book_reviews/the_last_year_of_being_married.html>
-INFO  [update] </writing/book_reviews/the_undutchables.html>
-INFO  [update] </writing/index.html>
-INFO  ... done in 256.40 seconds
-[100%] Built target Website
-~~~~
-
-Mit dieser Aussicht vor Augen, habe ich also den ersten Test noch einmal wiederholt:
-die aktuellen Index-Seiten neu generieren und dann die Website neu bauen...
-
-~~~~
-[100%] Rendering website from sources ...
-INFO  Generating website...
-INFO  [update] </blog/>
-INFO  [update] </blog/2015.html>
-INFO  [update] </blog/2015/01/index.html>
-INFO  [update] </blog/2015/02/index.html>
-INFO  [update] </blog/2015/index.html>
-INFO  [update] </blog/index.html>
-INFO  [update] </blog/upcoming/2015-02-24_08-18.html>
-INFO  [update] </blog/upcoming/index.html>
-INFO  ... done in 34.14 seconds
-[100%] Built target Website
-~~~~
-
-Im Vergleich mit dem ersten Run -- nach Behebung des Fehlers mit dem Cache -- haetten
-wir also einen Faktor 10 an Geschwindigkeitsgewinn (und damit waere nicht nicht der
-Zustand beruecksichtigt, welcher vor der Behebung des Fehlers herrschte). Das ist
-natuerlich nicht die einzige Sache von Belang: der "nette Nebeneffekt" davon, dass
-wirklich nur die veraenderten Seiten neu gebaut werden bedeutet auch, dass nur ein
-Bruchteil dessen via `rsync` auf den Server uebertragen werden muss. Der komplette
-Ablauf -- von der Erstellung eines Blog-Eintrages bis zum Erscheinen auf dem Webserver
--- geht nun um Laengen schneller!
-
-**:::**
-
-### Blindflug beenden ###
-
-
-_Tue, 24. February 2015 -- 23:19_
-
-Wenn es eine Sache gibt welche ich nicht leiden kann -- und dies ist umso mehr
-der Fall wenn es um das Testen von Software geht -- wenn ich ueber unvollstaendige
-Informationen verfuege. Woran ich mich immer wieder gestoert habe ist der Umstand,
-dass die Software, welche wir abliefern, in einer Umgebung getestet wird, zu welcher
-wir kaum Zugang haben -- von einer Black-Box unterscheidet sich dies nicht sonderlich
-viel. Vor einer Weile schon habe ich mir daher eine Moeglichkeit zusammengebastelt,
-mit welcher ich zumindest einen Teil dessen generieren und extrahieren kann, was von
-der anderen Seite anscheinend mit dafuer verwendet wird, um unsere Arbeit zu bewerten.
-Da dies aber kein dauerhafter Zustand ist, habe ich mir heute Abend -- nachdem ich
-aus dem Insitut zurueckgekommen bin -- ein wenig Zeit beiseite gestellt, um meine
-[CMake](http://www.cmake.org)-Umgebung zu aktualisieren und fuer einen ersten
-Testrun nach langer Zeit anzuwerfen:
-
-~~~~
-Create new tag: 20150224-2201 - Experimental
-Configure project
-   Each . represents 1024 bytes of output
-    .. Size of output: 1K
-Build project
-   Each symbol represents 1024 bytes of output.
-   '!' represents an error and '*' a warning.
-    ............*!!!!!!!!!!!!!!*.*********......*.....  Size: 50K
-    **.***********....................................  Size: 99K
-     Size of output: 99K
-Error(s) when building project
-   50 or more Compiler errors
-   50 or more Compiler warnings
-Test project /home/larsb/CodeDevelopment/Work/TROPOMI/ocalfw/build
-      Start  1: pylint_check_lib
- 1/61 Test  #1: pylint_check_lib .......................................***Failed   47.66 sec
-      Start  2: pylint_check_algorithms
- 2/61 Test  #2: pylint_check_algorithms ................................***Failed  114.54 sec
-      Start  3: pylint_check_algorithms_swir
- 3/61 Test  #3: pylint_check_algorithms_swir ...........................***Failed   31.49 sec
-      Start  4: pylint_check_utest
- 4/61 Test  #4: pylint_check_utest .....................................***Failed    9.34 sec
-      Start  5: build_documentation
- 5/61 Test  #5: build_documentation ....................................   Passed  111.63 sec
-      Start  6: algorithms.quicklook.plots_quicklook_swir_utest
- 6/61 Test  #6: algorithms.quicklook.plots_quicklook_swir_utest ........   Passed   24.27 sec
-      Start  7: algorithms.radiometry_swir.utils_utest
- 7/61 Test  #7: algorithms.radiometry_swir.utils_utest .................   Passed    0.99 sec
-      Start  8: algorithms.straylight_swir.utils_utest
- 8/61 Test  #8: algorithms.straylight_swir.utils_utest .................   Passed   27.02 sec
-~~~~
-
-Ich bin mal gespannt, was dabei herauskommt; hoechst wahrscheinlich wird mir dieser
-erste Durchgang noch eine Reihe von Stellen aufzeigen, wo ich meine Testumgebung
-anpassen muss, aber immer gibt mir dies dann schon einmal eine unabhaengige Bewertung
-ueber den Gesamtzustand der Software (welche anders leider nicht verfuegbar gemacht
-wird).
-
-**:::**
-
-### Supporting TROPOMI OCAL (5) ###
-
-
-_Tue, 24. February 2015 -- 07:59_
-
-Instead of being able to have some time to relax and take some time off, I have
-been spending a good deal of the past weekend to work on TROPOMI. Pretty much
-everybody body has been called to arms to prepare for a meeting -- originally planned
-at the begin of this week, but now re-scheduled -- in order to make all the
-necessary material available to be used as input. For me this mainly resulted in
-ramping up even more the work on the nightly build and CKD calculations.
-
-Based on what already have been doing so far, this work essentially would split into
-two parts: a) cleanup or create the necessary task task configuration scripts and b)
-get everything to run within the confines of the environment available on the build
-server. Since the latter once still to a certain degree has something of a gray box
-(i.e. luckily enough not being completely black that is), I need to do as much testing
-as possible before-hand. This of course requires a certain flexibility in the way the
-tests are set up, which is why I have been spending a good half of my time setting up
-and fine-tuning wrapper scripts to stage and test components before submitting
-them to the actual nightly build. A side-effect of this effort now (once more)
-has been, that I managed to clean up and condense a lot of the instructions
-found throughout the build scripts:
-
-__a) Initial version__
-
-Strictly speaking this already would be one steps past the
-initial version: already done is some clean-up based on the fact that the tasks per
-calibration step can be controlled from a simple ``Makefile``, which means that the
-master build script only needs to call the appropriate build targets.
-
-~~~~ bash
-    #____________________________________________________________________
-    #                              Detector Pixel Quality Flagging (DPQF)
-
-    cd ${OCALFWDIR}/tasks/trop/ckd/swir/dpqf
-    make dependencies
-    make 2015_01_07T02_13_26_MonB
-    make 2015_01_07T03_10_18_MonB
-    make 2015_01_08T09_26_29_dled_lin_sw
-    make clean
-    cd ${varBasedir}
-
-    #____________________________________________________________________
-    #                                         Dark flux correction (DARK)
-
-    cd ${OCALFWDIR}/tasks/trop/ckd/swir/dark
-    make dependencies
-    make 2014_12_28T05_12_16_Rev4425_DrkDpqf
-    cd ${varBasedir}
-
-    #____________________________________________________________________
-    #                                                   Offset correction
-
-    cd ${OCALFWDIR}/tasks/trop/ckd/swir/offset
-    make dependencies
-    make 2015_01_08T09_26_29_dled_lin_sw
-    make 2015_01_08T13_13_32_wls_lin_go
-    make clean
-    cd ${varBasedir}
-~~~~
-
-__b) Simplification 1__
-
-Given the fact that the collection of actual tests per calibration
-step can change (typically the list should expand, but who knows), it only seems reasonable
-to keep that information in a form that both manual as well as automated testing is
-possible. So in order to unify the overall approach I have been adding a ``nightly_ckd``
-target, which then in turn in what is getting called from the master test script.
-Though one certainly could argue this (at least to some degree) only moves the complexity
-to another level in the processing chain, it considerably modularizes the testing,
-because whatever is called from the master test script (by the build server) can
-previously be tested be individual module -- hence if something would break really
-badly, it would be possible to temporarily disable an individual module while working
-on the resolution.
-
-~~~~ bash
-    #____________________________________________________________________
-    #                              Detector Pixel Quality Flagging (DPQF)
-
-    cd ${OCALFWDIR}/tasks/trop/ckd/swir/dpqf
-    make nightly_ckd
-    cd ${varBasedir}
-
-    #____________________________________________________________________
-    #                                         Dark flux correction (DARK)
-
-    cd ${OCALFWDIR}/tasks/trop/ckd/swir/dark
-    make nightly_ckd
-    cd ${varBasedir}
-
-    #____________________________________________________________________
-    #                                                   Offset correction
-
-    cd ${OCALFWDIR}/tasks/trop/ckd/swir/offset
-    make nightly_ckd
-    cd ${varBasedir}
-~~~~
-
-__c) Simplification 2__
-
-With the above simplifications already put in place the
-follow-up is rather straight forward: there is so much repetition and redundancy
-in the code, that we can do another round of clean-up.
-
-~~~~ bash
-    #____________________________________________________________________
-    #                              Detector Pixel Quality Flagging (DPQF)
-    #                                         Dark flux correction (DARK)
-    #                                                   Offset correction
-
-    for TESTS in dark dpqf offset
-    {
-        cd ${OCALFWDIR}/tasks/trop/ckd/swir/${TESTS}
-        make nightly_ckd
-    }
-~~~~
-
-All of the above of course merely would be an exercise in cosmetics if it was not
-for the fact that this now has enabled me to quicker isolate error, stage changes
-and increase the number of tests which successfully pass the nightly build. Way to
-go...
