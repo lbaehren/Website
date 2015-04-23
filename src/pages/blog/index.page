@@ -8,6 +8,41 @@ author: "Lars Baehren"
 
 **:::**
 
+### Arbeiten unter neuen Randbedingungen ###
+
+
+_Thu, 23. April 2015 -- 19:13_
+
+Es hat nicht lange gebraucht um zu zeigen, wie absurd die Anfang April beschlossenen
+Massnahmen in Bezug auf die tagtaegliche Arbeit doch sind. Statt wirklich etwas an
+der Zusammenarbeit zwischen den beteiligten Partein zu machen, werden nun zusaetzliche
+formale Huerden eingebaut. Angefangen hat es damit, dass der Zugang zu dem Code-Repository
+geschlossen und bis heute nicht wieder -- bis auf eine einzige Kontaktperson --
+geoeffnet wurde. Dass mich dies nicht vollkommen zur Untaetigkeit verdammt hat, ist
+wohl zu einem guten Teil der Tatsache geschuldet, dass ich von Beginn an recht
+konsequent auf den lokalen Einsatz von [Git](http://git-scm.com) gebaut habe; auch
+wenn dann der zentrale [Subversion](https://subversion.apache.org)-Server wegfaellt
+habe ich immer noch Zugriff auf Versionskontrolle und kann sogar meine Aenderungen
+zwischen verschiedenen Rechnern austauschen.
+
+![OCALFW mirror on Github](/blog/2015/04/2015-04-10_Github_OCALFW.png)
+
+Ein klein wenig hat dies sogar einen befreienden Effekt gehabt, weil die nun verwendete
+Konfiguration vielleicht schon eher haette gebrauchen koennen; da es einem Git ja
+wirklich einfach macht Feature-Branches anzulegen (und ueber diese dann auch noch nicht
+fertige Arbeiten auszutauschen), verwende ich nun gleich eine Reihe davon, so dass
+ich auf diese Weise unterschiedliche Teilaufgaben recht gut voneiander entkoppeln
+kann. Auf diese Weise habe ich recht grosse Freiheit darin Code durch die Gegend zu
+schieben, ohne diesen ueber ein zentrales Repository laufen zu lassen (was gerade bei
+unfertigem Code immer so eine Sache ist).
+
+All dies aendert aber nichts an der Tatsache, dass die Randbedinungen als solche
+-- wie sie von extern angetragen und intern ohne groessere Gegenwehr akzeptiert werden
+-- auf Dauer nicht tragbar sind. Ich werde sicherlich nicht von einem Tag auf den
+anderen verschwinden, aber ein Absprung ist definitiv kein Tabu mehr.
+
+**:::**
+
 ### Beinahe verschlafen ###
 
 
@@ -524,28 +559,3 @@ Strecke nichts gibt (zumindest nach dem Schneiden der Baeume am Rand des Weges) 
 irgendeiner Weise Schutz bieten koennte. Da war ich doch recht froh, als ich mich
 unter das Dach der Bushaltestelle retten konnte... nur um dann festzustellen, dass
 meine Tasche mit einer Schicht Hagelkoerner ueberzogen war.
-
-**:::**
-
-### Nervoes ###
-
-
-_Thu, 26. February 2015 -- 18:37_
-
-Also so nervoes war ich weder bei meinem Interview fuer [S\[&\]T](http://www.stcorp.nl)
-noch fuer [SRON](http://www.sron.nl) -- was dem vielleicht ein wenig nahe kommt war
-das Gespraech seinerzeit bei [ASTRON](http://www.astron.nl). Ist aber vielleicht nicht
-so ganz verwunderlich: in beiden Faellen geht es um Astronomie und (als ein Extra)
-Interferometrie. Wo ich mich durch die ganzen [ESO](http://www.eso.org) Dokumente
-durchwuehle -- natuerlich reicht die Zeit nicht um alles zu lesen, was ich lesen moechte
--- gehen einfach ueberall Blinklichter vor dem inneren Auge auf. Es gibt einfach Unmengen
-Punkte, welche mir vertraut vorkommen und welche mein Interesse auf sich ziehen: da
-wuerde ich garnicht einmal so sehr den Unterschied machen was alleine die Software-Seite
-betrifft, sondern auch von der physikalisch-technischen Seite geht hier ein Feuerwerk
-in die Luft. Wenn es nach mir ginge, dann wuerde ich am liebsten schon bei dem ersten
-Interview gleich mit Loesungsansaetzen kommen -- das ist aber vielleicht ein etwas
-uebertriebener Anspruch, denn schliesslich wird da immer noch einiges an Einarbeitung
-faellig, wenn es wirklich klappen sollte. Vielleicht muss ich auch die mit Notizen
-beschriebenen Paper, User Manuals, etc. beiseite legen und einfach nur ruhig bleiben
--- bringt ja nichts, wenn ich vor lauter Begeisterung und Aufregung keinen zusammenhaengenden
-Satz von mir geben kann.

@@ -1,0 +1,41 @@
+---
+title: "Arbeiten unter neuen Randbedingungen"
+in_menu: false
+author: "Lars Baehren"
+author_url: http://www.larsbaehren.de
+date: 2015-04-23T19:13:07.00Z
+created_at: 2015-04-08T17:47:33.00Z
+sort_info: 1428508053
+---
+
+## {title:} ##
+
+_Thu, 23. April 2015 -- 19:13_
+
+Es hat nicht lange gebraucht um zu zeigen, wie absurd die Anfang April beschlossenen
+Massnahmen in Bezug auf die tagtaegliche Arbeit doch sind. Statt wirklich etwas an
+der Zusammenarbeit zwischen den beteiligten Partein zu machen, werden nun zusaetzliche
+formale Huerden eingebaut. Angefangen hat es damit, dass der Zugang zu dem Code-Repository
+geschlossen und bis heute nicht wieder -- bis auf eine einzige Kontaktperson --
+geoeffnet wurde. Dass mich dies nicht vollkommen zur Untaetigkeit verdammt hat, ist
+wohl zu einem guten Teil der Tatsache geschuldet, dass ich von Beginn an recht
+konsequent auf den lokalen Einsatz von [Git](http://git-scm.com) gebaut habe; auch
+wenn dann der zentrale [Subversion](https://subversion.apache.org)-Server wegfaellt
+habe ich immer noch Zugriff auf Versionskontrolle und kann sogar meine Aenderungen
+zwischen verschiedenen Rechnern austauschen.
+
+![OCALFW mirror on Github](/blog/2015/04/2015-04-10_Github_OCALFW.png)
+
+Ein klein wenig hat dies sogar einen befreienden Effekt gehabt, weil die nun verwendete
+Konfiguration vielleicht schon eher haette gebrauchen koennen; da es einem Git ja
+wirklich einfach macht Feature-Branches anzulegen (und ueber diese dann auch noch nicht
+fertige Arbeiten auszutauschen), verwende ich nun gleich eine Reihe davon, so dass
+ich auf diese Weise unterschiedliche Teilaufgaben recht gut voneiander entkoppeln
+kann. Auf diese Weise habe ich recht grosse Freiheit darin Code durch die Gegend zu
+schieben, ohne diesen ueber ein zentrales Repository laufen zu lassen (was gerade bei
+unfertigem Code immer so eine Sache ist).
+
+All dies aendert aber nichts an der Tatsache, dass die Randbedinungen als solche
+-- wie sie von extern angetragen und intern ohne groessere Gegenwehr akzeptiert werden
+-- auf Dauer nicht tragbar sind. Ich werde sicherlich nicht von einem Tag auf den
+anderen verschwinden, aber ein Absprung ist definitiv kein Tabu mehr.
