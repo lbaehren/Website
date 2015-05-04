@@ -8,6 +8,23 @@ author: "Lars Baehren"
 
 **:::**
 
+### Warten in Koeln ###
+
+
+_Mon, 04. May 2015 -- 07:13_
+
+Ein wenig unguenstig ist dies ja schon: gerade heute, wo es noch darum geht die
+letzten Dinge fuer die heute Abend ablaufende Deadline fertigzustellen, sitze ich
+hier in Koeln und warte immer noch auf den ICE. Der angegebene Grund ist eine
+"ausserplanmaessige Geschwindigkeitbeschraenkung", worunter ich mir (wie bei einer
+Reihe von vergleichbar kryptischen Aussagen) nicht sonderlich viel vorstellen kann.
+Zuletzt wurde eine Verspaetung von 35 Minuten angegeben -- mal schauen, was da noch
+draus wird. In jedem Fall bedeutet dies aber, dass ich deutlich spaeter als geplant
+in Utrecht eintreffen werde, so dass sich die noch ausstehenden Arbeiten (und Tests)
+noch eine Weile verzoegern werden. Ziemlich bloedes Timing...
+
+**:::**
+
 ### Endsprint ###
 
 
@@ -519,57 +536,3 @@ fuer das Reporting der CKD Algorithmen verwendet werden -- noch verbessern lasse
 Ist natuerlich nicht ganz so geschickt, weil dies ein wenig aus dem Gedankenfluss
 herausreisst -- ich hoffe aber mal, dass ich die wichtigsten Punkte davon nun abgedeckt
 habe, so dass ich mich wieder meinen urspruenglichen Vorhaben zuwenden kann...
-
-**:::**
-
-### Matplotlib: rasterized colorbar ###
-
-
-_Wed, 04. March 2015 -- 00:37_
-
-One of the pieces of software which is getting quite some beating during the On-ground
-calibration of [TROPOMI](/work/tropomi.html), are the modules for the generation of
-quicklooks. These collections of plots are used in a number of places, most prominently
-of course for the initial inspection of the ongoing calibration measurements, where
-this is kind of a first line of defense against faulty measurements. Other than this
-the plots also play quite a crucial role in the validation of the calibration key
-data (CKD), which are derived from the calibration measurements and later on to be
-used as part of the processing pipeline. With this kept in mind I think it is understandable
-why with an important progress meeting in sight, there has been yet another rush at
-getting a number of details fixed... such as this one:
-
-![Quicklook screenshot](/blog/2015/03/2015-03-03_Matplotlib_colorbar.png)
-
-While most areas with a solid fill -- such as e.g. the histograms -- appear as such
-when printed or displayed on the screen, things look slightly different when turning
-an eye to the [colorbar](http://matplotlib.org/api/colorbar_api.html) associated
-with the image plot. After some online search it turns out that this essentially is
-an issues with the rendering of the PDF - the resolution: use a rasterized colorbar.
-
-> Incidentally, the lines in the pdf are an artifact of most pdf viewers,
-> not a bug in the pdf file.
-
-Given this basic information the remaining question now is: how convince [Matplotlib](http://matplotlib.org)
-to generate a PDF where the colorbar does not show lines at every facet?
-
-
- - Original version: the colorbar is plotted, attached to the axis labeled
-   ``axis_colorbar``, but nothing further is being done.
-
-~~~~ python
-    fig.colorbar (img,
-                  cax=axis_colorbar,
-                  orientation='vertical',
-                  format=formatter)
-~~~~
-
- - Updated version: the return from the ``colorbar()`` method is captured, such that
-   we subsequently can enable rasterization.
-
-~~~~ python
-    cb = fig.colorbar (img,
-                       cax=axis_colorbar,
-                       orientation='vertical',
-                       format=formatter)
-    cb.solids.set_rasterized(True)
-~~~~
