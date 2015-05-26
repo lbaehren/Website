@@ -1,0 +1,27 @@
+---
+title: "Frage der Motivation"
+in_menu: false
+author: "Lars Baehren"
+author_url: http://www.larsbaehren.de
+date: 2015-05-19T09:08:57.00Z
+created_at: 2015-05-19T08:59:24.00Z
+sort_info: 1432018764
+---
+
+## {title:} ##
+
+_Tue, 19. May 2015 -- 09:08_
+
+Es faellt mir mittlerweile recht schwer Eintraege fuer den Blog vorzunehmen, so wie er
+derzeit existiert. Seitdem ich damit begonnen habe an einer neuen Website fuer das
+Atempause Fitness Studio zu arbeiten, fallen mir die Unzulaenglichkeiten meiner eigenen
+Seiten umso mehr auf. Der wesentliche Punkt hierbei ist -- und dies hat mich fuer die
+Atempause bisher die meiste Zeit gekostet -- ein Layout zu verwenden, welches auch noch
+auf kleineren Bildschirmen (seit es nun Handy oder Tablet) noch vernueftig brauchbar
+ist. Ich denke mal, dass dies mit Sicherheit eines der groesseren persoenlichen Vorhaben
+wird, sobald ich mir der ersten offiziellen Release fuer die Atempause fertig bin --
+naemlich die Ueberarbeitung meiner eigenen Seiten. Im Zuge dieser Aenderungen werde ich
+aller Wahrscheinlichkeit dann auch von [Webgen](http://webgen.gettalong.org) nach
+[Jekyll](http://jekyllrb.com) wechseln; den Erfahrungen nach, welche ich in den letzten
+Wochen gesammelt habe, scheint mir dies ein recht logischer Schritt zu sein, auch wenn
+dies zunaechst einmal bedeutet, dass ich Teile der Infrastruktur neu aufsetzen muss.

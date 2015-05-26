@@ -8,6 +8,140 @@ author: "Lars Baehren"
 
 **:::**
 
+### Zu frueh ###
+
+
+_Tue, 26. May 2015 -- 06:16_
+
+Also ich denke mal, dass ich diesmal definitiv viel zu frueh hier in Koeln eingetroffen
+bin. Was die Startzeit betrifft bin ich zwar nicht anders aufgebrochen, als dies auch sonst
+der Fall waere, aber dadurch dass ich am Bonner Hauptbahnhof eine fruehere (weil in Wirklichkeit
+verspaetete) Regionalbahn bekommen habe, bin gut 20 Minuten eher in der Domstadt eingetroffen.
+Ist jetzt noch so wirklich schlimm, denn netterweise sind die Temperaturen recht vertraeglich
+-- ist doch etwas anderes als wenn ich mir hier bei Minustemperaturen den Hintern abfrieren
+muesste. Aber gut, ich nutze die Zeit einfach in der ueblichen Weise, naemlich dass ich weiter
+an den Sachen arbeite, welche ich eh fuer den heutigen Tag noetig habe.
+
+**:::**
+
+### Wieder das Gleiche ###
+
+
+_Thu, 21. May 2015 -- 17:20_
+
+Es hoert irgendwie nicht auf. Dachte ich doch, dass es nach Ablauf der 5. Mai Deadline
+insgesamt ein wenig entspannter wird, so scheine ich mich da wohl getaeuscht zu haben.
+Vorgestern haben wir noch zusammengesessen um die fuer die Wellenlaengenkalibrierung
+notwendigen Arbeitsschritte durchzugehen und zu plannen -- heute Morgen gab es dann
+schon wieder ein kurzfristig anberaumtes Meeting beim KNMI, aus welchem als eines der
+Ergebnisse folgt, dass das Datum fuer die Fertigstellung um mindestens eine Woche nach
+vorne verschoben wurde. In der Praxis heisst dies also, dass bereits am Dienstag eine
+funktionierende Version des Algorithmus fertig sein muss... und dies obwohl die
+zugrundeliegende Vorgehendsweise komplett umgeworfen wurde. Folgerichtig wird es
+alles wieder einmal deutlich enger als dies eigentlich noetig waere, nur weil eine
+einzelne Person wieder einmal die realistischen Vorgehensweisen zum "No-go" erklaert
+hat. Je laenger ich darueber nachdenke, desto mehr werde ich das Gefuehl nicht los,
+dass sowohl Jeanette als auch Evert sich rechtzeitig abgeseilt haben, so dass ihnen
+dieser Tanz erspart bleibt.
+
+**:::**
+
+### Elektrisch ueber das Wasser ###
+
+
+_Tue, 19. May 2015 -- 13:05_
+
+Bin gerade aus [Heise News](http://www.heise.de) auf eine recht interessante
+[Meldung](http://www.heise.de/newsticker/meldung/Erste-elektrische-Autofaehre-geht-in-Norwegen-in-Betrieb-2654232.html)
+aus dem hohen Norden gestossen:
+
+> In Norwegen wurde die weltweit erste elektrische Auto- und Passagierfähre in
+> Betrieb genommen. Sie wurde von Siemens zusammen mit dem Schiffbauer Fjellstrand
+> entwickelt und verkehrt nun über den Sognefjord zwischen Lavik und Oppedal in
+> Norwegen, [teilt Siemens mit](http://www.siemens.com/press/PR2015050200PDDE).
+>
+> Die vollständig elektrische Fähre fährt in jeweils etwa 20 Minuten 34 Mal am
+> Tag die sechs Kilometer über den Fjord. Sie verbraucht pro Strecke etwa 150 kWh.
+> Siemens hat das komplette elektrische Antriebssystem sowie Ladestationen mit
+> Lithium-Ionen-Akkus geliefert, die mit Strom, der aus Wasserkraft gewonnen wird,
+> geladen werden.
+>
+> \[...\]
+>
+> Die 80 Meter lange und 20 Meter breite Fähre wurde von Grund auf neu
+> entwickelt. Sie wird von zwei elektrischen Motoren angetrieben, von denen jeder
+> 450 Kilowatt leistet. Statt dem normalerweise im Schiffbau verwendeten Stahl
+> wurde für den Schiffsrumpf ausschließlich Aluminium verwendet. Dadurch sei das
+> Gewicht im Vergleich zu konventionellen Fähren um die Hälfte reduziert worden.
+
+Die Tatsache, dass der fuer den Antrieb benoetigte Strom aus Wasserkraft
+gewonnen wird, ist  fuer Norwegen mit Sicherheit nicht ganz neu; dies aber dann
+dafuer einzusetzen um eine der Faehren zu betreiben, welche ueber die vielen
+Fjorde unterwegs sind, laesst sich wohl vor allen Dingen als ein Pilotprojekt verstehen.
+Wie Siemens zurecht in der Pressemitteilung anmerkt, ist ein elektrischer Antrieb
+in im Schiffsbau natuerlich keine vollkommene Neuerung: nur statt dies im militaerischen
+Bereich bei U-Booten einzusetzen, ist dies nun eine Vorstoss in den Bereich des Personenverkehrs.
+Bleibt in jedem Fall zu hoffen, dass dies Nachahmer finden wird.
+
+**:::**
+
+### Frage der Motivation ###
+
+
+_Tue, 19. May 2015 -- 09:08_
+
+Es faellt mir mittlerweile recht schwer Eintraege fuer den Blog vorzunehmen, so wie er
+derzeit existiert. Seitdem ich damit begonnen habe an einer neuen Website fuer das
+Atempause Fitness Studio zu arbeiten, fallen mir die Unzulaenglichkeiten meiner eigenen
+Seiten umso mehr auf. Der wesentliche Punkt hierbei ist -- und dies hat mich fuer die
+Atempause bisher die meiste Zeit gekostet -- ein Layout zu verwenden, welches auch noch
+auf kleineren Bildschirmen (seit es nun Handy oder Tablet) noch vernueftig brauchbar
+ist. Ich denke mal, dass dies mit Sicherheit eines der groesseren persoenlichen Vorhaben
+wird, sobald ich mir der ersten offiziellen Release fuer die Atempause fertig bin --
+naemlich die Ueberarbeitung meiner eigenen Seiten. Im Zuge dieser Aenderungen werde ich
+aller Wahrscheinlichkeit dann auch von [Webgen](http://webgen.gettalong.org) nach
+[Jekyll](http://jekyllrb.com) wechseln; den Erfahrungen nach, welche ich in den letzten
+Wochen gesammelt habe, scheint mir dies ein recht logischer Schritt zu sein, auch wenn
+dies zunaechst einmal bedeutet, dass ich Teile der Infrastruktur neu aufsetzen muss.
+
+**:::**
+
+### Grund zum Feiern (?) ###
+
+
+_Tue, 12. May 2015 -- 20:00_
+
+Ich setze da mal bewusst ein Fragezeichen hinter, denn es gibt einfach zu viele Dinge,
+welche mich nicht unbedingt in Feierlaune versetzen...
+
+Am heutigen Morgen gab es eine kleine Zusammenkunft im 'SROND um das offizielle Ende
+der On-ground Calibration (OCAL) Kampagne zu wuerdigen. Seit Weihnachten ist in Luik
+rund um die Uhr gemessen worden -- das sind vier Monate intensiver Messzeit, in welcher
+sowohl dort als auch hier in Utrecht so manches vorgefallen ist. Als jemand, der
+durchaus nicht einfach nur von draussen zugeschaut hat -- man erinnere sich: zwischen
+Weihnachten und Neujahr habe ich durchaus einiges an Support vom heimischen Rechner
+aus geleistet -- fand ich einen Teil der Zusammenfassung doch ein wenig zu positiv
+gemalt. Aber gut, vielleicht ist dies auch ein Teil der Strategie am Ende nicht einen
+zu bitteren Geschmack uebrig zu behalten.
+
+**:::**
+
+### Frueh raus ###
+
+
+_Mon, 11. May 2015 -- 19:17_
+
+So frueh bin ich schon seit einer Weile nicht mehr aus dem Institut raus. Nach
+gezaehlten 8:17 Stunden Arbeitszeit habe ich das Institut verlassen, um mich noch
+vor dem Beginn des Abends anderen Dingen zuzuwenden. Angesichts der momentanen Zustaende
+ist meine Motivation mehr Arbeitsstunden als noetig einzubringen natuerlich recht
+begrenzt; auch wenn dies normalerweise nicht meine Art ist, habe ich beschlossen bis
+zur weiteren Klaerung nicht mehr zu machen, als vertraglich geregelt -- das heisst
+also naechtliches Coden gibt es nicht mehr, sondern ich nutze diese Zeit lieber wieder
+fuer andere Dinge (welche zuletzt ja auch arg kurz gekommen sind).
+
+**:::**
+
 ### Das Loch dem Sprint ###
 
 
@@ -284,252 +418,3 @@ nicht moeglich. So richtig interessant wird dies sicherlich noch einmal, wenn un
 Entwicklerteam demnaechst mit dem des KNMI zusammengelegt werden soll -- da wird es
 garantiert wieder Diskussionen in Bezug auf die verwendeten Tools geben (einen Streit,
 welchen ich vor gut eineinhalb Jahren ja schon einmal ausgeochten habe).
-
-**:::**
-
-### Chaos in Utrecht ###
-
-
-_Thu, 12. March 2015 -- 18:07_
-
-Das hatten wir doch erst vor einer kurzen Weile: aufgrund eines Feuerwehr-Warnung
-rund um Schipol ist der komplett von dort kommende und dorthin fahrende Zugverkehr
-auf Eis gelegt. Da dies eine von Utrecht aus sehr regelmaessig befahrene Strecke ist,
-duerfte es wohl nicht verwundern, dass da recht schnell groessere Menschenmengen
-zusammenkommen, welche recht ungeduldig nach Reisemoeglichkeiten suchen. Bei einem
-solchen Durcheinander ist es sicherlich nicht verwunderlich, dass auch der ICE 129
-nach Frankfurt mit unter die Raeder gekommen ist: statt (wie ueblich) von Gleis 15
-war (fast) ueberall angeschlagen, dass der Zug heute von Gleis 5 abfahren sollte.
-Gerade dies fuehrte allerdings zu einem noch groesseren Chaos, weil dies auch das
-Gleis war, auf welchem der aus Frankfurt kommende ICE einfuhr. Da die Anzeige zu
-dem Zeitpunkt aber den ICE nach Amsterdam auflistete, gab es beim Ein- und Aussteigen
-einiges an Durcheinander ("Nein, dieser ICE faehrt nicht nach Frankfurt, sondern nach
-Amsterdam"); der "richtige ICE" kam dann aber auch eine Viertelstunde spaeter...
-
-**:::**
-
-### Night of the Prog Festival X ###
-
-
-_Thu, 12. March 2015 -- 09:55_
-
-Sieht ganz danach aus. als waere es vor allen Dingen Julia, die derzeit mit recht
-grossem Erfolg Konzerte und Festivals ausfindig macht, welche den Besuch lohnen.
-Nach dem [Alison Moyet](http://alisonmoyet.com) Konzert vorletztes Wochenende, war
-es das [Night of the Prog Festival](http://www.wiventertainment.com/projekte/21-notp.html),
-welches nun in den Fokus der Aufmerksamkeit geraten ist.
-
-![Festval Poster](/blog/2015/03/Night_of_the_prog_2015.jpg)
-
-Vollkommen unbekannt ist mir das Festival nicht: als vor ein paar Jahren
-[Gazpacho](http://gazpachoworld.com) auf der Loreley eingekehrt sind, war schon einmal
-ein Abstecher dorthin angedacht -- ist leider seinerzeit nichts daraus geworden (immerhin
-haben wir die Herren dann aber bei einem Auftritt in Koeln live erleben koennen).
-Gleiches gilt fuer die Auftritte von [Dream Theater](http://www.dreamtheater.net)
--- auf der ersten Tour mit Mike Mangini -- und [Eloy](http://www.eloy-legacy.com).
-Wenn ich mir allerdings das Lineup fuer diesen Sommer anschaue, dann gibt es wirklich
-keine Ausrede mehr, nicht alle Hebel in Bewegung zu setzen, um bei dem Festival dabei
-zu sein.
-
-| Time    | Artist                             |
-|---------|------------------------------------|
-| __Friday, 17.07.2015__                      ||
-| 13.30 h | [LUNA KISS](http://lunakiss.co.uk) |
-| 15.00 h | TBA                                |
-| 16.30 h | [BEARDFISH](http://www.beardfishband.com) |
-| 18.20 h | ANNEKE VAN GIERSBERGEN PRESENTS [THE GENTLE STORM](http://en.wikipedia.org/wiki/The_Gentle_Storm) |
-| 20.30 h | [PENDRAGON](http://www.pendragon.mu) |
-| 23.00 h | [CAMEL](http://www.camelproductions.com) |
-|---------|------------------------------------|
-| __Saturday 18. Juli 2015__                  ||
-|---------|------------------------------------|
-| 12.00 h | [IO EARTH](http://www.ioearth.com) |
-| 13.30 h | TBA                                |
-| 15.00 h | [SYLVAN](http://www.sylvan.de/home) |
-| 16.45 h | [LAZULI](http://www.lazuli-music.com) |
-| 18.30 h | [THE ENID](http://www.theenid.co.uk) |
-| 20.30 h | [RIVERSIDE](http://riversideband.pl/en) |
-| 23.00 h | [FISH](http://fish-thecompany.com) - 30th Anniversary Misplaced Childhood Show |
-|---------|-------------------|
-| __Sunday 19. Juli 2015__   ||
-|---------|-------------------|
-| 12.00 h | [SPECIAL PROVIDENCE](http://specialprovidence.eu) |
-| 13.30 h | [KAIPA DACAPO](https://twitter.com/kaipadacapo) |
-| 15.00 h | [HAKEN](http://www.hakenmusic.com) |
-| 16.30 h | [STEVE ROTHERY BAND](http://www.steverothery.com) |
-| 18.15 h | [PAIN OF SALVATION](http://painofsalvation.com) |
-| 20.30 h | [STEVE HACKETT](http://www.hackettsongs.com) plays for the last time "GENESIS REVISITED" |
-
-Auch wenn ich die meisten Bands/Kuenstler kenne (oder zumindest schon einmal von gehoert
-habe), gibt es doch noch ein paar Namen, welche mir bisher unbekannt waren. Also
-habe ich mich daran gemacht da ein wenig zu recherchieren, so dass ich eine Idee davon
-habe, was mich (bzw. uns) da im Juli erwartet. Ein netter Nebeneffekt hiervon ist
--- wie sich wahrscheinlich schon denken laesst -- dass ich im Zuge dessen auch ueber
-so manche andere Bands stolpere, deren Existenz mir bisher verborgen geblieben sind.
-In die letztere Kategorie gehoeren zum Beispiel [Martigan](http://www.martigan.com)
--- eine Truppe aus deutschen Landen -- von welchen ich ziemlich begeistert bin,
-mit auch weil sie eine Musik abliefern, wie ich sie vor allen Dingen von britischen
-[neo-prog](http://en.wikipedia.org/wiki/Neo-progressive_rock) Gruppen kenne. Definitiv
-ein Tip zum anspielen.
-
-**:::**
-
-### Geschaeftig ###
-
-
-_Thu, 12. March 2015 -- 09:21_
-
-Mit einer der Gruende, weshalb sich hier mittlerweile die angefangenen (und noch nicht
-fertig geschriebenen) Blog-Eintraege stapeln, ist die Tatsache, dass es im TROPOMI-Land
-recht hektisch zugeht. Nicht dass es vorher eine laue Sache gewesen waere, aber seit
-dem Audit in der vergangene Woche hat der Druck bei den kommenden Deadlines alles
-so gut wie moeglich abzuliefern noch einmal deutlich zugenommen. Es ist sicherlich
-der gesammten Atmosphaere bei [SRON](http://www.sron.nl) geschuldet, dass es immer
-noch recht ertraeglich ist; statt in die grosse Panik zu verfallen und den Leuten
-permanent im Nacken zu sitzen, liegt der Schwerpunkt vor allen Dingen darauf die Arbeit
-so zu organisieren, dass alle Beteiligten mit moeglichst wenigen Steinen im Weg
-produktiv sein koennen. Ob dies dauerhaft so bleiben wird, kann ich noch nicht sagen:
-seitens des Projektes sind einige Aenderungen angestossen worden, von denen noch nicht
-klar ist, wie sich diese auf das tagtaegliche Geschaeft auswirken. Ich versuche es
-einfach mal positiv anzugehen und derweil (wie dies eigentlich immer der Fall ist)
-gute Arbeit abzuliefern -- mehr kann man wohl nicht erwarten.
-
-**:::**
-
-### Photoshoot mit Hund ###
-
-
-_Sun, 08. March 2015 -- 20:49_
-
-Ein von den Kleinigkeiten, welche schon seit einer ganzen Weile auf der TODO-Liste
-stand, war dass wir endlich mal noch Fotos fuer neue Personalausweise machen. Mit der
-im Haus vorhandenen Fotoausruestung besteht nicht wirklich die Notwendigkeit zu einem
-Fotographen zu gehen und dafuer unnoetig Geld auszugeben. Entscheidend ist es natuerlich,
-dass es ausreichend Licht zum fotographieren gibt -- genau daran ist die Aktion die letzten
-Wochenenden gescheitert. Heute Nachmittag war es dann endlich so weit: trotz noch einmal
-anstehenden Arbeiten im heimischen Garten, ist es gelungen endlich einmal noch die
-Aufnahmen zu machen.
-
-![Sofia](/blog/2015/03/dsc_20150308_175313.jpg)
-
-
-Ok, von Sofia waren keine Ausweisbilder noetig, aber mitgelaufen ist sie ja trotzdem.
-In einer kleinen Pause habe ich dann mal schnell die Kamera herumgeschwenkt, um unsere
-vierbeinige Begleitung abzulichten, wie sie recht brav neben der Fototasche sitzt.
-
-**:::**
-
-### Test Code ###
-
-
-_Thu, 05. March 2015 -- 18:05_
-
-Ich finde es immer wieder ganz gut, wenn ich erst einmal Dinge unter sehr kontrollierten
-Bedingungen test kann, ehe ich mich daran mache neue Funktionalitaet im Produktionscode
-zu implementieren. Aus diesem Grunde schaue ich mir gerade einmal an, wie ich denn
-die Behandlung der Qualitaet-Werte (welche letzten Endes fuer jedes Pixel des Detektors
-zugewiesen werden) am besten aufsetzen kann: sind lediglich ein paar Zeilen Python-Code
-mit welchen ich sowohl ein Array mit Daten und die zugehoerigen Flags generieren kann.
-
-~~~~ python
-  data  = np.random.rand (20, 20)
-  flags = np.zeros (data.shape, dtype=np.int)
-
-  # Assign the flags
-  flags[data<0.01] += 1
-  flags[data<0.10] += 2
-  flags[data>0.90] += 16
-  flags[data>0.99] += 32
-~~~~
-
-Was mich hier natuerlich am meisten interessiert sind die Flags; mit den obigen Kriterien
-fuer die Selektion bekomme ich ein Array, welches folgendermassen aussieht:
-
-~~~~
-[[16  0  0  0  3  0  0  0  0 16  0 16 16 16  0  0 16  0  0  2]
- [ 0  0  0  0  0  0 16  0  0  0  3  0  0  2  0  0  0 16  0  0]
- [ 0  0  0  2  0  0  0  0  0 16  0  0  0  0  3  0  0 48  0  0]
- [ 0  0  0  0  0  0  0  0  0  0  0  2  0  3 16  0  0  0  0  0]
- [ 3  0  3 16  0  0  0  0  0  0  0  0  2  2  0 64  0 16 16  0]
- [ 0  0  0  3  0  0 16 16  0  0  0 48  0  0  0  0  0  0  0  0]
- [ 0  0  0  0  0  0  0  0 16 16  0  0  0  0  0  0  0  0 16  0]
- [ 0  0  0  0  0  0  0  0  0  0 16  0  3  0  0  0  0 48  0 16]
- [ 0  0  0  0  0  0 16  0  2  0 16  2  0 16  0  0  0  0  0  0]
- [ 0  0  0  0  2  0  0  0  0  0  0  0  0  2  0  0  0  0  0  0]
- [ 0  0  0  2  0  0  0  0  2  0 64  0  0  0  0  0  0  0  0  0]
- [ 0  0  0  0  2  0  0  0  0  0  2  3  0  0  0  2  0  2  0  0]
- [ 0  3  0  0  0  0 48 16  0  0  0 64  2  0  0  3  0  2 16  2]
- [ 0  0  0  0  0  0  0  0  0 16  0  0  0  3  0  0  0  0  0  0]
- [ 0 16  0  0  0  0  0  0 16  0  0  0  0  0  0  0 16  3  0  0]
- [ 0  0  0  3 48  0  3  0 16  0  0 16  0  0  0  0 16  0  2  0]
- [ 0  0  0  0  0  0  0  0  0  0  2  0  0 16  0  0  0  0  0  0]
- [ 0  0  0  0  0  0  0  0  0 16  0  0  0  0  0  0  0  0 16  0]
- [ 0  0  0  0  2  0  0  0  0  0  0  0  0  0  0 16  0 16  0  0]
- [ 0  3  2  0 16  0  0  2 48  0  0 16 16  0 16  0 16  0  3  0]]
-~~~~
-
-Fuer den Algorithmus, an welchem ich derzeit arbeite, wirklich interessant sind
-alleine die Eintraege mit einem bestimmten Wert:
-
-~~~~ python
-  print ("FLAG_DEFECTIVE\n{}".format(flags&2))
-~~~~
-
-Ist wirklich so einfach! Das Array, welches am anderen Ende herauskommt enthaelt
-nur noch an Stellen einen Eintrag, wo die Pixelmaske den Wert "2" enthaelt.
-
-~~~~
-[[0 0 0 0 0 2 0 0 0 2 0 0 0 0 0 0 0 0 0 0]
- [0 2 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0]
- [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0]
- [0 2 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0]
- [0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0]
- [0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
- [0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0]
- [0 0 2 0 2 2 0 2 0 0 0 0 0 0 0 0 0 0 0 0]
- [0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0]
- [0 0 0 0 0 0 0 0 2 0 0 0 2 0 0 0 0 0 0 0]
- [0 0 2 0 0 0 0 0 0 2 0 0 2 0 0 0 0 0 0 0]
- [0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0]
- [0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0]
- [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 2 0]
- [0 0 2 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0]
- [2 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0]
- [0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 2 0 0]
- [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
- [0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 2 0 0 0 0]
- [2 0 0 0 2 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0]]
-~~~~
-
-Worueber ich mir jetzt noch einmal ein klein wenig Gedanken machen muss ist, wie
-die Flags in sinnvoller Weise aufbereiten kann; duerfte wohl ein Scatter-Plot werden...
-
-**:::**
-
-### Keine angenehme Vorstellung ###
-
-
-_Wed, 04. March 2015 -- 19:12_
-
-Das Meeting hier bei [SRON](http://www.sron.nl) ist vorbei. Ob das, was da allerdings
-bei herausgekommen ist unbedingt zur Freude reicht, darf doch sehr bezweifelt werden.
-Warum ich so kritisch bin, laesst sich ganz schnell erklaeren: der wesentliche Vorschlag,
-welcher heute bei dem Treffen als Loesungsansatz vorgeschlagen wurde, ist, dass unser
-Software-Team unter die Kontrolle des KNMI gestellt und dort angesiedelt werden soll.
-Dass ich dies [aus persoenlicher Erfahrung](/blog/2013/11/2013-11-28_20-08.html) fuer
-alles andere positiv halte duerfte wohl nicht ueberraschen; zu schlecht sind einfach
-die Eindruecke, welche von meinem Aufenthalt von vor eineinhalb Jahren uebrig geblieben
-sind. Konkret bedeutet dies: ich sollte mir wirklich gut ueberlegen, wie ich mit
-dieser Situation umzugehen gedenke.
-
-Dass unter diesen Umstaenden die Dinge hier in unserem kleinen Team die Emotionen
-recht blank liegen duerfte wohl wenig verwundern. Da noch nicht alles in Stein gemeisselt
-ist, haben wir vorhin mal die Koepfe zusammengesteckt, um zu formulieren wo jeder
-einzelne von uns die Probleme mit den Plaenen sieht. Ob die daraus nun entstehende
-Antwort wirklich Einfluss auf das weitere Geschehen hat muss sich noch zeigen; recht
-deutlich aber ist, dass niemand so recht begeistert ist von dem, was da kommen soll
--- niemand hier ist erst seit gestern im Geschaeft, so dass es durchaus deutliche
-Meinungen gibt, welche nun entsprechend kanalisiert werden muessen. Ich fuer meinen
-Teil werde da auch mal sehr in mich gehen muessen, wo ich persoenlich die Grenze
-ziehen sollte und an welcher Stelle ich (unter Beistand von [S\[&\]T](http://www.stcorp.nl)
-natuerlich) zu einem Plan-B uebergehen wuerde.
