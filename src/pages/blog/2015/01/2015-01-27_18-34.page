@@ -39,7 +39,7 @@ mit [LXDE](http://lxde.org) angefreundet:
 Sehr zu meiner Freunde konnte ich nun feststellen, dass der [Net-Installer](https://www.debian.org/devel/debian-installer)
 in der Tat in der Lage ist alle unterschiedlichen Varianten einzurichten:
 
-![Screenshot Debian installer](/blog/2015/01/2015-01-27_Debian_install.png)
+![Screenshot Debian installer](/blog/2015/2015-01-27_Debian_install.png)
 
 Dies bedeutet nicht nur, dass ich nicht Unmengen an ISO-Images bei mir auf der Festplatte
 (oder in diesem Fall auf dem Drobo) herumliegen habe (zumindest bis zum Abschluss der

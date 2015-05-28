@@ -1,0 +1,39 @@
+---
+title: "Ausgelastet"
+in_menu: false
+author: "Lars Baehren"
+author_url: http://www.larsbaehren.de
+date: 2015-05-28T19:06:00.00Z
+created_at: 2015-05-28T15:50:42.00Z
+sort_info: 1432821042
+---
+
+## {title:} ##
+
+_Thu, 28. May 2015 -- 19:06_
+
+Schaut man sich die Auslastung der CPU-Kerne an, dann ist deutlich zu erkennen, dass
+der Rechner ziemlich beschaeftigt ist:
+
+![Screenshot of CPU usage](/blog/2015/2015-05-28_Calibre.png)
+
+Entstanden ist dieser Screenshot am heutigen Nachmittag, als ich [Calibre](http://calibre-ebook.com)
+aufgetragen habe ein paar eBooks von meiner auf dem Laptop stehenden Bibliothek auf
+das Kindle zu verschieben. Eines der Dinge, welche _Calibre_ automatisch macht, ist
+nachzuschauen, ob das Format, in welchem das Dokument intern vorliegt, auch von dem
+angeschlossenen Geraet unterstuetzt wird -- ist dies nicht der, wird ggf. die notwendige
+Konvertierung angeworfen, ehe die fertigen Dateien dann anschliessend kopiert werden.
+
+> calibre can convert from a huge number of formats to a huge number of formats. It supports all the major e-book formats. The full list of formats can be found [here](http://manual.calibre-ebook.com/faq.html).
+>
+> The conversion engine has lots of powerful features. It can rescale all font sizes, ensuring the output e-book is readable no matter what font sizes the input document uses. It can automatically detect/create book structure, like chapters and Table of Contents. It can insert the book metadata into a "Book Jacket" at the start of the book.
+
+Ist eine sehr feine Sache und habe ich bereits mehrfach erlebt. Diesmal neu war allerdings
+die Art der Konvertierung und die Groesse der Eingangsdaten: zwei etwas mehr als 300MB
+grosse ``*.cbr`` Dateien (wie sie als wohl recht gaengiges Format fuer Comics existieren).
+Da mein Kindle (welche ja recht einfach ist) das Ausgangsformat nicht unterstuetzt (wie
+uebrigends so manche andere Formate), macht sich _Calibre_ daran alles nach ``*mobi``
+umzusetzen... allem Anschein nach bei Verwendung aller zur Verfuegung stehenden Cores
+auf meinem Laptop. Fertig geworden bin ich trotzdem leider nicht mehr rechtzeitig
+vor dem Absprung aus dem [Institut](http://www.sron.nl), was also bedeutet, dass ich
+den Rechner die kommende Nacht noch einmal ein wenig schwitzen lassen werde.

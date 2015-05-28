@@ -8,6 +8,54 @@ author: "Lars Baehren"
 
 **:::**
 
+### Ausgelastet ###
+
+
+_Thu, 28. May 2015 -- 19:06_
+
+Schaut man sich die Auslastung der CPU-Kerne an, dann ist deutlich zu erkennen, dass
+der Rechner ziemlich beschaeftigt ist:
+
+![Screenshot of CPU usage](/blog/2015/2015-05-28_Calibre.png)
+
+Entstanden ist dieser Screenshot am heutigen Nachmittag, als ich [Calibre](http://calibre-ebook.com)
+aufgetragen habe ein paar eBooks von meiner auf dem Laptop stehenden Bibliothek auf
+das Kindle zu verschieben. Eines der Dinge, welche _Calibre_ automatisch macht, ist
+nachzuschauen, ob das Format, in welchem das Dokument intern vorliegt, auch von dem
+angeschlossenen Geraet unterstuetzt wird -- ist dies nicht der, wird ggf. die notwendige
+Konvertierung angeworfen, ehe die fertigen Dateien dann anschliessend kopiert werden.
+
+> calibre can convert from a huge number of formats to a huge number of formats. It supports all the major e-book formats. The full list of formats can be found [here](http://manual.calibre-ebook.com/faq.html).
+>
+> The conversion engine has lots of powerful features. It can rescale all font sizes, ensuring the output e-book is readable no matter what font sizes the input document uses. It can automatically detect/create book structure, like chapters and Table of Contents. It can insert the book metadata into a "Book Jacket" at the start of the book.
+
+Ist eine sehr feine Sache und habe ich bereits mehrfach erlebt. Diesmal neu war allerdings
+die Art der Konvertierung und die Groesse der Eingangsdaten: zwei etwas mehr als 300MB
+grosse ``*.cbr`` Dateien (wie sie als wohl recht gaengiges Format fuer Comics existieren).
+Da mein Kindle (welche ja recht einfach ist) das Ausgangsformat nicht unterstuetzt (wie
+uebrigends so manche andere Formate), macht sich _Calibre_ daran alles nach ``*mobi``
+umzusetzen... allem Anschein nach bei Verwendung aller zur Verfuegung stehenden Cores
+auf meinem Laptop. Fertig geworden bin ich trotzdem leider nicht mehr rechtzeitig
+vor dem Absprung aus dem [Institut](http://www.sron.nl), was also bedeutet, dass ich
+den Rechner die kommende Nacht noch einmal ein wenig schwitzen lassen werde.
+
+**:::**
+
+### Und noch ein Foto ###
+
+
+_Wed, 27. May 2015 -- 20:55_
+
+Ich muesste wirklich einmal eine keine Strichliste anlegen wie oft ich inzwischen
+wegen der Fivefinger angesprochen worden bin. Auch wenn die Fragen, worum es sich
+eigentlich handelt ("Sind dies Schuhe oder Socken?"), deutlich weniger geworden sind,
+scheinen die Schuhe immer noch einen ausreichenden Kuriositaetsfaktor zu besitzen,
+dass die Leute mich fragen, ob sie denn ein Foto von meine Fuessen (bzw. den Schuhen)
+machen koennen. Habe ich natuerlich kein Problem mit, auch wenn ich ein wenig das
+Gefuehl habe, dass ich dafuer von _Vibram_ eine PR-Praemie kriegen sollte.
+
+**:::**
+
 ### Zu frueh ###
 
 
@@ -222,7 +270,7 @@ wenn dann der zentrale [Subversion](https://subversion.apache.org)-Server wegfae
 habe ich immer noch Zugriff auf Versionskontrolle und kann sogar meine Aenderungen
 zwischen verschiedenen Rechnern austauschen.
 
-![OCALFW mirror on Github](/blog/2015/04/2015-04-10_Github_OCALFW.png)
+![OCALFW mirror on Github](/blog/2015/2015-04-10_Github_OCALFW.png)
 
 Ein klein wenig hat dies sogar einen befreienden Effekt gehabt, weil die nun verwendete
 Konfiguration vielleicht schon eher haette gebrauchen koennen; da es einem Git ja
@@ -324,97 +372,3 @@ Bushaltestelle -- ist mir erst unterwegs aufgefallen, dass ich meine Brille garn
 dabei hatte. So richtige realisiert habe ich dies eigentlich in dem Moment, als ich
 versuchen wollte diese zurecht zu schieben... nur um dann festzustellen, dass mir
 da etwas auf der Nase fehlte.
-
-**:::**
-
-### Film- und Serienhighlights... zu spaet ###
-
-
-_Sat, 14. March 2015 -- 15:35_
-
-Dass ein Paket von [Amazon](http://www.amazon.de) hier eintrifft ist ja nichts neues
--- dass ich aber einen Brief bei mir auf dem heimischen Schreibtisch vorfinde gehoert
-schon eher zu den Dingen, welche neu sind. Da es schon eine Weile her ist, dass ich
-etwas bestellt habe, war ich mir nicht so ganz sicher, was ich da erwarten konnte
--- wie es sich aber heraustellte handelte es sich um eine Werbung fuer
-[Prime Instant-Video](http://www.amazon.de/Prime-Instant-Video). Nicht dass mich
-dies sonderlich interessiert haette, aber als ich mir dann noch die beigelegte Karte
-angeschaut habe, war vollkommen klar, wie wenig dieses Angebot zu mir passt:
-
-![Angebot Amazon](/blog/2015/03/2015-03-15_Amazon.png)
-
-Bei den Spielfilmen habe ich mir garnicht erst mal mehr die Muehe gemacht da nachzuschauen,
-denn schon die Liste der Serien war erkennbar veraltet:
-
- - [Heroes](http://www.imdb.com/title/tt0813715) (2006-2010) ist schon seit ein paar
-   Jahren abgelaufen, so dass ich mich doch ein wenig wundere was daran so neu sein
-   soll.
- - [Eureka](http://www.imdb.com/title/tt0796264) (2006-2012) war ebenfalls eine ganze
-   Weile lang ein recht heisser Tip -- habe ich mich auch hier an dieser Stelle das
-   eine oder andere Mal drueber ausgelassen -- aber ein Serien-Start ab dem ersten
-   April scheint mir doch hinter dem Gang der Dinge hinterher zu hinken.
- - [Downton Abbey](http://www.imdb.com/title/tt1606375) befindet sich -- zumindest
-   wie ich dies mittels einer kurzen Recherche auf [IMDb](http://www.imdb.com)
-   nachvollziehen konnte -- noch am wenigsten im Hintertreffen: Season 4 ist Anfang
-   2014 gelaufen, so dass wir da auf einen zeitlichen Versatz von "nur" einem Jahr
-   kommen.
-
-Dass man bestimmte Filme oder Serien durchaus schon mal in die heimische Sammlung
-aufnehmen will kan ich durchaus verstehen -- was allerdings das Mitverfolgen betrifft,
-ist ein zeitlicher Verzug von einem Jahr (oder gar mehr) eine Ewigkeit und alles
-andere als dafuer geeignet um mir ein solches Angebot schmackhaft zu machen.
-
-**:::**
-
-### Unterwegs arbeiten ###
-
-
-_Thu, 12. March 2015 -- 19:43_
-
-Und da bin ich mal wieder unterwegs fleissig. Nachdem beim Aufenthalt im Institut
-heute eher kurz war -- was unter anderem daran liegt, dass ich morgens noch recht
-lange an den Processing-Tests gewerkelt habe, ehe ich losgezogen bin -- habe ich
-nun die Fahrt dafuer verwende an den Dingen zu arbeiten, welche mir von Rutger und
-Paul angetragen wurden. Da ich ohne Internetverbindung nicht weiter die diversen
-Tasks testen kann, habe ich mich stattdessen (wieder einmal) um die Quicklooks
-gekuemmert; wie sich herausstellt gibt es dort immer wieder Dinge, welche sich verbessern
-lassen, wenn man diese auf die unterschiedlichsten Arten an Daten loslaesst.
-
-~~~~
-* commit 7e445200bdacc4dd717d2fd4057fc354ba8c62d8
-| Author: Lars Baehren <lbaehren@gmail.com>
-| Date:   Thu Mar 12 19:18:54 2015 +0100
-|
-|     Fix PyLint warnings
-|
-* commit b7ef3b6ac901e176ee69b6ae3ef5e21dab1793fa
-| Author: Lars Baehren <lbaehren@gmail.com>
-| Date:   Thu Mar 12 19:13:32 2015 +0100
-|
-|     Split method for formatting of annotation from PlotGenerator class, to make
-|     it more generally available. Use that method to format the various info items
-|     added as text to the histogram on the detector plot page.
-|
-* commit 96acbb5446efefe965cd3c764c1bc95dba4c389c
-| Author: Lars Baehren <lbaehren@gmail.com>
-| Date:   Thu Mar 12 18:48:58 2015 +0100
-|
-|     Address a few of the PyLint warnings.
-|
-* commit 2ec13617bdb39eb7fd92704ab599f92fd699ad3d
-| Author: Lars Baehren <lbaehren@gmail.com>
-| Date:   Thu Mar 12 18:12:28 2015 +0100
-|
-|     Make plotting of the line marking the saturation threshold conditional: a
-|     threshold needs to be defined and there actually need to be pixels with a
-|     value larger than that threshold.
-~~~~
-
-Wie schon mehrfach erwaehnt verwendet meine Entwicklungsumgebung [Git](http://git-scm.com)
-als Backbone was die Versionskontrolle betrifft. Fuer mich bedeutet dies, dass ich nicht bis
-zuhause warten muss, um Aenderungen einzuchecken und zu sichern; bei einer Loesung, welche
-von einem zentralen Server abhaengig ist (wie z.B. _Subversion_) waere dies definitiv
-nicht moeglich. So richtig interessant wird dies sicherlich noch einmal, wenn unser
-Entwicklerteam demnaechst mit dem des KNMI zusammengelegt werden soll -- da wird es
-garantiert wieder Diskussionen in Bezug auf die verwendeten Tools geben (einen Streit,
-welchen ich vor gut eineinhalb Jahren ja schon einmal ausgeochten habe).

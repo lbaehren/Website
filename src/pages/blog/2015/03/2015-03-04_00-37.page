@@ -23,7 +23,7 @@ used as part of the processing pipeline. With this kept in mind I think it is un
 why with an important progress meeting in sight, there has been yet another rush at
 getting a number of details fixed... such as this one:
 
-![Quicklook screenshot](/blog/2015/03/2015-03-03_Matplotlib_colorbar.png)
+![Quicklook screenshot](/blog/2015/2015-03-03_Matplotlib_colorbar.png)
 
 While most areas with a solid fill -- such as e.g. the histograms -- appear as such
 when printed or displayed on the screen, things look slightly different when turning

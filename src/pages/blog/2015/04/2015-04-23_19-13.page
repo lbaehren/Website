@@ -24,7 +24,7 @@ wenn dann der zentrale [Subversion](https://subversion.apache.org)-Server wegfae
 habe ich immer noch Zugriff auf Versionskontrolle und kann sogar meine Aenderungen
 zwischen verschiedenen Rechnern austauschen.
 
-![OCALFW mirror on Github](/blog/2015/04/2015-04-10_Github_OCALFW.png)
+![OCALFW mirror on Github](/blog/2015/2015-04-10_Github_OCALFW.png)
 
 Ein klein wenig hat dies sogar einen befreienden Effekt gehabt, weil die nun verwendete
 Konfiguration vielleicht schon eher haette gebrauchen koennen; da es einem Git ja
