@@ -8,6 +8,34 @@ author: "Lars Baehren"
 
 **:::**
 
+### Zurueck zu Apple Mail ###
+
+
+_Thu, 04. June 2015 -- 17:15_
+
+Manchmal sind Umstellungen im Workflow noetig, wenn sich herausstellt, dass eine
+andere Loesung einfach nicht wirklich brauchbar ist. So ergangen ist es mir, was
+die Verwendung von _Thunderbird_ als Email Client betriff: im Zuge meiner Bemuehungen
+von den Apple-eigenen Tools wegzukommen, habe ich eigentlich fuer alles gute Alternativen
+gefunden -- da gehorte natuerlich ein Email-Client mit dazu. Das Problem aber, welches
+immer noch nicht behoben zu sein scheint ist, dass Thunderbird unter Mac OS X recht
+resourcenhungrig ist: da habe ich mich so manches mal gewundert, als ich mir die
+CPU-Auslastung von meinem Rechner angeschaut habe, nur um um festzustellen dass
+eine so (vergleichsweise) einfache Sache wie ein Email-Programm mit mehr als einem
+Dutzend Threads beschaeftigt ist und den Rechner in die Knie zwingt. Eine wiederkehrende
+Erfahrung war dann auch, dass ich beim Schreiben einer Mail mitunter eine Minute
+oder mehr blind tippen konnte, ehe auch nur ein Buchstabe im gerade geoeffneten
+Fenster auftauchte. Auf Dauer ist dies kein Zustand.
+
+Was mich bisher noch ein wenig vom Umstieg abgehalten hat war die Frage, wie ich denn
+die lokal abgelegten Mails importieren kann; dies stellte sich allerdings als nicht
+so sonderlich komliziert heraus, so dass ich heute Nachmittag den Switch vorgenommen
+habe. Es bleiben noch ein paar Daten zu migrieren, aber dies ist eine durchaus loesbare
+Aufgabe... welche ich mit ein wenig Glueck sogar noch waehrend dieser Fahrt abgeschlossen
+kriege.
+
+**:::**
+
 ### Ausgelastet ###
 
 
@@ -358,17 +386,3 @@ handliche Information angezeigt:
 Was jetzt eigentlich noch fehlt ist eine Moeglichkeit die ueber einen Tag verteilten
 Arbeitsphasen zusammenzurechnen -- mal schauen, ob ich mich da auch noch einmal
 dran setzte, aber mit den jetzigen Aenderungen ist mir schon einmal sehr geholfen.
-
-**:::**
-
-### In Gedanken ###
-
-
-_Wed, 25. March 2015 -- 11:20_
-
-Also da merkt man doch, wie sehr ich in den Gedanken bin: als ich gerade eben zum
-Institut aufgebrochen bin -- erste Etappe ist wie ueblich von der Haustuere zur
-Bushaltestelle -- ist mir erst unterwegs aufgefallen, dass ich meine Brille garnicht
-dabei hatte. So richtige realisiert habe ich dies eigentlich in dem Moment, als ich
-versuchen wollte diese zurecht zu schieben... nur um dann festzustellen, dass mir
-da etwas auf der Nase fehlte.
